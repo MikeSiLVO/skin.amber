@@ -93,6 +93,10 @@
 				<pulseonselect>false</pulseonselect>
 				<width>1437</width>
 				<height>60</height>
+				<colorwidth>60</colorwidth>
+				<colorheight>40</colorheight>
+				<texturecolormask>colors/white.png</texturecolormask>
+				<texturecolordisabledmask colordiffuse="40FFFFFF">colors/white.png</texturecolordisabledmask>
 				<font>font16</font>
 				<textoffsetx>42</textoffsetx>
 				<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
