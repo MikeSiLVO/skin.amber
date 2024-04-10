@@ -93,7 +93,7 @@
 				<pulseonselect>false</pulseonselect>
 				<width>1437</width>
 				<height>60</height>
-				<colorwidth>60</colorwidth>
+				<colorwidth>120</colorwidth>
 				<colorheight>40</colorheight>
 				<texturecolormask>colors/white.png</texturecolormask>
 				<texturecolordisabledmask colordiffuse="40FFFFFF">colors/white.png</texturecolordisabledmask>
