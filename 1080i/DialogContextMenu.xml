@@ -5,7 +5,7 @@
 	<onload condition="Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onload>
 	<onload condition="Skin.HasSetting(AutoPlayTrailer) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">PlayerControl(Stop)</onload>
 	<onload condition="Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">ClearProperty(MovieTrailerPlaying,Home)</onload>
-	
+
 	<defaultcontrol>1000</defaultcontrol>
 	<controls>
 		<control type="group" description="MENU">
@@ -47,7 +47,7 @@
 			        <shadowcolor></shadowcolor>
 			    </control>
 			    <!-- ArtWork Beef Solo Mode-->
-                <control type="button" id="9325">    
+                <control type="button" id="9325">
                     <width>493</width>
 				    <height>60</height>
 				    <textoffsetx>10</textoffsetx>
@@ -67,7 +67,7 @@
                     <visible>System.AddonIsEnabled(script.artwork.beef) + [Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
                 </control>
                 <!-- ArtWork Beef Gui Mode-->
-                <control type="button" id="9326">    
+                <control type="button" id="9326">
                     <width>493</width>
 				    <height>60</height>
 				    <textoffsetx>10</textoffsetx>
@@ -87,7 +87,7 @@
                     <visible>System.AddonIsEnabled(script.artwork.beef) + [Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
                 </control>
 				<!-- ArtWork Downloader Solo Mode-->
-                <control type="button" id="9327">    
+                <control type="button" id="9327">
                     <width>493</width>
 				    <height>60</height>
 				    <textoffsetx>10</textoffsetx>
@@ -105,7 +105,7 @@
                     <visible>System.AddonIsEnabled(script.artwork.downloader) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
                 </control>
                 <!-- ArtWork Downloader Gui Mode-->
-                <control type="button" id="9328">    
+                <control type="button" id="9328">
                     <width>493</width>
 				    <height>60</height>
 				    <textoffsetx>10</textoffsetx>
@@ -122,7 +122,7 @@
                     <visible>Skin.HasSetting(ShowADinContextMenu)</visible>
                     <visible>System.AddonIsEnabled(script.artwork.downloader) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
                 </control>
-			</control>	
+			</control>
 		</control>
 	</controls>
 </window>

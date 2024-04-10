@@ -35,14 +35,14 @@
 			</control>
 		</control>
 		<control type="group" id="2">
-			
+
 			<include condition="Skin.HasSetting(enable.bottomseekbar)">LowerFullScreenInfo</include>
 			<include condition="!Skin.HasSetting(enable.bottomseekbar)">RegularFullScreenInfo</include>
-			
+
 			<include>OSDFade</include>
 			<visible>!Skin.HasSetting(UseUltraCompactOSD) + !$EXP[showCompactSeekBar] + [Player.ShowInfo | Window.IsActive(VideoOSD)] + ![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(SliderDialog)]</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
-			
+
 			<!-- Background -->
 			<control type="image" id="21">
 				<width>1920</width>
@@ -74,7 +74,7 @@
 				<colordiffuse>FFE2E2E2</colordiffuse>
 				<visible>!Skin.HasSetting(OSDInfo) + !Skin.HasSetting(enable.bottomseekbar)</visible>
 			</control>
-			
+
 			<!-- Plot -->
 			<control type="group" id="20">
 			    <visible>!Skin.HasSetting(OSDInfo)</visible>
@@ -117,10 +117,10 @@
 				        <label>$VAR[VideoFullScreenPlot]</label>
 				        <autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
 			        </control>
-			    </control>			
+			    </control>
 			</control>
-			
-            <!-- Art: Poster/Thumb/Icon/Channel logo -->			
+
+            <!-- Art: Poster/Thumb/Icon/Channel logo -->
 			<control type="group" id="1">
 			    <visible>$EXP[showPosterOSD]</visible>
 			    <control type="group" id="1">
@@ -142,7 +142,7 @@
 			            <texture>$VAR[VideoPlayerIcon]</texture>
 			            <aspectratio align="center" aligny="bottom">keep</aspectratio>
 			        </control>
-			    </control>	
+			    </control>
 			    <control type="group" id="1">
 			        <visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
 			        <control type="image" id="24">
@@ -166,7 +166,7 @@
 			        </control>
 			    </control>
 			</control>
-			
+
 			<!-- Media Details -->
 			<control type="group" id="26">
 				<left>30</left>
@@ -216,8 +216,8 @@
 				    <scroll>true</scroll>
 				    <textcolor>grey</textcolor>
 			    </control>
-			</control>	
-			
+			</control>
+
 			<!-- Media Flags -->
 			<control type="group" id="1">
 			    <posx>800</posx>
@@ -250,14 +250,14 @@
 			    </control>
 			</control>
 		</control>
-		
+
 		<!-- Info for compact OSD -->
 		<control type="group" id="2">
 			<include>OSDFade</include>
 			<visible>!Skin.HasSetting(UseUltraCompactOSD) + $EXP[showCompactSeekBar] + [Player.ShowInfo | Window.IsActive(VideoOSD)] + ![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(SliderDialog)]</visible>
     		<animation effect="fade" time="200">VisibleChange</animation>
 			<top>700</top>
-			
+
 			<!-- Background -->
 			<control type="image" id="22">
 				<bottom>0</bottom>
@@ -267,7 +267,7 @@
 				<colordiffuse>FFE2E2E2</colordiffuse>
 				<visible>!Skin.HasSetting(OSDInfo)</visible>
 			</control>
-			
+
 			<!-- Plot -->
             <control type="group" id="20">
 			    <visible>!Skin.HasSetting(OSDInfo)</visible>
@@ -288,8 +288,8 @@
 			        <label>$VAR[VideoFullScreenPlot]</label>
 			        <autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
 		        </control>
-			</control>			
-			
+			</control>
+
 			<!-- Media Flags -->
 			<control type="group" id="1">
 			    <visible>!Skin.HasSetting(OSDInfo)</visible>
@@ -325,8 +325,8 @@
 			    </control>
 			</control>
 		</control>
-		
-		<!-- Art: Poster/Thumb/Icon for Ultra Compact OSD -->			
+
+		<!-- Art: Poster/Thumb/Icon for Ultra Compact OSD -->
 		<control type="group" id="1">
 			<visible>$EXP[showPosterOSD] + Window.IsVisible(VideoOSD) + Skin.HasSetting(UseUltraCompactOSD)</visible>
 		    <control type="image" id="24">
@@ -347,10 +347,10 @@
 		        <aspectratio align="center" aligny="bottom">keep</aspectratio>
 		    </control>
 		</control>
-		
+
 		<!-- Art: ClearLogo, ClearArt, CharacterArt or DiscArt -->
         <control type="group" id="1">
-            <visible>!$EXP[showCompactSeekBar]</visible>		
+            <visible>!$EXP[showCompactSeekBar]</visible>
 			<control type="group" id="1">
 				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + !Skin.HasSetting(OSDInfo) + ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + !Skin.HasSetting(enable.bottomseekbar)</visible>
 				<include>FullScreenExtraArt</include>
@@ -398,6 +398,6 @@
 				    <param name="arttop">790</param>
 				</include>
             </control>
-        </control>			
+        </control>
 	</controls>
 </window>

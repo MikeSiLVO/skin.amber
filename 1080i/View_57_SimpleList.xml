@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    
+
 	<include name="SimpleListWidthOneColumn">
 	    <left>25</left>
 		<width>1870</width>
 	</include>
-	
+
 	<include name="SimpleListWidthMultipleColumns">
 	    <left>85</left>
 		<width>1730</width>
 	</include>
-	
-	
+
+
 	<include name="View_57_SimpleList">
         <control type="group" description="Content">
-            
+
 			<include content="BackgroundOverlay">
                 <param name="parentid" value="57"/>
             </include>
             <visible>Control.IsVisible(57)</visible>
             <include>ContentFade</include>
-            
+
             <control type="panel" id="57" description="Simple List">
                 <viewtype label="$LOCALIZE[31632]">list</viewtype>
                 <top>60</top>
-				
+
 				<include condition="!Skin.HasSetting(57_SingleColumn)">SimpleListWidthMultipleColumns</include>
 				<include condition="Skin.HasSetting(57_SingleColumn)">SimpleListWidthOneColumn</include>
-                
+
                 <include condition="!Skin.HasSetting(Enable.TouchSupport)">BigPanelHeightStandard</include>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)">BigPanelHeightTouch</include>
-				
+
                 <orientation>vertical</orientation>
 				<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
                 <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 				<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
-                
+
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
-				
+
 				<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
                 <onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(657)]">657</onright>
 				<onright condition="Control.IsVisible(615)">615</onright>
@@ -49,7 +49,7 @@
                 <preloaditems>4</preloaditems>
                 <pagecontrol>657</pagecontrol>
 				<visible>[$EXP[Exp_View_57] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.simplelistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
-                
+
 				<include content="SimpleList_Layout" condition="!Skin.HasSetting(57_SingleColumn)">
 					<param name="ListLabelFont">font16</param>
 					<param name="ListLabel2Font">ListDetails</param>
@@ -62,7 +62,7 @@
 		            <param name="episodeslabelpos">495</param>
 					<param name="BGposy">15</param>
 				</include>
-				
+
 				<include content="SimpleList_Layout" condition="Skin.HasSetting(57_SingleColumn)">
 					<param name="ListLabelFont">font16</param>
 					<param name="ListLabel2Font">ListDetails</param>
@@ -75,7 +75,7 @@
 		            <param name="episodeslabelpos">1775</param>
 					<param name="BGposy">15</param>
 				</include>
-                
+
             </control>
 
             <control type="scrollbar" id="657">
@@ -96,7 +96,7 @@
                 <onright>57</onright>
                 <visible>!Skin.HasSetting(Show.JumpToLetter) | ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
             </control>
-        
+
             <control type="button" id="657">
                 <visible>Control.IsVisible(57)</visible>
                 <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
@@ -122,7 +122,7 @@
                 <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                 <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                 <onup>SetFocus(657)</onup>
-            </control>            
+            </control>
 
             <control type="grouplist" id="657571">
                 <posx>36r</posx>
@@ -174,7 +174,7 @@
                 <include content="AlphabetLetter"><param name="label" value="G" /></include>
                 <include content="AlphabetLetter"><param name="label" value="H" /></include>
                 <include content="AlphabetLetter"><param name="label" value="I" /></include>
-                <include content="AlphabetLetter"><param name="label" value="J" /></include>                
+                <include content="AlphabetLetter"><param name="label" value="J" /></include>
                 <include content="AlphabetLetter"><param name="label" value="K" /></include>
                 <include content="AlphabetLetter"><param name="label" value="L" /></include>
                 <include content="AlphabetLetter"><param name="label" value="M" /></include>
@@ -195,14 +195,14 @@
                 <visible>Control.IsVisible(57)</visible>
                 <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
             </control>
-			
+
 			<include content="TouchButtons">
 		        <param name="ButtonsTop">990</param>
 			    <param name="id">57</param>
 				<param name="left">1440</param>
 			    <param name="visibility">!Skin.HasSetting(57_SingleColumn)</param>
 		    </include>
-				
+
 			<include content="TouchButtons">
 		        <param name="ButtonsTop">990</param>
 			    <param name="id">57</param>
@@ -210,7 +210,7 @@
 				<param name="visibility">Skin.HasSetting(57_SingleColumn)</param>
 		    </include>
 
-        </control>			
-        
+        </control>
+
     </include>
 </includes>

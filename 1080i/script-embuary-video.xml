@@ -5,10 +5,10 @@
     <animation effect="fade" time="150">WindowClose</animation>
     <conload condition="System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||9009||10052||10053||10054||10055||10056||10057||10058||10059)</conload>
     <onload>SetProperty(onclose,SetFocus(9000))</onload>
-    
+
 	<onload>SetProperty(ResetScroll," ",home)</onload>
     <onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
-	
+
 	<controls>
 
         <!-- Hide Details list for video -->
@@ -20,7 +20,7 @@
 			<width>1</width>
 			<height>1</height>
 		</control>
-        
+
         <!-- Background and poster -->
         <control type="group">
             <control type="image">
@@ -39,7 +39,7 @@
                 <param name="parentid" value="9000"/>
             </include>
         </control>
-        
+
         <include content="ShadowedImage">
             <param name="top">24</param>
             <param name="left">24</param>
@@ -111,7 +111,7 @@
 				    <label>$INFO[Container(10051).ListItem.Property(UnwatchedEpisodes)]</label>
 				    <textcolor>White2</textcolor>
 			    </control>
-			</control>			
+			</control>
         </control>
         <!-- Powered by TMDb image -->
         <control type="image" description="Powered by TMDb">
@@ -162,14 +162,14 @@
                     <align>left</align>
                     <label>$INFO[Container(10051).ListItem.Rating]</label>
                     <visible>!String.IsEmpty(Container(10051).ListItem.Rating) + [String.IsEmpty(Container(10051).ListItem.Votes) | String.IsEqual(Container(10051).ListItem.Votes,0)]</visible>
-                </control>                
+                </control>
             </control>
             <control type="grouplist" description="RT Critics rating">
                 <visible>!String.IsEmpty(Container(10051).ListItem.Property(rating.rotten)) + !String.IsEqual(Container(10051).ListItem.Property(rating.rotten),N/A)</visible>
                 <width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -189,7 +189,7 @@
                 <width>90</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>5</itemgap>            
+                <itemgap>5</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -233,10 +233,10 @@
                     <align>left</align>
                     <label>$INFO[Container(10051).ListItem.Property(rating.imdb)]</label>
                     <visible>!String.IsEmpty(Container(10051).ListItem.Property(rating.imdb)) + [String.IsEmpty(Container(10051).ListItem.Property(votes.imdb)) | String.IsEqual(Container(10051).ListItem.Property(votes.imdb),0)]</visible>
-                </control>                
-            </control>            
+                </control>
+            </control>
         </control>
-        <!-- Certification Flag for embuary info items -->        
+        <!-- Certification Flag for embuary info items -->
         <control type="group">
             <visible>!String.IsEmpty(Container(10051).ListItem.MPAA)</visible>
             <control type="image" description="Certification flag USA">
@@ -261,7 +261,7 @@
                     <font>InfoTitle</font>
                     <textcolor>$VAR[HighlightColor]</textcolor>
                     <align>left</align>
-                    <aligny>center</aligny>                       
+                    <aligny>center</aligny>
                     <label>$VAR[panelheading]</label>
                 </control>
                 <control type="image" description="Studio - Embuary Info">
@@ -283,7 +283,7 @@
                     <aspectratio>keep</aspectratio>
                     <aligny>center</aligny>
                     <visible>!String.IsEmpty(Container(10051).ListItem.Property(Network.Icon.0)) + String.IsEqual(Container(10051).ListItem.DBType,tvshow)</visible>
-                </control>                
+                </control>
                 <control type="image" description="Line Split">
                     <posy>23</posy>
                     <width>1180</width>
@@ -297,7 +297,7 @@
                     <height>1</height>
                     <texture>img/LineL.png</texture>
                     <aspectratio>stretch</aspectratio>
-                </control>                
+                </control>
                 <control type="textbox" id="900031" description="Plot">
                     <include>VisibleFadeEffectDelay</include>
                     <posy>90</posy>
@@ -341,7 +341,7 @@
                     <height>375</height>
                     <texture>img/LineL.png</texture>
                     <aspectratio>stretch</aspectratio>
-                </control>                
+                </control>
                 <control type="panel" id="9009">
                     <include>VisibleFadeEffectDelay</include>
                     <include>List_9009_Commons</include>

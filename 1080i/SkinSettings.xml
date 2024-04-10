@@ -169,7 +169,7 @@
 		                    <param name="itemlabel2">$VAR[DefaultFontLabel]</param>
                             <param name="CustomProperty">CustomSelectDefaultFont</param>
 		                    <param name="CustomDialog">1121</param>
-						</include>	
+						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="2"/>
 							<param name="itemlabel" value="$LOCALIZE[32376]"/>
@@ -233,7 +233,7 @@
 							<param name="itemid" value="11"/>
 							<param name="itemlabel" value="$LOCALIZE[32076]"/>
 							<param name="skinsetting" value="Enable.WatchedInRecent"/>
-						</include>                        
+						</include>
                         <include content="YesNoSettingItem">
 							<param name="itemid" value="12"/>
 							<param name="itemlabel" value="$LOCALIZE[32072]"/>
@@ -554,7 +554,7 @@
 		                    <param name="itemlabel2"></param>
                             <param name="CustomProperty">CustomSelectFavouriteAddons</param>
 		                    <param name="CustomDialog">1125</param>
-						</include>						
+						</include>
 					</content>
 				</control>
                 <!-- 9000 3 Background options -->
@@ -966,7 +966,7 @@
                             <param name="itemvisibility" value="Skin.HasSetting(NowPlaying.ExtraArtMusic) + Skin.HasSetting(NowPlaying.MusicDiscArt) + !Skin.HasSetting(Hide.NowPlaying)"/>
 		                    <param name="CustomDialog" value="1128"/>
                         </include>
-					</content>	
+					</content>
 				</control>
                 <!-- 9000 7 Full Screen/OSD options -->
 				<include content="SkinSettingsArrows">
@@ -1121,7 +1121,7 @@
 							<param name="skinsetting" value="DirectSeekInInfo"/>
 						</include>
 					</content>
-				</control>				
+				</control>
                 <!-- 9000 8 Video Info options -->
 				<include content="SkinSettingsArrows">
 				    <param name="panelid">9108</param>
@@ -1315,7 +1315,7 @@
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[LabelTextColor]</param>
 						</include>
-					</control>					
+					</control>
 					<control type="radiobutton" id="91093">
 						<label>$LOCALIZE[32213]</label>
 						<font>ListDetails</font>
@@ -1327,7 +1327,7 @@
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[FocusedTextColor]</param>
 						</include>
-					</control>					
+					</control>
 					<control type="radiobutton" id="91094">
 						<label>$LOCALIZE[32214]</label>
 						<font>ListDetails</font>
@@ -1375,7 +1375,7 @@
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[VertMenuBladeColor]</param>
 						</include>
-					</control>					
+					</control>
 					<control type="radiobutton" id="91098">
 						<label>$LOCALIZE[32209]</label>
 						<font>ListDetails</font>
@@ -1399,7 +1399,7 @@
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[DialogBGColor]</param>
 						</include>
-					</control>					
+					</control>
 					<control type="radiobutton" id="910910">
 						<label>$LOCALIZE[32215]</label>
 						<font>ListDetails</font>
@@ -1444,7 +1444,7 @@
 			            <onclick condition="System.AddonIsEnabled(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=colorthemes)</onclick>
 			            <label>Manage Color Themes</label>
 					    <visible>System.AddonIsEnabled(script.skin.helper.skinbackup)</visible>
-		            </control>					
+		            </control>
 				</control>
 				<!-- 9000 10 Search -->
 				<control type="panel" id="9110">
@@ -1625,7 +1625,7 @@
 							<onclick condition="System.HasAddon(script.xmbcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">Addon.OpenSettings(script.xbmcbackup)</onclick>
 							<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
 							<onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-							
+
 						</item>
 						<item id="4" description="Reset all settings to default">
 							<label>$LOCALIZE[31038]</label>
@@ -1636,7 +1636,7 @@
 							<visible>System.AddonIsEnabled(script.skin.helper.skinbackup)</visible>
 						</item>
 					</content>
-				</control>                
+				</control>
 				<!-- 9000 13 - Manage Dependencies -->
 				<include content="SkinSettingsArrows">
 				    <param name="panelid">9113</param>
@@ -1648,7 +1648,7 @@
                     <include>SettingsListCommons</include>
 					<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
 		            <onup condition="!Skin.HasSetting(Enable.TouchSupport)">9113</onup>
-					<ondown>9113</ondown>                    
+					<ondown>9113</ondown>
 					<control type="radiobutton" id="911201">
 						<label>script.favourites</label>
 						<label2>$INFO[System.AddonVersion(script.favourites)]             </label2>

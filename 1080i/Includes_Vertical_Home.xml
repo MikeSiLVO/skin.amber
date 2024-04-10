@@ -4,17 +4,17 @@
 		<movement>7</movement>
 		<focusposition>0</focusposition>
 	</include>
-	
+
 	<include name="StaticSettingsFirstSmallFont">
 		<movement>12</movement>
 		<focusposition>0</focusposition>
 	</include>
-	
+
 	<include name="StaticSettingsCenter">
 		<movement>6</movement>
 		<focusposition>5</focusposition>
 	</include>
-	
+
 	<include name="StaticSettingsStandard">
 		<movement>5</movement>
 		<focusposition>2</focusposition>
@@ -24,7 +24,7 @@
 		<movement>0</movement>
 		<focusposition>3</focusposition>
 	</include>
-	
+
 	<include name="NonStaticSettingsFirst">
 		<movement>0</movement>
 		<focusposition>0</focusposition>
@@ -39,35 +39,35 @@
 		<font>MainMenuVertical</font>
 		<height>100</height>
 	</include>
-	
+
 	<include name="widgetsLeftVerticalIcon">
 		<left>132</left>
 	</include>
-	
+
 	<include name="widgetsLeftVerticalText">
 		<left>431</left>
 	</include>
-	
+
 	<include name="menuWidthVerticalIcon">
 		<width>140</width>
 	</include>
-	
+
 	<include name="menuWidthVerticalText">
 		<width>440</width>
 	</include>
-	
+
 	<include name="submenuWidthVerticalIcon">
 		<width>140</width>
 	</include>
-	
+
 	<include name="submenuWidthVerticalText">
 		<width>540</width>
 	</include>
-	
+
 	<include name="MenuTextAlignLeft">
 		<align>left</align>
 	</include>
-	
+
 	<include name="MenuTextAlignRight">
 		<align>right</align>
 	</include>
@@ -212,7 +212,7 @@
 			<include>skinshortcuts-mainmenu</include>
 		</content>
 	</include>
-	
+
 	<include name="submenuContentText">
 	    <control type="list" id="9001">
 			<visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
@@ -266,7 +266,7 @@
 			</content>
 		</control>
 	</include>
-	
+
 	<include name="submenuContentIcon">
 	    <control type="list" id="9001">
 			<visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
@@ -314,7 +314,7 @@
 	</include>
 
 	<include name="Vertical_Home_Layout">
-	
+
 	    <!-- Now Playing -->
 		<control type="group">
 			<visible>Player.HasMedia + ![Skin.HasSetting(Hide.NowPlaying) | Window.Next(musicplaylist) | Window.Next(visualisation)]</visible>
@@ -327,24 +327,20 @@
 			</include>
 			<include>HomeNowPlaying</include>
 		</control>
-		
+
 		<!-- Widgets -->
 		<control type="group" id="700">
             <visible>!Skin.HasSetting(Hide.AllShelves)</visible>
-            <animation effect="fade" start="100" end="0" time="480" condition="[!Skin.HasSetting(Hide.NowPlaying) + Player.HasAudio + !ControlGroup(700).HasFocus] | 
-			                                                                   [!Skin.HasSetting(Hide.NowPlaying) + Player.HasVideo + !ControlGroup(700).HasFocus] | 
-																			   [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus] | 
-																			   [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + 
-																			    ControlGroup(700).HasFocus]">Conditional</animation>
-			
+            <animation effect="fade" start="100" end="0" time="480" condition="[!Skin.HasSetting(Hide.NowPlaying) + Player.HasAudio + !ControlGroup(700).HasFocus] | [!Skin.HasSetting(Hide.NowPlaying) + Player.HasVideo + !ControlGroup(700).HasFocus] | [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus] | [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + ControlGroup(700).HasFocus]">Conditional</animation>
+
 			<animation effect="slide" start="0,0" end="-420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 			<animation effect="slide" start="0,0" end="-120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
-			
+
 			<top>95</top>
-			
+
 			<include condition="Skin.HasSetting(Vertical.IconOnly)">widgetsLeftVerticalIcon</include>
 			<include condition="!Skin.HasSetting(Vertical.IconOnly)">widgetsLeftVerticalText</include>
-			
+
 			<include>skinshortcuts-template-shelfgroup2shelvesbackground</include>
 			<include>skinshortcuts-template-shelfgroup3shelvesbackground</include>
 			<include>skinshortcuts-template-shelfgroup3shelvesbackgroundlarge</include>
@@ -359,23 +355,23 @@
                 <include>PVRRecordingWidgets</include>
 			</control>
 		</control>
-		
+
 		<include condition="!Skin.HasSetting(Vertical.HideFocusShelves)">ShelfTrailerInfo</include>
 		<include condition="Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfTrailerInfo">
 		    <param name="left">0</param>
 			<param name="top">900</param>
 		</include>
-		
+
 		<control type="group">
 			<control type="group" description="Furniture">
 				<control type="image" description="Main Left Blade">
-					
+
 					<animation effect="slide" start="0,0" end="-440,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 					<animation effect="slide" start="0,0" end="-120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
-					
+
 					<include condition="Skin.HasSetting(Vertical.IconOnly)">menuWidthVerticalIcon</include>
 			        <include condition="!Skin.HasSetting(Vertical.IconOnly)">menuWidthVerticalText</include>
-					
+
 					<height>1080</height>
 					<texture border="0,0,30,0" colordiffuse="$VAR[VertMenuBladeColor]">common/ViewMenuHome.png</texture>
 				</control>
@@ -392,13 +388,13 @@
 			<height>1080</height>
 			<texture border="0,0,30,0"  colordiffuse="$VAR[VertMenuBladeColor]">common/ViewMenu.png</texture>
 		</control>
-		
+
 		<include condition="Skin.HasSetting(Vertical.IconOnly)">submenuContentIcon</include>
 		<include condition="!Skin.HasSetting(Vertical.IconOnly)">submenuContentText</include>
-		
+
 		<include condition="Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)">Library_Count</include>
 		<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Vertical.IconShowLabel) + !Skin.HasSetting(IconShowLabel.InTopBar)">ShowIconMenuLabel</include>
-		
+
 	</include>
 
 </includes>

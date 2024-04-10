@@ -5,14 +5,14 @@
 		<value condition="!String.IsEmpty(Skin.String(AmberFlix.DimLevel))">$INFO[Skin.String(AmberFlix.DimLevel)]</value>
 		<value>60%</value>
 	</variable>
-	
+
 	<variable name="AmberFlixTitleLabelVar">
 		<value condition="Container.Content(tvshows) | Container.Content(episodes)">$INFO[ListItem.TVShowTitle]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Album]</value>
 		<value condition="Container.Content(artists)">$INFO[ListItem.Artist]</value>
 		<value>$INFO[ListItem.Title]</value>
 	</variable>
-	
+
 	<variable name="AmberFlixDimLevelVar">
 		<value condition="String.IsEqual(Skin.String(AmberFlix.DimLevel),100%)">FFFFFFFF</value>
 		<value condition="String.IsEqual(Skin.String(AmberFlix.DimLevel),90%)">E6FFFFFF</value>
@@ -26,64 +26,64 @@
 		<value condition="String.IsEqual(Skin.String(AmberFlix.DimLevel),10%)">1AFFFFFF</value>
 		<value condition="String.IsEqual(Skin.String(AmberFlix.DimLevel),0%)">00FFFFFF</value>
 	</variable>
-	
+
 	<variable name="TMDbHelperNextAiredLabelVar">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))">[COLOR $VAR[HighlightColor]]$LOCALIZE[32009]:[/COLOR] $INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired),, • ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),S]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),E, - ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Last_Aired))">[COLOR $VAR[HighlightColor]]$LOCALIZE[32010]:[/COLOR] $INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired),, • ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Season),S]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Episode),E, - ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Name)]</value>
 	</variable>
-	
+
 	<variable name="AmberFlixSeasonLabelVar">
 	    <value condition="String.IsEmpty(ListItem.Season)"></value>
 		<value condition="Integer.IsGreater(ListItem.Season,1)">$LOCALIZE[33054]</value>
 		<value condition="!Integer.IsGreater(ListItem.Season,1)">$LOCALIZE[20373]</value>
 	</variable>
-	
+
 	<variable name="AmberFlixEpisodesLabelVar">
 		<value condition="Integer.IsGreater(ListItem.Episode,1)">$LOCALIZE[20360]</value>
 		<value condition="!Integer.IsGreater(ListItem.Episode,1)">$LOCALIZE[20359]</value>
 	</variable>
-	
+
 	<variable name="FanartDiscImage">
 		<value condition="!String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
 		<value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Art(album.discart))">$INFO[ListItem.Art(album.discart)]</value>
 		<value condition="String.IsEmpty(ListItem.Art(discart))">$VAR[Square]</value>
 	</variable>
-	
-	<expression name="56_FanartViewInfo">[[container.content(albums) | container.content(artists)] + Skin.HasSetting(56_Music_Info)] | 
-	                                      [container.content(episodes) + Skin.HasSetting(56_Episodes_Info)] | 
+
+	<expression name="56_FanartViewInfo">[[container.content(albums) | container.content(artists)] + Skin.HasSetting(56_Music_Info)] |
+	                                      [container.content(episodes) + Skin.HasSetting(56_Episodes_Info)] |
 										  [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Info)]</expression>
 
-    <expression name="56_FanartViewGallery">[[container.content(albums) | container.content(artists)] + Skin.HasSetting(56_Music_Gallery)] | 
-	                                         [container.content(episodes) + Skin.HasSetting(56_Episodes_Gallery)] | 
+    <expression name="56_FanartViewGallery">[[container.content(albums) | container.content(artists)] + Skin.HasSetting(56_Music_Gallery)] |
+	                                         [container.content(episodes) + Skin.HasSetting(56_Episodes_Gallery)] |
 											 [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Gallery)]</expression>
-	
-	<expression name="56_FanartIsAllItems">[String.IsEqual(ListItem.Label,$LOCALIZE[15102]) | String.IsEqual(ListItem.Label,$LOCALIZE[15103]) | String.IsEqual(ListItem.Label,$LOCALIZE[15104]) | String.IsEqual(ListItem.Label,$LOCALIZE[15105]) | 
+
+	<expression name="56_FanartIsAllItems">[String.IsEqual(ListItem.Label,$LOCALIZE[15102]) | String.IsEqual(ListItem.Label,$LOCALIZE[15103]) | String.IsEqual(ListItem.Label,$LOCALIZE[15104]) | String.IsEqual(ListItem.Label,$LOCALIZE[15105]) |
 	                                         String.IsEqual(ListItem.Label,$LOCALIZE[20366])]</expression>
-											 
-	<expression name="ShowExtraFanartOnInfo">[Container.Content(episodes) + Skin.HasSetting(56_Episodes_Info_ExtraFanart)] | 
-	                                         [[Container.Content(albums) | Container.Content(artists)] + Skin.HasSetting(56_Music_Info_ExtraFanart)] | 
+
+	<expression name="ShowExtraFanartOnInfo">[Container.Content(episodes) + Skin.HasSetting(56_Episodes_Info_ExtraFanart)] |
+	                                         [[Container.Content(albums) | Container.Content(artists)] + Skin.HasSetting(56_Music_Info_ExtraFanart)] |
 											 [[Container.Content(musicvideos) | Container.Content(movies) | container.content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(56_Posters_Info_ExtraFanart)]</expression>
-	
-	<expression name="56_FanartViewNetflix">[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix)] | 
-										  [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix)] | 
+
+	<expression name="56_FanartViewNetflix">[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix)] |
+										  [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix)] |
 										   [[container.content(artists) | container.content(albums)] + Skin.HasSetting(56_Music_Netflix)]]</expression>
-										   
-	<expression name="56_NetflixShowTitleInFooter">[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_TitleInFooter)] | 
-										  [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix_TitleInFooter)] | 
+
+	<expression name="56_NetflixShowTitleInFooter">[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_TitleInFooter)] |
+										  [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix_TitleInFooter)] |
 										   [[container.content(artists) | container.content(albums)] + Skin.HasSetting(56_Music_Netflix_TitleInFooter)]]</expression>
 
-    <expression name="56_NetflixTrailerWindow">Control.IsVisible(56) + [[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_TrailerWindow)] | 
-										       [[container.content(movies) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix_TrailerWindow)]]</expression>										   
+    <expression name="56_NetflixTrailerWindow">Control.IsVisible(56) + [[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_TrailerWindow)] |
+										       [[container.content(movies) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix_TrailerWindow)]]</expression>
 
-	
+
 	<include name="FocusSquare">
 	    <focusposition>2</focusposition>
 	</include>
-	
+
 	<include name="FocusPoster">
 	    <focusposition>4</focusposition>
 	</include>
-	
+
 	<include name="MovieFanartThumbDimensions">
 		<posx>15</posx>
 		<posy>15</posy>
@@ -105,7 +105,7 @@
 		<definition>
 		    <texture background="true">$VAR[Poster]</texture>
 		    <aspectratio aligny="top">$PARAM[aspect]</aspectratio>
-		</definition>	
+		</definition>
 	</include>
 	<include name="MovieFanartReflection">
 	    <param name="aspect">stretch</param>
@@ -117,9 +117,9 @@
 		    <colordiffuse>229e9e9e</colordiffuse>
 		    <texture background="true" flipy="true">$VAR[Poster]</texture>
 		    <aspectratio aligny="top">$PARAM[aspect]</aspectratio>
-		</definition>	
+		</definition>
 	</include>
-	
+
 	<include name="MovieLandscapeDimensions">
 		<posx>12</posx>
 		<posy>54</posy>
@@ -145,7 +145,7 @@
 		<texture background="true">$VAR[Landscape]</texture>
 		<aspectratio aligny="top">keep</aspectratio>
 	</include>
-	
+
 	<include name="SquareFanartThumbDimensions">
 		<posx>15</posx>
 		<width>297</width>
@@ -164,7 +164,7 @@
 		<texture background="true" flipy="true">$VAR[Square]</texture>
 		<aspectratio aligny="top">keep</aspectratio>
 	</include>
-	
+
 	<include name="DiscFanartThumbDimensions">
 		<posx>34</posx>
 		<width>310</width>
@@ -187,7 +187,7 @@
 		<texture background="true" flipy="true">$VAR[FanartDiscImage]</texture>
 		<aspectratio aligny="top">keep</aspectratio>
 	</include>
-	
+
 	<include name="EpisodeFanartThumbDimensions">
 		<posx>12</posx>
 		<posy>12</posy>
@@ -216,7 +216,7 @@
 		<texture background="true">$VAR[Episode]</texture>
 		<aspectratio aligny="top">scale</aspectratio>
 	</include>
-	
+
 	<include name="Fanart_Gallery">
 	    <control type="group" description="Gallery">
 		    <visible>!String.IsEmpty(Window.Property(gallery))</visible>
@@ -291,7 +291,7 @@
 			        <font>Details</font>
 			        <label>$VAR[panelsubheading2]</label>
                     <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) | [Container.Content(movies) | Container.Content(episodes)]</visible>
-			    </control>                        
+			    </control>
 			    <control type="label" description="Genre">
 				    <posy>207</posy>
 				    <height>33</height>
@@ -355,14 +355,14 @@
 			</control>
 		</control>
 	</include>
-	
+
 	<include name="TopRightOverlayFanart">
 	    <param name="isFocused">false</param>
 		<param name="isLandscape">false</param>
 		<param name="isSquare">false</param>
 		<definition>
 		    <control type="group">
-			    <visible>[String.IsEmpty(ListItem.DBType) + !String.IsEmpty(ListItem.Overlay)] | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | 
+			    <visible>[String.IsEmpty(ListItem.DBType) + !String.IsEmpty(ListItem.Overlay)] | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) |
 				         String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
 			    <!-- Overlay for normal icons, poster -->
 			    <control type="image">
@@ -628,16 +628,16 @@
 				        <width>72</width>
 			        </control>
 			    </control>
-			</control>	
+			</control>
 		</definition>
 	</include>
-	
+
 	<include name="TopRightOverlayGallery">
 		<definition>
 			<control type="group">
-			    <visible>[String.IsEmpty(ListItem.DBType) + !String.IsEmpty(ListItem.Overlay)] | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | 
+			    <visible>[String.IsEmpty(ListItem.DBType) + !String.IsEmpty(ListItem.Overlay)] | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) |
 				         String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
-			
+
 			    <!-- Overlay for normal icons -->
 			    <control type="image">
 				    <visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !ListItem.IsResumable</visible>
@@ -696,10 +696,10 @@
 				        <width>72</width>
 			        </control>
 			    </control>
-			</control>	
+			</control>
 		</definition>
 	</include>
-	
+
 	<include name="RatingOverlayFanart">
 	    <param name="isFocused">false</param>
 		<param name="isLandscape">false</param>
@@ -854,7 +854,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="RatingOverlayGallery">
 	    <param name="isSquare">false</param>
 		<definition>
@@ -913,7 +913,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="Fanart_Info">
 	    <definition>
 		    <!-- Info panel details -->
@@ -960,9 +960,9 @@
 					    <font>Details</font>
 					    <scroll>false</scroll>
 					    <label>$VAR[panelsubheading2]</label>
-                        <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) | 
+                        <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) |
 							[[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]]</visible>
-				    </control>                    
+				    </control>
 				    <control type="label" description="Genre">
 					    <posy>220</posy>
 					    <visible>![Container.Content(Artists) | Container.Content(albums)] + !ListItem.IsParentFolder + !$EXP[56_FanartIsAllItems] + !String.IsEmpty(ListItem.Genre)</visible>
@@ -1064,7 +1064,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="Fanart_Netflix_Info">
 	    <definition>
 		    <control type="group" description="item details">
@@ -1079,7 +1079,7 @@
 					    <height>204</height>
 					    <aspectratio align="left" aligny="bottom">keep</aspectratio>
 					    <texture background="true">$VAR[ClearLogo]</texture>
-						<visible>[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_Logo)] | 
+						<visible>[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_Logo)] |
 								 [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix_Logo)]]</visible>
 				    </control>
 					<control type="image" id="56889">
@@ -1093,8 +1093,8 @@
 				    </control>
 				    <control type="group">
 					    <top>70</top>
-					    <animation effect="slide" start="0" end="0,60" condition="![[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_Logo)] | 
-								                                                    [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix_Logo)] | 
+					    <animation effect="slide" start="0" end="0,60" condition="![[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_Logo)] |
+								                                                    [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix_Logo)] |
 								                                                    [[container.content(artists)] + Skin.HasSetting(56_Music_Netflix_Logo)]]">Conditional</animation>
 					    <control type="group">
 						    <visible>[!Control.IsVisible(56888) | String.IsEmpty(Control.GetLabel(56888))] + ![Container.Content(albums) | Container.Content(artists)]</visible>
@@ -1620,23 +1620,23 @@
 						    <visible>!String.IsEmpty(ListItem.Art(artist.clearlogo))</visible>
 				        </control>
 					</control>
-				</control>	
-			</control>	
+				</control>
+			</control>
 		</definition>
 	</include>
-	
+
 	<include name="View_56_Fanart">
 	    <param name="focusposition">2</param>
 		<param name="listposy">609</param>
 		<definition>
 		    <control type="group">
 			    <visible>Control.IsVisible(56)</visible>
-			    
+
 				<!-- Slide down the media items when trailer is playing -->
-			    <animation effect="slide" start="0,0" end="0,1080" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Trailer.MediaSlideOut) + Player.HasVideo + 
-			                                                                                                      Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + 
+			    <animation effect="slide" start="0,0" end="0,1080" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Trailer.MediaSlideOut) + Player.HasVideo +
+			                                                                                                      Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) +
 																											      !$EXP[56_FanartViewNetflix]">Conditional</animation>
-				
+
 				<control type="group" description="background">
 				    <include>VignetteFade</include>
 				    <control type="image">
@@ -1680,12 +1680,12 @@
                         <onup condition="String.IsEmpty(Window.Property(gallery)) + Skin.HasSetting(KioskMode.Enabled)">noop</onup>
                         <onup condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
 					    <onup condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">ClearProperty(MovieTrailerPlaying,Home)</onup>
-						
+
 						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
 				        <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
 				        <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
 				        <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
-						
+
 						<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
 					    <onup condition="!String.IsEmpty(Window.Property(gallery))">ClearProperty(gallery)</onup>
 					    <ondown condition="$EXP[56_FanartViewGallery]">SetProperty(gallery,true)</ondown>
@@ -1700,7 +1700,7 @@
 					    <focusposition>$PARAM[focusposition]</focusposition>
 					    <movement>0</movement>
 					    <preloaditems>4</preloaditems>
-					    
+
 						<!-- Poster type items: movies, sets, tvshows, seasons -->
 						<itemlayout height="339" width="240" condition="[[container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | ![$EXP[56_FanartViewNetflix]]]]">
 						    <control type="image">
@@ -1772,7 +1772,7 @@
 						    </control>
 						    <control type="image">
     							<include content="MovieFanartReflection">
-								    <param name="aspect">scale</param>    
+								    <param name="aspect">scale</param>
 								</include>
 						    </control>
 						    <include condition="Skin.HasSetting(ShowTopRightOverlays)" content="TopRightOverlayFanart">
@@ -1780,7 +1780,7 @@
 	    					</include>
                             <include condition="Skin.HasSetting(ShowRatingOverlays)" content="RatingOverlayFanart">
     	                        <param name="isFocused">false</param>
-	    					</include>							
+	    					</include>
 						    <control type="image">
 							    <posx>185</posx>
 							    <posy>286</posy>
@@ -1811,7 +1811,7 @@
 							    </control>
 							    <control type="image">
 								    <include content="MovieFanartReflection">
-								        <param name="aspect">scale</param>    
+								        <param name="aspect">scale</param>
 								    </include>
 							    </control>
 							    <control type="image">
@@ -1831,7 +1831,7 @@
 	    					    </include>
 						    </control>
 					    </focusedlayout>
-						
+
 						<!-- Landscape type items in Netflix style: movies, sets, tvshows, seasons -->
 						<itemlayout height="291" width="464" condition="[[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows)] + $EXP[56_FanartViewNetflix] + Skin.HasSetting(56_Posters_Netflix_Landscape)]">
 						    <control type="image">
@@ -1848,7 +1848,7 @@
                             <include condition="Skin.HasSetting(ShowRatingOverlays)" content="RatingOverlayFanart">
     	                        <param name="isFocused">false</param>
 								<param name="isLandscape">true</param>
-	    					</include>							
+	    					</include>
 						    <control type="image" description="Watched Overlay">
     							<posx>365</posx>
 							    <posy>235</posy>
@@ -1900,7 +1900,7 @@
 	    					    </include>
 						    </control>
 					    </focusedlayout>
-						
+
 						<!-- Episodes -->
 					    <itemlayout height="291" width="464" condition="container.content(episodes)">
 						    <control type="image">
@@ -2039,7 +2039,7 @@
 					            </control>
 						    </control>
 					    </focusedlayout>
-						
+
 						<!-- Square type items: Music -->
 					    <itemlayout height="344" width="344" condition="[container.content(artists) | [[Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(56_Use_Disc)]]">
 						    <control type="image">
@@ -2080,7 +2080,7 @@
 	    					    </include>
 						    </control>
 					    </focusedlayout>
-						
+
 						<!-- Disc type items: Albums or songs -->
 					    <itemlayout height="384" width="384" condition="[Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(56_Use_Disc)">
 						    <control type="image">
@@ -2104,7 +2104,7 @@
 							    </control>
 						    </control>
 					    </focusedlayout>
-						
+
 						<!-- Square type items: everything else -->
 					    <itemlayout height="344" width="344" condition="![container.content(artists) | container.content(albums) | container.content(songs) | container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]">
 						    <control type="image">
@@ -2121,7 +2121,7 @@
                             <include condition="Skin.HasSetting(ShowRatingOverlays)" content="RatingOverlayFanart">
     	                        <param name="isFocused">false</param>
 								<param name="isSquare">true</param>
-	    					</include>							
+	    					</include>
 						    <control type="image">
 							    <posx>265</posx>
 							    <posy>251</posy>
@@ -2158,7 +2158,7 @@
                                 <include condition="Skin.HasSetting(ShowRatingOverlays)" content="RatingOverlayFanart">
     	                            <param name="isFocused">true</param>
 								    <param name="isSquare">true</param>
-	    					    </include>								
+	    					    </include>
 						        <control type="image">
 							        <posx>265</posx>
 							        <posy>251</posy>
@@ -2170,11 +2170,11 @@
 						        </control>
 						    </control>
 					    </focusedlayout>
-						
+
 				    </control>
-					
+
 					<include>Fanart_Gallery</include>
-				
+
 				    <control type="scrollbar" id="66">
 					    <animation effect="slide" start="0,0" end="0,-3" time="150">Focus</animation>
 					    <visible>String.IsEmpty(Window.Property(gallery))</visible>
@@ -2220,7 +2220,7 @@
                         <onleft condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onleft>
                         <onleft condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onleft>
                         <onleft>SetFocus(66)</onleft>
-                    </control>            
+                    </control>
 
                     <control type="grouplist" id="66561">
                         <left>395</left>
@@ -2260,14 +2260,14 @@
                         <visible>Control.IsVisible(56)</visible>
                         <visible>String.IsEmpty(Window.Property(gallery))</visible>
                         <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
-                    </control>                
-                
+                    </control>
+
 			    </control>
-				
+
 				<include>Fanart_Info</include>
-				
+
 				<include>Fanart_Netflix_Info</include>
-			    
+
 			    <control type="group" description="Footer info">
 				    <include>ContentFade</include>
 				    <visible>String.IsEmpty(Window.Property(gallery)) + Control.IsVisible(56)</visible>
@@ -2279,14 +2279,14 @@
 						<param name="left">280</param>
 			        </include>
 			    </control>
-				
+
 				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="TouchButtons">
 			        <param name="ButtonsTop">935</param>
 				    <param name="id">56</param>
 				    <param name="left">1535</param>
 			    </include>
-				
+
 		    </control>
-		</definition>	
+		</definition>
 	</include>
 </includes>

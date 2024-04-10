@@ -4,11 +4,11 @@
 	<variable name="HomeClearLogo">
 		<!-- Widget Item Logo -->
 		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container.ListItem.Art(clearlogo))">$INFO[Container.ListItem.Art(clearlogo)]</value>
-		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + String.IsEmpty(ListItem.Property(recommendedtvshowtitle)) + 
+		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + String.IsEmpty(ListItem.Property(recommendedtvshowtitle)) +
 		                  String.IsEmpty(ListItem.Property(nextairedtvshowtitle)) + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + String.IsEmpty(ListItem.Property(recommendedtvshowtitle)) + 
-		                  String.IsEmpty(ListItem.Property(nextairedtvshowtitle)) + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>						  
-		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + String.IsEmpty(ListItem.Property(recommendedtvshowtitle)) + 
+		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + String.IsEmpty(ListItem.Property(recommendedtvshowtitle)) +
+		                  String.IsEmpty(ListItem.Property(nextairedtvshowtitle)) + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + String.IsEmpty(ListItem.Property(recommendedtvshowtitle)) +
 		                  String.IsEmpty(ListItem.Property(nextairedtvshowtitle)) + !String.IsEmpty(Container.ListItem.Art(clearlogo))">$INFO[Container.ListItem.Art(clearlogo)]</value>
 		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(ListItem.Property(nextairedtvshowtitle)) + !String.IsEmpty(ListItem.Property(nextairedclearlogo))">$INFO[ListItem.Property(nextairedclearlogo)]</value>
 		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(ListItem.Property(recommendedtvshowtitle)) + !String.IsEmpty(ListItem.Property(recommendedclearlogo))">$INFO[ListItem.Property(recommendedclearlogo)]</value>
@@ -220,7 +220,7 @@
 		<value condition="!String.IsEmpty(Control.GetLabel(4411)) + Skin.HasSetting(EnableExtraFanart)">$INFO[Control.GetLabel(4411)]</value>
 		<value condition="!String.IsEmpty(Control.GetLabel(4410)) + Skin.HasSetting(EnableExtraFanart)">$INFO[Control.GetLabel(4410)]</value>
 		<!-- Content-specific fanart for special video content -->
-		<value condition="Window.IsVisible(MyVideoNav.xml) + Skin.HasSetting(ShowSpecialFanart) + [Container.Content(actors) | Container.Content(directors) | Container.Content(years) | Container.Content(countries) | 
+		<value condition="Window.IsVisible(MyVideoNav.xml) + Skin.HasSetting(ShowSpecialFanart) + [Container.Content(actors) | Container.Content(directors) | Container.Content(years) | Container.Content(countries) |
 		                                                      Container.Content(tags) | Container.Content(genres) | Container.Content(studios)] + !String.IsEmpty(Container(4451).ListItem.Art(fanart))">$INFO[Container(4451).ListItem.Art(fanart)]</value>
 		<!-- Video Genre fanart -->
 		<value condition="Window.IsVisible(MyVideoNav.xml) + !Skin.HasSetting(ShowSpecialFanart) + Container.Content(genres) + !String.IsEmpty(Skin.String(moviegenrefanartresource.path)) + String.IsEqual(Skin.String(moviegenrefanartresource.ext),.png)">$INFO[Skin.String(moviegenrefanartresource.path)]$INFO[ListItem.Label,,.png]</value>
@@ -230,7 +230,7 @@
 		<value condition="Window.IsVisible(MyMusicNav.xml) + Container.Content(genres) + !String.IsEmpty(Skin.String(musicgenrefanartresource.path)) + String.IsEqual(Skin.String(musicgenrefanartresource.ext),.png)">$INFO[Skin.String(musicgenrefanartresource.path)]$INFO[ListItem.Label,,.png]</value>
 		<value condition="Window.IsVisible(MyMusicNav.xml) + Container.Content(genres) + !String.IsEmpty(Skin.String(musicgenrefanartresource.path)) + String.IsEqual(Skin.String(musicgenrefanartresource.ext),.jpg)">$INFO[Skin.String(musicgenrefanartresource.path)]$INFO[ListItem.Label,,.jpg]</value>
 		<value condition="Window.IsVisible(MyMusicNav.xml) + Container.Content(genres) + !String.IsEmpty(Skin.String(CustomMusicGenreFanartPath))">$INFO[Skin.String(CustomMusicGenreFanartPath)]$INFO[ListItem.Label]$VAR[MusicGenreFanartExt]</value>
-		
+
 		<value>$VAR[Fanart.Art]</value>
 	</variable>
 
@@ -246,9 +246,9 @@
 		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),nodeBackground) + !String.IsEmpty(Container(19990).ListItem.Art(fanart))">$INFO[Container(19990).ListItem.Art(fanart)]</value>
 		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + !String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + !String.IsEmpty(Container(19988).ListItem.Art(fanart))">$INFO[Container(19988).ListItem.Art(fanart)]</value>
 		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + !String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + String.IsEmpty(Container(19988).ListItem.Art(fanart))">$INFO[Skin.String(FocusedMenu.Background)]</value>
-		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + 
-		                  ![String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Movie.Fanart) | String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.TV.Fanart) | 
-						    String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Video.Fanart) | String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Music.Fanart) | 
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) +
+		                  ![String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Movie.Fanart) | String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.TV.Fanart) |
+						    String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Video.Fanart) | String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Music.Fanart) |
 							String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Global.Fanart)]">$INFO[Skin.String(FocusedMenu.Background)]</value>
 		<value>special://skin/backgrounds/Default.jpg</value>
 	</variable>
@@ -393,9 +393,9 @@
 		<value></value>
 	</variable>
 
-	<expression name="ExtraFanartPresent">!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart1)) | 
-	                                      !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | 
-										  !String.IsEmpty(ListItem.Art(artist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart1)) | 
+	<expression name="ExtraFanartPresent">!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart1)) |
+	                                      !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) |
+										  !String.IsEmpty(ListItem.Art(artist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart1)) |
 										  !String.IsEmpty(ListItem.Art(albumartist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart1))</expression>
 
 	<include name="DefaultBackground">
@@ -451,7 +451,7 @@
             </control>
 		</control>
 	</include>
-	
+
 	<include name="PVRBackground">
 	    <param name="viewid">50</param>
 		<definition>
@@ -474,14 +474,14 @@
 				<visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder] + Control.HasFocus(501)</visible>
 		    </control>
 		</definition>
-	</include>	
+	</include>
 
 	<!-- Movie/TV Show Logo for Home Window -->
 	<include name="HomeClearLogo">
 		<control type="group">
 
-			<visible>!Skin.HasSetting(HomeDefaultBG) + [[!Player.HasMedia + [Control.HasFocus(300) | ControlGroup(700).HasFocus]] | 
-			         [[Player.HasMedia + !Skin.HasSetting(Hide.NowPlaying) + ![Control.IsVisible(70101) | Control.IsVisible(70102)]] + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]] | 
+			<visible>!Skin.HasSetting(HomeDefaultBG) + [[!Player.HasMedia + [Control.HasFocus(300) | ControlGroup(700).HasFocus]] |
+			         [[Player.HasMedia + !Skin.HasSetting(Hide.NowPlaying) + ![Control.IsVisible(70101) | Control.IsVisible(70102)]] + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]] |
 					 [Skin.HasSetting(Hide.NowPlaying) + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]]]</visible>
 			<!-- Logo for vert. menu, no widgets -->
 			<control type="image">
@@ -508,7 +508,7 @@
 				<visible>!$EXP[widgetsAreShowing] + !Skin.HasSetting(VerticalHome)</visible>
 			</control>
 		</control>
-	</include>		
+	</include>
 
 	<!-- Movie/TV Show Widget Logo for Home Window -->
 	<include name="HomeWidgetLogo">
@@ -636,7 +636,7 @@
 					<aspectratio>keep</aspectratio>
 					<align>center</align>
 					<aligny>center</aligny>
-					<visible>$PARAM[ShowMediumLogo] + Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + 
+					<visible>$PARAM[ShowMediumLogo] + Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) +
 					         [[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)]</visible>
 				</control>
 				<!-- Logo when double shelf and fanart title below top bar, info line in shelf, icon menu -->
@@ -649,7 +649,7 @@
 					<aspectratio>keep</aspectratio>
 					<align>center</align>
 					<aligny>center</aligny>
-					<visible>$PARAM[ShowMediumLogo] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + 
+					<visible>$PARAM[ShowMediumLogo] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) +
 					         [[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)]</visible>
 				</control>
 
@@ -663,7 +663,7 @@
 					<aspectratio>keep</aspectratio>
 					<align>center</align>
 					<aligny>center</aligny>
-					<visible>[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + 
+					<visible>[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) +
 					         Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)</visible>
 				</control>
 				<!-- Logo when double shelf and fanart title below top bar, info line below top bar -->
@@ -676,7 +676,7 @@
 					<aspectratio>keep</aspectratio>
 					<align>center</align>
 					<aligny>center</aligny>
-					<visible>[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + 
+					<visible>[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) +
 					         Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)</visible>
 				</control>
 
@@ -706,7 +706,7 @@
 					<visible>$PARAM[ShowMedium2Logo] + !Skin.HasSetting(VerticalHome)</visible>
 				</control>
 			</control>
-		</definition>	 
+		</definition>
 	</include>
 
 
@@ -843,7 +843,7 @@
 			<posy>-20</posy>
 			<width>1</width>
 			<height>1</height>
-		</control>        
+		</control>
 		<!-- Hidden list for video fanart background -->
 		<control type="list" id="12346">
 			<content sortby="random" limit="5">videodb://movies/titles/</content>
@@ -892,7 +892,6 @@
 			<top>-1000</top>
 			<width>1</width>
 			<height>1</height>
-			<visible></visible>
 			<info>Player.Art(fanart1)</info>
 			<info>Player.Art(fanart2)</info>
 			<info>Player.Art(fanart3)</info>
@@ -1232,7 +1231,7 @@
 			<label>$INFO[ListItem.Art(artist.fanart20)]</label>
 		</control>
 	</include>
-	
+
 	<include name="SubBackgroundLists">
 		<!-- Hidden list for playlist fanart background -->
 		<control type="wraplist" id="19988">
@@ -1314,7 +1313,7 @@
 			<posy>-20</posy>
 			<width>1</width>
 			<height>1</height>
-		</control>        
+		</control>
 		<!-- Hidden list for video fanart background -->
 		<control type="list" id="112346">
 			<content sortby="random" limit="5">videodb://movies/titles/</content>
@@ -1357,20 +1356,20 @@
 	<include name="TitleButtonTopBar">
 		<left>0</left>
 		<top>1</top>
-		<height>38</height>                
+		<height>38</height>
 		<width min="0" max="550">auto</width>
 		<texturenofocus border="30,0,30,30">text_shadow.png</texturenofocus>
 		<font>FanartTitleFont</font>
-		<label>[I]$VAR[FanartTitleVar][/I]</label>    
+		<label>[I]$VAR[FanartTitleVar][/I]</label>
 	</include>
 	<include name="TitleButtonTopBarIcon">
 		<left>460</left>
 		<top>1</top>
-		<height>38</height>                
+		<height>38</height>
 		<width min="0" max="550">auto</width>
 		<texturenofocus border="30,0,30,30">text_shadow.png</texturenofocus>
 		<font>FanartTitleFont</font>
-		<label>[I]$VAR[FanartTitleVar][/I]</label>    
+		<label>[I]$VAR[FanartTitleVar][/I]</label>
 	</include>
 	<include name="HorizTitleButtonBelowTopBar">
 		<left>0</left>
@@ -1412,7 +1411,7 @@
 		<textcolor>FFDFDFDF</textcolor>
 		<focusedcolor>$VAR[HighlightColor]</focusedcolor>
 		<wrapmultiline>true</wrapmultiline>
-		<label>[I]$VAR[FanartTitleVar][/I]</label>    
+		<label>[I]$VAR[FanartTitleVar][/I]</label>
 	</include>
 	<include name="VertTitleButtonBelowNoTopBar">
 		<left>1600</left>
@@ -1426,19 +1425,19 @@
 		<textcolor>FFDFDFDF</textcolor>
 		<focusedcolor>$VAR[HighlightColor]</focusedcolor>
 		<wrapmultiline>true</wrapmultiline>
-		<label>[I]$VAR[FanartTitleVar][/I]</label>    
+		<label>[I]$VAR[FanartTitleVar][/I]</label>
 	</include>
 
 	<include name="ShowFanartTitle">
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="100" condition="[Player.Playing | Player.Paused | Player.Forwarding | Player.Rewinding] + Skin.HasSetting(FanartTitle.InTopBar) + !Skin.HasSetting(Hide.TitleBarNowPlaying)">Conditional</animation>
-			<visible>[[String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) | String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) | String.EndsWith(Container(300).ListItem.Property(background),.Fanart)] + !String.IsEqual(Container(300).ListItem.Property(background),Weather.Fanart)] | 
-			         [ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart))]</visible>					  
-			<visible>[Skin.HasSetting(Enable.Bottomshortcuts) + !Skin.HasSetting(VerticalHome)] | 
-			         Skin.HasSetting(FanartTitle.InTopBar) | 
-			         [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(FanartTitle.InTopBar) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) | 
-					                                   [Container(300).ListItem.Property(widgetThreeShelvesLarge) + [Control.HasFocus(300) | Control.HasFocus(9001)] + Container(300).ListItem.Property(widgetsHide)]]] | 
-                     [!Skin.HasSetting(VerticalHome) + !Skin.HasSetting(FanartTitle.InTopBar) + !$EXP[tripleWidgetIsShowing] + [!Container(300).ListItem.Property(widgetThreeShelves) | [Container(300).ListItem.Property(widgetThreeShelves) + [[[Control.HasFocus(300) | Control.HasFocus(9001)] + Container(300).ListItem.Property(widgetsHide)] | 
+			<visible>[[String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) | String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) | String.EndsWith(Container(300).ListItem.Property(background),.Fanart)] + !String.IsEqual(Container(300).ListItem.Property(background),Weather.Fanart)] |
+			         [ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart))]</visible>
+			<visible>[Skin.HasSetting(Enable.Bottomshortcuts) + !Skin.HasSetting(VerticalHome)] |
+			         Skin.HasSetting(FanartTitle.InTopBar) |
+			         [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(FanartTitle.InTopBar) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) |
+					                                   [Container(300).ListItem.Property(widgetThreeShelvesLarge) + [Control.HasFocus(300) | Control.HasFocus(9001)] + Container(300).ListItem.Property(widgetsHide)]]] |
+                     [!Skin.HasSetting(VerticalHome) + !Skin.HasSetting(FanartTitle.InTopBar) + !$EXP[tripleWidgetIsShowing] + [!Container(300).ListItem.Property(widgetThreeShelves) | [Container(300).ListItem.Property(widgetThreeShelves) + [[[Control.HasFocus(300) | Control.HasFocus(9001)] + Container(300).ListItem.Property(widgetsHide)] |
 					                                                                                                                                                                                       [String.IsEqual(Container(300).ListItem.Property(widgetType.2),none) | String.IsEqual(Container(300).ListItem.Property(widgetType.3),none)]]]]]</visible>
 			<control type="image">
 				<left>0</left>
@@ -1483,7 +1482,7 @@
 			<control type="label" id="1200102">
 				<visible>false</visible>
 				<label>$VAR[FanartDBTypeVar]</label>
-			</control>            
+			</control>
 			<control type="button" id="12001">
 				<include condition="Skin.HasSetting(FanartTitle.InTopBar) + !Skin.HasSetting(VerticalHome)">TitleButtonTopBar</include>
 				<include condition="Skin.HasSetting(FanartTitle.InTopBar) + Skin.HasSetting(VerticalHome)">TitleButtonTopBarIcon</include>
@@ -1498,7 +1497,7 @@
 				<ondown>9001</ondown>
 				<onleft>9001</onleft>
 				<onright>9001</onright>
-				<onback>9001</onback>            
+				<onback>9001</onback>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo) + !System.AddonIsEnabled(plugin.video.youtube)">SetProperty(CustomSearch,2,home)</onclick>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">Skin.Reset(CustomSearchTerm)</onclick>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">Skin.SetString(CustomSearchTerm,$ESCVAR[FanartTitleVar])</onclick>
@@ -1513,7 +1512,7 @@
 	<include name="ShowIconMenuLabel">
 		<control type="group" description="Icon Menu Item Label">
 			<animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240">Conditional</animation>
-			<visible>!Skin.HasSetting(ShowInfoLine) | [Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | 
+			<visible>!Skin.HasSetting(ShowInfoLine) | [Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] |
 			         [Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf) + String.IsEmpty(Container(300).ListItem.Property(InfoLine))]</visible>
 			<visible>$EXP[BelowIconLabelShouldShow]</visible>
 			<control type="image">
@@ -1586,9 +1585,9 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,artist)</visible>
-				<visible>!String.IsEmpty(ListItem.Art(clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) | 
-				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(discart))] | 
-						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(clearart))] | 
+				<visible>!String.IsEmpty(ListItem.Art(clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) |
+				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(discart))] |
+						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(clearart))] |
 						 [Skin.String(MediaViewsExtraArt,characterart) + String.IsEmpty(ListItem.Art(characterart)) + String.IsEmpty(ListItem.Art(clearart))]]</visible>
 			</control>
 			<control type="image">
@@ -1601,9 +1600,9 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<visible>String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)</visible>
-				<visible>!String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) | 
-				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(tvshow.discart))] | 
-						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(tvshow.clearart))] | 
+				<visible>!String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) |
+				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(tvshow.discart))] |
+						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(tvshow.clearart))] |
 						 [Skin.String(MediaViewsExtraArt,characterart) + String.IsEmpty(ListItem.Art(tvshow.characterart)) + String.IsEmpty(ListItem.Art(tvshow.clearart))]]</visible>
 			</control>
 			<control type="image">
@@ -1616,8 +1615,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<visible>String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,album)</visible>
-				<visible>!String.IsEmpty(ListItem.Art(artist.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) | 
-				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(discart))] | 
+				<visible>!String.IsEmpty(ListItem.Art(artist.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) |
+				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(discart))] |
 						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(clearart)) + String.IsEmpty(ListItem.Art(artist.clearart))]]</visible>
 			</control>
 			<control type="image">
@@ -1630,8 +1629,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<visible>String.IsEqual(ListItem.DBType,song)</visible>
-				<visible>!String.IsEmpty(ListItem.Art(artist.clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) | 
-				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(album.discart))] | 
+				<visible>!String.IsEmpty(ListItem.Art(artist.clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) |
+				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(album.discart))] |
 						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(artist.clearart)) + String.IsEmpty(ListItem.Art(albumartist.clearart))]]</visible>
 			</control>
 			<control type="image">
@@ -1644,8 +1643,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<visible>String.IsEqual(ListItem.DBType,song)</visible>
-				<visible>!String.IsEmpty(ListItem.Art(albumartist.clearlogo)) + String.IsEmpty(ListItem.Art(artist.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) | 
-				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(album.discart))] | 
+				<visible>!String.IsEmpty(ListItem.Art(albumartist.clearlogo)) + String.IsEmpty(ListItem.Art(artist.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) |
+				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(album.discart))] |
 						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(artist.clearart)) + String.IsEmpty(ListItem.Art(albumartist.clearart))]]</visible>
 			</control>
 			<control type="image">
@@ -1658,7 +1657,7 @@
 				<align>center</align>
 				<aligny>bottom</aligny>
 				<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,artist)</visible>
-				<visible>!String.IsEmpty(ListItem.Art(clearart)) + [Skin.String(MediaViewsExtraArt,clearart) | 
+				<visible>!String.IsEmpty(ListItem.Art(clearart)) + [Skin.String(MediaViewsExtraArt,clearart) |
 						 [Skin.String(MediaViewsExtraArt,characterart) + String.IsEmpty(ListItem.Art(characterart))]]</visible>
 			</control>
 			<control type="image">
@@ -1671,7 +1670,7 @@
 				<align>center</align>
 				<aligny>bottom</aligny>
 				<visible>String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)</visible>
-				<visible>!String.IsEmpty(ListItem.Art(tvshow.clearart)) + [Skin.String(MediaViewsExtraArt,clearart) | 
+				<visible>!String.IsEmpty(ListItem.Art(tvshow.clearart)) + [Skin.String(MediaViewsExtraArt,clearart) |
 						 [Skin.String(MediaViewsExtraArt,characterart) + String.IsEmpty(ListItem.Art(tvshow.characterart))]]</visible>
 			</control>
 			<control type="image">
@@ -1783,10 +1782,10 @@
 					<texture diffuse="img/disc.png" background="true">$INFO[ListItem.Art(discart)]</texture>
 					<include>SlideLeftSpinningDisc</include>
 				</control>
-			</control>	
-		</definition>	
+			</control>
+		</definition>
 	</include>
-	
+
 	<include name="ListTopDisc">
 		<param name="viewid">50</param>
 		<param name="discsize">450</param>
@@ -1804,8 +1803,8 @@
 					<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
 					<animation effect="slide" start="-800,0" end="0,0" delay="1400" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
 				</control>
-			</control>	
-		</definition>	
+			</control>
+		</definition>
 	</include>
 
 	<include name="LowListMovieSetDiscs">
@@ -1922,7 +1921,7 @@
 					<animation effect="slide" start="-1520,0" end="0,0" delay="1900" time="1200" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
 				</control>
 			</control>
-		</definition>	
+		</definition>
 	</include>
 
 	<include name="ListMovieSetDiscs">
@@ -1975,8 +1974,8 @@
 					<visible>!String.IsEmpty(Container(4450).ListItemAbsolute(4).Art(discart))</visible>
 					<animation effect="slide" start="-1100,0" end="0,0" delay="1600" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
 				</control>
-			</control>	
-		</definition>	
+			</control>
+		</definition>
 	</include>
 
 	<include name="ListMusicDisc">
@@ -1997,8 +1996,8 @@
 					<include>SlideLeftSpinningDisc</include>
 					<!--					<animation effect="slide" start="-800,0" end="0,0" delay="1400" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation> -->
 				</control>
-			</control>	
-		</definition>	
+			</control>
+		</definition>
 	</include>
 
 </includes>

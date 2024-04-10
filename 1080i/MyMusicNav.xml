@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	
+
 	<include>ViewIDs</include>
-	
+
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onload>ClearProperty(gallery)</onload>
 	<onunload>ClearProperty(gallery)</onunload>
@@ -150,7 +150,7 @@
 			<label>$INFO[Container.ListItem.Art(albumartist.fanart19)]</label>
 			<label>$INFO[Container.ListItem.Art(albumartist.fanart20)]</label>
 		</control>
-		
+
 		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
 		<include content="View_50_List" condition="!Skin.HasSetting(ListCenterFocus)">
@@ -189,7 +189,7 @@
 		<include>View_57_SimpleList</include>
 		<include>View_600_Triple</include>
 		<include>View_58_Logo</include>
-		
+
 		<control type="group" description="Showcase trigger">
 			<animation effect="slide" easing="out" start="0,0" end="0,-90" time="350" delay="0" center="120,350" reversible="true" condition="!String.IsEmpty(Window.Property(gallery))">Conditional</animation>
 			<include>VignetteFade</include>

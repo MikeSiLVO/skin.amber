@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	
+
 	<include>ViewIDs</include>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<menucontrol>9000</menucontrol>
@@ -39,13 +39,13 @@
 		</include>
 		<include>View_511_Panel2</include>
 <!--		<include>View_51_Panel</include
-		
+
 
 		<include>View_55_BigPanel</include>
 		<include>View_551_BigPanel2</include>
 		<include>View_53_Icons</include>
 		 -->
-        
+
 		<include>View_57_SimpleList</include>
 		<control type="group">
 			<include>VignetteFade</include>

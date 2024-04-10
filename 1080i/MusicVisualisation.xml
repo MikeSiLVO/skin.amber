@@ -36,7 +36,7 @@
 			<label>$INFO[Player.Art(artist.fanart19)]</label>
 			<label>$INFO[Player.Art(artist.fanart20)]</label>
 		</control>
-		
+
 		<!-- Fadelabel for extra fanart -->
 		<control type="fadelabel" id="4445">
 			<top>-100</top>
@@ -69,7 +69,7 @@
 			<label>$INFO[Player.Art(albumartist.fanart19)]</label>
 			<label>$INFO[Player.Art(albumartist.fanart20)]</label>
 		</control>
-		
+
 		<!-- Visualization -->
 		<control type="visualisation" id="2" description="Visualisation">
             <width>1920</width>
@@ -127,7 +127,7 @@
                 <effect type="fade" start="0" end="80" time="0" />
             </animation>
         </control>
-		
+
 		<!-- Artist Logo -->
 		<control type="image">
             <posy>15</posy>
@@ -140,7 +140,7 @@
 			<visible>!String.IsEqual(Skin.String(OSDExtraArt),logo) </visible>
 			<animation effect="fade" start="100" end="0" time="100" condition="Window.IsVisible(DialogSeekBar.xml) + !Skin.HasSetting(enable.bottomseekbar)">Conditional</animation>
         </control>
-		
+
 		<!-- Background image to dim lyrics -->
         <control type="image">
             <posy>-110</posy>
@@ -150,7 +150,7 @@
             <colordiffuse>ccE2E2E2</colordiffuse>
             <visible>Window.IsVisible(script-cu-lrclyrics-main.xml) + Skin.HasSetting(Music.DimWithLyrics)</visible>
         </control>
-		
+
 		<!-- Track Info -->
         <control type="group">
 			<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + !Window.IsActive(playerprocessinfo)</visible>
@@ -158,8 +158,8 @@
 
 			<include condition="Skin.HasSetting(enable.bottomseekbar)">LowerMusicFullScreenInfo</include>
 			<include condition="!Skin.HasSetting(enable.bottomseekbar)">RegularMusicFullScreenInfo</include>
-            
-            <!-- Background for seek bar/OSD -->			
+
+            <!-- Background for seek bar/OSD -->
             <include>OSDFade</include>
             <animation effect="fade" time="200">VisibleChange</animation>
             <control type="image">
@@ -176,7 +176,7 @@
                 <colordiffuse>FFE2E2E2</colordiffuse>
 				<visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
             </control>
-			
+
 			<!-- Album cover and dimming image if lyrics playing -->
 			<control type="group">
                 <visible>String.IsEqual(Skin.String(OSDExtraArt),poster)</visible>
@@ -222,8 +222,8 @@
                     <colordiffuse>HeavyShadow</colordiffuse>
                     <aspectratio align="center" aligny="bottom">keep</aspectratio>
                 </control>
-			</control>	
-			
+			</control>
+
 			<!-- Artist -->
             <control type="label">
                 <posx>30</posx>
@@ -235,7 +235,7 @@
                 <font>InfoTitle</font>
                 <textcolor>grey</textcolor>
             </control>
-			
+
 			<!-- Media flags -->
             <control type="grouplist">
                 <top>40</top>
@@ -245,9 +245,9 @@
                 <orientation>horizontal</orientation>
                 <itemgap>15</itemgap>
                 <align>right</align>
-				<include>PlayerAudioFlagItems</include>	
-			</control>	
-			
+				<include>PlayerAudioFlagItems</include>
+			</control>
+
 			<!-- Track number and title; recording indicator -->
             <control type="grouplist">
                 <left>30</left>
@@ -276,7 +276,7 @@
                     <scrollspeed>25</scrollspeed>
                 </control>
             </control>
-			
+
 			<!-- Album and Year -->
             <control type="label">
                 <posx>30</posx>
@@ -303,7 +303,7 @@
                 <visible>!Window.IsVisible(MusicOSD)</visible>
             </control>
         </control>
-		
+
 		<!-- Album Cover for Ultra Compact OSD -->
 		<control type="group">
             <visible>String.IsEqual(Skin.String(OSDExtraArt),poster) + Window.IsVisible(MusicOSD) + Skin.HasSetting(UseUltraCompactOSD)</visible>
@@ -328,7 +328,7 @@
                 <aspectratio align="center" aligny="bottom">keep</aspectratio>
             </control>
 		</control>
-		
+
 		<!-- Extra Artwork for all OSDs -->
 		<control type="group">
 		    <visible>!$EXP[showCompactSeekBar]</visible>
@@ -356,6 +356,6 @@
 				    <param name="artheight">440</param>
 			    </include>
             </control>
-		</control>	
+		</control>
     </controls>
 </window>

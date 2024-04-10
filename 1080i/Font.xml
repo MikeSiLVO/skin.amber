@@ -176,7 +176,7 @@
             <filename>UbuntuCondensed.ttf</filename>
             <style>uppercase</style>
             <size>18</size>
-        </font>        
+        </font>
         <font>
             <name>Details</name>
             <filename>UbuntuCondensed.ttf</filename>
@@ -223,7 +223,7 @@
             <name>MainMenuVerticalBig</name>
             <filename>BebasNeue.ttf</filename>
             <size>78</size>
-        </font>        
+        </font>
         <font>
             <name>MainMenu</name>
             <filename>BebasNeue.ttf</filename>
@@ -240,16 +240,16 @@
             <style>uppercase</style>
             <size>26</size>
         </font>
-		
+
 		<!-- Lyrics Fonts -->
 		<include>LyricsFonts</include>
-		
+
     </fontset>
     <fontset id="Default no caps" idloc="31391">
-        
+
 		<!-- Lyrics Fonts -->
 		<include>LyricsFonts</include>
-		
+
 		<!-- Generic Normal Fonts -->
         <font>
             <name>font10</name>
@@ -354,7 +354,7 @@
             <name>FanartTitleFont</name>
             <filename>UbuntuCondensed.ttf</filename>
             <size>21</size>
-        </font>        
+        </font>
         <font>
             <name>font22</name>
             <filename>UbuntuCondensed.ttf</filename>
@@ -390,7 +390,7 @@
             <name>ListDetailsExtraSmall</name>
             <filename>UbuntuCondensed.ttf</filename>
             <size>18</size>
-        </font>        
+        </font>
         <font>
             <name>Details</name>
             <filename>UbuntuCondensed.ttf</filename>
@@ -448,13 +448,13 @@
             <name>Mono26</name>
             <filename>UbuntuMono-R.ttf</filename>
             <size>26</size>
-        </font>        
+        </font>
     </fontset>
     <fontset id="Arial" idloc="31392">
-        
+
 		<!-- Lyrics Fonts -->
 		<include>LyricsFonts</include>
-		
+
 		<!-- Generic Normal Fonts -->
         <font>
             <name>font10</name>
@@ -571,7 +571,7 @@
         <font>
             <name>Date</name>
             <filename>arial.ttf</filename>
-            <aspect>0.80</aspect>     
+            <aspect>0.80</aspect>
             <size>35</size>
         </font>
         <!-- Amber Fonts -->
@@ -595,7 +595,7 @@
             <size>18</size>
             <aspect>0.80</aspect>
             <style>uppercase</style>
-        </font>        
+        </font>
         <font>
             <name>font22</name>
             <filename>arial.ttf</filename>
@@ -723,13 +723,13 @@
             <filename>arial.ttf</filename>
             <style>uppercase</style>
             <size>26</size>
-        </font> 
+        </font>
     </fontset>
     <fontset id="Arial nocaps" idloc="31393">
-        
+
 		<!-- Lyrics Fonts -->
 		<include>LyricsFonts</include>
-		
+
 		<!-- Generic Normal Fonts -->
         <font>
             <name>font10</name>
@@ -838,7 +838,7 @@
         <font>
             <name>Date</name>
             <filename>arial.ttf</filename>
-            <aspect>1.0</aspect>     
+            <aspect>1.0</aspect>
             <size>35</size>
         </font>
         <!-- Amber Fonts -->
@@ -859,7 +859,7 @@
             <filename>arial.ttf</filename>
             <size>23</size>
             <aspect>1.0</aspect>
-        </font>        
+        </font>
         <font>
             <name>font22</name>
             <filename>arial.ttf</filename>
@@ -958,7 +958,7 @@
             <size>60</size>
             <aspect>1.0</aspect>
             <style>normal</style>
-        </font>        
+        </font>
         <font>
             <name>MainMenu</name>
             <filename>arial.ttf</filename>
@@ -970,18 +970,18 @@
             <name>Font40_Icon</name>
             <filename>MaterialDesignIcons.ttf</filename>
             <size>40</size>
-        </font> 
+        </font>
         <font>
             <name>Mono26</name>
             <filename>arial.ttf</filename>
             <size>26</size>
-        </font>        
+        </font>
     </fontset>
     <fontset id="Trial" idloc="31394">
-        
+
 		<!-- Lyrics Fonts -->
 		<include>LyricsFonts</include>
-		
+
 		<!-- Generic Normal Fonts -->
         <font>
             <name>font10</name>
@@ -1175,7 +1175,7 @@
             <name>MainMenuVerticalBig</name>
             <filename>RobotoCondensed-Regular.ttf</filename>
             <size>78</size>
-        </font>        
+        </font>
         <font>
             <name>MainMenu</name>
             <filename>RobotoCondensed-Regular.ttf</filename>
@@ -1190,6 +1190,6 @@
             <name>Mono26</name>
             <filename>NotoSansMono-Regular.ttf</filename>
             <size>26</size>
-        </font>        
+        </font>
     </fontset>
 </fonts>
