@@ -5,7 +5,7 @@
 	<onload>SetFocus(10)</onload>
 
 	<controls>
-        <include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>      
+        <include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 	    <!-- Default background if no show selected -->
 		<include>DefaultBackground</include>
 		<include>OpenClose</include>
@@ -35,14 +35,14 @@
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[Container.ListItem.Art(fanart)]</texture>
-				<visible>Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003) | 
-				         Control.HasFocus(5004) | Control.HasFocus(5005) | Control.HasFocus(5006) | 
+				<visible>Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003) |
+				         Control.HasFocus(5004) | Control.HasFocus(5005) | Control.HasFocus(5006) |
 						 Control.HasFocus(5007)</visible>
 				<fadetime>600</fadetime>
 				<animation effect="fade" time="600">Visible</animation>
 				<animation effect="fade" time="600">Hidden</animation>
 			</control>
-            
+
 			<!-- Menu backgrounds -->
 			<control type="image" description="Left Side background">
 				<colordiffuse>dfcebe9e</colordiffuse>
@@ -62,15 +62,15 @@
 				<texture border="45">dialogs/TinyDialog.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
-            
+
 			<!-- Busy Loader -->
 			<control type="group">
 				<top>104</top>
 				<left>400</left>
 				<height>410</height>
-				<visible>![[!Container(5001).IsUpdating + Integer.IsGreater(Container(5001).NumItems,0)] | [!Container(5002).IsUpdating + Integer.IsGreater(Container(5002).NumItems,0)] | 
-				           [!Container(5003).IsUpdating + Integer.IsGreater(Container(5003).NumItems,0)] | [!Container(5004).IsUpdating + Integer.IsGreater(Container(5004).NumItems,0)] | 
-						   [!Container(5005).IsUpdating + Integer.IsGreater(Container(5005).NumItems,0)] | [!Container(5006).IsUpdating + Integer.IsGreater(Container(5006).NumItems,0)] | 
+				<visible>![[!Container(5001).IsUpdating + Integer.IsGreater(Container(5001).NumItems,0)] | [!Container(5002).IsUpdating + Integer.IsGreater(Container(5002).NumItems,0)] |
+				           [!Container(5003).IsUpdating + Integer.IsGreater(Container(5003).NumItems,0)] | [!Container(5004).IsUpdating + Integer.IsGreater(Container(5004).NumItems,0)] |
+						   [!Container(5005).IsUpdating + Integer.IsGreater(Container(5005).NumItems,0)] | [!Container(5006).IsUpdating + Integer.IsGreater(Container(5006).NumItems,0)] |
 						   [!Container(5007).IsUpdating + Integer.IsGreater(Container(5007).NumItems,0)]]</visible>
 				<include>InfoLoading</include>
 			</control>
@@ -114,7 +114,7 @@
 							<label>$INFO[ListItem.Label2]</label>
 							<font>InfoPlot</font>
 						</control>
-					</control>					
+					</control>
 				</itemlayout>
 				<focusedlayout width="397" height="60">
 					<control type="image" description="fa overlay">
@@ -138,12 +138,12 @@
 							<width>157</width>
 							<height>60</height>
 							<align>right</align>
-							<textcolor>$VAR[FocusedTextColor]</textcolor>						
+							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<font>InfoPlot</font>
 						</control>
-					</control>	
-				</focusedlayout>				
+					</control>
+				</focusedlayout>
                 <!-- Embuary Info provides 7 days of Next Aired info -->
 				<content>
 					<include content="EmbuaryInfoTVGuideItem">

@@ -5,18 +5,18 @@
 
 	<include>OSDFade</include>
 	<controls>
-	
+
 	    <control type="group" id="2">
-			
+
 			<include condition="Skin.HasSetting(enable.bottomseekbar)">LowerFullScreenInfo</include>
 			<include condition="!Skin.HasSetting(enable.bottomseekbar)">RegularFullScreenInfo</include>
-			
+
 			<animation effect="slide" start="0,0" end="0,120" time="150" condition="Skin.HasSetting(enable.bottomseekbar) + [Player.Paused + Skin.HasSetting(Hide.SeekBarWhenPaused) + System.IdleTime(3.5)]">Conditional</animation>
-			
+
 			<include>OSDFade</include>
 			<visible>!Window.IsVisible(playerprocessinfo)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
-			
+
 			<!-- Background -->
 			<control type="image" id="22">
 				<bottom>0</bottom>
@@ -34,7 +34,7 @@
 				<colordiffuse>FFE2E2E2</colordiffuse>
 				<visible>Skin.HasSetting(enable.bottomseekbar) + !Skin.HasSetting(Hide.SeekBarWhenPaused)</visible>
 			</control>
-			
+
 			<!-- Plot -->
 			<control type="group" id="20">
 			    <control type="group" id="20">
@@ -76,10 +76,10 @@
 				        <label>$VAR[VideoFullScreenPlot]</label>
 				        <autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
 			        </control>
-			    </control>			
+			    </control>
 			</control>
-			
-            <!-- Art: Poster/Thumb/Icon -->			
+
+            <!-- Art: Poster/Thumb/Icon -->
 			<control type="group" id="1">
 			    <visible>$EXP[showPosterOSD]</visible>
 			    <control type="group" id="1">
@@ -101,7 +101,7 @@
 			            <texture>$VAR[VideoPlayerIcon]</texture>
 			            <aspectratio align="center" aligny="bottom">keep</aspectratio>
 			        </control>
-			    </control>	
+			    </control>
 			    <control type="group" id="1">
 			        <visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
 			        <control type="image" id="24">
@@ -124,8 +124,8 @@
 				        <visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
 			        </control>
 			    </control>
-			</control>	
-			
+			</control>
+
 			<!-- Media Details -->
 			<control type="group" id="26">
 				<left>30</left>
@@ -175,8 +175,8 @@
 				    <scroll>true</scroll>
 				    <textcolor>grey</textcolor>
 			    </control>
-			</control>	
-			
+			</control>
+
 			<!-- Media Flags -->
 			<control type="group" id="1">
 			    <posx>855</posx>
@@ -222,7 +222,7 @@
 			    </control>
 			</control>
 		</control>
-			
+
 		<!-- Art: ClearLogo, ClearArt, CharacterArt or DiscArt -->
         <control type="group" id="1">
 			<control type="group" id="1">
@@ -246,7 +246,7 @@
 					<param name="artheight">360</param>
 				</include>
             </control>
-        </control>	
-		
+        </control>
+
 	</controls>
 </window>

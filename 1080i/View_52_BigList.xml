@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    
+
 	<include name="View_52_BigList">
 	    <param name="ListType">list</param>
 		<definition>
 		    <control type="group" description="Large Infolist2">
-			    
+
 				<include content="PVRBackground">
 			        <param name="viewid">52</param>
 			    </include>
-				
+
 				<include condition="$EXP[BigListPanelIsSwapped]" content="PVRBackground">
 				    <param name="viewid">152</param>
-				</include>				
-				
+				</include>
+
 				<include content="BackgroundOverlay">
 			        <param name="parentid" value="52"/>
 		        </include>
@@ -22,7 +22,7 @@
 			    <control type="$PARAM[ListType]" id="52">
 				    <viewtype label="$LOCALIZE[31999]">list</viewtype>
 					<posx>30</posx>
-                    <width>1860</width>					
+                    <width>1860</width>
 				    <posy>40</posy>
 				    <include condition="!Skin.HasSetting(Enable.TouchSupport)">BigListHeightStandard</include>
 				    <include condition="Skin.HasSetting(Enable.TouchSupport)">BigListHeightTouch</include>
@@ -30,12 +30,12 @@
                     <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
                     <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 					<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
-                    
+
 					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
 				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
 				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
 				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
-					
+
 					<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
                     <onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(62)]">62</onright>
 					<onright condition="Control.IsVisible(615)">615</onright>
@@ -44,7 +44,7 @@
 				    <preloaditems>4</preloaditems>
 				    <include condition="Skin.HasSetting(ListCenterFocus)">ListCenterFocusParams</include>
 					<visible>[$EXP[Exp_View_52] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.biglistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
-				    
+
 					<itemlayout height="104" width="1070" condition="[$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + !$EXP[BigListPanelIsSwapped]">
 					    <include content="52_layout">
 						    <param name="left">850</param>
@@ -65,7 +65,7 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-					
+
 					<itemlayout height="104" width="1070" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + !$EXP[BigListPanelIsSwapped] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
 					    <include content="52_layout">
 						    <param name="left">850</param>
@@ -86,8 +86,8 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-					
-					
+
+
 					<itemlayout height="104" width="1070" condition="[$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped]">
 					    <include content="52_layout">
 						    <param name="left">0</param>
@@ -112,7 +112,7 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-					
+
 					<itemlayout height="104" width="1070" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
 					    <include content="52_layout">
 						    <param name="left">0</param>
@@ -137,7 +137,7 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-					
+
 				    <itemlayout height="104" width="1020" condition="$EXP[BigListPanelIsSwapped] + [Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)]">
     					<include content="52_layout">
 	    					<param name="left">0</param>
@@ -162,7 +162,7 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-					
+
 					<itemlayout height="104" width="1020" condition="!$EXP[BigListPanelIsSwapped] + [Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)]">
     					<include content="52_layout">
 	    					<param name="left">850</param>
@@ -183,7 +183,7 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-				    
+
 					<itemlayout height="104" width="1070" condition="!$EXP[BigListPanelIsSwapped] + [Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)]">
 					    <include content="52_layout">
 						    <param name="left">850</param>
@@ -228,7 +228,7 @@
 						    <param name="image">$VAR[Square]</param>
 					    </include>
 				    </focusedlayout>
-					
+
 				    <itemlayout height="104" width="1070" condition="!$EXP[BigListPanelIsSwapped] + Container.Content(images)">
 					    <include content="52_layout">
 						    <param name="left">850</param>
@@ -269,7 +269,7 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-					
+
 			    </control>
 
 			    <control type="scrollbar" id="62">
@@ -316,7 +316,7 @@
                     <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                     <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                     <onup>SetFocus(62)</onup>
-                </control>            
+                </control>
 
                 <control type="grouplist" id="62521">
                     <posx>36r</posx>
@@ -370,7 +370,7 @@
                     <include content="AlphabetLetter"><param name="label" value="G" /></include>
                     <include content="AlphabetLetter"><param name="label" value="H" /></include>
                     <include content="AlphabetLetter"><param name="label" value="I" /></include>
-                    <include content="AlphabetLetter"><param name="label" value="J" /></include>                
+                    <include content="AlphabetLetter"><param name="label" value="J" /></include>
                     <include content="AlphabetLetter"><param name="label" value="K" /></include>
                     <include content="AlphabetLetter"><param name="label" value="L" /></include>
                     <include content="AlphabetLetter"><param name="label" value="M" /></include>
@@ -391,7 +391,7 @@
                     <visible>Control.IsVisible(52)</visible>
                     <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
                 </control>
-                
+
 				<include content="PanelTemplate52">
 				    <param name="visibility">[$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![$EXP[BigListPanelIsSwapped]]</param>
 			    </include>
@@ -403,7 +403,7 @@
 		            <param name="labelwidth">790</param>
 					<param name="visibility">[$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped]</param>
 			    </include>
-				
+
 				<include content="PanelTemplate52">
 				    <param name="visibility">![$EXP[BigListPanelIsSwapped]] + ![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(albums) | Container.Content(artists)]</param>
 			    </include>
@@ -415,7 +415,7 @@
 		            <param name="labelwidth">790</param>
 					<param name="visibility">$EXP[BigListPanelIsSwapped] + ![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(albums) | Container.Content(artists)]</param>
 			    </include>
-				
+
 				<include content="PanelTemplate52">
 				    <param name="viewid">152</param>
 					<param name="left">1040</param>
@@ -426,7 +426,7 @@
 					<param name="subheading2">$VAR[panelsubheading2]</param>
 					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 			    </include>
-				
+
 				<include content="PanelTemplate52">
 				    <param name="viewid">152</param>
 					<param name="left">1040</param>
@@ -437,19 +437,19 @@
 					<param name="subheading2">$VAR[panelsubheading2]</param>
 					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</param>
 			    </include>
-				
+
 				<include content="PanelTemplate52">
 					<param name="visibility">![$EXP[BigListPanelIsSwapped]] + [Container.Content(movies) | Container.Content(episodes)]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
 					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 			    </include>
-				
+
 				<include content="PanelTemplate52">
 					<param name="visibility">![$EXP[BigListPanelIsSwapped]] + [Container.Content(tvshows) | Container.Content(seasons)]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
 					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</param>
-			    </include>				
-				
+			    </include>
+
 			    <include content="PanelTemplate52">
                     <param name="plotheight">360</param>
 				    <param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + ![$EXP[BigListPanelIsSwapped]] + [Container.content(artists) | Container.content(albums)]</param>
@@ -476,47 +476,47 @@
 					<param name="plotheight">355</param>
 				    <param name="visibility">String.IsEqual(Skin.Font,Default no caps) + $EXP[BigListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
 			    </include>
-				
+
 				<include condition="!$EXP[BigListPanelIsSwapped]" content="PVRRecordingSpaceUsage">
 				    <param name="posx">30</param>
 					<param name="posy">1040</param>
 					<param name="width">810</param>
 				</include>
-				
+
 				<include condition="$EXP[BigListPanelIsSwapped]" content="PVRRecordingSpaceUsage">
 				    <param name="posx">1070</param>
 					<param name="posy">1040</param>
 					<param name="width">810</param>
 				</include>
-				
+
 				<include condition="!$EXP[BigListPanelIsSwapped]" content="PVRChannelProgress">
 				    <param name="posx">30</param>
 					<param name="posy">1040</param>
 					<param name="width">810</param>
 				</include>
-				
+
 				<include condition="$EXP[BigListPanelIsSwapped]" content="PVRChannelProgress">
 				    <param name="posx">1070</param>
 					<param name="posy">1040</param>
 					<param name="width">810</param>
 				</include>
-				
+
 				<include content="TouchButtons">
 		            <param name="ButtonsTop">985</param>
 			        <param name="id">52</param>
 					<param name="left">1525</param>
 					<param name="visibility">![$EXP[BigListPanelIsSwapped]]</param>
 		        </include>
-				
+
 				<include content="TouchButtons">
 		            <param name="ButtonsTop">985</param>
 			        <param name="id">52</param>
 					<param name="left">-10</param>
 					<param name="visibility">$EXP[BigListPanelIsSwapped]</param>
 		        </include>
-				
+
 		    </control>
-		</definition>	
+		</definition>
 	</include>
-    
+
 </includes>

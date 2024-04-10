@@ -238,7 +238,7 @@
 						</control>
                     </focusedlayout>
 				</control>
-				
+
 				<!-- 1200 - Network connections settings -->
 				<control type="list" id="1200">
 					<onup>1200</onup>

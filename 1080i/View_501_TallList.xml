@@ -4,15 +4,15 @@
 		<param name="ListType">list</param>
 		<definition>
 			<control type="group">
-				
+
 				<include content="PVRBackground">
 				    <param name="viewid">501</param>
 				</include>
-				
+
 				<include condition="$EXP[TallListPanelIsSwapped]" content="PVRBackground">
 				    <param name="viewid">1501</param>
-				</include>				
-				
+				</include>
+
 				<include content="BackgroundOverlay">
 					<param name="parentid" value="501"/>
 					<param name="overlaytop" value="60"/>
@@ -32,12 +32,12 @@
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 					<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
-					
+
 					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
 				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
 				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
 				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
-					
+
 					<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
 					<onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(6501)]">6501</onright>
 					<onright condition="Control.IsVisible(615)">615</onright>
@@ -106,7 +106,7 @@
 					<onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
 					<onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
 					<onup>SetFocus(6501)</onup>
-				</control>            
+				</control>
 
 				<control type="grouplist" id="65011">
 					<posx>36r</posx>
@@ -156,7 +156,7 @@
 					<include content="AlphabetLetter"><param name="label" value="G" /></include>
 					<include content="AlphabetLetter"><param name="label" value="H" /></include>
 					<include content="AlphabetLetter"><param name="label" value="I" /></include>
-					<include content="AlphabetLetter"><param name="label" value="J" /></include>                
+					<include content="AlphabetLetter"><param name="label" value="J" /></include>
 					<include content="AlphabetLetter"><param name="label" value="K" /></include>
 					<include content="AlphabetLetter"><param name="label" value="L" /></include>
 					<include content="AlphabetLetter"><param name="label" value="M" /></include>
@@ -176,7 +176,7 @@
 					<animation effect="fade" start="100" end="0" condition="![String.IsEqual(ListItem.SortLetter,O) | String.IsEqual(ListItem.SortLetter,P) | String.IsEqual(ListItem.SortLetter,Q) | String.IsEqual(ListItem.SortLetter,R) | String.IsEqual(ListItem.SortLetter,S) | String.IsEqual(ListItem.SortLetter,T) | String.IsEqual(ListItem.SortLetter,U) | String.IsEqual(ListItem.SortLetter,V) | String.IsEqual(ListItem.SortLetter,W) | String.IsEqual(ListItem.SortLetter,X) | String.IsEqual(ListItem.SortLetter,Y) | String.IsEqual(ListItem.SortLetter,Z)]">Conditional</animation>
 					<visible>Control.IsVisible(501)</visible>
 					<visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
-				</control>            
+				</control>
 
 				<include content="PanelTemplateTall">
 					<param name="top">118</param>
@@ -193,7 +193,7 @@
 					<param name="footer2">$VAR[panelfooter2]</param>
 					<param name="visibility">[Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)]  + !$EXP[TallListPanelIsSwapped]</param>
 				</include>
-				
+
 				<include content="PanelTemplateTall">
 					<param name="top">270</param>
 					<param name="left">605</param>
@@ -273,7 +273,7 @@
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="visibility">!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
-				</include>            
+				</include>
 				<include content="PanelTemplateTall">
 					<param name="top">118</param>
 					<param name="left">605</param>
@@ -317,7 +317,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
 				</include>
-				
+
 				<include content="PanelTemplateTall">
 					<param name="viewid">1501</param>
 					<param name="top">118</param>
@@ -334,7 +334,7 @@
 					<param name="footer2">$VAR[panelfooter2]</param>
 					<param name="visibility">[Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[TallListPanelIsSwapped]</param>
 				</include>
-				
+
 				<include content="PanelTemplateTall">
 					<param name="viewid">1501</param>
 					<param name="top">270</param>
@@ -419,7 +419,7 @@
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="visibility">!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
-				</include>            
+				</include>
 				<include content="PanelTemplateTall">
 					<param name="viewid">1501</param>
 					<param name="top">118</param>
@@ -466,7 +466,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
 				</include>
-				
+
 				<control type="group" description="501 MediaInfo">
 					<posx>20</posx>
 					<posy>100</posy>
@@ -480,7 +480,7 @@
 						<label>$VAR[listmediaheader]</label>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">560</param>
 						<param name="height">890</param>
@@ -494,7 +494,7 @@
 						<param name="texture">$INFO[Container(440501).ListItem.Icon]</param>
 						<param name="visibility">$EXP[PVRChannelPlaying] + $EXP[isPVRRecordingsGroups] + !$EXP[TallListPanelIsSwapped]</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">560</param>
 						<param name="height">890</param>
@@ -508,7 +508,7 @@
 						<param name="texture">$INFO[Container(4401501).ListItem.Icon]</param>
 						<param name="visibility">$EXP[PVRChannelPlaying] + $EXP[isPVRRecordingsGroups] + $EXP[TallListPanelIsSwapped]</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">560</param>
 						<param name="height">890</param>
@@ -531,7 +531,7 @@
 						<param name="texture">$VAR[Episode]</param>
 						<param name="visibility">Container.Content(episodes) + !Skin.HasSetting(EpisodesUsePoster)</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">560</param>
 						<param name="height">890</param>
@@ -545,7 +545,7 @@
 						<param name="texture">$VAR[Square]</param>
 						<param name="visibility">!$EXP[isPVRRecordingsGroups] + $EXP[PVRChannelPlaying] + ![Container.Content(images) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons) | Container.Content(episodes)]</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">560</param>
 						<param name="height">890</param>
@@ -566,12 +566,12 @@
 						<label>$VAR[listmediafooter]</label>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
-					
+
 					<!-- Rating overlay -->
 					<control type="group">
 					    <visible>Skin.HasSetting(ShowRatingOverlays) + $EXP[canShowRatingOverlay]</visible>
 					    <control type="group">
-				            <visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | 
+				            <visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) |
 							          [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]]</visible>
 							<control type="image">
 				                <texture background="true" flipx="true" colordiffuse="$VAR[HighlightColor]">overlays/toprightempty2.png</texture>
@@ -614,24 +614,24 @@
 					            <textcolor>$VAR[HighlightColor]</textcolor>
 					            <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				            </control>
-						</control>						
+						</control>
 					</control>
 				</control>
-				
+
 				<include content="ListViewsDiscArt">
 				    <param name="viewid">501</param>
 					<param name="posx">50</param>
 		            <param name="posy">460</param>
 		            <param name="discsize">500</param>
 				</include>
-				
+
 				<include content="ListMusicDisc">
 				    <param name="viewid">501</param>
 	                <param name="discsize">500</param>
 		            <param name="left">50</param>
 		            <param name="top">540</param>
 				</include>
-				
+
 				<include content="MediaFlags">
 					<param name="top">995</param>
 					<param name="left">20</param>
@@ -679,19 +679,19 @@
 					<param name="itemwidth">70</param>
 					<param name="itemheight">65</param>
 				</include>
-				
+
 				<include content="PVRRecordingSpaceUsage">
 				    <param name="posx">20</param>
 					<param name="posy">1006</param>
 					<param name="width">560</param>
 				</include>
-				
+
 				<include content="PVRChannelProgress">
 				    <param name="posx">20</param>
 					<param name="posy">1006</param>
 					<param name="width">560</param>
 				</include>
-				
+
 				<control type="group">
 		            <visible>$EXP[PVRChannelPlaying]</visible>
                     <left>0</left>
@@ -701,20 +701,20 @@
 			            <height>338</height>
                     </control>
                 </control>
-				
+
 				<include content="TouchButtons">
 		            <param name="ButtonsTop">980</param>
 			        <param name="id">501</param>
 					<param name="visibility">[![$EXP[TallListPanelIsSwapped]] | $EXP[TallListPanelIsDisabled]]</param>
 		        </include>
-				
+
 				<include content="TouchButtons">
 		            <param name="ButtonsTop">980</param>
 			        <param name="id">501</param>
 					<param name="left">740</param>
 					<param name="visibility">[$EXP[TallListPanelIsSwapped] + ![$EXP[TallListPanelIsDisabled]]]</param>
 		        </include>
-				
+
 			</control>
 		</definition>
 	</include>

@@ -2,4 +2,4 @@
 <window>
     <include condition="Skin.HasSetting(UseMultiViewsForChannels)">MultiViewsChannels</include>
 	<include condition="!Skin.HasSetting(UseMultiViewsForChannels)">SingleViewChannels</include>
-</window>	
+</window>

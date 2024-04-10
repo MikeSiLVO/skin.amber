@@ -3,7 +3,7 @@
     <!--
 
 	  CUSTOM WINDOWS LIST:
-	  
+
 	_1114 Custom_Quit * define Quit menu
     _1118 Custom_FullscreenMusic * go straight to visualisation when playing music
     _1119 CustomAddons * browse addons united under the same roof
@@ -15,9 +15,9 @@
    -->
 
     <include file="script-skinshortcuts-includes.xml"/>
-    <include file="script-skinviewtypes-includes.xml"/>    
+    <include file="script-skinviewtypes-includes.xml"/>
 	<include file="Includes_Variables.xml" />
-    
+
     <include file="Includes_Horizontal_Home.xml" />
     <include file="Includes_Vertical_Home.xml" />
     <include file="Includes_Shelf_Contents.xml" />
@@ -55,14 +55,14 @@
 	<include file="View_600_Triple.xml" />
 	<include file="View_502_RightList.xml" />
     <include file="View_PVR.xml" />
-	
-	
+
+
 	<include condition="Skin.HasSetting(Smaller.Fonts)" file="Includes_Defaults_Small.xml" />
 	<include condition="Skin.HasSetting(Regular.Fonts)" file="Includes_Defaults_Regular.xml" />
 	<include condition="Skin.HasSetting(Large.Fonts)" file="Includes_Defaults_Large.xml" />
 
     <include condition="![Skin.HasSetting(Smaller.Fonts) | Skin.HasSetting(Regular.Fonts) | Skin.HasSetting(Large.Fonts)]" file="Includes_Defaults_Regular.xml" />
-    
+
     <include name="DimBG">
         <control type="image">
             <width>1920</width>
@@ -148,13 +148,13 @@
                 <top>$PARAM[overlaytop]</top>
                 <width>$PARAM[overlaywidth]</width>
                 <height>$PARAM[overlayheight]</height>
-                <texture border="0,30,0,0">$PARAM[texture]</texture> 
+                <texture border="0,30,0,0">$PARAM[texture]</texture>
                 <colordiffuse>$VAR[ViewsBGColor]</colordiffuse>
             <!--     <colordiffuse>8FFFFFFF</colordiffuse> -->
             </control>
         </definition>
     </include>
-	
+
 	<include name="BackgroundOverlayVideoInfo">
         <param name="overlaywidth">1920</param>
         <param name="overlayheight">1120</param>
@@ -170,13 +170,13 @@
                 <top>$PARAM[overlaytop]</top>
                 <width>$PARAM[overlaywidth]</width>
                 <height>$PARAM[overlayheight]</height>
-                <texture border="0,30,0,0">OSD/FS_OSDBackground.png</texture> 
+                <texture border="0,30,0,0">OSD/FS_OSDBackground.png</texture>
                 <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
 <!--                 <colordiffuse>8FFFFFFF</colordiffuse> -->
             </control>
         </definition>
     </include>
-	
+
 	<include name="RatingsOverlayBG">
         <param name="overlaywidth">800</param>
         <param name="overlayheight">140</param>
@@ -193,12 +193,12 @@
                 <top>$PARAM[overlaytop]</top>
                 <width>$PARAM[overlaywidth]</width>
                 <height>$PARAM[overlayheight]</height>
-                <texture flipx="true">$PARAM[texture]</texture> 
+                <texture flipx="true">$PARAM[texture]</texture>
                 <colordiffuse>$VAR[ViewsBGColor]</colordiffuse>
             </control>
         </definition>
     </include>
-	
+
 	<include name="MediaViewstRatings">
 	    <param name="ratingstop">1010</param>
 		<param name="ratingsleft">1180</param>
@@ -266,7 +266,7 @@
                     <align>left</align>
                     <label>$INFO[ListItem.Rating]</label>
                     <visible>[String.IsEmpty(ListItem.Votes) | String.IsEqual(ListItem.Votes,0)]</visible>
-                </control>             
+                </control>
             </control>
             <control type="grouplist" description="IMDb Top 250 rank">
                 <visible>!string.IsEmpty(ListItem.Top250) + !Skin.HasSetting(HideTop250MediaViews)</visible>
@@ -280,7 +280,7 @@
                     <align>left</align>
                     <textcolor>$VAR[HighlightColor]</textcolor>
                     <label>[B]$INFO[ListItem.Top250,#][/B]</label>
-					
+
                 </control>
             </control>
             <control type="grouplist" description="RT Critics rating">
@@ -288,7 +288,7 @@
                 <width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -308,7 +308,7 @@
                 <width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -328,7 +328,7 @@
                 <width>90</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>5</itemgap>            
+                <itemgap>5</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -347,7 +347,7 @@
                 <visible>!String.IsEmpty(Container(4460).ListItem.Rating(themoviedb))</visible>
                 <width>115</width>
                 <orientation>horizontal</orientation>
-                <itemgap>5</itemgap>  
+                <itemgap>5</itemgap>
                 <align>left</align>
                 <control type="image" description="TMDB logo">
                     <height>40</height>
@@ -368,7 +368,7 @@
                 <width>100</width>
                 <orientation>horizontal</orientation>
                 <itemgap>5</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="TVDB logo">
                     <height>40</height>
                     <width>71</width>
@@ -390,7 +390,7 @@
                 <width>90</width>
                 <orientation>horizontal</orientation>
                 <itemgap>5</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="Trakt logo">
 					<height>40</height>
                     <width>40</width>
@@ -412,7 +412,7 @@
                 <width>80</width>
                 <orientation>horizontal</orientation>
                 <itemgap>0</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="User Rating logo">
                     <height>40</height>
                     <width>40</width>
@@ -432,7 +432,7 @@
                 <orientation>horizontal</orientation>
                 <itemgap>1</itemgap>
 				<align>left</align>
-                <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] | 
+                <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] |
 				         [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
 				<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
                 <control type="image" description="Oscars logo">
@@ -473,7 +473,7 @@
                     <label>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)]</label>
 					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
                 </control>
-            </control>            
+            </control>
         </control>
 		</definition>
     </include>
@@ -706,11 +706,11 @@
                 <shadowcolor>ShadowDark</shadowcolor>
 				<visible>!Skin.HasSetting(VerticalHome) + [String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
             </control>
-			
+
 			<control type="group">
 			    <visible>Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)</visible>
-			    <visible>[String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [[Control.HasFocus(300) | Control.HasFocus(9001) | Control.HasFocus(12001)] + [Container(300).ListItem.Property(widgetsHide) | String.IsEmpty(Container(300).ListItem.Property(widgetPath))]]] | 
-				         [!String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) | 
+			    <visible>[String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [[Control.HasFocus(300) | Control.HasFocus(9001) | Control.HasFocus(12001)] + [Container(300).ListItem.Property(widgetsHide) | String.IsEmpty(Container(300).ListItem.Property(widgetPath))]]] |
+				         [!String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) |
 				          [Container(300).ListItem.Property(widgetThreeShelvesLarge) + Control.HasFocus(300) + Container(300).ListItem.Property(widgetsHide)]]]</visible>
 				<control type="image">
                     <posx>436</posx>
@@ -753,8 +753,8 @@
 			</control>
 			<control type="group">
 			    <visible>Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)</visible>
-			    <visible>[String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [[Control.HasFocus(300) | Control.HasFocus(9001) | Control.HasFocus(12001)] + [Container(300).ListItem.Property(widgetsHide) | String.IsEmpty(Container(300).ListItem.Property(widgetPath))]]] | 
-				         [!String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) | 
+			    <visible>[String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [[Control.HasFocus(300) | Control.HasFocus(9001) | Control.HasFocus(12001)] + [Container(300).ListItem.Property(widgetsHide) | String.IsEmpty(Container(300).ListItem.Property(widgetPath))]]] |
+				         [!String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) |
 				          [Container(300).ListItem.Property(widgetThreeShelvesLarge) + Control.HasFocus(300) + Container(300).ListItem.Property(widgetsHide)]]]</visible>
 				<control type="image">
                     <posx>134</posx>
@@ -1134,7 +1134,7 @@
             </item>
         </definition>
     </include>
-	
+
 	<include name="CustomDialogSettingItem">
         <param name="itemid" />
         <param name="itemlabel" />
@@ -1152,7 +1152,7 @@
             </item>
         </definition>
     </include>
-	
+
 	<include name="SubcontentInfoList">
 	    <param name="subcontent_label1">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
         <param name="subcontent_label2">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
@@ -1264,9 +1264,9 @@
             <control type="grouplist" id="4000" description="Media Info Panel">
                 <include>OpenClose</include>
                 <visible>$PARAM[visibility]</visible>
-                <visible>[[$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules]] + [Container.Content(files) | Container.Content(videos) | Container.Content() | Container.Content(episodes) | 
-				         Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]] | 
-						 [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | 
+                <visible>[[$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules]] + [Container.Content(files) | Container.Content(videos) | Container.Content() | Container.Content(episodes) |
+				         Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]] |
+						 [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) |
 						 Container.Content(images) | Container.Content(games) | Container.Content(songs)]</visible>
                 <posx>$PARAM[left]</posx>
                 <posy>$PARAM[top]</posy>
@@ -1343,8 +1343,8 @@
                         <font>ListDetails</font>
                         <label>[B]$PARAM[subheading2][/B]</label>
                         <aligny>center</aligny>
-                    </control>                
-				</control>	
+                    </control>
+				</control>
                 <control type="group">
                     <width>$PARAM[width]</width>
                     <height>$PARAM[height]</height>
@@ -1353,8 +1353,8 @@
 					    <!-- Plot when there is no next episode info or audio/sub info being displayed -->
 						<control type="textbox">
                             <top>5</top>
-						    <visible>[!Skin.HasSetting(ShowAudioSub) + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] | 
-						             [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | 
+						    <visible>[!Skin.HasSetting(ShowAudioSub) + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] |
+						             [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] |
 								     [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
 						    <align>justify</align>
                             <label fallback="19055">$PARAM[plot]</label>
@@ -1373,7 +1373,7 @@
 					    <!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
 					    <control type="textbox">
     					    <top>40</top>
-						    <visible>!$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | 
+						    <visible>!$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] |
 						             [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 						    <height>$PARAM[plotheight]</height>
                             <align>justify</align>
@@ -1384,7 +1384,7 @@
 					    <!-- Plot for episodes/tv shows/seasons in low panel when audio/sub info or next aired episode info is shown -->
 					    <control type="textbox">
 					        <top>40</top>
-						    <visible>$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + Container.Content(episodes) + 
+						    <visible>$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + Container.Content(episodes) +
 						             ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 						    <height>160</height>
                             <align>justify</align>
@@ -1411,7 +1411,7 @@
                             <label>$PARAM[plot]</label>
                             <font>InfoPlot</font>
                         </control>
-					</control>	
+					</control>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="subcontent_visible">ListItem.IsCollection + [String.IsEmpty(ListItem.Plot) | Skin.HasSetting(AlwaysShowSetList)]</param>
@@ -1429,7 +1429,7 @@
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
 						<param name="subinfoheight">$PARAM[subinfoheight]</param>
-					</include>	
+					</include>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">4300</param>
@@ -1453,21 +1453,21 @@
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
 						<param name="subinfoheight">$PARAM[subinfoheight]</param>
-					</include>					
+					</include>
                 </control>
 			</control>
 			<!-- Footer and media flags -->
             <control type="grouplist">
                 <visible>$PARAM[visibility]</visible>
-                <visible>[!String.IsEmpty(Listitem.Duration) | !String.IsEmpty(Listitem.Genre) | !String.IsEmpty(Listitem.Year) | !String.IsEmpty(ListItem.Episode)] | 
-				          [!String.IsEmpty(ListItem.Property(Artist_Genre)) | !String.IsEmpty(ListItem.Property(Artist_YearsActive))] | 
+                <visible>[!String.IsEmpty(Listitem.Duration) | !String.IsEmpty(Listitem.Genre) | !String.IsEmpty(Listitem.Year) | !String.IsEmpty(ListItem.Episode)] |
+				          [!String.IsEmpty(ListItem.Property(Artist_Genre)) | !String.IsEmpty(ListItem.Property(Artist_YearsActive))] |
 				         [Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)]</visible>
                 <posx>$PARAM[left]</posx>
                 <posy>$PARAM[footertop]</posy>
                 <width>$PARAM[width]</width>
 				<height>$PARAM[footerheight]</height>
 				<itemgap>7</itemgap>
-                <orientation>vertical</orientation>	
+                <orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="label" description="Footer">
                     <visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos)]</visible>
@@ -1475,7 +1475,7 @@
                     <height>25</height>
                     <font>ListDetails</font>
                     <label>$VAR[panelfooter2]</label>
-                </control>				
+                </control>
                 <control type="label" description="Footer">
                     <visible>$PARAM[showfooter]</visible>
                     <width>$PARAM[width]</width>
@@ -1594,10 +1594,10 @@
 						<param name="lowpanel">true</param>
                     </include>
                 </control>
-			</control>	
+			</control>
         </definition>
     </include>
-	
+
     <!-- Panel Template for Tall List -->
     <include name="PanelTemplateTall">
 		<param name="viewid">501</param>
@@ -1628,15 +1628,14 @@
             <control type="group" id="4000" description="Media Info Panel">
                 <include>OpenClose</include>
                 <visible>$PARAM[visibility]</visible>
-                <visible>[$EXP[PanelShouldShow] + [Container.Content(files) | Container.Content(videos) | Container.Content() | Container.Content(episodes) | 
-				         Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]] | 
-						 [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | 
+                <visible>[$EXP[PanelShouldShow] + [Container.Content(files) | Container.Content(videos) | Container.Content() | Container.Content(episodes) |
+				         Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]] |
+						 [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) |
 						 Container.Content(images) | Container.Content(games)]</visible>
                 <posx>$PARAM[left]</posx>
                 <posy>$PARAM[top]</posy>
                 <width>$PARAM[width]</width>
 				<height>$PARAM[groupheight]</height>
-                <orientation>vertical</orientation>
                 <control type="label" description="Title Label">
                     <top>-8</top>
                     <width>$PARAM[width]</width>
@@ -1675,8 +1674,8 @@
 						<!-- Plot when there is no next episode info or audio/sub info being displayed -->
 					    <control type="textbox" id="4001">
                             <top>5</top>
-						    <visible>[!Skin.HasSetting(ShowAudioSub) + [Container.Content(movies) | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] | 
-						             [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | 
+						    <visible>[!Skin.HasSetting(ShowAudioSub) + [Container.Content(movies) | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] |
+						             [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] |
 								     [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
 						    <align>justify</align>
                             <label fallback="19055">$PARAM[plot]</label>
@@ -1686,7 +1685,7 @@
 					    <!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
 					    <control type="textbox" id="4001">
 					        <top>50</top>
-						    <visible>[[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | 
+						    <visible>[[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] |
 						             [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 						    <height>$PARAM[plotheight]</height>
                             <align>justify</align>
@@ -1711,7 +1710,7 @@
                             <label>$PARAM[plot]</label>
                             <font>InfoPlot</font>
                         </control>
-					</control>	
+					</control>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="subcontent_visible">ListItem.IsCollection + [String.IsEmpty(ListItem.Plot) | Skin.HasSetting(AlwaysShowSetList)]</param>
@@ -1729,7 +1728,7 @@
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
 						<param name="subinfoheight">$PARAM[subinfoheight]</param>
-					</include>	
+					</include>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">430</param>
@@ -1753,8 +1752,8 @@
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
 						<param name="subinfoheight">$PARAM[subinfoheight]</param>
-					</include>					
-                </control>                
+					</include>
+                </control>
                 <control type="label" description="Footer 2">
                     <top>$PARAM[footertop]</top>
 					<visible>$PARAM[showfooter2]</visible>
@@ -1768,7 +1767,7 @@
 				<control type="label" description="Footer">
                     <top>$PARAM[footer2top]</top>
                     <visible>$PARAM[showfooter]</visible>
-					<visible>[!String.IsEmpty(Listitem.Duration) | !String.IsEmpty(Listitem.Genre) | !String.IsEmpty(Listitem.Year) | !String.IsEmpty(ListItem.Episode)] | 
+					<visible>[!String.IsEmpty(Listitem.Duration) | !String.IsEmpty(Listitem.Genre) | !String.IsEmpty(Listitem.Year) | !String.IsEmpty(ListItem.Episode)] |
 				         [Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)]</visible>
                     <width>$PARAM[width]</width>
                     <height>75</height>
@@ -1798,7 +1797,7 @@
         <definition>
             <control type="group" id="4000" description="Media Info Panel">
                 <include>OpenClose</include>
-                <visible>$PARAM[visibility]</visible>                
+                <visible>$PARAM[visibility]</visible>
                 <posx>$PARAM[left]</posx>
                 <posy>$PARAM[top]</posy>
                 <width>$PARAM[width]</width>
@@ -1814,7 +1813,7 @@
                     <wrapmultiline>true</wrapmultiline>
                     <label>$PARAM[heading]</label>
                 </control>
-				
+
 				<control type="group">
 		            <visible>$EXP[PVRChannelPlaying]</visible>
                     <left>67</left>
@@ -1824,7 +1823,7 @@
 			            <height>399</height>
                     </control>
                 </control>
-				
+
 				<control type="group">
 				    <animation effect="fade" start="100" end="0" time="100" condition="$EXP[PVRChannelPlaying]">Conditional</animation>
 				    <include content="ShadowedImage">
@@ -1872,8 +1871,8 @@
 					        <textcolor>$VAR[FocusedTextColor]</textcolor>
 				        </control>
 				    </control>
-				</control>	
-				
+				</control>
+
                 <control type="group">
 				    <visible>String.IsEqual(ListItem.DBType,episode)</visible>
 					<control type="label" description="Subheading Label">
@@ -1930,7 +1929,7 @@
                     <align>center</align>
                     <font>ListDetails</font>
                     <label>$PARAM[subheading2]</label>
-                </control>                
+                </control>
                 <control type="group">
                     <width>$PARAM[plotwidth]</width>
                     <height>$PARAM[plotheight]</height>
@@ -1962,7 +1961,7 @@
 						<param name="width">800</param>
 						<param name="labelwidth">$PARAM[labelwidth]</param>
 						<param name="subinfoheight">$PARAM[subinfoheight]</param>
-					</include>	
+					</include>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">4300</param>
@@ -1986,7 +1985,7 @@
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[labelwidth]</param>
 						<param name="subinfoheight">$PARAM[subinfoheight]</param>
-					</include>					
+					</include>
                 </control>
 		        <control type="grouplist" description="Flags">
 			        <top>975</top>
@@ -2000,11 +1999,11 @@
 					    <param name="diffuse">$VAR[LabelTextColor]</param>
 						<param name="itemwidth">90</param>
 			        </include>
-		        </control>                
+		        </control>
             </control>
         </definition>
     </include>
- 
+
     <include name="MediaFlags">
         <param name="top"></param>
         <param name="left"></param>
@@ -2034,7 +2033,7 @@
                 </include>
             </control>
         </definition>
-    </include>    
+    </include>
 
     <include name="HolidaySub">
         <param name="type">snow</param>
@@ -2285,7 +2284,7 @@
                 <visible>!String.IsEmpty(Window(Home).Property(NextAired.$PARAM[TVGuideDayID].Wday))</visible>
             </item>
         </definition>
-    </include>	
+    </include>
 
     <include name="TVGuideFanart">
         <param name="TVGuideDayID" />
@@ -2300,7 +2299,7 @@
                 <fadetime>600</fadetime>
                 <animation effect="fade" time="600">Visible</animation>
                 <animation effect="fade" time="600">Hidden</animation>
-            </control>		
+            </control>
         </definition>
     </include>
 
@@ -2314,7 +2313,7 @@
         <onleft>9000</onleft>
         <orientation>horizontal</orientation>
         <scrolltime tween="quadratic">300</scrolltime>
-        <pagecontrol>60</pagecontrol>		
+        <pagecontrol>60</pagecontrol>
         <itemlayout height="840" width="447">
             <control type="image">
                 <top>20</top>
@@ -2348,7 +2347,7 @@
                 <label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] [B][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Property(NextSeasonNumber)][/COLOR][/B]  [COLOR $VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] [B][COLOR Grey2]$INFO[ListItem.Property(NextEpisodeNumber)][/COLOR][/B]</label>
                 <textoffsetx>15</textoffsetx>
                 <font>InfoPlot</font>
-            </control>			
+            </control>
             <control type="textbox">
                 <left>20</left>
                 <top>460</top>
@@ -2493,7 +2492,7 @@
                 <label>[B]$LOCALIZE[32011]:[/B]</label>
                 <textoffsetx>15</textoffsetx>
                 <font>InfoTitle</font>
-                <textcolor>$VAR[FocusedTextColor]</textcolor>				
+                <textcolor>$VAR[FocusedTextColor]</textcolor>
             </control>
             <control type="label">
                 <top>790</top>
@@ -2506,7 +2505,7 @@
             </control>
         </focusedlayout>
     </include>
-	
+
 	<!-- Fanart Time Per Image -->
 	<include name="FanartTimePerImage5">
 		<timeperimage>5000</timeperimage>
@@ -2541,7 +2540,7 @@
 	<include name="FanartTimePerImage90">
 		<timeperimage>90000</timeperimage>
 	</include>
-    
+
 	<include name="MultiImageTime">
 		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),5)">FanartTimePerImage5</include>
 		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),6)">FanartTimePerImage6</include>
@@ -2590,7 +2589,7 @@
 	<include name="Autoscroll90">
 		<autoscroll time="90000">true</autoscroll>
 	</include>
-    
+
     <include name="AutoscrollTime">
 		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),5)">Autoscroll5</include>
 		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),6)">Autoscroll6</include>
@@ -2604,7 +2603,7 @@
 		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),60)">Autoscroll60</include>
 		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),90)">Autoscroll90</include>
 	</include>
-    
+
     <!-- Extrafanart Fadelabel Pause -->
 	<include name="FadelabelPauseAtEnd5">
 		<pauseatend>5000</pauseatend>
@@ -2689,7 +2688,7 @@
         <onunload>ClearProperty(WidgetFocus31,Home)</onunload>
         <onunload>ClearProperty(WidgetFocus32,Home)</onunload>
     </include>
-    
+
     <include name="ClearWidgetNavProperties2">
         <onload>ClearProperty(WidgetFocus1)</onload>
         <onload>ClearProperty(WidgetFocus2)</onload>
@@ -2723,7 +2722,7 @@
         <onload>ClearProperty(WidgetFocus30)</onload>
         <onload>ClearProperty(WidgetFocus31)</onload>
         <onload>ClearProperty(WidgetFocus32)</onload>
-    </include>    
+    </include>
 
 	<include name="PVRChannelNumberInput">
 		<control type="label">
@@ -2789,16 +2788,16 @@
             <visible>$EXP[SortLetterIsNumber]</visible>
         </control>
     </include>
-	
+
 	<!-- The following thanks to sualfred for his Embuary Helper script and to MikeSiLVO for his implementation -->
 
 	<!-- Jump to letter includes -->
 
 	<include name="ScriptJumpToLetter">
 		<control type="group">
-			<visible>Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31157]) + 
-			         [Container.HasNext | Container.HasPrevious] + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | 
-					                                                String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | 
+			<visible>Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31157]) +
+			         [Container.HasNext | Container.HasPrevious] + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) |
+					                                                String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) |
 																	String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
 			<control type="button" id="61501">
 				<visible>![Control.IsVisible(56) | Control.IsVisible(58)]</visible>
@@ -2830,7 +2829,7 @@
                     <top>41</top>
                     <width>40</width>
                     <height>1040</height>
-                    <texture border="0,30,0,0">common/viewmenu.png</texture> 
+                    <texture border="0,30,0,0">common/viewmenu.png</texture>
                 </control>
 			    <control type="list" id="615">
 				    <visible>Skin.HasSetting(Show.JumpToLetter) + Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
@@ -2863,7 +2862,7 @@
 				            <width>44</width>
 				            <height>41</height>
 				            <texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
-			            </control>					
+			            </control>
                         <control type="label">
 						    <height>37</height>
 						    <align>center</align>
@@ -2874,7 +2873,7 @@
 				    </focusedlayout>
 				    <content>plugin://script.embuary.helper/?info=jumptoletter&amp;showall=true&amp;reload=$INFO[Container.NumItems]</content>
 			    </control>
-			</control>	
+			</control>
 			<control type="group">
 			    <top>1080</top>
 				<width>1920</width>
@@ -2922,9 +2921,9 @@
 		</control>
 		<!-- Jump to letter for Triple view -->
 		<control type="group">
-			<visible>Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(Container.Viewmode,$LOCALIZE[31157]) + 
-			         [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | 
-					  String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | 
+			<visible>Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(Container.Viewmode,$LOCALIZE[31157]) +
+			         [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) |
+					  String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) |
 					  String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
 			<control type="button" id="61701">
 				<label />
@@ -2946,7 +2945,7 @@
                     <top>41</top>
                     <width>40</width>
                     <height>1040</height>
-                    <texture border="0,30,0,0">common/viewmenu.png</texture> 
+                    <texture border="0,30,0,0">common/viewmenu.png</texture>
                 </control>
 			    <control type="list" id="617">
 				    <visible>[String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
@@ -2971,7 +2970,7 @@
 				            <width>44</width>
 				            <height>41</height>
 				            <texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
-			            </control>					
+			            </control>
                         <control type="label">
 						    <height>37</height>
 						    <align>center</align>
@@ -2982,10 +2981,10 @@
 				    </focusedlayout>
 				    <content>plugin://script.embuary.helper/?info=jumptoletter&amp;showall=true&amp;reload=$INFO[Container.NumItems]</content>
 			    </control>
-			</control>	
+			</control>
 		</control>
     </include>
-	
+
 	<include name="ViewIDs">
         <views>50,51,511,52,53,54,55,551,56,501,57,58,502,600</views>
 		<defaultcontrol>50</defaultcontrol>
@@ -3008,7 +3007,7 @@
 			<texturefocus colordiffuse="$VAR[HighlightColor]" border="4">img/WhiteRoundedST2.png</texturefocus>
 		</definition>
 	</include>
-	
+
 	<include name="SetCountList">
 	    <!-- Hidden list for movie count for sets -->
 		<control type="list" id="4450">
@@ -3021,7 +3020,7 @@
 			<content sortby="year" sortorder="ascending">$VAR[MovieSetPath]</content>
  		</control>
 	</include>
-	
+
 	<include name="SpecialFanartList">
 	    <!-- Hidden list for fanart background for studios, genres, countries, etc. -->
 		<control type="list" id="4451">
@@ -3032,11 +3031,11 @@
 	        <itemlayout />
 	        <focusedlayout />
 			<visible>!String.StartsWith(ListItem.FolderPath,plugin) + [Container.Content(genres) | Container.Content(studios) | Container.Content(years) |
-			                                                           Container.Content(countries) | Container.Content(tags) | Container.Content(actors) | 
+			                                                           Container.Content(countries) | Container.Content(tags) | Container.Content(actors) |
 																	   Container.Content(directors)]</visible>
         </control>
 	</include>
-	
+
 	<include name="EmbuaryHelperDetailsList">
 		<control type="group">
 		    <visible>!Container.Content(seasons)</visible>
@@ -3049,21 +3048,21 @@
 		        <focusedlayout height="100" width="100" />
 			    <content limit="1">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=$INFO[ListItem.DBType]</content>
 		    </control>
-		</control>	
+		</control>
 	</include>
-	
+
 	<include name="SmallerFonts">
 	    <font>ListDetails</font>
 	</include>
-	
+
 	<include name="RegularFonts">
 	    <font>font16</font>
 	</include>
-	
+
 	<include name="LargeFonts">
 	    <font>font18</font>
 	</include>
-	
+
 	<include name="AutoCompleteSuggestions">
 	    <!-- Autocompletion suggestions -->
         <control type="group">
@@ -3078,7 +3077,6 @@
                 <left>0</left>
                 <onup>8001</onup>
                 <ondown>312</ondown>
-                <itemgap>20</itemgap>
                 <orientation>horizontal</orientation>
                 <itemlayout height="70" width="460">
                     <control type="group">
@@ -3118,7 +3116,7 @@
             </control>
         </control>
 	</include>
-	
+
 	<include name="SkinSettingsArrows">
 	    <param name="panelid">9101</param>
 		<definition>
@@ -3132,7 +3130,7 @@
 					<texture flipy="true">icons/arrowdown.png</texture>
 					<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 					<visible>Container($PARAM[panelid]).HasPrevious</visible>
-					
+
 				</control>
 				<control type="image">
 				    <top>980</top>
@@ -3152,5 +3150,5 @@
 		<onunfocus condition="!Skin.HasSetting(VerticalHome)+ String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)">SetProperty(customValue,false)</onunfocus>
 		<onunfocus condition="!Skin.HasSetting(VerticalHome)+ String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)">SendClick(404)</onunfocus>
     </include>
-	
+
 </includes>

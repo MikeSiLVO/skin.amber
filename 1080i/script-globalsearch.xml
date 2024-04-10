@@ -6,11 +6,11 @@
 
 		<include>DefaultBackground</include>
 		<include>OpenClose</include>
-        
+
 		<control type="group">
 
 			<control type="group">
-		
+
                 <control type="image">
 			        <posx>0</posx>
 			        <posy>0</posy>
@@ -41,7 +41,7 @@
 				    <texture border="45">dialogs/TinyDialog.png</texture>
 					<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			    </control>
-			
+
 			    <control type="list" id="9000">
 				    <posx>65</posx>
 				    <posy>120</posy>
@@ -54,7 +54,7 @@
 				    <onup>9000</onup>
 				    <ondown>9000</ondown>
 				    <scrolltime tween="quadratic">300</scrolltime>
-				
+
 				    <itemlayout width="322" height="60">
 					    <control type="image">
 						    <width>322</width>
@@ -75,7 +75,7 @@
 						        <align>right</align>
 						        <label>$INFO[ListItem.Label2]</label>
 					        </control>
-					    </control>					
+					    </control>
 				    </itemlayout>
 				    <focusedlayout width="322" height="60">
 					    <control type="image" description="fa overlay">
@@ -98,13 +98,13 @@
 						        <width>301</width>
 						        <height>60</height>
 						        <align>right</align>
-						        <textcolor>$VAR[FocusedTextColor]</textcolor>						
+						        <textcolor>$VAR[FocusedTextColor]</textcolor>
 						        <label>$INFO[ListItem.Label2]</label>
 					        </control>
-					    </control>	
-				    </focusedlayout>				
+					    </control>
+				    </focusedlayout>
 			    </control>
-                
+
 			    <control type="panel" id="53">
 		            <left>470</left>
 		            <top>100</top>
@@ -117,7 +117,7 @@
 					<ondown>53</ondown>
 					<viewtype label="536">bigicon</viewtype>
 					<preloaditems>8</preloaditems>
-                    
+
                     <itemlayout condition="Container.Content(TvShows) | container.content(movies) | Container.Content(seasons)" height="326" width="232.5">
 				        <include content="GenericPosterIconSmall">
 					        <param name="isFocused">false</param>
@@ -128,7 +128,7 @@
 					        <param name="isFocused">true</param>
 				        </include>
 			        </focusedlayout>
-                    
+
 			        <itemlayout condition="Container.Content(episodes)" height="226" width="310">
 				        <include content="GenericEpisodeIconBig">
 					        <param name="isFocused">false</param>
@@ -160,10 +160,10 @@
 				        <include content="GenericThumbIconBig">
 					        <param name="isFocused">true</param>
 				        </include>
-			        </focusedlayout>                    
+			        </focusedlayout>
 
 			    </control>
-                
+
                 <control type="image" description="Footer Dim BG">
                     <posx>454</posx>
                     <posy>818</posy>
@@ -180,7 +180,7 @@
                     <texture>OSD/FS_OSDBackground.png</texture>
                     <colordiffuse>dfcebe9e</colordiffuse>
                 </control>
-                
+
 		        <control type="group" description="Media Info Lite">
 			        <include>ContentFade</include>
 			        <posy>855</posy>
@@ -285,9 +285,9 @@
 			            </include>
 		            </control>
 		        </control>
-                
+
 		    </control>
-		
+
         	<control type="scrollbar" id="61">
 				<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 				<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
@@ -334,7 +334,7 @@
 			    </control>
 				<control type="button" id="2">
                     <include>HiddenButton</include>
-			    </control>                
+			    </control>
                	<control type="label" id="991">
 		            <left>-3000</left>
 		            <top>-3000</top>
@@ -350,9 +350,9 @@
 		            <height>1</height>
 		            <label></label>
 		            <font></font>
-                </control>                
-		    </control>		
+                </control>
+		    </control>
         </control>
 
-    </controls>    
+    </controls>
 </window>

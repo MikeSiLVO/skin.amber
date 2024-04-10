@@ -8,9 +8,9 @@
 	<!-- Needed to auto close the video osd after any settings dialog is closed -->
 	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ActivateWindow(1196)</onunload>
 	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ClearProperty(ShowingOSDSettings,home)</onunload>
-	
+
 	<controls>
-	
+
 		<control type="button">
 		    <description>Hidden button to close the popup when you click outside it</description>
 		    <posx>0</posx>
@@ -21,13 +21,13 @@
 		    <texturefocus></texturefocus>
 		    <onclick>Dialog.Close(1145)</onclick>
 		</control>
-		
+
 		<control type="button" id="6000">
 			<include>HiddenButton</include>
 			<onfocus condition="Skin.HasSetting(SeasonsEpisodeList)">SetFocus(6001)</onfocus>
 			<onfocus condition="!Skin.HasSetting(SeasonsEpisodeList)">SetFocus(6003)</onfocus>
 		</control>
-		
+
 		<control type="group">
 			<left>290</left>
 			<top>28</top>
@@ -36,7 +36,7 @@
 				<height>820</height>
 				<texture border="0,40,0,40">dialogs/DialogBG.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
-			</control>            
+			</control>
 			<control type="label">
 				<left>0</left>
 				<top>32</top>
@@ -67,7 +67,7 @@
 				<texture>img/LineL.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
-			
+
 			<control type="group">
 			    <visible>Skin.HasSetting(SeasonsEpisodeList)</visible>
 				<control type="image">
@@ -140,7 +140,7 @@
 			        <aspectratio>stretch</aspectratio>
 		        </control>
 			</control>
-			
+
 			<!-- Episodes list with seasons -->
             <control type="list" id="6002">
 				<visible>Skin.HasSetting(SeasonsEpisodeList) + String.IsEqual(Container(6001).ListItem.DBType,season)</visible>
@@ -157,8 +157,6 @@
 				<pagecontrol>61</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
-				<movement>10</movement>
-				<focusposition>0</focusposition>
 				<viewtype label="EpisodeList">list</viewtype>
 				<itemlayout height="67.5">
 					<control type="image">
@@ -295,8 +293,6 @@
 				<pagecontrol>61</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
-				<movement>10</movement>
-				<focusposition>0</focusposition>
 				<viewtype label="EpisodeList">list</viewtype>
 				<itemlayout height="67.5">
 					<control type="image">
@@ -387,7 +383,7 @@
 				</focusedlayout>
 				<content target="video" sortby="episode" sortorder="ascending">videodb://tvshows/titles/$INFO[Window(Home).Property(PlayerTVShowID)]/$INFO[VideoPlayer.Season]/?tvshowid=$INFO[Window(Home).Property(PlayerTVShowID)]</content>
 			</control>
-			
+
 			<!-- Movie info if linked movie to tv series -->
             <control type="grouplist" id="6004">
 				<visible>Skin.HasSetting(SeasonsEpisodeList) + String.IsEqual(Container(6001).ListItem.DBType,movie)</visible>
@@ -423,7 +419,7 @@
     				        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 					        <aspectratio>keep</aspectratio>
 				        </control>
-					</control>	
+					</control>
 					<control type="group">
 					    <visible>Skin.HasSetting(ShowTopRightOverlays)</visible>
 						<control type="group">
@@ -437,7 +433,7 @@
 				                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                <aspectratio>keep</aspectratio>
 			                </control>
-						</control>	
+						</control>
 						<!-- In-Progress overlay -->
 				        <control type="group">
 				            <visible>Integer.IsGreater(Container(6001).ListItem.PercentPlayed,0) + !Skin.HasSetting(Hide_InProgress_Marks)</visible>
@@ -470,7 +466,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[EpisodesListRatingOverlayVar]</label>
 					        <textcolor>$VAR[HighlightColor]</textcolor>
-					        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				        </control>
 					</control>
 					<control type="label">
@@ -511,7 +506,7 @@
 					</control>
 				</control>
 			</control>
-			
+
 			<control type="scrollbar" id="61">
 				<left>1012</left>
 				<top>32</top>

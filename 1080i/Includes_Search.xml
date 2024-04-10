@@ -21,8 +21,8 @@
 				<top>$PARAM[overlaytop]</top>
 				<width>$PARAM[overlaywidth]</width>
 				<height>$PARAM[overlayheight]</height>
-				<texture border="0,30,0,0">OSD/FS_OSDBackground.png</texture> 
-				<colordiffuse>dfcebe9e</colordiffuse> 
+				<texture border="0,30,0,0">OSD/FS_OSDBackground.png</texture>
+				<colordiffuse>dfcebe9e</colordiffuse>
 			</control>
 		</definition>
 	</include>
@@ -84,7 +84,7 @@
 			            <aspectratio>stretch</aspectratio>
 			        </control>
 				</control>
-            </control>				
+            </control>
 			<control type="panel" id="$PARAM[id]">
 			    <height>$PARAM[height]</height>
 				<visible>Integer.IsGreater(Container($PARAM[id]).NumItems,0) | Container($PARAM[id]).IsUpdating</visible>
@@ -121,7 +121,7 @@
 			</control>
 		</definition>
 	</include>
-    
+
 	<!-- Poster -->
 	<include name="SearchPosterList">
 		<param name="headline">$LOCALIZE[416]</param>
@@ -200,7 +200,7 @@
 			</control>
 		</definition>
 	</include>
-    
+
 	<!-- Square -->
 	<include name="SearchSquareList">
 		<param name="headline">$LOCALIZE[416]</param>
@@ -268,5 +268,5 @@
 			</control>
 		</definition>
 	</include>
-    
+
 </includes>

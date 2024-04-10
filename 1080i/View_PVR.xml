@@ -73,7 +73,7 @@
 					<info>ListItem.Progress</info>
 					<visible>!ListItem.IsRecording</visible>
 				</control>
-			</control>	
+			</control>
 		</definition>
 	</include>
 
@@ -223,53 +223,53 @@
 				<control type="button" id="100">
 					<description>Channels</description>
 					<include>9000SysButtons</include>
-					<label>$LOCALIZE[19019]</label> 
-					<onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick> 
-					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick> 
-					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick> 
+					<label>$LOCALIZE[19019]</label>
+					<onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
+					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
 				</control>
 				<control type="button" id="101">
 					<description>TV Guide</description>
 					<include>9000SysButtons</include>
-					<label>$LOCALIZE[22020]</label> 
-					<onright>10</onright>	  
-					<onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick> 
-					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick> 
-					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick> 
+					<label>$LOCALIZE[22020]</label>
+					<onright>10</onright>
+					<onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
+					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
 				</control>
 				<control type="button" id="102">
 					<description>Recordings</description>
 					<include>9000SysButtons</include>
-					<label>$LOCALIZE[19163]</label> 
-					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick> 
-					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick> 
+					<label>$LOCALIZE[19163]</label>
+					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
 				</control>
 				<control type="button" id="103">
 					<description>Timer Rules</description>
 					<include>9000SysButtons</include>
-					<label>$LOCALIZE[19138]</label> 
-					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick> 
-					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimerRules)</onclick> 
+					<label>$LOCALIZE[19138]</label>
+					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
+					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimerRules)</onclick>
 				</control>
 				<control type="button" id="104">
 					<description>Timers</description>
 					<include>9000SysButtons</include>
-					<label>$LOCALIZE[19040]</label> 
-					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick> 
-					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick> 
+					<label>$LOCALIZE[19040]</label>
+					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
 				</control>
 				<control type="button" id="105">
 					<description>Search</description>
 					<visible>![Window.IsActive(TVSearch) | Window.IsActive(RadioSearch)]</visible>
 					<include>9000SysButtons</include>
-					<label>$LOCALIZE[137]</label> 
-					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick> 
-					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick> 
+					<label>$LOCALIZE[137]</label>
+					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
 				</control>
 			</control>
 		</control>
 	</include>
-	
+
 	<!-- EPG TIMELINE -->
 	<include name="EPGTimelineView">
 		<control type="group">
@@ -277,8 +277,8 @@
 			<visible>Control.IsVisible(10)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="epggrid" id="10">
-				<viewtype label="$LOCALIZE[19032]">list</viewtype> 
-				<description>EPG Grid</description> 
+				<viewtype label="$LOCALIZE[19032]">list</viewtype>
+				<description>EPG Grid</description>
 				<posx>30</posx>
 				<width>1850</width>
 				<include condition="!Skin.HasSetting(Enable.TouchSupport)">EPGHeightStandard</include>
@@ -471,8 +471,8 @@
 						<scroll>false</scroll>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-						<shadowcolor></shadowcolor> 
-					</control>			  
+						<shadowcolor></shadowcolor>
+					</control>
 				</focusedlayout>
 			</control>
 			<control type="image" description="Top split">
@@ -595,7 +595,7 @@
 		<views>50,54,501,52,51,511,55,551,53,502</views>
 		<menucontrol>9000</menucontrol>
 		<controls>
-			<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>       
+			<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 			<include>DefaultBackground</include>
 			<control type="group">
 
@@ -632,7 +632,7 @@
 
 				<include>View_53_Icons</include>
 
-				<include >View_502_RightList</include>			
+				<include >View_502_RightList</include>
 
 			</control>
 			<include>PVRChannelNumberInput</include>

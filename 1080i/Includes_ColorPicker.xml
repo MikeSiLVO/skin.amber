@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	
+
     <variable name="ColorValueLabelVar">
         <value condition="String.IsEqual(Window(Home).Property(colorpick),HighlightColor) + !String.IsEqual(Skin.String(HighlightColorStr),None)">$INFO[Skin.String(HighlightColorStr)]</value>
 	    <value condition="String.IsEqual(Window(Home).Property(colorpick),LabelTextColor) + !String.IsEqual(Skin.String(LabelTextColorStr),None)">$INFO[Skin.String(LabelTextColorStr)]</value>
@@ -15,8 +15,8 @@
 	    <value condition="String.IsEqual(Window(Home).Property(colorpick),ViewsBGColor) + !String.IsEqual(Skin.String(ViewsBGColorStr),None)">$INFO[Skin.String(ViewsBGColorStr)]</value>
         <value>$LOCALIZE[571]</value>
     </variable>
-	
-	
+
+
 	<include name="Items_ColorPalette_Material">
         <content>
             <item>
@@ -1320,7 +1320,7 @@
             </item>
         </content>
     </include>
-	
+
     <include name="Items_ColorPalette_Standard">
         <content>
             <item>
