@@ -74,7 +74,7 @@
 					<param name="height">1010</param>
 					<param name="shadowoffset">16</param>
 					<param name="texture">$INFO[ListItem.thumb]</param>
-					<param name="visibility">String.IsEmpty(ListItem.Art(poster)</param>
+					<param name="visibility">String.IsEmpty(ListItem.Art(poster))</param>
 				</include>
 				<!-- Poster -->
 				<include content="ShadowedImage">
@@ -84,7 +84,7 @@
 					<param name="height">1010</param>
 					<param name="shadowoffset">16</param>
 					<param name="texture">$INFO[ListItem.Art(poster)]</param>
-					<param name="visibility">!String.IsEmpty(ListItem.Art(poster)</param>
+					<param name="visibility">!String.IsEmpty(ListItem.Art(poster))</param>
 				</include>
 				
 				<control type="group" description="List">
@@ -193,7 +193,7 @@
 		                    <param name="width">292</param>
 		                    <param name="itemgap">3</param>
 		                    <param name="onleft">9000</param>
-						</include>	
+						</include>
 					</control>
 					<control type="group">
 			            <posx>1793</posx>
