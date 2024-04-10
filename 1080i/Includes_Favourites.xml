@@ -2,11 +2,11 @@
 <includes>
 
     <include name="StandardFavouritesLayout">
-	
+
 	    <include content="BackgroundOverlay">
 			<param name="parentid" value="450"/>
 		</include>
-	    
+
 	    <control type="panel" id="450" description="Grid">
 			<posx>30</posx>
 			<posy>60</posy>
@@ -67,20 +67,20 @@
 			<orientation>vertical</orientation>
 			<onleft>450</onleft>
 		</control>
-		
+
 		<include>Time</include>
-		
+
 	</include>
-	
+
 	<include name="AlternateFavouritesBigList">
-	    
+
 		<include content="BackgroundOverlay">
 			<param name="parentid" value="450"/>
 		</include>
-		
+
 	    <control type="list" id="450">
 			<posx>30</posx>
-            <width>1860</width>					
+            <width>1860</width>
 		    <posy>40</posy>
     	    <height>1040</height>
 		    <pagecontrol>60</pagecontrol>
@@ -183,7 +183,7 @@
 		    <onleft>450</onleft>
 		    <onright>450</onright>
 	    </control>
-				
+
 		<control type="group" description="Media Info Panel">
             <include>OpenClose</include>
             <posx>0</posx>
@@ -218,16 +218,16 @@
 				<param name="visibility">String.IsEmpty(ListItem.Icon)</param>
 			</include>
         </control>
-		
+
 		<include>Time</include>
-		
+
 	</include>
-	
+
 	<include name="AlternateFavouritesList">
         <param name="ListLabelFont"></param>
         <param name="itemheight"></param>
 		<definition>
-	    
+
 		    <include content="BackgroundOverlay">
 			    <param name="parentid" value="450"/>
 			    <param name="overlaytop" value="60"/>
@@ -235,9 +235,9 @@
 		    </include>
 		    <visible>Control.IsVisible(450)</visible>
 		    <include>ContentFade</include>
-		
+
 	        <control type="list" id="450">
-			    
+
 			    <posx>80</posx>
 			    <posy>120</posy>
 			    <width>1840</width>
@@ -247,7 +247,7 @@
 		        <onup>450</onup>
 		        <ondown>450</ondown>
 		        <preloaditems>4</preloaditems>
-			
+
 			    <itemlayout height="$PARAM[itemheight]" width="1680">
     			    <control type="image" description="BG">
     				    <posy>0</posy>
@@ -306,13 +306,13 @@
 		        <onleft>450</onleft>
 		        <onright>450</onright>
 	        </control>
-				    
+
 		    <control type="group" description="Media Info Panel">
                 <include>OpenClose</include>
                 <posx>0</posx>
                 <posy>40</posy>
                 <width>880</width>
-    			
+
 		        <include content="ShadowedImage">
                     <param name="top">145</param>
                     <param name="left">-120</param>
@@ -330,11 +330,11 @@
 				    <param name="visibility">String.IsEmpty(ListItem.Icon)</param>
 			    </include>
             </control>
-		
+
     		<include>Time</include>
-			
-		</definition>	
-		
+
+		</definition>
+
 	</include>
-	
+
 </includes>

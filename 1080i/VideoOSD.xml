@@ -8,14 +8,14 @@
 	<onunload>ClearProperty(PopupMenu2Active,Home)</onunload>
 	<include>OSDFade</include>
 	<controls>
-	
+
 	    <!-- Hidden List to Show Video Info Dialog on info button, uses service.library.data.provider -->
 		<include condition="Skin.HasSetting(InfoOpensVideoInfo) + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.IsEmpty(VideoPlayer.DBID) + System.AddonIsEnabled(service.library.data.provider)">VideoOSDInfoButtonList</include>
-		
+
 		<!-- Hidden List to get tv show id needed for episodes list button, uses script.embuary.helper -->
 		<include condition="VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + System.AddonIsEnabled(script.embuary.helper)">EHTVShowDetailsList</include>
-		
-		
+
+
 		<control type="button" id="99220">
             <top>-1000</top>
             <left>-1000</left>
@@ -28,7 +28,7 @@
             <onfocus>SetFocus(603)</onfocus>
             <onfocus condition="Window.IsVisible(videoosd)">Action(Close)</onfocus>
         </control>
-		
+
 		<control type="slider">
 			<left>30</left>
 			<include condition="Skin.HasSetting(enable.bottomseekbar)">LowerOSDSlider</include>
@@ -44,7 +44,7 @@
             <textureslidernibfocus/>
 			<visible>Player.SeekEnabled + !$EXP[showCompactSeekBar] + !Skin.HasSetting(UseUltraCompactOSD) + !VideoPlayer.Content(LiveTV)</visible>
 		</control>
-		
+
 		<control type="slider">
 			<left>30</left>
 			<include>LowerOSDSlider</include>
@@ -59,7 +59,7 @@
             <textureslidernibfocus/>
 			<visible>Player.SeekEnabled + $EXP[showCompactSeekBar] + !Skin.HasSetting(UseUltraCompactOSD) + !VideoPlayer.Content(LiveTV)</visible>
 		</control>
-		
+
 		<control type="slider">
 			<left>30</left>
 			<include condition="Skin.HasSetting(enable.bottomseekbar)">LowerOSDSlider</include>
@@ -75,7 +75,7 @@
             <textureslidernibfocus/>
 			<visible>Player.SeekEnabled + !$EXP[showCompactSeekBar] + !Skin.HasSetting(UseUltraCompactOSD) + VideoPlayer.Content(LiveTV)</visible>
 		</control>
-		
+
 		<control type="slider">
 			<left>30</left>
 			<include>LowerOSDSlider</include>
@@ -90,12 +90,12 @@
             <textureslidernibfocus/>
 			<visible>Player.SeekEnabled + $EXP[showCompactSeekBar] + !Skin.HasSetting(UseUltraCompactOSD) + VideoPlayer.Content(LiveTV)</visible>
 		</control>
-		
+
 		<control type="group">
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(playerprocessinfo) | Window.IsActive(osdcmssettings)]</visible>
-			
+
 			<include condition="!Skin.HasSetting(UseCompactOSD) + !Skin.HasSetting(UseUltraCompactOSD)">OSDControls</include>
-			
+
 			<include condition="Skin.HasSetting(UseCompactOSD)" content="OSDControls">
 			    <param name="isStandard">false</param>
 				<param name="isCompact">true</param>
@@ -108,8 +108,8 @@
 		        <param name="group2width">440</param>
 				<param name="group2align">right</param>
 		        <param name="popupleft">840</param>
-			</include>	
-			
+			</include>
+
 			<include condition="Skin.HasSetting(UseUltraCompactOSD)" content="OSDControls">
 			    <param name="isStandard">false</param>
 				<param name="isUltraCompact">true</param>
@@ -124,6 +124,6 @@
 				<param name="popupleft">100</param>
 			</include>
 		</control>
-		
+
 	</controls>
 </window>

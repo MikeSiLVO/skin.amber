@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-	
+
 	<variable name="RightListRottenFreshLogoVar">
         <value condition="Integer.IsGreaterOrEqual(Container(4460).ListItem.Rating(tomatometerallcritics),8.0)">badges/ratings/certified2.png</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.9)">badges/ratings/certified2.png</value>
@@ -27,7 +27,7 @@
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),0.6)">6</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),0.7)">7</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),0.8)">8</value>
-        <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),0.9)">9</value>        
+        <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),0.9)">9</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),1.0)">10</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),1.1)">11</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),1.2)">12</value>
@@ -118,7 +118,7 @@
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),9.7)">97</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),9.8)">98</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),9.9)">99</value>
-        <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),10.0)">100</value>        
+        <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),10.0)">100</value>
     </variable>
 
     <variable name="RightListRottenFreshAudienceLogoVar">
@@ -228,7 +228,7 @@
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallaudience),9.8)">98</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallaudience),9.9)">99</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallaudience),10.0)">100</value>
-    </variable>    
+    </variable>
     <!-- Metacritic Rating Variable-->
     <variable name="RightListMetacriticLabelVar">
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(metacritic),0.0)">0</value>
@@ -437,7 +437,7 @@
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(themoviedb),9.9)">99</value>
         <value condition="String.IsEqual(Container(4460).ListItem.Rating(themoviedb),10.0)">100</value>
     </variable>
-	
+
 	<!-- Movie/TV Show studio icon -->
     <variable name="RightListStudios">
         <value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Listitem.Studio,,.png]</value>
@@ -450,17 +450,17 @@
         <value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Window(Home).Property(SkinInfo.Set.Movies.Single.Studio),,.png]</value>
         <value>DefaultStudios.png</value>
     </variable>
-	
+
 	<variable name="RightListNextAiredStatus">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Status))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Status)]</value>
 		<value condition="Window(Home).Property(NextAired.Status)">$INFO[Window(Home).Property(NextAired.Status)]</value>
 	</variable>
-	
+
 	<variable name="RightListNextAiredStatusImage">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Status))">$VAR[MediaFlagsPathVar]/nextaired/$INFO[Window(Home).Property(TMDbHelper.ListItem.Status),,.png]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Status))">$VAR[MediaFlagsPathVar]/nextaired/$INFO[Window(Home).Property(NextAired.Status),,.png]</value>
 	</variable>
-	
+
 	<variable name="RightListNextEpisode">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Long)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Label)) + !String.IsEmpty(Window(Home).Property(NextAired.NextDay))">$INFO[Window(Home).Property(NextAired.NextDay)]</value>
@@ -471,7 +471,7 @@
 		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Label))">$INFO[Window(Home).Property(NextAired.LatestDate)]</value>
 		<value>$LOCALIZE[32404]</value>
 	</variable>
-	
+
 	<variable name="RightListHeadingLabel">
 		<value condition="String.IsEmpty(ListItem.Title)">$INFO[ListItem.Label]</value>
 		<value>$INFO[ListItem.Title]</value>
@@ -481,7 +481,7 @@
 		<value condition="Container.Content(movies)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • ,]$INFO[ListItem.Rating, • ]</value>
 		<value>$INFO[ListItem.Date]$INFO[ListItem.Rating, • ]</value>
 	</variable>
-	
+
 	<variable name="RightListInfoPopupDelay">
 		<value condition="String.IsEmpty(Skin.String(RightListInfoPopup.Delay))">Skin.SetString(RightListInfoPopup.Delay,2)</value>
 		<value condition="String.IsEqual(Skin.String(RightListInfoPopup.Delay),2)">Skin.SetString(RightListInfoPopup.Delay,3)</value>
@@ -489,7 +489,7 @@
 		<value condition="String.IsEqual(Skin.String(RightListInfoPopup.Delay),4)">Skin.SetString(RightListInfoPopup.Delay,5)</value>
 		<value condition="String.IsEqual(Skin.String(RightListInfoPopup.Delay),5)">Skin.SetString(RightListInfoPopup.Delay,2)</value>
 	</variable>
-	
+
 	<variable name="RightListPopupDetails">
 	    <value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
 		<value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
@@ -497,14 +497,14 @@
 		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
 		<value condition="String.IsEqual(ListItem.DBType,set)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),,]</value>
 	</variable>
-	
+
 	<variable name="RightListPopupDetailsEpisodes">
 	    <value condition="!String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
 		<value condition="!String.IsEmpty(ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
 		<value condition="String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
 		<value condition="String.IsEmpty(ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
 	</variable>
-	
+
 	<variable name="RightListSeasonsLabel">
 		<value condition="String.IsEqual(ListItem.Property(TotalSeasons),1)">$LOCALIZE[20373]</value>
 		<value>$LOCALIZE[33054]</value>
@@ -513,11 +513,11 @@
 		<value condition="String.IsEqual(Container.ListItem.Property(TotalEpisodes),1) | String.IsEqual(ListItem.Property(TotalEpisodes),1)">$LOCALIZE[20359]</value>
 		<value>$LOCALIZE[20360]</value>
 	</variable>
-	
+
 	<include name="RightListFade">
         <animation effect="fade" start="100" end="60" time="100" condition="Skin.HasSetting(502_FadeUnfocused)">Conditional</animation>
 	</include>
-	
+
 	<include name="RightListCertInfo">
 	    <param name="leftUSA">620</param>
 		<param name="leftNonUSA">650</param>
@@ -535,14 +535,14 @@
                 <aspectratio>keep</aspectratio>
                 <align>center</align>
                 <texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
-			    <visible>!String.Contains($PARAM[certsource],Brazil) + 
-                         !String.Contains($PARAM[certsource],UK) + 
-                         !String.Contains($PARAM[certsource],United Kingdom) + 
-                         !String.Contains($PARAM[certsource],classificação) + 
-                         !String.Contains($PARAM[certsource],France) + 
-                         !String.Contains($PARAM[certsource],Germany) + 
-                         !String.Contains($PARAM[certsource],Australia) + 
-                         !String.Contains($PARAM[certsource],Netherlands) + 
+			    <visible>!String.Contains($PARAM[certsource],Brazil) +
+                         !String.Contains($PARAM[certsource],UK) +
+                         !String.Contains($PARAM[certsource],United Kingdom) +
+                         !String.Contains($PARAM[certsource],classificação) +
+                         !String.Contains($PARAM[certsource],France) +
+                         !String.Contains($PARAM[certsource],Germany) +
+                         !String.Contains($PARAM[certsource],Australia) +
+                         !String.Contains($PARAM[certsource],Netherlands) +
                          !String.Contains($PARAM[certsource],NL) + !String.IsEmpty($PARAM[certsource])</visible>
             </control>
 		    <control type="group">
@@ -554,12 +554,12 @@
                     <aspectratio>keep</aspectratio>
                     <align>center</align>
                     <texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
-			   	    <visible>!String.IsEmpty($PARAM[certsource]) + [String.Contains($PARAM[certsource],Brazil) | 
-                             String.Contains($PARAM[certsource],classificação) | 
-                             String.Contains($PARAM[certsource],France) | 
-                             String.Contains($PARAM[certsource],Germany) | 
-                             String.Contains($PARAM[certsource],Australia) | 
-                             String.Contains($PARAM[certsource],Netherlands) | 
+			   	    <visible>!String.IsEmpty($PARAM[certsource]) + [String.Contains($PARAM[certsource],Brazil) |
+                             String.Contains($PARAM[certsource],classificação) |
+                             String.Contains($PARAM[certsource],France) |
+                             String.Contains($PARAM[certsource],Germany) |
+                             String.Contains($PARAM[certsource],Australia) |
+                             String.Contains($PARAM[certsource],Netherlands) |
                              String.Contains($PARAM[certsource],NL)]</visible>
                 </control>
     		    <control type="image" description="Certification flag UK">
@@ -599,8 +599,8 @@
                 <visible>String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Single.Studio)) + $PARAM[includeSets]</visible>
             </control>
         </definition>
-    </include>	
-	
+    </include>
+
 	<include name="RightListAudioSubInfo">
 	    <control type="grouplist">
 			<height>90</height>
@@ -721,7 +721,7 @@
                     <align>left</align>
                     <label>$INFO[ListItem.Rating]</label>
                     <visible>[String.IsEmpty(ListItem.Votes) | String.IsEqual(ListItem.Votes,0)]</visible>
-                </control>             
+                </control>
             </control>
             <control type="grouplist" description="IMDb Top 250 rank">
                 <visible>!string.IsEmpty(ListItem.Top250) + !Skin.HasSetting(HideTop250MediaViews)</visible>
@@ -735,7 +735,7 @@
                     <align>left</align>
                     <textcolor>$VAR[HighlightColor]</textcolor>
                     <label>[B]$INFO[ListItem.Top250,#][/B]</label>
-					
+
                 </control>
             </control>
             <control type="grouplist" description="RT Critics rating">
@@ -743,7 +743,7 @@
                 <width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -763,7 +763,7 @@
                 <width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -783,7 +783,7 @@
                 <width>90</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>5</itemgap>            
+                <itemgap>5</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -802,7 +802,7 @@
                 <visible>!String.IsEmpty(Container(4460).ListItem.Rating(themoviedb))</visible>
                 <width>115</width>
                 <orientation>horizontal</orientation>
-                <itemgap>5</itemgap>  
+                <itemgap>5</itemgap>
                 <align>left</align>
                 <control type="image" description="TMDB logo">
                     <height>40</height>
@@ -823,7 +823,7 @@
                 <width>100</width>
                 <orientation>horizontal</orientation>
                 <itemgap>5</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="TVDB logo">
                     <height>40</height>
                     <width>71</width>
@@ -845,7 +845,7 @@
                 <width>90</width>
                 <orientation>horizontal</orientation>
                 <itemgap>5</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="Trakt logo">
 					<height>40</height>
                     <width>40</width>
@@ -867,7 +867,7 @@
                 <width>80</width>
                 <orientation>horizontal</orientation>
                 <itemgap>0</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="User Rating logo">
                     <height>40</height>
                     <width>40</width>
@@ -897,7 +897,7 @@
                 <orientation>horizontal</orientation>
                 <itemgap>1</itemgap>
 				<align>left</align>
-                <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] | 
+                <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] |
 				         [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
 				<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
                 <control type="image" description="Oscars logo">
@@ -938,10 +938,10 @@
                     <label>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)]</label>
 					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
                 </control>
-            </control>            
+            </control>
         </control>
-    </include>	
-	
+    </include>
+
 	<include name="RightListFixed">
 		<control type="fixedlist" id="502">
 			<movement>3</movement>
@@ -954,7 +954,7 @@
 			<include>502ListContent</include>
 		</control>
 	</include>
-	
+
 	<include name="502ListContent">
 	    <left>580</left>
 		<top>70</top>
@@ -969,12 +969,12 @@
         <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
         <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 		<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
-        
+
 		<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
 		<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
 		<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
 		<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
-		
+
 		<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
         <onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(6502)]">6502</onright>
 		<onright condition="Control.IsVisible(615)">615</onright>
@@ -987,9 +987,9 @@
 		<include condition="Window.IsActive(music)">RightListMusicLayouts</include>
 		<include condition="!Window.IsActive(music)">RightListVideoLayouts</include>
 	</include>
-	
-	
-	
+
+
+
 	<!-- Info Popup -->
 	<include name="RightListInfoPopup">
 		<definition>
@@ -1300,7 +1300,7 @@
                             <param name="widthUSA">120</param>
                             <param name="topUSA">0</param>
                             <param name="topNonUSA">15</param>
-				        </include>	
+				        </include>
                     </control>
 					<control type="group">
 						<left>110</left>
@@ -1408,7 +1408,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="RightListFloor">
 	    <control type="group">
 		    <!-- Info for movies, sets and episodes -->
@@ -1419,9 +1419,9 @@
 		            <visible>!Skin.HasSetting(coloredflags)</visible>
 		            <include>ContentFade</include>
 		            <control type="group">
-					    <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] + 
-						         ![String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] + 
-								 ![String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] + 
+					    <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] +
+						         ![String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] +
+								 ![String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] +
 								 ![String.Contains(Container.ListItem.Filename,8bit) | String.Contains(Container.ListItem.Filename,8-bit)]</visible>
 						<control type="grouplist">
 		                    <top>990</top>
@@ -1443,9 +1443,9 @@
 		                </control>
 					</control>
                     <control type="group">
-					    <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] + 
-						         ![String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] + 
-								 ![String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] + 
+					    <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] +
+						         ![String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] +
+								 ![String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] +
 								 ![String.Contains(Container.ListItem.Filename,8bit) | String.Contains(Container.ListItem.Filename,8-bit)]</visible>
 						<control type="grouplist">
 		                    <top>990</top>
@@ -1467,8 +1467,8 @@
 		                </control>
 					</control>
                     <control type="group">
-					    <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] + 
-						         [[String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] | 
+					    <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] +
+						         [[String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] |
 								  [String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] |
 								  [String.Contains(Container.ListItem.Filename,8bit) | String.Contains(Container.ListItem.Filename,8-bit)]]</visible>
 						<control type="grouplist">
@@ -1489,15 +1489,15 @@
 			                    <param name="diffuse">$VAR[LabelTextColor]</param>
 		                    </include>
 		                </control>
-					</control>					
+					</control>
 		        </control>
 		        <control type="group">
 		            <visible>Skin.HasSetting(coloredflags)</visible>
 		            <include>ContentFade</include>
 		            <control type="grouplist">
-		                <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] + 
-						         ![String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] + 
-								 ![String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] + 
+		                <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] +
+						         ![String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] +
+								 ![String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] +
 								 ![String.Contains(Container.ListItem.Filename,8bit) | String.Contains(Container.ListItem.Filename,8-bit)]</visible>
 					    <top>990</top>
 					    <left>35</left>
@@ -1516,9 +1516,9 @@
 		                </include>
 		            </control>
 				    <control type="grouplist">
-		                <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] + 
-						         ![String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] + 
-								 ![String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] + 
+		                <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] +
+						         ![String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] +
+								 ![String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] +
 								 ![String.Contains(Container.ListItem.Filename,8bit) | String.Contains(Container.ListItem.Filename,8-bit)]</visible>
 					    <top>990</top>
 					    <left>35</left>
@@ -1537,8 +1537,8 @@
 		                </include>
 		            </control>
 					<control type="grouplist">
-		                <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] + 
-						         [[String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] | 
+		                <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] +
+						         [[String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] |
 								  [String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)] |
 								  [String.Contains(Container.ListItem.Filename,8bit) | String.Contains(Container.ListItem.Filename,8-bit)]]</visible>
 					    <top>990</top>
@@ -1565,7 +1565,7 @@
 				        <visible>!String.IsEqual(ListItem.DBType,set)</visible>
 						<include content="RightListCertInfo">
     	                    <param name="leftUSA">760</param>
-		                    <param name="leftNonUSA">790</param>	
+		                    <param name="leftNonUSA">790</param>
 					    </include>
                     </control>
 				    <control type="group">
@@ -1577,7 +1577,7 @@
                             <param name="certvar">$VAR[SetsCertFlag]</param>
 					    </include>
                     </control>
-				</control>				
+				</control>
 				<!-- Studio image -->
 				<control type="group">
 				    <top>990</top>
@@ -1588,7 +1588,7 @@
 						    <param name="includeSets">true</param>
                         </include>
 					</control>
-				</control>	
+				</control>
 				<!-- Audio and subtitle info -->
 				<control type="group">
 					<top>1000</top>
@@ -1609,18 +1609,18 @@
 			        <visible>!String.IsEmpty(ListItem.MPAA) + Skin.HasSetting(ShowMPAA)</visible>
 			        <include content="RightListCertInfo">
                         <param name="leftUSA">760</param>
-	                    <param name="leftNonUSA">790</param>	
-				    </include>	
+	                    <param name="leftNonUSA">790</param>
+				    </include>
                 </control>
 				<!-- Studio image -->
 				<control type="group">
 				    <top>990</top>
 					<visible>Skin.HasSetting(ShowStudio)</visible>
 					<control type="group">
-					    <left>910</left> 
+					    <left>910</left>
                         <include content="RightListStudioInfo">
 						    <param name="includeSets">false</param>
-                        </include>						
+                        </include>
 					</control>
 				</control>
 				<control type="group">
@@ -1739,7 +1739,7 @@
 						        <font>font12</font>
 						        <textcolor>$VAR[HighlightColor]</textcolor>
 					        </control>
-						</control>	
+						</control>
 						<control type="group">
 						    <visible>String.IsEmpty(ListItem.Property(TotalSeasons))</visible>
 							<left>177</left>
@@ -1788,19 +1788,19 @@
 						            <textcolor>$VAR[HighlightColor]</textcolor>
 					            </control>
 				            </control>
-						</control>	
+						</control>
 				    </control>
 			    </control>
 			</control>
 		</control>
 	</include>
-	
+
 	<include name="View_502_RightList">
-	
+
 		<control type="group">
 			<visible>Control.IsVisible(502)</visible>
 			<include>ContentFade</include>
-			
+
 			<!-- Background overlay -->
 			<control type="image">
 			    <width>100%</width>
@@ -1849,9 +1849,9 @@
                         <texture>img/LineL.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
-				</control>	
-			</control>	
-			
+				</control>
+			</control>
+
 			<!-- Logo -->
 			<control type="image">
 				<left>92</left>
@@ -1880,11 +1880,11 @@
 					<param name="texture">$VAR[Poster]</param>
 				</include>
 			</control>
-			
+
 			<!-- List content, fixed or regular -->
 			<include condition="Skin.HasSetting(502_FixedList)">RightListFixed</include>
 			<include condition="!Skin.HasSetting(502_FixedList)">RightListStandard</include>
-			
+
 			<control type="scrollbar" id="6502">
 			    <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 			    <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
@@ -1929,7 +1929,7 @@
                 <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                 <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                 <onup>SetFocus(6502)</onup>
-            </control>            
+            </control>
 
             <control type="grouplist" id="65021">
                 <posx>36r</posx>
@@ -1979,7 +1979,7 @@
                 <include content="AlphabetLetter"><param name="label" value="G" /></include>
                 <include content="AlphabetLetter"><param name="label" value="H" /></include>
                 <include content="AlphabetLetter"><param name="label" value="I" /></include>
-                <include content="AlphabetLetter"><param name="label" value="J" /></include>                
+                <include content="AlphabetLetter"><param name="label" value="J" /></include>
                 <include content="AlphabetLetter"><param name="label" value="K" /></include>
                 <include content="AlphabetLetter"><param name="label" value="L" /></include>
                 <include content="AlphabetLetter"><param name="label" value="M" /></include>
@@ -2003,16 +2003,16 @@
 
 			<!-- Medial Flags & Floor labels -->
 			<include>RightListFloor</include>
-			
+
 			<!-- Info Popup -->
 			<control type="group">
 				<include>RightListInfoPopup</include>
 				<visible>Skin.HasSetting(502_ShowInfoPopup) + Control.HasFocus(502) + !ListItem.IsParentFolder</visible>
 			</control>
-			
-		</control>	
+
+		</control>
 	</include>
-	
+
 	<include name="RightListMusicLayouts">
 		<itemlayout width="950" height="90">
 			<control type="label">
@@ -2120,7 +2120,7 @@
 			</control>
 		</focusedlayout>
 	</include>
-	
+
 	<include name="RightListVideoLayouts">
 		<!-- Text as list item type -->
 		<!-- Movies, sets, tv shows, seasons -->
@@ -2162,7 +2162,7 @@
                     <param name="itemheight">42</param>
                     <param name="overlaypos">1300</param>
 			    </include>
-			</control>	
+			</control>
 		</itemlayout>
 		<!-- Episodes -->
 		<itemlayout width="950" height="95" condition="Container.Content(episodes)">
@@ -2209,7 +2209,7 @@
 				        <font>ListDetails</font>
 				        <label>$INFO[ListItem.Premiered]$INFO[ListItem.Rating, • ]</label>
 			        </control>
-				</control>				
+				</control>
 			    <control type="group">
 			        <animation type="Conditional" condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png)">
 					    <effect type="fade" end="30" time="0" easing="in" tween="cubic" />
@@ -2251,8 +2251,8 @@
 				        <label>$INFO[ListItem.Episode]</label>
 				        <font>font38_title</font>
 			        </control>
-				</control>				
-			</control>	
+				</control>
+			</control>
 		</itemlayout>
 		<!-- Banner layout -->
 		<itemlayout width="950" height="135" condition="Skin.HasSetting(502_UseBanner) + [Container.Content(tvshows) | Container.Content(movies)]">
@@ -2296,7 +2296,7 @@
                     <param name="overlaypos">1300</param>
 			        <param name="posy">5</param>
 			    </include>
-			</control>	
+			</control>
 		</itemlayout>
 		<!-- Clear Logo Layout -->
 		<itemlayout width="950" height="135" condition="Skin.HasSetting(502_UseLogo) + [Container.Content(tvshows) | Container.Content(movies)]">
@@ -2352,9 +2352,9 @@
                     <param name="itemheight">42</param>
                     <param name="overlaypos">1290</param>
 			    </include>
-			</control>	
+			</control>
 		</itemlayout>
-		
+
 		<!-- Focused layout for movies, tv shows, seasons sets -->
 		<focusedlayout width="950" height="246" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)">
 			<include content="RightListWatchedOverlay">
@@ -2475,7 +2475,7 @@
 				    <param name="texture">DefaultEpisodeBack.png</param>
 				    <param name="visibility">ListItem.IsParentFolder</param>
 			    </include>
-			</control>			
+			</control>
 			<control type="label">
 				<left>1270</left>
 				<top>90</top>

@@ -15,13 +15,12 @@
 					<height>129</height>
 					<texture>OSD/Volume.png</texture>
 					<colordiffuse>$VAR[HighlightColor]</colordiffuse>
-				</control>        
+				</control>
 				<control type="progress" id="20">
 					<posx>-300</posx>
 					<posy>-300</posy>
 					<width>324</width>
 					<height>81</height>
-					<texturebg></texturebg>
 					<texturebg></texturebg>
 					<lefttexture></lefttexture>
 					<midtexture></midtexture>

@@ -43,7 +43,7 @@
                 <textoffsetx>10</textoffsetx>
                 <align>right</align>
                 <onclick>SettingsLevelChange</onclick>
-            </control>														  
+            </control>
 			<control type="button" id="10" description="Section buttons">
 				<width>324</width>
 				<align>right</align>
@@ -86,7 +86,7 @@
 			</control>
 			<control type="edit" id="12" description="Default Edit">
                <font>ListDetails</font>
-			</control>	  
+			</control>
 			<control type="label" id="14" description="Sparator label headline">
 				<textoffsetx>30</textoffsetx>
                 <font>ListDetails</font>

@@ -10,7 +10,7 @@
 	<onunload>ClearProperty(TextViewerContent,Home)</onunload>
     <include>DialogOpenClose</include>
 	<controls>
-        <include>DialogBackgroundFade</include>    
+        <include>DialogBackgroundFade</include>
 		<control type="button" id="64">
 			<oninfo>Dialog.Close(1124)</oninfo>
 			<onclick>Dialog.Close(1124)</onclick>
@@ -29,7 +29,7 @@
 				<height>904</height>
 				<texture border="0,40,0,40">dialogs/DialogBG.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
-			</control>            
+			</control>
 			<control type="label">
 				<left>62</left>
 				<top>32</top>
@@ -47,7 +47,7 @@
 				<height>1</height>
 				<texture>img/LineL.png</texture>
 				<aspectratio>stretch</aspectratio>
-			</control>            
+			</control>
 			<control type="label">
 				<left>62</left>
 				<top>95</top>
@@ -58,7 +58,7 @@
                 <font>InfoPlot</font>
 				<label>[B]$INFO[Window(Home).Property(TextViewerSubHeader)][/B]</label>
                 <wrapmultiline>true</wrapmultiline>
-			</control>            
+			</control>
 			<control type="textbox">
 				<left>62</left>
 				<top>195</top>
@@ -80,7 +80,7 @@
 				<label fallback="19055">$INFO[Window(Home).Property(TextViewerContent)]</label>
                 <visible>String.IsEmpty(Window(Home).Property(TextViewerSubHeader))</visible>
                 <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-			</control>            
+			</control>
 			<control type="scrollbar" id="61">
 				<left>1366</left>
 				<top>32</top>

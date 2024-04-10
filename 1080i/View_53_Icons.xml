@@ -2,11 +2,11 @@
 <includes>
     <include name="View_53_Icons">
         <control type="group" description="Grid view">
-            
+
 			<include content="PVRBackground">
 			    <param name="viewid">53</param>
 			</include>
-			
+
 			<include content="BackgroundOverlay">
                 <param name="parentid" value="53"/>
             </include>
@@ -22,12 +22,12 @@
 				<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
                 <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 				<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
-                
+
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
-				
+
 				<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
                 <onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(63)]">63</onright>
 				<onright condition="Control.IsVisible(615)">615</onright>
@@ -44,7 +44,7 @@
                 <include content="RecordingsLayout">
                     <param name="viewid">53</param>
                 </include>
-				
+
 				<include content="PosterLayout">
                     <param name="viewid">53</param>
                 </include>
@@ -68,7 +68,7 @@
                 <include content="GenericLayout">
                     <param name="viewid">53</param>
                 </include>
-				
+
 				<include content="VideoLayout">
                     <param name="viewid">53</param>
                 </include>
@@ -86,14 +86,14 @@
                 <height>207</height>
                 <texture>OSD/FS_OSDBackground.png</texture>
             </control>
-            
+
 			<include condition="!Skin.HasSetting(Enable.TouchSupport)">FooterInfo</include>
-			
+
 			<include condition="Skin.HasSetting(Enable.TouchSupport)" content="FooterInfo">
 			    <param name="width">1280</param>
 				<param name="left">300</param>
 			</include>
-            
+
             <control type="scrollbar" id="63">
                 <animation effect="slide" start="0,0" end="-6,0" time="150">Focus</animation>
                 <animation effect="slide" start="-6,0" end="0,0" time="300">UnFocus</animation>
@@ -112,7 +112,7 @@
                 <onright>53</onright>
                 <visible>!Skin.HasSetting(Show.JumpToLetter) | ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
             </control>
-            
+
             <control type="button" id="63">
                 <visible>Control.IsVisible(53)</visible>
                 <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
@@ -138,7 +138,7 @@
                 <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                 <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                 <onup>SetFocus(63)</onup>
-            </control>            
+            </control>
 
             <control type="grouplist" id="63531">
                 <posx>36r</posx>
@@ -205,25 +205,25 @@
                 <visible>Control.IsVisible(53)</visible>
                 <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
             </control>
-			
+
 			<include content="PVRRecordingSpaceUsage">
 			    <param name="posx">35</param>
 				<param name="posy">990</param>
 				<param name="width">385</param>
 			</include>
-			
+
 			<include content="PVRChannelProgress">
 			    <param name="posx">35</param>
 				<param name="posy">990</param>
 				<param name="width">385</param>
 			</include>
-            
+
 			<include condition="Skin.HasSetting(Enable.TouchSupport)" content="TouchButtons">
 			    <param name="ButtonsTop">935</param>
 				<param name="id">53</param>
 				<param name="left">1535</param>
 			</include>
-			
+
         </control>
     </include>
 </includes>

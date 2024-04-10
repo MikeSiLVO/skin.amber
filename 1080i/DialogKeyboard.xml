@@ -464,7 +464,7 @@
             </control>
 
             <include condition="Skin.HasSetting(Enable.Autocompletion)">AutoCompleteSuggestions</include>
-            
+
 			<control type="group">
                 <left>64</left>
                 <top>684</top>

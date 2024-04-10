@@ -6,38 +6,38 @@
 	<onunload>ClearProperty(DoVideoSearch,Home)</onunload>
 	<onunload>ClearProperty(DoMusicSearch,Home)</onunload>
 	<defaultcontrol always="true">10</defaultcontrol>
-        
+
 	<controls>
-    
+
 		<!-- background -->
         <include>DefaultBackground</include>
 		<include>OpenClose</include>
-        
+
         <control type="image">
 		    <posx>0</posx>
 		    <posy>0</posy>
 		    <include>Dimensions_Fullscreen</include>
 		    <aspectratio>scale</aspectratio>
 		    <texture background="true">$INFO[Container.ListItem.Art(fanart)]</texture>
-		    <visible>Control.HasFocus(101) | 
-                     Control.HasFocus(102) | 
-                     Control.HasFocus(103) | Control.HasFocus(104) | Control.HasFocus(105) | 
-                     Control.HasFocus(106) | Control.HasFocus(107) | Control.HasFocus(108) | 
-                     Control.HasFocus(109) | Control.HasFocus(110) | Control.HasFocus(111) | 
-                     Control.HasFocus(112) | Control.HasFocus(113) | Control.HasFocus(114) | 
-                     Control.HasFocus(115) | Control.HasFocus(116) | Control.HasFocus(117) | 
-                     Control.HasFocus(118) | Control.HasFocus(119) | Control.HasFocus(120) | 
-                     Control.HasFocus(121) | Control.HasFocus(122) | Control.HasFocus(123) | 
-                     Control.HasFocus(124) | Control.HasFocus(125) | Control.HasFocus(126) | 
-					 Control.HasFocus(127) | Control.HasFocus(128) | Control.HasFocus(129) | 
+		    <visible>Control.HasFocus(101) |
+                     Control.HasFocus(102) |
+                     Control.HasFocus(103) | Control.HasFocus(104) | Control.HasFocus(105) |
+                     Control.HasFocus(106) | Control.HasFocus(107) | Control.HasFocus(108) |
+                     Control.HasFocus(109) | Control.HasFocus(110) | Control.HasFocus(111) |
+                     Control.HasFocus(112) | Control.HasFocus(113) | Control.HasFocus(114) |
+                     Control.HasFocus(115) | Control.HasFocus(116) | Control.HasFocus(117) |
+                     Control.HasFocus(118) | Control.HasFocus(119) | Control.HasFocus(120) |
+                     Control.HasFocus(121) | Control.HasFocus(122) | Control.HasFocus(123) |
+                     Control.HasFocus(124) | Control.HasFocus(125) | Control.HasFocus(126) |
+					 Control.HasFocus(127) | Control.HasFocus(128) | Control.HasFocus(129) |
 					 Control.HasFocus(130)</visible>
 		    <fadetime>600</fadetime>
 		    <animation effect="fade" time="600">Visible</animation>
 		    <animation effect="fade" time="600">Hidden</animation>
 		</control>
-        
+
         <include>BackgroundOverlaySearch</include>
-        
+
 		<!-- results -->
 		<control type="grouplist" id="10">
             <left>0</left>
@@ -68,7 +68,7 @@
 				<param name="labelid" value="1031"/>
                 <param name="headline" value="$INFO[Container(103).NumItems,$LOCALIZE[20360] (,)]"/>
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D"/>
-			</include>	
+			</include>
             <!-- Movies by Genre -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesGenre) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="104"/>
@@ -188,7 +188,7 @@
                 <param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32118] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(120).NumItems, (,)]"/>
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22writers%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[Skin.String(CustomSearchTerm)]%22%5d%7d%5d%7d%2c%22type%22%3a%22episodes%22%7d"/>
 			</include>
-			
+
 			<!-- Movies with Plot containing -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesPlot) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="121"/>
@@ -210,7 +210,7 @@
                 <param name="headline" value="$LOCALIZE[32382] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(123).NumItems, (,)]"/>
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22plot%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D"/>
 			</include>
-			
+
 			<!-- Movies with Tag -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesTags) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="124"/>
@@ -218,7 +218,7 @@
                 <param name="headline" value="$LOCALIZE[32451] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(124).NumItems, (,)]"/>
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22tag%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D"/>
 			</include>
-			
+
             <!-- Artist by Name -->
 			<include content="SearchSquareList" condition="!Skin.HasSetting(DisableSearchArtists) + String.IsEmpty(Window(Home).Property(DoVideoSearch))">
 				<param name="id" value="125"/>
@@ -263,9 +263,9 @@
                 <param name="contenttype" value="videos"/>
                 <param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32037] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(130).NumItems, (,)]"/>
 				<param name="content" value="plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[Skin.String(CustomSearchTerm)]&amp;search_type=videos"/>
-			</include>            
+			</include>
 		</control>
-        
+
 		<!-- header bar -->
         <include>Time</include>
 
@@ -285,7 +285,7 @@
             <texture>OSD/FS_OSDBackground.png</texture>
             <colordiffuse>dfcebe9e</colordiffuse>
         </control>
-                
+
         <control type="group" description="Media Info Lite">
 		    <include>ContentFade</include>
 			<posy>937</posy>
@@ -390,12 +390,12 @@
 			    </include>
 		    </control>
 		</control>
-		
+
         <control type="group">
-			<visible>!Control.IsVisible(101) + !Control.IsVisible(102) + !Control.IsVisible(103) + !Control.IsVisible(104) + !Control.IsVisible(105) + !Control.IsVisible(106) + !Control.IsVisible(107) + 
-			         !Control.IsVisible(108) + !Control.IsVisible(109) + !Control.IsVisible(110) + !Control.IsVisible(111) + !Control.IsVisible(112) + !Control.IsVisible(113) + !Control.IsVisible(114) + 
-					 !Control.IsVisible(115) + !Control.IsVisible(116) + !Control.IsVisible(117) + !Control.IsVisible(118) + !Control.IsVisible(119) + !Control.IsVisible(120) + !Control.IsVisible(121) + 
-					 !Control.IsVisible(122) + !Control.IsVisible(123) + !Control.IsVisible(124) + !Control.IsVisible(125) + !Control.IsVisible(126) + !Control.IsVisible(127) + !Control.IsVisible(128) + 
+			<visible>!Control.IsVisible(101) + !Control.IsVisible(102) + !Control.IsVisible(103) + !Control.IsVisible(104) + !Control.IsVisible(105) + !Control.IsVisible(106) + !Control.IsVisible(107) +
+			         !Control.IsVisible(108) + !Control.IsVisible(109) + !Control.IsVisible(110) + !Control.IsVisible(111) + !Control.IsVisible(112) + !Control.IsVisible(113) + !Control.IsVisible(114) +
+					 !Control.IsVisible(115) + !Control.IsVisible(116) + !Control.IsVisible(117) + !Control.IsVisible(118) + !Control.IsVisible(119) + !Control.IsVisible(120) + !Control.IsVisible(121) +
+					 !Control.IsVisible(122) + !Control.IsVisible(123) + !Control.IsVisible(124) + !Control.IsVisible(125) + !Control.IsVisible(126) + !Control.IsVisible(127) + !Control.IsVisible(128) +
 					 !Control.IsVisible(129) + !Control.IsVisible(130)</visible>
 			<width>100%</width>
 			<height>420</height>
@@ -410,7 +410,7 @@
 			    <label>$LOCALIZE[19055]</label>
 			    <textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
-		</control>		
+		</control>
 
 	</controls>
 </window>

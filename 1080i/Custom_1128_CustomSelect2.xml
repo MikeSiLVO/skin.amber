@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="1128" type="dialog">
-	
+
 	<onunload>ClearProperty(CustomSelectVideoDiscArtFallback,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectMusicDiscArtFallback,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectNowPlayingMovieInfo,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectNowPlayingVideoInfo,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectNowPlayingMusicInfo,skinsettings)</onunload>
-	
+
     <defaultcontrol always="true">100</defaultcontrol>
 	<include>DialogOpenClose</include>
 	<controls>
-	
+
 		<control type="group" description="All dialog content">
 			<animation type="WindowOpen">
 				<effect type="zoom" start="95" end="100" center="960,540" time="200" />
@@ -110,7 +110,7 @@
                     <texture>img/LineL.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
-			</control>	
+			</control>
 			<control type="group">
 				<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				<control type="list" id="100">
@@ -243,7 +243,7 @@
 					    <include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectNowPlayingMusicInfo))">SelectNowPlayingMusicInfo</include>
 					</content>
 				</control>
-			</control>	
+			</control>
 			<control type="scrollbar" id="60">
 				<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				<posx>325</posx>

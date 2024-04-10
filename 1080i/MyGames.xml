@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
-	
-	
+
+
 	<include>ViewIDs</include>
 	<menucontrol>9000</menucontrol>
 	<controls>
@@ -45,7 +45,7 @@
 		</include>
 		<include>View_57_SimpleList</include>
 		<include>View_58_Logo</include>
-		<include>View_502_RightList</include> 
+		<include>View_502_RightList</include>
 		<control type="group">
 			<include>VignetteFade</include>
 			<include>Time</include>
@@ -76,7 +76,7 @@
 					<label>$LOCALIZE[21452]</label>
 					<onclick>ActivateWindow(addonbrowser,addons://more/game/,return)</onclick>
 					<visible>Container.Content(addons)</visible>
-				</control>        
+				</control>
 				<control type="button" id="699" description="Playing">
 					<enable>Player.HasMedia</enable>
 					<include>9000SysButtons</include>

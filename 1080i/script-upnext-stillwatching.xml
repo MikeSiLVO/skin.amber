@@ -29,7 +29,7 @@
                         <param name="texture">$VAR[UpNextThumbVar]</param>
                         <param name="aligny">bottom</param>
                         <param name="visibility">[!String.IsEmpty(Window.Property(thumb)) | !String.IsEmpty(Window.Property(landscape)) | !String.IsEmpty(Window.Property(fanart))]</param>
-                    </include>                    
+                    </include>
                     <control type="image">
                         <width>250</width>
                         <height>141</height>

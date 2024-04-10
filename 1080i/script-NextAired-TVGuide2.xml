@@ -77,7 +77,7 @@
 				<texture border="45">dialogs/TinyDialog.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
-			
+
 			<control type="list" id="9000">
 				<posx>105</posx>
 				<posy>120</posy>
@@ -105,7 +105,7 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<scrolltime tween="quadratic">300</scrolltime>
-				
+
 				<itemlayout width="322" height="60">
 					<control type="image">
 						<width>322</width>
@@ -126,7 +126,7 @@
 						    <align>right</align>
 						    <label>$INFO[ListItem.Label2]</label>
 					    </control>
-					</control>					
+					</control>
 				</itemlayout>
 				<focusedlayout width="322" height="60">
 					<control type="image" description="fa overlay">
@@ -149,12 +149,12 @@
 						    <width>301</width>
 						    <height>60</height>
 						    <align>right</align>
-						    <textcolor>$VAR[FocusedTextColor]</textcolor>						
+						    <textcolor>$VAR[FocusedTextColor]</textcolor>
 						    <label>$INFO[ListItem.Label2]</label>
 					    </control>
-					</control>	
-				</focusedlayout>				
-				
+					</control>
+				</focusedlayout>
+
 				<content>
 					<include content="TVGuideItem">
 						<param name="TVGuideItemID">1</param>
@@ -250,7 +250,7 @@
 					<showonepage>false</showonepage>
 					<orientation>horizontal</orientation>
 					<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-				</control>			
+				</control>
 				<control type="panel" id="200">
 					<visible allowhiddenfocus="true">[Control.HasFocus(9000) + Container(9000).HasFocus(1)] | Control.HasFocus(200) |  [Container(9000).HasFocus(1) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
@@ -349,7 +349,7 @@
 				</control>
 			</control>
 		</control>
-		
+
 		<control type="group">
 			<control type="grouplist" id="8000">
 				<posx>105</posx>
@@ -374,10 +374,10 @@
 					<label>$LOCALIZE[5]</label>
 				</control>
 			</control>
-			
-			
-		</control>		
-		
-		
+
+
+		</control>
+
+
 	</controls>
 </window>

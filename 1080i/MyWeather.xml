@@ -105,7 +105,7 @@
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</label>
 					<visible>!String.IsEmpty(Window.Property(Current.UVIndex))</visible>
-				</control>        
+				</control>
 				<control type="label" description="Current uv label spacer">
 					<height>50</height>
 					<align>right</align>

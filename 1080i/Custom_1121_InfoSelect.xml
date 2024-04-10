@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1121">
-	
+
     <!-- Huge thanks to MikeSilVO, this is an adaptation of his code -->
-    
-    
+
+
 	<onunload>ClearProperty(CustomSelectFanartTimePerImage,skinsettings)</onunload>
     <onunload>ClearProperty(CustomSelectDefaultBackground,skinsettings)</onunload>
     <onunload>ClearProperty(CustomSelectFavouriteAddons,skinsettings)</onunload>
@@ -24,7 +24,7 @@
 	<onunload>ClearProperty(CustomSelectAmberFlixDimLevel,Home)</onunload>
     <onunload>ClearProperty(DoInfoExtras,Home)</onunload>
 	<onunload>ClearProperty(DoInfoExtrasMusic,Home)</onunload>
-	
+
     <defaultcontrol always="true">90010</defaultcontrol>
 	<include>DialogOpenClose</include>
 	<controls>
@@ -57,7 +57,7 @@
 				    <textcolor>$VAR[HighlightColor]</textcolor>
 			    </control>
             </control>
-            
+
 			<control type="list" id="90010" description="Info Select Options">
 		        <posx>697</posx>
 				<posy>366</posy>

@@ -72,7 +72,7 @@
 		<value condition="String.IsEqual(Control.GetLabel(11),$LOCALIZE[16])">plugin://script.embuary.info/nextaired/4</value>
 		<value condition="String.IsEqual(Control.GetLabel(11),$LOCALIZE[17])">plugin://script.embuary.info/nextaired/5</value>
 	</variable>
-    <!-- Left List item for TMDb Helper Next Aired -->	
+    <!-- Left List item for TMDb Helper Next Aired -->
 	<include name="TMDbTVGuideItem">
 		<param name="TMDbTVGuideItemID" />
 		<param name="TMDbTVGuideDayID" />
@@ -95,7 +95,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[EmbuaryInfoTVGuideDayID]).NumItems,0) | Container($PARAM[EmbuaryInfoTVGuideDayID]).IsUpdating | Container(4000).IsUpdating</visible>
 			</item>
 		</definition>
-	</include>	
+	</include>
     <!-- Episode Panel layout for TMDb Helper Next Aired -->
 	<include name="TMDbTVGuidePanelLayout">
 		<left>500</left>
@@ -107,7 +107,7 @@
 		<onleft>4000</onleft>
 		<orientation>horizontal</orientation>
 		<scrolltime tween="quadratic">300</scrolltime>
-		<pagecontrol>60</pagecontrol>		
+		<pagecontrol>60</pagecontrol>
 		<itemlayout height="840" width="447">
 			<control type="image">
 				<top>20</top>
@@ -141,7 +141,7 @@
 				<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] [B][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Season][/COLOR][/B]  [COLOR $VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] [B][COLOR Grey2]$INFO[ListItem.Episode][/COLOR][/B]</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
-			</control>			
+			</control>
 			<control type="textbox">
 				<left>20</left>
 				<top>460</top>
@@ -286,7 +286,7 @@
 				<label>[B]$LOCALIZE[32011]:[/B]</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoTitle</font>
-				<textcolor>$VAR[FocusedTextColor]</textcolor>				
+				<textcolor>$VAR[FocusedTextColor]</textcolor>
 			</control>
 			<control type="label">
 				<top>790</top>
@@ -310,7 +310,7 @@
 		<onleft>4000</onleft>
 		<orientation>horizontal</orientation>
 		<scrolltime tween="quadratic">300</scrolltime>
-		<pagecontrol>60</pagecontrol>		
+		<pagecontrol>60</pagecontrol>
 		<itemlayout height="860" width="447">
 			<control type="image">
 				<top>20</top>
@@ -344,7 +344,7 @@
 				<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] [B][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Season][/COLOR][/B]  [COLOR $VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] [B][COLOR Grey2]$INFO[ListItem.Episode][/COLOR][/B]</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
-			</control>			
+			</control>
 			<control type="textbox">
 				<left>20</left>
 				<top>460</top>
@@ -489,7 +489,7 @@
 				<label>[B]$LOCALIZE[32011]:[/B]</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoTitle</font>
-				<textcolor>$VAR[FocusedTextColor]</textcolor>				
+				<textcolor>$VAR[FocusedTextColor]</textcolor>
 			</control>
 			<control type="label">
 				<top>800</top>

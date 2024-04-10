@@ -102,7 +102,7 @@
                     <onclick>SetProperty(TextViewerSubHeader,$ESCINFO[ListItem.AddonSummary,[I],[/I]],Home)</onclick>
 					<onclick>SetProperty(TextViewerContent,$ESCINFO[ListItem.AddonDescription],Home)</onclick>
 					<onclick>ActivateWindow(1124)</onclick>
-				</control> 
+				</control>
 				<control type="image" description="Line Split">
 					<posy>30</posy>
                     <left>637</left>
@@ -110,13 +110,13 @@
 					<height>426</height>
 					<texture>img/LineL.png</texture>
 					<aspectratio>stretch</aspectratio>
-				</control>                
+				</control>
 				<control type="panel" id="9009">
 					<include>VisibleFadeEffectDelay</include>
 					<include>List_9009_Commons</include>
                     <onup>9009</onup>
                     <ondown>9009</ondown>
-                    <onleft>90003</onleft>                    
+                    <onleft>90003</onleft>
 					<content>
 						<item>
 							<label>$LOCALIZE[146]</label>
@@ -266,7 +266,7 @@
 				<enable>!String.IsEmpty(ListItem.AddonNews)</enable>
 				<onclick>SetProperty(TextViewerHeader,$ESCINFO[ListItem.AddonName],Home)</onclick>
 				<onclick condition="!String.IsEmpty(ListItem.AddonNews)">SetProperty(TextViewerContent,$ESCINFO[ListItem.AddonNews],Home)</onclick>
-				<onclick>ActivateWindow(1124)</onclick>                
+				<onclick>ActivateWindow(1124)</onclick>
 			</control>
 		</control>
 		<control type="panel" id="50">

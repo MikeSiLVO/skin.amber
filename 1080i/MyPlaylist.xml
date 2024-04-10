@@ -86,7 +86,7 @@
 					<param name="texture">$INFO[ListItem.Art(poster)]</param>
 					<param name="visibility">!String.IsEmpty(ListItem.Art(poster))</param>
 				</include>
-				
+
 				<control type="group" description="List">
 					<control type="panel" id="50" description="No Thumbs">
 						<viewtype label="$LOCALIZE[535]">list</viewtype>
