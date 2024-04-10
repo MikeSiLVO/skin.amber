@@ -26,7 +26,7 @@
 					<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
 				    <colordiffuse>FFE2E2E2</colordiffuse>
 				</control>
-				
+
 				<!-- Programme controls group -->
 				<control type="group">
 					<left>20</left>
@@ -87,7 +87,7 @@
 						</control>
 					</control>
 				</control>
-				
+
 				<!-- Help text label -->
 				<control type="textbox">
 					<left>620</left>
@@ -100,7 +100,7 @@
 					<label>[B]$VAR[PVRGuideControlsHelpText][/B]</label>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
-				
+
 				<!-- Channels control group -->
 				<control type="group">
 					<right>370</right>
@@ -144,7 +144,7 @@
 						</control>
 					</control>
 				</control>
-				
+
 				<!-- Channel group controls -->
 				<control type="group">
 					<right>20</right>

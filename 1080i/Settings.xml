@@ -137,7 +137,7 @@
                     <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
                     <onclick>RunScript(service.coreelec.settings)</onclick>
                     <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
-                </control>                
+                </control>
                 <control type="button" id="509" description="Launch LibreELEC settings">
                     <include condition="Skin.HasSetting(Smaller.Fonts)">SmallerFonts</include>
 					<include condition="Skin.HasSetting(Regular.Fonts)">RegularFonts</include>
@@ -224,7 +224,7 @@
                     <item id="10" description="Games">
                         <label>$LOCALIZE[32003]</label>
                         <onclick>activatewindow(GameSettings)</onclick>
-                    </item>		  
+                    </item>
                 </content>
             </control>
         </control>

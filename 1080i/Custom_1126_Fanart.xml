@@ -8,7 +8,7 @@
 	<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
     <onload condition="Skin.HasSetting(EnableExtraFanart)">SetFocus(91506)</onload>
     <onload condition="!Skin.HasSetting(EnableExtraFanart)">SetFocus(3000)</onload>
-    
+
     <onunload>ClearProperty(fanart,Home)</onunload>
     <onunload>ClearProperty(fanart1,Home)</onunload>
     <onunload>ClearProperty(fanart2,Home)</onunload>
@@ -30,10 +30,10 @@
     <onunload>ClearProperty(fanart18,Home)</onunload>
     <onunload>ClearProperty(fanart19,Home)</onunload>
     <onunload>ClearProperty(fanart20,Home)</onunload>
-	
+
     <controls>
-    
-    
+
+
 		<control type="group">
             <visible>!Skin.HasSetting(EnableExtraFanart)</visible>
             <control type="image">
@@ -50,8 +50,8 @@
 			    <include>HiddenButton</include>
 			    <onclick>Action(close)</onclick>
 		    </control>
-        </control>    
-        
+        </control>
+
         <control type="group">
             <visible>Skin.HasSetting(EnableExtraFanart)</visible>
             <control type="list" id="9105">
@@ -186,8 +186,8 @@
                     <animation effect="fade" time="300" start="100" end="0" condition="System.IdleTime(2)">Conditional</animation>
                 </control>
             </control>
-        </control>    
-        
-        
+        </control>
+
+
 	</controls>
 </window>

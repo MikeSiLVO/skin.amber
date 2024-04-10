@@ -89,7 +89,7 @@
 					<label>$LOCALIZE[21452]</label>
 					<onclick>ActivateWindow(addonbrowser,addons://more/image/,return)</onclick>
 					<visible>Container.Content(addons)</visible>
-				</control>        
+				</control>
 				<control type="button" id="699" description="Playing">
 					<enable>Player.HasMedia</enable>
 					<include>9000SysButtons</include>

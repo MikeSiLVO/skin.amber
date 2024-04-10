@@ -158,7 +158,7 @@
 		<value condition="Skin.String(NowPlayingHomeAudioInfo,none)">$LOCALIZE[231]</value>
 		<value>$LOCALIZE[29915]</value>
 	</variable>
-	
+
 	<variable name="NowPlayingVideoFanartVar">
 		<value condition="PVR.IsPlayingTV">$VAR[Pvr.Art]</value>
 		<value condition="!VideoPlayer.Content(livetv) + VideoPlayer.Content(movies) + !String.IsEmpty(Control.GetLabel(4441))">$INFO[Control.GetLabel(4441)]</value>
@@ -176,10 +176,10 @@
 		<value condition="!String.IsEmpty(Control.GetLabel(4443))">$INFO[Control.GetLabel(4443)]</value>
 		<value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
 		<value>special://skin/backgrounds/Default.jpg</value>
-    </variable>	
-	
+    </variable>
+
 	<constant name="TextureFadeTime">480</constant>
-	
+
 	<include name="AnimationVisibleFade">
 		<animation effect="fade" end="100" time="480">Visible</animation>
 		<animation effect="fade" start="100" end="0" time="480">Hidden</animation>
@@ -228,8 +228,8 @@
 	<include name="AutoScrollPlot">
 		<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 	</include>
-	
-	
+
+
 	<!-- Now playing Home -->
 	<include name="NowPlayingHomePortraitContent">
 		<param name="right">10</param>
@@ -392,7 +392,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="NowPlayingHomeSquareContent">
 		<param name="right">10</param>
 		<param name="logo">false</param>
@@ -556,7 +556,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="HomeNowPlayingVideoInfo">
 	    <param name="top">50</param>
 		<param name="left">1370</param>
@@ -611,9 +611,9 @@
 			    <info>Player.Progress</info>
 			    <visible>!VideoPlayer.HasEpg</visible>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
-	
+
 	<include name="HomeNowPlayingVideoCast">
 	    <param name="top">0</param>
 		<param name="align">right</param>
@@ -653,9 +653,9 @@
 			    <include>AutoScrollPlot</include>
 			    <label>$INFO[VideoPlayer.CastAndRole]</label>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
-	
+
 	<include name="HomeNowPlayingPortraitPlot">
 	    <param name="top">0</param>
 		<param name="width">700</param>
@@ -735,9 +735,9 @@
 					<visible>Player.HasVideo + Skin.String(NowPlayingMovieInfo,preview)</visible>
 			    </control>
 		    </control>
-		</definition>		
+		</definition>
 	</include>
-	
+
 	<include name="HomeNowPlayingSquarePlot">
 	    <param name="top">41</param>
 		<param name="align">right</param>
@@ -820,7 +820,7 @@
 					<visible>!String.IsEmpty(Player.Title)</visible>
 		        </control>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
 	<include name="HomeNowPlayingVideoPreview">
 		<param name="top">15</param>
@@ -851,7 +851,7 @@
 				    <height>$PARAM[height]</height>
 			    </control>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
 	<include name="NowPlayingHomeAudioInfo">
 		<param name="top">50</param>
@@ -894,9 +894,9 @@
 			    <info>Player.Progress</info>
 			    <visible>!String.IsEmpty(MusicPlayer.Duration)</visible>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
-	
+
 	<include name="NowPlayingHomeAudioNext">
 	    <param name="top">41</param>
 		<param name="align">right</param>
@@ -950,9 +950,9 @@
 			    <font>ListDetails</font>
 			    <label>[COLOR $VAR[HighlightColor]]$INFO[MusicPlayer.offset(1).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset(1).Title]</label>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
-	
+
 	<include name="NowPlayingHomeAudioTrackList">
 	    <param name="top">41</param>
 		<param name="align">right</param>
@@ -997,9 +997,9 @@
 					<param name="align">$PARAM[align]</param>
 			    </include>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
-	
+
 	<include name="NowPlayingHomeAudioTracksContent">
 		<param name="align">right</param>
 		<definition>
@@ -1019,36 +1019,36 @@
 		    <control type="label">
 			    <height>18</height>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
-	
+
 	<include name="NowPlayingPositionHorizontal">
 	    <top>60</top>
 		<left>30</left>
 		<right>30</right>
 	</include>
-	
+
 	<include name="NowPlayingPositionVerticalText">
 	    <top>180</top>
 		<left>450</left>
 	</include>
-	
+
 	<include name="NowPlayingPositionVerticalIcon">
 	    <top>180</top>
 		<left>150</left>
 	</include>
-	
+
 	<include name="GradientPositionHorizontal">
 	    <bottom>0</bottom>
 		<height>968</height>
 	</include>
-	
+
 	<include name="GradientPositionVertical">
 	    <height>1080</height>
 	</include>
-	
-	
-	
+
+
+
 	<!-- Now playing -->
 	<include name="HomeNowPlaying">
 		<control type="image">
@@ -1056,7 +1056,7 @@
 			<include>AnimationVisibleFade</include>
 			<width>1920</width>
 			<include>GradientPositionVertical</include>
-			<texture border="0,30,0,0">OSD/FS_OSDBackground.png</texture> 
+			<texture border="0,30,0,0">OSD/FS_OSDBackground.png</texture>
             <colordiffuse>dfcebe9e</colordiffuse>
 		</control>
 		<control type="group" id="701">
@@ -1127,7 +1127,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>![VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)] + 
+					<visible>![VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)] +
 					         [!Skin.String(NowPlayingVideoInfo,preview) | [Skin.String(NowPlayingVideoInfo,preview) + [!System.IdleTime(8) | !Skin.HasSetting(Zoom.VideoPreview) | Skin.HasSetting(VerticalHome)]]]</visible>
 					<control type="group">
 						<visible>Skin.String(NowPlayingVideoInfo,none)</visible>
@@ -1154,12 +1154,12 @@
 						    <param name="left">10</param>
 							<param name="align">left</param>
 							<param name="top">460</param>
-						</include>						
+						</include>
 						<include content="HomeNowPlayingVideoInfo" condition="Skin.HasSetting(Enable.BottomShortcuts)">
 						    <param name="left">10</param>
 							<param name="align">left</param>
 							<param name="top">420</param>
-						</include>						
+						</include>
 					</control>
 					<control type="group">
 						<visible>Skin.String(NowPlayingMovieInfo,cast)</visible>
@@ -1337,7 +1337,7 @@
 						    <param name="left">10</param>
 							<param name="align">left</param>
 							<param name="top">460</param>
-						</include>						
+						</include>
 						<include content="HomeNowPlayingVideoInfo" condition="Skin.HasSetting(Enable.BottomShortcuts)">
 						    <param name="left">10</param>
 							<param name="align">left</param>
@@ -1603,7 +1603,7 @@
 							<param name="leftedge">0</param>
 							<param name="align">left</param>
 							<param name="top">35</param>
-						</include>						
+						</include>
 					</control>
 				</control>
 			</control>

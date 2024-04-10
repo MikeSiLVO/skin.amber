@@ -19,8 +19,8 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,set) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),set)]">RunScript(script.artwork.beef, mode=gui, mediatype=set, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.beef, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
+            <visible>System.AddonIsEnabled(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
+                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
             </visible>
 		</item>
 		<item>
@@ -32,8 +32,8 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,set) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),set)]">RunScript(script.artwork.beef, mode=auto, mediatype=set, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.beef, mode=auto, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
+            <visible>System.AddonIsEnabled(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
+                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
             </visible>
 		</item>
 		<item>
@@ -43,8 +43,8 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
+            <visible>System.AddonIsEnabled(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
+                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
             </visible>
 		</item>
 		<item>
@@ -54,8 +54,8 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
+            <visible>System.AddonIsEnabled(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
+                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
             </visible>
 		</item>
         <item>
@@ -78,7 +78,7 @@
             <onclick>Dialog.Close(1121)</onclick>
             <onclick condition="!String.IsEmpty(ListItem.DBID)">RunScript(script.cinemavision,dbtype=$INFO[ListItem.DBTYPE],dbid=$INFO[ListItem.DBID]))</onclick>
             <onclick condition="String.IsEmpty(ListItem.DBID) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBID))">RunScript(script.cinemavision,dbtype=$INFO[Window(Home).Property(InfoExtrasDBType)],dbid=$INFO[Window(Home).Property(InfoExtrasDBID)]))</onclick>
-            <visible>[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
+            <visible>[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
 		</item>
 		<item>
@@ -88,7 +88,7 @@
 			<visible>System.AddonIsEnabled(plugin.video.youtube)</visible>
 		</item>
 	</include>
-	
+
 	<!-- Music Info Extras Button Items -->
     <include name="SelectMusicInfoExtras">
 		<item>
@@ -105,8 +105,8 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,album) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),album)]">RunScript(script.artwork.beef, mode=gui, mediatype=album, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),song)]">RunScript(script.artwork.beef, mode=gui, mediatype=song, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) | 
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
+            <visible>System.AddonIsEnabled(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) |
+                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
             </visible>
 		</item>
 		<item>
@@ -116,8 +116,8 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,album) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),album)]">RunScript(script.artwork.beef, mode=auto, mediatype=album, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),song)]">RunScript(script.artwork.beef, mode=auto, mediatype=song, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) | 
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
+            <visible>System.AddonIsEnabled(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) |
+                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
             </visible>
 		</item>
         <item>
@@ -141,7 +141,7 @@
 			<visible>System.AddonIsEnabled(plugin.video.youtube)</visible>
 		</item>
 	</include>
-    
+
     <!-- Select delay in seconds to rotate fanart on home screen -->
 	<include name="SelectFanartTimePerImage">
 		<item>
@@ -222,13 +222,13 @@
 			<label>$LOCALIZE[31114]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.SetPath(Default.Background)</onclick>
-		</item>		
+		</item>
         <item>
 			<label>$LOCALIZE[15109]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.Reset(Default.Background)</onclick>
 		</item>
-	</include>    
+	</include>
     <!-- Choose up to 25 favorite addons to show in favourite addons widget -->
 	<include name="SelectFavouriteAddons">
 		<item>
@@ -372,7 +372,7 @@
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.Reset(CustomVideoGenreIconsPath)</onclick>
 			<visible>!String.IsEmpty(Skin.String(CustomVideoGenreIconsPath))</visible>
-		</item>	
+		</item>
         <item>
 			<label>$LOCALIZE[32287]</label>
 			<onclick>Dialog.Close(1121)</onclick>
@@ -396,7 +396,7 @@
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.Reset(CustomVideoGenreFanartPath)</onclick>
 			<visible>!String.IsEmpty(Skin.String(CustomVideoGenreFanartPath))</visible>
-		</item>		
+		</item>
         <item>
 			<label>$LOCALIZE[32287]</label>
 			<onclick>Dialog.Close(1121)</onclick>
@@ -421,7 +421,7 @@
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.Reset(CustomMusicGenreIconsPath)</onclick>
 			<visible>!String.IsEmpty(Skin.String(CustomMusicGenreIconsPath))</visible>
-		</item>		
+		</item>
         <item>
 			<label>$LOCALIZE[32287]</label>
 			<onclick>Dialog.Close(1121)</onclick>
@@ -445,7 +445,7 @@
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.Reset(CustomMusicGenreFanartPath)</onclick>
 			<visible>!String.IsEmpty(Skin.String(CustomMusicGenreFanartPath))</visible>
-		</item>		
+		</item>
         <item>
 			<label>$LOCALIZE[32287]</label>
 			<onclick>Dialog.Close(1121)</onclick>
@@ -923,7 +923,7 @@
 			<onclick>Skin.SetString(SkinInfo.AutoCloseVideoOSD,10)</onclick>
 		</item>
 	</include>
-	
+
 	<include name="SelectSeekBarInitTime">
 		<item>
 			<label>2 $LOCALIZE[32047]</label>
@@ -976,7 +976,7 @@
 			<onclick>Skin.SetString(SeekBarInit,twenty)</onclick>
 		</item>
 	</include>
-	
+
 	<include name="SelectEnabledViews">
 	    <control type="radiobutton" id="901011">
             <label>$LOCALIZE[535]</label>
@@ -1063,7 +1063,7 @@
             <selected>!Skin.HasSetting(hide.logoview)</selected>
         </control>
 	</include>
-	
+
 	<include name="SelectViewsItems">
 	    <control type="radiobutton" id="901011">
             <label>$LOCALIZE[32223]</label>
@@ -1138,7 +1138,7 @@
             <selected>Skin.HasSetting(Show.ColorRangeFlags)</selected>
         </control>
 	</include>
-	
+
 	<include name="SelectListOptions">
 	    <control type="radiobutton" id="901011">
             <label>$LOCALIZE[32225]</label>
@@ -1288,7 +1288,7 @@
 		    <selected>Skin.HasSetting(AlwaysShowListInfo)</selected>
         </control>
 	</include>
-	
+
 	<include name="SelectMarksOverlays">
 	    <control type="radiobutton" id="901011">
             <label>[B]$LOCALIZE[32387][/B]</label>
@@ -1340,7 +1340,7 @@
 		    <selected>Skin.HasSetting(Hide_Episode_Marks)</selected>
         </control>
 	</include>
-	
+
 	<include name="SelectOSDArt">
 		<item>
 			<label>$LOCALIZE[32306]</label>
@@ -1378,7 +1378,7 @@
 			<onclick>Skin.SetString(OSDExtraArt,characterart)</onclick>
 		</item>
 	</include>
-	
+
 	<include name="SelectTrailerDelay">
 		<item>
 			<label>5 $LOCALIZE[32047]</label>
@@ -1391,7 +1391,7 @@
 			<onclick>Skin.SetString(StartTrailerDelay,ten)</onclick>
 		</item>
 	</include>
-	
+
 	<!-- Select startup background for skin: image, multiimage or video/playlist -->
 	<include name="SelectStartupBackground">
 		<item>
@@ -1415,7 +1415,7 @@
             <onclick condition="!String.IsEmpty(Skin.String(StartupPlaylist))">Skin.Reset(StartupPlaylist)</onclick>
 			<onclick>Skin.Reset(StartupImage)</onclick>
 			<onclick>Skin.Reset(StartupImagePath)</onclick>
-		</item>		
+		</item>
         <item>
 			<label>$LOCALIZE[15109]</label>
 			<onclick>Dialog.Close(1121)</onclick>
@@ -1424,7 +1424,7 @@
 			<onclick>Skin.Reset(StartupPlaylist)</onclick>
 		</item>
 	</include>
-	
+
 	<include name="SelectShelfTrailerDelay">
 		<item>
 			<label>2 $LOCALIZE[32047]</label>
@@ -1457,7 +1457,7 @@
 			<onclick>Skin.SetString(ShelfTrailerDelay,00:20)</onclick>
 		</item>
 	</include>
-	
+
 	<include name="SelectStartupVideoDuration">
 		<item>
 			<label>5 $LOCALIZE[32047]</label>
@@ -1590,5 +1590,5 @@
 			<onclick>Skin.SetString(StartupVideoDuration,00:30)</onclick>
 		</item>
 	</include>
-	
+
 </includes>

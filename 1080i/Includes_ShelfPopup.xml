@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    
+
 	<variable name="ShelfPopupPoster">
         <value condition="String.IsEqual(Window(1144).Property(DBType),episode) + !String.IsEmpty(Window(1144).Property(Art.season.poster))">$INFO[Window(1144).Property(Art.season.poster)]</value>
         <value condition="String.IsEqual(Window(1144).Property(DBType),episode) + String.IsEmpty(Window(1144).Property(Art.season.poster)) + !String.IsEmpty(Window(1144).Property(Art.tvshow.poster))">$INFO[Window(1144).Property(Art.tvshow.poster)]</value>
@@ -8,19 +8,19 @@
 		<value condition="String.IsEqual(Window(1144).Property(DBType),musicvideo) + !String.IsEmpty(Window(1144).Property(Art.Poster))">$INFO[Window(1144).Property(Art.Poster)]</value>
 		<value condition="String.IsEqual(Window(1144).Property(DBType),musicvideo) + String.IsEmpty(Window(1144).Property(Art.Poster))">$INFO[Window(1144).Property(Art.Thumb)]</value>
     </variable>
-	
+
 	<variable name="ShelfPopupSquare">
         <value condition="!String.IsEmpty(Window(1144).Property(Art.Thumb))">$INFO[Window(1144).Property(Art.Thumb)]</value>
 		<value>$INFO[Window(1144).Property(Icon)]</value>
     </variable>
-	
+
 	<variable name="ShelfPopupLogo">
         <value condition="String.IsEqual(Window(1144).Property(DBType),movie) | String.IsEqual(Window(1144).Property(DBType),tvshow) | String.IsEqual(Window(1144).Property(DBType),musicvideo) | String.IsEqual(Window(1144).Property(DBType),artist)">$INFO[Window(1144).Property(Art.ClearLogo)]</value>
         <value condition="String.IsEqual(Window(1144).Property(DBType),episode)">$INFO[Window(1144).Property(Art.tvshow.clearlogo)]</value>
 		<value condition="[String.IsEqual(Window(1144).Property(DBType),album) | String.IsEqual(Window(1144).Property(DBType),song)] + !String.IsEmpty(Window(1144).Property(Art.artist.clearlogo))">$INFO[Window(1144).Property(Art.artist.clearlogo)]</value>
 		<value condition="[String.IsEqual(Window(1144).Property(DBType),album) | String.IsEqual(Window(1144).Property(DBType),song)] + String.IsEmpty(Window(1144).Property(Art.artist.clearlogo))">$INFO[Window(1144).Property(Art.albumartist.clearlogo)]</value>
     </variable>
-	
+
     <variable name="ShelfPopupCertFlag">
         <value condition="[String.IsEmpty(Window(1144).Property(MPAA)) | String.Contains(Window(1144).Property(MPAA),NR) | String.IsEqual(Window(1144).Property(MPAA),Rated) | String.IsEqual(Window(1144).Property(MPAA),Rated ) | String.IsEqual(Window(1144).Property(MPAA),Not Rated) | String.IsEqual(Window(1144).Property(MPAA),Rated Not Rated)]">badges/mpaa/NR.png</value>
         <value condition="String.Contains(Window(1144).Property(MPAA),US:R) | String.Contains(Window(1144).Property(MPAA),United States:R) | String.Contains(Window(1144).Property(MPAA),USA:R) | String.IsEqual(Window(1144).Property(MPAA),Rated R) | String.IsEqual(Window(1144).Property(MPAA),R)">badges/mpaa/R.png</value>
@@ -72,36 +72,36 @@
         <value condition="String.Contains(Window(1144).Property(MPAA),NL-16) | String.Contains(Window(1144).Property(MPAA),Netherlands:16)">badges/mpaa/NL_16.png</value>
         <value condition="String.Contains(Window(1144).Property(MPAA),NL-18) | String.Contains(Window(1144).Property(MPAA),Netherlands:18)">badges/mpaa/NL_18.png</value>
         <value>$INFO[Window(1144).Property(MPAA),badges/mpaa,.png]</value>
-	</variable>	
-	
+	</variable>
+
 	<!-- TV Show studio icon -->
     <variable name="ShelfPopupStudios">
         <value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Window(1144).Property(Studio),,.png]</value>
         <value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Window(1144).Property(Studio),,.png]</value>
         <value>DefaultStudios.png</value>
     </variable>
-	
+
 	<variable name="ShelfPopupSeasonEpisodeLabel">
         <value condition="Integer.IsLess(Window(1144).Property(Episode),10) + Integer.IsLess(Window(1144).Property(Season),10)">$INFO[Window(1144).Property(Season),s0,]$INFO[Window(1144).Property(Episode),e0,]</value>
         <value condition="Integer.IsLess(Window(1144).Property(Episode),10) + !Integer.IsLess(Window(1144).Property(Season),10)">$INFO[Window(1144).Property(Season),s,]$INFO[Window(1144).Property(Episode),e0,]</value>
         <value condition="!Integer.IsLess(Window(1144).Property(Episode),10) + Integer.IsLess(Window(1144).Property(Season),10)">$INFO[Window(1144).Property(Season),s0,]$INFO[Window(1144).Property(Episode),e,]</value>
         <value condition="!Integer.IsLess(Window(1144).Property(Episode),10) + !Integer.IsLess(Window(1144).Property(Season),10)">$INFO[Window(1144).Property(Season),s,]$INFO[Window(1144).Property(Episode),e,]</value>
     </variable>
-	
+
 	<variable name="ShelfPopupDetails">
 	    <value condition="!String.IsEmpty(Window(1144).Property(Top250)) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Window(1144).Property(RatingAndVotes)] [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[Window(1144).Property(Top250)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(1144).Property(Year)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]</value>
 		<value condition="!String.IsEmpty(Window(1144).Property(Top250)) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Window(1144).Property(RatingAndVotes)] [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[Window(1144).Property(Top250)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(1144).Property(Year)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
 		<value condition="String.IsEmpty(Window(1144).Property(Top250)) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Window(1144).Property(RatingAndVotes)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(1144).Property(Year)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]</value>
 		<value condition="String.IsEmpty(Window(1144).Property(Top250)) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Window(1144).Property(RatingAndVotes)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(1144).Property(Year)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
 	</variable>
-	
+
 	<variable name="ShelfPopupDetailsEpisodes">
 	    <value condition="!String.IsEmpty(Window(1144).Property(Rating)) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Window(1144).Property(Rating)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Window(1144).Property(Premiered)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuratio)]</value>
 		<value condition="!String.IsEmpty(Window(1144).Property(Rating)) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Window(1144).Property(Rating)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Window(1144).Property(Premiered)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
 		<value condition="String.IsEmpty(Window(1144).Property(Rating)) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Window(1144).Property(Premiered)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]</value>
 		<value condition="String.IsEmpty(Window(1144).Property(Rating)) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Window(1144).Property(Premiered)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
 	</variable>
-	
+
 	<variable name="ShelfPopupSeasonsLabel">
 		<value condition="String.IsEqual(Window(1144).Property(TotalSeasons),1)">$LOCALIZE[20373]</value>
 		<value>$LOCALIZE[33054]</value>
@@ -110,11 +110,11 @@
 		<value condition="String.IsEqual(Window(1144).Property(TotalEpisodes),1)">$LOCALIZE[20359]</value>
 		<value>$LOCALIZE[20360]</value>
 	</variable>
-	
+
 	<variable name="PopupVideoResolutionFlagVar">
 		<value>$VAR[MediaFlagsPathVar]/videoresolution/$INFO[Window(1144).Property(VideoResolution),,.png]</value>
 	</variable>
-	
+
 	<variable name="PopupVideoCodecFlagVar">
 		<value condition="[String.Contains(Window(1144).Property(FileNameAndPath),pdtv) | String.Contains(Window(1144).Property(FileNameAndPath),sdtv) | String.Contains(Window(1144).Property(FileNameAndPath),sd-tv)]">$VAR[MediaFlagsPathVar]/videocodec/sdtv.png</value>
 		<value condition="[String.Contains(Window(1144).Property(FileNameAndPath),hdtv) | String.Contains(Window(1144).Property(FileNameAndPath),hd-tv) | String.Contains(Window(1144).Property(FileNameAndPath),dsr)]">$VAR[MediaFlagsPathVar]/videocodec/hdtv.png</value>
@@ -124,7 +124,7 @@
 		<value condition="String.Contains(Window(1144).Property(FilenameAndPath),dvd) | String.IsEqual(Window(1144).Property(FileExtension),iso) | String.IsEqual(Window(1144).Property(FileExtension),ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
 		<value>$VAR[MediaFlagsPathVar]/videocodec/$INFO[Window(1144).Property(VideoCodec),,.png]</value>
 	</variable>
-	
+
 	<variable name="PopupAudioCodecFlagVar">
 		<value condition="[String.Contains(Window(1144).Property(FileNameAndPath),atmos)  | String.Contains(Window(1144).Property(AudioCodec),atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),dtsx) | String.Contains(Window(1144).Property(FileNameAndPath),dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
@@ -132,52 +132,52 @@
 		<value condition="[String.Contains(Window(1144).Property(AudioCodec),ac3) | String.Contains(Window(1144).Property(AudioCodec),ac-3) | String.Contains(Window(1144).Property(AudioCodec),a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[Window(1144).Property(AudioCodec),,.png]</value>
 	</variable>
-	
+
 	<variable name="PopupHDRFlagVar">
 		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),hdr) | String.Contains(Window(1144).Property(FileNameAndPath),HDR)">$VAR[MediaFlagsPathVar]/colorrange/hdr.png</value>
 		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),sdr) | String.Contains(Window(1144).Property(FileNameAndPath),SDR)">$VAR[MediaFlagsPathVar]/colorrange/sdr.png</value>
 		<value></value>
 	</variable>
-	
+
 	<variable name="PopupBitDepthFlagVar">
 		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),8bit) | String.Contains(Window(1144).Property(FileNameAndPath),8-bit)">$VAR[MediaFlagsPathVar]/colorrange/8bit.png</value>
 		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),10bit) | String.Contains(Window(1144).Property(FileNameAndPath),10-bit)">$VAR[MediaFlagsPathVar]/colorrange/10bit.png</value>
 		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),12bit) | String.Contains(Window(1144).Property(FileNameAndPath),12-bit)">$VAR[MediaFlagsPathVar]/colorrange/12bit.png</value>
 		<value></value>
 	</variable>
-	
+
 	<include name="PopupLeftHorizontal">
 	    <left>277</left>
 	</include>
-	
+
 	<include name="PopupLeftVertical">
 	    <left>397</left>
 	</include>
-	
+
 	<include name="ShelfPopup1">
 	    <visible>System.IdleTime(1)</visible>
 	</include>
-	
+
 	<include name="ShelfPopup2">
 	    <visible>System.IdleTime(2)</visible>
 	</include>
-	
+
 	<include name="ShelfPopup3">
 	    <visible>System.IdleTime(3)</visible>
 	</include>
-	
+
 	<include name="ShelfPopup4">
 	    <visible>System.IdleTime(4)</visible>
 	</include>
-	
+
 	<include name="ShelfPopup5">
 	    <visible>System.IdleTime(5)</visible>
 	</include>
-	
+
 	<include name="ShelfPopup6">
 	    <visible>System.IdleTime(6)</visible>
 	</include>
-	
+
 	<include name="PopupMediaFlagItems">
 		<param name="itemwidth" default="90"/>
 		<param name="itemheight" default="80"/>
@@ -230,7 +230,7 @@
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>badges/3D.png</texture>
-			</control> 
+			</control>
             <control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(VideoResolution))</visible>
 				<visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Window(1144).Property(FileNameAndPath),hdr) | String.Contains(Window(1144).Property(FileNameAndPath),sdr)]</visible>
@@ -243,17 +243,14 @@
 			</control>
 			<control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(VideoResolution))</visible>
-				<visible>Skin.HasSetting(Show.ColorRangeFlags) + 
-				         [[String.Contains(Window(1144).Property(FileNameAndPath),8bit) | String.Contains(Window(1144).Property(FileNameAndPath),8-bit)] | 
-						  [String.Contains(Window(1144).Property(FileNameAndPath),10bit) | String.Contains(Window(1144).Property(FileNameAndPath),10-bit)] | 
-						  [String.Contains(Window(1144).Property(FileNameAndPath),12bit) | String.Contains(Window(1144).Property(FileNameAndPath),12-bit)]]</visible>
+				<visible>Skin.HasSetting(Show.ColorRangeFlags) + [[String.Contains(Window(1144).Property(FileNameAndPath),8bit) | String.Contains(Window(1144).Property(FileNameAndPath),8-bit)] | [String.Contains(Window(1144).Property(FileNameAndPath),10bit) | String.Contains(Window(1144).Property(FileNameAndPath),10-bit)] | [String.Contains(Window(1144).Property(FileNameAndPath),12bit) | String.Contains(Window(1144).Property(FileNameAndPath),12-bit)]]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[PopupBitDepthFlagVar]</texture>
-			</control>		
+			</control>
 			<control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(AudioCodec))</visible>
 				<height>$PARAM[itemheight]</height>
@@ -292,8 +289,8 @@
 			</control>
 		</definition>
 	</include>
-	
-	
+
+
 	<include name="SetShelfItemDuration">
 	    <control type="button">
 			<include>HiddenButton</include>
@@ -302,9 +299,9 @@
 	        <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
 	        <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
 	        <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-		</control>	
+		</control>
 	</include>
-	
+
 	<include name="ClearPopupProps">
         <onfocus>ClearProperty(DBType,1144)</onfocus>
         <onfocus>ClearProperty(Title,1144)</onfocus>
@@ -358,7 +355,7 @@
 		<onfocus>ClearProperty(Album_Mood,1144)</onfocus>
 		<onfocus>ClearProperty(ShelfDelay,1144)</onfocus>
 	</include>
-	
+
 	<include name="SetShelfPopupProps">
 	    <param name="EnableProp">false</param>
 		<param name="ShelfDelay">3</param>
@@ -420,7 +417,7 @@
 			    <onfocus condition="$PARAM[EnableProp]">SetProperty(ShowWidgetPopup,True,Home)</onfocus>
 				<onfocus>SetProperty(ShelfPopupDelay,"$PARAM[ShelfDelay]",1144)</onfocus>
 		    </control>
-		</definition>	
+		</definition>
 	</include>
-	
-</includes>	
+
+</includes>

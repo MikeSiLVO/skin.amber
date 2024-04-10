@@ -5,23 +5,23 @@
 		<value condition="Skin.HasSetting(coloredflags)">badges/colored</value>
 		<value>badges/monochrome</value>
 	</variable>
-	
+
 	<variable name="VideoResolutionFlagVar">
 		<value>$VAR[MediaFlagsPathVar]/videoresolution/$INFO[Container.ListItem.VideoResolution,,.png]</value>
 	</variable>
-	
+
 	<variable name="MediaInfoVideoResolutionFlagVar">
 		<value>$VAR[MediaFlagsPathVar]/videoresolution/$INFO[ListItem.VideoResolution,,.png]</value>
 	</variable>
-	
+
 	<variable name="PlayerVideoResolutionFlagVar">
 		<value>$VAR[MediaFlagsPathVar]/videoresolution/$INFO[VideoPlayer.VideoResolution,,.png]</value>
 	</variable>
-	
+
 	<variable name="SearchVideoResolutionFlagVar">
 		<value>$VAR[MediaFlagsPathVar]/videoresolution/$INFO[Container(6).ListItem.VideoResolution,,.png]</value>
 	</variable>
-	
+
 	<variable name="VideoCodecFlagVar">
 		<value condition="[String.Contains(Container.ListItem.FileNameAndPath,pdtv) | String.Contains(Container.ListItem.FileNameAndPath,sdtv) | String.Contains(Container.ListItem.FileNameAndPath,sd-tv)]">$VAR[MediaFlagsPathVar]/videocodec/sdtv.png</value>
 		<value condition="[String.Contains(Container.ListItem.FileNameAndPath,hdtv) | String.Contains(Container.ListItem.FileNameAndPath,hd-tv) | String.Contains(Container.ListItem.FileNameAndPath,dsr)]">$VAR[MediaFlagsPathVar]/videocodec/hdtv.png</value>
@@ -31,7 +31,7 @@
 		<value condition="String.Contains(Container.ListItem.FilenameAndPath,dvd) | String.IsEqual(Container.ListItem.FileExtension,iso) | String.IsEqual(Container.ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
 		<value>$VAR[MediaFlagsPathVar]/videocodec/$INFO[Container.ListItem.VideoCodec,,.png]</value>
 	</variable>
-	
+
 	<variable name="MediaInfoVideoCodecFlagVar">
 		<value condition="[String.Contains(ListItem.FileNameAndPath,pdtv) | String.Contains(ListItem.FileNameAndPath,sdtv) | String.Contains(ListItem.FileNameAndPath,sd-tv)]">$VAR[MediaFlagsPathVar]/videocodec/sdtv.png</value>
 		<value condition="[String.Contains(ListItem.FileNameAndPath,hdtv) | String.Contains(ListItem.FileNameAndPath,hd-tv) | String.Contains(ListItem.FileNameAndPath,dsr)]">$VAR[MediaFlagsPathVar]/videocodec/hdtv.png</value>
@@ -41,7 +41,7 @@
 		<value condition="String.Contains(ListItem.FilenameAndPath,dvd) | String.IsEqual(ListItem.FileExtension,iso) | String.IsEqual(ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
 		<value>$VAR[MediaFlagsPathVar]/videocodec/$INFO[ListItem.VideoCodec,,.png]</value>
 	</variable>
-	
+
 	<variable name="PlayerVideoCodecFlagVar">
 		<value condition="[String.Contains(Player.FileNameAndPath,pdtv) | String.Contains(Player.FileNameAndPath,sdtv) | String.Contains(Player.FileNameAndPath,sd-tv)]">$VAR[MediaFlagsPathVar]/videocodec/sdtv.png</value>
 		<value condition="[String.Contains(Player.FileNameAndPath,hdtv) | String.Contains(Player.FileNameAndPath,hd-tv) | String.Contains(Player.FileNameAndPath,dsr)]">$VAR[MediaFlagsPathVar]/videocodec/hdtv.png</value>
@@ -51,7 +51,7 @@
 		<value condition="String.Contains(Player.FilenameAndPath,dvd) | String.IsEqual(Player.FileExtension,iso) | String.IsEqual(Player.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
 		<value>$VAR[MediaFlagsPathVar]/videocodec/$INFO[VideoPlayer.VideoCodec,,.png]</value>
 	</variable>
-	
+
 	<variable name="SearchVideoCodecFlagVar">
 		<value condition="[String.Contains(Container(6).ListItem.FileNameAndPath,pdtv) | String.Contains(Container(6).ListItem.FileNameAndPath,sdtv) | String.Contains(Container(6).ListItem.FileNameAndPath,sd-tv)]">$VAR[MediaFlagsPathVar]/videocodec/sdtv.png</value>
 		<value condition="[String.Contains(Container(6).ListItem.FileNameAndPath,hdtv) | String.Contains(Container(6).ListItem.FileNameAndPath,hd-tv) | String.Contains(Container(6).ListItem.FileNameAndPath,dsr)]">$VAR[MediaFlagsPathVar]/videocodec/hdtv.png</value>
@@ -61,7 +61,7 @@
 		<value condition="String.Contains(Container(6).ListItem.FilenameAndPath,dvd) | String.IsEqual(Container(6).ListItem.FileExtension,iso) | String.IsEqual(Container(6).ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
 		<value>$VAR[MediaFlagsPathVar]/videocodec/$INFO[Container(6).ListItem.VideoCodec,,.png]</value>
 	</variable>
-	
+
 	<variable name="AudioCodecFlagVar">
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,atmos) | String.Contains(Container.ListItem.AudioCodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,dtsx) | String.Contains(Container.ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
@@ -69,7 +69,7 @@
 		<value condition="[String.Contains(Container.ListItem.AudioCodec,ac3) | String.Contains(Container.ListItem.AudioCodec,ac-3) | String.Contains(Container.ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[Container.ListItem.AudioCodec,,.png]</value>
 	</variable>
-	
+
 	<variable name="MediaInfoAudioCodecFlagVar">
 		<value condition="String.Contains(ListItem.FileNameAndPath,atmos) | String.Contains(ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,dtsx) | String.Contains(ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
@@ -77,7 +77,7 @@
 		<value condition="[String.Contains(ListItem.AudioCodec,ac3) | String.Contains(ListItem.AudioCodec,ac-3) | String.Contains(ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
-	
+
 	<variable name="PlayerAudioCodecFlagVar">
 		<value condition="String.Contains(Player.FileNameAndPath,atmos) | String.Contains(VideoPlayer.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Player.FileNameAndPath,dtsx) | String.Contains(Player.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
@@ -85,7 +85,7 @@
 		<value condition="[String.Contains(VideoPlayer.AudioCodec,ac3) | String.Contains(VideoPlayer.AudioCodec,ac-3) | String.Contains(VideoPlayer.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[VideoPlayer.AudioCodec,,.png]</value>
 	</variable>
-	
+
 	<variable name="SearchAudioCodecFlagVar">
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,atmos) | String.Contains(Container(6).ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,dtsx) | String.Contains(Container(6).ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
@@ -93,59 +93,59 @@
 		<value condition="[String.Contains(Container(6).ListItem.AudioCodec,ac3) | String.Contains(Container(6).ListItem.AudioCodec,ac-3) | String.Contains(Container(6).ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[Container(6).ListItem.AudioCodec,,.png]</value>
 	</variable>
-	
+
 	<variable name="HDRFlagVar">
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,hdr) | String.Contains(Container.ListItem.FileNameAndPath,HDR)">$VAR[MediaFlagsPathVar]/colorrange/hdr.png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,sdr) | String.Contains(Container.ListItem.FileNameAndPath,SDR)">$VAR[MediaFlagsPathVar]/colorrange/sdr.png</value>
 	</variable>
-	
+
 	<variable name="MediaInfoHDRFlagVar">
 		<value condition="String.Contains(ListItem.FileNameAndPath,hdr) | String.Contains(ListItem.FileNameAndPath,HDR)">$VAR[MediaFlagsPathVar]/colorrange/hdr.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,sdr) | String.Contains(ListItem.FileNameAndPath,SDR)">$VAR[MediaFlagsPathVar]/colorrange/sdr.png</value>
 	</variable>
-	
+
 	<variable name="PlayerHDRFlagVar">
 		<value condition="String.Contains(Player.FileNameAndPath,hdr) | String.Contains(Player.FileNameAndPath,HDR)">$VAR[MediaFlagsPathVar]/colorrange/hdr.png</value>
 		<value condition="String.Contains(Player.FileNameAndPath,sdr) | String.Contains(Player.FileNameAndPath,SDR)">$VAR[MediaFlagsPathVar]/colorrange/sdr.png</value>
 	</variable>
-	
+
 	<variable name="SearchHDRFlagVar">
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,hdr) | String.Contains(Container(6).ListItem.FileNameAndPath,HDR)">$VAR[MediaFlagsPathVar]/colorrange/hdr.png</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,sdr) | String.Contains(Container(6).ListItem.FileNameAndPath,SDR)">$VAR[MediaFlagsPathVar]/colorrange/sdr.png</value>
 	</variable>
-	
+
 	<variable name="BitDepthFlagVar">
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,8bit) | String.Contains(Container.ListItem.FileNameAndPath,8-bit)">$VAR[MediaFlagsPathVar]/colorrange/8bit.png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,10bit) | String.Contains(Container.ListItem.FileNameAndPath,10-bit)">$VAR[MediaFlagsPathVar]/colorrange/10bit.png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,12bit) | String.Contains(Container.ListItem.FileNameAndPath,12-bit)">$VAR[MediaFlagsPathVar]/colorrange/12bit.png</value>
 	</variable>
-	
+
 	<variable name="MediaInfoBitDepthFlagVar">
 		<value condition="String.Contains(ListItem.FileNameAndPath,8bit) | String.Contains(ListItem.FileNameAndPath,8-bit)">$VAR[MediaFlagsPathVar]/colorrange/8bit.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,10bit) | String.Contains(ListItem.FileNameAndPath,10-bit)">$VAR[MediaFlagsPathVar]/colorrange/10bit.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,12bit) | String.Contains(ListItem.FileNameAndPath,12-bit)">$VAR[MediaFlagsPathVar]/colorrange/12bit.png</value>
 	</variable>
-	
+
 	<variable name="PlayerBitDepthFlagVar">
 		<value condition="String.Contains(Player.FileNameAndPath,8bit) | String.Contains(Player.FileNameAndPath,8-bit)">$VAR[MediaFlagsPathVar]/colorrange/8bit.png</value>
 		<value condition="String.Contains(Player.FileNameAndPath,10bit) | String.Contains(Player.FileNameAndPath,10-bit)">$VAR[MediaFlagsPathVar]/colorrange/10bit.png</value>
 		<value condition="String.Contains(Player.FileNameAndPath,12bit) | String.Contains(Player.FileNameAndPath,12-bit)">$VAR[MediaFlagsPathVar]/colorrange/12bit.png</value>
 	</variable>
-	
+
 	<variable name="SearchBitDepthFlagVar">
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,8bit) | String.Contains(Container(6).ListItem.FileNameAndPath,8-bit)">$VAR[MediaFlagsPathVar]/colorrange/8bit.png</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,10bit) | String.Contains(Container(6).ListItem.FileNameAndPath,10-bit)">$VAR[MediaFlagsPathVar]/colorrange/10bit.png</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,12bit) | String.Contains(Container(6).ListItem.FileNameAndPath,12-bit)">$VAR[MediaFlagsPathVar]/colorrange/12bit.png</value>
 	</variable>
-	
+
 	<!-- Begin Matrix change -->
-	
+
 	<variable name="PVRStatusImageVar">
 		<value condition="ListItem.IsRecording">img/PVR-IsRecording.png</value>
 		<value condition="ListItem.HasTimer | ListItem.HasTimerSchedule">img/PVR-HasTimer.png</value>
 		<value condition="ListItem.HasArchive">img/PVR-HasArchive.png</value>
 	</variable>
-	
+
 	<!-- End Matrix change -->
 
 	<include name="ListWatchedOverlay">
@@ -153,13 +153,12 @@
         <param name="itemheight">72</param>
         <param name="BGposy">15</param>
 		<definition>
-		    
+
 			<control type="group">
 			    <visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <!-- Overlay image when panel is in original position -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
-				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]]  + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]]  + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
 				    <posx>1295</posx>
 				    <width>30</width>
 				    <height>$PARAM[itemheight]</height>
@@ -168,8 +167,7 @@
 			    </control>
 			    <!-- Overlay image when panel is swapped -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
-				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
 				    <posx>596r</posx>
 				    <width>30</width>
 				    <height>$PARAM[itemheight]</height>
@@ -178,8 +176,7 @@
 			    </control>
 			    <!-- Overlay image when panel is disabled -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
-				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + $EXP[ListPanelIsDisabled]</visible>
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + $EXP[ListPanelIsDisabled]</visible>
 				    <posx>46r</posx>
 				    <width>30</width>
 				    <height>$PARAM[itemheight]</height>
@@ -345,18 +342,18 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="LowListWatchedOverlay">
 		<param name="isFocused">false</param>
         <param name="itemheight">72</param>
         <param name="BGposy">15</param>
 		<definition>
-		    
+
 			<control type="group">
 			    <visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <!-- Overlay image when panel is in original position -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] |
 				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped]</visible>
 				    <posx>1495</posx>
 				    <width>30</width>
@@ -366,7 +363,7 @@
 			    </control>
 			    <!-- Overlay image when panel is swapped -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] |
 				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped]</visible>
 				    <posx>586r</posx>
 				    <width>30</width>
@@ -376,7 +373,7 @@
 			    </control>
 			    <!-- Overlay image when panel is disabled -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] |
 				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + $EXP[LowListPanelIsDisabled]</visible>
 				    <posx>46r</posx>
 				    <width>30</width>
@@ -543,7 +540,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="TallListWatchedOverlay">
 		<param name="isFocused">false</param>
         <param name="itemheight">72</param>
@@ -553,7 +550,7 @@
 			    <visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <!-- Overlay image when panel is in original position -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] |
 				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped]</visible>
 				    <posx>1295</posx>
 				    <width>30</width>
@@ -563,7 +560,7 @@
 			    </control>
 			    <!-- Overlay image when panel is swapped -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] |
 				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped]</visible>
 				    <posx>536r</posx>
 				    <width>30</width>
@@ -573,7 +570,7 @@
 			    </control>
 			    <!-- Overlay image when panel is disabled -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] |
 				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + $EXP[TallListPanelIsDisabled]</visible>
 				    <posx>46r</posx>
 				    <width>30</width>
@@ -749,12 +746,12 @@
 		<param name="episodeslabelpos">495</param>
 		<param name="BGposy">15</param>
 		<definition>
-		    
+
 			<control type="group">
 			    <visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <!-- Overlay image when panel is in original position -->
 			    <control type="image">
-				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
+				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] |
 				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]]</visible>
 				    <posx>$PARAM[overlaypos]</posx>
 				    <width>30</width>
@@ -817,7 +814,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="RightListWatchedOverlay">
 		<param name="isFocused">false</param>
         <param name="itemheight">72</param>
@@ -870,7 +867,7 @@
 	</include>
 
     <!-- Begin Matrix change -->
-	
+
 	<include name="RecOverlay">
 		<control type="image">
 			<posx>880</posx>
@@ -881,7 +878,7 @@
 			<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 		</control>
 	</include>
-	
+
 	<!-- End Matrix change -->
 
 	<include name="MediaFlagItems">
@@ -967,7 +964,7 @@
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>badges/3D.png</texture>
-			</control> 
+			</control>
 			<control type="image" id="89004">
 				<visible>Container.ListItem.IsStereoscopic + Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
@@ -977,7 +974,7 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<texture>badges/3D.png</texture>
-			</control> 
+			</control>
             <control type="image" id="89005">
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + !Skin.HasSetting(coloredflags) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
@@ -998,9 +995,9 @@
 				<texture>$VAR[HDRFlagVar]</texture>
 			</control>
 			<control type="image" id="89006">
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + !Skin.HasSetting(coloredflags) + 
-				         [[String.Contains(Container.ListItem.FileNameAndPath,8bit) | String.Contains(Container.ListItem.FileNameAndPath,8-bit)] | 
-						  [String.Contains(Container.ListItem.FileNameAndPath,10bit) | String.Contains(Container.ListItem.FileNameAndPath,10-bit)] | 
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + !Skin.HasSetting(coloredflags) +
+				         [[String.Contains(Container.ListItem.FileNameAndPath,8bit) | String.Contains(Container.ListItem.FileNameAndPath,8-bit)] |
+						  [String.Contains(Container.ListItem.FileNameAndPath,10bit) | String.Contains(Container.ListItem.FileNameAndPath,10-bit)] |
 						  [String.Contains(Container.ListItem.FileNameAndPath,12bit) | String.Contains(Container.ListItem.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -1011,9 +1008,9 @@
 				<texture>$VAR[BitDepthFlagVar]</texture>
 			</control>
             <control type="image" id="89006">
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + Skin.HasSetting(coloredflags) + 
-				         [[String.Contains(Container.ListItem.FileNameAndPath,8bit) | String.Contains(Container.ListItem.FileNameAndPath,8-bit)] | 
-						  [String.Contains(Container.ListItem.FileNameAndPath,10bit) | String.Contains(Container.ListItem.FileNameAndPath,10-bit)] | 
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + Skin.HasSetting(coloredflags) +
+				         [[String.Contains(Container.ListItem.FileNameAndPath,8bit) | String.Contains(Container.ListItem.FileNameAndPath,8-bit)] |
+						  [String.Contains(Container.ListItem.FileNameAndPath,10bit) | String.Contains(Container.ListItem.FileNameAndPath,10-bit)] |
 						  [String.Contains(Container.ListItem.FileNameAndPath,12bit) | String.Contains(Container.ListItem.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -1021,7 +1018,7 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<texture>$VAR[BitDepthFlagVar]</texture>
-			</control>			
+			</control>
 			<control type="image" id="89007">
 				<visible>!String.IsEmpty(Container.ListItem.AudioCodec) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -1137,8 +1134,8 @@
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<itemgap>5</itemgap>
-                <align>left</align> 
-                <top>$PARAM[coloruserratingtop]</top>				
+                <align>left</align>
+                <top>$PARAM[coloruserratingtop]</top>
                 <control type="image" description="User Rating logo">
                     <width>40</width>
                     <aspectratio>keep</aspectratio>
@@ -1189,7 +1186,7 @@
             </control>
 		</definition>
 	</include>
-	
+
 	<include name="MediaInfoMediaFlagItems">
 		<param name="itemwidth" default="90"/>
 		<param name="itemheight" default="80"/>
@@ -1280,7 +1277,7 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<texture>badges/3D.png</texture>
-			</control>			
+			</control>
             <control type="image" id="89005">
 				<visible>!String.IsEmpty(ListItem.VideoResolution) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
@@ -1304,9 +1301,9 @@
 			</control>
 			<control type="image" id="89006">
 				<visible>!String.IsEmpty(ListItem.VideoResolution) + !Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + 
-				         [[String.Contains(ListItem.FileNameAndPath,8bit) | String.Contains(ListItem.FileNameAndPath,8-bit)] | 
-						  [String.Contains(ListItem.FileNameAndPath,10bit) | String.Contains(ListItem.FileNameAndPath,10-bit)] | 
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) +
+				         [[String.Contains(ListItem.FileNameAndPath,8bit) | String.Contains(ListItem.FileNameAndPath,8-bit)] |
+						  [String.Contains(ListItem.FileNameAndPath,10bit) | String.Contains(ListItem.FileNameAndPath,10-bit)] |
 						  [String.Contains(ListItem.FileNameAndPath,12bit) | String.Contains(ListItem.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -1315,12 +1312,12 @@
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[MediaInfoBitDepthFlagVar]</texture>
-			</control>			
+			</control>
 			<control type="image" id="89006">
 				<visible>!String.IsEmpty(ListItem.VideoResolution) + Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + 
-				         [[String.Contains(ListItem.FileNameAndPath,8bit) | String.Contains(ListItem.FileNameAndPath,8-bit)] | 
-						  [String.Contains(ListItem.FileNameAndPath,10bit) | String.Contains(ListItem.FileNameAndPath,10-bit)] | 
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) +
+				         [[String.Contains(ListItem.FileNameAndPath,8bit) | String.Contains(ListItem.FileNameAndPath,8-bit)] |
+						  [String.Contains(ListItem.FileNameAndPath,10bit) | String.Contains(ListItem.FileNameAndPath,10-bit)] |
 						  [String.Contains(ListItem.FileNameAndPath,12bit) | String.Contains(ListItem.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -1328,7 +1325,7 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<texture>$VAR[MediaInfoBitDepthFlagVar]</texture>
-			</control>			
+			</control>
 			<control type="image" id="89007">
 				<visible>!String.IsEmpty(ListItem.AudioCodec) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -1396,7 +1393,7 @@
 			</control>
 		</definition>
 	</include>
-	
+
     <include name="PlayerMediaFlagItems">
 		<param name="itemwidth" default="90"/>
 		<param name="itemheight" default="80"/>
@@ -1512,9 +1509,9 @@
 			</control>
 			<control type="image" id="89008">
 				<visible>!String.IsEmpty(VideoPlayer.VideoResolution) + !Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + 
-				         [[String.Contains(Player.FileNameAndPath,8bit) | String.Contains(Player.FileNameAndPath,8-bit)] | 
-						  [String.Contains(Player.FileNameAndPath,10bit) | String.Contains(Player.FileNameAndPath,10-bit)] | 
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) +
+				         [[String.Contains(Player.FileNameAndPath,8bit) | String.Contains(Player.FileNameAndPath,8-bit)] |
+						  [String.Contains(Player.FileNameAndPath,10bit) | String.Contains(Player.FileNameAndPath,10-bit)] |
 						  [String.Contains(Player.FileNameAndPath,12bit) | String.Contains(Player.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -1523,12 +1520,12 @@
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[PlayerBitDepthFlagVar]</texture>
-			</control>            
+			</control>
 			<control type="image" id="89008">
 				<visible>!String.IsEmpty(VideoPlayer.VideoResolution) + Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + 
-				         [[String.Contains(Player.FileNameAndPath,8bit) | String.Contains(Player.FileNameAndPath,8-bit)] | 
-						  [String.Contains(Player.FileNameAndPath,10bit) | String.Contains(Player.FileNameAndPath,10-bit)] | 
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) +
+				         [[String.Contains(Player.FileNameAndPath,8bit) | String.Contains(Player.FileNameAndPath,8-bit)] |
+						  [String.Contains(Player.FileNameAndPath,10bit) | String.Contains(Player.FileNameAndPath,10-bit)] |
 						  [String.Contains(Player.FileNameAndPath,12bit) | String.Contains(Player.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -1536,7 +1533,7 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<texture>$VAR[PlayerBitDepthFlagVar]</texture>
-			</control>            
+			</control>
 			<control type="image" id="89004">
 				<visible>!String.IsEmpty(VideoPlayer.AudioCodec) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -1616,7 +1613,7 @@
                 <height>$PARAM[itemheight]</height>
 				<orientation>horizontal</orientation>
                 <itemgap>0</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="User Rating logo">
                     <height>40</height>
                     <width>40</width>
@@ -1643,8 +1640,8 @@
                 </control>
             </control>
 		</definition>
-	</include>	
-	
+	</include>
+
 	<include name="PlayerAudioFlagItems">
 		<param name="itemwidth" default="90"/>
 		<param name="itemheight" default="80"/>
@@ -1711,8 +1708,8 @@
 				<texture>$VAR[MediaFlagsPathVar]/audiochannels/channels$INFO[MusicPlayer.Channels,,.png]</texture>
 			</control>
 		</definition>
-	</include>	
-	
+	</include>
+
 	<include name="TopRightOverlayTemplate">
 	    <param name="isFocused">false</param>
 		<param name="isSmallIcon">false</param>
@@ -1728,7 +1725,7 @@
 		<definition>
 		    <!-- Overlays for small icons in custom video lists in info dialog -->
 			<control type="group">
-			    <visible>Window.IsActive(DialogVideoInfo.xml) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,tvshow) | String.IsEqual(Container.ListItem.DBType,season)] + 
+			    <visible>Window.IsActive(DialogVideoInfo.xml) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,tvshow) | String.IsEqual(Container.ListItem.DBType,season)] +
 				         [String.StartsWith(Container.ListItem.FolderPath,plugin://) | String.StartsWith(Container.ListItem.FolderPath,videodb)] + !String.IsEmpty(Container.ListItem.DBID)</visible>
 			    <!-- Regular Overlay -->
 				<control type="group">
@@ -1822,17 +1819,17 @@
 				            <width>72</width>
 			            </control>
 			        </control>
-				</control>	
+				</control>
 			</control>
-			
+
 			<!-- Overlay for all other use cases -->
 			<control type="group">
-			    <visible>[!Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(Custom_1122_Search.xml) | Window.IsActive(Custom_1131_SingleSearch.xml)] + 
-				         [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | 
-				                                                  String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season) | 
-																  String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,album) | 
+			    <visible>[!Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(Custom_1122_Search.xml) | Window.IsActive(Custom_1131_SingleSearch.xml)] +
+				         [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) |
+				                                                  String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season) |
+																  String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,album) |
 																  String.IsEqual(ListItem.DBType,video)] + $EXP[IsIconView]</visible>
-				
+
 				<!-- Normal Overlay for search results -->
 			    <control type="group">
 				    <visible>$PARAM[isSearch]</visible>
@@ -2017,7 +2014,7 @@
 						</control>
 					</control>
                 </control>
-				
+
 			    <!-- Unwatched episode count for regular icons -->
 				<control type="group">
 				    <visible>![$PARAM[isSmallIcon]] + ![$PARAM[isSearch]]</visible>
@@ -2145,7 +2142,7 @@
 				        </control>
 					</control>
 				</control>
-				
+
 				<!-- Unwatched episode count for small icons -->
 			    <control type="group">
 				    <visible>$PARAM[isSmallIcon] + ![$PARAM[isSearch]]</visible>
@@ -2286,7 +2283,7 @@
 				                <height>82</height>
 				                <width>82</width>
 			                </control>
-						</control>	
+						</control>
 					</control>
 					<!-- Poster in widgets -->
 					<control type="group">
@@ -2879,7 +2876,7 @@
 					        <textcolor>White2</textcolor>
 				        </control>
 					</control>
-				</control>	
+				</control>
 			    <!-- Unwatched episode count for search -->
 			    <control type="group">
 				    <visible>$PARAM[isSearch]</visible>
@@ -2929,7 +2926,7 @@
 					    <textcolor>White2</textcolor>
 				    </control>
 				</control>
-				
+
 				<!-- In Progress -->
 				<control type="group">
 				    <visible>Integer.IsGreater(ListItem.PercentPlayed,0) + !Skin.HasSetting(Hide_InProgress_Marks)</visible>
@@ -2972,7 +2969,7 @@
 				            <height>72</height>
 				            <width>72</width>
 			            </control>
-			        </control>											  
+			        </control>
 				    <!-- Small icons, widgets -->
 			        <control type="group">
 				        <visible>$PARAM[isSmallIcon] + ![$PARAM[isSearch]] + String.IsEmpty(Container.Viewmode)</visible>
@@ -3018,7 +3015,7 @@
 			            </control>
 			        </control>
 				</control>
-				
+
 				<!-- Collections -->
 				<control type="group">
 				    <visible>ListItem.IsCollection + !Skin.HasSetting(Hide_Collection_Marks)</visible>
@@ -3083,12 +3080,12 @@
 				                <width>72</width>
 			                </control>
 						</control>
-					</control>	
+					</control>
 				</control>
 			</control>
 		</definition>
 	</include>
-	
+
 	<include name="RatingOverlayTemplate">
 	    <param name="isFocused">false</param>
 		<param name="isSmallIcon">false</param>
@@ -3105,7 +3102,7 @@
 		<definition>
 		    <!-- Overlay for small icons in custom video lists in info dialog -->
 			<control type="group">
-			    <visible>Window.IsActive(DialogVideoInfo.xml) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,tvshow)] + 
+			    <visible>Window.IsActive(DialogVideoInfo.xml) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,tvshow)] +
 				         [String.StartsWith(Container.ListItem.FolderPath,plugin://) | String.StartsWith(Container.ListItem.FolderPath,videodb)] + $EXP[canShowContainerRatingOverlay]</visible>
 				<control type="group">
 					<control type="group">
@@ -3152,16 +3149,16 @@
 					</control>
 				</control>
 			</control>
-			
+
 			<!-- Overlay for all other use cases -->
 			<control type="group">
-			    <visible>[!Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(Custom_1122_Search.xml) | Window.IsActive(Custom_1131_SingleSearch.xml)] + 
-				         [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | 
-				                                                  String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,album) | 
+			    <visible>[!Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(Custom_1122_Search.xml) | Window.IsActive(Custom_1131_SingleSearch.xml)] +
+				         [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) |
+				                                                  String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,album) |
 																  String.IsEqual(ListItem.DBType,video)] + $EXP[IsIconView] + $EXP[canShowRatingOverlay]</visible>
-				
+
 			    <!-- Regular icons -->
-				
+
 				<control type="group">
 				    <visible>![$PARAM[isSmallIcon]] + ![$PARAM[isSearch]]</visible>
 				    <visible>!ListItem.IsParentFolder</visible>
@@ -3301,7 +3298,7 @@
 				        </control>
 					</control>
 				</control>
-				
+
 				<!-- Small icons -->
 			    <control type="group">
 				    <visible>$PARAM[isSmallIcon] + ![$PARAM[isSearch]]</visible>
@@ -3483,7 +3480,7 @@
 					        <textcolor>White2</textcolor>
 				        </control>
 					</control>
-					
+
 					<!-- Poster in widgets -->
 					<control type="group">
 					    <visible>!$PARAM[isBanner] + !$PARAM[isSquare] + !$PARAM[isThumb] + !$PARAM[isWideIcon] + String.IsEmpty(Container.Viewmode)</visible>
@@ -3532,8 +3529,8 @@
 					                <textcolor>White2</textcolor>
 				                </control>
 						    </control>
-						</control>	
-						
+						</control>
+
 						<!-- Triple row, small -->
 						<control type="group">
 					        <visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -3578,9 +3575,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
-						</control>	
-						
+							</control>
+						</control>
+
 						<!-- Triple row medium -->
 				        <control type="group">
 					        <visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -3625,14 +3622,14 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
 					</control>
-					
+
 					<!-- Square in widgets -->
 					<control type="group">
 					    <visible>$PARAM[isSquare] + String.IsEmpty(Container.Viewmode)</visible>
-						
+
 						<!-- Single, Double, or Large Triple row -->
 						<control type="group">
 						    <visible>!$PARAM[isTripleRow] | [$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]</visible>
@@ -3677,9 +3674,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
-						
+
 						<!-- Triple row, small -->
 						<control type="group">
 					        <visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -3724,9 +3721,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
-						</control>	
-						
+							</control>
+						</control>
+
 						<!-- Triple row medium -->
 				        <control type="group">
 					        <visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -3771,10 +3768,10 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
 					</control>
-					
+
 					<!-- Thumb in widgets (Fanart or Thumb Artwork) -->
 					<control type="group">
 					    <visible>$PARAM[isThumb] + String.IsEmpty(Container.Viewmode)</visible>
@@ -3822,9 +3819,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
-						
+
 						<!-- Triple row, small -->
 						<control type="group">
 					        <visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -3869,9 +3866,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
-						</control>	
-						
+							</control>
+						</control>
+
 						<!-- Triple row medium -->
 				        <control type="group">
 					        <visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -3916,10 +3913,10 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
 					</control>
-					
+
 					<!-- Landscape in widgets -->
 					<control type="group">
 					    <visible>$PARAM[isWideIcon] + String.IsEmpty(Container.Viewmode)</visible>
@@ -3967,9 +3964,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
-						
+
 						<!-- Triple row, small -->
 						<control type="group">
 					        <visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -4014,9 +4011,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
-						</control>	
-						
+							</control>
+						</control>
+
 						<!-- Triple row medium -->
 				        <control type="group">
 					        <visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -4061,10 +4058,10 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
 					</control>
-					
+
 					<!-- Banner in widgets -->
 					<control type="group">
 					    <visible>$PARAM[isBanner] + String.IsEmpty(Container.Viewmode)</visible>
@@ -4112,9 +4109,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
-						
+
 						<!-- Triple row, small -->
 						<control type="group">
 					        <visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -4159,9 +4156,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
-						</control>	
-						
+							</control>
+						</control>
+
 						<!-- Triple row medium -->
 				        <control type="group">
 					        <visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -4206,9 +4203,9 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
-						
+
 						<!-- Triple row large -->
 						<control type="group">
 						    <visible>[$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]</visible>
@@ -4253,10 +4250,10 @@
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
 				                </control>
-							</control>	
+							</control>
 						</control>
 					</control>
-				</control>	
+				</control>
 			    <!-- Rating overlay for custom search windows -->
 			    <control type="group">
 				    <visible>$PARAM[isSearch]</visible>
@@ -4479,7 +4476,7 @@
 				        <textcolor>White2</textcolor>
 			        </control>
 				</control>
-			</control>			
+			</control>
 		</control>
 	</include>
 
@@ -4592,7 +4589,7 @@
 					<param name="isTripleRowLarge">$PARAM[isTripleRowLarge]</param>
 					<param name="isTripleShelvesTogether">$PARAM[isTripleShelvesTogether]</param>
 					<param name="isLowWidget">$PARAM[isLowWidget]</param>
-				</include>				
+				</include>
 				<include content="GenericThumbLabelTemplate">
 					<param name="isFocused">$PARAM[isFocused]</param>
 					<param name="yoffset">$PARAM[overlaylabelyoffset]</param>
@@ -4666,14 +4663,14 @@
     				    <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 					    <aspectratio>keep</aspectratio>
 				    </control>
-				</control>	
+				</control>
 				<control type="group">
 				    <visible>[Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)]</visible>
 					<include>EmbuaryInfoListsOverlays</include>
-				</control>	
+				</control>
 			</control>
 		</definition>
-	</include>	
+	</include>
 
 	<include name="GenericThumbLabelTemplate">
 		<param name="isFocused">false</param>
@@ -4941,7 +4938,7 @@
 	</include>
 
     <!-- View media layouts -->
-    
+
 	<include name="GenericActorIconBig">
 		<param name="isFocused">false</param>
 		<param name="belowlabel2">$INFO[ListItem.Label2]</param>
@@ -5196,7 +5193,7 @@
 			</include>
 		</definition>
 	</include>
-	
+
 	<include name="GenericPosterIconBig">
 		<param name="isFocused">false</param>
 		<param name="isSmallIcon">false</param>
@@ -5482,7 +5479,7 @@
 			</focusedlayout>
 		</definition>
 	</include>
-    
+
 	<include name="SetLayout">
 		<param name="viewid"/>
 		<definition>
@@ -5520,7 +5517,7 @@
 				    <param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
 				    <param name="aspect">stretch</param>
 					<param name="isSmallIcon">true</param>
-			    </include>                
+			    </include>
 			</focusedlayout>
 		</definition>
 	</include>
@@ -5581,10 +5578,10 @@
                     <param name="labelfont2">ListDetailsSmall</param>
 				    <param name="aspect">$PARAM[aspect]</param>
 					<param name="isSmallIcon">$PARAM[isSmallIcon]</param>
-			    </include>                
+			    </include>
 			</focusedlayout>
 		</definition>
-	</include>    
+	</include>
 
     <include name="WideLayout">
 		<param name="viewid"/>
@@ -5637,7 +5634,7 @@
                     <param name="labelfont1">ListDetailsSmall</param>
                     <param name="labelfont2">ListDetailsSmall</param>
 				    <param name="aspect">scale</param>
-			    </include>                
+			    </include>
 			</focusedlayout>
 		</definition>
 	</include>
@@ -5658,7 +5655,7 @@
 			</focusedlayout>
 		</definition>
 	</include>
-    
+
 	<include name="RecordingsLayout">
 		<param name="viewid"/>
 		<definition>
@@ -5692,7 +5689,7 @@
 			</focusedlayout>
 		</definition>
 	</include>
-	
+
 	<include name="PosterLayout">
 		<param name="viewid"/>
 		<definition>
@@ -5919,7 +5916,7 @@
 	<include name="GenericLayout">
 		<param name="viewid"/>
 		<definition>
-		
+
 		    <itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="400" width="310">
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">false</param>
@@ -5934,7 +5931,7 @@
 					<param name="belowtextbox">$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="320" width="232.5">
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">false</param>
@@ -5949,7 +5946,7 @@
 					<param name="belowtextbox">$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName]</param>
 				</include>
 			</focusedlayout>
-		
+
 			<itemlayout condition="!Window.IsActive(MyPVRRecordings.xml) + !Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![container.content(videos) | container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | container.content(songs) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)]" height="400" width="310">
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">false</param>
@@ -6039,7 +6036,7 @@
 			<control type="label" description="Details2">
 			    <animation effect="fade" start="100" end="0" time="480" condition="[[Control.HasFocus(6058) + Control.IsVisible(6058581)] | [Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]">Conditional</animation>
 				<visible>[[Control.IsVisible(58)] | Control.IsVisible(53) | [Control.IsVisible(56) + !$EXP[56_FanartViewInfo] + !$EXP[56_FanartViewNetflix]]]</visible>
-				<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | 
+				<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] |
 				         [Container.content(tvshows) | Container.content(seasons)] + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) | !String.IsEmpty(ListItem.Status)]</visible>
 				<posy>100</posy>
                 <width>$PARAM[width]</width>
@@ -6052,7 +6049,7 @@
             <control type="label" description="Details2">
 			    <animation effect="fade" start="100" end="0" time="480" condition="[[Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]">Conditional</animation>
 				<visible>[[Control.IsVisible(56) + !$EXP[56_FanartViewInfo] + $EXP[56_FanartViewNetflix]]]</visible>
-				<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | 
+				<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] |
 				         [Container.content(tvshows) | Container.content(seasons)] + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) | !String.IsEmpty(ListItem.Status)]</visible>
 				<posy>79</posy>
                 <width>$PARAM[width]</width>
@@ -6061,7 +6058,7 @@
 				<shadowcolor>Black</shadowcolor>
 				<font>font16</font>
 				<label>$VAR[panelsubheading2]</label>
-			</control>            
+			</control>
 		</control>
 		<control type="group">
 		    <visible>!Skin.HasSetting(coloredflags)</visible>

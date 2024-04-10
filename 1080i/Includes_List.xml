@@ -7,7 +7,7 @@
 		<focusposition>4</focusposition>
 		<movement>3</movement>
 	</include>
-	
+
 	<include name="ListCenterFocusParamsLowList">
 	    <defaultcontrol always="true">0</defaultcontrol>
 		<focusposition>2</focusposition>
@@ -17,7 +17,7 @@
     <!-- ==================== -->
     <!-- =   List Layouts   = -->
     <!-- ==================== -->
-	
+
 	<include name="List_Layout">
 	    <param name="id">50</param>
         <param name="ListLabelFont"></param>
@@ -25,9 +25,9 @@
         <param name="itemheight"></param>
         <param name="BGposy"></param>
 		<definition>
-		    
+
 			<!-- Itemlayouts/Focusedlayouts when panel is enabled  and not swapped -->
-		    
+
 		    <itemlayout condition="!$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -158,7 +158,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-		    
+
 		    <itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -335,8 +335,8 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
-			
+
+
 			<itemlayout condition="!$EXP[ListPanelIsSwapped] + !Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -439,7 +439,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Channels -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !$EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -488,9 +488,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- Itemlayout/FocusedLayout when the panel is enabled and swapped -->
-			
+
 			<itemlayout condition="!$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -593,7 +593,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-		    
+
 			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -770,7 +770,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Recordings or Timers -->
 			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -874,7 +874,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Channels -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			     <control type="image" description="BG">
@@ -925,9 +925,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No info panel should show or it is disabled and not images -->
-			
+
 			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[ListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image">
 				    <posx>20</posx>
@@ -1115,7 +1115,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No Panel, images, normal size image -->
 			<itemlayout condition="$EXP[ListPanelIsDisabled] + Container.Content(images) + !Skin.HasSetting($PARAM[id]_Images_LargeImage)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image">
@@ -1223,7 +1223,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No Panel, images, large image -->
 			<itemlayout condition="$EXP[ListPanelIsDisabled] + Container.Content(images) + Skin.HasSetting($PARAM[id]_Images_LargeImage)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image" description="BG">
@@ -1327,7 +1327,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 		</definition>
 	</include>
 
@@ -1342,11 +1342,11 @@
         <param name="ListLabel2Font"></param>
         <param name="itemheight"></param>
         <param name="BGposy"></param>
-		
+
 		<definition>
-		    
+
 			<!-- Itemlayouts/Focusedlayouts when panel is enabled  and not swapped -->
-		    
+
 		    <itemlayout condition="!$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -1477,7 +1477,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-		    
+
 		    <itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -1654,7 +1654,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Recordings or Timers -->
 			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -1758,7 +1758,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Channels -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !$EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -1809,9 +1809,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- Itemlayout/FocusedLayout when the panel is enabled and swapped -->
-			
+
 			<itemlayout condition="!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -1914,7 +1914,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-		    
+
 			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -2045,7 +2045,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Recordings or Timers -->
 			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -2149,7 +2149,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Channels -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -2200,9 +2200,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No info panel should show or it is disabled -->
-			
+
 			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[LowListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1540">
 			    <control type="image">
 				    <posx>20</posx>
@@ -2390,7 +2390,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No Panel, images, normal size image -->
 			<itemlayout condition="$EXP[LowListPanelIsDisabled] + Container.Content(images) + !Skin.HasSetting($PARAM[id]_Images_LargeImage)" height="$PARAM[itemheight]" width="1540">
 			    <control type="image">
@@ -2498,7 +2498,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No Panel, images, large image -->
 			<itemlayout condition="$EXP[LowListPanelIsDisabled] + Container.Content(images) + Skin.HasSetting($PARAM[id]_Images_LargeImage)" height="$PARAM[itemheight]" width="1540">
 			    <control type="image" description="BG">
@@ -2603,12 +2603,12 @@
 				</include>
 			</focusedlayout>
 		</definition>
-	</include>	
+	</include>
 
     <!-- ===================== -->
     <!-- = Tall List Layouts = -->
     <!-- ===================== -->
-	
+
 	<include name="TallList_Layout">
 	    <param name="id">501</param>
         <param name="ListLabelFont"></param>
@@ -2616,9 +2616,9 @@
         <param name="itemheight"></param>
         <param name="BGposy"></param>
 		<definition>
-		    
+
 			<!-- Itemlayouts/Focusedlayouts when panel is enabled  and not swapped -->
-		    
+
 		    <itemlayout condition="!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -2749,7 +2749,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-		    
+
 		    <itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -2926,7 +2926,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Recordings or Timers -->
 			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -3030,7 +3030,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Channels -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !$EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -3081,9 +3081,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- Itemlayout/FocusedLayout when the panel is enabled and swapped -->
-			
+
 			<itemlayout condition="!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -3214,7 +3214,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-		    
+
 			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -3391,7 +3391,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Recordings or Timers -->
 			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -3495,7 +3495,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- PVR Channels -->
 			<itemlayout condition="Window.IsActive(MYPVRChannels.xml) + $EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
@@ -3546,9 +3546,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No info panel should show or it is disabled and not images -->
-			
+
 			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[TallListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image">
 				    <posx>80</posx>
@@ -3736,7 +3736,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No Panel, images, normal size image -->
 			<itemlayout condition="$EXP[TallListPanelIsDisabled] + Container.Content(images) + !Skin.HasSetting($PARAM[id]_Images_LargeImage)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image">
@@ -3844,7 +3844,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 			<!-- No Panel, images, large image -->
 			<itemlayout condition="$EXP[TallListPanelIsDisabled] + Container.Content(images) + Skin.HasSetting($PARAM[id]_Images_LargeImage)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image" description="BG">
@@ -3948,7 +3948,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 		</definition>
 	</include>
 
@@ -4121,12 +4121,12 @@
 		    </control>
 		</definition>
 	</include>
-	
-	
+
+
 	<!-- =========================== -->
     <!-- =   Simple List Layouts   = -->
     <!-- =========================== -->
-	
+
 	<include name="SimpleList_Layout">
 	    <param name="id">57</param>
         <param name="ListLabelFont"></param>
@@ -4140,7 +4140,7 @@
 		<param name="episodesbackgroundpos"></param>
 		<param name="episodeslabelpos"></param>
 		<definition>
-		    
+
 		    <itemlayout height="$PARAM[itemheight]" width="$PARAM[itemwidth]">
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -4168,7 +4168,7 @@
                     <font>$PARAM[ListLabelFont]</font>
 				    <label>$VAR[MediaListLabel]</label>
 					<visible>[Container.Content(tvshows) | Container.Content(seasons)]</visible>
-				</control>				
+				</control>
 			    <include content="SimpleListWatchedOverlay">
                     <param name="itemheight">$PARAM[itemheight]</param>
 					<param name="overlaypos">$PARAM[overlaypos]</param>
@@ -4221,7 +4221,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+
 		</definition>
 	</include>
 

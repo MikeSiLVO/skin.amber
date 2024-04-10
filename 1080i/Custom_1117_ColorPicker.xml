@@ -15,19 +15,19 @@
 	<onload condition="String.IsEqual(Window(Home).Property(colorpick),ViewsBGColor)">SetProperty(colorstring,$VAR[ViewsBGColor])</onload>
 	<onunload>ClearProperty(colorpick,Home)</onunload>
     <controls>
-	
+
 	    <control type="group">
             <width>980</width>
             <height>720</height>
 			<centerleft>50%</centerleft>
             <centertop>595</centertop>
-            
+
 			<!-- background panel -->
 		    <control type="image">
 			    <texture border="40">dialogs/TinyDialog.png</texture>
 			    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 		    </control>
-			
+
 			<!-- Header -->
             <control type="label">
                 <left>30</left>
@@ -39,7 +39,7 @@
 				<label>$LOCALIZE[22080] $INFO[Skin.String(SelectColorLabel)]</label>
 			    <textcolor>$VAR[LabelTextColor]</textcolor>
             </control>
-			
+
 			<control type="group">
                 <left>60</left>
                 <right>40</right>
@@ -49,7 +49,7 @@
                 <!-- Swatches -->
                 <control type="group">
                     <right>320</right>
-		
+
 			        <!-- Color picker panel -->
 		            <control type="panel" id="3110">
 				        <onup>3110</onup>
@@ -90,7 +90,7 @@
 				        <include>Items_ColorPalette_Standard</include>
                         <include>Items_ColorPalette_Material</include>
                     </control>
-					
+
 					<!-- Selection Box -->
                     <control type="group">
                         <left>-40</left>
@@ -121,7 +121,7 @@
                         </control>
                     </control>
                 </control>
-				
+
 				<!-- Buttons -->
                 <control type="grouplist" id="9000">
                     <right>-100</right>
@@ -133,7 +133,7 @@
 					<onup>9000</onup>
 					<ondown>9000</ondown>
                     <height>550</height>
-			
+
 			        <control type="group">
 					    <height>160</height>
 					    <control type="label">
@@ -151,7 +151,7 @@
 				            <texture border="5">panel.png</texture>
 				            <colordiffuse>$INFO[Window.Property(colorstring)]</colordiffuse>
 			            </control>
-					</control>	
+					</control>
 			        <!-- edit manual -->
 			        <control type="button" id="3010">
 				        <width>280</width>

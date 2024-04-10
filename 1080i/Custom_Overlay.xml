@@ -843,7 +843,7 @@
                 <label>VisualisationPresetList.xml</label>
                 <visible>Window.IsVisible(VisualisationPresetList.xml)</visible>
             </control>
-			
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -865,7 +865,7 @@
                 <label>Custom_1114_Quit.xml</label>
                 <visible>Window.IsVisible(Custom_1114_Quit.xml)</visible>
             </control>
-            
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -876,7 +876,7 @@
                 <label>Custom_1125_FavouriteAddons.xml</label>
                 <visible>Window.IsVisible(CustomF_1125_avouriteAddons.xml)</visible>
             </control>
-            
+
 			<control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -886,8 +886,8 @@
                 <align>left</align>
                 <label>Custom_1120_GameSettings.xml</label>
                 <visible>Window.IsVisible(Custom_1120_GameSettings.xml)</visible>
-            </control>			
-			
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -908,8 +908,8 @@
                 <align>left</align>
                 <label>Custom_1118_FullscreenMusic.xml</label>
                 <visible>Window.IsVisible(Custom_1118_FullscreenMusic.xml)</visible>
-            </control>			
-            
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -919,8 +919,8 @@
                 <align>left</align>
                 <label>Custom_1123_PausedOverlay.xml</label>
                 <visible>Window.IsVisible(Custom_1123_PausedOverlay.xml)</visible>
-            </control>			
-            
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -930,8 +930,8 @@
                 <align>left</align>
                 <label>Custom_1122_Search.xml</label>
                 <visible>Window.IsVisible(Custom_1122_Search.xml)</visible>
-            </control>			
-            
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -941,8 +941,8 @@
                 <align>left</align>
                 <label>Custom_1124_TextViewer.xml</label>
                 <visible>Window.IsVisible(Custom_1124_TextViewer.xml)</visible>
-            </control>			
-            
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -952,8 +952,8 @@
                 <align>left</align>
                 <label>Custom_1126_Fanart.xml</label>
                 <visible>Window.IsVisible(Custom_1126_Fanart.xml)</visible>
-            </control>			
-            
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -963,8 +963,8 @@
                 <align>left</align>
                 <label>Custom_1127_InfoSets.xml</label>
                 <visible>Window.IsVisible(Custom_1127_InfoSets.xml)</visible>
-            </control>			
-            
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -974,8 +974,8 @@
                 <align>left</align>
                 <label>Custom_1134_TMDBInfo.xml</label>
                 <visible>Window.IsVisible(Custom_1134_TMDB_Info.xml)</visible>
-            </control>			
-            
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -1007,8 +1007,8 @@
                 <align>left</align>
                 <label>Custom_1132_ColorBoxSettings.xml</label>
                 <visible>Window.IsVisible(Custom_1132_ColorBoxSettings.xml)</visible>
-            </control>			
-			
+            </control>
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -1019,7 +1019,7 @@
                 <label>GameOSD.xml</label>
                 <visible>Window.IsVisible(GameOSD.xml)</visible>
             </control>
-            
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -1030,7 +1030,7 @@
                 <label>script-globalsearch.xml</label>
                 <visible>Window.IsVisible(script-globalsearch.xml)</visible>
             </control>
-            
+
             <control type="label">
                 <width>780</width>
                 <height>21</height>
@@ -1041,7 +1041,7 @@
                 <label>script-skinshortcuts.xml</label>
                 <visible>Window.IsVisible(script-skinshortcuts.xml)</visible>
             </control>
-            
+
         </control>
 
         <!-- Control label -->
@@ -1076,7 +1076,7 @@
             <width>1620</width>
             <height>500</height>
             <textcolor>FFFF0000</textcolor>
-            
+
             <font>font13</font>
             <align>right</align>
             <label>[COLOR=FF00FF00]$INFO[System.CurrentControlID,ID: ][/COLOR][CR]$INFO[Container.Content()][CR]$INFO[Container.ViewMode][CR]$INFO[ListItem.DBType][CR]$INFO[Container.SortMethod][CR]$INFO[ListItem.DBID][CR]$INFO[ListItem.IMDBNumber]</label>

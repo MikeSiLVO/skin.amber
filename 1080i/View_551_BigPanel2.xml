@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	
+
 	<include name="View_551_BigPanel2">
         <control type="group" description="Content">
-            
+
 			<include content="PVRBackground">
 			    <param name="viewid">551</param>
 			</include>
-			
+
 			<include content="BackgroundOverlay">
                 <param name="parentid" value="551"/>
             </include>
             <visible>Control.IsVisible(551)</visible>
             <include>ContentFade</include>
-            
+
             <control type="panel" id="551" description="Big Panel 2">
                 <viewtype label="$LOCALIZE[32246]">list</viewtype>
                 <left>45</left>
@@ -25,12 +25,12 @@
 				<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
                 <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 				<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
-                
+
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
 				<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
-				
+
 				<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
                 <onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(651)]">651</onright>
 				<onright condition="Control.IsVisible(615)">615</onright>
@@ -47,7 +47,7 @@
                 <include content="RecordingsLayout">
                     <param name="viewid">551</param>
                 </include>
-				
+
 				<include content="PosterLayout">
                     <param name="viewid">551</param>
                 </include>
@@ -103,7 +103,7 @@
 				<param name="footertop">900</param>
                 <param name="visibility">[Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRChannels.xml)] + $EXP[PVRChannelPlaying]</param>
             </include>
-			
+
 			<include content="PanelTemplate">
                 <param name="viewid">551</param>
 				<param name="top">100</param>
@@ -115,7 +115,7 @@
                 <param name="heading">$VAR[panelheading]</param>
                 <param name="subheading">$VAR[panelsubheading]</param>
 				<param name="subheading2">$VAR[panelsubheading2]</param>
-                <param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>                
+                <param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
                 <param name="plot">$VAR[Plots]</param>
                 <param name="footer">$VAR[panelfooter]</param>
 				<param name="footertop">900</param>
@@ -134,11 +134,11 @@
 				<param name="heading">$VAR[panelheading]</param>
 				<param name="subheading">$VAR[panelsubheading]</param>
                 <param name="subheading2">$VAR[panelsubheading2]</param>
-                <param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</param>                
+                <param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</param>
 				<param name="plot">$VAR[Plots]</param>
 				<param name="footer">$VAR[panelfooter]</param>
 				<param name="visibility">[Container.Content(tvshows) | Container.Content(seasons)]</param>
-			</include>            
+			</include>
             <include content="PanelTemplate">
                 <param name="viewid">551</param>
 				<param name="top">100</param>
@@ -214,7 +214,7 @@
                 <onright>551</onright>
                 <visible>!Skin.HasSetting(Show.JumpToLetter) | ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
             </control>
-        
+
             <control type="button" id="651">
                 <visible>Control.IsVisible(551)</visible>
                 <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
@@ -240,7 +240,7 @@
                 <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                 <onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
                 <onup>SetFocus(651)</onup>
-            </control>            
+            </control>
 
             <control type="grouplist" id="655511">
                 <posx>36r</posx>
@@ -292,7 +292,7 @@
                 <include content="AlphabetLetter"><param name="label" value="G" /></include>
                 <include content="AlphabetLetter"><param name="label" value="H" /></include>
                 <include content="AlphabetLetter"><param name="label" value="I" /></include>
-                <include content="AlphabetLetter"><param name="label" value="J" /></include>                
+                <include content="AlphabetLetter"><param name="label" value="J" /></include>
                 <include content="AlphabetLetter"><param name="label" value="K" /></include>
                 <include content="AlphabetLetter"><param name="label" value="L" /></include>
                 <include content="AlphabetLetter"><param name="label" value="M" /></include>
@@ -313,19 +313,19 @@
                 <visible>Control.IsVisible(551)</visible>
                 <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
             </control>
-			
+
 			<include content="PVRRecordingSpaceUsage">
 			    <param name="posx">1000</param>
 				<param name="posy">980</param>
 				<param name="width">850</param>
 			</include>
-			
+
 			<include content="PVRChannelProgress">
 			    <param name="posx">1000</param>
 				<param name="posy">980</param>
 				<param name="width">850</param>
 			</include>
-			
+
 			<control type="group">
 		        <visible>$EXP[PVRChannelPlaying]</visible>
                 <left>970</left>
@@ -341,7 +341,7 @@
 			    <param name="id">551</param>
 			    <param name="left">20</param>
 		    </include>
-			
+
         </control>
     </include>
 </includes>

@@ -164,7 +164,7 @@
 					<onclick>Skin.SetString(ViewsBGColorStr,$INFO[Window.Property(colorstring)])</onclick>
 					<onclick>SendClick(3012)</onclick>
 			    </control>
-		    </control>		
+		    </control>
         </control>
 	</controls>
 </window>

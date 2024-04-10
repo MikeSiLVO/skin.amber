@@ -62,7 +62,7 @@
 					<control type="image">
 						<posx>144</posx>
 						<posy>17.5</posy>
-						<width>40</width>						
+						<width>40</width>
 						<height>40</height>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -105,7 +105,7 @@
 					<control type="image">
 						<posx>144</posx>
 						<posy>17.5</posy>
-						<width>40</width>						
+						<width>40</width>
 						<height>40</height>
 						<align>center</align>
 						<aligny>center</aligny>

@@ -4,19 +4,19 @@
 		<param name="ListType">list</param>
 		<definition>
 			<control type="group">
-				
+
 				<include content="PVRBackground">
 				    <param name="viewid">50</param>
 				</include>
 
                 <include condition="$EXP[ListPanelIsSwapped]" content="PVRBackground">
 				    <param name="viewid">150</param>
-				</include>				
-				
+				</include>
+
 				<include condition="Skin.HasSetting(ShowSetCount)">ListMovieSetDiscs</include>
 				<include>ListTopDisc</include>
 				<include>ListMusicDisc</include>
-				
+
 				<include content="BackgroundOverlay">
 					<param name="parentid" value="50"/>
 					<param name="overlaytop" value="300"/>
@@ -106,7 +106,7 @@
 					<onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
 					<onup condition="!Container.HasPrevious | $EXP[Exp_SortLetterIsNumber]">Action(nextletter)</onup>
 					<onup>SetFocus(60)</onup>
-				</control>            
+				</control>
 
 				<control type="grouplist" id="60501">
 					<posx>36r</posx>
@@ -179,7 +179,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsSwapped] + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)]</param>
 				</include>
-				
+
 				<include content="PanelTemplate">
 					<param name="top">355</param>
 					<param name="left">535</param>
@@ -221,7 +221,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">955</param>
 					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
-				</include>            
+				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
 					<param name="left">535</param>
@@ -271,7 +271,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="visibility">Control.IsVisible(50) + $EXP[ListPanelIsSwapped] + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)]</param>
 				</include>
-				
+
 				<include content="PanelTemplate">
 					<param name="top">355</param>
 					<param name="left">1230</param>
@@ -312,7 +312,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">965</param>
 					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
-				</include>            
+				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
 					<param name="left">1230</param>
@@ -368,7 +368,7 @@
 						<param name="aspect">stretch</param>
 						<param name="visibility">[Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons)]</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">490</param>
 						<param name="height">700</param>
@@ -382,7 +382,7 @@
 						<param name="texture">$INFO[Container(440050).ListItem.Icon]</param>
 						<param name="visibility">$EXP[PVRChannelPlaying] + $EXP[isPVRRecordingsGroups] + !$EXP[ListPanelIsSwapped]</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">490</param>
 						<param name="height">700</param>
@@ -396,7 +396,7 @@
 						<param name="texture">$INFO[Container(4400150).ListItem.Icon]</param>
 						<param name="visibility">$EXP[PVRChannelPlaying] + $EXP[isPVRRecordingsGroups] + $EXP[ListPanelIsSwapped]</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">490</param>
 						<param name="height">700</param>
@@ -410,7 +410,7 @@
 						<param name="aspect">stretch</param>
 						<param name="visibility">Container.Content(episodes) + Skin.HasSetting(EpisodesUsePoster)</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">490</param>
 						<param name="height">700</param>
@@ -424,7 +424,7 @@
 						<param name="texture">$VAR[Square]</param>
 						<param name="visibility">$EXP[PVRChannelPlaying] + !$EXP[isPVRRecordingsGroups] + ![Container.Content(images) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons) | Container.Content(episodes)] + ![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</param>
 					</include>
-					
+
 					<include content="ShadowedImage">
 						<param name="width">490</param>
 						<param name="height">700</param>
@@ -448,7 +448,7 @@
 					<control type="group">
 					    <visible>Skin.HasSetting(ShowRatingOverlays) + $EXP[canShowRatingOverlay]</visible>
 					    <control type="group">
-				            <visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | 
+				            <visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) |
 							          [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]]</visible>
 							<control type="image">
 				                <texture background="true" flipx="true" colordiffuse="$VAR[HighlightColor]">overlays/toprightempty2.png</texture>
@@ -491,14 +491,14 @@
 					            <textcolor>$VAR[HighlightColor]</textcolor>
 					            <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				            </control>
-						</control>						
+						</control>
 					</control>
 				</control>
-				
+
 				<include condition="!String.IsEqual(Skin.String(MediaViewsExtraArt),discart)" content="ListViewsDiscArt">
 				    <param name="viewid">50</param>
 				</include>
-				
+
 				<include condition="!Skin.String(MediaViewsExtraArt,none)" content="ShowMediaViewsExtraArt">
 				    <param name="logoleft">1380</param>
 					<param name="logotop">40</param>
@@ -515,31 +515,31 @@
 					<param name="clearartwidth">463</param>
 					<param name="clearartheight">260</param>
 				</include>
-				
+
 				<include condition="!$EXP[ListPanelIsSwapped]" content="PVRRecordingSpaceUsage">
 				    <param name="posx">535</param>
 					<param name="posy">1018</param>
 					<param name="width">650</param>
 				</include>
-				
+
 				<include condition="$EXP[ListPanelIsSwapped]" content="PVRRecordingSpaceUsage">
 				    <param name="posx">1230</param>
 					<param name="posy">1018</param>
 					<param name="width">650</param>
 				</include>
-				
+
 				<include condition="!$EXP[ListPanelIsSwapped]" content="PVRChannelProgress">
 				    <param name="posx">535</param>
 					<param name="posy">1018</param>
 					<param name="width">650</param>
 				</include>
-				
+
 				<include condition="$EXP[ListPanelIsSwapped]" content="PVRChannelProgress">
 				    <param name="posx">1230</param>
 					<param name="posy">1018</param>
 					<param name="width">650</param>
 				</include>
-				
+
 				<control type="group">
 		            <visible>$EXP[PVRChannelPlaying]</visible>
                     <left>20</left>
@@ -549,23 +549,23 @@
 			            <height>300</height>
                     </control>
                 </control>
-				
+
 				<include content="TouchButtons">
 		            <param name="ButtonsTop">980</param>
 			        <param name="id">50</param>
 					<param name="left">1520</param>
 					<param name="visibility">!$EXP[ListPanelIsSwapped] | $EXP[ListPanelIsDisabled]</param>
 		        </include>
-				
+
 				<include content="TouchButtons">
 		            <param name="ButtonsTop">980</param>
 			        <param name="id">50</param>
 					<param name="left">670</param>
 					<param name="visibility">$EXP[ListPanelIsSwapped] + !$EXP[ListPanelIsDisabled]</param>
 		        </include>
-				
+
 			</control>
-			
+
 		</definition>
 	</include>
 

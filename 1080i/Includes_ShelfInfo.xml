@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	
+
 	<variable name="ShelfInfoCast">
 	    <value>$VAR[ShelfInfoCast1]$VAR[ShelfInfoCast2]$VAR[ShelfInfoCast3]$VAR[ShelfInfoCast4]$VAR[ShelfInfoCast5]$VAR[ShelfInfoCast6]$VAR[ShelfInfoCast7]$VAR[ShelfInfoCast8]$VAR[ShelfInfoCast9]$VAR[ShelfInfoCast10]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoCast1">
 	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name))">[COLOR=$VAR[Highlightcolor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)][/I]  / </value>
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name))">[COLOR=$VAR[Highlightcolor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)][/I]</value>
@@ -73,7 +73,7 @@
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Role))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name)][/B]</value>
 		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name))"></value>
 	</variable>
-	
+
 	<variable name="ShelfInfoDetails">
 	    <value condition="String.IsEqual(Container.ListItem.DBType,movie) + !String.IsEmpty(Container.ListItem.RatingAndVotes) + !String.IsEmpty(Container.ListItem.Top250) + !String.IsEmpty(Container.ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.RatingAndVotes] [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[Container.ListItem.Top250]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Container.ListItem.Year]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,movie) + !String.IsEmpty(Container.ListItem.RatingAndVotes) + !String.IsEmpty(Container.ListItem.Top250) + !String.IsEmpty(Container.ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.RatingAndVotes] [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[Container.ListItem.Top250]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Container.ListItem.Year]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
@@ -107,22 +107,22 @@
 		<value condition="[String.IsEqual(Container.ListItem.DBType,video) + !String.Contains(Container.ListItem.FolderPath,type=person)] + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Property(recommendedtitle)) + !String.IsEmpty(Container.ListItem.Property(recommendedrating))">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Property(recommendedrating)]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoTVShowDetails">
 	    <value>[COLOR=$VAR[HighlightColor]]$LOCALIZE[33054]: [/COLOR]$VAR[ShelfInfoTotalSeasons]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20360]: [/COLOR]$VAR[ShelfInfoTotalEpisodes]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[16101]: [/COLOR]$INFO[Container.ListItem.Property(UnwatchedEpisodes)]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoNextAiredDetails">
 	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR=$VAR[HighlightColor]]$LOCALIZE[32459]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel] - $INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name)]</value>
 		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR=$VAR[HighlightColor]]$LOCALIZE[32459]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoStudios">
         <value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Container.ListItem.Studio,,.png]</value>
         <value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Container.ListItem.Studio,,.png]</value>
         <value>DefaultStudios.png</value>
     </variable>
-	
+
 	<variable name="ShelfInfoTitle">
 	    <value condition="String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,tvshow) | String.IsEqual(Container.ListItem.DBType,musicvideo) | String.IsEqual(Container.ListItem.DBType,video)">$INFO[Container.ListItem.Title]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,episode)">$INFO[Container.ListItem.TVShowTitle]</value>
@@ -132,7 +132,7 @@
 		<value condition="!String.IsEmpty(Container.ListItem.AddonName)">$INFO[Container.ListItem.AddonName]</value>
 		<value>$INFO[Container.ListItem.Label]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoCertFlag">
         <value condition="[String.IsEmpty(Container.ListItem.MPAA) | String.Contains(Container.ListItem.MPAA,NR) | String.IsEqual(Container.ListItem.MPAA,Rated) | String.IsEqual(Container.ListItem.MPAA,Rated ) | String.IsEqual(Container.ListItem.MPAA,Not Rated) | String.IsEqual(Container.ListItem.MPAA,Rated Not Rated)]">badges/mpaa/NR.png</value>
         <value condition="[String.IsEqual(Container.ListItem.DBType,movie) + [String.StartsWith(Container.ListItem.MPAA,16) | String.StartsWith(Container.ListItem.MPAA,18)]] | String.Contains(Container.ListItem.MPAA,US:R) | String.Contains(Container.ListItem.MPAA,United States:R) | String.Contains(Container.ListItem.MPAA,USA:R) | String.IsEqual(Container.ListItem.MPAA,Rated R) | String.IsEqual(Container.ListItem.MPAA,R)">badges/mpaa/R.png</value>
@@ -185,49 +185,49 @@
         <value condition="String.Contains(Container.ListItem.MPAA,NL-18) | String.Contains(Container.ListItem.MPAA,Netherlands:18)">badges/mpaa/NL_18.png</value>
 		<value condition="String.IsEmpty(Container.ListItem.MPAA)">badges/mpaa/NR.png</value>
         <value>$INFO[Container.ListItem.MPAA,badges/mpaa,.png]</value>
-	</variable>	
-	
+	</variable>
+
 	<variable name="ShelfInfoTotalSeasons">
 		<value condition="!String.IsEmpty(Container.ListItem.Property(TotalSeasons))">$INFO[Container.ListItem.Property(TotalSeasons)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Season)">$INFO[Container.ListItem.Season]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoTotalEpisodes">
 		<value condition="!String.IsEmpty(Container.ListItem.Property(TotalEpisodes))">$INFO[Container.ListItem.Property(TotalEpisodes)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Episode)">$INFO[Container.ListItem.Episode]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoSeasonEpisodeLabel">
         <value condition="Integer.IsLess(Container.ListItem.Episode,10) + Integer.IsLess(Container.ListItem.Season,10)">$INFO[Container.ListItem.Season,s0,]$INFO[Container.ListItem.Episode,e0,]</value>
         <value condition="Integer.IsLess(Container.ListItem.Episode,10) + !Integer.IsLess(Container.ListItem.Season,10)">$INFO[Container.ListItem.Season,s,]$INFO[Container.ListItem.Episode,e0,]</value>
         <value condition="!Integer.IsLess(Container.ListItem.Episode,10) + Integer.IsLess(Container.ListItem.Season,10)">$INFO[Container.ListItem.Season,s0,]$INFO[Container.ListItem.Episode,e,]</value>
         <value condition="!Integer.IsLess(Container.ListItem.Episode,10) + !Integer.IsLess(Container.ListItem.Season,10)">$INFO[Container.ListItem.Season,s,]$INFO[Container.ListItem.Episode,e,]</value>
     </variable>
-	
+
 	<variable name="ShelfInfoNextAiredSeasonEpisodeLabel">
         <value condition="Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s0,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e0,]</value>
         <value condition="Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + !Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e0,]</value>
         <value condition="!Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s0,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e,]</value>
         <value condition="!Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + !Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e,]</value>
     </variable>
-	
+
 	<variable name="ShelfInfoSeasonsLabel">
 		<value condition="String.IsEqual(Container.ListItem.Property(TotalSeasons),1) | String.IsEqual(Container.ListItem.Season,1)">$LOCALIZE[20373]</value>
 		<value>$LOCALIZE[33054]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoEpisodesLabel">
 		<value condition="String.IsEqual(Container.ListItem.Property(TotalEpisodes),1) | String.IsEqual(Container.ListItem.Episode,1)" >$LOCALIZE[20359]</value>
 		<value>$LOCALIZE[20360]</value>
 	</variable>
-	
+
 	<variable name="ShelfInfoLogo">
         <value condition="String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,tvshow) | String.IsEqual(Container.ListItem.DBType,musicvideo) | String.IsEqual(Container.ListItem.DBType,artist)">$INFO[Container.ListItem.Art(clearlogo)]</value>
         <value condition="String.IsEqual(Container.ListItem.DBType,episode)">$INFO[Container.ListItem.Art(tvshow.clearlogo)]</value>
 		<value condition="[String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)] + !String.IsEmpty(Container.ListItem.Art(artist.clearlogo))">$INFO[Container.ListItem.Art(artist.clearlogo)]</value>
 		<value condition="[String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)] + String.IsEmpty(Container.ListItem.Art(artist.clearlogo))">$INFO[Container.ListItem.Art(albumartist.clearlogo)]</value>
     </variable>
-	
+
 	<variable name="ShelfInfoPlot">
 		<value condition="!String.IsEmpty(Container.ListItem.AddonName)">$INFO[Container.ListItem.AddonDescription]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Property(Album_Description))">$INFO[Container.ListItem.Property(Album_Description)]</value>
@@ -237,9 +237,9 @@
 		<value condition="!String.IsEmpty(Container.ListItem.Property(recommendedplot))">$INFO[Container.ListItem.Property(recommendedplot)]</value>
 		<value>$INFO[Container.ListItem.Plot]</value>
 	</variable>
-	
+
 	<expression name="showTextTitle">[String.IsEmpty(Container.ListItem.Art(clearlogo)) + String.IsEmpty(Container.ListItem.Art(tvshow.clearlogo))] | !Skin.HasSetting(VerticalHome)</expression>
-	
+
 	<!-- Positioning for widget container when shelves info is enabled in horizontal menu -->
 	<include name="ShelfInfoWidgetPositioningHorz">
 		<top>534</top>
@@ -261,7 +261,7 @@
 	<include name="ShelfInfoTopHorz">
 	    <top>40</top>
 	</include>
-	
+
 	<include name="ShelfInfoBackCoordsVert">
 	    <top>-60</top>
 		<height>670</height>
@@ -282,42 +282,42 @@
 		<height>520</height>
 		<width>1940</width>
 	</include>
-	
+
 	<include name="ShelfInfoTitleTopVert">
 	    <top>-60</top>
 	</include>
 	<include name="ShelfInfoTitleTopHorz">
 	    <top>0</top>
 	</include>
-	
+
 	<include name="ShelfInfoPlotHeightVert">
 	    <height>162</height>
 	</include>
 	<include name="ShelfInfoPlotHeightHorz">
 	    <height>122</height>
 	</include>
-	
+
 	<include name="ShelfInfoMusicPlotVert">
 	    <height>238</height>
 	</include>
 	<include name="ShelfInfoMusicPlotHorz">
 	    <height>122</height>
 	</include>
-	
+
 	<include name="ShelfInfoMediaTopVert">
 	    <top>495</top>
 	</include>
 	<include name="ShelfInfoMediaTopHorz">
 	    <top>380</top>
 	</include>
-	
+
 	<include name="ShelfInfoTVTopVert">
 	    <top>430</top>
 	</include>
 	<include name="ShelfInfoTVTopHorz">
 	    <top>350</top>
 	</include>
-	
+
 	<include name="ShelfInfoGroupCoordsVert">
 	    <top>-12</top>
 		<height>622</height>
@@ -326,7 +326,7 @@
 	    <top>5</top>
 		<height>412</height>
 	</include>
-	
+
 	<include name="ShelfInfoCert">
 	    <param name="leftUSA">620</param>
 		<param name="leftNonUSA">650</param>
@@ -344,15 +344,7 @@
                 <aspectratio>keep</aspectratio>
                 <align>center</align>
                 <texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
-			    <visible>!String.Contains($PARAM[certsource],Brazil) + 
-                         !String.Contains($PARAM[certsource],UK) + 
-                         !String.Contains($PARAM[certsource],United Kingdom) + 
-                         !String.Contains($PARAM[certsource],classificação) + 
-                         !String.Contains($PARAM[certsource],France) + 
-                         !String.Contains($PARAM[certsource],Germany) + 
-                         !String.Contains($PARAM[certsource],Australia) + 
-                         !String.Contains($PARAM[certsource],Netherlands) + 
-                         !String.Contains($PARAM[certsource],NL) + !String.IsEmpty($PARAM[certsource])</visible>
+			    <visible>!String.Contains($PARAM[certsource],Brazil) + !String.Contains($PARAM[certsource],UK) + !String.Contains($PARAM[certsource],United Kingdom) + !String.Contains($PARAM[certsource],classificação) + !String.Contains($PARAM[certsource],France) + !String.Contains($PARAM[certsource],Germany) + !String.Contains($PARAM[certsource],Australia) + !String.Contains($PARAM[certsource],Netherlands) + !String.Contains($PARAM[certsource],NL) + !String.IsEmpty($PARAM[certsource])</visible>
             </control>
 		    <control type="group">
 			    <left>$PARAM[leftNonUSA]</left>
@@ -363,13 +355,7 @@
                     <aspectratio>keep</aspectratio>
                     <align>center</align>
                     <texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
-			   	    <visible>!String.IsEmpty($PARAM[certsource]) + [String.Contains($PARAM[certsource],Brazil) | 
-                             String.Contains($PARAM[certsource],classificação) | 
-                             String.Contains($PARAM[certsource],France) | 
-                             String.Contains($PARAM[certsource],Germany) | 
-                             String.Contains($PARAM[certsource],Australia) | 
-                             String.Contains($PARAM[certsource],Netherlands) | 
-                             String.Contains($PARAM[certsource],NL)]</visible>
+			   	    <visible>!String.IsEmpty($PARAM[certsource]) + [String.Contains($PARAM[certsource],Brazil) | String.Contains($PARAM[certsource],classificação) | String.Contains($PARAM[certsource],France) | String.Contains($PARAM[certsource],Germany) | String.Contains($PARAM[certsource],Australia) | String.Contains($PARAM[certsource],Netherlands) | String.Contains($PARAM[certsource],NL)]</visible>
                 </control>
     		    <control type="image" description="Certification flag UK">
 	    		    <height>65</height>
@@ -382,8 +368,8 @@
 			</control>
         </definition>
     </include>
-	
-	
+
+
 	<include name="ShelfInfoContent">
 	    <param name="id"></param>
 		<param name="left">20</param>
@@ -440,7 +426,7 @@
 				<font>font12_title</font>
 				<label></label>
 			</control>
-			
+
 			<!-- System items -->
 			<control type="label">
 				<width>$PARAM[width]</width>
@@ -458,7 +444,7 @@
 				<visible>!String.IsEmpty(Container.ListItem.Property(Label3))</visible>
 				<scroll>true</scroll>
 			</control>
-			
+
 			<!-- Addon items -->
 			<control type="label">
 				<width>$PARAM[width]</width>
@@ -492,7 +478,7 @@
 				<visible>!String.IsEmpty(Container.ListItem.AddonName) + !String.IsEmpty(Container.ListItem.AddonType)</visible>
 				<scroll>true</scroll>
 			</control>
-			
+
 			<!-- Person items -->
 			<control type="label">
 				<width>$PARAM[width]</width>
@@ -526,7 +512,7 @@
 				<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))</visible>
 				<scroll>true</scroll>
 			</control>
-			
+
 			<!-- Episode title and number -->
 			<control type="label">
 				<width>$PARAM[width]</width>
@@ -757,7 +743,7 @@
                     <param name="topNonUSA">15</param>
 		    		<param name="certsource">Container.ListItem.MPAA</param>
 		            <param name="certvar">$VAR[ShelfInfoCertFlag]</param>
-			    </include>	
+			    </include>
             </control>
 			<control type="group">
 				<left>110</left>
@@ -849,7 +835,7 @@
 		</control>
 		</definition>
 	</include>
-	
+
 	<include name="ShelfInfoContentTwoShelves">
 	    <param name="id"></param>
 		<param name="left"></param>
@@ -863,7 +849,7 @@
 			    <width>$PARAM[width]</width>
 			    <itemgap>8</itemgap>
 			    <usecontrolcoords>true</usecontrolcoords>
-			
+
 			    <!-- Spacer -->
 			    <control type="label">
 				    <height>10</height>
@@ -918,7 +904,7 @@
 				    <font>font12_title</font>
 				    <label></label>
 			    </control>
-				
+
 				<!-- System items -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -936,7 +922,7 @@
 				    <visible>!String.IsEmpty(Container.ListItem.Property(Label3))</visible>
 				    <scroll>true</scroll>
 			    </control>
-				
+
 				<!-- Weather items -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -985,7 +971,7 @@
 				    <visible>!String.IsEmpty(Container.ListItem.Property(Outlook)) + String.IsEmpty(Container.ListItem.Property(Probability)) + !String.IsEmpty(Container.ListItem.Property(Precipitation))</visible>
 				    <scroll>true</scroll>
 			    </control>
-				
+
 				<!-- Person items -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1011,7 +997,7 @@
 				    <visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age))</visible>
 				    <scroll>true</scroll>
 			    </control>
-				
+
 				<!-- Addon items -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1037,7 +1023,7 @@
 				    <visible>!String.IsEmpty(Container.ListItem.AddonName) + !String.IsEmpty(Container.ListItem.AddonCreator)</visible>
 				    <scroll>true</scroll>
 			    </control>
-			
+
 			    <!-- Director -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1048,7 +1034,7 @@
 				    <visible>![String.IsEqual(Container.ListItem.DBType,episode) + !Skin.HasSetting(VerticalHome)]</visible>
 				    <scroll>true</scroll>
 			    </control>
-				
+
 				<!-- Artist -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1059,7 +1045,7 @@
 				    <visible>[String.IsEqual(Container.ListItem.DBType,musicvideo) | String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
 				    <scroll>true</scroll>
 			    </control>
-			    
+
 				<!-- Song items -->
 				<control type="label">
 				    <width>$PARAM[width]</width>
@@ -1077,7 +1063,7 @@
 				    <visible>!String.IsEmpty(Window(Home).Property(WidgetItemDuration)) + String.IsEqual(Container.ListItem.DBType,song)</visible>
 				    <scroll>true</scroll>
 			    </control>
-			
+
 			    <!-- Video Genre -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1087,7 +1073,7 @@
 				    <visible>!String.IsEmpty(Container.ListItem.Genre) + ![String.IsEqual(Container.ListItem.DBType,episode) | String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
 				    <scroll>true</scroll>
 			    </control>
-				
+
 				<!-- Video Genre -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1097,7 +1083,7 @@
 				    <visible>!String.IsEmpty(Container.ListItem.Genre) + String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</visible>
 				    <scroll>true</scroll>
 			    </control>
-				
+
 				<!-- Year -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1107,7 +1093,7 @@
 				    <visible>!String.IsEmpty(Container.ListItem.Year)</visible>
 				    <visible>[String.IsEqual(Container.ListItem.DBType,musicvideo) | String.IsEqual(Container.ListItem.DBType,album)]</visible>
 			    </control>
-				
+
 				<!-- Album items -->
 				<control type="label">
 				    <width>$PARAM[width]</width>
@@ -1126,7 +1112,7 @@
 				    <visible>!String.IsEmpty(Container.ListItem.Genre) + [String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
 				    <scroll>true</scroll>
 			    </control>
-			
+
 			    <!-- Artist items -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1160,7 +1146,7 @@
 				    <visible>!String.IsEmpty(Container.ListItem.Property(Artist_Genre)) + String.IsEqual(Container.ListItem.DBType,artist)</visible>
 				    <scroll>true</scroll>
 			    </control>
-			
+
 			    <!-- Cast for movies and episodes, requires tmdb helper -->
 			    <control type="label">
     				<width>$PARAM[width]</width>
@@ -1170,7 +1156,7 @@
 				    <visible>!String.IsEmpty(Window(home).Property(TMDbHelper.ListItem.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
 				    <scroll>true</scroll>
 			    </control>
-			
+
 			    <!-- Details line -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1179,7 +1165,7 @@
 				    <label>$VAR[ShelfInfoDetails]</label>
 				    <visible>![String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album) | String.Contains(Container.ListItem.FolderPath,type=person)]</visible>
 			    </control>
-				
+
 				<!-- Next Aired -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1188,7 +1174,7 @@
 				    <label>$VAR[ShelfInfoNextAiredDetails]</label>
 				    <visible>String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</visible>
 			    </control>
-				
+
 			    <!-- Additional line for tv shows -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1202,7 +1188,7 @@
 				    <font>font12_title</font>
 				    <label></label>
 			    </control>
-			
+
 			    <!-- Plot -->
 			    <!-- Slightly larger plot for tv shows -->
 			    <control type="textbox">
@@ -1235,5 +1221,5 @@
 		    </control>
 		</definition>
 	</include>
-	
+
 </includes>

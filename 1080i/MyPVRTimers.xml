@@ -5,7 +5,7 @@
 	<views>50,54,501,52,51,511,55,551,53</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
-		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>       
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
 		<control type="group">
 			<include content="View_50_List" condition="!Skin.HasSetting(ListCenterFocus)">
@@ -32,22 +32,22 @@
 		    <include content="View_52_BigList" condition="Skin.HasSetting(ListCenterFocus)">
 		        <param name="ListType">fixedlist</param>
 		    </include>
-			
+
 			<include>View_51_Panel</include>
 			<include>View_511_Panel2</include>
-			
+
 			<include>View_55_BigPanel</include>
 			<include>View_551_BigPanel2</include>
-			
-            <include>View_53_Icons</include>			
+
+            <include>View_53_Icons</include>
 		</control>
 	    <include>Time</include>
 		<include>PVRSideBlade</include>
         <include>TouchButtons</include>
     </controls>
-	
-	
-	
+
+
+
 <!--	<views>50</views>
     <controls>
         <include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
@@ -55,7 +55,7 @@
         <include content="BackgroundOverlay">
             <param name="parentid" value="50"/>
         </include>
-        
+
         <control type="group">
             <include>OpenClose</include>
             <control type="group">
@@ -163,5 +163,5 @@
                 <param name="showflags">false</param>
             </include>
         </control> -->
-        
+
 </window>

@@ -3,50 +3,50 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <animation effect="fade" time="200">WindowOpen</animation>
     <animation effect="fade" time="150">WindowClose</animation>
-    
+
 	<onload>SetProperty(ResetScroll," ",home)</onload>
     <onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
-	
+
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo)">Dialog.Close(all)</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</onload>
-	
+
 <!--	<onload condition="[String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,tvshow)] + System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.TVShowTitle]"',prop=EncodeddTitle)</onload>
-    <onload condition="String.IsEqual(ListItem.DBTYPE,movie) + System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.Title]"',prop=EncodedTitle)</onload> 
+    <onload condition="String.IsEqual(ListItem.DBTYPE,movie) + System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.Title]"',prop=EncodedTitle)</onload>
     <onload condition="System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||90050||9009||91001||910001||91002||91003||91004||91005||91006||91007||91008||91009||910010)</onload> -->
-    
+
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(VideoOSD,true)</onload>
-	
+
 	<onload condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + !String.IsEmpty(ListItem.Art(poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(poster)]"',prop=EHBlur,radius=3)</onload>
 	<onload condition="SSystem.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + !String.IsEmpty(ListItem.Art(season.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(season.poster)]"',prop=EHBlur,radius=3)</onload>
 	<onload condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(season.poster)) + !String.IsEmpty(ListItem.Art(tvshow.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(tvshow.poster)]"',prop=EHBlur,radius=3)</onload>
 	<onload condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.BlurredVideoInfo) + !Skin.HasSetting(Blur.UsePoster) | [String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(season.poster)) + String.IsEmpty(ListItem.Art(tvshow.poster))]">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(fanart)]"',prop=EHBlur,radius=3)</onload>
-	
+
 	<!-- Close custom search dialogs if they are open so that we can perform searches from here without issue -->
 	<onload condition="Window.IsVisible(Custom_1122_Search.xml)">Dialog.Close(1122,force)</onload>
 	<onload condition="Window.IsVisible(Custom_1131_SingleSearch.xml)">Dialog.Close(1131,force)</onload>
-	
+
 	<onunload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onunload>
 	<onunload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Skin.HasSetting(PauseOnVideoInfo) + Player.Paused">Play</onunload>
-	
+
 <!--	<onunload condition="System.AddonIsEnabled(script.embuary.helper)">ClearProperty(EncodedTitle,home)</onunload> -->
 	<onunload condition="!String.IsEmpty(Window(Home).Property(KodiDefaultCastSearch))">ClearProperty(KodiDefaultCastSearch,Home)</onunload>
-	
-	
+
+
 	<onunload condition="String.IsEqual(Window(Home).Property(GeneralSearchCalledInfo),yes) + String.IsEmpty(Window(Home).Property(SingleSearchCalledInfo)) + String.IsEmpty(Window(Home).Property(InfoCalledSingleSearch)) + !String.IsEmpty(Skin.String(CustomSearchTerm)) + !Player.HasVideo + String.IsEmpty(Window(Home).Property(InfoPlayingMedia))">ActivateWindow(1122)</onunload>
 	<onunload condition="String.IsEqual(Window(Home).Property(GeneralSearchCalledInfo),yes)">ClearProperty(GeneralSearchCalledInfo,Home)</onunload>
 	<onunload condition="String.IsEqual(Window(Home).Property(SingleSearchCalledInfo),yes) + String.IsEmpty(Window(Home).Property(GeneralSearchCalledInfo)) + String.IsEmpty(Window(Home).Property(InfoCalledGeneralSearch)) + !String.IsEmpty(Skin.String(SingleSearchTerm)) + !Player.HasVideo + String.IsEmpty(Window(Home).Property(InfoPlayingMedia))">ActivateWindow(1131)</onunload>
 	<onunload condition="String.IsEqual(Window(Home).Property(SingleSearchCalledInfo),yes)">ClearProperty(SingleSearchCalledInfo,Home)</onunload>
-	
-	
+
+
     <controls>
 
         <!-- Get additional TV Show details from Embuary Helper script to be able to jump to season from an episode info - Container 5200 -->
-        <include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(ListItem.DBType,episode) + 
+        <include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(ListItem.DBType,episode) +
                             !String.IsEmpty(ListItem.DBID)">EmbuaryHelperTVShowDetails</include>
-							
+
 
         <!-- Hide default cast list 50, using a custom cast -->
        <include condition="!Skin.HasSetting(Disable.OnlineTMDbInfo)">HiddenCast</include>
@@ -67,7 +67,7 @@
         <control type="button" id="11" description="Trailer">
             <include>HiddenButton</include>
         </control>
-		
+
 		<!-- Fadelabel to be able to show character posters (extra posters) -->
 		<control type="fadelabel" id="4444">
 			<top>-100</top>
@@ -100,7 +100,7 @@
 			<label>$INFO[ListItem.Art(poster20)]</label>
 			<include>FadeLabelTime</include>
 		</control>
-		
+
         <!-- Background -->
         <control type="group">
             <control type="image">
@@ -127,7 +127,7 @@
 			    <fadetime>IconCrossfadeTime</fadetime>
 				<visible>!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)</visible>
             </control>
-            
+
 			<include condition="Skin.HasSetting(Enable.BlurredVideoInfo) + String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))" content="BackgroundOverlayVideoInfo">
                 <param name="parentid" value="9000"/>
 				<param name="colordiffuse">9FFFFFFF</param>
@@ -135,7 +135,7 @@
 			<include condition="!Skin.HasSetting(Enable.BlurredVideoInfo) | !String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))" content="BackgroundOverlayVideoInfo">
                 <param name="parentid" value="9000"/>
             </include>
-			
+
         </control>
         <!-- Powered by TMDb for Person info -->
 		<control type="image" description="Powered by TMDb">
@@ -168,7 +168,7 @@
                 <param name="texture">$VAR[DialogVideoInfoPoster]</param>
                 <param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | !Skin.HasSetting(Show.EpisodeThumbInfo)] + [Skin.HasSetting(Trailer.WindowVideoInfo) + Player.HasVideo]</param>
             </include>
-		</control>	
+		</control>
 		<!-- Episode images -->
         <control type="group" description="episode images, regular info dialog">
             <visible>String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(Show.EpisodeThumbInfo)</visible>
@@ -180,7 +180,7 @@
                 <param name="shadowoffset">16</param>
                 <param name="texture">$VAR[DialogVideoInfoBanner]</param>
                 <param name="visibility">[[String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) | !String.IsEqual(ListItem.Title,Player.Title)] + !String.IsEmpty(ListItem.Art(tvshow.banner))] | [[!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)] + !String.IsEmpty(Player.Art(tvshow.banner))]</param>
-            </include>            
+            </include>
             <include content="ShadowedImage">
                 <param name="top">390</param>
                 <param name="left">24</param>
@@ -198,7 +198,7 @@
                 <param name="shadowoffset">16</param>
                 <param name="texture">$VAR[DialogVideoInfoThumb]</param>
                 <param name="visibility">![Skin.HasSetting(Trailer.WindowVideoInfo) + Player.HasVideo] + [[String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) | !String.IsEqual(ListItem.Title,Player.Title)] + String.IsEmpty(ListItem.Art(tvshow.banner))] | [[!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)] + String.IsEmpty(Player.Art(tvshow.banner))]</param>
-            </include>            
+            </include>
         </control>
 		<!-- TV Show banner if there is no cast and seasons list is disabled -->
         <include content="ShadowedImage">
@@ -208,12 +208,12 @@
             <param name="height">200</param>
             <param name="shadowoffset">16</param>
             <param name="texture">$VAR[DialogVideoInfoBanner]</param>
-            <param name="visibility">[String.IsEqual(ListItem.DBType,tvshow) | 
-                                     String.IsEqual(ListItem.DBType,season) | 
-                                     String.IsEqual(ListItem.DBType,episode)] + 
+            <param name="visibility">[String.IsEqual(ListItem.DBType,tvshow) |
+                                     String.IsEqual(ListItem.DBType,season) |
+                                     String.IsEqual(ListItem.DBType,episode)] +
                                      Integer.IsEqual(Container(50).NumItems,0) + Integer.IsEqual(Container(90050).NumItems,0) + Skin.HasSetting(DisableInfoListSeasons) + !Control.HasFocus(10)</param>
         </include>
-        <!-- Media flags -->		
+        <!-- Media flags -->
         <!-- Item does not have HDR/SDR or bit depth in file name -->
 		<control type="grouplist" description="Flags">
             <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
@@ -259,7 +259,7 @@
             </include>
         </control>
 
-        <!-- Ratings bar for local content -->        
+        <!-- Ratings bar for local content -->
         <control type="grouplist" description="Ratings">
             <top>83</top>
             <left>705</left>
@@ -311,7 +311,7 @@
                 <width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -331,7 +331,7 @@
                 <width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -351,7 +351,7 @@
                 <width>90</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>5</itemgap>            
+                <itemgap>5</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -370,7 +370,7 @@
                 <visible>!String.IsEmpty(ListItem.Rating(themoviedb)) + Skin.HasSetting(ShowRatingTMDb)</visible>
                 <width>115</width>
                 <orientation>horizontal</orientation>
-                <itemgap>5</itemgap>  
+                <itemgap>5</itemgap>
                 <align>left</align>
                 <control type="image" description="TMDB logo">
                     <height>40</height>
@@ -391,7 +391,7 @@
                 <width>300</width>
                 <orientation>horizontal</orientation>
                 <itemgap>5</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="TVDB logo">
                     <height>40</height>
                     <width>71</width>
@@ -413,7 +413,7 @@
                 <width>90</width>
                 <orientation>horizontal</orientation>
                 <itemgap>5</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="Trakt logo">
 					<height>40</height>
                     <width>40</width>
@@ -435,7 +435,7 @@
                 <width>80</width>
                 <orientation>horizontal</orientation>
                 <itemgap>0</itemgap>
-                <align>left</align>                
+                <align>left</align>
                 <control type="image" description="User Rating logo">
                     <height>40</height>
                     <width>40</width>
@@ -455,7 +455,7 @@
                 <orientation>horizontal</orientation>
                 <itemgap>1</itemgap>
 				<align>left</align>
-                <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] | 
+                <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] |
 				         [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
 				<visible>Skin.HasSetting(ShowRatingAwards)</visible>
 				<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
@@ -497,7 +497,7 @@
                     <label>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)]</label>
 					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
                 </control>
-            </control>            
+            </control>
         </control>
 
         <!-- Rating bar for TMDB Online info -->
@@ -540,7 +540,7 @@
                     <align>left</align>
                     <label>$INFO[ListItem.Rating]</label>
                     <visible>!String.IsEmpty(ListItem.Rating) + [String.IsEmpty(ListItem.Votes) | String.IsEqual(ListItem.Votes,0)]</visible>
-                </control>                
+                </control>
             </control>
             <control type="grouplist" description="RT Critics rating">
                 <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),N/A)</visible>
@@ -548,7 +548,7 @@
                 <width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -569,7 +569,7 @@
 				<width>130</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>3</itemgap>            
+                <itemgap>3</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -590,7 +590,7 @@
 				<width>90</width>
                 <orientation>horizontal</orientation>
                 <align>left</align>
-                <itemgap>5</itemgap>            
+                <itemgap>5</itemgap>
                 <control type="image">
                     <width>40</width>
                     <height>40</height>
@@ -635,14 +635,14 @@
                     <align>left</align>
                     <label>$INFO[Window(Home).Property(TMDbHelper.ListItem.imdb_rating)]</label>
                     <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.imdb_rating)) + [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.imdb_votes)) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.imdb_votes),0)]</visible>
-                </control>                
+                </control>
             </control>
             <control type="grouplist" description="Awards">
                 <width>115</width>
                 <orientation>horizontal</orientation>
                 <itemgap>1</itemgap>
 				<align>left</align>
-                <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] | 
+                <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] |
 				         [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
 				<visible>Skin.HasSetting(ShowRatingAwards)</visible>
                 <control type="image" description="Oscars logo">
@@ -686,7 +686,7 @@
             </control>
         </control>
 
-        <!-- Certification Flag for local items -->        
+        <!-- Certification Flag for local items -->
         <control type="group">
             <visible>!String.IsEmpty(ListItem.MPAA) + Skin.HasSetting(ShowMPAAVideoInfo)</visible>
             <control type="image" description="Certification flag USA">
@@ -697,14 +697,14 @@
                 <aspectratio>keep</aspectratio>
                 <align>center</align>
                 <texture fallback="badges/mpaa/NR.png">$VAR[CertFlag]</texture>
-                <visible>!String.Contains(ListItem.MPAA,Brazil) + 
-                         !String.Contains(ListItem.MPAA,UK) + 
-                         !String.Contains(ListItem.MPAA,United Kingdom) + 
-                         !String.Contains(ListItem.MPAA,classificação) + 
-                         !String.Contains(ListItem.MPAA,France) + 
-                         !String.Contains(ListItem.MPAA,Germany) + 
-                         !String.Contains(ListItem.MPAA,Australia) + 
-                         !String.Contains(ListItem.MPAA,Netherlands) + 
+                <visible>!String.Contains(ListItem.MPAA,Brazil) +
+                         !String.Contains(ListItem.MPAA,UK) +
+                         !String.Contains(ListItem.MPAA,United Kingdom) +
+                         !String.Contains(ListItem.MPAA,classificação) +
+                         !String.Contains(ListItem.MPAA,France) +
+                         !String.Contains(ListItem.MPAA,Germany) +
+                         !String.Contains(ListItem.MPAA,Australia) +
+                         !String.Contains(ListItem.MPAA,Netherlands) +
                          !String.Contains(ListItem.MPAA,NL) + !String.IsEmpty(ListItem.MPAA)</visible>
             </control>
             <control type="image" description="Certification flag non-USA">
@@ -714,19 +714,19 @@
                 <width>59</width>
                 <aspectratio>keep</aspectratio>
                 <texture fallback="badges/mpaa/NR.png">$VAR[CertFlag]</texture>
-                <visible>!String.IsEmpty(ListItem.MPAA) + [String.Contains(ListItem.MPAA,Brazil) | 
-                         String.Contains(ListItem.MPAA,UK) |  
-                         String.Contains(ListItem.MPAA,United Kingdom) | 
-                         String.Contains(ListItem.MPAA,classificação) | 
-                         String.Contains(ListItem.MPAA,France) | 
-                         String.Contains(ListItem.MPAA,Germany) | 
-                         String.Contains(ListItem.MPAA,Australia) | 
-                         String.Contains(ListItem.MPAA,Netherlands) | 
+                <visible>!String.IsEmpty(ListItem.MPAA) + [String.Contains(ListItem.MPAA,Brazil) |
+                         String.Contains(ListItem.MPAA,UK) |
+                         String.Contains(ListItem.MPAA,United Kingdom) |
+                         String.Contains(ListItem.MPAA,classificação) |
+                         String.Contains(ListItem.MPAA,France) |
+                         String.Contains(ListItem.MPAA,Germany) |
+                         String.Contains(ListItem.MPAA,Australia) |
+                         String.Contains(ListItem.MPAA,Netherlands) |
                          String.Contains(ListItem.MPAA,NL)]</visible>
             </control>
         </control>
 
-        <!-- Certification Flag for tmdb helper items -->        
+        <!-- Certification Flag for tmdb helper items -->
         <control type="group">
             <visible>String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.MPAA))</visible>
 			<visible>Skin.HasSetting(ShowMPAAVideoInfo)</visible>
@@ -739,14 +739,14 @@
                 <aspectratio>keep</aspectratio>
                 <align>center</align>
                 <texture fallback="badges/mpaa/NR.png">$VAR[TMDBCertFlag]</texture>
-                <visible>!String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil) + 
-                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK) + 
-                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom) + 
-                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação) + 
-                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France) + 
-                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany) + 
-                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia) + 
-                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands) + 
+                <visible>!String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil) +
+                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK) +
+                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom) +
+                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação) +
+                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France) +
+                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany) +
+                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia) +
+                         !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands) +
                          !String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NL) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.MPAA))</visible>
             </control>
             <control type="image" description="Certification flag non-USA">
@@ -756,19 +756,19 @@
                 <width>59</width>
                 <aspectratio>keep</aspectratio>
                 <texture fallback="badges/mpaa/NR.png">$VAR[TMDBCertFlag]</texture>
-                <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.MPAA)) + [String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil) | 
-                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK) |  
-                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom) | 
-                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação) | 
-                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France) | 
-                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany) | 
-                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia) | 
-                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands) | 
+                <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.MPAA)) + [String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil) |
+                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK) |
+                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom) |
+                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação) |
+                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France) |
+                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany) |
+                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia) |
+                         String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands) |
                          String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NL)]</visible>
             </control>
         </control>
 
-        <!-- Certification Flag for sets, flag for first movie MPAA only -->        
+        <!-- Certification Flag for sets, flag for first movie MPAA only -->
         <control type="group">
             <visible>String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA))</visible>
             <visible>Skin.HasSetting(ShowMPAAVideoInfo)</visible>
@@ -780,14 +780,14 @@
                 <aspectratio>keep</aspectratio>
                 <align>center</align>
                 <texture fallback="badges/mpaa/NR.png">$VAR[SetsCertFlag]</texture>
-                <visible>!String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Brazil) + 
-                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),UK) + 
-                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),United Kingdom) + 
-                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),classificação) + 
-                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),France) + 
-                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Germany) + 
-                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Australia) + 
-                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Netherlands) + 
+                <visible>!String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Brazil) +
+                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),UK) +
+                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),United Kingdom) +
+                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),classificação) +
+                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),France) +
+                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Germany) +
+                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Australia) +
+                         !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Netherlands) +
                          !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),NL) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA))</visible>
             </control>
             <control type="image" description="Certification flag non-USA">
@@ -797,14 +797,14 @@
                 <width>59</width>
                 <aspectratio>keep</aspectratio>
                 <texture fallback="badges/mpaa/NR.png">$VAR[SetsCertFlag]</texture>
-                <visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA)) + [String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Brazil) | 
-                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),UK) |  
-                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),United Kingdom) | 
-                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),classificação) | 
-                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),France) | 
-                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Germany) | 
-                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Australia) | 
-                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Netherlands) | 
+                <visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA)) + [String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Brazil) |
+                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),UK) |
+                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),United Kingdom) |
+                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),classificação) |
+                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),France) |
+                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Germany) |
+                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Australia) |
+                         String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Netherlands) |
                          String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),NL)]</visible>
             </control>
         </control>
@@ -820,7 +820,7 @@
                     <font>InfoTitle</font>
                     <textcolor>$VAR[HighlightColor]</textcolor>
                     <align>left</align>
-                    <aligny>center</aligny>                       
+                    <aligny>center</aligny>
                     <label>$VAR[panelheading]</label>
                     <visible>!String.IsEqual(ListItem.DBType,set)</visible>
                 </control>
@@ -833,7 +833,7 @@
                     <align>left</align>
                     <label>$INFO[ListItem.Title,[B],[/B]] $INFO[Window(Home).Property(SkinInfo.Set.Movies.Years),(,)]</label>
                     <visible>String.IsEqual(ListItem.DBType,set)</visible>
-                </control>                
+                </control>
                 <control type="image" description="Studio">
                     <posy>-51</posy>
                     <left>1000</left>
@@ -863,7 +863,7 @@
                     <aspectratio>keep</aspectratio>
                     <aligny>center</aligny>
                     <visible>[!String.IsEmpty(ListItem.Property(tmdb_id)) | String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio))</visible>
-                </control>                
+                </control>
                 <control type="image" description="Line Split">
                     <posy>23</posy>
                     <width>1180</width>
@@ -877,7 +877,7 @@
                     <height>1</height>
                     <texture>img/LineL.png</texture>
                     <aspectratio>stretch</aspectratio>
-                </control>                
+                </control>
                 <control type="textbox" id="900031" description="Plot">
                     <include>VisibleFadeEffectDelay</include>
                     <posy>90</posy>
@@ -923,7 +923,7 @@
                     <height>375</height>
                     <texture>img/LineL.png</texture>
                     <aspectratio>stretch</aspectratio>
-                </control>                
+                </control>
                 <control type="panel" id="9009">
                     <include>VisibleFadeEffectDelay</include>
                     <include>List_9009_Commons</include>
@@ -978,7 +978,7 @@
 				<!-- Browse TV Show, embuary helper not active -->
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">SendClick(8)</onclick>
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">Dialog.Close(all)</onclick>
-				
+
             </control>
             <control type="button" id="8001" description="Set">
                 <height>90</height>
@@ -1077,7 +1077,7 @@
                 <label>$LOCALIZE[32007]</label>
                 <onclick>Dialog.Close(1121)</onclick>
                 <onclick>RunScript(plugin.video.specialfeatures,listitem)</onclick>
-                <visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Skin.HasSetting(Enable.SpecialFeatures) + String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true) + 
+                <visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Skin.HasSetting(Enable.SpecialFeatures) + String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true) +
                         [!String.isEqual(ListItem.DBType,set) + !String.IsEmpty(Listitem.DBID)]</visible>
             </control>
             <control type="button" id="297" description="Extras">
@@ -1127,7 +1127,7 @@
                 <visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))</visible>
             </control>
         </control>
-        
+
 		<!-- Cast and Widget Lists -->
         <control type="grouplist" id="91001">
 		    <visible>!Control.HasFocus(10)</visible>
@@ -1207,7 +1207,7 @@
                 <param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
                 <param name="content">$VAR[VideoInfoSimilar]</param>
                 <param name="visibility1">!Skin.HasSetting(DisableInfoListSimilar)</param>
-            </include>                                  
+            </include>
             <!-- Recommended -->
             <include content="VideoInfoPosterWidget" condition="Skin.HasSetting(Enable.TMDbHelper)">
                 <param name="id">91006</param>
@@ -1227,7 +1227,7 @@
                 <param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
                 <param name="content">$VAR[VideoInfoFromGenre]</param>
                 <param name="visibility1">!Skin.HasSetting(DisableInfoListGenre)</param>
-            </include>                                                  
+            </include>
             <!-- From Studio/Network -->
             <include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.Studio) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Studio.1.TMDb_ID))">
                 <param name="id">91008</param>
@@ -1248,7 +1248,7 @@
                 <param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
                 <param name="content">$VAR[VideoInfoFromYear]</param>
                 <param name="visibility1">!Skin.HasSetting(DisableInfoListYear)</param>
-            </include>                   
+            </include>
             <!-- Cast also stars in -->
             <include content="VideoInfoPosterWidget" condition="String.IsEqual(ListItem.DBType,movie)">
                 <param name="id">910010</param>
@@ -1301,7 +1301,7 @@
                 <param name="content">$VAR[InfoCastList03]</param>
                 <param name="sortby">year</param>
                 <param name="sortorder">descending</param>
-            </include>                    
+            </include>
             <!-- Crew in TV Shows -->
             <include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
                 <param name="id">910014</param>
@@ -1324,7 +1324,7 @@
 				<param name="iconimage">$INFO[Container.ListItem.Icon]</param>
             </include>
         </control>
-		
+
 		<!-- Provide slideshow for person pictures -->
         <control type="button" id="91506">
             <include>HiddenButton</include>
@@ -1347,7 +1347,7 @@
                 <texture background="true">$INFO[Container(910015).ListItem.Art(poster)]</texture>
             </control>
         </control>
-		
+
 		<!-- Provide slideshow for Posters -->
         <control type="button" id="91507">
             <include>HiddenButton</include>
@@ -1370,7 +1370,7 @@
                 <texture background="true">$INFO[Container(910016).ListItem.Art(poster)]</texture>
             </control>
         </control>
-		
+
         <control type="group">
             <visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Control.HasFocus(10)</visible>
             <include>VisibleFadeEffectDelay</include>
@@ -1430,7 +1430,7 @@
             <top>138</top>
             <width>520</width>
             <height>520</height>
-            <aspectratio align="bottom" aligny="bottom">keep</aspectratio>
+            <aspectratio aligny="bottom">keep</aspectratio>
             <texture background="true">$INFO[Container(90050).ListItem.Label,resource://resource.images.actorart/,.png]</texture>
             <fadetime>300</fadetime>
             <animation effect="fade" start="0" end="100" time="300">Visible</animation>
@@ -1438,7 +1438,7 @@
             <animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
             <visible>Control.HasFocus(90050) + System.AddonIsEnabled(resource.images.actorart)</visible>
         </control>
-		
+
 		<control type="group">
 		    <visible>Skin.HasSetting(Trailer.WindowVideoInfo) + Player.HasVideo + String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
             <left>10</left>
