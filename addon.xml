@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.amber" version="3.99.01" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
+<addon id="skin.amber" version="3.50.01" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
 	<requires>
-		<import addon="xbmc.gui" version="5.17.0"/>
+		<import addon="xbmc.gui" version="5.16.0"/>
 		<import addon="script.favourites" version="7.1.1"/>
 		<import addon="resource.uisounds.amber" version="1.0.0"/>
 		<import addon="script.skinshortcuts" version="1.0.17"/>
