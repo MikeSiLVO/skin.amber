@@ -191,7 +191,7 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
-				<texture align="left">$VAR[PopupVideoResolutionFlagVar]</texture>
+				<texture>$VAR[PopupVideoResolutionFlagVar]</texture>
 			</control>
 			<control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(VideoResolution))</visible>
@@ -202,7 +202,7 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
-				<texture align="left">$VAR[PopupVideoResolutionFlagVar]</texture>
+				<texture>$VAR[PopupVideoResolutionFlagVar]</texture>
 			</control>
 			<control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(VideoCodec))</visible>
