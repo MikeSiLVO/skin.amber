@@ -4,7 +4,7 @@
 	<controls>
 		<include>DimBG</include>
 		<control type="group">
-			<visible>String.IsEmpty(Window(Home).Property(script.cinemavision.running))</visible>
+			<visible>String.IsEmpty(Window(Home).Property(script.preshowexperience.running))</visible>
 			<visible>!Window.IsActive(startup)</visible>
 			<control type="progress" id="10" description="Progress bar">
 				<posx>708</posx>
