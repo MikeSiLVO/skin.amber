@@ -9,7 +9,7 @@
 	</animation>
 	<controls>
 		<control type="group">
-			<visible>String.IsEmpty(Window(Home).Property(script.cinemavision.running))</visible>
+			<visible>String.IsEmpty(Window(Home).Property(script.preshowexperience.running))</visible>
 			<posx>460</posx>
 			<posy>-100</posy>
 			<control type="image" description="background">
