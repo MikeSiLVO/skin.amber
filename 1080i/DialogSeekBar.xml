@@ -404,7 +404,16 @@
 						<lefttexture>colors/white.png</lefttexture>
 						<midtexture colordiffuse="FFFF0000">colors/white.png</midtexture>
 						<righttexture>colors/white.png</righttexture>
-						<info>Player.Cutlist</info>
+						<info>Player.Editlist</info>
+					</control>
+					<control type="ranges">
+						<left>30</left>
+						<top>3</top>
+						<width>1570</width>
+						<height>10</height>
+						<texturebg border="3" colordiffuse="00FFFFFF">colors/white25.png</texturebg>
+						<righttexture colordiffuse="FFFF0000">colors/white.png</righttexture>
+						<info>Player.Cuts</info>
 					</control>
 					<control type="ranges">
 						<left>30</left>
@@ -414,6 +423,15 @@
 						<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
 						<righttexture>colors/white.png</righttexture>
 						<info>Player.Chapters</info>
+					</control>
+					<control type="ranges">
+						<left>30</left>
+						<top>14</top>
+						<width>1570</width>
+						<height>4</height>
+						<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
+						<righttexture>colors/white.png</righttexture>
+						<info>Player.SceneMarkers</info>
 					</control>
 
 					<!-- End Matrix changes -->
