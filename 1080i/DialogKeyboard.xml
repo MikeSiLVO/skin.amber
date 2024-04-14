@@ -2,6 +2,10 @@
 <window>
     <defaultcontrol always="true">300</defaultcontrol>
     <controls>
+        <control type="button" id="310">
+            <description>Show Password button</description>
+            <include>HiddenObject</include>
+        </control>
         <control type="group">
             <visible>!Window.IsVisible(numericinput)</visible>
             <left>181</left>
@@ -10,14 +14,14 @@
                 <width>1557</width>
                 <height>906</height>
                 <texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+                <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
                 <visible>Skin.HasSetting(Enable.Autocompletion)</visible>
             </control>
             <control type="image">
                 <width>1557</width>
                 <height>706</height>
                 <texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+                <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
                 <visible>!Skin.HasSetting(Enable.Autocompletion)</visible>
             </control>
             <control type="image">
@@ -25,7 +29,7 @@
                 <width>1557</width>
                 <height>830</height>
                 <texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+                <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
             </control>
             <control type="label" id="311" description="Heading">
                 <left>64</left>
@@ -159,12 +163,34 @@
                     </control>
                     <control type="button" id="307">
                         <description>IP Input button</description>
-                        <width>143</width>
+                        <width>60</width>
                         <label>IP</label>
                         <onup>309</onup>
                         <ondown>303</ondown>
                         <font>ListDetails</font>
                         <include>KeyboardButtons</include>
+                        <visible>Control.IsVisible(310)</visible>
+                    </control>
+                    <control type="button" id="3107">
+                        <description>IP Input button</description>
+                        <width>143</width>
+                        <label>IP</label>
+                        <onup>309</onup>
+                        <ondown>303</ondown>
+                        <onclick>SendClick(307)</onclick>
+                        <font>ListDetails</font>
+                        <include>KeyboardButtons</include>
+                        <visible>!Control.IsVisible(310)</visible>
+                    </control>
+                    <control type="button" id="3100">
+                        <width>69</width>
+                        <onup>309</onup>
+                        <ondown>303</ondown>
+                        <onclick>SendClick(310)</onclick>
+                        <font>ListDetails</font>
+                        <include>KeyboardButtons</include>
+                        <label>$VAR[ShowPasswordButtonLabelVar]</label>
+                        <visible>Control.IsVisible(310)</visible>
                     </control>
                     <control type="button" id="120">
                         <description>(1,0) button</description>
@@ -247,7 +273,7 @@
                     <control type="togglebutton" id="303">
                         <description>CAPS LOCK button</description>
                         <width>300</width>
-                        <onup>307</onup>
+                        <onup>304</onup>
                         <ondown>302</ondown>
                         <font>ListDetails</font>
                         <label>$LOCALIZE[20179]</label>
@@ -465,7 +491,7 @@
 
             <include condition="Skin.HasSetting(Enable.Autocompletion)">AutoCompleteSuggestions</include>
 
-			<control type="group">
+            <control type="group">
                 <left>64</left>
                 <top>684</top>
                 <visible>Control.IsVisible(313)</visible>
