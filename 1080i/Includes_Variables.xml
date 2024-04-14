@@ -2174,6 +2174,12 @@
 		<value></value>
 	</variable>
 
+
+    <variable name="ShowPasswordButtonLabelVar">
+        <value condition="String.IsEqual(Control.GetLabel(310), $LOCALIZE[12308])">◊◊◊</value>
+        <value>***</value>
+    </variable>
+
 	<expression name="ShowSubcontent">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)] | [String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))] | [String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</expression>
 
     <expression name="WidgetFanartVisible">String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + ControlGroup(700).HasFocus</expression>
