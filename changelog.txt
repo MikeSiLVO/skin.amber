@@ -1,3 +1,6 @@
+3.99.01-omega (15.04.2024)
+- Blue MOD
+- Polish description
 3.4.32 (11-01-2022)
 - Allow different view types for PVR
 - Search for trailer and play trailer in window (video info)
