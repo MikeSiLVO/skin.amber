@@ -1055,6 +1055,24 @@
                 <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
                 <visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))</visible>
             </control>
+            <control type="button" id="14" description="Versions">
+                <height>90</height>
+                <width min="210">auto</width>
+                <align>center</align>
+                <font>Details</font>
+                <label>$LOCALIZE[40000]</label>
+                <visible>Control.IsEnabled(14) + String.IsEqual(ListItem.DBType,movie)</visible>
+                <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+            </control>
+            <control type="button" id="15" description="Extras">
+                <height>90</height>
+                <width min="210">auto</width>
+                <align>center</align>
+                <font>Details</font>
+                <label>$LOCALIZE[40211]</label>
+                <visible>Control.IsEnabled(15) + String.IsEqual(ListItem.DBType,movie)</visible>
+                <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+            </control>
             <control type="button" id="295" description="Embuary Info">
                 <height>90</height>
                 <width min="220">auto</width>
@@ -1085,7 +1103,7 @@
                 <width min="220">auto</width>
                 <align>center</align>
                 <font>Details</font>
-                <label>$LOCALIZE[32135]</label>
+                <label>$LOCALIZE[22082]</label>
                 <onclick>SetProperty(DoInfoExtras,True,Home)</onclick>
                 <onclick>SetProperty(InfoExtrasDBID,$INFO[ListItem.DBID],Home)</onclick>
                 <onclick>SetProperty(InfoExtrasDBType,$INFO[ListItem.DBType],Home)</onclick>
