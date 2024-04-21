@@ -8,24 +8,40 @@
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,movie) + Skin.HasSetting(Enable.HourMinutes) + String.IsEmpty(ListItem.Label2)">$VAR[ContainerItemDurationHrMins,,]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]</value>
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,tvshow) + String.IsEmpty(Container(6).ListItem.Duration) + String.IsEmpty(Container(6).ListItem.Property(TotalEpisodes))">$INFO[Container(6).ListItem.Rating]$INFO[Container(6).ListItem.MPAA, • ]</value>
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,tvshow) + String.IsEmpty(Container(6).ListItem.Duration) + !String.IsEmpty(Container(6).ListItem.Property(TotalEpisodes))">$INFO[Container(6).ListItem.Property(TotalEpisodes), $LOCALIZE[20360] , • ]$INFO[Container(6).ListItem.Property(UnWatchedEpisodes),$LOCALIZE[32260] ]</value>
-        <value condition="String.IsEqual(Container(6).ListItem.DBType,tvshow) + !String.IsEmpty(Container(6).ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes)">$INFO[Container(6).ListItem.Duration,, • ]$INFO[Container(6).ListItem.Property(TotalEpisodes), $LOCALIZE[20360] , • ]$INFO[Container(6).ListItem.Property(UnWatchedEpisodes),$LOCALIZE[32260] ]</value>
-        <value condition="String.IsEqual(Container(6).ListItem.DBType,tvshow) + !String.IsEmpty(Container(6).ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes)">$VAR[ContainerItemDurationHrMins,, • ]$INFO[Container(6).ListItem.Property(TotalEpisodes), $LOCALIZE[20360] , • ]$INFO[Container(6).ListItem.Property(UnWatchedEpisodes),$LOCALIZE[32260] ]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,tvshow) + !String.IsEmpty(Container(6).ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes)">$INFO[Container(6).ListItem.Duration,, • ]$INFO[Container(6).ListItem.Property(TotalEpisodes), $LOCALIZE[20360] , • ]$INFO[Container(6).ListItem.Property(UnWatchedEpisodes),$LOCALIZE[32260] ]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,tvshow) + !String.IsEmpty(Container(6).ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes)">$VAR[ContainerItemDurationHrMins,, • ]$INFO[Container(6).ListItem.Property(TotalEpisodes), $LOCALIZE[20360] , • ]$INFO[Container(6).ListItem.Property(UnWatchedEpisodes),$LOCALIZE[32260] ]</value>
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + !Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$INFO[Container(6).ListItem.Duration, • ]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]$INFO[ListItem.Label2, • ]</value>
-        <value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$VAR[ContainerItemDurationHrMins, • ,]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]$INFO[ListItem.Label2, • ]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$VAR[ContainerItemDurationHrMins, • ,]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]$INFO[ListItem.Label2, • ]</value>
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + !Skin.HasSetting(Enable.HourMinutes) + String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$INFO[Container(6).ListItem.Duration, • ]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]</value>
-        <value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + Skin.HasSetting(Enable.HourMinutes) + String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$VAR[ContainerItemDurationHrMins, • ,]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + Skin.HasSetting(Enable.HourMinutes) + String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$VAR[ContainerItemDurationHrMins, • ,]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]</value>
 		<value>$INFO[Listitem.Label2]</value>
-    </variable>
+	</variable>
 
 	<variable name="DialogSelectSearchImage">
-	    <value condition="String.IsEqual(Container(6).ListItem.DBType,movie) |  String.IsEqual(Container(6).ListItem.DBType,tvshow)">$INFO[Container(6).ListItem.Art(poster)]</value>
-        <value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + !String.IsEmpty(Container(6).ListItem.Art(season.poster))">$INFO[Container(6).ListItem.Art(season.poster)]</value>
-        <value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + String.IsEmpty(Container(6).ListItem.Art(season.poster))">$INFO[Container(6).ListItem.Art(tvshow.poster)]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,movie) |  String.IsEqual(Container(6).ListItem.DBType,tvshow)">$INFO[Container(6).ListItem.Art(poster)]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + !String.IsEmpty(Container(6).ListItem.Art(season.poster))">$INFO[Container(6).ListItem.Art(season.poster)]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + String.IsEmpty(Container(6).ListItem.Art(season.poster))">$INFO[Container(6).ListItem.Art(tvshow.poster)]</value>
 	</variable>
 
 	<variable name="DialogSelectSearchItemImage">
-	    <value condition="String.IsEqual(Container(6).ListItem.DBType,movie) |  String.IsEqual(Container(6).ListItem.DBType,tvshow)">$INFO[Container(6).ListItem.Art(fanart)]</value>
-        <value condition="String.IsEqual(Container(6).ListItem.DBType,episode)">$INFO[Container(6).ListItem.Art(thumb)]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,movie) |  String.IsEqual(Container(6).ListItem.DBType,tvshow)">$INFO[Container(6).ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode)">$INFO[Container(6).ListItem.Art(thumb)]</value>
+	</variable>
+
+	<variable name="DialogSelectImage">
+		<value condition="!String.IsEmpty(Container(6).ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+
+	<variable name="DialogSelectLabel">
+		<value condition="Window.IsVisible(selectvideoversion)">$INFO[ListItem.VideoVersionName]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+
+	<variable name="DialogSelectLabel2">
+		<value condition="Window.IsVisible(selectvideoextra)">$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]</value>
+		<value condition="Window.IsVisible(selectvideoversion)">$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]$INFO[ListItem.VideoResolution, | ]$INFO[ListItem.HdrType, • ]$INFO[ListItem.AudioCodec, | ]$VAR[AudioChannelsLabelVar, • ]</value>
+		<value condition="!String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
 	</variable>
 
 	<include name="DialogSelectMediaFlagItems">
@@ -121,7 +137,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>badges/3D.png</texture>
 			</control>
-            <control type="image" id="89007">
+			<control type="image" id="89007">
 				<visible>!String.IsEmpty(Container(6).ListItem.VideoResolution) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container(6).ListItem.Filename,hdr) | String.Contains(Container(6).ListItem.Filename,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
@@ -144,10 +160,7 @@
 			</control>
 			<control type="image" id="89008">
 				<visible>!String.IsEmpty(Container(6).ListItem.VideoResolution) + !Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) +
-				         [[String.Contains(Container(6).ListItem.FileNameAndPath,8bit) | String.Contains(Container(6).ListItem.FileNameAndPath,8-bit)] |
-						  [String.Contains(Container(6).ListItem.FileNameAndPath,10bit) | String.Contains(Container(6).ListItem.FileNameAndPath,10-bit)] |
-						  [String.Contains(Container(6).ListItem.FileNameAndPath,12bit) | String.Contains(Container(6).ListItem.FileNameAndPath,12-bit)]]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [[String.Contains(Container(6).ListItem.FileNameAndPath,8bit) | String.Contains(Container(6).ListItem.FileNameAndPath,8-bit)] | [String.Contains(Container(6).ListItem.FileNameAndPath,10bit) | String.Contains(Container(6).ListItem.FileNameAndPath,10-bit)] | [String.Contains(Container(6).ListItem.FileNameAndPath,12bit) | String.Contains(Container(6).ListItem.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -158,10 +171,7 @@
 			</control>
 			<control type="image" id="89008">
 				<visible>!String.IsEmpty(Container(6).ListItem.VideoResolution) + Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) +
-				         [[String.Contains(Container(6).ListItem.FileNameAndPath,8bit) | String.Contains(Container(6).ListItem.FileNameAndPath,8-bit)] |
-						  [String.Contains(Container(6).ListItem.FileNameAndPath,10bit) | String.Contains(Container(6).ListItem.FileNameAndPath,10-bit)] |
-						  [String.Contains(Container(6).ListItem.FileNameAndPath,12bit) | String.Contains(Container(6).ListItem.FileNameAndPath,12-bit)]]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [[String.Contains(Container(6).ListItem.FileNameAndPath,8bit) | String.Contains(Container(6).ListItem.FileNameAndPath,8-bit)] | [String.Contains(Container(6).ListItem.FileNameAndPath,10bit) | String.Contains(Container(6).ListItem.FileNameAndPath,10-bit)] | [String.Contains(Container(6).ListItem.FileNameAndPath,12bit) | String.Contains(Container(6).ListItem.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -215,7 +225,7 @@
 	</include>
 
 	<include name="DialogSelectSearch">
-	    <include>DimBG</include>
+		<include>DimBG</include>
 		<control type="group">
 			<posx>172</posx>
 			<posy>180</posy>
@@ -273,19 +283,19 @@
 				</include>
 			</control>
 			<control type="group">
-			    <control type="grouplist" description="Flags">
-        			<top>570</top>
-                    <left>50</left>
-                    <width>500</width>
-                    <height>45</height>
-                    <itemgap>10</itemgap>
-                    <orientation>horizontal</orientation>
-                    <align>center</align>
-                    <include content="DialogSelectMediaFlagItems">
-				        <param name="diffuse">$VAR[LabelTextColor]</param>
-				        <param name="itemwidth">61</param>
-                    </include>
-                </control>
+				<control type="grouplist" description="Flags">
+					<top>570</top>
+					<left>50</left>
+					<width>500</width>
+					<height>45</height>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<align>center</align>
+					<include content="DialogSelectMediaFlagItems">
+						<param name="diffuse">$VAR[LabelTextColor]</param>
+						<param name="itemwidth">61</param>
+					</include>
+				</control>
 			</control>
 			<control type="group" description="Group 6 Thumbs">
 				<visible>Control.IsVisible(6)</visible>
@@ -365,7 +375,7 @@
 							<width>590</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<scroll>true</scroll>
@@ -376,7 +386,7 @@
 							<posy>5</posy>
 							<width>590</width>
 							<height>60</height>
-                            <selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<scroll>true</scroll>
 						</control>
@@ -388,7 +398,7 @@
 							<height>60</height>
 							<align>left</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<font>ListDetails</font>
 							<scroll>false</scroll>
@@ -434,7 +444,7 @@
 							<height>60</height>
 							<textoffsetx>30</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout width="1010" height="60">
@@ -450,7 +460,7 @@
 							<height>60</height>
 							<textoffsetx>30</textoffsetx>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -555,7 +565,7 @@
 	</include>
 
 	<include name="DialogSelectStandard">
-	    <include>DimBG</include>
+		<include>DimBG</include>
 		<control type="group">
 			<posx>172</posx>
 			<posy>180</posy>
@@ -609,7 +619,7 @@
 					<param name="width">500</param>
 					<param name="height">500</param>
 					<param name="shadowoffset">8</param>
-					<param name="texture">$INFO[Container(6).ListItem.Icon]</param>
+					<param name="texture">$VAR[DialogSelectImage]</param>
 				</include>
 			</control>
 			<control type="group">
@@ -651,14 +661,14 @@
 							<param name="width">100</param>
 							<param name="height">100</param>
 							<param name="shadowoffset">4</param>
-							<param name="texture">$INFO[ListItem.Icon]</param>
+							<param name="texture">$VAR[DialogSelectImage]</param>
 						</include>
 						<control type="label">
 							<posx>132</posx>
 							<posy>5</posy>
 							<width>590</width>
 							<height>60</height>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$VAR[DialogSelectLabel]</label>
 							<scroll>true</scroll>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 						</control>
@@ -672,7 +682,7 @@
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 							<font>ListDetails</font>
 							<scroll>false</scroll>
-							<label>$INFO[ListItem.Label2]</label>
+							<label>$VAR[DialogSelectLabel2]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout width="710" height="120">
@@ -694,7 +704,7 @@
 							<param name="width">100</param>
 							<param name="height">100</param>
 							<param name="shadowoffset">4</param>
-							<param name="texture">$INFO[ListItem.Icon]</param>
+							<param name="texture">$VAR[DialogSelectImage]</param>
 						</include>
 						<control type="label">
 							<visible>Control.HasFocus(6)</visible>
@@ -703,9 +713,9 @@
 							<width>590</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$VAR[DialogSelectLabel]</label>
 							<scroll>true</scroll>
 						</control>
 						<control type="label">
@@ -714,7 +724,7 @@
 							<posy>5</posy>
 							<width>590</width>
 							<height>60</height>
-                            <selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<scroll>true</scroll>
 						</control>
@@ -726,10 +736,10 @@
 							<height>60</height>
 							<align>left</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<font>ListDetails</font>
-							<label>$INFO[ListItem.Label2]</label>
+							<label>$VAR[DialogSelectLabel2]</label>
 						</control>
 						<control type="label">
 							<visible>!Control.HasFocus(6)</visible>
@@ -772,7 +782,7 @@
 							<height>60</height>
 							<textoffsetx>30</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout width="1010" height="60">
@@ -788,7 +798,7 @@
 							<height>60</height>
 							<textoffsetx>30</textoffsetx>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -844,7 +854,7 @@
 					<ondown>95</ondown>
 					<visible>Control.IsEnabled(8) + !String.IsEmpty(Control.GetLabel(8))</visible>
 				</control>
-<!--				<control type="button" id="981">
+				<!-- <control type="button" id="981">
 					<description>Get More button</description>
 					<width>254</width>
 					<label>$LOCALIZE[21452]</label>
@@ -909,7 +919,7 @@
 					<ondown>95</ondown>
 					<visible>Control.IsEnabled(8) + !String.IsEmpty(Control.GetLabel(8))</visible>
 				</control>
-<!--				<control type="button" id="981">
+				<!-- <control type="button" id="981">
 					<description>Get More button</description>
 					<width>254</width>
 					<label>$LOCALIZE[21452]</label>
@@ -969,15 +979,15 @@
 	</include>
 
 	<include name="DialogSelectGame">
-	    <control type="group" description="Content for Games">
-		    <visible>[Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)]</visible>
+		<control type="group" description="Content for Games">
+			<visible>[Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)]</visible>
 			<bottom>0</bottom>
 			<height>540</height>
 			<width>100%</width>
-		    <control type="image">
-			    <texture>dialogs/DialogBG.png</texture>
-			    <colordiffuse>eeaaaaaa</colordiffuse>
-		    </control>
+			<control type="image">
+				<texture>dialogs/DialogBG.png</texture>
+				<colordiffuse>eeaaaaaa</colordiffuse>
+			</control>
 			<control type="panel" id="11">
 				<top>30</top>
 				<scrolltime tween="sine">200</scrolltime>
@@ -1003,12 +1013,12 @@
 							<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
 						</control>
 						<control type="image">
-						    <top>255</top>
-						    <width>444</width>
-						    <height>89</height>
-						    <texture>img/WhiteRoundedT.png</texture>
-						    <aspectratio>stretch</aspectratio>
-					    </control>
+							<top>255</top>
+							<width>444</width>
+							<height>89</height>
+							<texture>img/WhiteRoundedT.png</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
 						<control type="label">
 							<posy>260</posy>
 							<width>444</width>
@@ -1040,14 +1050,14 @@
 							<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
 						</control>
 						<control type="image">
-						    <top>255</top>
-						    <width>444</width>
-						    <height>89</height>
-						    <texture border="4">img/WhiteRoundedST2.png</texture>
-						    <colordiffuse>$VAR[HighlightColor]</colordiffuse>
-						    <aspectratio>stretch</aspectratio>
+							<top>255</top>
+							<width>444</width>
+							<height>89</height>
+							<texture border="4">img/WhiteRoundedST2.png</texture>
+							<colordiffuse>$VAR[HighlightColor]</colordiffuse>
+							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(11)</visible>
-					    </control>
+						</control>
 						<control type="label">
 							<posy>260</posy>
 							<width>444</width>
@@ -1061,7 +1071,7 @@
 						<control type="image">
 							<width>444</width>
 							<height>250</height>
-                            <texture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</texture>
+							<texture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</texture>
 							<visible>Control.HasFocus(11)</visible>
 						</control>
 					</control>
@@ -1083,7 +1093,7 @@
 	</include>
 
 	<include name="DialogSelectViewtypes">
-	    <include>DimBG</include>
+		<include>DimBG</include>
 		<control type="group">
 			<posx>172</posx>
 			<posy>180</posy>
@@ -1165,7 +1175,7 @@
 							<height>60</height>
 							<textoffsetx>30</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout width="1010" height="60">
@@ -1181,7 +1191,7 @@
 							<height>60</height>
 							<textoffsetx>30</textoffsetx>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -1235,7 +1245,7 @@
 							<width>200</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -1244,7 +1254,7 @@
 							<posx>10</posx>
 							<width>200</width>
 							<height>60</height>
-                            <selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
