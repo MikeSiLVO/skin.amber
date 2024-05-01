@@ -461,7 +461,6 @@
 					    <shadowcolor></shadowcolor>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				    </control>
 				    <control type="label" description="l2">
 					    <visible>!$PARAM[isFocused] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + !$PARAM[isLandscape]</visible>
@@ -498,7 +497,6 @@
 					    <shadowcolor></shadowcolor>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				    </control>
 					<!-- Landscape -->
 					<control type="image">
@@ -530,7 +528,6 @@
 					    <shadowcolor></shadowcolor>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				    </control>
 				    <control type="label" description="l2">
 					    <visible>!$PARAM[isFocused] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + $PARAM[isLandscape]</visible>
@@ -567,7 +564,6 @@
 					    <shadowcolor></shadowcolor>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				    </control>
 			    </control>
 			    <!-- In-progress percent for normal icons -->
@@ -670,7 +666,6 @@
 					    <align>center</align>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				    </control>
 				    <control type="label" description="l2">
 					    <visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
@@ -682,7 +677,6 @@
 					    <align>center</align>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				    </control>
 			    </control>
 			    <!-- In-progress percent for normal icons -->
@@ -739,7 +733,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -787,7 +780,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -835,7 +827,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -881,7 +872,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[HighlightColor]</textcolor>
-					        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				        </control>
 					</control>
 				</control>
@@ -906,7 +896,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[HighlightColor]</textcolor>
-					        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				        </control>
 					</control>
 				</control>
@@ -1686,7 +1675,7 @@
 				        <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
 				        <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
 
-						<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
+						<oninfo condition="ListItem.IsCollection + Integer.IsLess(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
 					    <onup condition="!String.IsEmpty(Window.Property(gallery))">ClearProperty(gallery)</onup>
 					    <ondown condition="$EXP[56_FanartViewGallery]">SetProperty(gallery,true)</ondown>
                         <ondown condition="!$EXP[56_FanartViewGallery] + [!Control.IsVisible(616) | [Control.IsVisible(616) + Control.IsVisible(66)]]">66</ondown>
@@ -2034,7 +2023,6 @@
 					                    <shadowcolor></shadowcolor>
 					                    <label>$VAR[RatingOverlayVar]</label>
 					                    <textcolor>$VAR[HighlightColor]</textcolor>
-					                    <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				                    </control>
 					            </control>
 						    </control>
