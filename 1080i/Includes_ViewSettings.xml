@@ -39,12 +39,12 @@
         </control>
     </include>
 
-    <include name="KioskModeButton">
+    <!-- <include name="KioskModeButton">
         <control type="button">
             <label />
             <onfocus>SetFocus(50)</onfocus>
         </control>
-    </include>
+    </include> -->
 
     <include name="9000NavCommons">
         <control type="button" id="3">
@@ -1280,7 +1280,6 @@
             <include>9000SysButtons</include>
             <label>$LOCALIZE[587]</label>
             <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-			<onclick>right</onclick>
         </control>
         <control type="button" id="199">
             <visible>Container.CanFilterAdvanced</visible>

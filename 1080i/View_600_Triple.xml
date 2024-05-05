@@ -21,10 +21,10 @@
 		<value condition="Integer.IsGreaterOrEqual(Container(6002).ListItem.PercentPlayed,90) + Integer.IsLess(Container(6002).ListItem.PercentPlayed,100)">OverlayInProgress90.png</value>
     </variable>
 
-	<variable name="TripleSeasonUnwatchedEpisodes">
+	<!-- <variable name="TripleSeasonUnwatchedEpisodes">
 	    <value condition="!Integer.IsGreater(Container(6001).ListItem.Property(UnWatchedEpisodes),99)">$INFO[Container(6001).ListItem.Property(UnWatchedEpisodes)]</value>
 		<value>99+</value>
-	</variable>
+	</variable> -->
 
 	<variable name="TripleMiddlePath">
 	    <value condition="String.IsEmpty(Container.PluginName)">$INFO[Container(600).ListItem.FolderPath]</value>
@@ -94,7 +94,6 @@
 				    <shadowcolor></shadowcolor>
 				    <label>$VAR[UnwatchedEpisodes]</label>
 				    <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-				    <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				</control>
 				<control type="label" description="l2">
 				    <visible>!Control.HasFocus(600)</visible>
@@ -143,7 +142,6 @@
 			        <shadowcolor></shadowcolor>
 			        <label>$VAR[RatingOverlayVar]</label>
 			        <textcolor>$VAR[HighlightColor]</textcolor>
-			        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 		        </control>
 		        <control type="label" description="l2">
 			        <visible>!$PARAM[isFocused]</visible>
@@ -218,7 +216,6 @@
                     <ondown>600</ondown>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
 				    <autoscroll>false</autoscroll>
-				    <movement>2</movement>
 				    <focusposition>1</focusposition>
 				    <preloaditems>2</preloaditems>
                     <pagecontrol>6000</pagecontrol>

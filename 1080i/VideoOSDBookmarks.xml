@@ -55,7 +55,6 @@
 						<width>320</width>
 						<height>200</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$INFO[ListItem.Icon]</texture>
 						<texture background="true" fallback="DefaultEpisode.png">$INFO[ListItem.Icon]</texture>
 						<bordersize>16</bordersize>
 					</control>

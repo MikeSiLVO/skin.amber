@@ -46,7 +46,7 @@
 				<width>412</width>
 				<height>980</height>
 				<texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+				<!-- <colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
 			<control type="image" description="Right Side Background">
                 <colordiffuse>dfcebe9e</colordiffuse>
@@ -55,7 +55,7 @@
 				<width>1419</width>
 				<height>980</height>
 				<texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+				<!-- <colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
 			<!-- Busy Loader -->
 			<control type="group">

@@ -825,17 +825,17 @@
 		<value>DefaultStudios.png</value>
 	</variable>
 	<!-- Online studio icon -->
-	<variable name="InfoStudiosTMDB">
+	<!-- <variable name="InfoStudiosTMDB">
 		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio),,.png]</value>
 		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio),,.png]</value>
 		<value>DefaultStudios.png</value>
-	</variable>
+	</variable> -->
 	<!-- Embuary info video window studio icon -->
-	<variable name="InfoStudiosEmbuary">
+	<!-- <variable name="InfoStudiosEmbuary">
 		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Container(10051).ListItem.Studio,,.png]</value>
 		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Container(10051).ListItem.Studio,,.png]</value>
 		<value>DefaultStudios.png</value>
-	</variable>
+	</variable> -->
 	<!-- Text color for plot -->
 	<variable name="InfoPlotTextColor">
 		<value>$VAR[LabelTextColor]</value>
@@ -877,11 +877,10 @@
 		<value condition="Window.IsActive(script-embuary-video.xml) + String.IsEqual(Container(10051).ListItem.DBType,movie)">with_companies</value>
 	</variable>
 
-	<variable name="TMDbFanart">
+	<!-- <variable name="TMDbFanart">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !Skin.HasSetting(Disable.OnlineTMDbInfo) + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=fanart&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
-	</variable>
-
-	<include name="TMDbFanartList"><content target="images">$VAR[TMDbFanart]</content></include>
+	</variable> -->
+	<!-- <include name="TMDbFanartList"><content target="images">$VAR[TMDbFanart]</content></include> -->
 
 	<variable name="TMDbPosters">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !Skin.HasSetting(Disable.OnlineTMDbInfo) + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=posters&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
@@ -911,12 +910,12 @@
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=crew&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
 	</variable>
 
-	<variable name="Info_Youtube">
+	<!-- <variable name="Info_Youtube">
 		<value condition="!String.IsEmpty(ListItem.TvShowTitle) + System.AddonIsEnabled(plugin.video.youtube)">$INFO[ListItem.TvShowTitle,plugin://plugin.video.youtube/search/?q=,]</value>
 		<value condition="!String.IsEmpty(ListItem.Artist) + System.AddonIsEnabled(plugin.video.youtube)">$INFO[ListItem.Artist,plugin://plugin.video.youtube/search/?q=,]</value>
 		<value condition="!String.IsEmpty(ListItem.Title) + System.AddonIsEnabled(plugin.video.youtube)">$INFO[ListItem.Title,plugin://plugin.video.youtube/search/?q=,]</value>
 		<value condition="System.AddonIsEnabled(plugin.video.youtube)">$INFO[ListItem.Label,plugin://plugin.video.youtube/search/?q=,]</value>
-	</variable>
+	</variable> -->
 	<!-- Also directed by custom info list content -->
 	<variable name="VideoInfoFromDirector">
 		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Director)">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[ListItem.Director]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
@@ -1059,10 +1058,10 @@
 		<value condition="[!String.IsEmpty(ListItem.Property(Age)) + !String.IsEmpty(ListItem.Property(Deathday))]">$LOCALIZE[32153]</value>
 		<value condition="[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]">$LOCALIZE[32153]</value>
 	</variable>
-	<variable name="TMDbPersonBio">
+	<!-- <variable name="TMDbPersonBio">
 		<value condition="!String.IsEmpty(ListItem.Property(Biography))">$INFO[ListItem.Property(Biography)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Biography))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Biography)]</value>
-	</variable>
+	</variable> -->
 	<variable name="TMDbPersonBirthday">
 		<value condition="!String.IsEmpty(ListItem.Property(Birthday))">$INFO[ListItem.Property(Birthday)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Birthday)]</value>
@@ -1180,17 +1179,17 @@
 
 	<constant name="IconCrossfadeTime">400</constant>
 
-	<variable name="WidgetItemType">
+	<!-- <variable name="WidgetItemType">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">movie</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)">tv</value>
-	</variable>
+	</variable> -->
 
-	<variable name="TMDbHelperQuery">
+	<!-- <variable name="TMDbHelperQuery">
 		<value condition="!String.IsEmpty(ListItem.Property(tmdb_id))">tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
 		<value condition="!String.IsEmpty(ListItem.IMDBNumber))">imdb_id=$INFO[ListItem.IMDBNumber]</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)">query=$INFO[ListItem.TVShowTitle]</value>
-	</variable>
+	</variable> -->
 
 	<!-- List layout for video info media details -->
 	<include name="List_9009_Commons" description="Video Info metadata container">
@@ -1963,7 +1962,7 @@
 	<!-- Thanks to jurialmunkey for allowing me to adapt his code -->
 
 	<!-- Hidden list with online media details -->
-	<include name="TMDbMediaDetails">
+	<!-- <include name="TMDbMediaDetails">
 		<control type="list" id="5100">
 			<left>-100</left>
 			<top>-100</top>
@@ -1973,7 +1972,7 @@
 			<focusedlayout height="1" width="1" />
 			<content>plugin://plugin.video.themoviedb.helper/?info=details&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]</content>
 		</control>
-	</include>
+	</include> -->
 
 	<!-- Onclick actions for most custom info lists -->
 	<include name="InfoList_OnClick">
@@ -2000,11 +1999,11 @@
 		</definition>
 	</include>
 	<!-- Onclick action for Fanart info list -->
-	<include name="InfoList_OnClickFanart">
+	<!-- <include name="InfoList_OnClickFanart">
 		<definition>
 			<onclick>SetFocus(91508)</onclick>
 		</definition>
-	</include>
+	</include> -->
 	<!-- Onclick action for Seasons info list -->
 	<include name="InfoList_OnClickSeasons">
 		<definition>

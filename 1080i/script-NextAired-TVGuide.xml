@@ -39,7 +39,7 @@
 				<width>412</width>
 				<height>980</height>
 				<texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+				<!-- <colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
 			<control type="image" description="2/2 Right Menu">
                 <colordiffuse>dfcebe9e</colordiffuse>
@@ -48,7 +48,7 @@
 				<width>1419</width>
 				<height>980</height>
 				<texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+				<!-- <colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
 
 			<control type="list" id="9000">

@@ -472,15 +472,15 @@
 		<value>$LOCALIZE[32404]</value>
 	</variable>
 
-	<variable name="RightListHeadingLabel">
+	<!-- <variable name="RightListHeadingLabel">
 		<value condition="String.IsEmpty(ListItem.Title)">$INFO[ListItem.Label]</value>
 		<value>$INFO[ListItem.Title]</value>
-	</variable>
-	<variable name="RightListSubheadingLabel">
+	</variable> -->
+	<!-- <variable name="RightListSubheadingLabel">
 		<value condition="String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/) + !String.Contains(ListItem.Episode,S)">$INFO[ListItem.TVShowTitle]$INFO[ListItem.Season, • $LOCALIZE[20373] ]</value>
 		<value condition="Container.Content(movies)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • ,]$INFO[ListItem.Rating, • ]</value>
 		<value>$INFO[ListItem.Date]$INFO[ListItem.Rating, • ]</value>
-	</variable>
+	</variable> -->
 
 	<variable name="RightListInfoPopupDelay">
 		<value condition="String.IsEmpty(Skin.String(RightListInfoPopup.Delay))">Skin.SetString(RightListInfoPopup.Delay,2)</value>
@@ -984,7 +984,7 @@
 		<animation effect="slide" end="-40,-20" time="240" tween="cubic" easing="inout" condition="Container.Content(episodes)">Conditional</animation>
 		<animation effect="slide" end="0,-20" time="240" tween="cubic" easing="inout" condition="Skin.HasSetting(502_UseLogo)">Conditional</animation>
 		<visible>[$EXP[Exp_View_502] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.rightlistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
-		<include condition="Window.IsActive(music)">RightListMusicLayouts</include>
+		<!-- <include condition="Window.IsActive(music)">RightListMusicLayouts</include> -->
 		<include condition="!Window.IsActive(music)">RightListVideoLayouts</include>
 	</include>
 
@@ -2013,7 +2013,7 @@
 		</control>
 	</include>
 
-	<include name="RightListMusicLayouts">
+	<!-- <include name="RightListMusicLayouts">
 		<itemlayout width="950" height="90">
 			<control type="label">
 				<left>1325</left>
@@ -2119,7 +2119,7 @@
 				</control>
 			</control>
 		</focusedlayout>
-	</include>
+	</include> -->
 
 	<include name="RightListVideoLayouts">
 		<!-- Text as list item type -->
