@@ -590,7 +590,6 @@
 					            <shadowcolor></shadowcolor>
 					            <label>$VAR[ContainerRatingOverlayVar]</label>
 					            <textcolor>$VAR[HighlightColor]</textcolor>
-					            <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				            </control>
 						</control>
                         <control type="group">
@@ -612,7 +611,6 @@
 					            <shadowcolor></shadowcolor>
 					            <label>$VAR[ContainerRatingOverlayVar]</label>
 					            <textcolor>$VAR[HighlightColor]</textcolor>
-					            <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				            </control>
 						</control>
 					</control>

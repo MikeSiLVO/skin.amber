@@ -900,7 +900,7 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
-				<texture align="left">$VAR[VideoResolutionFlagVar]</texture>
+				<texture>$VAR[VideoResolutionFlagVar]</texture>
 			</control>
 			<control type="image" id="89001">
 				<visible>!String.IsEmpty(Container.ListItem.VideoResolution)</visible>
@@ -910,7 +910,7 @@
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
-				<texture align="left">$VAR[VideoResolutionFlagVar]</texture>
+				<texture>$VAR[VideoResolutionFlagVar]</texture>
 			</control>
 			<control type="image" id="89002">
 				<visible>!String.IsEmpty(Container.ListItem.VideoCodec)</visible>
@@ -1783,7 +1783,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[VideoInfoUnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -2051,7 +2050,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[HighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 						<control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
@@ -2086,7 +2084,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 					</control>
 					<!-- Banner -->
@@ -2103,7 +2100,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
@@ -2127,7 +2123,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isBanner] + !Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
@@ -2181,7 +2176,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -2209,7 +2203,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -2300,7 +2293,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isLowWidget]</visible>
@@ -2325,7 +2317,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isLowWidget]</visible>
@@ -2350,7 +2341,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + !$PARAM[isLowWidget]</visible>
@@ -2375,7 +2365,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + $PARAM[isLowWidget]</visible>
@@ -2400,7 +2389,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -2425,7 +2413,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
@@ -2454,7 +2441,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium]</visible>
@@ -2479,7 +2465,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -2504,7 +2489,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -2529,7 +2513,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
@@ -2558,7 +2541,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isLowWidget]</visible>
@@ -2583,7 +2565,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isLowWidget]</visible>
@@ -2608,7 +2589,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium]  + !$PARAM[isTripleRowLarge] + !$PARAM[isLowWidget]</visible>
@@ -2633,7 +2613,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium]  + !$PARAM[isTripleRowLarge] + $PARAM[isLowWidget]</visible>
@@ -2658,7 +2637,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + $PARAM[isTripleRowMedium]  + !$PARAM[isTripleRowLarge]</visible>
@@ -2683,7 +2661,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium]  + $PARAM[isTripleRowLarge]</visible>
@@ -2712,7 +2689,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isLowWidget]</visible>
@@ -2737,7 +2713,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isLowWidget]</visible>
@@ -2762,7 +2737,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + !$PARAM[isLowWidget] + !$PARAM[isTripleShelvesTogether]</visible>
@@ -2787,7 +2761,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + $PARAM[isLowWidget] + !$PARAM[isTripleShelvesTogether]</visible>
@@ -2812,7 +2785,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
@@ -2837,7 +2809,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
@@ -2862,7 +2833,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[UnwatchedEpisodes]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + $PARAM[isTripleShelvesTogether]</visible>
@@ -2912,7 +2882,6 @@
 					    <shadowcolor></shadowcolor>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					    <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				    </control>
 				    <control type="label" description="l2">
 					    <visible>!$PARAM[isFocused]</visible>
@@ -3133,7 +3102,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -3204,7 +3172,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[HighlightColor]</textcolor>
-					        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				        </control>
 					</control>
 					<!-- Banner -->
@@ -3238,7 +3205,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -3294,7 +3260,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 					</control>
 				</control>
@@ -3333,7 +3298,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -3377,7 +3341,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -3433,7 +3396,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 					</control>
 					<!-- Square in media views -->
@@ -3466,7 +3428,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
@@ -3515,7 +3476,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused] + !$PARAM[isLowWidget]</visible>
@@ -3562,7 +3522,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
     					            <visible>!$PARAM[isFocused] + !$PARAM[isLowWidget]</visible>
@@ -3609,7 +3568,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -3661,7 +3619,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -3708,7 +3665,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
     					            <visible>!$PARAM[isFocused] + !$PARAM[isLowWidget]</visible>
@@ -3755,7 +3711,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
     					            <visible>!$PARAM[isFocused]</visible>
@@ -3806,7 +3761,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -3853,7 +3807,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
     					            <visible>!$PARAM[isFocused] + !$PARAM[isLowWidget]</visible>
@@ -3900,7 +3853,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -3951,7 +3903,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -3998,7 +3949,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
     					            <visible>!$PARAM[isFocused] + !$PARAM[isLowWidget]</visible>
@@ -4045,7 +3995,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -4096,7 +4045,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -4143,7 +4091,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
     					            <visible>!$PARAM[isFocused] + !$PARAM[isLowWidget]</visible>
@@ -4190,7 +4137,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -4237,7 +4183,6 @@
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
@@ -4296,7 +4241,6 @@
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>$VAR[HighlightColor]</textcolor>
-					        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				        </control>
 					</control>
 				</control>
@@ -4350,7 +4294,6 @@
                     <aspectratio>$PARAM[aspect]</aspectratio>
 					<bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
 					<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
-					<aspectratio>$PARAM[aspect]</aspectratio>
 				</control>
 				<control type="multiimage">
 					<visible>!$PARAM[isFocused]</visible>
@@ -4462,7 +4405,6 @@
 				        <shadowcolor></shadowcolor>
 				        <label>$VAR[VideoInfoUnwatchedEpisodes]</label>
 				        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-				        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 			        </control>
 			        <control type="label" description="l2">
 				        <visible>!$PARAM[isFocused]</visible>
@@ -5051,7 +4993,7 @@
 		</definition>
 	</include>
 
-	<include name="GenericFavouriteIconBig">
+	<!-- <include name="GenericFavouriteIconBig">
 		<param name="isFocused">false</param>
 		<definition>
 			<include content="GenericThumbIconTemplate">
@@ -5073,9 +5015,9 @@
 				<param name="belowtextboxbackwidth">267</param>
 			</include>
 		</definition>
-	</include>
+	</include> -->
 
-    <include name="GenericFavouriteIconMed">
+    <!-- <include name="GenericFavouriteIconMed">
 		<param name="isFocused">false</param>
 		<definition>
 			<include content="GenericThumbIconTemplate">
@@ -5099,9 +5041,9 @@
 				<param name="belowtextboxbackwidth">180</param>
 			</include>
 		</definition>
-	</include>
+	</include> -->
 
-	<include name="GenericFavouriteIconSmall">
+	<!-- <include name="GenericFavouriteIconSmall">
 		<param name="isFocused">false</param>
 		<definition>
 			<include content="GenericThumbIconTemplate">
@@ -5125,7 +5067,7 @@
 				<param name="belowtextboxbackwidth">160</param>
 			</include>
 		</definition>
-	</include>
+	</include> -->
 
 	<include name="GenericMusicIconBig">
 		<param name="isFocused">false</param>
@@ -5461,7 +5403,7 @@
 		</definition>
 	</include>
 
-	<include name="ActorLayout">
+	<!-- <include name="ActorLayout">
 		<param name="viewid"/>
 		<param name="belowlabel2" />
 		<definition>
@@ -5478,7 +5420,7 @@
 				</include>
 			</focusedlayout>
 		</definition>
-	</include>
+	</include> -->
 
 	<include name="SetLayout">
 		<param name="viewid"/>

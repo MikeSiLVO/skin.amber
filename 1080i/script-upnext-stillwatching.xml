@@ -133,7 +133,6 @@
                         <bottom>30</bottom>
                         <width>46</width>
                         <height>46</height>
-                        <aspect>keep</aspect>
                         <texture>nextupicons/00.png</texture>
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
                     </control>

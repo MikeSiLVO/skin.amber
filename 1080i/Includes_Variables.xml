@@ -25,10 +25,10 @@
         <value condition="ListItem.HasTimer">$LOCALIZE[31510]</value>
     </variable>
 
-    <variable name="ShelfSize">
+    <!-- <variable name="ShelfSize">
         <value condition="Skin.HasSetting(Shelf.DoubleHeight)">20</value>
         <value condition="!Skin.HasSetting(Shelf.DoubleHeight)">20</value>
-    </variable>
+    </variable> -->
 
     <variable name="VisualisationName">
         <value condition="!String.IsEmpty(Visualisation.Name)">$INFO[Visualisation.Name]</value>
@@ -284,11 +284,11 @@
 		<value condition="!String.IsEmpty(Skin.String(musicgenrefanartresource.name))">$INFO[Skin.String(musicgenrefanartresource.name)]</value>
 	</variable>
 
-    <variable name="WidgetArtVar">
+    <!-- <variable name="WidgetArtVar">
         <value condition="String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)">$VAR[Poster]</value>
         <value condition="String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season)">$VAR[SeasonPoster]</value>
         <value>$VAR[Square]</value>
-    </variable>
+    </variable> -->
 
     <variable name="SingleItemLabel">
 	    <value condition="!String.Contains(ListItem.Label,/B)">$INFO[ListItem.Label,[B],[/B]]</value>
@@ -614,10 +614,10 @@
 		<value condition="Window.IsActive(weather)">$INFO[Weather.Location]</value>
     </variable>
 
-    <variable name="CurrentBackgroundSetting">
+    <!-- <variable name="CurrentBackgroundSetting">
         <value condition="!String.IsEmpty(Container(9103).ListItem.Thumb)">$INFO[Container(9103).ListItem.Thumb]</value>
         <value>$LOCALIZE[571]</value>
-    </variable>
+    </variable> -->
 
     <variable name="MusicPlayingFanartLabel2" description="Label2 for music playing FA">
         <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[32413]</value>
@@ -657,10 +657,10 @@
 	</variable>
 	<!-- End Matrix change -->
 
-    <variable name="ListItem.ratingbadge">
+    <!-- <variable name="ListItem.ratingbadge">
         <value condition="!String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.UserRating,badges/ratings/rating,.png]</value>
         <value condition="String.IsEmpty(ListItem.UserRating) + !String.IsEmpty(ListItem.dbtype)">badges/ratings/ratingNR.png</value>
-    </variable>
+    </variable> -->
 
 	<variable name="Container.ListItem.ratingbadge">
         <value condition="!String.IsEmpty(Container.ListItem.UserRating)">$INFO[Container.ListItem.UserRating,badges/ratings/rating,.png]</value>
@@ -1151,11 +1151,11 @@
         <value>$INFO[ListItem.Label]</value>
     </variable>
 
-	<variable name="SeasonLabel2">
+	<!-- <variable name="SeasonLabel2">
 		<value condition="String.IsEmpty(ListItem.Season)"></value>
         <value condition="Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Season,s0,e]</value>
         <value condition="!Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Season,s,e]</value>
-    </variable>
+    </variable> -->
 
     <variable name="PlayerSeasonEpisodeLabel">
         <value condition="String.IsEmpty(VideoPlayer.Season)">$INFO[ListItem.TVShowTitle] - $INFO[VideoPlayer.Episode]</value>
@@ -1165,13 +1165,13 @@
         <value condition="!Integer.IsLess(VideoPlayer.Episode,10) + !Integer.IsLess(VideoPlayer.Season,10)">$INFO[VideoPlayer.Season,s,]$INFO[VideoPlayer.Episode,e,]</value>
     </variable>
 
-	<variable name="WidgetItemSeasonEpisodeLabel">
+	<!-- <variable name="WidgetItemSeasonEpisodeLabel">
         <value condition="String.IsEmpty(Window(Home).Property(WidgetItemSeason))">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemEpisode)]</value>
         <value condition="Integer.IsLess(Window(Home).Property(WidgetItemEpisode),10) + Integer.IsLess(Window(Home).Property(WidgetItemSeason),10)">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemSeason),s0,]$INFO[Window(Home).Property(WidgetItemEpisode),e0,]</value>
         <value condition="Integer.IsLess(Window(Home).Property(WidgetItemEpisode),10) + !Integer.IsLess(Window(Home).Property(WidgetItemSeason),10)">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemSeason),s,]$INFO[Window(Home).Property(WidgetItemEpisode),e0,]</value>
         <value condition="!Integer.IsLess(Window(Home).Property(WidgetItemEpisode),10) + Integer.IsLess(Window(Home).Property(WidgetItemSeason),10)">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemSeason),s0,]$INFO[Window(Home).Property(WidgetItemEpisode),e,]</value>
         <value condition="!Integer.IsLess(Window(Home).Property(WidgetItemEpisode),10) + !Integer.IsLess(Window(Home).Property(WidgetItemSeason),10)">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemSeason),s,]$INFO[Window(Home).Property(WidgetItemEpisode),e,]</value>
-    </variable>
+    </variable> -->
 
     <variable name="UpNextSeasonEpisodeLabel">
         <value condition="String.IsEmpty(Window.Property(Season))">$INFO[Window.Property(Episode)]</value>
@@ -1199,12 +1199,12 @@
         <value condition="!String.IsEmpty(Window.Property(fanart))">$INFO[Window.Property(fanart)]</value>
     </variable>
 
-    <variable name="ThemeSelectedColour">
+    <!-- <variable name="ThemeSelectedColour">
         <value condition="String.Contains(Skin.CurrentColourTheme,Blue)">SelectedBlue</value>
         <value condition="String.Contains(Skin.CurrentColourTheme,Green)">SelectedGreen</value>
         <value condition="String.Contains(Skin.CurrentColourTheme,White)">SelectedGrey</value>
         <value>SelectedOrange</value>
-    </variable>
+    </variable> -->
 
     <variable name="SkinShortcutLabelVar">
         <value condition="Control.HasFocus(301)">$ADDON[script.skinshortcuts 32000]</value>
@@ -1294,10 +1294,10 @@
         <value condition="Integer.IsGreater(Window(Home).Property(NextAired.Runtime),1)">$LOCALIZE[12391]</value>
     </variable>
 
-	<variable name="WidgetItemMinuteLabel">
+	<!-- <variable name="WidgetItemMinuteLabel">
         <value condition="Integer.IsEqual(Window(Home).Property(WidgetItemDurationMin),1)">$LOCALIZE[32126]</value>
         <value condition="Integer.IsGreater(Window(Home).Property(WidgetItemDurationMin),1)">$LOCALIZE[12391]</value>
-    </variable>
+    </variable> -->
 
 	<variable name="ContainerItemDurationHrMins">
 		<value condition="Integer.IsGreater(Container.ListItem.Duration(h),1) + String.IsEqual(Container.ListItem.Duration(m),0) + Integer.IsGreater(Container.ListItem.Duration(ss),1)">$INFO[Container.ListItem.Duration(h),, $LOCALIZE[12392]], $INFO[Container.ListItem.Duration(ss),, $LOCALIZE[32047]]</value>
@@ -1410,7 +1410,7 @@
 		<value condition="Control.HasFocus(70045)">$LOCALIZE[19321]</value>
 	</variable>
 
-    <variable name="ListItemFullInfo">
+    <!-- <variable name="ListItemFullInfo">
 		<value condition="ListItem.IsParentFolder + String.IsEqual(ListItemAbsolute(1).DBType,movie) + Integer.IsGreater(ListItemAbsolute(1).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItemAbsolute(1).DBID]&amp;type=movie</value>
 		<value condition="ListItem.IsParentFolder + String.IsEqual(ListItemAbsolute(1).DBType,tvshow) + Integer.IsGreater(ListItemAbsolute(1).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItemAbsolute(1).DBID]&amp;type=tvshow</value>
 		<value condition="ListItem.IsParentFolder + String.IsEqual(ListItemAbsolute(1).DBType,season) + Integer.IsGreater(ListItemAbsolute(1).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItemAbsolute(1).DBID]&amp;type=tvshow&amp;idtype=season</value>
@@ -1422,13 +1422,13 @@
 		<value condition="String.IsEqual(ListItem.DBType,season) + Integer.IsGreater(ListItem.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow&amp;idtype=season</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode) + Integer.IsGreater(ListItem.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow&amp;idtype=episode</value>
 		<value>-</value>
-	</variable>
-	<variable name="PlayerFullInfo">
+	</variable> -->
+	<!-- <variable name="PlayerFullInfo">
 		<value condition="VideoPlayer.Content(movies) + Integer.IsGreater(VideoPlayer.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[VideoPlayer.DBID]&amp;type=movie</value>
 		<value condition="VideoPlayer.Content(tvshows) + Integer.IsGreater(VideoPlayer.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[VideoPlayer.DBID]&amp;type=tvshow</value>
 		<value condition="VideoPlayer.Content(episodes) + Integer.IsGreater(VideoPlayer.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[VideoPlayer.DBID]&amp;type=tvshow&amp;idtype=episode</value>
 		<value>-</value>
-	</variable>
+	</variable> -->
 
     <variable name="ShortcutsDisabled">
 		<value condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)">[COLOR Red]×[/COLOR] </value>
@@ -1529,9 +1529,9 @@
 		<value>99+</value>
 	</variable>
 
-	<variable name="numPlaylistBackgrounds">
+	<!-- <variable name="numPlaylistBackgrounds">
 	    <value>2</value>
-	</variable>
+	</variable> -->
 
 	<variable name="MusicLabelVar">
 	    <value condition="String.IsEqual(ListItem.DBType,song)">$INFO[ListItem.Tracknumber] - $INFO[ListItem.Title]</value>
@@ -1987,16 +1987,16 @@
 		<value condition="Integer.IsGreater(ListItem.TotalDiscs,1)">$INFO[ListItem.DiscNumber]$INFO[ListItem.DiscTitle, - ]</value>
 	</variable>
 
-	<variable name="MultiDiscVar">
+	<!-- <variable name="MultiDiscVar">
 		<value condition="MusicPlayer.IsMultiDisc + Window.IsActive(visualisation)">$INFO[MusicPlayer.DiscNumber, - [$LOCALIZE[427] ,] ]$INFO[MusicPlayer.DiscTitle]</value>
 		<value condition="MusicPlayer.IsMultiDisc">$INFO[MusicPlayer.DiscNumber]$INFO[MusicPlayer.DiscTitle, - ]</value>
-	</variable>
+	</variable> -->
 
-	<variable name="PlayerArtVar">
+	<!-- <variable name="PlayerArtVar">
 	    <value condition="VideoPlayer.Content(movies) + !String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
 		<value condition="!String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
 		<value>$INFO[Player.Icon]</value>
-	</variable>
+	</variable> -->
 	<!-- End Matrix change -->
 
     <variable name="DefaultFontLabel">

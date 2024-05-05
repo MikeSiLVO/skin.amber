@@ -116,7 +116,7 @@
 			<timeperimage>8000</timeperimage>
             <fadetime>800</fadetime>
             <randomize>true</randomize>
-            <loop>yes</loop>
+            <loop>true</loop>
             <imagepath background="true">$VAR[MusicVizBackground]</imagepath>
             <animation effect="fade" start="0" end="80" time="300">Visible</animation>
             <animation effect="fade" start="80" end="0" time="200">Hidden</animation>

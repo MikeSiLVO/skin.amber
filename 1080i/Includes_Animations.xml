@@ -28,10 +28,10 @@
         <animation effect="fade" time="50">Hidden</animation>
     </include>
 
-    <include name="TVGuideFade">
+    <!-- <include name="TVGuideFade">
         <animation effect="fade" time="250" delay="100">Visible</animation>
         <animation effect="fade" time="50">Hidden</animation>
-    </include>
+    </include> -->
 
     <include name="OSDFade">
         <animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
@@ -150,15 +150,15 @@
 		</control>
 	</include>
 
-    <include name="Animation_FadeIn">
+    <!-- <include name="Animation_FadeIn">
         <animation effect="fade" start="0" end="100" time="350" tween="cubic" easing="inout">Visible</animation>
         <animation effect="fade" start="0" end="100" time="350" tween="cubic" easing="inout">WindowOpen</animation>
-    </include>
+    </include> -->
 
-    <include name="Animation_FadeOut">
+    <!-- <include name="Animation_FadeOut">
         <animation effect="fade" end="0" start="100" time="150">Hidden</animation>
         <animation effect="fade" end="0" start="100" time="150">WindowClose</animation>
-    </include>
+    </include> -->
 
     <include name="SlideLeftSpinningDisc">
 		<animation type="WindowOpen" reversible="false">

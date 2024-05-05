@@ -17,13 +17,13 @@
 	    <posy>116</posy>
 	</include>
 
-	<include name="ButtonsTopIcons">
+	<!-- <include name="ButtonsTopIcons">
 	    <top>930</top>
-	</include>
+	</include> -->
 
-	<include name="ButtonsTopOther">
+	<!-- <include name="ButtonsTopOther">
 	    <top>980</top>
-	</include>
+	</include> -->
 
 	<include name="PanelHeightTouch">
 	    <height>620</height>

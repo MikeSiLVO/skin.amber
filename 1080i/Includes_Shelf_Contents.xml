@@ -21,66 +21,66 @@
 
 	<!-- Hidden button to play widget item trailer -->
 	<include name="ShelfAutoTrailer">
-	    <control type="button">
-		    <animation effect="slide" end="0,0" time="2000" reversible="false">Focus</animation>
-		    <include>HiddenObject</include>
-		    <onunfocus condition="Skin.HasSetting(Shelf.PlayTrailers) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">PlayerControl(Stop)</onunfocus>
-		    <onunfocus condition="Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">CancelAlarm(PlayShelfTrailer,silent)</onunfocus>
+		<control type="button">
+			<animation effect="slide" end="0,0" time="2000" reversible="false">Focus</animation>
+			<include>HiddenObject</include>
+			<onunfocus condition="Skin.HasSetting(Shelf.PlayTrailers) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">PlayerControl(Stop)</onunfocus>
+			<onunfocus condition="Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">CancelAlarm(PlayShelfTrailer,silent)</onunfocus>
 			<onunfocus condition="Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onunfocus>
-		    <onfocus condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + !String.IsEmpty(ListItem.Trailer)">AlarmClock(PlayShelfTrailer,PlayMedia($ESCINFO[ListItem.Trailer],1),$INFO[Skin.String(ShelfTrailerDelay)],silent)</onfocus>
-		    <onfocus condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer))">AlarmClock(PlayTrailer,PlayMedia($ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Trailer)],1),$INFO[Skin.String(ShelfTrailerDelay)],silent)</onfocus>
+			<onfocus condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + !String.IsEmpty(ListItem.Trailer)">AlarmClock(PlayShelfTrailer,PlayMedia($ESCINFO[ListItem.Trailer],1),$INFO[Skin.String(ShelfTrailerDelay)],silent)</onfocus>
+			<onfocus condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer))">AlarmClock(PlayTrailer,PlayMedia($ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Trailer)],1),$INFO[Skin.String(ShelfTrailerDelay)],silent)</onfocus>
 			<onfocus condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer))]">SetProperty(ShelfTrailerPlaying,True,Home)</onfocus>
-	    </control>
+		</control>
 	</include>
 
 	<include name="ShelfTrailerInfo">
-	    <param name="left">435</param>
+		<param name="left">435</param>
 		<param name="top">895</param>
 		<definition>
-	        <control type="group">
-			    <left>$PARAM[left]</left>
-			    <top>$PARAM[top]</top>
-			    <visible>Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + ControlGroup(700).HasFocus</visible>
-			    <control type="image">
-			        <left>0</left>
-			        <top>0</top>
-				    <right>0</right>
-				    <bottom>0</bottom>
-				    <fadetime>200</fadetime>
-                    <aspectratio scalediffuse="true">scale</aspectratio>
-                    <texture background="true" colordiffuse="ffffffff">img/BackgroundMaskBlack.png</texture>
-     		    </control>
-			    <control type="label" description="Main label">
-				    <left>30</left>
-				    <width>1305</width>
-				    <height>60</height>
-				    <scroll>false</scroll>
-				    <align>left</align>
-				    <font>font38_title</font>
-				    <textcolor>$VAR[HighlightColor]</textcolor>
-				    <label>$INFO[ListItem.Label,[B],[/B]]$INFO[ListItem.Year, (,)]</label>
-			    </control>
-			    <control type="label" description="Main label">
-				    <left>30</left>
-				    <top>70</top>
-				    <width>1305</width>
-				    <height>30</height>
-				    <scroll>false</scroll>
-				    <align>left</align>
-				    <label>[B][COLOR=$VAR[LabelTextColor]]$VAR[WidgetItemDurationVar,, • ]$INFO[ListItem.MPAA][/COLOR][/B]</label>
-			    </control>
-		    </control>
+			<control type="group">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<visible>Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + ControlGroup(700).HasFocus</visible>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<fadetime>200</fadetime>
+					<aspectratio scalediffuse="true">scale</aspectratio>
+					<texture background="true" colordiffuse="ffffffff">img/BackgroundMaskBlack.png</texture>
+				</control>
+				<control type="label" description="Main label">
+					<left>30</left>
+					<width>1305</width>
+					<height>60</height>
+					<scroll>false</scroll>
+					<align>left</align>
+					<font>font38_title</font>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+					<label>$INFO[ListItem.Label,[B],[/B]]$INFO[ListItem.Year, (,)]</label>
+				</control>
+				<control type="label" description="Main label">
+					<left>30</left>
+					<top>70</top>
+					<width>1305</width>
+					<height>30</height>
+					<scroll>false</scroll>
+					<align>left</align>
+					<label>[B][COLOR=$VAR[LabelTextColor]]$VAR[WidgetItemDurationVar,, • ]$INFO[ListItem.MPAA][/COLOR][/B]</label>
+				</control>
+			</control>
 		</definition>
 	</include>
 
 	<!-- Widgets background and labels, single height shelf -->
 	<include name="WidgetBackground">
-		<param name="id"></param>
-		<param name="label"></param>
+		<param name="id" />
+		<param name="label" />
 		<param name="labelscroll">true</param>
-		<param name="top"></param>
-		<param name="height"></param>
-		<param name="visible"></param>
+		<param name="top" />
+		<param name="height" />
+		<param name="visible" />
 		<param name="ShowLargeLogo">false</param>
 		<param name="ShowLarge2Logo">false</param>
 		<param name="ShowMediumLogo">false</param>
@@ -173,10 +173,10 @@
 
 	<!-- Widget background and labels, two shelves together -->
 	<include name="WidgetBackground2">
-		<param name="id1"></param>
-		<param name="id2"></param>
-		<param name="label1"></param>
-		<param name="label2"></param>
+		<param name="id1" />
+		<param name="id2" />
+		<param name="label1" />
+		<param name="label2" />
 		<param name="labelscroll1">true</param>
 		<param name="labelscroll2">true</param>
 		<param name="topdouble">170</param>
@@ -327,7 +327,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
 				</control>
-                <control type="label">
+				<control type="label">
 					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
 					<visible>$PARAM[showShelvesInfo] + [Control.HasFocus($PARAM[id1]) | Control.HasFocus($PARAM[id2])]</visible>
 					<top>-114</top>
@@ -416,7 +416,7 @@
 				<param name="ShowMedium2Logo">$PARAM[ShowMedium2Logo]</param>
 				<param name="ShowLargeLogo">$PARAM[ShowLargeLogo]</param>
 				<param name="id1">$PARAM[id1]</param>
-		        <param name="id2">$PARAM[id2]</param>
+				<param name="id2">$PARAM[id2]</param>
 				<param name="showShelvesInfo">$PARAM[showShelvesInfo]</param>
 			</include>
 		</definition>
@@ -424,12 +424,12 @@
 
 	<!-- Widget background and labels, three shelves together -->
 	<include name="WidgetBackground3">
-		<param name="id1"></param>
-		<param name="id2"></param>
-		<param name="id3"></param>
-		<param name="label1"></param>
-		<param name="label2"></param>
-		<param name="label3"></param>
+		<param name="id1" />
+		<param name="id2" />
+		<param name="id3" />
+		<param name="label1" />
+		<param name="label2" />
+		<param name="label3" />
 		<param name="labelscroll1">true</param>
 		<param name="labelscroll2">true</param>
 		<param name="labelscroll3">true</param>
@@ -935,12 +935,12 @@
 
 	<!-- Widget background and labels, three shelves together, larger poster -->
 	<include name="WidgetBackground3Large">
-		<param name="id1"></param>
-		<param name="id2"></param>
-		<param name="id3"></param>
-		<param name="label1"></param>
-		<param name="label2"></param>
-		<param name="label3"></param>
+		<param name="id1" />
+		<param name="id2" />
+		<param name="id3" />
+		<param name="label1" />
+		<param name="label2" />
+		<param name="label3" />
 		<param name="labelscroll1">true</param>
 		<param name="labelscroll2">true</param>
 		<param name="labelscroll3">true</param>
@@ -1541,9 +1541,7 @@
 		</definition>
 	</include>
 
-
 	<!-- Widget Container Layouts for dynamic content widgets -->
-
 	<!-- Shelf Layouts for most widgets: Poster, Square, Fanart, Landscape, ClearLogo, ClearArt, Thumb -->
 	<include name="Shelf_Generic1">
 		<param name="id1"/>
@@ -1787,7 +1785,7 @@
 						<font>ListDetailsSmall</font>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Triple row, not large -->
 			<itemlayout height="$PARAM[artworkheightmed]" width="$PARAM[artworkwidthmed]" condition="[!$PARAM[isTripleShelvesTogether] + $PARAM[isTripleRow] + !$PARAM[isTripleRowLarge]]">
@@ -1985,7 +1983,7 @@
 						<font>ListDetails</font>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Single, Double or Triple row, large -->
 			<itemlayout height="$PARAM[artworkheightbig]" width="$PARAM[artworkwidthbig]" condition="[!$PARAM[isTripleRow] | [$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]]">
@@ -2185,7 +2183,7 @@
 						<font>ListDetails</font>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 		</definition>
 	</include>
@@ -2361,7 +2359,7 @@
 						<texture>thumbs/discarttop.png</texture>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Triple row, not large -->
 			<itemlayout height="$PARAM[artworkheightmed]" width="$PARAM[artworkwidthmed]" condition="[!$PARAM[isTripleShelvesTogether] + $PARAM[isTripleRow] + !$PARAM[isTripleRowLarge]]">
@@ -2494,7 +2492,7 @@
 						<texture>thumbs/discarttop.png</texture>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Single, Double or Triple row, large -->
 			<itemlayout height="$PARAM[artworkheightbig]" width="$PARAM[artworkwidthbig]" condition="[!$PARAM[isTripleRow] | [$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]]">
@@ -2627,7 +2625,7 @@
 						<texture>thumbs/discarttop.png</texture>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 		</definition>
 	</include>
@@ -2809,7 +2807,7 @@
 						<texture background="true">$VAR[ClearLogo]</texture>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Single or double row -->
 			<itemlayout height="157" width="668" condition="!$PARAM[isTripleRow]">
@@ -2956,7 +2954,7 @@
 						<texture background="true">$VAR[ClearLogo]</texture>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Triple row, large -->
 			<itemlayout height="157" width="684" condition="$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]">
@@ -3107,7 +3105,7 @@
 						<texture background="true">$VAR[ClearLogo]</texture>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Triple row, not large -->
 			<itemlayout height="151" width="634" condition="$PARAM[isTripleRow] + !$PARAM[isTripleRowLarge] + !$PARAM[isTripleShelvesTogether]">
@@ -3258,13 +3256,12 @@
 						<texture background="true">$VAR[ClearLogo]</texture>
 					</control>
 				</control>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 		</definition>
 	</include>
 
 	<!-- Shelf container layouts for static widgets -->
-
 	<!-- Shelf layout for static widgets other than weather -->
 	<include name="Shelf_GenericStatic">
 		<param name="id1"/>
@@ -3341,7 +3338,7 @@
 					<param name="overlaylabelalign">center</param>
 					<param name="overlaylabelfont">$PARAM[labelfont]</param>
 				</include>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Triple row, not large -->
 			<itemlayout height="252" width="182" condition="$PARAM[isTripleRow] + !$PARAM[isTripleRowLarge]">
@@ -3396,7 +3393,7 @@
 					<param name="overlaylabelalign">center</param>
 					<param name="overlaylabelfont">$PARAM[labelfont]</param>
 				</include>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 			<!-- Single or double row, or triple row large -->
 			<itemlayout height="315" width="228" condition="[!$PARAM[isTripleRow] | [$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]]">
@@ -3451,10 +3448,11 @@
 					<param name="overlaylabelalign">center</param>
 					<param name="overlaylabelfont">$PARAM[labelfont]</param>
 				</include>
-                <include>ShelfAutoTrailer</include>
+				<include>ShelfAutoTrailer</include>
 			</focusedlayout>
 		</definition>
 	</include>
+
 	<!-- Shelf layout for Weather static widgets -->
 	<include name="Shelf_GenericStaticWeather">
 		<param name="id1"/>
@@ -3668,14 +3666,14 @@
 
 	<!-- Indicator of which widget is the focused one -->
 	<include name="widgetsIndicator">
-		<param name="top"></param>
-		<param name="id"></param>
-		<param name="target1"></param>
-		<param name="target2"></param>
-		<param name="target3"></param>
-		<param name="target4"></param>
-		<param name="target5"></param>
-		<param name="target6"></param>
+		<param name="top" />
+		<param name="id" />
+		<param name="target1" />
+		<param name="target2" />
+		<param name="target3" />
+		<param name="target4" />
+		<param name="target5" />
+		<param name="target6" />
 		<definition>
 			<!-- Shelf indicator -->
 			<control type="grouplist">
@@ -3751,7 +3749,7 @@
 
 	<!-- Animations to center shelf items in horizontal menu -->
 	<include name="ShelfCenterAnimationsHoriz">
-		<param name="id"></param>
+		<param name="id" />
 		<param name="center228">false</param>
 		<param name="center228double">false</param>
 		<param name="center228triplemed">false</param>
@@ -3781,54 +3779,35 @@
 		<definition>
 			<!-- Center Poster and Square (with text under art) shelves, single row -->
 			<animation effect="slide" start="0,0" end="831,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="717,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="603,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,3) + $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="489,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="375,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="261,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="147,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,7) + $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="33,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall]">Conditional</animation>
 
 			<!-- Center Poster and Square (with text under art) shelves, double row -->
-			<animation effect="slide" start="0,0" end="831,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="831,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="717,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,3) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="717,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="603,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="603,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="489,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,7) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="489,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="375,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,9) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="375,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,10) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="261,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,11) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="261,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,12) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="147,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,13) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="147,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,14) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="33,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,15) + $PARAM[center228double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="33,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,16) + $PARAM[center228double]">Conditional</animation>
+			<!-- START COMBINING WIP -->
+			<animation effect="slide" start="0,0" end="831,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,1) | String.IsEqual(Container($PARAM[id]).NumItems,2)] + $PARAM[center228double]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="717,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,3) | String.IsEqual(Container($PARAM[id]).NumItems,4)] + $PARAM[center228double]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="603,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,5) | String.IsEqual(Container($PARAM[id]).NumItems,6)] + $PARAM[center228double]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="489,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,7) | String.IsEqual(Container($PARAM[id]).NumItems,8)] + $PARAM[center228double]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="375,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,9) | String.IsEqual(Container($PARAM[id]).NumItems,10)] + $PARAM[center228double]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="261,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,11) | String.IsEqual(Container($PARAM[id]).NumItems,12)] + $PARAM[center228double]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="147,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,13) | String.IsEqual(Container($PARAM[id]).NumItems,14)] + $PARAM[center228double]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="33,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,15) | String.IsEqual(Container($PARAM[id]).NumItems,16)] + $PARAM[center228double]">Conditional</animation>
+
 			<!-- Center Poster and Square (with text under art) shelves, triple row medium -->
-			<animation effect="slide" start="0,0" end="854,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="854,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="854,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,3) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="763,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="763,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="763,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="672,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,7) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="672,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="672,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,9) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="581,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,10) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="581,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,11) + $PARAM[center228triplemed]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="581,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,12) + $PARAM[center228triplemed]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="854,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,1) | String.IsEqual(Container($PARAM[id]).NumItems,2) | String.IsEqual(Container($PARAM[id]).NumItems,3)] + $PARAM[center228triplemed]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="763,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,4) | String.IsEqual(Container($PARAM[id]).NumItems,5) | String.IsEqual(Container($PARAM[id]).NumItems,6)] + $PARAM[center228triplemed]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="672,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,7) | String.IsEqual(Container($PARAM[id]).NumItems,8) | String.IsEqual(Container($PARAM[id]).NumItems,9)] + $PARAM[center228triplemed]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="581,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,10) | String.IsEqual(Container($PARAM[id]).NumItems,11) | String.IsEqual(Container($PARAM[id]).NumItems,12)] + $PARAM[center228triplemed]">Conditional</animation>
+
 			<animation effect="slide" start="0,0" end="490,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,13) + $PARAM[center228triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="490,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,14) + $PARAM[center228triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="490,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,15) + $PARAM[center228triplemed]">Conditional</animation>
+
 			<animation effect="slide" start="0,0" end="399,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,16) + $PARAM[center228triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="399,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,17) + $PARAM[center228triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="399,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,18) + $PARAM[center228triplemed]">Conditional</animation>
@@ -3844,6 +3823,7 @@
 			<animation effect="slide" start="0,0" end="35,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,28) + $PARAM[center228triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="35,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,29) + $PARAM[center228triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="35,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,30) + $PARAM[center228triplemed]">Conditional</animation>
+
 			<!-- Center Poster and Square (with text under art) shelves, triple row small-->
 			<animation effect="slide" start="0,0" end="865.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center228triplesmall]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="786,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center228triplesmall]">Conditional</animation>
@@ -3859,15 +3839,10 @@
 
 			<!-- Center DiscArt and CharacterArt shelves, single row -->
 			<animation effect="slide" start="0,0" end="797.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center295] + !$PARAM[center295double] + !$PARAM[center295triplemed] + !$PARAM[center295triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="650,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center295] + !$PARAM[center295double] + !$PARAM[center295triplemed] + !$PARAM[center295triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="502.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,3) + $PARAM[center295] + !$PARAM[center295double] + !$PARAM[center295triplemed] + !$PARAM[center295triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="355,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center295] + !$PARAM[center295double] + !$PARAM[center295triplemed] + !$PARAM[center295triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="207.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center295] + !$PARAM[center295double] + !$PARAM[center295triplemed] + !$PARAM[center295triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="60,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center295] + !$PARAM[center295double] + !$PARAM[center295triplemed] + !$PARAM[center295triplesmall]">Conditional</animation>
 
 			<!-- Center DiscArt and CharacterArt shelves, double row -->
@@ -3881,8 +3856,8 @@
 			<animation effect="slide" start="0,0" end="355,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center295double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="207.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,9) + $PARAM[center295double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="207.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,10) + $PARAM[center295double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="60,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,11) + $PARAM[center295double]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="60,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,12) + $PARAM[center295double]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="[String.IsEqual(Container($PARAM[id]).NumItems,11) | String.IsEqual(Container($PARAM[id]).NumItems,12)] + $PARAM[center295double]">Conditional</animation>
+
 			<!-- Center DiscArt and CharacterArt shelves, triple row medium -->
 			<animation effect="slide" start="0,0" end="822.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center295triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="822.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center295triplemed]">Conditional</animation>
@@ -3905,6 +3880,7 @@
 			<animation effect="slide" start="0,0" end="87.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,19) + $PARAM[center295triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="87.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,20) + $PARAM[center295triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="87.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,21) + $PARAM[center295triplemed]">Conditional</animation>
+
 			<!-- Center DiscArt and CharacterArt shelves, triple row small -->
 			<animation effect="slide" start="0,0" end="837.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center295triplesmall]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="730,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center295triplesmall]">Conditional</animation>
@@ -3917,13 +3893,9 @@
 
 			<!-- Center Square (with no text under art) shelves, single row -->
 			<animation effect="slide" start="0,0" end="787.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + !$PARAM[center315triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="630,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + !$PARAM[center315triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="472.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,3) + $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + !$PARAM[center315triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="315,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + !$PARAM[center315triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="157.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + !$PARAM[center315triplesmall]">Conditional</animation>
 
 			<!-- Center Square (with no text under art) shelves, double row -->
@@ -3937,6 +3909,7 @@
 			<animation effect="slide" start="0,0" end="315,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center315double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="157.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,9) + $PARAM[center315double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="157.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,10) + $PARAM[center315double]">Conditional</animation>
+
 			<!-- Center Square (with no text under art) shelves, triple row medium -->
 			<animation effect="slide" start="0,0" end="819,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center315triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="819,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center315triplemed]">Conditional</animation>
@@ -3959,6 +3932,7 @@
 			<animation effect="slide" start="0,0" end="63,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,19) + $PARAM[center315triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="63,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,20) + $PARAM[center315triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="63,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,21) + $PARAM[center315triplemed]">Conditional</animation>
+
 			<!-- Center Square (with no text under art) shelves, triple row small -->
 			<animation effect="slide" start="0,0" end="835,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center315triplesmall]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="725,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center315triplesmall]">Conditional</animation>
@@ -3971,19 +3945,12 @@
 
 			<!-- Center Clear Logo shelves, single row -->
 			<animation effect="slide" start="0,0" end="756.8,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="756.8,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="568.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,3) + $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="568.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="380.3,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="380.3,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="192,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,7) + $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="192,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall]">Conditional</animation>
 
 			<!-- Center Clear Logo shelves, double row -->
@@ -4003,6 +3970,7 @@
 			<animation effect="slide" start="0,0" end="192,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,14) + $PARAM[center376double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="192,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,15) + $PARAM[center376double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="192,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,16) + $PARAM[center376double]">Conditional</animation>
+
 			<!-- Center Clear Logo shelves, triple row medium -->
 			<animation effect="slide" start="0,0" end="765,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center376triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="765,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center376triplemed]">Conditional</animation>
@@ -4029,6 +3997,7 @@
 			<animation effect="slide" start="0,0" end="45,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,23) + $PARAM[center376triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="45,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,24) + $PARAM[center376triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="45,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,25) + $PARAM[center376triplemed]">Conditional</animation>
+
 			<!-- Center Clear Logo shelves, triple row small -->
 			<animation effect="slide" start="0,0" end="819.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center376triplesmall]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="819.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center376triplesmall]">Conditional</animation>
@@ -4062,9 +4031,7 @@
 
 			<!-- Center Landscape, FanArt and Thumb shelves, single row -->
 			<animation effect="slide" start="0,0" end="695,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center500] + !$PARAM[center500double] + !$PARAM[center500triplemed] + !$PARAM[center500triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="445,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center500] + !$PARAM[center500double] + !$PARAM[center500triplemed] + !$PARAM[center500triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="195,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,3) + $PARAM[center500] + !$PARAM[center500double] + !$PARAM[center500triplemed] + !$PARAM[center500triplesmall]">Conditional</animation>
 
 			<!-- Center Landscape, FanArt and Thumb shelves, double row -->
@@ -4074,6 +4041,7 @@
 			<animation effect="slide" start="0,0" end="445,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center500double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="195,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center500double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="195,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center500double]">Conditional</animation>
+
 			<!-- Center Landscape, FanArt, ClearArt and Thumb shelves, triple row medium -->
 			<animation effect="slide" start="0,0" end="766,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center500triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="766,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center500triplemed]">Conditional</animation>
@@ -4090,6 +4058,7 @@
 			<animation effect="slide" start="0,0" end="50,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,13) + $PARAM[center500triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="50,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,14) + $PARAM[center500triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="50,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,15) + $PARAM[center500triplemed]">Conditional</animation>
+
 			<!-- Center Landscape, FanArt, ClearArt and Thumb shelves, triple row small -->
 			<animation effect="slide" start="0,0" end="779.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center500triplesmall]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="614,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center500triplesmall]">Conditional</animation>
@@ -4099,11 +4068,8 @@
 
 			<!-- Center Banner shelves, single row -->
 			<animation effect="slide" start="0,0" end="611,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center668] + !$PARAM[center668double] + !$PARAM[center668triplemed] + !$PARAM[center668triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="611,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center668] + !$PARAM[center668double] + !$PARAM[center668triplemed] + !$PARAM[center668triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="277,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,3) + $PARAM[center668] + !$PARAM[center668double] + !$PARAM[center668triplemed] + !$PARAM[center668triplesmall]">Conditional</animation>
-
 			<animation effect="slide" start="0,0" end="277,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center668] + !$PARAM[center668double] + !$PARAM[center668triplemed] + !$PARAM[center668triplesmall]">Conditional</animation>
 
 			<!-- Center Banner shelves, double row -->
@@ -4115,6 +4081,7 @@
 			<animation effect="slide" start="0,0" end="277,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center668double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="277,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,7) + $PARAM[center668double]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="277,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center668double]">Conditional</animation>
+
 			<!-- Center Banner shelves, triple row medium -->
 			<animation effect="slide" start="0,0" end="628,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center668triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="628,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center668triplemed]">Conditional</animation>
@@ -4126,6 +4093,7 @@
 			<animation effect="slide" start="0,0" end="311,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center668triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="311,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,9) + $PARAM[center668triplemed]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="311,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,10) + $PARAM[center668triplemed]">Conditional</animation>
+
 			<!-- Center Banner shelves, triple row small -->
 			<animation effect="slide" start="0,0" end="732.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,1) + $PARAM[center668triplesmall]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="732.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,2) + $PARAM[center668triplesmall]">Conditional</animation>
@@ -4135,7 +4103,6 @@
 			<animation effect="slide" start="0,0" end="307.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center668triplesmall]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="95,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,7) + $PARAM[center668triplesmall]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="95,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center668triplesmall]">Conditional</animation>
-
 		</definition>
 	</include>
 
@@ -5366,8 +5333,6 @@
 		</definition>
 	</include>
 
-
-
 	<!-- PVR Recording widgets -->
 	<include name="PVRRecordingWidgets">
 		<control type="group">
@@ -5551,15 +5516,14 @@
 			</include>
 		</control>
 	</include>
-
 	<include name="CurrentPVRStatusSmall">
-		<param name="top"></param>
-		<param name="left"></param>
-		<param name="headerlabel"></param>
-		<param name="timelabel"></param>
-		<param name="channellabel"></param>
-		<param name="titlelabel"></param>
-		<param name="channelicon"></param>
+		<param name="top" />
+		<param name="left" />
+		<param name="headerlabel" />
+		<param name="timelabel" />
+		<param name="channellabel" />
+		<param name="titlelabel" />
+		<param name="channelicon" />
 		<definition>
 			<top>$PARAM[top]</top>
 			<left>$PARAM[left]</left>
@@ -5614,15 +5578,14 @@
 			</include>
 		</definition>
 	</include>
-
 	<include name="CurrentPVRStatus">
-		<param name="top"></param>
-		<param name="left"></param>
-		<param name="headerlabel"></param>
-		<param name="timelabel"></param>
-		<param name="channellabel"></param>
-		<param name="titlelabel"></param>
-		<param name="channelicon"></param>
+		<param name="top" />
+		<param name="left" />
+		<param name="headerlabel" />
+		<param name="timelabel" />
+		<param name="channellabel" />
+		<param name="titlelabel" />
+		<param name="channelicon" />
 		<definition>
 			<top>$PARAM[top]</top>
 			<left>$PARAM[left]</left>

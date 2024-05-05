@@ -6,12 +6,12 @@
 		<value>60%</value>
 	</variable>
 
-	<variable name="AmberFlixTitleLabelVar">
+	<!-- <variable name="AmberFlixTitleLabelVar">
 		<value condition="Container.Content(tvshows) | Container.Content(episodes)">$INFO[ListItem.TVShowTitle]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Album]</value>
 		<value condition="Container.Content(artists)">$INFO[ListItem.Artist]</value>
 		<value>$INFO[ListItem.Title]</value>
-	</variable>
+	</variable> -->
 
 	<variable name="AmberFlixDimLevelVar">
 		<value condition="String.IsEqual(Skin.String(AmberFlix.DimLevel),100%)">FFFFFFFF</value>
@@ -27,10 +27,10 @@
 		<value condition="String.IsEqual(Skin.String(AmberFlix.DimLevel),0%)">00FFFFFF</value>
 	</variable>
 
-	<variable name="TMDbHelperNextAiredLabelVar">
+	<!-- <variable name="TMDbHelperNextAiredLabelVar">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))">[COLOR $VAR[HighlightColor]]$LOCALIZE[32009]:[/COLOR] $INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired),, • ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),S]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),E, - ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Last_Aired))">[COLOR $VAR[HighlightColor]]$LOCALIZE[32010]:[/COLOR] $INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired),, • ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Season),S]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Episode),E, - ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Name)]</value>
-	</variable>
+	</variable> -->
 
 	<variable name="AmberFlixSeasonLabelVar">
 	    <value condition="String.IsEmpty(ListItem.Season)"></value>
@@ -76,13 +76,13 @@
 										       [[container.content(movies) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix_TrailerWindow)]]</expression>
 
 
-	<include name="FocusSquare">
+	<!-- <include name="FocusSquare">
 	    <focusposition>2</focusposition>
-	</include>
+	</include> -->
 
-	<include name="FocusPoster">
+	<!-- <include name="FocusPoster">
 	    <focusposition>4</focusposition>
-	</include>
+	</include> -->
 
 	<include name="MovieFanartThumbDimensions">
 		<posx>15</posx>
@@ -188,13 +188,13 @@
 		<aspectratio aligny="top">keep</aspectratio>
 	</include>
 
-	<include name="EpisodeFanartThumbDimensions">
+	<!-- <include name="EpisodeFanartThumbDimensions">
 		<posx>12</posx>
 		<posy>12</posy>
 		<width>390</width>
 		<height>267</height>
-	</include>
-	<include name="EpisodeFanartReflection">
+	</include> -->
+	<!-- <include name="EpisodeFanartReflection">
 		<posx>-10</posx>
 		<posy>294</posy>
 		<width>486</width>
@@ -202,8 +202,8 @@
 		<colordiffuse>339e9e9e</colordiffuse>
 		<texture background="true" flipy="true">$VAR[Episode]</texture>
 		<aspectratio aligny="top">scale</aspectratio>
-	</include>
-	<include name="FocusedEpisodeFanartReflection">
+	</include> -->
+	<!-- <include name="FocusedEpisodeFanartReflection">
 		<posx>0</posx>
 		<posy>299</posy>
 		<width>464</width>
@@ -211,7 +211,7 @@
 		<colordiffuse>339e9e9e</colordiffuse>
 		<texture background="true" flipy="true">$VAR[Episode]</texture>
 		<aspectratio aligny="top">scale</aspectratio>
-	</include>
+	</include> -->
 	<include name="EpisodeFanartThumb">
 		<texture background="true">$VAR[Episode]</texture>
 		<aspectratio aligny="top">scale</aspectratio>

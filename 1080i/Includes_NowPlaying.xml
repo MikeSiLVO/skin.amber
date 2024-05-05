@@ -2,13 +2,13 @@
 <includes>
 
     <!-- Variables -->
-	<variable name="NowPlayingMusicBackgroundLabelVar">
+	<!-- <variable name="NowPlayingMusicBackgroundLabelVar">
 		<value condition="Skin.String(NowPlayingMusicBackground,fanart)">$LOCALIZE[20445]</value>
 		<value condition="Skin.String(NowPlayingMusicBackground,extra)">$LOCALIZE[31035]</value>
 		<value condition="Skin.String(NowPlayingMusicBackground,artistsslideshow)">$LOCALIZE[31353]</value>
 		<value condition="!String.IsEmpty(Skin.String(NowPlayingMusicBackground))">$INFO[Skin.String(NowPlayingMusicBackground)]</value>
 		<value>$LOCALIZE[231]</value>
-	</variable>
+	</variable> -->
 	<variable name="NowPlayingInfo1Var">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TVShowTitle]</value>
 		<value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
@@ -40,14 +40,14 @@
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>
 	</variable>
-	<variable name="NowPlayingClearArtVar">
+	<!-- <variable name="NowPlayingClearArtVar">
 		<value condition="!String.IsEmpty(Player.Art(clearart))">$INFO[Player.Art(clearart)]</value>
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
 		<value condition="!String.IsEmpty(Player.Art(artist.clearart))">$INFO[Player.Art(artist.clearart)]</value>
 		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
 		<value condition="!String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>
-	</variable>
+	</variable> -->
 	<variable name="NowPlayingThumbVar">
 		<value condition="!String.IsEmpty(Player.Art(season.poster))">$INFO[Player.Art(season.poster)]</value>
 		<value condition="!String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
@@ -151,13 +151,13 @@
 		<value condition="Skin.String(NowPlayingMusicInfo,none)">$LOCALIZE[231]</value>
 		<value>$LOCALIZE[29915]</value>
 	</variable>
-	<variable name="NowPlayingHomeAudioInfoLabelVar">
+	<!-- <variable name="NowPlayingHomeAudioInfoLabelVar">
 		<value condition="Skin.String(NowPlayingHomeAudioInfo,tracks)">$LOCALIZE[182]</value>
 		<value condition="Skin.String(NowPlayingHomeAudioInfo,next)">$LOCALIZE[209]</value>
 		<value condition="Skin.String(NowPlayingHomeAudioInfo,plot)">$LOCALIZE[21821]</value>
 		<value condition="Skin.String(NowPlayingHomeAudioInfo,none)">$LOCALIZE[231]</value>
 		<value>$LOCALIZE[29915]</value>
-	</variable>
+	</variable> -->
 
 	<variable name="NowPlayingVideoFanartVar">
 		<value condition="PVR.IsPlayingTV">$VAR[Pvr.Art]</value>
@@ -1038,10 +1038,10 @@
 		<left>150</left>
 	</include>
 
-	<include name="GradientPositionHorizontal">
+	<!-- <include name="GradientPositionHorizontal">
 	    <bottom>0</bottom>
 		<height>968</height>
-	</include>
+	</include> -->
 
 	<include name="GradientPositionVertical">
 	    <height>1080</height>

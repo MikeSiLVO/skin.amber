@@ -124,7 +124,6 @@
 					    <width>100</width>
 					    <left>0</left>
 					    <align>left</align>
-					    <onup>3110</onup>
 					    <label>$ADDON[script.skin.helper.colorpicker 32049]:</label>
 					    <font>ListDetails</font>
 				    </control>
@@ -142,8 +141,6 @@
 					    <height>60</height>
 					    <left>270</left>
 					    <align>right</align>
-					    <onup>3110</onup>
-					    <onleft>3010</onleft>
 					    <label>$INFO[Control.Getlabel(3015)]</label>
 					    <font>ListDetails</font>
 				    </control>
