@@ -75,12 +75,12 @@
             <style>bold uppercase</style>
             <size>33</size>
         </font>
-        <font>
+        <!-- <font>
             <name>font28_title</name>
             <filename>UbuntuCondensed.ttf</filename>
             <style>bold uppercase</style>
             <size>39</size>
-        </font>
+        </font> -->
         <font>
             <name>font30_title</name>
             <filename>UbuntuCondensed.ttf</filename>
@@ -105,12 +105,12 @@
             <style>bold uppercase</style>
             <size>130</size>
         </font>
-        <font>
+        <!-- <font>
             <name>Date</name>
             <filename>UbuntuCondensed.ttf</filename>
             <style>bold uppercase</style>
             <size>35</size>
-        </font>
+        </font> -->
         <!-- Amber Fonts -->
         <font>
             <name>ExtProgressBar</name>
@@ -312,12 +312,12 @@
             <size>33</size>
             <style>bold</style>
         </font>
-        <font>
+        <!-- <font>
             <name>font28_title</name>
             <filename>UbuntuCondensed.ttf</filename>
             <size>38</size>
             <style>bold</style>
-        </font>
+        </font> -->
         <font>
             <name>font30_title</name>
             <filename>UbuntuCondensed.ttf</filename>
@@ -334,11 +334,11 @@
             <filename>UbuntuCondensed.ttf</filename>
             <size>130</size>
         </font>
-        <font>
+        <!-- <font>
             <name>Date</name>
             <filename>UbuntuCondensed.ttf</filename>
             <size>35</size>
-        </font>
+        </font> -->
         <!-- Amber Fonts -->
         <font>
             <name>ExtProgressBar</name>
@@ -541,13 +541,13 @@
             <style>bold uppercase</style>
             <aspect>0.80</aspect>
         </font>
-        <font>
+        <!-- <font>
             <name>font28_title</name>
             <filename>arial.ttf</filename>
             <size>40</size>
             <style>bold uppercase</style>
             <aspect>0.80</aspect>
-        </font>
+        </font> -->
         <font>
             <name>font30_title</name>
             <filename>arial.ttf</filename>
@@ -568,12 +568,12 @@
             <aspect>0.80</aspect>
             <size>130</size>
         </font>
-        <font>
+        <!-- <font>
             <name>Date</name>
             <filename>arial.ttf</filename>
             <aspect>0.80</aspect>
             <size>35</size>
-        </font>
+        </font> -->
         <!-- Amber Fonts -->
         <font>
             <name>ExtProgressBar</name>
@@ -809,13 +809,13 @@
             <style>bold</style>
             <aspect>0.80</aspect>
         </font>
-        <font>
+        <!-- <font>
             <name>font28_title</name>
             <filename>arial.ttf</filename>
             <size>40</size>
             <style>bold</style>
             <aspect>0.80</aspect>
-        </font>
+        </font> -->
         <font>
             <name>font30_title</name>
             <filename>arial.ttf</filename>
@@ -835,12 +835,12 @@
             <aspect>1.0</aspect>
             <size>130</size>
         </font>
-        <font>
+        <!-- <font>
             <name>Date</name>
             <filename>arial.ttf</filename>
             <aspect>1.0</aspect>
             <size>35</size>
-        </font>
+        </font> -->
         <!-- Amber Fonts -->
         <font>
             <name>ExtProgressBar</name>
@@ -1049,12 +1049,12 @@
             <size>33</size>
             <style>bold</style>
         </font>
-        <font>
+        <!-- <font>
             <name>font28_title</name>
             <filename>NotoSans-Regular.ttf</filename>
             <size>40</size>
             <style>bold</style>
-        </font>
+        </font> -->
         <font>
             <name>font30_title</name>
             <filename>NotoSans-Regular.ttf</filename>
@@ -1071,11 +1071,11 @@
             <filename>NotoSans-Regular.ttf</filename>
             <size>130</size>
         </font>
-        <font>
+        <!-- <font>
             <name>Date</name>
             <filename>NotoSans-Regular.ttf</filename>
             <size>35</size>
-        </font>
+        </font> -->
         <!-- Amber Fonts -->
         <font>
             <name>ExtProgressBar</name>
