@@ -906,17 +906,6 @@
                 <shadowcolor>FF000000</shadowcolor>
                 <font>font13</font>
                 <align>left</align>
-                <label>Custom_1118_FullscreenMusic.xml</label>
-                <visible>Window.IsVisible(Custom_1118_FullscreenMusic.xml)</visible>
-            </control>
-
-            <control type="label">
-                <width>780</width>
-                <height>21</height>
-                <textcolor>FFFF0000</textcolor>
-                <shadowcolor>FF000000</shadowcolor>
-                <font>font13</font>
-                <align>left</align>
                 <label>Custom_1123_PausedOverlay.xml</label>
                 <visible>Window.IsVisible(Custom_1123_PausedOverlay.xml)</visible>
             </control>

@@ -194,11 +194,6 @@
 							<param name="itemvisibility" value="!Skin.HasSetting(Disable.Lyrics) + System.AddonIsEnabled(script.cu.lrclyrics)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="6"/>
-							<param name="itemlabel" value="$LOCALIZE[31959]"/>
-							<param name="skinsetting" value="FullscreenMusic"/>
-						</include>
-						<include content="YesNoSettingItem">
 							<param name="itemid" value="7"/>
 							<param name="itemlabel" value="$LOCALIZE[32122]"/>
 							<param name="skinsetting" value="ShowABinContextMenu"/>
