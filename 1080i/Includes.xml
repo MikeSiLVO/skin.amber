@@ -2,7 +2,6 @@
 <includes>
     <!-- CUSTOM WINDOWS LIST:
     _1114 Custom_Quit * define Quit menu
-    _1118 Custom_FullscreenMusic * go straight to visualisation when playing music
     _1119 CustomAddons * browse addons united under the same roof
     _1120 CustomGameSettings * Game Settings from the Game OSD
     _1121 CustomInfoSelect * Select whether to search local library or show extendedinfo for actors/directors; also select delay time in seconds between fanart changes on home
