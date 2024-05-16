@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="1128" type="dialog">
-
 	<onunload>ClearProperty(CustomSelectVideoDiscArtFallback,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectMusicDiscArtFallback,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectNowPlayingMovieInfo,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectNowPlayingVideoInfo,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectNowPlayingMusicInfo,skinsettings)</onunload>
-
-    <defaultcontrol always="true">100</defaultcontrol>
+	<defaultcontrol always="true">100</defaultcontrol>
 	<include>DialogOpenClose</include>
 	<controls>
-
 		<control type="group" description="All dialog content">
 			<animation type="WindowOpen">
 				<effect type="zoom" start="95" end="100" center="960,540" time="200" />
@@ -22,50 +19,50 @@
 			</animation>
 			<posx>172</posx>
 			<posy>180</posy>
-            <control type="group">
-			    <control type="image">
-				    <posx>326</posx>
-				    <posy>-20</posy>
-				    <width>1120</width>
-				    <height>580</height>
-				    <texture>dialogs/SettingsBG.png</texture>
-				    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
-					<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
-			    </control>
+			<control type="group">
 				<control type="image">
-				    <posx>326</posx>
-				    <posy>-20</posy>
-				    <width>1320</width>
-				    <height>780</height>
-				    <texture>dialogs/SettingsBG.png</texture>
-				    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
-				    <visible>[String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
-			    </control>
-			    <control type="label">
-				    <posx>545</posx>
-				    <posy>5</posy>
-				    <width>885</width>
-				    <height>30</height>
-				    <align>center</align>
-				    <aligny>center</aligny>
-				    <font>ListDetails</font>
-				    <textcolor>$VAR[HighlightColor]</textcolor>
-				    <label>$VAR[CustomInfoSelectHeader]</label>
+					<posx>326</posx>
+					<posy>-20</posy>
+					<width>1120</width>
+					<height>580</height>
+					<texture>dialogs/SettingsBG.png</texture>
+					<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 					<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
-			    </control>
-				<control type="label">
-				    <posx>306</posx>
-				    <posy>5</posy>
-				    <width>1600</width>
-				    <height>30</height>
-				    <align>center</align>
-				    <aligny>center</aligny>
-				    <font>ListDetails</font>
-				    <textcolor>$VAR[HighlightColor]</textcolor>
-				    <label>$VAR[CustomInfoSelectHeader]</label>
+				</control>
+				<control type="image">
+					<posx>326</posx>
+					<posy>-20</posy>
+					<width>1320</width>
+					<height>780</height>
+					<texture>dialogs/SettingsBG.png</texture>
+					<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 					<visible>[String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
-			    </control>
-            </control>
+				</control>
+				<control type="label">
+					<posx>545</posx>
+					<posy>5</posy>
+					<width>885</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>ListDetails</font>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+					<label>$VAR[CustomInfoSelectHeader]</label>
+					<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
+				</control>
+				<control type="label">
+					<posx>306</posx>
+					<posy>5</posy>
+					<width>1600</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>ListDetails</font>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+					<label>$VAR[CustomInfoSelectHeader]</label>
+					<visible>[String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
+				</control>
+			</control>
 			<control type="group">
 				<left>645</left>
 				<top>100</top>
@@ -93,23 +90,23 @@
 				</include>
 			</control>
 			<control type="group">
-			    <visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
-			    <control type="image" description="Line Split">
-                    <posy>40</posy>
-                    <left>550</left>
-				    <width>860</width>
-                    <height>1</height>
-                    <texture>img/LineL.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-			    <control type="image" description="Line Split">
-                    <posy>50</posy>
-                    <left>1145</left>
-				    <width>1</width>
-                    <height>480</height>
-                    <texture>img/LineL.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
+				<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
+				<control type="image" description="Line Split">
+					<posy>40</posy>
+					<left>550</left>
+					<width>860</width>
+					<height>1</height>
+					<texture>img/LineL.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image" description="Line Split">
+					<posy>50</posy>
+					<left>1145</left>
+					<width>1</width>
+					<height>480</height>
+					<texture>img/LineL.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
 			</control>
 			<control type="group">
 				<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
@@ -158,7 +155,7 @@
 							<width>172</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -167,18 +164,18 @@
 							<posx>10</posx>
 							<width>172</width>
 							<height>60</height>
-                            <selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
 					<content>
-					    <include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback))">SelectNowPlayingVideoDiscArtFallback</include>
-					    <include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))">SelectNowPlayingMusicDiscArtFallback</include>
+						<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback))">SelectNowPlayingVideoDiscArtFallback</include>
+						<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))">SelectNowPlayingMusicDiscArtFallback</include>
 					</content>
 				</control>
 			</control>
 			<control type="group">
-			    <visible>[String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
+				<visible>[String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				<control type="list" id="100">
 					<posx>360</posx>
 					<posy>70</posy>
@@ -224,7 +221,7 @@
 							<width>200</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-                            <selectedcolor>SelectedFocused</selectedcolor>
+							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -233,14 +230,14 @@
 							<posx>10</posx>
 							<width>200</width>
 							<height>60</height>
-                            <selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
 					<content>
 						<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectNowPlayingMovieInfo))">SelectNowPlayingMovieInfo</include>
-					    <include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectNowPlayingVideoInfo))">SelectNowPlayingVideoInfo</include>
-					    <include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectNowPlayingMusicInfo))">SelectNowPlayingMusicInfo</include>
+						<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectNowPlayingVideoInfo))">SelectNowPlayingVideoInfo</include>
+						<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectNowPlayingMusicInfo))">SelectNowPlayingMusicInfo</include>
 					</content>
 				</control>
 			</control>
@@ -250,9 +247,9 @@
 				<posy>-150</posy>
 				<width>36</width>
 				<height>600</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>

@@ -15,8 +15,8 @@
 		<icon>DefaultMusicAlbums.png</icon>
 		<thumb />
 		<action>ActivateWindow(Videos,MusicVideoAlbums,return)</action>
-	</shortcut>    
-    <shortcut>
+	</shortcut>
+	<shortcut>
 		<defaultID>musicvideosartists</defaultID>
 		<label>$LOCALIZE[133]</label>
 		<label2 />
@@ -55,7 +55,7 @@
 		<icon>DefaultMusicVideoTitle.png</icon>
 		<thumb />
 		<action>ActivateWindow(Videos,MusicVideos)</action>
-	</shortcut>    
+	</shortcut>
 	<shortcut>
 		<defaultID>musicvideosfiles</defaultID>
 		<label>$LOCALIZE[744]</label>
@@ -71,7 +71,7 @@
 		<icon>DefaultUser.png</icon>
 		<thumb />
 		<action>mastermode</action>
-        <visible>System.HasLocks</visible>
+		<visible>System.HasLocks</visible>
 	</shortcut>
 	<shortcut>
 		<defaultID>updatelibrarymusicvideos</defaultID>
@@ -80,5 +80,5 @@
 		<icon>update.png</icon>
 		<thumb />
 		<action>UpdateLibrary(video)</action>
-	</shortcut>    
+	</shortcut>
 </shortcuts>

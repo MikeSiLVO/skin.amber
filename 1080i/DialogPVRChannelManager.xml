@@ -77,7 +77,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<font>Details</font>
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
@@ -87,7 +87,7 @@
 						<width>500</width>
 						<scroll>false</scroll>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<font>Details</font>
 						<label>$INFO[ListItem.Label,[B],[/B]]</label>
 					</control>
@@ -99,7 +99,7 @@
 						<width>500</width>
 						<scroll>false</scroll>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<label>$INFO[ListItem.Property(ClientName)]</label>
 					</control>
 				</focusedlayout>
@@ -148,7 +148,7 @@
 				</control>
 				<control type="label" id="29" description="spacer">
 					<width>600</width>
-					<label></label>
+					<label />
 				</control>
 				<control type="button" id="30" description="Group Manager Button">
 					<width>600</width>
@@ -197,9 +197,9 @@
 			<posy>180</posy>
 			<width>36</width>
 			<height>790</height>
-			<texturesliderbackground></texturesliderbackground>
-			<texturesliderbar></texturesliderbar>
-			<texturesliderbarfocus></texturesliderbarfocus>
+			<texturesliderbackground />
+			<texturesliderbar />
+			<texturesliderbarfocus />
 			<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 			<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 			<showonepage>false</showonepage>

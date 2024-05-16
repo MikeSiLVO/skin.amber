@@ -86,7 +86,7 @@
 		</control>
 	</include>
 
-    <include name="VerticalMenuIconContent">
+	<include name="VerticalMenuIconContent">
 		<animation effect="fade" time="200" start="100" end="20" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-135,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus">Conditional</animation>
 		<left>15</left>
@@ -96,10 +96,10 @@
 		<onup>300</onup>
 		<ondown>300</ondown>
 		<onleft>9001</onleft>
-        <include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnRightMainMenu</include>
+		<include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnRightMainMenu</include>
 		<onback>9001</onback>
 		<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
-		<pagecontrol></pagecontrol>
+		<pagecontrol />
 		<include condition="!Skin.HasSetting(StaticVerticalHome) + !Skin.HasSetting(VerticalFirst)">NonStaticSettings</include>
 		<include condition="!Skin.HasSetting(StaticVerticalHome) + Skin.HasSetting(VerticalFirst)">NonStaticSettingsFirst</include>
 		<include condition="Skin.HasSetting(StaticVerticalHome) + !Skin.HasSetting(VerticalFirst) + !Skin.HasSetting(Vertical.StaticCentered)">StaticSettingsStandard</include>
@@ -110,24 +110,24 @@
 		<animation effect="fade" time="200" start="100" end="50" reversible="true" condition="Control.HasFocus(9001)">Conditional</animation>
 		<itemlayout height="120" width="120">
 			<control type="image">
-			    <animation effect="fade" time="0" start="100" end="20" condition="Skin.HasSetting(FadeUnfocusedMenu)">Conditional</animation>
+				<animation effect="fade" time="0" start="100" end="20" condition="Skin.HasSetting(FadeUnfocusedMenu)">Conditional</animation>
 				<posx>0</posx>
-			    <width>120</width>
-			    <height>120</height>
-			    <texture>$INFO[ListItem.Icon]</texture>
+				<width>120</width>
+				<height>120</height>
+				<texture>$INFO[ListItem.Icon]</texture>
 				<align>center</align>
 				<aligny>center</aligny>
-		    </control>
+			</control>
 		</itemlayout>
 		<focusedlayout height="120" width="120">
 			<control type="image">
-			    <posx>0</posx>
-			    <width>120</width>
-			    <height>120</height>
-			    <texture colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
+				<posx>0</posx>
+				<width>120</width>
+				<height>120</height>
+				<texture colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
 				<align>center</align>
 				<aligny>center</aligny>
-		    </control>
+			</control>
 		</focusedlayout>
 		<content>
 			<include>skinshortcuts-mainmenu</include>
@@ -144,10 +144,10 @@
 		<onup>300</onup>
 		<ondown>300</ondown>
 		<onleft>9001</onleft>
-        <include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnRightMainMenu</include>
+		<include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnRightMainMenu</include>
 		<onback>9001</onback>
 		<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
-		<pagecontrol></pagecontrol>
+		<pagecontrol />
 		<include condition="!Skin.HasSetting(StaticVerticalHome) + !Skin.HasSetting(VerticalFirst)">NonStaticSettings</include>
 		<include condition="!Skin.HasSetting(StaticVerticalHome) + Skin.HasSetting(VerticalFirst)">NonStaticSettingsFirst</include>
 		<include condition="Skin.HasSetting(StaticVerticalHome) + !Skin.HasSetting(VerticalFirst) + !Skin.HasSetting(Vertical.StaticCentered)">StaticSettingsStandard</include>
@@ -214,7 +214,7 @@
 	</include>
 
 	<include name="submenuContentText">
-	    <control type="list" id="9001">
+		<control type="list" id="9001">
 			<visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="0,0" end="450,0" time="250" delay="0" condition="Control.HasFocus(9001)">conditional</animation>
@@ -226,8 +226,8 @@
 			<posy>210</posy>
 			<width>400</width>
 			<height>660</height>
-            <onleft condition="Control.isVisible(12001)">12001</onleft>
-            <onleft condition="!Control.isVisible(12001)">300</onleft>
+			<onleft condition="Control.isVisible(12001)">12001</onleft>
+			<onleft condition="!Control.isVisible(12001)">300</onleft>
 			<onright>300</onright>
 			<onup>9001</onup>
 			<ondown>9001</ondown>
@@ -257,7 +257,7 @@
 					<width>360</width>
 					<height>60</height>
 					<textcolor>$VAR[FocusedTextColor]</textcolor>
-					<shadowcolor></shadowcolor>
+					<shadowcolor />
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
@@ -268,7 +268,7 @@
 	</include>
 
 	<include name="submenuContentIcon">
-	    <control type="list" id="9001">
+		<control type="list" id="9001">
 			<visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="0,0" end="250,0" time="250" delay="0" condition="Control.HasFocus(9001)">conditional</animation>
@@ -280,33 +280,33 @@
 			<posy>80</posy>
 			<width>200</width>
 			<height>890</height>
-            <onleft condition="Control.isVisible(12001)">12001</onleft>
-            <onleft condition="!Control.isVisible(12001)">300</onleft>
+			<onleft condition="Control.isVisible(12001)">12001</onleft>
+			<onleft condition="!Control.isVisible(12001)">300</onleft>
 			<onright>300</onright>
 			<onup>9001</onup>
 			<ondown>9001</ondown>
 			<onback>300</onback>
 			<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 			<itemlayout height="120" width="120">
-			    <control type="image">
-			        <posx>0</posx>
-			        <width>120</width>
-			        <height>120</height>
-			        <texture>$INFO[ListItem.Icon]</texture>
-				    <align>center</align>
-				    <aligny>center</aligny>
-		        </control>
-		    </itemlayout>
-		    <focusedlayout height="120" width="120">
-			    <control type="image">
-			        <posx>0</posx>
-			        <width>120</width>
-			        <height>120</height>
-			        <texture colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
-				    <align>center</align>
-				    <aligny>center</aligny>
-		        </control>
-		    </focusedlayout>
+				<control type="image">
+					<posx>0</posx>
+					<width>120</width>
+					<height>120</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+			</itemlayout>
+			<focusedlayout height="120" width="120">
+				<control type="image">
+					<posx>0</posx>
+					<width>120</width>
+					<height>120</height>
+					<texture colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+			</focusedlayout>
 			<content>
 				<include>skinshortcuts-submenu</include>
 			</content>
@@ -315,7 +315,7 @@
 
 	<include name="Vertical_Home_Layout">
 
-	    <!-- Now Playing -->
+		<!-- Now Playing -->
 		<control type="group">
 			<visible>Player.HasMedia + ![Skin.HasSetting(Hide.NowPlaying) | Window.Next(musicplaylist) | Window.Next(visualisation)]</visible>
 			<include>AnimationVisibleFade</include>
@@ -330,8 +330,8 @@
 
 		<!-- Widgets -->
 		<control type="group" id="700">
-            <visible>!Skin.HasSetting(Hide.AllShelves)</visible>
-            <animation effect="fade" start="100" end="0" time="480" condition="[!Skin.HasSetting(Hide.NowPlaying) + Player.HasAudio + !ControlGroup(700).HasFocus] | [!Skin.HasSetting(Hide.NowPlaying) + Player.HasVideo + !ControlGroup(700).HasFocus] | [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus] | [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + ControlGroup(700).HasFocus]">Conditional</animation>
+			<visible>!Skin.HasSetting(Hide.AllShelves)</visible>
+			<animation effect="fade" start="100" end="0" time="480" condition="[!Skin.HasSetting(Hide.NowPlaying) + Player.HasAudio + !ControlGroup(700).HasFocus] | [!Skin.HasSetting(Hide.NowPlaying) + Player.HasVideo + !ControlGroup(700).HasFocus] | [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus] | [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + ControlGroup(700).HasFocus]">Conditional</animation>
 
 			<animation effect="slide" start="0,0" end="-420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 			<animation effect="slide" start="0,0" end="-120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
@@ -351,14 +351,14 @@
 			<include>skinshortcuts-template-shelfgroup5</include>
 			<include>skinshortcuts-template-shelfgroup6</include>
 			<include>skinshortcuts-template-ShelfIndicator</include>
-            <control type="group">
-                <include>PVRRecordingWidgets</include>
+			<control type="group">
+				<include>PVRRecordingWidgets</include>
 			</control>
 		</control>
 
 		<include condition="!Skin.HasSetting(Vertical.HideFocusShelves)">ShelfTrailerInfo</include>
 		<include condition="Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfTrailerInfo">
-		    <param name="left">0</param>
+			<param name="left">0</param>
 			<param name="top">900</param>
 		</include>
 
@@ -370,7 +370,7 @@
 					<animation effect="slide" start="0,0" end="-120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 
 					<include condition="Skin.HasSetting(Vertical.IconOnly)">menuWidthVerticalIcon</include>
-			        <include condition="!Skin.HasSetting(Vertical.IconOnly)">menuWidthVerticalText</include>
+					<include condition="!Skin.HasSetting(Vertical.IconOnly)">menuWidthVerticalText</include>
 
 					<height>1080</height>
 					<texture border="0,0,30,0" colordiffuse="$VAR[VertMenuBladeColor]">common/ViewMenuHome.png</texture>
@@ -394,7 +394,5 @@
 
 		<include condition="Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)">Library_Count</include>
 		<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Vertical.IconShowLabel) + !Skin.HasSetting(IconShowLabel.InTopBar)">ShowIconMenuLabel</include>
-
 	</include>
-
 </includes>

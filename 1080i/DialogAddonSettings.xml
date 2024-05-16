@@ -21,29 +21,29 @@
 				<ondown>20</ondown>
 			</control>
 			<control type="button" description="Settings level label">
-                <posx>64</posx>
-                <posy>915</posy>
-                <width>324</width>
-                <height>60</height>
-                <align>right</align>
-                <textoffsetx>10</textoffsetx>
-                <label>$LOCALIZE[31049]</label>
-                <texturefocus />
-                <texturenofocus />
-            </control>
-            <control type="button" id="20" description="Settings level button">
-                <posx>64</posx>
-                <posy>975</posy>
-                <width>324</width>
-                <height>60</height>
-                <onleft>5</onleft>
-                <onright>5</onright>
-                <onup>3</onup>
-                <ondown>3</ondown>
-                <textoffsetx>10</textoffsetx>
-                <align>right</align>
-                <onclick>SettingsLevelChange</onclick>
-            </control>
+				<posx>64</posx>
+				<posy>915</posy>
+				<width>324</width>
+				<height>60</height>
+				<align>right</align>
+				<textoffsetx>10</textoffsetx>
+				<label>$LOCALIZE[31049]</label>
+				<texturefocus />
+				<texturenofocus />
+			</control>
+			<control type="button" id="20" description="Settings level button">
+				<posx>64</posx>
+				<posy>975</posy>
+				<width>324</width>
+				<height>60</height>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<textoffsetx>10</textoffsetx>
+				<align>right</align>
+				<onclick>SettingsLevelChange</onclick>
+			</control>
 			<control type="button" id="10" description="Section buttons">
 				<width>324</width>
 				<align>right</align>
@@ -70,31 +70,31 @@
 			<control type="button" id="7">
 				<textoffsetx>20</textoffsetx>
 				<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-                <font>ListDetails</font>
+				<font>ListDetails</font>
 			</control>
 			<control type="radiobutton" id="8">
 				<textoffsetx>20</textoffsetx>
-                <font>ListDetails</font>
+				<font>ListDetails</font>
 			</control>
 			<control type="spincontrolex" id="9">
 				<textoffsetx>20</textoffsetx>
 				<reverse>true</reverse>
-                <font>ListDetails</font>
+				<font>ListDetails</font>
 			</control>
 			<control type="image" id="11" description="Default Separator img">
 				<height>1</height>
 			</control>
 			<control type="edit" id="12" description="Default Edit">
-               <font>ListDetails</font>
+				<font>ListDetails</font>
 			</control>
 			<control type="label" id="14" description="Sparator label headline">
 				<textoffsetx>30</textoffsetx>
-                <font>ListDetails</font>
+				<font>ListDetails</font>
 			</control>
 			<control type="sliderex" id="13">
 				<align>left</align>
 				<textoffsetx>30</textoffsetx>
-                <font>ListDetails</font>
+				<font>ListDetails</font>
 			</control>
 			<control type="grouplist" id="9001" description="Right side">
 				<posx>1533</posx>

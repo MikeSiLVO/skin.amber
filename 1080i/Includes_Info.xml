@@ -880,7 +880,6 @@
 	<!-- <variable name="TMDbFanart">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !Skin.HasSetting(Disable.OnlineTMDbInfo) + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=fanart&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
 	</variable> -->
-	<!-- <include name="TMDbFanartList"><content target="images">$VAR[TMDbFanart]</content></include> -->
 
 	<variable name="TMDbPosters">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !Skin.HasSetting(Disable.OnlineTMDbInfo) + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=posters&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
@@ -1155,29 +1154,29 @@
 
 	<variable name="VideoInfoButton8">
 		<value condition="[String.IsEmpty(ListItem.DBID) + !$EXP[CanUseTMDbHelper]] |
-		                  !String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) |
-						  String.Contains(ListItem.FolderPath,type=person)">$LOCALIZE[15067]</value>
-		<value condition="String.IsEqual(ListItem.DBType,season)">$LOCALIZE[20360]</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,set)">$LOCALIZE[1024]</value>
-		<value condition="ListItem.IsResumable">$LOCALIZE[13404]</value>
-		<value condition="ListItem.IsFolder">$LOCALIZE[1024]</value>
-		<value>$LOCALIZE[208]</value>
-	</variable>
+			!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) |
+			String.Contains(ListItem.FolderPath,type=person)">$LOCALIZE[15067]</value>
+			<value condition="String.IsEqual(ListItem.DBType,season)">$LOCALIZE[20360]</value>
+			<value condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,set)">$LOCALIZE[1024]</value>
+			<value condition="ListItem.IsResumable">$LOCALIZE[13404]</value>
+			<value condition="ListItem.IsFolder">$LOCALIZE[1024]</value>
+			<value>$LOCALIZE[208]</value>
+		</variable>
 
-	<!-- End Matrix change -->
+		<!-- End Matrix change -->
 
-	<variable name="VideoInfoBackground">
-		<value condition="Skin.HasSetting(Enable.BlurredVideoInfo)">$INFO[Window(home).Property(EHBlur_blurred)]</value>
-		<!--	    <value condition="Skin.HasSetting(Enable.BlurredVideoInfo)">$INFO[Window(Home).Property(TMDbHelper.ListItem.BlurImage)]</value> -->
-		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="!String.IsEmpty(Container(10051).ListItem.Art(fanart))">$INFO[Container(10051).ListItem.Art(fanart)]</value>
-	</variable>
+		<variable name="VideoInfoBackground">
+			<value condition="Skin.HasSetting(Enable.BlurredVideoInfo)">$INFO[Window(home).Property(EHBlur_blurred)]</value>
+			<!--	    <value condition="Skin.HasSetting(Enable.BlurredVideoInfo)">$INFO[Window(Home).Property(TMDbHelper.ListItem.BlurImage)]</value> -->
+			<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+			<value condition="!String.IsEmpty(Container(10051).ListItem.Art(fanart))">$INFO[Container(10051).ListItem.Art(fanart)]</value>
+		</variable>
 
-	<variable name="MovieSetPath">
-		<value condition="String.IsEqual(ListItem.DBTYPE,set)">videodb://movies/sets/$INFO[ListItem.DBID]/?setid=$INFO[ListItem.DBID]</value>
-	</variable>
+		<variable name="MovieSetPath">
+			<value condition="String.IsEqual(ListItem.DBTYPE,set)">videodb://movies/sets/$INFO[ListItem.DBID]/?setid=$INFO[ListItem.DBID]</value>
+		</variable>
 
-	<constant name="IconCrossfadeTime">400</constant>
+		<constant name="IconCrossfadeTime">400</constant>
 
 	<!-- <variable name="WidgetItemType">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">movie</value>
@@ -1197,7 +1196,7 @@
 		<left>640</left>
 		<width>540</width>
 		<height>370</height>
-		<pagecontrol></pagecontrol>
+		<pagecontrol />
 		<itemlayout height="47" width="530">
 			<control type="label">
 				<height>45</height>
@@ -1206,7 +1205,7 @@
 				<aligny>center</aligny>
 				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
-				<label>[COLOR=$VAR[HighlightColor]]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Label2]</label>
+				<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Label2]</label>
 				<textoffsetx>8</textoffsetx>
 				<scroll>false</scroll>
 			</control>
@@ -1222,7 +1221,7 @@
 				<aligny>center</aligny>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 				<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-				<shadowcolor></shadowcolor>
+				<shadowcolor />
 				<textoffsetx>8</textoffsetx>
 				<label>$INFO[ListItem.Label,, ]$INFO[ListItem.Label2]</label>
 			</control>
@@ -1443,7 +1442,7 @@
 					<left>8</left>
 					<top>0</top>
 					<height>30</height>
-					<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[206] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[206] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
 					<font>ListDetails</font>
 				</control>
 				<control type="image" description="Line Split">
@@ -1511,7 +1510,7 @@
 					<left>8</left>
 					<top>0</top>
 					<height>30</height>
-					<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[206] $INFO[Container(50).NumItems,(,)][/COLOR]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[206] $INFO[Container(50).NumItems,(,)][/COLOR]</label>
 					<font>ListDetails</font>
 				</control>
 				<control type="image" description="Line Split">
@@ -1574,7 +1573,7 @@
 					<left>8</left>
 					<top>0</top>
 					<height>30</height>
-					<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[206] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[206] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
 					<font>ListDetails</font>
 				</control>
 				<control type="image" description="Line Split">
@@ -1605,7 +1604,7 @@
 			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.BuiltIn,Dialog.Close(1122,force)||RunScript(plugin.video.themoviedb.helper,close_dialog=1134)||Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All)||ActivateWindow(1122))</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 			<onclick condition="!$EXP[CanDoOnlineSearches]">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])</onclick>
-            <onclick condition="!$EXP[CanDoOnlineSearches]">Dialog.Close(movieinformation,force)</onclick>
+			<onclick condition="!$EXP[CanDoOnlineSearches]">Dialog.Close(movieinformation,force)</onclick>
 			<onclick condition="!$EXP[CanDoOnlineSearches]">SetProperty(InfoCalledGeneralSearch,true,home)</onclick>
 			<onclick condition="!$EXP[CanDoOnlineSearches]">ClearProperty(InfoCalledSingleSearch,home)</onclick>
 			<onclick condition="!$EXP[CanDoOnlineSearches]">ActivateWindow(1122)</onclick>
@@ -1646,7 +1645,6 @@
 			<content sortby="year" target="videos">videodb://movies/sets/$INFO[ListItem.DBID]</content>
 		</control>
 	</include>
-
 
 	<!-- Default Track panel item: container 50 -->
 	<include name="DefaultTrackItem">
@@ -1844,7 +1842,7 @@
 					<left>8</left>
 					<top>0</top>
 					<height>30</height>
-					<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[182] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[182] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
 					<font>ListDetails</font>
 				</control>
 				<control type="image" description="Line Split">
@@ -1893,7 +1891,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>$VAR[FocusedTextColor]</textcolor>
-					<shadowcolor></shadowcolor>
+					<shadowcolor />
 					<textoffsetx>8</textoffsetx>
 					<label>$INFO[ListItem.Label2,,. ]$INFO[ListItem.Label]$INFO[ListItem.Property(trackduration), • (,)]</label>
 				</control>
@@ -1922,7 +1920,7 @@
 					<left>8</left>
 					<top>0</top>
 					<height>30</height>
-					<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[32244] $INFO[ListItem.Label] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32244] $INFO[ListItem.Label] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
 					<font>ListDetails</font>
 				</control>
 				<control type="image" description="Line Split">
@@ -1955,8 +1953,6 @@
 			<content sortby="year" sortorder="ascending" limit="25" target="music">musicdb://artists/$INFO[ListItem.DBID]</content>
 		</control>
 	</include>
-
-
 
 	<!-- Includes for showing info from plugin.vieo.themoviedb.helper -->
 	<!-- Thanks to jurialmunkey for allowing me to adapt his code -->
@@ -2031,20 +2027,20 @@
 	<include name="VideoInfoPosterWidget">
 		<param name="id" />
 		<param name="labelid" />
-		<param name="headinglabel"></param>
+		<param name="headinglabel" />
 		<param name="belowdoublelabelvisibility">true</param>
 		<param name="belowdoublelabel1">$INFO[ListItem.Label] $INFO[ListItem.Year,(,)]</param>
-		<param name="belowdoublelabel2"></param>
+		<param name="belowdoublelabel2" />
 		<param name="belowlabelvisibility">false</param>
 		<param name="belowlabel">$INFO[ListItem.Label]</param>
 		<param name="belowlabelheight">74</param>
-		<param name="content"></param>
+		<param name="content" />
 		<param name="prevent_del">prevent_del</param>
 		<param name="visibility1">true</param>
 		<param name="onclickinclude">InfoList_OnClick</param>
 		<param name="minnumitems">1</param>
-		<param name="sortby"></param>
-		<param name="sortorder"></param>
+		<param name="sortby" />
+		<param name="sortorder" />
 		<param name="iconimage">$INFO[Container.ListItem.Art(poster)]</param>
 		<param name="aspect">stretch</param>
 		<definition>
@@ -2053,7 +2049,7 @@
 				<height>44</height>
 				<visible>Integer.IsGreater(Container($PARAM[id]).NumItems,$PARAM[minnumitems]) | Container($PARAM[id]).IsUpdating</visible>
 				<visible>$PARAM[visibility1]</visible>
-                <control type="group">
+				<control type="group">
 					<top>44</top>
 					<height>410</height>
 					<visible>Container($PARAM[id]).IsUpdating</visible>
@@ -2065,7 +2061,7 @@
 						<left>8</left>
 						<top>0</top>
 						<height>30</height>
-						<label>[COLOR=$VAR[HighlightColor]]$PARAM[headinglabel] $INFO[Container($PARAM[id]).NumItems,(,)][/COLOR]</label>
+						<label>[COLOR $VAR[HighlightColor]]$PARAM[headinglabel] $INFO[Container($PARAM[id]).NumItems,(,)][/COLOR]</label>
 						<font>ListDetails</font>
 					</control>
 					<control type="image" description="Line Split">
@@ -2089,7 +2085,7 @@
 				<visible>$PARAM[visibility1]</visible>
 				<onfocus>SetProperty(TMDbHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
 				<animation effect="fade" start="100" end="0" condition="!Integer.IsGreater(Container($PARAM[id]).NumItems,$PARAM[minnumitems]) | Container($PARAM[id]).IsUpdating">Conditional</animation>
-				<include content="$PARAM[onclickinclude]"></include>
+				<include content="$PARAM[onclickinclude]" />
 				<include content="CastLayout">
 					<param name="viewid">$PARAM[id]</param>
 					<param name="belowdoublelabelvisibility">$PARAM[belowdoublelabelvisibility]</param>
@@ -2181,133 +2177,133 @@
 				<height>1</height>
 				<content>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(0).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(0).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(1).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(1).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(2).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(2).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(3).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(3).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(4).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(4).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(5).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(5).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(6).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(6).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(7).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(7).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(8).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(8).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(9).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(9).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10052).ListItemAbsolute(10).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10052).ListItemAbsolute(10).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(0).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(0).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(1).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(1).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(2).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(2).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(3).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(3).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(4).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(4).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(5).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(5).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(6).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(6).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(7).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(7).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(8).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(8).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(9).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(9).Art(fanart))</visible>
 					</item>
 					<item>
-						<label></label>
+						<label />
 						<icon>$INFO[Container(10053).ListItemAbsolute(10).Art(fanart)]</icon>
 						<onclick>noop</onclick>
 						<visible>!String.IsEmpty(Container(10053).ListItemAbsolute(10).Art(fanart))</visible>
@@ -3399,5 +3395,4 @@
 			<visible>Skin.HasSetting(ShowRatingUser)</visible>
 		</item>
 	</include>
-
 </includes>

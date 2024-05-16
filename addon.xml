@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.amber" version="4.0.0" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
 	<requires>
-		<import addon="xbmc.gui" version="5.17.0"/>
-		<import addon="script.favourites" version="7.1.1"/>
-		<import addon="resource.uisounds.amber" version="1.0.0"/>
-		<import addon="script.skinshortcuts" version="1.0.17"/>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.favourites" version="7.1.1" />
+		<import addon="resource.uisounds.amber" version="1.0.0" />
+		<import addon="script.skinshortcuts" version="1.0.17" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />

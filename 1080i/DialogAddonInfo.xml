@@ -17,7 +17,7 @@
 			<aspectratio>scale</aspectratio>
 		</control>
 		<include content="BackgroundOverlay">
-			<param name="parentid" value="9000"/>
+			<param name="parentid" value="9000" />
 		</include>
 		<include content="ShadowedImage">
 			<param name="top">24</param>
@@ -81,31 +81,31 @@
 				<!-- End Matrix change -->
 				<control type="radiobutton" id="90003">
 					<posy>438</posy>
-                    <left>590</left>
+					<left>590</left>
 					<ondown>9000</ondown>
 					<onright>9009</onright>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">icons/dots7.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/dots7.png</textureradioonnofocus>
-                    <texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
-                    <texturenofocus border="4">img/WhiteRoundedT.png</texturenofocus>
-                    <width>37</width>
-                    <height>17</height>
-                    <radiowidth>37</radiowidth>
-                    <radioheight>37</radioheight>
-                    <radioposx>0.1</radioposx>
-                    <radioposy>0</radioposy>
-                    <font></font>
-                    <selected>true</selected>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">icons/dots7.png</textureradioonfocus>
+					<textureradioonnofocus>icons/dots7.png</textureradioonnofocus>
+					<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
+					<texturenofocus border="4">img/WhiteRoundedT.png</texturenofocus>
+					<width>37</width>
+					<height>17</height>
+					<radiowidth>37</radiowidth>
+					<radioheight>37</radioheight>
+					<radioposx>0.1</radioposx>
+					<radioposy>0</radioposy>
+					<font />
+					<selected>true</selected>
 					<onclick>SetProperty(TextViewerHeader,$ESCINFO[ListItem.AddonName],Home)</onclick>
-                    <onclick>SetProperty(TextViewerSubHeader,$ESCINFO[ListItem.AddonSummary,[I],[/I]],Home)</onclick>
+					<onclick>SetProperty(TextViewerSubHeader,$ESCINFO[ListItem.AddonSummary,[I],[/I]],Home)</onclick>
 					<onclick>SetProperty(TextViewerContent,$ESCINFO[ListItem.AddonDescription],Home)</onclick>
 					<onclick>ActivateWindow(1124)</onclick>
 				</control>
 				<control type="image" description="Line Split">
 					<posy>30</posy>
-                    <left>637</left>
+					<left>637</left>
 					<width>1</width>
 					<height>426</height>
 					<texture>img/LineL.png</texture>
@@ -114,9 +114,9 @@
 				<control type="panel" id="9009">
 					<include>VisibleFadeEffectDelay</include>
 					<include>List_9009_Commons</include>
-                    <onup>9009</onup>
-                    <ondown>9009</ondown>
-                    <onleft>90003</onleft>
+					<onup>9009</onup>
+					<ondown>9009</ondown>
+					<onleft>90003</onleft>
 					<content>
 						<item>
 							<label>$LOCALIZE[146]</label>

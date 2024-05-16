@@ -7,5 +7,5 @@
 	<visible>Container.Content(movies) + !System.HasActiveModalDialog</visible>
 	<visible>!ListItem.IsCollection</visible>
 	<visible>String.IsEqual(Skin.String(StartTrailerDelay),ten)</visible>
-	<controls/>
+	<controls />
 </window>

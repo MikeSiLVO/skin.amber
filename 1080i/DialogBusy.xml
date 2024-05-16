@@ -11,10 +11,10 @@
 				<posy>550</posy>
 				<width>150</width>
 				<height>8</height>
-				<texturebg></texturebg>
-				<midtexture></midtexture>
-				<righttexture></righttexture>
-				<lefttexture></lefttexture>
+				<texturebg />
+				<midtexture />
+				<righttexture />
+				<lefttexture />
 			</control>
 			<control type="group" description="Content">
 				<animation effect="slide" start="0,0" end="0,-124" time="200">WindowOpen</animation>

@@ -65,7 +65,7 @@
 						<width>909</width>
 						<textoffsetx>20</textoffsetx>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
@@ -74,9 +74,9 @@
 				<posy>120</posy>
 				<width>36</width>
 				<height>780</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
@@ -177,7 +177,7 @@
 						<textoffsetx>20</textoffsetx>
 						<label>$INFO[ListItem.Label]</label>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 					</control>
 				</focusedlayout>
 			</control>
@@ -186,9 +186,9 @@
 				<posy>120</posy>
 				<width>36</width>
 				<height>780</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>

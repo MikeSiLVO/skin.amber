@@ -5,7 +5,6 @@
 		<include>DefaultBackground</include>
 		<include>Time</include>
 		<include>OpenClose</include>
-
 		<control type="group">
 			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
 			<include content="TVGuideFanart">
@@ -33,7 +32,7 @@
 
 		<control type="group">
 			<control type="image" description="Left Menu background">
-                <colordiffuse>dfcebe9e</colordiffuse>
+				<colordiffuse>dfcebe9e</colordiffuse>
 				<left>60</left>
 				<top>60</top>
 				<width>412</width>
@@ -42,7 +41,7 @@
 				<!-- <colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
 			<control type="image" description="2/2 Right Menu">
-                <colordiffuse>dfcebe9e</colordiffuse>
+				<colordiffuse>dfcebe9e</colordiffuse>
 				<left>462</left>
 				<top>60</top>
 				<width>1419</width>
@@ -69,7 +68,6 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<scrolltime tween="quadratic">300</scrolltime>
-
 				<itemlayout width="322" height="60">
 					<control type="image">
 						<width>322</width>
@@ -77,19 +75,19 @@
 						<texture border="3">buttons/ButtonNF.png</texture>
 					</control>
 					<control type="group">
-					    <control type="label" description="Main Label">
-						    <posx>10</posx>
-						    <width>301</width>
-						    <height>60</height>
-						    <label>[B]$INFO[ListItem.Label][/B]</label>
-					    </control>
-					    <control type="label">
-						    <posx>10</posx>
-						    <width>301</width>
-						    <height>60</height>
-						    <align>right</align>
-						    <label>$INFO[ListItem.Label2]</label>
-					    </control>
+						<control type="label" description="Main Label">
+							<posx>10</posx>
+							<width>301</width>
+							<height>60</height>
+							<label>[B]$INFO[ListItem.Label][/B]</label>
+						</control>
+						<control type="label">
+							<posx>10</posx>
+							<width>301</width>
+							<height>60</height>
+							<align>right</align>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="322" height="60">
@@ -100,22 +98,22 @@
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
 					<control type="group">
-					    <control type="label" description="Main Label">
-						    <posx>10</posx>
-						    <width>301</width>
-						    <height>60</height>
-						    <textcolor>$VAR[FocusedTextColor]</textcolor>
-						    <shadowcolor></shadowcolor>
-						    <label>[B]$INFO[ListItem.Label][/B]</label>
-					    </control>
-					    <control type="label">
-						    <posx>10</posx>
-						    <width>301</width>
-						    <height>60</height>
-						    <align>right</align>
-						    <textcolor>$VAR[FocusedTextColor]</textcolor>
-						    <label>$INFO[ListItem.Label2]</label>
-					    </control>
+						<control type="label" description="Main Label">
+							<posx>10</posx>
+							<width>301</width>
+							<height>60</height>
+							<textcolor>$VAR[FocusedTextColor]</textcolor>
+							<shadowcolor />
+							<label>[B]$INFO[ListItem.Label][/B]</label>
+						</control>
+						<control type="label">
+							<posx>10</posx>
+							<width>301</width>
+							<height>60</height>
+							<align>right</align>
+							<textcolor>$VAR[FocusedTextColor]</textcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
 					</control>
 				</focusedlayout>
 				<content>
@@ -164,7 +162,6 @@
 				</content>
 			</control>
 			<control type="group" id="9001">
-
 				<control type="scrollbar" id="60">
 					<left>437</left>
 					<top>18</top>
@@ -243,16 +240,15 @@
 				<orientation>vertical</orientation>
 				<control type="button" id="8">
 					<description>Settings</description>
-		            <height>54</height>
-		            <width>322</width>
-		            <font>font16</font>
-		            <textoffsetx>10</textoffsetx>
-		            <disabledcolor>Grey</disabledcolor>
-		            <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<height>54</height>
+					<width>322</width>
+					<font>font16</font>
+					<textoffsetx>10</textoffsetx>
+					<disabledcolor>Grey</disabledcolor>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<label>$LOCALIZE[5]</label>
 				</control>
 			</control>
 		</control>
-
 	</controls>
 </window>

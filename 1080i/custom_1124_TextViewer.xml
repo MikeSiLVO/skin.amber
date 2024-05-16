@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1124" type="dialog">
-
-<!-- Again, huge thanks to MikeSiLVO, this is adapted from his skin code to show a text viewer dialog for plot -->
-
-
+	<!-- Again, huge thanks to MikeSiLVO, this is adapted from his skin code to show a text viewer dialog for plot -->
 	<defaultcontrol always="true">64</defaultcontrol>
 	<onunload>ClearProperty(TextViewerHeader,Home)</onunload>
-    <onunload>ClearProperty(TextViewerSubHeader,Home)</onunload>
+	<onunload>ClearProperty(TextViewerSubHeader,Home)</onunload>
 	<onunload>ClearProperty(TextViewerContent,Home)</onunload>
-    <include>DialogOpenClose</include>
+	<include>DialogOpenClose</include>
 	<controls>
-        <include>DialogBackgroundFade</include>
+		<include>DialogBackgroundFade</include>
 		<control type="button" id="64">
 			<oninfo>Dialog.Close(1124)</oninfo>
 			<onclick>Dialog.Close(1124)</onclick>
 			<onleft>Dialog.Close(1124)</onleft>
 			<onright>Dialog.Close(1124)</onright>
-            <onback>Dialog.Close(1124)</onback>
+			<onback>Dialog.Close(1124)</onback>
 			<onup>PageUp(61)</onup>
 			<ondown>PageDown(61)</ondown>
 			<include>HiddenButton</include>
@@ -42,7 +39,7 @@
 			</control>
 			<control type="image" description="Line Split">
 				<left>42</left>
-                <posy>90</posy>
+				<posy>90</posy>
 				<width>1280</width>
 				<height>1</height>
 				<texture>img/LineL.png</texture>
@@ -54,10 +51,10 @@
 				<width>1256</width>
 				<height>80</height>
 				<align>center</align>
-                <aligny>center</aligny>
-                <font>InfoPlot</font>
+				<aligny>center</aligny>
+				<font>InfoPlot</font>
 				<label>[B]$INFO[Window(Home).Property(TextViewerSubHeader)][/B]</label>
-                <wrapmultiline>true</wrapmultiline>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="textbox">
 				<left>62</left>
@@ -67,8 +64,8 @@
 				<font>InfoPlot</font>
 				<pagecontrol>61</pagecontrol>
 				<label fallback="19055">$INFO[Window(Home).Property(TextViewerContent)]</label>
-                <visible>!String.IsEmpty(Window(Home).Property(TextViewerSubHeader))</visible>
-                <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>!String.IsEmpty(Window(Home).Property(TextViewerSubHeader))</visible>
+				<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="textbox">
 				<left>62</left>
@@ -78,8 +75,8 @@
 				<font>InfoPlot</font>
 				<pagecontrol>61</pagecontrol>
 				<label fallback="19055">$INFO[Window(Home).Property(TextViewerContent)]</label>
-                <visible>String.IsEmpty(Window(Home).Property(TextViewerSubHeader))</visible>
-                <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>String.IsEmpty(Window(Home).Property(TextViewerSubHeader))</visible>
+				<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="scrollbar" id="61">
 				<left>1366</left>
@@ -88,9 +85,9 @@
 				<height>840</height>
 				<ondown>61</ondown>
 				<onup>61</onup>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>

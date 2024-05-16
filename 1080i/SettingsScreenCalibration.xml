@@ -9,7 +9,7 @@
 			<width>256</width>
 			<height>256</height>
 			<texturefocus>calibrate/CalibrateTopLeft2.png</texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturenofocus />
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
 				<eventconfig type="up" />
 				<eventconfig type="down" />
@@ -24,7 +24,7 @@
 			<width>256</width>
 			<height>256</height>
 			<texturefocus>calibrate/CalibrateBottomRight2.png</texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturenofocus />
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
 				<eventconfig type="up" />
 				<eventconfig type="down" />
@@ -39,7 +39,7 @@
 			<width>256</width>
 			<height>128</height>
 			<texturefocus border="0,3,0,3">calibrate/CalibrateSubtitles2.png</texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturenofocus />
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
 				<eventconfig type="up" />
 				<eventconfig type="down" />
@@ -53,7 +53,7 @@
 			<width>384</width>
 			<height>384</height>
 			<texturefocus>calibrate/CalibratePixelRatio.png</texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturenofocus />
 			<movingspeed acceleration="140" maxvelocity="300" resettimeout="180" delta="1">
 				<eventconfig type="left" />
 				<eventconfig type="right" />

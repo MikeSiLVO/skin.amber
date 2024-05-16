@@ -94,7 +94,7 @@
 					<width>880</width>
 					<height>35</height>
 					<align>left</align>
-					<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[737]: [/COLOR]$INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[737]: [/COLOR]$INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</label>
 				</control>
 				<!-- Buttons -->
 				<control type="grouplist" id="9001">

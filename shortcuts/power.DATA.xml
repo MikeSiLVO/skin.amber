@@ -15,8 +15,8 @@
 		<icon />
 		<thumb />
 		<action>ActivateWindow(settings)</action>
-	</shortcut>    
-    <shortcut>
+	</shortcut>
+	<shortcut>
 		<defaultID>13016</defaultID>
 		<label>$LOCALIZE[13016]</label>
 		<label2 />
@@ -55,5 +55,5 @@
 		<icon />
 		<thumb />
 		<action>System.LogOff</action>
-    </shortcut>    
+	</shortcut>
 </shortcuts>

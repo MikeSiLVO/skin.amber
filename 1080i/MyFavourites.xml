@@ -73,7 +73,7 @@
 					<align>left</align>
 					<textoffsetx>10</textoffsetx>
 					<include>9000ViewButtons</include>
-					<label></label>
+					<label />
 				</control>
 				<control type="label" id="9181">
 					<textcolor>$VAR[HighlightColor]</textcolor>

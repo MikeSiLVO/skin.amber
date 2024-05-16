@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
 	<include name="LyricsFonts">
 		<font>
 			<name>lyr0</name>
@@ -342,7 +341,6 @@
 			<size>50</size>
 		</font>
 	</include>
-
 	<include name="NormalLyrics">
 		<param name="textcolor" default="white" />
 		<definition>
@@ -358,7 +356,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="VideoLyrics">
 		<control type="group">
 			<visible>!String.IsEmpty(Container(110).ListItem.Label) + !Skin.HasSetting(Disable.Lyrics)</visible>
@@ -1407,7 +1404,6 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="Lyrics1">
 		<param name="col11" default="black" />
 		<param name="col12" default="black" />

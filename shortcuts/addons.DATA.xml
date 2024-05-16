@@ -15,7 +15,7 @@
 		<icon>DefaultAddonVideo.png</icon>
 		<thumb />
 		<action>ActivateWindow(Videos,Addons,return)</action>
-	</shortcut>    
+	</shortcut>
 	<shortcut>
 		<defaultID>musicaddons</defaultID>
 		<label>$LOCALIZE[2]</label>
@@ -39,7 +39,7 @@
 		<icon>DefaultAddonGame.png</icon>
 		<thumb />
 		<action>ActivateWindow(Games,Addons,return)</action>
-	</shortcut>    
+	</shortcut>
 	<shortcut>
 		<defaultID>addonbrowser</defaultID>
 		<label>$LOCALIZE[10040]</label>

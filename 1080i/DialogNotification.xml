@@ -26,7 +26,7 @@
 				<align>center</align>
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label>$INFO[Control.GetLabel(401)][COLOR=$VAR[LabelTextColor]]  •  [/COLOR]$INFO[Control.GetLabel(402)]</label>
+				<label>$INFO[Control.GetLabel(401)][COLOR $VAR[LabelTextColor]]  •  [/COLOR]$INFO[Control.GetLabel(402)]</label>
 			</control>
 			<control type="image" id="400" description="File Icon">
 				<visible>false</visible>
@@ -40,7 +40,7 @@
 				<height>40</height>
 				<width>570</width>
 				<scroll>true</scroll>
-				<font></font>
+				<font />
 			</control>
 			<control type="label" id="402" description="Message">
 				<posx>153</posx>
@@ -48,7 +48,7 @@
 				<height>40</height>
 				<width>570</width>
 				<scroll>true</scroll>
-				<font></font>
+				<font />
 			</control>
 		</control>
 	</controls>

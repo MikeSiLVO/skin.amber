@@ -7,7 +7,7 @@
 		<icon>DefaultRecentlyAddedEpisodes.png</icon>
 		<thumb />
 		<action>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</action>
-	</shortcut>	
+	</shortcut>
 	<shortcut>
 		<defaultID>tvshowsinprogress</defaultID>
 		<label>$LOCALIZE[575]</label>
@@ -31,8 +31,8 @@
 		<icon>DefaultYear.png</icon>
 		<thumb />
 		<action>ActivateWindow(Videos,videodb://tvshows/years/,return)</action>
-	</shortcut>    
-    <shortcut>
+	</shortcut>
+	<shortcut>
 		<defaultID>tvguide</defaultID>
 		<label>$LOCALIZE[4]</label>
 		<label2 />
@@ -56,7 +56,7 @@
 		<icon>DefaultTVShows.png</icon>
 		<thumb />
 		<action>ActivateWindow(Videos,TVShows)</action>
-	</shortcut>    
+	</shortcut>
 	<shortcut>
 		<defaultID>tvshowsfiles</defaultID>
 		<label>$LOCALIZE[744]</label>
@@ -72,7 +72,7 @@
 		<icon>DefaultUser.png</icon>
 		<thumb />
 		<action>mastermode</action>
-        <visible>System.HasLocks</visible>
+		<visible>System.HasLocks</visible>
 	</shortcut>
 	<shortcut>
 		<defaultID>updatelibrarytvshows</defaultID>
@@ -81,5 +81,5 @@
 		<icon>update.png</icon>
 		<thumb />
 		<action>UpdateLibrary(video)</action>
-	</shortcut>    
+	</shortcut>
 </shortcuts>

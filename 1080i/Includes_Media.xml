@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
 	<variable name="MediaFlagsPathVar">
 		<value condition="Skin.HasSetting(coloredflags)">badges/colored</value>
 		<value>badges/monochrome</value>
@@ -864,8 +863,8 @@
 	</include>
 
 	<include name="MediaFlagItems">
-		<param name="itemwidth" default="90"/>
-		<param name="itemheight" default="80"/>
+		<param name="itemwidth" default="90" />
+		<param name="itemheight" default="80" />
 		<param name="diffuse">Silver</param>
 		<param name="showvideobadge">true</param>
 		<param name="showaudiobadge">true</param>
@@ -1164,8 +1163,8 @@
 	</include>
 
 	<include name="MediaInfoMediaFlagItems">
-		<param name="itemwidth" default="90"/>
-		<param name="itemheight" default="80"/>
+		<param name="itemwidth" default="90" />
+		<param name="itemheight" default="80" />
 		<param name="diffuse">Silver</param>
 		<param name="showvideobadge">true</param>
 		<param name="showaudiobadge">true</param>
@@ -1365,8 +1364,8 @@
 	</include>
 
 	<include name="PlayerMediaFlagItems">
-		<param name="itemwidth" default="90"/>
-		<param name="itemheight" default="80"/>
+		<param name="itemwidth" default="90" />
+		<param name="itemheight" default="80" />
 		<param name="diffuse">Silver</param>
 		<param name="showvideobadge">true</param>
 		<param name="showaudiobadge">true</param>
@@ -1607,8 +1606,8 @@
 	</include>
 
 	<include name="PlayerAudioFlagItems">
-		<param name="itemwidth" default="90"/>
-		<param name="itemheight" default="80"/>
+		<param name="itemwidth" default="90" />
+		<param name="itemheight" default="80" />
 		<param name="diffuse">Silver</param>
 		<definition>
 			<control type="label" id="89000">
@@ -4569,15 +4568,15 @@
 
 	<include name="GenericThumbLabelTemplate">
 		<param name="isFocused">false</param>
-		<param name="yoffset"/>
-		<param name="xoffset"/>
-		<param name="labelwidth"/>
+		<param name="yoffset" />
+		<param name="xoffset" />
+		<param name="labelwidth" />
 		<param name="labelheight">45</param>
-		<param name="labelvisibility"/>
-		<param name="labeltext"/>
-		<param name="labelalign"/>
+		<param name="labelvisibility" />
+		<param name="labeltext" />
+		<param name="labelalign" />
 		<param name="labelaligny">center</param>
-		<param name="bordersize"/>
+		<param name="bordersize" />
 		<param name="labelfont">Shelf_Label</param>
 		<param name="labelscroll">false</param>
 		<definition>
@@ -4619,15 +4618,15 @@
 
 	<include name="GenericBelowLabelTemplate">
 		<param name="isFocused">false</param>
-		<param name="yoffset"/>
-		<param name="xoffset"/>
-		<param name="labelwidth"/>
+		<param name="yoffset" />
+		<param name="xoffset" />
+		<param name="labelwidth" />
 		<param name="labelheight">45</param>
-		<param name="labelvisibility"/>
-		<param name="labeltext"/>
-		<param name="labelalign"/>
+		<param name="labelvisibility" />
+		<param name="labeltext" />
+		<param name="labelalign" />
 		<param name="labelaligny">center</param>
-		<param name="bordersize"/>
+		<param name="bordersize" />
 		<param name="labelfont">Shelf_Label</param>
 		<definition>
 			<control type="group">
@@ -4682,14 +4681,14 @@
 
 	<include name="GenericBelowTextboxTemplate">
 		<param name="isFocused">false</param>
-		<param name="yoffset"/>
-		<param name="xoffset"/>
-		<param name="labelwidth"/>
+		<param name="yoffset" />
+		<param name="xoffset" />
+		<param name="labelwidth" />
 		<param name="labelvisibility">false</param>
-		<param name="labeltext"/>
+		<param name="labeltext" />
 		<param name="labelalign">center</param>
 		<param name="textboxwidth">204</param>
-		<param name="bordersize"/>
+		<param name="bordersize" />
 		<param name="belowtextboxfont">Shelf_Label</param>
 		<param name="backgroundheight">74</param>
 		<param name="textboxheight">64</param>
@@ -4747,17 +4746,17 @@
 
 	<include name="GenericBelowDoubleLabelTemplate">
 		<param name="isFocused">false</param>
-		<param name="yoffset"/>
-		<param name="xoffset"/>
-		<param name="labelwidth"/>
+		<param name="yoffset" />
+		<param name="xoffset" />
+		<param name="labelwidth" />
 		<param name="labelvisibility">false</param>
-		<param name="labeltext1"/>
-		<param name="labeltext2"/>
+		<param name="labeltext1" />
+		<param name="labeltext2" />
 		<param name="labelfont1">Shelf_Label</param>
 		<param name="labelfont2">Shelf_Label</param>
 		<param name="labelalign">center</param>
-		<param name="textboxwidth"/>
-		<param name="bordersize"/>
+		<param name="textboxwidth" />
+		<param name="bordersize" />
 		<definition>
 			<control type="group">
 				<visible>$PARAM[labelvisibility]</visible>
@@ -5301,7 +5300,7 @@
 
 	<!-- View Layouts -->
 	<include name="BannerLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout condition="[!Skin.HasSetting($PARAM[viewid]_TvShows_SmallIcons) + Container.Content(TvShows) + Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)]" height="204" width="930">
 				<include content="GenericBannerIconBig">
@@ -5355,7 +5354,7 @@
 	</include>
 
 	<!-- <include name="ActorLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<param name="belowlabel2" />
 		<definition>
 			<itemlayout height="410" width="232.5">
@@ -5374,7 +5373,7 @@
 	</include> -->
 
 	<include name="SetLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout height="410" width="232.5">
 				<include content="GenericThumbIconTemplate">
@@ -5416,7 +5415,7 @@
 	</include>
 
 	<include name="CastLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 		<param name="belowdoublelabel2">$INFO[ListItem.Label2]</param>
 		<param name="belowdoublelabelvisibility">true</param>
@@ -5477,7 +5476,7 @@
 	</include>
 
 	<include name="WideLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 		<param name="belowdoublelabel2">$INFO[ListItem.Label2]</param>
 		<param name="belowdoublelabelvisibility">true</param>
@@ -5533,7 +5532,7 @@
 	</include>
 
 	<include name="ScreenshotLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout height="310" width="551">
 				<include content="GenericScreenshotIconBig">
@@ -5549,7 +5548,7 @@
 	</include>
 
 	<include name="RecordingsLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)" height="437" width="310">
 				<include content="GenericRecordingIconBig">
@@ -5583,7 +5582,7 @@
 	</include>
 
 	<include name="PosterLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout condition="[!Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [container.content(movies) | container.content(sets)]] | [!Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + container.content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)]" height="437" width="310">
 				<include content="GenericPosterIconBig">
@@ -5613,7 +5612,7 @@
 	</include>
 
 	<include name="EpisodeLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout condition="!Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)" height="226" width="310">
 				<include content="GenericEpisodeIconBig">
@@ -5643,7 +5642,7 @@
 	</include>
 
 	<include name="Info_Albums">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout height="372" width="310.5">
 				<include content="GenericMusicIconInfo">
@@ -5659,7 +5658,7 @@
 	</include>
 
 	<include name="MusicLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_Music_SmallIcons) + [Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)]" height="372" width="310">
 				<include content="GenericMusicIconBig">
@@ -5691,7 +5690,7 @@
 	</include>
 
 	<include name="ImageLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_Images_SmallIcons) + Container.Content(images)" height="396" width="310">
 				<include content="GenericThumbIconBig">
@@ -5721,7 +5720,7 @@
 	</include>
 
 	<include name="AddonLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_Addons_SmallIcons) + Container.Content(addons)" height="400" width="310">
 				<include content="GenericThumbIconBig">
@@ -5751,7 +5750,7 @@
 	</include>
 
 	<include name="VideoLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + container.content(videos)" height="400" width="420">
 				<include content="GenericThumbIconBig">
@@ -5805,7 +5804,7 @@
 	</include>
 
 	<include name="GenericLayout">
-		<param name="viewid"/>
+		<param name="viewid" />
 		<definition>
 
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="400" width="310">
@@ -6025,5 +6024,4 @@
 			</control>
 		</definition>
 	</include>
-
 </includes>

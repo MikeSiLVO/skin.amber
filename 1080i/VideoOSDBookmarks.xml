@@ -2,11 +2,9 @@
 <window>
 	<defaultcontrol always="true">2</defaultcontrol>
 	<include>OpenClose</include>
-
 	<!-- Needed to auto close the video osd after any settings dialog is closed -->
 	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ActivateWindow(1196)</onunload>
 	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ClearProperty(ShowingOSDSettings,home)</onunload>
-
 	<controls>
 		<control type="image">
 			<left>165</left>
@@ -46,7 +44,7 @@
 				<onup>9000</onup>
 				<scrolltime>200</scrolltime>
 				<viewtype label="536">icon</viewtype>
-				<pagecontrol></pagecontrol>
+				<pagecontrol />
 				<orientation>horizontal</orientation>
 				<itemlayout height="270" width="360">
 					<control type="image">
@@ -143,7 +141,7 @@
 						<scroll>false</scroll>
 						<font>Details</font>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>

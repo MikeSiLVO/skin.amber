@@ -24,7 +24,7 @@
 					<width>100%</width>
 					<height>100%</height>
 					<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
-				    <colordiffuse>FFE2E2E2</colordiffuse>
+					<colordiffuse>FFE2E2E2</colordiffuse>
 				</control>
 
 				<!-- Programme controls group -->
@@ -50,38 +50,38 @@
 						<onright>70040</onright>
 						<control type="radiobutton" id="600">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDPreviousNF.png"/>
+								<param name="icon" value="OSD/OSDPreviousNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(FirstProgramme)</onclick>
 						</control>
 						<control type="radiobutton" id="601">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDRWNF.png"/>
+								<param name="icon" value="OSD/OSDRWNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(-12)</onclick>
 						</control>
 						<control type="radiobutton" id="602">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDPlayNF.png"/>
+								<param name="icon" value="OSD/OSDPlayNF.png" />
 							</include>
 							<animation effect="rotate" start="0" end="-90" center="auto" condition="true">Conditional</animation>
 							<onclick>PVR.EpgGridControl(CurrentProgramme)</onclick>
 						</control>
 						<control type="radiobutton" id="603">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDFWNF.png"/>
+								<param name="icon" value="OSD/OSDFWNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(+12)</onclick>
 						</control>
 						<control type="radiobutton" id="604">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDNextNF.png"/>
+								<param name="icon" value="OSD/OSDNextNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(LastProgramme)</onclick>
 						</control>
 						<control type="radiobutton" id="605">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDTeletextNF.png"/>
+								<param name="icon" value="OSD/OSDTeletextNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(SelectDate)</onclick>
 						</control>
@@ -96,7 +96,7 @@
 					<aligny>center</aligny>
 					<width>630</width>
 					<height>76</height>
-                    <font>font16</font>
+					<font>font16</font>
 					<label>[B]$VAR[PVRGuideControlsHelpText][/B]</label>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
@@ -124,13 +124,13 @@
 						<onright>70043</onright>
 						<control type="radiobutton" id="70040">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDPreviousNF.png"/>
+								<param name="icon" value="OSD/OSDPreviousNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(FirstChannel)</onclick>
 						</control>
 						<control type="radiobutton" id="70041">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDPlayNF.png"/>
+								<param name="icon" value="OSD/OSDPlayNF.png" />
 							</include>
 							<animation effect="rotate" start="0" end="-90" center="auto" condition="true">Conditional</animation>
 							<onclick>PVR.EpgGridControl(PlayingChannel)</onclick>
@@ -138,7 +138,7 @@
 						</control>
 						<control type="radiobutton" id="70042">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDNextNF.png"/>
+								<param name="icon" value="OSD/OSDNextNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(LastChannel)</onclick>
 						</control>
@@ -168,20 +168,20 @@
 						<onright>600</onright>
 						<control type="radiobutton" id="70043">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDPlayNF.png"/>
+								<param name="icon" value="OSD/OSDPlayNF.png" />
 							</include>
 							<animation effect="rotate" start="0" end="180" center="auto" condition="true">Conditional</animation>
 							<onclick>PVR.EpgGridControl(PreviousGroup)</onclick>
 						</control>
 						<control type="radiobutton" id="70044">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDPlayNF.png"/>
+								<param name="icon" value="OSD/OSDPlayNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(NextGroup)</onclick>
 						</control>
 						<control type="radiobutton" id="70045">
 							<include content="OSDButtons">
-								<param name="icon" value="OSD/OSDTeletextNF.png"/>
+								<param name="icon" value="OSD/OSDTeletextNF.png" />
 							</include>
 							<onclick>PVR.EpgGridControl(SelectGroup)</onclick>
 						</control>

@@ -7,8 +7,8 @@
 		<icon>icons/mainmenu/settings/skin.png</icon>
 		<thumb />
 		<action>ActivateWindow(SkinSettings)</action>
-	</shortcut>	
-    <shortcut>
+	</shortcut>
+	<shortcut>
 		<defaultID>14027</defaultID>
 		<label>$LOCALIZE[14207]</label>
 		<label2 />
@@ -24,7 +24,7 @@
 		<thumb />
 		<action>ActivateWindow(Profiles)</action>
 	</shortcut>
-    <shortcut>
+	<shortcut>
 		<defaultID>10003</defaultID>
 		<label>$LOCALIZE[10003]</label>
 		<label2 />

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
 	<include name="ShelfWidthVertHiddenMenu">
 		<width>1880</width>
 	</include>
@@ -67,7 +66,7 @@
 					<height>30</height>
 					<scroll>false</scroll>
 					<align>left</align>
-					<label>[B][COLOR=$VAR[LabelTextColor]]$VAR[WidgetItemDurationVar,, • ]$INFO[ListItem.MPAA][/COLOR][/B]</label>
+					<label>[B][COLOR $VAR[LabelTextColor]]$VAR[WidgetItemDurationVar,, • ]$INFO[ListItem.MPAA][/COLOR][/B]</label>
 				</control>
 			</control>
 		</definition>
@@ -1544,7 +1543,7 @@
 	<!-- Widget Container Layouts for dynamic content widgets -->
 	<!-- Shelf Layouts for most widgets: Poster, Square, Fanart, Landscape, ClearLogo, ClearArt, Thumb -->
 	<include name="Shelf_Generic1">
-		<param name="id1"/>
+		<param name="id1" />
 		<param name="iconimage" />
 		<param name="overlaylabel">$VAR[SeasonEpisodeLabel]</param>
 		<param name="labelvisibility">false</param>
@@ -2190,7 +2189,7 @@
 
 	<!-- Shelf layout for DiscArt shelves -->
 	<include name="Shelf_GenericDisc">
-		<param name="id1"/>
+		<param name="id1" />
 		<param name="iconimage" />
 		<param name="overlaylabel">$VAR[SeasonEpisodeLabel]</param>
 		<param name="labelvisibility">false</param>
@@ -2632,7 +2631,7 @@
 
 	<!-- Shelf Layout for banner widgets -->
 	<include name="Shelf_GenericBanner">
-		<param name="id1"/>
+		<param name="id1" />
 		<param name="iconimage">$VAR[Banner]</param>
 		<param name="overlaylabel">$VAR[SeasonEpisodeLabel]</param>
 		<param name="labelvisibility">false</param>
@@ -3264,7 +3263,7 @@
 	<!-- Shelf container layouts for static widgets -->
 	<!-- Shelf layout for static widgets other than weather -->
 	<include name="Shelf_GenericStatic">
-		<param name="id1"/>
+		<param name="id1" />
 		<param name="iconheight">228</param>
 		<param name="iconimage">$VAR[Square]</param>
 		<param name="aspect">scale</param>
@@ -3455,7 +3454,7 @@
 
 	<!-- Shelf layout for Weather static widgets -->
 	<include name="Shelf_GenericStaticWeather">
-		<param name="id1"/>
+		<param name="id1" />
 		<param name="iconheight">228</param>
 		<param name="aspect">scale</param>
 		<param name="layoutheight">315</param>
@@ -3595,7 +3594,7 @@
 
 	<!-- Shelf Layout bottom shortcuts -->
 	<include name="Shelf_Shortcuts1">
-		<param name="id1"/>
+		<param name="id1" />
 		<param name="iconimage" />
 		<param name="textboxvisibility">true</param>
 		<param name="textboxfont">Shelf_Label</param>
@@ -4108,7 +4107,7 @@
 
 	<!-- Animations to center shelf items in text vertical menu -->
 	<include name="ShelfCenterAnimationsVert">
-		<param name="id"></param>
+		<param name="id" />
 		<param name="center228">false</param>
 		<param name="center228double">false</param>
 		<param name="center228triplemed">false</param>
@@ -4523,7 +4522,7 @@
 
 	<!-- Animations to center shelf items in icon-only vertical menu -->
 	<include name="ShelfCenterAnimationsVertIcons">
-		<param name="id"></param>
+		<param name="id" />
 		<param name="center228">false</param>
 		<param name="center228double">false</param>
 		<param name="center228triplemed">false</param>
@@ -5008,7 +5007,7 @@
 
 	<!-- Animations to center shelf items in vertical menu when menu auto-hides if widgets are focused -->
 	<include name="ShelfCenterAnimationsVertHiddenMenu">
-		<param name="id"></param>
+		<param name="id" />
 		<param name="center228">false</param>
 		<param name="center228double">false</param>
 		<param name="center228triplemed">false</param>

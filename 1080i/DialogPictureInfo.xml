@@ -16,7 +16,7 @@
 			<aspectratio>scale</aspectratio>
 		</control>
 		<include content="BackgroundOverlay">
-			<param name="parentid" value="5"/>
+			<param name="parentid" value="5" />
 		</include>
 		<include content="ShadowedImage">
 			<param name="top">24</param>
@@ -112,9 +112,9 @@
 			<posy>150</posy>
 			<width>36</width>
 			<height>840</height>
-			<texturesliderbackground></texturesliderbackground>
-			<texturesliderbar></texturesliderbar>
-			<texturesliderbarfocus></texturesliderbarfocus>
+			<texturesliderbackground />
+			<texturesliderbar />
+			<texturesliderbarfocus />
 			<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 			<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 			<showonepage>false</showonepage>

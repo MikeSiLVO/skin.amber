@@ -94,7 +94,7 @@
 								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
-								<shadowcolor></shadowcolor>
+								<shadowcolor />
 								<visible>Control.HasFocus(450)</visible>
 							</control>
 							<control type="label">
@@ -105,7 +105,7 @@
 								<align>right</align>
 								<info>ListItem.Label2</info>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
-								<shadowcolor></shadowcolor>
+								<shadowcolor />
 								<visible>Control.HasFocus(450)</visible>
 							</control>
 							<control type="label">
@@ -234,7 +234,7 @@
 						<control type="radiobutton" id="416">
 							<width>330</width>
 							<label>$LOCALIZE[749]</label>
-							<textureradioonfocus></textureradioonfocus>
+							<textureradioonfocus />
 							<onleft>450</onleft>
 							<onright>60</onright>
 							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
@@ -260,9 +260,9 @@
 				<posx>1836</posx>
 				<width>36</width>
 				<height>1020</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>

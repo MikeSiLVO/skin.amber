@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
 	<include name="ContextTopTouch">
 	    <posy>69</posy>
 	</include>
@@ -102,7 +101,7 @@
 			    <posy>0</posy>
 			    <width>80</width>
 			    <height>80</height>
-			    <font></font>
+			    <font />
 			    <onclick>$PARAM[Action]</onclick>
 				<onclick>ClearProperty(MediaMenu,Home)</onclick>
 				<ondown>$PARAM[ondown]</ondown>
@@ -164,6 +163,4 @@
             </control>
 		</definition>
     </include>
-
-
 </includes>

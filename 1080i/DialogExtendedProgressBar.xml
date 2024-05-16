@@ -42,10 +42,10 @@
 				<posx>48</posx>
 				<width>555</width>
 				<height>8</height>
-				<texturebg></texturebg>
-				<midtexture></midtexture>
-				<righttexture></righttexture>
-				<lefttexture></lefttexture>
+				<texturebg />
+				<midtexture />
+				<righttexture />
+				<lefttexture />
 			</control>
 		</control>
 	</controls>

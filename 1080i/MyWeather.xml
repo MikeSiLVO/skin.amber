@@ -22,25 +22,25 @@
 		</control>
 		<control type="group" description="BG container">
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="60"/>
-				<param name="imgwidth" value="424"/>
-				<param name="bgimage" value="WeatherBig.png"/>
+				<param name="xoffset" value="60" />
+				<param name="imgwidth" value="424" />
+				<param name="bgimage" value="WeatherBig.png" />
 			</include>
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="540"/>
-				<param name="delayms" value="150"/>
+				<param name="xoffset" value="540" />
+				<param name="delayms" value="150" />
 			</include>
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="880"/>
-				<param name="delayms" value="150"/>
+				<param name="xoffset" value="880" />
+				<param name="delayms" value="150" />
 			</include>
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="1220"/>
-				<param name="delayms" value="300"/>
+				<param name="xoffset" value="1220" />
+				<param name="delayms" value="300" />
 			</include>
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="1560"/>
-				<param name="delayms" value="450"/>
+				<param name="xoffset" value="1560" />
+				<param name="delayms" value="450" />
 			</include>
 		</control>
 		<control type="group" description="Current">
@@ -64,7 +64,7 @@
 				<timeperimage>70</timeperimage>
 				<fadetime>1</fadetime>
 				<randomize>false</randomize>
-                <aspectratio aligny="top">keep</aspectratio>
+				<aspectratio aligny="top">keep</aspectratio>
 			</control>
 			<control type="label" id="304" description="Current weather outlook">
 				<posy>208</posy>
@@ -110,7 +110,7 @@
 					<height>50</height>
 					<align>right</align>
 					<shadowcolor>ShadowDark</shadowcolor>
-					<label></label>
+					<label />
 					<visible>String.IsEmpty(Window.Property(Current.UVIndex))</visible>
 				</control>
 				<control type="label" description="Current wind label">
@@ -123,20 +123,20 @@
 		</control>
 		<control type="group">
 			<include content="WeatherItem">
-				<param name="xoffset" value="0"/>
-				<param name="dayid" value="1"/>
+				<param name="xoffset" value="0" />
+				<param name="dayid" value="1" />
 			</include>
 			<include content="WeatherItem">
-				<param name="xoffset" value="340"/>
-				<param name="dayid" value="2"/>
+				<param name="xoffset" value="340" />
+				<param name="dayid" value="2" />
 			</include>
 			<include content="WeatherItem">
-				<param name="xoffset" value="680"/>
-				<param name="dayid" value="3"/>
+				<param name="xoffset" value="680" />
+				<param name="dayid" value="3" />
 			</include>
 			<include content="WeatherItem">
-				<param name="xoffset" value="1020"/>
-				<param name="dayid" value="4"/>
+				<param name="xoffset" value="1020" />
+				<param name="dayid" value="4" />
 			</include>
 		</control>
 
@@ -145,54 +145,54 @@
 			<animation effect="fade" start="0" end="100" time="200">visible</animation>
 			<animation effect="fade" start="100" end="0" time="200">hidden</animation>
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="540"/>
-				<param name="delayms" value="600"/>
+				<param name="xoffset" value="540" />
+				<param name="delayms" value="600" />
 				<param name="8day">true</param>
 			</include>
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="880"/>
-				<param name="delayms" value="750"/>
+				<param name="xoffset" value="880" />
+				<param name="delayms" value="750" />
 				<param name="8day">true</param>
 			</include>
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="1220"/>
-				<param name="delayms" value="900"/>
+				<param name="xoffset" value="1220" />
+				<param name="delayms" value="900" />
 				<param name="8day">true</param>
 			</include>
 			<include content="WeatherItemBG">
-				<param name="xoffset" value="1560"/>
-				<param name="delayms" value="1050"/>
+				<param name="xoffset" value="1560" />
+				<param name="delayms" value="1050" />
 				<param name="8day">true</param>
 			</include>
 
 			<include content="WeatherItem">
-				<param name="xoffset" value="0"/>
-				<param name="dayid" value="5"/>
+				<param name="xoffset" value="0" />
+				<param name="dayid" value="5" />
 			</include>
 			<include content="WeatherItem">
-				<param name="xoffset" value="340"/>
-				<param name="dayid" value="6"/>
+				<param name="xoffset" value="340" />
+				<param name="dayid" value="6" />
 			</include>
 			<include content="WeatherItem">
-				<param name="xoffset" value="680"/>
-				<param name="dayid" value="7"/>
+				<param name="xoffset" value="680" />
+				<param name="dayid" value="7" />
 			</include>
 			<include content="WeatherItem">
-				<param name="xoffset" value="1020"/>
-				<param name="dayid" value="8"/>
+				<param name="xoffset" value="1020" />
+				<param name="dayid" value="8" />
 			</include>
 		</control>
 
 		<control type="group"  id="8999" description="Side menu 9000 group">
 			<include>9000Commons</include>
 			<control type="group">
-			    <posx>-60</posx>
-			    <posy>-13</posy>
-			    <include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
-			        <param name="Action">SetFocus(50)</param>
-				    <param name="ondown">9000</param>
-			    </include>
-		    </control>
+				<posx>-60</posx>
+				<posy>-13</posy>
+				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
+					<param name="Action">SetFocus(50)</param>
+					<param name="ondown">9000</param>
+				</include>
+			</control>
 			<control type="grouplist" id="9000">
 				<posx>-499</posx>
 				<posy>60</posy>
@@ -201,7 +201,7 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
-		        <onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
+				<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
 				<ondown>9000</ondown>
 				<onback>50</onback>
 				<scrolltime>200</scrolltime>
@@ -223,9 +223,9 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label" id="9003" description="Spacer">
-					<font></font>
+					<font />
 					<include>9000ViewButtons</include>
-					<label></label>
+					<label />
 				</control>
 				<control type="button" id="2" description="Refresh">
 					<include>9000SysButtons</include>

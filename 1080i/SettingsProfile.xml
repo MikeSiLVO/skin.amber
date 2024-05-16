@@ -26,13 +26,13 @@
 				<label>$LOCALIZE[10034]</label>
 			</control>
 			<control type="group">
-			    <posx>734</posx>
-			    <posy>1</posy>
-			    <include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
-			        <param name="Action">Action(Back)</param>
-				    <param name="ondown">4</param>
-			    </include>
-		    </control>
+				<posx>734</posx>
+				<posy>1</posy>
+				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
+					<param name="Action">Action(Back)</param>
+					<param name="ondown">4</param>
+				</include>
+			</control>
 			<control type="radiobutton" id="4" description="Enable Login Screen">
 				<posy>90</posy>
 				<width>800</width>
@@ -40,7 +40,7 @@
 				<onright>noop</onright>
 				<onleft>noop</onleft>
 				<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
-		        <onup condition="!Skin.HasSetting(Enable.TouchSupport)">noop</onup>
+				<onup condition="!Skin.HasSetting(Enable.TouchSupport)">noop</onup>
 				<ondown>5</ondown>
 				<textoffsetx>30</textoffsetx>
 			</control>
@@ -114,7 +114,7 @@
 							<width>800</width>
 							<font>ListDetails</font>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<align>right</align>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>[Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
@@ -131,7 +131,7 @@
 							<width>800</width>
 							<textoffsetx>30</textoffsetx>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<label>$INFO[ListItem.Label]</label>
 							<visible>![Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
 						</control>

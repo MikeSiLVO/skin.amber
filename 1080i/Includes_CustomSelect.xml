@@ -1,85 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<!-- Custom Select -->
-    <!-- Video Info Extras Button Items -->
-    <include name="SelectVideoInfoExtras">
+	<!-- Video Info Extras Button Items -->
+	<include name="SelectVideoInfoExtras">
 		<item>
 			<label>$LOCALIZE[13511]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick>SendClick(movieinformation,10)</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]</visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>SendClick(movieinformation,10)</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32005]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),episode)]">RunScript(script.artwork.beef, mode=gui, mediatype=episode, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.beef, mode=gui, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.beef, mode=gui, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,set) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),set)]">RunScript(script.artwork.beef, mode=gui, mediatype=set, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.beef, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
-            </visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),episode)]">RunScript(script.artwork.beef, mode=gui, mediatype=episode, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.beef, mode=gui, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.beef, mode=gui, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,set) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),set)]">RunScript(script.artwork.beef, mode=gui, mediatype=set, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.beef, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>System.AddonIsEnabled(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
+			</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[32006]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),episode)]">RunScript(script.artwork.beef, mode=auto, mediatype=episode, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.beef, mode=auto, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.beef, mode=auto, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,set) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),set)]">RunScript(script.artwork.beef, mode=auto, mediatype=set, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.beef, mode=auto, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
-            </visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),episode)]">RunScript(script.artwork.beef, mode=auto, mediatype=episode, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.beef, mode=auto, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.beef, mode=auto, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,set) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),set)]">RunScript(script.artwork.beef, mode=auto, mediatype=set, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.beef, mode=auto, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>System.AddonIsEnabled(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
+			</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[32428]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
-            </visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>System.AddonIsEnabled(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
+			</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[32429]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
-            </visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>System.AddonIsEnabled(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
+			</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32068]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick>ActivateWindow(1126)</onclick>
-            <visible>!String.IsEmpty(Window(Home).Property(fanart))</visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>ActivateWindow(1126)</onclick>
+			<visible>!String.IsEmpty(Window(Home).Property(fanart))</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32167]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick>RunScript(script.metadata.editor,dbid=$INFO[Window(Home).Property(InfoExtrasDBID)],type=$INFO[Window(Home).Property(InfoExtrasDBType)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.metadata.editor) + [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]
-            </visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>RunScript(script.metadata.editor,dbid=$INFO[Window(Home).Property(InfoExtrasDBID)],type=$INFO[Window(Home).Property(InfoExtrasDBType)])</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>System.AddonIsEnabled(script.metadata.editor) + [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]
+			</visible>
 		</item>
 		<item>
 			<visible>System.AddonIsEnabled(script.preshowexperience) + $EXP[IsProperDBType]</visible>
-            <label>$LOCALIZE[31005]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="!String.IsEmpty(ListItem.DBID)">RunScript(script.preshowexperience,dbtype=$INFO[ListItem.DBTYPE],dbid=$INFO[ListItem.DBID]))</onclick>
-            <onclick condition="String.IsEmpty(ListItem.DBID) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBID))">RunScript(script.preshowexperience,dbtype=$INFO[Window(Home).Property(InfoExtrasDBType)],dbid=$INFO[Window(Home).Property(InfoExtrasDBID)]))</onclick>
-            <visible>[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] |
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
+			<label>$LOCALIZE[31005]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick condition="!String.IsEmpty(ListItem.DBID)">RunScript(script.preshowexperience,dbtype=$INFO[ListItem.DBTYPE],dbid=$INFO[ListItem.DBID]))</onclick>
+			<onclick condition="String.IsEmpty(ListItem.DBID) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBID))">RunScript(script.preshowexperience,dbtype=$INFO[Window(Home).Property(InfoExtrasDBType)],dbid=$INFO[Window(Home).Property(InfoExtrasDBID)]))</onclick>
+			<visible>[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
 		</item>
 		<item>
 			<onclick>Dialog.Close(all,true)</onclick>
@@ -90,49 +85,47 @@
 	</include>
 
 	<!-- Music Info Extras Button Items -->
-    <include name="SelectMusicInfoExtras">
+	<include name="SelectMusicInfoExtras">
 		<item>
 			<label>$LOCALIZE[13511]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick>SendClick(musicinformation,10)</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>!String.IsEmpty(Listitem.DBID) | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>SendClick(musicinformation,10)</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>!String.IsEmpty(Listitem.DBID) | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32005]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,artist) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),artist)]">RunScript(script.artwork.beef, mode=gui, mediatype=artist, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,album) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),album)]">RunScript(script.artwork.beef, mode=gui, mediatype=album, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),song)]">RunScript(script.artwork.beef, mode=gui, mediatype=song, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) |
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
-            </visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,artist) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),artist)]">RunScript(script.artwork.beef, mode=gui, mediatype=artist, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,album) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),album)]">RunScript(script.artwork.beef, mode=gui, mediatype=album, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),song)]">RunScript(script.artwork.beef, mode=gui, mediatype=song, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>System.AddonIsEnabled(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
+			</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[32006]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,artist) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),artist)]">RunScript(script.artwork.beef, mode=auto, mediatype=artist, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,album) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),album)]">RunScript(script.artwork.beef, mode=auto, mediatype=album, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),song)]">RunScript(script.artwork.beef, mode=auto, mediatype=song, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) |
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
-            </visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,artist) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),artist)]">RunScript(script.artwork.beef, mode=auto, mediatype=artist, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,album) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),album)]">RunScript(script.artwork.beef, mode=auto, mediatype=album, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<onclick condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),song)]">RunScript(script.artwork.beef, mode=auto, mediatype=song, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>System.AddonIsEnabled(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]
+			</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32068]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick>ActivateWindow(1126)</onclick>
-            <visible>!String.IsEmpty(Window(Home).Property(fanart))</visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>ActivateWindow(1126)</onclick>
+			<visible>!String.IsEmpty(Window(Home).Property(fanart))</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32167]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick>RunScript(script.metadata.editor,dbid=$INFO[Window(Home).Property(InfoExtrasDBID)],type=$INFO[Window(Home).Property(InfoExtrasDBType)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.AddonIsEnabled(script.metadata.editor) + [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]
-            </visible>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>RunScript(script.metadata.editor,dbid=$INFO[Window(Home).Property(InfoExtrasDBID)],type=$INFO[Window(Home).Property(InfoExtrasDBType)])</onclick>
+			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+			<visible>System.AddonIsEnabled(script.metadata.editor) + [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]
+			</visible>
 		</item>
 		<item>
 			<onclick>Dialog.Close(all,true)</onclick>
@@ -142,7 +135,7 @@
 		</item>
 	</include>
 
-    <!-- Select delay in seconds to rotate fanart on home screen -->
+	<!-- Select delay in seconds to rotate fanart on home screen -->
 	<include name="SelectFanartTimePerImage">
 		<item>
 			<label>5 $LOCALIZE[32047]</label>
@@ -211,7 +204,7 @@
 			<onclick condition="Skin.HasSetting(Enable.EmbuaryHelper)">Skin.SetString(BackgroundInterval,90)</onclick>
 		</item>
 	</include>
-    <!-- Select default background for the skin: one image, multi-image or reset to skin default -->
+	<!-- Select default background for the skin: one image, multi-image or reset to skin default -->
 	<include name="SelectDefaultBackground">
 		<item>
 			<label>$LOCALIZE[31113]</label>
@@ -223,13 +216,13 @@
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.SetPath(Default.Background)</onclick>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[15109]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.Reset(Default.Background)</onclick>
 		</item>
 	</include>
-    <!-- Choose up to 25 favorite addons to show in favourite addons widget -->
+	<!-- Choose up to 25 favorite addons to show in favourite addons widget -->
 	<include name="SelectFavouriteAddons">
 		<item>
 			<label>$LOCALIZE[24000] 1</label>
@@ -357,7 +350,7 @@
 			<onclick>Skin.SetAddon(ShelfAddons.25.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.game,xbmc.addon.executable)</onclick>
 		</item>
 	</include>
-    <!-- Select Video Genre Icons: Custom Path, Image Resource or Reset Path -->
+	<!-- Select Video Genre Icons: Custom Path, Image Resource or Reset Path -->
 	<include name="SelectVideoGenreIcons">
 		<item>
 			<label>$LOCALIZE[32285]</label>
@@ -373,7 +366,7 @@
 			<onclick>Skin.Reset(CustomVideoGenreIconsPath)</onclick>
 			<visible>!String.IsEmpty(Skin.String(CustomVideoGenreIconsPath))</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32287]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>RunScript(script.image.resource.select,property=moviegenreiconsresource&amp;type=resource.images.moviegenreicons)</onclick>
@@ -397,7 +390,7 @@
 			<onclick>Skin.Reset(CustomVideoGenreFanartPath)</onclick>
 			<visible>!String.IsEmpty(Skin.String(CustomVideoGenreFanartPath))</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32287]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>RunScript(script.image.resource.select,property=moviegenrefanartresource&amp;type=resource.images.moviegenrefanart)</onclick>
@@ -422,7 +415,7 @@
 			<onclick>Skin.Reset(CustomMusicGenreIconsPath)</onclick>
 			<visible>!String.IsEmpty(Skin.String(CustomMusicGenreIconsPath))</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32287]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>RunScript(script.image.resource.select,property=musicgenreiconsresource&amp;type=resource.images.musicgenreicons)</onclick>
@@ -446,7 +439,7 @@
 			<onclick>Skin.Reset(CustomMusicGenreFanartPath)</onclick>
 			<visible>!String.IsEmpty(Skin.String(CustomMusicGenreFanartPath))</visible>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32287]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>RunScript(script.image.resource.select,property=musicgenrefanartresource&amp;type=resource.images.musicgenrefanart)</onclick>
@@ -978,173 +971,173 @@
 	</include>
 
 	<include name="SelectEnabledViews">
-	    <control type="radiobutton" id="901011">
-            <label>$LOCALIZE[535]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.listview)</onclick>
-            <selected>!Skin.HasSetting(hide.listview)</selected>
-        </control>
+		<control type="radiobutton" id="901011">
+			<label>$LOCALIZE[535]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.listview)</onclick>
+			<selected>!Skin.HasSetting(hide.listview)</selected>
+		</control>
 		<control type="radiobutton" id="901012">
-            <label>$LOCALIZE[31962]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.lowlistview)</onclick>
-            <selected>!Skin.HasSetting(hide.lowlistview)</selected>
-        </control>
+			<label>$LOCALIZE[31962]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.lowlistview)</onclick>
+			<selected>!Skin.HasSetting(hide.lowlistview)</selected>
+		</control>
 		<control type="radiobutton" id="901013">
-            <label>$LOCALIZE[31999]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.biglistview)</onclick>
-            <selected>!Skin.HasSetting(hide.biglistview)</selected>
-        </control>
+			<label>$LOCALIZE[31999]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.biglistview)</onclick>
+			<selected>!Skin.HasSetting(hide.biglistview)</selected>
+		</control>
 		<control type="radiobutton" id="901014">
-            <label>$LOCALIZE[32060]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.talllistview)</onclick>
-            <selected>!Skin.HasSetting(hide.talllistview)</selected>
-        </control>
+			<label>$LOCALIZE[32060]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.talllistview)</onclick>
+			<selected>!Skin.HasSetting(hide.talllistview)</selected>
+		</control>
 		<control type="radiobutton" id="901015">
-            <label>$LOCALIZE[31648]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.rightlistview)</onclick>
-            <selected>!Skin.HasSetting(hide.rightlistview)</selected>
-        </control>
+			<label>$LOCALIZE[31648]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.rightlistview)</onclick>
+			<selected>!Skin.HasSetting(hide.rightlistview)</selected>
+		</control>
 		<control type="radiobutton" id="901016">
-            <label>$LOCALIZE[31963]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.panelview)</onclick>
-            <selected>!Skin.HasSetting(hide.panelview)</selected>
-        </control>
+			<label>$LOCALIZE[31963]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.panelview)</onclick>
+			<selected>!Skin.HasSetting(hide.panelview)</selected>
+		</control>
 		<control type="radiobutton" id="901017">
-            <label>$LOCALIZE[32245]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.panel2view)</onclick>
-            <selected>!Skin.HasSetting(hide.panel2view)</selected>
-        </control>
+			<label>$LOCALIZE[32245]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.panel2view)</onclick>
+			<selected>!Skin.HasSetting(hide.panel2view)</selected>
+		</control>
 		<control type="radiobutton" id="901018">
-            <label>$LOCALIZE[31958]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.bigpanelview)</onclick>
-            <selected>!Skin.HasSetting(hide.bigpanelview)</selected>
-        </control>
+			<label>$LOCALIZE[31958]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.bigpanelview)</onclick>
+			<selected>!Skin.HasSetting(hide.bigpanelview)</selected>
+		</control>
 		<control type="radiobutton" id="901019">
-            <label>$LOCALIZE[32246]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.bigpanel2view)</onclick>
-            <selected>!Skin.HasSetting(hide.bigpanel2view)</selected>
-        </control>
+			<label>$LOCALIZE[32246]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.bigpanel2view)</onclick>
+			<selected>!Skin.HasSetting(hide.bigpanel2view)</selected>
+		</control>
 		<control type="radiobutton" id="9010110">
-            <label>$LOCALIZE[536]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.iconsview)</onclick>
-            <selected>!Skin.HasSetting(hide.iconsview)</selected>
-        </control>
+			<label>$LOCALIZE[536]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.iconsview)</onclick>
+			<selected>!Skin.HasSetting(hide.iconsview)</selected>
+		</control>
 		<control type="radiobutton" id="9010111">
-            <label>$LOCALIZE[20445]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.fanartview)</onclick>
-            <selected>!Skin.HasSetting(hide.fanartview)</selected>
-        </control>
+			<label>$LOCALIZE[20445]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.fanartview)</onclick>
+			<selected>!Skin.HasSetting(hide.fanartview)</selected>
+		</control>
 		<control type="radiobutton" id="9010112">
-            <label>$LOCALIZE[31632]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.simplelistview)</onclick>
-            <selected>!Skin.HasSetting(hide.simplelistview)</selected>
-        </control>
+			<label>$LOCALIZE[31632]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.simplelistview)</onclick>
+			<selected>!Skin.HasSetting(hide.simplelistview)</selected>
+		</control>
 		<control type="radiobutton" id="9010113">
-            <label>$LOCALIZE[31157]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.tripleview)</onclick>
-            <selected>!Skin.HasSetting(hide.tripleview)</selected>
-        </control>
+			<label>$LOCALIZE[31157]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.tripleview)</onclick>
+			<selected>!Skin.HasSetting(hide.tripleview)</selected>
+		</control>
 		<control type="radiobutton" id="9010114">
-            <label>$LOCALIZE[31159]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(hide.logoview)</onclick>
-            <selected>!Skin.HasSetting(hide.logoview)</selected>
-        </control>
+			<label>$LOCALIZE[31159]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(hide.logoview)</onclick>
+			<selected>!Skin.HasSetting(hide.logoview)</selected>
+		</control>
 	</include>
 
 	<include name="SelectViewsItems">
-	    <control type="radiobutton" id="901011">
-            <label>$LOCALIZE[32223]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowAudioSub)</onclick>
-            <selected>Skin.HasSetting(ShowAudioSub)</selected>
-        </control>
+		<control type="radiobutton" id="901011">
+			<label>$LOCALIZE[32223]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowAudioSub)</onclick>
+			<selected>Skin.HasSetting(ShowAudioSub)</selected>
+		</control>
 		<control type="radiobutton" id="901012">
-            <label>$LOCALIZE[32231]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowRatingUser)</onclick>
-            <selected>Skin.HasSetting(ShowRatingUser)</selected>
-        </control>
+			<label>$LOCALIZE[32231]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowRatingUser)</onclick>
+			<selected>Skin.HasSetting(ShowRatingUser)</selected>
+		</control>
 		<control type="radiobutton" id="901013">
-            <label>$LOCALIZE[32232]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowRatingMain)</onclick>
-            <selected>Skin.HasSetting(ShowRatingMain)</selected>
-        </control>
+			<label>$LOCALIZE[32232]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowRatingMain)</onclick>
+			<selected>Skin.HasSetting(ShowRatingMain)</selected>
+		</control>
 		<control type="radiobutton" id="901014">
-            <label>$LOCALIZE[32235]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowMPAA)</onclick>
-            <selected>Skin.HasSetting(ShowMPAA)</selected>
-        </control>
+			<label>$LOCALIZE[32235]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowMPAA)</onclick>
+			<selected>Skin.HasSetting(ShowMPAA)</selected>
+		</control>
 		<control type="radiobutton" id="901015">
-            <label>$LOCALIZE[572]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowStudio)</onclick>
-            <selected>Skin.HasSetting(ShowStudio)</selected>
-        </control>
+			<label>$LOCALIZE[572]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowStudio)</onclick>
+			<selected>Skin.HasSetting(ShowStudio)</selected>
+		</control>
 		<control type="radiobutton" id="901016">
-            <label>$LOCALIZE[32254]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(HideTop250MediaViews)</onclick>
-            <selected>!Skin.HasSetting(HideTop250MediaViews)</selected>
-        </control>
+			<label>$LOCALIZE[32254]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(HideTop250MediaViews)</onclick>
+			<selected>!Skin.HasSetting(HideTop250MediaViews)</selected>
+		</control>
 		<control type="radiobutton" id="901017">
-            <label>$LOCALIZE[32263]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowSetCount)</onclick>
-            <selected>Skin.HasSetting(ShowSetCount)</selected>
-        </control>
+			<label>$LOCALIZE[32263]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowSetCount)</onclick>
+			<selected>Skin.HasSetting(ShowSetCount)</selected>
+		</control>
 		<control type="radiobutton" id="901018">
-            <label>$LOCALIZE[32265]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowPlayCount)</onclick>
-            <selected>Skin.HasSetting(ShowPlayCount)</selected>
-        </control>
+			<label>$LOCALIZE[32265]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowPlayCount)</onclick>
+			<selected>Skin.HasSetting(ShowPlayCount)</selected>
+		</control>
 		<control type="radiobutton" id="9010181">
-            <label>$LOCALIZE[32488]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowLastPlayed)</onclick>
-            <selected>Skin.HasSetting(ShowLastPlayed)</selected>
-        </control>
+			<label>$LOCALIZE[32488]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowLastPlayed)</onclick>
+			<selected>Skin.HasSetting(ShowLastPlayed)</selected>
+		</control>
 		<control type="radiobutton" id="901019">
-            <label>$LOCALIZE[32373]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowEndTime)</onclick>
-            <selected>Skin.HasSetting(ShowEndTime)</selected>
-        </control>
+			<label>$LOCALIZE[32373]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowEndTime)</onclick>
+			<selected>Skin.HasSetting(ShowEndTime)</selected>
+		</control>
 		<control type="radiobutton" id="9010110">
-            <label>$LOCALIZE[31035]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Hide.MediaFlagsVideo)</onclick>
-            <selected>!Skin.HasSetting(Hide.MediaFlagsVideo)</selected>
-        </control>
+			<label>$LOCALIZE[31035]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Hide.MediaFlagsVideo)</onclick>
+			<selected>!Skin.HasSetting(Hide.MediaFlagsVideo)</selected>
+		</control>
 		<control type="radiobutton" id="9010111">
-            <label>$LOCALIZE[32291]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Show.ColorRangeFlags)</onclick>
-            <selected>Skin.HasSetting(Show.ColorRangeFlags)</selected>
-        </control>
+			<label>$LOCALIZE[32291]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Show.ColorRangeFlags)</onclick>
+			<selected>Skin.HasSetting(Show.ColorRangeFlags)</selected>
+		</control>
 	</include>
 
 	<include name="SelectListOptions">
-	    <control type="radiobutton" id="901011">
-            <label>$LOCALIZE[32225]</label>
-            <radioposx>605</radioposx>
-            <onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(DisableListPanel)</onclick>
-		    <onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(50_Movies_DisablePanel)</onclick>
+		<control type="radiobutton" id="901011">
+			<label>$LOCALIZE[32225]</label>
+			<radioposx>605</radioposx>
+			<onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(DisableListPanel)</onclick>
+			<onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(50_Movies_DisablePanel)</onclick>
 			<onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(50_TVShows_DisablePanel)</onclick>
 			<onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(50_Seasons_DisablePanel)</onclick>
 			<onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(50_Episodes_DisablePanel)</onclick>
@@ -1171,7 +1164,7 @@
 			<onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(501_MusicVideos_DisablePanel)</onclick>
 			<onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(501_Images_DisablePanel)</onclick>
 			<onclick condition="Skin.HasSetting(DisableListPanel)">Skin.Reset(501_Others_DisablePanel)</onclick>
-            <onclick condition="!Skin.HasSetting(DisableListPanel)">Skin.SetBool(DisableListPanel)</onclick>
+			<onclick condition="!Skin.HasSetting(DisableListPanel)">Skin.SetBool(DisableListPanel)</onclick>
 			<onclick condition="!Skin.HasSetting(DisableListPanel)">Skin.SetBool(50_Movies_DisablePanel)</onclick>
 			<onclick condition="!Skin.HasSetting(DisableListPanel)">Skin.SetBool(50_TVShows_DisablePanel)</onclick>
 			<onclick condition="!Skin.HasSetting(DisableListPanel)">Skin.SetBool(50_Seasons_DisablePanel)</onclick>
@@ -1200,12 +1193,12 @@
 			<onclick condition="!Skin.HasSetting(DisableListPanel)">Skin.SetBool(501_Images_DisablePanel)</onclick>
 			<onclick condition="!Skin.HasSetting(DisableListPanel)">Skin.SetBool(501_Others_DisablePanel)</onclick>
 			<selected>Skin.HasSetting(DisableListPanel)</selected>
-        </control>
+		</control>
 		<control type="radiobutton" id="901012">
-            <visible>!Skin.HasSetting(DisableListPanel)</visible>
+			<visible>!Skin.HasSetting(DisableListPanel)</visible>
 			<label>$LOCALIZE[32243]</label>
-            <radioposx>605</radioposx>
-            <onclick condition="Skin.HasSetting(SwapListPanel)">Skin.Reset(SwapListPanel)</onclick>
+			<radioposx>605</radioposx>
+			<onclick condition="Skin.HasSetting(SwapListPanel)">Skin.Reset(SwapListPanel)</onclick>
 			<onclick condition="Skin.HasSetting(SwapListPanel)">Skin.Reset(50_Movies_SwapPanel)</onclick>
 			<onclick condition="Skin.HasSetting(SwapListPanel)">Skin.Reset(50_TVShows_SwapPanel)</onclick>
 			<onclick condition="Skin.HasSetting(SwapListPanel)">Skin.Reset(50_Seasons_SwapPanel)</onclick>
@@ -1233,7 +1226,7 @@
 			<onclick condition="Skin.HasSetting(SwapListPanel)">Skin.Reset(501_MusicVideos_SwapPanel)</onclick>
 			<onclick condition="Skin.HasSetting(SwapListPanel)">Skin.Reset(501_Images_SwapPanel)</onclick>
 			<onclick condition="Skin.HasSetting(SwapListPanel)">Skin.Reset(501_Others_SwapPanel)</onclick>
-            <onclick condition="!Skin.HasSetting(SwapListPanel)">Skin.SetBool(SwapListPanel)</onclick>
+			<onclick condition="!Skin.HasSetting(SwapListPanel)">Skin.SetBool(SwapListPanel)</onclick>
 			<onclick condition="!Skin.HasSetting(SwapListPanel)">Skin.SetBool(50_Movies_SwapPanel)</onclick>
 			<onclick condition="!Skin.HasSetting(SwapListPanel)">Skin.SetBool(50_TVShows_SwapPanel)</onclick>
 			<onclick condition="!Skin.HasSetting(SwapListPanel)">Skin.SetBool(50_Seasons_SwapPanel)</onclick>
@@ -1262,83 +1255,83 @@
 			<onclick condition="!Skin.HasSetting(SwapListPanel)">Skin.SetBool(501_Images_SwapPanel)</onclick>
 			<onclick condition="!Skin.HasSetting(SwapListPanel)">Skin.SetBool(501_Others_SwapPanel)</onclick>
 			<selected>Skin.HasSetting(SwapListPanel)</selected>
-        </control>
+		</control>
 		<control type="radiobutton" id="901013">
-            <label>$LOCALIZE[32020]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Hide.Label2.Lists)</onclick>
-		    <selected>Skin.HasSetting(Hide.Label2.Lists)</selected>
-        </control>
+			<label>$LOCALIZE[32020]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Hide.Label2.Lists)</onclick>
+			<selected>Skin.HasSetting(Hide.Label2.Lists)</selected>
+		</control>
 		<control type="radiobutton" id="901014">
-            <label>$LOCALIZE[32056]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Show.MoreItems.List)</onclick>
+			<label>$LOCALIZE[32056]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Show.MoreItems.List)</onclick>
 			<selected>Skin.HasSetting(Show.MoreItems.List)</selected>
-        </control>
+		</control>
 		<control type="radiobutton" id="901015">
-            <label>$LOCALIZE[32217]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ListCenterFocus)</onclick>
-		    <selected>Skin.HasSetting(ListCenterFocus)</selected>
-        </control>
+			<label>$LOCALIZE[32217]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ListCenterFocus)</onclick>
+			<selected>Skin.HasSetting(ListCenterFocus)</selected>
+		</control>
 		<control type="radiobutton" id="901016">
-            <label>$LOCALIZE[32475]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(AlwaysShowListInfo)</onclick>
-		    <selected>Skin.HasSetting(AlwaysShowListInfo)</selected>
-        </control>
+			<label>$LOCALIZE[32475]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(AlwaysShowListInfo)</onclick>
+			<selected>Skin.HasSetting(AlwaysShowListInfo)</selected>
+		</control>
 	</include>
 
 	<include name="SelectMarksOverlays">
-	    <control type="radiobutton" id="901011">
-            <label>[B]$LOCALIZE[32387][/B]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowRatingOverlays)</onclick>
-		    <selected>Skin.HasSetting(ShowRatingOverlays)</selected>
-        </control>
+		<control type="radiobutton" id="901011">
+			<label>[B]$LOCALIZE[32387][/B]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowRatingOverlays)</onclick>
+			<selected>Skin.HasSetting(ShowRatingOverlays)</selected>
+		</control>
 		<control type="radiobutton" id="901012">
-            <visible>Skin.HasSetting(ShowRatingOverlays)</visible>
+			<visible>Skin.HasSetting(ShowRatingOverlays)</visible>
 			<label>   $LOCALIZE[32388]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(UserRatingOverlay)</onclick>
-		    <selected>Skin.HasSetting(UserRatingOverlay)</selected>
-        </control>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(UserRatingOverlay)</onclick>
+			<selected>Skin.HasSetting(UserRatingOverlay)</selected>
+		</control>
 		<control type="radiobutton" id="901013">
-            <label>$LOCALIZE[32251]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(ShowTopRightOverlays)</onclick>
-		    <selected>Skin.HasSetting(ShowTopRightOverlays)</selected>
-        </control>
+			<label>$LOCALIZE[32251]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(ShowTopRightOverlays)</onclick>
+			<selected>Skin.HasSetting(ShowTopRightOverlays)</selected>
+		</control>
 		<control type="radiobutton" id="901014">
-            <label>$LOCALIZE[31981]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Hide_Watched_Marks)</onclick>
-		    <selected>Skin.HasSetting(Hide_Watched_Marks)</selected>
-        </control>
+			<label>$LOCALIZE[31981]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Hide_Watched_Marks)</onclick>
+			<selected>Skin.HasSetting(Hide_Watched_Marks)</selected>
+		</control>
 		<control type="radiobutton" id="901015">
-            <label>$LOCALIZE[31980]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Hide_Unwatched_Marks)</onclick>
-		    <selected>Skin.HasSetting(Hide_Unwatched_Marks)</selected>
-        </control>
+			<label>$LOCALIZE[31980]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Hide_Unwatched_Marks)</onclick>
+			<selected>Skin.HasSetting(Hide_Unwatched_Marks)</selected>
+		</control>
 		<control type="radiobutton" id="901016">
-            <label>$LOCALIZE[31972]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Hide_InProgress_Marks)</onclick>
-		    <selected>Skin.HasSetting(Hide_InProgress_Marks)</selected>
-        </control>
+			<label>$LOCALIZE[31972]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Hide_InProgress_Marks)</onclick>
+			<selected>Skin.HasSetting(Hide_InProgress_Marks)</selected>
+		</control>
 		<control type="radiobutton" id="901017">
-            <label>$LOCALIZE[32239]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Hide_Collection_Marks)</onclick>
-		    <selected>Skin.HasSetting(Hide_Collection_Marks)</selected>
-        </control>
+			<label>$LOCALIZE[32239]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Hide_Collection_Marks)</onclick>
+			<selected>Skin.HasSetting(Hide_Collection_Marks)</selected>
+		</control>
 		<control type="radiobutton" id="901018">
-            <label>$LOCALIZE[32252]</label>
-            <radioposx>605</radioposx>
-            <onclick>Skin.ToggleSetting(Hide_Episode_Marks)</onclick>
-		    <selected>Skin.HasSetting(Hide_Episode_Marks)</selected>
-        </control>
+			<label>$LOCALIZE[32252]</label>
+			<radioposx>605</radioposx>
+			<onclick>Skin.ToggleSetting(Hide_Episode_Marks)</onclick>
+			<selected>Skin.HasSetting(Hide_Episode_Marks)</selected>
+		</control>
 	</include>
 
 	<include name="SelectOSDArt">
@@ -1408,15 +1401,15 @@
 			<onclick>Skin.Reset(StartupImage)</onclick>
 			<onclick>Skin.Reset(StartupPlaylist)</onclick>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[32420]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick condition="String.IsEmpty(Skin.String(StartupPlaylist))">Skin.SetFile(StartupPlaylist,.mp4|.avi|.mkv|.xvid|.wmv|.mov|.xsp|.mp3|.wma|.flac|.m3u,special://skin/extras/intro)</onclick>
-            <onclick condition="!String.IsEmpty(Skin.String(StartupPlaylist))">Skin.Reset(StartupPlaylist)</onclick>
+			<onclick condition="!String.IsEmpty(Skin.String(StartupPlaylist))">Skin.Reset(StartupPlaylist)</onclick>
 			<onclick>Skin.Reset(StartupImage)</onclick>
 			<onclick>Skin.Reset(StartupImagePath)</onclick>
 		</item>
-        <item>
+		<item>
 			<label>$LOCALIZE[15109]</label>
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>Skin.Reset(StartupImage)</onclick>
@@ -1590,5 +1583,4 @@
 			<onclick>Skin.SetString(StartupVideoDuration,00:30)</onclick>
 		</item>
 	</include>
-
 </includes>

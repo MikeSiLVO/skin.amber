@@ -54,9 +54,9 @@
                         <left>17</left>
                         <height>5</height>
                         <reveal>true</reveal>
-                        <righttexture></righttexture>
-                        <overlaytexture></overlaytexture>
-                        <lefttexture></lefttexture>
+                        <righttexture />
+                        <overlaytexture />
+                        <lefttexture />
 					    <texturebg>OSD/ProgressBG.png</texturebg>
 					    <midtexture>OSD/ProgressBar.png</midtexture>
 					    <colordiffuse>$VAR[HighlightColor]</colordiffuse>

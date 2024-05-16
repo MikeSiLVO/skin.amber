@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1133">
-
 	<!-- Huge thanks to MikeSilVO, this is an adaptation of his code -->
-
 	<onunload>ClearProperty(CustomSelectSearchOptions,skinsettings)</onunload>
-
 	<defaultcontrol always="true">90101</defaultcontrol>
 	<include>DialogOpenClose</include>
 	<controls>
@@ -122,7 +119,7 @@
 					<selected>!Skin.HasSetting(DisableSearchMoviesTags)</selected>
 					<visible>!Skin.HasSetting(DisableSearchMovies)</visible>
 				</control>
-                <control type="radiobutton" id="901012">
+				<control type="radiobutton" id="901012">
 					<label>[B]$LOCALIZE[20343][/B]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(DisableSearchTVShows)</onclick>
@@ -283,9 +280,9 @@
 				<posy>366</posy>
 				<width>36</width>
 				<height>610</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>

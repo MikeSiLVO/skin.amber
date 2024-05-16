@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
 	<include name="PVRRecordingSpaceUsage">
 		<param name="posx">355</param>
 		<param name="posy">1020</param>
@@ -108,7 +107,7 @@
 			<include>9000NavCommons</include>
 			<control type="button" id="28">
 				<left>-1000</left>
-				<label></label>
+				<label />
 				<height>1</height>
 			</control>
 			<control type="group">
@@ -298,7 +297,7 @@
 					<control type="image" id="1" description="Header row">
 						<width>1400</width>
 						<height>60</height>
-						<texture></texture>
+						<texture />
 					</control>
 					<control type="label" id="2">
 						<posx>10</posx>
@@ -446,7 +445,7 @@
 						<scroll>true</scroll>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<visible>$EXP[ShowPVROverlay]</visible>
 					</control>
 					<control type="label" id="1">
@@ -457,7 +456,7 @@
 						<scroll>false</scroll>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<font>ListDetails</font>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!$EXP[ShowPVROverlay]</visible>
@@ -471,7 +470,7 @@
 						<scroll>false</scroll>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 					</control>
 				</focusedlayout>
 			</control>
@@ -549,7 +548,6 @@
 						</control>
 						<control type="label">
 							<top>17</top>
-							<left></left>
 							<width>300</width>
 							<height>42</height>
 							<align>center</align>
@@ -572,7 +570,6 @@
 						</control>
 						<control type="label">
 							<top>17</top>
-							<left></left>
 							<width>300</width>
 							<height>42</height>
 							<align>center</align>
@@ -598,7 +595,6 @@
 			<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 			<include>DefaultBackground</include>
 			<control type="group">
-
 				<include content="View_50_List" condition="!Skin.HasSetting(ListCenterFocus)">
 					<param name="ListType">list</param>
 				</include>
@@ -623,17 +619,12 @@
 				<include content="View_52_BigList" condition="Skin.HasSetting(ListCenterFocus)">
 					<param name="ListType">fixedlist</param>
 				</include>
-
 				<include>View_51_Panel</include>
 				<include>View_511_Panel2</include>
-
 				<include>View_55_BigPanel</include>
 				<include>View_551_BigPanel2</include>
-
 				<include>View_53_Icons</include>
-
 				<include >View_502_RightList</include>
-
 			</control>
 			<include>PVRChannelNumberInput</include>
 			<include>Time</include>
@@ -655,7 +646,7 @@
 			<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 			<include>DefaultBackground</include>
 			<include content="BackgroundOverlay">
-				<param name="parentid" value="50"/>
+				<param name="parentid" value="50" />
 			</include>
 			<include>Time</include>
 			<control type="group">
@@ -822,7 +813,7 @@
 							<aligny>center</aligny>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						</control>
 						<control type="image" description="TV Logo Shadow">
@@ -853,7 +844,7 @@
 							<label>$INFO[ListItem.ChannelName]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 						</control>
 						<control type="label" description="Main Label">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
@@ -864,7 +855,7 @@
 							<label>$INFO[ListItem.ChannelName]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 						</control>
 						<control type="label" description="Label2">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
@@ -875,7 +866,7 @@
 							<label>$INFO[ListItem.Title]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 						</control>
 						<control type="label" description="Label2">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
@@ -886,7 +877,7 @@
 							<label>$INFO[ListItem.Title]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 						</control>
 						<control type="progress">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
@@ -956,9 +947,9 @@
 				<posy>60</posy>
 				<width>36</width>
 				<height>990</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
@@ -980,6 +971,4 @@
 			</control>
 		</controls>
 	</include>
-
-
 </includes>

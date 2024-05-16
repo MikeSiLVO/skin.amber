@@ -178,7 +178,7 @@
 							<font>ListDetails</font>
 							<align>center</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<label>$INFO[ListItem.Thumb,[UPPERCASE],[/UPPERCASE]]</label>
 						</control>
 						<control type="image">
@@ -200,7 +200,7 @@
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<visible>!ListItem.property(sync)</visible>
 						</control>
 						<control type="image">
@@ -222,7 +222,7 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 						</control>
 						<control type="image">
 							<right>10</right>
@@ -306,7 +306,7 @@
 							<label>$INFO[ListItem.Label]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<visible>Control.HasFocus(150)</visible>
 						</control>
 					</focusedlayout>
@@ -364,9 +364,9 @@
 				<top>152</top>
 				<width>36</width>
 				<height>658</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>true</showonepage>

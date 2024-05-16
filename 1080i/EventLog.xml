@@ -94,7 +94,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 						</control>
 						<control type="textbox" description="Description">
@@ -104,7 +104,7 @@
 							<width>1270</width>
 							<align>left</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label" description="Label2">
@@ -112,7 +112,7 @@
 							<font>Details</font>
 							<width>1566</width>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
@@ -128,9 +128,9 @@
 			<posy>99</posy>
 			<width>36</width>
 			<height>900</height>
-			<texturesliderbackground></texturesliderbackground>
-			<texturesliderbar></texturesliderbar>
-			<texturesliderbarfocus></texturesliderbarfocus>
+			<texturesliderbackground />
+			<texturesliderbar />
+			<texturesliderbarfocus />
 			<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 			<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 			<showonepage>false</showonepage>
@@ -145,10 +145,10 @@
 			</animation>
 			<control type="button" id="8999">
 				<description>Fake button for mouse control</description>
-				<label></label>
-				<font></font>
-				<texturenofocus></texturenofocus>
-				<texturefocus></texturefocus>
+				<label />
+				<font />
+				<texturenofocus />
+				<texturefocus />
 				<visible>true</visible>
 			</control>
 			<control type="image">
@@ -178,7 +178,7 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>9000SysButtons</include>
-					<alttexturenofocus></alttexturenofocus>
+					<alttexturenofocus />
 					<label>$LOCALIZE[31051]</label>
 					<altlabel>$LOCALIZE[31050]</altlabel>
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
@@ -193,12 +193,12 @@
 				<control type="button" id="21">
 					<description>Levels</description>
 					<include>9000SysButtons</include>
-					<label></label>
+					<label />
 				</control>
 				<control type="radiobutton" id="22">
 					<description>Only show current level</description>
 					<include>9000SysButtons</include>
-					<label></label>
+					<label />
 				</control>
 				<control type="button" id="20">
 					<description>Levels</description>

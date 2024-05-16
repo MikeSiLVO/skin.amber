@@ -67,8 +67,8 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<texture>$VAR[PVRStatusImageVar]</texture>
-			            <aspectratio>keep</aspectratio>
-			            <visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
+						<aspectratio>keep</aspectratio>
+						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
 						<posx>195</posx>
@@ -99,7 +99,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<label>$INFO[ListItem.StartTime,[B],[/B]]</label>
 					</control>
 					<control type="image">
@@ -110,9 +110,9 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<texture>$VAR[PVRStatusImageVar]</texture>
-			            <aspectratio>keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-			            <visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
+						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
 						<posx>195</posx>
@@ -121,7 +121,7 @@
 						<scroll>false</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
@@ -131,7 +131,7 @@
 						<scroll>false</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<visible>![ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive]</visible>
 					</control>
 				</focusedlayout>
@@ -147,9 +147,9 @@
 				<onright>close</onright>
 				<ondown>60</ondown>
 				<onup>60</onup>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
 	<!-- Custom TV Guide Includes - Uses TMDb Helper Script or Embuary Info Script -->
-
-    <!-- Use landscape if available for thumb, if not, use fanart -->
+	<!-- Use landscape if available for thumb, if not, use fanart -->
 	<variable name="NextAiredTVGuideArt">
 		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value condition="String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(fanart)]</value>
 	</variable>
-    <!-- Content paths for Embuary Info Next Aired.  Ensure that we keep date order based on the weekday -->
+	<!-- Content paths for Embuary Info Next Aired.  Ensure that we keep date order based on the weekday -->
 	<variable name="EmbInfoNextAired0">
 		<value condition="String.IsEqual(Control.GetLabel(11),$LOCALIZE[11])">plugin://script.embuary.info/nextaired/0</value>
 		<value condition="String.IsEqual(Control.GetLabel(11),$LOCALIZE[12])">plugin://script.embuary.info/nextaired/1</value>
@@ -72,7 +70,7 @@
 		<value condition="String.IsEqual(Control.GetLabel(11),$LOCALIZE[16])">plugin://script.embuary.info/nextaired/4</value>
 		<value condition="String.IsEqual(Control.GetLabel(11),$LOCALIZE[17])">plugin://script.embuary.info/nextaired/5</value>
 	</variable>
-    <!-- Left List item for TMDb Helper Next Aired -->
+	<!-- Left List item for TMDb Helper Next Aired -->
 	<include name="TMDbTVGuideItem">
 		<param name="TMDbTVGuideItemID" />
 		<param name="TMDbTVGuideDayID" />
@@ -84,8 +82,8 @@
 			</item>
 		</definition>
 	</include>
-    <!-- Left List item for Embuary Info Next Aired -->
-    <include name="EmbuaryInfoTVGuideItem">
+	<!-- Left List item for Embuary Info Next Aired -->
+	<include name="EmbuaryInfoTVGuideItem">
 		<param name="EmbuaryInfoTVGuideItemID" />
 		<param name="EmbuaryInfoTVGuideDayID" />
 		<definition>
@@ -96,7 +94,7 @@
 			</item>
 		</definition>
 	</include>
-    <!-- Episode Panel layout for TMDb Helper Next Aired -->
+	<!-- Episode Panel layout for TMDb Helper Next Aired -->
 	<include name="TMDbTVGuidePanelLayout">
 		<left>500</left>
 		<top>120</top>
@@ -502,5 +500,4 @@
 			</control>
 		</focusedlayout>
 	</include>
-
 </includes>

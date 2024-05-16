@@ -37,10 +37,10 @@
 				<scrolltime>0</scrolltime>
 				<itemlayout height="62">
 					<control type="image">
-					    <width>916</width>
-					    <height>62</height>
-					    <texture border="3">buttons/ButtonNF.png</texture>
-				    </control>
+						<width>916</width>
+						<height>62</height>
+						<texture border="3">buttons/ButtonNF.png</texture>
+					</control>
 					<control type="label">
 						<posx>8</posx>
 						<width>908</width>
@@ -53,11 +53,11 @@
 				</itemlayout>
 				<focusedlayout height="62">
 					<control type="image" description="fa overlay">
-					    <animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(10)">Conditional</animation>
-					    <width>916</width>
-					    <height>62</height>
-					    <texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
-				    </control>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(10)">Conditional</animation>
+						<width>916</width>
+						<height>62</height>
+						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
+					</control>
 					<control type="label">
 						<posx>8</posx>
 						<width>908</width>
@@ -93,7 +93,7 @@
 				<height>66</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label></label>
+				<label />
 				<onup>10</onup>
 				<onleft>18</onleft>
 				<onright>18</onright>
@@ -105,7 +105,7 @@
 				<onleft>10</onleft>
 				<onright>10</onright>
 				<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
-		        <onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
+				<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
 				<ondown>9000</ondown>
 				<width>230</width>
 				<height>360</height>
@@ -143,13 +143,13 @@
 				</control>
 			</control>
 			<control type="group">
-			    <posx>1190</posx>
-			    <posy>-20</posy>
-			    <include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
-			        <param name="Action">Action(Back)</param>
-				    <param name="ondown">9000</param>
-			    </include>
-		    </control>
+				<posx>1190</posx>
+				<posy>-20</posy>
+				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
+					<param name="Action">Action(Back)</param>
+					<param name="ondown">9000</param>
+				</include>
+			</control>
 		</control>
 	</controls>
 </window>

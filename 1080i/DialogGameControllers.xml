@@ -69,9 +69,9 @@
 					<top>80</top>
 					<width>36</width>
 					<height>660</height>
-					<texturesliderbackground></texturesliderbackground>
-					<texturesliderbar></texturesliderbar>
-					<texturesliderbarfocus></texturesliderbarfocus>
+					<texturesliderbackground />
+					<texturesliderbar />
+					<texturesliderbarfocus />
 					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 					<showonepage>false</showonepage>
@@ -146,9 +146,9 @@
 					<top>80</top>
 					<width>36</width>
 					<height>660</height>
-					<texturesliderbackground></texturesliderbackground>
-					<texturesliderbar></texturesliderbar>
-					<texturesliderbarfocus></texturesliderbarfocus>
+					<texturesliderbackground />
+					<texturesliderbar />
+					<texturesliderbarfocus />
 					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 					<showonepage>false</showonepage>

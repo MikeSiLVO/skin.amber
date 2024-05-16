@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-
 	<!-- Needed to auto close the video osd after any settings dialog is closed -->
 	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ActivateWindow(1196)</onunload>
 	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ClearProperty(ShowingOSDSettings,home)</onunload>
-
 	<defaultcontrol>5</defaultcontrol>
 	<coordinates>
 		<left>350</left>
@@ -14,7 +12,6 @@
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(sliderdialog)</visible>
-<!--			<visible>![Window.Is(osdaudiosettings)]</visible> -->
 			<include>DialogOpenClose</include>
 			<control type="image">
 				<width>1220</width>
@@ -26,7 +23,7 @@
 				<top>45</top>
 				<width>1220</width>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label></label>
+				<label />
 				<align>center</align>
 			</control>
 			<control type="grouplist" id="5" description="Controls">
@@ -55,19 +52,19 @@
 					<width>300</width>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label></label>
+					<label />
 				</control>
 				<control type="button" id="29">
 					<width>300</width>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label></label>
+					<label />
 				</control>
 				<control type="button" id="30">
 					<width>300</width>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label></label>
+					<label />
 				</control>
 			</control>
 			<control type="button" id="7">

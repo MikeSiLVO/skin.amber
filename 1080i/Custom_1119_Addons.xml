@@ -6,7 +6,7 @@
 		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
 		<include content="BackgroundOverlay">
-			<param name="parentid" value="50"/>
+			<param name="parentid" value="50" />
 		</include>
 		<control type="group">
 			<include>ContentFade</include>
@@ -61,7 +61,7 @@
 						<height>72</height>
 						<scroll>false</scroll>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<label>$VAR[MediaListLabel]</label>
 					</control>
 					<control type="label">

@@ -37,7 +37,7 @@
 				<onright>noop</onright>
 				<onup>52</onup>
 				<ondown>52</ondown>
-				<pagecontrol></pagecontrol>
+				<pagecontrol />
 				<scrolltime>240</scrolltime>
 				<itemlayout width="950" height="100">
 					<control type="image">
@@ -80,7 +80,7 @@
 						<height>60</height>
 						<textoffsetx>96</textoffsetx>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -88,7 +88,7 @@
 						<height>30</height>
 						<textoffsetx>96</textoffsetx>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<font>font22</font>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
@@ -130,14 +130,14 @@
 				<radiowidth>80</radiowidth>
 				<radioheight>80</radioheight>
 				<textoffsetx>0</textoffsetx>
-				<texturenofocus></texturenofocus>
+				<texturenofocus />
 				<textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">ShutdownNF.png</textureradioonfocus>
 				<textureradioonnofocus>ShutdownNF.png</textureradioonnofocus>
 				<textureradioofffocus colordiffuse="$VAR[FocusedTextColor]">ShutdownNF.png</textureradioofffocus>
 				<textureradiooffnofocus>ShutdownNF.png</textureradiooffnofocus>
 				<onclick>ActivateWindow(shutdownmenu)</onclick>
 				<radioposx>24</radioposx>
-				<label></label>
+				<label />
 			</control>
 		</control>
 	</controls>

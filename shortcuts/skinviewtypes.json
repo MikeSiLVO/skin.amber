@@ -3,34 +3,34 @@
     "viewtypes": {
         "50":  "$LOCALIZE[535]",
         "54":  "$LOCALIZE[31962]",
-		"501": "$LOCALIZE[31606]",
-		"52":  "$LOCALIZE[31960]",
-		"502":  "$LOCALIZE[31648]",
-		"51":  "$LOCALIZE[31963]",
+        "501": "$LOCALIZE[31606]",
+        "52":  "$LOCALIZE[31960]",
+        "502":  "$LOCALIZE[31648]",
+        "51":  "$LOCALIZE[31963]",
         "511": "$LOCALIZE[31607]",
         "55":  "$LOCALIZE[31958]",
-		"551": "$LOCALIZE[31608]",
-		"53":  "$LOCALIZE[536]",
+        "551": "$LOCALIZE[31608]",
+        "53":  "$LOCALIZE[536]",
         "56":  "$LOCALIZE[20445]",
-		"57":  "$LOCALIZE[31632]",
-		"58":  "$LOCALIZE[31159]",
-		"600":  "$LOCALIZE[31157]"
+        "57":  "$LOCALIZE[31632]",
+        "58":  "$LOCALIZE[31159]",
+        "600":  "$LOCALIZE[31157]"
     },
     "icons": {
         "50":  "special://skin/extras/viewtypes/list.png",
         "54":  "special://skin/extras/viewtypes/lowlist.png",
-		"501": "special://skin/extras/viewtypes/talllist.png",
-		"52":  "special://skin/extras/viewtypes/biglist.png",
-		"502":  "special://skin/extras/viewtypes/rightlist.png",
-		"51":  "special://skin/extras/viewtypes/panel.png",
+        "501": "special://skin/extras/viewtypes/talllist.png",
+        "52":  "special://skin/extras/viewtypes/biglist.png",
+        "502":  "special://skin/extras/viewtypes/rightlist.png",
+        "51":  "special://skin/extras/viewtypes/panel.png",
         "511": "special://skin/extras/viewtypes/panel2.png",
         "55":  "special://skin/extras/viewtypes/bigpanel.png",
-		"551": "special://skin/extras/viewtypes/bigpanel2.png",
-		"53":  "special://skin/extras/viewtypes/icons.png",
+        "551": "special://skin/extras/viewtypes/bigpanel2.png",
+        "53":  "special://skin/extras/viewtypes/icons.png",
         "56":  "special://skin/extras/viewtypes/fanart.png",
-		"57":  "special://skin/extras/viewtypes/simplelist.png",
-		"58":  "special://skin/extras/viewtypes/logo.png",
-		"600":  "special://skin/extras/viewtypes/triple.png"
+        "57":  "special://skin/extras/viewtypes/simplelist.png",
+        "58":  "special://skin/extras/viewtypes/logo.png",
+        "600":  "special://skin/extras/viewtypes/triple.png"
     },
     "rules": {
         "addons": {
@@ -145,7 +145,7 @@
             "viewtypes": ["50", "54", "501", "52", "51", "511", "55", "551", "53", "56", "57"],
             "library": "50"
         },
-		"pvr-channels": {
+        "pvr-channels": {
             "rule": "Window.IsVisible(MyPVRChannels.xml)",
             "viewtypes": ["50", "54", "501", "52", "51", "511", "55", "551", "53"],
             "library": "50"

@@ -2,7 +2,6 @@
 <overrides>
 	<!-- Do not share menu as other skins use custom language strings that do not work -->
 	<doNotShareMenu />
-
 	<widgetPlaylists>True</widgetPlaylists>
 	<thumbnailBrowseDefault>special://skin/media/</thumbnailBrowseDefault>
 
@@ -89,10 +88,10 @@
 		<condition>!System.HasAddon(plugin.video.themoviedb.helper) + !System.HasAddon(script.embuary.info) + System.HasAddon(script.tv.show.next.aired)</condition>
 		<action>RunScript(script.tv.show.next.aired)</action>
 	</override>
-    <override action="reboot_to_android">
-        <action>System.ExecWait("/usr/sbin/rebootfromnand")</action>
-        <action>Reset()</action>
-    </override>
+	<override action="reboot_to_android">
+		<action>System.ExecWait("/usr/sbin/rebootfromnand")</action>
+		<action>Reset()</action>
+	</override>
 	<override action="start_favourites">
 		<action>Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(Background)])</action>
 		<action>ActivateWindow(favouritesbrowser)</action>
@@ -105,8 +104,8 @@
 		<action>Skin.ToggleSetting(Hide.AllShelves)</action>
 	</override>
 
-    <!-- For Power Menu -->
-    <groupoverride group="powermenu" condition="Window.IsActive(DialogButtonMenu.xml)">Close</groupoverride>
+	<!-- For Power Menu -->
+	<groupoverride group="powermenu" condition="Window.IsActive(DialogButtonMenu.xml)">Close</groupoverride>
 
 	<!-- Warning to Remove/Disable Settings -->
 	<warn heading="31395" message="31396">ActivateWindow(Settings)</warn>
@@ -129,7 +128,7 @@
 	<property property="InfoLine" label="$LOCALIZE[1038]">musicaddons</property>
 	<property property="InfoLine" label="$LOCALIZE[1043]">programaddons</property>
 	<property property="InfoLine" label="$LOCALIZE[1039]">pictureaddons</property>
-    <property property="InfoLine" label="$LOCALIZE[35049]">gameaddons</property>
+	<property property="InfoLine" label="$LOCALIZE[35049]">gameaddons</property>
 	<property property="InfoLine" label="$LOCALIZE[1036]" condition="System.HasAddon(script.favourites)">favourites</property>
 	<property property="InfoLine" label="$LOCALIZE[427]">disc</property>
 	<property property="InfoLine" label="$LOCALIZE[130]">systeminfo</property>
@@ -137,7 +136,7 @@
 	<property property="InfoLine" label="$LOCALIZE[31411]" condition="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHInfoLine)">tvshowplaylist</property>
 	<property property="InfoLine" label="$LOCALIZE[31412]" condition="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHInfoLine)">musicvideoplaylist</property>
 	<property property="InfoLine" label="$LOCALIZE[31418]" condition="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHInfoLine)">episodeplaylist</property>
-    <property property="InfoLine" label="$LOCALIZE[31591]">movienode</property>
+	<property property="InfoLine" label="$LOCALIZE[31591]">movienode</property>
 	<property property="InfoLine" label="$LOCALIZE[31592]">tvshownode</property>
 	<property property="InfoLine" label="$LOCALIZE[31593]">musicvideonode</property>
 	<property property="InfoLine" label="$LOCALIZE[31594]">artistnode</property>
@@ -152,17 +151,16 @@
 	<property property="playlistFanartLimit" label="10 ">$NUMBER[10]</property>
 	<property property="playlistFanartLimit" label="25 ">$NUMBER[25]</property>
 	<property property="playlistFanartLimit" label="50 ">$NUMBER[50]</property>
-	<propertySettings property="playlistFanartLimit" buttonID="808" title="$LOCALIZE[31604]"/>
+	<propertySettings property="playlistFanartLimit" buttonID="808" title="$LOCALIZE[31604]" />
 
 	<!-- Horizontal/Vertical Shelves Position -->
 	<property property="horizontalWidgetPos" label="$LOCALIZE[31613]">Standard</property>
 	<property property="horizontalWidgetPos" label="$LOCALIZE[31614]">Low</property>
 	<property property="horizontalWidgetPos" label="$LOCALIZE[31634]">High</property>
-	<propertySettings property="horizontalWidgetPos" buttonID="811" showNone="false" title="$LOCALIZE[31609]"/>
+	<propertySettings property="horizontalWidgetPos" buttonID="811" showNone="false" title="$LOCALIZE[31609]" />
 
 	<!-- Widget (Shelf) Properties -->
-
-    <!-- Widget 1 Artwork -->
+	<!-- Widget 1 Artwork -->
 	<property property="widgetArtwork" label="$LOCALIZE[31611]">Poster</property>
 	<property property="widgetArtwork" label="$LOCALIZE[31612]" condition="!String.IsEqual(Container(211).ListItem.Property(widgetType),people)">Square</property>
 	<property property="widgetArtwork" label="$LOCALIZE[20020]" condition="[String.IsEqual(Container(211).ListItem.Property(widgetType),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType),episodes)]">Banner</property>
@@ -205,12 +203,12 @@
 	<property property="widgetSortBy" label="$LOCALIZE[31625]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType),tvshows)">tvshowstatus</property>
 	<property property="widgetSortBy" label="$LOCALIZE[31626]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType),tvshows)">numberofepisodes</property>
 	<property property="widgetSortBy" label="$LOCALIZE[31627]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType),tvshows)">numberofwatchedepisodes</property>
-	<propertySettings property="widgetSortBy" buttonID="3003" title="$LOCALIZE[31616]" templateonly="true"/>
+	<propertySettings property="widgetSortBy" buttonID="3003" title="$LOCALIZE[31616]" templateonly="true" />
 
 	<!-- Widget 1 Sort Direction -->
 	<property property="widgetSortOrder" label="$LOCALIZE[584]">ascending</property>
 	<property property="widgetSortOrder" label="$LOCALIZE[585]">descending</property>
-	<propertySettings property="widgetSortOrder" buttonID="3004" title="$LOCALIZE[31617]" templateonly="true"/>
+	<propertySettings property="widgetSortOrder" buttonID="3004" title="$LOCALIZE[31617]" templateonly="true" />
 
 	<!-- Widget 1 Limit -->
 	<property property="widgetLimit" label="1 ">$NUMBER[1]</property>
@@ -229,7 +227,7 @@
 	<property property="widgetLimit" label="30 ">$NUMBER[30]</property>
 	<property property="widgetLimit" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit" label="100 ">$NUMBER[100]</property>
-	<propertySettings property="widgetLimit" buttonID="3005" title="$LOCALIZE[31618]" templateonly="true"/>
+	<propertySettings property="widgetLimit" buttonID="3005" title="$LOCALIZE[31618]" templateonly="true" />
 
 	<!-- Widget 1 Autoscroll -->
 	<property property="widgetAutoScroll" label="7 ">$NUMBER[7000]</property>
@@ -242,7 +240,7 @@
 	<property property="widgetAutoScroll" label="20 ">$NUMBER[20000]</property>
 	<property property="widgetAutoScroll" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll" label="60 ">$NUMBER[60000]</property>
-	<propertySettings property="widgetAutoScroll" buttonID="3010" title="$LOCALIZE[31630]" templateonly="true"/>
+	<propertySettings property="widgetAutoScroll" buttonID="3010" title="$LOCALIZE[31630]" templateonly="true" />
 
 	<!-- Widget 1 Popup Delay -->
 	<property property="widgetPopupDelay" label="1 ">$NUMBER[1]</property>
@@ -251,7 +249,7 @@
 	<property property="widgetPopupDelay" label="4 ">$NUMBER[4]</property>
 	<property property="widgetPopupDelay" label="5 ">$NUMBER[5]</property>
 	<property property="widgetPopupDelay" label="6 ">$NUMBER[6]</property>
-	<propertySettings property="widgetPopupDelay" buttonID="3012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
+	<propertySettings property="widgetPopupDelay" buttonID="3012" title="$LOCALIZE[31652]" templateonly="true" showNone="false" />
 
 	<!-- Widget 2 Artwork -->
 	<property property="widgetArtwork.2" label="$LOCALIZE[31611]">Poster</property>
@@ -284,7 +282,7 @@
 	<property property="widgetSortBy.2" label="$LOCALIZE[574]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),movies)">country</property>
 	<property property="widgetSortBy.2" label="$LOCALIZE[563]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),episodes)">rating</property>
 	<property property="widgetSortBy.2" label="$LOCALIZE[33067]" condition="String.IsEqual(Container(211).ListItem.Property(widgetTarget.2),video) | String.IsEqual(Container(211).ListItem.Property(widgetTarget.2),music)">userrating</property>
-    <property property="widgetSortBy.2" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),episodes)">votes</property>
+	<property property="widgetSortBy.2" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),episodes)">votes</property>
 	<property property="widgetSortBy.2" label="$LOCALIZE[551]">name</property>
 	<property property="widgetSortBy.2" label="$LOCALIZE[561]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),episodes)">file</property>
 	<property property="widgetSortBy.2" label="$LOCALIZE[555]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.2),episodes)">time</property>
@@ -296,12 +294,12 @@
 	<property property="widgetSortBy.2" label="$LOCALIZE[31625]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),tvshows)">tvshowstatus</property>
 	<property property="widgetSortBy.2" label="$LOCALIZE[31626]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),tvshows)">numberofepisodes</property>
 	<property property="widgetSortBy.2" label="$LOCALIZE[31627]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.2),tvshows)">numberofwatchedepisodes</property>
-	<propertySettings property="widgetSortBy.2" buttonID="4003" title="$LOCALIZE[31616]" templateonly="true"/>
+	<propertySettings property="widgetSortBy.2" buttonID="4003" title="$LOCALIZE[31616]" templateonly="true" />
 
 	<!-- Widget 2 Sort Direction -->
 	<property property="widgetSortOrder.2" label="$LOCALIZE[584]">ascending</property>
 	<property property="widgetSortOrder.2" label="$LOCALIZE[585]">descending</property>
-	<propertySettings property="widgetSortOrder.2" buttonID="4004" title="$LOCALIZE[31617]" templateonly="true"/>
+	<propertySettings property="widgetSortOrder.2" buttonID="4004" title="$LOCALIZE[31617]" templateonly="true" />
 
 	<!-- Widget 2 Limit -->
 	<property property="widgetLimit.2" label="1 ">$NUMBER[1]</property>
@@ -319,7 +317,7 @@
 	<property property="widgetLimit.2" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.2" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.2" label="100 ">$NUMBER[100]</property>
-	<propertySettings property="widgetLimit.2" buttonID="4005" title="$LOCALIZE[31618]" templateonly="true"/>
+	<propertySettings property="widgetLimit.2" buttonID="4005" title="$LOCALIZE[31618]" templateonly="true" />
 
 	<!-- Widget 2 Autoscroll -->
 	<property property="widgetAutoScroll.2" label="7 ">$NUMBER[7000]</property>
@@ -332,7 +330,7 @@
 	<property property="widgetAutoScroll.2" label="20 ">$NUMBER[20000]</property>
 	<property property="widgetAutoScroll.2" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.2" label="60 ">$NUMBER[60000]</property>
-	<propertySettings property="widgetAutoScroll.2" buttonID="4010" title="$LOCALIZE[31630]" templateonly="true"/>
+	<propertySettings property="widgetAutoScroll.2" buttonID="4010" title="$LOCALIZE[31630]" templateonly="true" />
 
 	<!-- Widget 2 Popup Delay -->
 	<property property="widgetPopupDelay.2" label="1 ">$NUMBER[1]</property>
@@ -341,7 +339,7 @@
 	<property property="widgetPopupDelay.2" label="4 ">$NUMBER[4]</property>
 	<property property="widgetPopupDelay.2" label="5 ">$NUMBER[5]</property>
 	<property property="widgetPopupDelay.2" label="6 ">$NUMBER[6]</property>
-	<propertySettings property="widgetPopupDelay.2" buttonID="4012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
+	<propertySettings property="widgetPopupDelay.2" buttonID="4012" title="$LOCALIZE[31652]" templateonly="true" showNone="false" />
 
 	<!-- Widget 3 Artwork -->
 	<property property="widgetArtwork.3" label="$LOCALIZE[31611]">Poster</property>
@@ -374,7 +372,7 @@
 	<property property="widgetSortBy.3" label="$LOCALIZE[574]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),movies)">country</property>
 	<property property="widgetSortBy.3" label="$LOCALIZE[563]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),episodes)">rating</property>
 	<property property="widgetSortBy.3" label="$LOCALIZE[33067]" condition="String.IsEqual(Container(211).ListItem.Property(widgetTarget.3),video) | String.IsEqual(Container(211).ListItem.Property(widgetTarget.3),music)">userrating</property>
-    <property property="widgetSortBy.3" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),episodes)">votes</property>
+	<property property="widgetSortBy.3" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),episodes)">votes</property>
 	<property property="widgetSortBy.3" label="$LOCALIZE[551]">name</property>
 	<property property="widgetSortBy.3" label="$LOCALIZE[561]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),episodes)">file</property>
 	<property property="widgetSortBy.3" label="$LOCALIZE[555]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.3),episodes)">time</property>
@@ -386,12 +384,12 @@
 	<property property="widgetSortBy.3" label="$LOCALIZE[31625]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),tvshows)">tvshowstatus</property>
 	<property property="widgetSortBy.3" label="$LOCALIZE[31626]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),tvshows)">numberofepisodes</property>
 	<property property="widgetSortBy.3" label="$LOCALIZE[31627]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.3),tvshows)">numberofwatchedepisodes</property>
-	<propertySettings property="widgetSortBy.3" buttonID="5003" title="$LOCALIZE[31616]" templateonly="true"/>
+	<propertySettings property="widgetSortBy.3" buttonID="5003" title="$LOCALIZE[31616]" templateonly="true" />
 
 	<!-- Widget 3 Sort Direction -->
 	<property property="widgetSortOrder.3" label="$LOCALIZE[584]">ascending</property>
 	<property property="widgetSortOrder.3" label="$LOCALIZE[585]">descending</property>
-	<propertySettings property="widgetSortOrder.3" buttonID="5004" title="$LOCALIZE[31617]" templateonly="true"/>
+	<propertySettings property="widgetSortOrder.3" buttonID="5004" title="$LOCALIZE[31617]" templateonly="true" />
 
 	<!-- Widget 3 Limit -->
 	<property property="widgetLimit.3" label="1 ">$NUMBER[1]</property>
@@ -409,9 +407,9 @@
 	<property property="widgetLimit.3" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.3" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.3" label="100 ">$NUMBER[100]</property>
-	<propertySettings property="widgetLimit.3" buttonID="5005" title="$LOCALIZE[31618]" templateonly="true"/>
+	<propertySettings property="widgetLimit.3" buttonID="5005" title="$LOCALIZE[31618]" templateonly="true" />
 
-    <!-- Widget 3 Autoscroll -->
+	<!-- Widget 3 Autoscroll -->
 	<property property="widgetAutoScroll.3" label="7 ">$NUMBER[7000]</property>
 	<property property="widgetAutoScroll.3" label="8 ">$NUMBER[8000]</property>
 	<property property="widgetAutoScroll.3" label="9 ">$NUMBER[9000]</property>
@@ -422,7 +420,7 @@
 	<property property="widgetAutoScroll.3" label="20 ">$NUMBER[20000]</property>
 	<property property="widgetAutoScroll.3" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.3" label="60 ">$NUMBER[60000]</property>
-	<propertySettings property="widgetAutoScroll.3" buttonID="5010" title="$LOCALIZE[31630]" templateonly="true"/>
+	<propertySettings property="widgetAutoScroll.3" buttonID="5010" title="$LOCALIZE[31630]" templateonly="true" />
 
 	<!-- Widget 3 Popup Delay -->
 	<property property="widgetPopupDelay.3" label="1 ">$NUMBER[1]</property>
@@ -431,7 +429,7 @@
 	<property property="widgetPopupDelay.3" label="4 ">$NUMBER[4]</property>
 	<property property="widgetPopupDelay.3" label="5 ">$NUMBER[5]</property>
 	<property property="widgetPopupDelay.3" label="6 ">$NUMBER[6]</property>
-	<propertySettings property="widgetPopupDelay.3" buttonID="5012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
+	<propertySettings property="widgetPopupDelay.3" buttonID="5012" title="$LOCALIZE[31652]" templateonly="true" showNone="false" />
 
 	<!-- Widget 4 Artwork -->
 	<property property="widgetArtwork.4" label="$LOCALIZE[31611]">Poster</property>
@@ -464,7 +462,7 @@
 	<property property="widgetSortBy.4" label="$LOCALIZE[574]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),movies)">country</property>
 	<property property="widgetSortBy.4" label="$LOCALIZE[563]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),episodes)">rating</property>
 	<property property="widgetSortBy.4" label="$LOCALIZE[33067]" condition="String.IsEqual(Container(211).ListItem.Property(widgetTarget.4),video) | String.IsEqual(Container(211).ListItem.Property(widgetTarget.4),music)">userrating</property>
-    <property property="widgetSortBy.4" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),episodes)">votes</property>
+	<property property="widgetSortBy.4" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),episodes)">votes</property>
 	<property property="widgetSortBy.4" label="$LOCALIZE[551]">name</property>
 	<property property="widgetSortBy.4" label="$LOCALIZE[561]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),episodes)">file</property>
 	<property property="widgetSortBy.4" label="$LOCALIZE[555]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.4),episodes)">time</property>
@@ -476,12 +474,12 @@
 	<property property="widgetSortBy.4" label="$LOCALIZE[31625]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),tvshows)">tvshowstatus</property>
 	<property property="widgetSortBy.4" label="$LOCALIZE[31626]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),tvshows)">numberofepisodes</property>
 	<property property="widgetSortBy.4" label="$LOCALIZE[31627]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.4),tvshows)">numberofwatchedepisodes</property>
-	<propertySettings property="widgetSortBy.4" buttonID="6003" title="$LOCALIZE[31616]" templateonly="true"/>
+	<propertySettings property="widgetSortBy.4" buttonID="6003" title="$LOCALIZE[31616]" templateonly="true" />
 
 	<!-- Widget 4 Sort Direction -->
 	<property property="widgetSortOrder.4" label="$LOCALIZE[584]">ascending</property>
 	<property property="widgetSortOrder.4" label="$LOCALIZE[585]">descending</property>
-	<propertySettings property="widgetSortOrder.4" buttonID="6004" title="$LOCALIZE[31617]" templateonly="true"/>
+	<propertySettings property="widgetSortOrder.4" buttonID="6004" title="$LOCALIZE[31617]" templateonly="true" />
 
 	<!-- Widget 4 Limit -->
 	<property property="widgetLimit.4" label="1 ">$NUMBER[1]</property>
@@ -499,7 +497,7 @@
 	<property property="widgetLimit.4" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.4" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.4" label="100 ">$NUMBER[100]</property>
-	<propertySettings property="widgetLimit.4" buttonID="6005" title="$LOCALIZE[31618]" templateonly="true"/>
+	<propertySettings property="widgetLimit.4" buttonID="6005" title="$LOCALIZE[31618]" templateonly="true" />
 
 	<!-- Widget 4 Autoscroll -->
 	<property property="widgetAutoScroll.4" label="7 ">$NUMBER[7000]</property>
@@ -512,7 +510,7 @@
 	<property property="widgetAutoScroll.4" label="20 ">$NUMBER[20000]</property>
 	<property property="widgetAutoScroll.4" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.4" label="60 ">$NUMBER[60000]</property>
-	<propertySettings property="widgetAutoScroll.4" buttonID="6010" title="$LOCALIZE[31630]" templateonly="true"/>
+	<propertySettings property="widgetAutoScroll.4" buttonID="6010" title="$LOCALIZE[31630]" templateonly="true" />
 
 	<!-- Widget 4 Popup Delay -->
 	<property property="widgetPopupDelay.4" label="1 ">$NUMBER[1]</property>
@@ -521,7 +519,7 @@
 	<property property="widgetPopupDelay.4" label="4 ">$NUMBER[4]</property>
 	<property property="widgetPopupDelay.4" label="5 ">$NUMBER[5]</property>
 	<property property="widgetPopupDelay.4" label="6 ">$NUMBER[6]</property>
-	<propertySettings property="widgetPopupDelay.4" buttonID="6012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
+	<propertySettings property="widgetPopupDelay.4" buttonID="6012" title="$LOCALIZE[31652]" templateonly="true" showNone="false" />
 
 	<!-- Widget 5 Artwork -->
 	<property property="widgetArtwork.5" label="$LOCALIZE[31611]">Poster</property>
@@ -554,7 +552,7 @@
 	<property property="widgetSortBy.5" label="$LOCALIZE[574]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),movies)">country</property>
 	<property property="widgetSortBy.5" label="$LOCALIZE[563]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),episodes)">rating</property>
 	<property property="widgetSortBy.5" label="$LOCALIZE[33067]" condition="String.IsEqual(Container(211).ListItem.Property(widgetTarget.5),video) | String.IsEqual(Container(211).ListItem.Property(widgetTarget.5),music)">userrating</property>
-    <property property="widgetSortBy.5" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),episodes)">votes</property>
+	<property property="widgetSortBy.5" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),episodes)">votes</property>
 	<property property="widgetSortBy.5" label="$LOCALIZE[551]">name</property>
 	<property property="widgetSortBy.5" label="$LOCALIZE[561]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),episodes)">file</property>
 	<property property="widgetSortBy.5" label="$LOCALIZE[555]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.5),episodes)">time</property>
@@ -566,12 +564,12 @@
 	<property property="widgetSortBy.5" label="$LOCALIZE[31625]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),tvshows)">tvshowstatus</property>
 	<property property="widgetSortBy.5" label="$LOCALIZE[31626]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),tvshows)">numberofepisodes</property>
 	<property property="widgetSortBy.5" label="$LOCALIZE[31627]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.5),tvshows)">numberofwatchedepisodes</property>
-	<propertySettings property="widgetSortBy.5" buttonID="7003" title="$LOCALIZE[31616]" templateonly="true"/>
+	<propertySettings property="widgetSortBy.5" buttonID="7003" title="$LOCALIZE[31616]" templateonly="true" />
 
 	<!-- Widget 5 Sort Direction -->
 	<property property="widgetSortOrder.5" label="$LOCALIZE[584]">ascending</property>
 	<property property="widgetSortOrder.5" label="$LOCALIZE[585]">descending</property>
-	<propertySettings property="widgetSortOrder.5" buttonID="7004" title="$LOCALIZE[31617]" templateonly="true"/>
+	<propertySettings property="widgetSortOrder.5" buttonID="7004" title="$LOCALIZE[31617]" templateonly="true" />
 
 	<!-- Widget 5 Limit -->
 	<property property="widgetLimit.5" label="1 ">$NUMBER[1]</property>
@@ -589,7 +587,7 @@
 	<property property="widgetLimit.5" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.5" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.5" label="100 ">$NUMBER[100]</property>
-	<propertySettings property="widgetLimit.5" buttonID="7005" title="$LOCALIZE[31618]" templateonly="true"/>
+	<propertySettings property="widgetLimit.5" buttonID="7005" title="$LOCALIZE[31618]" templateonly="true" />
 
 	<!-- Widget 5 Autoscroll -->
 	<property property="widgetAutoScroll.5" label="7 ">$NUMBER[7000]</property>
@@ -602,7 +600,7 @@
 	<property property="widgetAutoScroll.5" label="20 ">$NUMBER[20000]</property>
 	<property property="widgetAutoScroll.5" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.5" label="60 ">$NUMBER[60000]</property>
-	<propertySettings property="widgetAutoScroll.5" buttonID="7010" title="$LOCALIZE[31630]" templateonly="true"/>
+	<propertySettings property="widgetAutoScroll.5" buttonID="7010" title="$LOCALIZE[31630]" templateonly="true" />
 
 	<!-- Widget 5 Popup Delay -->
 	<property property="widgetPopupDelay.5" label="1 ">$NUMBER[1]</property>
@@ -611,7 +609,7 @@
 	<property property="widgetPopupDelay.5" label="4 ">$NUMBER[4]</property>
 	<property property="widgetPopupDelay.5" label="5 ">$NUMBER[5]</property>
 	<property property="widgetPopupDelay.5" label="6 ">$NUMBER[6]</property>
-	<propertySettings property="widgetPopupDelay.5" buttonID="7012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
+	<propertySettings property="widgetPopupDelay.5" buttonID="7012" title="$LOCALIZE[31652]" templateonly="true" showNone="false" />
 
 	<!-- Widget 6 Artwork -->
 	<property property="widgetArtwork.6" label="$LOCALIZE[31611]">Poster</property>
@@ -644,7 +642,7 @@
 	<property property="widgetSortBy.6" label="$LOCALIZE[574]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),movies)">country</property>
 	<property property="widgetSortBy.6" label="$LOCALIZE[563]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),episodes)">rating</property>
 	<property property="widgetSortBy.6" label="$LOCALIZE[33067]" condition="String.IsEqual(Container(211).ListItem.Property(widgetTarget.6),video) | String.IsEqual(Container(211).ListItem.Property(widgetTarget.6),music)">userrating</property>
-    <property property="widgetSortBy.6" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),episodes)">votes</property>
+	<property property="widgetSortBy.6" label="$LOCALIZE[205]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),tvshows) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),episodes)">votes</property>
 	<property property="widgetSortBy.6" label="$LOCALIZE[551]">name</property>
 	<property property="widgetSortBy.6" label="$LOCALIZE[561]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),episodes)">file</property>
 	<property property="widgetSortBy.6" label="$LOCALIZE[555]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),movies) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),songs) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),musicvideos) | String.IsEqual(Container(211).ListItem.Property(widgetType.6),episodes)">time</property>
@@ -656,12 +654,12 @@
 	<property property="widgetSortBy.6" label="$LOCALIZE[31625]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),tvshows)">tvshowstatus</property>
 	<property property="widgetSortBy.6" label="$LOCALIZE[31626]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),tvshows)">numberofepisodes</property>
 	<property property="widgetSortBy.6" label="$LOCALIZE[31627]" condition="String.IsEqual(Container(211).ListItem.Property(widgetType.6),tvshows)">numberofwatchedepisodes</property>
-	<propertySettings property="widgetSortBy.6" buttonID="8003" title="$LOCALIZE[31616]" templateonly="true"/>
+	<propertySettings property="widgetSortBy.6" buttonID="8003" title="$LOCALIZE[31616]" templateonly="true" />
 
 	<!-- Widget 6 Sort Direction -->
 	<property property="widgetSortOrder.6" label="$LOCALIZE[584]">ascending</property>
 	<property property="widgetSortOrder.6" label="$LOCALIZE[585]">descending</property>
-	<propertySettings property="widgetSortOrder.6" buttonID="8004" title="$LOCALIZE[31617]" templateonly="true"/>
+	<propertySettings property="widgetSortOrder.6" buttonID="8004" title="$LOCALIZE[31617]" templateonly="true" />
 
 	<!-- Widget 6 Limit -->
 	<property property="widgetLimit.6" label="1 ">$NUMBER[1]</property>
@@ -679,7 +677,7 @@
 	<property property="widgetLimit.6" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.6" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.6" label="100 ">$NUMBER[100]</property>
-	<propertySettings property="widgetLimit.6" buttonID="8005" title="$LOCALIZE[31618]" templateonly="true"/>
+	<propertySettings property="widgetLimit.6" buttonID="8005" title="$LOCALIZE[31618]" templateonly="true" />
 
 	<!-- Widget 6 Autoscroll -->
 	<property property="widgetAutoScroll.6" label="7 ">$NUMBER[7000]</property>
@@ -692,7 +690,7 @@
 	<property property="widgetAutoScroll.6" label="20 ">$NUMBER[20000]</property>
 	<property property="widgetAutoScroll.6" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.6" label="60 ">$NUMBER[60000]</property>
-	<propertySettings property="widgetAutoScroll.6" buttonID="8010" title="$LOCALIZE[31630]" templateonly="true"/>
+	<propertySettings property="widgetAutoScroll.6" buttonID="8010" title="$LOCALIZE[31630]" templateonly="true" />
 
 	<!-- Widget 6 Popup Delay -->
 	<property property="widgetPopupDelay.6" label="1 ">$NUMBER[1]</property>
@@ -701,13 +699,12 @@
 	<property property="widgetPopupDelay.6" label="4 ">$NUMBER[4]</property>
 	<property property="widgetPopupDelay.6" label="5 ">$NUMBER[5]</property>
 	<property property="widgetPopupDelay.6" label="6 ">$NUMBER[6]</property>
-	<propertySettings property="widgetPopupDelay.6" buttonID="8012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
+	<propertySettings property="widgetPopupDelay.6" buttonID="8012" title="$LOCALIZE[31652]" templateonly="true" showNone="false" />
 
-
-    <!-- Menu fallbacks if empty -->
-    <!-- Horizontal Shelves Position is Standard by default -->
+	<!-- Menu fallbacks if empty -->
+	<!-- Horizontal Shelves Position is Standard by default -->
 	<propertyfallback property="horizontalWidgetPos">Standard</propertyfallback>
-    <!-- Use EH for Playlist Backgrounds is false by default -->
+	<!-- Use EH for Playlist Backgrounds is false by default -->
 	<propertyfallback property="EHPlaylistFanart">false</propertyfallback>
 	<!-- Use Bottom Shortcuts is false by default -->
 	<propertyfallback property="UseBottomShortcuts">false</propertyfallback>
@@ -717,7 +714,7 @@
 	<propertyfallback property="showShelvesInfo">false</propertyfallback>
 
 	<!-- Widget fallbacks if empty -->
-    <!-- Show Two Shelves together is false by default -->
+	<!-- Show Two Shelves together is false by default -->
 	<propertyfallback property="widgetTwoShelves">false</propertyfallback>
 	<!-- Show Three Shelves together is false by default -->
 	<propertyfallback property="widgetThreeShelves">false</propertyfallback>
@@ -772,7 +769,7 @@
 	<propertyfallback property="widgetTriple.4">false</propertyfallback>
 	<propertyfallback property="widgetTriple.5">false</propertyfallback>
 	<propertyfallback property="widgetTriple.6">false</propertyfallback>
-    <!-- Widget type is set to none by default -->
+	<!-- Widget type is set to none by default -->
 	<propertyfallback property="widgetType">none</propertyfallback>
 	<propertyfallback property="widgetType.2">none</propertyfallback>
 	<propertyfallback property="widgetType.3">none</propertyfallback>
@@ -782,16 +779,16 @@
 	<!-- Set widgetContent to static for non-dynamic widgets -->
 	<propertyfallback property="widgetContent" attribute="widget" value="static">static</propertyfallback>
 	<propertyfallback property="widgetContent">default</propertyfallback>
-    <propertyfallback property="widgetContent.2" attribute="widget.2" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.2" attribute="widget.2" value="static">static</propertyfallback>
 	<propertyfallback property="widgetContent.2">default</propertyfallback>
-    <propertyfallback property="widgetContent.3" attribute="widget.3" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.3" attribute="widget.3" value="static">static</propertyfallback>
 	<propertyfallback property="widgetContent.3">default</propertyfallback>
-    <propertyfallback property="widgetContent.4" attribute="widget.4" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.4" attribute="widget.4" value="static">static</propertyfallback>
 	<propertyfallback property="widgetContent.4">default</propertyfallback>
-    <propertyfallback property="widgetContent.5" attribute="widget.5" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.5" attribute="widget.5" value="static">static</propertyfallback>
 	<propertyfallback property="widgetContent.5">default</propertyfallback>
-    <propertyfallback property="widgetContent.6" attribute="widget.6" value="static">static</propertyfallback>
-    <propertyfallback property="widgetContent.6">default</propertyfallback>
+	<propertyfallback property="widgetContent.6" attribute="widget.6" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.6">default</propertyfallback>
 	<!-- Show Info Popup is false by default -->
 	<propertyfallback property="doInfoPopup">false</propertyfallback>
 	<propertyfallback property="doInfoPopup.2">false</propertyfallback>
@@ -807,12 +804,12 @@
 	<propertyfallback property="widgetPopupDelay.5">$NUMBER[3]</propertyfallback>
 	<propertyfallback property="widgetPopupDelay.6">$NUMBER[3]</propertyfallback>
 
-    <!-- GROUPINGS -->
-    <!-- Main Grouping -->
-    <groupings>
-	    <!-- Common -->
-        <node label="32029">
-            <shortcut label="3" type="3" icon="DefaultVideo.png">ActivateWindow(Videos,library://video/,return)</shortcut>
+	<!-- GROUPINGS -->
+	<!-- Main Grouping -->
+	<groupings>
+		<!-- Common -->
+		<node label="32029">
+			<shortcut label="3" type="3" icon="DefaultVideo.png">ActivateWindow(Videos,library://video/,return)</shortcut>
 			<shortcut label="342" type="20342" icon="DefaultMovies.png">ActivateWindow(Videos,videodb://movies/titles/,return)</shortcut>
 			<shortcut label="20343" type="20343" icon="DefaultTVShows.png">ActivateWindow(Videos,videodb://tvshows/titles/,return)</shortcut>
 			<shortcut label="2" type="2" icon="DefaultAddonMusic.png">ActivateWindow(Music,musicdb://,return)</shortcut>
@@ -837,103 +834,103 @@
 			<shortcut label="12600" type="12600" icon="DefaultAddonWeather.png">ActivateWindow(Weather)</shortcut>
 			<shortcut label="341" type="341" icon="DefaultVCD.png">PlayDisc</shortcut>
 			<shortcut label="13391" type="31587" icon="DefaultVCD.png">EjectTray()</shortcut>
-            <shortcut label="$LOCALIZE[137]" type="$LOCALIZE[31587]" icon="DefaultMusicSearch.png">start_search</shortcut>
-        </node>
+			<shortcut label="$LOCALIZE[137]" type="$LOCALIZE[31587]" icon="DefaultMusicSearch.png">start_search</shortcut>
+		</node>
 		<!-- Video Library -->
-        <node label="32030">
-            <content>video</content>
-            <node label="32040">
-                <content>playlist-video</content>
-            </node>
-            <node label="32010">
-                <shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
-                <content>addon-video</content>
-            </node>
-            <node label="32075">
-                <content>videosources</content>
-                <content>upnp-video</content>
-            </node>
-        </node>
+		<node label="32030">
+			<content>video</content>
+			<node label="32040">
+				<content>playlist-video</content>
+			</node>
+			<node label="32010">
+				<shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+				<content>addon-video</content>
+			</node>
+			<node label="32075">
+				<content>videosources</content>
+				<content>upnp-video</content>
+			</node>
+		</node>
 		<!-- Surprise Me -->
-        <node label="31641">
-            <shortcut label="31642" type="20342" icon="DefaultMovies.png">PlayMedia(special://skin/extras/playlists/movies_surpriseme.xsp)</shortcut>
+		<node label="31641">
+			<shortcut label="31642" type="20342" icon="DefaultMovies.png">PlayMedia(special://skin/extras/playlists/movies_surpriseme.xsp)</shortcut>
 			<shortcut label="31643" type="20343" icon="DefaultTVShows.png">PlayMedia(special://skin/extras/playlists/episodes_surpriseme.xsp)</shortcut>
 			<shortcut label="31644" type="20389" icon="DefaultMusicVideos.png">PlayMedia(special://skin/extras/playlists/musicvideos_surpriseme.xsp)</shortcut>
-        </node>
+		</node>
 
 		<!-- Music Library -->
-        <node label="32031">
-            <content>music</content>
-            <node label="32040">
-                <content>playlist-audio</content>
-            </node>
-            <node label="32011">
-                <shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
-                <content>addon-audio</content>
-            </node>
-            <node label="32075">
-                <content>musicsources</content>
-                <content>upnp-music</content>
-            </node>
-        </node>
+		<node label="32031">
+			<content>music</content>
+			<node label="32040">
+				<content>playlist-audio</content>
+			</node>
+			<node label="32011">
+				<shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
+				<content>addon-audio</content>
+			</node>
+			<node label="32075">
+				<content>musicsources</content>
+				<content>upnp-music</content>
+			</node>
+		</node>
 		<!-- PVR -->
-        <node label="32017" condition="PVR.HasTVChannels">
-            <content>pvr</content>
-            <node label="19023">
-                <content>pvr-tv</content>
-            </node>
-        </node>
-        <node label="32087" condition="PVR.HasRadioChannels">
-            <content>radio</content>
-            <node label="19024">
-                <content>pvr-radio</content>
-            </node>
-        </node>
+		<node label="32017" condition="PVR.HasTVChannels">
+			<content>pvr</content>
+			<node label="19023">
+				<content>pvr-tv</content>
+			</node>
+		</node>
+		<node label="32087" condition="PVR.HasRadioChannels">
+			<content>radio</content>
+			<node label="19024">
+				<content>pvr-radio</content>
+			</node>
+		</node>
 		<!-- Pictures -->
-        <node label="32020">
-		    <shortcut label="1" type="1" icon="DefaultPicture.png">ActivateWindow(Pictures)</shortcut>
+		<node label="32020">
+			<shortcut label="1" type="1" icon="DefaultPicture.png">ActivateWindow(Pictures)</shortcut>
 			<shortcut label="1039" type="1" icon="DefaultAddonPicture.png">ActivateWindow(Pictures,Addons,return)</shortcut>
-            <content>picturesources</content>
-        </node>
+			<content>picturesources</content>
+		</node>
 		<!-- Games -->
 		<node label="10821">
 			<shortcut label="10821" type="32021" icon="DefaultAddonGame.png">ActivateWindow(Games)</shortcut>
 		</node>
-        <node label="32007">
-            <node label="32009">
-                <shortcut label="20244" type="10001" icon="DefaultAddonProgram.png" condition="System.Platform.Android">ActivateWindow(Programs,androidapp://sources/apps,return)</shortcut>
+		<node label="32007">
+			<node label="32009">
+				<shortcut label="20244" type="10001" icon="DefaultAddonProgram.png" condition="System.Platform.Android">ActivateWindow(Programs,androidapp://sources/apps,return)</shortcut>
 				<shortcut label="10001" type="32021" icon="DefaultAddonProgram.png">ActivateWindow(Programs,Addons,return)</shortcut>
-                <content>addon-program</content>
-            </node>
-            <node label="32010">
-                <shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
-                <content>addon-video</content>
-            </node>
-            <node label="32011">
-                <shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
-                <content>addon-audio</content>
-            </node>
-            <node label="32012">
-                <shortcut label="1039" type="32020" icon="DefaultAddonPicture.png">ActivateWindow(Pictures,Addons,return)</shortcut>
-                <content>addon-image</content>
-            </node>
-        </node>
+				<content>addon-program</content>
+			</node>
+			<node label="32010">
+				<shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+				<content>addon-video</content>
+			</node>
+			<node label="32011">
+				<shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
+				<content>addon-audio</content>
+			</node>
+			<node label="32012">
+				<shortcut label="1039" type="32020" icon="DefaultAddonPicture.png">ActivateWindow(Pictures,Addons,return)</shortcut>
+				<content>addon-image</content>
+			</node>
+		</node>
 		<!-- Favourites -->
-        <node label="32006">
-            <shortcut label="1036" type="1036" icon="DefaultAddonsInstalled.png">ActivateWindow(favouritesbrowser)</shortcut>
+		<node label="32006">
+			<shortcut label="1036" type="1036" icon="DefaultAddonsInstalled.png">ActivateWindow(favouritesbrowser)</shortcut>
 			<content>favourite</content>
-        </node>
+		</node>
 		<!-- Settings -->
-        <node label="10004">
-            <shortcut label="LibreELEC" type="10001" icon="DefaultLibreELEC.png" condition="System.HasAddon(service.libreelec.settings)">RunAddon(service.libreelec.settings)</shortcut>
+		<node label="10004">
+			<shortcut label="LibreELEC" type="10001" icon="DefaultLibreELEC.png" condition="System.HasAddon(service.libreelec.settings)">RunAddon(service.libreelec.settings)</shortcut>
 			<shortcut label="CoreELEC" type="10001" icon="DefaultCoreELEC.png" condition="System.HasAddon(service.coreelec.settings)">RunAddon(service.coreelec.settings)</shortcut>
 			<content>settings</content>
-        </node>
+		</node>
 		<!-- Kodi Command -->
-        <node label="32054">
-            <content>commands</content>
-        </node>
-    </groupings>
+		<node label="32054">
+			<content>commands</content>
+		</node>
+	</groupings>
 
 	<!-- Widget Grouping -->
 	<widget-groupings>
@@ -961,7 +958,7 @@
 				<shortcut widget="InProgressTVShows" label="$LOCALIZE[31436]" icon="DefaultInProgressEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">videodb://inprogresstvshows</shortcut>
 				<shortcut widget="TopRatedTvShows" label="$LOCALIZE[31438]" icon="DefaultTopRatedEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">special://skin/extras/playlists/tvshows_toprated.xsp</shortcut>
 				<shortcut widget="UnwatchedTVShows" label="$LOCALIZE[31493]" icon="DefaultUnwatchedEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">special://skin/extras/playlists/tvshows_unwatched.xsp</shortcut>
-                <shortcut widget="TvShowNodes" label="$LOCALIZE[31440]" icon="DefaultTVShows.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">library://video/tvshows/</shortcut>
+				<shortcut widget="TvShowNodes" label="$LOCALIZE[31440]" icon="DefaultTVShows.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">library://video/tvshows/</shortcut>
 				<shortcut widget="TvShowGenres" label="$LOCALIZE[31439]" icon="DefaultGenre.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">library://video/tvshows/genres.xml</shortcut>
 			</node>
 			<!-- Episodes -->
@@ -973,7 +970,7 @@
 				<shortcut widget="TopRatedEpisodes" label="$LOCALIZE[31446]" icon="DefaultTopRatedEpisodes.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows)">special://skin/extras/playlists/episodes_toprated.xsp</shortcut>
 				<shortcut widget="UnwatchedEpisodes" label="$LOCALIZE[31445]" icon="DefaultUnwatchedEpisodes.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows)">special://skin/extras/playlists/episodes_unwatched.xsp</shortcut>
 				<shortcut widget="static" label="$LOCALIZE[31488]" icon="DefaultTVShows.png" widgetType="nextaired" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(script.tv.show.next.aired)">$INCLUDE[skinshortcuts-template-NextAiredContent]</shortcut>
-                <shortcut widget="static" label="$LOCALIZE[31492]" icon="DefaultTVShows.png" widgetType="swrecommendedeps" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(service.skin.widgets)">$INCLUDE[skinshortcuts-template-RecommendedEpisodesContent]</shortcut>
+				<shortcut widget="static" label="$LOCALIZE[31492]" icon="DefaultTVShows.png" widgetType="swrecommendedeps" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(service.skin.widgets)">$INCLUDE[skinshortcuts-template-RecommendedEpisodesContent]</shortcut>
 			</node>
 			<!-- Artists -->
 			<node label="$LOCALIZE[133]" icon="DefaultMusicArtists.png">
@@ -986,7 +983,7 @@
 				<shortcut widget="NewAlbums" label="$LOCALIZE[31447]" icon="DefaultMusicRecentlyAdded.png" widgetType="albums" widgetTarget="music" condition="Library.HasContent(music)">musicdb://recentlyaddedalbums/</shortcut>
 				<shortcut widget="RecentAlbums" label="$LOCALIZE[31448]" icon="DefaultMusicRecentlyPlayed.png" widgetType="albums" widgetTarget="music" condition="Library.HasContent(music)">musicdb://recentlyplayedalbums/</shortcut>
 				<shortcut widget="RecentlyReleasedAlbums" label="$LOCALIZE[31494]" icon="DefaultMusicAlbums.png" widgetType="albums" widgetTarget="music" condition="Library.HasContent(music)">special://skin/extras/playlists/albums_recentlyreleased.xsp</shortcut>
-                <shortcut widget="TopAlbums" label="$LOCALIZE[31450]" icon="DefaultMusicTop100Albums.png" widgetType="albums" widgetTarget="music" condition="Library.HasContent(music)">musicdb://top100/albums/</shortcut>
+				<shortcut widget="TopAlbums" label="$LOCALIZE[31450]" icon="DefaultMusicTop100Albums.png" widgetType="albums" widgetTarget="music" condition="Library.HasContent(music)">musicdb://top100/albums/</shortcut>
 				<shortcut widget="RandomAlbums" label="$LOCALIZE[31449]" icon="DefaultMusicAlbums.png" widgetType="albums" widgetTarget="music" condition="Library.HasContent(music)">special://skin/extras/playlists/albums_random.xsp</shortcut>
 				<shortcut widget="MostPlayedAlbums" label="$LOCALIZE[31465]" icon="DefaultMusicRecentlyPlayed.png" widgetType="albums" widgetTarget="music" condition="Library.HasContent(music)">special://skin/extras/playlists/albums_mostplayed.xsp</shortcut>
 			</node>
@@ -1008,7 +1005,7 @@
 			<node label="$LOCALIZE[31453]" icon="DefaultAddonPVRClient.png">
 				<shortcut widget="LastPlayedChannels" label="$LOCALIZE[31454]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://channels/tv/*?view=lastplayed</shortcut>
 				<shortcut widget="AllChannels" label="$LOCALIZE[19217]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://channels/tv/*</shortcut>
-                <shortcut widget="TVChannelGroups" label="$LOCALIZE[19173]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="tvguide" condition="Pvr.HasTVChannels">pvr://channels/tv/</shortcut>
+				<shortcut widget="TVChannelGroups" label="$LOCALIZE[19173]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="tvguide" condition="Pvr.HasTVChannels">pvr://channels/tv/</shortcut>
 				<shortcut widget="ActiveRecordings" label="$LOCALIZE[31455]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://recordings/tv/active?view=flat</shortcut>
 				<shortcut widget="GroupedActiveRecordings" label="$LOCALIZE[31456]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://recordings/tv/active?view=grouped</shortcut>
 				<shortcut widget="DeletedRecordings" label="$LOCALIZE[19184]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://recordings/tv/deleted?view=flat</shortcut>
@@ -1018,9 +1015,9 @@
 			<!-- PVR - Radio -->
 			<node label="$LOCALIZE[19021]" icon="DefaultAddonPVRClient.png">
 				<shortcut widget="LastPlayedRadioChannels" label="$LOCALIZE[31461]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="pvr" condition="Pvr.HasRadioChannels">pvr://channels/radio/*?view=lastplayed</shortcut>
-                <shortcut widget="AllRadioChannels" label="$LOCALIZE[19216]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="pvr" condition="Pvr.HasRadioChannels">pvr://channels/radio/*</shortcut>
+				<shortcut widget="AllRadioChannels" label="$LOCALIZE[19216]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="pvr" condition="Pvr.HasRadioChannels">pvr://channels/radio/*</shortcut>
 				<shortcut widget="RadioChannelGroups" label="$LOCALIZE[19174]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="radioguide" condition="Pvr.HasRadioChannels">pvr://channels/radio/</shortcut>
-                <shortcut widget="ActiveRadioRecordings" label="$LOCALIZE[31462]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="pvr" condition="Pvr.HasRadioChannels">pvr://recordings/radio/active?view=flat</shortcut>
+				<shortcut widget="ActiveRadioRecordings" label="$LOCALIZE[31462]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="pvr" condition="Pvr.HasRadioChannels">pvr://recordings/radio/active?view=flat</shortcut>
 				<shortcut widget="GroupedActiveRadioRecordings" label="$LOCALIZE[31463]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="pvr" condition="Pvr.HasRadioChannels">pvr://recordings/radio/active?view=grouped</shortcut>
 				<shortcut widget="DeletedRadioRecordings" label="$LOCALIZE[19184]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="pvr" condition="Pvr.HasRadioChannels">pvr://recordings/radio/deleted?view=flat</shortcut>
 				<shortcut widget="GroupedDeletedRadioRecordings" label="$LOCALIZE[31464]" icon="DefaultAddonPVRClient.png" widgetType="radio" widgetTarget="pvr" condition="Pvr.HasRadioChannels">pvr://recordings/radio/deleted?view=grouped</shortcut>
@@ -1042,17 +1039,17 @@
 			<!-- Submenu -->
 			<shortcut widget="mysubmenu" label="$LOCALIZE[1034]" icon="DefaultAddon.png" widgetType="addons" widgetTarget="programs">$INCLUDE[skinshortcuts-submenu]</shortcut>
 			<!-- Custom -->
-		    <shortcut label="$LOCALIZE[31605]" condition="String.IsEqual(Window(Home).Property(skinshortcuts-Widget),1)" widget="custom" widgetTarget="video" widgetType="custom">$INCLUDE[skinshortcuts-submenu-2]</shortcut>
-		    <shortcut label="$LOCALIZE[31605]" condition="String.IsEqual(Window(Home).Property(skinshortcuts-Widget),2)" widget="custom" widgetTarget="video" widgetType="custom">$INCLUDE[skinshortcuts-submenu-3]</shortcut>
+			<shortcut label="$LOCALIZE[31605]" condition="String.IsEqual(Window(Home).Property(skinshortcuts-Widget),1)" widget="custom" widgetTarget="video" widgetType="custom">$INCLUDE[skinshortcuts-submenu-2]</shortcut>
+			<shortcut label="$LOCALIZE[31605]" condition="String.IsEqual(Window(Home).Property(skinshortcuts-Widget),2)" widget="custom" widgetTarget="video" widgetType="custom">$INCLUDE[skinshortcuts-submenu-3]</shortcut>
 			<shortcut label="$LOCALIZE[31605]" condition="String.IsEqual(Window(Home).Property(skinshortcuts-Widget),3)" widget="custom" widgetTarget="video" widgetType="custom">$INCLUDE[skinshortcuts-submenu-4]</shortcut>
 			<shortcut label="$LOCALIZE[31605]" condition="String.IsEqual(Window(Home).Property(skinshortcuts-Widget),4)" widget="custom" widgetTarget="video" widgetType="custom">$INCLUDE[skinshortcuts-submenu-5]</shortcut>
 		</node>
-        <!-- Embuary Helper Widgets -->
+		<!-- Embuary Helper Widgets -->
 		<node label="$LOCALIZE[31495]" icon="DefaultFolder.png">
 			<shortcut widget="embuaryhelpermovies" label="$LOCALIZE[31497]" icon="shelves/embuary.helper.png" widgetType="movies" widgetTarget="video" condition="Library.HasContent(movies) + System.HasAddon(script.embuary.helper)">plugin://script.embuary.helper/?info=getbygenre&amp;unwatched=True&amp;type=movie&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</shortcut>
 			<shortcut widget="embuaryhelpertvshows" label="$LOCALIZE[31517]" icon="shelves/embuary.helper.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(script.embuary.helper)">plugin://script.embuary.helper/?info=getbygenre&amp;unwatched=True&amp;type=tvshow&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</shortcut>
-            <shortcut widget="embuaryhelpernextepisodes" label="$LOCALIZE[31526]" icon="shelves/embuary.helper.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(script.embuary.helper)">plugin://script.embuary.helper/?info=getnextup&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</shortcut>
-        </node>
+			<shortcut widget="embuaryhelpernextepisodes" label="$LOCALIZE[31526]" icon="shelves/embuary.helper.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(script.embuary.helper)">plugin://script.embuary.helper/?info=getnextup&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</shortcut>
+		</node>
 		<!-- Embuary Info Widgets -->
 		<node label="$LOCALIZE[31553]" icon="DefaultFolder.png">
 			<!-- Movies -->
@@ -1073,11 +1070,11 @@
 			</node>
 			<!-- Episodes -->
 			<node label="$LOCALIZE[20360]" icon="DefaultTVShows.png">
-			    <shortcut widget="embuaryinfoepisodes" label="$LOCALIZE[31567]" icon="shelves/embuary.info.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(script.embuary.info)">plugin://script.embuary.info/nextaired/week</shortcut>
+				<shortcut widget="embuaryinfoepisodes" label="$LOCALIZE[31567]" icon="shelves/embuary.info.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(script.embuary.info)">plugin://script.embuary.info/nextaired/week</shortcut>
 				<shortcut widget="embuaryinfoepisodes" label="$LOCALIZE[31568]" icon="shelves/embuary.info.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(script.embuary.info)">plugin://script.embuary.info/nextaired/today</shortcut>
 			</node>
-        </node>
-        <!-- Themoviedb Helper Widgets -->
+		</node>
+		<!-- Themoviedb Helper Widgets -->
 		<node label="$LOCALIZE[31498]" icon="DefaultFolder.png">
 			<!-- Movies -->
 			<node label="$LOCALIZE[342]" icon="DefaultMovies.png">
@@ -1121,7 +1118,7 @@
 			</node>
 			<!-- Episodes -->
 			<node label="$LOCALIZE[20360]" icon="DefaultTVShows.png">
-			    <shortcut widget="tmdbhelperepisodes" label="$LOCALIZE[31564]" icon="shelves/themoviedb.helper.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;days=365&amp;startdate=0&amp;type=episode&amp;widget=true&amp;localdb=true</shortcut>
+				<shortcut widget="tmdbhelperepisodes" label="$LOCALIZE[31564]" icon="shelves/themoviedb.helper.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;days=365&amp;startdate=0&amp;type=episode&amp;widget=true&amp;localdb=true</shortcut>
 				<shortcut widget="tmdbhelperepisodes" label="$LOCALIZE[31565]" icon="shelves/themoviedb.helper.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;days=7&amp;startdate=0&amp;type=episode&amp;widget=true&amp;localdb=true</shortcut>
 				<shortcut widget="tmdbhelperepisodes" label="$LOCALIZE[31566]" icon="shelves/themoviedb.helper.png" widgetType="episodes" widgetTarget="video" condition="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;days=1&amp;startdate=0&amp;type=episode&amp;widget=true&amp;localdb=true</shortcut>
 			</node>
@@ -1138,7 +1135,7 @@
 				<shortcut widget="tmdbhelpertrakt" label="$LOCALIZE[31551]" icon="shelves/themoviedb.helper.png" widgetType="movies" widgetTarget="video" condition="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">plugin://plugin.video.themoviedb.helper?info=trakt_likedlists&amp;type=both&amp;widget=True</shortcut>
 				<shortcut widget="tmdbhelpertrakt" label="$LOCALIZE[31552]" icon="shelves/themoviedb.helper.png" widgetType="movies" widgetTarget="video" condition="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">plugin://plugin.video.themoviedb.helper?info=trakt_mylists&amp;type=both&amp;widget=True</shortcut>
 			</node>
-        </node>
+		</node>
 		<!-- Picture sources -->
 		<node label="32020">
 			<content>picturesources</content>
@@ -1193,201 +1190,200 @@
 
 	<!-- Default Widgets -->
 	<!-- Movies  -->
-    <propertydefault labelID="movies" property="widget">NewMovies</propertydefault>
-    <propertydefault labelID="movies" property="widgetName">$LOCALIZE[31422]</propertydefault>
+	<propertydefault labelID="movies" property="widget">NewMovies</propertydefault>
+	<propertydefault labelID="movies" property="widgetName">$LOCALIZE[31422]</propertydefault>
 	<propertydefault labelID="movies" property="widgetType">movies</propertydefault>
 	<propertydefault labelID="movies" property="widgetTarget">video</propertydefault>
-    <propertydefault labelID="movies" property="widgetPath">$VAR[RecentlyAddedMoviesVar]</propertydefault>
-    <propertydefault labelID="movies" property="widgetArtwork">Poster</propertydefault>
+	<propertydefault labelID="movies" property="widgetPath">$VAR[RecentlyAddedMoviesVar]</propertydefault>
+	<propertydefault labelID="movies" property="widgetArtwork">Poster</propertydefault>
 	<propertydefault labelID="movies" property="widgetLimit">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="movies" property="widget.2">InProgressMovies</propertydefault>
-    <propertydefault labelID="movies" property="widgetName.2">$LOCALIZE[31425]</propertydefault>
+	<propertydefault labelID="movies" property="widgetName.2">$LOCALIZE[31425]</propertydefault>
 	<propertydefault labelID="movies" property="widgetType.2">movies</propertydefault>
 	<propertydefault labelID="movies" property="widgetTarget.2">video</propertydefault>
-    <propertydefault labelID="movies" property="widgetPath.2">special://skin/extras/playlists/movies_inprogress.xsp</propertydefault>
-    <propertydefault labelID="movies" property="widgetArtwork.2">Poster</propertydefault>
+	<propertydefault labelID="movies" property="widgetPath.2">special://skin/extras/playlists/movies_inprogress.xsp</propertydefault>
+	<propertydefault labelID="movies" property="widgetArtwork.2">Poster</propertydefault>
 	<propertydefault labelID="movies" property="widgetLimit.2">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="movies" property="widget.3">RandomMovies</propertydefault>
-    <propertydefault labelID="movies" property="widgetName.3">$LOCALIZE[31424]</propertydefault>
+	<propertydefault labelID="movies" property="widgetName.3">$LOCALIZE[31424]</propertydefault>
 	<propertydefault labelID="movies" property="widgetType.3">movies</propertydefault>
 	<propertydefault labelID="movies" property="widgetTarget.3">video</propertydefault>
-    <propertydefault labelID="movies" property="widgetPath.3">special://skin/extras/playlists/movies_random.xsp</propertydefault>
-    <propertydefault labelID="movies" property="widgetArtwork.3">Poster</propertydefault>
+	<propertydefault labelID="movies" property="widgetPath.3">special://skin/extras/playlists/movies_random.xsp</propertydefault>
+	<propertydefault labelID="movies" property="widgetArtwork.3">Poster</propertydefault>
 	<propertydefault labelID="movies" property="widgetLimit.3">$NUMBER[25]</propertydefault>
 
 	<!-- TV Shows  -->
-    <propertydefault labelID="tvshows" property="widget">NewEpisodes</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetName">$LOCALIZE[31441]</propertydefault>
+	<propertydefault labelID="tvshows" property="widget">NewEpisodes</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetName">$LOCALIZE[31441]</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetType">episodes</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetTarget">video</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetPath">$VAR[RecentlyAddedEpisodesVar]</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetArtwork">Thumb</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetPath">$VAR[RecentlyAddedEpisodesVar]</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetArtwork">Thumb</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetLimit">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="tvshows" property="widget.2">InProgressEpisodes</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetName.2">$LOCALIZE[31444]</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetName.2">$LOCALIZE[31444]</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetType.2">episodes</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetTarget.2">video</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetPath.2">special://skin/extras/playlists/episodes_inprogress.xsp</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetArtwork.2">Thumb</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetPath.2">special://skin/extras/playlists/episodes_inprogress.xsp</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetArtwork.2">Thumb</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetLimit.2">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="tvshows" property="widget.3">RecentTvShows</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetName.3">$LOCALIZE[31434]</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetName.3">$LOCALIZE[31434]</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetType.3">tvshows</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetTarget.3">video</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetPath.3">$VAR[RecentlyPlayedTVShowsVar]</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetArtwork.3">Poster</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetPath.3">$VAR[RecentlyPlayedTVShowsVar]</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetArtwork.3">Poster</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetLimit.3">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="tvshows" property="widget.4">RandomTvShows</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetName.4">$LOCALIZE[31435]</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetName.4">$LOCALIZE[31435]</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetType.4">tvshows</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetTarget.4">video</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetPath.4">special://skin/extras/playlists/tvshows_random.xsp</propertydefault>
-    <propertydefault labelID="tvshows" property="widgetArtwork.4">Poster</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetPath.4">special://skin/extras/playlists/tvshows_random.xsp</propertydefault>
+	<propertydefault labelID="tvshows" property="widgetArtwork.4">Poster</propertydefault>
 	<propertydefault labelID="tvshows" property="widgetLimit.4">$NUMBER[25]</propertydefault>
 
 	<!-- Music  -->
-    <propertydefault labelID="music" property="widget">NewAlbums</propertydefault>
-    <propertydefault labelID="music" property="widgetName">$LOCALIZE[31447]</propertydefault>
+	<propertydefault labelID="music" property="widget">NewAlbums</propertydefault>
+	<propertydefault labelID="music" property="widgetName">$LOCALIZE[31447]</propertydefault>
 	<propertydefault labelID="music" property="widgetType">albums</propertydefault>
 	<propertydefault labelID="music" property="widgetTarget">music</propertydefault>
-    <propertydefault labelID="music" property="widgetPath">musicdb://recentlyaddedalbums/</propertydefault>
-    <propertydefault labelID="music" property="widgetArtwork">Square</propertydefault>
+	<propertydefault labelID="music" property="widgetPath">musicdb://recentlyaddedalbums/</propertydefault>
+	<propertydefault labelID="music" property="widgetArtwork">Square</propertydefault>
 	<propertydefault labelID="music" property="widgetLimit">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="music" property="widget.2">RandomArtists</propertydefault>
-    <propertydefault labelID="music" property="widgetName.2">$LOCALIZE[31451]</propertydefault>
+	<propertydefault labelID="music" property="widgetName.2">$LOCALIZE[31451]</propertydefault>
 	<propertydefault labelID="music" property="widgetType.2">artists</propertydefault>
 	<propertydefault labelID="music" property="widgetTarget.2">music</propertydefault>
-    <propertydefault labelID="music" property="widgetPath.2">special://skin/extras/playlists/artists_random.xsp</propertydefault>
-    <propertydefault labelID="music" property="widgetArtwork.2">Square</propertydefault>
+	<propertydefault labelID="music" property="widgetPath.2">special://skin/extras/playlists/artists_random.xsp</propertydefault>
+	<propertydefault labelID="music" property="widgetArtwork.2">Square</propertydefault>
 	<propertydefault labelID="music" property="widgetLimit.2">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="music" property="widget.3">MostPlayedAlbums</propertydefault>
-    <propertydefault labelID="music" property="widgetName.3">$LOCALIZE[31465]</propertydefault>
+	<propertydefault labelID="music" property="widgetName.3">$LOCALIZE[31465]</propertydefault>
 	<propertydefault labelID="music" property="widgetType.3">albums</propertydefault>
 	<propertydefault labelID="music" property="widgetTarget.3">music</propertydefault>
-    <propertydefault labelID="music" property="widgetPath.3">special://skin/extras/playlists/albums_mostplayed.xsp</propertydefault>
-    <propertydefault labelID="music" property="widgetArtwork.3">Square</propertydefault>
+	<propertydefault labelID="music" property="widgetPath.3">special://skin/extras/playlists/albums_mostplayed.xsp</propertydefault>
+	<propertydefault labelID="music" property="widgetArtwork.3">Square</propertydefault>
 	<propertydefault labelID="music" property="widgetLimit.3">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="music" property="widget.4">MostPlayedSongs</propertydefault>
-    <propertydefault labelID="music" property="widgetName.4">$LOCALIZE[31469]</propertydefault>
+	<propertydefault labelID="music" property="widgetName.4">$LOCALIZE[31469]</propertydefault>
 	<propertydefault labelID="music" property="widgetType.4">songs</propertydefault>
 	<propertydefault labelID="music" property="widgetTarget.4">music</propertydefault>
-    <propertydefault labelID="music" property="widgetPath.4">special://skin/extras/playlists/songs_mostplayed.xsp</propertydefault>
-    <propertydefault labelID="music" property="widgetArtwork.4">Square</propertydefault>
+	<propertydefault labelID="music" property="widgetPath.4">special://skin/extras/playlists/songs_mostplayed.xsp</propertydefault>
+	<propertydefault labelID="music" property="widgetArtwork.4">Square</propertydefault>
 	<propertydefault labelID="music" property="widgetLimit.4">$NUMBER[25]</propertydefault>
 
-    <!-- Music videos  -->
-    <propertydefault labelID="musicvideos" property="widget">NewMusicVideos</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetName">$LOCALIZE[31471]</propertydefault>
+	<!-- Music videos  -->
+	<propertydefault labelID="musicvideos" property="widget">NewMusicVideos</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetName">$LOCALIZE[31471]</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetType">musicvideos</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetTarget">video</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetPath">$VAR[RecentlyAddedMusicVideosVar]</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetArtwork">Square</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetPath">$VAR[RecentlyAddedMusicVideosVar]</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetArtwork">Square</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetLimit">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="musicvideos" property="widget.2">InProgressMusicVideos</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetName.2">$LOCALIZE[31472]</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetName.2">$LOCALIZE[31472]</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetType.2">musicvideos</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetTarget.2">video</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetPath.2">special://skin/extras/playlists/musicvideos_inprogress.xsp</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetArtwork.2">Square</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetPath.2">special://skin/extras/playlists/musicvideos_inprogress.xsp</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetArtwork.2">Square</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetLimit.2">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="musicvideos" property="widget.3">RandomMusicVideos</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetName.3">$LOCALIZE[31473]</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetName.3">$LOCALIZE[31473]</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetType.3">musicvideos</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetTarget.3">video</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetPath.3">special://skin/extras/playlists/musicvideos_random.xsp</propertydefault>
-    <propertydefault labelID="musicvideos" property="widgetArtwork.3">Square</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetPath.3">special://skin/extras/playlists/musicvideos_random.xsp</propertydefault>
+	<propertydefault labelID="musicvideos" property="widgetArtwork.3">Square</propertydefault>
 	<propertydefault labelID="musicvideos" property="widgetLimit.3">$NUMBER[25]</propertydefault>
 
 	<!-- PVR: TV  -->
-    <propertydefault labelID="tv" property="widget">TVChannelGroups</propertydefault>
-    <propertydefault labelID="tv" property="widgetName">$LOCALIZE[19173]</propertydefault>
+	<propertydefault labelID="tv" property="widget">TVChannelGroups</propertydefault>
+	<propertydefault labelID="tv" property="widgetName">$LOCALIZE[19173]</propertydefault>
 	<propertydefault labelID="tv" property="widgetType">tv</propertydefault>
 	<propertydefault labelID="tv" property="widgetTarget">tvguide</propertydefault>
-    <propertydefault labelID="tv" property="widgetPath">pvr://channels/tv/</propertydefault>
-    <propertydefault labelID="tv" property="widgetArtwork">Square</propertydefault>
+	<propertydefault labelID="tv" property="widgetPath">pvr://channels/tv/</propertydefault>
+	<propertydefault labelID="tv" property="widgetArtwork">Square</propertydefault>
 
 	<propertydefault labelID="tv" property="widget.2">LastPlayedChannels</propertydefault>
-    <propertydefault labelID="tv" property="widgetName.2">$LOCALIZE[31454]</propertydefault>
+	<propertydefault labelID="tv" property="widgetName.2">$LOCALIZE[31454]</propertydefault>
 	<propertydefault labelID="tv" property="widgetType.2">tv</propertydefault>
 	<propertydefault labelID="tv" property="widgetTarget.2">pvr</propertydefault>
-    <propertydefault labelID="tv" property="widgetPath.2">pvr://channels/tv/*?view=lastplayed</propertydefault>
-    <propertydefault labelID="tv" property="widgetArtwork.2">Square</propertydefault>
+	<propertydefault labelID="tv" property="widgetPath.2">pvr://channels/tv/*?view=lastplayed</propertydefault>
+	<propertydefault labelID="tv" property="widgetArtwork.2">Square</propertydefault>
 	<propertydefault labelID="tv" property="widgetLimit.2">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="tv" property="widget.3">ActiveRecordings</propertydefault>
-    <propertydefault labelID="tv" property="widgetName.3">$LOCALIZE[31455]</propertydefault>
+	<propertydefault labelID="tv" property="widgetName.3">$LOCALIZE[31455]</propertydefault>
 	<propertydefault labelID="tv" property="widgetType.3">tv</propertydefault>
 	<propertydefault labelID="tv" property="widgetTarget.3">pvr</propertydefault>
-    <propertydefault labelID="tv" property="widgetPath.3">pvr://recordings/tv/active?view=flat</propertydefault>
-    <propertydefault labelID="tv" property="widgetArtwork.3">Square</propertydefault>
+	<propertydefault labelID="tv" property="widgetPath.3">pvr://recordings/tv/active?view=flat</propertydefault>
+	<propertydefault labelID="tv" property="widgetArtwork.3">Square</propertydefault>
 	<propertydefault labelID="tv" property="widgetLimit.3">$NUMBER[25]</propertydefault>
 
 	<!-- PVR: Radio  -->
-    <propertydefault labelID="radio" property="widget">RadioChannelGroups</propertydefault>
-    <propertydefault labelID="radio" property="widgetName">$LOCALIZE[19174]</propertydefault>
+	<propertydefault labelID="radio" property="widget">RadioChannelGroups</propertydefault>
+	<propertydefault labelID="radio" property="widgetName">$LOCALIZE[19174]</propertydefault>
 	<propertydefault labelID="radio" property="widgetType">radio</propertydefault>
 	<propertydefault labelID="radio" property="widgetTarget">radioguide</propertydefault>
-    <propertydefault labelID="radio" property="widgetPath">pvr://channels/radio/</propertydefault>
-    <propertydefault labelID="radio" property="widgetArtwork">Square</propertydefault>
+	<propertydefault labelID="radio" property="widgetPath">pvr://channels/radio/</propertydefault>
+	<propertydefault labelID="radio" property="widgetArtwork">Square</propertydefault>
 
 	<propertydefault labelID="radio" property="widget.2">LastPlayedRadioChannels</propertydefault>
-    <propertydefault labelID="radio" property="widgetName.2">$LOCALIZE[31461]</propertydefault>
+	<propertydefault labelID="radio" property="widgetName.2">$LOCALIZE[31461]</propertydefault>
 	<propertydefault labelID="radio" property="widgetType.2">radio</propertydefault>
 	<propertydefault labelID="radio" property="widgetTarget.2">pvr</propertydefault>
-    <propertydefault labelID="radio" property="widgetPath.2">pvr://channels/radio/*?view=lastplayed</propertydefault>
-    <propertydefault labelID="radio" property="widgetArtwork.2">Square</propertydefault>
+	<propertydefault labelID="radio" property="widgetPath.2">pvr://channels/radio/*?view=lastplayed</propertydefault>
+	<propertydefault labelID="radio" property="widgetArtwork.2">Square</propertydefault>
 	<propertydefault labelID="radio" property="widgetLimit.2">$NUMBER[25]</propertydefault>
 
 	<propertydefault labelID="radio" property="widget.3">ActiveRadioRecordings</propertydefault>
-    <propertydefault labelID="radio" property="widgetName.3">$LOCALIZE[31462]</propertydefault>
+	<propertydefault labelID="radio" property="widgetName.3">$LOCALIZE[31462]</propertydefault>
 	<propertydefault labelID="radio" property="widgetType.3">radio</propertydefault>
 	<propertydefault labelID="radio" property="widgetTarget.3">pvr</propertydefault>
-    <propertydefault labelID="radio" property="widgetPath.3">pvr://recordings/radio/active?view=flat</propertydefault>
-    <propertydefault labelID="radio" property="widgetArtwork.3">Square</propertydefault>
+	<propertydefault labelID="radio" property="widgetPath.3">pvr://recordings/radio/active?view=flat</propertydefault>
+	<propertydefault labelID="radio" property="widgetArtwork.3">Square</propertydefault>
 	<propertydefault labelID="radio" property="widgetLimit.3">$NUMBER[25]</propertydefault>
 
-    <!-- Weather  -->
-    <propertydefault labelID="weather" property="widget">static</propertydefault>
-    <propertydefault labelID="weather" property="widgetName">$LOCALIZE[31475]</propertydefault>
+	<!-- Weather  -->
+	<propertydefault labelID="weather" property="widget">static</propertydefault>
+	<propertydefault labelID="weather" property="widgetName">$LOCALIZE[31475]</propertydefault>
 	<propertydefault labelID="weather" property="widgetType">weatherdaily</propertydefault>
 	<propertydefault labelID="weather" property="widgetPath">$INCLUDE[skinshortcuts-template-WeatherContentDaily]</propertydefault>
-    <propertydefault labelID="weather" property="widgetArtwork">Square</propertydefault>
+	<propertydefault labelID="weather" property="widgetArtwork">Square</propertydefault>
 	<propertydefault labelID="weather" property="widgetContent">static</propertydefault>
 
 	<propertydefault labelID="weather" property="widget.2">static</propertydefault>
-    <propertydefault labelID="weather" property="widgetName.2">$LOCALIZE[31476]</propertydefault>
+	<propertydefault labelID="weather" property="widgetName.2">$LOCALIZE[31476]</propertydefault>
 	<propertydefault labelID="weather" property="widgetType.2">weatherhourly</propertydefault>
-    <propertydefault labelID="weather" property="widgetPath.2">$INCLUDE[skinshortcuts-template-WeatherContentHourly]</propertydefault>
-    <propertydefault labelID="weather" property="widgetArtwork.2">Square</propertydefault>
+	<propertydefault labelID="weather" property="widgetPath.2">$INCLUDE[skinshortcuts-template-WeatherContentHourly]</propertydefault>
+	<propertydefault labelID="weather" property="widgetArtwork.2">Square</propertydefault>
 	<propertydefault labelID="weather" property="widgetContent.2">static</propertydefault>
 
-    <!-- Favourites  -->
-    <propertydefault labelID="favorites" property="widget">allfavorites</propertydefault>
-    <propertydefault labelID="favorites" property="widgetName">$LOCALIZE[1036]</propertydefault>
+	<!-- Favourites  -->
+	<propertydefault labelID="favorites" property="widget">allfavorites</propertydefault>
+	<propertydefault labelID="favorites" property="widgetName">$LOCALIZE[1036]</propertydefault>
 	<propertydefault labelID="favorites" property="widgetType">favourites</propertydefault>
 	<propertydefault labelID="favorites" property="widgetTarget">video</propertydefault>
-    <propertydefault labelID="favorites" property="widgetPath">favourites://</propertydefault>
+	<propertydefault labelID="favorites" property="widgetPath">favourites://</propertydefault>
 	<propertydefault labelID="favorites" property="widgetArtwork">Square</propertydefault>
 	<propertydefault labelID="favorites" property="widgetLimit">$NUMBER[25]</propertydefault>
 
 	<!-- System  -->
-    <propertydefault labelID="settings" property="widget">static</propertydefault>
-    <propertydefault labelID="settings" property="widgetName">$LOCALIZE[130]</propertydefault>
+	<propertydefault labelID="settings" property="widget">static</propertydefault>
+	<propertydefault labelID="settings" property="widgetName">$LOCALIZE[130]</propertydefault>
 	<propertydefault labelID="settings" property="widgetType">system</propertydefault>
-    <propertydefault labelID="settings" property="widgetPath">$INCLUDE[skinshortcuts-template-SystemContent]</propertydefault>
-    <propertydefault labelID="settings" property="widgetArtwork">Square</propertydefault>
+	<propertydefault labelID="settings" property="widgetPath">$INCLUDE[skinshortcuts-template-SystemContent]</propertydefault>
+	<propertydefault labelID="settings" property="widgetArtwork">Square</propertydefault>
 	<propertydefault labelID="settings" property="widgetContent">static</propertydefault>
-
 
 	<!-- On backs for management dialog -->
 	<onback to="800">312</onback>
@@ -1474,5 +1470,4 @@
 	<onback to="805">8010</onback>
 	<onback to="805">8011</onback>
 	<onback to="805">7012</onback>
-
 </overrides>

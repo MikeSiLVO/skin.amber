@@ -28,7 +28,7 @@
 			<control type="label" id="12">
 				<width>300</width>
 				<height>60</height>
-				<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[31984]:[/COLOR] $INFO[Player.SeekNumeric]</label>
+				<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31984]:[/COLOR] $INFO[Player.SeekNumeric]</label>
 				<font>Details</font>
 				<align>center</align>
 				<shadowcolor>black</shadowcolor>
@@ -77,177 +77,177 @@
 
 			<!-- Plot -->
 			<control type="group" id="20">
-			    <visible>!Skin.HasSetting(OSDInfo)</visible>
-			    <control type="group" id="20">
-			        <visible>![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))]</visible>
-			        <control type="image" id="23">
-				        <posx>30</posx>
-				        <posy>25</posy>
-				        <width>1305</width>
-				        <height>1</height>
-				        <texture>img/LineST.png</texture>
-			        </control>
-			        <control type="textbox" description="Plot" id="1">
-				        <posx>30</posx>
-				        <posy>-110</posy>
-				        <width>1294</width>
-				        <height>120</height>
-				        <align>justify</align>
-				        <font>InfoPlot</font>
-				        <label>$VAR[VideoFullScreenPlot]</label>
-				        <autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
-			        </control>
-			    </control>
-                <control type="group" id="20">
-			        <visible>[String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))]</visible>
-			        <control type="image" id="23">
-				        <posx>30</posx>
-				        <posy>25</posy>
-				        <width>1845</width>
-				        <height>1</height>
-				        <texture>img/LineST.png</texture>
-			        </control>
-			        <control type="textbox" description="Plot" id="1">
-				        <posx>30</posx>
-				        <posy>-110</posy>
-				        <width>1845</width>
-				        <height>120</height>
-				        <align>justify</align>
-				        <font>InfoPlot</font>
-				        <label>$VAR[VideoFullScreenPlot]</label>
-				        <autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
-			        </control>
-			    </control>
+				<visible>!Skin.HasSetting(OSDInfo)</visible>
+				<control type="group" id="20">
+					<visible>![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))]</visible>
+					<control type="image" id="23">
+						<posx>30</posx>
+						<posy>25</posy>
+						<width>1305</width>
+						<height>1</height>
+						<texture>img/LineST.png</texture>
+					</control>
+					<control type="textbox" description="Plot" id="1">
+						<posx>30</posx>
+						<posy>-110</posy>
+						<width>1294</width>
+						<height>120</height>
+						<align>justify</align>
+						<font>InfoPlot</font>
+						<label>$VAR[VideoFullScreenPlot]</label>
+						<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
+					</control>
+				</control>
+				<control type="group" id="20">
+					<visible>[String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))]</visible>
+					<control type="image" id="23">
+						<posx>30</posx>
+						<posy>25</posy>
+						<width>1845</width>
+						<height>1</height>
+						<texture>img/LineST.png</texture>
+					</control>
+					<control type="textbox" description="Plot" id="1">
+						<posx>30</posx>
+						<posy>-110</posy>
+						<width>1845</width>
+						<height>120</height>
+						<align>justify</align>
+						<font>InfoPlot</font>
+						<label>$VAR[VideoFullScreenPlot]</label>
+						<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
+					</control>
+				</control>
 			</control>
 
-            <!-- Art: Poster/Thumb/Icon/Channel logo -->
+			<!-- Art: Poster/Thumb/Icon/Channel logo -->
 			<control type="group" id="1">
-			    <visible>$EXP[showPosterOSD]</visible>
-			    <control type="group" id="1">
-			        <visible>Skin.HasSetting(enable.bottomseekbar)</visible>
-				    <control type="image" id="24">
-    			        <left>459r</left>
-			            <top>-406</top>
-			            <width>439</width>
-			            <height>636</height>
-			            <texture>$VAR[VideoPlayerIcon]</texture>
-			            <aspectratio align="center" aligny="bottom">keep</aspectratio>
-			            <colordiffuse>HeavyShadow</colordiffuse>
-			        </control>
-			        <control type="image" id="25">
-			            <left>465r</left>
-			            <top>-422</top>
-			            <width>439</width>
-			            <height>636</height>
-			            <texture>$VAR[VideoPlayerIcon]</texture>
-			            <aspectratio align="center" aligny="bottom">keep</aspectratio>
-			        </control>
-			    </control>
-			    <control type="group" id="1">
-			        <visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
-			        <control type="image" id="24">
-			            <posx>459r</posx>
-			            <posy>666r</posy>
-			            <width>439</width>
-			            <height>636</height>
-			            <texture>$VAR[VideoPlayerIcon]</texture>
-			            <aspectratio align="center" aligny="bottom">keep</aspectratio>
-			            <colordiffuse>HeavyShadow</colordiffuse>
-				        <visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
-			        </control>
-			        <control type="image" id="25">
-			            <posx>465r</posx>
-			            <posy>682r</posy>
-			            <width>439</width>
-			            <height>636</height>
-			            <texture>$VAR[VideoPlayerIcon]</texture>
-			            <aspectratio align="center" aligny="bottom">keep</aspectratio>
-				        <visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
-			        </control>
-			    </control>
+				<visible>$EXP[showPosterOSD]</visible>
+				<control type="group" id="1">
+					<visible>Skin.HasSetting(enable.bottomseekbar)</visible>
+					<control type="image" id="24">
+						<left>459r</left>
+						<top>-406</top>
+						<width>439</width>
+						<height>636</height>
+						<texture>$VAR[VideoPlayerIcon]</texture>
+						<aspectratio align="center" aligny="bottom">keep</aspectratio>
+						<colordiffuse>HeavyShadow</colordiffuse>
+					</control>
+					<control type="image" id="25">
+						<left>465r</left>
+						<top>-422</top>
+						<width>439</width>
+						<height>636</height>
+						<texture>$VAR[VideoPlayerIcon]</texture>
+						<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					</control>
+				</control>
+				<control type="group" id="1">
+					<visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
+					<control type="image" id="24">
+						<posx>459r</posx>
+						<posy>666r</posy>
+						<width>439</width>
+						<height>636</height>
+						<texture>$VAR[VideoPlayerIcon]</texture>
+						<aspectratio align="center" aligny="bottom">keep</aspectratio>
+						<colordiffuse>HeavyShadow</colordiffuse>
+						<visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
+					</control>
+					<control type="image" id="25">
+						<posx>465r</posx>
+						<posy>682r</posy>
+						<width>439</width>
+						<height>636</height>
+						<texture>$VAR[VideoPlayerIcon]</texture>
+						<aspectratio align="center" aligny="bottom">keep</aspectratio>
+						<visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
+					</control>
+				</control>
 			</control>
 
 			<!-- Media Details -->
 			<control type="group" id="26">
 				<left>30</left>
-			    <control type="label" id="26">
-    				<description>Movie Info Studio</description>
-				    <posy>50</posy>
-				    <width>780</width>
-				    <height>40</height>
-				    <align>left</align>
-				    <label>$VAR[VideoTopHeading]</label>
-				    <font>InfoTitle</font>
-				    <textcolor>grey</textcolor>
-			    </control>
+				<control type="label" id="26">
+					<description>Movie Info Studio</description>
+					<posy>50</posy>
+					<width>780</width>
+					<height>40</height>
+					<align>left</align>
+					<label>$VAR[VideoTopHeading]</label>
+					<font>InfoTitle</font>
+					<textcolor>grey</textcolor>
+				</control>
 				<control type="grouplist" id="4">
-				    <top>100</top>
-				    <width>910</width>
-				    <height>60</height>
-				    <orientation>horizontal</orientation>
-				    <control type="image" id="41">
-					    <width>40</width>
-					    <aspectratio align="center" aligny="center">keep</aspectratio>
-					    <texture>img/PVR-IsRecording.png</texture>
-					    <visible>VideoPlayer.Content(livetv) + PVR.IsRecordingPlayingChannel</visible>
-				    </control>
-				    <control type="image" id="42">
-					    <width>20</width>
-					    <texture></texture>
-					    <visible>VideoPlayer.Content(livetv) + PVR.IsRecordingPlayingChannel</visible>
-				    </control>
-				    <control type="label" id="43">
-					    <width>850</width>
-					    <height>60</height>
-					    <font>MainLabelBigTitle</font>
-					    <label>$VAR[VideoPlayerTitle]</label>
-					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <scroll>true</scroll>
-					    <scrollspeed>25</scrollspeed>
-				    </control>
-			    </control>
+					<top>100</top>
+					<width>910</width>
+					<height>60</height>
+					<orientation>horizontal</orientation>
+					<control type="image" id="41">
+						<width>40</width>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture>img/PVR-IsRecording.png</texture>
+						<visible>VideoPlayer.Content(livetv) + PVR.IsRecordingPlayingChannel</visible>
+					</control>
+					<control type="image" id="42">
+						<width>20</width>
+						<texture />
+						<visible>VideoPlayer.Content(livetv) + PVR.IsRecordingPlayingChannel</visible>
+					</control>
+					<control type="label" id="43">
+						<width>850</width>
+						<height>60</height>
+						<font>MainLabelBigTitle</font>
+						<label>$VAR[VideoPlayerTitle]</label>
+						<textcolor>$VAR[HighlightColor]</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>25</scrollspeed>
+					</control>
+				</control>
 				<control type="label" id="5">
-				    <posy>176</posy>
-				    <width>640</width>
-				    <height>40</height>
-				    <align>left</align>
-				    <label>$VAR[VideoBottomHeading]</label>
-				    <font>Details</font>
-				    <scroll>true</scroll>
-				    <textcolor>grey</textcolor>
-			    </control>
+					<posy>176</posy>
+					<width>640</width>
+					<height>40</height>
+					<align>left</align>
+					<label>$VAR[VideoBottomHeading]</label>
+					<font>Details</font>
+					<scroll>true</scroll>
+					<textcolor>grey</textcolor>
+				</control>
 			</control>
 
 			<!-- Media Flags -->
 			<control type="group" id="1">
-			    <posx>800</posx>
+				<posx>800</posx>
 				<width>578</width>
-			    <control type="grouplist" id="3">
-				    <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
-				    <top>20</top>
-				    <orientation>horizontal</orientation>
-				    <height>80</height>
+				<control type="grouplist" id="3">
+					<visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
+					<top>20</top>
+					<orientation>horizontal</orientation>
+					<height>80</height>
 					<itemgap>10</itemgap>
-				    <align>right</align>
-				    <include content="PlayerMediaFlagItems">
-					    <param name="itemheight" value="80"/>
-     				    <param name="itemwidth" value="90"/>
-					    <param name="diffuse">$VAR[LabelTextColor]</param>
-				    </include>
-			    </control>
-			    <control type="grouplist" id="3">
-				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
-				    <top>30</top>
-				    <orientation>horizontal</orientation>
-				    <height>72</height>
+					<align>right</align>
+					<include content="PlayerMediaFlagItems">
+						<param name="itemheight" value="80" />
+						<param name="itemwidth" value="90" />
+						<param name="diffuse">$VAR[LabelTextColor]</param>
+					</include>
+				</control>
+				<control type="grouplist" id="3">
+					<visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
+					<top>30</top>
+					<orientation>horizontal</orientation>
+					<height>72</height>
 					<itemgap>10</itemgap>
-				    <align>right</align>
-				    <include content="PlayerMediaFlagItems">
-					    <param name="itemheight" value="72"/>
-     				    <param name="itemwidth" value="74"/>
-					    <param name="diffuse">$VAR[LabelTextColor]</param>
-				    </include>
-			    </control>
+					<align>right</align>
+					<include content="PlayerMediaFlagItems">
+						<param name="itemheight" value="72" />
+						<param name="itemwidth" value="74" />
+						<param name="diffuse">$VAR[LabelTextColor]</param>
+					</include>
+				</control>
 			</control>
 		</control>
 
@@ -255,7 +255,7 @@
 		<control type="group" id="2">
 			<include>OSDFade</include>
 			<visible>!Skin.HasSetting(UseUltraCompactOSD) + $EXP[showCompactSeekBar] + [Player.ShowInfo | Window.IsActive(VideoOSD)] + ![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(SliderDialog)]</visible>
-    		<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="fade" time="200">VisibleChange</animation>
 			<top>700</top>
 
 			<!-- Background -->
@@ -269,135 +269,135 @@
 			</control>
 
 			<!-- Plot -->
-            <control type="group" id="20">
-			    <visible>!Skin.HasSetting(OSDInfo)</visible>
-		        <control type="image" id="23">
-			        <posx>30</posx>
-			        <posy>145</posy>
-			        <width>1305</width>
-			        <height>1</height>
-			        <texture>img/LineST.png</texture>
-		        </control>
-		        <control type="textbox" description="Plot" id="1">
-			        <posx>30</posx>
-			        <posy>3</posy>
-			        <width>1305</width>
-			        <height>120</height>
-			        <align>justify</align>
-			        <font>InfoPlot</font>
-			        <label>$VAR[VideoFullScreenPlot]</label>
-			        <autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
-		        </control>
+			<control type="group" id="20">
+				<visible>!Skin.HasSetting(OSDInfo)</visible>
+				<control type="image" id="23">
+					<posx>30</posx>
+					<posy>145</posy>
+					<width>1305</width>
+					<height>1</height>
+					<texture>img/LineST.png</texture>
+				</control>
+				<control type="textbox" description="Plot" id="1">
+					<posx>30</posx>
+					<posy>3</posy>
+					<width>1305</width>
+					<height>120</height>
+					<align>justify</align>
+					<font>InfoPlot</font>
+					<label>$VAR[VideoFullScreenPlot]</label>
+					<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
+				</control>
 			</control>
 
 			<!-- Media Flags -->
 			<control type="group" id="1">
-			    <visible>!Skin.HasSetting(OSDInfo)</visible>
+				<visible>!Skin.HasSetting(OSDInfo)</visible>
 				<control type="grouplist" id="3">
-				    <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
-				    <top>20</top>
-				    <posx>1420</posx>
-				    <height>80</height>
-				    <width>470</width>
-				    <orientation>horizontal</orientation>
-				    <itemgap>10</itemgap>
-				    <align>right</align>
-				    <include content="PlayerMediaFlagItems">
-					    <param name="itemheight" value="80"/>
-     				    <param name="itemwidth" value="90"/>
-					    <param name="diffuse">$VAR[LabelTextColor]</param>
-				    </include>
-			    </control>
-			    <control type="grouplist" id="3">
-				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
-				    <top>30</top>
-				    <posx>1360</posx>
-				    <height>72</height>
-				    <width>578</width>
-				    <orientation>horizontal</orientation>
-				    <itemgap>10</itemgap>
-				    <align>left</align>
-				    <include content="PlayerMediaFlagItems">
-					    <param name="itemheight" value="72"/>
-     				    <param name="itemwidth" value="74"/>
-					    <param name="diffuse">$VAR[LabelTextColor]</param>
-				    </include>
-			    </control>
+					<visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
+					<top>20</top>
+					<posx>1420</posx>
+					<height>80</height>
+					<width>470</width>
+					<orientation>horizontal</orientation>
+					<itemgap>10</itemgap>
+					<align>right</align>
+					<include content="PlayerMediaFlagItems">
+						<param name="itemheight" value="80" />
+						<param name="itemwidth" value="90" />
+						<param name="diffuse">$VAR[LabelTextColor]</param>
+					</include>
+				</control>
+				<control type="grouplist" id="3">
+					<visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
+					<top>30</top>
+					<posx>1360</posx>
+					<height>72</height>
+					<width>578</width>
+					<orientation>horizontal</orientation>
+					<itemgap>10</itemgap>
+					<align>left</align>
+					<include content="PlayerMediaFlagItems">
+						<param name="itemheight" value="72" />
+						<param name="itemwidth" value="74" />
+						<param name="diffuse">$VAR[LabelTextColor]</param>
+					</include>
+				</control>
 			</control>
 		</control>
 
 		<!-- Art: Poster/Thumb/Icon for Ultra Compact OSD -->
 		<control type="group" id="1">
 			<visible>$EXP[showPosterOSD] + Window.IsVisible(VideoOSD) + Skin.HasSetting(UseUltraCompactOSD)</visible>
-		    <control type="image" id="24">
-		        <posx>459r</posx>
-		        <posy>654r</posy>
-		        <width>439</width>
-		        <height>636</height>
-		        <texture>$VAR[VideoPlayerIcon]</texture>
-		        <aspectratio align="center" aligny="bottom">keep</aspectratio>
-		        <colordiffuse>HeavyShadow</colordiffuse>
-		    </control>
-		    <control type="image" id="25">
-		        <posx>465r</posx>
-		        <posy>672r</posy>
-		        <width>439</width>
-		        <height>636</height>
-		        <texture>$VAR[VideoPlayerIcon]</texture>
-		        <aspectratio align="center" aligny="bottom">keep</aspectratio>
-		    </control>
+			<control type="image" id="24">
+				<posx>459r</posx>
+				<posy>654r</posy>
+				<width>439</width>
+				<height>636</height>
+				<texture>$VAR[VideoPlayerIcon]</texture>
+				<aspectratio align="center" aligny="bottom">keep</aspectratio>
+				<colordiffuse>HeavyShadow</colordiffuse>
+			</control>
+			<control type="image" id="25">
+				<posx>465r</posx>
+				<posy>672r</posy>
+				<width>439</width>
+				<height>636</height>
+				<texture>$VAR[VideoPlayerIcon]</texture>
+				<aspectratio align="center" aligny="bottom">keep</aspectratio>
+			</control>
 		</control>
 
 		<!-- Art: ClearLogo, ClearArt, CharacterArt or DiscArt -->
-        <control type="group" id="1">
-            <visible>!$EXP[showCompactSeekBar]</visible>
+		<control type="group" id="1">
+			<visible>!$EXP[showCompactSeekBar]</visible>
 			<control type="group" id="1">
 				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + !Skin.HasSetting(OSDInfo) + ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + !Skin.HasSetting(enable.bottomseekbar)</visible>
 				<include>FullScreenExtraArt</include>
-            </control>
+			</control>
 			<control type="group" id="1">
 				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + !Skin.HasSetting(OSDInfo) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + !Skin.HasSetting(enable.bottomseekbar)</visible>
 				<include content="FullScreenExtraArt">
-				    <param name="logoleft">1460</param>
+					<param name="logoleft">1460</param>
 					<param name="logowidth">440</param>
 				</include>
-            </control>
+			</control>
 			<control type="group" id="1">
 				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + !Skin.HasSetting(OSDInfo) + Skin.HasSetting(enable.bottomseekbar)</visible>
 				<include content="FullScreenExtraArt">
-				    <param name="clearartleft">1450</param>
+					<param name="clearartleft">1450</param>
 					<param name="clearartwidth">440</param>
 					<param name="arttop">580</param>
 					<param name="disctop">590</param>
 					<param name="artheight">360</param>
 				</include>
-            </control>
-            <control type="group" id="1">
+			</control>
+			<control type="group" id="1">
 				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + Skin.HasSetting(OSDInfo) + !Skin.HasSetting(enable.bottomseekbar)</visible>
 				<include content="FullScreenExtraArt">
-				    <param name="arttop">860</param>
+					<param name="arttop">860</param>
 					<param name="disctop">870</param>
 					<param name="artheight">200</param>
 					<param name="characterleft">1560</param>
 					<param name="clearartleft">1420</param>
 				</include>
-            </control>
-            <control type="group" id="1">
+			</control>
+			<control type="group" id="1">
 				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + Skin.HasSetting(OSDInfo) + Skin.HasSetting(enable.bottomseekbar)</visible>
 				<include content="FullScreenExtraArt">
-				    <param name="arttop">730</param>
+					<param name="arttop">730</param>
 					<param name="disctop">730</param>
 					<param name="artheight">220</param>
 					<param name="clearartleft">1500</param>
 					<param name="clearartwidth">400</param>
 				</include>
-            </control>
+			</control>
 			<control type="group" id="1">
 				<visible>Skin.HasSetting(UseUltraCompactOSD) + [Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</visible>
 				<include content="FullScreenExtraArt">
-				    <param name="arttop">790</param>
+					<param name="arttop">790</param>
 				</include>
-            </control>
-        </control>
+			</control>
+		</control>
 	</controls>
 </window>

@@ -134,7 +134,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
@@ -144,7 +144,7 @@
 						<height>73</height>
 						<width>500</width>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
 						<label>$INFO[ListItem.Label,[B],[/B]]</label>
 					</control>
@@ -154,7 +154,7 @@
 						<width>500</width>
 						<height>30</height>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -167,7 +167,7 @@
 						<width>500</width>
 						<height>30</height>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor></shadowcolor>
+						<shadowcolor />
 						<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -217,9 +217,9 @@
 				<onright>NextChannelGroup</onright>
 				<ondown>61</ondown>
 				<onup>61</onup>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
 	<variable name="DialogSelectSearchLine2">
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,movie) + !Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(ListItem.Label2)">$INFO[Container(6).ListItem.Duration]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]$INFO[ListItem.Label2, • ]</value>
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,movie) + Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(ListItem.Label2)">$VAR[ContainerItemDurationHrMins,,]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]$INFO[ListItem.Label2, • ]</value>
@@ -45,8 +44,8 @@
 	</variable>
 
 	<include name="DialogSelectMediaFlagItems">
-		<param name="itemwidth" default="90"/>
-		<param name="itemheight" default="45"/>
+		<param name="itemwidth" default="90" />
+		<param name="itemheight" default="45" />
 		<param name="diffuse">Silver</param>
 		<param name="showvideobadge">true</param>
 		<param name="showaudiobadge">true</param>
@@ -256,7 +255,7 @@
 				<aligny>center</aligny>
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label></label>
+				<label />
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
@@ -266,7 +265,7 @@
 				<align>center</align>
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label></label>
+				<label />
 				<visible>!Control.IsVisible(6)</visible>
 			</control>
 			<control type="group">
@@ -472,9 +471,9 @@
 				<posy>60</posy>
 				<width>36</width>
 				<height>600</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
@@ -487,9 +486,9 @@
 				<posy>60</posy>
 				<width>36</width>
 				<height>600</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
@@ -512,7 +511,7 @@
 					<align>right</align>
 					<height>60</height>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-					<label></label>
+					<label />
 					<onclick>SendClick(5)</onclick>
 					<ondown>7</ondown>
 					<ondown>9000</ondown>
@@ -542,7 +541,7 @@
 					<align>right</align>
 					<height>60</height>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-					<label></label>
+					<label />
 					<onclick>SendClick(5)</onclick>
 					<ondown>7</ondown>
 					<ondown>9000</ondown>
@@ -596,7 +595,7 @@
 				<aligny>center</aligny>
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label></label>
+				<label />
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
@@ -606,7 +605,7 @@
 				<align>center</align>
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label></label>
+				<label />
 				<visible>!Control.IsVisible(6)</visible>
 			</control>
 			<control type="group">
@@ -750,7 +749,7 @@
 							<align>left</align>
 							<textcolor>Grey</textcolor>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<font>ListDetails</font>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -810,9 +809,9 @@
 				<posy>60</posy>
 				<width>36</width>
 				<height>600</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
@@ -825,9 +824,9 @@
 				<posy>60</posy>
 				<width>36</width>
 				<height>600</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
@@ -1023,7 +1022,7 @@
 							<posy>260</posy>
 							<width>444</width>
 							<height>80</height>
-							<label>$INFO[ListItem.Label][CR][COLOR=Grey]$INFO[ListItem.Label2][/COLOR]</label>
+							<label>$INFO[ListItem.Label][CR][COLOR Grey]$INFO[ListItem.Label2][/COLOR]</label>
 							<font>Details</font>
 							<align>center</align>
 						</control>
@@ -1065,7 +1064,7 @@
 							<label>$INFO[ListItem.Label][CR] $INFO[ListItem.Label2]</label>
 							<font>Details</font>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<align>center</align>
 						</control>
 						<control type="image">
@@ -1124,7 +1123,7 @@
 				<aligny>center</aligny>
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label></label>
+				<label />
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
@@ -1134,7 +1133,7 @@
 				<align>center</align>
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label></label>
+				<label />
 				<visible>!Control.IsVisible(6)</visible>
 			</control>
 			<control type="group">
@@ -1265,9 +1264,9 @@
 				<posy>60</posy>
 				<width>36</width>
 				<height>600</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
@@ -1280,9 +1279,9 @@
 				<posy>60</posy>
 				<width>36</width>
 				<height>600</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>

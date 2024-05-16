@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1137">
-
 	<defaultcontrol always="true">10</defaultcontrol>
 	<onload>SetFocus(10)</onload>
-
 	<controls>
-        <include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
-	    <!-- Default background if no show selected -->
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
+		<!-- Default background if no show selected -->
 		<include>DefaultBackground</include>
 		<include>OpenClose</include>
-
 		<control type="group">
-
 			<!-- Hidden Button to focus the left list on load -->
 			<control type="button" id="10">
 				<include>HiddenButton</include>
@@ -25,24 +21,21 @@
 			</control>
 			<!-- Hidden label with weekday -->
 			<control type="label" id="11">
-			    <label>$INFO[System.Date(DDD)]</label>
-			    <include>HiddenObject</include>
-		    </control>
-            <!-- Background fanart -->
+				<label>$INFO[System.Date(DDD)]</label>
+				<include>HiddenObject</include>
+			</control>
+			<!-- Background fanart -->
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[Container.ListItem.Art(fanart)]</texture>
-				<visible>Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003) |
-				         Control.HasFocus(5004) | Control.HasFocus(5005) | Control.HasFocus(5006) |
-						 Control.HasFocus(5007)</visible>
+				<visible>Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003) | Control.HasFocus(5004) | Control.HasFocus(5005) | Control.HasFocus(5006) | Control.HasFocus(5007)</visible>
 				<fadetime>600</fadetime>
 				<animation effect="fade" time="600">Visible</animation>
 				<animation effect="fade" time="600">Hidden</animation>
 			</control>
-
 			<!-- Menu backgrounds -->
 			<control type="image" description="Left Side background">
 				<colordiffuse>dfcebe9e</colordiffuse>
@@ -62,19 +55,14 @@
 				<texture border="45">dialogs/TinyDialog.png</texture>
 				<!-- <colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
-
 			<!-- Busy Loader -->
 			<control type="group">
 				<top>104</top>
 				<left>400</left>
 				<height>410</height>
-				<visible>![[!Container(5001).IsUpdating + Integer.IsGreater(Container(5001).NumItems,0)] | [!Container(5002).IsUpdating + Integer.IsGreater(Container(5002).NumItems,0)] |
-				           [!Container(5003).IsUpdating + Integer.IsGreater(Container(5003).NumItems,0)] | [!Container(5004).IsUpdating + Integer.IsGreater(Container(5004).NumItems,0)] |
-						   [!Container(5005).IsUpdating + Integer.IsGreater(Container(5005).NumItems,0)] | [!Container(5006).IsUpdating + Integer.IsGreater(Container(5006).NumItems,0)] |
-						   [!Container(5007).IsUpdating + Integer.IsGreater(Container(5007).NumItems,0)]]</visible>
+				<visible>![[!Container(5001).IsUpdating + Integer.IsGreater(Container(5001).NumItems,0)] | [!Container(5002).IsUpdating + Integer.IsGreater(Container(5002).NumItems,0)] | [!Container(5003).IsUpdating + Integer.IsGreater(Container(5003).NumItems,0)] | [!Container(5004).IsUpdating + Integer.IsGreater(Container(5004).NumItems,0)] | [!Container(5005).IsUpdating + Integer.IsGreater(Container(5005).NumItems,0)] | [!Container(5006).IsUpdating + Integer.IsGreater(Container(5006).NumItems,0)] | [!Container(5007).IsUpdating + Integer.IsGreater(Container(5007).NumItems,0)]]</visible>
 				<include>InfoLoading</include>
 			</control>
-
 			<!-- Static List with days/dates/number of episodes -->
 			<control type="list" id="4000">
 				<posx>41.5</posx>
@@ -91,7 +79,6 @@
 				<onup>4000</onup>
 				<ondown>4000</ondown>
 				<scrolltime tween="quadratic">300</scrolltime>
-
 				<itemlayout width="397" height="60">
 					<control type="image">
 						<width>397</width>
@@ -129,7 +116,7 @@
 							<width>220</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
-							<shadowcolor></shadowcolor>
+							<shadowcolor />
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 							<font>InfoPlot</font>
 						</control>
@@ -144,7 +131,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-                <!-- Embuary Info provides 7 days of Next Aired info -->
+				<!-- Embuary Info provides 7 days of Next Aired info -->
 				<content>
 					<include content="EmbuaryInfoTVGuideItem">
 						<param name="EmbuaryInfoTVGuideItemID">1</param>
@@ -176,10 +163,9 @@
 					</include>
 				</content>
 			</control>
-
 			<!-- Group of panels, one for each day -->
 			<control type="group" id="5000">
-                <!-- Top scrollbar -->
+				<!-- Top scrollbar -->
 				<control type="scrollbar" id="60">
 					<left>500</left>
 					<top>108</top>
@@ -198,7 +184,7 @@
 					<orientation>horizontal</orientation>
 					<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				</control>
-                <!-- Panels with episodes, one for each day.  Embuary Info already sorts them in date order, starting with today -->
+				<!-- Panels with episodes, one for each day.  Embuary Info already sorts them in date order, starting with today -->
 				<control type="panel" id="5001">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(1)] | Control.HasFocus(5001) |  [Container(4000).HasFocus(1) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
@@ -248,12 +234,9 @@
 					<include>EmbuaryInfoTVGuidePanelLayout</include>
 					<content target="videos">$VAR[EmbInfoNextAired6]</content>
 				</control>
-
 			</control>
 			<!-- Top Bar -->
 			<include>Time</include>
-
 		</control>
-
 	</controls>
 </window>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <!-- Load favourites -->
+	<!-- Load favourites -->
 	<onload condition="System.AddonIsEnabled(script.favourites)">RunScript(script.favourites)</onload>
 	<!-- Build menu/submenus/custom shelves -->
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=mainmenu|powermenu&amp;levels=5)</onload>
-    <!-- Start skin.info.service, used for set info -->
+	<!-- Start skin.info.service, used for set info -->
 	<onload condition="System.AddonIsEnabled(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
-    <!-- Build include for viewtype visiblity -->
+	<!-- Build include for viewtype visiblity -->
 	<onload condition="System.AddonIsEnabled(script.skinvariables)">RunScript(script.skinvariables,action=buildviews)</onload>
-    <!-- Reset flag that the info button from the video OSD is active -->
+	<!-- Reset flag that the info button from the video OSD is active -->
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onload>
 	<!-- Reset what the focused menu item playlist is -->
 	<onload condition="!String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist))">Skin.Reset(FocusedMenu.BackgroundPlaylist)</onload>
@@ -33,7 +33,7 @@
 
 	<!-- Remember what the focused menu item background is -->
 	<onunload condition="!String.IsEmpty(Container(300).ListItem.Property(Background))">Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(Background)])</onunload>
-    <onunload condition="!String.IsEmpty(Container(300).ListItem.Property(backgroundPlaylist))">Skin.SetString(FocusedMenu.BackgroundPlaylist,$INFO[Container(300).ListItem.Property(backgroundPlaylist)])</onunload>
+	<onunload condition="!String.IsEmpty(Container(300).ListItem.Property(backgroundPlaylist))">Skin.SetString(FocusedMenu.BackgroundPlaylist,$INFO[Container(300).ListItem.Property(backgroundPlaylist)])</onunload>
 
 	<!-- Clear TMDbHelper widgetcontainer id -->
 	<onunload condition="Skin.HasSetting(Enable.TMDbHelper)">ClearProperty(TMDbHelper.WidgetContainer,home)</onunload>
@@ -46,7 +46,7 @@
 		<!-- Hidden lists used for random fanart backgrounds -->
 		<include>HomeBackgroundLists</include>
 		<!-- Hidden lists used for statistics line -->
-    	<include condition="Skin.HasSetting(ShowInfoLine)">HomeInfoLineLists</include>
+		<include condition="Skin.HasSetting(ShowInfoLine)">HomeInfoLineLists</include>
 		<!-- Hidden lists if using script.embuary.helper for random fanart backgrounds and statistics lines -->
 		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHBackgrounds)">HomeEHBackgroundLists</include>
 		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHInfoLine)">HomeEHInfoLineLists</include>
@@ -57,12 +57,12 @@
 			<visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | [Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus]]]</visible>
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>400</fadetime>
-            <randomize>true</randomize>
-            <include>MultiImageTime</include>
+			<randomize>true</randomize>
+			<include>MultiImageTime</include>
 			<imagepath background="true">$VAR[HomeBackground]</imagepath>
-            <aspectratio>scale</aspectratio>
+			<aspectratio>scale</aspectratio>
 			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Use.KenBurnsEffect)">Conditional</animation>
-            <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Use.KenBurnsEffect)">Conditional</animation>
+			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Use.KenBurnsEffect)">Conditional</animation>
 		</control>
 		<!-- Music visualization -->
 		<control type="visualisation">

@@ -7,8 +7,8 @@
 		<icon>DefaultMusicAlbums.png</icon>
 		<thumb />
 		<action>ActivateWindow(Music,musicdb://albums/,return)</action>
-	</shortcut>	
-    <shortcut>
+	</shortcut>
+	<shortcut>
 		<defaultID>133</defaultID>
 		<label>$LOCALIZE[133]</label>
 		<label2 />
@@ -31,8 +31,8 @@
 		<icon>DefaultMusicRecentlyAdded.png</icon>
 		<thumb />
 		<action>ActivateWindow(Music,recentlyaddedalbums,return)</action>
-	</shortcut>	
-    <shortcut>
+	</shortcut>
+	<shortcut>
 		<defaultID>31021</defaultID>
 		<label>$LOCALIZE[31021]</label>
 		<label2 />
@@ -47,7 +47,7 @@
 		<icon>DefaultMusicTop100.png</icon>
 		<thumb />
 		<action>ActivateWindow(Music,top100,return)</action>
-	</shortcut>    
+	</shortcut>
 	<shortcut>
 		<defaultID>currentplaylist</defaultID>
 		<label>$LOCALIZE[13350]</label>
@@ -71,7 +71,7 @@
 		<icon>DefaultAudio.png</icon>
 		<thumb />
 		<action>ActivateWindow(Music,root)</action>
-	</shortcut>    
+	</shortcut>
 	<shortcut>
 		<defaultID>musicfiles</defaultID>
 		<label>$LOCALIZE[744]</label>
@@ -87,7 +87,7 @@
 		<icon>DefaultUser.png</icon>
 		<thumb />
 		<action>mastermode</action>
-        <visible>System.HasLocks</visible>
+		<visible>System.HasLocks</visible>
 	</shortcut>
 	<shortcut>
 		<defaultID>updatelibrarymusic</defaultID>
@@ -97,12 +97,12 @@
 		<thumb />
 		<action>UpdateLibrary(music)</action>
 	</shortcut>
-    <shortcut>
+	<shortcut>
 		<defaultID>cleanmusiclibrary</defaultID>
 		<label>$LOCALIZE[14247]</label>
 		<label2 />
 		<icon>icons/mainmenu/settings/skin.png</icon>
 		<thumb />
 		<action>CleanLibrary(music)</action>
-	</shortcut>    
+	</shortcut>
 </shortcuts>

@@ -4,13 +4,12 @@
 		<param name="ListType">list</param>
 		<definition>
 			<control type="group">
-
 				<include content="PVRBackground">
-				    <param name="viewid">50</param>
+					<param name="viewid">50</param>
 				</include>
 
-                <include condition="$EXP[ListPanelIsSwapped]" content="PVRBackground">
-				    <param name="viewid">150</param>
+				<include condition="$EXP[ListPanelIsSwapped]" content="PVRBackground">
+					<param name="viewid">150</param>
 				</include>
 
 				<include condition="Skin.HasSetting(ShowSetCount)">ListMovieSetDiscs</include>
@@ -18,9 +17,9 @@
 				<include>ListMusicDisc</include>
 
 				<include content="BackgroundOverlay">
-					<param name="parentid" value="50"/>
-					<param name="overlaytop" value="300"/>
-					<param name="overlayheight" value="1620"/>
+					<param name="parentid" value="50" />
+					<param name="overlaytop" value="300" />
+					<param name="overlayheight" value="1620" />
 				</include>
 				<visible>Control.IsVisible(50)</visible>
 				<include>ContentFade</include>
@@ -32,7 +31,7 @@
 					<posy>406</posy>
 					<width>1340</width>
 					<include condition="!Skin.HasSetting(Enable.TouchSupport)">ListHeightStandard</include>
-				    <include condition="Skin.HasSetting(Enable.TouchSupport)">ListHeightTouch</include>
+					<include condition="Skin.HasSetting(Enable.TouchSupport)">ListHeightTouch</include>
 					<pagecontrol>60</pagecontrol>
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
@@ -69,9 +68,9 @@
 					<posy>351</posy>
 					<width>36</width>
 					<height>700</height>
-					<texturesliderbackground></texturesliderbackground>
-					<texturesliderbar></texturesliderbar>
-					<texturesliderbarfocus></texturesliderbarfocus>
+					<texturesliderbackground />
+					<texturesliderbar />
+					<texturesliderbarfocus />
 					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 					<showonepage>false</showonepage>
@@ -117,21 +116,51 @@
 					<orientation>vertical</orientation>
 					<animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 					<include>AlphabetNumber</include>
-					<include content="AlphabetLetter"><param name="label" value="A" /></include>
-					<include content="AlphabetLetter"><param name="label" value="B" /></include>
-					<include content="AlphabetLetter"><param name="label" value="C" /></include>
-					<include content="AlphabetLetter"><param name="label" value="D" /></include>
-					<include content="AlphabetLetter"><param name="label" value="E" /></include>
-					<include content="AlphabetLetter"><param name="label" value="F" /></include>
-					<include content="AlphabetLetter"><param name="label" value="G" /></include>
-					<include content="AlphabetLetter"><param name="label" value="H" /></include>
-					<include content="AlphabetLetter"><param name="label" value="I" /></include>
-					<include content="AlphabetLetter"><param name="label" value="J" /></include>
-					<include content="AlphabetLetter"><param name="label" value="K" /></include>
-					<include content="AlphabetLetter"><param name="label" value="L" /></include>
-					<include content="AlphabetLetter"><param name="label" value="M" /></include>
-					<include content="AlphabetLetter"><param name="label" value="N" /></include>
-					<include content="AlphabetLetter"><param name="label" value="O" /></include>
+					<include content="AlphabetLetter">
+						<param name="label" value="A" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="B" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="C" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="D" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="E" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="F" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="G" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="H" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="I" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="J" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="K" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="L" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="M" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="N" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="O" />
+					</include>
 					<animation effect="fade" start="100" end="0" condition="[String.IsEqual(ListItem.SortLetter,O) | String.IsEqual(ListItem.SortLetter,P) | String.IsEqual(ListItem.SortLetter,Q) | String.IsEqual(ListItem.SortLetter,R) | String.IsEqual(ListItem.SortLetter,S) | String.IsEqual(ListItem.SortLetter,T) | String.IsEqual(ListItem.SortLetter,U) | String.IsEqual(ListItem.SortLetter,V) | String.IsEqual(ListItem.SortLetter,W) | String.IsEqual(ListItem.SortLetter,X) | String.IsEqual(ListItem.SortLetter,Y) | String.IsEqual(ListItem.SortLetter,Z)]">Conditional</animation>
 					<visible>Control.IsVisible(50)</visible>
 					<visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
@@ -145,28 +174,60 @@
 					<itemgap>0</itemgap>
 					<orientation>vertical</orientation>
 					<animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-					<include content="AlphabetLetter"><param name="label" value="K" /></include>
-					<include content="AlphabetLetter"><param name="label" value="L" /></include>
-					<include content="AlphabetLetter"><param name="label" value="M" /></include>
-					<include content="AlphabetLetter"><param name="label" value="N" /></include>
-					<include content="AlphabetLetter"><param name="label" value="O" /></include>
-					<include content="AlphabetLetter"><param name="label" value="P" /></include>
-					<include content="AlphabetLetter"><param name="label" value="Q" /></include>
-					<include content="AlphabetLetter"><param name="label" value="R" /></include>
-					<include content="AlphabetLetter"><param name="label" value="S" /></include>
-					<include content="AlphabetLetter"><param name="label" value="T" /></include>
-					<include content="AlphabetLetter"><param name="label" value="U" /></include>
-					<include content="AlphabetLetter"><param name="label" value="V" /></include>
-					<include content="AlphabetLetter"><param name="label" value="W" /></include>
-					<include content="AlphabetLetter"><param name="label" value="X" /></include>
-					<include content="AlphabetLetter"><param name="label" value="Y" /></include>
-					<include content="AlphabetLetter"><param name="label" value="Z" /></include>
+					<include content="AlphabetLetter">
+						<param name="label" value="K" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="L" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="M" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="N" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="O" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="P" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="Q" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="R" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="S" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="T" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="U" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="V" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="W" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="X" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="Y" />
+					</include>
+					<include content="AlphabetLetter">
+						<param name="label" value="Z" />
+					</include>
 					<animation effect="fade" start="100" end="0" condition="![String.IsEqual(ListItem.SortLetter,O) | String.IsEqual(ListItem.SortLetter,P) | String.IsEqual(ListItem.SortLetter,Q) | String.IsEqual(ListItem.SortLetter,R) | String.IsEqual(ListItem.SortLetter,S) | String.IsEqual(ListItem.SortLetter,T) | String.IsEqual(ListItem.SortLetter,U) | String.IsEqual(ListItem.SortLetter,V) | String.IsEqual(ListItem.SortLetter,W) | String.IsEqual(ListItem.SortLetter,X) | String.IsEqual(ListItem.SortLetter,Y) | String.IsEqual(ListItem.SortLetter,Z)]">Conditional</animation>
 					<visible>Control.IsVisible(50)</visible>
 					<visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
 				</control>
 
-                <!-- Panels in original position -->
+				<!-- Panels in original position -->
 				<!-- Panel for Recordings or Timers -->
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -446,59 +507,58 @@
 					</control>
 					<!-- Rating overlay -->
 					<control type="group">
-					    <visible>Skin.HasSetting(ShowRatingOverlays) + $EXP[canShowRatingOverlay]</visible>
-					    <control type="group">
-				            <visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) |
-							          [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]]</visible>
+						<visible>Skin.HasSetting(ShowRatingOverlays) + $EXP[canShowRatingOverlay]</visible>
+						<control type="group">
+							<visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,tvshow) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]]</visible>
 							<control type="image">
-				                <texture background="true" flipx="true" colordiffuse="$VAR[HighlightColor]">overlays/toprightempty2.png</texture>
-				                <top>0</top>
-				                <left>0</left>
-				                <height>102</height>
-				                <width>102</width>
-			                </control>
-					        <control type="label" description="l2">
-					            <left>-19</left>
-				                <top>11</top>
-					            <height>40</height>
-					            <width>100</width>
-					            <font>font12_title</font>
-					            <align>center</align>
-					            <shadowcolor></shadowcolor>
-					            <label>$VAR[ContainerRatingOverlayVar]</label>
-					            <textcolor>$VAR[HighlightColor]</textcolor>
-				            </control>
+								<texture background="true" flipx="true" colordiffuse="$VAR[HighlightColor]">overlays/toprightempty2.png</texture>
+								<top>0</top>
+								<left>0</left>
+								<height>102</height>
+								<width>102</width>
+							</control>
+							<control type="label" description="l2">
+								<left>-19</left>
+								<top>11</top>
+								<height>40</height>
+								<width>100</width>
+								<font>font12_title</font>
+								<align>center</align>
+								<shadowcolor />
+								<label>$VAR[ContainerRatingOverlayVar]</label>
+								<textcolor>$VAR[HighlightColor]</textcolor>
+							</control>
 						</control>
-                        <control type="group">
-				            <visible>[String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EpisodesUsePoster)]</visible>
+						<control type="group">
+							<visible>[String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EpisodesUsePoster)]</visible>
 							<control type="image">
-				                <texture background="true" flipx="true" colordiffuse="$VAR[HighlightColor]">overlays/toprightempty2.png</texture>
-				                <top>212</top>
-				                <left>0</left>
-				                <height>102</height>
-				                <width>102</width>
-			                </control>
-					        <control type="label" description="l2">
-					            <left>-19</left>
-				                <top>222</top>
-					            <height>40</height>
-					            <width>100</width>
-					            <font>font12_title</font>
-					            <align>center</align>
-					            <shadowcolor></shadowcolor>
-					            <label>$VAR[ContainerRatingOverlayVar]</label>
-					            <textcolor>$VAR[HighlightColor]</textcolor>
-				            </control>
+								<texture background="true" flipx="true" colordiffuse="$VAR[HighlightColor]">overlays/toprightempty2.png</texture>
+								<top>212</top>
+								<left>0</left>
+								<height>102</height>
+								<width>102</width>
+							</control>
+							<control type="label" description="l2">
+								<left>-19</left>
+								<top>222</top>
+								<height>40</height>
+								<width>100</width>
+								<font>font12_title</font>
+								<align>center</align>
+								<shadowcolor />
+								<label>$VAR[ContainerRatingOverlayVar]</label>
+								<textcolor>$VAR[HighlightColor]</textcolor>
+							</control>
 						</control>
 					</control>
 				</control>
 
 				<include condition="!String.IsEqual(Skin.String(MediaViewsExtraArt),discart)" content="ListViewsDiscArt">
-				    <param name="viewid">50</param>
+					<param name="viewid">50</param>
 				</include>
 
 				<include condition="!Skin.String(MediaViewsExtraArt,none)" content="ShowMediaViewsExtraArt">
-				    <param name="logoleft">1380</param>
+					<param name="logoleft">1380</param>
 					<param name="logotop">40</param>
 					<param name="logowidth">500</param>
 					<param name="logoheight">290</param>
@@ -515,56 +575,53 @@
 				</include>
 
 				<include condition="!$EXP[ListPanelIsSwapped]" content="PVRRecordingSpaceUsage">
-				    <param name="posx">535</param>
+					<param name="posx">535</param>
 					<param name="posy">1018</param>
 					<param name="width">650</param>
 				</include>
 
 				<include condition="$EXP[ListPanelIsSwapped]" content="PVRRecordingSpaceUsage">
-				    <param name="posx">1230</param>
+					<param name="posx">1230</param>
 					<param name="posy">1018</param>
 					<param name="width">650</param>
 				</include>
 
 				<include condition="!$EXP[ListPanelIsSwapped]" content="PVRChannelProgress">
-				    <param name="posx">535</param>
+					<param name="posx">535</param>
 					<param name="posy">1018</param>
 					<param name="width">650</param>
 				</include>
 
 				<include condition="$EXP[ListPanelIsSwapped]" content="PVRChannelProgress">
-				    <param name="posx">1230</param>
+					<param name="posx">1230</param>
 					<param name="posy">1018</param>
 					<param name="width">650</param>
 				</include>
 
 				<control type="group">
-		            <visible>$EXP[PVRChannelPlaying]</visible>
-                    <left>20</left>
-			        <top>726</top>
-                    <control type="videowindow">
-			            <width>480</width>
-			            <height>300</height>
-                    </control>
-                </control>
+					<visible>$EXP[PVRChannelPlaying]</visible>
+					<left>20</left>
+					<top>726</top>
+					<control type="videowindow">
+						<width>480</width>
+						<height>300</height>
+					</control>
+				</control>
 
 				<include content="TouchButtons">
-		            <param name="ButtonsTop">980</param>
-			        <param name="id">50</param>
+					<param name="ButtonsTop">980</param>
+					<param name="id">50</param>
 					<param name="left">1520</param>
 					<param name="visibility">!$EXP[ListPanelIsSwapped] | $EXP[ListPanelIsDisabled]</param>
-		        </include>
+				</include>
 
 				<include content="TouchButtons">
-		            <param name="ButtonsTop">980</param>
-			        <param name="id">50</param>
+					<param name="ButtonsTop">980</param>
+					<param name="id">50</param>
 					<param name="left">670</param>
 					<param name="visibility">$EXP[ListPanelIsSwapped] + !$EXP[ListPanelIsDisabled]</param>
-		        </include>
-
+				</include>
 			</control>
-
 		</definition>
 	</include>
-
 </includes>

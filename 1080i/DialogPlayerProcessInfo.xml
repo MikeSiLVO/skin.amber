@@ -179,44 +179,43 @@
 					<visible>!System.SupportsCPUUsage</visible>
 				</control>
 				<!-- End Matrix change -->
-
 			</control>
 			<control type="group">
-			    <left>1200</left>
+				<left>1200</left>
 				<top>50</top>
-			    <visible>!Control.HasFocus(5551)</visible>
+				<visible>!Control.HasFocus(5551)</visible>
 				<control type="label">
-				    <description>Movie Studio/TV Show name/PVR Channel info</description>
-				    <top>35</top>
+					<description>Movie Studio/TV Show name/PVR Channel info</description>
+					<top>35</top>
 					<width>700</width>
-				    <height>40</height>
-				    <align>left</align>
-				    <label>$VAR[VideoTopHeading]</label>
-				    <font>InfoTitle</font>
-				    <textcolor>grey</textcolor>
+					<height>40</height>
+					<align>left</align>
+					<label>$VAR[VideoTopHeading]</label>
+					<font>InfoTitle</font>
+					<textcolor>grey</textcolor>
 					<visible>!VideoPlayer.Content(episodes)</visible>
-			    </control>
+				</control>
 				<control type="label">
-				    <description>Movie Studio/TV Show name/PVR Channel info</description>
-				    <top>35</top>
+					<description>Movie Studio/TV Show name/PVR Channel info</description>
+					<top>35</top>
 					<width>700</width>
-				    <height>40</height>
-				    <align>left</align>
-				    <label>$VAR[VideoTopHeading]</label>
-				    <font>MainLabelBig</font>
+					<height>40</height>
+					<align>left</align>
+					<label>$VAR[VideoTopHeading]</label>
+					<font>MainLabelBig</font>
 					<visible>VideoPlayer.Content(episodes)</visible>
-			    </control>
+				</control>
 				<control type="label">
-				    <description>Movie Director/Season-Episode/Next EPG Programme</description>
+					<description>Movie Director/Season-Episode/Next EPG Programme</description>
 					<top>85</top>
-				    <width>640</width>
-				    <height>30</height>
-				    <align>left</align>
-				    <label>$VAR[VideoBottomHeading]</label>
-				    <font>Details</font>
-				    <scroll>true</scroll>
+					<width>640</width>
+					<height>30</height>
+					<align>left</align>
+					<label>$VAR[VideoBottomHeading]</label>
+					<font>Details</font>
+					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(episodes)</visible>
-			    </control>
+				</control>
 				<control type="label">
 					<description>Video Title</description>
 					<top>110</top>
@@ -241,19 +240,19 @@
 					<scrollspeed>25</scrollspeed>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
-			    <control type="label">
-				    <description>Movie Director/Season-Episode/Next EPG Programme</description>
+				<control type="label">
+					<description>Movie Director/Season-Episode/Next EPG Programme</description>
 					<top>176</top>
-				    <width>640</width>
-				    <height>40</height>
-				    <align>left</align>
-				    <label>$VAR[VideoBottomHeading]</label>
-				    <font>Details</font>
-				    <scroll>true</scroll>
-				    <textcolor>grey</textcolor>
+					<width>640</width>
+					<height>40</height>
+					<align>left</align>
+					<label>$VAR[VideoBottomHeading]</label>
+					<font>Details</font>
+					<scroll>true</scroll>
+					<textcolor>grey</textcolor>
 					<visible>!VideoPlayer.Content(episodes)</visible>
-			    </control>
-		    </control>
+				</control>
+			</control>
 			<control type="grouplist" id="5550">
 				<right>30</right>
 				<top>-60</top>
@@ -279,7 +278,6 @@
 					<label>$LOCALIZE[31138]</label>
 				</control>
 			</control>
-
 		</control>
 	</controls>
 </window>

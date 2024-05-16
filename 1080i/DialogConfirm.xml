@@ -19,7 +19,7 @@
 				<width>970</width>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<align>center</align>
-				<font></font>
+				<font />
 			</control>
 			<control type="label" id="100" description="Heading and Progress">
 				<posx>36</posx>

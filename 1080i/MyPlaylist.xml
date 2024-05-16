@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
-    <views>50</views>
+	<views>50</views>
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group" description="Content">
@@ -14,7 +14,7 @@
 				<height>1010</height>
 				<texture flipx="true">dialogs/SettingsBG.png</texture>
 				<colordiffuse>dfcebe9e</colordiffuse>
-<!--				<colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
+				<!-- <colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
 			<control type="label">
 				<posx>711</posx>
@@ -48,24 +48,24 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 				<control type="grouplist" description="Song Media Flags">
-			        <visible>Window.IsActive(MusicPlaylist)</visible>
+					<visible>Window.IsActive(MusicPlaylist)</visible>
 					<left>150</left>
-			        <top>910</top>
-			        <width>500</width>
-			        <height>80</height>
-			        <itemgap>20</itemgap>
-			        <orientation>horizontal</orientation>
-			        <align>center</align>
-				    <usecontrolcoords>true</usecontrolcoords>
-			        <include content="MediaFlagItems">
-				        <param name="showvideobadge">false</param>
-				        <param name="showaudiobadge">true</param>
-				        <param name="showratingbadge">false</param>
-					    <param name="itemwidth">95</param>
-					    <param name="itemheight">75</param>
-				        <param name="diffuse">$VAR[LabelTextColor]</param>
-			        </include>
-		        </control>
+					<top>910</top>
+					<width>500</width>
+					<height>80</height>
+					<itemgap>20</itemgap>
+					<orientation>horizontal</orientation>
+					<align>center</align>
+					<usecontrolcoords>true</usecontrolcoords>
+					<include content="MediaFlagItems">
+						<param name="showvideobadge">false</param>
+						<param name="showaudiobadge">true</param>
+						<param name="showratingbadge">false</param>
+						<param name="itemwidth">95</param>
+						<param name="itemheight">75</param>
+						<param name="diffuse">$VAR[LabelTextColor]</param>
+					</include>
+				</control>
 				<!-- Thumb image for items that do not have poster -->
 				<include content="ShadowedImage">
 					<param name="top">27</param>
@@ -86,7 +86,6 @@
 					<param name="texture">$INFO[ListItem.Art(poster)]</param>
 					<param name="visibility">!String.IsEmpty(ListItem.Art(poster))</param>
 				</include>
-
 				<control type="group" description="List">
 					<control type="panel" id="50" description="No Thumbs">
 						<viewtype label="$LOCALIZE[535]">list</viewtype>
@@ -137,7 +136,7 @@
 								<width>680</width>
 								<height>60</height>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
-								<shadowcolor></shadowcolor>
+								<shadowcolor />
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -146,7 +145,7 @@
 								<width>100</width>
 								<height>60</height>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
-								<shadowcolor></shadowcolor>
+								<shadowcolor />
 								<aligny>center</aligny>
 								<align>right</align>
 								<label>$INFO[ListItem.Label2]</label>
@@ -161,7 +160,7 @@
 						<onleft>50</onleft>
 						<onright>60</onright>
 						<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
-		                <onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
+						<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
 						<scrolltime>200</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<control type="radiobutton" id="20" description="shuffle">
@@ -186,23 +185,23 @@
 							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						</control>
 						<include content="SidebladeNowPlaying">
-	                        <param name="left">12</param>
-		                    <param name="top">10</param>
-		                    <param name="height">50</param>
-		                    <param name="itemsize">50</param>
-		                    <param name="width">292</param>
-		                    <param name="itemgap">3</param>
-		                    <param name="onleft">9000</param>
+							<param name="left">12</param>
+							<param name="top">10</param>
+							<param name="height">50</param>
+							<param name="itemsize">50</param>
+							<param name="width">292</param>
+							<param name="itemgap">3</param>
+							<param name="onleft">9000</param>
 						</include>
 					</control>
 					<control type="group">
-			            <posx>1793</posx>
-			            <posy>48</posy>
-			            <include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
-			                <param name="Action">Action(Back)</param>
-				            <param name="ondown">9000</param>
-			            </include>
-		            </control>
+						<posx>1793</posx>
+						<posy>48</posy>
+						<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
+							<param name="Action">Action(Back)</param>
+							<param name="ondown">9000</param>
+						</include>
+					</control>
 				</control>
 			</control>
 			<control type="label" id="12">
@@ -223,9 +222,9 @@
 				<posy>116</posy>
 				<width>36</width>
 				<height>934</height>
-				<texturesliderbackground></texturesliderbackground>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
+				<texturesliderbackground />
+				<texturesliderbar />
+				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
