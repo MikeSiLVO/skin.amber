@@ -43,7 +43,7 @@
 		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.DBID)">EmbuaryHelperTVShowDetails</include>
 
 		<!-- Hide default cast list 50, using a custom cast -->
-		<include condition="!Skin.HasSetting(Disable.OnlineTMDbInfo)">HiddenCast</include>
+		<include condition="!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEqual(ListItem.DBType,set)">HiddenCast</include>
 
 		<!-- Hide some of the default video info buttons, we are using custom ones -->
 		<control type="button" id="13" description="Director">
@@ -1099,12 +1099,13 @@
 			<defaultcontrol always="true">50</defaultcontrol>
 			<control type="group" id="89000" />
 			<!-- If show only local info, use Kodi's default cast container and behavior -->
-			<include condition="Skin.HasSetting(Disable.OnlineTMDbInfo) + !Skin.HasSetting(DisableInfoListCast)">DefaultCastKodi</include>
+			<include condition="Skin.HasSetting(Disable.OnlineTMDbInfo) + !Skin.HasSetting(DisableInfoListCast) + !String.IsEqual(ListItem.DBType,set)">DefaultCastKodi</include>
+			<include condition="!Skin.HasSetting(DisableInfoListCast) + String.IsEqual(ListItem.DBType,set)">DefaultSetKodi</include>
 			<!-- If not show only local info, use custom cast container. Allow searching locally or online for onclick -->
 			<include condition="!Skin.HasSetting(Disable.OnlineTMDbInfo) + !Skin.HasSetting(DisableInfoListCast) + !String.IsEqual(ListItem.DBTYPE,set) + !String.IsEmpty(ListItem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))">DefaultCast</include>
 			<include condition="!Skin.HasSetting(Disable.OnlineTMDbInfo) + !Skin.HasSetting(DisableInfoListCast) + !String.IsEqual(ListItem.DBTYPE,set) + !String.IsEmpty(ListItem.Property(tmdb_id))">CustomCast</include>
 			<!-- Movies in Set -->
-			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.Set) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Set)) | ListItem.IsCollection">
+			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Set))">
 				<param name="id">9100001</param>
 				<param name="labelid">9100011</param>
 				<param name="headinglabel">$VAR[SetNameLabel,$LOCALIZE[32097] ,]</param>

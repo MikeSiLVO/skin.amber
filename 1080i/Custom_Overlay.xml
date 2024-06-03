@@ -850,30 +850,19 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+				<label>Custom_1117_Addons.xml</label>
+				<visible>Window.IsVisible(Custom_1117_ColorPicker.xml)</visible>
+			</control>
+
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
 				<label>Custom_1119_Addons.xml</label>
-				<visible>Window.IsVisible(Custom_1119_Addons.xml.xml)</visible>
-			</control>
-
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
-				<label>Custom_1114_Quit.xml</label>
-				<visible>Window.IsVisible(Custom_1114_Quit.xml)</visible>
-			</control>
-
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
-				<label>Custom_1125_FavouriteAddons.xml</label>
-				<visible>Window.IsVisible(CustomF_1125_avouriteAddons.xml)</visible>
+				<visible>Window.IsVisible(Custom_1119_Addons.xml)</visible>
 			</control>
 
 			<control type="label">
@@ -905,8 +894,8 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
-				<label>Custom_1123_PausedOverlay.xml</label>
-				<visible>Window.IsVisible(Custom_1123_PausedOverlay.xml)</visible>
+				<label>Custom_1122_Search.xml</label>
+				<visible>Window.IsVisible(Custom_1122_Search.xml)</visible>
 			</control>
 
 			<control type="label">
@@ -916,8 +905,8 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
-				<label>Custom_1122_Search.xml</label>
-				<visible>Window.IsVisible(Custom_1122_Search.xml)</visible>
+				<label>Custom_1123_PausedOverlay.xml</label>
+				<visible>Window.IsVisible(Custom_1123_PausedOverlay.xml)</visible>
 			</control>
 
 			<control type="label">
@@ -938,8 +927,8 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
-				<label>Custom_1126_Fanart.xml</label>
-				<visible>Window.IsVisible(Custom_1126_Fanart.xml)</visible>
+				<label>Custom_1125_FavouriteAddons.xml</label>
+				<visible>Window.IsVisible(Custom_1125_FavouriteAddons.xml)</visible>
 			</control>
 
 			<control type="label">
@@ -949,8 +938,8 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
-				<label>Custom_1127_InfoSets.xml</label>
-				<visible>Window.IsVisible(Custom_1127_InfoSets.xml)</visible>
+				<label>Custom_1126_Fanart.xml</label>
+				<visible>Window.IsVisible(Custom_1126_Fanart.xml)</visible>
 			</control>
 
 			<control type="label">

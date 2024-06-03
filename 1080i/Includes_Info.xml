@@ -1545,6 +1545,59 @@
 		</control>
 	</include>
 
+	<include name="DefaultSetKodi">
+		<!-- Cast header label, busy loader -->
+		<control type="group" id="90048">
+			<top>44</top>
+			<height>44</height>
+			<visible>Container(50).IsUpdating | Integer.IsGreater(Container(50).NumItems,0)</visible>
+			<control type="group">
+				<top>-410</top>
+				<height>410</height>
+				<visible>Container(50).IsUpdating</visible>
+				<include>InfoLoading</include>
+			</control>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+				<control type="label">
+					<left>8</left>
+					<top>0</top>
+					<height>30</height>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[342] $INFO[Container(50).NumItems,(,)][/COLOR]</label>
+					<font>ListDetails</font>
+				</control>
+				<control type="image" description="Line Split">
+					<top>40</top>
+					<left>10</left>
+					<width>1180</width>
+					<height>1</height>
+					<texture>img/LineL.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+			</control>
+		</control>
+		<!-- Set panel -->
+		<control type="panel" id="50">
+			<top>44</top>
+			<left>10</left>
+			<width>1180</width>
+			<height>410</height>
+			<onup>9000</onup>
+			<preloaditems>2</preloaditems>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<orientation>horizontal</orientation>
+			<visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+			<include content="CastLayout">
+				<param name="viewid">50</param>
+				<param name="belowdoublelabelvisibility">true</param>
+				<param name="belowdoublelabel1">$INFO[Container(50).ListItem.Label]</param>
+				<param name="belowdoublelabel2">[I]$INFO[Container(50).ListItem.Label2][/I]</param>
+				<param name="belowlabelvisibility">false</param>
+				<param name="iconimage">$INFO[Container(50).ListItem.Art(poster)]</param>
+			</include>
+		</control>
+	</include>
+
 	<!-- Cast source for online widget items -->
 	<variable name="TMDb_Cast">
 		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.Property(imdb_id))">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;imdb_id=$INFO[ListItem.Property(imdb_id)]</value>
