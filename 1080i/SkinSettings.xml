@@ -194,12 +194,6 @@
 							<param name="itemvisibility" value="!Skin.HasSetting(Disable.Lyrics) + System.AddonIsEnabled(script.cu.lrclyrics)" />
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="71" />
-							<param name="itemlabel" value="$LOCALIZE[32450]" />
-							<param name="skinsetting" value="ShowADinContextMenu" />
-							<param name="itemvisibility" value="System.AddonIsEnabled(script.artwork.downloader)" />
-						</include>
-						<include content="YesNoSettingItem">
 							<param name="itemid" value="8" />
 							<param name="itemlabel" value="$LOCALIZE[32386]" />
 							<param name="skinsetting" value="Enable.TouchSupport" />
@@ -1770,14 +1764,6 @@
 						<onclick condition="System.HasAddon(script.skin.helper.skinbackup) + !System.AddonIsEnabled(script.skin.helper.skinbackup)">EnableAddon(script.skin.helper.skinbackup)</onclick>
 						<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
 						<selected>System.AddonIsEnabled(script.skin.helper.skinbackup)</selected>
-					</control>
-					<control type="radiobutton" id="911230">
-						<label>script.artwork.downloader</label>
-						<label2>$INFO[System.AddonVersion(script.artwork.downloader)]            </label2>
-						<onclick condition="System.AddonIsEnabled(script.artwork.downloader)">Addon.OpenSettings(script.artwork.downloader)</onclick>
-						<onclick condition="System.HasAddon(script.artwork.downloader) + !System.AddonIsEnabled(script.artwork.downloader)">EnableAddon(script.artwork.downloader)</onclick>
-						<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-						<selected>System.AddonIsEnabled(script.artwork.downloader)</selected>
 					</control>
 				</control>
 			</control>
