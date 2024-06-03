@@ -28,7 +28,7 @@
 			<screenshot>resources/screenshot09.jpg</screenshot>
 			<screenshot>resources/screenshot10.jpg</screenshot>
 		</assets>
-		<news>4.0.0[CR]- Omega support[CR]- Add MyFavourites.xml[CR]- Update SettingsScreenCalibration.xml[CR]- Add colorbutton + DialogColorPicker.xml[CR]- CinemaVision --> PreshowExperience[CR]- Add Player.Cuts, Player.SceneMarkers, &amp; Player.Editlist[CR]- Add show password button to DialogKeyboard.xml[CR]- Add Video Versions support[CR]- Misc fixes &amp; cleanup
+		<news>4.0.0[CR]- Omega support[CR]- Use custom color picker and drop support for script.skin.helper.colorpicker[CR]- Add MyFavourites.xml[CR]- Update SettingsScreenCalibration.xml[CR]- Add colorbutton + DialogColorPicker.xml[CR]- CinemaVision --> PreshowExperience[CR]- Add Player.Cuts, Player.SceneMarkers, &amp; Player.Editlist[CR]- Add show password button to DialogKeyboard.xml[CR]- Add Video Versions support[CR]- Misc fixes &amp; cleanup
 		</news>
 		<summary lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar</summary>
 		<summary lang="da_DK">Ingen bloatware, kun dine medier med en brugerflade der er let at navigere</summary>
