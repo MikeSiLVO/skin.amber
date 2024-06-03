@@ -194,12 +194,6 @@
 							<param name="itemvisibility" value="!Skin.HasSetting(Disable.Lyrics) + System.AddonIsEnabled(script.cu.lrclyrics)" />
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="7" />
-							<param name="itemlabel" value="$LOCALIZE[32122]" />
-							<param name="skinsetting" value="ShowABinContextMenu" />
-							<param name="itemvisibility" value="System.AddonIsEnabled(script.artwork.beef)" />
-						</include>
-						<include content="YesNoSettingItem">
 							<param name="itemid" value="71" />
 							<param name="itemlabel" value="$LOCALIZE[32450]" />
 							<param name="skinsetting" value="ShowADinContextMenu" />
@@ -1776,14 +1770,6 @@
 						<onclick condition="System.HasAddon(script.skin.helper.skinbackup) + !System.AddonIsEnabled(script.skin.helper.skinbackup)">EnableAddon(script.skin.helper.skinbackup)</onclick>
 						<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
 						<selected>System.AddonIsEnabled(script.skin.helper.skinbackup)</selected>
-					</control>
-					<control type="radiobutton" id="911229">
-						<label>script.artwork.beef</label>
-						<label2>$INFO[System.AddonVersion(script.artwork.beef)]            </label2>
-						<onclick condition="System.AddonIsEnabled(script.artwork.beef)">Addon.OpenSettings(script.artwork.beef)</onclick>
-						<onclick condition="System.HasAddon(script.artwork.beef) + !System.AddonIsEnabled(script.artwork.beef)">EnableAddon(script.artwork.beef)</onclick>
-						<onclick condition="!System.HasAddon(script.artwork.beef)">InstallAddon(script.artwork.beef)</onclick>
-						<selected>System.AddonIsEnabled(script.artwork.beef)</selected>
 					</control>
 					<control type="radiobutton" id="911230">
 						<label>script.artwork.downloader</label>
