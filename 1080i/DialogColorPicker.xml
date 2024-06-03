@@ -14,7 +14,7 @@
 				<texture border="40">dialogs/TinyDialog.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
-			<control type="label">
+			<control type="label" id="1">
 				<left>70</left>
 				<top>20</top>
 				<width>300</width>
@@ -22,7 +22,6 @@
 				<font>font24_title</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<align>left</align>
-				<label>Select Colour</label>
 			</control>
 			<control type="group">
 				<left>60</left>
