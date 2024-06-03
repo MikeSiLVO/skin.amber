@@ -1261,10 +1261,8 @@
 						<label>$LOCALIZE[32205]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32205])</onclick>
-						<!-- <onclick>SetProperty(colorpick,HighlightColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=HighlightColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,HighlightColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[HighlightColor]</param>
 						</include>
@@ -1303,10 +1301,8 @@
 						<font>ListDetails</font>
 						<label>$LOCALIZE[32212]</label>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32212])</onclick>
-						<!-- <onclick>SetProperty(colorpick,LabelTextColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=LabelTextColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,LabelTextColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[LabelTextColor]</param>
 						</include>
@@ -1315,10 +1311,8 @@
 						<label>$LOCALIZE[32213]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32213])</onclick>
-						<!-- <onclick>SetProperty(colorpick,FocusedTextColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=FocusedTextColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,FocusedTextColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[FocusedTextColor]</param>
 						</include>
@@ -1327,10 +1321,8 @@
 						<label>$LOCALIZE[32214]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32214])</onclick>
-						<!-- <onclick>SetProperty(colorpick,SelectedTextColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=SelectedTextColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,SelectedTextColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[SelectedTextColor]</param>
 						</include>
@@ -1339,10 +1331,8 @@
 						<label>$LOCALIZE[32206]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32206])</onclick>
-						<!-- <onclick>SetProperty(colorpick,GlowBarsColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=GlowBarsColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,GlowBarsColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[GlowBarsColor]</param>
 						</include>
@@ -1351,10 +1341,8 @@
 						<label>$LOCALIZE[32207]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32207])</onclick>
-						<!-- <onclick>SetProperty(colorpick,MenuBarColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=MenuBarColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,MenuBarColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[MenuBarColor]</param>
 						</include>
@@ -1363,10 +1351,8 @@
 						<label>$LOCALIZE[32208]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32208])</onclick>
-						<!-- <onclick>SetProperty(colorpick,VertMenuBladeColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=VertMenuBladeColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,VertMenuBladeColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[VertMenuBladeColor]</param>
 						</include>
@@ -1375,10 +1361,8 @@
 						<label>$LOCALIZE[32209]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32209])</onclick>
-						<!-- <onclick>SetProperty(colorpick,TopBarColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=TopBarColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,TopBarColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[TopBarColor]</param>
 						</include>
@@ -1387,10 +1371,8 @@
 						<label>$LOCALIZE[32211]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32211])</onclick>
-						<!-- <onclick>SetProperty(colorpick,DialogBGColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=DialogBGColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,DialogBGColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[DialogBGColor]</param>
 						</include>
@@ -1399,10 +1381,8 @@
 						<label>$LOCALIZE[32215]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32215])</onclick>
-						<!-- <onclick>SetProperty(colorpick,WidgetBGColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=WidgetBGColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,WidgetBGColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[WidgetBGColor]</param>
 						</include>
@@ -1411,10 +1391,8 @@
 						<label>$LOCALIZE[32221]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32221])</onclick>
-						<!-- <onclick>SetProperty(colorpick,ViewsBGColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=ViewsBGColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,ViewsBGColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[ViewsBGColor]</param>
 						</include>
@@ -1423,10 +1401,8 @@
 						<label>$LOCALIZE[32470]</label>
 						<font>ListDetails</font>
 						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32470])</onclick>
-						<!-- <onclick>SetProperty(colorpick,ViewsBGColor,Home)</onclick>
-						<onclick>ActivateWindow(1117)</onclick> -->
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=TimeshiftBufferColorStr,palette=rainbow)</onclick>
+						<onclick>SetProperty(colorpick,TimeshiftBufferColor,Home)</onclick>
+						<onclick>ActivateWindow(1117)</onclick>
 						<include content="ColorButton">
 							<param name="ColorString">$VAR[TimeshiftBufferColor]</param>
 						</include>
@@ -1792,13 +1768,6 @@
 						<onclick condition="System.HasAddon(script.skin.helper.widgets) + !System.AddonIsEnabled(script.skin.helper.widgets)">EnableAddon(script.skin.helper.widgets)</onclick>
 						<onclick condition="!System.HasAddon(service.skin.widgets)">InstallAddon(script.skin.helper.widgets)</onclick>
 						<selected>System.AddonIsEnabled(script.skin.helper.widgets)</selected>
-					</control>
-					<control type="radiobutton" id="911227">
-						<label>script.skin.helper.colorpicker</label>
-						<label2>$INFO[System.AddonVersion(script.skin.helper.colorpicker)]            </label2>
-						<onclick condition="System.HasAddon(script.skin.helper.colorpicker) + !System.AddonIsEnabled(script.skin.helper.colorpicker)">EnableAddon(script.skin.helper.colorpicker)</onclick>
-						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<selected>System.AddonIsEnabled(script.skin.helper.colorpicker)</selected>
 					</control>
 					<control type="radiobutton" id="911228">
 						<label>script.skin.helper.skinbackup</label>

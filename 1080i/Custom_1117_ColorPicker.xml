@@ -13,6 +13,7 @@
 	<onload condition="String.IsEqual(Window(Home).Property(colorpick),DialogBGColor)">SetProperty(colorstring,$VAR[DialogBGColor])</onload>
 	<onload condition="String.IsEqual(Window(Home).Property(colorpick),WidgetBGColor)">SetProperty(colorstring,$VAR[WidgetBGColor])</onload>
 	<onload condition="String.IsEqual(Window(Home).Property(colorpick),ViewsBGColor)">SetProperty(colorstring,$VAR[ViewsBGColor])</onload>
+	<onload condition="String.IsEqual(Window(Home).Property(colorpick),TimeshiftBufferColor)">SetProperty(colorstring,$VAR[TimeshiftBufferColor])</onload>
 	<onunload>ClearProperty(colorpick,Home)</onunload>
 	<controls>
 		<control type="group">
@@ -65,6 +66,7 @@
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),DialogBGColor)">Skin.SetString(DialogBGColorStr,$INFO[ListItem.Label])</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),WidgetBGColor)">Skin.SetString(WidgetBGColorStr,$INFO[ListItem.Label])</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),ViewsBGColor)">Skin.SetString(ViewsBGColorStr,$INFO[ListItem.Label])</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),TimeshiftBufferColor)">Skin.SetString(TimeshiftBufferColorStr,$INFO[ListItem.Label])</onclick>
 						<onclick>SetProperty(colorstring,$INFO[ListItem.Label])</onclick>
 						<onclick>SetFocus(3012)</onclick>
 						<itemlayout width="80" height="80">
@@ -159,6 +161,7 @@
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),DialogBGColor)">Skin.SetString(DialogBGColorStr)</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),WidgetBGColor)">Skin.SetString(WidgetBGColorStr)</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),ViewsBGColor)">Skin.SetString(ViewsBGColorStr)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),TimeshiftBufferColor)">Skin.SetString(TimeshiftBufferColorStr)</onclick>
 						<font>ListDetails</font>
 					</control>
 					<!-- Save button -->
@@ -200,21 +203,7 @@
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),WidgetBGColor)">SetProperty(colorstring,$VAR[WidgetBGColor])</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),ViewsBGColor)">Skin.SetString(ViewsBGColorStr,None)</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),ViewsBGColor)">SetProperty(colorstring,$VAR[ViewsBGColor])</onclick>
-					</control>
-					<!-- Use for all tints -->
-					<control type="button" id="3029">
-						<width>280</width>
-						<height>60</height>
-						<label>$LOCALIZE[32216]</label>
-						<font>ListDetails</font>
-						<onclick>Skin.SetString(GlowBarsColorStr,$INFO[Window.Property(colorstring)])</onclick>
-						<onclick>Skin.SetString(MenuBarColorStr,$INFO[Window.Property(colorstring)])</onclick>
-						<onclick>Skin.SetString(VertMenuBladeColorStr,$INFO[Window.Property(colorstring)])</onclick>
-						<onclick>Skin.SetString(TopBarColorStr,$INFO[Window.Property(colorstring)])</onclick>
-						<onclick>Skin.SetString(DialogBGColorStr,$INFO[Window.Property(colorstring)])</onclick>
-						<onclick>Skin.SetString(WidgetBGColorStr,$INFO[Window.Property(colorstring)])</onclick>
-						<onclick>Skin.SetString(ViewsBGColorStr,$INFO[Window.Property(colorstring)])</onclick>
-						<onclick>Action(Close)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),TimeshiftBufferColor)">SetProperty(colorstring,$VAR[TimeshiftBufferColor])</onclick>
 					</control>
 				</control>
 			</control>
