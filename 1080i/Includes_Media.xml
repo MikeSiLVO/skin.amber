@@ -94,11 +94,13 @@
 	</variable>
 
 	<variable name="HDRFlagVar">
+		<value condition="String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,hdr10)">$VAR[MediaFlagsPathVar]/hdr/$INFO[ListItem.HdrType].png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,hdr) | String.Contains(Container.ListItem.FileNameAndPath,HDR)">$VAR[MediaFlagsPathVar]/colorrange/hdr.png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,sdr) | String.Contains(Container.ListItem.FileNameAndPath,SDR)">$VAR[MediaFlagsPathVar]/colorrange/sdr.png</value>
 	</variable>
 
 	<variable name="MediaInfoHDRFlagVar">
+		<value condition="String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,hdr10)">$VAR[MediaFlagsPathVar]/hdr/$INFO[ListItem.HdrType].png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,hdr) | String.Contains(ListItem.FileNameAndPath,HDR)">$VAR[MediaFlagsPathVar]/colorrange/hdr.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,sdr) | String.Contains(ListItem.FileNameAndPath,SDR)">$VAR[MediaFlagsPathVar]/colorrange/sdr.png</value>
 	</variable>
@@ -1255,7 +1257,7 @@
 			</control>
 			<control type="image" id="89005">
 				<visible>!String.IsEmpty(ListItem.VideoResolution) + !Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,hdr10) | String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1266,7 +1268,7 @@
 			</control>
 			<control type="image" id="89005">
 				<visible>!String.IsEmpty(ListItem.VideoResolution) + Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,hdr10) | String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
