@@ -9,7 +9,7 @@
 	_1123 Custom_1123_PausedOverlay * Overlay to show info when paused, thanks to mikeSiLVO -->
 	<include file="script-skinshortcuts-includes.xml" />
 	<include file="script-skinviewtypes-includes.xml" />
-	<include file="Includes_Variables.xml" />
+	<include file="Variables.xml" />
 	<include file="Includes_Horizontal_Home.xml" />
 	<include file="Includes_Vertical_Home.xml" />
 	<include file="Includes_Shelf_Contents.xml" />
