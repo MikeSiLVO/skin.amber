@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-01-28 02:13+0000\n"
-"Last-Translator: icarok99 <icarok00@gmail.com>\n"
+"PO-Revision-Date: 2025-02-08 17:27+0000\n"
+"Last-Translator: Havok Dan <havokdan@yahoo.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/pt_br/>\n"
 "Language: pt_br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.3\n"
+"X-Generator: Weblate 5.9.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -167,7 +167,7 @@ msgstr "Ocultar info da previsão do tempo"
 
 msgctxt "#31035"
 msgid "Media Flags"
-msgstr ""
+msgstr "Sinalizadores de Mídia"
 
 msgctxt "#31036"
 msgid "Next tracks"
@@ -196,7 +196,7 @@ msgstr "Repositório"
 # empty strings from id 31042 to 31044
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
-msgstr ""
+msgstr "Mostrar Estante de Linha Tripla"
 
 msgctxt "#31046"
 msgid "Show Double Row Shelf"
@@ -412,7 +412,7 @@ msgstr "Definir Imagem de Fundo"
 
 msgctxt "#31117"
 msgid "Select Default Font Size"
-msgstr ""
+msgstr "Selecionar Tamanho Padrão da Fonte"
 
 msgctxt "#31118"
 msgid "Small"
@@ -420,7 +420,7 @@ msgstr "Pequeno"
 
 msgctxt "#31119"
 msgid "Regular"
-msgstr ""
+msgstr "Regular"
 
 msgctxt "#31120"
 msgid "Large"
@@ -428,7 +428,7 @@ msgstr "Grande"
 
 msgctxt "#31121"
 msgid "Apply Changes"
-msgstr ""
+msgstr "Aplicar alterações"
 
 msgctxt "#31129"
 msgid "Same director"
@@ -1161,35 +1161,35 @@ msgstr "Menu de Desligamento"
 
 msgctxt "#31529"
 msgid "Popular People"
-msgstr ""
+msgstr "Pessoas populares"
 
 msgctxt "#31530"
 msgid "Trending Today"
-msgstr ""
+msgstr "Em alta hoje"
 
 msgctxt "#31531"
 msgid "Trending this Week"
-msgstr ""
+msgstr "Em alta esta semana"
 
 msgctxt "#31532"
 msgid "Highest Revenue"
-msgstr ""
+msgstr "Receita mais alta"
 
 msgctxt "#31533"
 msgid "Most Voted"
-msgstr ""
+msgstr "Mais votados"
 
 msgctxt "#31534"
 msgid "People"
-msgstr ""
+msgstr "Pessoas"
 
 msgctxt "#31535"
 msgid "People Trending Today"
-msgstr ""
+msgstr "Pessoas em alta hoje"
 
 msgctxt "#31536"
 msgid "People Trending this Week"
-msgstr ""
+msgstr "Pessoas em alta nesta semana"
 
 msgctxt "#31537"
 msgid "Trakt"
@@ -1201,23 +1201,23 @@ msgstr ""
 
 msgctxt "#31539"
 msgid "Trakt - History"
-msgstr ""
+msgstr "Trakt - Histórico"
 
 msgctxt "#31540"
 msgid "Trakt - Most Watched"
-msgstr ""
+msgstr "Trakt - Mais assistidos"
 
 msgctxt "#31541"
 msgid "Trakt - In-Progress"
-msgstr ""
+msgstr "Trakt - Em progresso"
 
 msgctxt "#31542"
 msgid "Trakt - Recommended"
-msgstr ""
+msgstr "Trakt - Recomendado"
 
 msgctxt "#31543"
 msgid "Trakt - Trending"
-msgstr ""
+msgstr "Trakt - Em alta"
 
 msgctxt "#31544"
 msgid "Trakt - Popular"
@@ -1225,27 +1225,27 @@ msgstr ""
 
 msgctxt "#31545"
 msgid "Trakt - Most Played"
-msgstr ""
+msgstr "Trakt - Mais reproduzidos"
 
 msgctxt "#31546"
 msgid "Trakt - Anticipated"
-msgstr ""
+msgstr "Trakt - Antecipado"
 
 msgctxt "#31547"
 msgid "Trakt - Top 10 Box Office This Week"
-msgstr ""
+msgstr "Trakt - As 10 maiores bilheterias da semana"
 
 msgctxt "#31548"
 msgid "Trakt - My Shows Airing This Week"
-msgstr ""
+msgstr "Trakt - Minhas séries que vão ao ar esta semana"
 
 msgctxt "#31549"
 msgid "Trakt - Trending Lists"
-msgstr ""
+msgstr "Trakt - Listas em alta"
 
 msgctxt "#31550"
 msgid "Trakt - Popular Lists"
-msgstr ""
+msgstr "Trakt - Listas populares"
 
 msgctxt "#31551"
 msgid "Trakt - Liked Lists"
@@ -1253,7 +1253,7 @@ msgstr ""
 
 msgctxt "#31552"
 msgid "Trakt - Your Lists"
-msgstr ""
+msgstr "Trakt - Suas listas"
 
 msgctxt "#31553"
 msgid "Embuary Info Shelves"
@@ -1301,15 +1301,15 @@ msgstr ""
 
 msgctxt "#31564"
 msgid "TMDb Helper - Next Aired: All Items"
-msgstr ""
+msgstr "TMDb Helper - Próxima Exibição: Todos os Itens"
 
 msgctxt "#31565"
 msgid "TMDb Helper - Next Aired: Next Week"
-msgstr ""
+msgstr "TMDb Helper - Próxima exibição: Semana que vem"
 
 msgctxt "#31566"
 msgid "TMDb Helper - Next Aired: Today"
-msgstr ""
+msgstr "TMDb Helper - Próxima exibição: Hoje"
 
 msgctxt "#31567"
 msgid "Embuary Info - Next Aired: Next 7 Days"

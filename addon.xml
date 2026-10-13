@@ -30,7 +30,9 @@
 		</assets>
 		<news>4.0.0[CR]- Omega support[CR]- Use custom color picker and drop support for script.skin.helper.colorpicker[CR]- Add MyFavourites.xml[CR]- Update SettingsScreenCalibration.xml[CR]- Add colorbutton + DialogColorPicker.xml[CR]- CinemaVision --> PreshowExperience[CR]- Add Player.Cuts, Player.SceneMarkers, &amp; Player.Editlist[CR]- Add show password button to DialogKeyboard.xml[CR]- Add Video Versions support[CR]- Misc fixes &amp; cleanup
 		</news>
+		<summary lang="bs_BA">Nema bloatware-a, samo vaši mediji s jednostavnim interfejsom za navigaciju</summary>
 		<summary lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar</summary>
+		<summary lang="cs_CZ">Žádný zbytečný balast, jen vaše média v přehledném rozhraní</summary>
 		<summary lang="da_DK">Ingen bloatware, kun dine medier med en brugerflade der er let at navigere</summary>
 		<summary lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer leicht zu navigierenden Oberfläche</summary>
 		<summary lang="en_AU">No bloatware, just your media with an easy to navigate interface</summary>
@@ -48,8 +50,11 @@
 		<summary lang="nl_NL">Geen bloatware, alleen jouw media in een makkelijk te navigeren omgeving</summary>
 		<summary lang="pt_BR">Sem bloatware, apenas sua mídia com uma interface fácil de navegar</summary>
 		<summary lang="ru_RU">Никакого вредоносного ПО, только ваши медиафайлы с удобным интерфейсом</summary>
+		<summary lang="sv_SE">Ingen bloatware, bara dina medier med ett lättnavigerat gränssnitt</summary>
 		<summary lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面</summary>
+		<description lang="bs_BA">Nema bloatware-a, samo vaši mediji s jednostavnim interfejsom za navigaciju.[CR]Koristi neke teksture iz Mediastream i Aeon skinova.</description>
 		<description lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar.[CR]Utilitza algunes textures d&apos;skins Mediastream i Aeon.</description>
+		<description lang="cs_CZ">Žádný zbytečný balast, jen vaše média v přehledném rozhraní.[CR]Používá některé textury ze vzhledů Mediastream a Aeon.</description>
 		<description lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer einfach zu navigierenden Oberfläche.[CR]Benutzt Texturen aus den Mediastream und Aeon skins.</description>
 		<description lang="en_AU">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
 		<description lang="en_GB">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
@@ -67,6 +72,7 @@
 		<description lang="pt_BR">Sem excessos, apenas a sua mídia com uma interface fácil de navegar. [CR]Utiliza algumas texturas das skins Mediastream e Aeon.</description>
 		<description lang="pt_PT">Um tema sem excessos que apenas mostra a sua média com uma interface de navegação simples.[CR]Utiliza algumas texturas dos temas Mediastream e Aeon.</description>
 		<description lang="ru_RU">Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon.</description>
+		<description lang="sv_SE">Ingen bloatware, bara dina medier med ett lättnavigerat gränssnitt.[CR]Använder vissa texturer från Mediastream och Aeon-skal.</description>
 		<description lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面。[CR]使用了 Mediastream 和 Aeon 皮肤的一些纹理。</description>
 	</extension>
 </addon>
