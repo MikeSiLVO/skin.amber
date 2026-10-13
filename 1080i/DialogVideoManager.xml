@@ -8,9 +8,9 @@
 			<left>172</left>
 			<top>180</top>
 			<control type="image">
-				<left>6</left>
+				<left>-89</left>
 				<top>-20</top>
-				<width>1580</width>
+				<width>1770</width>
 				<height>780</height>
 				<texture flipx="true">dialogs/SettingsBG.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
@@ -26,7 +26,7 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="group">
-				<left>50</left>
+				<left>-42</left>
 				<top>60</top>
 				<include content="ShadowedImage">
 					<param name="top">0</param>
@@ -38,46 +38,46 @@
 				</include>
 			</control>
 			<control type="list" id="50">
-				<left>576</left>
+				<left>484</left>
 				<top>60</top>
-				<width>710</width>
+				<width>860</width>
 				<height>600</height>
 				<orientation>vertical</orientation>
 				<onleft>60</onleft>
 				<onright>90</onright>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>0</scrolltime>
-				<itemlayout width="710" height="60">
+				<itemlayout width="860" height="60">
 					<control type="image">
-						<width>710</width>
+						<width>860</width>
 						<height>60</height>
 						<texture border="3">list/ListNF.png</texture>
 					</control>
 					<control type="label">
 						<left>20</left>
-						<width>690</width>
+						<width>840</width>
 						<height>60</height>
 						<label>$INFO[ListItem.label]</label>
 						<scroll>true</scroll>
 						<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 					</control>
 				</itemlayout>
-				<focusedlayout width="710" height="60">
+				<focusedlayout width="860" height="60">
 					<control type="image">
-						<width>710</width>
+						<width>860</width>
 						<height>60</height>
 						<texture border="3">list/ListNF.png</texture>
 					</control>
 					<control type="image">
 						<visible>Control.HasFocus(50)</visible>
 						<include>VisibleFadeEffect</include>
-						<width>710</width>
+						<width>860</width>
 						<height>60</height>
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
 					<control type="label">
 						<left>20</left>
-						<width>690</width>
+						<width>840</width>
 						<height>60</height>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<selectedcolor>SelectedFocused</selectedcolor>
@@ -88,7 +88,7 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>13</left>
+				<left>-79</left>
 				<top>60</top>
 				<width>36</width>
 				<height>600</height>
@@ -103,12 +103,12 @@
 			</control>
 			<control type="grouplist" id="90">
 				<top>60</top>
-				<left>1290</left>
+				<left>1348</left>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<control type="button" id="21">
 					<description>Play button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[208]</label>
 					<align>right</align>
@@ -116,7 +116,7 @@
 				</control>
 				<control type="button" id="22">
 					<description>Add version button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[40014]</label>
 					<align>right</align>
@@ -125,7 +125,7 @@
 				</control>
 				<control type="button" id="23">
 					<description>Add extras button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[40015]</label>
 					<align>right</align>
@@ -134,7 +134,7 @@
 				</control>
 				<control type="button" id="27">
 					<description>Choose art button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[13511]</label>
 					<align>right</align>
@@ -142,7 +142,7 @@
 				</control>
 				<control type="button" id="24">
 					<description>Choose version type button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[40004]</label>
 					<align>right</align>
@@ -151,7 +151,7 @@
 				</control>
 				<control type="button" id="28">
 					<description>Rename extra button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[118]</label>
 					<align>right</align>
@@ -160,7 +160,7 @@
 				</control>
 				<control type="button" id="26">
 					<description>Remove button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[15015]</label>
 					<align>right</align>
@@ -168,7 +168,7 @@
 				</control>
 				<control type="button" id="29">
 					<description>Ungroup version button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[40046]</label>
 					<align>right</align>
@@ -177,7 +177,7 @@
 				</control>
 				<control type="button" id="25">
 					<description>Set default button</description>
-					<width>254</width>
+					<width>288</width>
 					<height>60</height>
 					<label>$LOCALIZE[40023]</label>
 					<align>right</align>
