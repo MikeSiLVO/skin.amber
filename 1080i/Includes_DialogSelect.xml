@@ -32,15 +32,35 @@
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 
-	<variable name="DialogSelectLabel">
-		<value condition="Window.IsVisible(selectvideoversion)">$INFO[ListItem.VideoVersionName]</value>
-		<value>$INFO[ListItem.Label]</value>
+	<expression name="DialogSelectStreams">Window.IsVisible(dialogselectvideo) | Window.IsVisible(dialogselectaudio) | Window.IsVisible(dialogselectsubtitle)</expression>
+
+	<variable name="DialogSelectMainImage">
+		<value condition="$EXP[DialogSelectStreams] + !String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
+		<value condition="$EXP[DialogSelectStreams] + !String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
+		<value condition="!String.IsEmpty(Container(6).ListItem.Art(poster))">$INFO[Container(6).ListItem.Art(poster)]</value>
+		<value>$INFO[Container(6).ListItem.Icon]</value>
 	</variable>
 
 	<variable name="DialogSelectLabel2">
-		<value condition="Window.IsVisible(selectvideoextra)">$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]</value>
-		<value condition="Window.IsVisible(selectvideoversion)">$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]$INFO[ListItem.VideoResolution, | ]$INFO[ListItem.HdrType, • ]$INFO[ListItem.AudioCodec, | ]$VAR[AudioChannelsLabelVar, • ]</value>
+		<value condition="Window.IsVisible(dialogselectvideo)">$INFO[ListItem.Property(stream.codec)]$INFO[ListItem.Property(stream.resolution), • ]$INFO[ListItem.Property(stream.hdrtype), • ]$INFO[ListItem.Property(stream.fps), • , fps]$INFO[ListItem.Property(stream.description), • ]</value>
+		<value condition="[Window.IsVisible(dialogselectaudio) | Window.IsVisible(dialogselectsubtitle)] + !String.IsEmpty(ListItem.Property(stream.codecdesc))">$INFO[ListItem.Property(stream.codecdesc)]$INFO[ListItem.Property(stream.description), • ]</value>
+		<value condition="Window.IsVisible(dialogselectaudio)">$INFO[ListItem.Property(stream.codec)]$INFO[ListItem.Property(stream.channels), • ]$INFO[ListItem.Property(stream.description), • ]</value>
+		<value condition="Window.IsVisible(dialogselectsubtitle)">$INFO[ListItem.Property(stream.codec)]$INFO[ListItem.Property(stream.description), • ]</value>
 		<value condition="!String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
+	</variable>
+
+	<variable name="DialogSelectStreamFlags">
+		<value condition="String.IsEqual(ListItem.Property(stream.isoriginal),true) + String.IsEqual(ListItem.Property(stream.isforced),true) + String.IsEqual(ListItem.Property(stream.ishearingimpaired),true)">$LOCALIZE[39111], $LOCALIZE[39106], $LOCALIZE[39107]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isoriginal),true) + String.IsEqual(ListItem.Property(stream.isforced),true) + String.IsEqual(ListItem.Property(stream.isvisualimpaired),true)">$LOCALIZE[39111], $LOCALIZE[39106], $LOCALIZE[39108]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isoriginal),true) + String.IsEqual(ListItem.Property(stream.isforced),true)">$LOCALIZE[39111], $LOCALIZE[39106]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isoriginal),true) + String.IsEqual(ListItem.Property(stream.ishearingimpaired),true)">$LOCALIZE[39111], $LOCALIZE[39107]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isoriginal),true) + String.IsEqual(ListItem.Property(stream.isvisualimpaired),true)">$LOCALIZE[39111], $LOCALIZE[39108]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isforced),true) + String.IsEqual(ListItem.Property(stream.ishearingimpaired),true)">$LOCALIZE[39106], $LOCALIZE[39107]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isforced),true) + String.IsEqual(ListItem.Property(stream.isvisualimpaired),true)">$LOCALIZE[39106], $LOCALIZE[39108]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.ishearingimpaired),true)">$LOCALIZE[39107]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isvisualimpaired),true)">$LOCALIZE[39108]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isforced),true)">$LOCALIZE[39106]</value>
+		<value condition="String.IsEqual(ListItem.Property(stream.isoriginal),true)">$LOCALIZE[39111]</value>
 	</variable>
 
 	<include name="DialogSelectMediaFlagItems">
@@ -618,7 +638,7 @@
 					<param name="width">500</param>
 					<param name="height">500</param>
 					<param name="shadowoffset">8</param>
-					<param name="texture">$VAR[DialogSelectImage]</param>
+					<param name="texture">$VAR[DialogSelectMainImage]</param>
 				</include>
 			</control>
 			<control type="group">
@@ -667,9 +687,10 @@
 							<posy>5</posy>
 							<width>590</width>
 							<height>60</height>
-							<label>$VAR[DialogSelectLabel]</label>
+							<label>$INFO[ListItem.Label]$VAR[DialogSelectStreamFlags, - ]</label>
 							<scroll>true</scroll>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
+							<animation effect="slide" end="-112,0" condition="$EXP[DialogSelectStreams]">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>132</left>
@@ -682,6 +703,18 @@
 							<font>ListDetails</font>
 							<scroll>false</scroll>
 							<label>$VAR[DialogSelectLabel2]</label>
+							<animation effect="slide" end="-112,0" condition="$EXP[DialogSelectStreams]">Conditional</animation>
+						</control>
+						<control type="label">
+							<right>20</right>
+							<width>50</width>
+							<height>120</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>Font40_Icon</font>
+							<textcolor>$VAR[HighlightColor]</textcolor>
+							<label></label>
+							<visible>String.IsEqual(ListItem.Property(stream.isdefault),true)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout width="710" height="120">
@@ -714,8 +747,9 @@
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
-							<label>$VAR[DialogSelectLabel]</label>
+							<label>$INFO[ListItem.Label]$VAR[DialogSelectStreamFlags, - ]</label>
 							<scroll>true</scroll>
+							<animation effect="slide" end="-112,0" condition="$EXP[DialogSelectStreams]">Conditional</animation>
 						</control>
 						<control type="label">
 							<visible>!Control.HasFocus(6)</visible>
@@ -724,8 +758,9 @@
 							<width>590</width>
 							<height>60</height>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$INFO[ListItem.Label]$VAR[DialogSelectStreamFlags, - ]</label>
 							<scroll>true</scroll>
+							<animation effect="slide" end="-112,0" condition="$EXP[DialogSelectStreams]">Conditional</animation>
 						</control>
 						<control type="label">
 							<visible>Control.HasFocus(6)</visible>
@@ -739,6 +774,7 @@
 							<shadowcolor>HeavyShadow</shadowcolor>
 							<font>ListDetails</font>
 							<label>$VAR[DialogSelectLabel2]</label>
+							<animation effect="slide" end="-112,0" condition="$EXP[DialogSelectStreams]">Conditional</animation>
 						</control>
 						<control type="label">
 							<visible>!Control.HasFocus(6)</visible>
@@ -752,6 +788,29 @@
 							<shadowcolor />
 							<font>ListDetails</font>
 							<label>$INFO[ListItem.Label2]</label>
+							<animation effect="slide" end="-112,0" condition="$EXP[DialogSelectStreams]">Conditional</animation>
+						</control>
+						<control type="label">
+							<right>20</right>
+							<width>50</width>
+							<height>120</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>Font40_Icon</font>
+							<textcolor>$VAR[FocusedTextColor]</textcolor>
+							<label></label>
+							<visible>String.IsEqual(ListItem.Property(stream.isdefault),true) + Control.HasFocus(6)</visible>
+						</control>
+						<control type="label">
+							<right>20</right>
+							<width>50</width>
+							<height>120</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>Font40_Icon</font>
+							<textcolor>$VAR[HighlightColor]</textcolor>
+							<label></label>
+							<visible>String.IsEqual(ListItem.Property(stream.isdefault),true) + !Control.HasFocus(6)</visible>
 						</control>
 					</focusedlayout>
 				</control>

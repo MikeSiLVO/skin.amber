@@ -1094,11 +1094,21 @@
 						<height>80</height>
 						<width>470</width>
 						<font>Details</font>
-						<label>$LOCALIZE[31133]</label>
+						<label>$LOCALIZE[460]</label>
 						<label2>$INFO[VideoPlayer.AudioLanguage,[COLOR Hghlight],[/COLOR]]</label2>
-						<onclick>AudioNextLanguage</onclick>
+						<onclick>DialogSelectAudio</onclick>
 						<texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
+						<enable>Integer.IsGreater(VideoPlayer.AudioStreamCount,1)</enable>
 						<visible>Window.IsVisible(videoOSD)</visible>
+					</control>
+					<control type="button" id="101012">
+						<height>80</height>
+						<width>470</width>
+						<font>Details</font>
+						<label>$LOCALIZE[38031]</label>
+						<onclick>DialogSelectVideo</onclick>
+						<texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
+						<visible>Window.IsVisible(videoOSD) + Integer.IsGreater(VideoPlayer.VideoStreamCount,1)</visible>
 					</control>
 					<control type="radiobutton" id="10105">
 						<height>80</height>
@@ -1219,10 +1229,10 @@
 					<control type="button" id="1113">
 						<height>80</height>
 						<width>470</width>
-						<label>$LOCALIZE[32004]</label>
+						<label>$LOCALIZE[462]</label>
 						<label2>[COLOR $VAR[SelectedTextColor]]$INFO[VideoPlayer.SubtitlesLanguage][/COLOR]</label2>
-						<onclick>CycleSubtitle</onclick>
-						<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
+						<onclick>DialogSelectSubtitle</onclick>
+						<enable>VideoPlayer.HasSubtitles</enable>
 						<font>Details</font>
 						<texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
 					</control>

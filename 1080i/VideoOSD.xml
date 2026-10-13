@@ -92,7 +92,7 @@
 		</control>
 
 		<control type="group">
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(playerprocessinfo) | Window.IsActive(osdcmssettings)]</visible>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(dialogselectvideo) | Window.IsVisible(dialogselectaudio) | Window.IsVisible(dialogselectsubtitle) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(playerprocessinfo) | Window.IsActive(osdcmssettings)]</visible>
 
 			<include condition="!Skin.HasSetting(UseCompactOSD) + !Skin.HasSetting(UseUltraCompactOSD)">OSDControls</include>
 
