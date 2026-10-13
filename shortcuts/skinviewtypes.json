@@ -120,6 +120,21 @@
             "viewtypes": ["50", "54", "501", "52", "502", "51", "511", "55", "551", "53", "56", "57", "58"],
             "library": "50"
         },
+        "videoversions": {
+            "rule": "Container.Content(videoversions)",
+            "viewtypes": ["50", "54", "501", "52", "502", "51", "511", "55", "551", "53", "56", "57", "58"],
+            "library": "50"
+        },
+        "videoextras": {
+            "rule": "Container.Content(videoextras)",
+            "viewtypes": ["50", "54", "501", "52", "502", "51", "511", "55", "551", "53", "56", "57"],
+            "library": "50"
+        },
+        "videoassets": {
+            "rule": "Container.Content(videoassets)",
+            "viewtypes": ["50", "54", "501", "52", "502", "51", "511", "55", "551", "53", "56", "57"],
+            "library": "50"
+        },
         "tvshows": {
             "rule": "Container.Content(tvshows)",
             "viewtypes": ["50", "54", "501", "52", "502", "51", "511", "55", "551", "53", "56", "57", "58", "600"],
