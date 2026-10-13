@@ -103,4 +103,20 @@
 		<entry key="9.9">99</entry>
 		<entry key="10.0">100</entry>
 	</map>
+	<map name="AudioCodecFlagMap">
+		<entry key="aac_lc">aac</entry>
+		<entry key="aac_latm">aac</entry>
+		<entry key="aac_ltp">aac</entry>
+		<entry key="aac_ssr">aac</entry>
+		<entry key="he_aac">aac</entry>
+		<entry key="he_aac_v2">aac</entry>
+		<entry key="a-c-3">ac3</entry>
+		<entry key="ac-3">ac3</entry>
+		<entry key="e-ac-3">ac3</entry>
+		<entry key="eac3">ac3</entry>
+		<entry key="dts_96_24">dts</entry>
+		<entry key="dts_express">dts</entry>
+		<entry key="dtshd_ma_x">dtsx</entry>
+		<entry key="dtshd_ma_x_imax">dtsx</entry>
+	</map>
 </includes>
