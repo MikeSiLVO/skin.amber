@@ -126,7 +126,8 @@
 
 	<variable name="PopupAudioCodecFlagVar">
 		<value condition="[String.Contains(Window(1144).Property(FileNameAndPath),atmos)  | String.Contains(Window(1144).Property(AudioCodec),atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
-		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),dtsx) | String.Contains(Window(1144).Property(FileNameAndPath),dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),dtsx) | String.Contains(Window(1144).Property(FileNameAndPath),dts-x) | String.StartsWith(Window(1144).Property(AudioCodec),dtshd_ma_x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.IsEqual(Window(1144).Property(AudioCodec),dts_96_24) | String.IsEqual(Window(1144).Property(AudioCodec),dts_express) | [String.IsEqual(Window(1144).Property(AudioCodec),dts_es) + !Skin.HasSetting(coloredflags)]">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
 		<value condition="String.Contains(Window(1144).Property(AudioCodec),aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(Window(1144).Property(AudioCodec),ac3) | String.Contains(Window(1144).Property(AudioCodec),ac-3) | String.Contains(Window(1144).Property(AudioCodec),a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[Window(1144).Property(AudioCodec),,.png]</value>

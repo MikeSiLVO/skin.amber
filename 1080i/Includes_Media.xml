@@ -63,7 +63,8 @@
 
 	<variable name="AudioCodecFlagVar">
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,atmos) | String.Contains(Container.ListItem.AudioCodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
-		<value condition="String.Contains(Container.ListItem.FileNameAndPath,dtsx) | String.Contains(Container.ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.Contains(Container.ListItem.FileNameAndPath,dtsx) | String.Contains(Container.ListItem.FileNameAndPath,dts-x) | String.StartsWith(Container.ListItem.AudioCodec,dtshd_ma_x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.IsEqual(Container.ListItem.AudioCodec,dts_96_24) | String.IsEqual(Container.ListItem.AudioCodec,dts_express) | [String.IsEqual(Container.ListItem.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)]">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
 		<value condition="String.Contains(Container.ListItem.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(Container.ListItem.AudioCodec,ac3) | String.Contains(Container.ListItem.AudioCodec,ac-3) | String.Contains(Container.ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[Container.ListItem.AudioCodec,,.png]</value>
@@ -71,7 +72,8 @@
 
 	<variable name="MediaInfoAudioCodecFlagVar">
 		<value condition="String.Contains(ListItem.FileNameAndPath,atmos) | String.Contains(ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
-		<value condition="String.Contains(ListItem.FileNameAndPath,dtsx) | String.Contains(ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.Contains(ListItem.FileNameAndPath,dtsx) | String.Contains(ListItem.FileNameAndPath,dts-x) | String.StartsWith(ListItem.AudioCodec,dtshd_ma_x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.IsEqual(ListItem.AudioCodec,dts_96_24) | String.IsEqual(ListItem.AudioCodec,dts_express) | [String.IsEqual(ListItem.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)]">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
 		<value condition="String.Contains(ListItem.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(ListItem.AudioCodec,ac3) | String.Contains(ListItem.AudioCodec,ac-3) | String.Contains(ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
@@ -79,7 +81,8 @@
 
 	<variable name="PlayerAudioCodecFlagVar">
 		<value condition="String.Contains(Player.FileNameAndPath,atmos) | String.Contains(VideoPlayer.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
-		<value condition="String.Contains(Player.FileNameAndPath,dtsx) | String.Contains(Player.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.Contains(Player.FileNameAndPath,dtsx) | String.Contains(Player.FileNameAndPath,dts-x) | String.StartsWith(VideoPlayer.AudioCodec,dtshd_ma_x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dts_96_24) | String.IsEqual(VideoPlayer.AudioCodec,dts_express) | [String.IsEqual(VideoPlayer.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)]">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
 		<value condition="String.Contains(VideoPlayer.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(VideoPlayer.AudioCodec,ac3) | String.Contains(VideoPlayer.AudioCodec,ac-3) | String.Contains(VideoPlayer.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[VideoPlayer.AudioCodec,,.png]</value>
@@ -87,7 +90,8 @@
 
 	<variable name="SearchAudioCodecFlagVar">
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,atmos) | String.Contains(Container(6).ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
-		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,dtsx) | String.Contains(Container(6).ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,dtsx) | String.Contains(Container(6).ListItem.FileNameAndPath,dts-x) | String.StartsWith(Container(6).ListItem.AudioCodec,dtshd_ma_x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
+		<value condition="String.IsEqual(Container(6).ListItem.AudioCodec,dts_96_24) | String.IsEqual(Container(6).ListItem.AudioCodec,dts_express) | [String.IsEqual(Container(6).ListItem.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)]">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
 		<value condition="String.Contains(Container(6).ListItem.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(Container(6).ListItem.AudioCodec,ac3) | String.Contains(Container(6).ListItem.AudioCodec,ac-3) | String.Contains(Container(6).ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[Container(6).ListItem.AudioCodec,,.png]</value>
