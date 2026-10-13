@@ -327,7 +327,7 @@
 					<font />
 					<selected>true</selected>
 					<onclick>SetProperty(TextViewerHeader,$ESCVAR[panelheading],Home)</onclick>
-					<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + !String.IsEmpty(Container(10051).ListItem.Tagline)">SetProperty(TextViewerSubHeader,$ESCINFO[Container(10051).ListItem.Tagline,[I],[/I]],Home)</onclick>
+					<onclick condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)] + !String.IsEmpty(Container(10051).ListItem.Tagline)">SetProperty(TextViewerSubHeader,$ESCINFO[Container(10051).ListItem.Tagline,[I],[/I]],Home)</onclick>
 					<onclick>SetProperty(TextViewerContent,$ESCVAR[Plots],Home)</onclick>
 					<onclick>ActivateWindow(1124)</onclick>
 				</control>
