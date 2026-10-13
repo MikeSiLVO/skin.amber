@@ -221,6 +221,12 @@
 						<width>1420</width>
 						<font>Mono26</font>
 					</control>
+					<control type="label" id="13">
+						<description>Label 13</description>
+						<height>45</height>
+						<width>1420</width>
+						<font>Mono26</font>
+					</control>
 				</control>
 				<control type="textbox" id="30">
 					<left>420</left>
