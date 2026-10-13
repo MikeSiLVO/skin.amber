@@ -583,20 +583,65 @@
 		</control>
 	</include>
 
-	<include name="DialogSelectStandard">
+		<constant name="DetailsListLeft">484</constant>
+	<constant name="DetailsListWidth">860</constant>
+	<constant name="DetailsButtonsLeft">1348</constant>
+	<constant name="DetailsButtonWidth">288</constant>
+
+	<include name="DetailsDialogFrame">
+		<param name="image" />
+		<param name="list">6</param>
+		<param name="visible">true</param>
+		<definition>
+			<control type="group">
+				<visible>$PARAM[visible]</visible>
+				<control type="image">
+					<left>-89</left>
+					<top>-20</top>
+					<width>1770</width>
+					<height>780</height>
+					<texture flipx="true">dialogs/SettingsBG.png</texture>
+					<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+				</control>
+				<control type="group">
+					<left>-42</left>
+					<top>60</top>
+					<include content="ShadowedImage">
+						<param name="top">0</param>
+						<param name="left">0</param>
+						<param name="width">500</param>
+						<param name="height">500</param>
+						<param name="shadowoffset">8</param>
+						<param name="texture">$PARAM[image]</param>
+					</include>
+				</control>
+				<control type="scrollbar" id="60">
+					<left>-79</left>
+					<top>60</top>
+					<width>36</width>
+					<height>600</height>
+					<texturesliderbackground />
+					<texturesliderbar />
+					<texturesliderbarfocus />
+					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
+					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<onright>$PARAM[list]</onright>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+<include name="DialogSelectStandard">
 		<include>DimBG</include>
 		<control type="group">
 			<posx>172</posx>
 			<posy>180</posy>
-			<control type="image">
-				<posx>-89</posx>
-				<posy>-20</posy>
-				<width>1770</width>
-				<height>780</height>
-				<texture flipx="true">dialogs/SettingsBG.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
-				<visible>!Control.IsVisible(3)</visible>
-			</control>
+			<include content="DetailsDialogFrame">
+				<param name="image">$VAR[DialogSelectMainImage]</param>
+				<param name="visible">Control.IsVisible(6)</param>
+			</include>
 			<control type="image">
 				<posx>-14</posx>
 				<posy>-20</posy>
@@ -628,38 +673,12 @@
 				<label />
 				<visible>!Control.IsVisible(6)</visible>
 			</control>
-			<control type="group">
-				<left>-42</left>
-				<top>60</top>
-				<visible>Control.IsVisible(6)</visible>
-				<include content="ShadowedImage">
-					<param name="top">0</param>
-					<param name="left">0</param>
-					<param name="width">500</param>
-					<param name="height">500</param>
-					<param name="shadowoffset">8</param>
-					<param name="texture">$VAR[DialogSelectMainImage]</param>
-				</include>
-			</control>
-			<control type="group">
-				<left>-42</left>
-				<top>60</top>
-				<visible>Control.IsVisible(6) + !String.IsEmpty(Window(Home).Property(SkinViewtypes.DialogIsActive))</visible>
-				<include content="ShadowedImage">
-					<param name="top">0</param>
-					<param name="left">0</param>
-					<param name="width">600</param>
-					<param name="height">600</param>
-					<param name="shadowoffset">8</param>
-					<param name="texture">$INFO[Container(6).ListItem.Icon]</param>
-				</include>
-			</control>
 			<control type="group" description="Group 6 Thumbs">
 				<visible>Control.IsVisible(6)</visible>
 				<control type="list" id="6">
-					<posx>484</posx>
+					<posx>DetailsListLeft</posx>
 					<posy>60</posy>
-					<width>858</width>
+					<width>DetailsListWidth</width>
 					<height>600</height>
 					<orientation>vertical</orientation>
 					<onleft>60</onleft>
@@ -864,21 +883,6 @@
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>-79</posx>
-				<posy>60</posy>
-				<width>36</width>
-				<height>600</height>
-				<texturesliderbackground />
-				<texturesliderbar />
-				<texturesliderbarfocus />
-				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
-				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-				<onright>3</onright>
-				<visible>Control.IsVisible(6)</visible>
-			</control>
-			<control type="scrollbar" id="60">
 				<posx>1250</posx>
 				<posy>60</posy>
 				<width>36</width>
@@ -896,14 +900,14 @@
 			<control type="grouplist" id="90">
 				<visible>Control.IsVisible(6)</visible>
 				<top>500</top>
-				<left>1348</left>
+				<left>DetailsButtonsLeft</left>
 				<onleft condition="Control.IsVisible(3)">3</onleft>
 				<onright condition="Control.IsVisible(3)">3</onright>
 				<onleft condition="Control.IsVisible(6)">6</onleft>
 				<onright condition="Control.IsVisible(6)">6</onright>
 				<control type="button" id="98">
 					<description>Get More button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<label>$INFO[Control.GetLabel(8)]</label>
 					<align>right</align>
 					<height>60</height>
@@ -914,7 +918,7 @@
 				</control>
 				<!-- <control type="button" id="981">
 					<description>Get More button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<label>$LOCALIZE[21452]</label>
 					<align>right</align>
 					<height>60</height>
@@ -925,7 +929,7 @@
 				</control> -->
 				<control type="button" id="95">
 					<description>Manual button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<label>$INFO[Control.GetLabel(5)]</label>
 					<align>right</align>
 					<height>60</height>
@@ -938,7 +942,7 @@
 				</control>
 				<control type="button" id="951">
 					<description>Manual button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<label>$LOCALIZE[186]</label>
 					<align>right</align>
 					<height>60</height>
@@ -951,7 +955,7 @@
 				</control>
 				<control type="button" id="7">
 					<description>Cancel button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[222]</label>
 					<align>right</align>

@@ -7,14 +7,10 @@
 		<control type="group">
 			<left>172</left>
 			<top>180</top>
-			<control type="image">
-				<left>-89</left>
-				<top>-20</top>
-				<width>1770</width>
-				<height>780</height>
-				<texture flipx="true">dialogs/SettingsBG.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
-			</control>
+			<include content="DetailsDialogFrame">
+				<param name="image">$VAR[VideoVersionsPosterVar]</param>
+				<param name="list">50</param>
+			</include>
 			<control type="label" id="2" description="Header">
 				<left>-14</left>
 				<top>5</top>
@@ -25,22 +21,10 @@
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
-			<control type="group">
-				<left>-42</left>
-				<top>60</top>
-				<include content="ShadowedImage">
-					<param name="top">0</param>
-					<param name="left">0</param>
-					<param name="width">500</param>
-					<param name="height">500</param>
-					<param name="shadowoffset">8</param>
-					<param name="texture">$VAR[VideoVersionsPosterVar]</param>
-				</include>
-			</control>
 			<control type="list" id="50">
-				<left>484</left>
+				<left>DetailsListLeft</left>
 				<top>60</top>
-				<width>860</width>
+				<width>DetailsListWidth</width>
 				<height>600</height>
 				<orientation>vertical</orientation>
 				<onleft>60</onleft>
@@ -87,28 +71,14 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<control type="scrollbar" id="60">
-				<left>-79</left>
-				<top>60</top>
-				<width>36</width>
-				<height>600</height>
-				<texturesliderbackground />
-				<texturesliderbar />
-				<texturesliderbarfocus />
-				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
-				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-				<onright>3</onright>
-			</control>
 			<control type="grouplist" id="90">
 				<top>60</top>
-				<left>1348</left>
+				<left>DetailsButtonsLeft</left>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<control type="button" id="21">
 					<description>Play button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[208]</label>
 					<align>right</align>
@@ -116,7 +86,7 @@
 				</control>
 				<control type="button" id="22">
 					<description>Add version button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[40014]</label>
 					<align>right</align>
@@ -125,7 +95,7 @@
 				</control>
 				<control type="button" id="23">
 					<description>Add extras button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[40015]</label>
 					<align>right</align>
@@ -134,7 +104,7 @@
 				</control>
 				<control type="button" id="27">
 					<description>Choose art button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[13511]</label>
 					<align>right</align>
@@ -142,7 +112,7 @@
 				</control>
 				<control type="button" id="24">
 					<description>Choose version type button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[40004]</label>
 					<align>right</align>
@@ -151,7 +121,7 @@
 				</control>
 				<control type="button" id="28">
 					<description>Rename extra button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[118]</label>
 					<align>right</align>
@@ -160,7 +130,7 @@
 				</control>
 				<control type="button" id="26">
 					<description>Remove button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[15015]</label>
 					<align>right</align>
@@ -168,7 +138,7 @@
 				</control>
 				<control type="button" id="29">
 					<description>Ungroup version button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[40046]</label>
 					<align>right</align>
@@ -177,7 +147,7 @@
 				</control>
 				<control type="button" id="25">
 					<description>Set default button</description>
-					<width>288</width>
+					<width>DetailsButtonWidth</width>
 					<height>60</height>
 					<label>$LOCALIZE[40023]</label>
 					<align>right</align>
