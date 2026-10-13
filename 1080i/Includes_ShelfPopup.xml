@@ -125,6 +125,7 @@
 	</variable>
 
 	<variable name="PopupAudioCodecFlagVar">
+		<value condition="Skin.HasSetting(coloredflags) + [String.IsEqual(Window(1144).Property(AudioCodec),truehd_atmos) | String.IsEqual(Window(1144).Property(AudioCodec),truehd/atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, Window(1144).Property(AudioCodec),,.png]</value>
 		<value condition="[String.Contains(Window(1144).Property(FileNameAndPath),atmos)  | String.Contains(Window(1144).Property(AudioCodec),atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Window(1144).Property(FileNameAndPath),dtsx) | String.Contains(Window(1144).Property(FileNameAndPath),dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.IsEqual(Window(1144).Property(AudioCodec),dts_es) + !Skin.HasSetting(coloredflags)">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>

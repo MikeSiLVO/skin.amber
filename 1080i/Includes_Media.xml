@@ -62,6 +62,7 @@
 	</variable>
 
 	<variable name="AudioCodecFlagVar">
+		<value condition="Skin.HasSetting(coloredflags) + [String.IsEqual(Container.ListItem.AudioCodec,truehd_atmos) | String.IsEqual(Container.ListItem.AudioCodec,truehd/atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, Container.ListItem.AudioCodec,,.png]</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,atmos) | String.Contains(Container.ListItem.AudioCodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,dtsx) | String.Contains(Container.ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.IsEqual(Container.ListItem.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
@@ -69,6 +70,7 @@
 	</variable>
 
 	<variable name="MediaInfoAudioCodecFlagVar">
+		<value condition="Skin.HasSetting(coloredflags) + [String.IsEqual(ListItem.AudioCodec,truehd_atmos) | String.IsEqual(ListItem.AudioCodec,truehd/atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, ListItem.AudioCodec,,.png]</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,atmos) | String.Contains(ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,dtsx) | String.Contains(ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
@@ -76,6 +78,7 @@
 	</variable>
 
 	<variable name="PlayerAudioCodecFlagVar">
+		<value condition="Skin.HasSetting(coloredflags) + [String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos) | String.IsEqual(VideoPlayer.AudioCodec,truehd/atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, VideoPlayer.AudioCodec,,.png]</value>
 		<value condition="String.Contains(Player.FileNameAndPath,atmos) | String.Contains(VideoPlayer.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Player.FileNameAndPath,dtsx) | String.Contains(Player.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
@@ -83,6 +86,7 @@
 	</variable>
 
 	<variable name="SearchAudioCodecFlagVar">
+		<value condition="Skin.HasSetting(coloredflags) + [String.IsEqual(Container(6).ListItem.AudioCodec,truehd_atmos) | String.IsEqual(Container(6).ListItem.AudioCodec,truehd/atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, Container(6).ListItem.AudioCodec,,.png]</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,atmos) | String.Contains(Container(6).ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,dtsx) | String.Contains(Container(6).ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.IsEqual(Container(6).ListItem.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>

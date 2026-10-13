@@ -113,7 +113,7 @@
 		<entry key="a-c-3">ac3</entry>
 		<entry key="ac-3">ac3</entry>
 		<entry key="e-ac-3">ac3</entry>
-		<entry key="eac3">ac3</entry>
+		<entry key="truehd/atmos">truehd_atmos</entry>
 		<entry key="dts_96_24">dts</entry>
 		<entry key="dts_express">dts</entry>
 		<entry key="dtshd_ma_x">dtsx</entry>
