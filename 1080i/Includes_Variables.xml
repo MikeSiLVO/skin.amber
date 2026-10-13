@@ -24,11 +24,6 @@
 		<value condition="ListItem.HasTimer">$LOCALIZE[31510]</value>
 	</variable>
 
-	<!-- <variable name="ShelfSize">
-		<value condition="Skin.HasSetting(Shelf.DoubleHeight)">20</value>
-		<value condition="!Skin.HasSetting(Shelf.DoubleHeight)">20</value>
-	</variable> -->
-
 	<variable name="VisualisationName">
 		<value condition="!String.IsEmpty(Visualisation.Name)">$INFO[Visualisation.Name]</value>
 		<value  condition="String.IsEmpty(Visualisation.Name)">$LOCALIZE[16018]</value>
@@ -117,14 +112,12 @@
 	<variable name="Overlay" description="Overlay image">
 		<value condition="[Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)] + !Skin.HasSetting(Hide_Watched_Marks) + Integer.IsGreater(Container.ListItem.Playcount,0)">OverlayWatched.png</value>
 		<value condition="[Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)] + !String.IsEmpty(Container.ListItem.DBID)">library.png</value>
-		<!--		<value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Overlay]</value> -->
 		<value condition="!String.IsEmpty(ListItem.Property(Container.Info)) + !String.IsEmpty(ListItem.DBID)">library.png</value>
 		<value condition="!Skin.HasSetting(Hide_Collection_Marks) + ListItem.IsCollection + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)">Collection.png</value>
 		<value condition="!Window.IsActive(MyPVRRecordings.xml) + ListItem.IsRecording">img/PVR-IsRecording.png</value>
 		<value condition="!Skin.HasSetting(Hide_InProgress_Marks) + !String.IsEmpty(ListItem.Overlay) + ListItem.IsResumable">$VAR[SoloInProgress]</value>
 		<value condition="Skin.HasSetting(Hide_InProgress_Marks) + !String.IsEmpty(ListItem.Overlay) + ListItem.IsResumable" />
 		<value condition="!Skin.HasSetting(Hide_Watched_Marks) + !String.IsEmpty(ListItem.Overlay) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$INFO[ListItem.Overlay]</value>
-		<!--        <value condition="!Skin.HasSetting(Hide_Unwatched_Marks) + !String.IsEmpty(ListItem.Overlay) + !String.IsEqual(ListItem.Overlay,OverlayWatched.png) + [Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)]">OverlayUnwatched.png</value> -->
 		<value condition="!Skin.HasSetting(Hide_Unwatched_Marks) + !String.IsEmpty(ListItem.Overlay) + String.IsEqual(ListItem.Overlay,OverlayUnWatched.png) + ![[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Overlay]</value>
 		<value />
 	</variable>
@@ -218,10 +211,9 @@
 			<value condition="Integer.IsGreaterOrEqual(Container.ListItem.PercentPlayed,90) + Integer.IsLess(Container.ListItem.PercentPlayed,100)">overlays/toprightinprogress90.png</value>
 		</variable>
 
-		<!-- Begin Matrix change: changes in addon lifecycle -->
 		<variable name="AddonLifecycleType">
-			<value condition="String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])">[COLOR $VAR[HighlightColor]]$LOCALIZE[24170][/COLOR][CR]$INFO[ListItem.AddonLifecycleDesc]</value> <!-- Deprecated -->
-			<value condition="String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])">[COLOR $VAR[HighlightColor]]$LOCALIZE[24171][/COLOR][CR]$INFO[ListItem.AddonLifecycleDesc]</value> <!-- Broken -->
+			<value condition="String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])">[COLOR $VAR[HighlightColor]]$LOCALIZE[24170][/COLOR][CR]$INFO[ListItem.AddonLifecycleDesc]</value>
+			<value condition="String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])">[COLOR $VAR[HighlightColor]]$LOCALIZE[24171][/COLOR][CR]$INFO[ListItem.AddonLifecycleDesc]</value>
 		</variable>
 		<variable name="AddonOverlay" description="Overlay image">
 			<value condition="[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])] + !ListItem.Property(addon.isenabled)">QuitNF.png</value>
@@ -234,7 +226,6 @@
 			<value condition="ListItem.Property(addon.isenabled) + String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])">icons/enabled-broken.png</value>
 			<value condition="!ListItem.IsParentFolder">OverlayUnwatched.png</value>
 		</variable>
-		<!-- End Matrix changes -->
 
 		<variable name="Countries">
 			<value condition="!String.IsEmpty(Skin.String(moviecountryiconsResource.path)) + String.IsEqual(Skin.String(moviecountryiconsResource.ext),.png)">$INFO[Skin.String(moviecountryiconsresource.path)]$INFO[ListItem.Label,,.png]</value>
@@ -281,12 +272,6 @@
 			<value condition="!String.IsEmpty(Skin.String(CustomMusicGenreFanartPath))">$INFO[Skin.String(CustomMusicGenreFanartPath)]</value>
 			<value condition="!String.IsEmpty(Skin.String(musicgenrefanartresource.name))">$INFO[Skin.String(musicgenrefanartresource.name)]</value>
 		</variable>
-
-	<!-- <variable name="WidgetArtVar">
-		<value condition="String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)">$VAR[Poster]</value>
-		<value condition="String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season)">$VAR[SeasonPoster]</value>
-		<value>$VAR[Square]</value>
-	</variable> -->
 
 	<variable name="SingleItemLabel">
 		<value condition="!String.Contains(ListItem.Label,/B)">$INFO[ListItem.Label,[B],[/B]]</value>
@@ -611,11 +596,6 @@
 		<value condition="Window.IsActive(weather)">$INFO[Weather.Location]</value>
 	</variable>
 
-	<!-- <variable name="CurrentBackgroundSetting">
-		<value condition="!String.IsEmpty(Container(9103).ListItem.Thumb)">$INFO[Container(9103).ListItem.Thumb]</value>
-		<value>$LOCALIZE[571]</value>
-	</variable> -->
-
 	<variable name="MusicPlayingFanartLabel2" description="Label2 for music playing FA">
 		<value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
 		<value>$LOCALIZE[24023]</value>
@@ -629,7 +609,6 @@
 
 	<variable name="PVROverlay" description="PVR Overlay image">
 		<value condition="ListItem.IsRecording">img/PVR-IsRecording.png</value>
-		<!-- Begin Matrix changes -->
 		<value condition="ListItem.HasReminder">img/PVR-HasReminder.png</value>
 		<value condition="ListItem.HasRecording">img/PVR-HasRecording.png</value>
 		<value condition="ListItem.IsPlayable">img/PVR-HasArchive.png</value>
@@ -642,22 +621,14 @@
 		<value condition="ListItem.HasTimer + !ListItem.TimerIsActive">img/PVR-HasTimerDisabled.png</value>
 		<value condition="ListItem.HasTimer">img/PVR-HasTimer.png</value>
 		<value condition="ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive">img/PVR-Premiere.png</value>
-		<!-- End Matrix changes -->
 	</variable>
 
-	<!-- Begin Matrix change -->
 	<variable name="NewLiveFinaleLabel">
 		<value condition="ListItem.IsPremiere">[COLOR $VAR[HighlightColor]]$LOCALIZE[838][/COLOR]</value>
 		<value condition="ListItem.IsFinale">[COLOR $VAR[HighlightColor]]$LOCALIZE[849][/COLOR]</value>
 		<value condition="ListItem.IsLive">[COLOR $VAR[HighlightColor]]$LOCALIZE[839][/COLOR]</value>
 		<value condition="ListItem.IsNew">[COLOR $VAR[HighlightColor]]$LOCALIZE[842][/COLOR]</value>
 	</variable>
-	<!-- End Matrix change -->
-
-	<!-- <variable name="ListItem.ratingbadge">
-		<value condition="!String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.UserRating,badges/ratings/rating,.png]</value>
-		<value condition="String.IsEmpty(ListItem.UserRating) + !String.IsEmpty(ListItem.dbtype)">badges/ratings/ratingNR.png</value>
-	</variable> -->
 
 	<variable name="Container.ListItem.ratingbadge">
 		<value condition="!String.IsEmpty(Container.ListItem.UserRating)">$INFO[Container.ListItem.UserRating,badges/ratings/rating,.png]</value>
@@ -909,7 +880,6 @@
 		<value condition="!ListItem.IsParentFolder + String.IsEqual(ListItem.DBType,song) + !Window.IsActive(script-globalsearch.xml) + Skin.HasSetting(Enable.HourMinutes) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)] + !Skin.HasSetting(ShowLastPlayed)">$INFO[Listitem.Artist,, • ]$VAR[ItemDurationVar]$INFO[ListItem.PlayCount, • $LOCALIZE[31111] ]</value>
 		<value condition="!ListItem.IsParentFolder + String.IsEqual(ListItem.DBType,song) + !Window.IsActive(script-globalsearch.xml) + Skin.HasSetting(Enable.HourMinutes) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)] + Skin.HasSetting(ShowLastPlayed)">$INFO[Listitem.Artist,, • ]$VAR[ItemDurationVar]$INFO[ListItem.PlayCount, • $LOCALIZE[31111] ]$INFO[ListItem.LastPlayed, • $LOCALIZE[568]: ]</value>
 
-		<!-- Begin Matrix change -->
 		<value condition="!ListItem.IsParentFolder + String.IsEqual(ListItem.DBType,song) + Window.IsActive(script-globalsearch.xml) + !Skin.HasSetting(Enable.HourMinutes) + [!Integer.IsGreater(ListItem.PlayCount,0) | !Skin.HasSetting(ShowPlayCount)]">$INFO[Listitem.Artist,, • ]$INFO[Listitem.Album]$VAR[InfoDiscVar] • $INFO[Listitem.Duration]</value>
 		<value condition="!ListItem.IsParentFolder + String.IsEqual(ListItem.DBType,song) + Window.IsActive(script-globalsearch.xml) + Skin.HasSetting(Enable.HourMinutes) + [!Integer.IsGreater(ListItem.PlayCount,0) | !Skin.HasSetting(ShowPlayCount)]">$INFO[Listitem.Artist,, • ]$INFO[Listitem.Album]$VAR[InfoDiscVar] • $VAR[ItemDurationVar]</value>
 
@@ -918,14 +888,11 @@
 		<value condition="!ListItem.IsParentFolder + String.IsEqual(ListItem.DBType,song) + Window.IsActive(script-globalsearch.xml) + !Skin.HasSetting(Enable.HourMinutes) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)] + Skin.HasSetting(ShowLastPlayed)">$INFO[Listitem.Artist,, • ]$INFO[Listitem.Album]$VAR[InfoDiscVar] • $INFO[Listitem.Duration]$INFO[ListItem.PlayCount, • $LOCALIZE[31111] ]$INFO[ListItem.LastPlayed, • $LOCALIZE[568]: ]</value>
 		<value condition="!ListItem.IsParentFolder + String.IsEqual(ListItem.DBType,song) + Window.IsActive(script-globalsearch.xml) + Skin.HasSetting(Enable.HourMinutes) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)] + Skin.HasSetting(ShowLastPlayed)">$INFO[Listitem.Artist,, • ]$INFO[Listitem.Album]$VAR[InfoDiscVar] • $VAR[ItemDurationVar]$INFO[ListItem.PlayCount, • $LOCALIZE[31111] ]$INFO[ListItem.LastPlayed, • $LOCALIZE[568]: ]</value>
 
-		<!-- End Matrix change -->
 		<value condition="String.IsEqual(ListItem.DBType,artist) + !Skin.HasSetting(Hide.Label2.Lists)">$VAR[BornLabelVar]$VAR[FormedLabelVar]</value>
 		<value condition="String.IsEqual(ListItem.DBType,artist) + Skin.HasSetting(Hide.Label2.Lists)">$VAR[BornLabelVar]$VAR[FormedLabelVar] $VAR[AddedLabelVar]</value>
 		<value condition="Container.Content(images) + !ListItem.IsFolder">$INFO[Listitem.Size]$INFO[ListItem.PictureDateTime, • ,]</value>
 
-		<!-- Begin Matrix change -->
 		<value condition="Window.IsActive(MyPVRChannels.xml)">[COLOR Grey3]$LOCALIZE[142] [/COLOR]$INFO[ListItem.StartTime,, / ]$INFO[ListItem.EndTime] $VAR[NewLiveFinaleLabel]</value>
-		<!-- End Matrix change -->
 
 		<value condition="Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.Date] $INFO[ListItem.ChannelName,  •  ]</value>
 		<value condition="!ListItem.IsParentFolder + Window.IsActive(MyPVRRecordings.xml) + !$EXP[isPVRRecordingsGroups] + !Skin.HasSetting(Enable.HourMinutes)">$INFO[ListItem.Date][COLOR $VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Duration][COLOR $VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Size]</value>
@@ -1134,7 +1101,6 @@
 		<value condition="String.IsEmpty(ListItem.Property(Art(landscape)))">$INFO[ListItem.Property(Art(fanart))]</value>
 	</variable>
 
-	<!-- Begin Matrix change: Specials are now season 0 -->
 	<variable name="SeasonEpisodeLabel">
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(air_day))">$INFO[ListItem.Property(air_time)]$INFO[ListItem.Studio, @ ,]</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday))">$INFO[ListItem.Property(airtime)]$INFO[ListItem.Studio, @ ,]</value>
@@ -1146,12 +1112,6 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 
-	<!-- <variable name="SeasonLabel2">
-		<value condition="String.IsEmpty(ListItem.Season)" />
-		<value condition="Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Season,s0,e]</value>
-		<value condition="!Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Season,s,e]</value>
-	</variable> -->
-
 	<variable name="PlayerSeasonEpisodeLabel">
 		<value condition="String.IsEmpty(VideoPlayer.Season)">$INFO[ListItem.TVShowTitle] - $INFO[VideoPlayer.Episode]</value>
 		<value condition="Integer.IsLess(VideoPlayer.Episode,10) + Integer.IsLess(VideoPlayer.Season,10)">$INFO[VideoPlayer.Season,s0,]$INFO[VideoPlayer.Episode,e0,]</value>
@@ -1160,14 +1120,6 @@
 		<value condition="!Integer.IsLess(VideoPlayer.Episode,10) + !Integer.IsLess(VideoPlayer.Season,10)">$INFO[VideoPlayer.Season,s,]$INFO[VideoPlayer.Episode,e,]</value>
 	</variable>
 
-	<!-- <variable name="WidgetItemSeasonEpisodeLabel">
-		<value condition="String.IsEmpty(Window(Home).Property(WidgetItemSeason))">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemEpisode)]</value>
-		<value condition="Integer.IsLess(Window(Home).Property(WidgetItemEpisode),10) + Integer.IsLess(Window(Home).Property(WidgetItemSeason),10)">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemSeason),s0,]$INFO[Window(Home).Property(WidgetItemEpisode),e0,]</value>
-		<value condition="Integer.IsLess(Window(Home).Property(WidgetItemEpisode),10) + !Integer.IsLess(Window(Home).Property(WidgetItemSeason),10)">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemSeason),s,]$INFO[Window(Home).Property(WidgetItemEpisode),e0,]</value>
-		<value condition="!Integer.IsLess(Window(Home).Property(WidgetItemEpisode),10) + Integer.IsLess(Window(Home).Property(WidgetItemSeason),10)">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemSeason),s0,]$INFO[Window(Home).Property(WidgetItemEpisode),e,]</value>
-		<value condition="!Integer.IsLess(Window(Home).Property(WidgetItemEpisode),10) + !Integer.IsLess(Window(Home).Property(WidgetItemSeason),10)">[B]$INFO[Window(Home).Property(WidgetItemTVShowTitle)][/B] - $INFO[Window(Home).Property(WidgetItemSeason),s,]$INFO[Window(Home).Property(WidgetItemEpisode),e,]</value>
-	</variable> -->
-
 	<variable name="UpNextSeasonEpisodeLabel">
 		<value condition="String.IsEmpty(Window.Property(Season))">$INFO[Window.Property(Episode)]</value>
 		<value condition="Integer.IsLess(Window.Property(Episode),10) + Integer.IsLess(Window.Property(Season),10)">$INFO[Window.Property(Season),s0,]$INFO[Window.Property(Episode),e0,]</value>
@@ -1175,7 +1127,6 @@
 		<value condition="!Integer.IsLess(Window.Property(Episode),10) + Integer.IsLess(Window.Property(Season),10)">$INFO[Window.Property(Season),s0,]$INFO[Window.Property(Episode),e,]</value>
 		<value condition="!Integer.IsLess(Window.Property(Episode),10) + !Integer.IsLess(Window.Property(Season),10)">$INFO[Window.Property(Season),s,]$INFO[Window.Property(Episode),e,]</value>
 	</variable>
-	<!-- End Matrix change -->
 
 	<variable name="ShelfSeasonEpisodeLabel">
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(air_day))">$INFO[ListItem.Property(air_time)]$INFO[ListItem.Studio, @ ,]</value>
@@ -1193,13 +1144,6 @@
 		<value condition="String.IsEmpty(Window.Property(fanart)) + !String.IsEmpty(Window.Property(landscape))">$INFO[Window.Property(landscape)]</value>
 		<value condition="!String.IsEmpty(Window.Property(fanart))">$INFO[Window.Property(fanart)]</value>
 	</variable>
-
-	<!-- <variable name="ThemeSelectedColour">
-		<value condition="String.Contains(Skin.CurrentColourTheme,Blue)">SelectedBlue</value>
-		<value condition="String.Contains(Skin.CurrentColourTheme,Green)">SelectedGreen</value>
-		<value condition="String.Contains(Skin.CurrentColourTheme,White)">SelectedGrey</value>
-		<value>SelectedOrange</value>
-	</variable> -->
 
 	<variable name="SkinShortcutLabelVar">
 		<value condition="Control.HasFocus(301)">$ADDON[script.skinshortcuts 32000]</value>
@@ -1400,26 +1344,6 @@
 		<value condition="Control.HasFocus(70045)">$LOCALIZE[19321]</value>
 	</variable>
 
-	<!-- <variable name="ListItemFullInfo">
-		<value condition="ListItem.IsParentFolder + String.IsEqual(ListItemAbsolute(1).DBType,movie) + Integer.IsGreater(ListItemAbsolute(1).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItemAbsolute(1).DBID]&amp;type=movie</value>
-		<value condition="ListItem.IsParentFolder + String.IsEqual(ListItemAbsolute(1).DBType,tvshow) + Integer.IsGreater(ListItemAbsolute(1).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItemAbsolute(1).DBID]&amp;type=tvshow</value>
-		<value condition="ListItem.IsParentFolder + String.IsEqual(ListItemAbsolute(1).DBType,season) + Integer.IsGreater(ListItemAbsolute(1).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItemAbsolute(1).DBID]&amp;type=tvshow&amp;idtype=season</value>
-		<value condition="ListItem.IsParentFolder + String.IsEqual(ListItemAbsolute(1).DBType,episode) + Integer.IsGreater(ListItemAbsolute(1).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow&amp;idtype=episode</value>
-		<value condition="!Container.HasParent + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + String.IsEqual(ListItemAbsolute(1).DBType,season) + Integer.IsGreater(ListItemAbsolute(1).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItemAbsolute(1).DBID]&amp;type=tvshow&amp;idtype=season</value>
-		<value condition="Container.HasParent + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + String.IsEqual(ListItemAbsolute(2).DBType,season) + Integer.IsGreater(ListItemAbsolute(2).DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItemAbsolute(2).DBID]&amp;type=tvshow&amp;idtype=season</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + Integer.IsGreater(ListItem.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=movie</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow) + Integer.IsGreater(ListItem.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow</value>
-		<value condition="String.IsEqual(ListItem.DBType,season) + Integer.IsGreater(ListItem.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow&amp;idtype=season</value>
-		<value condition="String.IsEqual(ListItem.DBType,episode) + Integer.IsGreater(ListItem.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow&amp;idtype=episode</value>
-		<value>-</value>
-	</variable> -->
-	<!-- <variable name="PlayerFullInfo">
-		<value condition="VideoPlayer.Content(movies) + Integer.IsGreater(VideoPlayer.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[VideoPlayer.DBID]&amp;type=movie</value>
-		<value condition="VideoPlayer.Content(tvshows) + Integer.IsGreater(VideoPlayer.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[VideoPlayer.DBID]&amp;type=tvshow</value>
-		<value condition="VideoPlayer.Content(episodes) + Integer.IsGreater(VideoPlayer.DBID,0)">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[VideoPlayer.DBID]&amp;type=tvshow&amp;idtype=episode</value>
-		<value>-</value>
-	</variable> -->
-
 	<variable name="ShortcutsDisabled">
 		<value condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)">[COLOR Red]×[/COLOR] </value>
 		<value />
@@ -1518,10 +1442,6 @@
 		<value condition="!Integer.IsGreater(Container.ListItem.Property(UnWatchedEpisodes),99)">$INFO[Container.ListItem.Property(UnWatchedEpisodes)]</value>
 		<value>99+</value>
 	</variable>
-
-	<!-- <variable name="numPlaylistBackgrounds">
-		<value>2</value>
-	</variable> -->
 
 	<variable name="MusicLabelVar">
 		<value condition="String.IsEqual(ListItem.DBType,song)">$INFO[ListItem.Tracknumber] - $INFO[ListItem.Title]</value>
@@ -1972,22 +1892,9 @@
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[6])">6 $LOCALIZE[31168]</value>
 	</variable>
 
-	<!-- Begin Matrix change -->
 	<variable name="InfoDiscVar">
 		<value condition="Integer.IsGreater(ListItem.TotalDiscs,1)">$INFO[ListItem.DiscNumber]$INFO[ListItem.DiscTitle, - ]</value>
 	</variable>
-
-	<!-- <variable name="MultiDiscVar">
-		<value condition="MusicPlayer.IsMultiDisc + Window.IsActive(visualisation)">$INFO[MusicPlayer.DiscNumber, - [$LOCALIZE[427] ,] ]$INFO[MusicPlayer.DiscTitle]</value>
-		<value condition="MusicPlayer.IsMultiDisc">$INFO[MusicPlayer.DiscNumber]$INFO[MusicPlayer.DiscTitle, - ]</value>
-	</variable> -->
-
-	<!-- <variable name="PlayerArtVar">
-		<value condition="VideoPlayer.Content(movies) + !String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
-		<value condition="!String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
-		<value>$INFO[Player.Icon]</value>
-	</variable> -->
-	<!-- End Matrix change -->
 
 	<variable name="DefaultFontLabel">
 		<value condition="Skin.HasSetting(Smaller.Fonts)">$LOCALIZE[31118]</value>
