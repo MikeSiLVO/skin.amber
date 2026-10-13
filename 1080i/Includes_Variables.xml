@@ -1038,7 +1038,7 @@
 		<value condition="String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Biography))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Biography)]</value>
 		<value condition="ListItem.IsParentFolder"> </value>
 		<value condition="Container.content(addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
-		<value condition="String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
+		<value condition="String.IsEqual(ListItem.DBType,season) + String.IsEmpty(ListItem.Plot) + !String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
 		<value condition="String.IsEqual(ListItem.DbType,song) + !String.IsEmpty(ListItem.ContributorAndRole)">$INFO[ListItem.ContributorAndRole]</value>
 		<value condition="String.IsEqual(ListItem.DbType,song) + !String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
 		<value condition="String.IsEqual(ListItem.DBType,album) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
