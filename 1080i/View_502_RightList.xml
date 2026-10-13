@@ -463,12 +463,12 @@
 	<variable name="RightListNextEpisode">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Long)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Label)) + !String.IsEmpty(Window(Home).Property(NextAired.NextDay))">$INFO[Window(Home).Property(NextAired.NextDay)]</value>
-		<value>$LOCALIZE[32404]</value>
+		<value>$LOCALIZE[31794]</value>
 	</variable>
 	<variable name="RightListLastEpisode">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Last_Aired))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Label))">$INFO[Window(Home).Property(NextAired.LatestDate)]</value>
-		<value>$LOCALIZE[32404]</value>
+		<value>$LOCALIZE[31794]</value>
 	</variable>
 
 	<!-- <variable name="RightListHeadingLabel">
@@ -490,10 +490,10 @@
 	</variable>
 
 	<variable name="RightListPopupDetails">
-		<value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR $VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR $VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
-		<value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR $VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR $VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
-		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
-		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
+		<value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR $VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31824]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
+		<value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR $VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31824]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
+		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31824]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
+		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31824]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
 		<value condition="String.IsEqual(ListItem.DBType,set)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years)]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),,]</value>
 	</variable>
 

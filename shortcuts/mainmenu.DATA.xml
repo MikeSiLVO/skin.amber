@@ -50,7 +50,7 @@
 	<shortcut>
 		<defaultID>tv</defaultID>
 		<visible>PVR.HasTVChannels</visible>
-		<label>$LOCALIZE[31500]</label>
+		<label>$LOCALIZE[19020]</label>
 		<thumb />
 		<label2 />
 		<icon>icons/mainmenu/livetv.png</icon>
@@ -59,7 +59,7 @@
 	<shortcut>
 		<defaultID>radio</defaultID>
 		<visible>PVR.HasRadioChannels</visible>
-		<label>$LOCALIZE[31509]</label>
+		<label>$LOCALIZE[19021]</label>
 		<thumb />
 		<label2 />
 		<icon>icons/mainmenu/radio.png</icon>

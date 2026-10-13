@@ -41,10 +41,6 @@ msgctxt "#31003"
 msgid "Channels Directory"
 msgstr "Yfirlit rása"
 
-msgctxt "#31004"
-msgid "Shift"
-msgstr "Breytiumslag"
-
 msgctxt "#31005"
 msgid "Cinema"
 msgstr "Bíó"
@@ -193,7 +189,18 @@ msgctxt "#31041"
 msgid "Repository"
 msgstr "Gagnasafn"
 
-# empty strings from id 31042 to 31044
+msgctxt "#31042"
+msgid "Hide icons"
+msgstr "Fela táknmyndir"
+
+msgctxt "#31043"
+msgid "Hide Games"
+msgstr "Fela leiki"
+
+msgctxt "#31044"
+msgid "Game Settings"
+msgstr "Stillingar leiks"
+
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
 msgstr "Sýna þriggja-raða rekka"
@@ -230,11 +237,62 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Sýnir á margmiðlunarefni"
 
-msgctxt "#31054"
-msgid "Media sources"
-msgstr "Miðlunarveitur"
+msgctxt "#31055"
+msgid "Toggle Subtitle"
+msgstr "Víxla skjátexta af/á"
 
-# empty strings from id 31055 to 31068
+msgctxt "#31056"
+msgid "AB: Select Artwork"
+msgstr "AB: Veldu myndefni"
+
+msgctxt "#31057"
+msgid "AB: All Artwork"
+msgstr "AB: Allt myndefni"
+
+msgctxt "#31058"
+msgid "Special Features"
+msgstr "Sérefni"
+
+msgctxt "#31059"
+msgid "Enable Special Features"
+msgstr "Virkja sérefni"
+
+msgctxt "#31060"
+msgid "Next Episode"
+msgstr "Næsti þáttur"
+
+msgctxt "#31061"
+msgid "Latest Episode"
+msgstr "Nýjasti þáttur"
+
+msgctxt "#31062"
+msgid "Airs"
+msgstr "Sýnt"
+
+msgctxt "#31063"
+msgid "Next Airing Episodes"
+msgstr "Þættir næst í útsendingu"
+
+msgctxt "#31064"
+msgid "Search Results for: "
+msgstr "Leitarniðurstöður fyrir: "
+
+msgctxt "#31065"
+msgid "Show Only Local Info "
+msgstr ""
+
+msgctxt "#31066"
+msgid "Extended Info"
+msgstr "Ítarlegar upplýsingar"
+
+msgctxt "#31067"
+msgid "Search in Local Library"
+msgstr "Leita í safni á tölvu"
+
+msgctxt "#31068"
+msgid "Search online in TMDb"
+msgstr "Leita á netinu í TMDb"
+
 msgctxt "#31069"
 msgid "Random episodes"
 msgstr "Þættir af handahófi"
@@ -391,12 +449,26 @@ msgctxt "#31107"
 msgid "Shelf style"
 msgstr "Stíll rekka"
 
-# empty strings from id 31108 to 31109
+msgctxt "#31108"
+msgid "Hide Second Label in List Views"
+msgstr ""
+
+msgctxt "#31109"
+msgid "Added:"
+msgstr "Bætt við:"
+
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Breyta bakgrunni fyrir heimahnapp"
 
-# empty strings from id 31111 to 31112
+msgctxt "#31111"
+msgid "Plays:"
+msgstr "Spilar:"
+
+msgctxt "#31112"
+msgid "Last Played:"
+msgstr "Síðast spilað:"
+
 msgctxt "#31113"
 msgid "Single"
 msgstr "Einfalt"
@@ -433,14 +505,37 @@ msgctxt "#31121"
 msgid "Apply Changes"
 msgstr "Virkja breytingar"
 
-# empty strings from id 31122 to 31128
+msgctxt "#31122"
+msgid "New Search"
+msgstr "Ný leit"
+
+msgctxt "#31123"
+msgid "Movies Starring"
+msgstr "Kvikmyndir með"
+
+msgctxt "#31124"
+msgid "Movies Directed by"
+msgstr "Kvikmyndir leikstýrt af"
+
+msgctxt "#31125"
+msgid "TV Shows Starring"
+msgstr "Sjónvarpsþættir með"
+
+msgctxt "#31126"
+msgid "TV Shows Directed by"
+msgstr "Sjónvarpsþættir leikstýrt af"
+
+msgctxt "#31127"
+msgid "Movies with Genre"
+msgstr "Kvikmyndir í stílnum"
+
+msgctxt "#31128"
+msgid "TV Shows with Genre"
+msgstr "Sjónvarpsþættir úr flokknum"
+
 msgctxt "#31129"
 msgid "Same director"
 msgstr "Sami leikstjóri"
-
-msgctxt "#31130"
-msgid "Hourly"
-msgstr "Á klukkustundar fresti"
 
 msgctxt "#31131"
 msgid "Forecast"
@@ -486,7 +581,34 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Hraði afspilunar"
 
-# empty strings from id 31142 to 31149
+msgctxt "#31143"
+msgid "Movies from Studio"
+msgstr "Kvikmyndir frá framleiðanda"
+
+msgctxt "#31144"
+msgid "TV Shows from Studio"
+msgstr "Sjónvarpsþættir frá framleiðanda"
+
+msgctxt "#31145"
+msgid "Movies from Year"
+msgstr "Kvikmyndir frá ári"
+
+msgctxt "#31146"
+msgid "TV Shows from Year"
+msgstr "Sjónvarpsþættir frá ári"
+
+msgctxt "#31147"
+msgid "Movies from Country"
+msgstr "Kvikmyndir frá landi"
+
+msgctxt "#31148"
+msgid "Music Videos by Artist"
+msgstr "Tónlistarmyndbönd eftir flytjendum"
+
+msgctxt "#31149"
+msgid "YouTube videos about"
+msgstr "Youtube-myndskeið um"
+
 msgctxt "#31150"
 msgid "Disable List view"
 msgstr "Gera listasýn óvirka"
@@ -531,12 +653,522 @@ msgctxt "#31160"
 msgid "Disable Logo view"
 msgstr "Gera táknmerkjasýn óvirka"
 
-# empty strings from id 31161 to 31290
+msgctxt "#31161"
+msgid "Enable Touch/Mouse Buttons"
+msgstr "Virkja snerti/músarhnappa"
+
+msgctxt "#31162"
+msgid "Timeshift"
+msgstr "Tímaflakk"
+
+msgctxt "#31163"
+msgid "Enable Kiosk Mode"
+msgstr "Virkja sjálfsala-ham (kiosk)"
+
+msgctxt "#31164"
+msgid "Next Episodes"
+msgstr "Næstu þættir"
+
+msgctxt "#31165"
+msgid "Customize Home Menu and Shelves"
+msgstr "Sérsníða forsíðuvalmynd og rekka"
+
+msgctxt "#31166"
+msgid "Shelves"
+msgstr "Rekkar"
+
+msgctxt "#31167"
+msgid "Weather fanart"
+msgstr "Aðdáendamyndir fyrir veður"
+
+msgctxt "#31168"
+msgid "Seconds"
+msgstr "Sekúndur"
+
+msgctxt "#31169"
+msgid "Show background name in Home window"
+msgstr ""
+
+msgctxt "#31170"
+msgid "Home window Background Rotation Delay"
+msgstr ""
+
+msgctxt "#31171"
+msgid "IPTV Recorder"
+msgstr "IPTV-upptökutæki"
+
+msgctxt "#31172"
+msgid "IPTV Recorder Recordings"
+msgstr "Upptökur úr IPTV-upptökutæki"
+
+msgctxt "#31173"
+msgid "Show Video Info on Pause"
+msgstr ""
+
+msgctxt "#31174"
+msgid "Show Two Shelves Together"
+msgstr "Sýna tvo rekka saman"
+
+msgctxt "#31175"
+msgid "Use Larger Font"
+msgstr "Nota stærra letur"
+
+msgctxt "#31176"
+msgid "Use Wraparound Navigation"
+msgstr ""
+
+msgctxt "#31177"
+msgid "Show more items on List Views"
+msgstr "Birta fleiri atriði í listasýnum"
+
+msgctxt "#31178"
+msgid "Show Season/Episode Numbers"
+msgstr "Birta númer þáttaraðar/þáttar"
+
+msgctxt "#31179"
+msgid "Show Episode Thumb"
+msgstr "Birta smámynd fyrir þátt"
+
+msgctxt "#31180"
+msgid "Disable Tall List View"
+msgstr "Gera háa listasýn óvirka"
+
+msgctxt "#31181"
+msgid "Tall List"
+msgstr "Hár listi"
+
+msgctxt "#31182"
+msgid "Set Default Background"
+msgstr "Setja sjálfgefinn bakgrunn"
+
+msgctxt "#31183"
+msgid "Set Favourite Addons for Shelf"
+msgstr "Stilla eftirlætisviðbætur fyrir rekka"
+
+msgctxt "#31184"
+msgid "Select Favourite Addons"
+msgstr "Veldu eftirlætisviðbætur"
+
+msgctxt "#31185"
+msgid "Backup/Restore"
+msgstr "Öryggisafritun/Endurheimting"
+
+msgctxt "#31186"
+msgid "Backup"
+msgstr "Öryggisafrit"
+
+msgctxt "#31187"
+msgid "Restore"
+msgstr "Endurheimta"
+
+msgctxt "#31188"
+msgid "Configure Backup addon"
+msgstr ""
+
+msgctxt "#31189"
+msgid "Show Fanart"
+msgstr "Birta aðdáendamyndir"
+
+msgctxt "#31190"
+msgid "Place Background Name in Top Bar"
+msgstr ""
+
+msgctxt "#31191"
+msgid "Enable Alphabet Strip"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Enable Autocompletion for Virtual Keyboard"
+msgstr "Virkja sjálfvirka útfyllingu fyrir sýndarlyklaborð"
+
+msgctxt "#31193"
+msgid "Budget"
+msgstr "Kostnaður"
+
+msgctxt "#31194"
+msgid "Revenue"
+msgstr "Tekjur"
+
+msgctxt "#31195"
+msgid "Awards"
+msgstr "Viðurkenningar"
+
+msgctxt "#31196"
+msgid "Show Watched Items in Recent Shelves"
+msgstr "Sýna áhorfð atriði í nýlegum rekkum"
+
+msgctxt "#31197"
+msgid "RT Total Critics Reviews"
+msgstr "Alls umsagnir gagnrýnenda á RT"
+
+msgctxt "#31198"
+msgid "RT Fresh Reviews"
+msgstr "Ferskar umsagnir á RT"
+
+msgctxt "#31199"
+msgid "RT Rotten Reviews"
+msgstr "Rotnar umsagnir á RT"
+
+msgctxt "#31200"
+msgid "RT Critics' Consensus"
+msgstr "Samantekt gagnrýnenda á RT"
+
+msgctxt "#31201"
+msgid "RT Total User Reviews"
+msgstr "Alls umsagnir notenda á RT"
+
+msgctxt "#31202"
+msgid "Birthday"
+msgstr "Fæðingardagur"
+
+msgctxt "#31204"
+msgid "Born"
+msgstr "Fæðing"
+
+msgctxt "#31206"
+msgid "Age"
+msgstr "Aldur"
+
+msgctxt "#31207"
+msgid "Died"
+msgstr "Lést"
+
+msgctxt "#31208"
+msgid "Also Known As"
+msgstr "Einnig þekkt sem"
+
+msgctxt "#31209"
+msgid "Cast in Movies"
+msgstr "Leikarar í kvikmyndum"
+
+msgctxt "#31210"
+msgid "Cast in TV Shows"
+msgstr "Leikarar í sjónvarpsþáttum"
+
+msgctxt "#31211"
+msgid "Crew in Movies"
+msgstr "Tökulið í kvikmyndum"
+
+msgctxt "#31212"
+msgid "Crew in TV Shows"
+msgstr "Tökulið í sjónvarpsþáttum"
+
+msgctxt "#31213"
+msgid "Movies in TMDb"
+msgstr "Kvikmyndir í TMDb"
+
+msgctxt "#31214"
+msgid "TV Shows in TMDb"
+msgstr "Sjónvarpsþættir í TMDb"
+
+msgctxt "#31215"
+msgid "Movies in Local DB"
+msgstr "Kvikmyndir í staðværum gagnagrunni"
+
+msgctxt "#31216"
+msgid "TV Shows in Local DB"
+msgstr "Sjónvarpsþættir í staðværum gagnagrunni"
+
+msgctxt "#31217"
+msgid "Reboot to Android"
+msgstr "Endurræsa yfir í Android"
+
+msgctxt "#31218"
+msgid "Episodes Starring"
+msgstr "Þættir með"
+
+msgctxt "#31219"
+msgid "Movies in the"
+msgstr "Kvikmyndir í"
+
+msgctxt "#31220"
+msgid "Also Directed by"
+msgstr "Einnig leikstýrt af"
+
+msgctxt "#31221"
+msgid "Crew"
+msgstr "Tökulið"
+
+msgctxt "#31222"
+msgid "More from"
+msgstr "Meira frá"
+
+msgctxt "#31223"
+msgid "More in"
+msgstr "Meira í"
+
+msgctxt "#31224"
+msgid "Similar to"
+msgstr "Svipað og"
+
+msgctxt "#31225"
+msgid "Cast Members also appear in"
+msgstr "Meðlimir tökuliðs birtast einnig í"
+
+msgctxt "#31226"
+msgid "Select Custom Lists to Display"
+msgstr ""
+
+msgctxt "#31227"
+msgid "Similar"
+msgstr "Svipað"
+
+msgctxt "#31228"
+msgid "Featuring Cast Members"
+msgstr "Meðlimir tökuliðs"
+
+msgctxt "#31229"
+msgid "Video Info"
+msgstr "Upplýsingar um myndskeið"
+
+msgctxt "#31230"
+msgid "Select a Genre"
+msgstr "Veldu flokkun"
+
+msgctxt "#31231"
+msgid "Select a Studio"
+msgstr "Veldu framleiðanda"
+
+msgctxt "#31232"
+msgid "Select a Director"
+msgstr "Veldu leikstjóra"
+
+msgctxt "#31233"
+msgid "Online TMDb Search"
+msgstr "Netleit á TMDb"
+
+msgctxt "#31234"
+msgid "Local Search"
+msgstr "Leita á kerfinu"
+
+msgctxt "#31235"
+msgid "Select a Writer"
+msgstr "Veldu handritshöfund"
+
+msgctxt "#31236"
+msgid "Movies Written by"
+msgstr "Kvikmyndir skrifaðar af"
+
+msgctxt "#31237"
+msgid "Select a Country"
+msgstr "Veldu land"
+
+msgctxt "#31238"
+msgid "Episodes from Studio"
+msgstr "Þættir frá framleiðanda"
+
+msgctxt "#31239"
+msgid "Episodes with Genre"
+msgstr "Þættir úr flokknum"
+
+msgctxt "#31240"
+msgid "Episodes Written by"
+msgstr "Þættir skrifaðir af"
+
+msgctxt "#31241"
+msgid "Episodes Directed by"
+msgstr "Þættir leikstýrt af"
+
+msgctxt "#31242"
+msgid "AB: Download All Artwork"
+msgstr "AB: Sækja allt myndefni"
+
+msgctxt "#31243"
+msgid "AB: Select Artwork"
+msgstr "AB: Veldu myndefni"
+
+msgctxt "#31244"
+msgid "Show Artwork Beef items in Context Menu"
+msgstr "Sýna atriði Artwork Beef myndefnisniðurhals í samhengisvalmynd"
+
+msgctxt "#31245"
+msgid "Title Bar Options"
+msgstr "Valkostir titilstiku"
+
+msgctxt "#31246"
+msgid "Show Duration in Hours and Minutes"
+msgstr "Birta tímalengd í klukkustundum og mínútum"
+
+msgctxt "#31247"
+msgid "Hour"
+msgstr "Klukkustund"
+
+msgctxt "#31248"
+msgid "Minute"
+msgstr "Mínúta"
+
+msgctxt "#31249"
+msgid "Online TMDb Info"
+msgstr "TMDb-upplýsingar af neti"
+
+msgctxt "#31250"
+msgid "Embuary Info Settings"
+msgstr "Stillingar Embuary-upplýsinga"
+
+msgctxt "#31251"
+msgid "Guest Stars"
+msgstr "Gestaleikarar"
+
+msgctxt "#31252"
+msgid "Posters"
+msgstr "Kynningarspjöld"
+
+msgctxt "#31253"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#31254"
+msgid "Search for Trailer"
+msgstr "Leita að kynningarstiklu"
+
+msgctxt "#31255"
+msgid "item in database"
+msgstr "atriði í gagnagrunni"
+
+msgctxt "#31256"
+msgid "Items in Database"
+msgstr "atriði í gagnagrunni"
+
+msgctxt "#31257"
+msgid "Extras"
+msgstr "Auka upplýsingar"
+
+msgctxt "#31258"
+msgid "Known for"
+msgstr "Þekkt/ur fyrir"
+
+msgctxt "#31259"
+msgid "Retail Release"
+msgstr "Söluútgáfa"
+
+msgctxt "#31260"
+msgid "Region Release"
+msgstr "Svæðisútgáfa"
+
+msgctxt "#31261"
+msgid "Ended"
+msgstr "Lokið"
+
+msgctxt "#31262"
+msgid "Rumored"
+msgstr "Í kjaftasögum"
+
+msgctxt "#31263"
+msgid "Planned"
+msgstr "Áætlað"
+
+msgctxt "#31264"
+msgid "In Production"
+msgstr "Í framleiðslu"
+
+msgctxt "#31265"
+msgid "Post Production"
+msgstr "Í eftirvinnslu"
+
+msgctxt "#31266"
+msgid "Released"
+msgstr "Útgefið"
+
+msgctxt "#31267"
+msgid "Canceled"
+msgstr "Hætt við"
+
+msgctxt "#31268"
+msgid "Returning Series"
+msgstr "Þáttaraðir sem snúa aftur"
+
+msgctxt "#31269"
+msgid "Acting"
+msgstr "Leikur"
+
+msgctxt "#31270"
+msgid "Directing"
+msgstr "Leikstjórn"
+
+msgctxt "#31271"
+msgid "Writing"
+msgstr "Handrit"
+
+msgctxt "#31272"
+msgid "Production"
+msgstr "Framleiðsla"
+
+msgctxt "#31273"
+msgid "Sound"
+msgstr "Hljóð"
+
+msgctxt "#31274"
+msgid "Creator"
+msgstr "Búið til af"
+
+msgctxt "#31275"
+msgid "Died at Age"
+msgstr "Lést"
+
+msgctxt "#31276"
+msgid "Collection"
+msgstr "Safn"
+
+msgctxt "#31277"
+msgid "TMDb Helper Settings"
+msgstr "Stillingar TMDb-hjálpara"
+
+msgctxt "#31278"
+msgid "Blur Background"
+msgstr "Móða bakgrunn"
+
+msgctxt "#31279"
+msgid "Use Poster for Blur"
+msgstr "Nota kynningarmyndefni fyrir móðun"
+
+msgctxt "#31280"
+msgid "Customize Power Menu"
+msgstr "Sérsníða gangstýringarvalmynd"
+
+msgctxt "#31281"
+msgid "Edit Library Data"
+msgstr "Breyta gögnum í safni"
+
+msgctxt "#31282"
+msgid "Select Search Categories"
+msgstr "Veldu leitarflokka"
+
+msgctxt "#31283"
+msgid "Select Search Categories to Enable"
+msgstr "Veldu leitarflokka sem á að virkja"
+
+msgctxt "#31284"
+msgid "By Title"
+msgstr "Eftir titli"
+
+msgctxt "#31285"
+msgid "With Genre"
+msgstr "Með flokknum"
+
+msgctxt "#31286"
+msgid "From Year"
+msgstr "Frá árinu"
+
+msgctxt "#31287"
+msgid "From Studio"
+msgstr "Frá framleiðanda"
+
+msgctxt "#31288"
+msgid "From Country"
+msgstr "Frá landi"
+
+msgctxt "#31289"
+msgid "With Actor"
+msgstr "Með leikara"
+
+msgctxt "#31290"
+msgid "By Director"
+msgstr "Eftir leikstjóra"
+
 msgctxt "#31291"
 msgid "Add-on manager"
 msgstr "Viðbótastjóri"
 
-# empty string with id 31292
 msgctxt "#31293"
 msgid "Can not be customized"
 msgstr "Ekki hægt að sérsníða"
@@ -569,17 +1201,206 @@ msgctxt "#31300"
 msgid "CoreELEC Settings"
 msgstr "Stillingar CoreELEC"
 
-# empty strings from id 31301 to 31308
+msgctxt "#31301"
+msgid "By Writer"
+msgstr "Eftir handritshöfund"
+
+msgctxt "#31302"
+msgid "Artists by Name"
+msgstr "Flytjendur eftir nafni"
+
+msgctxt "#31303"
+msgid "Albums by Title"
+msgstr "Hljómplötur eftir titli"
+
+msgctxt "#31304"
+msgid "Songs by Title"
+msgstr "Lög eftir titli"
+
+msgctxt "#31305"
+msgid "By Artist"
+msgstr "Eftir flytjanda"
+
+msgctxt "#31306"
+msgid "YouTube by Title"
+msgstr "YouTube eftir titli"
+
+msgctxt "#31307"
+msgid "Known for Character"
+msgstr "Þekkt/ur fyrir hlutverkið"
+
+msgctxt "#31308"
+msgid "Known for Department"
+msgstr "Þekkt/ur fyrir aðild"
+
 msgctxt "#31309"
 msgid "Memory Used"
 msgstr "Minni í notkun"
 
-# empty strings from id 31310 to 31321
+msgctxt "#31310"
+msgid "Known for Job"
+msgstr "Þekkt/ur fyrir vinnu"
+
+msgctxt "#31311"
+msgid "Total Items in TMDb"
+msgstr "Alls atriði í TMDb"
+
+msgctxt "#31312"
+msgid "Total Movies in TMDb"
+msgstr "Kvikmyndir alls í TMDb"
+
+msgctxt "#31313"
+msgid "Total TV Shows in TMDb"
+msgstr "Sjónvarpsþættir alls í TMDb"
+
+msgctxt "#31314"
+msgid "Items in TMDb as Cast"
+msgstr "Atriði í TMDb sem leikarar"
+
+msgctxt "#31315"
+msgid "Movies in TMDb as Cast"
+msgstr "Kvikmyndir í TMDb sem leikarar"
+
+msgctxt "#31316"
+msgid "TV Shows in TMDb as Cast"
+msgstr "Sjónvarpsþættir í TMDb sem leikarar"
+
+msgctxt "#31317"
+msgid "Items in TMDb as Crew"
+msgstr "Atriði í TMDb sem tökulið"
+
+msgctxt "#31318"
+msgid "Movies in TMDb as Crew"
+msgstr "Kvikmyndir í TMDb sem tökulið"
+
+msgctxt "#31319"
+msgid "TV Shows in TMDb as Crew"
+msgstr "Sjónvarpsþættir í TMDb sem tökulið"
+
+msgctxt "#31320"
+msgid "Total Items in Local Database"
+msgstr "Atriði alls í staðværum gagnagrunni"
+
+msgctxt "#31321"
+msgid "Movies in Local Database"
+msgstr "Kvikmyndir í staðværum gagnagrunni"
+
 msgctxt "#31322"
 msgid "Aired"
 msgstr "Sent út"
 
-# empty strings from id 31323 to 31350
+msgctxt "#31323"
+msgid "TV Shows in Local Database"
+msgstr "Sjónvarpsþættir í staðværum gagnagrunni"
+
+msgctxt "#31324"
+msgid "Episodes in Local Database"
+msgstr "Þættir í staðværum gagnagrunni"
+
+msgctxt "#31325"
+msgid "Cast: Movies with"
+msgstr "Leikarar: Kvikmyndir með"
+
+msgctxt "#31326"
+msgid "Cast: TV Shows with"
+msgstr "Leikarar: Sjónvarpsþættir með"
+
+msgctxt "#31327"
+msgid "Crew: Movies with"
+msgstr "Tökulið: Kvikmyndir með"
+
+msgctxt "#31328"
+msgid "Crew: TV Shows with"
+msgstr "Tökulið: Sjónvarpsþættir með"
+
+msgctxt "#31329"
+msgid "Start at First Menu Item"
+msgstr "Byrja á fyrsta valmyndaratriðinu"
+
+msgctxt "#31330"
+msgid "Set Default View"
+msgstr "Setja sjálfgefna sýn"
+
+msgctxt "#31331"
+msgid "Highlight Color"
+msgstr "Áherslulitur"
+
+msgctxt "#31332"
+msgid "Horizontal Menu Glow Bars Tint"
+msgstr ""
+
+msgctxt "#31333"
+msgid "Horizontal Menu Main Bar Tint"
+msgstr ""
+
+msgctxt "#31334"
+msgid "Vertical Menu/Submenu Background Tint"
+msgstr ""
+
+msgctxt "#31335"
+msgid "Top Bar Tint"
+msgstr ""
+
+msgctxt "#31336"
+msgid "Current Color Theme"
+msgstr "Núverandi litastef"
+
+msgctxt "#31337"
+msgid "Dialogs Background Tint"
+msgstr "Litatónn bakgrunns glugga"
+
+msgctxt "#31338"
+msgid "Regular Text Color"
+msgstr "Venjulegur textalitur"
+
+msgctxt "#31339"
+msgid "Focused Text Color"
+msgstr "Litur virks texta"
+
+msgctxt "#31340"
+msgid "Selected Text Color"
+msgstr "Litur valins texta"
+
+msgctxt "#31341"
+msgid "Shelves Background Tint"
+msgstr "Litatónn bakgrunns rekka"
+
+msgctxt "#31342"
+msgid "Use for All Tints"
+msgstr "Nota fyrir alla litatóna"
+
+msgctxt "#31343"
+msgid "Keep Lists Focus Centered"
+msgstr ""
+
+msgctxt "#31344"
+msgid "Show Artist Logo In Music Visualization"
+msgstr ""
+
+msgctxt "#31345"
+msgid "Show Logo In Media Views"
+msgstr ""
+
+msgctxt "#31346"
+msgid "Show Logo In Home Window"
+msgstr "Birta táknmerki á forsíðuglugga"
+
+msgctxt "#31347"
+msgid "Media Views Background Tint"
+msgstr ""
+
+msgctxt "#31348"
+msgid "Enable Label Scrolling in List Views"
+msgstr ""
+
+msgctxt "#31349"
+msgid "Audio and Subtitle Info"
+msgstr "Upplýsingar um hljóð og skjátexta"
+
+msgctxt "#31350"
+msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
+msgstr ""
+
 msgctxt "#31351"
 msgid "Pause"
 msgstr "Bið"
@@ -608,7 +1429,14 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "Texti í boði á tölvu"
 
-# empty strings from id 31358 to 31359
+msgctxt "#31358"
+msgid "Disable Info Panel in List Views"
+msgstr "Gera upplýsingaspjald óvirkt í listasýnum"
+
+msgctxt "#31359"
+msgid "TMDb Helper - Next Aired Episodes"
+msgstr "TMDb-hjálpari - Næstu útsendu þættir"
+
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
@@ -618,15 +1446,110 @@ msgctxt "#31361"
 msgid "Change mode"
 msgstr "Skipta um ham"
 
-msgctxt "#31362"
-msgid "Enabled"
-msgstr "Virkt"
-
 msgctxt "#31363"
 msgid "Static"
 msgstr "Föst"
 
-# empty strings from id 31364 to 31389
+msgctxt "#31364"
+msgid "Embuary Info - Next Aired Episodes"
+msgstr "Embuary upplýsingar - Næstu útsendu þættir"
+
+msgctxt "#31365"
+msgid "Only Search in Local Library"
+msgstr "Einungis leita í safni á tölvu"
+
+msgctxt "#31366"
+msgid "Hide Channel Groups"
+msgstr "Fela rásahópa"
+
+msgctxt "#31367"
+msgid "Select Displayed Ratings and Certification"
+msgstr "Veldu hvaða flokkun og einkunnir eru birtar"
+
+msgctxt "#31368"
+msgid "User Rating"
+msgstr "Stjörnugjöf notenda"
+
+msgctxt "#31369"
+msgid "Ratings"
+msgstr "Einkunnir"
+
+msgctxt "#31370"
+msgid "Certification"
+msgstr "Vottun"
+
+msgctxt "#31371"
+msgid "Up Next in"
+msgstr "Næst í spilun eftir"
+
+msgctxt "#31372"
+msgid "Continue Watching in"
+msgstr "Halda áfram að horfa eftir"
+
+msgctxt "#31373"
+msgid "Hide Collection (Set) Marks"
+msgstr ""
+
+msgctxt "#31374"
+msgid "Disable Info Panel"
+msgstr "Gera upplýsingaspjald óvirkt"
+
+msgctxt "#31375"
+msgid "Alternate List Layout"
+msgstr "Önnur framsetning lista"
+
+msgctxt "#31376"
+msgid "Larger Image"
+msgstr "Stærri mynd"
+
+msgctxt "#31377"
+msgid "Alternate List Views Layout"
+msgstr "Önnur framsetning listasýna"
+
+msgctxt "#31378"
+msgid "Albums by"
+msgstr "Hljómplötur með"
+
+msgctxt "#31379"
+msgid "Panel 2"
+msgstr "Stjórnborð 2"
+
+msgctxt "#31380"
+msgid "Big Panel 2"
+msgstr "Stórt stjórnborð 2"
+
+msgctxt "#31381"
+msgid "Disable Panel 2 view"
+msgstr "Gera stjórnborðsýn 2 óvirka"
+
+msgctxt "#31382"
+msgid "Disable Big Panel 2 view"
+msgstr "Gera stóra stjórnborðsýn 2 óvirka"
+
+msgctxt "#31383"
+msgid "Enable Statistics Line"
+msgstr "Virkja tölfræðilínu"
+
+msgctxt "#31384"
+msgid "Show Statistics line on Shelf"
+msgstr "Birta tölfræðilínu á rekka"
+
+msgctxt "#31385"
+msgid "Show Marks on Top Right"
+msgstr ""
+
+msgctxt "#31386"
+msgid "Hide Unwatched Episodes Marks"
+msgstr "Fela merki fyrir óskoðaða þætti"
+
+msgctxt "#31387"
+msgid "Movies in library"
+msgstr "Kvikmyndir í safni"
+
+msgctxt "#31388"
+msgid "IMDb Top 250"
+msgstr "IMDb - Topp 250"
+
 msgctxt "#31390"
 msgid "(1/5) Skin default"
 msgstr "(1/5) Sjálfgefið í skinni"
@@ -1067,10 +1990,6 @@ msgctxt "#31499"
 msgid "All TV Shows"
 msgstr "Allir sjónvarpsþættir"
 
-msgctxt "#31500"
-msgid "TV"
-msgstr "SJÓNVARP"
-
 msgctxt "#31501"
 msgid "Scheduled Time"
 msgstr "Áætlaður tími"
@@ -1099,11 +2018,6 @@ msgctxt "#31507"
 msgid "Opens"
 msgstr "Opnar"
 
-# empty string with id 31508
-msgctxt "#31509"
-msgid "Radio"
-msgstr "Útvarp"
-
 msgctxt "#31510"
 msgid "Timer Set"
 msgstr "Stilling teljara"
@@ -1112,7 +2026,6 @@ msgctxt "#31511"
 msgid "Reminder Set"
 msgstr "Stilling áminningar"
 
-# empty strings from id 31512 to 31513
 msgctxt "#31514"
 msgid "Episodes use poster"
 msgstr "Þættir nota kynningarmyndefni"
@@ -1601,10 +2514,6 @@ msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
 msgstr "Sérsníða flýtileiðir neðst"
 
-msgctxt "#31636"
-msgid "Shortcuts"
-msgstr "Flýtileiðir"
-
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
 msgstr "Virkja flýtileiðir neðst"
@@ -1677,6 +2586,838 @@ msgctxt "#31654"
 msgid "Show Information for Shelves"
 msgstr "Sýna upplýsingar fyrir rekka"
 
+msgctxt "#31655"
+msgid "Missing Add-on"
+msgstr "Viðbót vantar"
+
+msgctxt "#31656"
+msgid "TMDb Helper"
+msgstr "TMDb-hjálpari"
+
+msgctxt "#31657"
+msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+msgstr ""
+
+msgctxt "#31658"
+msgid "Use Embuary Helper for Playlist Backgrounds"
+msgstr "Virkja notkun Embuary-hjálpara fyrir bakgrunna í spilunarlistum"
+
+msgctxt "#31659"
+msgid "Unwatched"
+msgstr "Ekki búið að horfa á"
+
+msgctxt "#31660"
+msgid "Use Embuary Helper for Statistics Line"
+msgstr "Virkja notkun Embuary-hjálpara fyrir tölfræðilínu"
+
+msgctxt "#31661"
+msgid "Use Embuary Helper for Backgrounds"
+msgstr "Virkja notkun Embuary-hjálpara fyrir bakgrunna"
+
+msgctxt "#31662"
+msgid "Movie Collection Count"
+msgstr "Fjöldi í kvikmyndasafni"
+
+msgctxt "#31663"
+msgid "Show Fanart for Special Content"
+msgstr "Birta aðdáendamyndir fyrir sérstakt efni"
+
+msgctxt "#31664"
+msgid "Media Play Count"
+msgstr "Fjöldi spilana"
+
+msgctxt "#31665"
+msgid "Color Options"
+msgstr "Litavalkostir"
+
+msgctxt "#31666"
+msgid "Go To"
+msgstr "Fara á"
+
+msgctxt "#31667"
+msgid "Show Three Shelves Together"
+msgstr "Sýna þrjá rekka saman"
+
+msgctxt "#31668"
+msgid "Configure Custom Shelf"
+msgstr "Stilla sérsniðinn rekka"
+
+msgctxt "#31669"
+msgid "Shift Fanart View Focus to the Right"
+msgstr ""
+
+msgctxt "#31670"
+msgid "Mouse/Touch-Friendly Alphabet Strip"
+msgstr ""
+
+msgctxt "#31671"
+msgid "Use New Media Views Selector"
+msgstr ""
+
+msgctxt "#31672"
+msgid "Skin Variables"
+msgstr "Breytur skinns"
+
+msgctxt "#31673"
+msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
+msgstr ""
+
+msgctxt "#31674"
+msgid "Configure Media Views"
+msgstr "Stilla ásýndir myndefnis"
+
+msgctxt "#31675"
+msgid "Three Rows with Larger Icons"
+msgstr "Þrjár raðir með stærri táknmyndir"
+
+msgctxt "#31676"
+msgid "Oscars Won"
+msgstr "Óskarsverðlaun unnin"
+
+msgctxt "#31677"
+msgid "Oscar Nominations"
+msgstr "Tilnefningar til Óskarsverðlauna"
+
+msgctxt "#31678"
+msgid "Golden Globes Won"
+msgstr "Golden Globe verðlaun unnin"
+
+msgctxt "#31679"
+msgid "Golden Globe Nominations"
+msgstr "Tilnefningar til Golden Globe verðlauna"
+
+msgctxt "#31680"
+msgid "Awards (Oscars/Golden Globes)"
+msgstr "Viðurkenningar (Óskarsverðlaun/Golden Globe)"
+
+msgctxt "#31681"
+msgid "Video Genre Fanart"
+msgstr "Aðdáendamyndir myndskeiða"
+
+msgctxt "#31682"
+msgid "Music Genre Fanart"
+msgstr "Aðdáendamyndir tónlistar"
+
+msgctxt "#31683"
+msgid "Custom Path"
+msgstr "Sérsniðin slóð"
+
+msgctxt "#31684"
+msgid "Reset Custom Path"
+msgstr "Endurstilla sérsniðna slóð"
+
+msgctxt "#31685"
+msgid "Image Pack"
+msgstr "Myndapakki"
+
+msgctxt "#31686"
+msgid "Enable Multiple Images per Genre"
+msgstr ""
+
+msgctxt "#31687"
+msgid "Match Poster Colors"
+msgstr "Samsvara litum í kynningarspjaldi"
+
+msgctxt "#31688"
+msgid "Show Seek Bar at Bottom"
+msgstr ""
+
+msgctxt "#31689"
+msgid "HDR/SDR and Bit Depth Flags"
+msgstr ""
+
+msgctxt "#31690"
+msgid "File Name Instead of Title"
+msgstr "Skráarheiti í stað titils"
+
+msgctxt "#31691"
+msgid "Extra Fanart on panel"
+msgstr "Auka-aðdáendamyndir á spjaldi"
+
+msgctxt "#31692"
+msgid "Ends at"
+msgstr "Endar á"
+
+msgctxt "#31693"
+msgid "Netflix style"
+msgstr "Netflix-stíll"
+
+msgctxt "#31694"
+msgid "Show Logo"
+msgstr "Birta táknmerki"
+
+msgctxt "#31695"
+msgid "Use Landscape"
+msgstr "Nota landslagsmyndefni"
+
+msgctxt "#31696"
+msgid "Dim Level for Unfocused"
+msgstr "Stig skyggingar á óvirku"
+
+msgctxt "#31697"
+msgid "Select Dim Level"
+msgstr "Veldu stig skyggingar"
+
+msgctxt "#31698"
+msgid "Now Playing"
+msgstr "Í spilun"
+
+msgctxt "#31699"
+msgid "Hide Title Bar Now Playing"
+msgstr ""
+
+msgctxt "#31700"
+msgid "Select Now Playing Video Disc Art Fallback"
+msgstr ""
+
+msgctxt "#31701"
+msgid "Select Now Playing Music Disc Art Fallback"
+msgstr ""
+
+msgctxt "#31702"
+msgid "Blu-Ray"
+msgstr "Blu-Ray"
+
+msgctxt "#31703"
+msgid "Vinyl"
+msgstr "Vínill"
+
+msgctxt "#31704"
+msgid "None"
+msgstr "Ekkert"
+
+msgctxt "#31705"
+msgid "Golden"
+msgstr "Gyllt"
+
+msgctxt "#31706"
+msgid "Purple"
+msgstr "Purpurablátt"
+
+msgctxt "#31707"
+msgid "Select Now Playing Info for Movies/Episodes"
+msgstr "Velja 'Í spilun'-upplýsingar fyrir kvikmyndir/þætti"
+
+msgctxt "#31708"
+msgid "Select Now Playing Info for other Videos"
+msgstr "Velja 'Í spilun'-upplýsingar fyrir önnur myndskeið"
+
+msgctxt "#31709"
+msgid "Select Now Playing Info for Music"
+msgstr "Velja 'Í spilun'-upplýsingar fyrir tónlist"
+
+msgctxt "#31710"
+msgid "Show Video in the Background"
+msgstr "Sýna myndskeið í bakgrunni"
+
+msgctxt "#31711"
+msgid "Show Music Visualization in the Background"
+msgstr "Sýna sjónhrif tónlistar í bakgrunni"
+
+msgctxt "#31712"
+msgid "Show Extra Art for Video"
+msgstr "Sýna viðbótarmyndefni fyrir myndskeið"
+
+msgctxt "#31713"
+msgid "Show Extra Art for Music"
+msgstr "Sýna viðbótarmyndefni fyrir tónlist"
+
+msgctxt "#31714"
+msgid "Show Logo"
+msgstr "Birta táknmerki"
+
+msgctxt "#31715"
+msgid "Show ClearArt"
+msgstr "Sýna ClearArt"
+
+msgctxt "#31716"
+msgid "Show Disc Art"
+msgstr "Sýna myndefni disks"
+
+msgctxt "#31717"
+msgid "Select Disc Art Fallback for Video"
+msgstr "Sýna varamyndefni fyrir myndskeið"
+
+msgctxt "#31718"
+msgid "Select Disc Art Fallback for Music"
+msgstr "Sýna varamyndefni fyrir tónlist"
+
+msgctxt "#31719"
+msgid "Disable Now Playing"
+msgstr "Gera 'Í spilun' óvirkt"
+
+msgctxt "#31720"
+msgid "Internet Stream"
+msgstr "Internetstreymi"
+
+msgctxt "#31721"
+msgid "Special"
+msgstr "Sérstakt"
+
+msgctxt "#31722"
+msgid "Next Tracks"
+msgstr "Næstu hljóðspor"
+
+msgctxt "#31723"
+msgid "Album Review"
+msgstr "Umsögn hljómplötu"
+
+msgctxt "#31724"
+msgid "Artist Bio"
+msgstr "Æviágrip flytjanda"
+
+msgctxt "#31725"
+msgid "Hide Shelves when Now Playing is Visible"
+msgstr "Fela rekka þegar 'í afspilun' er sýnilegt"
+
+msgctxt "#31726"
+msgid "Enlarge Video Preview when Idle"
+msgstr ""
+
+msgctxt "#31727"
+msgid "Select Extra Art to Show in Applicable Views"
+msgstr ""
+
+msgctxt "#31728"
+msgid "Full Screen/OSD"
+msgstr "Skjáfylli/Stjórntexti"
+
+msgctxt "#31729"
+msgid "Select Interval for Auto Closing Video OSD"
+msgstr ""
+
+msgctxt "#31730"
+msgid "Current Color"
+msgstr "Núverandi litur"
+
+msgctxt "#31731"
+msgid "Value"
+msgstr "Gildi"
+
+msgctxt "#31732"
+msgid "Second"
+msgstr "sekúnda"
+
+msgctxt "#31733"
+msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
+msgstr ""
+
+msgctxt "#31734"
+msgid "Auto Close Video OSD"
+msgstr "Loka sjálfvirkt stjórntexta myndmerkis"
+
+msgctxt "#31735"
+msgid "Default Font Size"
+msgstr "Sjálfgefin stærð leturs"
+
+msgctxt "#31736"
+msgid "Use fanart.jpg if present in folder or parent folder"
+msgstr ""
+
+msgctxt "#31737"
+msgid "Use Clear Art instead of Logo"
+msgstr "Setja ClearArt í stað táknmerkis"
+
+msgctxt "#31738"
+msgid "Single Logo"
+msgstr "Einfalt táknmerki"
+
+msgctxt "#31739"
+msgid "Fade out Unfocused"
+msgstr "Deyfa út óvirkt"
+
+msgctxt "#31740"
+msgid "Show Overlay"
+msgstr "Birta yfirlag"
+
+msgctxt "#31741"
+msgid "Show Smaller Favourite Icons"
+msgstr "Birta minni táknmyndir eftirlæta"
+
+msgctxt "#31742"
+msgid "Show Three Rows"
+msgstr "Sýna þrjár raðir"
+
+msgctxt "#31743"
+msgid "Show Four Rows"
+msgstr "Sýna fjórar raðir"
+
+msgctxt "#31744"
+msgid "Enable Use of TMDb Helper"
+msgstr "Virkja notkun TMDb-hjálpara"
+
+msgctxt "#31745"
+msgid "Enable Use of Embuary Helper"
+msgstr "Virkja notkun Embuary-hjálpara"
+
+msgctxt "#31746"
+msgid "Hide Seek Bar when Paused"
+msgstr ""
+
+msgctxt "#31747"
+msgid "Icon Only Menu"
+msgstr "Valmynd einungis með táknmyndum"
+
+msgctxt "#31748"
+msgid "Show Menu Item Name"
+msgstr "Sýna heiti valmyndarfærslu"
+
+msgctxt "#31749"
+msgid "Enable Video Lyrics"
+msgstr "Virkja lagatexta með myndskeiðum"
+
+msgctxt "#31750"
+msgid "Play Whole Albums from Shelves"
+msgstr "Spila heilar hljómplötur úr rekkum"
+
+msgctxt "#31751"
+msgid "Show Item Name in Top Bar"
+msgstr ""
+
+msgctxt "#31752"
+msgid "Animate backgrounds using Ken Burns effect"
+msgstr "Myndlífga bakgrunna með Ken Burns áhrifum"
+
+msgctxt "#31753"
+msgid "Single Column"
+msgstr "Stakur dálkur"
+
+msgctxt "#31754"
+msgid "Disable Now Playing Fanart"
+msgstr ""
+
+msgctxt "#31755"
+msgid "Show Media Info with Seek Bar"
+msgstr ""
+
+msgctxt "#31756"
+msgid "Show Seek Bar when Starting Video Playback"
+msgstr ""
+
+msgctxt "#31757"
+msgid "Time to Show Seek Bar"
+msgstr "Tími sem á að birta leitarstiku"
+
+msgctxt "#31758"
+msgid "Hide Title Bar in Main Window"
+msgstr "Fela titilstiku í aðalglugga"
+
+msgctxt "#31759"
+msgid "Hide fallback image if no thumb in OSD"
+msgstr ""
+
+msgctxt "#31760"
+msgid "Dim Background and Album Cover when Showing Lyrics"
+msgstr "Skyggja bakgrunn og hljómplötuumslag þegar lagatextar eru birtir"
+
+msgctxt "#31761"
+msgid "Use Alternate Favourites Layout"
+msgstr "Nota aðra framsetningu eftirlæta"
+
+msgctxt "#31762"
+msgid "Align Menu Item Text to the Left"
+msgstr "Jafna texta valmyndarfærslu til vinstri"
+
+msgctxt "#31763"
+msgid "Info Button Opens Video Info Dialog"
+msgstr ""
+
+msgctxt "#31764"
+msgid "Pause Media While Info Dialog is Open"
+msgstr "Setja efni í bið á meðan upplýsingagluggi er opinn"
+
+msgctxt "#31765"
+msgid "End Time"
+msgstr "Lokatími"
+
+msgctxt "#31766"
+msgid "Show Dark Background Behind Shortcuts"
+msgstr "Birta dökkan bakgrunn aftan við flýtilykla"
+
+msgctxt "#31767"
+msgid "Use Artist Slideshow for Audio Fanart"
+msgstr ""
+
+msgctxt "#31768"
+msgid "Disable Lyrics"
+msgstr "Gera lagatexta óvirka"
+
+msgctxt "#31769"
+msgid "Activate Lyrics"
+msgstr "Virkja lagatexta"
+
+msgctxt "#31770"
+msgid "Use Color Flags"
+msgstr "Nota litaflögg"
+
+msgctxt "#31771"
+msgid "Show Submenu Only when Focused"
+msgstr "Birta undirvalmynd aðeins þegar hún er virk"
+
+msgctxt "#31772"
+msgid "Movies with Plot containing"
+msgstr "Kvikmyndir með söguþræði sem inniheldur"
+
+msgctxt "#31773"
+msgid "TV Shows with Plot containing"
+msgstr "Sjónvarpsþættir með söguþræði sem inniheldur"
+
+msgctxt "#31774"
+msgid "Episodes with Plot containing"
+msgstr "Þættir með söguþræði sem inniheldur"
+
+msgctxt "#31775"
+msgid "With Plot Containing"
+msgstr "Með söguþræði sem inniheldur"
+
+msgctxt "#31776"
+msgid "Show Title in Footer"
+msgstr "Birta titil neðst"
+
+msgctxt "#31777"
+msgid "Hide Seek Bar when Forwarding or Rewinding"
+msgstr ""
+
+msgctxt "#31778"
+msgid "Enable Touchscreen Devices Support"
+msgstr "Virkja stuðning við tæki með snertiskjá"
+
+msgctxt "#31779"
+msgid "Show Rating Overlay"
+msgstr "Birta yfirlag með einkunnum"
+
+msgctxt "#31780"
+msgid "Use User Rating for Overlay"
+msgstr "Nota einkunn notanda sem yfirlag"
+
+msgctxt "#31781"
+msgid "Select Items to Show in Views"
+msgstr "Veldu atriði til að birta í sýnum"
+
+msgctxt "#31782"
+msgid "Items to Show in Views"
+msgstr "Atriði sem á að birta í sýnum"
+
+msgctxt "#31783"
+msgid "Play Random"
+msgstr "Spila af handahófi"
+
+msgctxt "#31784"
+msgid "List Views Options"
+msgstr "Valkostir listasýna"
+
+msgctxt "#31785"
+msgid "Marks and Overlays"
+msgstr "Merki og yfirlög"
+
+msgctxt "#31786"
+msgid "Select View Types to Enable"
+msgstr ""
+
+msgctxt "#31787"
+msgid "View Types to Enable"
+msgstr ""
+
+msgctxt "#31788"
+msgid "Show Poster"
+msgstr "Birta kynningarspjald"
+
+msgctxt "#31789"
+msgid "Text"
+msgstr "Texti"
+
+msgctxt "#31790"
+msgid "Banner"
+msgstr "Borði"
+
+msgctxt "#31791"
+msgid "List Item Type"
+msgstr "Tegund atriðis í lista"
+
+msgctxt "#31792"
+msgid "Poster/Thumb"
+msgstr "Kynningarspjald/Smámynd"
+
+msgctxt "#31793"
+msgid "OSD/Full Screen Art"
+msgstr ""
+
+msgctxt "#31794"
+msgid "N/A"
+msgstr "Ekki tiltækt"
+
+msgctxt "#31795"
+msgid "Show Info Popup"
+msgstr "Birta upplýsingaglugga"
+
+msgctxt "#31796"
+msgid "Popup Delay"
+msgstr "Töf sprettglugga"
+
+msgctxt "#31797"
+msgid "Show Floor"
+msgstr "Sýna gólf"
+
+msgctxt "#31798"
+msgid "Fixed List"
+msgstr "Fastur listi"
+
+msgctxt "#31799"
+msgid "Centered Static Menu (less than 8 items)"
+msgstr "Miðjuð föst valmynd (minna en 8 atriði)"
+
+msgctxt "#31800"
+msgid "Compact OSD"
+msgstr "Þjappaðir stjórntextar"
+
+msgctxt "#31801"
+msgid "Ultra Compact OSD"
+msgstr "Öfga-þjappaðir stjórntextar"
+
+msgctxt "#31802"
+msgid "Alternate OSD Button Highlighting"
+msgstr ""
+
+msgctxt "#31803"
+msgid "Auto Play Trailer (Local Trailer Only)"
+msgstr "Spila kynningarstiklu sjálfkrafa (einungis ef finnst á tölvu)"
+
+msgctxt "#31804"
+msgid "Auto Play Trailer Delay"
+msgstr "Töf við sjálfvirka spilun kynningarstiklu"
+
+msgctxt "#31805"
+msgid "Fanart Title Button Opens Info Dialog"
+msgstr ""
+
+msgctxt "#31806"
+msgid "Single Image"
+msgstr "Stök mynd"
+
+msgctxt "#31807"
+msgid "Multiple Images"
+msgstr "Margar myndir"
+
+msgctxt "#31808"
+msgid "Video/Playlist"
+msgstr "Myndskeið/Spilunarlisti"
+
+msgctxt "#31809"
+msgid "Startup Background"
+msgstr "Bakgrunnur í ræsingu"
+
+msgctxt "#31810"
+msgid "Hide Menu when Shelves are Focused"
+msgstr "Fela valmynd þegar rekkar eru virkir"
+
+msgctxt "#31811"
+msgid "Use Disc Art instead of Cover"
+msgstr "Nota myndefni disks í stað umslagsmyndar"
+
+msgctxt "#31812"
+msgid "Auto Play Trailer from Shelf Items"
+msgstr "Spila sjálfkrafa kynningarstiklu fyrir atriði í rekka"
+
+msgctxt "#31813"
+msgid "Shelf Trailer Delay"
+msgstr "Töf kynningarstiklu fyrir rekka"
+
+msgctxt "#31814"
+msgid "Slide Out Media Items While Trailer Playing"
+msgstr ""
+
+msgctxt "#31815"
+msgid "Hide PVR Channel Preview"
+msgstr ""
+
+msgctxt "#31816"
+msgid "Art Downloader: Select Artwork"
+msgstr "Niðurhal myndefnis: Veldu myndefni"
+
+msgctxt "#31817"
+msgid "Art Downloader: All Artwork"
+msgstr "Niðurhal myndefnis: Allt myndefni"
+
+msgctxt "#31818"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr "Sýna atriði myndefnisniðurhals í samhengisvalmynd"
+
+msgctxt "#31819"
+msgid "Movies with Tag"
+msgstr "Kvikmyndir með merki"
+
+msgctxt "#31820"
+msgid "Select a Tag"
+msgstr "Veldu merki"
+
+msgctxt "#31821"
+msgid "With Tag"
+msgstr "Með merki"
+
+msgctxt "#31822"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr "Alltaf nota kynningarspjald þáttaraðar fyrir þætti"
+
+msgctxt "#31823"
+msgid "Open ExtendedInfo for Info Dialogs"
+msgstr ""
+
+msgctxt "#31824"
+msgid "Cert"
+msgstr "Skilríki"
+
+msgctxt "#31825"
+msgid "Show Episodes List button"
+msgstr "Birta hnapp fyrir þáttalista"
+
+msgctxt "#31826"
+msgid "Include Seasons in Episodes List popup"
+msgstr "Hafa þáttaraðir með í þáttalistaglugga"
+
+msgctxt "#31827"
+msgid "Next Aired"
+msgstr "Næst sýnt"
+
+msgctxt "#31828"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr ""
+
+msgctxt "#31829"
+msgid "Show Disc above Poster"
+msgstr "Sýna disk fyrir ofan kynningarspjald"
+
+msgctxt "#31830"
+msgid "Hide Disc over Set Poster"
+msgstr "Fela disk fyrir ofan kynningarspjald"
+
+msgctxt "#31831"
+msgid "Play trailer in a window"
+msgstr "Spila kynningarstiklu í glugga"
+
+msgctxt "#31832"
+msgid "Search Trailer"
+msgstr "Leita að stiklu"
+
+msgctxt "#31833"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr ""
+
+msgctxt "#31834"
+msgid "Fade out Non-focused Menu Items"
+msgstr ""
+
+msgctxt "#31835"
+msgid "Cloudiness"
+msgstr "Skýjahula"
+
+msgctxt "#31836"
+msgid "Probability of Precipitation"
+msgstr "Líkur á úrkomu"
+
+msgctxt "#31837"
+msgid "Intro Video Duration"
+msgstr "Tímalengd kynningarmyndskeiða"
+
+msgctxt "#31838"
+msgid "PVR Timeshift Buffer Color"
+msgstr ""
+
+msgctxt "#31839"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr "Nota bakgrunn aðalvalmyndar fyrir undirglugga"
+
+msgctxt "#31840"
+msgid "Teletext Button Opens EPG"
+msgstr "Textavarpshnappur opnar EPG"
+
+msgctxt "#31841"
+msgid "EPG Icon"
+msgstr "EPG-táknmynd"
+
+msgctxt "#31842"
+msgid "Channel Logo"
+msgstr "Táknmerki rásar"
+
+msgctxt "#31843"
+msgid "Always Show Information Panel"
+msgstr "Alltaf birta upplýsingaspjald"
+
+msgctxt "#31844"
+msgid "Use Custom Search for Video Library"
+msgstr "Nota sérsniðna leit í myndskeiðasafni"
+
+msgctxt "#31845"
+msgid "Use Custom Search for Music Library"
+msgstr "Nota sérsniðna leit í tónlistarsafni"
+
+msgctxt "#31846"
+msgid "Current Programme Progress:"
+msgstr "Framvinda núverandi dagskrárliðar:"
+
+msgctxt "#31847"
+msgid "Also Show Seconds"
+msgstr "Sýna einnig sekúndur"
+
+msgctxt "#31848"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#31849"
+msgid "Remember Focused Control in Home Window"
+msgstr ""
+
+msgctxt "#31850"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
+msgstr ""
+
+msgctxt "#31851"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr ""
+
+msgctxt "#31852"
+msgid "Update Library"
+msgstr "Uppfæra safn"
+
+msgctxt "#31853"
+msgid "Stop Scanning"
+msgstr "Hætta skönnun"
+
+msgctxt "#31854"
+msgid "More Info"
+msgstr "Frekari upplýsingar"
+
+msgctxt "#31855"
+msgid "Play Trailer Windowed"
+msgstr "Spila kynningarstiklu í glugga"
+
+msgctxt "#31856"
+msgid "Last Played Date"
+msgstr ""
+
+msgctxt "#31857"
+msgid "Horizontal Icon Layout"
+msgstr "Lárétt framsetning táknmynda"
+
+msgctxt "#31858"
+msgid "Show Menu Item Label"
+msgstr "Sýna skýringu valmyndarfærslu"
+
+msgctxt "#31859"
+msgid "Always Show Set Movie List"
+msgstr ""
+
+msgctxt "#31860"
+msgid "Use Tall List Layout"
+msgstr "Nota háa listaframsetningu"
+
+msgctxt "#31861"
+msgid "Show More Items in List"
+msgstr "Birta fleiri atriði í lista"
+
+msgctxt "#31862"
+msgid "Hide Overlay Label in Icon/Panel Views"
+msgstr "Fela yfirlagsmerki í táknmynda/stjórnborðssýn"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "36 klst veðurspá"
@@ -1693,12 +3434,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "10 daga veðurspá"
 
-# empty strings from id 31905 to 31919
 msgctxt "#31920"
 msgid "Disable all Home shelves"
 msgstr "Gera alla forsíðurekka óvirka"
 
-# empty strings from id 31921 to 31935
 msgctxt "#31936"
 msgid "Enable Skin Shortcuts"
 msgstr "Virkja flýtilykla skinns"
@@ -1739,7 +3478,6 @@ msgctxt "#31945"
 msgid "Movie Country icons"
 msgstr "Táknmyndir fyrir lönd kvikmynda"
 
-# empty strings from id 31946 to 31948
 msgctxt "#31949"
 msgid "Show ExtraFanart if available"
 msgstr "Birta viðbótaraðdáendamyndir ef þær eru tiltækar"
@@ -1789,10 +3527,6 @@ msgstr "Fylla skjáinn við afspilun tónlistar"
 msgctxt "#31960"
 msgid "Big List"
 msgstr "Stór listi"
-
-msgctxt "#31961"
-msgid "Recently added"
-msgstr "Nýlega bætt við"
 
 #. view label
 msgctxt "#31962"
@@ -1850,10 +3584,6 @@ msgctxt "#31974"
 msgid "Home menu"
 msgstr "Forsíðuvalmynd"
 
-msgctxt "#31975"
-msgid "Channels"
-msgstr "Rásir"
-
 msgctxt "#31976"
 msgid "Home shelf"
 msgstr "Forsíðurekki"
@@ -1898,19 +3628,10 @@ msgctxt "#31986"
 msgid "Use default background for Home window"
 msgstr "Nota sjáfgefinn bakgrunn á forsíðuglugga"
 
-msgctxt "#31987"
-msgid "Random"
-msgstr "Handahófsvalið"
-
-msgctxt "#31988"
-msgid "Menu"
-msgstr "Valmynd"
-
 msgctxt "#31989"
 msgid "Quit button function"
 msgstr "Eiginleikar Hætta-hnapps"
 
-# empty string with id 31990
 msgctxt "#31991"
 msgid "Show video player/music visualization in background"
 msgstr "Sýna sjónhrif mynd/tónlistarspilara í bakgrunni"
@@ -1946,1839 +3667,3 @@ msgstr "Sýna stöðu á læsingu/yfirham í titilrönd"
 msgctxt "#31999"
 msgid "BigList"
 msgstr "Stór_listi"
-
-msgctxt "#32000"
-msgid "Hide icons"
-msgstr "Fela táknmyndir"
-
-# empty string with id 32001
-msgctxt "#32002"
-msgid "Hide Games"
-msgstr "Fela leiki"
-
-msgctxt "#32003"
-msgid "Game Settings"
-msgstr "Stillingar leiks"
-
-msgctxt "#32004"
-msgid "Toggle Subtitle"
-msgstr "Víxla skjátexta af/á"
-
-msgctxt "#32005"
-msgid "AB: Select Artwork"
-msgstr "AB: Veldu myndefni"
-
-msgctxt "#32006"
-msgid "AB: All Artwork"
-msgstr "AB: Allt myndefni"
-
-msgctxt "#32007"
-msgid "Special Features"
-msgstr "Sérefni"
-
-msgctxt "#32008"
-msgid "Enable Special Features"
-msgstr "Virkja sérefni"
-
-msgctxt "#32009"
-msgid "Next Episode"
-msgstr "Næsti þáttur"
-
-msgctxt "#32010"
-msgid "Latest Episode"
-msgstr "Nýjasti þáttur"
-
-msgctxt "#32011"
-msgid "Airs"
-msgstr "Sýnt"
-
-# empty string with id 32012
-msgctxt "#32013"
-msgid "Next Airing Episodes"
-msgstr "Þættir næst í útsendingu"
-
-msgctxt "#32014"
-msgid "Search Results for: "
-msgstr "Leitarniðurstöður fyrir: "
-
-msgctxt "#32015"
-msgid "Show Only Local Info "
-msgstr ""
-
-msgctxt "#32016"
-msgid "Extended Info"
-msgstr "Ítarlegar upplýsingar"
-
-msgctxt "#32017"
-msgid "Search in Local Library"
-msgstr "Leita í safni á tölvu"
-
-msgctxt "#32018"
-msgid "Search online in TMDb"
-msgstr "Leita á netinu í TMDb"
-
-msgctxt "#32020"
-msgid "Hide Second Label in List Views"
-msgstr ""
-
-msgctxt "#32021"
-msgid "Added:"
-msgstr "Bætt við:"
-
-msgctxt "#32022"
-msgid "Plays:"
-msgstr "Spilar:"
-
-msgctxt "#32023"
-msgid "Last Played:"
-msgstr "Síðast spilað:"
-
-msgctxt "#32024"
-msgid "New Search"
-msgstr "Ný leit"
-
-msgctxt "#32025"
-msgid "Movies Starring"
-msgstr "Kvikmyndir með"
-
-msgctxt "#32026"
-msgid "Movies Directed by"
-msgstr "Kvikmyndir leikstýrt af"
-
-msgctxt "#32027"
-msgid "TV Shows Starring"
-msgstr "Sjónvarpsþættir með"
-
-msgctxt "#32028"
-msgid "TV Shows Directed by"
-msgstr "Sjónvarpsþættir leikstýrt af"
-
-msgctxt "#32029"
-msgid "Movies with Genre"
-msgstr "Kvikmyndir í stílnum"
-
-msgctxt "#32030"
-msgid "TV Shows with Genre"
-msgstr "Sjónvarpsþættir úr flokknum"
-
-msgctxt "#32031"
-msgid "Movies from Studio"
-msgstr "Kvikmyndir frá framleiðanda"
-
-msgctxt "#32032"
-msgid "TV Shows from Studio"
-msgstr "Sjónvarpsþættir frá framleiðanda"
-
-msgctxt "#32033"
-msgid "Movies from Year"
-msgstr "Kvikmyndir frá ári"
-
-msgctxt "#32034"
-msgid "TV Shows from Year"
-msgstr "Sjónvarpsþættir frá ári"
-
-msgctxt "#32035"
-msgid "Movies from Country"
-msgstr "Kvikmyndir frá landi"
-
-msgctxt "#32036"
-msgid "Music Videos by Artist"
-msgstr "Tónlistarmyndbönd eftir flytjendum"
-
-msgctxt "#32037"
-msgid "YouTube videos about"
-msgstr "Youtube-myndskeið um"
-
-msgctxt "#32038"
-msgid "Enable Touch/Mouse Buttons"
-msgstr "Virkja snerti/músarhnappa"
-
-msgctxt "#32039"
-msgid "Timeshift"
-msgstr "Tímaflakk"
-
-msgctxt "#32040"
-msgid "Enable Kiosk Mode"
-msgstr "Virkja sjálfsala-ham (kiosk)"
-
-# empty string with id 32041
-msgctxt "#32042"
-msgid "Next Episodes"
-msgstr "Næstu þættir"
-
-msgctxt "#32043"
-msgid "Customize Home Menu and Shelves"
-msgstr "Sérsníða forsíðuvalmynd og rekka"
-
-msgctxt "#32044"
-msgid "Submenu"
-msgstr "Undirvalmynd"
-
-msgctxt "#32045"
-msgid "Shelves"
-msgstr "Rekkar"
-
-msgctxt "#32046"
-msgid "Weather fanart"
-msgstr "Aðdáendamyndir fyrir veður"
-
-msgctxt "#32047"
-msgid "Seconds"
-msgstr "Sekúndur"
-
-msgctxt "#32048"
-msgid "Show background name in Home window"
-msgstr ""
-
-msgctxt "#32049"
-msgid "Home window Background Rotation Delay"
-msgstr ""
-
-msgctxt "#32050"
-msgid "IPTV Recorder"
-msgstr "IPTV-upptökutæki"
-
-msgctxt "#32051"
-msgid "IPTV Recorder Recordings"
-msgstr "Upptökur úr IPTV-upptökutæki"
-
-msgctxt "#32052"
-msgid "Show Video Info on Pause"
-msgstr ""
-
-msgctxt "#32053"
-msgid "Show Two Shelves Together"
-msgstr "Sýna tvo rekka saman"
-
-msgctxt "#32054"
-msgid "Use Larger Font"
-msgstr "Nota stærra letur"
-
-msgctxt "#32055"
-msgid "Use Wraparound Navigation"
-msgstr ""
-
-msgctxt "#32056"
-msgid "Show more items on List Views"
-msgstr "Birta fleiri atriði í listasýnum"
-
-msgctxt "#32057"
-msgid "Show Season/Episode Numbers"
-msgstr "Birta númer þáttaraðar/þáttar"
-
-msgctxt "#32058"
-msgid "Show Episode Thumb"
-msgstr "Birta smámynd fyrir þátt"
-
-msgctxt "#32059"
-msgid "Disable Tall List View"
-msgstr "Gera háa listasýn óvirka"
-
-msgctxt "#32060"
-msgid "Tall List"
-msgstr "Hár listi"
-
-msgctxt "#32061"
-msgid "Set Default Background"
-msgstr "Setja sjálfgefinn bakgrunn"
-
-msgctxt "#32062"
-msgid "Set Favourite Addons for Shelf"
-msgstr "Stilla eftirlætisviðbætur fyrir rekka"
-
-msgctxt "#32063"
-msgid "Select Favourite Addons"
-msgstr "Veldu eftirlætisviðbætur"
-
-msgctxt "#32064"
-msgid "Backup/Restore"
-msgstr "Öryggisafritun/Endurheimting"
-
-msgctxt "#32065"
-msgid "Backup"
-msgstr "Öryggisafrit"
-
-msgctxt "#32066"
-msgid "Restore"
-msgstr "Endurheimta"
-
-msgctxt "#32067"
-msgid "Configure Backup addon"
-msgstr ""
-
-msgctxt "#32068"
-msgid "Show Fanart"
-msgstr "Birta aðdáendamyndir"
-
-msgctxt "#32069"
-msgid "Files"
-msgstr "Skrár"
-
-msgctxt "#32070"
-msgid "Place Background Name in Top Bar"
-msgstr ""
-
-msgctxt "#32071"
-msgid "Enable Alphabet Strip"
-msgstr ""
-
-msgctxt "#32072"
-msgid "Enable Autocompletion for Virtual Keyboard"
-msgstr "Virkja sjálfvirka útfyllingu fyrir sýndarlyklaborð"
-
-msgctxt "#32073"
-msgid "Budget"
-msgstr "Kostnaður"
-
-msgctxt "#32074"
-msgid "Revenue"
-msgstr "Tekjur"
-
-msgctxt "#32075"
-msgid "Awards"
-msgstr "Viðurkenningar"
-
-msgctxt "#32076"
-msgid "Show Watched Items in Recent Shelves"
-msgstr "Sýna áhorfð atriði í nýlegum rekkum"
-
-msgctxt "#32077"
-msgid "RT Total Critics Reviews"
-msgstr "Alls umsagnir gagnrýnenda á RT"
-
-msgctxt "#32078"
-msgid "RT Fresh Reviews"
-msgstr "Ferskar umsagnir á RT"
-
-msgctxt "#32079"
-msgid "RT Rotten Reviews"
-msgstr "Rotnar umsagnir á RT"
-
-msgctxt "#32080"
-msgid "RT Critics' Consensus"
-msgstr "Samantekt gagnrýnenda á RT"
-
-msgctxt "#32081"
-msgid "RT Total User Reviews"
-msgstr "Alls umsagnir notenda á RT"
-
-msgctxt "#32082"
-msgid "Birthday"
-msgstr "Fæðingardagur"
-
-msgctxt "#32083"
-msgid "Born"
-msgstr "Fæðing"
-
-msgctxt "#32084"
-msgid "Age"
-msgstr "Aldur"
-
-msgctxt "#32085"
-msgid "Died"
-msgstr "Lést"
-
-msgctxt "#32086"
-msgid "Also Known As"
-msgstr "Einnig þekkt sem"
-
-msgctxt "#32087"
-msgid "Cast in Movies"
-msgstr "Leikarar í kvikmyndum"
-
-msgctxt "#32088"
-msgid "Cast in TV Shows"
-msgstr "Leikarar í sjónvarpsþáttum"
-
-msgctxt "#32089"
-msgid "Crew in Movies"
-msgstr "Tökulið í kvikmyndum"
-
-msgctxt "#32090"
-msgid "Crew in TV Shows"
-msgstr "Tökulið í sjónvarpsþáttum"
-
-msgctxt "#32091"
-msgid "Movies in TMDb"
-msgstr "Kvikmyndir í TMDb"
-
-msgctxt "#32092"
-msgid "TV Shows in TMDb"
-msgstr "Sjónvarpsþættir í TMDb"
-
-msgctxt "#32093"
-msgid "Movies in Local DB"
-msgstr "Kvikmyndir í staðværum gagnagrunni"
-
-msgctxt "#32094"
-msgid "TV Shows in Local DB"
-msgstr "Sjónvarpsþættir í staðværum gagnagrunni"
-
-msgctxt "#32095"
-msgid "Reboot to Android"
-msgstr "Endurræsa yfir í Android"
-
-msgctxt "#32096"
-msgid "Episodes Starring"
-msgstr "Þættir með"
-
-msgctxt "#32097"
-msgid "Movies in the"
-msgstr "Kvikmyndir í"
-
-msgctxt "#32098"
-msgid "Also Directed by"
-msgstr "Einnig leikstýrt af"
-
-msgctxt "#32099"
-msgid "Crew"
-msgstr "Tökulið"
-
-msgctxt "#32100"
-msgid "More from"
-msgstr "Meira frá"
-
-msgctxt "#32101"
-msgid "More in"
-msgstr "Meira í"
-
-msgctxt "#32102"
-msgid "Similar to"
-msgstr "Svipað og"
-
-msgctxt "#32103"
-msgid "Cast Members also appear in"
-msgstr "Meðlimir tökuliðs birtast einnig í"
-
-msgctxt "#32104"
-msgid "Select Custom Lists to Display"
-msgstr ""
-
-msgctxt "#32105"
-msgid "Similar"
-msgstr "Svipað"
-
-msgctxt "#32106"
-msgid "Featuring Cast Members"
-msgstr "Meðlimir tökuliðs"
-
-msgctxt "#32107"
-msgid "Video Info"
-msgstr "Upplýsingar um myndskeið"
-
-msgctxt "#32108"
-msgid "Select a Genre"
-msgstr "Veldu flokkun"
-
-msgctxt "#32109"
-msgid "Select a Studio"
-msgstr "Veldu framleiðanda"
-
-msgctxt "#32110"
-msgid "Select a Director"
-msgstr "Veldu leikstjóra"
-
-msgctxt "#32111"
-msgid "Online TMDb Search"
-msgstr "Netleit á TMDb"
-
-msgctxt "#32112"
-msgid "Local Search"
-msgstr "Leita á kerfinu"
-
-msgctxt "#32113"
-msgid "Select a Writer"
-msgstr "Veldu handritshöfund"
-
-msgctxt "#32114"
-msgid "Movies Written by"
-msgstr "Kvikmyndir skrifaðar af"
-
-msgctxt "#32115"
-msgid "Select a Country"
-msgstr "Veldu land"
-
-msgctxt "#32116"
-msgid "Episodes from Studio"
-msgstr "Þættir frá framleiðanda"
-
-msgctxt "#32117"
-msgid "Episodes with Genre"
-msgstr "Þættir úr flokknum"
-
-msgctxt "#32118"
-msgid "Episodes Written by"
-msgstr "Þættir skrifaðir af"
-
-msgctxt "#32119"
-msgid "Episodes Directed by"
-msgstr "Þættir leikstýrt af"
-
-msgctxt "#32120"
-msgid "AB: Download All Artwork"
-msgstr "AB: Sækja allt myndefni"
-
-msgctxt "#32121"
-msgid "AB: Select Artwork"
-msgstr "AB: Veldu myndefni"
-
-msgctxt "#32122"
-msgid "Show Artwork Beef items in Context Menu"
-msgstr "Sýna atriði Artwork Beef myndefnisniðurhals í samhengisvalmynd"
-
-msgctxt "#32123"
-msgid "Title Bar Options"
-msgstr "Valkostir titilstiku"
-
-msgctxt "#32124"
-msgid "Show Duration in Hours and Minutes"
-msgstr "Birta tímalengd í klukkustundum og mínútum"
-
-msgctxt "#32125"
-msgid "Hour"
-msgstr "Klukkustund"
-
-msgctxt "#32126"
-msgid "Minute"
-msgstr "Mínúta"
-
-msgctxt "#32127"
-msgid "Online TMDb Info"
-msgstr "TMDb-upplýsingar af neti"
-
-msgctxt "#32128"
-msgid "Embuary Info Settings"
-msgstr "Stillingar Embuary-upplýsinga"
-
-msgctxt "#32129"
-msgid "Guest Stars"
-msgstr "Gestaleikarar"
-
-msgctxt "#32130"
-msgid "Posters"
-msgstr "Kynningarspjöld"
-
-msgctxt "#32131"
-msgid "YouTube"
-msgstr "YouTube"
-
-msgctxt "#32132"
-msgid "Search for Trailer"
-msgstr "Leita að kynningarstiklu"
-
-msgctxt "#32133"
-msgid "item in database"
-msgstr "atriði í gagnagrunni"
-
-msgctxt "#32134"
-msgid "Items in Database"
-msgstr "atriði í gagnagrunni"
-
-msgctxt "#32135"
-msgid "Extras"
-msgstr "Auka upplýsingar"
-
-msgctxt "#32136"
-msgid "Known for"
-msgstr "Þekkt/ur fyrir"
-
-msgctxt "#32137"
-msgid "Retail Release"
-msgstr "Söluútgáfa"
-
-msgctxt "#32138"
-msgid "Region Release"
-msgstr "Svæðisútgáfa"
-
-msgctxt "#32139"
-msgid "Ended"
-msgstr "Lokið"
-
-msgctxt "#32140"
-msgid "Rumored"
-msgstr "Í kjaftasögum"
-
-msgctxt "#32141"
-msgid "Planned"
-msgstr "Áætlað"
-
-msgctxt "#32142"
-msgid "In Production"
-msgstr "Í framleiðslu"
-
-msgctxt "#32143"
-msgid "Post Production"
-msgstr "Í eftirvinnslu"
-
-msgctxt "#32144"
-msgid "Released"
-msgstr "Útgefið"
-
-msgctxt "#32145"
-msgid "Canceled"
-msgstr "Hætt við"
-
-msgctxt "#32146"
-msgid "Returning Series"
-msgstr "Þáttaraðir sem snúa aftur"
-
-msgctxt "#32147"
-msgid "Acting"
-msgstr "Leikur"
-
-msgctxt "#32148"
-msgid "Directing"
-msgstr "Leikstjórn"
-
-msgctxt "#32149"
-msgid "Writing"
-msgstr "Handrit"
-
-msgctxt "#32150"
-msgid "Production"
-msgstr "Framleiðsla"
-
-msgctxt "#32151"
-msgid "Sound"
-msgstr "Hljóð"
-
-msgctxt "#32152"
-msgid "Creator"
-msgstr "Búið til af"
-
-msgctxt "#32153"
-msgid "Died at Age"
-msgstr "Lést"
-
-msgctxt "#32154"
-msgid "Collection"
-msgstr "Safn"
-
-msgctxt "#32155"
-msgid "TMDb Helper Settings"
-msgstr "Stillingar TMDb-hjálpara"
-
-msgctxt "#32156"
-msgid "Blur Background"
-msgstr "Móða bakgrunn"
-
-# Empty strings from 32157 to 32164
-msgctxt "#32165"
-msgid "Use Poster for Blur"
-msgstr "Nota kynningarmyndefni fyrir móðun"
-
-msgctxt "#32166"
-msgid "Customize Power Menu"
-msgstr "Sérsníða gangstýringarvalmynd"
-
-msgctxt "#32167"
-msgid "Edit Library Data"
-msgstr "Breyta gögnum í safni"
-
-msgctxt "#32168"
-msgid "Select Search Categories"
-msgstr "Veldu leitarflokka"
-
-msgctxt "#32169"
-msgid "Select Search Categories to Enable"
-msgstr "Veldu leitarflokka sem á að virkja"
-
-msgctxt "#32170"
-msgid "By Title"
-msgstr "Eftir titli"
-
-msgctxt "#32171"
-msgid "With Genre"
-msgstr "Með flokknum"
-
-msgctxt "#32172"
-msgid "From Year"
-msgstr "Frá árinu"
-
-msgctxt "#32173"
-msgid "From Studio"
-msgstr "Frá framleiðanda"
-
-msgctxt "#32174"
-msgid "From Country"
-msgstr "Frá landi"
-
-msgctxt "#32175"
-msgid "With Actor"
-msgstr "Með leikara"
-
-msgctxt "#32176"
-msgid "By Director"
-msgstr "Eftir leikstjóra"
-
-msgctxt "#32177"
-msgid "By Writer"
-msgstr "Eftir handritshöfund"
-
-msgctxt "#32178"
-msgid "Artists by Name"
-msgstr "Flytjendur eftir nafni"
-
-msgctxt "#32179"
-msgid "Albums by Title"
-msgstr "Hljómplötur eftir titli"
-
-msgctxt "#32180"
-msgid "Songs by Title"
-msgstr "Lög eftir titli"
-
-msgctxt "#32181"
-msgid "By Artist"
-msgstr "Eftir flytjanda"
-
-msgctxt "#32182"
-msgid "YouTube by Title"
-msgstr "YouTube eftir titli"
-
-msgctxt "#32183"
-msgid "Known for Character"
-msgstr "Þekkt/ur fyrir hlutverkið"
-
-msgctxt "#32184"
-msgid "Known for Department"
-msgstr "Þekkt/ur fyrir aðild"
-
-msgctxt "#32185"
-msgid "Known for Job"
-msgstr "Þekkt/ur fyrir vinnu"
-
-msgctxt "#32186"
-msgid "Total Items in TMDb"
-msgstr "Alls atriði í TMDb"
-
-msgctxt "#32187"
-msgid "Total Movies in TMDb"
-msgstr "Kvikmyndir alls í TMDb"
-
-msgctxt "#32188"
-msgid "Total TV Shows in TMDb"
-msgstr "Sjónvarpsþættir alls í TMDb"
-
-msgctxt "#32189"
-msgid "Items in TMDb as Cast"
-msgstr "Atriði í TMDb sem leikarar"
-
-msgctxt "#32190"
-msgid "Movies in TMDb as Cast"
-msgstr "Kvikmyndir í TMDb sem leikarar"
-
-msgctxt "#32191"
-msgid "TV Shows in TMDb as Cast"
-msgstr "Sjónvarpsþættir í TMDb sem leikarar"
-
-msgctxt "#32192"
-msgid "Items in TMDb as Crew"
-msgstr "Atriði í TMDb sem tökulið"
-
-msgctxt "#32193"
-msgid "Movies in TMDb as Crew"
-msgstr "Kvikmyndir í TMDb sem tökulið"
-
-msgctxt "#32194"
-msgid "TV Shows in TMDb as Crew"
-msgstr "Sjónvarpsþættir í TMDb sem tökulið"
-
-msgctxt "#32195"
-msgid "Total Items in Local Database"
-msgstr "Atriði alls í staðværum gagnagrunni"
-
-msgctxt "#32196"
-msgid "Movies in Local Database"
-msgstr "Kvikmyndir í staðværum gagnagrunni"
-
-msgctxt "#32197"
-msgid "TV Shows in Local Database"
-msgstr "Sjónvarpsþættir í staðværum gagnagrunni"
-
-msgctxt "#32198"
-msgid "Episodes in Local Database"
-msgstr "Þættir í staðværum gagnagrunni"
-
-msgctxt "#32199"
-msgid "Cast: Movies with"
-msgstr "Leikarar: Kvikmyndir með"
-
-msgctxt "#32200"
-msgid "Cast: TV Shows with"
-msgstr "Leikarar: Sjónvarpsþættir með"
-
-msgctxt "#32201"
-msgid "Crew: Movies with"
-msgstr "Tökulið: Kvikmyndir með"
-
-msgctxt "#32202"
-msgid "Crew: TV Shows with"
-msgstr "Tökulið: Sjónvarpsþættir með"
-
-msgctxt "#32203"
-msgid "Start at First Menu Item"
-msgstr "Byrja á fyrsta valmyndaratriðinu"
-
-msgctxt "#32204"
-msgid "Set Default View"
-msgstr "Setja sjálfgefna sýn"
-
-msgctxt "#32205"
-msgid "Highlight Color"
-msgstr "Áherslulitur"
-
-msgctxt "#32206"
-msgid "Horizontal Menu Glow Bars Tint"
-msgstr ""
-
-msgctxt "#32207"
-msgid "Horizontal Menu Main Bar Tint"
-msgstr ""
-
-msgctxt "#32208"
-msgid "Vertical Menu/Submenu Background Tint"
-msgstr ""
-
-msgctxt "#32209"
-msgid "Top Bar Tint"
-msgstr ""
-
-msgctxt "#32210"
-msgid "Current Color Theme"
-msgstr "Núverandi litastef"
-
-msgctxt "#32211"
-msgid "Dialogs Background Tint"
-msgstr "Litatónn bakgrunns glugga"
-
-msgctxt "#32212"
-msgid "Regular Text Color"
-msgstr "Venjulegur textalitur"
-
-msgctxt "#32213"
-msgid "Focused Text Color"
-msgstr "Litur virks texta"
-
-msgctxt "#32214"
-msgid "Selected Text Color"
-msgstr "Litur valins texta"
-
-msgctxt "#32215"
-msgid "Shelves Background Tint"
-msgstr "Litatónn bakgrunns rekka"
-
-msgctxt "#32216"
-msgid "Use for All Tints"
-msgstr "Nota fyrir alla litatóna"
-
-msgctxt "#32217"
-msgid "Keep Lists Focus Centered"
-msgstr ""
-
-msgctxt "#32218"
-msgid "Show Artist Logo In Music Visualization"
-msgstr ""
-
-msgctxt "#32219"
-msgid "Show Logo In Media Views"
-msgstr ""
-
-msgctxt "#32220"
-msgid "Show Logo In Home Window"
-msgstr "Birta táknmerki á forsíðuglugga"
-
-msgctxt "#32221"
-msgid "Media Views Background Tint"
-msgstr ""
-
-msgctxt "#32222"
-msgid "Enable Label Scrolling in List Views"
-msgstr ""
-
-msgctxt "#32223"
-msgid "Audio and Subtitle Info"
-msgstr "Upplýsingar um hljóð og skjátexta"
-
-msgctxt "#32224"
-msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
-msgstr ""
-
-msgctxt "#32225"
-msgid "Disable Info Panel in List Views"
-msgstr "Gera upplýsingaspjald óvirkt í listasýnum"
-
-msgctxt "#32226"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb-hjálpari - Næstu útsendu þættir"
-
-msgctxt "#32227"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary upplýsingar - Næstu útsendu þættir"
-
-msgctxt "#32228"
-msgid "Only Search in Local Library"
-msgstr "Einungis leita í safni á tölvu"
-
-msgctxt "#32229"
-msgid "Hide Channel Groups"
-msgstr "Fela rásahópa"
-
-msgctxt "#32230"
-msgid "Select Displayed Ratings and Certification"
-msgstr "Veldu hvaða flokkun og einkunnir eru birtar"
-
-msgctxt "#32231"
-msgid "User Rating"
-msgstr "Stjörnugjöf notenda"
-
-msgctxt "#32232"
-msgid "Ratings"
-msgstr "Einkunnir"
-
-msgctxt "#32235"
-msgid "Certification"
-msgstr "Vottun"
-
-msgctxt "#32237"
-msgid "Up Next in"
-msgstr "Næst í spilun eftir"
-
-msgctxt "#32238"
-msgid "Continue Watching in"
-msgstr "Halda áfram að horfa eftir"
-
-msgctxt "#32238"
-msgid "Next Episode in"
-msgstr "Næsti þáttur eftir"
-
-msgctxt "#32239"
-msgid "Hide Collection (Set) Marks"
-msgstr ""
-
-msgctxt "#32240"
-msgid "Disable Info Panel"
-msgstr "Gera upplýsingaspjald óvirkt"
-
-msgctxt "#32241"
-msgid "Alternate List Layout"
-msgstr "Önnur framsetning lista"
-
-msgctxt "#32242"
-msgid "Larger Image"
-msgstr "Stærri mynd"
-
-msgctxt "#32243"
-msgid "Alternate List Views Layout"
-msgstr "Önnur framsetning listasýna"
-
-msgctxt "#32244"
-msgid "Albums by"
-msgstr "Hljómplötur með"
-
-msgctxt "#32245"
-msgid "Panel 2"
-msgstr "Stjórnborð 2"
-
-msgctxt "#32246"
-msgid "Big Panel 2"
-msgstr "Stórt stjórnborð 2"
-
-msgctxt "#32247"
-msgid "Disable Panel 2 view"
-msgstr "Gera stjórnborðsýn 2 óvirka"
-
-msgctxt "#32248"
-msgid "Disable Big Panel 2 view"
-msgstr "Gera stóra stjórnborðsýn 2 óvirka"
-
-msgctxt "#32249"
-msgid "Enable Statistics Line"
-msgstr "Virkja tölfræðilínu"
-
-msgctxt "#32250"
-msgid "Show Statistics line on Shelf"
-msgstr "Birta tölfræðilínu á rekka"
-
-msgctxt "#32251"
-msgid "Show Marks on Top Right"
-msgstr ""
-
-msgctxt "#32252"
-msgid "Hide Unwatched Episodes Marks"
-msgstr "Fela merki fyrir óskoðaða þætti"
-
-msgctxt "#32253"
-msgid "Movies in library"
-msgstr "Kvikmyndir í safni"
-
-msgctxt "#32254"
-msgid "IMDb Top 250"
-msgstr "IMDb - Topp 250"
-
-msgctxt "#32255"
-msgid "Missing Add-on"
-msgstr "Viðbót vantar"
-
-msgctxt "#32256"
-msgid "TMDb Helper"
-msgstr "TMDb-hjálpari"
-
-msgctxt "#32257"
-msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-msgstr ""
-
-msgctxt "#32258"
-msgid "Use Embuary Helper for Playlist Backgrounds"
-msgstr "Virkja notkun Embuary-hjálpara fyrir bakgrunna í spilunarlistum"
-
-msgctxt "#32259"
-msgid "Backgrounds"
-msgstr "Bakgrunnar"
-
-msgctxt "#32260"
-msgid "Unwatched"
-msgstr "Ekki búið að horfa á"
-
-msgctxt "#32261"
-msgid "Use Embuary Helper for Statistics Line"
-msgstr "Virkja notkun Embuary-hjálpara fyrir tölfræðilínu"
-
-msgctxt "#32262"
-msgid "Use Embuary Helper for Backgrounds"
-msgstr "Virkja notkun Embuary-hjálpara fyrir bakgrunna"
-
-msgctxt "#32263"
-msgid "Movie Collection Count"
-msgstr "Fjöldi í kvikmyndasafni"
-
-msgctxt "#32264"
-msgid "Show Fanart for Special Content"
-msgstr "Birta aðdáendamyndir fyrir sérstakt efni"
-
-msgctxt "#32265"
-msgid "Media Play Count"
-msgstr "Fjöldi spilana"
-
-msgctxt "#32266"
-msgid "Color Options"
-msgstr "Litavalkostir"
-
-msgctxt "#32267"
-msgid "Go To"
-msgstr "Fara á"
-
-msgctxt "#32268"
-msgid "Show Three Shelves Together"
-msgstr "Sýna þrjá rekka saman"
-
-msgctxt "#32269"
-msgid "Configure Custom Shelf"
-msgstr "Stilla sérsniðinn rekka"
-
-msgctxt "#32270"
-msgid "Shift Fanart View Focus to the Right"
-msgstr ""
-
-msgctxt "#32271"
-msgid "Mouse/Touch-Friendly Alphabet Strip"
-msgstr ""
-
-msgctxt "#32272"
-msgid "Use New Media Views Selector"
-msgstr ""
-
-msgctxt "#32273"
-msgid "Skin Variables"
-msgstr "Breytur skinns"
-
-msgctxt "#32274"
-msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
-msgstr ""
-
-msgctxt "#32275"
-msgid "Configure Media Views"
-msgstr "Stilla ásýndir myndefnis"
-
-msgctxt "#32277"
-msgid "Three Rows with Larger Icons"
-msgstr "Þrjár raðir með stærri táknmyndir"
-
-msgctxt "#32278"
-msgid "Oscars Won"
-msgstr "Óskarsverðlaun unnin"
-
-msgctxt "#32279"
-msgid "Oscar Nominations"
-msgstr "Tilnefningar til Óskarsverðlauna"
-
-msgctxt "#32280"
-msgid "Golden Globes Won"
-msgstr "Golden Globe verðlaun unnin"
-
-msgctxt "#32281"
-msgid "Golden Globe Nominations"
-msgstr "Tilnefningar til Golden Globe verðlauna"
-
-msgctxt "#32282"
-msgid "Awards (Oscars/Golden Globes)"
-msgstr "Viðurkenningar (Óskarsverðlaun/Golden Globe)"
-
-msgctxt "#32283"
-msgid "Video Genre Fanart"
-msgstr "Aðdáendamyndir myndskeiða"
-
-msgctxt "#32284"
-msgid "Music Genre Fanart"
-msgstr "Aðdáendamyndir tónlistar"
-
-msgctxt "#32285"
-msgid "Custom Path"
-msgstr "Sérsniðin slóð"
-
-msgctxt "#32286"
-msgid "Reset Custom Path"
-msgstr "Endurstilla sérsniðna slóð"
-
-msgctxt "#32287"
-msgid "Image Pack"
-msgstr "Myndapakki"
-
-msgctxt "#32288"
-msgid "Enable Multiple Images per Genre"
-msgstr ""
-
-msgctxt "#32289"
-msgid "Match Poster Colors"
-msgstr "Samsvara litum í kynningarspjaldi"
-
-msgctxt "#32290"
-msgid "Show Seek Bar at Bottom"
-msgstr ""
-
-msgctxt "#32291"
-msgid "HDR/SDR and Bit Depth Flags"
-msgstr ""
-
-msgctxt "#32292"
-msgid "File Name Instead of Title"
-msgstr "Skráarheiti í stað titils"
-
-msgctxt "#32293"
-msgid "Extra Fanart on panel"
-msgstr "Auka-aðdáendamyndir á spjaldi"
-
-msgctxt "#32294"
-msgid "Ends at"
-msgstr "Endar á"
-
-msgctxt "#32295"
-msgid "Netflix style"
-msgstr "Netflix-stíll"
-
-msgctxt "#32296"
-msgid "Show Logo"
-msgstr "Birta táknmerki"
-
-msgctxt "#32297"
-msgid "Use Landscape"
-msgstr "Nota landslagsmyndefni"
-
-msgctxt "#32298"
-msgid "Dim Level for Unfocused"
-msgstr "Stig skyggingar á óvirku"
-
-msgctxt "#32299"
-msgid "Select Dim Level"
-msgstr "Veldu stig skyggingar"
-
-msgctxt "#32300"
-msgid "Now Playing"
-msgstr "Í spilun"
-
-msgctxt "#32301"
-msgid "Hide Title Bar Now Playing"
-msgstr ""
-
-msgctxt "#32302"
-msgid "Select Now Playing Video Disc Art Fallback"
-msgstr ""
-
-msgctxt "#32303"
-msgid "Select Now Playing Music Disc Art Fallback"
-msgstr ""
-
-msgctxt "#32304"
-msgid "Blu-Ray"
-msgstr "Blu-Ray"
-
-msgctxt "#32305"
-msgid "Vinyl"
-msgstr "Vínill"
-
-msgctxt "#32306"
-msgid "None"
-msgstr "Ekkert"
-
-msgctxt "#32307"
-msgid "White"
-msgstr "Hvítt"
-
-msgctxt "#32308"
-msgid "Blue"
-msgstr "Blátt"
-
-msgctxt "#32309"
-msgid "Golden"
-msgstr "Gyllt"
-
-msgctxt "#32310"
-msgid "Green"
-msgstr "Grænt"
-
-msgctxt "#32311"
-msgid "Grey"
-msgstr "Grátt"
-
-msgctxt "#32312"
-msgid "Orange"
-msgstr "Appelsínugult"
-
-msgctxt "#32313"
-msgid "Purple"
-msgstr "Purpurablátt"
-
-msgctxt "#32314"
-msgid "Red"
-msgstr "Rautt"
-
-msgctxt "#32315"
-msgid "Select Now Playing Info for Movies/Episodes"
-msgstr "Velja 'Í spilun'-upplýsingar fyrir kvikmyndir/þætti"
-
-msgctxt "#32316"
-msgid "Select Now Playing Info for other Videos"
-msgstr "Velja 'Í spilun'-upplýsingar fyrir önnur myndskeið"
-
-msgctxt "#32317"
-msgid "Select Now Playing Info for Music"
-msgstr "Velja 'Í spilun'-upplýsingar fyrir tónlist"
-
-msgctxt "#32318"
-msgid "Show Video in the Background"
-msgstr "Sýna myndskeið í bakgrunni"
-
-msgctxt "#32319"
-msgid "Show Music Visualization in the Background"
-msgstr "Sýna sjónhrif tónlistar í bakgrunni"
-
-msgctxt "#32320"
-msgid "Show Extra Art for Video"
-msgstr "Sýna viðbótarmyndefni fyrir myndskeið"
-
-msgctxt "#32321"
-msgid "Show Extra Art for Music"
-msgstr "Sýna viðbótarmyndefni fyrir tónlist"
-
-msgctxt "#32322"
-msgid "Show Logo"
-msgstr "Birta táknmerki"
-
-msgctxt "#32323"
-msgid "Show ClearArt"
-msgstr "Sýna ClearArt"
-
-msgctxt "#32324"
-msgid "Show Disc Art"
-msgstr "Sýna myndefni disks"
-
-msgctxt "#32325"
-msgid "Select Disc Art Fallback for Video"
-msgstr "Sýna varamyndefni fyrir myndskeið"
-
-msgctxt "#32326"
-msgid "Select Disc Art Fallback for Music"
-msgstr "Sýna varamyndefni fyrir tónlist"
-
-msgctxt "#32327"
-msgid "Disable Now Playing"
-msgstr "Gera 'Í spilun' óvirkt"
-
-msgctxt "#32328"
-msgid "Internet Stream"
-msgstr "Internetstreymi"
-
-msgctxt "#32329"
-msgid "Special"
-msgstr "Sérstakt"
-
-msgctxt "#32330"
-msgid "Next Tracks"
-msgstr "Næstu hljóðspor"
-
-msgctxt "#32331"
-msgid "Album Review"
-msgstr "Umsögn hljómplötu"
-
-msgctxt "#32332"
-msgid "Artist Bio"
-msgstr "Æviágrip flytjanda"
-
-msgctxt "#32333"
-msgid "Hide Shelves when Now Playing is Visible"
-msgstr "Fela rekka þegar 'í afspilun' er sýnilegt"
-
-msgctxt "#32334"
-msgid "Enlarge Video Preview when Idle"
-msgstr ""
-
-msgctxt "#32335"
-msgid "Select Extra Art to Show in Applicable Views"
-msgstr ""
-
-msgctxt "#32336"
-msgid "Full Screen/OSD"
-msgstr "Skjáfylli/Stjórntexti"
-
-msgctxt "#32337"
-msgid "Select Interval for Auto Closing Video OSD"
-msgstr ""
-
-msgctxt "#32338"
-msgid "Current Color"
-msgstr "Núverandi litur"
-
-msgctxt "#32339"
-msgid "Value"
-msgstr "Gildi"
-
-msgctxt "#32340"
-msgid "Second"
-msgstr "sekúnda"
-
-msgctxt "#32341"
-msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
-msgstr ""
-
-msgctxt "#32342"
-msgid "Auto Close Video OSD"
-msgstr "Loka sjálfvirkt stjórntexta myndmerkis"
-
-msgctxt "#32343"
-msgid "Default Font Size"
-msgstr "Sjálfgefin stærð leturs"
-
-msgctxt "#32344"
-msgid "Use fanart.jpg if present in folder or parent folder"
-msgstr ""
-
-msgctxt "#32345"
-msgid "Use Clear Art instead of Logo"
-msgstr "Setja ClearArt í stað táknmerkis"
-
-msgctxt "#32346"
-msgid "Single Logo"
-msgstr "Einfalt táknmerki"
-
-msgctxt "#32347"
-msgid "Fade out Unfocused"
-msgstr "Deyfa út óvirkt"
-
-msgctxt "#32348"
-msgid "Show Overlay"
-msgstr "Birta yfirlag"
-
-msgctxt "#32349"
-msgid "Show Smaller Favourite Icons"
-msgstr "Birta minni táknmyndir eftirlæta"
-
-msgctxt "#32350"
-msgid "Show Three Rows"
-msgstr "Sýna þrjár raðir"
-
-msgctxt "#32351"
-msgid "Show Four Rows"
-msgstr "Sýna fjórar raðir"
-
-msgctxt "#32352"
-msgid "Enable Use of TMDb Helper"
-msgstr "Virkja notkun TMDb-hjálpara"
-
-msgctxt "#32353"
-msgid "Enable Use of Embuary Helper"
-msgstr "Virkja notkun Embuary-hjálpara"
-
-msgctxt "#32354"
-msgid "Hide Seek Bar when Paused"
-msgstr ""
-
-msgctxt "#32355"
-msgid "Icon Only Menu"
-msgstr "Valmynd einungis með táknmyndum"
-
-msgctxt "#32356"
-msgid "Show Menu Item Name"
-msgstr "Sýna heiti valmyndarfærslu"
-
-msgctxt "#32357"
-msgid "Enable Video Lyrics"
-msgstr "Virkja lagatexta með myndskeiðum"
-
-msgctxt "#32358"
-msgid "Play Whole Albums from Shelves"
-msgstr "Spila heilar hljómplötur úr rekkum"
-
-msgctxt "#32359"
-msgid "Show Item Name in Top Bar"
-msgstr ""
-
-msgctxt "#32360"
-msgid "Animate backgrounds using Ken Burns effect"
-msgstr "Myndlífga bakgrunna með Ken Burns áhrifum"
-
-msgctxt "#32361"
-msgid "Single Column"
-msgstr "Stakur dálkur"
-
-msgctxt "#32362"
-msgid "Disable Now Playing Fanart"
-msgstr ""
-
-msgctxt "#32363"
-msgid "Show Media Info with Seek Bar"
-msgstr ""
-
-msgctxt "#32364"
-msgid "Show Seek Bar when Starting Video Playback"
-msgstr ""
-
-msgctxt "#32365"
-msgid "Time to Show Seek Bar"
-msgstr "Tími sem á að birta leitarstiku"
-
-msgctxt "#32366"
-msgid "Hide Title Bar in Main Window"
-msgstr "Fela titilstiku í aðalglugga"
-
-msgctxt "#32367"
-msgid "Hide fallback image if no thumb in OSD"
-msgstr ""
-
-msgctxt "#32368"
-msgid "Dim Background and Album Cover when Showing Lyrics"
-msgstr "Skyggja bakgrunn og hljómplötuumslag þegar lagatextar eru birtir"
-
-msgctxt "#32369"
-msgid "Use Alternate Favourites Layout"
-msgstr "Nota aðra framsetningu eftirlæta"
-
-msgctxt "#32370"
-msgid "Align Menu Item Text to the Left"
-msgstr "Jafna texta valmyndarfærslu til vinstri"
-
-msgctxt "#32371"
-msgid "Info Button Opens Video Info Dialog"
-msgstr ""
-
-msgctxt "#32372"
-msgid "Pause Media While Info Dialog is Open"
-msgstr "Setja efni í bið á meðan upplýsingagluggi er opinn"
-
-msgctxt "#32373"
-msgid "End Time"
-msgstr "Lokatími"
-
-msgctxt "#32374"
-msgid "Show Dark Background Behind Shortcuts"
-msgstr "Birta dökkan bakgrunn aftan við flýtilykla"
-
-msgctxt "#32375"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr ""
-
-msgctxt "#32376"
-msgid "Disable Lyrics"
-msgstr "Gera lagatexta óvirka"
-
-msgctxt "#32377"
-msgid "Activate Lyrics"
-msgstr "Virkja lagatexta"
-
-msgctxt "#32378"
-msgid "Use Color Flags"
-msgstr "Nota litaflögg"
-
-msgctxt "#32379"
-msgid "Show Submenu Only when Focused"
-msgstr "Birta undirvalmynd aðeins þegar hún er virk"
-
-msgctxt "#32380"
-msgid "Movies with Plot containing"
-msgstr "Kvikmyndir með söguþræði sem inniheldur"
-
-msgctxt "#32381"
-msgid "TV Shows with Plot containing"
-msgstr "Sjónvarpsþættir með söguþræði sem inniheldur"
-
-msgctxt "#32382"
-msgid "Episodes with Plot containing"
-msgstr "Þættir með söguþræði sem inniheldur"
-
-msgctxt "#32383"
-msgid "With Plot Containing"
-msgstr "Með söguþræði sem inniheldur"
-
-msgctxt "#32384"
-msgid "Show Title in Footer"
-msgstr "Birta titil neðst"
-
-msgctxt "#32385"
-msgid "Hide Seek Bar when Forwarding or Rewinding"
-msgstr ""
-
-msgctxt "#32386"
-msgid "Enable Touchscreen Devices Support"
-msgstr "Virkja stuðning við tæki með snertiskjá"
-
-msgctxt "#32387"
-msgid "Show Rating Overlay"
-msgstr "Birta yfirlag með einkunnum"
-
-msgctxt "#32388"
-msgid "Use User Rating for Overlay"
-msgstr "Nota einkunn notanda sem yfirlag"
-
-msgctxt "#32390"
-msgid "Select Items to Show in Views"
-msgstr "Veldu atriði til að birta í sýnum"
-
-msgctxt "#32391"
-msgid "Items to Show in Views"
-msgstr "Atriði sem á að birta í sýnum"
-
-msgctxt "#32392"
-msgid "Play Random"
-msgstr "Spila af handahófi"
-
-msgctxt "#32393"
-msgid "List Views Options"
-msgstr "Valkostir listasýna"
-
-msgctxt "#32394"
-msgid "Marks and Overlays"
-msgstr "Merki og yfirlög"
-
-msgctxt "#32395"
-msgid "Select View Types to Enable"
-msgstr ""
-
-msgctxt "#32396"
-msgid "View Types to Enable"
-msgstr ""
-
-msgctxt "#32398"
-msgid "Show Poster"
-msgstr "Birta kynningarspjald"
-
-msgctxt "#32399"
-msgid "Text"
-msgstr "Texti"
-
-msgctxt "#32400"
-msgid "Banner"
-msgstr "Borði"
-
-msgctxt "#32401"
-msgid "List Item Type"
-msgstr "Tegund atriðis í lista"
-
-msgctxt "#32402"
-msgid "Poster/Thumb"
-msgstr "Kynningarspjald/Smámynd"
-
-msgctxt "#32403"
-msgid "OSD/Full Screen Art"
-msgstr ""
-
-msgctxt "#32404"
-msgid "N/A"
-msgstr "Ekki tiltækt"
-
-msgctxt "#32405"
-msgid "Show Info Popup"
-msgstr "Birta upplýsingaglugga"
-
-msgctxt "#32406"
-msgid "Popup Delay"
-msgstr "Töf sprettglugga"
-
-msgctxt "#32407"
-msgid "Show Floor"
-msgstr "Sýna gólf"
-
-msgctxt "#32408"
-msgid "Fixed List"
-msgstr "Fastur listi"
-
-msgctxt "#32409"
-msgid "Centered Static Menu (less than 8 items)"
-msgstr "Miðjuð föst valmynd (minna en 8 atriði)"
-
-msgctxt "#32410"
-msgid "Compact OSD"
-msgstr "Þjappaðir stjórntextar"
-
-msgctxt "#32411"
-msgid "Ultra Compact OSD"
-msgstr "Öfga-þjappaðir stjórntextar"
-
-msgctxt "#32412"
-msgid "Alternate OSD Button Highlighting"
-msgstr ""
-
-msgctxt "#32413"
-msgid "Enabled"
-msgstr "Virkt"
-
-msgctxt "#32414"
-msgid "Disabled"
-msgstr "Óvirkt"
-
-msgctxt "#32415"
-msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr "Spila kynningarstiklu sjálfkrafa (einungis ef finnst á tölvu)"
-
-msgctxt "#32416"
-msgid "Auto Play Trailer Delay"
-msgstr "Töf við sjálfvirka spilun kynningarstiklu"
-
-msgctxt "#32417"
-msgid "Fanart Title Button Opens Info Dialog"
-msgstr ""
-
-msgctxt "#32418"
-msgid "Single Image"
-msgstr "Stök mynd"
-
-msgctxt "#32419"
-msgid "Multiple Images"
-msgstr "Margar myndir"
-
-msgctxt "#32420"
-msgid "Video/Playlist"
-msgstr "Myndskeið/Spilunarlisti"
-
-msgctxt "#32421"
-msgid "Startup Background"
-msgstr "Bakgrunnur í ræsingu"
-
-msgctxt "#32422"
-msgid "Hide Menu when Shelves are Focused"
-msgstr "Fela valmynd þegar rekkar eru virkir"
-
-msgctxt "#32423"
-msgid "Use Disc Art instead of Cover"
-msgstr "Nota myndefni disks í stað umslagsmyndar"
-
-msgctxt "#32424"
-msgid "Auto Play Trailer from Shelf Items"
-msgstr "Spila sjálfkrafa kynningarstiklu fyrir atriði í rekka"
-
-msgctxt "#32425"
-msgid "Shelf Trailer Delay"
-msgstr "Töf kynningarstiklu fyrir rekka"
-
-msgctxt "#32426"
-msgid "Slide Out Media Items While Trailer Playing"
-msgstr ""
-
-msgctxt "#32427"
-msgid "Hide PVR Channel Preview"
-msgstr ""
-
-msgctxt "#32428"
-msgid "Art Downloader: Select Artwork"
-msgstr "Niðurhal myndefnis: Veldu myndefni"
-
-msgctxt "#32429"
-msgid "Art Downloader: All Artwork"
-msgstr "Niðurhal myndefnis: Allt myndefni"
-
-msgctxt "#32450"
-msgid "Show Artwork Downloader items in Context Menu"
-msgstr "Sýna atriði myndefnisniðurhals í samhengisvalmynd"
-
-msgctxt "#32451"
-msgid "Movies with Tag"
-msgstr "Kvikmyndir með merki"
-
-msgctxt "#32452"
-msgid "Select a Tag"
-msgstr "Veldu merki"
-
-msgctxt "#32453"
-msgid "With Tag"
-msgstr "Með merki"
-
-msgctxt "#32454"
-msgid "Always Use TV Show Poster for Episodes"
-msgstr "Alltaf nota kynningarspjald þáttaraðar fyrir þætti"
-
-msgctxt "#32455"
-msgid "Open ExtendedInfo for Info Dialogs"
-msgstr ""
-
-msgctxt "#32456"
-msgid "Cert"
-msgstr "Skilríki"
-
-msgctxt "#32457"
-msgid "Show Episodes List button"
-msgstr "Birta hnapp fyrir þáttalista"
-
-msgctxt "#32458"
-msgid "Include Seasons in Episodes List popup"
-msgstr "Hafa þáttaraðir með í þáttalistaglugga"
-
-msgctxt "#32459"
-msgid "Next Aired"
-msgstr "Næst sýnt"
-
-msgctxt "#32460"
-msgid "Enable Direct Seeking in Full Screen Info"
-msgstr ""
-
-msgctxt "#32461"
-msgid "Show Disc above Poster"
-msgstr "Sýna disk fyrir ofan kynningarspjald"
-
-msgctxt "#32462"
-msgid "Hide Disc over Set Poster"
-msgstr "Fela disk fyrir ofan kynningarspjald"
-
-msgctxt "#32463"
-msgid "Play trailer in a window"
-msgstr "Spila kynningarstiklu í glugga"
-
-msgctxt "#32464"
-msgid "Search Trailer"
-msgstr "Leita að stiklu"
-
-msgctxt "#32465"
-msgid "Search for Trailers with IMDb Trailers Addon"
-msgstr ""
-
-msgctxt "#32466"
-msgid "Fade out Non-focused Menu Items"
-msgstr ""
-
-msgctxt "#32467"
-msgid "Cloudiness"
-msgstr "Skýjahula"
-
-msgctxt "#32468"
-msgid "Probability of Precipitation"
-msgstr "Líkur á úrkomu"
-
-msgctxt "#32469"
-msgid "Intro Video Duration"
-msgstr "Tímalengd kynningarmyndskeiða"
-
-msgctxt "#32470"
-msgid "PVR Timeshift Buffer Color"
-msgstr ""
-
-msgctxt "#32471"
-msgid "Use Main Menu item Background for Sub Windows"
-msgstr "Nota bakgrunn aðalvalmyndar fyrir undirglugga"
-
-msgctxt "#32472"
-msgid "Teletext Button Opens EPG"
-msgstr "Textavarpshnappur opnar EPG"
-
-msgctxt "#32473"
-msgid "EPG Icon"
-msgstr "EPG-táknmynd"
-
-msgctxt "#32474"
-msgid "Channel Logo"
-msgstr "Táknmerki rásar"
-
-msgctxt "#32475"
-msgid "Always Show Information Panel"
-msgstr "Alltaf birta upplýsingaspjald"
-
-msgctxt "#32476"
-msgid "Use Custom Search for Video Library"
-msgstr "Nota sérsniðna leit í myndskeiðasafni"
-
-msgctxt "#32477"
-msgid "Use Custom Search for Music Library"
-msgstr "Nota sérsniðna leit í tónlistarsafni"
-
-msgctxt "#32478"
-msgid "Current Programme Progress:"
-msgstr "Framvinda núverandi dagskrárliðar:"
-
-msgctxt "#32479"
-msgid "Also Show Seconds"
-msgstr "Sýna einnig sekúndur"
-
-msgctxt "#32480"
-msgid "kbps"
-msgstr "kbps"
-
-msgctxt "#32481"
-msgid "Remember Focused Control in Home Window"
-msgstr ""
-
-msgctxt "#32482"
-msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
-msgstr ""
-
-msgctxt "#32483"
-msgid "Allow Changing View Types in PVR Channels Window"
-msgstr ""
-
-msgctxt "#32484"
-msgid "Update Library"
-msgstr "Uppfæra safn"
-
-msgctxt "#32485"
-msgid "Stop Scanning"
-msgstr "Hætta skönnun"
-
-msgctxt "#32486"
-msgid "More Info"
-msgstr "Frekari upplýsingar"
-
-msgctxt "#32487"
-msgid "Play Trailer Windowed"
-msgstr "Spila kynningarstiklu í glugga"
-
-msgctxt "#32488"
-msgid "Last Played Date"
-msgstr ""
-
-msgctxt "#32489"
-msgid "Horizontal Icon Layout"
-msgstr "Lárétt framsetning táknmynda"
-
-msgctxt "#32490"
-msgid "Show Menu Item Label"
-msgstr "Sýna skýringu valmyndarfærslu"
-
-msgctxt "#32491"
-msgid "Always Show Set Movie List"
-msgstr ""
-
-msgctxt "#32492"
-msgid "Use Tall List Layout"
-msgstr "Nota háa listaframsetningu"
-
-msgctxt "#32493"
-msgid "Show More Items in List"
-msgstr "Birta fleiri atriði í lista"
-
-msgctxt "#32494"
-msgid "Hide Overlay Label in Icon/Panel Views"
-msgstr "Fela yfirlagsmerki í táknmynda/stjórnborðssýn"

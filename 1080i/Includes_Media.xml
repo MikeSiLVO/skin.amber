@@ -1027,7 +1027,7 @@
 				<font>ListDetails</font>
 				<align>left</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label>$INFO[Container.ListItem.BitRate] $LOCALIZE[32480]</label>
+				<label>$INFO[Container.ListItem.BitRate] $LOCALIZE[31848]</label>
 				<visible>$PARAM[showaudiobadge]</visible>
 				<visible>String.IsEqual(Container.ListItem.DBType,song)</visible>
 				<visible>!String.IsEmpty(Container.ListItem.BitRate)</visible>
@@ -1622,7 +1622,7 @@
 				<font>ListDetails</font>
 				<align>left</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<label>$INFO[MusicPlayer.BitRate] $LOCALIZE[32480]</label>
+				<label>$INFO[MusicPlayer.BitRate] $LOCALIZE[31848]</label>
 				<visible>!String.IsEmpty(MusicPlayer.BitRate)</visible>
 			</control>
 			<control type="image" id="89001">

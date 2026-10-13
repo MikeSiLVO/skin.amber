@@ -41,10 +41,6 @@ msgctxt "#31003"
 msgid "Channels Directory"
 msgstr "Kanavahakemisto"
 
-msgctxt "#31004"
-msgid "Shift"
-msgstr "Vaihto"
-
 msgctxt "#31005"
 msgid "Cinema"
 msgstr "Teatteri"
@@ -193,6 +189,18 @@ msgctxt "#31041"
 msgid "Repository"
 msgstr "Ohjelmavarasto"
 
+msgctxt "#31042"
+msgid "Hide icons"
+msgstr "Piilota kuvakkeita"
+
+msgctxt "#31043"
+msgid "Hide Games"
+msgstr "Piilota pelit"
+
+msgctxt "#31044"
+msgid "Game Settings"
+msgstr "Peli asetukset"
+
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
 msgstr "Näytä kolme hyllyriviä"
@@ -229,9 +237,61 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Medianäkymät"
 
-msgctxt "#31054"
-msgid "Media sources"
-msgstr "Medialähteet"
+msgctxt "#31055"
+msgid "Toggle Subtitle"
+msgstr "Vaihda tekstitystä"
+
+msgctxt "#31056"
+msgid "AB: Select Artwork"
+msgstr "AB: Valitse kuvamateriaali"
+
+msgctxt "#31057"
+msgid "AB: All Artwork"
+msgstr "AB: Kaikki kuvamateriaali"
+
+msgctxt "#31058"
+msgid "Special Features"
+msgstr "Erikoissisältö"
+
+msgctxt "#31059"
+msgid "Enable Special Features"
+msgstr "Käytä erikoissisältöjä"
+
+msgctxt "#31060"
+msgid "Next Episode"
+msgstr "Seuraava jakso"
+
+msgctxt "#31061"
+msgid "Latest Episode"
+msgstr "Viimeisin jakso"
+
+msgctxt "#31062"
+msgid "Airs"
+msgstr "Esitetään"
+
+msgctxt "#31063"
+msgid "Next Airing Episodes"
+msgstr "Seuraavat lähetysjaksot"
+
+msgctxt "#31064"
+msgid "Search Results for: "
+msgstr "Hakutulokset kohteelle: "
+
+msgctxt "#31065"
+msgid "Show Only Local Info "
+msgstr "Näytä vain paikalliset tiedot "
+
+msgctxt "#31066"
+msgid "Extended Info"
+msgstr "ExtendedInfo"
+
+msgctxt "#31067"
+msgid "Search in Local Library"
+msgstr "Hae paikallisesta kirjastosta"
+
+msgctxt "#31068"
+msgid "Search online in TMDb"
+msgstr "Hae TMDb-palvelusta"
 
 msgctxt "#31069"
 msgid "Random episodes"
@@ -389,9 +449,25 @@ msgctxt "#31107"
 msgid "Shelf style"
 msgstr "Hyllyn tyyli"
 
+msgctxt "#31108"
+msgid "Hide Second Label in List Views"
+msgstr "Piilota toinen levykuva listanäkymissä"
+
+msgctxt "#31109"
+msgid "Added:"
+msgstr "Lisätty:"
+
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Muokkaa mediatyypin taustaa"
+
+msgctxt "#31111"
+msgid "Plays:"
+msgstr "Toistot:"
+
+msgctxt "#31112"
+msgid "Last Played:"
+msgstr "Viimeksi toistettu:"
 
 msgctxt "#31113"
 msgid "Single"
@@ -429,13 +505,37 @@ msgctxt "#31121"
 msgid "Apply Changes"
 msgstr "Tallenna muutokset"
 
+msgctxt "#31122"
+msgid "New Search"
+msgstr "Uusi haku"
+
+msgctxt "#31123"
+msgid "Movies Starring"
+msgstr "Elokuvien pääosassa"
+
+msgctxt "#31124"
+msgid "Movies Directed by"
+msgstr "Elokuvat ohjannut"
+
+msgctxt "#31125"
+msgid "TV Shows Starring"
+msgstr "TV-sarjojen pääosassa"
+
+msgctxt "#31126"
+msgid "TV Shows Directed by"
+msgstr "TV-sarjat ohjannut"
+
+msgctxt "#31127"
+msgid "Movies with Genre"
+msgstr "Elokuvat tyylilajilla"
+
+msgctxt "#31128"
+msgid "TV Shows with Genre"
+msgstr "TV-sarjat tyylilajilla"
+
 msgctxt "#31129"
 msgid "Same director"
 msgstr "Sama ohjaaja"
-
-msgctxt "#31130"
-msgid "Hourly"
-msgstr "Tuntiennuste"
 
 msgctxt "#31131"
 msgid "Forecast"
@@ -481,6 +581,34 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Toistonopeus"
 
+msgctxt "#31143"
+msgid "Movies from Studio"
+msgstr "Elokuvat studiolta"
+
+msgctxt "#31144"
+msgid "TV Shows from Studio"
+msgstr "TV-sarjat studiolta"
+
+msgctxt "#31145"
+msgid "Movies from Year"
+msgstr "Elokuvat vuodelta"
+
+msgctxt "#31146"
+msgid "TV Shows from Year"
+msgstr "TV-sarjat vuodelta"
+
+msgctxt "#31147"
+msgid "Movies from Country"
+msgstr "Elokuvat maasta"
+
+msgctxt "#31148"
+msgid "Music Videos by Artist"
+msgstr "Musiikkivideot artistilta"
+
+msgctxt "#31149"
+msgid "YouTube videos about"
+msgstr "YouTube videoita aiheesta"
+
 msgctxt "#31150"
 msgid "Disable List view"
 msgstr "Älä käytä listanäkymää"
@@ -525,6 +653,518 @@ msgctxt "#31160"
 msgid "Disable Logo view"
 msgstr "Älä käytä logo näkymää"
 
+msgctxt "#31161"
+msgid "Enable Touch/Mouse Buttons"
+msgstr "Ota kosketus-/hiiripainikkeet käyttöön"
+
+msgctxt "#31162"
+msgid "Timeshift"
+msgstr "Ajansiirto"
+
+msgctxt "#31163"
+msgid "Enable Kiosk Mode"
+msgstr "Ota kioskitila käyttöön"
+
+msgctxt "#31164"
+msgid "Next Episodes"
+msgstr "Seuraavat jaksot"
+
+msgctxt "#31165"
+msgid "Customize Home Menu and Shelves"
+msgstr "Mukauta aloitusnäytön valikkoa ja hyllyjä"
+
+msgctxt "#31166"
+msgid "Shelves"
+msgstr "Hyllyt"
+
+msgctxt "#31167"
+msgid "Weather fanart"
+msgstr "Sää-fanart"
+
+msgctxt "#31168"
+msgid "Seconds"
+msgstr "Sekuntia"
+
+msgctxt "#31169"
+msgid "Show background name in Home window"
+msgstr "Näytä taustanimi Kotivalikossa"
+
+msgctxt "#31170"
+msgid "Home window Background Rotation Delay"
+msgstr "Aloitusnäytön taustan vaihtoviive"
+
+msgctxt "#31171"
+msgid "IPTV Recorder"
+msgstr "IPTV-tallennin"
+
+msgctxt "#31172"
+msgid "IPTV Recorder Recordings"
+msgstr "IPTV-tallentimen nauhoitukset"
+
+msgctxt "#31173"
+msgid "Show Video Info on Pause"
+msgstr "Näytä videotiedot tauon aikana"
+
+msgctxt "#31174"
+msgid "Show Two Shelves Together"
+msgstr "Näytä kaksi hyllyä yhdessä"
+
+msgctxt "#31175"
+msgid "Use Larger Font"
+msgstr "Käytä suurempaa fonttia"
+
+msgctxt "#31176"
+msgid "Use Wraparound Navigation"
+msgstr "Käytä ympäröivää navigointia"
+
+msgctxt "#31177"
+msgid "Show more items on List Views"
+msgstr "Näytä lisää kohteita listanäkymissä"
+
+msgctxt "#31178"
+msgid "Show Season/Episode Numbers"
+msgstr "Näytä kauden/jakson numerot"
+
+msgctxt "#31179"
+msgid "Show Episode Thumb"
+msgstr "Näytä jakson pienoiskuva"
+
+msgctxt "#31180"
+msgid "Disable Tall List View"
+msgstr "Älä käytä pitkä lista näkymää"
+
+msgctxt "#31181"
+msgid "Tall List"
+msgstr "Pitkä lista"
+
+msgctxt "#31182"
+msgid "Set Default Background"
+msgstr "Aseta oletustausta"
+
+msgctxt "#31183"
+msgid "Set Favourite Addons for Shelf"
+msgstr "Aseta suosikkilisäosat hyllyyn"
+
+msgctxt "#31184"
+msgid "Select Favourite Addons"
+msgstr "Valitse Suosikki lisäosat"
+
+msgctxt "#31185"
+msgid "Backup/Restore"
+msgstr "Varmuuskopio"
+
+msgctxt "#31186"
+msgid "Backup"
+msgstr "Varmuuskopioi"
+
+msgctxt "#31187"
+msgid "Restore"
+msgstr "Palauta"
+
+msgctxt "#31188"
+msgid "Configure Backup addon"
+msgstr "Määritä varmuuskopiointi lisäosa"
+
+msgctxt "#31189"
+msgid "Show Fanart"
+msgstr "Näytä fanart"
+
+msgctxt "#31190"
+msgid "Place Background Name in Top Bar"
+msgstr "Näytä taustan nimi yläpalkissa"
+
+msgctxt "#31191"
+msgid "Enable Alphabet Strip"
+msgstr "Ota aakkosnauha käyttöön"
+
+msgctxt "#31192"
+msgid "Enable Autocompletion for Virtual Keyboard"
+msgstr "Ota automaattinen täydennys käyttöön virtuaalinäppäimistölle"
+
+msgctxt "#31193"
+msgid "Budget"
+msgstr "Budjetti"
+
+msgctxt "#31194"
+msgid "Revenue"
+msgstr "Tuotto"
+
+msgctxt "#31195"
+msgid "Awards"
+msgstr "Palkinnot"
+
+msgctxt "#31196"
+msgid "Show Watched Items in Recent Shelves"
+msgstr "Näytä katsotut tuotteet \"viimeisimmät\" hyllyssä"
+
+msgctxt "#31197"
+msgid "RT Total Critics Reviews"
+msgstr "RT Kaikki kriitikoiden arviot"
+
+msgctxt "#31198"
+msgid "RT Fresh Reviews"
+msgstr "RT Tuoreet arviot"
+
+msgctxt "#31199"
+msgid "RT Rotten Reviews"
+msgstr "RT Mädät arviot"
+
+msgctxt "#31200"
+msgid "RT Critics' Consensus"
+msgstr "RT Kriitikoiden konsensus"
+
+msgctxt "#31201"
+msgid "RT Total User Reviews"
+msgstr "RT Kaikki käyttäjäarviot"
+
+msgctxt "#31202"
+msgid "Birthday"
+msgstr "Syntymäpäivä"
+
+msgctxt "#31204"
+msgid "Born"
+msgstr "Syntynyt"
+
+msgctxt "#31206"
+msgid "Age"
+msgstr "Ikä"
+
+msgctxt "#31207"
+msgid "Died"
+msgstr "Kuoli"
+
+msgctxt "#31208"
+msgid "Also Known As"
+msgstr "Tunnetaan myös nimellä"
+
+msgctxt "#31209"
+msgid "Cast in Movies"
+msgstr "Näyttelijät elokuvissa"
+
+msgctxt "#31210"
+msgid "Cast in TV Shows"
+msgstr "Näyttelijät TV-sarjoissa"
+
+msgctxt "#31211"
+msgid "Crew in Movies"
+msgstr "Miehistö elokuvissa"
+
+msgctxt "#31212"
+msgid "Crew in TV Shows"
+msgstr "Miehistö TV-sarjoissa"
+
+msgctxt "#31213"
+msgid "Movies in TMDb"
+msgstr "Elokuvat TMDb:ssä"
+
+msgctxt "#31214"
+msgid "TV Shows in TMDb"
+msgstr "TV-sarjat TMDb:ssä"
+
+msgctxt "#31215"
+msgid "Movies in Local DB"
+msgstr "Elokuvat paikallisessa tietokannassa"
+
+msgctxt "#31216"
+msgid "TV Shows in Local DB"
+msgstr "TV-sarjat paikallisessa tietokannassa"
+
+msgctxt "#31217"
+msgid "Reboot to Android"
+msgstr "Käynnistä Android uudelleen"
+
+msgctxt "#31218"
+msgid "Episodes Starring"
+msgstr "Jaksoissa pääosassa"
+
+msgctxt "#31219"
+msgid "Movies in the"
+msgstr "Elokuvat"
+
+msgctxt "#31220"
+msgid "Also Directed by"
+msgstr "Ohjannut myös"
+
+msgctxt "#31221"
+msgid "Crew"
+msgstr "Henkilöstö"
+
+msgctxt "#31222"
+msgid "More from"
+msgstr "Lisää"
+
+msgctxt "#31223"
+msgid "More in"
+msgstr "Lisää"
+
+msgctxt "#31224"
+msgid "Similar to"
+msgstr "Samankaltaisia kuin"
+
+msgctxt "#31225"
+msgid "Cast Members also appear in"
+msgstr "Näyttelijät esiintyvät myös"
+
+msgctxt "#31226"
+msgid "Select Custom Lists to Display"
+msgstr "Valitse mitkä mukautetut luettelot näytetään"
+
+msgctxt "#31227"
+msgid "Similar"
+msgstr "Samankaltaisia"
+
+msgctxt "#31228"
+msgid "Featuring Cast Members"
+msgstr "Mukana näyttelijät"
+
+msgctxt "#31229"
+msgid "Video Info"
+msgstr "Videotiedot"
+
+msgctxt "#31230"
+msgid "Select a Genre"
+msgstr "Valitse tyylilaji"
+
+msgctxt "#31231"
+msgid "Select a Studio"
+msgstr "Valitse studio"
+
+msgctxt "#31232"
+msgid "Select a Director"
+msgstr "Valitse ohjaaja"
+
+msgctxt "#31233"
+msgid "Online TMDb Search"
+msgstr "Hae TMDb-verkkopalvelusta"
+
+msgctxt "#31234"
+msgid "Local Search"
+msgstr "Paikallinen haku"
+
+msgctxt "#31235"
+msgid "Select a Writer"
+msgstr "Valitse kirjoittaja"
+
+msgctxt "#31236"
+msgid "Movies Written by"
+msgstr "Elokuvat kirjoittanut"
+
+msgctxt "#31237"
+msgid "Select a Country"
+msgstr "Valitse maa"
+
+msgctxt "#31238"
+msgid "Episodes from Studio"
+msgstr "Jaksot Studiolta"
+
+msgctxt "#31239"
+msgid "Episodes with Genre"
+msgstr "Jaksot tyylilajilla"
+
+msgctxt "#31240"
+msgid "Episodes Written by"
+msgstr "Jaksot kirjoittanut"
+
+msgctxt "#31241"
+msgid "Episodes Directed by"
+msgstr "Jaksot ohjannut"
+
+msgctxt "#31242"
+msgid "AB: Download All Artwork"
+msgstr "AB: Lataa kaikki kuvamateriaali"
+
+msgctxt "#31243"
+msgid "AB: Select Artwork"
+msgstr "AB: Valitse kuvamateriaali"
+
+msgctxt "#31244"
+msgid "Show Artwork Beef items in Context Menu"
+msgstr "Näytä Artwork Beef kohteet sisältövalikossa"
+
+msgctxt "#31245"
+msgid "Title Bar Options"
+msgstr "Otsikkorivin asetukset"
+
+msgctxt "#31246"
+msgid "Show Duration in Hours and Minutes"
+msgstr "Näytä kesto tunteina ja minuutteina"
+
+msgctxt "#31247"
+msgid "Hour"
+msgstr "Tunti"
+
+msgctxt "#31248"
+msgid "Minute"
+msgstr "Minuutti"
+
+msgctxt "#31249"
+msgid "Online TMDb Info"
+msgstr "Online TMDb-tiedot"
+
+msgctxt "#31250"
+msgid "Embuary Info Settings"
+msgstr "Embuary Info asetukset"
+
+msgctxt "#31251"
+msgid "Guest Stars"
+msgstr "Vierastähdet"
+
+msgctxt "#31252"
+msgid "Posters"
+msgstr "Julisteet"
+
+msgctxt "#31253"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#31254"
+msgid "Search for Trailer"
+msgstr "Hae traileria"
+
+msgctxt "#31255"
+msgid "item in database"
+msgstr "kohde tietokannassa"
+
+msgctxt "#31256"
+msgid "Items in Database"
+msgstr "Kohteet tietokannassa"
+
+msgctxt "#31257"
+msgid "Extras"
+msgstr "Lisämateriaalit"
+
+msgctxt "#31258"
+msgid "Known for"
+msgstr "Tunnetaan"
+
+msgctxt "#31259"
+msgid "Retail Release"
+msgstr "Vähittäiskaupan julkaisu"
+
+msgctxt "#31260"
+msgid "Region Release"
+msgstr "Alueen julkaisu"
+
+msgctxt "#31261"
+msgid "Ended"
+msgstr "Päättyi"
+
+msgctxt "#31262"
+msgid "Rumored"
+msgstr "Huhutusti"
+
+msgctxt "#31263"
+msgid "Planned"
+msgstr "Suunniteltu"
+
+msgctxt "#31264"
+msgid "In Production"
+msgstr "Tuotannossa"
+
+msgctxt "#31265"
+msgid "Post Production"
+msgstr "Jälkituotanto"
+
+msgctxt "#31266"
+msgid "Released"
+msgstr "Julkaistu"
+
+msgctxt "#31267"
+msgid "Canceled"
+msgstr "Peruttu"
+
+msgctxt "#31268"
+msgid "Returning Series"
+msgstr "Palaavat sarjat"
+
+msgctxt "#31269"
+msgid "Acting"
+msgstr "Näyttelemisestä"
+
+msgctxt "#31270"
+msgid "Directing"
+msgstr "Ohjaamisesta"
+
+msgctxt "#31271"
+msgid "Writing"
+msgstr "Kirjoittamisesta"
+
+msgctxt "#31272"
+msgid "Production"
+msgstr "Tuottamisesta"
+
+msgctxt "#31273"
+msgid "Sound"
+msgstr "Äänittämisestä"
+
+msgctxt "#31274"
+msgid "Creator"
+msgstr "Kehittäjä"
+
+msgctxt "#31275"
+msgid "Died at Age"
+msgstr "Kuollut iässä"
+
+msgctxt "#31276"
+msgid "Collection"
+msgstr "Kokoelma"
+
+msgctxt "#31277"
+msgid "TMDb Helper Settings"
+msgstr "TMDb Helper asetukset"
+
+msgctxt "#31278"
+msgid "Blur Background"
+msgstr "Sumenna tausta"
+
+msgctxt "#31279"
+msgid "Use Poster for Blur"
+msgstr "Käytä sumennukseen julistetta"
+
+msgctxt "#31280"
+msgid "Customize Power Menu"
+msgstr "Muokkaa virtavalikkoa"
+
+msgctxt "#31281"
+msgid "Edit Library Data"
+msgstr "Muokkaa kirjastotietoja"
+
+msgctxt "#31282"
+msgid "Select Search Categories"
+msgstr "Valitse hakuluokat"
+
+msgctxt "#31283"
+msgid "Select Search Categories to Enable"
+msgstr "Valitse käytettävät hakuluokat"
+
+msgctxt "#31284"
+msgid "By Title"
+msgstr "Nimikkeen mukaan"
+
+msgctxt "#31285"
+msgid "With Genre"
+msgstr "Tyylilajilla"
+
+msgctxt "#31286"
+msgid "From Year"
+msgstr "Vuodesta"
+
+msgctxt "#31287"
+msgid "From Studio"
+msgstr "Studiolta"
+
+msgctxt "#31288"
+msgid "From Country"
+msgstr "Maasta"
+
+msgctxt "#31289"
+msgid "With Actor"
+msgstr "Näyttelijällä"
+
+msgctxt "#31290"
+msgid "By Director"
+msgstr "Ohjaajalta"
+
 msgctxt "#31291"
 msgid "Add-on manager"
 msgstr "Lisäosien hallinta"
@@ -561,13 +1201,205 @@ msgctxt "#31300"
 msgid "CoreELEC Settings"
 msgstr "CoreELEC asetukset"
 
+msgctxt "#31301"
+msgid "By Writer"
+msgstr "Kirjoittanut"
+
+msgctxt "#31302"
+msgid "Artists by Name"
+msgstr "Artistit nimen mukaan"
+
+msgctxt "#31303"
+msgid "Albums by Title"
+msgstr "Albumit nimen mukaan"
+
+msgctxt "#31304"
+msgid "Songs by Title"
+msgstr "Kappaleet nimen mukaan"
+
+msgctxt "#31305"
+msgid "By Artist"
+msgstr "Artistilta"
+
+msgctxt "#31306"
+msgid "YouTube by Title"
+msgstr "YouTube otsikon mukaan"
+
+msgctxt "#31307"
+msgid "Known for Character"
+msgstr "Tunnettu hahmosta"
+
+msgctxt "#31308"
+msgid "Known for Department"
+msgstr "Tunnettu osastolta"
+
 msgctxt "#31309"
 msgid "Memory Used"
 msgstr "Käytetty muisti"
 
+msgctxt "#31310"
+msgid "Known for Job"
+msgstr "Tunnettu työstä"
+
+msgctxt "#31311"
+msgid "Total Items in TMDb"
+msgstr "Kohteita yhteensä TMDb:ssä"
+
+msgctxt "#31312"
+msgid "Total Movies in TMDb"
+msgstr "Elokuvia yhteensä TMDb:ssä"
+
+msgctxt "#31313"
+msgid "Total TV Shows in TMDb"
+msgstr "TV-sarjoja yhteensä TMDB:ssä"
+
+msgctxt "#31314"
+msgid "Items in TMDb as Cast"
+msgstr "TMDb kohteita näyttelijänä"
+
+msgctxt "#31315"
+msgid "Movies in TMDb as Cast"
+msgstr "TMDb elokuvia näyttelijänä"
+
+msgctxt "#31316"
+msgid "TV Shows in TMDb as Cast"
+msgstr "TMDb TV-sarjoja näyttelijänä"
+
+msgctxt "#31317"
+msgid "Items in TMDb as Crew"
+msgstr "TMDb kohteita miehistönä"
+
+msgctxt "#31318"
+msgid "Movies in TMDb as Crew"
+msgstr "TMDb elokuvia miehistönä"
+
+msgctxt "#31319"
+msgid "TV Shows in TMDb as Crew"
+msgstr "TMDb TV-sarjoja miehistönä"
+
+msgctxt "#31320"
+msgid "Total Items in Local Database"
+msgstr "Kohteita yhteensä paikallisessa tietokannassa"
+
+msgctxt "#31321"
+msgid "Movies in Local Database"
+msgstr "Elokuvia paikallisessa tietokannassa"
+
 msgctxt "#31322"
 msgid "Aired"
 msgstr "Esitetty"
+
+msgctxt "#31323"
+msgid "TV Shows in Local Database"
+msgstr "TV-sarjoja paikallisessa tietokannassa"
+
+msgctxt "#31324"
+msgid "Episodes in Local Database"
+msgstr "Jaksoja paikallisessa tietokannassa"
+
+msgctxt "#31325"
+msgid "Cast: Movies with"
+msgstr "Näyttelijät: Elokuvat"
+
+msgctxt "#31326"
+msgid "Cast: TV Shows with"
+msgstr "Näyttelijät: TV-sarjat"
+
+msgctxt "#31327"
+msgid "Crew: Movies with"
+msgstr "Miehistö: Elokuvat"
+
+msgctxt "#31328"
+msgid "Crew: TV Shows with"
+msgstr "Miehistö: TV-sarjat"
+
+msgctxt "#31329"
+msgid "Start at First Menu Item"
+msgstr "Aloita ensimmäisestä valikkokohdasta"
+
+msgctxt "#31330"
+msgid "Set Default View"
+msgstr "Aseta oletusnäkymä"
+
+msgctxt "#31331"
+msgid "Highlight Color"
+msgstr "Korosta väri"
+
+msgctxt "#31332"
+msgid "Horizontal Menu Glow Bars Tint"
+msgstr "Vaakasuuntaisen valikkopalkin loisteen sävy"
+
+msgctxt "#31333"
+msgid "Horizontal Menu Main Bar Tint"
+msgstr "Vaakasuuntaisen valikkopalkin sävy"
+
+msgctxt "#31334"
+msgid "Vertical Menu/Submenu Background Tint"
+msgstr "Pystyvalikon/alivalikon taustan sävy"
+
+msgctxt "#31335"
+msgid "Top Bar Tint"
+msgstr "Yläpalkin sävy"
+
+msgctxt "#31336"
+msgid "Current Color Theme"
+msgstr "Nykyinen väriteema"
+
+msgctxt "#31337"
+msgid "Dialogs Background Tint"
+msgstr "Valintaikkunan taustan sävy"
+
+msgctxt "#31338"
+msgid "Regular Text Color"
+msgstr "Tavallisen tekstin väri"
+
+msgctxt "#31339"
+msgid "Focused Text Color"
+msgstr "Kohdennetun tekstin väri"
+
+msgctxt "#31340"
+msgid "Selected Text Color"
+msgstr "Valitun tekstin väri"
+
+msgctxt "#31341"
+msgid "Shelves Background Tint"
+msgstr "Hyllyjen taustaväri"
+
+msgctxt "#31342"
+msgid "Use for All Tints"
+msgstr "Käytä kaikille sävyille"
+
+msgctxt "#31343"
+msgid "Keep Lists Focus Centered"
+msgstr "Pidä listojen kohdennus keskitettynä"
+
+msgctxt "#31344"
+msgid "Show Artist Logo In Music Visualization"
+msgstr "Näytä artistin logo musiikin visualisoinnissa"
+
+msgctxt "#31345"
+msgid "Show Logo In Media Views"
+msgstr "Näytä logo medianäkymissä"
+
+msgctxt "#31346"
+msgid "Show Logo In Home Window"
+msgstr "Näytä logo Kotivalikossa"
+
+msgctxt "#31347"
+msgid "Media Views Background Tint"
+msgstr "Medianäkymien taustaväri"
+
+msgctxt "#31348"
+msgid "Enable Label Scrolling in List Views"
+msgstr "Ota kansien vieritys käyttöön listanäkymissä"
+
+msgctxt "#31349"
+msgid "Audio and Subtitle Info"
+msgstr "Ääni- ja tekstitystiedot"
+
+msgctxt "#31350"
+msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
+msgstr "Tekstityspainike avaa tekstitysasetukset Video OSD:ssä"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -597,6 +1429,14 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "Paikallinen tekstitys on käytettävissä"
 
+msgctxt "#31358"
+msgid "Disable Info Panel in List Views"
+msgstr "Älä käytä tietopaneelia listanäkymissä"
+
+msgctxt "#31359"
+msgid "TMDb Helper - Next Aired Episodes"
+msgstr "TMDb Helper - Seuraavat lähetetyt jaksot"
+
 msgctxt "#31360"
 msgid "Watch as 2D"
 msgstr "Katsele 2D-tilassa"
@@ -605,13 +1445,109 @@ msgctxt "#31361"
 msgid "Change mode"
 msgstr "Vaihda tilaa"
 
-msgctxt "#31362"
-msgid "Enabled"
-msgstr "Käytössä"
-
 msgctxt "#31363"
 msgid "Static"
 msgstr "Staattinen"
+
+msgctxt "#31364"
+msgid "Embuary Info - Next Aired Episodes"
+msgstr "Embuary Info - Seuraavat lähetetyt jaksot"
+
+msgctxt "#31365"
+msgid "Only Search in Local Library"
+msgstr "Hae vain paikallisesta kirjastosta"
+
+msgctxt "#31366"
+msgid "Hide Channel Groups"
+msgstr "Piilota kanavaryhmät"
+
+msgctxt "#31367"
+msgid "Select Displayed Ratings and Certification"
+msgstr "Valitse näytettävät arviot ja sertifiointi"
+
+msgctxt "#31368"
+msgid "User Rating"
+msgstr "Käyttäjäarvio"
+
+msgctxt "#31369"
+msgid "Ratings"
+msgstr "Arviot"
+
+msgctxt "#31370"
+msgid "Certification"
+msgstr "Sertifikaatti"
+
+msgctxt "#31371"
+msgid "Up Next in"
+msgstr "Seuraavaksi"
+
+msgctxt "#31372"
+msgid "Continue Watching in"
+msgstr "Jatka katsomista"
+
+msgctxt "#31373"
+msgid "Hide Collection (Set) Marks"
+msgstr "Piilota kokoelman (Elokuvaryhmät) merkki"
+
+msgctxt "#31374"
+msgid "Disable Info Panel"
+msgstr "Älä käytä tietopaneelia"
+
+msgctxt "#31375"
+msgid "Alternate List Layout"
+msgstr "Vaihtoehtoinen lista-asettelu"
+
+msgctxt "#31376"
+msgid "Larger Image"
+msgstr "Suurempi kuva"
+
+msgctxt "#31377"
+msgid "Alternate List Views Layout"
+msgstr "Vaihtoehtoinen listanäkymien layout"
+
+msgctxt "#31378"
+msgid "Albums by"
+msgstr "Albumit"
+
+msgctxt "#31379"
+msgid "Panel 2"
+msgstr "Paneeli 2"
+
+msgctxt "#31380"
+msgid "Big Panel 2"
+msgstr "Iso paneeli 2"
+
+msgctxt "#31381"
+msgid "Disable Panel 2 view"
+msgstr "Älä käytä paneeli 2 näkymää"
+
+msgctxt "#31382"
+msgid "Disable Big Panel 2 view"
+msgstr "Älä käytä iso paneeli 2 näkymää"
+
+msgctxt "#31383"
+msgid "Enable Statistics Line"
+msgstr "Ota tilastorivi käyttöön"
+
+msgctxt "#31384"
+msgid "Show Statistics line on Shelf"
+msgstr "Näytä tilastorivi hyllyssä"
+
+msgctxt "#31385"
+msgid "Show Marks on Top Right"
+msgstr "Näytä merkit yläoikealla"
+
+msgctxt "#31386"
+msgid "Hide Unwatched Episodes Marks"
+msgstr "Piilota katsomattomien jaksojen merkit"
+
+msgctxt "#31387"
+msgid "Movies in library"
+msgstr "Elokuvia kirjastossa"
+
+msgctxt "#31388"
+msgid "IMDb Top 250"
+msgstr "IMDb Top 250"
 
 msgctxt "#31390"
 msgid "(1/5) Skin default"
@@ -1053,10 +1989,6 @@ msgctxt "#31499"
 msgid "All TV Shows"
 msgstr "Kaikki TV-sarjat"
 
-msgctxt "#31500"
-msgid "TV"
-msgstr "TV"
-
 msgctxt "#31501"
 msgid "Scheduled Time"
 msgstr "Ajoitettu aika"
@@ -1084,10 +2016,6 @@ msgstr "Saatavilla olevat[CR]ryhmät"
 msgctxt "#31507"
 msgid "Opens"
 msgstr "Avautuu"
-
-msgctxt "#31509"
-msgid "Radio"
-msgstr "Radio"
 
 msgctxt "#31510"
 msgid "Timer Set"
@@ -1585,10 +2513,6 @@ msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
 msgstr "Mukauta Pohjan Pikakuvakkeita"
 
-msgctxt "#31636"
-msgid "Shortcuts"
-msgstr "Pikakuvakkeet"
-
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
 msgstr "Ota Käyttöön Pohjan Pikakuvakkeet"
@@ -1660,6 +2584,838 @@ msgstr "Informaatio ponnahdusikkunan viive"
 msgctxt "#31654"
 msgid "Show Information for Shelves"
 msgstr "Näytä tiedot hyllyille"
+
+msgctxt "#31655"
+msgid "Missing Add-on"
+msgstr "Lisäosa puuttuu"
+
+msgctxt "#31656"
+msgid "TMDb Helper"
+msgstr "TMDb Helper"
+
+msgctxt "#31657"
+msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+msgstr "Tämän toiminnon käyttöönotto edellyttää, että asennat lisäosan plugin.video.themoviedb.helper viimeisimmän version. [CR] [CR] Löydät sen osoitteesta https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+
+msgctxt "#31658"
+msgid "Use Embuary Helper for Playlist Backgrounds"
+msgstr "Käytä Embuary Helper lisäosaa soittolistojen taustakuville"
+
+msgctxt "#31659"
+msgid "Unwatched"
+msgstr "Katsomattomat"
+
+msgctxt "#31660"
+msgid "Use Embuary Helper for Statistics Line"
+msgstr "Käytä Embuary Helperiä tilastoriville"
+
+msgctxt "#31661"
+msgid "Use Embuary Helper for Backgrounds"
+msgstr "Käytä Embuary Helper lisäosaa taustakuville"
+
+msgctxt "#31662"
+msgid "Movie Collection Count"
+msgstr "Elokuvakokoelmien määrä"
+
+msgctxt "#31663"
+msgid "Show Fanart for Special Content"
+msgstr "Näytä fanart erityissisällölle"
+
+msgctxt "#31664"
+msgid "Media Play Count"
+msgstr "Median toistomäärä"
+
+msgctxt "#31665"
+msgid "Color Options"
+msgstr "Värivaihtoehdot"
+
+msgctxt "#31666"
+msgid "Go To"
+msgstr "Mene"
+
+msgctxt "#31667"
+msgid "Show Three Shelves Together"
+msgstr "Näytä kolme hyllyä yhdessä"
+
+msgctxt "#31668"
+msgid "Configure Custom Shelf"
+msgstr "Määritä mukautettu hylly"
+
+msgctxt "#31669"
+msgid "Shift Fanart View Focus to the Right"
+msgstr "Siirrä fanart-näkymän kohdistus oikealle"
+
+msgctxt "#31670"
+msgid "Mouse/Touch-Friendly Alphabet Strip"
+msgstr "Hiiri-/kosketuspaneeliystävällinen aakkosnauha"
+
+msgctxt "#31671"
+msgid "Use New Media Views Selector"
+msgstr "Käytä uutta medianäkymän valitsinta"
+
+msgctxt "#31672"
+msgid "Skin Variables"
+msgstr "Skin Variables"
+
+msgctxt "#31673"
+msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
+msgstr "Tämän toiminnon käyttöönotto edellyttää, että asennat uusimman version lisäosasta script.skinvariables. [CR] [CR] Löydät sen osoitteesta https://github.com/jurialmunkey/script.skinvariables."
+
+msgctxt "#31674"
+msgid "Configure Media Views"
+msgstr "Määritä medianäkymät"
+
+msgctxt "#31675"
+msgid "Three Rows with Larger Icons"
+msgstr "Kolme riviä suuremmilla kuvakkeilla"
+
+msgctxt "#31676"
+msgid "Oscars Won"
+msgstr "Oscar voitot"
+
+msgctxt "#31677"
+msgid "Oscar Nominations"
+msgstr "Oscar ehdokkuudet"
+
+msgctxt "#31678"
+msgid "Golden Globes Won"
+msgstr "Golden Globe voitot"
+
+msgctxt "#31679"
+msgid "Golden Globe Nominations"
+msgstr "Golden Globe ehdokkuudet"
+
+msgctxt "#31680"
+msgid "Awards (Oscars/Golden Globes)"
+msgstr "Palkinnot (Oscar/Golden Globe)"
+
+msgctxt "#31681"
+msgid "Video Genre Fanart"
+msgstr "Videolajityyppien fanart"
+
+msgctxt "#31682"
+msgid "Music Genre Fanart"
+msgstr "Musiikkilajityyppien fanart"
+
+msgctxt "#31683"
+msgid "Custom Path"
+msgstr "Mukautettu polku"
+
+msgctxt "#31684"
+msgid "Reset Custom Path"
+msgstr "Resetoi mukautettu polku"
+
+msgctxt "#31685"
+msgid "Image Pack"
+msgstr "Kuvapaketti"
+
+msgctxt "#31686"
+msgid "Enable Multiple Images per Genre"
+msgstr "Ota käyttöön useita kuvia lajityypin mukaan"
+
+msgctxt "#31687"
+msgid "Match Poster Colors"
+msgstr "Sovita julistevärit"
+
+msgctxt "#31688"
+msgid "Show Seek Bar at Bottom"
+msgstr "Näytä toistopalkki alhaalla"
+
+msgctxt "#31689"
+msgid "HDR/SDR and Bit Depth Flags"
+msgstr "HDR/SDR- ja bittisyvyysliput"
+
+msgctxt "#31690"
+msgid "File Name Instead of Title"
+msgstr "Tiedostonimi otsikon sijaan"
+
+msgctxt "#31691"
+msgid "Extra Fanart on panel"
+msgstr "Extra fanart paneelissa"
+
+msgctxt "#31692"
+msgid "Ends at"
+msgstr "Päättyy klo"
+
+msgctxt "#31693"
+msgid "Netflix style"
+msgstr "Netflix tyyli"
+
+msgctxt "#31694"
+msgid "Show Logo"
+msgstr "Näytä logo"
+
+msgctxt "#31695"
+msgid "Use Landscape"
+msgstr "Käytä Vaakakuvaa"
+
+msgctxt "#31696"
+msgid "Dim Level for Unfocused"
+msgstr "Himmennustaso kohdistamattomalle"
+
+msgctxt "#31697"
+msgid "Select Dim Level"
+msgstr "Valitse Himmennustaso"
+
+msgctxt "#31698"
+msgid "Now Playing"
+msgstr "Toistetaan parhaillaan"
+
+msgctxt "#31699"
+msgid "Hide Title Bar Now Playing"
+msgstr "Piilota otsikkorivin \"Toistetaan parhaillaan\""
+
+msgctxt "#31700"
+msgid "Select Now Playing Video Disc Art Fallback"
+msgstr "Valitse parhaillaan toistettavan videolevyetiketin varakuva"
+
+msgctxt "#31701"
+msgid "Select Now Playing Music Disc Art Fallback"
+msgstr "Valitse parhaillaan toistettavan musiikkilevyetiketin varakuva"
+
+msgctxt "#31702"
+msgid "Blu-Ray"
+msgstr "Blu-Ray"
+
+msgctxt "#31703"
+msgid "Vinyl"
+msgstr "Vinyyli"
+
+msgctxt "#31704"
+msgid "None"
+msgstr "Ei mitään"
+
+msgctxt "#31705"
+msgid "Golden"
+msgstr "Kultainen"
+
+msgctxt "#31706"
+msgid "Purple"
+msgstr "Violetti"
+
+msgctxt "#31707"
+msgid "Select Now Playing Info for Movies/Episodes"
+msgstr "Valitse parhaillaan toistettavasta elokuvasta/jaksosta näytettävät tiedot"
+
+msgctxt "#31708"
+msgid "Select Now Playing Info for other Videos"
+msgstr "Valitse parhaillaan toistettavasta videosta näytettävät tiedot"
+
+msgctxt "#31709"
+msgid "Select Now Playing Info for Music"
+msgstr "Valitse parhaillaan toistettavasta musiikista näytettävät tiedot"
+
+msgctxt "#31710"
+msgid "Show Video in the Background"
+msgstr "Näytä video taustalla"
+
+msgctxt "#31711"
+msgid "Show Music Visualization in the Background"
+msgstr "Näytä musiikin visualisointi taustalla"
+
+msgctxt "#31712"
+msgid "Show Extra Art for Video"
+msgstr "Näytä lisätaide videolle"
+
+msgctxt "#31713"
+msgid "Show Extra Art for Music"
+msgstr "Näytä lisätaide musiikille"
+
+msgctxt "#31714"
+msgid "Show Logo"
+msgstr "Näytä Logo"
+
+msgctxt "#31715"
+msgid "Show ClearArt"
+msgstr "Näytä ClearArt"
+
+msgctxt "#31716"
+msgid "Show Disc Art"
+msgstr "Näytä levyetiketti"
+
+msgctxt "#31717"
+msgid "Select Disc Art Fallback for Video"
+msgstr "Valitse levyetiketin varmistus videotoistolle"
+
+msgctxt "#31718"
+msgid "Select Disc Art Fallback for Music"
+msgstr "Valitse levyetiketin varmistus musiikkitoistolle"
+
+msgctxt "#31719"
+msgid "Disable Now Playing"
+msgstr "Poista \"Toistetaan parhaillaan\" käytöstä"
+
+msgctxt "#31720"
+msgid "Internet Stream"
+msgstr "Internet-suoratoisto"
+
+msgctxt "#31721"
+msgid "Special"
+msgstr "Erityinen"
+
+msgctxt "#31722"
+msgid "Next Tracks"
+msgstr "Seuraavat kappaleet"
+
+msgctxt "#31723"
+msgid "Album Review"
+msgstr "Albumi katselmus"
+
+msgctxt "#31724"
+msgid "Artist Bio"
+msgstr "Artistin biografia"
+
+msgctxt "#31725"
+msgid "Hide Shelves when Now Playing is Visible"
+msgstr "Piilota hyllyt, kun \"Toistetaan parhaillaan\" näytetään"
+
+msgctxt "#31726"
+msgid "Enlarge Video Preview when Idle"
+msgstr "Suurenna videon esikatselu kun toimeton"
+
+msgctxt "#31727"
+msgid "Select Extra Art to Show in Applicable Views"
+msgstr "Valitse lisäkuva näytettäväksi käyttökelpoisissa näkymissä"
+
+msgctxt "#31728"
+msgid "Full Screen/OSD"
+msgstr "Koko näyttö/OSD"
+
+msgctxt "#31729"
+msgid "Select Interval for Auto Closing Video OSD"
+msgstr "Valitse aikaväli videon OSD sulkemiselle"
+
+msgctxt "#31730"
+msgid "Current Color"
+msgstr "Nykyinen väri"
+
+msgctxt "#31731"
+msgid "Value"
+msgstr "Arvo"
+
+msgctxt "#31732"
+msgid "Second"
+msgstr "Sekunti"
+
+msgctxt "#31733"
+msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
+msgstr "Käytä hiiriystävällistä menetelmää (script.skin.info.service V1.0.8 ja uudempi)"
+
+msgctxt "#31734"
+msgid "Auto Close Video OSD"
+msgstr "Sulje automaattisesti videon OSD"
+
+msgctxt "#31735"
+msgid "Default Font Size"
+msgstr "Oletusfontin koko"
+
+msgctxt "#31736"
+msgid "Use fanart.jpg if present in folder or parent folder"
+msgstr "Käytä fanart.jpg mikäli saatavilla kansiossa tai yläkansiossa"
+
+msgctxt "#31737"
+msgid "Use Clear Art instead of Logo"
+msgstr "Käytä Selkeää Taidetta Logon sijaan"
+
+msgctxt "#31738"
+msgid "Single Logo"
+msgstr "Yksittäinen logo"
+
+msgctxt "#31739"
+msgid "Fade out Unfocused"
+msgstr "Häivytä Keskittämätön"
+
+msgctxt "#31740"
+msgid "Show Overlay"
+msgstr "Näytä Päällys"
+
+msgctxt "#31741"
+msgid "Show Smaller Favourite Icons"
+msgstr "Näytä pienempiä suosikki ikoneita"
+
+msgctxt "#31742"
+msgid "Show Three Rows"
+msgstr "Näytä kolme riviä"
+
+msgctxt "#31743"
+msgid "Show Four Rows"
+msgstr "Näytä neljä riviä"
+
+msgctxt "#31744"
+msgid "Enable Use of TMDb Helper"
+msgstr "Ota käyttöön TMDB helper"
+
+msgctxt "#31745"
+msgid "Enable Use of Embuary Helper"
+msgstr "Ota käyttöön Embuary Helper"
+
+msgctxt "#31746"
+msgid "Hide Seek Bar when Paused"
+msgstr "Piilota toistopalkki, kun toisto on tauotettu"
+
+msgctxt "#31747"
+msgid "Icon Only Menu"
+msgstr "Pelkkä ikoni valikko"
+
+msgctxt "#31748"
+msgid "Show Menu Item Name"
+msgstr "Näytä valikon nimi"
+
+msgctxt "#31749"
+msgid "Enable Video Lyrics"
+msgstr "Ota video sanoitukset käyttöön"
+
+msgctxt "#31750"
+msgid "Play Whole Albums from Shelves"
+msgstr "Toista kokonaisia albumeja hyllyiltä"
+
+msgctxt "#31751"
+msgid "Show Item Name in Top Bar"
+msgstr "Näytä kohteen nimi yläpalkissa"
+
+msgctxt "#31752"
+msgid "Animate backgrounds using Ken Burns effect"
+msgstr "Animoi taustat käyttämällä Ken Burns -efektiä"
+
+msgctxt "#31753"
+msgid "Single Column"
+msgstr "Yksittäinen sarake"
+
+msgctxt "#31754"
+msgid "Disable Now Playing Fanart"
+msgstr "Poista \"Toistetaan parhaillaan\" fanart-kuva käytöstä"
+
+msgctxt "#31755"
+msgid "Show Media Info with Seek Bar"
+msgstr "Näytä mediatietoja toistopalkin yhteydessä"
+
+msgctxt "#31756"
+msgid "Show Seek Bar when Starting Video Playback"
+msgstr "Näytä toistopalkki videotoiston alkaessa"
+
+msgctxt "#31757"
+msgid "Time to Show Seek Bar"
+msgstr "Toistopalkin näyttöaika"
+
+msgctxt "#31758"
+msgid "Hide Title Bar in Main Window"
+msgstr "Piilota yläpalkki pääikkunassa"
+
+msgctxt "#31759"
+msgid "Hide fallback image if no thumb in OSD"
+msgstr "Piilota varakuva, jos kuvaruutunäytössä ei ole pienoiskuvaa"
+
+msgctxt "#31760"
+msgid "Dim Background and Album Cover when Showing Lyrics"
+msgstr "Himmennä tausta ja kansikuva kun näytetään sanoitukset"
+
+msgctxt "#31761"
+msgid "Use Alternate Favourites Layout"
+msgstr "Käytä vaihtoehtoista suosikkiasettelua"
+
+msgctxt "#31762"
+msgid "Align Menu Item Text to the Left"
+msgstr "Kohdista valikkokohdan teksti vasemmalle"
+
+msgctxt "#31763"
+msgid "Info Button Opens Video Info Dialog"
+msgstr "Info painike avaa videon tiedot -valintaikkunan"
+
+msgctxt "#31764"
+msgid "Pause Media While Info Dialog is Open"
+msgstr "Keskeytä Media, Kun Info-valintaikkuna on Avoin"
+
+msgctxt "#31765"
+msgid "End Time"
+msgstr "Lopetusaika"
+
+msgctxt "#31766"
+msgid "Show Dark Background Behind Shortcuts"
+msgstr "Näytä Tumma Tausta Pikakuvakkeiden Takana"
+
+msgctxt "#31767"
+msgid "Use Artist Slideshow for Audio Fanart"
+msgstr "Käytä Artist Slideshow lisäosaa äänen fanart-kuville"
+
+msgctxt "#31768"
+msgid "Disable Lyrics"
+msgstr "Poista sanoitukset käytöstä"
+
+msgctxt "#31769"
+msgid "Activate Lyrics"
+msgstr "Aktivoi Sanoitukset"
+
+msgctxt "#31770"
+msgid "Use Color Flags"
+msgstr "Käytä värilippuja"
+
+msgctxt "#31771"
+msgid "Show Submenu Only when Focused"
+msgstr "Näytä alivalikko vain tarkennettuna"
+
+msgctxt "#31772"
+msgid "Movies with Plot containing"
+msgstr "Elokuvat, joiden juoni sisältää"
+
+msgctxt "#31773"
+msgid "TV Shows with Plot containing"
+msgstr "TV-Ohjelmat, joiden juoni sisältää"
+
+msgctxt "#31774"
+msgid "Episodes with Plot containing"
+msgstr "Jaksot, joiden juoni sisältää"
+
+msgctxt "#31775"
+msgid "With Plot Containing"
+msgstr "Juoni sisältäen"
+
+msgctxt "#31776"
+msgid "Show Title in Footer"
+msgstr "Näytä Otsikko Alatunnisteessa"
+
+msgctxt "#31777"
+msgid "Hide Seek Bar when Forwarding or Rewinding"
+msgstr "Piilota toistopalkki, kun siirrytään eteen- tai taaksepäin"
+
+msgctxt "#31778"
+msgid "Enable Touchscreen Devices Support"
+msgstr "Ota kosketusnäytön laitetuki käyttöön"
+
+msgctxt "#31779"
+msgid "Show Rating Overlay"
+msgstr "Näytä arvosanapeite"
+
+msgctxt "#31780"
+msgid "Use User Rating for Overlay"
+msgstr "Käytä käyttäjäarvosanaa peitteelle"
+
+msgctxt "#31781"
+msgid "Select Items to Show in Views"
+msgstr "Valitse kohteet, jotka näytetään näkymissä"
+
+msgctxt "#31782"
+msgid "Items to Show in Views"
+msgstr "Näkymissä Näytettävät Kohteet"
+
+msgctxt "#31783"
+msgid "Play Random"
+msgstr "Toista Satunnainen"
+
+msgctxt "#31784"
+msgid "List Views Options"
+msgstr "Listanäkymien vaihtoehdot"
+
+msgctxt "#31785"
+msgid "Marks and Overlays"
+msgstr "Merkit ja peitteet"
+
+msgctxt "#31786"
+msgid "Select View Types to Enable"
+msgstr "Valitse Käytettävät Näkymät"
+
+msgctxt "#31787"
+msgid "View Types to Enable"
+msgstr "Käytettävät näkymät"
+
+msgctxt "#31788"
+msgid "Show Poster"
+msgstr "Näytä Juliste"
+
+msgctxt "#31789"
+msgid "Text"
+msgstr "Teksti"
+
+msgctxt "#31790"
+msgid "Banner"
+msgstr "Banneri"
+
+msgctxt "#31791"
+msgid "List Item Type"
+msgstr "Listakohteen Tyyppi"
+
+msgctxt "#31792"
+msgid "Poster/Thumb"
+msgstr "Juliste/pienoiskuva"
+
+msgctxt "#31793"
+msgid "OSD/Full Screen Art"
+msgstr "OSD/Koko Näytön Taide"
+
+msgctxt "#31794"
+msgid "N/A"
+msgstr "Ei Saatavilla"
+
+msgctxt "#31795"
+msgid "Show Info Popup"
+msgstr "Näytä Info-ponnahdusikkuna"
+
+msgctxt "#31796"
+msgid "Popup Delay"
+msgstr "Ponnahdusikkunan Viive"
+
+msgctxt "#31797"
+msgid "Show Floor"
+msgstr "Näytä Kerros"
+
+msgctxt "#31798"
+msgid "Fixed List"
+msgstr "Kiinteä Lista"
+
+msgctxt "#31799"
+msgid "Centered Static Menu (less than 8 items)"
+msgstr "Keskitetty Liikkumaton Valikko (alle 8 kohdetta)"
+
+msgctxt "#31800"
+msgid "Compact OSD"
+msgstr "Kompakti OSD"
+
+msgctxt "#31801"
+msgid "Ultra Compact OSD"
+msgstr "Erittäin Kompakti OSD"
+
+msgctxt "#31802"
+msgid "Alternate OSD Button Highlighting"
+msgstr "Vaihtoehtoinen OSD Painikkeen Korostus"
+
+msgctxt "#31803"
+msgid "Auto Play Trailer (Local Trailer Only)"
+msgstr "Automaattisesti Toista Traileri (Vain Paikallinen Traileri)"
+
+msgctxt "#31804"
+msgid "Auto Play Trailer Delay"
+msgstr "Automaattisesti Toistettavan Trailerin Viive"
+
+msgctxt "#31805"
+msgid "Fanart Title Button Opens Info Dialog"
+msgstr "Fanart-otsikkopainike avaa tietonäytön"
+
+msgctxt "#31806"
+msgid "Single Image"
+msgstr "Yksittäinen kuva"
+
+msgctxt "#31807"
+msgid "Multiple Images"
+msgstr "Useita kuvia"
+
+msgctxt "#31808"
+msgid "Video/Playlist"
+msgstr "Video/Toistolista"
+
+msgctxt "#31809"
+msgid "Startup Background"
+msgstr "Käynnistyksen tausta"
+
+msgctxt "#31810"
+msgid "Hide Menu when Shelves are Focused"
+msgstr "Piilota valikko kun hyllyt ovat kohdistettuna"
+
+msgctxt "#31811"
+msgid "Use Disc Art instead of Cover"
+msgstr "Käytä kannen sijaan levyetikettiä"
+
+msgctxt "#31812"
+msgid "Auto Play Trailer from Shelf Items"
+msgstr "Toista automaattisesti traileri hyllykohteissa"
+
+msgctxt "#31813"
+msgid "Shelf Trailer Delay"
+msgstr "hyllykohteen trailerin viive"
+
+msgctxt "#31814"
+msgid "Slide Out Media Items While Trailer Playing"
+msgstr "Liu'uta mediakohteet näkyvistä trailerin toiston aikana"
+
+msgctxt "#31815"
+msgid "Hide PVR Channel Preview"
+msgstr "Piilota PVR kanavan esikatselu"
+
+msgctxt "#31816"
+msgid "Art Downloader: Select Artwork"
+msgstr "Art Downloader: Valitse kuvamateriaali"
+
+msgctxt "#31817"
+msgid "Art Downloader: All Artwork"
+msgstr "Art Downloader: Kaikki kuvamateriaali"
+
+msgctxt "#31818"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr "Näytä Artwork Downloader kohteet sisältövalikossa"
+
+msgctxt "#31819"
+msgid "Movies with Tag"
+msgstr "Elokuvat jotka sisältävät tagin"
+
+msgctxt "#31820"
+msgid "Select a Tag"
+msgstr "Valitse tagi"
+
+msgctxt "#31821"
+msgid "With Tag"
+msgstr "Tagilla"
+
+msgctxt "#31822"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr "Käytä aina TV-sarjan julistetta jaksoille"
+
+msgctxt "#31823"
+msgid "Open ExtendedInfo for Info Dialogs"
+msgstr "Avaa ExtendedInfo Tiedot -valintaikkunaan"
+
+msgctxt "#31824"
+msgid "Cert"
+msgstr "Sert"
+
+msgctxt "#31825"
+msgid "Show Episodes List button"
+msgstr "Näytä jaksolista painike"
+
+msgctxt "#31826"
+msgid "Include Seasons in Episodes List popup"
+msgstr "Sisällytä kaudet jaksoluettelo ponnahdusikkunaan"
+
+msgctxt "#31827"
+msgid "Next Aired"
+msgstr "Seuraava esitys"
+
+msgctxt "#31828"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr "Käytä koko näytön tiedoissa suoraa toistokohdan hakua"
+
+msgctxt "#31829"
+msgid "Show Disc above Poster"
+msgstr "Näytä levy julisteen yläpuolella"
+
+msgctxt "#31830"
+msgid "Hide Disc over Set Poster"
+msgstr "Piilota levy kokoelmakuvan päältä"
+
+msgctxt "#31831"
+msgid "Play trailer in a window"
+msgstr "Toista traileri ikkunassa"
+
+msgctxt "#31832"
+msgid "Search Trailer"
+msgstr "Hae traileri"
+
+msgctxt "#31833"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr "Etsi trailereita IMDb Trailers -lisäosalla"
+
+msgctxt "#31834"
+msgid "Fade out Non-focused Menu Items"
+msgstr "Häivytä tarkentamattomat valikkokohdat"
+
+msgctxt "#31835"
+msgid "Cloudiness"
+msgstr "Pilvisyys"
+
+msgctxt "#31836"
+msgid "Probability of Precipitation"
+msgstr "Sateen todennäköisyys"
+
+msgctxt "#31837"
+msgid "Intro Video Duration"
+msgstr "Käynnistysvideon kesto"
+
+msgctxt "#31838"
+msgid "PVR Timeshift Buffer Color"
+msgstr "PVR ajansiirron puskuroinnin väri"
+
+msgctxt "#31839"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr "Käytä päävalikon kohdan taustakuvaa alaikkunoissa"
+
+msgctxt "#31840"
+msgid "Teletext Button Opens EPG"
+msgstr "Teksti-tv-painike avaa ohjelmaoppaan"
+
+msgctxt "#31841"
+msgid "EPG Icon"
+msgstr "EPG kuvake"
+
+msgctxt "#31842"
+msgid "Channel Logo"
+msgstr "Kanavalogo"
+
+msgctxt "#31843"
+msgid "Always Show Information Panel"
+msgstr "Näytä tietopaneeli aina"
+
+msgctxt "#31844"
+msgid "Use Custom Search for Video Library"
+msgstr "Käytä mukautettua hakua videokirjastolle"
+
+msgctxt "#31845"
+msgid "Use Custom Search for Music Library"
+msgstr "Käytä mukautettua hakua musiikkikirjastolle"
+
+msgctxt "#31846"
+msgid "Current Programme Progress:"
+msgstr "Ohjelman tämänhetkinen edistyminen:"
+
+msgctxt "#31847"
+msgid "Also Show Seconds"
+msgstr "Näytä myös sekunnit"
+
+msgctxt "#31848"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#31849"
+msgid "Remember Focused Control in Home Window"
+msgstr "Muista kohdistettu ohjaus koti-ikkunassa"
+
+msgctxt "#31850"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
+msgstr "Käytä lisäosan YouTube Shelves -fanart-kuvien sijaan kohteen pienoiskuvaa"
+
+msgctxt "#31851"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr "Salli näkymien vaihto PVR kanavien ikkunassa"
+
+msgctxt "#31852"
+msgid "Update Library"
+msgstr "Päivitä kirjasto"
+
+msgctxt "#31853"
+msgid "Stop Scanning"
+msgstr "Keskeytä haku"
+
+msgctxt "#31854"
+msgid "More Info"
+msgstr "Lisätietoja"
+
+msgctxt "#31855"
+msgid "Play Trailer Windowed"
+msgstr "Toista traileri ikkunassa"
+
+msgctxt "#31856"
+msgid "Last Played Date"
+msgstr "Toistettu viimeksi"
+
+msgctxt "#31857"
+msgid "Horizontal Icon Layout"
+msgstr "Vaakasuuntainen kuvakeasettelu"
+
+msgctxt "#31858"
+msgid "Show Menu Item Label"
+msgstr "Näytä valikkokohteen teksti"
+
+msgctxt "#31859"
+msgid "Always Show Set Movie List"
+msgstr "Näytä aina määritetty elokuvalistaus"
+
+msgctxt "#31860"
+msgid "Use Tall List Layout"
+msgstr "Käytä korkeaa lista-asettelua"
+
+msgctxt "#31861"
+msgid "Show More Items in List"
+msgstr "Näytä listaukessa enemmän kohteita"
+
+msgctxt "#31862"
+msgid "Hide Overlay Label in Icon/Panel Views"
+msgstr "Piilota peittokuvatunniste kuvake-/paneelinäkymissä"
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
@@ -1771,10 +3527,6 @@ msgctxt "#31960"
 msgid "Big List"
 msgstr "Suuri lista"
 
-msgctxt "#31961"
-msgid "Recently added"
-msgstr "Uusimmat"
-
 #. view label
 msgctxt "#31962"
 msgid "Low List"
@@ -1831,10 +3583,6 @@ msgctxt "#31974"
 msgid "Home menu"
 msgstr "Aloitusnäytön valikko"
 
-msgctxt "#31975"
-msgid "Channels"
-msgstr "Kanavat"
-
 msgctxt "#31976"
 msgid "Home shelf"
 msgstr "Hylly"
@@ -1879,14 +3627,6 @@ msgctxt "#31986"
 msgid "Use default background for Home window"
 msgstr "Käytä aloitusnäytössä oletustaustaa"
 
-msgctxt "#31987"
-msgid "Random"
-msgstr "Satunnainen"
-
-msgctxt "#31988"
-msgid "Menu"
-msgstr "Valikko"
-
 msgctxt "#31989"
 msgid "Quit button function"
 msgstr "Sammutuspainikkeen toiminto"
@@ -1926,1841 +3666,6 @@ msgstr "Näytä lukituksen ja käyttäjätunnuksen tila yläpalkissa"
 msgctxt "#31999"
 msgid "BigList"
 msgstr "Iso lista"
-
-msgctxt "#32000"
-msgid "Hide icons"
-msgstr "Piilota kuvakkeita"
-
-msgctxt "#32002"
-msgid "Hide Games"
-msgstr "Piilota pelit"
-
-msgctxt "#32003"
-msgid "Game Settings"
-msgstr "Peli asetukset"
-
-msgctxt "#32004"
-msgid "Toggle Subtitle"
-msgstr "Vaihda tekstitystä"
-
-msgctxt "#32005"
-msgid "AB: Select Artwork"
-msgstr "AB: Valitse kuvamateriaali"
-
-msgctxt "#32006"
-msgid "AB: All Artwork"
-msgstr "AB: Kaikki kuvamateriaali"
-
-msgctxt "#32007"
-msgid "Special Features"
-msgstr "Erikoissisältö"
-
-msgctxt "#32008"
-msgid "Enable Special Features"
-msgstr "Käytä erikoissisältöjä"
-
-msgctxt "#32009"
-msgid "Next Episode"
-msgstr "Seuraava jakso"
-
-msgctxt "#32010"
-msgid "Latest Episode"
-msgstr "Viimeisin jakso"
-
-msgctxt "#32011"
-msgid "Airs"
-msgstr "Esitetään"
-
-# empty string with id 32012
-msgctxt "#32013"
-msgid "Next Airing Episodes"
-msgstr "Seuraavat lähetysjaksot"
-
-msgctxt "#32014"
-msgid "Search Results for: "
-msgstr "Hakutulokset kohteelle: "
-
-msgctxt "#32015"
-msgid "Show Only Local Info "
-msgstr "Näytä vain paikalliset tiedot "
-
-msgctxt "#32016"
-msgid "Extended Info"
-msgstr "ExtendedInfo"
-
-msgctxt "#32017"
-msgid "Search in Local Library"
-msgstr "Hae paikallisesta kirjastosta"
-
-msgctxt "#32018"
-msgid "Search online in TMDb"
-msgstr "Hae TMDb-palvelusta"
-
-msgctxt "#32020"
-msgid "Hide Second Label in List Views"
-msgstr "Piilota toinen levykuva listanäkymissä"
-
-msgctxt "#32021"
-msgid "Added:"
-msgstr "Lisätty:"
-
-msgctxt "#32022"
-msgid "Plays:"
-msgstr "Toistot:"
-
-msgctxt "#32023"
-msgid "Last Played:"
-msgstr "Viimeksi toistettu:"
-
-msgctxt "#32024"
-msgid "New Search"
-msgstr "Uusi haku"
-
-msgctxt "#32025"
-msgid "Movies Starring"
-msgstr "Elokuvien pääosassa"
-
-msgctxt "#32026"
-msgid "Movies Directed by"
-msgstr "Elokuvat ohjannut"
-
-msgctxt "#32027"
-msgid "TV Shows Starring"
-msgstr "TV-sarjojen pääosassa"
-
-msgctxt "#32028"
-msgid "TV Shows Directed by"
-msgstr "TV-sarjat ohjannut"
-
-msgctxt "#32029"
-msgid "Movies with Genre"
-msgstr "Elokuvat tyylilajilla"
-
-msgctxt "#32030"
-msgid "TV Shows with Genre"
-msgstr "TV-sarjat tyylilajilla"
-
-msgctxt "#32031"
-msgid "Movies from Studio"
-msgstr "Elokuvat studiolta"
-
-msgctxt "#32032"
-msgid "TV Shows from Studio"
-msgstr "TV-sarjat studiolta"
-
-msgctxt "#32033"
-msgid "Movies from Year"
-msgstr "Elokuvat vuodelta"
-
-msgctxt "#32034"
-msgid "TV Shows from Year"
-msgstr "TV-sarjat vuodelta"
-
-msgctxt "#32035"
-msgid "Movies from Country"
-msgstr "Elokuvat maasta"
-
-msgctxt "#32036"
-msgid "Music Videos by Artist"
-msgstr "Musiikkivideot artistilta"
-
-msgctxt "#32037"
-msgid "YouTube videos about"
-msgstr "YouTube videoita aiheesta"
-
-msgctxt "#32038"
-msgid "Enable Touch/Mouse Buttons"
-msgstr "Ota kosketus-/hiiripainikkeet käyttöön"
-
-msgctxt "#32039"
-msgid "Timeshift"
-msgstr "Ajansiirto"
-
-msgctxt "#32040"
-msgid "Enable Kiosk Mode"
-msgstr "Ota kioskitila käyttöön"
-
-# empty string with id 32041
-msgctxt "#32042"
-msgid "Next Episodes"
-msgstr "Seuraavat jaksot"
-
-msgctxt "#32043"
-msgid "Customize Home Menu and Shelves"
-msgstr "Mukauta aloitusnäytön valikkoa ja hyllyjä"
-
-msgctxt "#32044"
-msgid "Submenu"
-msgstr "Alivalikko"
-
-msgctxt "#32045"
-msgid "Shelves"
-msgstr "Hyllyt"
-
-msgctxt "#32046"
-msgid "Weather fanart"
-msgstr "Sää-fanart"
-
-msgctxt "#32047"
-msgid "Seconds"
-msgstr "Sekuntia"
-
-msgctxt "#32048"
-msgid "Show background name in Home window"
-msgstr "Näytä taustanimi Kotivalikossa"
-
-msgctxt "#32049"
-msgid "Home window Background Rotation Delay"
-msgstr "Aloitusnäytön taustan vaihtoviive"
-
-msgctxt "#32050"
-msgid "IPTV Recorder"
-msgstr "IPTV-tallennin"
-
-msgctxt "#32051"
-msgid "IPTV Recorder Recordings"
-msgstr "IPTV-tallentimen nauhoitukset"
-
-msgctxt "#32052"
-msgid "Show Video Info on Pause"
-msgstr "Näytä videotiedot tauon aikana"
-
-msgctxt "#32053"
-msgid "Show Two Shelves Together"
-msgstr "Näytä kaksi hyllyä yhdessä"
-
-msgctxt "#32054"
-msgid "Use Larger Font"
-msgstr "Käytä suurempaa fonttia"
-
-msgctxt "#32055"
-msgid "Use Wraparound Navigation"
-msgstr "Käytä ympäröivää navigointia"
-
-msgctxt "#32056"
-msgid "Show more items on List Views"
-msgstr "Näytä lisää kohteita listanäkymissä"
-
-msgctxt "#32057"
-msgid "Show Season/Episode Numbers"
-msgstr "Näytä kauden/jakson numerot"
-
-msgctxt "#32058"
-msgid "Show Episode Thumb"
-msgstr "Näytä jakson pienoiskuva"
-
-msgctxt "#32059"
-msgid "Disable Tall List View"
-msgstr "Älä käytä pitkä lista näkymää"
-
-msgctxt "#32060"
-msgid "Tall List"
-msgstr "Pitkä lista"
-
-msgctxt "#32061"
-msgid "Set Default Background"
-msgstr "Aseta oletustausta"
-
-msgctxt "#32062"
-msgid "Set Favourite Addons for Shelf"
-msgstr "Aseta suosikkilisäosat hyllyyn"
-
-msgctxt "#32063"
-msgid "Select Favourite Addons"
-msgstr "Valitse Suosikki lisäosat"
-
-msgctxt "#32064"
-msgid "Backup/Restore"
-msgstr "Varmuuskopio"
-
-msgctxt "#32065"
-msgid "Backup"
-msgstr "Varmuuskopioi"
-
-msgctxt "#32066"
-msgid "Restore"
-msgstr "Palauta"
-
-msgctxt "#32067"
-msgid "Configure Backup addon"
-msgstr "Määritä varmuuskopiointi lisäosa"
-
-msgctxt "#32068"
-msgid "Show Fanart"
-msgstr "Näytä fanart"
-
-msgctxt "#32069"
-msgid "Files"
-msgstr "Tiedostot"
-
-msgctxt "#32070"
-msgid "Place Background Name in Top Bar"
-msgstr "Näytä taustan nimi yläpalkissa"
-
-msgctxt "#32071"
-msgid "Enable Alphabet Strip"
-msgstr "Ota aakkosnauha käyttöön"
-
-msgctxt "#32072"
-msgid "Enable Autocompletion for Virtual Keyboard"
-msgstr "Ota automaattinen täydennys käyttöön virtuaalinäppäimistölle"
-
-msgctxt "#32073"
-msgid "Budget"
-msgstr "Budjetti"
-
-msgctxt "#32074"
-msgid "Revenue"
-msgstr "Tuotto"
-
-msgctxt "#32075"
-msgid "Awards"
-msgstr "Palkinnot"
-
-msgctxt "#32076"
-msgid "Show Watched Items in Recent Shelves"
-msgstr "Näytä katsotut tuotteet \"viimeisimmät\" hyllyssä"
-
-msgctxt "#32077"
-msgid "RT Total Critics Reviews"
-msgstr "RT Kaikki kriitikoiden arviot"
-
-msgctxt "#32078"
-msgid "RT Fresh Reviews"
-msgstr "RT Tuoreet arviot"
-
-msgctxt "#32079"
-msgid "RT Rotten Reviews"
-msgstr "RT Mädät arviot"
-
-msgctxt "#32080"
-msgid "RT Critics' Consensus"
-msgstr "RT Kriitikoiden konsensus"
-
-msgctxt "#32081"
-msgid "RT Total User Reviews"
-msgstr "RT Kaikki käyttäjäarviot"
-
-msgctxt "#32082"
-msgid "Birthday"
-msgstr "Syntymäpäivä"
-
-msgctxt "#32083"
-msgid "Born"
-msgstr "Syntynyt"
-
-msgctxt "#32084"
-msgid "Age"
-msgstr "Ikä"
-
-msgctxt "#32085"
-msgid "Died"
-msgstr "Kuoli"
-
-msgctxt "#32086"
-msgid "Also Known As"
-msgstr "Tunnetaan myös nimellä"
-
-msgctxt "#32087"
-msgid "Cast in Movies"
-msgstr "Näyttelijät elokuvissa"
-
-msgctxt "#32088"
-msgid "Cast in TV Shows"
-msgstr "Näyttelijät TV-sarjoissa"
-
-msgctxt "#32089"
-msgid "Crew in Movies"
-msgstr "Miehistö elokuvissa"
-
-msgctxt "#32090"
-msgid "Crew in TV Shows"
-msgstr "Miehistö TV-sarjoissa"
-
-msgctxt "#32091"
-msgid "Movies in TMDb"
-msgstr "Elokuvat TMDb:ssä"
-
-msgctxt "#32092"
-msgid "TV Shows in TMDb"
-msgstr "TV-sarjat TMDb:ssä"
-
-msgctxt "#32093"
-msgid "Movies in Local DB"
-msgstr "Elokuvat paikallisessa tietokannassa"
-
-msgctxt "#32094"
-msgid "TV Shows in Local DB"
-msgstr "TV-sarjat paikallisessa tietokannassa"
-
-msgctxt "#32095"
-msgid "Reboot to Android"
-msgstr "Käynnistä Android uudelleen"
-
-msgctxt "#32096"
-msgid "Episodes Starring"
-msgstr "Jaksoissa pääosassa"
-
-msgctxt "#32097"
-msgid "Movies in the"
-msgstr "Elokuvat"
-
-msgctxt "#32098"
-msgid "Also Directed by"
-msgstr "Ohjannut myös"
-
-msgctxt "#32099"
-msgid "Crew"
-msgstr "Henkilöstö"
-
-msgctxt "#32100"
-msgid "More from"
-msgstr "Lisää"
-
-msgctxt "#32101"
-msgid "More in"
-msgstr "Lisää"
-
-msgctxt "#32102"
-msgid "Similar to"
-msgstr "Samankaltaisia kuin"
-
-msgctxt "#32103"
-msgid "Cast Members also appear in"
-msgstr "Näyttelijät esiintyvät myös"
-
-msgctxt "#32104"
-msgid "Select Custom Lists to Display"
-msgstr "Valitse mitkä mukautetut luettelot näytetään"
-
-msgctxt "#32105"
-msgid "Similar"
-msgstr "Samankaltaisia"
-
-msgctxt "#32106"
-msgid "Featuring Cast Members"
-msgstr "Mukana näyttelijät"
-
-msgctxt "#32107"
-msgid "Video Info"
-msgstr "Videotiedot"
-
-msgctxt "#32108"
-msgid "Select a Genre"
-msgstr "Valitse tyylilaji"
-
-msgctxt "#32109"
-msgid "Select a Studio"
-msgstr "Valitse studio"
-
-msgctxt "#32110"
-msgid "Select a Director"
-msgstr "Valitse ohjaaja"
-
-msgctxt "#32111"
-msgid "Online TMDb Search"
-msgstr "Hae TMDb-verkkopalvelusta"
-
-msgctxt "#32112"
-msgid "Local Search"
-msgstr "Paikallinen haku"
-
-msgctxt "#32113"
-msgid "Select a Writer"
-msgstr "Valitse kirjoittaja"
-
-msgctxt "#32114"
-msgid "Movies Written by"
-msgstr "Elokuvat kirjoittanut"
-
-msgctxt "#32115"
-msgid "Select a Country"
-msgstr "Valitse maa"
-
-msgctxt "#32116"
-msgid "Episodes from Studio"
-msgstr "Jaksot Studiolta"
-
-msgctxt "#32117"
-msgid "Episodes with Genre"
-msgstr "Jaksot tyylilajilla"
-
-msgctxt "#32118"
-msgid "Episodes Written by"
-msgstr "Jaksot kirjoittanut"
-
-msgctxt "#32119"
-msgid "Episodes Directed by"
-msgstr "Jaksot ohjannut"
-
-msgctxt "#32120"
-msgid "AB: Download All Artwork"
-msgstr "AB: Lataa kaikki kuvamateriaali"
-
-msgctxt "#32121"
-msgid "AB: Select Artwork"
-msgstr "AB: Valitse kuvamateriaali"
-
-msgctxt "#32122"
-msgid "Show Artwork Beef items in Context Menu"
-msgstr "Näytä Artwork Beef kohteet sisältövalikossa"
-
-msgctxt "#32123"
-msgid "Title Bar Options"
-msgstr "Otsikkorivin asetukset"
-
-msgctxt "#32124"
-msgid "Show Duration in Hours and Minutes"
-msgstr "Näytä kesto tunteina ja minuutteina"
-
-msgctxt "#32125"
-msgid "Hour"
-msgstr "Tunti"
-
-msgctxt "#32126"
-msgid "Minute"
-msgstr "Minuutti"
-
-msgctxt "#32127"
-msgid "Online TMDb Info"
-msgstr "Online TMDb-tiedot"
-
-msgctxt "#32128"
-msgid "Embuary Info Settings"
-msgstr "Embuary Info asetukset"
-
-msgctxt "#32129"
-msgid "Guest Stars"
-msgstr "Vierastähdet"
-
-msgctxt "#32130"
-msgid "Posters"
-msgstr "Julisteet"
-
-msgctxt "#32131"
-msgid "YouTube"
-msgstr "YouTube"
-
-msgctxt "#32132"
-msgid "Search for Trailer"
-msgstr "Hae traileria"
-
-msgctxt "#32133"
-msgid "item in database"
-msgstr "kohde tietokannassa"
-
-msgctxt "#32134"
-msgid "Items in Database"
-msgstr "Kohteet tietokannassa"
-
-msgctxt "#32135"
-msgid "Extras"
-msgstr "Lisämateriaalit"
-
-msgctxt "#32136"
-msgid "Known for"
-msgstr "Tunnetaan"
-
-msgctxt "#32137"
-msgid "Retail Release"
-msgstr "Vähittäiskaupan julkaisu"
-
-msgctxt "#32138"
-msgid "Region Release"
-msgstr "Alueen julkaisu"
-
-msgctxt "#32139"
-msgid "Ended"
-msgstr "Päättyi"
-
-msgctxt "#32140"
-msgid "Rumored"
-msgstr "Huhutusti"
-
-msgctxt "#32141"
-msgid "Planned"
-msgstr "Suunniteltu"
-
-msgctxt "#32142"
-msgid "In Production"
-msgstr "Tuotannossa"
-
-msgctxt "#32143"
-msgid "Post Production"
-msgstr "Jälkituotanto"
-
-msgctxt "#32144"
-msgid "Released"
-msgstr "Julkaistu"
-
-msgctxt "#32145"
-msgid "Canceled"
-msgstr "Peruttu"
-
-msgctxt "#32146"
-msgid "Returning Series"
-msgstr "Palaavat sarjat"
-
-msgctxt "#32147"
-msgid "Acting"
-msgstr "Näyttelemisestä"
-
-msgctxt "#32148"
-msgid "Directing"
-msgstr "Ohjaamisesta"
-
-msgctxt "#32149"
-msgid "Writing"
-msgstr "Kirjoittamisesta"
-
-msgctxt "#32150"
-msgid "Production"
-msgstr "Tuottamisesta"
-
-msgctxt "#32151"
-msgid "Sound"
-msgstr "Äänittämisestä"
-
-msgctxt "#32152"
-msgid "Creator"
-msgstr "Kehittäjä"
-
-msgctxt "#32153"
-msgid "Died at Age"
-msgstr "Kuollut iässä"
-
-msgctxt "#32154"
-msgid "Collection"
-msgstr "Kokoelma"
-
-msgctxt "#32155"
-msgid "TMDb Helper Settings"
-msgstr "TMDb Helper asetukset"
-
-msgctxt "#32156"
-msgid "Blur Background"
-msgstr "Sumenna tausta"
-
-# Empty strings from 32157 to 32164
-msgctxt "#32165"
-msgid "Use Poster for Blur"
-msgstr "Käytä sumennukseen julistetta"
-
-msgctxt "#32166"
-msgid "Customize Power Menu"
-msgstr "Muokkaa virtavalikkoa"
-
-msgctxt "#32167"
-msgid "Edit Library Data"
-msgstr "Muokkaa kirjastotietoja"
-
-msgctxt "#32168"
-msgid "Select Search Categories"
-msgstr "Valitse hakuluokat"
-
-msgctxt "#32169"
-msgid "Select Search Categories to Enable"
-msgstr "Valitse käytettävät hakuluokat"
-
-msgctxt "#32170"
-msgid "By Title"
-msgstr "Nimikkeen mukaan"
-
-msgctxt "#32171"
-msgid "With Genre"
-msgstr "Tyylilajilla"
-
-msgctxt "#32172"
-msgid "From Year"
-msgstr "Vuodesta"
-
-msgctxt "#32173"
-msgid "From Studio"
-msgstr "Studiolta"
-
-msgctxt "#32174"
-msgid "From Country"
-msgstr "Maasta"
-
-msgctxt "#32175"
-msgid "With Actor"
-msgstr "Näyttelijällä"
-
-msgctxt "#32176"
-msgid "By Director"
-msgstr "Ohjaajalta"
-
-msgctxt "#32177"
-msgid "By Writer"
-msgstr "Kirjoittanut"
-
-msgctxt "#32178"
-msgid "Artists by Name"
-msgstr "Artistit nimen mukaan"
-
-msgctxt "#32179"
-msgid "Albums by Title"
-msgstr "Albumit nimen mukaan"
-
-msgctxt "#32180"
-msgid "Songs by Title"
-msgstr "Kappaleet nimen mukaan"
-
-msgctxt "#32181"
-msgid "By Artist"
-msgstr "Artistilta"
-
-msgctxt "#32182"
-msgid "YouTube by Title"
-msgstr "YouTube otsikon mukaan"
-
-msgctxt "#32183"
-msgid "Known for Character"
-msgstr "Tunnettu hahmosta"
-
-msgctxt "#32184"
-msgid "Known for Department"
-msgstr "Tunnettu osastolta"
-
-msgctxt "#32185"
-msgid "Known for Job"
-msgstr "Tunnettu työstä"
-
-msgctxt "#32186"
-msgid "Total Items in TMDb"
-msgstr "Kohteita yhteensä TMDb:ssä"
-
-msgctxt "#32187"
-msgid "Total Movies in TMDb"
-msgstr "Elokuvia yhteensä TMDb:ssä"
-
-msgctxt "#32188"
-msgid "Total TV Shows in TMDb"
-msgstr "TV-sarjoja yhteensä TMDB:ssä"
-
-msgctxt "#32189"
-msgid "Items in TMDb as Cast"
-msgstr "TMDb kohteita näyttelijänä"
-
-msgctxt "#32190"
-msgid "Movies in TMDb as Cast"
-msgstr "TMDb elokuvia näyttelijänä"
-
-msgctxt "#32191"
-msgid "TV Shows in TMDb as Cast"
-msgstr "TMDb TV-sarjoja näyttelijänä"
-
-msgctxt "#32192"
-msgid "Items in TMDb as Crew"
-msgstr "TMDb kohteita miehistönä"
-
-msgctxt "#32193"
-msgid "Movies in TMDb as Crew"
-msgstr "TMDb elokuvia miehistönä"
-
-msgctxt "#32194"
-msgid "TV Shows in TMDb as Crew"
-msgstr "TMDb TV-sarjoja miehistönä"
-
-msgctxt "#32195"
-msgid "Total Items in Local Database"
-msgstr "Kohteita yhteensä paikallisessa tietokannassa"
-
-msgctxt "#32196"
-msgid "Movies in Local Database"
-msgstr "Elokuvia paikallisessa tietokannassa"
-
-msgctxt "#32197"
-msgid "TV Shows in Local Database"
-msgstr "TV-sarjoja paikallisessa tietokannassa"
-
-msgctxt "#32198"
-msgid "Episodes in Local Database"
-msgstr "Jaksoja paikallisessa tietokannassa"
-
-msgctxt "#32199"
-msgid "Cast: Movies with"
-msgstr "Näyttelijät: Elokuvat"
-
-msgctxt "#32200"
-msgid "Cast: TV Shows with"
-msgstr "Näyttelijät: TV-sarjat"
-
-msgctxt "#32201"
-msgid "Crew: Movies with"
-msgstr "Miehistö: Elokuvat"
-
-msgctxt "#32202"
-msgid "Crew: TV Shows with"
-msgstr "Miehistö: TV-sarjat"
-
-msgctxt "#32203"
-msgid "Start at First Menu Item"
-msgstr "Aloita ensimmäisestä valikkokohdasta"
-
-msgctxt "#32204"
-msgid "Set Default View"
-msgstr "Aseta oletusnäkymä"
-
-msgctxt "#32205"
-msgid "Highlight Color"
-msgstr "Korosta väri"
-
-msgctxt "#32206"
-msgid "Horizontal Menu Glow Bars Tint"
-msgstr "Vaakasuuntaisen valikkopalkin loisteen sävy"
-
-msgctxt "#32207"
-msgid "Horizontal Menu Main Bar Tint"
-msgstr "Vaakasuuntaisen valikkopalkin sävy"
-
-msgctxt "#32208"
-msgid "Vertical Menu/Submenu Background Tint"
-msgstr "Pystyvalikon/alivalikon taustan sävy"
-
-msgctxt "#32209"
-msgid "Top Bar Tint"
-msgstr "Yläpalkin sävy"
-
-msgctxt "#32210"
-msgid "Current Color Theme"
-msgstr "Nykyinen väriteema"
-
-msgctxt "#32211"
-msgid "Dialogs Background Tint"
-msgstr "Valintaikkunan taustan sävy"
-
-msgctxt "#32212"
-msgid "Regular Text Color"
-msgstr "Tavallisen tekstin väri"
-
-msgctxt "#32213"
-msgid "Focused Text Color"
-msgstr "Kohdennetun tekstin väri"
-
-msgctxt "#32214"
-msgid "Selected Text Color"
-msgstr "Valitun tekstin väri"
-
-msgctxt "#32215"
-msgid "Shelves Background Tint"
-msgstr "Hyllyjen taustaväri"
-
-msgctxt "#32216"
-msgid "Use for All Tints"
-msgstr "Käytä kaikille sävyille"
-
-msgctxt "#32217"
-msgid "Keep Lists Focus Centered"
-msgstr "Pidä listojen kohdennus keskitettynä"
-
-msgctxt "#32218"
-msgid "Show Artist Logo In Music Visualization"
-msgstr "Näytä artistin logo musiikin visualisoinnissa"
-
-msgctxt "#32219"
-msgid "Show Logo In Media Views"
-msgstr "Näytä logo medianäkymissä"
-
-msgctxt "#32220"
-msgid "Show Logo In Home Window"
-msgstr "Näytä logo Kotivalikossa"
-
-msgctxt "#32221"
-msgid "Media Views Background Tint"
-msgstr "Medianäkymien taustaväri"
-
-msgctxt "#32222"
-msgid "Enable Label Scrolling in List Views"
-msgstr "Ota kansien vieritys käyttöön listanäkymissä"
-
-msgctxt "#32223"
-msgid "Audio and Subtitle Info"
-msgstr "Ääni- ja tekstitystiedot"
-
-msgctxt "#32224"
-msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
-msgstr "Tekstityspainike avaa tekstitysasetukset Video OSD:ssä"
-
-msgctxt "#32225"
-msgid "Disable Info Panel in List Views"
-msgstr "Älä käytä tietopaneelia listanäkymissä"
-
-msgctxt "#32226"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb Helper - Seuraavat lähetetyt jaksot"
-
-msgctxt "#32227"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info - Seuraavat lähetetyt jaksot"
-
-msgctxt "#32228"
-msgid "Only Search in Local Library"
-msgstr "Hae vain paikallisesta kirjastosta"
-
-msgctxt "#32229"
-msgid "Hide Channel Groups"
-msgstr "Piilota kanavaryhmät"
-
-msgctxt "#32230"
-msgid "Select Displayed Ratings and Certification"
-msgstr "Valitse näytettävät arviot ja sertifiointi"
-
-msgctxt "#32231"
-msgid "User Rating"
-msgstr "Käyttäjäarvio"
-
-msgctxt "#32232"
-msgid "Ratings"
-msgstr "Arviot"
-
-msgctxt "#32235"
-msgid "Certification"
-msgstr "Sertifikaatti"
-
-msgctxt "#32237"
-msgid "Up Next in"
-msgstr "Seuraavaksi"
-
-msgctxt "#32238"
-msgid "Continue Watching in"
-msgstr "Jatka katsomista"
-
-msgctxt "#32238"
-msgid "Next Episode in"
-msgstr "Seuraava jaksoon jäljellä"
-
-msgctxt "#32239"
-msgid "Hide Collection (Set) Marks"
-msgstr "Piilota kokoelman (Elokuvaryhmät) merkki"
-
-msgctxt "#32240"
-msgid "Disable Info Panel"
-msgstr "Älä käytä tietopaneelia"
-
-msgctxt "#32241"
-msgid "Alternate List Layout"
-msgstr "Vaihtoehtoinen lista-asettelu"
-
-msgctxt "#32242"
-msgid "Larger Image"
-msgstr "Suurempi kuva"
-
-msgctxt "#32243"
-msgid "Alternate List Views Layout"
-msgstr "Vaihtoehtoinen listanäkymien layout"
-
-msgctxt "#32244"
-msgid "Albums by"
-msgstr "Albumit"
-
-msgctxt "#32245"
-msgid "Panel 2"
-msgstr "Paneeli 2"
-
-msgctxt "#32246"
-msgid "Big Panel 2"
-msgstr "Iso paneeli 2"
-
-msgctxt "#32247"
-msgid "Disable Panel 2 view"
-msgstr "Älä käytä paneeli 2 näkymää"
-
-msgctxt "#32248"
-msgid "Disable Big Panel 2 view"
-msgstr "Älä käytä iso paneeli 2 näkymää"
-
-msgctxt "#32249"
-msgid "Enable Statistics Line"
-msgstr "Ota tilastorivi käyttöön"
-
-msgctxt "#32250"
-msgid "Show Statistics line on Shelf"
-msgstr "Näytä tilastorivi hyllyssä"
-
-msgctxt "#32251"
-msgid "Show Marks on Top Right"
-msgstr "Näytä merkit yläoikealla"
-
-msgctxt "#32252"
-msgid "Hide Unwatched Episodes Marks"
-msgstr "Piilota katsomattomien jaksojen merkit"
-
-msgctxt "#32253"
-msgid "Movies in library"
-msgstr "Elokuvia kirjastossa"
-
-msgctxt "#32254"
-msgid "IMDb Top 250"
-msgstr "IMDb Top 250"
-
-msgctxt "#32255"
-msgid "Missing Add-on"
-msgstr "Lisäosa puuttuu"
-
-msgctxt "#32256"
-msgid "TMDb Helper"
-msgstr "TMDb Helper"
-
-msgctxt "#32257"
-msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-msgstr "Tämän toiminnon käyttöönotto edellyttää, että asennat lisäosan plugin.video.themoviedb.helper viimeisimmän version. [CR] [CR] Löydät sen osoitteesta https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-
-msgctxt "#32258"
-msgid "Use Embuary Helper for Playlist Backgrounds"
-msgstr "Käytä Embuary Helper lisäosaa soittolistojen taustakuville"
-
-msgctxt "#32259"
-msgid "Backgrounds"
-msgstr "Taustakuvat"
-
-msgctxt "#32260"
-msgid "Unwatched"
-msgstr "Katsomattomat"
-
-msgctxt "#32261"
-msgid "Use Embuary Helper for Statistics Line"
-msgstr "Käytä Embuary Helperiä tilastoriville"
-
-msgctxt "#32262"
-msgid "Use Embuary Helper for Backgrounds"
-msgstr "Käytä Embuary Helper lisäosaa taustakuville"
-
-msgctxt "#32263"
-msgid "Movie Collection Count"
-msgstr "Elokuvakokoelmien määrä"
-
-msgctxt "#32264"
-msgid "Show Fanart for Special Content"
-msgstr "Näytä fanart erityissisällölle"
-
-msgctxt "#32265"
-msgid "Media Play Count"
-msgstr "Median toistomäärä"
-
-msgctxt "#32266"
-msgid "Color Options"
-msgstr "Värivaihtoehdot"
-
-msgctxt "#32267"
-msgid "Go To"
-msgstr "Mene"
-
-msgctxt "#32268"
-msgid "Show Three Shelves Together"
-msgstr "Näytä kolme hyllyä yhdessä"
-
-msgctxt "#32269"
-msgid "Configure Custom Shelf"
-msgstr "Määritä mukautettu hylly"
-
-msgctxt "#32270"
-msgid "Shift Fanart View Focus to the Right"
-msgstr "Siirrä fanart-näkymän kohdistus oikealle"
-
-msgctxt "#32271"
-msgid "Mouse/Touch-Friendly Alphabet Strip"
-msgstr "Hiiri-/kosketuspaneeliystävällinen aakkosnauha"
-
-msgctxt "#32272"
-msgid "Use New Media Views Selector"
-msgstr "Käytä uutta medianäkymän valitsinta"
-
-msgctxt "#32273"
-msgid "Skin Variables"
-msgstr "Skin Variables"
-
-msgctxt "#32274"
-msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
-msgstr "Tämän toiminnon käyttöönotto edellyttää, että asennat uusimman version lisäosasta script.skinvariables. [CR] [CR] Löydät sen osoitteesta https://github.com/jurialmunkey/script.skinvariables."
-
-msgctxt "#32275"
-msgid "Configure Media Views"
-msgstr "Määritä medianäkymät"
-
-msgctxt "#32277"
-msgid "Three Rows with Larger Icons"
-msgstr "Kolme riviä suuremmilla kuvakkeilla"
-
-msgctxt "#32278"
-msgid "Oscars Won"
-msgstr "Oscar voitot"
-
-msgctxt "#32279"
-msgid "Oscar Nominations"
-msgstr "Oscar ehdokkuudet"
-
-msgctxt "#32280"
-msgid "Golden Globes Won"
-msgstr "Golden Globe voitot"
-
-msgctxt "#32281"
-msgid "Golden Globe Nominations"
-msgstr "Golden Globe ehdokkuudet"
-
-msgctxt "#32282"
-msgid "Awards (Oscars/Golden Globes)"
-msgstr "Palkinnot (Oscar/Golden Globe)"
-
-msgctxt "#32283"
-msgid "Video Genre Fanart"
-msgstr "Videolajityyppien fanart"
-
-msgctxt "#32284"
-msgid "Music Genre Fanart"
-msgstr "Musiikkilajityyppien fanart"
-
-msgctxt "#32285"
-msgid "Custom Path"
-msgstr "Mukautettu polku"
-
-msgctxt "#32286"
-msgid "Reset Custom Path"
-msgstr "Resetoi mukautettu polku"
-
-msgctxt "#32287"
-msgid "Image Pack"
-msgstr "Kuvapaketti"
-
-msgctxt "#32288"
-msgid "Enable Multiple Images per Genre"
-msgstr "Ota käyttöön useita kuvia lajityypin mukaan"
-
-msgctxt "#32289"
-msgid "Match Poster Colors"
-msgstr "Sovita julistevärit"
-
-msgctxt "#32290"
-msgid "Show Seek Bar at Bottom"
-msgstr "Näytä toistopalkki alhaalla"
-
-msgctxt "#32291"
-msgid "HDR/SDR and Bit Depth Flags"
-msgstr "HDR/SDR- ja bittisyvyysliput"
-
-msgctxt "#32292"
-msgid "File Name Instead of Title"
-msgstr "Tiedostonimi otsikon sijaan"
-
-msgctxt "#32293"
-msgid "Extra Fanart on panel"
-msgstr "Extra fanart paneelissa"
-
-msgctxt "#32294"
-msgid "Ends at"
-msgstr "Päättyy klo"
-
-msgctxt "#32295"
-msgid "Netflix style"
-msgstr "Netflix tyyli"
-
-msgctxt "#32296"
-msgid "Show Logo"
-msgstr "Näytä logo"
-
-msgctxt "#32297"
-msgid "Use Landscape"
-msgstr "Käytä Vaakakuvaa"
-
-msgctxt "#32298"
-msgid "Dim Level for Unfocused"
-msgstr "Himmennustaso kohdistamattomalle"
-
-msgctxt "#32299"
-msgid "Select Dim Level"
-msgstr "Valitse Himmennustaso"
-
-msgctxt "#32300"
-msgid "Now Playing"
-msgstr "Toistetaan parhaillaan"
-
-msgctxt "#32301"
-msgid "Hide Title Bar Now Playing"
-msgstr "Piilota otsikkorivin \"Toistetaan parhaillaan\""
-
-msgctxt "#32302"
-msgid "Select Now Playing Video Disc Art Fallback"
-msgstr "Valitse parhaillaan toistettavan videolevyetiketin varakuva"
-
-msgctxt "#32303"
-msgid "Select Now Playing Music Disc Art Fallback"
-msgstr "Valitse parhaillaan toistettavan musiikkilevyetiketin varakuva"
-
-msgctxt "#32304"
-msgid "Blu-Ray"
-msgstr "Blu-Ray"
-
-msgctxt "#32305"
-msgid "Vinyl"
-msgstr "Vinyyli"
-
-msgctxt "#32306"
-msgid "None"
-msgstr "Ei mitään"
-
-msgctxt "#32307"
-msgid "White"
-msgstr "Valkoinen"
-
-msgctxt "#32308"
-msgid "Blue"
-msgstr "Sininen"
-
-msgctxt "#32309"
-msgid "Golden"
-msgstr "Kultainen"
-
-msgctxt "#32310"
-msgid "Green"
-msgstr "Vihreä"
-
-msgctxt "#32311"
-msgid "Grey"
-msgstr "Harmaa"
-
-msgctxt "#32312"
-msgid "Orange"
-msgstr "Oranssi"
-
-msgctxt "#32313"
-msgid "Purple"
-msgstr "Violetti"
-
-msgctxt "#32314"
-msgid "Red"
-msgstr "Punainen"
-
-msgctxt "#32315"
-msgid "Select Now Playing Info for Movies/Episodes"
-msgstr "Valitse parhaillaan toistettavasta elokuvasta/jaksosta näytettävät tiedot"
-
-msgctxt "#32316"
-msgid "Select Now Playing Info for other Videos"
-msgstr "Valitse parhaillaan toistettavasta videosta näytettävät tiedot"
-
-msgctxt "#32317"
-msgid "Select Now Playing Info for Music"
-msgstr "Valitse parhaillaan toistettavasta musiikista näytettävät tiedot"
-
-msgctxt "#32318"
-msgid "Show Video in the Background"
-msgstr "Näytä video taustalla"
-
-msgctxt "#32319"
-msgid "Show Music Visualization in the Background"
-msgstr "Näytä musiikin visualisointi taustalla"
-
-msgctxt "#32320"
-msgid "Show Extra Art for Video"
-msgstr "Näytä lisätaide videolle"
-
-msgctxt "#32321"
-msgid "Show Extra Art for Music"
-msgstr "Näytä lisätaide musiikille"
-
-msgctxt "#32322"
-msgid "Show Logo"
-msgstr "Näytä Logo"
-
-msgctxt "#32323"
-msgid "Show ClearArt"
-msgstr "Näytä ClearArt"
-
-msgctxt "#32324"
-msgid "Show Disc Art"
-msgstr "Näytä levyetiketti"
-
-msgctxt "#32325"
-msgid "Select Disc Art Fallback for Video"
-msgstr "Valitse levyetiketin varmistus videotoistolle"
-
-msgctxt "#32326"
-msgid "Select Disc Art Fallback for Music"
-msgstr "Valitse levyetiketin varmistus musiikkitoistolle"
-
-msgctxt "#32327"
-msgid "Disable Now Playing"
-msgstr "Poista \"Toistetaan parhaillaan\" käytöstä"
-
-msgctxt "#32328"
-msgid "Internet Stream"
-msgstr "Internet-suoratoisto"
-
-msgctxt "#32329"
-msgid "Special"
-msgstr "Erityinen"
-
-msgctxt "#32330"
-msgid "Next Tracks"
-msgstr "Seuraavat kappaleet"
-
-msgctxt "#32331"
-msgid "Album Review"
-msgstr "Albumi katselmus"
-
-msgctxt "#32332"
-msgid "Artist Bio"
-msgstr "Artistin biografia"
-
-msgctxt "#32333"
-msgid "Hide Shelves when Now Playing is Visible"
-msgstr "Piilota hyllyt, kun \"Toistetaan parhaillaan\" näytetään"
-
-msgctxt "#32334"
-msgid "Enlarge Video Preview when Idle"
-msgstr "Suurenna videon esikatselu kun toimeton"
-
-msgctxt "#32335"
-msgid "Select Extra Art to Show in Applicable Views"
-msgstr "Valitse lisäkuva näytettäväksi käyttökelpoisissa näkymissä"
-
-msgctxt "#32336"
-msgid "Full Screen/OSD"
-msgstr "Koko näyttö/OSD"
-
-msgctxt "#32337"
-msgid "Select Interval for Auto Closing Video OSD"
-msgstr "Valitse aikaväli videon OSD sulkemiselle"
-
-msgctxt "#32338"
-msgid "Current Color"
-msgstr "Nykyinen väri"
-
-msgctxt "#32339"
-msgid "Value"
-msgstr "Arvo"
-
-msgctxt "#32340"
-msgid "Second"
-msgstr "Sekunti"
-
-msgctxt "#32341"
-msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
-msgstr "Käytä hiiriystävällistä menetelmää (script.skin.info.service V1.0.8 ja uudempi)"
-
-msgctxt "#32342"
-msgid "Auto Close Video OSD"
-msgstr "Sulje automaattisesti videon OSD"
-
-msgctxt "#32343"
-msgid "Default Font Size"
-msgstr "Oletusfontin koko"
-
-msgctxt "#32344"
-msgid "Use fanart.jpg if present in folder or parent folder"
-msgstr "Käytä fanart.jpg mikäli saatavilla kansiossa tai yläkansiossa"
-
-msgctxt "#32345"
-msgid "Use Clear Art instead of Logo"
-msgstr "Käytä Selkeää Taidetta Logon sijaan"
-
-msgctxt "#32346"
-msgid "Single Logo"
-msgstr "Yksittäinen logo"
-
-msgctxt "#32347"
-msgid "Fade out Unfocused"
-msgstr "Häivytä Keskittämätön"
-
-msgctxt "#32348"
-msgid "Show Overlay"
-msgstr "Näytä Päällys"
-
-msgctxt "#32349"
-msgid "Show Smaller Favourite Icons"
-msgstr "Näytä pienempiä suosikki ikoneita"
-
-msgctxt "#32350"
-msgid "Show Three Rows"
-msgstr "Näytä kolme riviä"
-
-msgctxt "#32351"
-msgid "Show Four Rows"
-msgstr "Näytä neljä riviä"
-
-msgctxt "#32352"
-msgid "Enable Use of TMDb Helper"
-msgstr "Ota käyttöön TMDB helper"
-
-msgctxt "#32353"
-msgid "Enable Use of Embuary Helper"
-msgstr "Ota käyttöön Embuary Helper"
-
-msgctxt "#32354"
-msgid "Hide Seek Bar when Paused"
-msgstr "Piilota toistopalkki, kun toisto on tauotettu"
-
-msgctxt "#32355"
-msgid "Icon Only Menu"
-msgstr "Pelkkä ikoni valikko"
-
-msgctxt "#32356"
-msgid "Show Menu Item Name"
-msgstr "Näytä valikon nimi"
-
-msgctxt "#32357"
-msgid "Enable Video Lyrics"
-msgstr "Ota video sanoitukset käyttöön"
-
-msgctxt "#32358"
-msgid "Play Whole Albums from Shelves"
-msgstr "Toista kokonaisia albumeja hyllyiltä"
-
-msgctxt "#32359"
-msgid "Show Item Name in Top Bar"
-msgstr "Näytä kohteen nimi yläpalkissa"
-
-msgctxt "#32360"
-msgid "Animate backgrounds using Ken Burns effect"
-msgstr "Animoi taustat käyttämällä Ken Burns -efektiä"
-
-msgctxt "#32361"
-msgid "Single Column"
-msgstr "Yksittäinen sarake"
-
-msgctxt "#32362"
-msgid "Disable Now Playing Fanart"
-msgstr "Poista \"Toistetaan parhaillaan\" fanart-kuva käytöstä"
-
-msgctxt "#32363"
-msgid "Show Media Info with Seek Bar"
-msgstr "Näytä mediatietoja toistopalkin yhteydessä"
-
-msgctxt "#32364"
-msgid "Show Seek Bar when Starting Video Playback"
-msgstr "Näytä toistopalkki videotoiston alkaessa"
-
-msgctxt "#32365"
-msgid "Time to Show Seek Bar"
-msgstr "Toistopalkin näyttöaika"
-
-msgctxt "#32366"
-msgid "Hide Title Bar in Main Window"
-msgstr "Piilota yläpalkki pääikkunassa"
-
-msgctxt "#32367"
-msgid "Hide fallback image if no thumb in OSD"
-msgstr "Piilota varakuva, jos kuvaruutunäytössä ei ole pienoiskuvaa"
-
-msgctxt "#32368"
-msgid "Dim Background and Album Cover when Showing Lyrics"
-msgstr "Himmennä tausta ja kansikuva kun näytetään sanoitukset"
-
-msgctxt "#32369"
-msgid "Use Alternate Favourites Layout"
-msgstr "Käytä vaihtoehtoista suosikkiasettelua"
-
-msgctxt "#32370"
-msgid "Align Menu Item Text to the Left"
-msgstr "Kohdista valikkokohdan teksti vasemmalle"
-
-msgctxt "#32371"
-msgid "Info Button Opens Video Info Dialog"
-msgstr "Info painike avaa videon tiedot -valintaikkunan"
-
-msgctxt "#32372"
-msgid "Pause Media While Info Dialog is Open"
-msgstr "Keskeytä Media, Kun Info-valintaikkuna on Avoin"
-
-msgctxt "#32373"
-msgid "End Time"
-msgstr "Lopetusaika"
-
-msgctxt "#32374"
-msgid "Show Dark Background Behind Shortcuts"
-msgstr "Näytä Tumma Tausta Pikakuvakkeiden Takana"
-
-msgctxt "#32375"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "Käytä Artist Slideshow lisäosaa äänen fanart-kuville"
-
-msgctxt "#32376"
-msgid "Disable Lyrics"
-msgstr "Poista sanoitukset käytöstä"
-
-msgctxt "#32377"
-msgid "Activate Lyrics"
-msgstr "Aktivoi Sanoitukset"
-
-msgctxt "#32378"
-msgid "Use Color Flags"
-msgstr "Käytä värilippuja"
-
-msgctxt "#32379"
-msgid "Show Submenu Only when Focused"
-msgstr "Näytä alivalikko vain tarkennettuna"
-
-msgctxt "#32380"
-msgid "Movies with Plot containing"
-msgstr "Elokuvat, joiden juoni sisältää"
-
-msgctxt "#32381"
-msgid "TV Shows with Plot containing"
-msgstr "TV-Ohjelmat, joiden juoni sisältää"
-
-msgctxt "#32382"
-msgid "Episodes with Plot containing"
-msgstr "Jaksot, joiden juoni sisältää"
-
-msgctxt "#32383"
-msgid "With Plot Containing"
-msgstr "Juoni sisältäen"
-
-msgctxt "#32384"
-msgid "Show Title in Footer"
-msgstr "Näytä Otsikko Alatunnisteessa"
-
-msgctxt "#32385"
-msgid "Hide Seek Bar when Forwarding or Rewinding"
-msgstr "Piilota toistopalkki, kun siirrytään eteen- tai taaksepäin"
-
-msgctxt "#32386"
-msgid "Enable Touchscreen Devices Support"
-msgstr "Ota kosketusnäytön laitetuki käyttöön"
-
-msgctxt "#32387"
-msgid "Show Rating Overlay"
-msgstr "Näytä arvosanapeite"
-
-msgctxt "#32388"
-msgid "Use User Rating for Overlay"
-msgstr "Käytä käyttäjäarvosanaa peitteelle"
-
-msgctxt "#32390"
-msgid "Select Items to Show in Views"
-msgstr "Valitse kohteet, jotka näytetään näkymissä"
-
-msgctxt "#32391"
-msgid "Items to Show in Views"
-msgstr "Näkymissä Näytettävät Kohteet"
-
-msgctxt "#32392"
-msgid "Play Random"
-msgstr "Toista Satunnainen"
-
-msgctxt "#32393"
-msgid "List Views Options"
-msgstr "Listanäkymien vaihtoehdot"
-
-msgctxt "#32394"
-msgid "Marks and Overlays"
-msgstr "Merkit ja peitteet"
-
-msgctxt "#32395"
-msgid "Select View Types to Enable"
-msgstr "Valitse Käytettävät Näkymät"
-
-msgctxt "#32396"
-msgid "View Types to Enable"
-msgstr "Käytettävät näkymät"
-
-msgctxt "#32398"
-msgid "Show Poster"
-msgstr "Näytä Juliste"
-
-msgctxt "#32399"
-msgid "Text"
-msgstr "Teksti"
-
-msgctxt "#32400"
-msgid "Banner"
-msgstr "Banneri"
-
-msgctxt "#32401"
-msgid "List Item Type"
-msgstr "Listakohteen Tyyppi"
-
-msgctxt "#32402"
-msgid "Poster/Thumb"
-msgstr "Juliste/pienoiskuva"
-
-msgctxt "#32403"
-msgid "OSD/Full Screen Art"
-msgstr "OSD/Koko Näytön Taide"
-
-msgctxt "#32404"
-msgid "N/A"
-msgstr "Ei Saatavilla"
-
-msgctxt "#32405"
-msgid "Show Info Popup"
-msgstr "Näytä Info-ponnahdusikkuna"
-
-msgctxt "#32406"
-msgid "Popup Delay"
-msgstr "Ponnahdusikkunan Viive"
-
-msgctxt "#32407"
-msgid "Show Floor"
-msgstr "Näytä Kerros"
-
-msgctxt "#32408"
-msgid "Fixed List"
-msgstr "Kiinteä Lista"
-
-msgctxt "#32409"
-msgid "Centered Static Menu (less than 8 items)"
-msgstr "Keskitetty Liikkumaton Valikko (alle 8 kohdetta)"
-
-msgctxt "#32410"
-msgid "Compact OSD"
-msgstr "Kompakti OSD"
-
-msgctxt "#32411"
-msgid "Ultra Compact OSD"
-msgstr "Erittäin Kompakti OSD"
-
-msgctxt "#32412"
-msgid "Alternate OSD Button Highlighting"
-msgstr "Vaihtoehtoinen OSD Painikkeen Korostus"
-
-msgctxt "#32413"
-msgid "Enabled"
-msgstr "Käytössä"
-
-msgctxt "#32414"
-msgid "Disabled"
-msgstr "Ei Käytössä"
-
-msgctxt "#32415"
-msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr "Automaattisesti Toista Traileri (Vain Paikallinen Traileri)"
-
-msgctxt "#32416"
-msgid "Auto Play Trailer Delay"
-msgstr "Automaattisesti Toistettavan Trailerin Viive"
-
-msgctxt "#32417"
-msgid "Fanart Title Button Opens Info Dialog"
-msgstr "Fanart-otsikkopainike avaa tietonäytön"
-
-msgctxt "#32418"
-msgid "Single Image"
-msgstr "Yksittäinen kuva"
-
-msgctxt "#32419"
-msgid "Multiple Images"
-msgstr "Useita kuvia"
-
-msgctxt "#32420"
-msgid "Video/Playlist"
-msgstr "Video/Toistolista"
-
-msgctxt "#32421"
-msgid "Startup Background"
-msgstr "Käynnistyksen tausta"
-
-msgctxt "#32422"
-msgid "Hide Menu when Shelves are Focused"
-msgstr "Piilota valikko kun hyllyt ovat kohdistettuna"
-
-msgctxt "#32423"
-msgid "Use Disc Art instead of Cover"
-msgstr "Käytä kannen sijaan levyetikettiä"
-
-msgctxt "#32424"
-msgid "Auto Play Trailer from Shelf Items"
-msgstr "Toista automaattisesti traileri hyllykohteissa"
-
-msgctxt "#32425"
-msgid "Shelf Trailer Delay"
-msgstr "hyllykohteen trailerin viive"
-
-msgctxt "#32426"
-msgid "Slide Out Media Items While Trailer Playing"
-msgstr "Liu'uta mediakohteet näkyvistä trailerin toiston aikana"
-
-msgctxt "#32427"
-msgid "Hide PVR Channel Preview"
-msgstr "Piilota PVR kanavan esikatselu"
-
-msgctxt "#32428"
-msgid "Art Downloader: Select Artwork"
-msgstr "Art Downloader: Valitse kuvamateriaali"
-
-msgctxt "#32429"
-msgid "Art Downloader: All Artwork"
-msgstr "Art Downloader: Kaikki kuvamateriaali"
-
-msgctxt "#32450"
-msgid "Show Artwork Downloader items in Context Menu"
-msgstr "Näytä Artwork Downloader kohteet sisältövalikossa"
-
-msgctxt "#32451"
-msgid "Movies with Tag"
-msgstr "Elokuvat jotka sisältävät tagin"
-
-msgctxt "#32452"
-msgid "Select a Tag"
-msgstr "Valitse tagi"
-
-msgctxt "#32453"
-msgid "With Tag"
-msgstr "Tagilla"
-
-msgctxt "#32454"
-msgid "Always Use TV Show Poster for Episodes"
-msgstr "Käytä aina TV-sarjan julistetta jaksoille"
-
-msgctxt "#32455"
-msgid "Open ExtendedInfo for Info Dialogs"
-msgstr "Avaa ExtendedInfo Tiedot -valintaikkunaan"
-
-msgctxt "#32456"
-msgid "Cert"
-msgstr "Sert"
-
-msgctxt "#32457"
-msgid "Show Episodes List button"
-msgstr "Näytä jaksolista painike"
-
-msgctxt "#32458"
-msgid "Include Seasons in Episodes List popup"
-msgstr "Sisällytä kaudet jaksoluettelo ponnahdusikkunaan"
-
-msgctxt "#32459"
-msgid "Next Aired"
-msgstr "Seuraava esitys"
-
-msgctxt "#32460"
-msgid "Enable Direct Seeking in Full Screen Info"
-msgstr "Käytä koko näytön tiedoissa suoraa toistokohdan hakua"
-
-msgctxt "#32461"
-msgid "Show Disc above Poster"
-msgstr "Näytä levy julisteen yläpuolella"
-
-msgctxt "#32462"
-msgid "Hide Disc over Set Poster"
-msgstr "Piilota levy kokoelmakuvan päältä"
-
-msgctxt "#32463"
-msgid "Play trailer in a window"
-msgstr "Toista traileri ikkunassa"
-
-msgctxt "#32464"
-msgid "Search Trailer"
-msgstr "Hae traileri"
-
-msgctxt "#32465"
-msgid "Search for Trailers with IMDb Trailers Addon"
-msgstr "Etsi trailereita IMDb Trailers -lisäosalla"
-
-msgctxt "#32466"
-msgid "Fade out Non-focused Menu Items"
-msgstr "Häivytä tarkentamattomat valikkokohdat"
-
-msgctxt "#32467"
-msgid "Cloudiness"
-msgstr "Pilvisyys"
-
-msgctxt "#32468"
-msgid "Probability of Precipitation"
-msgstr "Sateen todennäköisyys"
-
-msgctxt "#32469"
-msgid "Intro Video Duration"
-msgstr "Käynnistysvideon kesto"
-
-msgctxt "#32470"
-msgid "PVR Timeshift Buffer Color"
-msgstr "PVR ajansiirron puskuroinnin väri"
-
-msgctxt "#32471"
-msgid "Use Main Menu item Background for Sub Windows"
-msgstr "Käytä päävalikon kohdan taustakuvaa alaikkunoissa"
-
-msgctxt "#32472"
-msgid "Teletext Button Opens EPG"
-msgstr "Teksti-tv-painike avaa ohjelmaoppaan"
-
-msgctxt "#32473"
-msgid "EPG Icon"
-msgstr "EPG kuvake"
-
-msgctxt "#32474"
-msgid "Channel Logo"
-msgstr "Kanavalogo"
-
-msgctxt "#32475"
-msgid "Always Show Information Panel"
-msgstr "Näytä tietopaneeli aina"
-
-msgctxt "#32476"
-msgid "Use Custom Search for Video Library"
-msgstr "Käytä mukautettua hakua videokirjastolle"
-
-msgctxt "#32477"
-msgid "Use Custom Search for Music Library"
-msgstr "Käytä mukautettua hakua musiikkikirjastolle"
-
-msgctxt "#32478"
-msgid "Current Programme Progress:"
-msgstr "Ohjelman tämänhetkinen edistyminen:"
-
-msgctxt "#32479"
-msgid "Also Show Seconds"
-msgstr "Näytä myös sekunnit"
-
-msgctxt "#32480"
-msgid "kbps"
-msgstr "kbps"
-
-msgctxt "#32481"
-msgid "Remember Focused Control in Home Window"
-msgstr "Muista kohdistettu ohjaus koti-ikkunassa"
-
-msgctxt "#32482"
-msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
-msgstr "Käytä lisäosan YouTube Shelves -fanart-kuvien sijaan kohteen pienoiskuvaa"
-
-msgctxt "#32483"
-msgid "Allow Changing View Types in PVR Channels Window"
-msgstr "Salli näkymien vaihto PVR kanavien ikkunassa"
-
-msgctxt "#32484"
-msgid "Update Library"
-msgstr "Päivitä kirjasto"
-
-msgctxt "#32485"
-msgid "Stop Scanning"
-msgstr "Keskeytä haku"
-
-msgctxt "#32486"
-msgid "More Info"
-msgstr "Lisätietoja"
-
-msgctxt "#32487"
-msgid "Play Trailer Windowed"
-msgstr "Toista traileri ikkunassa"
-
-msgctxt "#32488"
-msgid "Last Played Date"
-msgstr "Toistettu viimeksi"
-
-msgctxt "#32489"
-msgid "Horizontal Icon Layout"
-msgstr "Vaakasuuntainen kuvakeasettelu"
-
-msgctxt "#32490"
-msgid "Show Menu Item Label"
-msgstr "Näytä valikkokohteen teksti"
-
-msgctxt "#32491"
-msgid "Always Show Set Movie List"
-msgstr "Näytä aina määritetty elokuvalistaus"
-
-msgctxt "#32492"
-msgid "Use Tall List Layout"
-msgstr "Käytä korkeaa lista-asettelua"
-
-msgctxt "#32493"
-msgid "Show More Items in List"
-msgstr "Näytä listaukessa enemmän kohteita"
-
-msgctxt "#32494"
-msgid "Hide Overlay Label in Icon/Panel Views"
-msgstr "Piilota peittokuvatunniste kuvake-/paneelinäkymissä"
 
 #~ msgctxt "#31952"
 #~ msgid "Show Fanart background with music visualisation"

@@ -212,7 +212,7 @@
 							<width>400</width>
 							<align>left</align>
 							<font>Details</font>
-							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32039]: [/COLOR] $INFO[PVR.TimeshiftCur]$INFO[PVR.TimeshiftOffset, (-,)]</label>
+							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31162]: [/COLOR] $INFO[PVR.TimeshiftCur]$INFO[PVR.TimeshiftOffset, (-,)]</label>
 							<visible>!Player.ChannelPreviewActive + Pvr.IsTimeShift</visible>
 						</control>
 
@@ -590,7 +590,7 @@
 							<width>400</width>
 							<align>left</align>
 							<font>Details</font>
-							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32039]: [/COLOR] $INFO[PVR.TimeshiftCur]$INFO[PVR.TimeshiftOffset, (-,)]</label>
+							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31162]: [/COLOR] $INFO[PVR.TimeshiftCur]$INFO[PVR.TimeshiftOffset, (-,)]</label>
 							<visible>!Player.ChannelPreviewActive + Pvr.IsTimeShift</visible>
 						</control>
 

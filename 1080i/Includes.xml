@@ -2299,7 +2299,7 @@
 				<top>360</top>
 				<width>425</width>
 				<height>45</height>
-				<label>$LOCALIZE[32009]:</label>
+				<label>$LOCALIZE[31060]:</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoTitle</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -2354,7 +2354,7 @@
 				<top>745</top>
 				<width>445</width>
 				<height>45</height>
-				<label>$LOCALIZE[32011]:</label>
+				<label>$LOCALIZE[31062]:</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoTitle</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -2396,7 +2396,7 @@
 				<top>360</top>
 				<width>425</width>
 				<height>45</height>
-				<label>[B]$LOCALIZE[32009]:[/B]</label>
+				<label>[B]$LOCALIZE[31060]:[/B]</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoTitle</font>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -2453,7 +2453,7 @@
 				<top>745</top>
 				<width>445</width>
 				<height>45</height>
-				<label>[B]$LOCALIZE[32011]:[/B]</label>
+				<label>[B]$LOCALIZE[31062]:[/B]</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoTitle</font>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>

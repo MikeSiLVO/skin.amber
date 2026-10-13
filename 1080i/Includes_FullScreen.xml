@@ -1113,7 +1113,7 @@
 					<control type="radiobutton" id="10105">
 						<height>80</height>
 						<width>470</width>
-						<label>$LOCALIZE[32377]</label>
+						<label>$LOCALIZE[31769]</label>
 						<radioposx>380</radioposx>
 						<onclick>Skin.ToggleSetting(Disable.Lyrics)</onclick>
 						<selected>!Skin.HasSetting(Disable.Lyrics)</selected>

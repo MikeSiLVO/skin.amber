@@ -17,7 +17,7 @@
 			<include>ContentFade</include>
 
 			<control type="panel" id="511" description="Grid">
-				<viewtype label="$LOCALIZE[32245]">list</viewtype>
+				<viewtype label="$LOCALIZE[31379]">list</viewtype>
 				<posx>50</posx>
 				<posy>351</posy>
 				<width>930</width>

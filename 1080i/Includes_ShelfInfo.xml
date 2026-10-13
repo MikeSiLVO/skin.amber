@@ -89,10 +89,10 @@
 		<value condition="String.IsEqual(Container.ListItem.DBType,movie) + String.IsEmpty(Container.ListItem.RatingAndVotes) + !String.IsEmpty(Container.ListItem.Top250) + String.IsEmpty(Container.ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[Container.ListItem.Top250]  [COLOR $VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Container.ListItem.Year]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,movie) + String.IsEmpty(Container.ListItem.RatingAndVotes) + String.IsEmpty(Container.ListItem.Top250) + String.IsEmpty(Container.ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Container.ListItem.Year]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,movie) + String.IsEmpty(Container.ListItem.RatingAndVotes) + String.IsEmpty(Container.ListItem.Top250) + String.IsEmpty(Container.ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Container.ListItem.Year]</value>
-		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Container.ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]  [COLOR $VAR[HighlightColor]]$LOCALIZE[32294]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
-		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]  [COLOR $VAR[HighlightColor]]$LOCALIZE[32294]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
-		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Container.ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]  [COLOR $VAR[HighlightColor]]$LOCALIZE[32294]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
-		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]  [COLOR $VAR[HighlightColor]]$LOCALIZE[32294]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
+		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Container.ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31692]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
+		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31692]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
+		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Container.ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31692]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
+		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31692]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,tvshow) + !String.IsEmpty(Container.ListItem.RatingAndVotes) + !String.IsEmpty(Container.ListItem.Premiered)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.RatingAndVotes]  [COLOR $VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,tvshow) + !String.IsEmpty(Container.ListItem.RatingAndVotes) + String.IsEmpty(Container.ListItem.Premiered)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.RatingAndVotes]  [COLOR $VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Container.ListItem.Year]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,tvshow) + String.IsEmpty(Container.ListItem.RatingAndVotes) + !String.IsEmpty(Container.ListItem.Premiered)">[COLOR $VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]</value>
@@ -111,8 +111,8 @@
 	</variable>
 
 	<variable name="ShelfInfoNextAiredDetails">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[32459]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel] - $INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name)]</value>
-		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[32459]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[31827]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel] - $INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name)]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[31827]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel]</value>
 	</variable>
 
 	<variable name="ShelfInfoStudios">
@@ -481,7 +481,7 @@
 					<width>$PARAM[width]</width>
 					<height>38</height>
 					<font>font13_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32083]: [/COLOR]$VAR[TMDbPersonBorn]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31204]: [/COLOR]$VAR[TMDbPersonBorn]</label>
 					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Born))</visible>
 					<scroll>true</scroll>
 				</control>
@@ -489,7 +489,7 @@
 					<width>$PARAM[width]</width>
 					<height>38</height>
 					<font>font13_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32082]: [/COLOR]$VAR[TMDbPersonBirthday]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31202]: [/COLOR]$VAR[TMDbPersonBirthday]</label>
 					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))</visible>
 					<scroll>true</scroll>
 				</control>
@@ -505,7 +505,7 @@
 					<width>$PARAM[width]</width>
 					<height>38</height>
 					<font>font13_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32085]: [/COLOR]$VAR[TMDbPersonDeathday]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31207]: [/COLOR]$VAR[TMDbPersonDeathday]</label>
 					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))</visible>
 					<scroll>true</scroll>
 				</control>
@@ -948,7 +948,7 @@
 					<width>$PARAM[width]</width>
 					<height>38</height>
 					<font>font13_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32467]: [/COLOR]$INFO[Container.ListItem.Property(Cloudiness)]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31835]: [/COLOR]$INFO[Container.ListItem.Property(Cloudiness)]</label>
 					<visible>!String.IsEmpty(Container.ListItem.Property(Outlook)) + !String.IsEmpty(Container.ListItem.Property(Cloudiness))</visible>
 					<scroll>true</scroll>
 				</control>
@@ -956,7 +956,7 @@
 					<width>$PARAM[width]</width>
 					<height>38</height>
 					<font>font13_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32468]: [/COLOR]$INFO[Container.ListItem.Property(Probability)]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31836]: [/COLOR]$INFO[Container.ListItem.Property(Probability)]</label>
 					<visible>!String.IsEmpty(Container.ListItem.Property(Outlook)) + !String.IsEmpty(Container.ListItem.Property(Probability))</visible>
 					<scroll>true</scroll>
 				</control>
@@ -964,7 +964,7 @@
 					<width>$PARAM[width]</width>
 					<height>38</height>
 					<font>font13_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32468]: [/COLOR]$INFO[Container.ListItem.Property(Precipitation)]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31836]: [/COLOR]$INFO[Container.ListItem.Property(Precipitation)]</label>
 					<visible>!String.IsEmpty(Container.ListItem.Property(Outlook)) + String.IsEmpty(Container.ListItem.Property(Probability)) + !String.IsEmpty(Container.ListItem.Property(Precipitation))</visible>
 					<scroll>true</scroll>
 				</control>
@@ -974,7 +974,7 @@
 					<width>$PARAM[width]</width>
 					<height>38</height>
 					<font>font13_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32083]: [/COLOR]$VAR[TMDbPersonBorn]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31204]: [/COLOR]$VAR[TMDbPersonBorn]</label>
 					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Born))</visible>
 					<scroll>true</scroll>
 				</control>
@@ -982,7 +982,7 @@
 					<width>$PARAM[width]</width>
 					<height>38</height>
 					<font>font13_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32082]: [/COLOR]$VAR[TMDbPersonBirthday]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31202]: [/COLOR]$VAR[TMDbPersonBirthday]</label>
 					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))</visible>
 					<scroll>true</scroll>
 				</control>

@@ -75,7 +75,7 @@
 						<font>font24_title</font>
 						<textcolor>eeffffff</textcolor>
 						<shadowcolor>00000000</shadowcolor>
-						<label>$LOCALIZE[32237] [COLOR $VAR[HighlightColor]]$INFO[Player.TimeRemaining(ss),,][/COLOR] $LOCALIZE[32047]</label>
+						<label>$LOCALIZE[31371] [COLOR $VAR[HighlightColor]]$INFO[Player.TimeRemaining(ss),,][/COLOR] $LOCALIZE[31168]</label>
 						<visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
 					<control type="label">
@@ -85,7 +85,7 @@
 						<font>font24_title</font>
 						<textcolor>eeffffff</textcolor>
 						<shadowcolor>00000000</shadowcolor>
-						<label>$LOCALIZE[32237] [COLOR $VAR[HighlightColor]]$INFO[Player.TimeRemaining,,][/COLOR]</label>
+						<label>$LOCALIZE[31371] [COLOR $VAR[HighlightColor]]$INFO[Player.TimeRemaining,,][/COLOR]</label>
 						<visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
 					<!-- Details -->

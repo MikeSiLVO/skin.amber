@@ -128,13 +128,13 @@
 					<onleft>90003</onleft>
 					<content>
 						<item>
-							<label>$LOCALIZE[32082]:</label>
+							<label>$LOCALIZE[31202]:</label>
 							<label2>$INFO[Container(10051).ListItem.Property(Birthday)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(Birthday))</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[32083]:</label>
+							<label>$LOCALIZE[31204]:</label>
 							<label2>$INFO[Container(10051).ListItem.Property(Place_Of_Birth)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(Place_Of_Birth))</visible>
@@ -146,13 +146,13 @@
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(Age))</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[32085]:</label>
+							<label>$LOCALIZE[31207]:</label>
 							<label2>$INFO[Container(10051).ListItem.Property(Deathday)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(Deathday))</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[32136]:</label>
+							<label>$LOCALIZE[31258]:</label>
 							<label2>$VAR[EmbuaryInfoKnownFor]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(Known_For_Department))</visible>
@@ -168,7 +168,7 @@
 							<visible>Integer.IsGreater(Container(10053).NumItems,0)</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[32134]:</label>
+							<label>$LOCALIZE[31256]:</label>
 							<label2>$INFO[Container(10051).ListItem.Property(LocalMedia)]</label2>
 							<visible>Integer.IsGreater(Container(10051).ListItem.Property(LocalMedia),0)</visible>
 						</item>

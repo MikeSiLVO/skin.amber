@@ -26,11 +26,6 @@
 		<value condition="String.IsEqual(Skin.String(AmberFlix.DimLevel),0%)">00FFFFFF</value>
 	</variable>
 
-	<!-- <variable name="TMDbHelperNextAiredLabelVar">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))">[COLOR $VAR[HighlightColor]]$LOCALIZE[32009]:[/COLOR] $INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired),, • ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),S]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),E, - ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Last_Aired))">[COLOR $VAR[HighlightColor]]$LOCALIZE[32010]:[/COLOR] $INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired),, • ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Season),S]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Episode),E, - ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Name)]</value>
-	</variable> -->
-
 	<variable name="AmberFlixSeasonLabelVar">
 		<value condition="String.IsEmpty(ListItem.Season)" />
 		<value condition="Integer.IsGreater(ListItem.Season,1)">$LOCALIZE[33054]</value>
@@ -1258,14 +1253,14 @@
 								<width>1000</width>
 								<height>45</height>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Duration]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
+								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Duration]$INFO[ListItem.EndTime, ($LOCALIZE[31692]: ,)]</label>
 								<visible>!Skin.HasSetting(Enable.HourMinutes)</visible>
 							</control>
 							<control type="label">
 								<width>1000</width>
 								<height>45</height>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$VAR[ItemDurationVar]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
+								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$VAR[ItemDurationVar]$INFO[ListItem.EndTime, ($LOCALIZE[31692]: ,)]</label>
 								<visible>Skin.HasSetting(Enable.HourMinutes)</visible>
 							</control>
 						</control>
@@ -1351,7 +1346,7 @@
 							<width>800</width>
 							<height>45</height>
 							<font>font20_title</font>
-							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32144]: [/COLOR]$INFO[ListItem.Premiered]</label>
+							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31266]: [/COLOR]$INFO[ListItem.Premiered]</label>
 							<visible>!String.IsEmpty(ListItem.Premiered)</visible>
 						</control>
 						<control type="label">
@@ -1411,7 +1406,7 @@
 							<height>45</height>
 							<width>650</width>
 							<font>font20_title</font>
-							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32144]: [/COLOR]$INFO[ListItem.Premiered]</label>
+							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31266]: [/COLOR]$INFO[ListItem.Premiered]</label>
 							<visible>!String.IsEmpty(ListItem.Premiered) + [String.IsEmpty(ListItem.RatingAndVotes) + String.IsEmpty(ListItem.MPAA)]</visible>
 						</control>
 					</control>
@@ -1430,7 +1425,7 @@
 								<height>45</height>
 								<width>650</width>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
+								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]$INFO[ListItem.EndTime, ($LOCALIZE[31692]: ,)]</label>
 								<visible>!String.IsEmpty(ListItem.Duration)</visible>
 							</control>
 							<control type="label">

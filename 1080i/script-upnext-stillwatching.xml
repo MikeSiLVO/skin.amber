@@ -111,7 +111,7 @@
                         <bottom>30</bottom>
                         <itemgap>10</itemgap>
                         <control type="button" id="3012">
-                            <label>    $LOCALIZE[32238] [B][COLOR $VAR[LabelTextColor]]$INFO[Player.TimeRemaining(ss),,][/COLOR][/B] $LOCALIZE[32047]</label>
+                            <label>    $LOCALIZE[31372] [B][COLOR $VAR[LabelTextColor]]$INFO[Player.TimeRemaining(ss),,][/COLOR][/B] $LOCALIZE[31168]</label>
                             <height>56</height>
                             <width min="50">auto</width>
                             <font>font20_title</font>

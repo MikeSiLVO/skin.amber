@@ -50,7 +50,7 @@
 					<top>0</top>
 					<height>30</height>
 					<width>$PARAM[width]</width>
-					<label>$LOCALIZE[32478]</label>
+					<label>$LOCALIZE[31846]</label>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<font>ListDetailsSmall</font>
 				</control>
@@ -169,14 +169,14 @@
 				</control>
 				<control type="radiobutton" id="32">
 					<include>9000SysButtons</include>
-					<label>$LOCALIZE[32000]</label>
+					<label>$LOCALIZE[31042]</label>
 					<selected>Skin.HasSetting(HideEPGLogos)</selected>
 					<onclick>Skin.ToggleSetting(HideEPGLogos)</onclick>
 					<visible>Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml)</visible>
 				</control>
 				<control type="radiobutton" id="33">
 					<include>9000SysButtons</include>
-					<label>$LOCALIZE[32229]</label>
+					<label>$LOCALIZE[31366]</label>
 					<selected>Skin.HasSetting(HideGuideChannelGroups)</selected>
 					<onclick>Skin.ToggleSetting(HideGuideChannelGroups)</onclick>
 					<visible>Window.IsActive(MyPVRGuide.xml)</visible>

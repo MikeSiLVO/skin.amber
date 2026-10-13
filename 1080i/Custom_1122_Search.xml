@@ -55,147 +55,147 @@
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesGenre) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="104" />
 				<param name="labelid" value="1041" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32029] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(104).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31127] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(104).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22genre%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- TV Shows by Genre -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchTVShows) + !Skin.HasSetting(DisableSearchTVShowsGenre) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="105" />
 				<param name="labelid" value="1051" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32030] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(105).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31128] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(105).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22genre%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D" />
 			</include>
 			<!-- Episodes by Genre -->
 			<include content="SearchWideList" condition="!Skin.HasSetting(DisableSearchEpisodes) + !Skin.HasSetting(DisableSearchEpisodesGenre) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="106" />
 				<param name="labelid" value="1061" />
-				<param name="headline" value="$INFO[Container(106).NumItems,$LOCALIZE[32117] (,)]" />
+				<param name="headline" value="$INFO[Container(106).NumItems,$LOCALIZE[31239] (,)]" />
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22genre%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D" />
 			</include>
 			<!-- Movies by Year -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesYear) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="107" />
 				<param name="labelid" value="1071" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32033] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(107).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31145] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(107).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22year%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- TV Shows by Year -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchTVShows) + !Skin.HasSetting(DisableSearchTVShowsYear) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="108" />
 				<param name="labelid" value="1081" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32034] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(108).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31146] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(108).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22year%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D" />
 			</include>
 			<!-- Movies from Studio -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesStudio) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="109" />
 				<param name="labelid" value="1091" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32031] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(109).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31143] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(109).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22studio%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- TV Shows from Studio -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchTVShows) + !Skin.HasSetting(DisableSearchTVShowsStudio) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="110" />
 				<param name="labelid" value="1101" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32032] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(110).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31144] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(110).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22studio%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D" />
 			</include>
 			<!-- Episodes from Studio -->
 			<include content="SearchWideList" condition="!Skin.HasSetting(DisableSearchEpisodes) + !Skin.HasSetting(DisableSearchEpisodesStudio) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="111" />
 				<param name="labelid" value="1111" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32116] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(111).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31238] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(111).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22studio%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D" />
 			</include>
 			<!-- Movies from Country -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesCountry) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="112" />
 				<param name="labelid" value="1121" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32035] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(112).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31147] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(112).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22country%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- Movies with Actor -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesActor) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="113" />
 				<param name="labelid" value="1131" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32025] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(113).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31123] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(113).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- TV Shows with Actor -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchTVShows) + !Skin.HasSetting(DisableSearchTVShowsActor) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="114" />
 				<param name="labelid" value="1141" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32027] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(114).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31125] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(114).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D" />
 			</include>
 			<!-- Episodes with Actor -->
 			<include content="SearchWideList" condition="!Skin.HasSetting(DisableSearchEpisodes) + !Skin.HasSetting(DisableSearchEpisodesActor) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="115" />
 				<param name="labelid" value="1151" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32096] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(115).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31218] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(115).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22actor%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[Skin.String(CustomSearchTerm)]%22%5d%7d%5d%7d%2c%22type%22%3a%22episodes%22%7d" />
 			</include>
 			<!-- Movies by Director -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesDirector) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="116" />
 				<param name="labelid" value="1161" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32026] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(116).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31124] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(116).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22director%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- TV Shows by Director -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchTVShows) + !Skin.HasSetting(DisableSearchTVShowsDirector) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="117" />
 				<param name="labelid" value="1171" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32028] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(117).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31126] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(117).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22director%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D" />
 			</include>
 			<!-- Episodes by Director -->
 			<include content="SearchWideList" condition="!Skin.HasSetting(DisableSearchEpisodes) + !Skin.HasSetting(DisableSearchEpisodesDirector) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="118" />
 				<param name="labelid" value="1181" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32119] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(118).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31241] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(118).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22director%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[Skin.String(CustomSearchTerm)]%22%5d%7d%5d%7d%2c%22type%22%3a%22episodes%22%7d" />
 			</include>
 			<!-- Movies by Writer -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesWriter) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="119" />
 				<param name="labelid" value="1191" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32114] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(119).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31236] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(119).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22writers%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- Episodes by Writer -->
 			<include content="SearchWideList" condition="!Skin.HasSetting(DisableSearchEpisodes) + !Skin.HasSetting(DisableSearchEpisodesWriter) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="120" />
 				<param name="labelid" value="1201" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32118] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(120).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31240] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(120).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22writers%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[Skin.String(CustomSearchTerm)]%22%5d%7d%5d%7d%2c%22type%22%3a%22episodes%22%7d" />
 			</include>
 			<!-- Movies with Plot containing -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesPlot) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="121" />
 				<param name="labelid" value="1211" />
-				<param name="headline" value="$LOCALIZE[32380] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(121).NumItems, (,)]" />
+				<param name="headline" value="$LOCALIZE[31772] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(121).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22plot%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- TV Shows with Plot containing -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchTVShows) + !Skin.HasSetting(DisableSearchTVShowsPlot) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="122" />
 				<param name="labelid" value="1221" />
-				<param name="headline" value="$LOCALIZE[32381] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(122).NumItems, (,)]" />
+				<param name="headline" value="$LOCALIZE[31773] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(122).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22plot%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D" />
 			</include>
 			<!-- Episodes with Plot containing -->
 			<include content="SearchWideList" condition="!Skin.HasSetting(DisableSearchEpisodes) + !Skin.HasSetting(DisableSearchEpisodesPlot) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="123" />
 				<param name="labelid" value="1231" />
-				<param name="headline" value="$LOCALIZE[32382] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(123).NumItems, (,)]" />
+				<param name="headline" value="$LOCALIZE[31774] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(123).NumItems, (,)]" />
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22plot%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D" />
 			</include>
 			<!-- Movies with Tag -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesTags) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="124" />
 				<param name="labelid" value="1241" />
-				<param name="headline" value="$LOCALIZE[32451] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(124).NumItems, (,)]" />
+				<param name="headline" value="$LOCALIZE[31819] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(124).NumItems, (,)]" />
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22tag%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 			</include>
 			<!-- Artist by Name -->
@@ -232,7 +232,7 @@
 				<param name="id" value="129" />
 				<param name="labelid" value="1291" />
 				<param name="contenttype" value="videos" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32036] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(129).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31148] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(129).NumItems, (,)]" />
 				<param name="content" value="videodb://musicvideos/titles/?xsp=%7b%22order%22%3a%7b%22direction%22%3a%22ascending%22%2c%22ignorefolders%22%3a0%2c%22method%22%3a%22sorttitle%22%7d%2c%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22artist%22%2c%22operator%22%3a%22contains%22%2c%22value%22%3a%5b%22$INFO[Skin.String(CustomSearchTerm)]%22%5d%7d%5d%7d%2c%22type%22%3a%22musicvideos%22%7d" />
 			</include>
 			<!-- YouTube by Title -->
@@ -240,7 +240,7 @@
 				<param name="id" value="130" />
 				<param name="labelid" value="1301" />
 				<param name="contenttype" value="videos" />
-				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32037] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(130).NumItems, (,)]" />
+				<param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[31149] [CAPITALIZE],[/CAPITALIZE]]$INFO[Container(130).NumItems, (,)]" />
 				<param name="content" value="plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[Skin.String(CustomSearchTerm)]&amp;search_type=videos" />
 			</include>
 		</control>

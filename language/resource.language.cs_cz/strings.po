@@ -41,10 +41,6 @@ msgctxt "#31003"
 msgid "Channels Directory"
 msgstr "Adresář kanálů"
 
-msgctxt "#31004"
-msgid "Shift"
-msgstr "Shift"
-
 msgctxt "#31005"
 msgid "Cinema"
 msgstr "Kino"
@@ -193,7 +189,18 @@ msgctxt "#31041"
 msgid "Repository"
 msgstr "Repozitář"
 
-# empty strings from id 31042 to 31044
+msgctxt "#31042"
+msgid "Hide icons"
+msgstr "Skrýt ikony"
+
+msgctxt "#31043"
+msgid "Hide Games"
+msgstr "Skrýt hry"
+
+msgctxt "#31044"
+msgid "Game Settings"
+msgstr "Nastavení her"
+
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
 msgstr "Zobrazit třířádkový panel"
@@ -230,11 +237,62 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Zobrazení médií"
 
-msgctxt "#31054"
-msgid "Media sources"
-msgstr "Zdroje médií"
+msgctxt "#31055"
+msgid "Toggle Subtitle"
+msgstr "Přepnout titulky"
 
-# empty strings from id 31055 to 31068
+msgctxt "#31056"
+msgid "AB: Select Artwork"
+msgstr "AB: Vybrat grafiku"
+
+msgctxt "#31057"
+msgid "AB: All Artwork"
+msgstr "AB: Všechna grafika"
+
+msgctxt "#31058"
+msgid "Special Features"
+msgstr "Speciální funkce"
+
+msgctxt "#31059"
+msgid "Enable Special Features"
+msgstr "Povolit speciální funkce"
+
+msgctxt "#31060"
+msgid "Next Episode"
+msgstr "Další epizoda"
+
+msgctxt "#31061"
+msgid "Latest Episode"
+msgstr "Nejnovější epizoda"
+
+msgctxt "#31062"
+msgid "Airs"
+msgstr "Vysílá se"
+
+msgctxt "#31063"
+msgid "Next Airing Episodes"
+msgstr "Nadcházející epizody"
+
+msgctxt "#31064"
+msgid "Search Results for: "
+msgstr "Výsledky hledání pro: "
+
+msgctxt "#31065"
+msgid "Show Only Local Info "
+msgstr "Zobrazit pouze místní informace "
+
+msgctxt "#31066"
+msgid "Extended Info"
+msgstr "Rozšířené informace"
+
+msgctxt "#31067"
+msgid "Search in Local Library"
+msgstr "Hledat v místní knihovně"
+
+msgctxt "#31068"
+msgid "Search online in TMDb"
+msgstr "Hledat online v TMDb"
+
 msgctxt "#31069"
 msgid "Random episodes"
 msgstr "Náhodné epizody"
@@ -391,12 +449,26 @@ msgctxt "#31107"
 msgid "Shelf style"
 msgstr "Styl panelu"
 
-# empty strings from id 31108 to 31109
+msgctxt "#31108"
+msgid "Hide Second Label in List Views"
+msgstr "Skrýt druhý popisek v zobrazeních se seznamem"
+
+msgctxt "#31109"
+msgid "Added:"
+msgstr "Přidáno:"
+
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Upravit pozadí pro typ médií"
 
-# empty strings from id 31111 to 31112
+msgctxt "#31111"
+msgid "Plays:"
+msgstr "Počet přehrání:"
+
+msgctxt "#31112"
+msgid "Last Played:"
+msgstr "Naposledy přehráno:"
+
 msgctxt "#31113"
 msgid "Single"
 msgstr "Jeden obrázek"
@@ -433,14 +505,37 @@ msgctxt "#31121"
 msgid "Apply Changes"
 msgstr "Použít změny"
 
-# empty strings from id 31122 to 31128
+msgctxt "#31122"
+msgid "New Search"
+msgstr "Nové hledání"
+
+msgctxt "#31123"
+msgid "Movies Starring"
+msgstr "Filmy, ve kterých hraje"
+
+msgctxt "#31124"
+msgid "Movies Directed by"
+msgstr "Filmy režírované"
+
+msgctxt "#31125"
+msgid "TV Shows Starring"
+msgstr "Seriály, ve kterých hraje"
+
+msgctxt "#31126"
+msgid "TV Shows Directed by"
+msgstr "Seriály režírované"
+
+msgctxt "#31127"
+msgid "Movies with Genre"
+msgstr "Filmy žánru"
+
+msgctxt "#31128"
+msgid "TV Shows with Genre"
+msgstr "Seriály žánru"
+
 msgctxt "#31129"
 msgid "Same director"
 msgstr "Stejný režisér"
-
-msgctxt "#31130"
-msgid "Hourly"
-msgstr "Po hodinách"
 
 msgctxt "#31131"
 msgid "Forecast"
@@ -486,7 +581,34 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Rychlost přehrávání"
 
-# empty strings from id 31142 to 31149
+msgctxt "#31143"
+msgid "Movies from Studio"
+msgstr "Filmy studia"
+
+msgctxt "#31144"
+msgid "TV Shows from Studio"
+msgstr "Seriály studia"
+
+msgctxt "#31145"
+msgid "Movies from Year"
+msgstr "Filmy z roku"
+
+msgctxt "#31146"
+msgid "TV Shows from Year"
+msgstr "Seriály z roku"
+
+msgctxt "#31147"
+msgid "Movies from Country"
+msgstr "Filmy ze země"
+
+msgctxt "#31148"
+msgid "Music Videos by Artist"
+msgstr "Hudební videa interpreta"
+
+msgctxt "#31149"
+msgid "YouTube videos about"
+msgstr "Videa na YouTube o"
+
 msgctxt "#31150"
 msgid "Disable List view"
 msgstr "Zakázat zobrazení Seznam"
@@ -531,12 +653,522 @@ msgctxt "#31160"
 msgid "Disable Logo view"
 msgstr "Zakázat zobrazení Logo"
 
-# empty strings from id 31161 to 31290
+msgctxt "#31161"
+msgid "Enable Touch/Mouse Buttons"
+msgstr "Povolit tlačítka pro dotykové ovládání / myš"
+
+msgctxt "#31162"
+msgid "Timeshift"
+msgstr "Časový posun"
+
+msgctxt "#31163"
+msgid "Enable Kiosk Mode"
+msgstr "Povolit režim kiosku"
+
+msgctxt "#31164"
+msgid "Next Episodes"
+msgstr "Další epizody"
+
+msgctxt "#31165"
+msgid "Customize Home Menu and Shelves"
+msgstr "Přizpůsobit domovskou nabídku a panely"
+
+msgctxt "#31166"
+msgid "Shelves"
+msgstr "Panely"
+
+msgctxt "#31167"
+msgid "Weather fanart"
+msgstr "Fanart počasí"
+
+msgctxt "#31168"
+msgid "Seconds"
+msgstr "Sekundy"
+
+msgctxt "#31169"
+msgid "Show background name in Home window"
+msgstr "Zobrazit název pozadí na domovské obrazovce"
+
+msgctxt "#31170"
+msgid "Home window Background Rotation Delay"
+msgstr "Prodleva střídání pozadí domovské obrazovky"
+
+msgctxt "#31171"
+msgid "IPTV Recorder"
+msgstr "IPTV Recorder"
+
+msgctxt "#31172"
+msgid "IPTV Recorder Recordings"
+msgstr "Nahrávky IPTV Recorder"
+
+msgctxt "#31173"
+msgid "Show Video Info on Pause"
+msgstr "Zobrazit informace o videu při pozastavení"
+
+msgctxt "#31174"
+msgid "Show Two Shelves Together"
+msgstr "Zobrazit dva panely současně"
+
+msgctxt "#31175"
+msgid "Use Larger Font"
+msgstr "Použít větší písmo"
+
+msgctxt "#31176"
+msgid "Use Wraparound Navigation"
+msgstr "Použít cyklickou navigaci"
+
+msgctxt "#31177"
+msgid "Show more items on List Views"
+msgstr "Zobrazit více položek v zobrazeních se seznamem"
+
+msgctxt "#31178"
+msgid "Show Season/Episode Numbers"
+msgstr "Zobrazit čísla řad/epizod"
+
+msgctxt "#31179"
+msgid "Show Episode Thumb"
+msgstr "Zobrazit miniaturu epizody"
+
+msgctxt "#31180"
+msgid "Disable Tall List View"
+msgstr "Zakázat zobrazení Vysoký seznam"
+
+msgctxt "#31181"
+msgid "Tall List"
+msgstr "Vysoký seznam"
+
+msgctxt "#31182"
+msgid "Set Default Background"
+msgstr "Nastavit výchozí pozadí"
+
+msgctxt "#31183"
+msgid "Set Favourite Addons for Shelf"
+msgstr "Nastavit oblíbené doplňky pro panel"
+
+msgctxt "#31184"
+msgid "Select Favourite Addons"
+msgstr "Vybrat oblíbené doplňky"
+
+msgctxt "#31185"
+msgid "Backup/Restore"
+msgstr "Zálohování/obnovení"
+
+msgctxt "#31186"
+msgid "Backup"
+msgstr "Zálohovat"
+
+msgctxt "#31187"
+msgid "Restore"
+msgstr "Obnovit"
+
+msgctxt "#31188"
+msgid "Configure Backup addon"
+msgstr "Nastavit doplněk Backup"
+
+msgctxt "#31189"
+msgid "Show Fanart"
+msgstr "Zobrazit fanart"
+
+msgctxt "#31190"
+msgid "Place Background Name in Top Bar"
+msgstr "Umístit název pozadí do horního panelu"
+
+msgctxt "#31191"
+msgid "Enable Alphabet Strip"
+msgstr "Povolit abecední pás"
+
+msgctxt "#31192"
+msgid "Enable Autocompletion for Virtual Keyboard"
+msgstr "Povolit automatické dokončování na virtuální klávesnici"
+
+msgctxt "#31193"
+msgid "Budget"
+msgstr "Rozpočet"
+
+msgctxt "#31194"
+msgid "Revenue"
+msgstr "Tržby"
+
+msgctxt "#31195"
+msgid "Awards"
+msgstr "Ocenění"
+
+msgctxt "#31196"
+msgid "Show Watched Items in Recent Shelves"
+msgstr "Zobrazit zhlédnuté položky v panelech nedávných položek"
+
+msgctxt "#31197"
+msgid "RT Total Critics Reviews"
+msgstr "RT: celkový počet recenzí kritiků"
+
+msgctxt "#31198"
+msgid "RT Fresh Reviews"
+msgstr "RT: kladné recenze"
+
+msgctxt "#31199"
+msgid "RT Rotten Reviews"
+msgstr "RT: záporné recenze"
+
+msgctxt "#31200"
+msgid "RT Critics' Consensus"
+msgstr "RT: konsenzus kritiků"
+
+msgctxt "#31201"
+msgid "RT Total User Reviews"
+msgstr "RT: celkový počet uživatelských recenzí"
+
+msgctxt "#31202"
+msgid "Birthday"
+msgstr "Datum narození"
+
+msgctxt "#31204"
+msgid "Born"
+msgstr "Narozen(a)"
+
+msgctxt "#31206"
+msgid "Age"
+msgstr "Věk"
+
+msgctxt "#31207"
+msgid "Died"
+msgstr "Datum úmrtí"
+
+msgctxt "#31208"
+msgid "Also Known As"
+msgstr "Také známý/známá jako"
+
+msgctxt "#31209"
+msgid "Cast in Movies"
+msgstr "Herecká účast ve filmech"
+
+msgctxt "#31210"
+msgid "Cast in TV Shows"
+msgstr "Herecká účast v seriálech"
+
+msgctxt "#31211"
+msgid "Crew in Movies"
+msgstr "Účast ve filmových štábech"
+
+msgctxt "#31212"
+msgid "Crew in TV Shows"
+msgstr "Účast v seriálových štábech"
+
+msgctxt "#31213"
+msgid "Movies in TMDb"
+msgstr "Filmy v TMDb"
+
+msgctxt "#31214"
+msgid "TV Shows in TMDb"
+msgstr "Seriály v TMDb"
+
+msgctxt "#31215"
+msgid "Movies in Local DB"
+msgstr "Filmy v místní databázi"
+
+msgctxt "#31216"
+msgid "TV Shows in Local DB"
+msgstr "Seriály v místní databázi"
+
+msgctxt "#31217"
+msgid "Reboot to Android"
+msgstr "Restartovat do Androidu"
+
+msgctxt "#31218"
+msgid "Episodes Starring"
+msgstr "Epizody, ve kterých hraje"
+
+msgctxt "#31219"
+msgid "Movies in the"
+msgstr "Filmy ve sbírce"
+
+msgctxt "#31220"
+msgid "Also Directed by"
+msgstr "Také režíroval(a)"
+
+msgctxt "#31221"
+msgid "Crew"
+msgstr "Štáb"
+
+msgctxt "#31222"
+msgid "More from"
+msgstr "Další od"
+
+msgctxt "#31223"
+msgid "More in"
+msgstr "Další v"
+
+msgctxt "#31224"
+msgid "Similar to"
+msgstr "Podobné jako"
+
+msgctxt "#31225"
+msgid "Cast Members also appear in"
+msgstr "Členové obsazení se objevují také v"
+
+msgctxt "#31226"
+msgid "Select Custom Lists to Display"
+msgstr "Vybrat vlastní seznamy k zobrazení"
+
+msgctxt "#31227"
+msgid "Similar"
+msgstr "Podobné"
+
+msgctxt "#31228"
+msgid "Featuring Cast Members"
+msgstr "S členy obsazení"
+
+msgctxt "#31229"
+msgid "Video Info"
+msgstr "Informace o videu"
+
+msgctxt "#31230"
+msgid "Select a Genre"
+msgstr "Vybrat žánr"
+
+msgctxt "#31231"
+msgid "Select a Studio"
+msgstr "Vybrat studio"
+
+msgctxt "#31232"
+msgid "Select a Director"
+msgstr "Vybrat režiséra"
+
+msgctxt "#31233"
+msgid "Online TMDb Search"
+msgstr "Online hledání v TMDb"
+
+msgctxt "#31234"
+msgid "Local Search"
+msgstr "Místní hledání"
+
+msgctxt "#31235"
+msgid "Select a Writer"
+msgstr "Vybrat scenáristu"
+
+msgctxt "#31236"
+msgid "Movies Written by"
+msgstr "Filmy podle scenáristy"
+
+msgctxt "#31237"
+msgid "Select a Country"
+msgstr "Vybrat zemi"
+
+msgctxt "#31238"
+msgid "Episodes from Studio"
+msgstr "Epizody ze studia"
+
+msgctxt "#31239"
+msgid "Episodes with Genre"
+msgstr "Epizody žánru"
+
+msgctxt "#31240"
+msgid "Episodes Written by"
+msgstr "Epizody podle scenáristy"
+
+msgctxt "#31241"
+msgid "Episodes Directed by"
+msgstr "Epizody režírované"
+
+msgctxt "#31242"
+msgid "AB: Download All Artwork"
+msgstr "AB: Stáhnout všechnu grafiku"
+
+msgctxt "#31243"
+msgid "AB: Select Artwork"
+msgstr "AB: Vybrat grafiku"
+
+msgctxt "#31244"
+msgid "Show Artwork Beef items in Context Menu"
+msgstr "Zobrazit položky Artwork Beef v kontextové nabídce"
+
+msgctxt "#31245"
+msgid "Title Bar Options"
+msgstr "Možnosti záhlaví"
+
+msgctxt "#31246"
+msgid "Show Duration in Hours and Minutes"
+msgstr "Zobrazit délku v hodinách a minutách"
+
+msgctxt "#31247"
+msgid "Hour"
+msgstr "hodina"
+
+msgctxt "#31248"
+msgid "Minute"
+msgstr "minuta"
+
+msgctxt "#31249"
+msgid "Online TMDb Info"
+msgstr "Online informace z TMDb"
+
+msgctxt "#31250"
+msgid "Embuary Info Settings"
+msgstr "Nastavení Embuary Info"
+
+msgctxt "#31251"
+msgid "Guest Stars"
+msgstr "Hostující herci"
+
+msgctxt "#31252"
+msgid "Posters"
+msgstr "Plakáty"
+
+msgctxt "#31253"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#31254"
+msgid "Search for Trailer"
+msgstr "Vyhledat upoutávku"
+
+msgctxt "#31255"
+msgid "item in database"
+msgstr "položka v databázi"
+
+msgctxt "#31256"
+msgid "Items in Database"
+msgstr "Položky v databázi"
+
+msgctxt "#31257"
+msgid "Extras"
+msgstr "Bonusy"
+
+msgctxt "#31258"
+msgid "Known for"
+msgstr "Známé z"
+
+msgctxt "#31259"
+msgid "Retail Release"
+msgstr "Vydání v prodeji"
+
+msgctxt "#31260"
+msgid "Region Release"
+msgstr "Vydání v regionu"
+
+msgctxt "#31261"
+msgid "Ended"
+msgstr "Ukončeno"
+
+msgctxt "#31262"
+msgid "Rumored"
+msgstr "Ve fázi spekulací"
+
+msgctxt "#31263"
+msgid "Planned"
+msgstr "Plánováno"
+
+msgctxt "#31264"
+msgid "In Production"
+msgstr "V produkci"
+
+msgctxt "#31265"
+msgid "Post Production"
+msgstr "V postprodukci"
+
+msgctxt "#31266"
+msgid "Released"
+msgstr "Vydáno"
+
+msgctxt "#31267"
+msgid "Canceled"
+msgstr "Zrušeno"
+
+msgctxt "#31268"
+msgid "Returning Series"
+msgstr "Pokračující seriál"
+
+msgctxt "#31269"
+msgid "Acting"
+msgstr "Herectví"
+
+msgctxt "#31270"
+msgid "Directing"
+msgstr "Režie"
+
+msgctxt "#31271"
+msgid "Writing"
+msgstr "Scénář"
+
+msgctxt "#31272"
+msgid "Production"
+msgstr "Produkce"
+
+msgctxt "#31273"
+msgid "Sound"
+msgstr "Zvuk"
+
+msgctxt "#31274"
+msgid "Creator"
+msgstr "Tvůrce"
+
+msgctxt "#31275"
+msgid "Died at Age"
+msgstr "Věk při úmrtí"
+
+msgctxt "#31276"
+msgid "Collection"
+msgstr "Sbírka"
+
+msgctxt "#31277"
+msgid "TMDb Helper Settings"
+msgstr "Nastavení TMDb Helper"
+
+msgctxt "#31278"
+msgid "Blur Background"
+msgstr "Rozmazat pozadí"
+
+msgctxt "#31279"
+msgid "Use Poster for Blur"
+msgstr "Použít plakát pro rozmazané pozadí"
+
+msgctxt "#31280"
+msgid "Customize Power Menu"
+msgstr "Přizpůsobit možnosti napájení"
+
+msgctxt "#31281"
+msgid "Edit Library Data"
+msgstr "Upravit data knihovny"
+
+msgctxt "#31282"
+msgid "Select Search Categories"
+msgstr "Vybrat kategorie hledání"
+
+msgctxt "#31283"
+msgid "Select Search Categories to Enable"
+msgstr "Vybrat povolené kategorie hledání"
+
+msgctxt "#31284"
+msgid "By Title"
+msgstr "Podle názvu"
+
+msgctxt "#31285"
+msgid "With Genre"
+msgstr "Podle žánru"
+
+msgctxt "#31286"
+msgid "From Year"
+msgstr "Podle roku"
+
+msgctxt "#31287"
+msgid "From Studio"
+msgstr "Podle studia"
+
+msgctxt "#31288"
+msgid "From Country"
+msgstr "Podle země"
+
+msgctxt "#31289"
+msgid "With Actor"
+msgstr "Podle herce"
+
+msgctxt "#31290"
+msgid "By Director"
+msgstr "Podle režiséra"
+
 msgctxt "#31291"
 msgid "Add-on manager"
 msgstr "Správce doplňků"
 
-# empty string with id 31292
 msgctxt "#31293"
 msgid "Can not be customized"
 msgstr "Nelze přizpůsobit"
@@ -569,17 +1201,206 @@ msgctxt "#31300"
 msgid "CoreELEC Settings"
 msgstr "Nastavení CoreELEC"
 
-# empty strings from id 31301 to 31308
+msgctxt "#31301"
+msgid "By Writer"
+msgstr "Podle scenáristy"
+
+msgctxt "#31302"
+msgid "Artists by Name"
+msgstr "Interpreti podle jména"
+
+msgctxt "#31303"
+msgid "Albums by Title"
+msgstr "Alba podle názvu"
+
+msgctxt "#31304"
+msgid "Songs by Title"
+msgstr "Skladby podle názvu"
+
+msgctxt "#31305"
+msgid "By Artist"
+msgstr "Podle interpreta"
+
+msgctxt "#31306"
+msgid "YouTube by Title"
+msgstr "YouTube podle názvu"
+
+msgctxt "#31307"
+msgid "Known for Character"
+msgstr "Postava u známého díla"
+
+msgctxt "#31308"
+msgid "Known for Department"
+msgstr "Oddělení u známého díla"
+
 msgctxt "#31309"
 msgid "Memory Used"
 msgstr "Využití paměti"
 
-# empty strings from id 31310 to 31321
+msgctxt "#31310"
+msgid "Known for Job"
+msgstr "Profese u známého díla"
+
+msgctxt "#31311"
+msgid "Total Items in TMDb"
+msgstr "Celkem položek v TMDb"
+
+msgctxt "#31312"
+msgid "Total Movies in TMDb"
+msgstr "Celkem filmů v TMDb"
+
+msgctxt "#31313"
+msgid "Total TV Shows in TMDb"
+msgstr "Celkem seriálů v TMDb"
+
+msgctxt "#31314"
+msgid "Items in TMDb as Cast"
+msgstr "Položky v TMDb s hereckou účastí"
+
+msgctxt "#31315"
+msgid "Movies in TMDb as Cast"
+msgstr "Filmy v TMDb s hereckou účastí"
+
+msgctxt "#31316"
+msgid "TV Shows in TMDb as Cast"
+msgstr "Seriály v TMDb s hereckou účastí"
+
+msgctxt "#31317"
+msgid "Items in TMDb as Crew"
+msgstr "Položky v TMDb s účastí ve štábu"
+
+msgctxt "#31318"
+msgid "Movies in TMDb as Crew"
+msgstr "Filmy v TMDb s účastí ve štábu"
+
+msgctxt "#31319"
+msgid "TV Shows in TMDb as Crew"
+msgstr "Seriály v TMDb s účastí ve štábu"
+
+msgctxt "#31320"
+msgid "Total Items in Local Database"
+msgstr "Celkem položek v místní databázi"
+
+msgctxt "#31321"
+msgid "Movies in Local Database"
+msgstr "Filmy v místní databázi"
+
 msgctxt "#31322"
 msgid "Aired"
 msgstr "Odvysíláno"
 
-# empty strings from id 31323 to 31350
+msgctxt "#31323"
+msgid "TV Shows in Local Database"
+msgstr "Seriály v místní databázi"
+
+msgctxt "#31324"
+msgid "Episodes in Local Database"
+msgstr "Epizody v místní databázi"
+
+msgctxt "#31325"
+msgid "Cast: Movies with"
+msgstr "Obsazení: filmy s"
+
+msgctxt "#31326"
+msgid "Cast: TV Shows with"
+msgstr "Obsazení: seriály s"
+
+msgctxt "#31327"
+msgid "Crew: Movies with"
+msgstr "Štáb: filmy s"
+
+msgctxt "#31328"
+msgid "Crew: TV Shows with"
+msgstr "Štáb: seriály s"
+
+msgctxt "#31329"
+msgid "Start at First Menu Item"
+msgstr "Začít na první položce nabídky"
+
+msgctxt "#31330"
+msgid "Set Default View"
+msgstr "Nastavit výchozí zobrazení"
+
+msgctxt "#31331"
+msgid "Highlight Color"
+msgstr "Barva zvýraznění"
+
+msgctxt "#31332"
+msgid "Horizontal Menu Glow Bars Tint"
+msgstr "Tónování zvýrazňujících pruhů vodorovné nabídky"
+
+msgctxt "#31333"
+msgid "Horizontal Menu Main Bar Tint"
+msgstr "Tónování hlavního pruhu vodorovné nabídky"
+
+msgctxt "#31334"
+msgid "Vertical Menu/Submenu Background Tint"
+msgstr "Tónování pozadí svislé nabídky/podnabídky"
+
+msgctxt "#31335"
+msgid "Top Bar Tint"
+msgstr "Tónování horního panelu"
+
+msgctxt "#31336"
+msgid "Current Color Theme"
+msgstr "Aktuální barevný motiv"
+
+msgctxt "#31337"
+msgid "Dialogs Background Tint"
+msgstr "Tónování pozadí dialogů"
+
+msgctxt "#31338"
+msgid "Regular Text Color"
+msgstr "Barva běžného textu"
+
+msgctxt "#31339"
+msgid "Focused Text Color"
+msgstr "Barva textu zaměřené položky"
+
+msgctxt "#31340"
+msgid "Selected Text Color"
+msgstr "Barva vybraného textu"
+
+msgctxt "#31341"
+msgid "Shelves Background Tint"
+msgstr "Tónování pozadí panelů"
+
+msgctxt "#31342"
+msgid "Use for All Tints"
+msgstr "Použít pro všechna tónování"
+
+msgctxt "#31343"
+msgid "Keep Lists Focus Centered"
+msgstr "Udržovat zaměřenou položku seznamu uprostřed"
+
+msgctxt "#31344"
+msgid "Show Artist Logo In Music Visualization"
+msgstr "Zobrazit logo interpreta při vizualizaci hudby"
+
+msgctxt "#31345"
+msgid "Show Logo In Media Views"
+msgstr "Zobrazit logo v zobrazeních médií"
+
+msgctxt "#31346"
+msgid "Show Logo In Home Window"
+msgstr "Zobrazit logo v domovském okně"
+
+msgctxt "#31347"
+msgid "Media Views Background Tint"
+msgstr "Tónování pozadí zobrazení médií"
+
+msgctxt "#31348"
+msgid "Enable Label Scrolling in List Views"
+msgstr "Povolit posouvání popisků v zobrazeních se seznamem"
+
+msgctxt "#31349"
+msgid "Audio and Subtitle Info"
+msgstr "Informace o zvuku a titulkách"
+
+msgctxt "#31350"
+msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
+msgstr "Tlačítko titulků ve video OSD otevře nastavení titulků"
+
 msgctxt "#31351"
 msgid "Pause"
 msgstr "Pozastavit"
@@ -608,7 +1429,14 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "Dostupné místní titulky"
 
-# empty strings from id 31358 to 31359
+msgctxt "#31358"
+msgid "Disable Info Panel in List Views"
+msgstr "Zakázat informační panel v zobrazeních se seznamem"
+
+msgctxt "#31359"
+msgid "TMDb Helper - Next Aired Episodes"
+msgstr "TMDb Helper - epizody podle dalšího vysílání"
+
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
@@ -618,15 +1446,110 @@ msgctxt "#31361"
 msgid "Change mode"
 msgstr "Změnit režim"
 
-msgctxt "#31362"
-msgid "Enabled"
-msgstr "Povoleno"
-
 msgctxt "#31363"
 msgid "Static"
 msgstr "Statické"
 
-# empty strings from id 31364 to 31389
+msgctxt "#31364"
+msgid "Embuary Info - Next Aired Episodes"
+msgstr "Embuary Info - epizody podle dalšího vysílání"
+
+msgctxt "#31365"
+msgid "Only Search in Local Library"
+msgstr "Hledat pouze v místní knihovně"
+
+msgctxt "#31366"
+msgid "Hide Channel Groups"
+msgstr "Skrýt skupiny kanálů"
+
+msgctxt "#31367"
+msgid "Select Displayed Ratings and Certification"
+msgstr "Vybrat zobrazená hodnocení a certifikaci"
+
+msgctxt "#31368"
+msgid "User Rating"
+msgstr "Hodnocení uživatele"
+
+msgctxt "#31369"
+msgid "Ratings"
+msgstr "Hodnocení"
+
+msgctxt "#31370"
+msgid "Certification"
+msgstr "Certifikace"
+
+msgctxt "#31371"
+msgid "Up Next in"
+msgstr "Up Next za"
+
+msgctxt "#31372"
+msgid "Continue Watching in"
+msgstr "Pokračovat ve sledování za"
+
+msgctxt "#31373"
+msgid "Hide Collection (Set) Marks"
+msgstr "Skrýt značky sbírek filmů"
+
+msgctxt "#31374"
+msgid "Disable Info Panel"
+msgstr "Zakázat informační panel"
+
+msgctxt "#31375"
+msgid "Alternate List Layout"
+msgstr "Alternativní rozvržení seznamu"
+
+msgctxt "#31376"
+msgid "Larger Image"
+msgstr "Větší obrázek"
+
+msgctxt "#31377"
+msgid "Alternate List Views Layout"
+msgstr "Alternativní rozvržení zobrazení se seznamem"
+
+msgctxt "#31378"
+msgid "Albums by"
+msgstr "Alba od"
+
+msgctxt "#31379"
+msgid "Panel 2"
+msgstr "Panel 2"
+
+msgctxt "#31380"
+msgid "Big Panel 2"
+msgstr "Velký panel 2"
+
+msgctxt "#31381"
+msgid "Disable Panel 2 view"
+msgstr "Zakázat zobrazení Panel 2"
+
+msgctxt "#31382"
+msgid "Disable Big Panel 2 view"
+msgstr "Zakázat zobrazení Velký panel 2"
+
+msgctxt "#31383"
+msgid "Enable Statistics Line"
+msgstr "Povolit řádek statistik"
+
+msgctxt "#31384"
+msgid "Show Statistics line on Shelf"
+msgstr "Zobrazit řádek statistik na panelu"
+
+msgctxt "#31385"
+msgid "Show Marks on Top Right"
+msgstr "Zobrazit značky vpravo nahoře"
+
+msgctxt "#31386"
+msgid "Hide Unwatched Episodes Marks"
+msgstr "Skrýt značky nezhlédnutých epizod"
+
+msgctxt "#31387"
+msgid "Movies in library"
+msgstr "Filmy v knihovně"
+
+msgctxt "#31388"
+msgid "IMDb Top 250"
+msgstr "IMDb Top 250"
+
 msgctxt "#31390"
 msgid "(1/5) Skin default"
 msgstr "(1/5) Výchozí vzhled"
@@ -1067,10 +1990,6 @@ msgctxt "#31499"
 msgid "All TV Shows"
 msgstr "Všechny seriály"
 
-msgctxt "#31500"
-msgid "TV"
-msgstr "Televize"
-
 msgctxt "#31501"
 msgid "Scheduled Time"
 msgstr "Naplánovaný čas"
@@ -1099,11 +2018,6 @@ msgctxt "#31507"
 msgid "Opens"
 msgstr "Otevírá"
 
-# empty string with id 31508
-msgctxt "#31509"
-msgid "Radio"
-msgstr "Rozhlas"
-
 msgctxt "#31510"
 msgid "Timer Set"
 msgstr "Časovač nastaven"
@@ -1112,7 +2026,6 @@ msgctxt "#31511"
 msgid "Reminder Set"
 msgstr "Připomenutí nastaveno"
 
-# empty strings from id 31512 to 31513
 msgctxt "#31514"
 msgid "Episodes use poster"
 msgstr "Epizody používají plakát"
@@ -1601,10 +2514,6 @@ msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
 msgstr "Přizpůsobit spodní zkratky"
 
-msgctxt "#31636"
-msgid "Shortcuts"
-msgstr "Zkratky"
-
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
 msgstr "Povolit spodní zkratky"
@@ -1677,6 +2586,838 @@ msgctxt "#31654"
 msgid "Show Information for Shelves"
 msgstr "Zobrazit informace pro panely"
 
+msgctxt "#31655"
+msgid "Missing Add-on"
+msgstr "Chybějící doplněk"
+
+msgctxt "#31656"
+msgid "TMDb Helper"
+msgstr "TMDb Helper"
+
+msgctxt "#31657"
+msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+msgstr "K povolení této funkce je potřeba nainstalovat co nejnovější verzi doplňku plugin.video.themoviedb.helper.[CR][CR]Najdete jej na adrese https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+
+msgctxt "#31658"
+msgid "Use Embuary Helper for Playlist Backgrounds"
+msgstr "Použít Embuary Helper pro pozadí seznamů"
+
+msgctxt "#31659"
+msgid "Unwatched"
+msgstr "Nezhlédnuté"
+
+msgctxt "#31660"
+msgid "Use Embuary Helper for Statistics Line"
+msgstr "Použít Embuary Helper pro řádek statistik"
+
+msgctxt "#31661"
+msgid "Use Embuary Helper for Backgrounds"
+msgstr "Použít Embuary Helper pro pozadí"
+
+msgctxt "#31662"
+msgid "Movie Collection Count"
+msgstr "Počet sbírek filmů"
+
+msgctxt "#31663"
+msgid "Show Fanart for Special Content"
+msgstr "Zobrazit fanart pro speciální obsah"
+
+msgctxt "#31664"
+msgid "Media Play Count"
+msgstr "Počet přehrání médií"
+
+msgctxt "#31665"
+msgid "Color Options"
+msgstr "Možnosti barev"
+
+msgctxt "#31666"
+msgid "Go To"
+msgstr "Přejít na"
+
+msgctxt "#31667"
+msgid "Show Three Shelves Together"
+msgstr "Zobrazit tři panely společně"
+
+msgctxt "#31668"
+msgid "Configure Custom Shelf"
+msgstr "Nastavit vlastní panel"
+
+msgctxt "#31669"
+msgid "Shift Fanart View Focus to the Right"
+msgstr "Posunout zaměření zobrazení fanartu doprava"
+
+msgctxt "#31670"
+msgid "Mouse/Touch-Friendly Alphabet Strip"
+msgstr "Abecední pás vhodný pro myš a dotykové ovládání"
+
+msgctxt "#31671"
+msgid "Use New Media Views Selector"
+msgstr "Použít nový výběr zobrazení médií"
+
+msgctxt "#31672"
+msgid "Skin Variables"
+msgstr "Skin Variables"
+
+msgctxt "#31673"
+msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
+msgstr "K povolení této funkce je potřeba nainstalovat co nejnovější verzi doplňku script.skinvariables.[CR][CR]Najdete jej na adrese https://github.com/jurialmunkey/script.skinvariables."
+
+msgctxt "#31674"
+msgid "Configure Media Views"
+msgstr "Nastavit zobrazení médií"
+
+msgctxt "#31675"
+msgid "Three Rows with Larger Icons"
+msgstr "Tři řady s většími ikonami"
+
+msgctxt "#31676"
+msgid "Oscars Won"
+msgstr "Získané Oscary"
+
+msgctxt "#31677"
+msgid "Oscar Nominations"
+msgstr "Nominace na Oscara"
+
+msgctxt "#31678"
+msgid "Golden Globes Won"
+msgstr "Získané Zlaté glóby"
+
+msgctxt "#31679"
+msgid "Golden Globe Nominations"
+msgstr "Nominace na Zlatý glóbus"
+
+msgctxt "#31680"
+msgid "Awards (Oscars/Golden Globes)"
+msgstr "Ocenění (Oscary / Zlaté glóby)"
+
+msgctxt "#31681"
+msgid "Video Genre Fanart"
+msgstr "Fanart videožánru"
+
+msgctxt "#31682"
+msgid "Music Genre Fanart"
+msgstr "Fanart hudebního žánru"
+
+msgctxt "#31683"
+msgid "Custom Path"
+msgstr "Vlastní cesta"
+
+msgctxt "#31684"
+msgid "Reset Custom Path"
+msgstr "Resetovat vlastní cestu"
+
+msgctxt "#31685"
+msgid "Image Pack"
+msgstr "Balíček obrázků"
+
+msgctxt "#31686"
+msgid "Enable Multiple Images per Genre"
+msgstr "Povolit více obrázků pro každý žánr"
+
+msgctxt "#31687"
+msgid "Match Poster Colors"
+msgstr "Sladit barvy s plakátem"
+
+msgctxt "#31688"
+msgid "Show Seek Bar at Bottom"
+msgstr "Zobrazit panel posunu dole"
+
+msgctxt "#31689"
+msgid "HDR/SDR and Bit Depth Flags"
+msgstr "Příznaky HDR/SDR a bitové hloubky"
+
+msgctxt "#31690"
+msgid "File Name Instead of Title"
+msgstr "Název souboru místo názvu"
+
+msgctxt "#31691"
+msgid "Extra Fanart on panel"
+msgstr "Extra fanart na panelu"
+
+msgctxt "#31692"
+msgid "Ends at"
+msgstr "Končí v"
+
+msgctxt "#31693"
+msgid "Netflix style"
+msgstr "Styl Netflixu"
+
+msgctxt "#31694"
+msgid "Show Logo"
+msgstr "Zobrazit logo"
+
+msgctxt "#31695"
+msgid "Use Landscape"
+msgstr "Použít Landscape"
+
+msgctxt "#31696"
+msgid "Dim Level for Unfocused"
+msgstr "Úroveň ztlumení nezaměřených položek"
+
+msgctxt "#31697"
+msgid "Select Dim Level"
+msgstr "Vybrat úroveň ztlumení"
+
+msgctxt "#31698"
+msgid "Now Playing"
+msgstr "Právě se přehrává"
+
+msgctxt "#31699"
+msgid "Hide Title Bar Now Playing"
+msgstr "Skrýt záhlaví části Právě se přehrává"
+
+msgctxt "#31700"
+msgid "Select Now Playing Video Disc Art Fallback"
+msgstr "Vybrat náhradní grafiku disku pro video v části Právě se přehrává"
+
+msgctxt "#31701"
+msgid "Select Now Playing Music Disc Art Fallback"
+msgstr "Vybrat náhradní grafiku disku pro hudbu v části Právě se přehrává"
+
+msgctxt "#31702"
+msgid "Blu-Ray"
+msgstr "Blu-ray"
+
+msgctxt "#31703"
+msgid "Vinyl"
+msgstr "Vinyl"
+
+msgctxt "#31704"
+msgid "None"
+msgstr "Žádná"
+
+msgctxt "#31705"
+msgid "Golden"
+msgstr "Zlatá"
+
+msgctxt "#31706"
+msgid "Purple"
+msgstr "Fialová"
+
+msgctxt "#31707"
+msgid "Select Now Playing Info for Movies/Episodes"
+msgstr "Vybrat informace v části Právě se přehrává pro filmy/epizody"
+
+msgctxt "#31708"
+msgid "Select Now Playing Info for other Videos"
+msgstr "Vybrat informace v části Právě se přehrává pro ostatní videa"
+
+msgctxt "#31709"
+msgid "Select Now Playing Info for Music"
+msgstr "Vybrat informace v části Právě se přehrává pro hudbu"
+
+msgctxt "#31710"
+msgid "Show Video in the Background"
+msgstr "Zobrazit video na pozadí"
+
+msgctxt "#31711"
+msgid "Show Music Visualization in the Background"
+msgstr "Zobrazit hudební vizualizaci na pozadí"
+
+msgctxt "#31712"
+msgid "Show Extra Art for Video"
+msgstr "Zobrazit doplňkovou grafiku pro video"
+
+msgctxt "#31713"
+msgid "Show Extra Art for Music"
+msgstr "Zobrazit doplňkovou grafiku pro hudbu"
+
+msgctxt "#31714"
+msgid "Show Logo"
+msgstr "Zobrazit logo"
+
+msgctxt "#31715"
+msgid "Show ClearArt"
+msgstr "Zobrazit ClearArt"
+
+msgctxt "#31716"
+msgid "Show Disc Art"
+msgstr "Zobrazit grafiku disku"
+
+msgctxt "#31717"
+msgid "Select Disc Art Fallback for Video"
+msgstr "Vybrat náhradní grafiku disku pro video"
+
+msgctxt "#31718"
+msgid "Select Disc Art Fallback for Music"
+msgstr "Vybrat náhradní grafiku disku pro hudbu"
+
+msgctxt "#31719"
+msgid "Disable Now Playing"
+msgstr "Zakázat část Právě se přehrává"
+
+msgctxt "#31720"
+msgid "Internet Stream"
+msgstr "Internetový stream"
+
+msgctxt "#31721"
+msgid "Special"
+msgstr "Speciální"
+
+msgctxt "#31722"
+msgid "Next Tracks"
+msgstr "Další skladby"
+
+msgctxt "#31723"
+msgid "Album Review"
+msgstr "Recenze alba"
+
+msgctxt "#31724"
+msgid "Artist Bio"
+msgstr "Životopis interpreta"
+
+msgctxt "#31725"
+msgid "Hide Shelves when Now Playing is Visible"
+msgstr "Skrýt panely, když je viditelná část Právě se přehrává"
+
+msgctxt "#31726"
+msgid "Enlarge Video Preview when Idle"
+msgstr "Zvětšit náhled videa při nečinnosti"
+
+msgctxt "#31727"
+msgid "Select Extra Art to Show in Applicable Views"
+msgstr "Vybrat doplňkovou grafiku k zobrazení v příslušných zobrazeních"
+
+msgctxt "#31728"
+msgid "Full Screen/OSD"
+msgstr "Celá obrazovka / OSD"
+
+msgctxt "#31729"
+msgid "Select Interval for Auto Closing Video OSD"
+msgstr "Vybrat interval automatického zavření video OSD"
+
+msgctxt "#31730"
+msgid "Current Color"
+msgstr "Aktuální barva"
+
+msgctxt "#31731"
+msgid "Value"
+msgstr "Hodnota"
+
+msgctxt "#31732"
+msgid "Second"
+msgstr "Sekunda"
+
+msgctxt "#31733"
+msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
+msgstr "Použít metodu přívětivou pro myš (script.skin.info.service v1.0.8 a novější)"
+
+msgctxt "#31734"
+msgid "Auto Close Video OSD"
+msgstr "Automaticky zavírat video OSD"
+
+msgctxt "#31735"
+msgid "Default Font Size"
+msgstr "Výchozí velikost písma"
+
+msgctxt "#31736"
+msgid "Use fanart.jpg if present in folder or parent folder"
+msgstr "Použít soubor fanart.jpg, pokud je ve složce nebo nadřazené složce"
+
+msgctxt "#31737"
+msgid "Use Clear Art instead of Logo"
+msgstr "Použít Clear Art místo loga"
+
+msgctxt "#31738"
+msgid "Single Logo"
+msgstr "Jedno logo"
+
+msgctxt "#31739"
+msgid "Fade out Unfocused"
+msgstr "Zeslabit nezaměřené položky"
+
+msgctxt "#31740"
+msgid "Show Overlay"
+msgstr "Zobrazit překryvnou vrstvu"
+
+msgctxt "#31741"
+msgid "Show Smaller Favourite Icons"
+msgstr "Zobrazit menší ikony oblíbených položek"
+
+msgctxt "#31742"
+msgid "Show Three Rows"
+msgstr "Zobrazit tři řádky"
+
+msgctxt "#31743"
+msgid "Show Four Rows"
+msgstr "Zobrazit čtyři řádky"
+
+msgctxt "#31744"
+msgid "Enable Use of TMDb Helper"
+msgstr "Povolit použití TMDb Helperu"
+
+msgctxt "#31745"
+msgid "Enable Use of Embuary Helper"
+msgstr "Povolit použití Embuary Helperu"
+
+msgctxt "#31746"
+msgid "Hide Seek Bar when Paused"
+msgstr "Skrýt panel posunu při pozastavení"
+
+msgctxt "#31747"
+msgid "Icon Only Menu"
+msgstr "Nabídka pouze s ikonami"
+
+msgctxt "#31748"
+msgid "Show Menu Item Name"
+msgstr "Zobrazit název položky nabídky"
+
+msgctxt "#31749"
+msgid "Enable Video Lyrics"
+msgstr "Povolit texty videí"
+
+msgctxt "#31750"
+msgid "Play Whole Albums from Shelves"
+msgstr "Přehrávat celá alba z panelů"
+
+msgctxt "#31751"
+msgid "Show Item Name in Top Bar"
+msgstr "Zobrazit název položky v horním panelu"
+
+msgctxt "#31752"
+msgid "Animate backgrounds using Ken Burns effect"
+msgstr "Animovat pozadí pomocí efektu Ken Burns"
+
+msgctxt "#31753"
+msgid "Single Column"
+msgstr "Jeden sloupec"
+
+msgctxt "#31754"
+msgid "Disable Now Playing Fanart"
+msgstr "Zakázat fanart v části Právě se přehrává"
+
+msgctxt "#31755"
+msgid "Show Media Info with Seek Bar"
+msgstr "Zobrazit mediální informace s panelem posunu"
+
+msgctxt "#31756"
+msgid "Show Seek Bar when Starting Video Playback"
+msgstr "Zobrazit panel posunu při spuštění přehrávání videa"
+
+msgctxt "#31757"
+msgid "Time to Show Seek Bar"
+msgstr "Doba zobrazení panelu posunu"
+
+msgctxt "#31758"
+msgid "Hide Title Bar in Main Window"
+msgstr "Skrýt záhlaví v hlavním okně"
+
+msgctxt "#31759"
+msgid "Hide fallback image if no thumb in OSD"
+msgstr "Skrýt náhradní obrázek, pokud v OSD není miniatura"
+
+msgctxt "#31760"
+msgid "Dim Background and Album Cover when Showing Lyrics"
+msgstr "Ztlumit pozadí a obal alba při zobrazení textů"
+
+msgctxt "#31761"
+msgid "Use Alternate Favourites Layout"
+msgstr "Použít alternativní rozložení oblíbených položek"
+
+msgctxt "#31762"
+msgid "Align Menu Item Text to the Left"
+msgstr "Zarovnat text položek nabídky doleva"
+
+msgctxt "#31763"
+msgid "Info Button Opens Video Info Dialog"
+msgstr "Tlačítko Informace otevírá dialog informací o videu"
+
+msgctxt "#31764"
+msgid "Pause Media While Info Dialog is Open"
+msgstr "Pozastavit média při otevřeném dialogu informací"
+
+msgctxt "#31765"
+msgid "End Time"
+msgstr "Čas ukončení"
+
+msgctxt "#31766"
+msgid "Show Dark Background Behind Shortcuts"
+msgstr "Zobrazit tmavé pozadí za zkratkami"
+
+msgctxt "#31767"
+msgid "Use Artist Slideshow for Audio Fanart"
+msgstr "Použít Artist Slideshow pro hudební fanart"
+
+msgctxt "#31768"
+msgid "Disable Lyrics"
+msgstr "Zakázat texty"
+
+msgctxt "#31769"
+msgid "Activate Lyrics"
+msgstr "Aktivovat texty"
+
+msgctxt "#31770"
+msgid "Use Color Flags"
+msgstr "Použít barevné příznaky"
+
+msgctxt "#31771"
+msgid "Show Submenu Only when Focused"
+msgstr "Zobrazit podnabídku pouze při zaměření"
+
+msgctxt "#31772"
+msgid "Movies with Plot containing"
+msgstr "Filmy, jejichž zápletka obsahuje"
+
+msgctxt "#31773"
+msgid "TV Shows with Plot containing"
+msgstr "Seriály, jejichž zápletka obsahuje"
+
+msgctxt "#31774"
+msgid "Episodes with Plot containing"
+msgstr "Epizody, jejichž zápletka obsahuje"
+
+msgctxt "#31775"
+msgid "With Plot Containing"
+msgstr "Se zápletkou, která obsahuje"
+
+msgctxt "#31776"
+msgid "Show Title in Footer"
+msgstr "Zobrazit název v zápatí"
+
+msgctxt "#31777"
+msgid "Hide Seek Bar when Forwarding or Rewinding"
+msgstr "Skrýt panel posunu při posunu vpřed nebo zpět"
+
+msgctxt "#31778"
+msgid "Enable Touchscreen Devices Support"
+msgstr "Povolit podporu zařízení s dotykovou obrazovkou"
+
+msgctxt "#31779"
+msgid "Show Rating Overlay"
+msgstr "Zobrazit překryvné hodnocení"
+
+msgctxt "#31780"
+msgid "Use User Rating for Overlay"
+msgstr "V překryvném zobrazení použít uživatelské hodnocení"
+
+msgctxt "#31781"
+msgid "Select Items to Show in Views"
+msgstr "Vybrat položky k zobrazení v zobrazeních"
+
+msgctxt "#31782"
+msgid "Items to Show in Views"
+msgstr "Položky k zobrazení v zobrazeních"
+
+msgctxt "#31783"
+msgid "Play Random"
+msgstr "Přehrát náhodně"
+
+msgctxt "#31784"
+msgid "List Views Options"
+msgstr "Možnosti seznamových zobrazení"
+
+msgctxt "#31785"
+msgid "Marks and Overlays"
+msgstr "Značky a překryvné prvky"
+
+msgctxt "#31786"
+msgid "Select View Types to Enable"
+msgstr "Vybrat typy zobrazení k povolení"
+
+msgctxt "#31787"
+msgid "View Types to Enable"
+msgstr "Typy zobrazení k povolení"
+
+msgctxt "#31788"
+msgid "Show Poster"
+msgstr "Zobrazit plakát"
+
+msgctxt "#31789"
+msgid "Text"
+msgstr "Text"
+
+msgctxt "#31790"
+msgid "Banner"
+msgstr "Banner"
+
+msgctxt "#31791"
+msgid "List Item Type"
+msgstr "Typ položky seznamu"
+
+msgctxt "#31792"
+msgid "Poster/Thumb"
+msgstr "Plakát/miniatura"
+
+msgctxt "#31793"
+msgid "OSD/Full Screen Art"
+msgstr "Grafika OSD / celé obrazovky"
+
+msgctxt "#31794"
+msgid "N/A"
+msgstr "Nedostupné"
+
+msgctxt "#31795"
+msgid "Show Info Popup"
+msgstr "Zobrazit informační okno"
+
+msgctxt "#31796"
+msgid "Popup Delay"
+msgstr "Prodleva okna"
+
+msgctxt "#31797"
+msgid "Show Floor"
+msgstr "Zobrazit spodní panel"
+
+msgctxt "#31798"
+msgid "Fixed List"
+msgstr "Pevný seznam"
+
+msgctxt "#31799"
+msgid "Centered Static Menu (less than 8 items)"
+msgstr "Vystředěná statická nabídka (méně než 8 položek)"
+
+msgctxt "#31800"
+msgid "Compact OSD"
+msgstr "Kompaktní OSD"
+
+msgctxt "#31801"
+msgid "Ultra Compact OSD"
+msgstr "Ultrakompaktní OSD"
+
+msgctxt "#31802"
+msgid "Alternate OSD Button Highlighting"
+msgstr "Alternativní zvýraznění tlačítek OSD"
+
+msgctxt "#31803"
+msgid "Auto Play Trailer (Local Trailer Only)"
+msgstr "Automaticky přehrát upoutávku (pouze místní upoutávka)"
+
+msgctxt "#31804"
+msgid "Auto Play Trailer Delay"
+msgstr "Prodleva automatického přehrání upoutávky"
+
+msgctxt "#31805"
+msgid "Fanart Title Button Opens Info Dialog"
+msgstr "Tlačítko názvu ve fanartu otevírá dialog informací"
+
+msgctxt "#31806"
+msgid "Single Image"
+msgstr "Jeden obrázek"
+
+msgctxt "#31807"
+msgid "Multiple Images"
+msgstr "Více obrázků"
+
+msgctxt "#31808"
+msgid "Video/Playlist"
+msgstr "Video / seznam stop"
+
+msgctxt "#31809"
+msgid "Startup Background"
+msgstr "Pozadí při spuštění"
+
+msgctxt "#31810"
+msgid "Hide Menu when Shelves are Focused"
+msgstr "Skrýt nabídku při zaměření panelů"
+
+msgctxt "#31811"
+msgid "Use Disc Art instead of Cover"
+msgstr "Použít grafiku disku místo obalu"
+
+msgctxt "#31812"
+msgid "Auto Play Trailer from Shelf Items"
+msgstr "Automaticky přehrát upoutávku z položek panelu"
+
+msgctxt "#31813"
+msgid "Shelf Trailer Delay"
+msgstr "Prodleva upoutávky z panelu"
+
+msgctxt "#31814"
+msgid "Slide Out Media Items While Trailer Playing"
+msgstr "Vysunout mediální položky při přehrávání upoutávky"
+
+msgctxt "#31815"
+msgid "Hide PVR Channel Preview"
+msgstr "Skrýt náhled kanálu PVR"
+
+msgctxt "#31816"
+msgid "Art Downloader: Select Artwork"
+msgstr "Art Downloader: vybrat grafiku"
+
+msgctxt "#31817"
+msgid "Art Downloader: All Artwork"
+msgstr "Art Downloader: veškerá grafika"
+
+msgctxt "#31818"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr "Zobrazit položky Artwork Downloaderu v kontextové nabídce"
+
+msgctxt "#31819"
+msgid "Movies with Tag"
+msgstr "Filmy se štítkem"
+
+msgctxt "#31820"
+msgid "Select a Tag"
+msgstr "Vybrat štítek"
+
+msgctxt "#31821"
+msgid "With Tag"
+msgstr "Se štítkem"
+
+msgctxt "#31822"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr "Vždy používat plakát seriálu pro epizody"
+
+msgctxt "#31823"
+msgid "Open ExtendedInfo for Info Dialogs"
+msgstr "Otevírat ExtendedInfo pro dialogy informací"
+
+msgctxt "#31824"
+msgid "Cert"
+msgstr "Certifikace"
+
+msgctxt "#31825"
+msgid "Show Episodes List button"
+msgstr "Zobrazit tlačítko seznamu epizod"
+
+msgctxt "#31826"
+msgid "Include Seasons in Episodes List popup"
+msgstr "Zahrnout řady do vyskakovacího okna seznamu epizod"
+
+msgctxt "#31827"
+msgid "Next Aired"
+msgstr "Další vysílání"
+
+msgctxt "#31828"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr "Povolit přímý posun v informacích na celé obrazovce"
+
+msgctxt "#31829"
+msgid "Show Disc above Poster"
+msgstr "Zobrazit disk nad plakátem"
+
+msgctxt "#31830"
+msgid "Hide Disc over Set Poster"
+msgstr "Skrýt disk nad plakátem sbírky"
+
+msgctxt "#31831"
+msgid "Play trailer in a window"
+msgstr "Přehrát upoutávku v okně"
+
+msgctxt "#31832"
+msgid "Search Trailer"
+msgstr "Hledat upoutávku"
+
+msgctxt "#31833"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr "Hledat upoutávky pomocí doplňku IMDb Trailers"
+
+msgctxt "#31834"
+msgid "Fade out Non-focused Menu Items"
+msgstr "Zeslabit nezaměřené položky nabídky"
+
+msgctxt "#31835"
+msgid "Cloudiness"
+msgstr "Oblačnost"
+
+msgctxt "#31836"
+msgid "Probability of Precipitation"
+msgstr "Pravděpodobnost srážek"
+
+msgctxt "#31837"
+msgid "Intro Video Duration"
+msgstr "Délka úvodního videa"
+
+msgctxt "#31838"
+msgid "PVR Timeshift Buffer Color"
+msgstr "Barva vyrovnávací paměti časového posunu PVR"
+
+msgctxt "#31839"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr "Použít pozadí položky hlavní nabídky pro podokna"
+
+msgctxt "#31840"
+msgid "Teletext Button Opens EPG"
+msgstr "Tlačítko teletextu otevírá EPG"
+
+msgctxt "#31841"
+msgid "EPG Icon"
+msgstr "Ikona EPG"
+
+msgctxt "#31842"
+msgid "Channel Logo"
+msgstr "Logo kanálu"
+
+msgctxt "#31843"
+msgid "Always Show Information Panel"
+msgstr "Vždy zobrazovat informační panel"
+
+msgctxt "#31844"
+msgid "Use Custom Search for Video Library"
+msgstr "Použít vlastní vyhledávání pro knihovnu videí"
+
+msgctxt "#31845"
+msgid "Use Custom Search for Music Library"
+msgstr "Použít vlastní vyhledávání pro hudební knihovnu"
+
+msgctxt "#31846"
+msgid "Current Programme Progress:"
+msgstr "Průběh aktuálního pořadu:"
+
+msgctxt "#31847"
+msgid "Also Show Seconds"
+msgstr "Zobrazovat také sekundy"
+
+msgctxt "#31848"
+msgid "kbps"
+msgstr "kb/s"
+
+msgctxt "#31849"
+msgid "Remember Focused Control in Home Window"
+msgstr "Pamatovat zaměřený ovládací prvek v domovském okně"
+
+msgctxt "#31850"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
+msgstr "Pro panely YouTube používat miniaturu položky, ne fanart doplňku"
+
+msgctxt "#31851"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr "Povolit změnu typů zobrazení v okně kanálů PVR"
+
+msgctxt "#31852"
+msgid "Update Library"
+msgstr "Aktualizovat knihovnu"
+
+msgctxt "#31853"
+msgid "Stop Scanning"
+msgstr "Zastavit prohledávání"
+
+msgctxt "#31854"
+msgid "More Info"
+msgstr "Více informací"
+
+msgctxt "#31855"
+msgid "Play Trailer Windowed"
+msgstr "Přehrát upoutávku v okně"
+
+msgctxt "#31856"
+msgid "Last Played Date"
+msgstr "Datum posledního přehrání"
+
+msgctxt "#31857"
+msgid "Horizontal Icon Layout"
+msgstr "Vodorovné rozložení ikon"
+
+msgctxt "#31858"
+msgid "Show Menu Item Label"
+msgstr "Zobrazit popisek položky nabídky"
+
+msgctxt "#31859"
+msgid "Always Show Set Movie List"
+msgstr "Vždy zobrazovat seznam filmů ve sbírce"
+
+msgctxt "#31860"
+msgid "Use Tall List Layout"
+msgstr "Použít rozložení vysokého seznamu"
+
+msgctxt "#31861"
+msgid "Show More Items in List"
+msgstr "Zobrazit v seznamu více položek"
+
+msgctxt "#31862"
+msgid "Hide Overlay Label in Icon/Panel Views"
+msgstr "Skrýt překryvný popisek v ikonových/panelových zobrazeních"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Předpověď na 36 hodin"
@@ -1693,12 +3434,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Předpověď na 10 dní"
 
-# empty strings from id 31905 to 31919
 msgctxt "#31920"
 msgid "Disable all Home shelves"
 msgstr "Zakázat všechny domovské panely"
 
-# empty strings from id 31921 to 31935
 msgctxt "#31936"
 msgid "Enable Skin Shortcuts"
 msgstr "Povolit Skin Shortcuts"
@@ -1739,7 +3478,6 @@ msgctxt "#31945"
 msgid "Movie Country icons"
 msgstr "Ikony zemí filmů"
 
-# empty strings from id 31946 to 31948
 msgctxt "#31949"
 msgid "Show ExtraFanart if available"
 msgstr "Zobrazit extra fanart, pokud je dostupný"
@@ -1789,10 +3527,6 @@ msgstr "Při přehrávání hudby přejít na celou obrazovku"
 msgctxt "#31960"
 msgid "Big List"
 msgstr "Velký seznam"
-
-msgctxt "#31961"
-msgid "Recently added"
-msgstr "Nedávno přidané"
 
 #. view label
 msgctxt "#31962"
@@ -1850,10 +3584,6 @@ msgctxt "#31974"
 msgid "Home menu"
 msgstr "Domovská nabídka"
 
-msgctxt "#31975"
-msgid "Channels"
-msgstr "Kanály"
-
 msgctxt "#31976"
 msgid "Home shelf"
 msgstr "Domovský panel"
@@ -1898,19 +3628,10 @@ msgctxt "#31986"
 msgid "Use default background for Home window"
 msgstr "Použít výchozí pozadí pro domovskou obrazovku"
 
-msgctxt "#31987"
-msgid "Random"
-msgstr "Náhodné"
-
-msgctxt "#31988"
-msgid "Menu"
-msgstr "Nabídka"
-
 msgctxt "#31989"
 msgid "Quit button function"
 msgstr "Funkce tlačítka „Ukončit“"
 
-# empty string with id 31990
 msgctxt "#31991"
 msgid "Show video player/music visualization in background"
 msgstr "Zobrazit přehrávač videa / vizualizaci hudby na pozadí"
@@ -1946,1839 +3667,3 @@ msgstr "Zobrazit v záhlaví stav zámku / hlavního režimu"
 msgctxt "#31999"
 msgid "BigList"
 msgstr "Velký seznam"
-
-msgctxt "#32000"
-msgid "Hide icons"
-msgstr "Skrýt ikony"
-
-# empty string with id 32001
-msgctxt "#32002"
-msgid "Hide Games"
-msgstr "Skrýt hry"
-
-msgctxt "#32003"
-msgid "Game Settings"
-msgstr "Nastavení her"
-
-msgctxt "#32004"
-msgid "Toggle Subtitle"
-msgstr "Přepnout titulky"
-
-msgctxt "#32005"
-msgid "AB: Select Artwork"
-msgstr "AB: Vybrat grafiku"
-
-msgctxt "#32006"
-msgid "AB: All Artwork"
-msgstr "AB: Všechna grafika"
-
-msgctxt "#32007"
-msgid "Special Features"
-msgstr "Speciální funkce"
-
-msgctxt "#32008"
-msgid "Enable Special Features"
-msgstr "Povolit speciální funkce"
-
-msgctxt "#32009"
-msgid "Next Episode"
-msgstr "Další epizoda"
-
-msgctxt "#32010"
-msgid "Latest Episode"
-msgstr "Nejnovější epizoda"
-
-msgctxt "#32011"
-msgid "Airs"
-msgstr "Vysílá se"
-
-# empty string with id 32012
-msgctxt "#32013"
-msgid "Next Airing Episodes"
-msgstr "Nadcházející epizody"
-
-msgctxt "#32014"
-msgid "Search Results for: "
-msgstr "Výsledky hledání pro: "
-
-msgctxt "#32015"
-msgid "Show Only Local Info "
-msgstr "Zobrazit pouze místní informace "
-
-msgctxt "#32016"
-msgid "Extended Info"
-msgstr "Rozšířené informace"
-
-msgctxt "#32017"
-msgid "Search in Local Library"
-msgstr "Hledat v místní knihovně"
-
-msgctxt "#32018"
-msgid "Search online in TMDb"
-msgstr "Hledat online v TMDb"
-
-msgctxt "#32020"
-msgid "Hide Second Label in List Views"
-msgstr "Skrýt druhý popisek v zobrazeních se seznamem"
-
-msgctxt "#32021"
-msgid "Added:"
-msgstr "Přidáno:"
-
-msgctxt "#32022"
-msgid "Plays:"
-msgstr "Počet přehrání:"
-
-msgctxt "#32023"
-msgid "Last Played:"
-msgstr "Naposledy přehráno:"
-
-msgctxt "#32024"
-msgid "New Search"
-msgstr "Nové hledání"
-
-msgctxt "#32025"
-msgid "Movies Starring"
-msgstr "Filmy, ve kterých hraje"
-
-msgctxt "#32026"
-msgid "Movies Directed by"
-msgstr "Filmy režírované"
-
-msgctxt "#32027"
-msgid "TV Shows Starring"
-msgstr "Seriály, ve kterých hraje"
-
-msgctxt "#32028"
-msgid "TV Shows Directed by"
-msgstr "Seriály režírované"
-
-msgctxt "#32029"
-msgid "Movies with Genre"
-msgstr "Filmy žánru"
-
-msgctxt "#32030"
-msgid "TV Shows with Genre"
-msgstr "Seriály žánru"
-
-msgctxt "#32031"
-msgid "Movies from Studio"
-msgstr "Filmy studia"
-
-msgctxt "#32032"
-msgid "TV Shows from Studio"
-msgstr "Seriály studia"
-
-msgctxt "#32033"
-msgid "Movies from Year"
-msgstr "Filmy z roku"
-
-msgctxt "#32034"
-msgid "TV Shows from Year"
-msgstr "Seriály z roku"
-
-msgctxt "#32035"
-msgid "Movies from Country"
-msgstr "Filmy ze země"
-
-msgctxt "#32036"
-msgid "Music Videos by Artist"
-msgstr "Hudební videa interpreta"
-
-msgctxt "#32037"
-msgid "YouTube videos about"
-msgstr "Videa na YouTube o"
-
-msgctxt "#32038"
-msgid "Enable Touch/Mouse Buttons"
-msgstr "Povolit tlačítka pro dotykové ovládání / myš"
-
-msgctxt "#32039"
-msgid "Timeshift"
-msgstr "Časový posun"
-
-msgctxt "#32040"
-msgid "Enable Kiosk Mode"
-msgstr "Povolit režim kiosku"
-
-# empty string with id 32041
-msgctxt "#32042"
-msgid "Next Episodes"
-msgstr "Další epizody"
-
-msgctxt "#32043"
-msgid "Customize Home Menu and Shelves"
-msgstr "Přizpůsobit domovskou nabídku a panely"
-
-msgctxt "#32044"
-msgid "Submenu"
-msgstr "Podnabídka"
-
-msgctxt "#32045"
-msgid "Shelves"
-msgstr "Panely"
-
-msgctxt "#32046"
-msgid "Weather fanart"
-msgstr "Fanart počasí"
-
-msgctxt "#32047"
-msgid "Seconds"
-msgstr "Sekundy"
-
-msgctxt "#32048"
-msgid "Show background name in Home window"
-msgstr "Zobrazit název pozadí na domovské obrazovce"
-
-msgctxt "#32049"
-msgid "Home window Background Rotation Delay"
-msgstr "Prodleva střídání pozadí domovské obrazovky"
-
-msgctxt "#32050"
-msgid "IPTV Recorder"
-msgstr "IPTV Recorder"
-
-msgctxt "#32051"
-msgid "IPTV Recorder Recordings"
-msgstr "Nahrávky IPTV Recorder"
-
-msgctxt "#32052"
-msgid "Show Video Info on Pause"
-msgstr "Zobrazit informace o videu při pozastavení"
-
-msgctxt "#32053"
-msgid "Show Two Shelves Together"
-msgstr "Zobrazit dva panely současně"
-
-msgctxt "#32054"
-msgid "Use Larger Font"
-msgstr "Použít větší písmo"
-
-msgctxt "#32055"
-msgid "Use Wraparound Navigation"
-msgstr "Použít cyklickou navigaci"
-
-msgctxt "#32056"
-msgid "Show more items on List Views"
-msgstr "Zobrazit více položek v zobrazeních se seznamem"
-
-msgctxt "#32057"
-msgid "Show Season/Episode Numbers"
-msgstr "Zobrazit čísla řad/epizod"
-
-msgctxt "#32058"
-msgid "Show Episode Thumb"
-msgstr "Zobrazit miniaturu epizody"
-
-msgctxt "#32059"
-msgid "Disable Tall List View"
-msgstr "Zakázat zobrazení Vysoký seznam"
-
-msgctxt "#32060"
-msgid "Tall List"
-msgstr "Vysoký seznam"
-
-msgctxt "#32061"
-msgid "Set Default Background"
-msgstr "Nastavit výchozí pozadí"
-
-msgctxt "#32062"
-msgid "Set Favourite Addons for Shelf"
-msgstr "Nastavit oblíbené doplňky pro panel"
-
-msgctxt "#32063"
-msgid "Select Favourite Addons"
-msgstr "Vybrat oblíbené doplňky"
-
-msgctxt "#32064"
-msgid "Backup/Restore"
-msgstr "Zálohování/obnovení"
-
-msgctxt "#32065"
-msgid "Backup"
-msgstr "Zálohovat"
-
-msgctxt "#32066"
-msgid "Restore"
-msgstr "Obnovit"
-
-msgctxt "#32067"
-msgid "Configure Backup addon"
-msgstr "Nastavit doplněk Backup"
-
-msgctxt "#32068"
-msgid "Show Fanart"
-msgstr "Zobrazit fanart"
-
-msgctxt "#32069"
-msgid "Files"
-msgstr "Soubory"
-
-msgctxt "#32070"
-msgid "Place Background Name in Top Bar"
-msgstr "Umístit název pozadí do horního panelu"
-
-msgctxt "#32071"
-msgid "Enable Alphabet Strip"
-msgstr "Povolit abecední pás"
-
-msgctxt "#32072"
-msgid "Enable Autocompletion for Virtual Keyboard"
-msgstr "Povolit automatické dokončování na virtuální klávesnici"
-
-msgctxt "#32073"
-msgid "Budget"
-msgstr "Rozpočet"
-
-msgctxt "#32074"
-msgid "Revenue"
-msgstr "Tržby"
-
-msgctxt "#32075"
-msgid "Awards"
-msgstr "Ocenění"
-
-msgctxt "#32076"
-msgid "Show Watched Items in Recent Shelves"
-msgstr "Zobrazit zhlédnuté položky v panelech nedávných položek"
-
-msgctxt "#32077"
-msgid "RT Total Critics Reviews"
-msgstr "RT: celkový počet recenzí kritiků"
-
-msgctxt "#32078"
-msgid "RT Fresh Reviews"
-msgstr "RT: kladné recenze"
-
-msgctxt "#32079"
-msgid "RT Rotten Reviews"
-msgstr "RT: záporné recenze"
-
-msgctxt "#32080"
-msgid "RT Critics' Consensus"
-msgstr "RT: konsenzus kritiků"
-
-msgctxt "#32081"
-msgid "RT Total User Reviews"
-msgstr "RT: celkový počet uživatelských recenzí"
-
-msgctxt "#32082"
-msgid "Birthday"
-msgstr "Datum narození"
-
-msgctxt "#32083"
-msgid "Born"
-msgstr "Narozen(a)"
-
-msgctxt "#32084"
-msgid "Age"
-msgstr "Věk"
-
-msgctxt "#32085"
-msgid "Died"
-msgstr "Datum úmrtí"
-
-msgctxt "#32086"
-msgid "Also Known As"
-msgstr "Také známý/známá jako"
-
-msgctxt "#32087"
-msgid "Cast in Movies"
-msgstr "Herecká účast ve filmech"
-
-msgctxt "#32088"
-msgid "Cast in TV Shows"
-msgstr "Herecká účast v seriálech"
-
-msgctxt "#32089"
-msgid "Crew in Movies"
-msgstr "Účast ve filmových štábech"
-
-msgctxt "#32090"
-msgid "Crew in TV Shows"
-msgstr "Účast v seriálových štábech"
-
-msgctxt "#32091"
-msgid "Movies in TMDb"
-msgstr "Filmy v TMDb"
-
-msgctxt "#32092"
-msgid "TV Shows in TMDb"
-msgstr "Seriály v TMDb"
-
-msgctxt "#32093"
-msgid "Movies in Local DB"
-msgstr "Filmy v místní databázi"
-
-msgctxt "#32094"
-msgid "TV Shows in Local DB"
-msgstr "Seriály v místní databázi"
-
-msgctxt "#32095"
-msgid "Reboot to Android"
-msgstr "Restartovat do Androidu"
-
-msgctxt "#32096"
-msgid "Episodes Starring"
-msgstr "Epizody, ve kterých hraje"
-
-msgctxt "#32097"
-msgid "Movies in the"
-msgstr "Filmy ve sbírce"
-
-msgctxt "#32098"
-msgid "Also Directed by"
-msgstr "Také režíroval(a)"
-
-msgctxt "#32099"
-msgid "Crew"
-msgstr "Štáb"
-
-msgctxt "#32100"
-msgid "More from"
-msgstr "Další od"
-
-msgctxt "#32101"
-msgid "More in"
-msgstr "Další v"
-
-msgctxt "#32102"
-msgid "Similar to"
-msgstr "Podobné jako"
-
-msgctxt "#32103"
-msgid "Cast Members also appear in"
-msgstr "Členové obsazení se objevují také v"
-
-msgctxt "#32104"
-msgid "Select Custom Lists to Display"
-msgstr "Vybrat vlastní seznamy k zobrazení"
-
-msgctxt "#32105"
-msgid "Similar"
-msgstr "Podobné"
-
-msgctxt "#32106"
-msgid "Featuring Cast Members"
-msgstr "S členy obsazení"
-
-msgctxt "#32107"
-msgid "Video Info"
-msgstr "Informace o videu"
-
-msgctxt "#32108"
-msgid "Select a Genre"
-msgstr "Vybrat žánr"
-
-msgctxt "#32109"
-msgid "Select a Studio"
-msgstr "Vybrat studio"
-
-msgctxt "#32110"
-msgid "Select a Director"
-msgstr "Vybrat režiséra"
-
-msgctxt "#32111"
-msgid "Online TMDb Search"
-msgstr "Online hledání v TMDb"
-
-msgctxt "#32112"
-msgid "Local Search"
-msgstr "Místní hledání"
-
-msgctxt "#32113"
-msgid "Select a Writer"
-msgstr "Vybrat scenáristu"
-
-msgctxt "#32114"
-msgid "Movies Written by"
-msgstr "Filmy podle scenáristy"
-
-msgctxt "#32115"
-msgid "Select a Country"
-msgstr "Vybrat zemi"
-
-msgctxt "#32116"
-msgid "Episodes from Studio"
-msgstr "Epizody ze studia"
-
-msgctxt "#32117"
-msgid "Episodes with Genre"
-msgstr "Epizody žánru"
-
-msgctxt "#32118"
-msgid "Episodes Written by"
-msgstr "Epizody podle scenáristy"
-
-msgctxt "#32119"
-msgid "Episodes Directed by"
-msgstr "Epizody režírované"
-
-msgctxt "#32120"
-msgid "AB: Download All Artwork"
-msgstr "AB: Stáhnout všechnu grafiku"
-
-msgctxt "#32121"
-msgid "AB: Select Artwork"
-msgstr "AB: Vybrat grafiku"
-
-msgctxt "#32122"
-msgid "Show Artwork Beef items in Context Menu"
-msgstr "Zobrazit položky Artwork Beef v kontextové nabídce"
-
-msgctxt "#32123"
-msgid "Title Bar Options"
-msgstr "Možnosti záhlaví"
-
-msgctxt "#32124"
-msgid "Show Duration in Hours and Minutes"
-msgstr "Zobrazit délku v hodinách a minutách"
-
-msgctxt "#32125"
-msgid "Hour"
-msgstr "hodina"
-
-msgctxt "#32126"
-msgid "Minute"
-msgstr "minuta"
-
-msgctxt "#32127"
-msgid "Online TMDb Info"
-msgstr "Online informace z TMDb"
-
-msgctxt "#32128"
-msgid "Embuary Info Settings"
-msgstr "Nastavení Embuary Info"
-
-msgctxt "#32129"
-msgid "Guest Stars"
-msgstr "Hostující herci"
-
-msgctxt "#32130"
-msgid "Posters"
-msgstr "Plakáty"
-
-msgctxt "#32131"
-msgid "YouTube"
-msgstr "YouTube"
-
-msgctxt "#32132"
-msgid "Search for Trailer"
-msgstr "Vyhledat upoutávku"
-
-msgctxt "#32133"
-msgid "item in database"
-msgstr "položka v databázi"
-
-msgctxt "#32134"
-msgid "Items in Database"
-msgstr "Položky v databázi"
-
-msgctxt "#32135"
-msgid "Extras"
-msgstr "Bonusy"
-
-msgctxt "#32136"
-msgid "Known for"
-msgstr "Známé z"
-
-msgctxt "#32137"
-msgid "Retail Release"
-msgstr "Vydání v prodeji"
-
-msgctxt "#32138"
-msgid "Region Release"
-msgstr "Vydání v regionu"
-
-msgctxt "#32139"
-msgid "Ended"
-msgstr "Ukončeno"
-
-msgctxt "#32140"
-msgid "Rumored"
-msgstr "Ve fázi spekulací"
-
-msgctxt "#32141"
-msgid "Planned"
-msgstr "Plánováno"
-
-msgctxt "#32142"
-msgid "In Production"
-msgstr "V produkci"
-
-msgctxt "#32143"
-msgid "Post Production"
-msgstr "V postprodukci"
-
-msgctxt "#32144"
-msgid "Released"
-msgstr "Vydáno"
-
-msgctxt "#32145"
-msgid "Canceled"
-msgstr "Zrušeno"
-
-msgctxt "#32146"
-msgid "Returning Series"
-msgstr "Pokračující seriál"
-
-msgctxt "#32147"
-msgid "Acting"
-msgstr "Herectví"
-
-msgctxt "#32148"
-msgid "Directing"
-msgstr "Režie"
-
-msgctxt "#32149"
-msgid "Writing"
-msgstr "Scénář"
-
-msgctxt "#32150"
-msgid "Production"
-msgstr "Produkce"
-
-msgctxt "#32151"
-msgid "Sound"
-msgstr "Zvuk"
-
-msgctxt "#32152"
-msgid "Creator"
-msgstr "Tvůrce"
-
-msgctxt "#32153"
-msgid "Died at Age"
-msgstr "Věk při úmrtí"
-
-msgctxt "#32154"
-msgid "Collection"
-msgstr "Sbírka"
-
-msgctxt "#32155"
-msgid "TMDb Helper Settings"
-msgstr "Nastavení TMDb Helper"
-
-msgctxt "#32156"
-msgid "Blur Background"
-msgstr "Rozmazat pozadí"
-
-# Empty strings from 32157 to 32164
-msgctxt "#32165"
-msgid "Use Poster for Blur"
-msgstr "Použít plakát pro rozmazané pozadí"
-
-msgctxt "#32166"
-msgid "Customize Power Menu"
-msgstr "Přizpůsobit možnosti napájení"
-
-msgctxt "#32167"
-msgid "Edit Library Data"
-msgstr "Upravit data knihovny"
-
-msgctxt "#32168"
-msgid "Select Search Categories"
-msgstr "Vybrat kategorie hledání"
-
-msgctxt "#32169"
-msgid "Select Search Categories to Enable"
-msgstr "Vybrat povolené kategorie hledání"
-
-msgctxt "#32170"
-msgid "By Title"
-msgstr "Podle názvu"
-
-msgctxt "#32171"
-msgid "With Genre"
-msgstr "Podle žánru"
-
-msgctxt "#32172"
-msgid "From Year"
-msgstr "Podle roku"
-
-msgctxt "#32173"
-msgid "From Studio"
-msgstr "Podle studia"
-
-msgctxt "#32174"
-msgid "From Country"
-msgstr "Podle země"
-
-msgctxt "#32175"
-msgid "With Actor"
-msgstr "Podle herce"
-
-msgctxt "#32176"
-msgid "By Director"
-msgstr "Podle režiséra"
-
-msgctxt "#32177"
-msgid "By Writer"
-msgstr "Podle scenáristy"
-
-msgctxt "#32178"
-msgid "Artists by Name"
-msgstr "Interpreti podle jména"
-
-msgctxt "#32179"
-msgid "Albums by Title"
-msgstr "Alba podle názvu"
-
-msgctxt "#32180"
-msgid "Songs by Title"
-msgstr "Skladby podle názvu"
-
-msgctxt "#32181"
-msgid "By Artist"
-msgstr "Podle interpreta"
-
-msgctxt "#32182"
-msgid "YouTube by Title"
-msgstr "YouTube podle názvu"
-
-msgctxt "#32183"
-msgid "Known for Character"
-msgstr "Postava u známého díla"
-
-msgctxt "#32184"
-msgid "Known for Department"
-msgstr "Oddělení u známého díla"
-
-msgctxt "#32185"
-msgid "Known for Job"
-msgstr "Profese u známého díla"
-
-msgctxt "#32186"
-msgid "Total Items in TMDb"
-msgstr "Celkem položek v TMDb"
-
-msgctxt "#32187"
-msgid "Total Movies in TMDb"
-msgstr "Celkem filmů v TMDb"
-
-msgctxt "#32188"
-msgid "Total TV Shows in TMDb"
-msgstr "Celkem seriálů v TMDb"
-
-msgctxt "#32189"
-msgid "Items in TMDb as Cast"
-msgstr "Položky v TMDb s hereckou účastí"
-
-msgctxt "#32190"
-msgid "Movies in TMDb as Cast"
-msgstr "Filmy v TMDb s hereckou účastí"
-
-msgctxt "#32191"
-msgid "TV Shows in TMDb as Cast"
-msgstr "Seriály v TMDb s hereckou účastí"
-
-msgctxt "#32192"
-msgid "Items in TMDb as Crew"
-msgstr "Položky v TMDb s účastí ve štábu"
-
-msgctxt "#32193"
-msgid "Movies in TMDb as Crew"
-msgstr "Filmy v TMDb s účastí ve štábu"
-
-msgctxt "#32194"
-msgid "TV Shows in TMDb as Crew"
-msgstr "Seriály v TMDb s účastí ve štábu"
-
-msgctxt "#32195"
-msgid "Total Items in Local Database"
-msgstr "Celkem položek v místní databázi"
-
-msgctxt "#32196"
-msgid "Movies in Local Database"
-msgstr "Filmy v místní databázi"
-
-msgctxt "#32197"
-msgid "TV Shows in Local Database"
-msgstr "Seriály v místní databázi"
-
-msgctxt "#32198"
-msgid "Episodes in Local Database"
-msgstr "Epizody v místní databázi"
-
-msgctxt "#32199"
-msgid "Cast: Movies with"
-msgstr "Obsazení: filmy s"
-
-msgctxt "#32200"
-msgid "Cast: TV Shows with"
-msgstr "Obsazení: seriály s"
-
-msgctxt "#32201"
-msgid "Crew: Movies with"
-msgstr "Štáb: filmy s"
-
-msgctxt "#32202"
-msgid "Crew: TV Shows with"
-msgstr "Štáb: seriály s"
-
-msgctxt "#32203"
-msgid "Start at First Menu Item"
-msgstr "Začít na první položce nabídky"
-
-msgctxt "#32204"
-msgid "Set Default View"
-msgstr "Nastavit výchozí zobrazení"
-
-msgctxt "#32205"
-msgid "Highlight Color"
-msgstr "Barva zvýraznění"
-
-msgctxt "#32206"
-msgid "Horizontal Menu Glow Bars Tint"
-msgstr "Tónování zvýrazňujících pruhů vodorovné nabídky"
-
-msgctxt "#32207"
-msgid "Horizontal Menu Main Bar Tint"
-msgstr "Tónování hlavního pruhu vodorovné nabídky"
-
-msgctxt "#32208"
-msgid "Vertical Menu/Submenu Background Tint"
-msgstr "Tónování pozadí svislé nabídky/podnabídky"
-
-msgctxt "#32209"
-msgid "Top Bar Tint"
-msgstr "Tónování horního panelu"
-
-msgctxt "#32210"
-msgid "Current Color Theme"
-msgstr "Aktuální barevný motiv"
-
-msgctxt "#32211"
-msgid "Dialogs Background Tint"
-msgstr "Tónování pozadí dialogů"
-
-msgctxt "#32212"
-msgid "Regular Text Color"
-msgstr "Barva běžného textu"
-
-msgctxt "#32213"
-msgid "Focused Text Color"
-msgstr "Barva textu zaměřené položky"
-
-msgctxt "#32214"
-msgid "Selected Text Color"
-msgstr "Barva vybraného textu"
-
-msgctxt "#32215"
-msgid "Shelves Background Tint"
-msgstr "Tónování pozadí panelů"
-
-msgctxt "#32216"
-msgid "Use for All Tints"
-msgstr "Použít pro všechna tónování"
-
-msgctxt "#32217"
-msgid "Keep Lists Focus Centered"
-msgstr "Udržovat zaměřenou položku seznamu uprostřed"
-
-msgctxt "#32218"
-msgid "Show Artist Logo In Music Visualization"
-msgstr "Zobrazit logo interpreta při vizualizaci hudby"
-
-msgctxt "#32219"
-msgid "Show Logo In Media Views"
-msgstr "Zobrazit logo v zobrazeních médií"
-
-msgctxt "#32220"
-msgid "Show Logo In Home Window"
-msgstr "Zobrazit logo v domovském okně"
-
-msgctxt "#32221"
-msgid "Media Views Background Tint"
-msgstr "Tónování pozadí zobrazení médií"
-
-msgctxt "#32222"
-msgid "Enable Label Scrolling in List Views"
-msgstr "Povolit posouvání popisků v zobrazeních se seznamem"
-
-msgctxt "#32223"
-msgid "Audio and Subtitle Info"
-msgstr "Informace o zvuku a titulkách"
-
-msgctxt "#32224"
-msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
-msgstr "Tlačítko titulků ve video OSD otevře nastavení titulků"
-
-msgctxt "#32225"
-msgid "Disable Info Panel in List Views"
-msgstr "Zakázat informační panel v zobrazeních se seznamem"
-
-msgctxt "#32226"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb Helper - epizody podle dalšího vysílání"
-
-msgctxt "#32227"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info - epizody podle dalšího vysílání"
-
-msgctxt "#32228"
-msgid "Only Search in Local Library"
-msgstr "Hledat pouze v místní knihovně"
-
-msgctxt "#32229"
-msgid "Hide Channel Groups"
-msgstr "Skrýt skupiny kanálů"
-
-msgctxt "#32230"
-msgid "Select Displayed Ratings and Certification"
-msgstr "Vybrat zobrazená hodnocení a certifikaci"
-
-msgctxt "#32231"
-msgid "User Rating"
-msgstr "Hodnocení uživatele"
-
-msgctxt "#32232"
-msgid "Ratings"
-msgstr "Hodnocení"
-
-msgctxt "#32235"
-msgid "Certification"
-msgstr "Certifikace"
-
-msgctxt "#32237"
-msgid "Up Next in"
-msgstr "Up Next za"
-
-msgctxt "#32238"
-msgid "Continue Watching in"
-msgstr "Pokračovat ve sledování za"
-
-msgctxt "#32238"
-msgid "Next Episode in"
-msgstr "Další epizoda za"
-
-msgctxt "#32239"
-msgid "Hide Collection (Set) Marks"
-msgstr "Skrýt značky sbírek filmů"
-
-msgctxt "#32240"
-msgid "Disable Info Panel"
-msgstr "Zakázat informační panel"
-
-msgctxt "#32241"
-msgid "Alternate List Layout"
-msgstr "Alternativní rozvržení seznamu"
-
-msgctxt "#32242"
-msgid "Larger Image"
-msgstr "Větší obrázek"
-
-msgctxt "#32243"
-msgid "Alternate List Views Layout"
-msgstr "Alternativní rozvržení zobrazení se seznamem"
-
-msgctxt "#32244"
-msgid "Albums by"
-msgstr "Alba od"
-
-msgctxt "#32245"
-msgid "Panel 2"
-msgstr "Panel 2"
-
-msgctxt "#32246"
-msgid "Big Panel 2"
-msgstr "Velký panel 2"
-
-msgctxt "#32247"
-msgid "Disable Panel 2 view"
-msgstr "Zakázat zobrazení Panel 2"
-
-msgctxt "#32248"
-msgid "Disable Big Panel 2 view"
-msgstr "Zakázat zobrazení Velký panel 2"
-
-msgctxt "#32249"
-msgid "Enable Statistics Line"
-msgstr "Povolit řádek statistik"
-
-msgctxt "#32250"
-msgid "Show Statistics line on Shelf"
-msgstr "Zobrazit řádek statistik na panelu"
-
-msgctxt "#32251"
-msgid "Show Marks on Top Right"
-msgstr "Zobrazit značky vpravo nahoře"
-
-msgctxt "#32252"
-msgid "Hide Unwatched Episodes Marks"
-msgstr "Skrýt značky nezhlédnutých epizod"
-
-msgctxt "#32253"
-msgid "Movies in library"
-msgstr "Filmy v knihovně"
-
-msgctxt "#32254"
-msgid "IMDb Top 250"
-msgstr "IMDb Top 250"
-
-msgctxt "#32255"
-msgid "Missing Add-on"
-msgstr "Chybějící doplněk"
-
-msgctxt "#32256"
-msgid "TMDb Helper"
-msgstr "TMDb Helper"
-
-msgctxt "#32257"
-msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-msgstr "K povolení této funkce je potřeba nainstalovat co nejnovější verzi doplňku plugin.video.themoviedb.helper.[CR][CR]Najdete jej na adrese https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-
-msgctxt "#32258"
-msgid "Use Embuary Helper for Playlist Backgrounds"
-msgstr "Použít Embuary Helper pro pozadí seznamů"
-
-msgctxt "#32259"
-msgid "Backgrounds"
-msgstr "Pozadí"
-
-msgctxt "#32260"
-msgid "Unwatched"
-msgstr "Nezhlédnuté"
-
-msgctxt "#32261"
-msgid "Use Embuary Helper for Statistics Line"
-msgstr "Použít Embuary Helper pro řádek statistik"
-
-msgctxt "#32262"
-msgid "Use Embuary Helper for Backgrounds"
-msgstr "Použít Embuary Helper pro pozadí"
-
-msgctxt "#32263"
-msgid "Movie Collection Count"
-msgstr "Počet sbírek filmů"
-
-msgctxt "#32264"
-msgid "Show Fanart for Special Content"
-msgstr "Zobrazit fanart pro speciální obsah"
-
-msgctxt "#32265"
-msgid "Media Play Count"
-msgstr "Počet přehrání médií"
-
-msgctxt "#32266"
-msgid "Color Options"
-msgstr "Možnosti barev"
-
-msgctxt "#32267"
-msgid "Go To"
-msgstr "Přejít na"
-
-msgctxt "#32268"
-msgid "Show Three Shelves Together"
-msgstr "Zobrazit tři panely společně"
-
-msgctxt "#32269"
-msgid "Configure Custom Shelf"
-msgstr "Nastavit vlastní panel"
-
-msgctxt "#32270"
-msgid "Shift Fanart View Focus to the Right"
-msgstr "Posunout zaměření zobrazení fanartu doprava"
-
-msgctxt "#32271"
-msgid "Mouse/Touch-Friendly Alphabet Strip"
-msgstr "Abecední pás vhodný pro myš a dotykové ovládání"
-
-msgctxt "#32272"
-msgid "Use New Media Views Selector"
-msgstr "Použít nový výběr zobrazení médií"
-
-msgctxt "#32273"
-msgid "Skin Variables"
-msgstr "Skin Variables"
-
-msgctxt "#32274"
-msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
-msgstr "K povolení této funkce je potřeba nainstalovat co nejnovější verzi doplňku script.skinvariables.[CR][CR]Najdete jej na adrese https://github.com/jurialmunkey/script.skinvariables."
-
-msgctxt "#32275"
-msgid "Configure Media Views"
-msgstr "Nastavit zobrazení médií"
-
-msgctxt "#32277"
-msgid "Three Rows with Larger Icons"
-msgstr "Tři řady s většími ikonami"
-
-msgctxt "#32278"
-msgid "Oscars Won"
-msgstr "Získané Oscary"
-
-msgctxt "#32279"
-msgid "Oscar Nominations"
-msgstr "Nominace na Oscara"
-
-msgctxt "#32280"
-msgid "Golden Globes Won"
-msgstr "Získané Zlaté glóby"
-
-msgctxt "#32281"
-msgid "Golden Globe Nominations"
-msgstr "Nominace na Zlatý glóbus"
-
-msgctxt "#32282"
-msgid "Awards (Oscars/Golden Globes)"
-msgstr "Ocenění (Oscary / Zlaté glóby)"
-
-msgctxt "#32283"
-msgid "Video Genre Fanart"
-msgstr "Fanart videožánru"
-
-msgctxt "#32284"
-msgid "Music Genre Fanart"
-msgstr "Fanart hudebního žánru"
-
-msgctxt "#32285"
-msgid "Custom Path"
-msgstr "Vlastní cesta"
-
-msgctxt "#32286"
-msgid "Reset Custom Path"
-msgstr "Resetovat vlastní cestu"
-
-msgctxt "#32287"
-msgid "Image Pack"
-msgstr "Balíček obrázků"
-
-msgctxt "#32288"
-msgid "Enable Multiple Images per Genre"
-msgstr "Povolit více obrázků pro každý žánr"
-
-msgctxt "#32289"
-msgid "Match Poster Colors"
-msgstr "Sladit barvy s plakátem"
-
-msgctxt "#32290"
-msgid "Show Seek Bar at Bottom"
-msgstr "Zobrazit panel posunu dole"
-
-msgctxt "#32291"
-msgid "HDR/SDR and Bit Depth Flags"
-msgstr "Příznaky HDR/SDR a bitové hloubky"
-
-msgctxt "#32292"
-msgid "File Name Instead of Title"
-msgstr "Název souboru místo názvu"
-
-msgctxt "#32293"
-msgid "Extra Fanart on panel"
-msgstr "Extra fanart na panelu"
-
-msgctxt "#32294"
-msgid "Ends at"
-msgstr "Končí v"
-
-msgctxt "#32295"
-msgid "Netflix style"
-msgstr "Styl Netflixu"
-
-msgctxt "#32296"
-msgid "Show Logo"
-msgstr "Zobrazit logo"
-
-msgctxt "#32297"
-msgid "Use Landscape"
-msgstr "Použít Landscape"
-
-msgctxt "#32298"
-msgid "Dim Level for Unfocused"
-msgstr "Úroveň ztlumení nezaměřených položek"
-
-msgctxt "#32299"
-msgid "Select Dim Level"
-msgstr "Vybrat úroveň ztlumení"
-
-msgctxt "#32300"
-msgid "Now Playing"
-msgstr "Právě se přehrává"
-
-msgctxt "#32301"
-msgid "Hide Title Bar Now Playing"
-msgstr "Skrýt záhlaví části Právě se přehrává"
-
-msgctxt "#32302"
-msgid "Select Now Playing Video Disc Art Fallback"
-msgstr "Vybrat náhradní grafiku disku pro video v části Právě se přehrává"
-
-msgctxt "#32303"
-msgid "Select Now Playing Music Disc Art Fallback"
-msgstr "Vybrat náhradní grafiku disku pro hudbu v části Právě se přehrává"
-
-msgctxt "#32304"
-msgid "Blu-Ray"
-msgstr "Blu-ray"
-
-msgctxt "#32305"
-msgid "Vinyl"
-msgstr "Vinyl"
-
-msgctxt "#32306"
-msgid "None"
-msgstr "Žádná"
-
-msgctxt "#32307"
-msgid "White"
-msgstr "Bílá"
-
-msgctxt "#32308"
-msgid "Blue"
-msgstr "Modrá"
-
-msgctxt "#32309"
-msgid "Golden"
-msgstr "Zlatá"
-
-msgctxt "#32310"
-msgid "Green"
-msgstr "Zelená"
-
-msgctxt "#32311"
-msgid "Grey"
-msgstr "Šedá"
-
-msgctxt "#32312"
-msgid "Orange"
-msgstr "Oranžová"
-
-msgctxt "#32313"
-msgid "Purple"
-msgstr "Fialová"
-
-msgctxt "#32314"
-msgid "Red"
-msgstr "Červená"
-
-msgctxt "#32315"
-msgid "Select Now Playing Info for Movies/Episodes"
-msgstr "Vybrat informace v části Právě se přehrává pro filmy/epizody"
-
-msgctxt "#32316"
-msgid "Select Now Playing Info for other Videos"
-msgstr "Vybrat informace v části Právě se přehrává pro ostatní videa"
-
-msgctxt "#32317"
-msgid "Select Now Playing Info for Music"
-msgstr "Vybrat informace v části Právě se přehrává pro hudbu"
-
-msgctxt "#32318"
-msgid "Show Video in the Background"
-msgstr "Zobrazit video na pozadí"
-
-msgctxt "#32319"
-msgid "Show Music Visualization in the Background"
-msgstr "Zobrazit hudební vizualizaci na pozadí"
-
-msgctxt "#32320"
-msgid "Show Extra Art for Video"
-msgstr "Zobrazit doplňkovou grafiku pro video"
-
-msgctxt "#32321"
-msgid "Show Extra Art for Music"
-msgstr "Zobrazit doplňkovou grafiku pro hudbu"
-
-msgctxt "#32322"
-msgid "Show Logo"
-msgstr "Zobrazit logo"
-
-msgctxt "#32323"
-msgid "Show ClearArt"
-msgstr "Zobrazit ClearArt"
-
-msgctxt "#32324"
-msgid "Show Disc Art"
-msgstr "Zobrazit grafiku disku"
-
-msgctxt "#32325"
-msgid "Select Disc Art Fallback for Video"
-msgstr "Vybrat náhradní grafiku disku pro video"
-
-msgctxt "#32326"
-msgid "Select Disc Art Fallback for Music"
-msgstr "Vybrat náhradní grafiku disku pro hudbu"
-
-msgctxt "#32327"
-msgid "Disable Now Playing"
-msgstr "Zakázat část Právě se přehrává"
-
-msgctxt "#32328"
-msgid "Internet Stream"
-msgstr "Internetový stream"
-
-msgctxt "#32329"
-msgid "Special"
-msgstr "Speciální"
-
-msgctxt "#32330"
-msgid "Next Tracks"
-msgstr "Další skladby"
-
-msgctxt "#32331"
-msgid "Album Review"
-msgstr "Recenze alba"
-
-msgctxt "#32332"
-msgid "Artist Bio"
-msgstr "Životopis interpreta"
-
-msgctxt "#32333"
-msgid "Hide Shelves when Now Playing is Visible"
-msgstr "Skrýt panely, když je viditelná část Právě se přehrává"
-
-msgctxt "#32334"
-msgid "Enlarge Video Preview when Idle"
-msgstr "Zvětšit náhled videa při nečinnosti"
-
-msgctxt "#32335"
-msgid "Select Extra Art to Show in Applicable Views"
-msgstr "Vybrat doplňkovou grafiku k zobrazení v příslušných zobrazeních"
-
-msgctxt "#32336"
-msgid "Full Screen/OSD"
-msgstr "Celá obrazovka / OSD"
-
-msgctxt "#32337"
-msgid "Select Interval for Auto Closing Video OSD"
-msgstr "Vybrat interval automatického zavření video OSD"
-
-msgctxt "#32338"
-msgid "Current Color"
-msgstr "Aktuální barva"
-
-msgctxt "#32339"
-msgid "Value"
-msgstr "Hodnota"
-
-msgctxt "#32340"
-msgid "Second"
-msgstr "Sekunda"
-
-msgctxt "#32341"
-msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
-msgstr "Použít metodu přívětivou pro myš (script.skin.info.service v1.0.8 a novější)"
-
-msgctxt "#32342"
-msgid "Auto Close Video OSD"
-msgstr "Automaticky zavírat video OSD"
-
-msgctxt "#32343"
-msgid "Default Font Size"
-msgstr "Výchozí velikost písma"
-
-msgctxt "#32344"
-msgid "Use fanart.jpg if present in folder or parent folder"
-msgstr "Použít soubor fanart.jpg, pokud je ve složce nebo nadřazené složce"
-
-msgctxt "#32345"
-msgid "Use Clear Art instead of Logo"
-msgstr "Použít Clear Art místo loga"
-
-msgctxt "#32346"
-msgid "Single Logo"
-msgstr "Jedno logo"
-
-msgctxt "#32347"
-msgid "Fade out Unfocused"
-msgstr "Zeslabit nezaměřené položky"
-
-msgctxt "#32348"
-msgid "Show Overlay"
-msgstr "Zobrazit překryvnou vrstvu"
-
-msgctxt "#32349"
-msgid "Show Smaller Favourite Icons"
-msgstr "Zobrazit menší ikony oblíbených položek"
-
-msgctxt "#32350"
-msgid "Show Three Rows"
-msgstr "Zobrazit tři řádky"
-
-msgctxt "#32351"
-msgid "Show Four Rows"
-msgstr "Zobrazit čtyři řádky"
-
-msgctxt "#32352"
-msgid "Enable Use of TMDb Helper"
-msgstr "Povolit použití TMDb Helperu"
-
-msgctxt "#32353"
-msgid "Enable Use of Embuary Helper"
-msgstr "Povolit použití Embuary Helperu"
-
-msgctxt "#32354"
-msgid "Hide Seek Bar when Paused"
-msgstr "Skrýt panel posunu při pozastavení"
-
-msgctxt "#32355"
-msgid "Icon Only Menu"
-msgstr "Nabídka pouze s ikonami"
-
-msgctxt "#32356"
-msgid "Show Menu Item Name"
-msgstr "Zobrazit název položky nabídky"
-
-msgctxt "#32357"
-msgid "Enable Video Lyrics"
-msgstr "Povolit texty videí"
-
-msgctxt "#32358"
-msgid "Play Whole Albums from Shelves"
-msgstr "Přehrávat celá alba z panelů"
-
-msgctxt "#32359"
-msgid "Show Item Name in Top Bar"
-msgstr "Zobrazit název položky v horním panelu"
-
-msgctxt "#32360"
-msgid "Animate backgrounds using Ken Burns effect"
-msgstr "Animovat pozadí pomocí efektu Ken Burns"
-
-msgctxt "#32361"
-msgid "Single Column"
-msgstr "Jeden sloupec"
-
-msgctxt "#32362"
-msgid "Disable Now Playing Fanart"
-msgstr "Zakázat fanart v části Právě se přehrává"
-
-msgctxt "#32363"
-msgid "Show Media Info with Seek Bar"
-msgstr "Zobrazit mediální informace s panelem posunu"
-
-msgctxt "#32364"
-msgid "Show Seek Bar when Starting Video Playback"
-msgstr "Zobrazit panel posunu při spuštění přehrávání videa"
-
-msgctxt "#32365"
-msgid "Time to Show Seek Bar"
-msgstr "Doba zobrazení panelu posunu"
-
-msgctxt "#32366"
-msgid "Hide Title Bar in Main Window"
-msgstr "Skrýt záhlaví v hlavním okně"
-
-msgctxt "#32367"
-msgid "Hide fallback image if no thumb in OSD"
-msgstr "Skrýt náhradní obrázek, pokud v OSD není miniatura"
-
-msgctxt "#32368"
-msgid "Dim Background and Album Cover when Showing Lyrics"
-msgstr "Ztlumit pozadí a obal alba při zobrazení textů"
-
-msgctxt "#32369"
-msgid "Use Alternate Favourites Layout"
-msgstr "Použít alternativní rozložení oblíbených položek"
-
-msgctxt "#32370"
-msgid "Align Menu Item Text to the Left"
-msgstr "Zarovnat text položek nabídky doleva"
-
-msgctxt "#32371"
-msgid "Info Button Opens Video Info Dialog"
-msgstr "Tlačítko Informace otevírá dialog informací o videu"
-
-msgctxt "#32372"
-msgid "Pause Media While Info Dialog is Open"
-msgstr "Pozastavit média při otevřeném dialogu informací"
-
-msgctxt "#32373"
-msgid "End Time"
-msgstr "Čas ukončení"
-
-msgctxt "#32374"
-msgid "Show Dark Background Behind Shortcuts"
-msgstr "Zobrazit tmavé pozadí za zkratkami"
-
-msgctxt "#32375"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "Použít Artist Slideshow pro hudební fanart"
-
-msgctxt "#32376"
-msgid "Disable Lyrics"
-msgstr "Zakázat texty"
-
-msgctxt "#32377"
-msgid "Activate Lyrics"
-msgstr "Aktivovat texty"
-
-msgctxt "#32378"
-msgid "Use Color Flags"
-msgstr "Použít barevné příznaky"
-
-msgctxt "#32379"
-msgid "Show Submenu Only when Focused"
-msgstr "Zobrazit podnabídku pouze při zaměření"
-
-msgctxt "#32380"
-msgid "Movies with Plot containing"
-msgstr "Filmy, jejichž zápletka obsahuje"
-
-msgctxt "#32381"
-msgid "TV Shows with Plot containing"
-msgstr "Seriály, jejichž zápletka obsahuje"
-
-msgctxt "#32382"
-msgid "Episodes with Plot containing"
-msgstr "Epizody, jejichž zápletka obsahuje"
-
-msgctxt "#32383"
-msgid "With Plot Containing"
-msgstr "Se zápletkou, která obsahuje"
-
-msgctxt "#32384"
-msgid "Show Title in Footer"
-msgstr "Zobrazit název v zápatí"
-
-msgctxt "#32385"
-msgid "Hide Seek Bar when Forwarding or Rewinding"
-msgstr "Skrýt panel posunu při posunu vpřed nebo zpět"
-
-msgctxt "#32386"
-msgid "Enable Touchscreen Devices Support"
-msgstr "Povolit podporu zařízení s dotykovou obrazovkou"
-
-msgctxt "#32387"
-msgid "Show Rating Overlay"
-msgstr "Zobrazit překryvné hodnocení"
-
-msgctxt "#32388"
-msgid "Use User Rating for Overlay"
-msgstr "V překryvném zobrazení použít uživatelské hodnocení"
-
-msgctxt "#32390"
-msgid "Select Items to Show in Views"
-msgstr "Vybrat položky k zobrazení v zobrazeních"
-
-msgctxt "#32391"
-msgid "Items to Show in Views"
-msgstr "Položky k zobrazení v zobrazeních"
-
-msgctxt "#32392"
-msgid "Play Random"
-msgstr "Přehrát náhodně"
-
-msgctxt "#32393"
-msgid "List Views Options"
-msgstr "Možnosti seznamových zobrazení"
-
-msgctxt "#32394"
-msgid "Marks and Overlays"
-msgstr "Značky a překryvné prvky"
-
-msgctxt "#32395"
-msgid "Select View Types to Enable"
-msgstr "Vybrat typy zobrazení k povolení"
-
-msgctxt "#32396"
-msgid "View Types to Enable"
-msgstr "Typy zobrazení k povolení"
-
-msgctxt "#32398"
-msgid "Show Poster"
-msgstr "Zobrazit plakát"
-
-msgctxt "#32399"
-msgid "Text"
-msgstr "Text"
-
-msgctxt "#32400"
-msgid "Banner"
-msgstr "Banner"
-
-msgctxt "#32401"
-msgid "List Item Type"
-msgstr "Typ položky seznamu"
-
-msgctxt "#32402"
-msgid "Poster/Thumb"
-msgstr "Plakát/miniatura"
-
-msgctxt "#32403"
-msgid "OSD/Full Screen Art"
-msgstr "Grafika OSD / celé obrazovky"
-
-msgctxt "#32404"
-msgid "N/A"
-msgstr "Nedostupné"
-
-msgctxt "#32405"
-msgid "Show Info Popup"
-msgstr "Zobrazit informační okno"
-
-msgctxt "#32406"
-msgid "Popup Delay"
-msgstr "Prodleva okna"
-
-msgctxt "#32407"
-msgid "Show Floor"
-msgstr "Zobrazit spodní panel"
-
-msgctxt "#32408"
-msgid "Fixed List"
-msgstr "Pevný seznam"
-
-msgctxt "#32409"
-msgid "Centered Static Menu (less than 8 items)"
-msgstr "Vystředěná statická nabídka (méně než 8 položek)"
-
-msgctxt "#32410"
-msgid "Compact OSD"
-msgstr "Kompaktní OSD"
-
-msgctxt "#32411"
-msgid "Ultra Compact OSD"
-msgstr "Ultrakompaktní OSD"
-
-msgctxt "#32412"
-msgid "Alternate OSD Button Highlighting"
-msgstr "Alternativní zvýraznění tlačítek OSD"
-
-msgctxt "#32413"
-msgid "Enabled"
-msgstr "Povoleno"
-
-msgctxt "#32414"
-msgid "Disabled"
-msgstr "Zakázáno"
-
-msgctxt "#32415"
-msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr "Automaticky přehrát upoutávku (pouze místní upoutávka)"
-
-msgctxt "#32416"
-msgid "Auto Play Trailer Delay"
-msgstr "Prodleva automatického přehrání upoutávky"
-
-msgctxt "#32417"
-msgid "Fanart Title Button Opens Info Dialog"
-msgstr "Tlačítko názvu ve fanartu otevírá dialog informací"
-
-msgctxt "#32418"
-msgid "Single Image"
-msgstr "Jeden obrázek"
-
-msgctxt "#32419"
-msgid "Multiple Images"
-msgstr "Více obrázků"
-
-msgctxt "#32420"
-msgid "Video/Playlist"
-msgstr "Video / seznam stop"
-
-msgctxt "#32421"
-msgid "Startup Background"
-msgstr "Pozadí při spuštění"
-
-msgctxt "#32422"
-msgid "Hide Menu when Shelves are Focused"
-msgstr "Skrýt nabídku při zaměření panelů"
-
-msgctxt "#32423"
-msgid "Use Disc Art instead of Cover"
-msgstr "Použít grafiku disku místo obalu"
-
-msgctxt "#32424"
-msgid "Auto Play Trailer from Shelf Items"
-msgstr "Automaticky přehrát upoutávku z položek panelu"
-
-msgctxt "#32425"
-msgid "Shelf Trailer Delay"
-msgstr "Prodleva upoutávky z panelu"
-
-msgctxt "#32426"
-msgid "Slide Out Media Items While Trailer Playing"
-msgstr "Vysunout mediální položky při přehrávání upoutávky"
-
-msgctxt "#32427"
-msgid "Hide PVR Channel Preview"
-msgstr "Skrýt náhled kanálu PVR"
-
-msgctxt "#32428"
-msgid "Art Downloader: Select Artwork"
-msgstr "Art Downloader: vybrat grafiku"
-
-msgctxt "#32429"
-msgid "Art Downloader: All Artwork"
-msgstr "Art Downloader: veškerá grafika"
-
-msgctxt "#32450"
-msgid "Show Artwork Downloader items in Context Menu"
-msgstr "Zobrazit položky Artwork Downloaderu v kontextové nabídce"
-
-msgctxt "#32451"
-msgid "Movies with Tag"
-msgstr "Filmy se štítkem"
-
-msgctxt "#32452"
-msgid "Select a Tag"
-msgstr "Vybrat štítek"
-
-msgctxt "#32453"
-msgid "With Tag"
-msgstr "Se štítkem"
-
-msgctxt "#32454"
-msgid "Always Use TV Show Poster for Episodes"
-msgstr "Vždy používat plakát seriálu pro epizody"
-
-msgctxt "#32455"
-msgid "Open ExtendedInfo for Info Dialogs"
-msgstr "Otevírat ExtendedInfo pro dialogy informací"
-
-msgctxt "#32456"
-msgid "Cert"
-msgstr "Certifikace"
-
-msgctxt "#32457"
-msgid "Show Episodes List button"
-msgstr "Zobrazit tlačítko seznamu epizod"
-
-msgctxt "#32458"
-msgid "Include Seasons in Episodes List popup"
-msgstr "Zahrnout řady do vyskakovacího okna seznamu epizod"
-
-msgctxt "#32459"
-msgid "Next Aired"
-msgstr "Další vysílání"
-
-msgctxt "#32460"
-msgid "Enable Direct Seeking in Full Screen Info"
-msgstr "Povolit přímý posun v informacích na celé obrazovce"
-
-msgctxt "#32461"
-msgid "Show Disc above Poster"
-msgstr "Zobrazit disk nad plakátem"
-
-msgctxt "#32462"
-msgid "Hide Disc over Set Poster"
-msgstr "Skrýt disk nad plakátem sbírky"
-
-msgctxt "#32463"
-msgid "Play trailer in a window"
-msgstr "Přehrát upoutávku v okně"
-
-msgctxt "#32464"
-msgid "Search Trailer"
-msgstr "Hledat upoutávku"
-
-msgctxt "#32465"
-msgid "Search for Trailers with IMDb Trailers Addon"
-msgstr "Hledat upoutávky pomocí doplňku IMDb Trailers"
-
-msgctxt "#32466"
-msgid "Fade out Non-focused Menu Items"
-msgstr "Zeslabit nezaměřené položky nabídky"
-
-msgctxt "#32467"
-msgid "Cloudiness"
-msgstr "Oblačnost"
-
-msgctxt "#32468"
-msgid "Probability of Precipitation"
-msgstr "Pravděpodobnost srážek"
-
-msgctxt "#32469"
-msgid "Intro Video Duration"
-msgstr "Délka úvodního videa"
-
-msgctxt "#32470"
-msgid "PVR Timeshift Buffer Color"
-msgstr "Barva vyrovnávací paměti časového posunu PVR"
-
-msgctxt "#32471"
-msgid "Use Main Menu item Background for Sub Windows"
-msgstr "Použít pozadí položky hlavní nabídky pro podokna"
-
-msgctxt "#32472"
-msgid "Teletext Button Opens EPG"
-msgstr "Tlačítko teletextu otevírá EPG"
-
-msgctxt "#32473"
-msgid "EPG Icon"
-msgstr "Ikona EPG"
-
-msgctxt "#32474"
-msgid "Channel Logo"
-msgstr "Logo kanálu"
-
-msgctxt "#32475"
-msgid "Always Show Information Panel"
-msgstr "Vždy zobrazovat informační panel"
-
-msgctxt "#32476"
-msgid "Use Custom Search for Video Library"
-msgstr "Použít vlastní vyhledávání pro knihovnu videí"
-
-msgctxt "#32477"
-msgid "Use Custom Search for Music Library"
-msgstr "Použít vlastní vyhledávání pro hudební knihovnu"
-
-msgctxt "#32478"
-msgid "Current Programme Progress:"
-msgstr "Průběh aktuálního pořadu:"
-
-msgctxt "#32479"
-msgid "Also Show Seconds"
-msgstr "Zobrazovat také sekundy"
-
-msgctxt "#32480"
-msgid "kbps"
-msgstr "kb/s"
-
-msgctxt "#32481"
-msgid "Remember Focused Control in Home Window"
-msgstr "Pamatovat zaměřený ovládací prvek v domovském okně"
-
-msgctxt "#32482"
-msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
-msgstr "Pro panely YouTube používat miniaturu položky, ne fanart doplňku"
-
-msgctxt "#32483"
-msgid "Allow Changing View Types in PVR Channels Window"
-msgstr "Povolit změnu typů zobrazení v okně kanálů PVR"
-
-msgctxt "#32484"
-msgid "Update Library"
-msgstr "Aktualizovat knihovnu"
-
-msgctxt "#32485"
-msgid "Stop Scanning"
-msgstr "Zastavit prohledávání"
-
-msgctxt "#32486"
-msgid "More Info"
-msgstr "Více informací"
-
-msgctxt "#32487"
-msgid "Play Trailer Windowed"
-msgstr "Přehrát upoutávku v okně"
-
-msgctxt "#32488"
-msgid "Last Played Date"
-msgstr "Datum posledního přehrání"
-
-msgctxt "#32489"
-msgid "Horizontal Icon Layout"
-msgstr "Vodorovné rozložení ikon"
-
-msgctxt "#32490"
-msgid "Show Menu Item Label"
-msgstr "Zobrazit popisek položky nabídky"
-
-msgctxt "#32491"
-msgid "Always Show Set Movie List"
-msgstr "Vždy zobrazovat seznam filmů ve sbírce"
-
-msgctxt "#32492"
-msgid "Use Tall List Layout"
-msgstr "Použít rozložení vysokého seznamu"
-
-msgctxt "#32493"
-msgid "Show More Items in List"
-msgstr "Zobrazit v seznamu více položek"
-
-msgctxt "#32494"
-msgid "Hide Overlay Label in Icon/Panel Views"
-msgstr "Skrýt překryvný popisek v ikonových/panelových zobrazeních"

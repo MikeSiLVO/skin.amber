@@ -41,10 +41,6 @@ msgctxt "#31003"
 msgid "Channels Directory"
 msgstr "Cartella canali"
 
-msgctxt "#31004"
-msgid "Shift"
-msgstr "Shift"
-
 msgctxt "#31005"
 msgid "Cinema"
 msgstr "Cinema"
@@ -193,7 +189,18 @@ msgctxt "#31041"
 msgid "Repository"
 msgstr "Repository"
 
-# empty strings from id 31042 to 31044
+msgctxt "#31042"
+msgid "Hide icons"
+msgstr "Nascondi icone"
+
+msgctxt "#31043"
+msgid "Hide Games"
+msgstr "Nascondi giochi"
+
+msgctxt "#31044"
+msgid "Game Settings"
+msgstr "Impostazioni giochi"
+
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
 msgstr "Mostra scaffale a tripla fila"
@@ -230,9 +237,61 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Vista Media"
 
-msgctxt "#31054"
-msgid "Media sources"
-msgstr "Sorgenti Media"
+msgctxt "#31055"
+msgid "Toggle Subtitle"
+msgstr "Attiva/disattiva sottotitoli"
+
+msgctxt "#31056"
+msgid "AB: Select Artwork"
+msgstr "AB: Seleziona Artwork"
+
+msgctxt "#31057"
+msgid "AB: All Artwork"
+msgstr "AB: Tutti gli Artwork"
+
+msgctxt "#31058"
+msgid "Special Features"
+msgstr "Funzioni speciali"
+
+msgctxt "#31059"
+msgid "Enable Special Features"
+msgstr "Abilita funzioni speciali"
+
+msgctxt "#31060"
+msgid "Next Episode"
+msgstr "Prossimo episodio"
+
+msgctxt "#31061"
+msgid "Latest Episode"
+msgstr "Ultimo episodio"
+
+msgctxt "#31062"
+msgid "Airs"
+msgstr "In onda"
+
+msgctxt "#31063"
+msgid "Next Airing Episodes"
+msgstr "Prossimi episodi in onda"
+
+msgctxt "#31064"
+msgid "Search Results for: "
+msgstr "Cerca risultati per: "
+
+msgctxt "#31065"
+msgid "Show Only Local Info "
+msgstr "Mostra solo informazioni locali "
+
+msgctxt "#31066"
+msgid "Extended Info"
+msgstr "Info estese"
+
+msgctxt "#31067"
+msgid "Search in Local Library"
+msgstr "Cerca nella libreria locale"
+
+msgctxt "#31068"
+msgid "Search online in TMDb"
+msgstr "Cerca online in TMDb"
 
 msgctxt "#31069"
 msgid "Random episodes"
@@ -390,11 +449,26 @@ msgctxt "#31107"
 msgid "Shelf style"
 msgstr "Stile scaffale"
 
+msgctxt "#31108"
+msgid "Hide Second Label in List Views"
+msgstr "Nascondi la seconda etichetta nella visualizzazione elenchi"
+
+msgctxt "#31109"
+msgid "Added:"
+msgstr "Aggiunto:"
+
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Modifica lo sfondo in base al tipo di media"
 
-# empty strings from id 31111 to 31112
+msgctxt "#31111"
+msgid "Plays:"
+msgstr "Play:"
+
+msgctxt "#31112"
+msgid "Last Played:"
+msgstr "Ultima riprodotta:"
+
 msgctxt "#31113"
 msgid "Single"
 msgstr "Singolo"
@@ -431,14 +505,37 @@ msgctxt "#31121"
 msgid "Apply Changes"
 msgstr "Applica cambiamenti"
 
-# empty strings from id 31122 to 31128
+msgctxt "#31122"
+msgid "New Search"
+msgstr "Nuova ricerca"
+
+msgctxt "#31123"
+msgid "Movies Starring"
+msgstr "Film con protagonista"
+
+msgctxt "#31124"
+msgid "Movies Directed by"
+msgstr "Film diretti da"
+
+msgctxt "#31125"
+msgid "TV Shows Starring"
+msgstr "Protagonisti serie TV"
+
+msgctxt "#31126"
+msgid "TV Shows Directed by"
+msgstr "Serie TV dirette da"
+
+msgctxt "#31127"
+msgid "Movies with Genre"
+msgstr "Film con genere"
+
+msgctxt "#31128"
+msgid "TV Shows with Genre"
+msgstr "Serie TV con genere"
+
 msgctxt "#31129"
 msgid "Same director"
 msgstr "Stesso regista"
-
-msgctxt "#31130"
-msgid "Hourly"
-msgstr "Ogni ora"
 
 msgctxt "#31131"
 msgid "Forecast"
@@ -484,7 +581,34 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Velocità di riproduzione"
 
-# empty strings from id 31142 to 31149
+msgctxt "#31143"
+msgid "Movies from Studio"
+msgstr "Film dallo Studio"
+
+msgctxt "#31144"
+msgid "TV Shows from Studio"
+msgstr "Serie TV dallo Studio"
+
+msgctxt "#31145"
+msgid "Movies from Year"
+msgstr "Film dall'anno"
+
+msgctxt "#31146"
+msgid "TV Shows from Year"
+msgstr "Serie TV dall'anno"
+
+msgctxt "#31147"
+msgid "Movies from Country"
+msgstr "Film dal paese"
+
+msgctxt "#31148"
+msgid "Music Videos by Artist"
+msgstr "Video musicali per artista"
+
+msgctxt "#31149"
+msgid "YouTube videos about"
+msgstr "Video di YouTube su"
+
 msgctxt "#31150"
 msgid "Disable List view"
 msgstr "Disabilita visualizzazione elenco"
@@ -529,6 +653,518 @@ msgctxt "#31160"
 msgid "Disable Logo view"
 msgstr "Disabilita visualizzazione logo"
 
+msgctxt "#31161"
+msgid "Enable Touch/Mouse Buttons"
+msgstr "Abilita i pulsanti touch/mouse"
+
+msgctxt "#31162"
+msgid "Timeshift"
+msgstr "Timeshift"
+
+msgctxt "#31163"
+msgid "Enable Kiosk Mode"
+msgstr "Abilita modalità Kiosk"
+
+msgctxt "#31164"
+msgid "Next Episodes"
+msgstr "Prossimi episodi"
+
+msgctxt "#31165"
+msgid "Customize Home Menu and Shelves"
+msgstr "Personalizza menu Home e scaffali"
+
+msgctxt "#31166"
+msgid "Shelves"
+msgstr "Scaffali"
+
+msgctxt "#31167"
+msgid "Weather fanart"
+msgstr "Fanart meteo"
+
+msgctxt "#31168"
+msgid "Seconds"
+msgstr "Secondi"
+
+msgctxt "#31169"
+msgid "Show background name in Home window"
+msgstr "Mostra il nome dello sfondo nella finestra Home"
+
+msgctxt "#31170"
+msgid "Home window Background Rotation Delay"
+msgstr "Ritardo rotazione sfondo finestra Home"
+
+msgctxt "#31171"
+msgid "IPTV Recorder"
+msgstr "Registratore IPTV"
+
+msgctxt "#31172"
+msgid "IPTV Recorder Recordings"
+msgstr "Registrazioni del registratore IPTV"
+
+msgctxt "#31173"
+msgid "Show Video Info on Pause"
+msgstr "Mostra informazioni video in pausa"
+
+msgctxt "#31174"
+msgid "Show Two Shelves Together"
+msgstr "Mostra due scaffali insieme"
+
+msgctxt "#31175"
+msgid "Use Larger Font"
+msgstr "Usa carattere più grande"
+
+msgctxt "#31176"
+msgid "Use Wraparound Navigation"
+msgstr "Usa navigazione avvolgente"
+
+msgctxt "#31177"
+msgid "Show more items on List Views"
+msgstr "Mostra più elementi nelle visualizzazioni elenco"
+
+msgctxt "#31178"
+msgid "Show Season/Episode Numbers"
+msgstr "Mostra numeri stagione/episodio"
+
+msgctxt "#31179"
+msgid "Show Episode Thumb"
+msgstr "Mostra anteprime episodio"
+
+msgctxt "#31180"
+msgid "Disable Tall List View"
+msgstr "Disabilita visualizzazione elenco alto"
+
+msgctxt "#31181"
+msgid "Tall List"
+msgstr "Elenco alto"
+
+msgctxt "#31182"
+msgid "Set Default Background"
+msgstr "Imposta sfondo predefinito"
+
+msgctxt "#31183"
+msgid "Set Favourite Addons for Shelf"
+msgstr "Imposta add-on preferiti per scaffale"
+
+msgctxt "#31184"
+msgid "Select Favourite Addons"
+msgstr "Seleziona add-on preferiti"
+
+msgctxt "#31185"
+msgid "Backup/Restore"
+msgstr "Backup/Ripristino"
+
+msgctxt "#31186"
+msgid "Backup"
+msgstr "Backup"
+
+msgctxt "#31187"
+msgid "Restore"
+msgstr "Ripristino"
+
+msgctxt "#31188"
+msgid "Configure Backup addon"
+msgstr "Configura add-on di backup"
+
+msgctxt "#31189"
+msgid "Show Fanart"
+msgstr "Mostra fanart"
+
+msgctxt "#31190"
+msgid "Place Background Name in Top Bar"
+msgstr "Posiziona nome dello sfondo nella barra superiore"
+
+msgctxt "#31191"
+msgid "Enable Alphabet Strip"
+msgstr "Abilita striscia alfabetica"
+
+msgctxt "#31192"
+msgid "Enable Autocompletion for Virtual Keyboard"
+msgstr "Abilita completamento automatico per la tastiera virtuale"
+
+msgctxt "#31193"
+msgid "Budget"
+msgstr "Bilancio"
+
+msgctxt "#31194"
+msgid "Revenue"
+msgstr "Incassi"
+
+msgctxt "#31195"
+msgid "Awards"
+msgstr "Premi"
+
+msgctxt "#31196"
+msgid "Show Watched Items in Recent Shelves"
+msgstr "Mostra elementi già visti negli scaffali recenti"
+
+msgctxt "#31197"
+msgid "RT Total Critics Reviews"
+msgstr "Recensioni totali dei critici di RT"
+
+msgctxt "#31198"
+msgid "RT Fresh Reviews"
+msgstr "Recensioni fresche di RT"
+
+msgctxt "#31199"
+msgid "RT Rotten Reviews"
+msgstr "Recensioni marce di RT"
+
+msgctxt "#31200"
+msgid "RT Critics' Consensus"
+msgstr "Consenso dei critici di RT"
+
+msgctxt "#31201"
+msgid "RT Total User Reviews"
+msgstr "Totale recensioni degli utenti di RT"
+
+msgctxt "#31202"
+msgid "Birthday"
+msgstr "Compleanno"
+
+msgctxt "#31204"
+msgid "Born"
+msgstr "Nato"
+
+msgctxt "#31206"
+msgid "Age"
+msgstr "Età"
+
+msgctxt "#31207"
+msgid "Died"
+msgstr "Morto"
+
+msgctxt "#31208"
+msgid "Also Known As"
+msgstr "Conosciuto anche come"
+
+msgctxt "#31209"
+msgid "Cast in Movies"
+msgstr "Cast nei film"
+
+msgctxt "#31210"
+msgid "Cast in TV Shows"
+msgstr "Cast nelle serie TV"
+
+msgctxt "#31211"
+msgid "Crew in Movies"
+msgstr "Persone nei film"
+
+msgctxt "#31212"
+msgid "Crew in TV Shows"
+msgstr "Persone nelle serie TV"
+
+msgctxt "#31213"
+msgid "Movies in TMDb"
+msgstr "Film nel TMDb"
+
+msgctxt "#31214"
+msgid "TV Shows in TMDb"
+msgstr "Serie TV nel TMDb"
+
+msgctxt "#31215"
+msgid "Movies in Local DB"
+msgstr "Film nel DB locale"
+
+msgctxt "#31216"
+msgid "TV Shows in Local DB"
+msgstr "Serie TV nel DB locale"
+
+msgctxt "#31217"
+msgid "Reboot to Android"
+msgstr "Riavvia su Android"
+
+msgctxt "#31218"
+msgid "Episodes Starring"
+msgstr "Protagonisti episodi"
+
+msgctxt "#31219"
+msgid "Movies in the"
+msgstr "Film nel"
+
+msgctxt "#31220"
+msgid "Also Directed by"
+msgstr "Diretto anche da"
+
+msgctxt "#31221"
+msgid "Crew"
+msgstr "Troupe"
+
+msgctxt "#31222"
+msgid "More from"
+msgstr "Altri da"
+
+msgctxt "#31223"
+msgid "More in"
+msgstr "Di più in"
+
+msgctxt "#31224"
+msgid "Similar to"
+msgstr "Simile a"
+
+msgctxt "#31225"
+msgid "Cast Members also appear in"
+msgstr "Appaiono anche membri del cast in"
+
+msgctxt "#31226"
+msgid "Select Custom Lists to Display"
+msgstr "Seleziona elenchi personalizzati da visualizzare"
+
+msgctxt "#31227"
+msgid "Similar"
+msgstr "Simile"
+
+msgctxt "#31228"
+msgid "Featuring Cast Members"
+msgstr "Con membri del cast"
+
+msgctxt "#31229"
+msgid "Video Info"
+msgstr "Informazioni video"
+
+msgctxt "#31230"
+msgid "Select a Genre"
+msgstr "Seleziona genere"
+
+msgctxt "#31231"
+msgid "Select a Studio"
+msgstr "Seleziona studio"
+
+msgctxt "#31232"
+msgid "Select a Director"
+msgstr "Seleziona regista"
+
+msgctxt "#31233"
+msgid "Online TMDb Search"
+msgstr "Ricerca TMDb online"
+
+msgctxt "#31234"
+msgid "Local Search"
+msgstr "Ricerca locale"
+
+msgctxt "#31235"
+msgid "Select a Writer"
+msgstr "Seleziona sceneggiatore"
+
+msgctxt "#31236"
+msgid "Movies Written by"
+msgstr "Film scritti da"
+
+msgctxt "#31237"
+msgid "Select a Country"
+msgstr "Seleziona paese"
+
+msgctxt "#31238"
+msgid "Episodes from Studio"
+msgstr "Episodi dallo studio"
+
+msgctxt "#31239"
+msgid "Episodes with Genre"
+msgstr "Episodi con genere"
+
+msgctxt "#31240"
+msgid "Episodes Written by"
+msgstr "Episodi scritti da"
+
+msgctxt "#31241"
+msgid "Episodes Directed by"
+msgstr "Episodi diretti da"
+
+msgctxt "#31242"
+msgid "AB: Download All Artwork"
+msgstr "AB: Scarica tutti gli Artwork"
+
+msgctxt "#31243"
+msgid "AB: Select Artwork"
+msgstr "AB: Seleziona Artwork"
+
+msgctxt "#31244"
+msgid "Show Artwork Beef items in Context Menu"
+msgstr "Mostra gli elementi Artwork Beef nel menu contestuale"
+
+msgctxt "#31245"
+msgid "Title Bar Options"
+msgstr "Opzioni barra del titolo"
+
+msgctxt "#31246"
+msgid "Show Duration in Hours and Minutes"
+msgstr "Mostra durata in ore e minuti"
+
+msgctxt "#31247"
+msgid "Hour"
+msgstr "Ora"
+
+msgctxt "#31248"
+msgid "Minute"
+msgstr "Minuto"
+
+msgctxt "#31249"
+msgid "Online TMDb Info"
+msgstr "Informazioni online da TMDb"
+
+msgctxt "#31250"
+msgid "Embuary Info Settings"
+msgstr "Impostazioni info Embuary"
+
+msgctxt "#31251"
+msgid "Guest Stars"
+msgstr "Guest star"
+
+msgctxt "#31252"
+msgid "Posters"
+msgstr "Poster"
+
+msgctxt "#31253"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#31254"
+msgid "Search for Trailer"
+msgstr "Cerca per trailer"
+
+msgctxt "#31255"
+msgid "item in database"
+msgstr "elemento nel database"
+
+msgctxt "#31256"
+msgid "Items in Database"
+msgstr "Elementi nel database"
+
+msgctxt "#31257"
+msgid "Extras"
+msgstr "Extra"
+
+msgctxt "#31258"
+msgid "Known for"
+msgstr "Conosciuto per"
+
+msgctxt "#31259"
+msgid "Retail Release"
+msgstr "Rilascio per vendita al dettaglio"
+
+msgctxt "#31260"
+msgid "Region Release"
+msgstr "Uscito nella regione"
+
+msgctxt "#31261"
+msgid "Ended"
+msgstr "Finito"
+
+msgctxt "#31262"
+msgid "Rumored"
+msgstr "Voci di corridoio"
+
+msgctxt "#31263"
+msgid "Planned"
+msgstr "Pianificato"
+
+msgctxt "#31264"
+msgid "In Production"
+msgstr "In produzione"
+
+msgctxt "#31265"
+msgid "Post Production"
+msgstr "Post produzione"
+
+msgctxt "#31266"
+msgid "Released"
+msgstr "Uscito"
+
+msgctxt "#31267"
+msgid "Canceled"
+msgstr "Annullato"
+
+msgctxt "#31268"
+msgid "Returning Series"
+msgstr "Serie di ritorno"
+
+msgctxt "#31269"
+msgid "Acting"
+msgstr "Recitazione"
+
+msgctxt "#31270"
+msgid "Directing"
+msgstr "Regia"
+
+msgctxt "#31271"
+msgid "Writing"
+msgstr "Scrittura"
+
+msgctxt "#31272"
+msgid "Production"
+msgstr "Produzione"
+
+msgctxt "#31273"
+msgid "Sound"
+msgstr "Suono"
+
+msgctxt "#31274"
+msgid "Creator"
+msgstr "Creatore"
+
+msgctxt "#31275"
+msgid "Died at Age"
+msgstr "Morto all'età"
+
+msgctxt "#31276"
+msgid "Collection"
+msgstr "Saga"
+
+msgctxt "#31277"
+msgid "TMDb Helper Settings"
+msgstr "Impostazioni assistente TMDb"
+
+msgctxt "#31278"
+msgid "Blur Background"
+msgstr "Sfocatura sfondo"
+
+msgctxt "#31279"
+msgid "Use Poster for Blur"
+msgstr "Usa poster per sfocatura"
+
+msgctxt "#31280"
+msgid "Customize Power Menu"
+msgstr "Personalizza menu uscita"
+
+msgctxt "#31281"
+msgid "Edit Library Data"
+msgstr "Modifica dati della libreria"
+
+msgctxt "#31282"
+msgid "Select Search Categories"
+msgstr "Seleziona categorie di ricerca"
+
+msgctxt "#31283"
+msgid "Select Search Categories to Enable"
+msgstr "Seleziona categorie di ricerca da abilitare"
+
+msgctxt "#31284"
+msgid "By Title"
+msgstr "Per titolo"
+
+msgctxt "#31285"
+msgid "With Genre"
+msgstr "Con genere"
+
+msgctxt "#31286"
+msgid "From Year"
+msgstr "Dall'anno"
+
+msgctxt "#31287"
+msgid "From Studio"
+msgstr "Dallo studio"
+
+msgctxt "#31288"
+msgid "From Country"
+msgstr "Dal paese"
+
+msgctxt "#31289"
+msgid "With Actor"
+msgstr "Con attore"
+
+msgctxt "#31290"
+msgid "By Director"
+msgstr "Per regista"
+
 msgctxt "#31291"
 msgid "Add-on manager"
 msgstr "Gestore add-on"
@@ -565,14 +1201,205 @@ msgctxt "#31300"
 msgid "CoreELEC Settings"
 msgstr "Impostazioni CoreELEC"
 
-# empty strings from id 31301 to 31308
+msgctxt "#31301"
+msgid "By Writer"
+msgstr "Per sceneggiatore"
+
+msgctxt "#31302"
+msgid "Artists by Name"
+msgstr "Artisti per nome"
+
+msgctxt "#31303"
+msgid "Albums by Title"
+msgstr "Album per titolo"
+
+msgctxt "#31304"
+msgid "Songs by Title"
+msgstr "Brani per titolo"
+
+msgctxt "#31305"
+msgid "By Artist"
+msgstr "Per artista"
+
+msgctxt "#31306"
+msgid "YouTube by Title"
+msgstr "YouTube per titolo"
+
+msgctxt "#31307"
+msgid "Known for Character"
+msgstr "Conosciuto per carattere"
+
+msgctxt "#31308"
+msgid "Known for Department"
+msgstr "Conosciuto per dipartimento"
+
 msgctxt "#31309"
 msgid "Memory Used"
 msgstr "Memoria utilizzata"
 
+msgctxt "#31310"
+msgid "Known for Job"
+msgstr "Conosciuto per lavoro"
+
+msgctxt "#31311"
+msgid "Total Items in TMDb"
+msgstr "Elementi totali in TMDb"
+
+msgctxt "#31312"
+msgid "Total Movies in TMDb"
+msgstr "Film totali in TMDb"
+
+msgctxt "#31313"
+msgid "Total TV Shows in TMDb"
+msgstr "Serie TV totali in TMDb"
+
+msgctxt "#31314"
+msgid "Items in TMDb as Cast"
+msgstr "Elementi in TMDb come cast"
+
+msgctxt "#31315"
+msgid "Movies in TMDb as Cast"
+msgstr "Film in TMDb come cast"
+
+msgctxt "#31316"
+msgid "TV Shows in TMDb as Cast"
+msgstr "Serie TV in TMDb come cast"
+
+msgctxt "#31317"
+msgid "Items in TMDb as Crew"
+msgstr "Elementi in TMDb come persone"
+
+msgctxt "#31318"
+msgid "Movies in TMDb as Crew"
+msgstr "Film in TMDb come persone"
+
+msgctxt "#31319"
+msgid "TV Shows in TMDb as Crew"
+msgstr "Serie TV in TMDb come persone"
+
+msgctxt "#31320"
+msgid "Total Items in Local Database"
+msgstr "Totale elementi nel database locale"
+
+msgctxt "#31321"
+msgid "Movies in Local Database"
+msgstr "Film nel database locale"
+
 msgctxt "#31322"
 msgid "Aired"
 msgstr "In onda"
+
+msgctxt "#31323"
+msgid "TV Shows in Local Database"
+msgstr "Serie TV nel database locale"
+
+msgctxt "#31324"
+msgid "Episodes in Local Database"
+msgstr "Episodi nel database locale"
+
+msgctxt "#31325"
+msgid "Cast: Movies with"
+msgstr "Cast: film con"
+
+msgctxt "#31326"
+msgid "Cast: TV Shows with"
+msgstr "Cast: serie TV con"
+
+msgctxt "#31327"
+msgid "Crew: Movies with"
+msgstr "Persone: film con"
+
+msgctxt "#31328"
+msgid "Crew: TV Shows with"
+msgstr "Persone: serie TV con"
+
+msgctxt "#31329"
+msgid "Start at First Menu Item"
+msgstr "Inizia dalla prima voce di menu"
+
+msgctxt "#31330"
+msgid "Set Default View"
+msgstr "Imposta visualizzazione predefinita"
+
+msgctxt "#31331"
+msgid "Highlight Color"
+msgstr "Evidenzia colore"
+
+msgctxt "#31332"
+msgid "Horizontal Menu Glow Bars Tint"
+msgstr "Barre incandescenti orizzontali nel menu Tinta"
+
+msgctxt "#31333"
+msgid "Horizontal Menu Main Bar Tint"
+msgstr "Barra orizzontale nel menu principale Tinta"
+
+msgctxt "#31334"
+msgid "Vertical Menu/Submenu Background Tint"
+msgstr "Tinta di sfondo menu/sottomenu verticale"
+
+msgctxt "#31335"
+msgid "Top Bar Tint"
+msgstr "Tinta barra superiore"
+
+msgctxt "#31336"
+msgid "Current Color Theme"
+msgstr "Tema colore attuale"
+
+msgctxt "#31337"
+msgid "Dialogs Background Tint"
+msgstr "Tinta di sfondo finestre di dialogo"
+
+msgctxt "#31338"
+msgid "Regular Text Color"
+msgstr "Colore testo regolare"
+
+msgctxt "#31339"
+msgid "Focused Text Color"
+msgstr "Colore testo focalizzato"
+
+msgctxt "#31340"
+msgid "Selected Text Color"
+msgstr "Colore testo selezionato"
+
+msgctxt "#31341"
+msgid "Shelves Background Tint"
+msgstr "Tinta di sfondo scaffali"
+
+msgctxt "#31342"
+msgid "Use for All Tints"
+msgstr "Usa per tutte le tinte"
+
+msgctxt "#31343"
+msgid "Keep Lists Focus Centered"
+msgstr "Mantieni il focus centrato sugli elenchi"
+
+msgctxt "#31344"
+msgid "Show Artist Logo In Music Visualization"
+msgstr "Mostra logo artista nella visualizzazione musica"
+
+msgctxt "#31345"
+msgid "Show Logo In Media Views"
+msgstr "Mostra logo nelle visualizzazioni multimediali"
+
+msgctxt "#31346"
+msgid "Show Logo In Home Window"
+msgstr "Mostra logo nella finestra Home"
+
+msgctxt "#31347"
+msgid "Media Views Background Tint"
+msgstr "Tinta di sfondo visualizzazioni multimediali"
+
+msgctxt "#31348"
+msgid "Enable Label Scrolling in List Views"
+msgstr "Abilita scorrimento etichette nelle visualizzazioni elenco"
+
+msgctxt "#31349"
+msgid "Audio and Subtitle Info"
+msgstr "Informazioni audio e sottotitoli"
+
+msgctxt "#31350"
+msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
+msgstr "Pulsante sottotitoli apre impostazioni sottotitoli in video OSD"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -602,6 +1429,14 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "Sottotitoli locali disponibili"
 
+msgctxt "#31358"
+msgid "Disable Info Panel in List Views"
+msgstr "Disabilita pannello info nelle visualizzazioni elenco"
+
+msgctxt "#31359"
+msgid "TMDb Helper - Next Aired Episodes"
+msgstr "Assistente TMDb - Prossimi episodi in onda"
+
 msgctxt "#31360"
 msgid "Watch as 2D"
 msgstr "Guarda in 2D"
@@ -610,15 +1445,110 @@ msgctxt "#31361"
 msgid "Change mode"
 msgstr "Cambia modalità"
 
-msgctxt "#31362"
-msgid "Enabled"
-msgstr "Abilitato"
-
 msgctxt "#31363"
 msgid "Static"
 msgstr "Statico"
 
-# empty strings from id 31364 to 31389
+msgctxt "#31364"
+msgid "Embuary Info - Next Aired Episodes"
+msgstr "Embuary Info - Prossimi episodi in onda"
+
+msgctxt "#31365"
+msgid "Only Search in Local Library"
+msgstr "Cerca solo nella libreria locale"
+
+msgctxt "#31366"
+msgid "Hide Channel Groups"
+msgstr "Nascondi gruppi di canali"
+
+msgctxt "#31367"
+msgid "Select Displayed Ratings and Certification"
+msgstr "Seleziona classificazioni e certificazioni visualizzate"
+
+msgctxt "#31368"
+msgid "User Rating"
+msgstr "Valutazione utente"
+
+msgctxt "#31369"
+msgid "Ratings"
+msgstr "Giudizi"
+
+msgctxt "#31370"
+msgid "Certification"
+msgstr "Certificazione"
+
+msgctxt "#31371"
+msgid "Up Next in"
+msgstr "Prossimo tra"
+
+msgctxt "#31372"
+msgid "Continue Watching in"
+msgstr "Continua a guardare tra"
+
+msgctxt "#31373"
+msgid "Hide Collection (Set) Marks"
+msgstr "Nascondi marcatori collezione (imposta)"
+
+msgctxt "#31374"
+msgid "Disable Info Panel"
+msgstr "Disabilita pannello info"
+
+msgctxt "#31375"
+msgid "Alternate List Layout"
+msgstr "Disposizione elenco alternativo"
+
+msgctxt "#31376"
+msgid "Larger Image"
+msgstr "Immagine più grande"
+
+msgctxt "#31377"
+msgid "Alternate List Views Layout"
+msgstr "Disposizione visualizzazioni elenco alternativo"
+
+msgctxt "#31378"
+msgid "Albums by"
+msgstr "Album di"
+
+msgctxt "#31379"
+msgid "Panel 2"
+msgstr "Pannello 2"
+
+msgctxt "#31380"
+msgid "Big Panel 2"
+msgstr "Pannello grande 2"
+
+msgctxt "#31381"
+msgid "Disable Panel 2 view"
+msgstr "Disabilita visualizzazione pannello 2"
+
+msgctxt "#31382"
+msgid "Disable Big Panel 2 view"
+msgstr "Disabilita visualizzazione pannello grande 2"
+
+msgctxt "#31383"
+msgid "Enable Statistics Line"
+msgstr "Abilita riga statistiche"
+
+msgctxt "#31384"
+msgid "Show Statistics line on Shelf"
+msgstr "Mostra riga statistiche sullo scaffale"
+
+msgctxt "#31385"
+msgid "Show Marks on Top Right"
+msgstr "Mostra marcatori in alto a destra"
+
+msgctxt "#31386"
+msgid "Hide Unwatched Episodes Marks"
+msgstr "Nascondi marcatori episodi non visti"
+
+msgctxt "#31387"
+msgid "Movies in library"
+msgstr "Film nella libreria"
+
+msgctxt "#31388"
+msgid "IMDb Top 250"
+msgstr "Top 250 di IMDb"
+
 msgctxt "#31390"
 msgid "(1/5) Skin default"
 msgstr "(1/5) Predefinito skin"
@@ -1059,10 +1989,6 @@ msgctxt "#31499"
 msgid "All TV Shows"
 msgstr "Tutte le serie TV"
 
-msgctxt "#31500"
-msgid "TV"
-msgstr "TV"
-
 msgctxt "#31501"
 msgid "Scheduled Time"
 msgstr "Orario pianificato"
@@ -1091,10 +2017,6 @@ msgctxt "#31507"
 msgid "Opens"
 msgstr "Aperti"
 
-msgctxt "#31509"
-msgid "Radio"
-msgstr "Radio"
-
 msgctxt "#31510"
 msgid "Timer Set"
 msgstr "Timer impostato"
@@ -1103,7 +2025,6 @@ msgctxt "#31511"
 msgid "Reminder Set"
 msgstr "Promemoria impostato"
 
-# empty strings from id 31512 to 31513
 msgctxt "#31514"
 msgid "Episodes use poster"
 msgstr "Episodi usano poster"
@@ -1592,10 +2513,6 @@ msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
 msgstr "Personalizza scorciatoie in basso"
 
-msgctxt "#31636"
-msgid "Shortcuts"
-msgstr "Scorciatoie"
-
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
 msgstr "Abilita scorciatoie in basso"
@@ -1668,6 +2585,838 @@ msgctxt "#31654"
 msgid "Show Information for Shelves"
 msgstr "Mostra informazioni per scaffali"
 
+msgctxt "#31655"
+msgid "Missing Add-on"
+msgstr "Add-on mancante"
+
+msgctxt "#31656"
+msgid "TMDb Helper"
+msgstr "Assistente TMDb"
+
+msgctxt "#31657"
+msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+msgstr "Per abilitare questa funzionalità, è necessario installare una versione molto recente dell'add-on plugin.video.themoviedb.helper.[CR][CR]Puoi trovarlo su https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+
+msgctxt "#31658"
+msgid "Use Embuary Helper for Playlist Backgrounds"
+msgstr "Usa assistente Embuary per gli sfondi delle playlist"
+
+msgctxt "#31659"
+msgid "Unwatched"
+msgstr "Non visti"
+
+msgctxt "#31660"
+msgid "Use Embuary Helper for Statistics Line"
+msgstr "Usa assistente Embuary per la riga delle statistiche"
+
+msgctxt "#31661"
+msgid "Use Embuary Helper for Backgrounds"
+msgstr "Usa assistente Embuary per gli sfondi"
+
+msgctxt "#31662"
+msgid "Movie Collection Count"
+msgstr "Conteggio collezione film"
+
+msgctxt "#31663"
+msgid "Show Fanart for Special Content"
+msgstr "Mostra fanart per contenuti speciali"
+
+msgctxt "#31664"
+msgid "Media Play Count"
+msgstr "Conteggio riproduzioni multimediali"
+
+msgctxt "#31665"
+msgid "Color Options"
+msgstr "Opzioni colore"
+
+msgctxt "#31666"
+msgid "Go To"
+msgstr "Vai a"
+
+msgctxt "#31667"
+msgid "Show Three Shelves Together"
+msgstr "Mostra tre scaffali insieme"
+
+msgctxt "#31668"
+msgid "Configure Custom Shelf"
+msgstr "Configura scaffale personalizzato"
+
+msgctxt "#31669"
+msgid "Shift Fanart View Focus to the Right"
+msgstr "Sposta focus della vista fanart a destra"
+
+msgctxt "#31670"
+msgid "Mouse/Touch-Friendly Alphabet Strip"
+msgstr "Striscia alfabetica compatibile con mouse/tocco"
+
+msgctxt "#31671"
+msgid "Use New Media Views Selector"
+msgstr "Usa nuovo selettore di viste multimediali"
+
+msgctxt "#31672"
+msgid "Skin Variables"
+msgstr "Variabili Skin"
+
+msgctxt "#31673"
+msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
+msgstr "Per abilitare questa funzionalità, è necessario installare una versione molto recente dell'add-on script.skinvariables.[CR][CR]Puoi trovarlo su https://github.com/jurialmunkey/script.skinvariables."
+
+msgctxt "#31674"
+msgid "Configure Media Views"
+msgstr "Configura visualizzazioni media"
+
+msgctxt "#31675"
+msgid "Three Rows with Larger Icons"
+msgstr "Tre righe con icone più grandi"
+
+msgctxt "#31676"
+msgid "Oscars Won"
+msgstr "Oscar vinti"
+
+msgctxt "#31677"
+msgid "Oscar Nominations"
+msgstr "Candidature all'Oscar"
+
+msgctxt "#31678"
+msgid "Golden Globes Won"
+msgstr "Golden Globe vinti"
+
+msgctxt "#31679"
+msgid "Golden Globe Nominations"
+msgstr "Candidature ai Golden Globe"
+
+msgctxt "#31680"
+msgid "Awards (Oscars/Golden Globes)"
+msgstr "Premi (Oscar/Golden Globe)"
+
+msgctxt "#31681"
+msgid "Video Genre Fanart"
+msgstr "Fanart genere video"
+
+msgctxt "#31682"
+msgid "Music Genre Fanart"
+msgstr "Fanart genere musicale"
+
+msgctxt "#31683"
+msgid "Custom Path"
+msgstr "Percorso personalizzato"
+
+msgctxt "#31684"
+msgid "Reset Custom Path"
+msgstr "Reimposta percorso personalizzato"
+
+msgctxt "#31685"
+msgid "Image Pack"
+msgstr "Pacchetto immagini"
+
+msgctxt "#31686"
+msgid "Enable Multiple Images per Genre"
+msgstr "Abilita più immagini per genere"
+
+msgctxt "#31687"
+msgid "Match Poster Colors"
+msgstr "Abbina colori del poster"
+
+msgctxt "#31688"
+msgid "Show Seek Bar at Bottom"
+msgstr "Mostra barra di ricerca in basso"
+
+msgctxt "#31689"
+msgid "HDR/SDR and Bit Depth Flags"
+msgstr "Flag HDR/SDR e profondità bit"
+
+msgctxt "#31690"
+msgid "File Name Instead of Title"
+msgstr "Nome file anziché titolo"
+
+msgctxt "#31691"
+msgid "Extra Fanart on panel"
+msgstr "Extra fanart sul pannello"
+
+msgctxt "#31692"
+msgid "Ends at"
+msgstr "Termina alle"
+
+msgctxt "#31693"
+msgid "Netflix style"
+msgstr "Stile Netflix"
+
+msgctxt "#31694"
+msgid "Show Logo"
+msgstr "Mostra logo"
+
+msgctxt "#31695"
+msgid "Use Landscape"
+msgstr "Usa orizzontale"
+
+msgctxt "#31696"
+msgid "Dim Level for Unfocused"
+msgstr "Livello DIm per non focalizzato"
+
+msgctxt "#31697"
+msgid "Select Dim Level"
+msgstr "Seleziona livello oscuramento"
+
+msgctxt "#31698"
+msgid "Now Playing"
+msgstr "Ora in riproduzione"
+
+msgctxt "#31699"
+msgid "Hide Title Bar Now Playing"
+msgstr "Nascondi barra del titolo In riproduzione"
+
+msgctxt "#31700"
+msgid "Select Now Playing Video Disc Art Fallback"
+msgstr "Seleziona In riproduzione video DIscArt di riserva"
+
+msgctxt "#31701"
+msgid "Select Now Playing Music Disc Art Fallback"
+msgstr "Seleziona In riproduzione musica DIscArt di riserva"
+
+msgctxt "#31702"
+msgid "Blu-Ray"
+msgstr "Blu-Ray"
+
+msgctxt "#31703"
+msgid "Vinyl"
+msgstr "Vinile"
+
+msgctxt "#31704"
+msgid "None"
+msgstr "Nessuno"
+
+msgctxt "#31705"
+msgid "Golden"
+msgstr "D'oro"
+
+msgctxt "#31706"
+msgid "Purple"
+msgstr "Viola"
+
+msgctxt "#31707"
+msgid "Select Now Playing Info for Movies/Episodes"
+msgstr "Seleziona informazioni per film/Episodi in riproduzione"
+
+msgctxt "#31708"
+msgid "Select Now Playing Info for other Videos"
+msgstr "Seleziona informazioni per altri video in riproduzione"
+
+msgctxt "#31709"
+msgid "Select Now Playing Info for Music"
+msgstr "Seleziona informazioni per musica in riproduzione"
+
+msgctxt "#31710"
+msgid "Show Video in the Background"
+msgstr "Mostra video sullo sfondo"
+
+msgctxt "#31711"
+msgid "Show Music Visualization in the Background"
+msgstr "Mostra visualizzazione musica sullo sfondo"
+
+msgctxt "#31712"
+msgid "Show Extra Art for Video"
+msgstr "Mostra ExtraArt per video"
+
+msgctxt "#31713"
+msgid "Show Extra Art for Music"
+msgstr "Mostra ExtraArt per musica"
+
+msgctxt "#31714"
+msgid "Show Logo"
+msgstr "Mostra logo"
+
+msgctxt "#31715"
+msgid "Show ClearArt"
+msgstr "Mostra ClearArt"
+
+msgctxt "#31716"
+msgid "Show Disc Art"
+msgstr "Mostra DiscArt"
+
+msgctxt "#31717"
+msgid "Select Disc Art Fallback for Video"
+msgstr "Seleziona DIscArt di riserva per video"
+
+msgctxt "#31718"
+msgid "Select Disc Art Fallback for Music"
+msgstr "Seleziona DIscArt di riserva per musica"
+
+msgctxt "#31719"
+msgid "Disable Now Playing"
+msgstr "Disabilita In riproduzione"
+
+msgctxt "#31720"
+msgid "Internet Stream"
+msgstr "Stream Internet"
+
+msgctxt "#31721"
+msgid "Special"
+msgstr "Speciale"
+
+msgctxt "#31722"
+msgid "Next Tracks"
+msgstr "Tracce successive"
+
+msgctxt "#31723"
+msgid "Album Review"
+msgstr "Recensione album"
+
+msgctxt "#31724"
+msgid "Artist Bio"
+msgstr "Biografia artista"
+
+msgctxt "#31725"
+msgid "Hide Shelves when Now Playing is Visible"
+msgstr "Nascondi scaffali quando è visibile In riproduzione"
+
+msgctxt "#31726"
+msgid "Enlarge Video Preview when Idle"
+msgstr "Ingrandisci anteprima video quando inattivo"
+
+msgctxt "#31727"
+msgid "Select Extra Art to Show in Applicable Views"
+msgstr "Seleziona ExtraArt da mostrare nelle viste applicabili"
+
+msgctxt "#31728"
+msgid "Full Screen/OSD"
+msgstr "Schermo intero/OSD"
+
+msgctxt "#31729"
+msgid "Select Interval for Auto Closing Video OSD"
+msgstr "Seleziona intervallo per chiusura automatica dell'OSD video"
+
+msgctxt "#31730"
+msgid "Current Color"
+msgstr "Colore attuale"
+
+msgctxt "#31731"
+msgid "Value"
+msgstr "Valore"
+
+msgctxt "#31732"
+msgid "Second"
+msgstr "Secondo"
+
+msgctxt "#31733"
+msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
+msgstr "Usa il metodo compatibile con il mouse (script.skin.info.service v1.0.8 e versioni successive)"
+
+msgctxt "#31734"
+msgid "Auto Close Video OSD"
+msgstr "Chiusura automatica video OSD"
+
+msgctxt "#31735"
+msgid "Default Font Size"
+msgstr "Dimensione predefinita carattere"
+
+msgctxt "#31736"
+msgid "Use fanart.jpg if present in folder or parent folder"
+msgstr "Usa fanart.jpg se presente nella cartella o nella cartella principale"
+
+msgctxt "#31737"
+msgid "Use Clear Art instead of Logo"
+msgstr "Usa ClearArt invece del logo"
+
+msgctxt "#31738"
+msgid "Single Logo"
+msgstr "Logo singolo"
+
+msgctxt "#31739"
+msgid "Fade out Unfocused"
+msgstr "Dissolvenza non focalizzata"
+
+msgctxt "#31740"
+msgid "Show Overlay"
+msgstr "Mostra sovrapposizione"
+
+msgctxt "#31741"
+msgid "Show Smaller Favourite Icons"
+msgstr "Mostra icone preferite più piccole"
+
+msgctxt "#31742"
+msgid "Show Three Rows"
+msgstr "Mostra tre righe"
+
+msgctxt "#31743"
+msgid "Show Four Rows"
+msgstr "Mostra quattro righe"
+
+msgctxt "#31744"
+msgid "Enable Use of TMDb Helper"
+msgstr "Abilita uso dell'assistente TMDb"
+
+msgctxt "#31745"
+msgid "Enable Use of Embuary Helper"
+msgstr "Abilita uso dell'assistente Embuary"
+
+msgctxt "#31746"
+msgid "Hide Seek Bar when Paused"
+msgstr "Nascondi barra di ricerca quando in pausa"
+
+msgctxt "#31747"
+msgid "Icon Only Menu"
+msgstr "Solo menu icona"
+
+msgctxt "#31748"
+msgid "Show Menu Item Name"
+msgstr "Mostra il nome della voce di menu"
+
+msgctxt "#31749"
+msgid "Enable Video Lyrics"
+msgstr "Abilita testi video"
+
+msgctxt "#31750"
+msgid "Play Whole Albums from Shelves"
+msgstr "Riproduci interi album dagli scaffali"
+
+msgctxt "#31751"
+msgid "Show Item Name in Top Bar"
+msgstr "Mostra nome dell'elemento nella barra superiore"
+
+msgctxt "#31752"
+msgid "Animate backgrounds using Ken Burns effect"
+msgstr "Anima sfondi usando l'effetto Ken Burns"
+
+msgctxt "#31753"
+msgid "Single Column"
+msgstr "Singola colonna"
+
+msgctxt "#31754"
+msgid "Disable Now Playing Fanart"
+msgstr "Disabilita fanart In riproduzione"
+
+msgctxt "#31755"
+msgid "Show Media Info with Seek Bar"
+msgstr "Mostra informazioni multimediali con la barra di ricerca"
+
+msgctxt "#31756"
+msgid "Show Seek Bar when Starting Video Playback"
+msgstr "Mostra barra di ricerca all'avvio della riproduzione video"
+
+msgctxt "#31757"
+msgid "Time to Show Seek Bar"
+msgstr "È ora di mostrare la barra di ricerca"
+
+msgctxt "#31758"
+msgid "Hide Title Bar in Main Window"
+msgstr "Nascondi barra del titolo nella finestra principale"
+
+msgctxt "#31759"
+msgid "Hide fallback image if no thumb in OSD"
+msgstr "Nascondi immagine di riserva se non c'è l'anteprima nell'OSD"
+
+msgctxt "#31760"
+msgid "Dim Background and Album Cover when Showing Lyrics"
+msgstr "Sfondo scuro e copertina dell'album durante la visualizzazione testi"
+
+msgctxt "#31761"
+msgid "Use Alternate Favourites Layout"
+msgstr "Usa disposizione alternativa Preferiti"
+
+msgctxt "#31762"
+msgid "Align Menu Item Text to the Left"
+msgstr "Allinea il testo della voce di menu a sinistra"
+
+msgctxt "#31763"
+msgid "Info Button Opens Video Info Dialog"
+msgstr "Pulsante info apre finestra di dialogo info video"
+
+msgctxt "#31764"
+msgid "Pause Media While Info Dialog is Open"
+msgstr "In pausa i media mentre la finestra di dialogo delle info è aperta"
+
+msgctxt "#31765"
+msgid "End Time"
+msgstr "Termina alle"
+
+msgctxt "#31766"
+msgid "Show Dark Background Behind Shortcuts"
+msgstr "Mostra sfondo scuro dietro le scorciatoie"
+
+msgctxt "#31767"
+msgid "Use Artist Slideshow for Audio Fanart"
+msgstr "Usa Artist Slideshow per Audio Fanart"
+
+msgctxt "#31768"
+msgid "Disable Lyrics"
+msgstr "Disattiva testi"
+
+msgctxt "#31769"
+msgid "Activate Lyrics"
+msgstr "Attiva testi"
+
+msgctxt "#31770"
+msgid "Use Color Flags"
+msgstr "Usa flag colorate"
+
+msgctxt "#31771"
+msgid "Show Submenu Only when Focused"
+msgstr "Mostra sottomenu solo quando focalizzato"
+
+msgctxt "#31772"
+msgid "Movies with Plot containing"
+msgstr "Film con trama contenente"
+
+msgctxt "#31773"
+msgid "TV Shows with Plot containing"
+msgstr "Serie TV con trama contenente"
+
+msgctxt "#31774"
+msgid "Episodes with Plot containing"
+msgstr "Episodi con trama contenente"
+
+msgctxt "#31775"
+msgid "With Plot Containing"
+msgstr "Con trama contenente"
+
+msgctxt "#31776"
+msgid "Show Title in Footer"
+msgstr "Mostra titolo nel piè di pagina"
+
+msgctxt "#31777"
+msgid "Hide Seek Bar when Forwarding or Rewinding"
+msgstr "Nascondi barra di ricerca durante Avanti/Indietro veloce"
+
+msgctxt "#31778"
+msgid "Enable Touchscreen Devices Support"
+msgstr "Abilita supporto per dispositivi touchscreen"
+
+msgctxt "#31779"
+msgid "Show Rating Overlay"
+msgstr "Mostra valutazione sovrapposta"
+
+msgctxt "#31780"
+msgid "Use User Rating for Overlay"
+msgstr "Usa valutazione utenti per la sovrapposizione"
+
+msgctxt "#31781"
+msgid "Select Items to Show in Views"
+msgstr "Seleziona elementi da mostrare nelle visualizzazioni"
+
+msgctxt "#31782"
+msgid "Items to Show in Views"
+msgstr "Elementi da mostrare nelle visualizzazioni"
+
+msgctxt "#31783"
+msgid "Play Random"
+msgstr "Riproduzione casuale"
+
+msgctxt "#31784"
+msgid "List Views Options"
+msgstr "Opzioni visualizzazioni elenco"
+
+msgctxt "#31785"
+msgid "Marks and Overlays"
+msgstr "Marcatori e sovrapposizioni"
+
+msgctxt "#31786"
+msgid "Select View Types to Enable"
+msgstr "Seleziona tipi di visualizzazione da abilitare"
+
+msgctxt "#31787"
+msgid "View Types to Enable"
+msgstr "Visualizza tipi da abilitare"
+
+msgctxt "#31788"
+msgid "Show Poster"
+msgstr "Mostra poster"
+
+msgctxt "#31789"
+msgid "Text"
+msgstr "Testo"
+
+msgctxt "#31790"
+msgid "Banner"
+msgstr "Banner"
+
+msgctxt "#31791"
+msgid "List Item Type"
+msgstr "Elenca il tipo di elemento"
+
+msgctxt "#31792"
+msgid "Poster/Thumb"
+msgstr "Poster/Anteprima"
+
+msgctxt "#31793"
+msgid "OSD/Full Screen Art"
+msgstr "Art OSD/schermo intero"
+
+msgctxt "#31794"
+msgid "N/A"
+msgstr "N/D"
+
+msgctxt "#31795"
+msgid "Show Info Popup"
+msgstr "Mostra informazioni popup"
+
+msgctxt "#31796"
+msgid "Popup Delay"
+msgstr "Ritardo popup"
+
+msgctxt "#31797"
+msgid "Show Floor"
+msgstr "Mostra piano"
+
+msgctxt "#31798"
+msgid "Fixed List"
+msgstr "Elenco fisso"
+
+msgctxt "#31799"
+msgid "Centered Static Menu (less than 8 items)"
+msgstr "Menu statico centrato (meno di 8 elementi)"
+
+msgctxt "#31800"
+msgid "Compact OSD"
+msgstr "OSD compatto"
+
+msgctxt "#31801"
+msgid "Ultra Compact OSD"
+msgstr "OSD ultra compatto"
+
+msgctxt "#31802"
+msgid "Alternate OSD Button Highlighting"
+msgstr "Evidenziazione alternativa pulsanti OSD"
+
+msgctxt "#31803"
+msgid "Auto Play Trailer (Local Trailer Only)"
+msgstr "Riproduzione automatica trailer (solo trailer locale)"
+
+msgctxt "#31804"
+msgid "Auto Play Trailer Delay"
+msgstr "Ritardo riproduzione automatica trailer"
+
+msgctxt "#31805"
+msgid "Fanart Title Button Opens Info Dialog"
+msgstr "Il pulsante del titolo della fanart apre la finestra di dialogo delle informazioni"
+
+msgctxt "#31806"
+msgid "Single Image"
+msgstr "Immagine singola"
+
+msgctxt "#31807"
+msgid "Multiple Images"
+msgstr "Immagini multiple"
+
+msgctxt "#31808"
+msgid "Video/Playlist"
+msgstr "Video/Playlist"
+
+msgctxt "#31809"
+msgid "Startup Background"
+msgstr "Sfondo di avvio"
+
+msgctxt "#31810"
+msgid "Hide Menu when Shelves are Focused"
+msgstr "Nascondi menu quando gli scaffali sono focalizzati"
+
+msgctxt "#31811"
+msgid "Use Disc Art instead of Cover"
+msgstr "Usa DiscArt invece della Cover"
+
+msgctxt "#31812"
+msgid "Auto Play Trailer from Shelf Items"
+msgstr "Riproduci automaticamente il trailer degli elementi sullo scaffale"
+
+msgctxt "#31813"
+msgid "Shelf Trailer Delay"
+msgstr "Ritardo trailer scaffale"
+
+msgctxt "#31814"
+msgid "Slide Out Media Items While Trailer Playing"
+msgstr "Fai scorrere elementi multimediali durante riproduzione trailer"
+
+msgctxt "#31815"
+msgid "Hide PVR Channel Preview"
+msgstr "Nascondi anteprima canale PVR"
+
+msgctxt "#31816"
+msgid "Art Downloader: Select Artwork"
+msgstr "Art Downloader: Seleziona Artwork"
+
+msgctxt "#31817"
+msgid "Art Downloader: All Artwork"
+msgstr "Art Downloader: Tutti gli Artwork"
+
+msgctxt "#31818"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr "Mostra gli elementi di Artwork Downloader nel menu contestuale"
+
+msgctxt "#31819"
+msgid "Movies with Tag"
+msgstr "Film con tag"
+
+msgctxt "#31820"
+msgid "Select a Tag"
+msgstr "Seleziona un tag"
+
+msgctxt "#31821"
+msgid "With Tag"
+msgstr "Con tag"
+
+msgctxt "#31822"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr "Usa sempre poster serie TV per gli episodi"
+
+msgctxt "#31823"
+msgid "Open ExtendedInfo for Info Dialogs"
+msgstr "Apri ExtendedInfo per dialoghi informativi"
+
+msgctxt "#31824"
+msgid "Cert"
+msgstr "Cert"
+
+msgctxt "#31825"
+msgid "Show Episodes List button"
+msgstr "Mostra pulsante elenco episodi"
+
+msgctxt "#31826"
+msgid "Include Seasons in Episodes List popup"
+msgstr "Includi stagioni nel popup dell'elenco episodi"
+
+msgctxt "#31827"
+msgid "Next Aired"
+msgstr "Prossimo in onda"
+
+msgctxt "#31828"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr "Abilita ricerca diretta nelle info a schermo intero"
+
+msgctxt "#31829"
+msgid "Show Disc above Poster"
+msgstr "Mostra il disco sopra il poster"
+
+msgctxt "#31830"
+msgid "Hide Disc over Set Poster"
+msgstr "Nascondi disco sopra poster del set"
+
+msgctxt "#31831"
+msgid "Play trailer in a window"
+msgstr "Riproduci trailer in una finestra"
+
+msgctxt "#31832"
+msgid "Search Trailer"
+msgstr "Cerca trailer"
+
+msgctxt "#31833"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr "Cerca trailer con l'add-on Trailer IMDb"
+
+msgctxt "#31834"
+msgid "Fade out Non-focused Menu Items"
+msgstr "Dissolvenza voci menu non focalizzate"
+
+msgctxt "#31835"
+msgid "Cloudiness"
+msgstr "Nuvolosità"
+
+msgctxt "#31836"
+msgid "Probability of Precipitation"
+msgstr "Probabilità di precipitazioni"
+
+msgctxt "#31837"
+msgid "Intro Video Duration"
+msgstr "Durata video introduttivo"
+
+msgctxt "#31838"
+msgid "PVR Timeshift Buffer Color"
+msgstr "Colore buffer Timeshift PVR"
+
+msgctxt "#31839"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr "Usa la voce del menu principale Sfondo per le sottofinestre"
+
+msgctxt "#31840"
+msgid "Teletext Button Opens EPG"
+msgstr "Pulsante Teletext apre EPG"
+
+msgctxt "#31841"
+msgid "EPG Icon"
+msgstr "Icona EPG"
+
+msgctxt "#31842"
+msgid "Channel Logo"
+msgstr "Logo canale"
+
+msgctxt "#31843"
+msgid "Always Show Information Panel"
+msgstr "Mostra sempre pannello info"
+
+msgctxt "#31844"
+msgid "Use Custom Search for Video Library"
+msgstr "Usa ricerca personalizzata per libreria video"
+
+msgctxt "#31845"
+msgid "Use Custom Search for Music Library"
+msgstr "Usa ricerca personalizzata per libreria musicale"
+
+msgctxt "#31846"
+msgid "Current Programme Progress:"
+msgstr "Avanzamento programma attuale:"
+
+msgctxt "#31847"
+msgid "Also Show Seconds"
+msgstr "Mostra anche i secondi"
+
+msgctxt "#31848"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#31849"
+msgid "Remember Focused Control in Home Window"
+msgstr "Ricorda controllo focalizzato nella finestra Home"
+
+msgctxt "#31850"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
+msgstr "Usa elementi anteprime e non add-on fanart per gli scaffali di YouTube"
+
+msgctxt "#31851"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr "Consenti modifica dei tipi di visualizzazione nella finestra Canali PVR"
+
+msgctxt "#31852"
+msgid "Update Library"
+msgstr "Aggiorna libreria"
+
+msgctxt "#31853"
+msgid "Stop Scanning"
+msgstr "Interrompi scansione"
+
+msgctxt "#31854"
+msgid "More Info"
+msgstr "Più informazioni"
+
+msgctxt "#31855"
+msgid "Play Trailer Windowed"
+msgstr "Riproduci trailer in finestra"
+
+msgctxt "#31856"
+msgid "Last Played Date"
+msgstr "Data ultima riproduzione"
+
+msgctxt "#31857"
+msgid "Horizontal Icon Layout"
+msgstr "Disposizione orizzontale icone"
+
+msgctxt "#31858"
+msgid "Show Menu Item Label"
+msgstr "Mostra etichetta voce di menu"
+
+msgctxt "#31859"
+msgid "Always Show Set Movie List"
+msgstr "Mostra sempre l'elenco delle saghe cinematografiche"
+
+msgctxt "#31860"
+msgid "Use Tall List Layout"
+msgstr "Usa disposizione elenco alto"
+
+msgctxt "#31861"
+msgid "Show More Items in List"
+msgstr "Mostra più elementi nell'elenco"
+
+msgctxt "#31862"
+msgid "Hide Overlay Label in Icon/Panel Views"
+msgstr "Nascondi etichetta sovrapposta nelle visualizzazioni icone/pannelli"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Previsioni a 36 ore"
@@ -1684,12 +3433,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Previsioni a 10 giorni"
 
-# empty strings from id 31905 to 31919
 msgctxt "#31920"
 msgid "Disable all Home shelves"
 msgstr "Disabilita tutti gli scaffali Home"
 
-# empty strings from id 31921 to 31935
 msgctxt "#31936"
 msgid "Enable Skin Shortcuts"
 msgstr "Abilita scorciatoie skin"
@@ -1730,7 +3477,6 @@ msgctxt "#31945"
 msgid "Movie Country icons"
 msgstr "Icone paese del film"
 
-# empty strings from id 31946 to 31948
 msgctxt "#31949"
 msgid "Show ExtraFanart if available"
 msgstr "Mostra fanart extra se disponibile"
@@ -1780,10 +3526,6 @@ msgstr "Schermo intero durante la riproduzione di musica"
 msgctxt "#31960"
 msgid "Big List"
 msgstr "Elenco grande"
-
-msgctxt "#31961"
-msgid "Recently added"
-msgstr "Aggiunto di recente"
 
 #. view label
 msgctxt "#31962"
@@ -1841,10 +3583,6 @@ msgctxt "#31974"
 msgid "Home menu"
 msgstr "Menu principale"
 
-msgctxt "#31975"
-msgid "Channels"
-msgstr "Canali"
-
 msgctxt "#31976"
 msgid "Home shelf"
 msgstr "Scaffale Home"
@@ -1889,19 +3627,10 @@ msgctxt "#31986"
 msgid "Use default background for Home window"
 msgstr "Usa sfondo predefinito per la finestra Home"
 
-msgctxt "#31987"
-msgid "Random"
-msgstr "Casuale"
-
-msgctxt "#31988"
-msgid "Menu"
-msgstr "Menu"
-
 msgctxt "#31989"
 msgid "Quit button function"
 msgstr "Funzione pulsante Esci"
 
-# empty string with id 31990
 msgctxt "#31991"
 msgid "Show video player/music visualization in background"
 msgstr "Mostra visualizzazione lettore video/Musica sullo sfondo"
@@ -1937,1842 +3666,6 @@ msgstr "Mostra stato modalità blocco/master nella barra del titolo"
 msgctxt "#31999"
 msgid "BigList"
 msgstr "Elenco grande"
-
-msgctxt "#32000"
-msgid "Hide icons"
-msgstr "Nascondi icone"
-
-# empty string with id 32001
-msgctxt "#32002"
-msgid "Hide Games"
-msgstr "Nascondi giochi"
-
-msgctxt "#32003"
-msgid "Game Settings"
-msgstr "Impostazioni giochi"
-
-msgctxt "#32004"
-msgid "Toggle Subtitle"
-msgstr "Attiva/disattiva sottotitoli"
-
-msgctxt "#32005"
-msgid "AB: Select Artwork"
-msgstr "AB: Seleziona Artwork"
-
-msgctxt "#32006"
-msgid "AB: All Artwork"
-msgstr "AB: Tutti gli Artwork"
-
-msgctxt "#32007"
-msgid "Special Features"
-msgstr "Funzioni speciali"
-
-msgctxt "#32008"
-msgid "Enable Special Features"
-msgstr "Abilita funzioni speciali"
-
-msgctxt "#32009"
-msgid "Next Episode"
-msgstr "Prossimo episodio"
-
-msgctxt "#32010"
-msgid "Latest Episode"
-msgstr "Ultimo episodio"
-
-msgctxt "#32011"
-msgid "Airs"
-msgstr "In onda"
-
-# empty string with id 32012
-msgctxt "#32013"
-msgid "Next Airing Episodes"
-msgstr "Prossimi episodi in onda"
-
-msgctxt "#32014"
-msgid "Search Results for: "
-msgstr "Cerca risultati per: "
-
-msgctxt "#32015"
-msgid "Show Only Local Info "
-msgstr "Mostra solo informazioni locali "
-
-msgctxt "#32016"
-msgid "Extended Info"
-msgstr "Info estese"
-
-msgctxt "#32017"
-msgid "Search in Local Library"
-msgstr "Cerca nella libreria locale"
-
-msgctxt "#32018"
-msgid "Search online in TMDb"
-msgstr "Cerca online in TMDb"
-
-msgctxt "#32020"
-msgid "Hide Second Label in List Views"
-msgstr "Nascondi la seconda etichetta nella visualizzazione elenchi"
-
-msgctxt "#32021"
-msgid "Added:"
-msgstr "Aggiunto:"
-
-msgctxt "#32022"
-msgid "Plays:"
-msgstr "Play:"
-
-msgctxt "#32023"
-msgid "Last Played:"
-msgstr "Ultima riprodotta:"
-
-msgctxt "#32024"
-msgid "New Search"
-msgstr "Nuova ricerca"
-
-msgctxt "#32025"
-msgid "Movies Starring"
-msgstr "Film con protagonista"
-
-msgctxt "#32026"
-msgid "Movies Directed by"
-msgstr "Film diretti da"
-
-msgctxt "#32027"
-msgid "TV Shows Starring"
-msgstr "Protagonisti serie TV"
-
-msgctxt "#32028"
-msgid "TV Shows Directed by"
-msgstr "Serie TV dirette da"
-
-msgctxt "#32029"
-msgid "Movies with Genre"
-msgstr "Film con genere"
-
-msgctxt "#32030"
-msgid "TV Shows with Genre"
-msgstr "Serie TV con genere"
-
-msgctxt "#32031"
-msgid "Movies from Studio"
-msgstr "Film dallo Studio"
-
-msgctxt "#32032"
-msgid "TV Shows from Studio"
-msgstr "Serie TV dallo Studio"
-
-msgctxt "#32033"
-msgid "Movies from Year"
-msgstr "Film dall'anno"
-
-msgctxt "#32034"
-msgid "TV Shows from Year"
-msgstr "Serie TV dall'anno"
-
-msgctxt "#32035"
-msgid "Movies from Country"
-msgstr "Film dal paese"
-
-msgctxt "#32036"
-msgid "Music Videos by Artist"
-msgstr "Video musicali per artista"
-
-msgctxt "#32037"
-msgid "YouTube videos about"
-msgstr "Video di YouTube su"
-
-msgctxt "#32038"
-msgid "Enable Touch/Mouse Buttons"
-msgstr "Abilita i pulsanti touch/mouse"
-
-msgctxt "#32039"
-msgid "Timeshift"
-msgstr "Timeshift"
-
-msgctxt "#32040"
-msgid "Enable Kiosk Mode"
-msgstr "Abilita modalità Kiosk"
-
-# empty string with id 32041
-msgctxt "#32042"
-msgid "Next Episodes"
-msgstr "Prossimi episodi"
-
-msgctxt "#32043"
-msgid "Customize Home Menu and Shelves"
-msgstr "Personalizza menu Home e scaffali"
-
-msgctxt "#32044"
-msgid "Submenu"
-msgstr "Sottomenu"
-
-msgctxt "#32045"
-msgid "Shelves"
-msgstr "Scaffali"
-
-msgctxt "#32046"
-msgid "Weather fanart"
-msgstr "Fanart meteo"
-
-msgctxt "#32047"
-msgid "Seconds"
-msgstr "Secondi"
-
-msgctxt "#32048"
-msgid "Show background name in Home window"
-msgstr "Mostra il nome dello sfondo nella finestra Home"
-
-msgctxt "#32049"
-msgid "Home window Background Rotation Delay"
-msgstr "Ritardo rotazione sfondo finestra Home"
-
-msgctxt "#32050"
-msgid "IPTV Recorder"
-msgstr "Registratore IPTV"
-
-msgctxt "#32051"
-msgid "IPTV Recorder Recordings"
-msgstr "Registrazioni del registratore IPTV"
-
-msgctxt "#32052"
-msgid "Show Video Info on Pause"
-msgstr "Mostra informazioni video in pausa"
-
-msgctxt "#32053"
-msgid "Show Two Shelves Together"
-msgstr "Mostra due scaffali insieme"
-
-msgctxt "#32054"
-msgid "Use Larger Font"
-msgstr "Usa carattere più grande"
-
-msgctxt "#32055"
-msgid "Use Wraparound Navigation"
-msgstr "Usa navigazione avvolgente"
-
-msgctxt "#32056"
-msgid "Show more items on List Views"
-msgstr "Mostra più elementi nelle visualizzazioni elenco"
-
-msgctxt "#32057"
-msgid "Show Season/Episode Numbers"
-msgstr "Mostra numeri stagione/episodio"
-
-msgctxt "#32058"
-msgid "Show Episode Thumb"
-msgstr "Mostra anteprime episodio"
-
-msgctxt "#32059"
-msgid "Disable Tall List View"
-msgstr "Disabilita visualizzazione elenco alto"
-
-msgctxt "#32060"
-msgid "Tall List"
-msgstr "Elenco alto"
-
-msgctxt "#32061"
-msgid "Set Default Background"
-msgstr "Imposta sfondo predefinito"
-
-msgctxt "#32062"
-msgid "Set Favourite Addons for Shelf"
-msgstr "Imposta add-on preferiti per scaffale"
-
-msgctxt "#32063"
-msgid "Select Favourite Addons"
-msgstr "Seleziona add-on preferiti"
-
-msgctxt "#32064"
-msgid "Backup/Restore"
-msgstr "Backup/Ripristino"
-
-msgctxt "#32065"
-msgid "Backup"
-msgstr "Backup"
-
-msgctxt "#32066"
-msgid "Restore"
-msgstr "Ripristino"
-
-msgctxt "#32067"
-msgid "Configure Backup addon"
-msgstr "Configura add-on di backup"
-
-msgctxt "#32068"
-msgid "Show Fanart"
-msgstr "Mostra fanart"
-
-msgctxt "#32069"
-msgid "Files"
-msgstr "File"
-
-msgctxt "#32070"
-msgid "Place Background Name in Top Bar"
-msgstr "Posiziona nome dello sfondo nella barra superiore"
-
-msgctxt "#32071"
-msgid "Enable Alphabet Strip"
-msgstr "Abilita striscia alfabetica"
-
-msgctxt "#32072"
-msgid "Enable Autocompletion for Virtual Keyboard"
-msgstr "Abilita completamento automatico per la tastiera virtuale"
-
-msgctxt "#32073"
-msgid "Budget"
-msgstr "Bilancio"
-
-msgctxt "#32074"
-msgid "Revenue"
-msgstr "Incassi"
-
-msgctxt "#32075"
-msgid "Awards"
-msgstr "Premi"
-
-msgctxt "#32076"
-msgid "Show Watched Items in Recent Shelves"
-msgstr "Mostra elementi già visti negli scaffali recenti"
-
-msgctxt "#32077"
-msgid "RT Total Critics Reviews"
-msgstr "Recensioni totali dei critici di RT"
-
-msgctxt "#32078"
-msgid "RT Fresh Reviews"
-msgstr "Recensioni fresche di RT"
-
-msgctxt "#32079"
-msgid "RT Rotten Reviews"
-msgstr "Recensioni marce di RT"
-
-msgctxt "#32080"
-msgid "RT Critics' Consensus"
-msgstr "Consenso dei critici di RT"
-
-msgctxt "#32081"
-msgid "RT Total User Reviews"
-msgstr "Totale recensioni degli utenti di RT"
-
-msgctxt "#32082"
-msgid "Birthday"
-msgstr "Compleanno"
-
-msgctxt "#32083"
-msgid "Born"
-msgstr "Nato"
-
-msgctxt "#32084"
-msgid "Age"
-msgstr "Età"
-
-msgctxt "#32085"
-msgid "Died"
-msgstr "Morto"
-
-msgctxt "#32086"
-msgid "Also Known As"
-msgstr "Conosciuto anche come"
-
-msgctxt "#32087"
-msgid "Cast in Movies"
-msgstr "Cast nei film"
-
-msgctxt "#32088"
-msgid "Cast in TV Shows"
-msgstr "Cast nelle serie TV"
-
-msgctxt "#32089"
-msgid "Crew in Movies"
-msgstr "Persone nei film"
-
-msgctxt "#32090"
-msgid "Crew in TV Shows"
-msgstr "Persone nelle serie TV"
-
-msgctxt "#32091"
-msgid "Movies in TMDb"
-msgstr "Film nel TMDb"
-
-msgctxt "#32092"
-msgid "TV Shows in TMDb"
-msgstr "Serie TV nel TMDb"
-
-msgctxt "#32093"
-msgid "Movies in Local DB"
-msgstr "Film nel DB locale"
-
-msgctxt "#32094"
-msgid "TV Shows in Local DB"
-msgstr "Serie TV nel DB locale"
-
-msgctxt "#32095"
-msgid "Reboot to Android"
-msgstr "Riavvia su Android"
-
-msgctxt "#32096"
-msgid "Episodes Starring"
-msgstr "Protagonisti episodi"
-
-msgctxt "#32097"
-msgid "Movies in the"
-msgstr "Film nel"
-
-msgctxt "#32098"
-msgid "Also Directed by"
-msgstr "Diretto anche da"
-
-msgctxt "#32099"
-msgid "Crew"
-msgstr "Troupe"
-
-msgctxt "#32100"
-msgid "More from"
-msgstr "Altri da"
-
-msgctxt "#32101"
-msgid "More in"
-msgstr "Di più in"
-
-msgctxt "#32102"
-msgid "Similar to"
-msgstr "Simile a"
-
-msgctxt "#32103"
-msgid "Cast Members also appear in"
-msgstr "Appaiono anche membri del cast in"
-
-msgctxt "#32104"
-msgid "Select Custom Lists to Display"
-msgstr "Seleziona elenchi personalizzati da visualizzare"
-
-msgctxt "#32105"
-msgid "Similar"
-msgstr "Simile"
-
-msgctxt "#32106"
-msgid "Featuring Cast Members"
-msgstr "Con membri del cast"
-
-msgctxt "#32107"
-msgid "Video Info"
-msgstr "Informazioni video"
-
-msgctxt "#32108"
-msgid "Select a Genre"
-msgstr "Seleziona genere"
-
-msgctxt "#32109"
-msgid "Select a Studio"
-msgstr "Seleziona studio"
-
-msgctxt "#32110"
-msgid "Select a Director"
-msgstr "Seleziona regista"
-
-msgctxt "#32111"
-msgid "Online TMDb Search"
-msgstr "Ricerca TMDb online"
-
-msgctxt "#32112"
-msgid "Local Search"
-msgstr "Ricerca locale"
-
-msgctxt "#32113"
-msgid "Select a Writer"
-msgstr "Seleziona sceneggiatore"
-
-msgctxt "#32114"
-msgid "Movies Written by"
-msgstr "Film scritti da"
-
-msgctxt "#32115"
-msgid "Select a Country"
-msgstr "Seleziona paese"
-
-msgctxt "#32116"
-msgid "Episodes from Studio"
-msgstr "Episodi dallo studio"
-
-msgctxt "#32117"
-msgid "Episodes with Genre"
-msgstr "Episodi con genere"
-
-msgctxt "#32118"
-msgid "Episodes Written by"
-msgstr "Episodi scritti da"
-
-msgctxt "#32119"
-msgid "Episodes Directed by"
-msgstr "Episodi diretti da"
-
-msgctxt "#32120"
-msgid "AB: Download All Artwork"
-msgstr "AB: Scarica tutti gli Artwork"
-
-msgctxt "#32121"
-msgid "AB: Select Artwork"
-msgstr "AB: Seleziona Artwork"
-
-msgctxt "#32122"
-msgid "Show Artwork Beef items in Context Menu"
-msgstr "Mostra gli elementi Artwork Beef nel menu contestuale"
-
-msgctxt "#32123"
-msgid "Title Bar Options"
-msgstr "Opzioni barra del titolo"
-
-msgctxt "#32124"
-msgid "Show Duration in Hours and Minutes"
-msgstr "Mostra durata in ore e minuti"
-
-msgctxt "#32125"
-msgid "Hour"
-msgstr "Ora"
-
-msgctxt "#32126"
-msgid "Minute"
-msgstr "Minuto"
-
-msgctxt "#32127"
-msgid "Online TMDb Info"
-msgstr "Informazioni online da TMDb"
-
-msgctxt "#32128"
-msgid "Embuary Info Settings"
-msgstr "Impostazioni info Embuary"
-
-msgctxt "#32129"
-msgid "Guest Stars"
-msgstr "Guest star"
-
-msgctxt "#32130"
-msgid "Posters"
-msgstr "Poster"
-
-msgctxt "#32131"
-msgid "YouTube"
-msgstr "YouTube"
-
-msgctxt "#32132"
-msgid "Search for Trailer"
-msgstr "Cerca per trailer"
-
-msgctxt "#32133"
-msgid "item in database"
-msgstr "elemento nel database"
-
-msgctxt "#32134"
-msgid "Items in Database"
-msgstr "Elementi nel database"
-
-msgctxt "#32135"
-msgid "Extras"
-msgstr "Extra"
-
-msgctxt "#32136"
-msgid "Known for"
-msgstr "Conosciuto per"
-
-msgctxt "#32137"
-msgid "Retail Release"
-msgstr "Rilascio per vendita al dettaglio"
-
-msgctxt "#32138"
-msgid "Region Release"
-msgstr "Uscito nella regione"
-
-msgctxt "#32139"
-msgid "Ended"
-msgstr "Finito"
-
-msgctxt "#32140"
-msgid "Rumored"
-msgstr "Voci di corridoio"
-
-msgctxt "#32141"
-msgid "Planned"
-msgstr "Pianificato"
-
-msgctxt "#32142"
-msgid "In Production"
-msgstr "In produzione"
-
-msgctxt "#32143"
-msgid "Post Production"
-msgstr "Post produzione"
-
-msgctxt "#32144"
-msgid "Released"
-msgstr "Uscito"
-
-msgctxt "#32145"
-msgid "Canceled"
-msgstr "Annullato"
-
-msgctxt "#32146"
-msgid "Returning Series"
-msgstr "Serie di ritorno"
-
-msgctxt "#32147"
-msgid "Acting"
-msgstr "Recitazione"
-
-msgctxt "#32148"
-msgid "Directing"
-msgstr "Regia"
-
-msgctxt "#32149"
-msgid "Writing"
-msgstr "Scrittura"
-
-msgctxt "#32150"
-msgid "Production"
-msgstr "Produzione"
-
-msgctxt "#32151"
-msgid "Sound"
-msgstr "Suono"
-
-msgctxt "#32152"
-msgid "Creator"
-msgstr "Creatore"
-
-msgctxt "#32153"
-msgid "Died at Age"
-msgstr "Morto all'età"
-
-msgctxt "#32154"
-msgid "Collection"
-msgstr "Saga"
-
-msgctxt "#32155"
-msgid "TMDb Helper Settings"
-msgstr "Impostazioni assistente TMDb"
-
-msgctxt "#32156"
-msgid "Blur Background"
-msgstr "Sfocatura sfondo"
-
-# Empty strings from 32157 to 32164
-msgctxt "#32165"
-msgid "Use Poster for Blur"
-msgstr "Usa poster per sfocatura"
-
-msgctxt "#32166"
-msgid "Customize Power Menu"
-msgstr "Personalizza menu uscita"
-
-msgctxt "#32167"
-msgid "Edit Library Data"
-msgstr "Modifica dati della libreria"
-
-msgctxt "#32168"
-msgid "Select Search Categories"
-msgstr "Seleziona categorie di ricerca"
-
-msgctxt "#32169"
-msgid "Select Search Categories to Enable"
-msgstr "Seleziona categorie di ricerca da abilitare"
-
-msgctxt "#32170"
-msgid "By Title"
-msgstr "Per titolo"
-
-msgctxt "#32171"
-msgid "With Genre"
-msgstr "Con genere"
-
-msgctxt "#32172"
-msgid "From Year"
-msgstr "Dall'anno"
-
-msgctxt "#32173"
-msgid "From Studio"
-msgstr "Dallo studio"
-
-msgctxt "#32174"
-msgid "From Country"
-msgstr "Dal paese"
-
-msgctxt "#32175"
-msgid "With Actor"
-msgstr "Con attore"
-
-msgctxt "#32176"
-msgid "By Director"
-msgstr "Per regista"
-
-msgctxt "#32177"
-msgid "By Writer"
-msgstr "Per sceneggiatore"
-
-msgctxt "#32178"
-msgid "Artists by Name"
-msgstr "Artisti per nome"
-
-msgctxt "#32179"
-msgid "Albums by Title"
-msgstr "Album per titolo"
-
-msgctxt "#32180"
-msgid "Songs by Title"
-msgstr "Brani per titolo"
-
-msgctxt "#32181"
-msgid "By Artist"
-msgstr "Per artista"
-
-msgctxt "#32182"
-msgid "YouTube by Title"
-msgstr "YouTube per titolo"
-
-msgctxt "#32183"
-msgid "Known for Character"
-msgstr "Conosciuto per carattere"
-
-msgctxt "#32184"
-msgid "Known for Department"
-msgstr "Conosciuto per dipartimento"
-
-msgctxt "#32185"
-msgid "Known for Job"
-msgstr "Conosciuto per lavoro"
-
-msgctxt "#32186"
-msgid "Total Items in TMDb"
-msgstr "Elementi totali in TMDb"
-
-msgctxt "#32187"
-msgid "Total Movies in TMDb"
-msgstr "Film totali in TMDb"
-
-msgctxt "#32188"
-msgid "Total TV Shows in TMDb"
-msgstr "Serie TV totali in TMDb"
-
-msgctxt "#32189"
-msgid "Items in TMDb as Cast"
-msgstr "Elementi in TMDb come cast"
-
-msgctxt "#32190"
-msgid "Movies in TMDb as Cast"
-msgstr "Film in TMDb come cast"
-
-msgctxt "#32191"
-msgid "TV Shows in TMDb as Cast"
-msgstr "Serie TV in TMDb come cast"
-
-msgctxt "#32192"
-msgid "Items in TMDb as Crew"
-msgstr "Elementi in TMDb come persone"
-
-msgctxt "#32193"
-msgid "Movies in TMDb as Crew"
-msgstr "Film in TMDb come persone"
-
-msgctxt "#32194"
-msgid "TV Shows in TMDb as Crew"
-msgstr "Serie TV in TMDb come persone"
-
-msgctxt "#32195"
-msgid "Total Items in Local Database"
-msgstr "Totale elementi nel database locale"
-
-msgctxt "#32196"
-msgid "Movies in Local Database"
-msgstr "Film nel database locale"
-
-msgctxt "#32197"
-msgid "TV Shows in Local Database"
-msgstr "Serie TV nel database locale"
-
-msgctxt "#32198"
-msgid "Episodes in Local Database"
-msgstr "Episodi nel database locale"
-
-msgctxt "#32199"
-msgid "Cast: Movies with"
-msgstr "Cast: film con"
-
-msgctxt "#32200"
-msgid "Cast: TV Shows with"
-msgstr "Cast: serie TV con"
-
-msgctxt "#32201"
-msgid "Crew: Movies with"
-msgstr "Persone: film con"
-
-msgctxt "#32202"
-msgid "Crew: TV Shows with"
-msgstr "Persone: serie TV con"
-
-msgctxt "#32203"
-msgid "Start at First Menu Item"
-msgstr "Inizia dalla prima voce di menu"
-
-msgctxt "#32204"
-msgid "Set Default View"
-msgstr "Imposta visualizzazione predefinita"
-
-msgctxt "#32205"
-msgid "Highlight Color"
-msgstr "Evidenzia colore"
-
-msgctxt "#32206"
-msgid "Horizontal Menu Glow Bars Tint"
-msgstr "Barre incandescenti orizzontali nel menu Tinta"
-
-msgctxt "#32207"
-msgid "Horizontal Menu Main Bar Tint"
-msgstr "Barra orizzontale nel menu principale Tinta"
-
-msgctxt "#32208"
-msgid "Vertical Menu/Submenu Background Tint"
-msgstr "Tinta di sfondo menu/sottomenu verticale"
-
-msgctxt "#32209"
-msgid "Top Bar Tint"
-msgstr "Tinta barra superiore"
-
-msgctxt "#32210"
-msgid "Current Color Theme"
-msgstr "Tema colore attuale"
-
-msgctxt "#32211"
-msgid "Dialogs Background Tint"
-msgstr "Tinta di sfondo finestre di dialogo"
-
-msgctxt "#32212"
-msgid "Regular Text Color"
-msgstr "Colore testo regolare"
-
-msgctxt "#32213"
-msgid "Focused Text Color"
-msgstr "Colore testo focalizzato"
-
-msgctxt "#32214"
-msgid "Selected Text Color"
-msgstr "Colore testo selezionato"
-
-msgctxt "#32215"
-msgid "Shelves Background Tint"
-msgstr "Tinta di sfondo scaffali"
-
-msgctxt "#32216"
-msgid "Use for All Tints"
-msgstr "Usa per tutte le tinte"
-
-msgctxt "#32217"
-msgid "Keep Lists Focus Centered"
-msgstr "Mantieni il focus centrato sugli elenchi"
-
-msgctxt "#32218"
-msgid "Show Artist Logo In Music Visualization"
-msgstr "Mostra logo artista nella visualizzazione musica"
-
-msgctxt "#32219"
-msgid "Show Logo In Media Views"
-msgstr "Mostra logo nelle visualizzazioni multimediali"
-
-msgctxt "#32220"
-msgid "Show Logo In Home Window"
-msgstr "Mostra logo nella finestra Home"
-
-msgctxt "#32221"
-msgid "Media Views Background Tint"
-msgstr "Tinta di sfondo visualizzazioni multimediali"
-
-msgctxt "#32222"
-msgid "Enable Label Scrolling in List Views"
-msgstr "Abilita scorrimento etichette nelle visualizzazioni elenco"
-
-msgctxt "#32223"
-msgid "Audio and Subtitle Info"
-msgstr "Informazioni audio e sottotitoli"
-
-msgctxt "#32224"
-msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
-msgstr "Pulsante sottotitoli apre impostazioni sottotitoli in video OSD"
-
-msgctxt "#32225"
-msgid "Disable Info Panel in List Views"
-msgstr "Disabilita pannello info nelle visualizzazioni elenco"
-
-msgctxt "#32226"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "Assistente TMDb - Prossimi episodi in onda"
-
-msgctxt "#32227"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info - Prossimi episodi in onda"
-
-msgctxt "#32228"
-msgid "Only Search in Local Library"
-msgstr "Cerca solo nella libreria locale"
-
-msgctxt "#32229"
-msgid "Hide Channel Groups"
-msgstr "Nascondi gruppi di canali"
-
-msgctxt "#32230"
-msgid "Select Displayed Ratings and Certification"
-msgstr "Seleziona classificazioni e certificazioni visualizzate"
-
-msgctxt "#32231"
-msgid "User Rating"
-msgstr "Valutazione utente"
-
-msgctxt "#32232"
-msgid "Ratings"
-msgstr "Giudizi"
-
-msgctxt "#32235"
-msgid "Certification"
-msgstr "Certificazione"
-
-msgctxt "#32237"
-msgid "Up Next in"
-msgstr "Prossimo tra"
-
-msgctxt "#32238"
-msgid "Continue Watching in"
-msgstr "Continua a guardare tra"
-
-msgctxt "#32238"
-msgid "Next Episode in"
-msgstr "Prossimo episodio tra"
-
-msgctxt "#32239"
-msgid "Hide Collection (Set) Marks"
-msgstr "Nascondi marcatori collezione (imposta)"
-
-msgctxt "#32240"
-msgid "Disable Info Panel"
-msgstr "Disabilita pannello info"
-
-msgctxt "#32241"
-msgid "Alternate List Layout"
-msgstr "Disposizione elenco alternativo"
-
-msgctxt "#32242"
-msgid "Larger Image"
-msgstr "Immagine più grande"
-
-msgctxt "#32243"
-msgid "Alternate List Views Layout"
-msgstr "Disposizione visualizzazioni elenco alternativo"
-
-msgctxt "#32244"
-msgid "Albums by"
-msgstr "Album di"
-
-msgctxt "#32245"
-msgid "Panel 2"
-msgstr "Pannello 2"
-
-msgctxt "#32246"
-msgid "Big Panel 2"
-msgstr "Pannello grande 2"
-
-msgctxt "#32247"
-msgid "Disable Panel 2 view"
-msgstr "Disabilita visualizzazione pannello 2"
-
-msgctxt "#32248"
-msgid "Disable Big Panel 2 view"
-msgstr "Disabilita visualizzazione pannello grande 2"
-
-msgctxt "#32249"
-msgid "Enable Statistics Line"
-msgstr "Abilita riga statistiche"
-
-msgctxt "#32250"
-msgid "Show Statistics line on Shelf"
-msgstr "Mostra riga statistiche sullo scaffale"
-
-msgctxt "#32251"
-msgid "Show Marks on Top Right"
-msgstr "Mostra marcatori in alto a destra"
-
-msgctxt "#32252"
-msgid "Hide Unwatched Episodes Marks"
-msgstr "Nascondi marcatori episodi non visti"
-
-msgctxt "#32253"
-msgid "Movies in library"
-msgstr "Film nella libreria"
-
-msgctxt "#32254"
-msgid "IMDb Top 250"
-msgstr "Top 250 di IMDb"
-
-msgctxt "#32255"
-msgid "Missing Add-on"
-msgstr "Add-on mancante"
-
-msgctxt "#32256"
-msgid "TMDb Helper"
-msgstr "Assistente TMDb"
-
-msgctxt "#32257"
-msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-msgstr "Per abilitare questa funzionalità, è necessario installare una versione molto recente dell'add-on plugin.video.themoviedb.helper.[CR][CR]Puoi trovarlo su https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-
-msgctxt "#32258"
-msgid "Use Embuary Helper for Playlist Backgrounds"
-msgstr "Usa assistente Embuary per gli sfondi delle playlist"
-
-msgctxt "#32259"
-msgid "Backgrounds"
-msgstr "Sfondi"
-
-msgctxt "#32260"
-msgid "Unwatched"
-msgstr "Non visti"
-
-msgctxt "#32261"
-msgid "Use Embuary Helper for Statistics Line"
-msgstr "Usa assistente Embuary per la riga delle statistiche"
-
-msgctxt "#32262"
-msgid "Use Embuary Helper for Backgrounds"
-msgstr "Usa assistente Embuary per gli sfondi"
-
-msgctxt "#32263"
-msgid "Movie Collection Count"
-msgstr "Conteggio collezione film"
-
-msgctxt "#32264"
-msgid "Show Fanart for Special Content"
-msgstr "Mostra fanart per contenuti speciali"
-
-msgctxt "#32265"
-msgid "Media Play Count"
-msgstr "Conteggio riproduzioni multimediali"
-
-msgctxt "#32266"
-msgid "Color Options"
-msgstr "Opzioni colore"
-
-msgctxt "#32267"
-msgid "Go To"
-msgstr "Vai a"
-
-msgctxt "#32268"
-msgid "Show Three Shelves Together"
-msgstr "Mostra tre scaffali insieme"
-
-msgctxt "#32269"
-msgid "Configure Custom Shelf"
-msgstr "Configura scaffale personalizzato"
-
-msgctxt "#32270"
-msgid "Shift Fanart View Focus to the Right"
-msgstr "Sposta focus della vista fanart a destra"
-
-msgctxt "#32271"
-msgid "Mouse/Touch-Friendly Alphabet Strip"
-msgstr "Striscia alfabetica compatibile con mouse/tocco"
-
-msgctxt "#32272"
-msgid "Use New Media Views Selector"
-msgstr "Usa nuovo selettore di viste multimediali"
-
-msgctxt "#32273"
-msgid "Skin Variables"
-msgstr "Variabili Skin"
-
-msgctxt "#32274"
-msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
-msgstr "Per abilitare questa funzionalità, è necessario installare una versione molto recente dell'add-on script.skinvariables.[CR][CR]Puoi trovarlo su https://github.com/jurialmunkey/script.skinvariables."
-
-msgctxt "#32275"
-msgid "Configure Media Views"
-msgstr "Configura visualizzazioni media"
-
-msgctxt "#32277"
-msgid "Three Rows with Larger Icons"
-msgstr "Tre righe con icone più grandi"
-
-msgctxt "#32278"
-msgid "Oscars Won"
-msgstr "Oscar vinti"
-
-msgctxt "#32279"
-msgid "Oscar Nominations"
-msgstr "Candidature all'Oscar"
-
-msgctxt "#32280"
-msgid "Golden Globes Won"
-msgstr "Golden Globe vinti"
-
-msgctxt "#32281"
-msgid "Golden Globe Nominations"
-msgstr "Candidature ai Golden Globe"
-
-msgctxt "#32282"
-msgid "Awards (Oscars/Golden Globes)"
-msgstr "Premi (Oscar/Golden Globe)"
-
-msgctxt "#32283"
-msgid "Video Genre Fanart"
-msgstr "Fanart genere video"
-
-msgctxt "#32284"
-msgid "Music Genre Fanart"
-msgstr "Fanart genere musicale"
-
-msgctxt "#32285"
-msgid "Custom Path"
-msgstr "Percorso personalizzato"
-
-msgctxt "#32286"
-msgid "Reset Custom Path"
-msgstr "Reimposta percorso personalizzato"
-
-msgctxt "#32287"
-msgid "Image Pack"
-msgstr "Pacchetto immagini"
-
-msgctxt "#32288"
-msgid "Enable Multiple Images per Genre"
-msgstr "Abilita più immagini per genere"
-
-msgctxt "#32289"
-msgid "Match Poster Colors"
-msgstr "Abbina colori del poster"
-
-msgctxt "#32290"
-msgid "Show Seek Bar at Bottom"
-msgstr "Mostra barra di ricerca in basso"
-
-msgctxt "#32291"
-msgid "HDR/SDR and Bit Depth Flags"
-msgstr "Flag HDR/SDR e profondità bit"
-
-msgctxt "#32292"
-msgid "File Name Instead of Title"
-msgstr "Nome file anziché titolo"
-
-msgctxt "#32293"
-msgid "Extra Fanart on panel"
-msgstr "Extra fanart sul pannello"
-
-msgctxt "#32294"
-msgid "Ends at"
-msgstr "Termina alle"
-
-msgctxt "#32295"
-msgid "Netflix style"
-msgstr "Stile Netflix"
-
-msgctxt "#32296"
-msgid "Show Logo"
-msgstr "Mostra logo"
-
-msgctxt "#32297"
-msgid "Use Landscape"
-msgstr "Usa orizzontale"
-
-msgctxt "#32298"
-msgid "Dim Level for Unfocused"
-msgstr "Livello DIm per non focalizzato"
-
-msgctxt "#32299"
-msgid "Select Dim Level"
-msgstr "Seleziona livello oscuramento"
-
-msgctxt "#32300"
-msgid "Now Playing"
-msgstr "Ora in riproduzione"
-
-msgctxt "#32301"
-msgid "Hide Title Bar Now Playing"
-msgstr "Nascondi barra del titolo In riproduzione"
-
-msgctxt "#32302"
-msgid "Select Now Playing Video Disc Art Fallback"
-msgstr "Seleziona In riproduzione video DIscArt di riserva"
-
-msgctxt "#32303"
-msgid "Select Now Playing Music Disc Art Fallback"
-msgstr "Seleziona In riproduzione musica DIscArt di riserva"
-
-msgctxt "#32304"
-msgid "Blu-Ray"
-msgstr "Blu-Ray"
-
-msgctxt "#32305"
-msgid "Vinyl"
-msgstr "Vinile"
-
-msgctxt "#32306"
-msgid "None"
-msgstr "Nessuno"
-
-msgctxt "#32307"
-msgid "White"
-msgstr "Bianco"
-
-msgctxt "#32308"
-msgid "Blue"
-msgstr "Blu"
-
-msgctxt "#32309"
-msgid "Golden"
-msgstr "D'oro"
-
-msgctxt "#32310"
-msgid "Green"
-msgstr "Verde"
-
-msgctxt "#32311"
-msgid "Grey"
-msgstr "Grigio"
-
-msgctxt "#32312"
-msgid "Orange"
-msgstr "Arancione"
-
-msgctxt "#32313"
-msgid "Purple"
-msgstr "Viola"
-
-msgctxt "#32314"
-msgid "Red"
-msgstr "Rosso"
-
-msgctxt "#32315"
-msgid "Select Now Playing Info for Movies/Episodes"
-msgstr "Seleziona informazioni per film/Episodi in riproduzione"
-
-msgctxt "#32316"
-msgid "Select Now Playing Info for other Videos"
-msgstr "Seleziona informazioni per altri video in riproduzione"
-
-msgctxt "#32317"
-msgid "Select Now Playing Info for Music"
-msgstr "Seleziona informazioni per musica in riproduzione"
-
-msgctxt "#32318"
-msgid "Show Video in the Background"
-msgstr "Mostra video sullo sfondo"
-
-msgctxt "#32319"
-msgid "Show Music Visualization in the Background"
-msgstr "Mostra visualizzazione musica sullo sfondo"
-
-msgctxt "#32320"
-msgid "Show Extra Art for Video"
-msgstr "Mostra ExtraArt per video"
-
-msgctxt "#32321"
-msgid "Show Extra Art for Music"
-msgstr "Mostra ExtraArt per musica"
-
-msgctxt "#32322"
-msgid "Show Logo"
-msgstr "Mostra logo"
-
-msgctxt "#32323"
-msgid "Show ClearArt"
-msgstr "Mostra ClearArt"
-
-msgctxt "#32324"
-msgid "Show Disc Art"
-msgstr "Mostra DiscArt"
-
-msgctxt "#32325"
-msgid "Select Disc Art Fallback for Video"
-msgstr "Seleziona DIscArt di riserva per video"
-
-msgctxt "#32326"
-msgid "Select Disc Art Fallback for Music"
-msgstr "Seleziona DIscArt di riserva per musica"
-
-msgctxt "#32327"
-msgid "Disable Now Playing"
-msgstr "Disabilita In riproduzione"
-
-msgctxt "#32328"
-msgid "Internet Stream"
-msgstr "Stream Internet"
-
-msgctxt "#32329"
-msgid "Special"
-msgstr "Speciale"
-
-msgctxt "#32330"
-msgid "Next Tracks"
-msgstr "Tracce successive"
-
-msgctxt "#32331"
-msgid "Album Review"
-msgstr "Recensione album"
-
-msgctxt "#32332"
-msgid "Artist Bio"
-msgstr "Biografia artista"
-
-msgctxt "#32333"
-msgid "Hide Shelves when Now Playing is Visible"
-msgstr "Nascondi scaffali quando è visibile In riproduzione"
-
-msgctxt "#32334"
-msgid "Enlarge Video Preview when Idle"
-msgstr "Ingrandisci anteprima video quando inattivo"
-
-msgctxt "#32335"
-msgid "Select Extra Art to Show in Applicable Views"
-msgstr "Seleziona ExtraArt da mostrare nelle viste applicabili"
-
-msgctxt "#32336"
-msgid "Full Screen/OSD"
-msgstr "Schermo intero/OSD"
-
-msgctxt "#32337"
-msgid "Select Interval for Auto Closing Video OSD"
-msgstr "Seleziona intervallo per chiusura automatica dell'OSD video"
-
-msgctxt "#32338"
-msgid "Current Color"
-msgstr "Colore attuale"
-
-msgctxt "#32339"
-msgid "Value"
-msgstr "Valore"
-
-msgctxt "#32340"
-msgid "Second"
-msgstr "Secondo"
-
-msgctxt "#32341"
-msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
-msgstr "Usa il metodo compatibile con il mouse (script.skin.info.service v1.0.8 e versioni successive)"
-
-msgctxt "#32342"
-msgid "Auto Close Video OSD"
-msgstr "Chiusura automatica video OSD"
-
-msgctxt "#32343"
-msgid "Default Font Size"
-msgstr "Dimensione predefinita carattere"
-
-msgctxt "#32344"
-msgid "Use fanart.jpg if present in folder or parent folder"
-msgstr "Usa fanart.jpg se presente nella cartella o nella cartella principale"
-
-msgctxt "#32345"
-msgid "Use Clear Art instead of Logo"
-msgstr "Usa ClearArt invece del logo"
-
-msgctxt "#32346"
-msgid "Single Logo"
-msgstr "Logo singolo"
-
-msgctxt "#32347"
-msgid "Fade out Unfocused"
-msgstr "Dissolvenza non focalizzata"
-
-msgctxt "#32348"
-msgid "Show Overlay"
-msgstr "Mostra sovrapposizione"
-
-msgctxt "#32349"
-msgid "Show Smaller Favourite Icons"
-msgstr "Mostra icone preferite più piccole"
-
-msgctxt "#32350"
-msgid "Show Three Rows"
-msgstr "Mostra tre righe"
-
-msgctxt "#32351"
-msgid "Show Four Rows"
-msgstr "Mostra quattro righe"
-
-msgctxt "#32352"
-msgid "Enable Use of TMDb Helper"
-msgstr "Abilita uso dell'assistente TMDb"
-
-msgctxt "#32353"
-msgid "Enable Use of Embuary Helper"
-msgstr "Abilita uso dell'assistente Embuary"
-
-msgctxt "#32354"
-msgid "Hide Seek Bar when Paused"
-msgstr "Nascondi barra di ricerca quando in pausa"
-
-msgctxt "#32355"
-msgid "Icon Only Menu"
-msgstr "Solo menu icona"
-
-msgctxt "#32356"
-msgid "Show Menu Item Name"
-msgstr "Mostra il nome della voce di menu"
-
-msgctxt "#32357"
-msgid "Enable Video Lyrics"
-msgstr "Abilita testi video"
-
-msgctxt "#32358"
-msgid "Play Whole Albums from Shelves"
-msgstr "Riproduci interi album dagli scaffali"
-
-msgctxt "#32359"
-msgid "Show Item Name in Top Bar"
-msgstr "Mostra nome dell'elemento nella barra superiore"
-
-msgctxt "#32360"
-msgid "Animate backgrounds using Ken Burns effect"
-msgstr "Anima sfondi usando l'effetto Ken Burns"
-
-msgctxt "#32361"
-msgid "Single Column"
-msgstr "Singola colonna"
-
-msgctxt "#32362"
-msgid "Disable Now Playing Fanart"
-msgstr "Disabilita fanart In riproduzione"
-
-msgctxt "#32363"
-msgid "Show Media Info with Seek Bar"
-msgstr "Mostra informazioni multimediali con la barra di ricerca"
-
-msgctxt "#32364"
-msgid "Show Seek Bar when Starting Video Playback"
-msgstr "Mostra barra di ricerca all'avvio della riproduzione video"
-
-msgctxt "#32365"
-msgid "Time to Show Seek Bar"
-msgstr "È ora di mostrare la barra di ricerca"
-
-msgctxt "#32366"
-msgid "Hide Title Bar in Main Window"
-msgstr "Nascondi barra del titolo nella finestra principale"
-
-msgctxt "#32367"
-msgid "Hide fallback image if no thumb in OSD"
-msgstr "Nascondi immagine di riserva se non c'è l'anteprima nell'OSD"
-
-msgctxt "#32368"
-msgid "Dim Background and Album Cover when Showing Lyrics"
-msgstr "Sfondo scuro e copertina dell'album durante la visualizzazione testi"
-
-msgctxt "#32369"
-msgid "Use Alternate Favourites Layout"
-msgstr "Usa disposizione alternativa Preferiti"
-
-msgctxt "#32370"
-msgid "Align Menu Item Text to the Left"
-msgstr "Allinea il testo della voce di menu a sinistra"
-
-msgctxt "#32371"
-msgid "Info Button Opens Video Info Dialog"
-msgstr "Pulsante info apre finestra di dialogo info video"
-
-msgctxt "#32372"
-msgid "Pause Media While Info Dialog is Open"
-msgstr "In pausa i media mentre la finestra di dialogo delle info è aperta"
-
-msgctxt "#32373"
-msgid "End Time"
-msgstr "Termina alle"
-
-msgctxt "#32374"
-msgid "Show Dark Background Behind Shortcuts"
-msgstr "Mostra sfondo scuro dietro le scorciatoie"
-
-msgctxt "#32375"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "Usa Artist Slideshow per Audio Fanart"
-
-msgctxt "#32376"
-msgid "Disable Lyrics"
-msgstr "Disattiva testi"
-
-msgctxt "#32377"
-msgid "Activate Lyrics"
-msgstr "Attiva testi"
-
-msgctxt "#32378"
-msgid "Use Color Flags"
-msgstr "Usa flag colorate"
-
-msgctxt "#32379"
-msgid "Show Submenu Only when Focused"
-msgstr "Mostra sottomenu solo quando focalizzato"
-
-msgctxt "#32380"
-msgid "Movies with Plot containing"
-msgstr "Film con trama contenente"
-
-msgctxt "#32381"
-msgid "TV Shows with Plot containing"
-msgstr "Serie TV con trama contenente"
-
-msgctxt "#32382"
-msgid "Episodes with Plot containing"
-msgstr "Episodi con trama contenente"
-
-msgctxt "#32383"
-msgid "With Plot Containing"
-msgstr "Con trama contenente"
-
-msgctxt "#32384"
-msgid "Show Title in Footer"
-msgstr "Mostra titolo nel piè di pagina"
-
-msgctxt "#32385"
-msgid "Hide Seek Bar when Forwarding or Rewinding"
-msgstr "Nascondi barra di ricerca durante Avanti/Indietro veloce"
-
-msgctxt "#32386"
-msgid "Enable Touchscreen Devices Support"
-msgstr "Abilita supporto per dispositivi touchscreen"
-
-msgctxt "#32387"
-msgid "Show Rating Overlay"
-msgstr "Mostra valutazione sovrapposta"
-
-msgctxt "#32388"
-msgid "Use User Rating for Overlay"
-msgstr "Usa valutazione utenti per la sovrapposizione"
-
-msgctxt "#32390"
-msgid "Select Items to Show in Views"
-msgstr "Seleziona elementi da mostrare nelle visualizzazioni"
-
-msgctxt "#32391"
-msgid "Items to Show in Views"
-msgstr "Elementi da mostrare nelle visualizzazioni"
-
-msgctxt "#32392"
-msgid "Play Random"
-msgstr "Riproduzione casuale"
-
-msgctxt "#32393"
-msgid "List Views Options"
-msgstr "Opzioni visualizzazioni elenco"
-
-msgctxt "#32394"
-msgid "Marks and Overlays"
-msgstr "Marcatori e sovrapposizioni"
-
-msgctxt "#32395"
-msgid "Select View Types to Enable"
-msgstr "Seleziona tipi di visualizzazione da abilitare"
-
-msgctxt "#32396"
-msgid "View Types to Enable"
-msgstr "Visualizza tipi da abilitare"
-
-msgctxt "#32398"
-msgid "Show Poster"
-msgstr "Mostra poster"
-
-msgctxt "#32399"
-msgid "Text"
-msgstr "Testo"
-
-msgctxt "#32400"
-msgid "Banner"
-msgstr "Banner"
-
-msgctxt "#32401"
-msgid "List Item Type"
-msgstr "Elenca il tipo di elemento"
-
-msgctxt "#32402"
-msgid "Poster/Thumb"
-msgstr "Poster/Anteprima"
-
-msgctxt "#32403"
-msgid "OSD/Full Screen Art"
-msgstr "Art OSD/schermo intero"
-
-msgctxt "#32404"
-msgid "N/A"
-msgstr "N/D"
-
-msgctxt "#32405"
-msgid "Show Info Popup"
-msgstr "Mostra informazioni popup"
-
-msgctxt "#32406"
-msgid "Popup Delay"
-msgstr "Ritardo popup"
-
-msgctxt "#32407"
-msgid "Show Floor"
-msgstr "Mostra piano"
-
-msgctxt "#32408"
-msgid "Fixed List"
-msgstr "Elenco fisso"
-
-msgctxt "#32409"
-msgid "Centered Static Menu (less than 8 items)"
-msgstr "Menu statico centrato (meno di 8 elementi)"
-
-msgctxt "#32410"
-msgid "Compact OSD"
-msgstr "OSD compatto"
-
-msgctxt "#32411"
-msgid "Ultra Compact OSD"
-msgstr "OSD ultra compatto"
-
-msgctxt "#32412"
-msgid "Alternate OSD Button Highlighting"
-msgstr "Evidenziazione alternativa pulsanti OSD"
-
-msgctxt "#32413"
-msgid "Enabled"
-msgstr "Abilitato"
-
-msgctxt "#32414"
-msgid "Disabled"
-msgstr "Disabilitato"
-
-msgctxt "#32415"
-msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr "Riproduzione automatica trailer (solo trailer locale)"
-
-msgctxt "#32416"
-msgid "Auto Play Trailer Delay"
-msgstr "Ritardo riproduzione automatica trailer"
-
-msgctxt "#32417"
-msgid "Fanart Title Button Opens Info Dialog"
-msgstr "Il pulsante del titolo della fanart apre la finestra di dialogo delle informazioni"
-
-msgctxt "#32418"
-msgid "Single Image"
-msgstr "Immagine singola"
-
-msgctxt "#32419"
-msgid "Multiple Images"
-msgstr "Immagini multiple"
-
-msgctxt "#32420"
-msgid "Video/Playlist"
-msgstr "Video/Playlist"
-
-msgctxt "#32421"
-msgid "Startup Background"
-msgstr "Sfondo di avvio"
-
-msgctxt "#32422"
-msgid "Hide Menu when Shelves are Focused"
-msgstr "Nascondi menu quando gli scaffali sono focalizzati"
-
-msgctxt "#32423"
-msgid "Use Disc Art instead of Cover"
-msgstr "Usa DiscArt invece della Cover"
-
-msgctxt "#32424"
-msgid "Auto Play Trailer from Shelf Items"
-msgstr "Riproduci automaticamente il trailer degli elementi sullo scaffale"
-
-msgctxt "#32425"
-msgid "Shelf Trailer Delay"
-msgstr "Ritardo trailer scaffale"
-
-msgctxt "#32426"
-msgid "Slide Out Media Items While Trailer Playing"
-msgstr "Fai scorrere elementi multimediali durante riproduzione trailer"
-
-msgctxt "#32427"
-msgid "Hide PVR Channel Preview"
-msgstr "Nascondi anteprima canale PVR"
-
-msgctxt "#32428"
-msgid "Art Downloader: Select Artwork"
-msgstr "Art Downloader: Seleziona Artwork"
-
-msgctxt "#32429"
-msgid "Art Downloader: All Artwork"
-msgstr "Art Downloader: Tutti gli Artwork"
-
-msgctxt "#32450"
-msgid "Show Artwork Downloader items in Context Menu"
-msgstr "Mostra gli elementi di Artwork Downloader nel menu contestuale"
-
-msgctxt "#32451"
-msgid "Movies with Tag"
-msgstr "Film con tag"
-
-msgctxt "#32452"
-msgid "Select a Tag"
-msgstr "Seleziona un tag"
-
-msgctxt "#32453"
-msgid "With Tag"
-msgstr "Con tag"
-
-msgctxt "#32454"
-msgid "Always Use TV Show Poster for Episodes"
-msgstr "Usa sempre poster serie TV per gli episodi"
-
-msgctxt "#32455"
-msgid "Open ExtendedInfo for Info Dialogs"
-msgstr "Apri ExtendedInfo per dialoghi informativi"
-
-msgctxt "#32456"
-msgid "Cert"
-msgstr "Cert"
-
-msgctxt "#32457"
-msgid "Show Episodes List button"
-msgstr "Mostra pulsante elenco episodi"
-
-msgctxt "#32458"
-msgid "Include Seasons in Episodes List popup"
-msgstr "Includi stagioni nel popup dell'elenco episodi"
-
-msgctxt "#32459"
-msgid "Next Aired"
-msgstr "Prossimo in onda"
-
-msgctxt "#32460"
-msgid "Enable Direct Seeking in Full Screen Info"
-msgstr "Abilita ricerca diretta nelle info a schermo intero"
-
-msgctxt "#32461"
-msgid "Show Disc above Poster"
-msgstr "Mostra il disco sopra il poster"
-
-msgctxt "#32462"
-msgid "Hide Disc over Set Poster"
-msgstr "Nascondi disco sopra poster del set"
-
-msgctxt "#32463"
-msgid "Play trailer in a window"
-msgstr "Riproduci trailer in una finestra"
-
-msgctxt "#32464"
-msgid "Search Trailer"
-msgstr "Cerca trailer"
-
-msgctxt "#32465"
-msgid "Search for Trailers with IMDb Trailers Addon"
-msgstr "Cerca trailer con l'add-on Trailer IMDb"
-
-msgctxt "#32466"
-msgid "Fade out Non-focused Menu Items"
-msgstr "Dissolvenza voci menu non focalizzate"
-
-msgctxt "#32467"
-msgid "Cloudiness"
-msgstr "Nuvolosità"
-
-msgctxt "#32468"
-msgid "Probability of Precipitation"
-msgstr "Probabilità di precipitazioni"
-
-msgctxt "#32469"
-msgid "Intro Video Duration"
-msgstr "Durata video introduttivo"
-
-msgctxt "#32470"
-msgid "PVR Timeshift Buffer Color"
-msgstr "Colore buffer Timeshift PVR"
-
-msgctxt "#32471"
-msgid "Use Main Menu item Background for Sub Windows"
-msgstr "Usa la voce del menu principale Sfondo per le sottofinestre"
-
-msgctxt "#32472"
-msgid "Teletext Button Opens EPG"
-msgstr "Pulsante Teletext apre EPG"
-
-msgctxt "#32473"
-msgid "EPG Icon"
-msgstr "Icona EPG"
-
-msgctxt "#32474"
-msgid "Channel Logo"
-msgstr "Logo canale"
-
-msgctxt "#32475"
-msgid "Always Show Information Panel"
-msgstr "Mostra sempre pannello info"
-
-msgctxt "#32476"
-msgid "Use Custom Search for Video Library"
-msgstr "Usa ricerca personalizzata per libreria video"
-
-msgctxt "#32477"
-msgid "Use Custom Search for Music Library"
-msgstr "Usa ricerca personalizzata per libreria musicale"
-
-msgctxt "#32478"
-msgid "Current Programme Progress:"
-msgstr "Avanzamento programma attuale:"
-
-msgctxt "#32479"
-msgid "Also Show Seconds"
-msgstr "Mostra anche i secondi"
-
-msgctxt "#32480"
-msgid "kbps"
-msgstr "kbps"
-
-msgctxt "#32481"
-msgid "Remember Focused Control in Home Window"
-msgstr "Ricorda controllo focalizzato nella finestra Home"
-
-msgctxt "#32482"
-msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
-msgstr "Usa elementi anteprime e non add-on fanart per gli scaffali di YouTube"
-
-msgctxt "#32483"
-msgid "Allow Changing View Types in PVR Channels Window"
-msgstr "Consenti modifica dei tipi di visualizzazione nella finestra Canali PVR"
-
-msgctxt "#32484"
-msgid "Update Library"
-msgstr "Aggiorna libreria"
-
-msgctxt "#32485"
-msgid "Stop Scanning"
-msgstr "Interrompi scansione"
-
-msgctxt "#32486"
-msgid "More Info"
-msgstr "Più informazioni"
-
-msgctxt "#32487"
-msgid "Play Trailer Windowed"
-msgstr "Riproduci trailer in finestra"
-
-msgctxt "#32488"
-msgid "Last Played Date"
-msgstr "Data ultima riproduzione"
-
-msgctxt "#32489"
-msgid "Horizontal Icon Layout"
-msgstr "Disposizione orizzontale icone"
-
-msgctxt "#32490"
-msgid "Show Menu Item Label"
-msgstr "Mostra etichetta voce di menu"
-
-msgctxt "#32491"
-msgid "Always Show Set Movie List"
-msgstr "Mostra sempre l'elenco delle saghe cinematografiche"
-
-msgctxt "#32492"
-msgid "Use Tall List Layout"
-msgstr "Usa disposizione elenco alto"
-
-msgctxt "#32493"
-msgid "Show More Items in List"
-msgstr "Mostra più elementi nell'elenco"
-
-msgctxt "#32494"
-msgid "Hide Overlay Label in Icon/Panel Views"
-msgstr "Nascondi etichetta sovrapposta nelle visualizzazioni icone/pannelli"
 
 #~ msgctxt "#31035"
 #~ msgid "Hide media flags from views"

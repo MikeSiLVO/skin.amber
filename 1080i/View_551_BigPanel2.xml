@@ -13,7 +13,7 @@
 			<include>ContentFade</include>
 
 			<control type="panel" id="551" description="Big Panel 2">
-				<viewtype label="$LOCALIZE[32246]">list</viewtype>
+				<viewtype label="$LOCALIZE[31380]">list</viewtype>
 				<left>45</left>
 				<top>60</top>
 				<width>930</width>

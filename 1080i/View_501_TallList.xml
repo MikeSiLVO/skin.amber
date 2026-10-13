@@ -21,7 +21,7 @@
 				<include>ContentFade</include>
 
 				<control type="$PARAM[ListType]" id="501">
-					<viewtype label="$LOCALIZE[32060]">list</viewtype>
+					<viewtype label="$LOCALIZE[31181]">list</viewtype>
 					<posx>540</posx>
 					<posy>105</posy>
 					<include condition="!Skin.HasSetting(Enable.TouchSupport)">TallListHeightStandard</include>

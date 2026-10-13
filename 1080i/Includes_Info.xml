@@ -842,11 +842,11 @@
 	</variable>
 	<!-- Sub header for textviewer window for RT Consensus -->
 	<variable name="RTConsesusLabel">
-		<value>[I]$LOCALIZE[32080][/I]</value>
+		<value>[I]$LOCALIZE[31200][/I]</value>
 	</variable>
 	<!-- Sub header for textviewer window for Awards -->
 	<variable name="AwardsLabel">
-		<value>[I]$LOCALIZE[32075][/I]</value>
+		<value>[I]$LOCALIZE[31195][/I]</value>
 	</variable>
 	<!-- Movies in Set custom info list label -->
 	<variable name="SetNameLabel">
@@ -990,19 +990,19 @@
 	</variable>
 	<!-- Header for single search of movies/tv shows/episodes with genre -->
 	<variable name="GenreOnlineHeaderVar">
-		<value condition="String.IsEqual(ListItem.DBType,movie) | ListItem.IsCollection">$LOCALIZE[32029]</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow)">$LOCALIZE[32030]</value>
-		<value condition="String.IsEqual(ListItem.DBType,episode)">$LOCALIZE[32117]</value>
-		<value condition="Window.IsActive(script-embuary-video.xml) + String.IsEqual(Container(10051).ListItem.DBType,movie)">$LOCALIZE[32029]</value>
-		<value condition="Window.IsActive(script-embuary-video.xml) + [String.IsEqual(Container(10051).ListItem.DBType,tvshow) | String.IsEqual(Container(10051).ListItem.DBType,season)]">$LOCALIZE[32030]</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) | ListItem.IsCollection">$LOCALIZE[31127]</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow)">$LOCALIZE[31128]</value>
+		<value condition="String.IsEqual(ListItem.DBType,episode)">$LOCALIZE[31239]</value>
+		<value condition="Window.IsActive(script-embuary-video.xml) + String.IsEqual(Container(10051).ListItem.DBType,movie)">$LOCALIZE[31127]</value>
+		<value condition="Window.IsActive(script-embuary-video.xml) + [String.IsEqual(Container(10051).ListItem.DBType,tvshow) | String.IsEqual(Container(10051).ListItem.DBType,season)]">$LOCALIZE[31128]</value>
 	</variable>
 	<!-- Header for single search of movies/tv shows/episodes from studio -->
 	<variable name="StudioOnlineHeaderVar">
-		<value condition="String.IsEqual(ListItem.DBType,movie) | ListItem.IsCollection">$LOCALIZE[32031]</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow)">$LOCALIZE[32032]</value>
-		<value condition="String.IsEqual(ListItem.DBType,episode)">$LOCALIZE[32116]</value>
-		<value condition="Window.IsActive(script-embuary-video.xml) + String.IsEqual(Container(10051).ListItem.DBType,movie)">$LOCALIZE[32031]</value>
-		<value condition="Window.IsActive(script-embuary-video.xml) + [String.IsEqual(Container(10051).ListItem.DBType,tvshow) | String.IsEqual(Container(10051).ListItem.DBType,season)]">$LOCALIZE[32032]</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) | ListItem.IsCollection">$LOCALIZE[31143]</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow)">$LOCALIZE[31144]</value>
+		<value condition="String.IsEqual(ListItem.DBType,episode)">$LOCALIZE[31238]</value>
+		<value condition="Window.IsActive(script-embuary-video.xml) + String.IsEqual(Container(10051).ListItem.DBType,movie)">$LOCALIZE[31143]</value>
+		<value condition="Window.IsActive(script-embuary-video.xml) + [String.IsEqual(Container(10051).ListItem.DBType,tvshow) | String.IsEqual(Container(10051).ListItem.DBType,season)]">$LOCALIZE[31144]</value>
 	</variable>
 	<!-- Single Search content sources -->
 	<variable name="SingleSearchContent">
@@ -1023,39 +1023,39 @@
 
 	<!-- Embuary Info Crew for movies/tv shows, guest stars for seasons -->
 	<variable name="EmbuaryInfoCrewLabel">
-		<value condition="String.IsEqual(Container(10051).ListItem.DBType,season)">$LOCALIZE[32129]</value>
-		<value>$LOCALIZE[32099]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.DBType,season)">$LOCALIZE[31251]</value>
+		<value>$LOCALIZE[31221]</value>
 	</variable>
 	<!-- Embuary Info Movie/TV Show status from TMDb -->
 	<variable name="EmbuaryInfoStatus">
-		<value condition="String.IsEqual(Container(10051).ListItem.Status,Ended)">$LOCALIZE[32139]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Status,Rumored)">$LOCALIZE[32140]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Status,Planned)">$LOCALIZE[32141]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Status,In Production)">$LOCALIZE[32142]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Status,Post Production)">$LOCALIZE[32143]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Status,Released)">$LOCALIZE[32144]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Status,Canceled)">$LOCALIZE[32145]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Status,Returning Series)">$LOCALIZE[32146]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Status,Ended)">$LOCALIZE[31261]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Status,Rumored)">$LOCALIZE[31262]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Status,Planned)">$LOCALIZE[31263]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Status,In Production)">$LOCALIZE[31264]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Status,Post Production)">$LOCALIZE[31265]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Status,Released)">$LOCALIZE[31266]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Status,Canceled)">$LOCALIZE[31267]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Status,Returning Series)">$LOCALIZE[31268]</value>
 	</variable>
 	<!-- Embuary Info Person Known For -->
 	<variable name="EmbuaryInfoKnownFor">
-		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Acting)">$LOCALIZE[32147]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Directing)">$LOCALIZE[32148]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Writing)">$LOCALIZE[32149]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Production)">$LOCALIZE[32150]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Sound)">$LOCALIZE[32151]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Crew)">$LOCALIZE[32099]</value>
-		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Creator)">$LOCALIZE[32152]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Acting)">$LOCALIZE[31269]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Directing)">$LOCALIZE[31270]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Writing)">$LOCALIZE[31271]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Production)">$LOCALIZE[31272]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Sound)">$LOCALIZE[31273]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Crew)">$LOCALIZE[31221]</value>
+		<value condition="String.IsEqual(Container(10051).ListItem.Property(Known_For_Department),Creator)">$LOCALIZE[31274]</value>
 	</variable>
 
 	<!-- Person Info Variables -->
 	<variable name="AgeLabel">
-		<value condition="[!String.IsEmpty(Container(10051).ListItem.Property(Age)) + String.IsEmpty(Container(10051).ListItem.Property(Deathday))]">$LOCALIZE[32084]</value>
-		<value condition="[!String.IsEmpty(ListItem.Property(Age)) + String.IsEmpty(ListItem.Property(Deathday))]">$LOCALIZE[32084]</value>
-		<value condition="[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]">$LOCALIZE[32084]</value>
-		<value condition="[!String.IsEmpty(Container(10051).ListItem.Property(Age)) + !String.IsEmpty(Container(10051).ListItem.Property(Deathday))]">$LOCALIZE[32153]</value>
-		<value condition="[!String.IsEmpty(ListItem.Property(Age)) + !String.IsEmpty(ListItem.Property(Deathday))]">$LOCALIZE[32153]</value>
-		<value condition="[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]">$LOCALIZE[32153]</value>
+		<value condition="[!String.IsEmpty(Container(10051).ListItem.Property(Age)) + String.IsEmpty(Container(10051).ListItem.Property(Deathday))]">$LOCALIZE[31206]</value>
+		<value condition="[!String.IsEmpty(ListItem.Property(Age)) + String.IsEmpty(ListItem.Property(Deathday))]">$LOCALIZE[31206]</value>
+		<value condition="[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]">$LOCALIZE[31206]</value>
+		<value condition="[!String.IsEmpty(Container(10051).ListItem.Property(Age)) + !String.IsEmpty(Container(10051).ListItem.Property(Deathday))]">$LOCALIZE[31275]</value>
+		<value condition="[!String.IsEmpty(ListItem.Property(Age)) + !String.IsEmpty(ListItem.Property(Deathday))]">$LOCALIZE[31275]</value>
+		<value condition="[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]">$LOCALIZE[31275]</value>
 	</variable>
 	<!-- <variable name="TMDbPersonBio">
 		<value condition="!String.IsEmpty(ListItem.Property(Biography))">$INFO[ListItem.Property(Biography)]</value>
@@ -1468,9 +1468,9 @@
 			<visible>Container(50).IsUpdating | Container(90050).IsUpdating | Integer.IsGreater(Container(90050).NumItems,0) | Integer.IsGreater(Container(50).NumItems,0)</visible>
 			<animation effect="fade" start="100" end="0" condition="!Integer.IsGreater(Container(50).NumItems,0) | Container(50).IsUpdating | !Integer.IsGreater(Container(90050).NumItems,0) | Container(90050).IsUpdating">Conditional</animation>
 			<!-- select online tmdb search or local search -->
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,Dialog.Close(All)||RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(90050).ListItem.Label],type=person,call_auto=1134))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
+			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All,true)||ActivateWindow(1122))</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 			<onclick condition="!$EXP[CanDoOnlineSearches]">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])</onclick>
@@ -1651,9 +1651,9 @@
 			<visible>Container(90050).IsUpdating | Integer.IsGreater(Container(90050).NumItems,0)</visible>
 			<animation effect="fade" start="100" end="0" condition="!Integer.IsGreater(Container(90050).NumItems,0) | Container(90050).IsUpdating">Conditional</animation>
 			<!-- select online tmdb search or local search -->
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,Dialog.Close(All)||RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(90050).ListItem.Label],type=person,call_auto=1134))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
+			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.BuiltIn,Dialog.Close(1122,force)||RunScript(plugin.video.themoviedb.helper,close_dialog=1134)||Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All)||ActivateWindow(1122))</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 			<onclick condition="!$EXP[CanDoOnlineSearches]">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])</onclick>
@@ -1973,7 +1973,7 @@
 					<left>8</left>
 					<top>0</top>
 					<height>30</height>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[32244] $INFO[ListItem.Label] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31378] $INFO[ListItem.Label] $INFO[Container(90050).NumItems,(,)][/COLOR]</label>
 					<font>ListDetails</font>
 				</control>
 				<control type="image" description="Line Split">
@@ -2064,9 +2064,9 @@
 	<include name="InfoList_OnClickCrew">
 		<definition>
 			<!-- select online tmdb search or local search -->
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(91003).ListItem.Label],type=person,call_auto=1134))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
+			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$ESCINFO[Container(91003).ListItem.Label])||Action(Close)||ActivateWindow(1122))</onclick>
 			<onclick condition="$EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 			<onclick condition="!$EXP[CanDoOnlineSearches]">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(91003).ListItem.Label])</onclick>
@@ -2667,13 +2667,13 @@
 
 	<include name="VideoInfoPersonItems">
 		<item>
-			<label>$LOCALIZE[32082]:</label>
+			<label>$LOCALIZE[31202]:</label>
 			<label2>$VAR[TMDbPersonBirthday]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(Birthday)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32083]:</label>
+			<label>$LOCALIZE[31204]:</label>
 			<label2>$VAR[TMDbPersonBorn]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(Born)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Born))]</visible>
@@ -2685,156 +2685,156 @@
 			<visible>[!String.IsEmpty(ListItem.Property(Age)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32085]:</label>
+			<label>$LOCALIZE[31207]:</label>
 			<label2>$VAR[TMDbPersonDeathday]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(Deathday)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32086]:</label>
+			<label>$LOCALIZE[31208]:</label>
 			<label2>$VAR[TMDbPersonAliases]</label2>
 			<onclick>SetProperty(TextViewerHeader,$ESCINFO[ListItem.Title],Home)</onclick>
-			<onclick>SetProperty(TextViewerSubHeader,[I]$LOCALIZE[32086][/I],Home)</onclick>
+			<onclick>SetProperty(TextViewerSubHeader,[I]$LOCALIZE[31208][/I],Home)</onclick>
 			<onclick>SetProperty(TextViewerContent,$ESCVAR[TMDbPersonAliases],Home)</onclick>
 			<onclick>ActivateWindow(1124)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(aliases)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Aliases))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32136]:</label>
+			<label>$LOCALIZE[31258]:</label>
 			<label2>$VAR[TMDbPersonKnownFor]</label2>
 			<onclick>SetProperty(TextViewerHeader,$ESCINFO[ListItem.Title],Home)</onclick>
-			<onclick>SetProperty(TextViewerSubHeader,[I]$LOCALIZE[32136][/I],Home)</onclick>
+			<onclick>SetProperty(TextViewerSubHeader,[I]$LOCALIZE[31258][/I],Home)</onclick>
 			<onclick>SetProperty(TextViewerContent,$ESCVAR[TMDbPersonKnownFor],Home)</onclick>
 			<onclick>ActivateWindow(1124)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(Known_For)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Known_For))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32183]:</label>
+			<label>$LOCALIZE[31307]:</label>
 			<label2>$VAR[TMDbPersonCharacter]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(Character)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Character))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32184]:</label>
+			<label>$LOCALIZE[31308]:</label>
 			<label2>$VAR[TMDbPersonDepartment]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(Department)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Department))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32185]:</label>
+			<label>$LOCALIZE[31310]:</label>
 			<label2>$VAR[TMDbPersonJob]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(Job)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Job))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32186]:</label>
+			<label>$LOCALIZE[31311]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBTotal]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Total)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Total))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32187]:</label>
+			<label>$LOCALIZE[31312]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBMoviesTotal]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Total)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Total))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32188]:</label>
+			<label>$LOCALIZE[31313]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBTvShowsTotal]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Total)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Total))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32189]:</label>
+			<label>$LOCALIZE[31314]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBCast]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Cast)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Cast))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32190]:</label>
+			<label>$LOCALIZE[31315]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBMoviesCast]</label2>
 			<onclick condition="!$EXP[CanUseTMDbHelper] | Skin.HasSetting(OnlyLocalSearches)">noop</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">SetProperty(SingleSearchType,OnlineTotals,Home)</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchID,$INFO[ListItem.Property(tmdb_id)])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(OnlineTotalsCall,stars_in_movies)</onclick>
-			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[32199])</onclick>
+			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[31325])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">ActivateWindow(1131)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Cast)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Cast))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32191]:</label>
+			<label>$LOCALIZE[31316]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBTvShowsCast]</label2>
 			<onclick condition="!$EXP[CanUseTMDbHelper] | Skin.HasSetting(OnlyLocalSearches)">noop</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">SetProperty(SingleSearchType,OnlineTotals,Home)</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchID,$INFO[ListItem.Property(tmdb_id)])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(OnlineTotalsCall,stars_in_tvshows)</onclick>
-			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[32200])</onclick>
+			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[31326])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">ActivateWindow(1131)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Cast)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Cast))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32192]:</label>
+			<label>$LOCALIZE[31317]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBCrew]</label2>
 			<onclick>noop</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Crew)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Crew))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32193]:</label>
+			<label>$LOCALIZE[31318]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBMoviesCrew]</label2>
 			<onclick condition="!$EXP[CanUseTMDbHelper] | Skin.HasSetting(OnlyLocalSearches)">noop</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">SetProperty(SingleSearchType,OnlineTotals,Home)</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchID,$INFO[ListItem.Property(tmdb_id)])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(OnlineTotalsCall,crew_in_movies)</onclick>
-			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[32201])</onclick>
+			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[31327])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">ActivateWindow(1131)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Crew)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Crew))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32194]:</label>
+			<label>$LOCALIZE[31319]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBTvShowsCrew]</label2>
 			<onclick condition="!$EXP[CanUseTMDbHelper] | Skin.HasSetting(OnlyLocalSearches)">noop</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">SetProperty(SingleSearchType,OnlineTotals,Home)</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchID,$INFO[ListItem.Property(tmdb_id)])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(OnlineTotalsCall,crew_in_tvshows)</onclick>
-			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[32202])</onclick>
+			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[31328])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">ActivateWindow(1131)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Crew)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Crew))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32195]:</label>
+			<label>$LOCALIZE[31320]:</label>
 			<label2>$VAR[TMDbPersonNumItemsDBIDTotal]</label2>
 			<onclick>Skin.SetString(CustomSearchTerm,$INFO[ListItem.Label])</onclick>
 			<onclick>ActivateWindow(1122)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.DBID.Total)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Total))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32196]:</label>
+			<label>$LOCALIZE[31321]:</label>
 			<label2>$VAR[TMDbPersonNumItemsDBIDMovies]</label2>
 			<onclick>SetProperty(SingleSearchType,LocalMovieActor,Home)</onclick>
 			<onclick>Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
-			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[32025])</onclick>
+			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[31123])</onclick>
 			<onclick>ActivateWindow(1131)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.DBID.Movies)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Movies))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32197]:</label>
+			<label>$LOCALIZE[31323]:</label>
 			<label2>$VAR[TMDbPersonNumItemsDBIDTvShows]</label2>
 			<onclick>SetProperty(SingleSearchType,LocalTVShowActor,Home)</onclick>
 			<onclick>Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
-			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[32027])</onclick>
+			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[31125])</onclick>
 			<onclick>ActivateWindow(1131)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.DBID.TvShows)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.TvShows))]</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32198]:</label>
+			<label>$LOCALIZE[31324]:</label>
 			<label2>$VAR[TMDbPersonNumItemsDBIDEpisodes]</label2>
 			<onclick>SetProperty(SingleSearchType,LocalEpisodeActor,Home)</onclick>
 			<onclick>Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
-			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[32096])</onclick>
+			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[31218])</onclick>
 			<onclick>ActivateWindow(1131)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.DBID.Episodes)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Episodes))]</visible>
 		</item>
@@ -2876,17 +2876,17 @@
 		<item>
 			<label>$LOCALIZE[20339]:</label>
 			<label2>$INFO[ListItem.Director]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[ListItem.Director],type=person,call_auto=1134))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Director, / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledGeneralSearch,true,home)++ClearProperty(InfoCalledSingleSearch,home)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32110]"',items='$ESCINFO[ListItem.Director]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Director, / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledGeneralSearch,true,home)++ClearProperty(InfoCalledSingleSearch,home)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[ListItem.Director]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(ListItem.Director, / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[ListItem.Director])||Dialog.Close(movieinformation,force)||SetProperty(InfoCalledGeneralSearch,true,home)||ClearProperty(InfoCalledSingleSearch,home)||ActivateWindow(1122))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(ListItem.Director, / )">noop</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Director, / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledGeneralSearch,true,home)++ClearProperty(InfoCalledSingleSearch,home)++ActivateWindow(1122))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Director, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32110]"',items='$ESCINFO[ListItem.Director]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Director, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[ListItem.Director]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(ListItem.Director, / )">Skin.Reset(CustomSearchTerm)</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(ListItem.Director, / )">Skin.SetString(CustomSearchTerm,$INFO[ListItem.Director])</onclick>
@@ -2899,16 +2899,16 @@
 		<item>
 			<label>$LOCALIZE[20339]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)],type=person,call_auto=1134))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32110]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Director)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Director)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)])||ActivateWindow(1122))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32110]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Director)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Director)]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)])</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">Dialog.Close(movieinformation,force)</onclick>
@@ -2920,16 +2920,16 @@
 		<item>
 			<label>$LOCALIZE[20339](s):</label>
 			<label2>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)],type=person,call_auto=1134))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32110]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)])||ActivateWindow(1122))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32110]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)])</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Director), / )">Dialog.Close(movieinformation,force)</onclick>
@@ -2941,16 +2941,16 @@
 		<item>
 			<label>$LOCALIZE[20417]:</label>
 			<label2>$INFO[ListItem.Writer]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[ListItem.Writer],type=person,call_auto=1134))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Writer, / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledGeneralSearch,true,home)++ClearProperty(InfoCalledSingleSearch,home)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32113]"',items='$ESCINFO[ListItem.Writer]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Writer, / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledGeneralSearch,true,home)++ClearProperty(InfoCalledSingleSearch,home)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[ListItem.Writer]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(ListItem.Writer, / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[ListItem.Writer])||Dialog.Close(movieinformation,force)||SetProperty(InfoCalledGeneralSearch,true,home)||ClearProperty(InfoCalledSingleSearch,home)||ActivateWindow(1122))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(ListItem.Writer, / )">noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Writer, / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledGeneralSearch,true,home)++ClearProperty(InfoCalledSingleSearch,home)++ActivateWindow(1122))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Writer, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32113]"',items='$ESCINFO[ListItem.Writer]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Writer, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[ListItem.Writer]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(ListItem.Writer, / )">Skin.SetString(CustomSearchTerm,$INFO[ListItem.Writer])</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(ListItem.Writer, / )">Dialog.Close(movieinformation,force)</onclick>
@@ -2962,16 +2962,16 @@
 		<item>
 			<label>$LOCALIZE[20417]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer)]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer)],type=person,call_auto=1134))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32113]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Writer)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Writer)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer)])||ActivateWindow(1122))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32113]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Writer)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Writer)]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer)])</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">Dialog.Close(movieinformation,force)</onclick>
@@ -2983,16 +2983,16 @@
 		<item>
 			<label>$LOCALIZE[20417](s):</label>
 			<label2>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)],type=person,call_auto=1134))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32113]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)])||ActivateWindow(1122))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32113]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)])</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Writer), / )">Dialog.Close(movieinformation,force)</onclick>
@@ -3010,17 +3010,17 @@
 			<onclick condition="String.IsEqual(ListItem.DBType,tvshow)">SetProperty(SingleSearchType,LocalTVShowGenre,Home)</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,episode)">SetProperty(SingleSearchType,LocalEpisodeGenre,Home)</onclick>
 
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Genre, / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,with_genres)++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[ListItem.Genre]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Genre, / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,with_genres)++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[ListItem.Genre]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(ListItem.Genre, / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[ListItem.Genre])||Skin.SetString(OnlineCallType,with_genres)||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Genre, / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(SingleSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledSingleSearch,true,home)++ClearProperty(InfoCalledGeneralSearch,home)++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[ListItem.Genre]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Genre, / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(SingleSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledSingleSearch,true,home)++ClearProperty(InfoCalledGeneralSearch,home)++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[ListItem.Genre]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(ListItem.Genre, / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(SingleSearchTerm,$INFO[ListItem.Genre])||Dialog.Close(movieinformation,force)||SetProperty(InfoCalledSingleSearch,true,home)||ClearProperty(InfoCalledGeneralSearch,home)||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(ListItem.Genre, / )">noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Genre, / )">SetProperty(Dialog.Builtin,Skin.SetString(SingleSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledSingleSearch,true,home)++ClearProperty(InfoCalledGeneralSearch,home)++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Genre, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[ListItem.Genre]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Genre, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[ListItem.Genre]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(ListItem.Genre, / )">Skin.SetString(SingleSearchTerm,$INFO[ListItem.Genre])</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(ListItem.Genre, / )">Dialog.Close(movieinformation,force)</onclick>
@@ -3032,13 +3032,13 @@
 		<item>
 			<label>$LOCALIZE[515]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,with_genres)++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,with_genres)++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])||Skin.SetString(OnlineCallType,with_genres)||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalMovieGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalTVShowGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
@@ -3048,7 +3048,7 @@
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(SingleSearchType,LocalMovieGenre,Home)</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(SingleSearchType,LocalTVShowGenre,Home)</onclick>
@@ -3064,17 +3064,17 @@
 		<item>
 			<label>$LOCALIZE[515](s):</label>
 			<label2>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,with_genres)++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,with_genres)++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)])||Skin.SetString(OnlineCallType,with_genres)||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalMovieGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32108]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">SetProperty(SingleSearchType,LocalMovieGenre,Home)</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Genre), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)])</onclick>
@@ -3131,10 +3131,10 @@
 			<label>$LOCALIZE[21875]:</label>
 			<label2>$INFO[ListItem.Country]</label2>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie)">SetProperty(SingleSearchType,LocalMovieCountry,Home)</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie)">Skin.SetString(SingleSearchHeader,$LOCALIZE[32035])</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie)">Skin.SetString(SingleSearchHeader,$LOCALIZE[31147])</onclick>
 			<onclick condition="!$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Country, / )">noop</onclick>
 			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Country, / )">SetProperty(Dialog.Builtin,Skin.SetString(SingleSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledSingleSearch,true,home)++ClearProperty(InfoCalledGeneralSearch,home)++ActivateWindow(1131))</onclick>
-			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Country, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32115]"',items='$ESCINFO[ListItem.Country]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Country, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31237]"',items='$ESCINFO[ListItem.Country]',seperator='" / "',splitby='"++"')</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(ListItem.Country, / )">Skin.SetString(SingleSearchTerm,$INFO[ListItem.Country])</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(ListItem.Country, / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(ListItem.Country, / )">ClearProperty(InfoCalledGeneralSearch,home)</onclick>
@@ -3146,11 +3146,11 @@
 			<label>$LOCALIZE[21875]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Country)]</label2>
 			<onclick condition="!$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">noop</onclick>
-			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieCountry,Home)++Skin.SetString(SingleSearchHeader,$LOCALIZE[32035])++Skin.SetString(SingleSearchTerm,???)++ActivateWindow(1131))</onclick>
-			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32115]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Country)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieCountry,Home)++Skin.SetString(SingleSearchHeader,$LOCALIZE[31147])++Skin.SetString(SingleSearchTerm,???)++ActivateWindow(1131))</onclick>
+			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31237]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Country)]',seperator='" / "',splitby='"++"')</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">SetProperty(SingleSearchType,LocalMovieCountry,Home)</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Country)])</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">Skin.SetString(SingleSearchHeader,$LOCALIZE[32035])</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">Skin.SetString(SingleSearchHeader,$LOCALIZE[31147])</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">Dialog.Close(movieinformation,force)</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">ClearProperty(InfoCalledGeneralSearch,home)</onclick>
@@ -3166,18 +3166,18 @@
 			<onclick condition="String.IsEqual(ListItem.DBType,episode)">SetProperty(SingleSearchType,LocalEpisodeStudio,Home)</onclick>
 			<onclick>Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])</onclick>
 
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Studio, / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[ListItem.Studio]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Studio, / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[ListItem.Studio]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(ListItem.Studio, / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[ListItem.Studio])||Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Studio, / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(SingleSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledSingleSearch,true,home)++ClearProperty(InfoCalledGeneralSearch,home)++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[ListItem.Studio]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(ListItem.Studio, / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(SingleSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledSingleSearch,true,home)++ClearProperty(InfoCalledGeneralSearch,home)++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[ListItem.Studio]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(ListItem.Studio, / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(SingleSearchTerm,$INFO[ListItem.Studio])||Dialog.Close(movieinformation,force)||SetProperty(InfoCalledSingleSearch,true,home)||ClearProperty(InfoCalledGeneralSearch,home)||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(ListItem.Studio, / )">noop</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Studio, / )">SetProperty(Dialog.Builtin,Skin.SetString(SingleSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledSingleSearch,true,home)++ClearProperty(InfoCalledGeneralSearch,home)++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Studio, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[ListItem.Studio]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(ListItem.Studio, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[ListItem.Studio]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(ListItem.Studio, / )">Skin.SetString(SingleSearchTerm,$INFO[ListItem.Studio])</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(ListItem.Studio, / )">Dialog.Close(movieinformation,force)</onclick>
@@ -3189,13 +3189,13 @@
 		<item>
 			<label>$LOCALIZE[572]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])||Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalMovieStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalTVShowStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
@@ -3205,7 +3205,7 @@
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))noop</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(SingleSearchType,LocalMovieStudio,Home)</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(SingleSearchType,LocalTVShowStudio,Home)</onclick>
@@ -3221,17 +3221,17 @@
 		<item>
 			<label>$LOCALIZE[29909](s):</label>
 			<label2>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]</label2>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)])||Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalMovieStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">noop</onclick>
 			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32109]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]',seperator='" / "',splitby='"++"')</onclick>
 
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">SetProperty(SingleSearchType,LocalMovieStudio,Home)</onclick>
 			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Set.Movies.Studio), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)])</onclick>
@@ -3274,7 +3274,7 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[20360]:</label>
-			<label2>$INFO[Listitem.Property(TotalEpisodes)] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[32260]])</label2>
+			<label2>$INFO[Listitem.Property(TotalEpisodes)] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[31659]])</label2>
 			<onclick>noop</onclick>
 			<visible>String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Property(TotalEpisodes)) + !String.IsEmpty(ListItem.Property(WatchedEpisodes)) + !String.IsEmpty(ListItem.Property(UnWatchedEpisodes))</visible>
 		</item>
@@ -3325,10 +3325,10 @@
 			<label>$LOCALIZE[20459]:</label>
 			<label2>$INFO[ListItem.Tag]</label2>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie)">SetProperty(SingleSearchType,LocalMovieTags,Home)</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie)">Skin.SetString(SingleSearchHeader,$LOCALIZE[32451])</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie)">Skin.SetString(SingleSearchHeader,$LOCALIZE[31819])</onclick>
 			<onclick condition="!$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Tag, / )">noop</onclick>
 			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Tag, / )">SetProperty(Dialog.Builtin,Skin.SetString(SingleSearchTerm,???)++Dialog.Close(movieinformation,force)++SetProperty(InfoCalledSingleSearch,true,home)++ClearProperty(InfoCalledGeneralSearch,home)++ActivateWindow(1131))</onclick>
-			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Tag, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[32452]"',items='$ESCINFO[ListItem.Tag]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(ListItem.Tag, / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31820]"',items='$ESCINFO[ListItem.Tag]',seperator='" / "',splitby='"++"')</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(ListItem.Tag, / )">Skin.SetString(SingleSearchTerm,$INFO[ListItem.Tag])</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(ListItem.Tag, / )">Dialog.Close(movieinformation,force)</onclick>
 			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(ListItem.Tag, / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
@@ -3349,43 +3349,43 @@
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Status)) + !String.IsEqual(ListItem.DBType,tvshow)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32073]:</label>
+			<label>$LOCALIZE[31193]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.budget)]</label2>
 			<onclick>noop</onclick>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.budget)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.budget),N/A)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32074]:</label>
+			<label>$LOCALIZE[31194]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.revenue)]</label2>
 			<onclick>noop</onclick>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.revenue)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.revenue),N/A)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32278]:</label>
+			<label>$LOCALIZE[31676]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)]</label2>
 			<onclick>noop</onclick>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32279]:</label>
+			<label>$LOCALIZE[31677]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Oscar_Nominations)]</label2>
 			<onclick>noop</onclick>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Nominations)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Nominations),N/A)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32280]:</label>
+			<label>$LOCALIZE[31678]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)]</label2>
 			<onclick>noop</onclick>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32281]:</label>
+			<label>$LOCALIZE[31679]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Nominations)]</label2>
 			<onclick>noop</onclick>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Nominations)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobes_Nominations),N/A)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32075]:</label>
+			<label>$LOCALIZE[31195]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.awards)]</label2>
 			<onclick>SetProperty(TextViewerHeader,$ESCINFO[ListItem.Title],Home)</onclick>
 			<onclick>SetProperty(TextViewerSubHeader,$VAR[AwardsLabel],Home)</onclick>
@@ -3394,28 +3394,28 @@
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.awards)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.awards),N/A)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32077]:</label>
+			<label>$LOCALIZE[31197]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewtotal)]</label2>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewtotal)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewtotal),N/A)</visible>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32078]:</label>
+			<label>$LOCALIZE[31198]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsfresh)]</label2>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsfresh)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsfresh),N/A)</visible>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32079]:</label>
+			<label>$LOCALIZE[31199]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsrotten)]</label2>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsrotten)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsrotten),N/A)</visible>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32080]:</label>
+			<label>$LOCALIZE[31200]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_consensus)]</label2>
 			<onclick>SetProperty(TextViewerHeader,$ESCINFO[ListItem.Title],Home)</onclick>
 			<onclick>SetProperty(TextViewerSubHeader,$VAR[RTConsesusLabel],Home)</onclick>
@@ -3425,7 +3425,7 @@
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
 		</item>
 		<item>
-			<label>$LOCALIZE[32081]:</label>
+			<label>$LOCALIZE[31201]:</label>
 			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_userreviews)]</label2>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_userreviews)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_userreviews),N/A)</visible>

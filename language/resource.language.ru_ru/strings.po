@@ -41,10 +41,6 @@ msgctxt "#31003"
 msgid "Channels Directory"
 msgstr "Каталог каналов"
 
-msgctxt "#31004"
-msgid "Shift"
-msgstr "Сдвиг"
-
 msgctxt "#31005"
 msgid "Cinema"
 msgstr "Кинотеатр"
@@ -193,7 +189,18 @@ msgctxt "#31041"
 msgid "Repository"
 msgstr "Хранилище"
 
-# empty strings from id 31042 to 31044
+msgctxt "#31042"
+msgid "Hide icons"
+msgstr "Скрыть значки"
+
+msgctxt "#31043"
+msgid "Hide Games"
+msgstr "Не показывать виджет \"Игры\""
+
+msgctxt "#31044"
+msgid "Game Settings"
+msgstr "Настройки игры"
+
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
 msgstr "Показать Трехрядную Полку"
@@ -230,11 +237,62 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Просмотры медиа"
 
-msgctxt "#31054"
-msgid "Media sources"
-msgstr "Выбор медиа"
+msgctxt "#31055"
+msgid "Toggle Subtitle"
+msgstr "Переключить субтитры"
 
-# empty strings from id 31055 to 31068
+msgctxt "#31056"
+msgid "AB: Select Artwork"
+msgstr "AB: Выбрать иллюстрации"
+
+msgctxt "#31057"
+msgid "AB: All Artwork"
+msgstr "AB: Все иллюстрации"
+
+msgctxt "#31058"
+msgid "Special Features"
+msgstr "Особые возможности"
+
+msgctxt "#31059"
+msgid "Enable Special Features"
+msgstr "Включить специальные возможности"
+
+msgctxt "#31060"
+msgid "Next Episode"
+msgstr "Следующая серия"
+
+msgctxt "#31061"
+msgid "Latest Episode"
+msgstr "Последний эпизод"
+
+msgctxt "#31062"
+msgid "Airs"
+msgstr "Премьеры"
+
+msgctxt "#31063"
+msgid "Next Airing Episodes"
+msgstr "Следующие выходящие серии"
+
+msgctxt "#31064"
+msgid "Search Results for: "
+msgstr "Результаты поиска для: "
+
+msgctxt "#31065"
+msgid "Show Only Local Info "
+msgstr "Показывать только локальную информацию "
+
+msgctxt "#31066"
+msgid "Extended Info"
+msgstr "Дополнительные сведения"
+
+msgctxt "#31067"
+msgid "Search in Local Library"
+msgstr "Поиск в локальной медиатеке"
+
+msgctxt "#31068"
+msgid "Search online in TMDb"
+msgstr "Поиск онлайн в TMDb"
+
 msgctxt "#31069"
 msgid "Random episodes"
 msgstr "Случайные эпизоды"
@@ -391,12 +449,26 @@ msgctxt "#31107"
 msgid "Shelf style"
 msgstr "Стиль полки"
 
-# empty strings from id 31108 to 31109
+msgctxt "#31108"
+msgid "Hide Second Label in List Views"
+msgstr "Скрыть вторую метку в представлениях списком"
+
+msgctxt "#31109"
+msgid "Added:"
+msgstr "Добавлено:"
+
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Редактировать фон для типа носителя"
 
-# empty strings from id 31111 to 31112
+msgctxt "#31111"
+msgid "Plays:"
+msgstr "Воспроизведений:"
+
+msgctxt "#31112"
+msgid "Last Played:"
+msgstr "Последний раз воспроизведено:"
+
 msgctxt "#31113"
 msgid "Single"
 msgstr "Единичный"
@@ -433,14 +505,37 @@ msgctxt "#31121"
 msgid "Apply Changes"
 msgstr "Применить изменения"
 
-# empty strings from id 31122 to 31128
+msgctxt "#31122"
+msgid "New Search"
+msgstr "Новый поиск"
+
+msgctxt "#31123"
+msgid "Movies Starring"
+msgstr "Фильмы с участием"
+
+msgctxt "#31124"
+msgid "Movies Directed by"
+msgstr "Фильмы режиссёра"
+
+msgctxt "#31125"
+msgid "TV Shows Starring"
+msgstr "ТВ-передачи с участием"
+
+msgctxt "#31126"
+msgid "TV Shows Directed by"
+msgstr "ТВ-передачи режиссёра"
+
+msgctxt "#31127"
+msgid "Movies with Genre"
+msgstr "Фильмы в жанре"
+
+msgctxt "#31128"
+msgid "TV Shows with Genre"
+msgstr "ТВ-передачи в жанре"
+
 msgctxt "#31129"
 msgid "Same director"
 msgstr "Тот же режиссёр"
-
-msgctxt "#31130"
-msgid "Hourly"
-msgstr "Ежечасно"
 
 msgctxt "#31131"
 msgid "Forecast"
@@ -486,7 +581,34 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Скорость воспроизведения"
 
-# empty strings from id 31142 to 31149
+msgctxt "#31143"
+msgid "Movies from Studio"
+msgstr "Фильмы студии"
+
+msgctxt "#31144"
+msgid "TV Shows from Studio"
+msgstr "ТВ-передачи студии"
+
+msgctxt "#31145"
+msgid "Movies from Year"
+msgstr "Фильмы за год"
+
+msgctxt "#31146"
+msgid "TV Shows from Year"
+msgstr "ТВ-передачи за год"
+
+msgctxt "#31147"
+msgid "Movies from Country"
+msgstr "Фильмы из страны"
+
+msgctxt "#31148"
+msgid "Music Videos by Artist"
+msgstr "Музыкальные клипы исполнителя"
+
+msgctxt "#31149"
+msgid "YouTube videos about"
+msgstr "Видео YouTube о"
+
 msgctxt "#31150"
 msgid "Disable List view"
 msgstr "Отключить просмотр списка"
@@ -531,12 +653,522 @@ msgctxt "#31160"
 msgid "Disable Logo view"
 msgstr "Отключить просмотр логотипа"
 
-# empty strings from id 31161 to 31290
+msgctxt "#31161"
+msgid "Enable Touch/Mouse Buttons"
+msgstr "Включить кнопки сенсорного ввода / мыши"
+
+msgctxt "#31162"
+msgid "Timeshift"
+msgstr "Таймшифт"
+
+msgctxt "#31163"
+msgid "Enable Kiosk Mode"
+msgstr "Включить режим киоска"
+
+msgctxt "#31164"
+msgid "Next Episodes"
+msgstr "Следующие серии"
+
+msgctxt "#31165"
+msgid "Customize Home Menu and Shelves"
+msgstr "Настроить домашнее меню и полки"
+
+msgctxt "#31166"
+msgid "Shelves"
+msgstr "Полки"
+
+msgctxt "#31167"
+msgid "Weather fanart"
+msgstr "Фан-арт погоды"
+
+msgctxt "#31168"
+msgid "Seconds"
+msgstr "Секунды"
+
+msgctxt "#31169"
+msgid "Show background name in Home window"
+msgstr "Показывать название фона в домашнем окне"
+
+msgctxt "#31170"
+msgid "Home window Background Rotation Delay"
+msgstr "Задержка смены фона домашнего окна"
+
+msgctxt "#31171"
+msgid "IPTV Recorder"
+msgstr "Видеомагнитофон IPTV"
+
+msgctxt "#31172"
+msgid "IPTV Recorder Recordings"
+msgstr "Записи IPTV Recorder"
+
+msgctxt "#31173"
+msgid "Show Video Info on Pause"
+msgstr "Показывать информацию о видео на паузе"
+
+msgctxt "#31174"
+msgid "Show Two Shelves Together"
+msgstr "Показывать две полки вместе"
+
+msgctxt "#31175"
+msgid "Use Larger Font"
+msgstr "Использовать более крупный шрифт"
+
+msgctxt "#31176"
+msgid "Use Wraparound Navigation"
+msgstr "Использовать циклическую навигацию"
+
+msgctxt "#31177"
+msgid "Show more items on List Views"
+msgstr "Показывать больше элементов в представлениях списком"
+
+msgctxt "#31178"
+msgid "Show Season/Episode Numbers"
+msgstr "Показывать номера сезонов/серий"
+
+msgctxt "#31179"
+msgid "Show Episode Thumb"
+msgstr "Показывать эскиз серии"
+
+msgctxt "#31180"
+msgid "Disable Tall List View"
+msgstr "Отключить вид «Высокий список»"
+
+msgctxt "#31181"
+msgid "Tall List"
+msgstr "Высокий список"
+
+msgctxt "#31182"
+msgid "Set Default Background"
+msgstr "Установить фон по умолчанию"
+
+msgctxt "#31183"
+msgid "Set Favourite Addons for Shelf"
+msgstr "Установить избранные дополнения для полки"
+
+msgctxt "#31184"
+msgid "Select Favourite Addons"
+msgstr "Выбрать избранные дополнения"
+
+msgctxt "#31185"
+msgid "Backup/Restore"
+msgstr "Резервное копирование/восстановление"
+
+msgctxt "#31186"
+msgid "Backup"
+msgstr "Резервное копирование"
+
+msgctxt "#31187"
+msgid "Restore"
+msgstr "Восстановление"
+
+msgctxt "#31188"
+msgid "Configure Backup addon"
+msgstr "Настроить дополнение резервного копирования"
+
+msgctxt "#31189"
+msgid "Show Fanart"
+msgstr "Показывать фан-арт"
+
+msgctxt "#31190"
+msgid "Place Background Name in Top Bar"
+msgstr "Поместить название фона в верхнюю панель"
+
+msgctxt "#31191"
+msgid "Enable Alphabet Strip"
+msgstr "Включить алфавитную ленту"
+
+msgctxt "#31192"
+msgid "Enable Autocompletion for Virtual Keyboard"
+msgstr "Включить автозавершение для виртуальной клавиатуры"
+
+msgctxt "#31193"
+msgid "Budget"
+msgstr "Бюджет"
+
+msgctxt "#31194"
+msgid "Revenue"
+msgstr "Доход"
+
+msgctxt "#31195"
+msgid "Awards"
+msgstr "Награды"
+
+msgctxt "#31196"
+msgid "Show Watched Items in Recent Shelves"
+msgstr "Показывать просмотренные элементы на недавних полках"
+
+msgctxt "#31197"
+msgid "RT Total Critics Reviews"
+msgstr "RT: всего рецензий критиков"
+
+msgctxt "#31198"
+msgid "RT Fresh Reviews"
+msgstr "RT: свежие рецензии"
+
+msgctxt "#31199"
+msgid "RT Rotten Reviews"
+msgstr "RT: гнилые рецензии"
+
+msgctxt "#31200"
+msgid "RT Critics' Consensus"
+msgstr "RT: консенсус критиков"
+
+msgctxt "#31201"
+msgid "RT Total User Reviews"
+msgstr "RT: всего пользовательских рецензий"
+
+msgctxt "#31202"
+msgid "Birthday"
+msgstr "День рождения"
+
+msgctxt "#31204"
+msgid "Born"
+msgstr "Дата рождения"
+
+msgctxt "#31206"
+msgid "Age"
+msgstr "Возраст"
+
+msgctxt "#31207"
+msgid "Died"
+msgstr "Смерть"
+
+msgctxt "#31208"
+msgid "Also Known As"
+msgstr "Также известен как"
+
+msgctxt "#31209"
+msgid "Cast in Movies"
+msgstr "Снимался в фильмах"
+
+msgctxt "#31210"
+msgid "Cast in TV Shows"
+msgstr "Снимался в ТВ-передаче"
+
+msgctxt "#31211"
+msgid "Crew in Movies"
+msgstr "Участвовал в создании фильмов"
+
+msgctxt "#31212"
+msgid "Crew in TV Shows"
+msgstr "Участвовал в создании ТВ-передачи"
+
+msgctxt "#31213"
+msgid "Movies in TMDb"
+msgstr "Фильмы в TMDb"
+
+msgctxt "#31214"
+msgid "TV Shows in TMDb"
+msgstr "ТВ-передачи в TMDb"
+
+msgctxt "#31215"
+msgid "Movies in Local DB"
+msgstr "Фильмы в локальной БД"
+
+msgctxt "#31216"
+msgid "TV Shows in Local DB"
+msgstr "ТВ-передачи в локальной БД"
+
+msgctxt "#31217"
+msgid "Reboot to Android"
+msgstr "Перезагрузитесь на Android"
+
+msgctxt "#31218"
+msgid "Episodes Starring"
+msgstr "Серии с участием"
+
+msgctxt "#31219"
+msgid "Movies in the"
+msgstr "Фильмы в"
+
+msgctxt "#31220"
+msgid "Also Directed by"
+msgstr "Также режиссёр"
+
+msgctxt "#31221"
+msgid "Crew"
+msgstr "Команда"
+
+msgctxt "#31222"
+msgid "More from"
+msgstr "Больше из"
+
+msgctxt "#31223"
+msgid "More in"
+msgstr "Подробнее в"
+
+msgctxt "#31224"
+msgid "Similar to"
+msgstr "Похожий на"
+
+msgctxt "#31225"
+msgid "Cast Members also appear in"
+msgstr "Актёры также появляются в"
+
+msgctxt "#31226"
+msgid "Select Custom Lists to Display"
+msgstr "Выберите пользовательские списки для отображения"
+
+msgctxt "#31227"
+msgid "Similar"
+msgstr "Похожий"
+
+msgctxt "#31228"
+msgid "Featuring Cast Members"
+msgstr "С участием актёров"
+
+msgctxt "#31229"
+msgid "Video Info"
+msgstr "Информация о видео"
+
+msgctxt "#31230"
+msgid "Select a Genre"
+msgstr "Выберите жанр"
+
+msgctxt "#31231"
+msgid "Select a Studio"
+msgstr "Выберите студию"
+
+msgctxt "#31232"
+msgid "Select a Director"
+msgstr "Выберите режиссёра"
+
+msgctxt "#31233"
+msgid "Online TMDb Search"
+msgstr "Онлайн-поиск в TMDb"
+
+msgctxt "#31234"
+msgid "Local Search"
+msgstr "Локальный поиск"
+
+msgctxt "#31235"
+msgid "Select a Writer"
+msgstr "Выберите сценариста"
+
+msgctxt "#31236"
+msgid "Movies Written by"
+msgstr "Фильмы по сценарию"
+
+msgctxt "#31237"
+msgid "Select a Country"
+msgstr "Выберите страну"
+
+msgctxt "#31238"
+msgid "Episodes from Studio"
+msgstr "Серии студии"
+
+msgctxt "#31239"
+msgid "Episodes with Genre"
+msgstr "Серии в жанре"
+
+msgctxt "#31240"
+msgid "Episodes Written by"
+msgstr "Серии по сценарию"
+
+msgctxt "#31241"
+msgid "Episodes Directed by"
+msgstr "Серии режиссёра"
+
+msgctxt "#31242"
+msgid "AB: Download All Artwork"
+msgstr "AB: Загрузить все иллюстрации"
+
+msgctxt "#31243"
+msgid "AB: Select Artwork"
+msgstr "AB: Выбрать иллюстрации"
+
+msgctxt "#31244"
+msgid "Show Artwork Beef items in Context Menu"
+msgstr "Показывать элементы Artwork Beef в контекстном меню"
+
+msgctxt "#31245"
+msgid "Title Bar Options"
+msgstr "Параметры строки заголовка"
+
+msgctxt "#31246"
+msgid "Show Duration in Hours and Minutes"
+msgstr "Показывать продолжительность в часах и минутах"
+
+msgctxt "#31247"
+msgid "Hour"
+msgstr "Час"
+
+msgctxt "#31248"
+msgid "Minute"
+msgstr "Минута"
+
+msgctxt "#31249"
+msgid "Online TMDb Info"
+msgstr "Онлайн-информация TMDb"
+
+msgctxt "#31250"
+msgid "Embuary Info Settings"
+msgstr "Настройки Embuary Info"
+
+msgctxt "#31251"
+msgid "Guest Stars"
+msgstr "Приглашённые звёзды"
+
+msgctxt "#31252"
+msgid "Posters"
+msgstr "Постер"
+
+msgctxt "#31253"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#31254"
+msgid "Search for Trailer"
+msgstr "Поиск трейлера"
+
+msgctxt "#31255"
+msgid "item in database"
+msgstr "тайтл в базе данных"
+
+msgctxt "#31256"
+msgid "Items in Database"
+msgstr "Элементы в базе данных"
+
+msgctxt "#31257"
+msgid "Extras"
+msgstr "Дополнительно"
+
+msgctxt "#31258"
+msgid "Known for"
+msgstr "Известен по"
+
+msgctxt "#31259"
+msgid "Retail Release"
+msgstr "Розничный выпуск"
+
+msgctxt "#31260"
+msgid "Region Release"
+msgstr "Региональный выпуск"
+
+msgctxt "#31261"
+msgid "Ended"
+msgstr "Завершён"
+
+msgctxt "#31262"
+msgid "Rumored"
+msgstr "Слухи"
+
+msgctxt "#31263"
+msgid "Planned"
+msgstr "Запланирован"
+
+msgctxt "#31264"
+msgid "In Production"
+msgstr "В производстве"
+
+msgctxt "#31265"
+msgid "Post Production"
+msgstr "Постпроизводство"
+
+msgctxt "#31266"
+msgid "Released"
+msgstr "Выпущено"
+
+msgctxt "#31267"
+msgid "Canceled"
+msgstr "Отменён"
+
+msgctxt "#31268"
+msgid "Returning Series"
+msgstr "Возвращающиеся сериалы"
+
+msgctxt "#31269"
+msgid "Acting"
+msgstr "Актёрская игра"
+
+msgctxt "#31270"
+msgid "Directing"
+msgstr "Режиссура"
+
+msgctxt "#31271"
+msgid "Writing"
+msgstr "Сценарий"
+
+msgctxt "#31272"
+msgid "Production"
+msgstr "Производство"
+
+msgctxt "#31273"
+msgid "Sound"
+msgstr "Звук"
+
+msgctxt "#31274"
+msgid "Creator"
+msgstr "Создатель"
+
+msgctxt "#31275"
+msgid "Died at Age"
+msgstr "Умер в возрасте"
+
+msgctxt "#31276"
+msgid "Collection"
+msgstr "Коллекция"
+
+msgctxt "#31277"
+msgid "TMDb Helper Settings"
+msgstr "Настройки TMDb Helper"
+
+msgctxt "#31278"
+msgid "Blur Background"
+msgstr "Размыть фон"
+
+msgctxt "#31279"
+msgid "Use Poster for Blur"
+msgstr "Использовать постер для размытия"
+
+msgctxt "#31280"
+msgid "Customize Power Menu"
+msgstr "Настроить меню питания"
+
+msgctxt "#31281"
+msgid "Edit Library Data"
+msgstr "Изменить данные медиатеки"
+
+msgctxt "#31282"
+msgid "Select Search Categories"
+msgstr "Выберите категории поиска"
+
+msgctxt "#31283"
+msgid "Select Search Categories to Enable"
+msgstr "Выберите категории поиска для включения"
+
+msgctxt "#31284"
+msgid "By Title"
+msgstr "По названию"
+
+msgctxt "#31285"
+msgid "With Genre"
+msgstr "По жанру"
+
+msgctxt "#31286"
+msgid "From Year"
+msgstr "За год"
+
+msgctxt "#31287"
+msgid "From Studio"
+msgstr "По студии"
+
+msgctxt "#31288"
+msgid "From Country"
+msgstr "По стране"
+
+msgctxt "#31289"
+msgid "With Actor"
+msgstr "С актёром"
+
+msgctxt "#31290"
+msgid "By Director"
+msgstr "По режиссёру"
+
 msgctxt "#31291"
 msgid "Add-on manager"
 msgstr "Менеджер дополнений"
 
-# empty string with id 31292
 msgctxt "#31293"
 msgid "Can not be customized"
 msgstr "Не может быть настроен"
@@ -569,17 +1201,206 @@ msgctxt "#31300"
 msgid "CoreELEC Settings"
 msgstr "Настройки CoreELEC"
 
-# empty strings from id 31301 to 31308
+msgctxt "#31301"
+msgid "By Writer"
+msgstr "По сценаристу"
+
+msgctxt "#31302"
+msgid "Artists by Name"
+msgstr "Исполнители по имени"
+
+msgctxt "#31303"
+msgid "Albums by Title"
+msgstr "Альбомы по названию"
+
+msgctxt "#31304"
+msgid "Songs by Title"
+msgstr "Песни по названию"
+
+msgctxt "#31305"
+msgid "By Artist"
+msgstr "По исполнителю"
+
+msgctxt "#31306"
+msgid "YouTube by Title"
+msgstr "YouTube по названию"
+
+msgctxt "#31307"
+msgid "Known for Character"
+msgstr "Известен по роли"
+
+msgctxt "#31308"
+msgid "Known for Department"
+msgstr "Известен по отделу"
+
 msgctxt "#31309"
 msgid "Memory Used"
 msgstr "Используемая память"
 
-# empty strings from id 31310 to 31321
+msgctxt "#31310"
+msgid "Known for Job"
+msgstr "Известен по работе"
+
+msgctxt "#31311"
+msgid "Total Items in TMDb"
+msgstr "Всего элементов в TMDb"
+
+msgctxt "#31312"
+msgid "Total Movies in TMDb"
+msgstr "Всего фильмов в TMDb"
+
+msgctxt "#31313"
+msgid "Total TV Shows in TMDb"
+msgstr "Всего ТВ-передач в TMDb"
+
+msgctxt "#31314"
+msgid "Items in TMDb as Cast"
+msgstr "Элементов в TMDb в роли актёра"
+
+msgctxt "#31315"
+msgid "Movies in TMDb as Cast"
+msgstr "Фильмов в TMDb в роли актёра"
+
+msgctxt "#31316"
+msgid "TV Shows in TMDb as Cast"
+msgstr "ТВ-передач в TMDb в роли актёра"
+
+msgctxt "#31317"
+msgid "Items in TMDb as Crew"
+msgstr "Элементов в TMDb в роли съёмочной группы"
+
+msgctxt "#31318"
+msgid "Movies in TMDb as Crew"
+msgstr "Фильмов в TMDb в роли съёмочной группы"
+
+msgctxt "#31319"
+msgid "TV Shows in TMDb as Crew"
+msgstr "ТВ-передач в TMDb в роли съёмочной группы"
+
+msgctxt "#31320"
+msgid "Total Items in Local Database"
+msgstr "Всего элементов в локальной базе данных"
+
+msgctxt "#31321"
+msgid "Movies in Local Database"
+msgstr "Фильмов в локальной базе данных"
+
 msgctxt "#31322"
 msgid "Aired"
 msgstr "Премьера"
 
-# empty strings from id 31323 to 31350
+msgctxt "#31323"
+msgid "TV Shows in Local Database"
+msgstr "ТВ-передач в локальной базе данных"
+
+msgctxt "#31324"
+msgid "Episodes in Local Database"
+msgstr "Серий в локальной базе данных"
+
+msgctxt "#31325"
+msgid "Cast: Movies with"
+msgstr "В ролях: фильмы с"
+
+msgctxt "#31326"
+msgid "Cast: TV Shows with"
+msgstr "В ролях: ТВ-передач с"
+
+msgctxt "#31327"
+msgid "Crew: Movies with"
+msgstr "Съёмочная группа: фильмы с"
+
+msgctxt "#31328"
+msgid "Crew: TV Shows with"
+msgstr "Съёмочная группа: ТВ-передач с"
+
+msgctxt "#31329"
+msgid "Start at First Menu Item"
+msgstr "Начинать с первого пункта меню"
+
+msgctxt "#31330"
+msgid "Set Default View"
+msgstr "Установить вид по умолчанию"
+
+msgctxt "#31331"
+msgid "Highlight Color"
+msgstr "Цвет выделения"
+
+msgctxt "#31332"
+msgid "Horizontal Menu Glow Bars Tint"
+msgstr "Оттенок светящихся полос горизонтального меню"
+
+msgctxt "#31333"
+msgid "Horizontal Menu Main Bar Tint"
+msgstr "Оттенок основной панели горизонтального меню"
+
+msgctxt "#31334"
+msgid "Vertical Menu/Submenu Background Tint"
+msgstr "Оттенок фона вертикального меню/подменю"
+
+msgctxt "#31335"
+msgid "Top Bar Tint"
+msgstr "Оттенок верхней панели"
+
+msgctxt "#31336"
+msgid "Current Color Theme"
+msgstr "Текущая цветовая тема"
+
+msgctxt "#31337"
+msgid "Dialogs Background Tint"
+msgstr "Оттенок фона диалогов"
+
+msgctxt "#31338"
+msgid "Regular Text Color"
+msgstr "Цвет обычного текста"
+
+msgctxt "#31339"
+msgid "Focused Text Color"
+msgstr "Цвет текста в фокусе"
+
+msgctxt "#31340"
+msgid "Selected Text Color"
+msgstr "Цвет выбранного текста"
+
+msgctxt "#31341"
+msgid "Shelves Background Tint"
+msgstr "Оттенок фона полок"
+
+msgctxt "#31342"
+msgid "Use for All Tints"
+msgstr "Использовать для всех оттенков"
+
+msgctxt "#31343"
+msgid "Keep Lists Focus Centered"
+msgstr "Сохранять фокус списка по центру"
+
+msgctxt "#31344"
+msgid "Show Artist Logo In Music Visualization"
+msgstr "Показывать логотип исполнителя при визуализации музыки"
+
+msgctxt "#31345"
+msgid "Show Logo In Media Views"
+msgstr "Показывать логотип в представлениях медиа"
+
+msgctxt "#31346"
+msgid "Show Logo In Home Window"
+msgstr "Показывать логотип на домашнем экране"
+
+msgctxt "#31347"
+msgid "Media Views Background Tint"
+msgstr "Оттенок фона представлений медиа"
+
+msgctxt "#31348"
+msgid "Enable Label Scrolling in List Views"
+msgstr "Включить прокрутку меток в представлениях списком"
+
+msgctxt "#31349"
+msgid "Audio and Subtitle Info"
+msgstr "Информация об аудио и субтитрах"
+
+msgctxt "#31350"
+msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
+msgstr "Кнопка субтитров открывает настройки субтитров в OSD видео"
+
 msgctxt "#31351"
 msgid "Pause"
 msgstr "Пауза"
@@ -608,7 +1429,14 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "Доступны локальные субтитры"
 
-# empty strings from id 31358 to 31359
+msgctxt "#31358"
+msgid "Disable Info Panel in List Views"
+msgstr "Отключить информационную панель в представлениях списком"
+
+msgctxt "#31359"
+msgid "TMDb Helper - Next Aired Episodes"
+msgstr "TMDb Helper — следующие вышедшие серии"
+
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
@@ -618,15 +1446,110 @@ msgctxt "#31361"
 msgid "Change mode"
 msgstr "Изменить режим"
 
-msgctxt "#31362"
-msgid "Enabled"
-msgstr "Включить"
-
 msgctxt "#31363"
 msgid "Static"
 msgstr "Статический"
 
-# empty strings from id 31364 to 31389
+msgctxt "#31364"
+msgid "Embuary Info - Next Aired Episodes"
+msgstr "Embuary Info — следующие вышедшие серии"
+
+msgctxt "#31365"
+msgid "Only Search in Local Library"
+msgstr "Искать только в локальной медиатеке"
+
+msgctxt "#31366"
+msgid "Hide Channel Groups"
+msgstr "Скрыть группы каналов"
+
+msgctxt "#31367"
+msgid "Select Displayed Ratings and Certification"
+msgstr "Выберите отображаемые рейтинги и возрастную классификацию"
+
+msgctxt "#31368"
+msgid "User Rating"
+msgstr "Рейтинг пользователя"
+
+msgctxt "#31369"
+msgid "Ratings"
+msgstr "Рейтинги"
+
+msgctxt "#31370"
+msgid "Certification"
+msgstr "Возрастная классификация"
+
+msgctxt "#31371"
+msgid "Up Next in"
+msgstr "Далее через"
+
+msgctxt "#31372"
+msgid "Continue Watching in"
+msgstr "Продолжить просмотр через"
+
+msgctxt "#31373"
+msgid "Hide Collection (Set) Marks"
+msgstr "Скрыть отметки коллекции (цикла)"
+
+msgctxt "#31374"
+msgid "Disable Info Panel"
+msgstr "Отключить информационную панель"
+
+msgctxt "#31375"
+msgid "Alternate List Layout"
+msgstr "Альтернативный макет списка"
+
+msgctxt "#31376"
+msgid "Larger Image"
+msgstr "Крупное изображение"
+
+msgctxt "#31377"
+msgid "Alternate List Views Layout"
+msgstr "Альтернативный макет представлений списком"
+
+msgctxt "#31378"
+msgid "Albums by"
+msgstr "Альбомы"
+
+msgctxt "#31379"
+msgid "Panel 2"
+msgstr "Панель 2"
+
+msgctxt "#31380"
+msgid "Big Panel 2"
+msgstr "Большая панель 2"
+
+msgctxt "#31381"
+msgid "Disable Panel 2 view"
+msgstr "Отключить вид «Панель 2»"
+
+msgctxt "#31382"
+msgid "Disable Big Panel 2 view"
+msgstr "Отключить вид «Большая панель 2»"
+
+msgctxt "#31383"
+msgid "Enable Statistics Line"
+msgstr "Включить строку статистики"
+
+msgctxt "#31384"
+msgid "Show Statistics line on Shelf"
+msgstr "Показывать строку статистики на полке"
+
+msgctxt "#31385"
+msgid "Show Marks on Top Right"
+msgstr "Показывать отметки в правом верхнем углу"
+
+msgctxt "#31386"
+msgid "Hide Unwatched Episodes Marks"
+msgstr "Скрыть отметки непросмотренных серий"
+
+msgctxt "#31387"
+msgid "Movies in library"
+msgstr "Фильмов в медиатеке"
+
+msgctxt "#31388"
+msgid "IMDb Top 250"
+msgstr "Лучшие 250 на IMBD"
+
 msgctxt "#31390"
 msgid "(1/5) Skin default"
 msgstr "(1/5) Обложка по умолчанию"
@@ -1067,10 +1990,6 @@ msgctxt "#31499"
 msgid "All TV Shows"
 msgstr "Все сериалы"
 
-msgctxt "#31500"
-msgid "TV"
-msgstr "ТВ"
-
 msgctxt "#31501"
 msgid "Scheduled Time"
 msgstr "Запланированное время"
@@ -1099,11 +2018,6 @@ msgctxt "#31507"
 msgid "Opens"
 msgstr "Открывает"
 
-# empty string with id 31508
-msgctxt "#31509"
-msgid "Radio"
-msgstr "Радио"
-
 msgctxt "#31510"
 msgid "Timer Set"
 msgstr "Таймер настроен"
@@ -1112,7 +2026,6 @@ msgctxt "#31511"
 msgid "Reminder Set"
 msgstr "Напоминание установлено"
 
-# empty strings from id 31512 to 31513
 msgctxt "#31514"
 msgid "Episodes use poster"
 msgstr "Использовать постер для серий"
@@ -1601,10 +2514,6 @@ msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
 msgstr "Настроить нижние сочетания"
 
-msgctxt "#31636"
-msgid "Shortcuts"
-msgstr "Ярлыки"
-
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
 msgstr "Включить нижние сочетания"
@@ -1677,6 +2586,838 @@ msgctxt "#31654"
 msgid "Show Information for Shelves"
 msgstr "Показывать информацию для полок"
 
+msgctxt "#31655"
+msgid "Missing Add-on"
+msgstr "Отсутствующее дополнение"
+
+msgctxt "#31656"
+msgid "TMDb Helper"
+msgstr "TMDb Helper"
+
+msgctxt "#31657"
+msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+msgstr "Чтобы включить эту функцию, вам нужно установить очень свежую версию дополнения plugin.video.themoviedb.helper.[CR][CR]Вы можете найти его по адресу https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+
+msgctxt "#31658"
+msgid "Use Embuary Helper for Playlist Backgrounds"
+msgstr "Использовать Embuary Helper для фонов плейлистов"
+
+msgctxt "#31659"
+msgid "Unwatched"
+msgstr "Не просмотрено"
+
+msgctxt "#31660"
+msgid "Use Embuary Helper for Statistics Line"
+msgstr "Использовать Embuary Helper для строки статистики"
+
+msgctxt "#31661"
+msgid "Use Embuary Helper for Backgrounds"
+msgstr "Использовать Embuary Helper для фонов"
+
+msgctxt "#31662"
+msgid "Movie Collection Count"
+msgstr "Количество коллекций фильмов"
+
+msgctxt "#31663"
+msgid "Show Fanart for Special Content"
+msgstr "Показывать фан-арт для специального содержимого"
+
+msgctxt "#31664"
+msgid "Media Play Count"
+msgstr "Количество воспроизведений медиа"
+
+msgctxt "#31665"
+msgid "Color Options"
+msgstr "Параметры цвета"
+
+msgctxt "#31666"
+msgid "Go To"
+msgstr "Перейти к"
+
+msgctxt "#31667"
+msgid "Show Three Shelves Together"
+msgstr "Показывать три полки вместе"
+
+msgctxt "#31668"
+msgid "Configure Custom Shelf"
+msgstr "Настроить пользовательскую полку"
+
+msgctxt "#31669"
+msgid "Shift Fanart View Focus to the Right"
+msgstr "Сместить фокус представления фан-арта вправо"
+
+msgctxt "#31670"
+msgid "Mouse/Touch-Friendly Alphabet Strip"
+msgstr "Алфавитная лента, удобная для мыши/сенсорного ввода"
+
+msgctxt "#31671"
+msgid "Use New Media Views Selector"
+msgstr "Использовать новый выбор представлений медиа"
+
+msgctxt "#31672"
+msgid "Skin Variables"
+msgstr "Переменные обложки"
+
+msgctxt "#31673"
+msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
+msgstr "Чтобы включить эту функцию, вам нужно установить очень свежую версию дополнения script.skinvariables.[CR][CR]Вы можете найти его по адресу https://github.com/jurialmunkey/script.skinvariables."
+
+msgctxt "#31674"
+msgid "Configure Media Views"
+msgstr "Настроить представления медиа"
+
+msgctxt "#31675"
+msgid "Three Rows with Larger Icons"
+msgstr "Три строки с крупными значками"
+
+msgctxt "#31676"
+msgid "Oscars Won"
+msgstr "Получено Оскаров"
+
+msgctxt "#31677"
+msgid "Oscar Nominations"
+msgstr "Номинаций на Оскар"
+
+msgctxt "#31678"
+msgid "Golden Globes Won"
+msgstr "Получено Золотых глобусов"
+
+msgctxt "#31679"
+msgid "Golden Globe Nominations"
+msgstr "Номинаций на Золотой глобус"
+
+msgctxt "#31680"
+msgid "Awards (Oscars/Golden Globes)"
+msgstr "Награды (Оскар/Золотой глобус)"
+
+msgctxt "#31681"
+msgid "Video Genre Fanart"
+msgstr "Фан-арт жанров видео"
+
+msgctxt "#31682"
+msgid "Music Genre Fanart"
+msgstr "Фан-арт музыкальных жанров"
+
+msgctxt "#31683"
+msgid "Custom Path"
+msgstr "Пользовательский путь"
+
+msgctxt "#31684"
+msgid "Reset Custom Path"
+msgstr "Сбросить пользовательский путь"
+
+msgctxt "#31685"
+msgid "Image Pack"
+msgstr "Набор изображений"
+
+msgctxt "#31686"
+msgid "Enable Multiple Images per Genre"
+msgstr "Включить несколько изображений на жанр"
+
+msgctxt "#31687"
+msgid "Match Poster Colors"
+msgstr "Сопоставлять цвета постера"
+
+msgctxt "#31688"
+msgid "Show Seek Bar at Bottom"
+msgstr "Показывать панель поиска внизу"
+
+msgctxt "#31689"
+msgid "HDR/SDR and Bit Depth Flags"
+msgstr "Флаги HDR/SDR и битовой глубины"
+
+msgctxt "#31690"
+msgid "File Name Instead of Title"
+msgstr "Имя файла вместо названия"
+
+msgctxt "#31691"
+msgid "Extra Fanart on panel"
+msgstr "Дополнительный фан-арт на панели"
+
+msgctxt "#31692"
+msgid "Ends at"
+msgstr "Закончится в"
+
+msgctxt "#31693"
+msgid "Netflix style"
+msgstr "Стиль Netflix"
+
+msgctxt "#31694"
+msgid "Show Logo"
+msgstr "Показывать логотип"
+
+msgctxt "#31695"
+msgid "Use Landscape"
+msgstr "Использовать ландшафтный режим"
+
+msgctxt "#31696"
+msgid "Dim Level for Unfocused"
+msgstr "Уровень затемнения для не в фокусе"
+
+msgctxt "#31697"
+msgid "Select Dim Level"
+msgstr "Выберите уровень затемнения"
+
+msgctxt "#31698"
+msgid "Now Playing"
+msgstr "Сейчас воспроизводится"
+
+msgctxt "#31699"
+msgid "Hide Title Bar Now Playing"
+msgstr "Скрыть строку заголовка «Сейчас воспроизводится»"
+
+msgctxt "#31700"
+msgid "Select Now Playing Video Disc Art Fallback"
+msgstr "Выберите резервное оформление диска для видео «Сейчас воспроизводится»"
+
+msgctxt "#31701"
+msgid "Select Now Playing Music Disc Art Fallback"
+msgstr "Выберите резервное оформление диска для музыки «Сейчас воспроизводится»"
+
+msgctxt "#31702"
+msgid "Blu-Ray"
+msgstr "Blu-Ray"
+
+msgctxt "#31703"
+msgid "Vinyl"
+msgstr "Винил"
+
+msgctxt "#31704"
+msgid "None"
+msgstr "Нет"
+
+msgctxt "#31705"
+msgid "Golden"
+msgstr "Золотистый"
+
+msgctxt "#31706"
+msgid "Purple"
+msgstr "Фиолетовый"
+
+msgctxt "#31707"
+msgid "Select Now Playing Info for Movies/Episodes"
+msgstr "Выберите информацию «Сейчас воспроизводится» для фильмов/серий"
+
+msgctxt "#31708"
+msgid "Select Now Playing Info for other Videos"
+msgstr "Выберите информацию «Сейчас воспроизводится» для других видео"
+
+msgctxt "#31709"
+msgid "Select Now Playing Info for Music"
+msgstr "Выберите информацию «Сейчас воспроизводится» для музыки"
+
+msgctxt "#31710"
+msgid "Show Video in the Background"
+msgstr "Показывать видео на фоне"
+
+msgctxt "#31711"
+msgid "Show Music Visualization in the Background"
+msgstr "Показывать визуализацию музыки на фоне"
+
+msgctxt "#31712"
+msgid "Show Extra Art for Video"
+msgstr "Показывать дополнительные иллюстрации для видео"
+
+msgctxt "#31713"
+msgid "Show Extra Art for Music"
+msgstr "Показывать дополнительные иллюстрации для музыки"
+
+msgctxt "#31714"
+msgid "Show Logo"
+msgstr "Показывать логотип"
+
+msgctxt "#31715"
+msgid "Show ClearArt"
+msgstr "Показывать ClearArt"
+
+msgctxt "#31716"
+msgid "Show Disc Art"
+msgstr "Показывать оформление диска"
+
+msgctxt "#31717"
+msgid "Select Disc Art Fallback for Video"
+msgstr "Выберите резервное оформление диска для видео"
+
+msgctxt "#31718"
+msgid "Select Disc Art Fallback for Music"
+msgstr "Выберите резервное оформление диска для музыки"
+
+msgctxt "#31719"
+msgid "Disable Now Playing"
+msgstr "Отключить «Сейчас воспроизводится»"
+
+msgctxt "#31720"
+msgid "Internet Stream"
+msgstr "Интернет-поток"
+
+msgctxt "#31721"
+msgid "Special"
+msgstr "Особый"
+
+msgctxt "#31722"
+msgid "Next Tracks"
+msgstr "Следующие треки"
+
+msgctxt "#31723"
+msgid "Album Review"
+msgstr "Обзор альбома"
+
+msgctxt "#31724"
+msgid "Artist Bio"
+msgstr "Биография исполнителя"
+
+msgctxt "#31725"
+msgid "Hide Shelves when Now Playing is Visible"
+msgstr "Скрывать полки, когда виден раздел «Сейчас воспроизводится»"
+
+msgctxt "#31726"
+msgid "Enlarge Video Preview when Idle"
+msgstr "Увеличивать предпросмотр видео в режиме ожидания"
+
+msgctxt "#31727"
+msgid "Select Extra Art to Show in Applicable Views"
+msgstr "Выберите дополнительные иллюстрации для отображения в соответствующих представлениях"
+
+msgctxt "#31728"
+msgid "Full Screen/OSD"
+msgstr "Полный экран / OSD"
+
+msgctxt "#31729"
+msgid "Select Interval for Auto Closing Video OSD"
+msgstr "Выберите интервал для автоматического закрытия OSD видео"
+
+msgctxt "#31730"
+msgid "Current Color"
+msgstr "Текущий цвет"
+
+msgctxt "#31731"
+msgid "Value"
+msgstr "Значение"
+
+msgctxt "#31732"
+msgid "Second"
+msgstr "Секунда"
+
+msgctxt "#31733"
+msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
+msgstr "Использовать удобный для мыши метод (script.skin.info.service v1.0.8 и выше)"
+
+msgctxt "#31734"
+msgid "Auto Close Video OSD"
+msgstr "Автоматически закрывать OSD видео"
+
+msgctxt "#31735"
+msgid "Default Font Size"
+msgstr "Размер шрифта по умолчанию"
+
+msgctxt "#31736"
+msgid "Use fanart.jpg if present in folder or parent folder"
+msgstr "Использовать fanart.jpg, если присутствует в папке или родительской папке"
+
+msgctxt "#31737"
+msgid "Use Clear Art instead of Logo"
+msgstr "Использовать Clear Art вместо логотипа"
+
+msgctxt "#31738"
+msgid "Single Logo"
+msgstr "Одиночный логотип"
+
+msgctxt "#31739"
+msgid "Fade out Unfocused"
+msgstr "Затемнять не в фокусе"
+
+msgctxt "#31740"
+msgid "Show Overlay"
+msgstr "Показывать наложение"
+
+msgctxt "#31741"
+msgid "Show Smaller Favourite Icons"
+msgstr "Показывать маленькие значки избранного"
+
+msgctxt "#31742"
+msgid "Show Three Rows"
+msgstr "Показывать три строки"
+
+msgctxt "#31743"
+msgid "Show Four Rows"
+msgstr "Показывать четыре строки"
+
+msgctxt "#31744"
+msgid "Enable Use of TMDb Helper"
+msgstr "Включить использование TMDb Helper"
+
+msgctxt "#31745"
+msgid "Enable Use of Embuary Helper"
+msgstr "Включить использование Embuary Helper"
+
+msgctxt "#31746"
+msgid "Hide Seek Bar when Paused"
+msgstr "Скрывать панель поиска на паузе"
+
+msgctxt "#31747"
+msgid "Icon Only Menu"
+msgstr "Меню только из значков"
+
+msgctxt "#31748"
+msgid "Show Menu Item Name"
+msgstr "Показывать название пункта меню"
+
+msgctxt "#31749"
+msgid "Enable Video Lyrics"
+msgstr "Включить лирик-видео (анимированный текст песни в музыкальном клипе)"
+
+msgctxt "#31750"
+msgid "Play Whole Albums from Shelves"
+msgstr "Воспроизводить целые альбомы с полок"
+
+msgctxt "#31751"
+msgid "Show Item Name in Top Bar"
+msgstr "Показывать название элемента в верхней панели"
+
+msgctxt "#31752"
+msgid "Animate backgrounds using Ken Burns effect"
+msgstr "Анимировать фоны с помощью эффекта Кена Бёрнса"
+
+msgctxt "#31753"
+msgid "Single Column"
+msgstr "Один столбец"
+
+msgctxt "#31754"
+msgid "Disable Now Playing Fanart"
+msgstr "Отключить фан-арт «Сейчас воспроизводится»"
+
+msgctxt "#31755"
+msgid "Show Media Info with Seek Bar"
+msgstr "Показывать информацию о медиа с панелью поиска"
+
+msgctxt "#31756"
+msgid "Show Seek Bar when Starting Video Playback"
+msgstr "Показывать панель поиска при начале воспроизведения видео"
+
+msgctxt "#31757"
+msgid "Time to Show Seek Bar"
+msgstr "Время показа панели поиска"
+
+msgctxt "#31758"
+msgid "Hide Title Bar in Main Window"
+msgstr "Скрыть строку заголовка в главном окне"
+
+msgctxt "#31759"
+msgid "Hide fallback image if no thumb in OSD"
+msgstr "Скрывать резервное изображение, если нет эскиза в OSD"
+
+msgctxt "#31760"
+msgid "Dim Background and Album Cover when Showing Lyrics"
+msgstr "Затемнять фон и обложку альбома при показе текста песни"
+
+msgctxt "#31761"
+msgid "Use Alternate Favourites Layout"
+msgstr "Использовать альтернативный макет избранного"
+
+msgctxt "#31762"
+msgid "Align Menu Item Text to the Left"
+msgstr "Выравнивать текст пункта меню по левому краю"
+
+msgctxt "#31763"
+msgid "Info Button Opens Video Info Dialog"
+msgstr "Кнопка информации открывает диалог информации о видео"
+
+msgctxt "#31764"
+msgid "Pause Media While Info Dialog is Open"
+msgstr "Приостанавливать медиа, пока открыт диалог информации"
+
+msgctxt "#31765"
+msgid "End Time"
+msgstr "Время окончания"
+
+msgctxt "#31766"
+msgid "Show Dark Background Behind Shortcuts"
+msgstr "Показывать тёмный фон за сочетаниями"
+
+msgctxt "#31767"
+msgid "Use Artist Slideshow for Audio Fanart"
+msgstr "Использовать Artist Slideshow для аудио-фан-арта"
+
+msgctxt "#31768"
+msgid "Disable Lyrics"
+msgstr "Отключить текст песни"
+
+msgctxt "#31769"
+msgid "Activate Lyrics"
+msgstr "Активировать текст песни"
+
+msgctxt "#31770"
+msgid "Use Color Flags"
+msgstr "Использовать цветные флаги"
+
+msgctxt "#31771"
+msgid "Show Submenu Only when Focused"
+msgstr "Показывать подменю только в фокусе"
+
+msgctxt "#31772"
+msgid "Movies with Plot containing"
+msgstr "Фильмы с сюжетом, содержащим"
+
+msgctxt "#31773"
+msgid "TV Shows with Plot containing"
+msgstr "ТВ-шоу с сюжетом, содержащим"
+
+msgctxt "#31774"
+msgid "Episodes with Plot containing"
+msgstr "Серии с сюжетом, содержащим"
+
+msgctxt "#31775"
+msgid "With Plot Containing"
+msgstr "С сюжетом, содержащим"
+
+msgctxt "#31776"
+msgid "Show Title in Footer"
+msgstr "Показывать название в нижнем колонтитуле"
+
+msgctxt "#31777"
+msgid "Hide Seek Bar when Forwarding or Rewinding"
+msgstr "Скрывать панель поиска при перемотке вперёд или назад"
+
+msgctxt "#31778"
+msgid "Enable Touchscreen Devices Support"
+msgstr "Включить поддержку сенсорных устройств"
+
+msgctxt "#31779"
+msgid "Show Rating Overlay"
+msgstr "Показывать наложение оценки"
+
+msgctxt "#31780"
+msgid "Use User Rating for Overlay"
+msgstr "Использовать оценку пользователя для наложения"
+
+msgctxt "#31781"
+msgid "Select Items to Show in Views"
+msgstr "Выберите элементы для отображения в представлениях"
+
+msgctxt "#31782"
+msgid "Items to Show in Views"
+msgstr "Элементы для отображения в представлениях"
+
+msgctxt "#31783"
+msgid "Play Random"
+msgstr "Воспроизвести в случайном порядке"
+
+msgctxt "#31784"
+msgid "List Views Options"
+msgstr "Параметры представлений списком"
+
+msgctxt "#31785"
+msgid "Marks and Overlays"
+msgstr "Отметки и наложения"
+
+msgctxt "#31786"
+msgid "Select View Types to Enable"
+msgstr "Выберите типы представлений для включения"
+
+msgctxt "#31787"
+msgid "View Types to Enable"
+msgstr "Типы представлений для включения"
+
+msgctxt "#31788"
+msgid "Show Poster"
+msgstr "Показывать постер"
+
+msgctxt "#31789"
+msgid "Text"
+msgstr "Текст"
+
+msgctxt "#31790"
+msgid "Banner"
+msgstr "Баннер"
+
+msgctxt "#31791"
+msgid "List Item Type"
+msgstr "Тип элемента списка"
+
+msgctxt "#31792"
+msgid "Poster/Thumb"
+msgstr "Постер/эскиз"
+
+msgctxt "#31793"
+msgid "OSD/Full Screen Art"
+msgstr "OSD / полноэкранные иллюстрации"
+
+msgctxt "#31794"
+msgid "N/A"
+msgstr "Н/Д"
+
+msgctxt "#31795"
+msgid "Show Info Popup"
+msgstr "Показывать информационное всплывающее окно"
+
+msgctxt "#31796"
+msgid "Popup Delay"
+msgstr "Задержка всплывающего окна"
+
+msgctxt "#31797"
+msgid "Show Floor"
+msgstr "Показывать пол"
+
+msgctxt "#31798"
+msgid "Fixed List"
+msgstr "Фиксированный список"
+
+msgctxt "#31799"
+msgid "Centered Static Menu (less than 8 items)"
+msgstr "Центрированное статическое меню (менее 8 элементов)"
+
+msgctxt "#31800"
+msgid "Compact OSD"
+msgstr "Компактный OSD"
+
+msgctxt "#31801"
+msgid "Ultra Compact OSD"
+msgstr "Сверхкомпактный OSD"
+
+msgctxt "#31802"
+msgid "Alternate OSD Button Highlighting"
+msgstr "Альтернативное выделение кнопок OSD"
+
+msgctxt "#31803"
+msgid "Auto Play Trailer (Local Trailer Only)"
+msgstr "Автовоспроизведение трейлера (только локальный трейлер)"
+
+msgctxt "#31804"
+msgid "Auto Play Trailer Delay"
+msgstr "Задержка автовоспроизведения трейлера"
+
+msgctxt "#31805"
+msgid "Fanart Title Button Opens Info Dialog"
+msgstr "Кнопка названия фан-арта открывает диалог информации"
+
+msgctxt "#31806"
+msgid "Single Image"
+msgstr "Одно изображение"
+
+msgctxt "#31807"
+msgid "Multiple Images"
+msgstr "Несколько изображений"
+
+msgctxt "#31808"
+msgid "Video/Playlist"
+msgstr "Видео/плейлист"
+
+msgctxt "#31809"
+msgid "Startup Background"
+msgstr "Фон при запуске"
+
+msgctxt "#31810"
+msgid "Hide Menu when Shelves are Focused"
+msgstr "Скрывать меню, когда полки в фокусе"
+
+msgctxt "#31811"
+msgid "Use Disc Art instead of Cover"
+msgstr "Использовать оформление диска вместо обложки"
+
+msgctxt "#31812"
+msgid "Auto Play Trailer from Shelf Items"
+msgstr "Автовоспроизведение трейлера из элементов полки"
+
+msgctxt "#31813"
+msgid "Shelf Trailer Delay"
+msgstr "Задержка трейлера на полке"
+
+msgctxt "#31814"
+msgid "Slide Out Media Items While Trailer Playing"
+msgstr "Сдвигать медиа-элементы во время воспроизведения трейлера"
+
+msgctxt "#31815"
+msgid "Hide PVR Channel Preview"
+msgstr "Скрыть предпросмотр канала записи эфира"
+
+msgctxt "#31816"
+msgid "Art Downloader: Select Artwork"
+msgstr "Art Downloader: Выбрать иллюстрации"
+
+msgctxt "#31817"
+msgid "Art Downloader: All Artwork"
+msgstr "Art Downloader: Все иллюстрации"
+
+msgctxt "#31818"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr "Показывать элементы Artwork Downloader в контекстном меню"
+
+msgctxt "#31819"
+msgid "Movies with Tag"
+msgstr "Фильмы с тегом"
+
+msgctxt "#31820"
+msgid "Select a Tag"
+msgstr "Выберите тег"
+
+msgctxt "#31821"
+msgid "With Tag"
+msgstr "С тегом"
+
+msgctxt "#31822"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr "Всегда использовать постер ТВ-передач для серий"
+
+msgctxt "#31823"
+msgid "Open ExtendedInfo for Info Dialogs"
+msgstr "Открывать ExtendedInfo для диалогов информации"
+
+msgctxt "#31824"
+msgid "Cert"
+msgstr "Возрастной рейтинг"
+
+msgctxt "#31825"
+msgid "Show Episodes List button"
+msgstr "Показывать кнопку списка серий"
+
+msgctxt "#31826"
+msgid "Include Seasons in Episodes List popup"
+msgstr "Включать сезоны во всплывающий список серий"
+
+msgctxt "#31827"
+msgid "Next Aired"
+msgstr "Следующий Эфир"
+
+msgctxt "#31828"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr "Включить прямой поиск в полноэкранной информации"
+
+msgctxt "#31829"
+msgid "Show Disc above Poster"
+msgstr "Показывать диск над постером"
+
+msgctxt "#31830"
+msgid "Hide Disc over Set Poster"
+msgstr "Скрывать диск над постером цикла"
+
+msgctxt "#31831"
+msgid "Play trailer in a window"
+msgstr "Воспроизводить трейлер в окне"
+
+msgctxt "#31832"
+msgid "Search Trailer"
+msgstr "Найти трейлер"
+
+msgctxt "#31833"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr "Искать трейлеры с помощью дополнения IMDb Trailers"
+
+msgctxt "#31834"
+msgid "Fade out Non-focused Menu Items"
+msgstr "Затемнять не сфокусированные пункты меню"
+
+msgctxt "#31835"
+msgid "Cloudiness"
+msgstr "Облачность"
+
+msgctxt "#31836"
+msgid "Probability of Precipitation"
+msgstr "Вероятность осадков"
+
+msgctxt "#31837"
+msgid "Intro Video Duration"
+msgstr "Длительность интро-видео"
+
+msgctxt "#31838"
+msgid "PVR Timeshift Buffer Color"
+msgstr "Цвет буфера сдвига по времени записи эфира"
+
+msgctxt "#31839"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr "Использовать фон пункта главного меню для дочерних окон"
+
+msgctxt "#31840"
+msgid "Teletext Button Opens EPG"
+msgstr "Кнопка телетекста открывает EPG"
+
+msgctxt "#31841"
+msgid "EPG Icon"
+msgstr "Значок EPG"
+
+msgctxt "#31842"
+msgid "Channel Logo"
+msgstr "Логотип канала"
+
+msgctxt "#31843"
+msgid "Always Show Information Panel"
+msgstr "Всегда показывать информационную панель"
+
+msgctxt "#31844"
+msgid "Use Custom Search for Video Library"
+msgstr "Использовать пользовательский поиск для видеотеки"
+
+msgctxt "#31845"
+msgid "Use Custom Search for Music Library"
+msgstr "Использовать пользовательский поиск для музыкальной медиатеки"
+
+msgctxt "#31846"
+msgid "Current Programme Progress:"
+msgstr "Прогресс текущей программы:"
+
+msgctxt "#31847"
+msgid "Also Show Seconds"
+msgstr "Также показывать секунды"
+
+msgctxt "#31848"
+msgid "kbps"
+msgstr "кбит/с"
+
+msgctxt "#31849"
+msgid "Remember Focused Control in Home Window"
+msgstr "Запоминать элемент в фокусе в домашнем окне"
+
+msgctxt "#31850"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
+msgstr "Использовать эскиз элемента, а не фан-арт дополнения для полок YouTube"
+
+msgctxt "#31851"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr "Разрешить изменение типов представлений в окне каналов записи эфира"
+
+msgctxt "#31852"
+msgid "Update Library"
+msgstr "Обновить медиатеку"
+
+msgctxt "#31853"
+msgid "Stop Scanning"
+msgstr "Остановить сканирование"
+
+msgctxt "#31854"
+msgid "More Info"
+msgstr "Подробнее"
+
+msgctxt "#31855"
+msgid "Play Trailer Windowed"
+msgstr "Воспроизвести трейлер в окне"
+
+msgctxt "#31856"
+msgid "Last Played Date"
+msgstr "Дата последнего воспроизведения"
+
+msgctxt "#31857"
+msgid "Horizontal Icon Layout"
+msgstr "Горизонтальный макет значков"
+
+msgctxt "#31858"
+msgid "Show Menu Item Label"
+msgstr "Показывать метку пункта меню"
+
+msgctxt "#31859"
+msgid "Always Show Set Movie List"
+msgstr "Всегда показывать список фильмов цикла"
+
+msgctxt "#31860"
+msgid "Use Tall List Layout"
+msgstr "Использовать макет «Высокий список»"
+
+msgctxt "#31861"
+msgid "Show More Items in List"
+msgstr "Показывать больше элементов в списке"
+
+msgctxt "#31862"
+msgid "Hide Overlay Label in Icon/Panel Views"
+msgstr "Скрыть метку наложения в представлениях «Значки»/«Панель»"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Прогноз на 36 часов"
@@ -1693,12 +3434,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Прогноз на 10 дней"
 
-# empty strings from id 31905 to 31919
 msgctxt "#31920"
 msgid "Disable all Home shelves"
 msgstr "Отключить все полки домашнего экрана"
 
-# empty strings from id 31921 to 31935
 msgctxt "#31936"
 msgid "Enable Skin Shortcuts"
 msgstr "Включить сочетания обложки"
@@ -1739,7 +3478,6 @@ msgctxt "#31945"
 msgid "Movie Country icons"
 msgstr "Значки стран фильмов"
 
-# empty strings from id 31946 to 31948
 msgctxt "#31949"
 msgid "Show ExtraFanart if available"
 msgstr "Показывать дополнительный фан-арт, если доступен"
@@ -1789,10 +3527,6 @@ msgstr "Переходить в полноэкранный режим при в�
 msgctxt "#31960"
 msgid "Big List"
 msgstr "Большой список"
-
-msgctxt "#31961"
-msgid "Recently added"
-msgstr "Последние"
 
 #. view label
 msgctxt "#31962"
@@ -1850,10 +3584,6 @@ msgctxt "#31974"
 msgid "Home menu"
 msgstr "Главное меню"
 
-msgctxt "#31975"
-msgid "Channels"
-msgstr "Каналы"
-
 msgctxt "#31976"
 msgid "Home shelf"
 msgstr "Полка домашнего экрана"
@@ -1898,19 +3628,10 @@ msgctxt "#31986"
 msgid "Use default background for Home window"
 msgstr "Использовать фон по умолчанию для домашнего окна"
 
-msgctxt "#31987"
-msgid "Random"
-msgstr "Случайно"
-
-msgctxt "#31988"
-msgid "Menu"
-msgstr "Меню"
-
 msgctxt "#31989"
 msgid "Quit button function"
 msgstr "Функция кнопки выхода"
 
-# empty string with id 31990
 msgctxt "#31991"
 msgid "Show video player/music visualization in background"
 msgstr "Показывать видеоплеер/визуализацию музыки на фоне"
@@ -1946,1839 +3667,3 @@ msgstr "Показывать статус блокировки/режима вл
 msgctxt "#31999"
 msgid "BigList"
 msgstr "Большой список"
-
-msgctxt "#32000"
-msgid "Hide icons"
-msgstr "Скрыть значки"
-
-# empty string with id 32001
-msgctxt "#32002"
-msgid "Hide Games"
-msgstr "Не показывать виджет \"Игры\""
-
-msgctxt "#32003"
-msgid "Game Settings"
-msgstr "Настройки игры"
-
-msgctxt "#32004"
-msgid "Toggle Subtitle"
-msgstr "Переключить субтитры"
-
-msgctxt "#32005"
-msgid "AB: Select Artwork"
-msgstr "AB: Выбрать иллюстрации"
-
-msgctxt "#32006"
-msgid "AB: All Artwork"
-msgstr "AB: Все иллюстрации"
-
-msgctxt "#32007"
-msgid "Special Features"
-msgstr "Особые возможности"
-
-msgctxt "#32008"
-msgid "Enable Special Features"
-msgstr "Включить специальные возможности"
-
-msgctxt "#32009"
-msgid "Next Episode"
-msgstr "Следующая серия"
-
-msgctxt "#32010"
-msgid "Latest Episode"
-msgstr "Последний эпизод"
-
-msgctxt "#32011"
-msgid "Airs"
-msgstr "Премьеры"
-
-# empty string with id 32012
-msgctxt "#32013"
-msgid "Next Airing Episodes"
-msgstr "Следующие выходящие серии"
-
-msgctxt "#32014"
-msgid "Search Results for: "
-msgstr "Результаты поиска для: "
-
-msgctxt "#32015"
-msgid "Show Only Local Info "
-msgstr "Показывать только локальную информацию "
-
-msgctxt "#32016"
-msgid "Extended Info"
-msgstr "Дополнительные сведения"
-
-msgctxt "#32017"
-msgid "Search in Local Library"
-msgstr "Поиск в локальной медиатеке"
-
-msgctxt "#32018"
-msgid "Search online in TMDb"
-msgstr "Поиск онлайн в TMDb"
-
-msgctxt "#32020"
-msgid "Hide Second Label in List Views"
-msgstr "Скрыть вторую метку в представлениях списком"
-
-msgctxt "#32021"
-msgid "Added:"
-msgstr "Добавлено:"
-
-msgctxt "#32022"
-msgid "Plays:"
-msgstr "Воспроизведений:"
-
-msgctxt "#32023"
-msgid "Last Played:"
-msgstr "Последний раз воспроизведено:"
-
-msgctxt "#32024"
-msgid "New Search"
-msgstr "Новый поиск"
-
-msgctxt "#32025"
-msgid "Movies Starring"
-msgstr "Фильмы с участием"
-
-msgctxt "#32026"
-msgid "Movies Directed by"
-msgstr "Фильмы режиссёра"
-
-msgctxt "#32027"
-msgid "TV Shows Starring"
-msgstr "ТВ-передачи с участием"
-
-msgctxt "#32028"
-msgid "TV Shows Directed by"
-msgstr "ТВ-передачи режиссёра"
-
-msgctxt "#32029"
-msgid "Movies with Genre"
-msgstr "Фильмы в жанре"
-
-msgctxt "#32030"
-msgid "TV Shows with Genre"
-msgstr "ТВ-передачи в жанре"
-
-msgctxt "#32031"
-msgid "Movies from Studio"
-msgstr "Фильмы студии"
-
-msgctxt "#32032"
-msgid "TV Shows from Studio"
-msgstr "ТВ-передачи студии"
-
-msgctxt "#32033"
-msgid "Movies from Year"
-msgstr "Фильмы за год"
-
-msgctxt "#32034"
-msgid "TV Shows from Year"
-msgstr "ТВ-передачи за год"
-
-msgctxt "#32035"
-msgid "Movies from Country"
-msgstr "Фильмы из страны"
-
-msgctxt "#32036"
-msgid "Music Videos by Artist"
-msgstr "Музыкальные клипы исполнителя"
-
-msgctxt "#32037"
-msgid "YouTube videos about"
-msgstr "Видео YouTube о"
-
-msgctxt "#32038"
-msgid "Enable Touch/Mouse Buttons"
-msgstr "Включить кнопки сенсорного ввода / мыши"
-
-msgctxt "#32039"
-msgid "Timeshift"
-msgstr "Таймшифт"
-
-msgctxt "#32040"
-msgid "Enable Kiosk Mode"
-msgstr "Включить режим киоска"
-
-# empty string with id 32041
-msgctxt "#32042"
-msgid "Next Episodes"
-msgstr "Следующие серии"
-
-msgctxt "#32043"
-msgid "Customize Home Menu and Shelves"
-msgstr "Настроить домашнее меню и полки"
-
-msgctxt "#32044"
-msgid "Submenu"
-msgstr "Подменю"
-
-msgctxt "#32045"
-msgid "Shelves"
-msgstr "Полки"
-
-msgctxt "#32046"
-msgid "Weather fanart"
-msgstr "Фан-арт погоды"
-
-msgctxt "#32047"
-msgid "Seconds"
-msgstr "Секунды"
-
-msgctxt "#32048"
-msgid "Show background name in Home window"
-msgstr "Показывать название фона в домашнем окне"
-
-msgctxt "#32049"
-msgid "Home window Background Rotation Delay"
-msgstr "Задержка смены фона домашнего окна"
-
-msgctxt "#32050"
-msgid "IPTV Recorder"
-msgstr "Видеомагнитофон IPTV"
-
-msgctxt "#32051"
-msgid "IPTV Recorder Recordings"
-msgstr "Записи IPTV Recorder"
-
-msgctxt "#32052"
-msgid "Show Video Info on Pause"
-msgstr "Показывать информацию о видео на паузе"
-
-msgctxt "#32053"
-msgid "Show Two Shelves Together"
-msgstr "Показывать две полки вместе"
-
-msgctxt "#32054"
-msgid "Use Larger Font"
-msgstr "Использовать более крупный шрифт"
-
-msgctxt "#32055"
-msgid "Use Wraparound Navigation"
-msgstr "Использовать циклическую навигацию"
-
-msgctxt "#32056"
-msgid "Show more items on List Views"
-msgstr "Показывать больше элементов в представлениях списком"
-
-msgctxt "#32057"
-msgid "Show Season/Episode Numbers"
-msgstr "Показывать номера сезонов/серий"
-
-msgctxt "#32058"
-msgid "Show Episode Thumb"
-msgstr "Показывать эскиз серии"
-
-msgctxt "#32059"
-msgid "Disable Tall List View"
-msgstr "Отключить вид «Высокий список»"
-
-msgctxt "#32060"
-msgid "Tall List"
-msgstr "Высокий список"
-
-msgctxt "#32061"
-msgid "Set Default Background"
-msgstr "Установить фон по умолчанию"
-
-msgctxt "#32062"
-msgid "Set Favourite Addons for Shelf"
-msgstr "Установить избранные дополнения для полки"
-
-msgctxt "#32063"
-msgid "Select Favourite Addons"
-msgstr "Выбрать избранные дополнения"
-
-msgctxt "#32064"
-msgid "Backup/Restore"
-msgstr "Резервное копирование/восстановление"
-
-msgctxt "#32065"
-msgid "Backup"
-msgstr "Резервное копирование"
-
-msgctxt "#32066"
-msgid "Restore"
-msgstr "Восстановление"
-
-msgctxt "#32067"
-msgid "Configure Backup addon"
-msgstr "Настроить дополнение резервного копирования"
-
-msgctxt "#32068"
-msgid "Show Fanart"
-msgstr "Показывать фан-арт"
-
-msgctxt "#32069"
-msgid "Files"
-msgstr "Файлы"
-
-msgctxt "#32070"
-msgid "Place Background Name in Top Bar"
-msgstr "Поместить название фона в верхнюю панель"
-
-msgctxt "#32071"
-msgid "Enable Alphabet Strip"
-msgstr "Включить алфавитную ленту"
-
-msgctxt "#32072"
-msgid "Enable Autocompletion for Virtual Keyboard"
-msgstr "Включить автозавершение для виртуальной клавиатуры"
-
-msgctxt "#32073"
-msgid "Budget"
-msgstr "Бюджет"
-
-msgctxt "#32074"
-msgid "Revenue"
-msgstr "Доход"
-
-msgctxt "#32075"
-msgid "Awards"
-msgstr "Награды"
-
-msgctxt "#32076"
-msgid "Show Watched Items in Recent Shelves"
-msgstr "Показывать просмотренные элементы на недавних полках"
-
-msgctxt "#32077"
-msgid "RT Total Critics Reviews"
-msgstr "RT: всего рецензий критиков"
-
-msgctxt "#32078"
-msgid "RT Fresh Reviews"
-msgstr "RT: свежие рецензии"
-
-msgctxt "#32079"
-msgid "RT Rotten Reviews"
-msgstr "RT: гнилые рецензии"
-
-msgctxt "#32080"
-msgid "RT Critics' Consensus"
-msgstr "RT: консенсус критиков"
-
-msgctxt "#32081"
-msgid "RT Total User Reviews"
-msgstr "RT: всего пользовательских рецензий"
-
-msgctxt "#32082"
-msgid "Birthday"
-msgstr "День рождения"
-
-msgctxt "#32083"
-msgid "Born"
-msgstr "Дата рождения"
-
-msgctxt "#32084"
-msgid "Age"
-msgstr "Возраст"
-
-msgctxt "#32085"
-msgid "Died"
-msgstr "Смерть"
-
-msgctxt "#32086"
-msgid "Also Known As"
-msgstr "Также известен как"
-
-msgctxt "#32087"
-msgid "Cast in Movies"
-msgstr "Снимался в фильмах"
-
-msgctxt "#32088"
-msgid "Cast in TV Shows"
-msgstr "Снимался в ТВ-передаче"
-
-msgctxt "#32089"
-msgid "Crew in Movies"
-msgstr "Участвовал в создании фильмов"
-
-msgctxt "#32090"
-msgid "Crew in TV Shows"
-msgstr "Участвовал в создании ТВ-передачи"
-
-msgctxt "#32091"
-msgid "Movies in TMDb"
-msgstr "Фильмы в TMDb"
-
-msgctxt "#32092"
-msgid "TV Shows in TMDb"
-msgstr "ТВ-передачи в TMDb"
-
-msgctxt "#32093"
-msgid "Movies in Local DB"
-msgstr "Фильмы в локальной БД"
-
-msgctxt "#32094"
-msgid "TV Shows in Local DB"
-msgstr "ТВ-передачи в локальной БД"
-
-msgctxt "#32095"
-msgid "Reboot to Android"
-msgstr "Перезагрузитесь на Android"
-
-msgctxt "#32096"
-msgid "Episodes Starring"
-msgstr "Серии с участием"
-
-msgctxt "#32097"
-msgid "Movies in the"
-msgstr "Фильмы в"
-
-msgctxt "#32098"
-msgid "Also Directed by"
-msgstr "Также режиссёр"
-
-msgctxt "#32099"
-msgid "Crew"
-msgstr "Команда"
-
-msgctxt "#32100"
-msgid "More from"
-msgstr "Больше из"
-
-msgctxt "#32101"
-msgid "More in"
-msgstr "Подробнее в"
-
-msgctxt "#32102"
-msgid "Similar to"
-msgstr "Похожий на"
-
-msgctxt "#32103"
-msgid "Cast Members also appear in"
-msgstr "Актёры также появляются в"
-
-msgctxt "#32104"
-msgid "Select Custom Lists to Display"
-msgstr "Выберите пользовательские списки для отображения"
-
-msgctxt "#32105"
-msgid "Similar"
-msgstr "Похожий"
-
-msgctxt "#32106"
-msgid "Featuring Cast Members"
-msgstr "С участием актёров"
-
-msgctxt "#32107"
-msgid "Video Info"
-msgstr "Информация о видео"
-
-msgctxt "#32108"
-msgid "Select a Genre"
-msgstr "Выберите жанр"
-
-msgctxt "#32109"
-msgid "Select a Studio"
-msgstr "Выберите студию"
-
-msgctxt "#32110"
-msgid "Select a Director"
-msgstr "Выберите режиссёра"
-
-msgctxt "#32111"
-msgid "Online TMDb Search"
-msgstr "Онлайн-поиск в TMDb"
-
-msgctxt "#32112"
-msgid "Local Search"
-msgstr "Локальный поиск"
-
-msgctxt "#32113"
-msgid "Select a Writer"
-msgstr "Выберите сценариста"
-
-msgctxt "#32114"
-msgid "Movies Written by"
-msgstr "Фильмы по сценарию"
-
-msgctxt "#32115"
-msgid "Select a Country"
-msgstr "Выберите страну"
-
-msgctxt "#32116"
-msgid "Episodes from Studio"
-msgstr "Серии студии"
-
-msgctxt "#32117"
-msgid "Episodes with Genre"
-msgstr "Серии в жанре"
-
-msgctxt "#32118"
-msgid "Episodes Written by"
-msgstr "Серии по сценарию"
-
-msgctxt "#32119"
-msgid "Episodes Directed by"
-msgstr "Серии режиссёра"
-
-msgctxt "#32120"
-msgid "AB: Download All Artwork"
-msgstr "AB: Загрузить все иллюстрации"
-
-msgctxt "#32121"
-msgid "AB: Select Artwork"
-msgstr "AB: Выбрать иллюстрации"
-
-msgctxt "#32122"
-msgid "Show Artwork Beef items in Context Menu"
-msgstr "Показывать элементы Artwork Beef в контекстном меню"
-
-msgctxt "#32123"
-msgid "Title Bar Options"
-msgstr "Параметры строки заголовка"
-
-msgctxt "#32124"
-msgid "Show Duration in Hours and Minutes"
-msgstr "Показывать продолжительность в часах и минутах"
-
-msgctxt "#32125"
-msgid "Hour"
-msgstr "Час"
-
-msgctxt "#32126"
-msgid "Minute"
-msgstr "Минута"
-
-msgctxt "#32127"
-msgid "Online TMDb Info"
-msgstr "Онлайн-информация TMDb"
-
-msgctxt "#32128"
-msgid "Embuary Info Settings"
-msgstr "Настройки Embuary Info"
-
-msgctxt "#32129"
-msgid "Guest Stars"
-msgstr "Приглашённые звёзды"
-
-msgctxt "#32130"
-msgid "Posters"
-msgstr "Постер"
-
-msgctxt "#32131"
-msgid "YouTube"
-msgstr "YouTube"
-
-msgctxt "#32132"
-msgid "Search for Trailer"
-msgstr "Поиск трейлера"
-
-msgctxt "#32133"
-msgid "item in database"
-msgstr "тайтл в базе данных"
-
-msgctxt "#32134"
-msgid "Items in Database"
-msgstr "Элементы в базе данных"
-
-msgctxt "#32135"
-msgid "Extras"
-msgstr "Дополнительно"
-
-msgctxt "#32136"
-msgid "Known for"
-msgstr "Известен по"
-
-msgctxt "#32137"
-msgid "Retail Release"
-msgstr "Розничный выпуск"
-
-msgctxt "#32138"
-msgid "Region Release"
-msgstr "Региональный выпуск"
-
-msgctxt "#32139"
-msgid "Ended"
-msgstr "Завершён"
-
-msgctxt "#32140"
-msgid "Rumored"
-msgstr "Слухи"
-
-msgctxt "#32141"
-msgid "Planned"
-msgstr "Запланирован"
-
-msgctxt "#32142"
-msgid "In Production"
-msgstr "В производстве"
-
-msgctxt "#32143"
-msgid "Post Production"
-msgstr "Постпроизводство"
-
-msgctxt "#32144"
-msgid "Released"
-msgstr "Выпущено"
-
-msgctxt "#32145"
-msgid "Canceled"
-msgstr "Отменён"
-
-msgctxt "#32146"
-msgid "Returning Series"
-msgstr "Возвращающиеся сериалы"
-
-msgctxt "#32147"
-msgid "Acting"
-msgstr "Актёрская игра"
-
-msgctxt "#32148"
-msgid "Directing"
-msgstr "Режиссура"
-
-msgctxt "#32149"
-msgid "Writing"
-msgstr "Сценарий"
-
-msgctxt "#32150"
-msgid "Production"
-msgstr "Производство"
-
-msgctxt "#32151"
-msgid "Sound"
-msgstr "Звук"
-
-msgctxt "#32152"
-msgid "Creator"
-msgstr "Создатель"
-
-msgctxt "#32153"
-msgid "Died at Age"
-msgstr "Умер в возрасте"
-
-msgctxt "#32154"
-msgid "Collection"
-msgstr "Коллекция"
-
-msgctxt "#32155"
-msgid "TMDb Helper Settings"
-msgstr "Настройки TMDb Helper"
-
-msgctxt "#32156"
-msgid "Blur Background"
-msgstr "Размыть фон"
-
-# Empty strings from 32157 to 32164
-msgctxt "#32165"
-msgid "Use Poster for Blur"
-msgstr "Использовать постер для размытия"
-
-msgctxt "#32166"
-msgid "Customize Power Menu"
-msgstr "Настроить меню питания"
-
-msgctxt "#32167"
-msgid "Edit Library Data"
-msgstr "Изменить данные медиатеки"
-
-msgctxt "#32168"
-msgid "Select Search Categories"
-msgstr "Выберите категории поиска"
-
-msgctxt "#32169"
-msgid "Select Search Categories to Enable"
-msgstr "Выберите категории поиска для включения"
-
-msgctxt "#32170"
-msgid "By Title"
-msgstr "По названию"
-
-msgctxt "#32171"
-msgid "With Genre"
-msgstr "По жанру"
-
-msgctxt "#32172"
-msgid "From Year"
-msgstr "За год"
-
-msgctxt "#32173"
-msgid "From Studio"
-msgstr "По студии"
-
-msgctxt "#32174"
-msgid "From Country"
-msgstr "По стране"
-
-msgctxt "#32175"
-msgid "With Actor"
-msgstr "С актёром"
-
-msgctxt "#32176"
-msgid "By Director"
-msgstr "По режиссёру"
-
-msgctxt "#32177"
-msgid "By Writer"
-msgstr "По сценаристу"
-
-msgctxt "#32178"
-msgid "Artists by Name"
-msgstr "Исполнители по имени"
-
-msgctxt "#32179"
-msgid "Albums by Title"
-msgstr "Альбомы по названию"
-
-msgctxt "#32180"
-msgid "Songs by Title"
-msgstr "Песни по названию"
-
-msgctxt "#32181"
-msgid "By Artist"
-msgstr "По исполнителю"
-
-msgctxt "#32182"
-msgid "YouTube by Title"
-msgstr "YouTube по названию"
-
-msgctxt "#32183"
-msgid "Known for Character"
-msgstr "Известен по роли"
-
-msgctxt "#32184"
-msgid "Known for Department"
-msgstr "Известен по отделу"
-
-msgctxt "#32185"
-msgid "Known for Job"
-msgstr "Известен по работе"
-
-msgctxt "#32186"
-msgid "Total Items in TMDb"
-msgstr "Всего элементов в TMDb"
-
-msgctxt "#32187"
-msgid "Total Movies in TMDb"
-msgstr "Всего фильмов в TMDb"
-
-msgctxt "#32188"
-msgid "Total TV Shows in TMDb"
-msgstr "Всего ТВ-передач в TMDb"
-
-msgctxt "#32189"
-msgid "Items in TMDb as Cast"
-msgstr "Элементов в TMDb в роли актёра"
-
-msgctxt "#32190"
-msgid "Movies in TMDb as Cast"
-msgstr "Фильмов в TMDb в роли актёра"
-
-msgctxt "#32191"
-msgid "TV Shows in TMDb as Cast"
-msgstr "ТВ-передач в TMDb в роли актёра"
-
-msgctxt "#32192"
-msgid "Items in TMDb as Crew"
-msgstr "Элементов в TMDb в роли съёмочной группы"
-
-msgctxt "#32193"
-msgid "Movies in TMDb as Crew"
-msgstr "Фильмов в TMDb в роли съёмочной группы"
-
-msgctxt "#32194"
-msgid "TV Shows in TMDb as Crew"
-msgstr "ТВ-передач в TMDb в роли съёмочной группы"
-
-msgctxt "#32195"
-msgid "Total Items in Local Database"
-msgstr "Всего элементов в локальной базе данных"
-
-msgctxt "#32196"
-msgid "Movies in Local Database"
-msgstr "Фильмов в локальной базе данных"
-
-msgctxt "#32197"
-msgid "TV Shows in Local Database"
-msgstr "ТВ-передач в локальной базе данных"
-
-msgctxt "#32198"
-msgid "Episodes in Local Database"
-msgstr "Серий в локальной базе данных"
-
-msgctxt "#32199"
-msgid "Cast: Movies with"
-msgstr "В ролях: фильмы с"
-
-msgctxt "#32200"
-msgid "Cast: TV Shows with"
-msgstr "В ролях: ТВ-передач с"
-
-msgctxt "#32201"
-msgid "Crew: Movies with"
-msgstr "Съёмочная группа: фильмы с"
-
-msgctxt "#32202"
-msgid "Crew: TV Shows with"
-msgstr "Съёмочная группа: ТВ-передач с"
-
-msgctxt "#32203"
-msgid "Start at First Menu Item"
-msgstr "Начинать с первого пункта меню"
-
-msgctxt "#32204"
-msgid "Set Default View"
-msgstr "Установить вид по умолчанию"
-
-msgctxt "#32205"
-msgid "Highlight Color"
-msgstr "Цвет выделения"
-
-msgctxt "#32206"
-msgid "Horizontal Menu Glow Bars Tint"
-msgstr "Оттенок светящихся полос горизонтального меню"
-
-msgctxt "#32207"
-msgid "Horizontal Menu Main Bar Tint"
-msgstr "Оттенок основной панели горизонтального меню"
-
-msgctxt "#32208"
-msgid "Vertical Menu/Submenu Background Tint"
-msgstr "Оттенок фона вертикального меню/подменю"
-
-msgctxt "#32209"
-msgid "Top Bar Tint"
-msgstr "Оттенок верхней панели"
-
-msgctxt "#32210"
-msgid "Current Color Theme"
-msgstr "Текущая цветовая тема"
-
-msgctxt "#32211"
-msgid "Dialogs Background Tint"
-msgstr "Оттенок фона диалогов"
-
-msgctxt "#32212"
-msgid "Regular Text Color"
-msgstr "Цвет обычного текста"
-
-msgctxt "#32213"
-msgid "Focused Text Color"
-msgstr "Цвет текста в фокусе"
-
-msgctxt "#32214"
-msgid "Selected Text Color"
-msgstr "Цвет выбранного текста"
-
-msgctxt "#32215"
-msgid "Shelves Background Tint"
-msgstr "Оттенок фона полок"
-
-msgctxt "#32216"
-msgid "Use for All Tints"
-msgstr "Использовать для всех оттенков"
-
-msgctxt "#32217"
-msgid "Keep Lists Focus Centered"
-msgstr "Сохранять фокус списка по центру"
-
-msgctxt "#32218"
-msgid "Show Artist Logo In Music Visualization"
-msgstr "Показывать логотип исполнителя при визуализации музыки"
-
-msgctxt "#32219"
-msgid "Show Logo In Media Views"
-msgstr "Показывать логотип в представлениях медиа"
-
-msgctxt "#32220"
-msgid "Show Logo In Home Window"
-msgstr "Показывать логотип на домашнем экране"
-
-msgctxt "#32221"
-msgid "Media Views Background Tint"
-msgstr "Оттенок фона представлений медиа"
-
-msgctxt "#32222"
-msgid "Enable Label Scrolling in List Views"
-msgstr "Включить прокрутку меток в представлениях списком"
-
-msgctxt "#32223"
-msgid "Audio and Subtitle Info"
-msgstr "Информация об аудио и субтитрах"
-
-msgctxt "#32224"
-msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
-msgstr "Кнопка субтитров открывает настройки субтитров в OSD видео"
-
-msgctxt "#32225"
-msgid "Disable Info Panel in List Views"
-msgstr "Отключить информационную панель в представлениях списком"
-
-msgctxt "#32226"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb Helper — следующие вышедшие серии"
-
-msgctxt "#32227"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info — следующие вышедшие серии"
-
-msgctxt "#32228"
-msgid "Only Search in Local Library"
-msgstr "Искать только в локальной медиатеке"
-
-msgctxt "#32229"
-msgid "Hide Channel Groups"
-msgstr "Скрыть группы каналов"
-
-msgctxt "#32230"
-msgid "Select Displayed Ratings and Certification"
-msgstr "Выберите отображаемые рейтинги и возрастную классификацию"
-
-msgctxt "#32231"
-msgid "User Rating"
-msgstr "Рейтинг пользователя"
-
-msgctxt "#32232"
-msgid "Ratings"
-msgstr "Рейтинги"
-
-msgctxt "#32235"
-msgid "Certification"
-msgstr "Возрастная классификация"
-
-msgctxt "#32237"
-msgid "Up Next in"
-msgstr "Далее через"
-
-msgctxt "#32238"
-msgid "Continue Watching in"
-msgstr "Продолжить просмотр через"
-
-msgctxt "#32238"
-msgid "Next Episode in"
-msgstr "Следующая серия через"
-
-msgctxt "#32239"
-msgid "Hide Collection (Set) Marks"
-msgstr "Скрыть отметки коллекции (цикла)"
-
-msgctxt "#32240"
-msgid "Disable Info Panel"
-msgstr "Отключить информационную панель"
-
-msgctxt "#32241"
-msgid "Alternate List Layout"
-msgstr "Альтернативный макет списка"
-
-msgctxt "#32242"
-msgid "Larger Image"
-msgstr "Крупное изображение"
-
-msgctxt "#32243"
-msgid "Alternate List Views Layout"
-msgstr "Альтернативный макет представлений списком"
-
-msgctxt "#32244"
-msgid "Albums by"
-msgstr "Альбомы"
-
-msgctxt "#32245"
-msgid "Panel 2"
-msgstr "Панель 2"
-
-msgctxt "#32246"
-msgid "Big Panel 2"
-msgstr "Большая панель 2"
-
-msgctxt "#32247"
-msgid "Disable Panel 2 view"
-msgstr "Отключить вид «Панель 2»"
-
-msgctxt "#32248"
-msgid "Disable Big Panel 2 view"
-msgstr "Отключить вид «Большая панель 2»"
-
-msgctxt "#32249"
-msgid "Enable Statistics Line"
-msgstr "Включить строку статистики"
-
-msgctxt "#32250"
-msgid "Show Statistics line on Shelf"
-msgstr "Показывать строку статистики на полке"
-
-msgctxt "#32251"
-msgid "Show Marks on Top Right"
-msgstr "Показывать отметки в правом верхнем углу"
-
-msgctxt "#32252"
-msgid "Hide Unwatched Episodes Marks"
-msgstr "Скрыть отметки непросмотренных серий"
-
-msgctxt "#32253"
-msgid "Movies in library"
-msgstr "Фильмов в медиатеке"
-
-msgctxt "#32254"
-msgid "IMDb Top 250"
-msgstr "Лучшие 250 на IMBD"
-
-msgctxt "#32255"
-msgid "Missing Add-on"
-msgstr "Отсутствующее дополнение"
-
-msgctxt "#32256"
-msgid "TMDb Helper"
-msgstr "TMDb Helper"
-
-msgctxt "#32257"
-msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-msgstr "Чтобы включить эту функцию, вам нужно установить очень свежую версию дополнения plugin.video.themoviedb.helper.[CR][CR]Вы можете найти его по адресу https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-
-msgctxt "#32258"
-msgid "Use Embuary Helper for Playlist Backgrounds"
-msgstr "Использовать Embuary Helper для фонов плейлистов"
-
-msgctxt "#32259"
-msgid "Backgrounds"
-msgstr "Варианты фона"
-
-msgctxt "#32260"
-msgid "Unwatched"
-msgstr "Не просмотрено"
-
-msgctxt "#32261"
-msgid "Use Embuary Helper for Statistics Line"
-msgstr "Использовать Embuary Helper для строки статистики"
-
-msgctxt "#32262"
-msgid "Use Embuary Helper for Backgrounds"
-msgstr "Использовать Embuary Helper для фонов"
-
-msgctxt "#32263"
-msgid "Movie Collection Count"
-msgstr "Количество коллекций фильмов"
-
-msgctxt "#32264"
-msgid "Show Fanart for Special Content"
-msgstr "Показывать фан-арт для специального содержимого"
-
-msgctxt "#32265"
-msgid "Media Play Count"
-msgstr "Количество воспроизведений медиа"
-
-msgctxt "#32266"
-msgid "Color Options"
-msgstr "Параметры цвета"
-
-msgctxt "#32267"
-msgid "Go To"
-msgstr "Перейти к"
-
-msgctxt "#32268"
-msgid "Show Three Shelves Together"
-msgstr "Показывать три полки вместе"
-
-msgctxt "#32269"
-msgid "Configure Custom Shelf"
-msgstr "Настроить пользовательскую полку"
-
-msgctxt "#32270"
-msgid "Shift Fanart View Focus to the Right"
-msgstr "Сместить фокус представления фан-арта вправо"
-
-msgctxt "#32271"
-msgid "Mouse/Touch-Friendly Alphabet Strip"
-msgstr "Алфавитная лента, удобная для мыши/сенсорного ввода"
-
-msgctxt "#32272"
-msgid "Use New Media Views Selector"
-msgstr "Использовать новый выбор представлений медиа"
-
-msgctxt "#32273"
-msgid "Skin Variables"
-msgstr "Переменные обложки"
-
-msgctxt "#32274"
-msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
-msgstr "Чтобы включить эту функцию, вам нужно установить очень свежую версию дополнения script.skinvariables.[CR][CR]Вы можете найти его по адресу https://github.com/jurialmunkey/script.skinvariables."
-
-msgctxt "#32275"
-msgid "Configure Media Views"
-msgstr "Настроить представления медиа"
-
-msgctxt "#32277"
-msgid "Three Rows with Larger Icons"
-msgstr "Три строки с крупными значками"
-
-msgctxt "#32278"
-msgid "Oscars Won"
-msgstr "Получено Оскаров"
-
-msgctxt "#32279"
-msgid "Oscar Nominations"
-msgstr "Номинаций на Оскар"
-
-msgctxt "#32280"
-msgid "Golden Globes Won"
-msgstr "Получено Золотых глобусов"
-
-msgctxt "#32281"
-msgid "Golden Globe Nominations"
-msgstr "Номинаций на Золотой глобус"
-
-msgctxt "#32282"
-msgid "Awards (Oscars/Golden Globes)"
-msgstr "Награды (Оскар/Золотой глобус)"
-
-msgctxt "#32283"
-msgid "Video Genre Fanart"
-msgstr "Фан-арт жанров видео"
-
-msgctxt "#32284"
-msgid "Music Genre Fanart"
-msgstr "Фан-арт музыкальных жанров"
-
-msgctxt "#32285"
-msgid "Custom Path"
-msgstr "Пользовательский путь"
-
-msgctxt "#32286"
-msgid "Reset Custom Path"
-msgstr "Сбросить пользовательский путь"
-
-msgctxt "#32287"
-msgid "Image Pack"
-msgstr "Набор изображений"
-
-msgctxt "#32288"
-msgid "Enable Multiple Images per Genre"
-msgstr "Включить несколько изображений на жанр"
-
-msgctxt "#32289"
-msgid "Match Poster Colors"
-msgstr "Сопоставлять цвета постера"
-
-msgctxt "#32290"
-msgid "Show Seek Bar at Bottom"
-msgstr "Показывать панель поиска внизу"
-
-msgctxt "#32291"
-msgid "HDR/SDR and Bit Depth Flags"
-msgstr "Флаги HDR/SDR и битовой глубины"
-
-msgctxt "#32292"
-msgid "File Name Instead of Title"
-msgstr "Имя файла вместо названия"
-
-msgctxt "#32293"
-msgid "Extra Fanart on panel"
-msgstr "Дополнительный фан-арт на панели"
-
-msgctxt "#32294"
-msgid "Ends at"
-msgstr "Закончится в"
-
-msgctxt "#32295"
-msgid "Netflix style"
-msgstr "Стиль Netflix"
-
-msgctxt "#32296"
-msgid "Show Logo"
-msgstr "Показывать логотип"
-
-msgctxt "#32297"
-msgid "Use Landscape"
-msgstr "Использовать ландшафтный режим"
-
-msgctxt "#32298"
-msgid "Dim Level for Unfocused"
-msgstr "Уровень затемнения для не в фокусе"
-
-msgctxt "#32299"
-msgid "Select Dim Level"
-msgstr "Выберите уровень затемнения"
-
-msgctxt "#32300"
-msgid "Now Playing"
-msgstr "Сейчас воспроизводится"
-
-msgctxt "#32301"
-msgid "Hide Title Bar Now Playing"
-msgstr "Скрыть строку заголовка «Сейчас воспроизводится»"
-
-msgctxt "#32302"
-msgid "Select Now Playing Video Disc Art Fallback"
-msgstr "Выберите резервное оформление диска для видео «Сейчас воспроизводится»"
-
-msgctxt "#32303"
-msgid "Select Now Playing Music Disc Art Fallback"
-msgstr "Выберите резервное оформление диска для музыки «Сейчас воспроизводится»"
-
-msgctxt "#32304"
-msgid "Blu-Ray"
-msgstr "Blu-Ray"
-
-msgctxt "#32305"
-msgid "Vinyl"
-msgstr "Винил"
-
-msgctxt "#32306"
-msgid "None"
-msgstr "Нет"
-
-msgctxt "#32307"
-msgid "White"
-msgstr "Белый"
-
-msgctxt "#32308"
-msgid "Blue"
-msgstr "Синий"
-
-msgctxt "#32309"
-msgid "Golden"
-msgstr "Золотистый"
-
-msgctxt "#32310"
-msgid "Green"
-msgstr "Зелёный"
-
-msgctxt "#32311"
-msgid "Grey"
-msgstr "Серый"
-
-msgctxt "#32312"
-msgid "Orange"
-msgstr "Оранжевый"
-
-msgctxt "#32313"
-msgid "Purple"
-msgstr "Фиолетовый"
-
-msgctxt "#32314"
-msgid "Red"
-msgstr "Красный"
-
-msgctxt "#32315"
-msgid "Select Now Playing Info for Movies/Episodes"
-msgstr "Выберите информацию «Сейчас воспроизводится» для фильмов/серий"
-
-msgctxt "#32316"
-msgid "Select Now Playing Info for other Videos"
-msgstr "Выберите информацию «Сейчас воспроизводится» для других видео"
-
-msgctxt "#32317"
-msgid "Select Now Playing Info for Music"
-msgstr "Выберите информацию «Сейчас воспроизводится» для музыки"
-
-msgctxt "#32318"
-msgid "Show Video in the Background"
-msgstr "Показывать видео на фоне"
-
-msgctxt "#32319"
-msgid "Show Music Visualization in the Background"
-msgstr "Показывать визуализацию музыки на фоне"
-
-msgctxt "#32320"
-msgid "Show Extra Art for Video"
-msgstr "Показывать дополнительные иллюстрации для видео"
-
-msgctxt "#32321"
-msgid "Show Extra Art for Music"
-msgstr "Показывать дополнительные иллюстрации для музыки"
-
-msgctxt "#32322"
-msgid "Show Logo"
-msgstr "Показывать логотип"
-
-msgctxt "#32323"
-msgid "Show ClearArt"
-msgstr "Показывать ClearArt"
-
-msgctxt "#32324"
-msgid "Show Disc Art"
-msgstr "Показывать оформление диска"
-
-msgctxt "#32325"
-msgid "Select Disc Art Fallback for Video"
-msgstr "Выберите резервное оформление диска для видео"
-
-msgctxt "#32326"
-msgid "Select Disc Art Fallback for Music"
-msgstr "Выберите резервное оформление диска для музыки"
-
-msgctxt "#32327"
-msgid "Disable Now Playing"
-msgstr "Отключить «Сейчас воспроизводится»"
-
-msgctxt "#32328"
-msgid "Internet Stream"
-msgstr "Интернет-поток"
-
-msgctxt "#32329"
-msgid "Special"
-msgstr "Особый"
-
-msgctxt "#32330"
-msgid "Next Tracks"
-msgstr "Следующие треки"
-
-msgctxt "#32331"
-msgid "Album Review"
-msgstr "Обзор альбома"
-
-msgctxt "#32332"
-msgid "Artist Bio"
-msgstr "Биография исполнителя"
-
-msgctxt "#32333"
-msgid "Hide Shelves when Now Playing is Visible"
-msgstr "Скрывать полки, когда виден раздел «Сейчас воспроизводится»"
-
-msgctxt "#32334"
-msgid "Enlarge Video Preview when Idle"
-msgstr "Увеличивать предпросмотр видео в режиме ожидания"
-
-msgctxt "#32335"
-msgid "Select Extra Art to Show in Applicable Views"
-msgstr "Выберите дополнительные иллюстрации для отображения в соответствующих представлениях"
-
-msgctxt "#32336"
-msgid "Full Screen/OSD"
-msgstr "Полный экран / OSD"
-
-msgctxt "#32337"
-msgid "Select Interval for Auto Closing Video OSD"
-msgstr "Выберите интервал для автоматического закрытия OSD видео"
-
-msgctxt "#32338"
-msgid "Current Color"
-msgstr "Текущий цвет"
-
-msgctxt "#32339"
-msgid "Value"
-msgstr "Значение"
-
-msgctxt "#32340"
-msgid "Second"
-msgstr "Секунда"
-
-msgctxt "#32341"
-msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
-msgstr "Использовать удобный для мыши метод (script.skin.info.service v1.0.8 и выше)"
-
-msgctxt "#32342"
-msgid "Auto Close Video OSD"
-msgstr "Автоматически закрывать OSD видео"
-
-msgctxt "#32343"
-msgid "Default Font Size"
-msgstr "Размер шрифта по умолчанию"
-
-msgctxt "#32344"
-msgid "Use fanart.jpg if present in folder or parent folder"
-msgstr "Использовать fanart.jpg, если присутствует в папке или родительской папке"
-
-msgctxt "#32345"
-msgid "Use Clear Art instead of Logo"
-msgstr "Использовать Clear Art вместо логотипа"
-
-msgctxt "#32346"
-msgid "Single Logo"
-msgstr "Одиночный логотип"
-
-msgctxt "#32347"
-msgid "Fade out Unfocused"
-msgstr "Затемнять не в фокусе"
-
-msgctxt "#32348"
-msgid "Show Overlay"
-msgstr "Показывать наложение"
-
-msgctxt "#32349"
-msgid "Show Smaller Favourite Icons"
-msgstr "Показывать маленькие значки избранного"
-
-msgctxt "#32350"
-msgid "Show Three Rows"
-msgstr "Показывать три строки"
-
-msgctxt "#32351"
-msgid "Show Four Rows"
-msgstr "Показывать четыре строки"
-
-msgctxt "#32352"
-msgid "Enable Use of TMDb Helper"
-msgstr "Включить использование TMDb Helper"
-
-msgctxt "#32353"
-msgid "Enable Use of Embuary Helper"
-msgstr "Включить использование Embuary Helper"
-
-msgctxt "#32354"
-msgid "Hide Seek Bar when Paused"
-msgstr "Скрывать панель поиска на паузе"
-
-msgctxt "#32355"
-msgid "Icon Only Menu"
-msgstr "Меню только из значков"
-
-msgctxt "#32356"
-msgid "Show Menu Item Name"
-msgstr "Показывать название пункта меню"
-
-msgctxt "#32357"
-msgid "Enable Video Lyrics"
-msgstr "Включить лирик-видео (анимированный текст песни в музыкальном клипе)"
-
-msgctxt "#32358"
-msgid "Play Whole Albums from Shelves"
-msgstr "Воспроизводить целые альбомы с полок"
-
-msgctxt "#32359"
-msgid "Show Item Name in Top Bar"
-msgstr "Показывать название элемента в верхней панели"
-
-msgctxt "#32360"
-msgid "Animate backgrounds using Ken Burns effect"
-msgstr "Анимировать фоны с помощью эффекта Кена Бёрнса"
-
-msgctxt "#32361"
-msgid "Single Column"
-msgstr "Один столбец"
-
-msgctxt "#32362"
-msgid "Disable Now Playing Fanart"
-msgstr "Отключить фан-арт «Сейчас воспроизводится»"
-
-msgctxt "#32363"
-msgid "Show Media Info with Seek Bar"
-msgstr "Показывать информацию о медиа с панелью поиска"
-
-msgctxt "#32364"
-msgid "Show Seek Bar when Starting Video Playback"
-msgstr "Показывать панель поиска при начале воспроизведения видео"
-
-msgctxt "#32365"
-msgid "Time to Show Seek Bar"
-msgstr "Время показа панели поиска"
-
-msgctxt "#32366"
-msgid "Hide Title Bar in Main Window"
-msgstr "Скрыть строку заголовка в главном окне"
-
-msgctxt "#32367"
-msgid "Hide fallback image if no thumb in OSD"
-msgstr "Скрывать резервное изображение, если нет эскиза в OSD"
-
-msgctxt "#32368"
-msgid "Dim Background and Album Cover when Showing Lyrics"
-msgstr "Затемнять фон и обложку альбома при показе текста песни"
-
-msgctxt "#32369"
-msgid "Use Alternate Favourites Layout"
-msgstr "Использовать альтернативный макет избранного"
-
-msgctxt "#32370"
-msgid "Align Menu Item Text to the Left"
-msgstr "Выравнивать текст пункта меню по левому краю"
-
-msgctxt "#32371"
-msgid "Info Button Opens Video Info Dialog"
-msgstr "Кнопка информации открывает диалог информации о видео"
-
-msgctxt "#32372"
-msgid "Pause Media While Info Dialog is Open"
-msgstr "Приостанавливать медиа, пока открыт диалог информации"
-
-msgctxt "#32373"
-msgid "End Time"
-msgstr "Время окончания"
-
-msgctxt "#32374"
-msgid "Show Dark Background Behind Shortcuts"
-msgstr "Показывать тёмный фон за сочетаниями"
-
-msgctxt "#32375"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "Использовать Artist Slideshow для аудио-фан-арта"
-
-msgctxt "#32376"
-msgid "Disable Lyrics"
-msgstr "Отключить текст песни"
-
-msgctxt "#32377"
-msgid "Activate Lyrics"
-msgstr "Активировать текст песни"
-
-msgctxt "#32378"
-msgid "Use Color Flags"
-msgstr "Использовать цветные флаги"
-
-msgctxt "#32379"
-msgid "Show Submenu Only when Focused"
-msgstr "Показывать подменю только в фокусе"
-
-msgctxt "#32380"
-msgid "Movies with Plot containing"
-msgstr "Фильмы с сюжетом, содержащим"
-
-msgctxt "#32381"
-msgid "TV Shows with Plot containing"
-msgstr "ТВ-шоу с сюжетом, содержащим"
-
-msgctxt "#32382"
-msgid "Episodes with Plot containing"
-msgstr "Серии с сюжетом, содержащим"
-
-msgctxt "#32383"
-msgid "With Plot Containing"
-msgstr "С сюжетом, содержащим"
-
-msgctxt "#32384"
-msgid "Show Title in Footer"
-msgstr "Показывать название в нижнем колонтитуле"
-
-msgctxt "#32385"
-msgid "Hide Seek Bar when Forwarding or Rewinding"
-msgstr "Скрывать панель поиска при перемотке вперёд или назад"
-
-msgctxt "#32386"
-msgid "Enable Touchscreen Devices Support"
-msgstr "Включить поддержку сенсорных устройств"
-
-msgctxt "#32387"
-msgid "Show Rating Overlay"
-msgstr "Показывать наложение оценки"
-
-msgctxt "#32388"
-msgid "Use User Rating for Overlay"
-msgstr "Использовать оценку пользователя для наложения"
-
-msgctxt "#32390"
-msgid "Select Items to Show in Views"
-msgstr "Выберите элементы для отображения в представлениях"
-
-msgctxt "#32391"
-msgid "Items to Show in Views"
-msgstr "Элементы для отображения в представлениях"
-
-msgctxt "#32392"
-msgid "Play Random"
-msgstr "Воспроизвести в случайном порядке"
-
-msgctxt "#32393"
-msgid "List Views Options"
-msgstr "Параметры представлений списком"
-
-msgctxt "#32394"
-msgid "Marks and Overlays"
-msgstr "Отметки и наложения"
-
-msgctxt "#32395"
-msgid "Select View Types to Enable"
-msgstr "Выберите типы представлений для включения"
-
-msgctxt "#32396"
-msgid "View Types to Enable"
-msgstr "Типы представлений для включения"
-
-msgctxt "#32398"
-msgid "Show Poster"
-msgstr "Показывать постер"
-
-msgctxt "#32399"
-msgid "Text"
-msgstr "Текст"
-
-msgctxt "#32400"
-msgid "Banner"
-msgstr "Баннер"
-
-msgctxt "#32401"
-msgid "List Item Type"
-msgstr "Тип элемента списка"
-
-msgctxt "#32402"
-msgid "Poster/Thumb"
-msgstr "Постер/эскиз"
-
-msgctxt "#32403"
-msgid "OSD/Full Screen Art"
-msgstr "OSD / полноэкранные иллюстрации"
-
-msgctxt "#32404"
-msgid "N/A"
-msgstr "Н/Д"
-
-msgctxt "#32405"
-msgid "Show Info Popup"
-msgstr "Показывать информационное всплывающее окно"
-
-msgctxt "#32406"
-msgid "Popup Delay"
-msgstr "Задержка всплывающего окна"
-
-msgctxt "#32407"
-msgid "Show Floor"
-msgstr "Показывать пол"
-
-msgctxt "#32408"
-msgid "Fixed List"
-msgstr "Фиксированный список"
-
-msgctxt "#32409"
-msgid "Centered Static Menu (less than 8 items)"
-msgstr "Центрированное статическое меню (менее 8 элементов)"
-
-msgctxt "#32410"
-msgid "Compact OSD"
-msgstr "Компактный OSD"
-
-msgctxt "#32411"
-msgid "Ultra Compact OSD"
-msgstr "Сверхкомпактный OSD"
-
-msgctxt "#32412"
-msgid "Alternate OSD Button Highlighting"
-msgstr "Альтернативное выделение кнопок OSD"
-
-msgctxt "#32413"
-msgid "Enabled"
-msgstr "Включить"
-
-msgctxt "#32414"
-msgid "Disabled"
-msgstr "Отключено"
-
-msgctxt "#32415"
-msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr "Автовоспроизведение трейлера (только локальный трейлер)"
-
-msgctxt "#32416"
-msgid "Auto Play Trailer Delay"
-msgstr "Задержка автовоспроизведения трейлера"
-
-msgctxt "#32417"
-msgid "Fanart Title Button Opens Info Dialog"
-msgstr "Кнопка названия фан-арта открывает диалог информации"
-
-msgctxt "#32418"
-msgid "Single Image"
-msgstr "Одно изображение"
-
-msgctxt "#32419"
-msgid "Multiple Images"
-msgstr "Несколько изображений"
-
-msgctxt "#32420"
-msgid "Video/Playlist"
-msgstr "Видео/плейлист"
-
-msgctxt "#32421"
-msgid "Startup Background"
-msgstr "Фон при запуске"
-
-msgctxt "#32422"
-msgid "Hide Menu when Shelves are Focused"
-msgstr "Скрывать меню, когда полки в фокусе"
-
-msgctxt "#32423"
-msgid "Use Disc Art instead of Cover"
-msgstr "Использовать оформление диска вместо обложки"
-
-msgctxt "#32424"
-msgid "Auto Play Trailer from Shelf Items"
-msgstr "Автовоспроизведение трейлера из элементов полки"
-
-msgctxt "#32425"
-msgid "Shelf Trailer Delay"
-msgstr "Задержка трейлера на полке"
-
-msgctxt "#32426"
-msgid "Slide Out Media Items While Trailer Playing"
-msgstr "Сдвигать медиа-элементы во время воспроизведения трейлера"
-
-msgctxt "#32427"
-msgid "Hide PVR Channel Preview"
-msgstr "Скрыть предпросмотр канала записи эфира"
-
-msgctxt "#32428"
-msgid "Art Downloader: Select Artwork"
-msgstr "Art Downloader: Выбрать иллюстрации"
-
-msgctxt "#32429"
-msgid "Art Downloader: All Artwork"
-msgstr "Art Downloader: Все иллюстрации"
-
-msgctxt "#32450"
-msgid "Show Artwork Downloader items in Context Menu"
-msgstr "Показывать элементы Artwork Downloader в контекстном меню"
-
-msgctxt "#32451"
-msgid "Movies with Tag"
-msgstr "Фильмы с тегом"
-
-msgctxt "#32452"
-msgid "Select a Tag"
-msgstr "Выберите тег"
-
-msgctxt "#32453"
-msgid "With Tag"
-msgstr "С тегом"
-
-msgctxt "#32454"
-msgid "Always Use TV Show Poster for Episodes"
-msgstr "Всегда использовать постер ТВ-передач для серий"
-
-msgctxt "#32455"
-msgid "Open ExtendedInfo for Info Dialogs"
-msgstr "Открывать ExtendedInfo для диалогов информации"
-
-msgctxt "#32456"
-msgid "Cert"
-msgstr "Возрастной рейтинг"
-
-msgctxt "#32457"
-msgid "Show Episodes List button"
-msgstr "Показывать кнопку списка серий"
-
-msgctxt "#32458"
-msgid "Include Seasons in Episodes List popup"
-msgstr "Включать сезоны во всплывающий список серий"
-
-msgctxt "#32459"
-msgid "Next Aired"
-msgstr "Следующий Эфир"
-
-msgctxt "#32460"
-msgid "Enable Direct Seeking in Full Screen Info"
-msgstr "Включить прямой поиск в полноэкранной информации"
-
-msgctxt "#32461"
-msgid "Show Disc above Poster"
-msgstr "Показывать диск над постером"
-
-msgctxt "#32462"
-msgid "Hide Disc over Set Poster"
-msgstr "Скрывать диск над постером цикла"
-
-msgctxt "#32463"
-msgid "Play trailer in a window"
-msgstr "Воспроизводить трейлер в окне"
-
-msgctxt "#32464"
-msgid "Search Trailer"
-msgstr "Найти трейлер"
-
-msgctxt "#32465"
-msgid "Search for Trailers with IMDb Trailers Addon"
-msgstr "Искать трейлеры с помощью дополнения IMDb Trailers"
-
-msgctxt "#32466"
-msgid "Fade out Non-focused Menu Items"
-msgstr "Затемнять не сфокусированные пункты меню"
-
-msgctxt "#32467"
-msgid "Cloudiness"
-msgstr "Облачность"
-
-msgctxt "#32468"
-msgid "Probability of Precipitation"
-msgstr "Вероятность осадков"
-
-msgctxt "#32469"
-msgid "Intro Video Duration"
-msgstr "Длительность интро-видео"
-
-msgctxt "#32470"
-msgid "PVR Timeshift Buffer Color"
-msgstr "Цвет буфера сдвига по времени записи эфира"
-
-msgctxt "#32471"
-msgid "Use Main Menu item Background for Sub Windows"
-msgstr "Использовать фон пункта главного меню для дочерних окон"
-
-msgctxt "#32472"
-msgid "Teletext Button Opens EPG"
-msgstr "Кнопка телетекста открывает EPG"
-
-msgctxt "#32473"
-msgid "EPG Icon"
-msgstr "Значок EPG"
-
-msgctxt "#32474"
-msgid "Channel Logo"
-msgstr "Логотип канала"
-
-msgctxt "#32475"
-msgid "Always Show Information Panel"
-msgstr "Всегда показывать информационную панель"
-
-msgctxt "#32476"
-msgid "Use Custom Search for Video Library"
-msgstr "Использовать пользовательский поиск для видеотеки"
-
-msgctxt "#32477"
-msgid "Use Custom Search for Music Library"
-msgstr "Использовать пользовательский поиск для музыкальной медиатеки"
-
-msgctxt "#32478"
-msgid "Current Programme Progress:"
-msgstr "Прогресс текущей программы:"
-
-msgctxt "#32479"
-msgid "Also Show Seconds"
-msgstr "Также показывать секунды"
-
-msgctxt "#32480"
-msgid "kbps"
-msgstr "кбит/с"
-
-msgctxt "#32481"
-msgid "Remember Focused Control in Home Window"
-msgstr "Запоминать элемент в фокусе в домашнем окне"
-
-msgctxt "#32482"
-msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
-msgstr "Использовать эскиз элемента, а не фан-арт дополнения для полок YouTube"
-
-msgctxt "#32483"
-msgid "Allow Changing View Types in PVR Channels Window"
-msgstr "Разрешить изменение типов представлений в окне каналов записи эфира"
-
-msgctxt "#32484"
-msgid "Update Library"
-msgstr "Обновить медиатеку"
-
-msgctxt "#32485"
-msgid "Stop Scanning"
-msgstr "Остановить сканирование"
-
-msgctxt "#32486"
-msgid "More Info"
-msgstr "Подробнее"
-
-msgctxt "#32487"
-msgid "Play Trailer Windowed"
-msgstr "Воспроизвести трейлер в окне"
-
-msgctxt "#32488"
-msgid "Last Played Date"
-msgstr "Дата последнего воспроизведения"
-
-msgctxt "#32489"
-msgid "Horizontal Icon Layout"
-msgstr "Горизонтальный макет значков"
-
-msgctxt "#32490"
-msgid "Show Menu Item Label"
-msgstr "Показывать метку пункта меню"
-
-msgctxt "#32491"
-msgid "Always Show Set Movie List"
-msgstr "Всегда показывать список фильмов цикла"
-
-msgctxt "#32492"
-msgid "Use Tall List Layout"
-msgstr "Использовать макет «Высокий список»"
-
-msgctxt "#32493"
-msgid "Show More Items in List"
-msgstr "Показывать больше элементов в списке"
-
-msgctxt "#32494"
-msgid "Hide Overlay Label in Icon/Panel Views"
-msgstr "Скрыть метку наложения в представлениях «Значки»/«Панель»"

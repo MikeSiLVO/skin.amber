@@ -28,7 +28,7 @@
 					<posy>261</posy>
 					<width>690</width>
 					<height>52</height>
-					<label>$LOCALIZE[32230]</label>
+					<label>$LOCALIZE[31367]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -79,25 +79,25 @@
 					<selected>Skin.HasSetting(ShowRatingTop250)</selected>
 				</control>
 				<control type="radiobutton" id="901017">
-					<label>$LOCALIZE[32282]</label>
+					<label>$LOCALIZE[31680]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(ShowRatingAwards)</onclick>
 					<selected>Skin.HasSetting(ShowRatingAwards)</selected>
 				</control>
 				<control type="radiobutton" id="901018">
-					<label>$LOCALIZE[32232]</label>
+					<label>$LOCALIZE[31369]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(ShowRatingMainVideoInfo)</onclick>
 					<selected>Skin.HasSetting(ShowRatingMainVideoInfo)</selected>
 				</control>
 				<control type="radiobutton" id="901019">
-					<label>$LOCALIZE[32231]</label>
+					<label>$LOCALIZE[31368]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(ShowRatingUserVideoInfo)</onclick>
 					<selected>Skin.HasSetting(ShowRatingUserVideoInfo)</selected>
 				</control>
 				<control type="radiobutton" id="9010110">
-					<label>$LOCALIZE[32235]</label>
+					<label>$LOCALIZE[31370]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(ShowMPAAVideoInfo)</onclick>
 					<selected>Skin.HasSetting(ShowMPAAVideoInfo)</selected>

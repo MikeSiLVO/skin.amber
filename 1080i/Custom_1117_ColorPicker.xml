@@ -132,7 +132,7 @@
 						<control type="label">
 							<width>280</width>
 							<height>40</height>
-							<label>[B]$LOCALIZE[32338][/B]</label>
+							<label>[B]$LOCALIZE[31730][/B]</label>
 							<font>ListDetailsSmall</font>
 						</control>
 						<!-- color preview-->
@@ -149,7 +149,7 @@
 					<control type="button" id="3010">
 						<width>280</width>
 						<height>60</height>
-						<label>$LOCALIZE[32339]: $VAR[ColorValueLabelVar]</label>
+						<label>$LOCALIZE[31731]: $VAR[ColorValueLabelVar]</label>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),HighlightColor)">Skin.SetString(HighlightColorStr)</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),LabelTextColor)">Skin.SetString(LabelTextColorStr)</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),FocusedTextColor)">Skin.SetString(FocusedTextColorStr)</onclick>

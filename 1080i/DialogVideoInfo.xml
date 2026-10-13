@@ -924,7 +924,7 @@
 				<width min="210">auto</width>
 				<align>center</align>
 				<font>Details</font>
-				<label>$LOCALIZE[32154]</label>
+				<label>$LOCALIZE[31276]</label>
 				<onclick condition="Skin.HasSetting(Enable.EmbuaryHelper)">RunScript(script.embuary.helper,action=goto,path='"videodb://movies/sets/$INFO[ListItem.SetId]/?setid=$INFO[ListItem.SetId]"',target=videos)</onclick>
 				<visible>System.AddonIsEnabled(script.embuary.helper) + !String.IsEmpty(ListItem.SetId) + !String.IsEmpty(ListItem.DBID)</visible>
 			</control>
@@ -969,7 +969,7 @@
 				<width min="210">auto</width>
 				<font>Details</font>
 				<align>center</align>
-				<label>$LOCALIZE[32464]</label>
+				<label>$LOCALIZE[31832]</label>
 				<!-- Search with imdb trailers addon -->
 				<onclick condition="Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.imdb.trailers)">Dialog.Close(movieinformation)</onclick>
 				<onclick condition="Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.imdb.trailers) + !String.IsEmpty(ListItem.uniqueid(imdb))">PlayMedia(plugin://plugin.video.imdb.trailers/?action=play_id&amp;imdb=$INFO[ListItem.uniqueid(imdb)])</onclick>
@@ -1017,7 +1017,7 @@
 				<width min="220">auto</width>
 				<align>center</align>
 				<font>Details</font>
-				<label>$LOCALIZE[32127]</label>
+				<label>$LOCALIZE[31249]</label>
 				<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + !String.IsEmpty(ListItem.uniqueid(tmdb))">RunScript(script.embuary.info,call=movie,tmdb_id=$INFO[ListItem.uniqueid(tmdb)])</onclick>
 				<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + String.IsEmpty(ListItem.uniqueid(tmdb)) + !String.IsEmpty(ListItem.IMDBNumber)">RunScript(script.embuary.info,call=movie,external_id=$INFO[ListItem.IMDBNumber])</onclick>
 				<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + String.IsEmpty(ListItem.uniqueid(tmdb)) + String.IsEmpty(ListItem.IMDBNumber)">RunScript(script.embuary.info,call=movie,query='"$INFO[ListItem.Title]"',year=$INFO[ListItem.Year])</onclick>
@@ -1031,7 +1031,7 @@
 				<width min="220">auto</width>
 				<align>center</align>
 				<font>Details</font>
-				<label>$LOCALIZE[32007]</label>
+				<label>$LOCALIZE[31058]</label>
 				<onclick>Dialog.Close(1121)</onclick>
 				<onclick>RunScript(plugin.video.specialfeatures,listitem)</onclick>
 				<visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Skin.HasSetting(Enable.SpecialFeatures) + String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true) + [!String.isEqual(ListItem.DBType,set) + !String.IsEmpty(Listitem.DBID)]</visible>
@@ -1108,7 +1108,7 @@
 			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Set))">
 				<param name="id">9100001</param>
 				<param name="labelid">9100011</param>
-				<param name="headinglabel">$VAR[SetNameLabel,$LOCALIZE[32097] ,]</param>
+				<param name="headinglabel">$VAR[SetNameLabel,$LOCALIZE[31219] ,]</param>
 				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 				<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
 				<param name="content">$VAR[VideoInfoSets]</param>
@@ -1135,7 +1135,7 @@
 			<include content="VideoInfoPosterWidget" condition="Skin.HasSetting(Enable.TMDbHelper)">
 				<param name="id">91003</param>
 				<param name="labelid">910031</param>
-				<param name="headinglabel">$LOCALIZE[32099]</param>
+				<param name="headinglabel">$LOCALIZE[31221]</param>
 				<param name="onclickinclude">InfoList_OnClickCrew</param>
 				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 				<param name="belowdoublelabel2">[I]$INFO[ListItem.Property(job)][/I]</param>
@@ -1147,7 +1147,7 @@
 			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Director))">
 				<param name="id">91004</param>
 				<param name="labelid">910041</param>
-				<param name="headinglabel">$VAR[InfoListDirectorHeader,$LOCALIZE[32098] ,]</param>
+				<param name="headinglabel">$VAR[InfoListDirectorHeader,$LOCALIZE[31220] ,]</param>
 				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 				<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
 				<param name="content">$VAR[VideoInfoFromDirector]</param>
@@ -1159,7 +1159,7 @@
 			<include content="VideoInfoPosterWidget" condition="Skin.HasSetting(Enable.TMDbHelper) | Skin.HasSetting(Enable.EmbuaryHelper)">
 				<param name="id">91005</param>
 				<param name="labelid">910051</param>
-				<param name="headinglabel">$LOCALIZE[32105]</param>
+				<param name="headinglabel">$LOCALIZE[31227]</param>
 				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 				<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
 				<param name="content">$VAR[VideoInfoSimilar]</param>
@@ -1179,7 +1179,7 @@
 			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.Genre) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre))">
 				<param name="id">91007</param>
 				<param name="labelid">910071</param>
-				<param name="headinglabel">$VAR[InfoListGenreHeader,$LOCALIZE[32101] ,]</param>
+				<param name="headinglabel">$VAR[InfoListGenreHeader,$LOCALIZE[31223] ,]</param>
 				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 				<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
 				<param name="content">$VAR[VideoInfoFromGenre]</param>
@@ -1189,7 +1189,7 @@
 			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.Studio) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Studio.1.TMDb_ID))">
 				<param name="id">91008</param>
 				<param name="labelid">910081</param>
-				<param name="headinglabel">$VAR[InfoListStudioHeader,$LOCALIZE[32100] ,]</param>
+				<param name="headinglabel">$VAR[InfoListStudioHeader,$LOCALIZE[31222] ,]</param>
 				<param name="minnumitems">0</param>
 				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 				<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
@@ -1200,7 +1200,7 @@
 			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.Year) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Year))">
 				<param name="id">91009</param>
 				<param name="labelid">910091</param>
-				<param name="headinglabel">$VAR[InfoListYearHeader,$LOCALIZE[32100] ,]</param>
+				<param name="headinglabel">$VAR[InfoListYearHeader,$LOCALIZE[31222] ,]</param>
 				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 				<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
 				<param name="content">$VAR[VideoInfoFromYear]</param>
@@ -1210,7 +1210,7 @@
 			<include content="VideoInfoPosterWidget" condition="String.IsEqual(ListItem.DBType,movie)">
 				<param name="id">910010</param>
 				<param name="labelid">9100101</param>
-				<param name="headinglabel">$LOCALIZE[32103]</param>
+				<param name="headinglabel">$LOCALIZE[31225]</param>
 				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
 				<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
 				<param name="content">$VAR[VideoInfoCastFeatured]</param>
@@ -1220,7 +1220,7 @@
 			<include content="VideoInfoPosterWidget" condition="Skin.HasSetting(Enable.TMDbHelper)">
 				<param name="id">910016</param>
 				<param name="labelid">9100161</param>
-				<param name="headinglabel">$LOCALIZE[32130]</param>
+				<param name="headinglabel">$LOCALIZE[31252]</param>
 				<param name="belowdoublelabelvisibility">false</param>
 				<param name="belowlabelvisibility">true</param>
 				<param name="onclickinclude">InfoList_OnClickPosters</param>
@@ -1233,7 +1233,7 @@
 			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
 				<param name="id">910011</param>
 				<param name="labelid">9100111</param>
-				<param name="headinglabel">$LOCALIZE[32087]</param>
+				<param name="headinglabel">$LOCALIZE[31209]</param>
 				<param name="belowdoublelabel2">[I]$INFO[ListItem.Property(Character)][/I]</param>
 				<param name="content">$VAR[InfoCastList01]</param>
 				<param name="sortby">year</param>
@@ -1243,7 +1243,7 @@
 			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
 				<param name="id">910012</param>
 				<param name="labelid">9100121</param>
-				<param name="headinglabel">$LOCALIZE[32088]</param>
+				<param name="headinglabel">$LOCALIZE[31210]</param>
 				<param name="belowdoublelabel2">[I]$INFO[ListItem.Property(Character)][/I]</param>
 				<param name="content">$VAR[InfoCastList02]</param>
 				<param name="sortby">year</param>
@@ -1253,7 +1253,7 @@
 			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
 				<param name="id">910013</param>
 				<param name="labelid">9100131</param>
-				<param name="headinglabel">$LOCALIZE[32089]</param>
+				<param name="headinglabel">$LOCALIZE[31211]</param>
 				<param name="belowdoublelabel2">[I]$INFO[ListItem.Property(Job)][/I]</param>
 				<param name="content">$VAR[InfoCastList03]</param>
 				<param name="sortby">year</param>
@@ -1263,7 +1263,7 @@
 			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
 				<param name="id">910014</param>
 				<param name="labelid">9100141</param>
-				<param name="headinglabel">$LOCALIZE[32090]</param>
+				<param name="headinglabel">$LOCALIZE[31212]</param>
 				<param name="belowdoublelabel2">[I]$INFO[ListItem.Property(Job)][/I]</param>
 				<param name="content">$VAR[InfoCastList04]</param>
 				<param name="sortby">year</param>

@@ -257,7 +257,7 @@
 					<align>left</align>
 					<textoffsetx>10</textoffsetx>
 					<include>9000ViewButtons</include>
-					<label>$LOCALIZE[32300]</label>
+					<label>$LOCALIZE[31698]</label>
 					<visible>Player.HasAudio</visible>
 				</control>
 				<include content="SidebladeNowPlaying">

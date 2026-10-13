@@ -162,7 +162,7 @@
 				<width min="230">auto</width>
 				<font>Details</font>
 				<align>center</align>
-				<label>$LOCALIZE[32050]</label>
+				<label>$LOCALIZE[31171]</label>
 				<onclick>Action(close)</onclick>
 				<onclick>RunScript(plugin.video.iptv.recorder,$ESCINFO[ListItem.ChannelName],$ESCINFO[ListItem.Title],$ESCINFO[ListItem.Date],$ESCINFO[ListItem.Duration],$ESCINFO[ListItem.Plot])</onclick>
 				<visible>System.AddonIsEnabled(plugin.video.iptv.recorder) + Window.IsActive(PVRGuideInfo)</visible>
@@ -172,7 +172,7 @@
 				<width min="230">auto</width>
 				<font>Details</font>
 				<align>center</align>
-				<label>$LOCALIZE[32051]</label>
+				<label>$LOCALIZE[31172]</label>
 				<onclick>Action(close)</onclick>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.iptv.recorder/recordings&quot;,return)</onclick>
 				<visible>System.AddonIsEnabled(plugin.video.iptv.recorder) + Window.IsActive(PVRGuideInfo)</visible>

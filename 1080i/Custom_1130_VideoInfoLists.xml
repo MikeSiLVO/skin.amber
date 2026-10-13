@@ -28,7 +28,7 @@
 					<posy>261</posy>
 					<width>690</width>
 					<height>52</height>
-					<label>$LOCALIZE[32104]</label>
+					<label>$LOCALIZE[31226]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -62,7 +62,7 @@
 					<selected>!Skin.HasSetting(DisableInfoListSeasons)</selected>
 				</control>
 				<control type="radiobutton" id="901013">
-					<label>$LOCALIZE[32105]</label>
+					<label>$LOCALIZE[31227]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(DisableInfoListSimilar)</onclick>
 					<selected>!Skin.HasSetting(DisableInfoListSimilar)</selected>
@@ -100,21 +100,21 @@
 					<selected>!Skin.HasSetting(DisableInfoListYear)</selected>
 				</control>
 				<control type="radiobutton" id="901019">
-					<label>$LOCALIZE[32106]</label>
+					<label>$LOCALIZE[31228]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(DisableInfoListCastFeature)</onclick>
 					<selected>!Skin.HasSetting(DisableInfoListCastFeature)</selected>
 					<visible>!Skin.HasSetting(DisableInfoListCast)</visible>
 				</control>
 				<control type="radiobutton" id="9010110">
-					<label>$LOCALIZE[32099]</label>
+					<label>$LOCALIZE[31221]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(DisableInfoListCrew)</onclick>
 					<selected>!Skin.HasSetting(DisableInfoListCrew)</selected>
 					<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(Enable.TMDbHelper)</visible>
 				</control>
 				<control type="radiobutton" id="9010111">
-					<label>$LOCALIZE[32130]</label>
+					<label>$LOCALIZE[31252]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(DisableInfoListPosters)</onclick>
 					<selected>!Skin.HasSetting(DisableInfoListPosters)</selected>

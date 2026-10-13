@@ -171,7 +171,7 @@
 				<width min="190">auto</width>
 				<align>center</align>
 				<font>Details</font>
-				<label>$LOCALIZE[32135]</label>
+				<label>$LOCALIZE[31257]</label>
 				<onclick>SetProperty(DoInfoExtrasMusic,True,Home)</onclick>
 				<onclick>SetProperty(InfoExtrasDBID,$INFO[ListItem.DBID],Home)</onclick>
 				<onclick>SetProperty(InfoExtrasDBType,$INFO[ListItem.DBType],Home)</onclick>

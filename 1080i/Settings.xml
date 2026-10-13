@@ -222,7 +222,7 @@
 						<onclick>activatewindow(SystemSettings)</onclick>
 					</item>
 					<item id="10" description="Games">
-						<label>$LOCALIZE[32003]</label>
+						<label>$LOCALIZE[31044]</label>
 						<onclick>activatewindow(GameSettings)</onclick>
 					</item>
 				</content>
