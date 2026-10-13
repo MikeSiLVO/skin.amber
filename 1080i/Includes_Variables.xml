@@ -1113,7 +1113,7 @@
 		<value condition="Player.Paused">$LOCALIZE[112]</value>
 		<value condition="Player.Forwarding">[COLOR $VAR[HighlightColor]]$VAR[ForwardRewindLabel][/COLOR] $LOCALIZE[31353]</value>
 		<value condition="Player.Rewinding">[COLOR $VAR[HighlightColor]]$VAR[ForwardRewindLabel][/COLOR] $LOCALIZE[31354]</value>
-		<value condition="Player.IsTempo">[COLOR $VAR[HighlightColor]]$LOCALIZE[31142]: [/COLOR]$INFO[Player.PlaySpeed]</value>
+		<value condition="Player.IsTempo">[COLOR $VAR[HighlightColor]]$LOCALIZE[224]: [/COLOR]$INFO[Player.PlaySpeed]</value>
 	</variable>
 
 	<variable name="ForwardRewindLabel">
