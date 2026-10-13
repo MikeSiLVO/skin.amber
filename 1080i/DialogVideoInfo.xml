@@ -313,7 +313,7 @@
 					<width>60</width>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$VAR[RottenFreshLabelVar]%</label>
+					<label>$MAP[RatingPercentMap, ListItem.Rating(tomatometerallcritics)]%</label>
 				</control>
 			</control>
 			<control type="grouplist" description="RT Audience rating">
@@ -333,7 +333,7 @@
 					<width>60</width>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$VAR[RottenFreshAudienceLabelVar]%</label>
+					<label>$MAP[RatingPercentMap, ListItem.Rating(tomatometerallaudience)]%</label>
 				</control>
 			</control>
 			<control type="grouplist" description="Metacritic rating">
@@ -353,7 +353,7 @@
 					<width>50</width>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$VAR[MetacriticLabelVar]</label>
+					<label>$MAP[RatingPercentMap, ListItem.Rating(metacritic)]</label>
 				</control>
 			</control>
 			<control type="grouplist" description="TMDB rating">
@@ -373,7 +373,7 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$VAR[TheMovieDBLabelVar]%</label>
+					<label>$MAP[RatingPercentMap, ListItem.Rating(themoviedb)]%</label>
 				</control>
 			</control>
 			<control type="grouplist" description="TVDB rating and votes">

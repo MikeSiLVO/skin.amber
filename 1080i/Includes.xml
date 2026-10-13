@@ -18,6 +18,7 @@
 	<include file="Includes_CustomSelect.xml" />
 	<include file="Includes_DialogSelect.xml" />
 	<include file="Includes_Info.xml" />
+	<include file="Includes_Maps.xml" />
 	<include file="Includes_TVGuide.xml" />
 	<include file="Includes_Backgrounds.xml" />
 	<include file="Includes_FullScreen.xml" />
@@ -288,7 +289,7 @@
 					<width>60</width>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$VAR[RightListRottenFreshLabelVar]%</label>
+					<label>$MAP[RatingPercentMap, Container(4460).ListItem.Rating(tomatometerallcritics)]%</label>
 				</control>
 			</control>
 			<control type="grouplist" description="RT Audience rating">
@@ -308,7 +309,7 @@
 					<width>60</width>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$VAR[RightListRottenFreshAudienceLabelVar]%</label>
+					<label>$MAP[RatingPercentMap, Container(4460).ListItem.Rating(tomatometerallaudience)]%</label>
 				</control>
 			</control>
 			<control type="grouplist" description="Metacritic rating">
@@ -328,7 +329,7 @@
 					<width>50</width>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$VAR[RightListMetacriticLabelVar]</label>
+					<label>$MAP[RatingPercentMap, Container(4460).ListItem.Rating(metacritic)]</label>
 				</control>
 			</control>
 			<control type="grouplist" description="TMDB rating">
@@ -348,7 +349,7 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$VAR[RightListTheMovieDBLabelVar]%</label>
+					<label>$MAP[RatingPercentMap, Container(4460).ListItem.Rating(themoviedb)]%</label>
 				</control>
 			</control>
 			<control type="grouplist" description="TVDB rating and votes">
