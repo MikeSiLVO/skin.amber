@@ -69,10 +69,6 @@
 		<value condition="VideoPlayer.Content(episodes) + String.IsEmpty(VideoPlayer.Premiered)">$INFO[VideoPlayer.TVShowtitle][COLOR $VAR[HighlightColor]]  •  [/COLOR]S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode]</value>
 	</variable>
 
-	<expression name="showPosterOSD">String.IsEqual(Skin.String(OSDExtraArt),poster) | String.IsEqual(Skin.String(OSDExtraArt),epgicon) | [![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + [[String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(clearart)) + String.IsEmpty(Player.Art(tvshow.clearart)) + String.IsEmpty(Player.Art(artist.clearart)) + String.IsEmpty(Player.Art(albumartist.clearart)) + String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(albumartist.clearlogo))] | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(discart)) + String.IsEmpty(Player.Art(album.discart)) + String.IsEmpty(Player.Art(clearart)) + String.IsEmpty(Player.Art(tvshow.clearart)) + String.IsEmpty(Player.Art(artist.clearart)) + String.IsEmpty(Player.Art(albumartist.clearart)) + String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(albumartist.clearlogo))] | [String.IsEqual(Skin.String(OSDExtraArt),logo) + String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(albumartist.clearlogo))] | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(tvshow.characterart)) + String.IsEmpty(Player.Art(tvshow.clearart)) + String.IsEmpty(Player.Art(clearart)) + String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(tvshow.clearlogo))]]]</expression>
-
-	<expression name="showCompactSeekBar">Skin.HasSetting(UseCompactOSD) + [Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</expression>
-
 	<include name="TopSeekBar">
 		<posy>0</posy>
 	</include>

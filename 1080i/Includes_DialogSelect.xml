@@ -32,8 +32,6 @@
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 
-	<expression name="DialogSelectStreams">Window.IsVisible(dialogselectvideo) | Window.IsVisible(dialogselectaudio) | Window.IsVisible(dialogselectsubtitle)</expression>
-
 	<variable name="DialogSelectMainImage">
 		<value condition="$EXP[DialogSelectStreams] + !String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
 		<value condition="$EXP[DialogSelectStreams] + !String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>

@@ -43,20 +43,6 @@
 		<value condition="String.IsEmpty(ListItem.Art(discart))">$VAR[Square]</value>
 	</variable>
 
-	<expression name="56_FanartViewInfo">[[container.content(albums) | container.content(artists)] + Skin.HasSetting(56_Music_Info)] | [container.content(episodes) + Skin.HasSetting(56_Episodes_Info)] | [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Info)]</expression>
-
-	<expression name="56_FanartViewGallery">[[container.content(albums) | container.content(artists)] + Skin.HasSetting(56_Music_Gallery)] | [container.content(episodes) + Skin.HasSetting(56_Episodes_Gallery)] | [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Gallery)]</expression>
-
-	<expression name="56_FanartIsAllItems">[String.IsEqual(ListItem.Label,$LOCALIZE[15102]) | String.IsEqual(ListItem.Label,$LOCALIZE[15103]) | String.IsEqual(ListItem.Label,$LOCALIZE[15104]) | String.IsEqual(ListItem.Label,$LOCALIZE[15105]) | String.IsEqual(ListItem.Label,$LOCALIZE[20366])]</expression>
-
-	<expression name="ShowExtraFanartOnInfo">[Container.Content(episodes) + Skin.HasSetting(56_Episodes_Info_ExtraFanart)] | [[Container.Content(albums) | Container.Content(artists)] + Skin.HasSetting(56_Music_Info_ExtraFanart)] | [[Container.Content(musicvideos) | Container.Content(movies) | container.content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(56_Posters_Info_ExtraFanart)]</expression>
-
-	<expression name="56_FanartViewNetflix">[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix)] | [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix)] | [[container.content(artists) | container.content(albums)] + Skin.HasSetting(56_Music_Netflix)]]</expression>
-
-	<expression name="56_NetflixShowTitleInFooter">[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_TitleInFooter)] | [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix_TitleInFooter)] | [[container.content(artists) | container.content(albums)] + Skin.HasSetting(56_Music_Netflix_TitleInFooter)]]</expression>
-
-	<expression name="56_NetflixTrailerWindow">Control.IsVisible(56) + [[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_TrailerWindow)] | [[container.content(movies) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix_TrailerWindow)]]</expression>
-
 
 	<!-- <include name="FocusSquare">
 		<focusposition>2</focusposition>

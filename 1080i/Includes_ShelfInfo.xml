@@ -236,8 +236,6 @@
 		<value>$INFO[Container.ListItem.Plot]</value>
 	</variable>
 
-	<expression name="showTextTitle">[String.IsEmpty(Container.ListItem.Art(clearlogo)) + String.IsEmpty(Container.ListItem.Art(tvshow.clearlogo))] | !Skin.HasSetting(VerticalHome)</expression>
-
 	<!-- Positioning for widget container when shelves info is enabled in horizontal menu -->
 	<include name="ShelfInfoWidgetPositioningHorz">
 		<top>534</top>
