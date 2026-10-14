@@ -626,7 +626,7 @@
 		</definition>
 	</include>
 
-<include name="DialogSelectStandard">
+	<include name="DialogSelectStandard">
 		<include>DimBG</include>
 		<control type="group">
 			<posx>172</posx>
