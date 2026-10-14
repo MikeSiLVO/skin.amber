@@ -124,7 +124,7 @@
 				<viewtype label="$LOCALIZE[31159]">list</viewtype>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
 				<orientation>horizontal</orientation>
-				<visible>[$EXP[Exp_View_58] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.logoview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+				<visible>[$EXP[ShortcutView_58] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.logoview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 				<itemlayout width="495" height="450">
 					<control type="group">
 						<animation effect="fade" start="100" end="0" time="600" condition="!Skin.HasSetting(58_Logo_SingleLogo) + Skin.HasSetting(58_Logo_FadeRest) + System.IdleTime(5)">Conditional</animation>

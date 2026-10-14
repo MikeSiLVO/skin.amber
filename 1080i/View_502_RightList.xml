@@ -546,7 +546,7 @@
 		<animation effect="slide" end="-40,0" time="240" tween="cubic" easing="inout" condition="Control.HasFocus(615)">Conditional</animation>
 		<animation effect="slide" end="-40,-20" time="240" tween="cubic" easing="inout" condition="Container.Content(episodes)">Conditional</animation>
 		<animation effect="slide" end="0,-20" time="240" tween="cubic" easing="inout" condition="Skin.HasSetting(502_UseLogo)">Conditional</animation>
-		<visible>[$EXP[Exp_View_502] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.rightlistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+		<visible>[$EXP[ShortcutView_502] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.rightlistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 		<!-- <include condition="Window.IsActive(music)">RightListMusicLayouts</include> -->
 		<include condition="!Window.IsActive(music)">RightListVideoLayouts</include>
 	</include>

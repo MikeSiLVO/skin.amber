@@ -34,7 +34,7 @@
 				<ondown>55</ondown>
 				<preloaditems>4</preloaditems>
 				<pagecontrol>65</pagecontrol>
-				<visible>[$EXP[Exp_View_55] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.bigpanelview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+				<visible>[$EXP[ShortcutView_55] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.bigpanelview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 
 				<include content="BannerLayout">
 					<param name="viewid">55</param>

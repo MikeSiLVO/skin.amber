@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views>
+	<view id="50" label="$LOCALIZE[535]" icon="special://skin/extras/viewtypes/list.png" />
+	<view id="54" label="$LOCALIZE[31962]" icon="special://skin/extras/viewtypes/lowlist.png" />
+	<view id="501" label="$LOCALIZE[31606]" icon="special://skin/extras/viewtypes/talllist.png" />
+	<view id="52" label="$LOCALIZE[31960]" icon="special://skin/extras/viewtypes/biglist.png" />
+	<view id="502" label="$LOCALIZE[31648]" icon="special://skin/extras/viewtypes/rightlist.png" />
+	<view id="51" label="$LOCALIZE[31963]" icon="special://skin/extras/viewtypes/panel.png" />
+	<view id="511" label="$LOCALIZE[31607]" icon="special://skin/extras/viewtypes/panel2.png" />
+	<view id="55" label="$LOCALIZE[31958]" icon="special://skin/extras/viewtypes/bigpanel.png" />
+	<view id="551" label="$LOCALIZE[31608]" icon="special://skin/extras/viewtypes/bigpanel2.png" />
+	<view id="53" label="$LOCALIZE[536]" icon="special://skin/extras/viewtypes/icons.png" />
+	<view id="56" label="$LOCALIZE[20445]" icon="special://skin/extras/viewtypes/fanart.png" />
+	<view id="57" label="$LOCALIZE[31632]" icon="special://skin/extras/viewtypes/simplelist.png" />
+	<view id="58" label="$LOCALIZE[31159]" icon="special://skin/extras/viewtypes/logo.png" />
+	<view id="600" label="$LOCALIZE[31157]" icon="special://skin/extras/viewtypes/triple.png" />
+
+	<rules>
+		<content name="addons" label="$LOCALIZE[24001]" library="50">
+			<visible>Container.Content(addons)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="albums" label="$LOCALIZE[132]" library="50">
+			<visible>Container.Content(albums)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="images" label="$LOCALIZE[1]" library="50">
+			<visible>Container.Content(images)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="musicvideos" label="$LOCALIZE[20389]" library="50">
+			<visible>Container.Content(musicvideos)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="actors" label="$LOCALIZE[344]" library="50">
+			<visible>Container.Content(actors)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="seasons" label="$LOCALIZE[33054]" library="50">
+			<visible>Container.Content(seasons)</visible>
+			<views>50, 54, 501, 52, 502, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="tags" label="$LOCALIZE[20459]" library="50">
+			<visible>Container.Content(tags)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="countries" label="$LOCALIZE[20451]" library="50">
+			<visible>Container.Content(countries)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="genres" label="$LOCALIZE[135]" library="50">
+			<visible>Container.Content(genres)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="studios" label="$LOCALIZE[20388]" library="50">
+			<visible>Container.Content(studios)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="years" label="$LOCALIZE[652]" library="50">
+			<visible>Container.Content(years)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="directors" label="$LOCALIZE[20348]" library="50">
+			<visible>Container.Content(directors)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="artists" label="$LOCALIZE[133]" library="50">
+			<visible>Container.Content(artists)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57, 58, 600</views>
+		</content>
+		<content name="videos" label="$LOCALIZE[3]" library="50">
+			<visible>Container.Content(videos)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="sets" label="$LOCALIZE[20434]" library="50">
+			<visible>Container.Content(sets)</visible>
+			<views>50, 54, 501, 52, 502, 51, 511, 55, 551, 53, 56, 57, 58</views>
+		</content>
+		<content name="movies" label="$LOCALIZE[342]" library="50">
+			<visible>Container.Content(movies)</visible>
+			<views>50, 54, 501, 52, 502, 51, 511, 55, 551, 53, 56, 57, 58</views>
+		</content>
+		<content name="videoversions" label="$LOCALIZE[40000]" library="50">
+			<visible>Container.Content(videoversions)</visible>
+			<views>50, 54, 501, 52, 502, 51, 511, 55, 551, 53, 56, 57, 58</views>
+		</content>
+		<content name="videoextras" label="$LOCALIZE[40211]" library="50">
+			<visible>Container.Content(videoextras)</visible>
+			<views>50, 54, 501, 52, 502, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="videoassets" label="$LOCALIZE[40209]" library="50">
+			<visible>Container.Content(videoassets)</visible>
+			<views>50, 54, 501, 52, 502, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="tvshows" label="$LOCALIZE[20343]" library="50">
+			<visible>Container.Content(tvshows)</visible>
+			<views>50, 54, 501, 52, 502, 51, 511, 55, 551, 53, 56, 57, 58, 600</views>
+		</content>
+		<content name="episodes" label="$LOCALIZE[20360]" library="50">
+			<visible>Container.Content(episodes)</visible>
+			<views>50, 54, 501, 52, 502, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="songs" label="$LOCALIZE[134]" library="50">
+			<visible>Container.Content(songs)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="files" label="$LOCALIZE[744]" library="50">
+			<visible>Container.Content(files)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="playlists" label="$LOCALIZE[136]" library="50">
+			<visible>Container.Content(playlists)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="pvr-channels" label="$LOCALIZE[19019]" library="50">
+			<visible>Window.IsVisible(MyPVRChannels.xml)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53</views>
+		</content>
+		<content name="pvr-timers" label="$LOCALIZE[19040]" library="50">
+			<visible>Window.IsVisible(MyPVRTimers.xml)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53</views>
+		</content>
+		<content name="pvr-search" label="$LOCALIZE[137]" library="50">
+			<visible>Window.IsVisible(MyPVRSearch.xml)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53</views>
+		</content>
+		<content name="pvr-recordings" label="$LOCALIZE[19017]" library="50">
+			<visible>Window.IsVisible(MyPVRRecordings.xml)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53</views>
+		</content>
+		<content name="favourites" label="$LOCALIZE[1036]" library="50">
+			<visible>Container.Content(favourites)</visible>
+			<views>50, 54, 52, 501, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+		<content name="none" label="$LOCALIZE[29921]" library="50">
+			<visible>Container.Content() + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRTimers.xml) + !Window.IsVisible(MyPVRSearch.xml) + !Window.IsVisible(MyPVRRecordings.xml)</visible>
+			<views>50, 54, 501, 52, 51, 511, 55, 551, 53, 56, 57</views>
+		</content>
+	</rules>
+</views>

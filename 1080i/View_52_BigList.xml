@@ -39,7 +39,7 @@
 					<ondown>52</ondown>
 					<preloaditems>4</preloaditems>
 					<include condition="Skin.HasSetting(ListCenterFocus)">ListCenterFocusParams</include>
-					<visible>[$EXP[Exp_View_52] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.biglistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+					<visible>[$EXP[ShortcutView_52] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.biglistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 
 					<itemlayout height="104" width="1070" condition="[$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + !$EXP[BigListPanelIsSwapped]">
 						<include content="52_layout">

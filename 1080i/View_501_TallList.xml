@@ -42,7 +42,7 @@
 					<ondown>501</ondown>
 					<preloaditems>4</preloaditems>
 					<include condition="Skin.HasSetting(ListCenterFocus)">ListCenterFocusParams</include>
-					<visible>[$EXP[Exp_View_501] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.talllistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+					<visible>[$EXP[ShortcutView_501] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.talllistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 					<include condition="!Skin.HasSetting(Show.MoreItems.List)" content="TallList_Layout">
 						<param name="id">501</param>
 						<param name="ListLabelFont">font16</param>

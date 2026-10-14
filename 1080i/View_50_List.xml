@@ -25,7 +25,7 @@
 				<include>ContentFade</include>
 
 				<control type="$PARAM[ListType]" id="50">
-					<visible>[$EXP[Exp_View_50] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.listview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+					<visible>[$EXP[ShortcutView_50] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.listview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 					<viewtype label="$LOCALIZE[535]">list</viewtype>
 					<posx>540</posx>
 					<posy>406</posy>

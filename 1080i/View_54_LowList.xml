@@ -38,7 +38,7 @@
 
 				<control type="$PARAM[ListType]" id="54">
 					<viewtype label="$LOCALIZE[31962]">list</viewtype>
-					<visible>[$EXP[Exp_View_54] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.lowlistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+					<visible>[$EXP[ShortcutView_54] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.lowlistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 					<posx>340</posx>
 					<posy>633</posy>
 					<width>1540</width>

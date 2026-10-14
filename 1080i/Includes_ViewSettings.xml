@@ -1188,7 +1188,7 @@
 			<label2>$INFO[Container.Viewmode]</label2>
 			<enable>Integer.IsGreater(Container(9600).NumItems,1)</enable>
 			<onclick condition="!Skin.HasSetting(Enable.NewViewSelector)">Control.SetFocus(9600)</onclick>
-			<onclick condition="Skin.HasSetting(Enable.NewViewSelector)">Runscript(script.skinvariables,action=buildviews,contentid=$VAR[ViewModeSwitch],pluginname=$INFO[Container.PluginName])</onclick>
+			<onclick condition="Skin.HasSetting(Enable.NewViewSelector)">RunScript(script.skinshortcuts,type=viewselect,content=$VAR[ViewModeSwitch],plugin=$INFO[Container.PluginName])</onclick>
 		</control>
 
 		<include content="IconViewSwitches">
@@ -1332,7 +1332,7 @@
 			<label2>$INFO[Container.Viewmode]</label2>
 			<enable>Integer.IsGreater(Container(9600).NumItems,1)</enable>
 			<onclick condition="!Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">Control.SetFocus(9600)</onclick>
-			<onclick condition="Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">Runscript(script.skinvariables,action=buildviews,contentid=$VAR[ViewModeSwitch],pluginname=$INFO[Container.PluginName])</onclick>
+			<onclick condition="Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">RunScript(script.skinshortcuts,type=viewselect,content=$VAR[ViewModeSwitch],plugin=$INFO[Container.PluginName])</onclick>
 			<visible>![Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting(UseMultiViewsForChannels)]</visible>
 		</control>
 

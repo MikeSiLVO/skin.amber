@@ -44,7 +44,7 @@
 				<ondown>57</ondown>
 				<preloaditems>4</preloaditems>
 				<pagecontrol>657</pagecontrol>
-				<visible>[$EXP[Exp_View_57] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.simplelistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+				<visible>[$EXP[ShortcutView_57] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.simplelistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 
 				<include content="SimpleList_Layout" condition="!Skin.HasSetting(57_SingleColumn)">
 					<param name="ListLabelFont">font16</param>

@@ -663,22 +663,21 @@
 					<ondown>9104</ondown>
 					<include>SettingsListCommons</include>
 					<content>
-						<item id="1" description="Use New View Selector - SkinVariables present">
-							<visible>Skin.HasSetting(Enable.NewViewSelector) + System.HasAddon(script.skinvariables)</visible>
+						<item id="1" description="Use New View Selector - on">
+							<visible>Skin.HasSetting(Enable.NewViewSelector)</visible>
 							<label>[B]$LOCALIZE[31671][/B]</label>
 							<label2>$LOCALIZE[107]</label2>
 							<onclick>Skin.Reset(Enable.NewViewSelector)</onclick>
 						</item>
-						<item id="1" description="Use New View Selector - SkinVariables not present">
-							<visible>!Skin.HasSetting(Enable.NewViewSelector) | !System.HasAddon(script.skinvariables)</visible>
+						<item id="1" description="Use New View Selector - off">
+							<visible>!Skin.HasSetting(Enable.NewViewSelector)</visible>
 							<label>[B]$LOCALIZE[31671][/B]</label>
 							<label2>$LOCALIZE[106]</label2>
-							<onclick condition="!System.HasAddon(script.skinvariables)">InstallAddon(script.skinvariables)</onclick>
-							<onclick condition="System.HasAddon(script.skinvariables) + !Skin.HasSetting(Enable.NewViewSelector)">Skin.SetBool(Enable.NewViewSelector)</onclick>
+							<onclick>Skin.SetBool(Enable.NewViewSelector)</onclick>
 						</item>
 						<item id="2" description="Configure Media Views">
 							<label>      $LOCALIZE[31674]</label>
-							<onclick>RunScript(script.skinvariables,action=buildviews,configure)</onclick>
+							<onclick>RunScript(script.skinshortcuts,type=viewselect)</onclick>
 							<visible>Skin.HasSetting(Enable.NewViewSelector)</visible>
 						</item>
 						<include content="CustomDialogSettingItem">
@@ -1725,13 +1724,6 @@
 						<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + !System.AddonIsEnabled(plugin.video.themoviedb.helper)">EnableAddon(plugin.video.themoviedb.helper)</onclick>
 						<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
 						<selected>System.AddonIsEnabled(plugin.video.themoviedb.helper)</selected>
-					</control>
-					<control type="radiobutton" id="911225">
-						<label>script.skinvariables</label>
-						<label2>$INFO[System.AddonVersion(script.skinvariables)]             </label2>
-						<onclick condition="System.HasAddon(script.skinvariables) + !System.AddonIsEnabled(script.skinvariables)">EnableAddon(script.skinvariables)</onclick>
-						<onclick condition="!System.HasAddon(script.skinvariables)">InstallAddon(script.skinvariables)</onclick>
-						<selected>System.AddonIsEnabled(script.skinvariables)</selected>
 					</control>
 					<control type="radiobutton" id="911226">
 						<label>script.playrandomvideos</label>

@@ -212,7 +212,7 @@
 					<focusposition>1</focusposition>
 					<preloaditems>2</preloaditems>
 					<pagecontrol>6000</pagecontrol>
-					<visible>[$EXP[Exp_View_600] + Skin.HasSetting(Enable.NewViewSelector)] | [[!Skin.HasSetting(hide.tripleview) + [Container.Content(tvshows) | Container.Content(artists)]] + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+					<visible>[$EXP[ShortcutView_600] + Skin.HasSetting(Enable.NewViewSelector)] | [[!Skin.HasSetting(hide.tripleview) + [Container.Content(tvshows) | Container.Content(artists)]] + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 					<itemlayout height="255">
 						<control type="image" description="BG">
 							<left>-80</left>

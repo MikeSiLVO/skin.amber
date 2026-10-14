@@ -1616,7 +1616,7 @@
 					<include>ContentFade</include>
 					<control type="fixedlist" id="56">
 						<animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="!String.IsEmpty(Window.Property(gallery))">Conditional</animation>
-						<visible>[$EXP[Exp_View_56] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.fanartview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+						<visible>[$EXP[ShortcutView_56] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.fanartview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 						<posy>$PARAM[listposy]</posy>
 						<width>1920</width>
 						<height>471</height>

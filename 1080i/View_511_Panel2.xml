@@ -39,7 +39,7 @@
 				<preloaditems>12</preloaditems>
 				<pagecontrol>611</pagecontrol>
 				<scrolltime>400</scrolltime>
-				<visible>[$EXP[Exp_View_511] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.panel2view) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
+				<visible>[$EXP[ShortcutView_511] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.panel2view) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 
 				<include content="BannerLayout">
 					<param name="viewid">511</param>
