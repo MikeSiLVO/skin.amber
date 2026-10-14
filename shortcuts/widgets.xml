@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+	<group name="defaultshelves" label="$LOCALIZE[31420]" icon="DefaultFolder.png">
+		<group name="movies" label="$LOCALIZE[342]" icon="DefaultMovies.png">
+			<widget name="NewMovies" label="$LOCALIZE[31422]" type="movies" target="video" icon="DefaultRecentlyAddedMovies.png" visible="Library.HasContent(movies)">
+				<path>$VAR[RecentlyAddedMoviesVar]</path>
+			</widget>
+			<widget name="RecentMovies" label="$LOCALIZE[31423]" type="movies" target="video" icon="DefaultRecentlyPlayedMovies.png" visible="Library.HasContent(movies)">
+				<path>special://skin/extras/playlists/movies_recentlyplayed.xsp</path>
+			</widget>
+			<widget name="RandomMovies" label="$LOCALIZE[31424]" type="movies" target="video" icon="DefaultRandomMovies.png" visible="Library.HasContent(movies)">
+				<path>special://skin/extras/playlists/movies_random.xsp</path>
+			</widget>
+			<widget name="InProgressMovies" label="$LOCALIZE[31425]" type="movies" target="video" icon="DefaultInProgressMovies.png" visible="Library.HasContent(movies)">
+				<path>special://skin/extras/playlists/movies_inprogress.xsp</path>
+			</widget>
+			<widget name="TopRatedMovies" label="$LOCALIZE[31427]" type="movies" target="video" icon="DefaultTopRatedMovies.png" visible="Library.HasContent(movies)">
+				<path>special://skin/extras/playlists/movies_toprated.xsp</path>
+			</widget>
+			<widget name="Top250Movies" label="$LOCALIZE[31431]" type="movies" target="video" icon="DefaultTop250Movies.png" visible="Library.HasContent(movies)">
+				<path>special://skin/extras/playlists/movies_top250.xsp</path>
+			</widget>
+			<widget name="UnwatchedMovies" label="$LOCALIZE[31426]" type="movies" target="video" icon="DefaultUnwatchedMovies.png" visible="Library.HasContent(movies)">
+				<path>special://skin/extras/playlists/movies_unwatched.xsp</path>
+			</widget>
+			<widget name="MovieNodes" label="$LOCALIZE[31430]" type="movies" target="video" icon="DefaultMovies.png" visible="Library.HasContent(movies)">
+				<path>library://video/movies/</path>
+			</widget>
+			<widget name="MovieGenres" label="$LOCALIZE[31428]" type="movies" target="video" icon="DefaultGenre.png" visible="Library.HasContent(movies)">
+				<path>library://video/movies/genres.xml</path>
+			</widget>
+			<widget name="MovieSets" label="$LOCALIZE[31429]" type="movies" target="video" icon="DefaultSets.png" visible="Library.HasContent(movies)">
+				<path>videodb://movies/sets/</path>
+			</widget>
+			<widget name="MovieDecades" label="$LOCALIZE[31649]" type="movies" target="video" icon="DefaultMovies.png" visible="Library.HasContent(movies)">
+				<path>special://skin/extras/playlists/decades/</path>
+			</widget>
+		</group>
+		<group name="tvshows" label="$LOCALIZE[31432]" icon="DefaultTVShows.png">
+			<widget name="NewTvShows" label="$LOCALIZE[31433]" type="tvshows" target="video" icon="DefaultRecentlyAddedEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>$VAR[RecentlyAddedTVShowsVar]</path>
+			</widget>
+			<widget name="RecentTvShows" label="$LOCALIZE[31434]" type="tvshows" target="video" icon="DefaultRecentlyPlayedEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>$VAR[RecentlyPlayedTVShowsVar]</path>
+			</widget>
+			<widget name="RandomTvShows" label="$LOCALIZE[31435]" type="tvshows" target="video" icon="DefaultRandomEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>special://skin/extras/playlists/tvshows_random.xsp</path>
+			</widget>
+			<widget name="InProgressTVShows" label="$LOCALIZE[31436]" type="tvshows" target="video" icon="DefaultInProgressEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>videodb://inprogresstvshows</path>
+			</widget>
+			<widget name="TopRatedTvShows" label="$LOCALIZE[31438]" type="tvshows" target="video" icon="DefaultTopRatedEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>special://skin/extras/playlists/tvshows_toprated.xsp</path>
+			</widget>
+			<widget name="UnwatchedTVShows" label="$LOCALIZE[31493]" type="tvshows" target="video" icon="DefaultUnwatchedEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>special://skin/extras/playlists/tvshows_unwatched.xsp</path>
+			</widget>
+			<widget name="TvShowNodes" label="$LOCALIZE[31440]" type="tvshows" target="video" icon="DefaultTVShows.png" visible="Library.HasContent(tvshows)">
+				<path>library://video/tvshows/</path>
+			</widget>
+			<widget name="TvShowGenres" label="$LOCALIZE[31439]" type="tvshows" target="video" icon="DefaultGenre.png" visible="Library.HasContent(tvshows)">
+				<path>library://video/tvshows/genres.xml</path>
+			</widget>
+		</group>
+		<group name="episodes" label="$LOCALIZE[20360]" icon="DefaultTVShows.png">
+			<widget name="NewEpisodes" label="$LOCALIZE[31441]" type="episodes" target="video" icon="DefaultRecentlyAddedEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>$VAR[RecentlyAddedEpisodesVar]</path>
+			</widget>
+			<widget name="RecentEpisodes" label="$LOCALIZE[31442]" type="episodes" target="video" icon="DefaultRecentlyPlayedEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>special://skin/extras/playlists/episodes_recentlyplayed.xsp</path>
+			</widget>
+			<widget name="RandomEpisodes" label="$LOCALIZE[31443]" type="episodes" target="video" icon="DefaultRandomEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>special://skin/extras/playlists/episodes_random.xsp</path>
+			</widget>
+			<widget name="InProgressEpisodes" label="$LOCALIZE[31444]" type="episodes" target="video" icon="DefaultInProgressEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>special://skin/extras/playlists/episodes_inprogress.xsp</path>
+			</widget>
+			<widget name="TopRatedEpisodes" label="$LOCALIZE[31446]" type="episodes" target="video" icon="DefaultTopRatedEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>special://skin/extras/playlists/episodes_toprated.xsp</path>
+			</widget>
+			<widget name="UnwatchedEpisodes" label="$LOCALIZE[31445]" type="episodes" target="video" icon="DefaultUnwatchedEpisodes.png" visible="Library.HasContent(tvshows)">
+				<path>special://skin/extras/playlists/episodes_unwatched.xsp</path>
+			</widget>
+			<widget name="RecommendedEpisodes" label="$LOCALIZE[31492]" type="swrecommendedeps" target="video" icon="DefaultTVShows.png" visible="Library.HasContent(tvshows) + System.HasAddon(service.skin.widgets)">
+				<path>$INCLUDE[skinshortcuts-template-RecommendedEpisodesContent]</path>
+			</widget>
+		</group>
+		<group name="artists" label="$LOCALIZE[133]" icon="DefaultMusicArtists.png">
+			<widget name="NewArtists" label="$LOCALIZE[31466]" type="artists" target="music" icon="DefaultMusicArtists.png" visible="Library.HasContent(music)">
+				<path>special://skin/extras/playlists/artists_recentlyadded.xsp</path>
+			</widget>
+			<widget name="RandomArtists" label="$LOCALIZE[31451]" type="artists" target="music" icon="DefaultMusicArtists.png" visible="Library.HasContent(music)">
+				<path>special://skin/extras/playlists/artists_random.xsp</path>
+			</widget>
+			<widget name="MusicNodes" label="$LOCALIZE[31452]" type="artists" target="music" icon="DefaultMusicAlbums.png" visible="Library.HasContent(music)">
+				<path>library://music/</path>
+			</widget>
+		</group>
+		<group name="albums" label="$LOCALIZE[132]" icon="DefaultMusicAlbums.png">
+			<widget name="NewAlbums" label="$LOCALIZE[31447]" type="albums" target="music" icon="DefaultMusicRecentlyAdded.png" visible="Library.HasContent(music)">
+				<path>musicdb://recentlyaddedalbums/</path>
+			</widget>
+			<widget name="RecentAlbums" label="$LOCALIZE[31448]" type="albums" target="music" icon="DefaultMusicRecentlyPlayed.png" visible="Library.HasContent(music)">
+				<path>musicdb://recentlyplayedalbums/</path>
+			</widget>
+			<widget name="RecentlyReleasedAlbums" label="$LOCALIZE[31494]" type="albums" target="music" icon="DefaultMusicAlbums.png" visible="Library.HasContent(music)">
+				<path>special://skin/extras/playlists/albums_recentlyreleased.xsp</path>
+			</widget>
+			<widget name="TopAlbums" label="$LOCALIZE[31450]" type="albums" target="music" icon="DefaultMusicTop100Albums.png" visible="Library.HasContent(music)">
+				<path>musicdb://top100/albums/</path>
+			</widget>
+			<widget name="RandomAlbums" label="$LOCALIZE[31449]" type="albums" target="music" icon="DefaultMusicAlbums.png" visible="Library.HasContent(music)">
+				<path>special://skin/extras/playlists/albums_random.xsp</path>
+			</widget>
+			<widget name="MostPlayedAlbums" label="$LOCALIZE[31465]" type="albums" target="music" icon="DefaultMusicRecentlyPlayed.png" visible="Library.HasContent(music)">
+				<path>special://skin/extras/playlists/albums_mostplayed.xsp</path>
+			</widget>
+		</group>
+		<group name="songs" label="$LOCALIZE[134]" icon="DefaultMusicSongs.png">
+			<widget name="NewSongs" label="$LOCALIZE[31467]" type="songs" target="music" icon="DefaultMusicSongs.png" visible="Library.HasContent(music)">
+				<path>$VAR[RecentlyAddedSongsVar]</path>
+			</widget>
+			<widget name="RecentlyReleasedSongs" label="$LOCALIZE[31468]" type="songs" target="music" icon="DefaultMusicSongs.png" visible="Library.HasContent(music)">
+				<path>special://skin/extras/playlists/songs_recentlyreleased.xsp</path>
+			</widget>
+			<widget name="MostPlayedSongs" label="$LOCALIZE[31469]" type="songs" target="music" icon="DefaultMusicSongs.png" visible="Library.HasContent(music)">
+				<path>special://skin/extras/playlists/songs_mostplayed.xsp</path>
+			</widget>
+			<widget name="RandomSongs" label="$LOCALIZE[31470]" type="songs" target="music" icon="DefaultMusicSongs.png" visible="Library.HasContent(music)">
+				<path>special://skin/extras/playlists/songs_random.xsp</path>
+			</widget>
+		</group>
+		<group name="musicvideos" label="$LOCALIZE[20389]" icon="DefaultMusicVideos.png">
+			<widget name="NewMusicVideos" label="$LOCALIZE[31471]" type="musicvideos" target="video" icon="DefaultRecentlyAddedMusicVideos.png" visible="Library.HasContent(musicvideos)">
+				<path>$VAR[RecentlyAddedMusicVideosVar]</path>
+			</widget>
+			<widget name="InProgressMusicVideos" label="$LOCALIZE[31472]" type="musicvideos" target="video" icon="DefaultMusicVideos.png" visible="Library.HasContent(musicvideos)">
+				<path>special://skin/extras/playlists/musicvideos_inprogress.xsp</path>
+			</widget>
+			<widget name="RandomMusicVideos" label="$LOCALIZE[31473]" type="musicvideos" target="video" icon="DefaultMusicVideos.png" visible="Library.HasContent(musicvideos)">
+				<path>special://skin/extras/playlists/musicvideos_random.xsp</path>
+			</widget>
+			<widget name="UnwatchedMusicVideos" label="$LOCALIZE[31474]" type="musicvideos" target="video" icon="DefaultMusicVideos.png" visible="Library.HasContent(musicvideos)">
+				<path>special://skin/extras/playlists/musicvideos_unwatched.xsp</path>
+			</widget>
+		</group>
+		<group name="livetv" label="$LOCALIZE[31453]" icon="DefaultAddonPVRClient.png">
+			<widget name="LastPlayedChannels" label="$LOCALIZE[31454]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+				<path>pvr://channels/tv/*?view=lastplayed</path>
+			</widget>
+			<widget name="AllChannels" label="$LOCALIZE[19217]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+				<path>pvr://channels/tv/*</path>
+			</widget>
+			<widget name="TVChannelGroups" label="$LOCALIZE[19173]" type="tv" target="tvguide" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+				<path>pvr://channels/tv/</path>
+			</widget>
+			<widget name="ActiveRecordings" label="$LOCALIZE[31455]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+				<path>pvr://recordings/tv/active?view=flat</path>
+			</widget>
+			<widget name="GroupedActiveRecordings" label="$LOCALIZE[31456]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+				<path>pvr://recordings/tv/active?view=grouped</path>
+			</widget>
+			<widget name="DeletedRecordings" label="$LOCALIZE[19184]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+				<path>pvr://recordings/tv/deleted?view=flat</path>
+			</widget>
+			<widget name="GroupedDeletedRecordings" label="$LOCALIZE[31457]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+				<path>pvr://recordings/tv/deleted?view=grouped</path>
+			</widget>
+			<widget name="TVTimers" label="$LOCALIZE[10703]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+				<path>pvr://timers/tv/timers</path>
+			</widget>
+		</group>
+		<group name="radio" label="$LOCALIZE[19021]" icon="DefaultAddonPVRClient.png">
+			<widget name="LastPlayedRadioChannels" label="$LOCALIZE[31461]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+				<path>pvr://channels/radio/*?view=lastplayed</path>
+			</widget>
+			<widget name="AllRadioChannels" label="$LOCALIZE[19216]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+				<path>pvr://channels/radio/*</path>
+			</widget>
+			<widget name="RadioChannelGroups" label="$LOCALIZE[19174]" type="radio" target="radioguide" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+				<path>pvr://channels/radio/</path>
+			</widget>
+			<widget name="ActiveRadioRecordings" label="$LOCALIZE[31462]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+				<path>pvr://recordings/radio/active?view=flat</path>
+			</widget>
+			<widget name="GroupedActiveRadioRecordings" label="$LOCALIZE[31463]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+				<path>pvr://recordings/radio/active?view=grouped</path>
+			</widget>
+			<widget name="DeletedRadioRecordings" label="$LOCALIZE[19184]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+				<path>pvr://recordings/radio/deleted?view=flat</path>
+			</widget>
+			<widget name="GroupedDeletedRadioRecordings" label="$LOCALIZE[31464]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+				<path>pvr://recordings/radio/deleted?view=grouped</path>
+			</widget>
+			<widget name="RadioTimers" label="$LOCALIZE[10708]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+				<path>pvr://timers/radio/timers</path>
+			</widget>
+		</group>
+		<group name="weather" label="$LOCALIZE[12600]">
+			<widget name="WeatherDaily" label="$LOCALIZE[31475]" type="weatherdaily" icon="DefaultAddonWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
+				<path>$INCLUDE[skinshortcuts-template-WeatherContentDaily]</path>
+			</widget>
+			<widget name="WeatherHourly" label="$LOCALIZE[31476]" type="weatherhourly" icon="DefaultAddonWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
+				<path>$INCLUDE[skinshortcuts-template-WeatherContentHourly]</path>
+			</widget>
+			<widget name="ShortWeatherDaily" label="$LOCALIZE[31639]" type="shortweatherdaily" icon="DefaultAddonWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
+				<path>$INCLUDE[skinshortcuts-template-ShortWeatherContentDaily]</path>
+			</widget>
+			<widget name="ShortWeatherHourly" label="$LOCALIZE[31640]" type="shortweatherhourly" icon="DefaultAddonWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
+				<path>$INCLUDE[skinshortcuts-template-ShortWeatherContentHourly]</path>
+			</widget>
+		</group>
+		<widget name="AllFavourites" label="$LOCALIZE[1036]" type="favourites" target="video" icon="DefaultFavourites.png" visible="System.HasAddon(script.favourites)">
+			<path>favourites://</path>
+		</widget>
+		<widget name="SystemInfo" label="$LOCALIZE[130]" type="system" target="programs" icon="thumbs/systeminfo/square/system.png">
+			<path>$INCLUDE[skinshortcuts-template-SystemContent]</path>
+		</widget>
+		<widget name="FavouriteAddons" label="$LOCALIZE[31487]" type="favouriteaddons" target="programs" icon="DefaultAddon.png" visible="!String.IsEmpty(Skin.String(ShelfAddons.1.Label))">
+			<path>$INCLUDE[skinshortcuts-template-FavouriteAddonsContent]</path>
+		</widget>
+		<widget name="Submenu" label="$LOCALIZE[1034]" type="addons" target="programs" icon="DefaultAddon.png">
+			<path>$INCLUDE[skinshortcuts-mainmenu-submenu]</path>
+		</widget>
+	</group>
+	<group name="skininfo" label="$INFO[System.AddonTitle(script.skin.info.service)]" icon="DefaultFolder.png">
+		<group name="skininfo-movies" label="$LOCALIZE[342]" icon="DefaultMovies.png">
+			<widget name="SkinInfoMoviesRecommended" label="$ADDON[script.skin.info.service 32623]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=movie&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoMoviesFavourites" label="$ADDON[script.skin.info.service 32687]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=movie&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<group name="skininfo-seasonal" label="$ADDON[script.skin.info.service 32622]" icon="DefaultMovies.png">
+				<widget name="SkinInfoSeasonalChristmas" label="$ADDON[script.skin.info.service 32642]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=christmas&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+				<widget name="SkinInfoSeasonalHalloween" label="$ADDON[script.skin.info.service 32643]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=halloween&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+				<widget name="SkinInfoSeasonalValentines" label="$ADDON[script.skin.info.service 32644]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=valentines&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+				<widget name="SkinInfoSeasonalThanksgiving" label="$ADDON[script.skin.info.service 32645]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=thanksgiving&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+				<widget name="SkinInfoSeasonalNewyear" label="$ADDON[script.skin.info.service 32648]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=newyear&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+				<widget name="SkinInfoSeasonalEaster" label="$ADDON[script.skin.info.service 32649]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=easter&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+				<widget name="SkinInfoSeasonalIndependence" label="$ADDON[script.skin.info.service 32650]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=independence&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+				<widget name="SkinInfoSeasonalStarwars" label="$ADDON[script.skin.info.service 32646]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=starwars&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+				<widget name="SkinInfoSeasonalStartrek" label="$ADDON[script.skin.info.service 32647]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=startrek&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				</widget>
+			</group>
+			<group name="skininfo-movies-discover" label="$ADDON[script.skin.info.service 32619]" icon="DefaultMovies.png">
+				<widget name="SkinInfoMoviesTMDbTrending" label="$ADDON[script.skin.info.service 32627]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_trending&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTMDbPopular" label="$ADDON[script.skin.info.service 32628]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_popular&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTMDbTopRated" label="$ADDON[script.skin.info.service 32629]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_top_rated&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTMDbNowPlaying" label="$ADDON[script.skin.info.service 32630]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_now_playing&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTMDbUpcoming" label="$ADDON[script.skin.info.service 32631]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_upcoming&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTraktTrending" label="$ADDON[script.skin.info.service 32634]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_trending&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTraktPopular" label="$ADDON[script.skin.info.service 32635]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_popular&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTraktAnticipated" label="$ADDON[script.skin.info.service 32636]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_anticipated&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTraktWatched" label="$ADDON[script.skin.info.service 32637]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_watched&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTraktCollected" label="$ADDON[script.skin.info.service 32638]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_collected&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTraktBoxoffice" label="$ADDON[script.skin.info.service 32639]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_boxoffice&amp;type=movie</path>
+				</widget>
+				<widget name="SkinInfoMoviesTraktRecommendations" label="$ADDON[script.skin.info.service 32640]" type="movies" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_recommendations&amp;type=movie</path>
+				</widget>
+			</group>
+		</group>
+		<group name="skininfo-tvshows" label="$LOCALIZE[31432]" icon="DefaultTVShows.png">
+			<widget name="SkinInfoTvShowsRecommended" label="$ADDON[script.skin.info.service 32624]" type="tvshows" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
+				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=tvshow&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoTvShowsFavourites" label="$ADDON[script.skin.info.service 32688]" type="tvshows" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
+				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=tvshow&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<group name="skininfo-tvshows-discover" label="$ADDON[script.skin.info.service 32619]" icon="DefaultTVShows.png">
+				<widget name="SkinInfoTvShowsTMDbTrending" label="$ADDON[script.skin.info.service 32627]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_trending&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTMDbPopular" label="$ADDON[script.skin.info.service 32628]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_popular&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTMDbTopRated" label="$ADDON[script.skin.info.service 32629]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_top_rated&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTMDbAiringToday" label="$ADDON[script.skin.info.service 32632]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_airing_today&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTMDbOnTheAir" label="$ADDON[script.skin.info.service 32633]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=tmdb_on_the_air&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTraktTrending" label="$ADDON[script.skin.info.service 32634]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_trending&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTraktPopular" label="$ADDON[script.skin.info.service 32635]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_popular&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTraktAnticipated" label="$ADDON[script.skin.info.service 32636]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_anticipated&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTraktWatched" label="$ADDON[script.skin.info.service 32637]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_watched&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTraktCollected" label="$ADDON[script.skin.info.service 32638]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_collected&amp;type=tv</path>
+				</widget>
+				<widget name="SkinInfoTvShowsTraktRecommendations" label="$ADDON[script.skin.info.service 32640]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
+					<path>plugin://script.skin.info.service/?action=trakt_recommendations&amp;type=tv</path>
+				</widget>
+			</group>
+		</group>
+		<group name="skininfo-episodes" label="$LOCALIZE[20360]" icon="DefaultTVShows.png">
+			<widget name="SkinInfoNextUp" label="$ADDON[script.skin.info.service 32620]" type="tvshows" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
+				<path>plugin://script.skin.info.service/?action=next_up&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoNextUpFavourites" label="$ADDON[script.skin.info.service 32685]" type="episodes" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
+				<path>plugin://script.skin.info.service/?action=next_up_favourites&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoRecentEpisodes" label="$ADDON[script.skin.info.service 32621]" type="episodes" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
+				<path>plugin://script.skin.info.service/?action=recent_episodes_grouped&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoEpisodesFavourites" label="$ADDON[script.skin.info.service 32689]" type="episodes" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
+				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=episode&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoUpcomingEpisodes" label="$ADDON[script.skin.info.service 32071]" type="episodes" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
+				<path>plugin://script.skin.info.service/?action=next_aired&amp;days=7</path>
+			</widget>
+		</group>
+		<group name="skininfo-musicvideos" label="$LOCALIZE[20389]" icon="DefaultMusicVideos.png">
+			<widget name="SkinInfoMusicVideosFavourites" label="$ADDON[script.skin.info.service 32690]" type="musicvideos" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(musicvideos)">
+				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=musicvideo&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+		</group>
+		<group name="skininfo-mixed" label="$LOCALIZE[3]" icon="DefaultVideo.png">
+			<widget name="SkinInfoContinueWatching" label="$ADDON[script.skin.info.service 32696]" type="mixed" target="video" icon="shelves/skin.info.service.png" visible="[Library.HasContent(movies) | Library.HasContent(tvshows)]">
+				<path>plugin://script.skin.info.service/?action=continue_watching&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoRecentVideos" label="$ADDON[script.skin.info.service 32686]" type="mixed" target="video" icon="shelves/skin.info.service.png" visible="[Library.HasContent(movies) | Library.HasContent(tvshows)]">
+				<path>plugin://script.skin.info.service/?action=recent_videos&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoRecommendations" label="$ADDON[script.skin.info.service 32682]" type="mixed" target="video" icon="shelves/skin.info.service.png" visible="[Library.HasContent(movies) | Library.HasContent(tvshows)]">
+				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=both&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+			<widget name="SkinInfoFavourites" label="$LOCALIZE[1036]" type="mixed" target="video" icon="shelves/skin.info.service.png" visible="[Library.HasContent(movies) | Library.HasContent(tvshows)]">
+				<path>plugin://script.skin.info.service/?action=favourites&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+			</widget>
+		</group>
+	</group>
+	<group name="tmdbhelper" label="$LOCALIZE[31498]" icon="DefaultFolder.png">
+		<group name="tmdbhelper-movies" label="$LOCALIZE[342]" icon="DefaultMovies.png">
+			<widget name="TMDbMoviePopular" label="$LOCALIZE[31518]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=popular&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTopRated" label="$LOCALIZE[31519]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=top_rated&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieUpcoming" label="$LOCALIZE[31520]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieNowPlaying" label="$LOCALIZE[31521]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=now_playing&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTrendingDay" label="$LOCALIZE[31530]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTrendingWeek" label="$LOCALIZE[31531]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieRevenueMovies" label="$LOCALIZE[31532]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=revenue_movies&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieMostVoted" label="$LOCALIZE[31533]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=most_voted&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktWatchlist" label="$LOCALIZE[31538]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktHistory" label="$LOCALIZE[31539]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_history&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktMostwatched" label="$LOCALIZE[31540]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_mostwatched&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktRecommendations" label="$LOCALIZE[31542]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktTrending" label="$LOCALIZE[31543]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktPopular" label="$LOCALIZE[31544]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_popular&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktMostplayed" label="$LOCALIZE[31545]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_mostplayed&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktAnticipated" label="$LOCALIZE[31546]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_anticipated&amp;type=movie</path>
+			</widget>
+			<widget name="TMDbMovieTraktBoxoffice" label="$LOCALIZE[31547]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(movies) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_boxoffice&amp;type=movie</path>
+			</widget>
+		</group>
+		<group name="tmdbhelper-tvshows" label="$LOCALIZE[31432]" icon="DefaultTVShows.png">
+			<widget name="TMDbTvPopular" label="$LOCALIZE[31522]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=popular&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTopRated" label="$LOCALIZE[31523]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=top_rated&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvAiringToday" label="$LOCALIZE[31524]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=airing_today&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvOnTheAir" label="$LOCALIZE[31525]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=on_the_air&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTrendingDay" label="$LOCALIZE[31530]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTrendingWeek" label="$LOCALIZE[31531]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvMostVoted" label="$LOCALIZE[31533]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=most_voted&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktWatchlist" label="$LOCALIZE[31538]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktHistory" label="$LOCALIZE[31539]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_history&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktMostwatched" label="$LOCALIZE[31540]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_mostwatched&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktInprogress" label="$LOCALIZE[31541]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_inprogress&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktRecommendations" label="$LOCALIZE[31542]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktTrending" label="$LOCALIZE[31543]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktPopular" label="$LOCALIZE[31544]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_popular&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktMostplayed" label="$LOCALIZE[31545]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_mostplayed&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktAnticipated" label="$LOCALIZE[31546]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_anticipated&amp;type=tv</path>
+			</widget>
+			<widget name="TMDbTvTraktMyairing" label="$LOCALIZE[31548]" type="tvshows" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trakt_myairing&amp;type=tv</path>
+			</widget>
+		</group>
+		<group name="tmdbhelper-episodes" label="$LOCALIZE[20360]" icon="DefaultTVShows.png">
+			<widget name="TMDbEpisodeLibraryNextaired365" label="$LOCALIZE[31564]" type="episodes" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;days=365&amp;startdate=0&amp;type=episode&amp;widget=true&amp;localdb=true</path>
+			</widget>
+			<widget name="TMDbEpisodeLibraryNextaired7" label="$LOCALIZE[31565]" type="episodes" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;days=7&amp;startdate=0&amp;type=episode&amp;widget=true&amp;localdb=true</path>
+			</widget>
+			<widget name="TMDbEpisodeLibraryNextaired1" label="$LOCALIZE[31566]" type="episodes" target="video" icon="shelves/themoviedb.helper.png" visible="Library.HasContent(tvshows) + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;days=1&amp;startdate=0&amp;type=episode&amp;widget=true&amp;localdb=true</path>
+			</widget>
+		</group>
+		<group name="tmdbhelper-people" label="$LOCALIZE[31534]" icon="DefaultActor.png">
+			<widget name="TMDbPersonPopular" label="$LOCALIZE[31529]" type="people" target="video" icon="shelves/themoviedb.helper.png" visible="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=popular&amp;type=person&amp;widget=True&amp;nextpage=False</path>
+			</widget>
+			<widget name="TMDbPersonTrendingDay" label="$LOCALIZE[31535]" type="people" target="video" icon="shelves/themoviedb.helper.png" visible="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;type=person&amp;widget=True&amp;nextpage=False</path>
+			</widget>
+			<widget name="TMDbPersonTrendingWeek" label="$LOCALIZE[31536]" type="people" target="video" icon="shelves/themoviedb.helper.png" visible="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper)">
+				<path>plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;type=person&amp;widget=True&amp;nextpage=False</path>
+			</widget>
+		</group>
+		<group name="tmdbhelper-trakt" label="$LOCALIZE[31537]" icon="DefaultMovies.png">
+			<widget name="TMDbBothTraktTrendinglists" label="$LOCALIZE[31549]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper?info=trakt_trendinglists&amp;type=both&amp;widget=True</path>
+			</widget>
+			<widget name="TMDbBothTraktPopularlists" label="$LOCALIZE[31550]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper?info=trakt_popularlists&amp;type=both&amp;widget=True</path>
+			</widget>
+			<widget name="TMDbBothTraktLikedlists" label="$LOCALIZE[31551]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper?info=trakt_likedlists&amp;type=both&amp;widget=True</path>
+			</widget>
+			<widget name="TMDbBothTraktMylists" label="$LOCALIZE[31552]" type="movies" target="video" icon="shelves/themoviedb.helper.png" visible="[Library.HasContent(tvshows) | Library.HasContent(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + System.HasAddon(script.trakt)">
+				<path>plugin://plugin.video.themoviedb.helper?info=trakt_mylists&amp;type=both&amp;widget=True</path>
+			</widget>
+		</group>
+	</group>
+	<group name="picturesources" label="$LOCALIZE[1]">
+		<content source="sources" target="pictures" />
+	</group>
+	<widget name="GameSources" label="$LOCALIZE[10821]" type="games" target="games" icon="DefaultGames.png">
+		<path>sources://games/</path>
+	</widget>
+	<group name="addons" label="$LOCALIZE[24001]">
+		<group name="videoaddons" label="$LOCALIZE[1037]">
+			<content source="addons" target="video" />
+		</group>
+		<group name="musicaddons" label="$LOCALIZE[1038]">
+			<content source="addons" target="music" />
+		</group>
+		<group name="pictureaddons" label="$LOCALIZE[1039]">
+			<content source="addons" target="pictures" />
+		</group>
+		<group name="programaddons" label="$LOCALIZE[1043]">
+			<content source="addons" target="programs" />
+		</group>
+		<widget name="ProgramAddons" label="$LOCALIZE[1043]" type="addons" target="programs" icon="DefaultAddonProgram.png">
+			<path>addons://sources/executable/</path>
+		</widget>
+		<widget name="AndroidApps" label="$LOCALIZE[20244]" type="addons" target="programs" icon="DefaultAddonProgram.png" visible="System.Platform.Android">
+			<path>androidapp://sources/apps/</path>
+		</widget>
+		<widget name="VideoAddons" label="$LOCALIZE[1037]" type="addons" target="video" icon="DefaultAddonVideo.png">
+			<path>addons://sources/video/</path>
+		</widget>
+		<widget name="MusicAddons" label="$LOCALIZE[1038]" type="addons" target="music" icon="DefaultAddonMusic.png">
+			<path>addons://sources/audio/</path>
+		</widget>
+		<widget name="PictureAddons" label="$LOCALIZE[1039]" type="addons" target="pictures" icon="DefaultAddonPicture.png">
+			<path>addons://sources/image/</path>
+		</widget>
+		<widget name="GameAddons" label="$LOCALIZE[35049]" type="addons" target="games" icon="DefaultAddonGame.png">
+			<path>addons://sources/game</path>
+		</widget>
+	</group>
+	<group name="videolibrary" label="$LOCALIZE[14236]">
+		<content source="nodes" target="video" />
+		<group name="videoplaylists" label="$LOCALIZE[136]">
+			<content source="playlists" target="video" />
+		</group>
+		<group name="videosources" label="$LOCALIZE[20094]">
+			<content source="sources" target="video" />
+		</group>
+	</group>
+	<group name="musiclibrary" label="$LOCALIZE[14237]">
+		<content source="nodes" target="music" />
+		<group name="musicplaylists" label="$LOCALIZE[136]">
+			<content source="playlists" target="music" />
+		</group>
+		<group name="musicsources" label="$LOCALIZE[20094]">
+			<content source="sources" target="music" />
+		</group>
+	</group>
+</widgets>

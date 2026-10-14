@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<backgrounds>
+	<background name="browse" label="$ADDON[script.skinshortcuts 32051]" type="browse" />
+	<background name="browsefolder" label="$ADDON[script.skinshortcuts 32052]" type="multi" />
+	<background name="playlistBackground" label="$ADDON[script.skinshortcuts 32040]" type="playlist">
+		<source label="$ADDON[script.skinshortcuts 32004]">special://profile/playlists/video/</source>
+		<source label="$ADDON[script.skinshortcuts 32005]">special://profile/playlists/music/</source>
+		<source label="$ADDON[script.skinshortcuts 32059]">special://skin/extras/playlists/</source>
+	</background>
+	<background name="nodeBackground" label="$LOCALIZE[31590]" type="property">
+		<path>nodeBackground</path>
+	</background>
+	<background name="Kodi.Movie.Fanart" label="$LOCALIZE[31597]" type="property">
+		<path>Kodi.Movie.Fanart</path>
+	</background>
+	<background name="Kodi.TV.Fanart" label="$LOCALIZE[31598]" type="property">
+		<path>Kodi.TV.Fanart</path>
+	</background>
+	<background name="Kodi.Video.Fanart" label="$LOCALIZE[31599]" type="property">
+		<path>Kodi.Video.Fanart</path>
+	</background>
+	<background name="Kodi.Music.Fanart" label="$LOCALIZE[31600]" type="property">
+		<path>Kodi.Music.Fanart</path>
+	</background>
+	<background name="Kodi.Global.Fanart" label="$LOCALIZE[31601]" type="property">
+		<path>Kodi.Global.Fanart</path>
+	</background>
+	<background name="Movie.Fanart" label="$LOCALIZE[31399]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+		<path>Movie.Fanart</path>
+	</background>
+	<background name="TV.Fanart" label="$LOCALIZE[31400]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+		<path>TV.Fanart</path>
+	</background>
+	<background name="Video.Fanart" label="$LOCALIZE[31401]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+		<path>Video.Fanart</path>
+	</background>
+	<background name="MusicVideo.Fanart" label="$LOCALIZE[31589]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+		<path>MusicVideo.Fanart</path>
+	</background>
+	<background name="Music.Fanart" label="$LOCALIZE[31402]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+		<path>Music.Fanart</path>
+	</background>
+	<background name="Global.Fanart" label="$LOCALIZE[31403]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+		<path>Global.Fanart</path>
+	</background>
+	<background name="Weather.Fanart" label="$LOCALIZE[31404]" type="property" visible="!String.IsEmpty(Skin.String(weatherfanartResource.path))">
+		<path>Weather.Fanart</path>
+	</background>
+	<background name="default" label="$LOCALIZE[31569]" type="static">
+		<path>special://skin/backgrounds/Default.jpg</path>
+	</background>
+	<background name="addons" label="$LOCALIZE[31570]" type="static">
+		<path>special://skin/backgrounds/Addons.jpg</path>
+	</background>
+	<background name="videos" label="$LOCALIZE[31571]" type="static">
+		<path>special://skin/backgrounds/Videos.jpg</path>
+	</background>
+	<background name="movies" label="$LOCALIZE[31572]" type="static">
+		<path>special://skin/backgrounds/Movies.jpg</path>
+	</background>
+	<background name="tvshows" label="$LOCALIZE[31573]" type="static">
+		<path>special://skin/backgrounds/TVShows.jpg</path>
+	</background>
+	<background name="musicvideos" label="$LOCALIZE[31574]" type="static">
+		<path>special://skin/backgrounds/MusicVideos.jpg</path>
+	</background>
+	<background name="music" label="$LOCALIZE[31575]" type="static">
+		<path>special://skin/backgrounds/Music.jpg</path>
+	</background>
+	<background name="pictures" label="$LOCALIZE[31576]" type="static">
+		<path>special://skin/backgrounds/Pictures.jpg</path>
+	</background>
+	<background name="weather" label="$LOCALIZE[31577]" type="static">
+		<path>special://skin/backgrounds/Weather.jpg</path>
+	</background>
+	<background name="games" label="$LOCALIZE[31578]" type="static">
+		<path>special://skin/backgrounds/Games.jpg</path>
+	</background>
+	<background name="favourites" label="$LOCALIZE[31579]" type="static">
+		<path>special://skin/backgrounds/Favourites.jpg</path>
+	</background>
+	<background name="search" label="$LOCALIZE[31580]" type="static">
+		<path>special://skin/backgrounds/Search.jpg</path>
+	</background>
+	<background name="power" label="$LOCALIZE[31581]" type="static">
+		<path>special://skin/backgrounds/Quit.jpg</path>
+	</background>
+	<background name="tv" label="$LOCALIZE[31582]" type="static">
+		<path>special://skin/backgrounds/TV.jpg</path>
+	</background>
+	<background name="radio" label="$LOCALIZE[31583]" type="static">
+		<path>special://skin/backgrounds/Radio.jpg</path>
+	</background>
+	<background name="settings" label="$LOCALIZE[31584]" type="static">
+		<path>special://skin/backgrounds/Settings.jpg</path>
+	</background>
+	<background name="libreelec" label="$LOCALIZE[31602]" type="static">
+		<path>special://skin/backgrounds/LibreELEC.jpg</path>
+	</background>
+	<background name="art-addons" label="$LOCALIZE[31570]" type="property" visible="false">
+		<path>$VAR[Addons.Art]</path>
+	</background>
+	<background name="art-videos" label="$LOCALIZE[31571]" type="property" visible="false">
+		<path>$VAR[Videos.Art]</path>
+	</background>
+	<background name="art-movies" label="$LOCALIZE[31572]" type="property" visible="false">
+		<path>$VAR[Movies.Art]</path>
+	</background>
+	<background name="art-tvshows" label="$LOCALIZE[31573]" type="property" visible="false">
+		<path>$VAR[TVShows.Art]</path>
+	</background>
+	<background name="art-musicvideos" label="$LOCALIZE[31574]" type="property" visible="false">
+		<path>$VAR[MusicVideos.Art]</path>
+	</background>
+	<background name="art-music" label="$LOCALIZE[31575]" type="property" visible="false">
+		<path>$VAR[Music.Art]</path>
+	</background>
+	<background name="art-pictures" label="$LOCALIZE[31576]" type="property" visible="false">
+		<path>$VAR[Pictures.Art]</path>
+	</background>
+	<background name="art-weather" label="$LOCALIZE[31577]" type="property" visible="false">
+		<path>$VAR[Weather.Art]</path>
+	</background>
+	<background name="art-games" label="$LOCALIZE[31578]" type="property" visible="false">
+		<path>$VAR[Games.Art]</path>
+	</background>
+	<background name="art-favourites" label="$LOCALIZE[31579]" type="property" visible="false">
+		<path>$VAR[Favourites.Art]</path>
+	</background>
+	<background name="art-search" label="$LOCALIZE[31580]" type="property" visible="false">
+		<path>$VAR[Search.Art]</path>
+	</background>
+	<background name="art-power" label="$LOCALIZE[31581]" type="property" visible="false">
+		<path>$VAR[Quit.Art]</path>
+	</background>
+	<background name="art-tv" label="$LOCALIZE[31582]" type="property" visible="false">
+		<path>$VAR[Pvr.Art]</path>
+	</background>
+	<background name="art-radio" label="$LOCALIZE[31583]" type="property" visible="false">
+		<path>$VAR[Radio.Art]</path>
+	</background>
+	<background name="art-settings" label="$LOCALIZE[31584]" type="property" visible="false">
+		<path>$VAR[Settings.Art]</path>
+	</background>
+	<background name="art-disc" label="$LOCALIZE[427]" type="property" visible="false">
+		<path>$VAR[DVD.Art]</path>
+	</background>
+</backgrounds>

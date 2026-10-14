@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<property name="widget" type="widget" />
+	<property name="background" type="background" />
+
+	<property name="widgetArtwork" requires="widget">
+		<options>
+			<option value="Poster" label="$LOCALIZE[31611]" />
+			<option value="Square" label="$LOCALIZE[31612]" condition="!widgetType=people" />
+			<option value="Banner" label="$LOCALIZE[20020]" condition="widgetType IN tvshows,movies,episodes" />
+			<option value="FanArt" label="$LOCALIZE[20445]" condition="!widget=Submenu + !widgetType=people" />
+			<option value="Landscape" label="$LOCALIZE[31620]" condition="widgetType IN movies,episodes,tvshows" />
+			<option value="Thumb" label="$LOCALIZE[31619]" condition="widgetType=episodes" />
+			<option value="ClearArt" label="$LOCALIZE[31622]" condition="widgetType IN movies,episodes,tvshows,musicvideos,artists" />
+			<option value="ClearLogo" label="$LOCALIZE[31621]" condition="widgetType IN movies,episodes,tvshows,musicvideos,artists" />
+			<option value="DiscArt" label="$LOCALIZE[31623]" condition="widgetType IN movies,albums" />
+			<option value="CharacterArt" label="$LOCALIZE[31624]" condition="widgetType IN episodes,tvshows" />
+		</options>
+	</property>
+
+	<property name="widgetSortBy" requires="widget" templateonly="true">
+		<options>
+			<option value="lastplayed" label="$LOCALIZE[568]" />
+			<option value="title" label="$LOCALIZE[369]" />
+			<option value="tvshowtitle" label="$LOCALIZE[36902]" condition="widgetType=episodes" />
+			<option value="date" label="$LOCALIZE[552]" condition="widgetType=episodes" />
+			<option value="artist" label="$LOCALIZE[557]" condition="widgetType IN musicvideos,artists,albums,songs" />
+			<option value="album" label="$LOCALIZE[558]" condition="widgetType IN musicvideos,albums,songs" />
+			<option value="tracknumber" label="$LOCALIZE[554]" condition="widgetType=songs" />
+			<option value="channelnumber" label="$LOCALIZE[19029]" condition="widgetType=pvr" />
+			<option value="year" label="$LOCALIZE[345]" condition="widgetType IN movies,tvshows,musicvideos,albums" />
+			<option value="dateadded" label="$LOCALIZE[570]" condition="!widgetType=pvr" />
+			<option value="random" label="$LOCALIZE[590]" />
+			<option value="genre" label="$LOCALIZE[515]" condition="widgetType IN movies,tvshows,musicvideos,albums,songs" />
+			<option value="playcount" label="$LOCALIZE[567]" condition="widgetType IN movies,tvshows,musicvideos,episodes" />
+			<option value="studio" label="$LOCALIZE[572]" condition="widgetType IN movies,tvshows" />
+			<option value="country" label="$LOCALIZE[574]" condition="widgetType=movies" />
+			<option value="rating" label="$LOCALIZE[563]" condition="widgetType IN movies,tvshows,episodes" />
+			<option value="userrating" label="$LOCALIZE[33067]" condition="widgetTarget IN videos,music" />
+			<option value="votes" label="$LOCALIZE[205]" condition="widgetType IN movies,tvshows,episodes" />
+			<option value="name" label="$LOCALIZE[551]" />
+			<option value="file" label="$LOCALIZE[561]" condition="widgetType IN movies,songs,musicvideos,episodes" />
+			<option value="time" label="$LOCALIZE[555]" condition="widgetType IN movies,songs,musicvideos,episodes" />
+			<option value="playlistorder" label="$LOCALIZE[559]" condition="widgetSource=playlist" />
+			<option value="lastused" label="$LOCALIZE[12012]" condition="widgetType=addons" />
+			<option value="lastupdated" label="$LOCALIZE[12014]" condition="widgetType=addons" />
+			<option value="episodenumber" label="$LOCALIZE[20359]" condition="widgetType=episodes" />
+			<option value="season" label="$LOCALIZE[20373]" condition="widgetType=episodes" />
+			<option value="tvshowstatus" label="$LOCALIZE[31625]" condition="widgetType=tvshows" />
+			<option value="numberofepisodes" label="$LOCALIZE[31626]" condition="widgetType=tvshows" />
+			<option value="numberofwatchedepisodes" label="$LOCALIZE[31627]" condition="widgetType=tvshows" />
+		</options>
+	</property>
+
+	<property name="widgetSortOrder" requires="widget" templateonly="true">
+		<options>
+			<option value="ascending" label="$LOCALIZE[584]" />
+			<option value="descending" label="$LOCALIZE[585]" />
+		</options>
+	</property>
+
+	<property name="widgetLimit" requires="widget" templateonly="true">
+		<options>
+			<option value="1" label="$NUMBER[1]" />
+			<option value="2" label="$NUMBER[2]" />
+			<option value="3" label="$NUMBER[3]" />
+			<option value="4" label="$NUMBER[4]" />
+			<option value="5" label="$NUMBER[5]" />
+			<option value="6" label="$NUMBER[6]" />
+			<option value="7" label="$NUMBER[7]" />
+			<option value="8" label="$NUMBER[8]" />
+			<option value="9" label="$NUMBER[9]" />
+			<option value="10" label="$NUMBER[10]" />
+			<option value="15" label="$NUMBER[15]" />
+			<option value="20" label="$NUMBER[20]" />
+			<option value="25" label="$NUMBER[25]" />
+			<option value="30" label="$NUMBER[30]" />
+			<option value="50" label="$NUMBER[50]" />
+			<option value="100" label="$NUMBER[100]" />
+		</options>
+	</property>
+
+	<property name="widgetAutoScroll" requires="widget" templateonly="true">
+		<options>
+			<option value="7000" label="$NUMBER[7]" />
+			<option value="8000" label="$NUMBER[8]" />
+			<option value="9000" label="$NUMBER[9]" />
+			<option value="10000" label="$NUMBER[10]" />
+			<option value="11000" label="$NUMBER[11]" />
+			<option value="12000" label="$NUMBER[12]" />
+			<option value="15000" label="$NUMBER[15]" />
+			<option value="20000" label="$NUMBER[20]" />
+			<option value="30000" label="$NUMBER[30]" />
+			<option value="60000" label="$NUMBER[60]" />
+		</options>
+	</property>
+
+	<property name="widgetPopupDelay" requires="widget" templateonly="true">
+		<options>
+			<option value="1" label="$NUMBER[1]" />
+			<option value="2" label="$NUMBER[2]" />
+			<option value="3" label="$NUMBER[3]" />
+			<option value="4" label="$NUMBER[4]" />
+			<option value="5" label="$NUMBER[5]" />
+			<option value="6" label="$NUMBER[6]" />
+		</options>
+	</property>
+
+	<property name="widgetDouble" type="toggle" value="true" requires="widget" />
+	<property name="widgetTriple" type="toggle" value="true" requires="widget" />
+	<property name="widgetPosterLabel" type="toggle" value="true" requires="widget" />
+	<property name="widgetLabelScroll" type="toggle" value="true" requires="widget" />
+	<property name="widgetShowTextbox" type="toggle" value="false" requires="widget" />
+	<property name="doInfoPopup" type="toggle" value="true" requires="widget" />
+
+	<property name="horizontalWidgetPos">
+		<options>
+			<option value="Standard" label="$LOCALIZE[31613]" />
+			<option value="Low" label="$LOCALIZE[31614]" />
+			<option value="High" label="$LOCALIZE[31634]" />
+		</options>
+	</property>
+
+	<property name="playlistFanartLimit">
+		<options>
+			<option value="$NUMBER[1]" label="$NUMBER[1]" />
+			<option value="$NUMBER[2]" label="$NUMBER[2]" />
+			<option value="$NUMBER[3]" label="$NUMBER[3]" />
+			<option value="$NUMBER[5]" label="$NUMBER[5]" />
+			<option value="$NUMBER[10]" label="$NUMBER[10]" />
+			<option value="$NUMBER[25]" label="$NUMBER[25]" />
+			<option value="$NUMBER[50]" label="$NUMBER[50]" />
+		</options>
+	</property>
+
+	<property name="InfoLine">
+		<options>
+			<option value="movies" label="$LOCALIZE[31405]" />
+			<option value="tvshows" label="$LOCALIZE[31406]" />
+			<option value="music" label="$LOCALIZE[31407]" />
+			<option value="musicvideos" label="$LOCALIZE[31408]" />
+			<option value="videos" label="$LOCALIZE[3]" />
+			<option value="moviestvshows" label="$LOCALIZE[31413]" />
+			<option value="pvr" label="$LOCALIZE[31409]" />
+			<option value="weather" label="$LOCALIZE[8]" />
+			<option value="addons" label="$LOCALIZE[24001]" />
+			<option value="videoaddons" label="$LOCALIZE[1037]" />
+			<option value="musicaddons" label="$LOCALIZE[1038]" />
+			<option value="programaddons" label="$LOCALIZE[1043]" />
+			<option value="pictureaddons" label="$LOCALIZE[1039]" />
+			<option value="gameaddons" label="$LOCALIZE[35049]" />
+			<option value="favourites" label="$LOCALIZE[1036]" />
+			<option value="disc" label="$LOCALIZE[427]" />
+			<option value="systeminfo" label="$LOCALIZE[130]" />
+			<option value="movieplaylist" label="$LOCALIZE[31410]" />
+			<option value="tvshowplaylist" label="$LOCALIZE[31411]" />
+			<option value="musicvideoplaylist" label="$LOCALIZE[31412]" />
+			<option value="episodeplaylist" label="$LOCALIZE[31418]" />
+			<option value="movienode" label="$LOCALIZE[31591]" />
+			<option value="tvshownode" label="$LOCALIZE[31592]" />
+			<option value="musicvideonode" label="$LOCALIZE[31593]" />
+			<option value="artistnode" label="$LOCALIZE[31594]" />
+			<option value="albumnode" label="$LOCALIZE[31595]" />
+			<option value="songnode" label="$LOCALIZE[31596]" />
+		</options>
+	</property>
+
+	<property name="widgetTwoShelves" type="toggle" value="true" />
+	<property name="widgetThreeShelves" type="toggle" value="true" />
+	<property name="widgetThreeShelvesLarge" type="toggle" value="true" />
+	<property name="centerShelves" type="toggle" value="true" />
+	<property name="showShelvesInfo" type="toggle" value="true" />
+	<property name="widgetsHide" type="toggle" value="true" />
+	<property name="widgetDisableFanart" type="toggle" value="true" />
+	<property name="widgetRecordingTV" type="toggle" value="true" />
+	<property name="widgetRecordingRadio" type="toggle" value="true" />
+	<property name="EHPlaylistFanart" type="toggle" value="true" />
+	<property name="UseBottomShortcuts" type="toggle" value="true" />
+
+	<buttons>
+		<group suffix="true">
+			<button id="309" property="widget" rename="true" />
+			<button id="3001" property="widgetArtwork" title="$LOCALIZE[31610]" showNone="false" />
+			<button id="3002" property="widgetDouble" />
+			<button id="3003" property="widgetSortBy" title="$LOCALIZE[31616]" />
+			<button id="3004" property="widgetSortOrder" title="$LOCALIZE[31617]" />
+			<button id="3005" property="widgetLimit" title="$LOCALIZE[31618]" />
+			<button id="3006" property="widgetTriple" />
+			<button id="3007" property="widgetPosterLabel" />
+			<button id="3008" property="widgetLabelScroll" />
+			<button id="3009" property="widgetShowTextbox" />
+			<button id="3010" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
+			<button id="3011" property="doInfoPopup" />
+			<button id="3012" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
+		</group>
+		<button id="310" property="background" />
+		<button id="500" property="InfoLine" title="$LOCALIZE[31417]" />
+		<button id="808" property="playlistFanartLimit" title="$LOCALIZE[31604]" />
+		<button id="811" property="horizontalWidgetPos" title="$LOCALIZE[31609]" showNone="false" />
+		<button id="806" property="widgetTwoShelves" />
+		<button id="809" property="widgetThreeShelves" />
+		<button id="810" property="widgetThreeShelvesLarge" />
+		<button id="812" property="centerShelves" />
+		<button id="813" property="showShelvesInfo" />
+		<button id="904" property="widgetsHide" />
+		<button id="903" property="widgetDisableFanart" />
+		<button id="900" property="widgetRecordingTV" />
+		<button id="901" property="widgetRecordingRadio" />
+		<button id="807" property="EHPlaylistFanart" />
+		<button id="8406" property="UseBottomShortcuts" />
+	</buttons>
+
+	<fallbacks>
+		<fallback property="widgetArtwork">
+			<default>Poster</default>
+		</fallback>
+		<fallback property="widgetPopupDelay">
+			<default>3</default>
+		</fallback>
+		<fallback property="horizontalWidgetPos">
+			<default>Standard</default>
+		</fallback>
+		<fallback property="widgetDouble">
+			<default>false</default>
+		</fallback>
+		<fallback property="widgetTriple">
+			<default>false</default>
+		</fallback>
+		<fallback property="widgetLabelScroll">
+			<default>false</default>
+		</fallback>
+		<fallback property="widgetTwoShelves">
+			<default>false</default>
+		</fallback>
+		<fallback property="widgetThreeShelvesLarge">
+			<default>false</default>
+		</fallback>
+		<fallback property="centerShelves">
+			<default>false</default>
+		</fallback>
+		<fallback property="showShelvesInfo">
+			<default>false</default>
+		</fallback>
+	</fallbacks>
+</properties>
