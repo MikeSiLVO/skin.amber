@@ -3,11 +3,7 @@
 	<!-- Load favourites -->
 	<onload condition="System.AddonIsEnabled(script.favourites)">RunScript(script.favourites)</onload>
 	<!-- Build menu/submenus/custom shelves -->
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=mainmenu|powermenu&amp;levels=5)</onload>
-	<!-- Start skin.info.service, used for set info -->
-	<onload condition="System.AddonIsEnabled(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
-	<!-- Build include for viewtype visiblity -->
-	<onload condition="System.AddonIsEnabled(script.skinvariables)">RunScript(script.skinvariables,action=buildviews)</onload>
+	<onload>RunScript(script.skinshortcuts,type=buildxml)</onload>
 	<!-- Reset flag that the info button from the video OSD is active -->
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onload>
 	<!-- Reset what the focused menu item playlist is -->
@@ -32,8 +28,9 @@
 	<onload>Skin.Reset(SingleSearchTerm)</onload>
 
 	<!-- Remember what the focused menu item background is -->
-	<onunload condition="!String.IsEmpty(Container(300).ListItem.Property(Background))">Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(Background)])</onunload>
-	<onunload condition="!String.IsEmpty(Container(300).ListItem.Property(backgroundPlaylist))">Skin.SetString(FocusedMenu.BackgroundPlaylist,$INFO[Container(300).ListItem.Property(backgroundPlaylist)])</onunload>
+	<onunload condition="!String.IsEmpty(Container(300).ListItem.Property(background)) + !String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist)">Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(backgroundPath)])</onunload>
+	<onunload condition="String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist)">Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(background)])</onunload>
+	<onunload condition="String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist)">Skin.SetString(FocusedMenu.BackgroundPlaylist,$INFO[Container(300).ListItem.Property(backgroundPath)])</onunload>
 
 	<!-- Clear TMDbHelper widgetcontainer id -->
 	<onunload condition="Skin.HasSetting(Enable.TMDbHelper)">ClearProperty(TMDbHelper.WidgetContainer,home)</onunload>
