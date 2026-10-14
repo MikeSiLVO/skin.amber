@@ -3,6 +3,9 @@
 	<defaultcontrol condition="!String.IsEmpty(Skin.String(StartupImage)) | !String.IsEmpty(Skin.String(StartupImagePath)) | !String.IsEmpty(Skin.String(StartupPlaylist))">11</defaultcontrol>
 	<onload>Skin.SetBool(SkinInfo.Service)</onload>
 	<onload>SetProperty(SkinInfo.BlurSourceVar,VideoInfoBlurSourceVar,home)</onload>
+	<onload condition="!Skin.HasSetting(SkinInfo.EnableSlideshow)">Skin.SetBool(SkinInfo.EnableSlideshow)</onload>
+	<onload condition="String.IsEmpty(Skin.String(SkinInfo.SlideshowRefreshInterval)) + !String.IsEmpty(Skin.String(FanartTimePerImage))">Skin.SetString(SkinInfo.SlideshowRefreshInterval,$INFO[Skin.String(FanartTimePerImage)])</onload>
+	<onload condition="String.IsEmpty(Skin.String(SkinInfo.SlideshowRefreshInterval)) + String.IsEmpty(Skin.String(FanartTimePerImage))">Skin.SetString(SkinInfo.SlideshowRefreshInterval,7)</onload>
 	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo)">Skin.SetBool(SkinInfo.Blur)</onload>
 	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo)">Skin.Reset(Enable.BlurredVideoInfo)</onload>
 	<onload condition="Skin.HasSetting(TMDbHelper.Service)">Skin.Reset(TMDbHelper.Service)</onload>
