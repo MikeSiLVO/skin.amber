@@ -227,18 +227,6 @@
 		</control>
 	</include>
 
-	<include name="EHTVShowDetailsList">
-		<control type="list" id="43261">
-			<left>-100</left>
-			<top>-100</top>
-			<width>1</width>
-			<height>1</height>
-			<itemlayout height="1" width="1" />
-			<focusedlayout height="1" width="1" />
-			<content limit="1">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[VideoPlayer.DBID]&amp;type=tvshow&amp;idtype=episode</content>
-		</control>
-	</include>
-
 	<include name="OSDButtons">
 		<param name="icon" />
 		<definition>
@@ -805,10 +793,10 @@
 			<include content="OSDButtons">
 				<param name="icon">OSD/OSDTeletextNF.png</param>
 			</include>
-			<onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
+			<onclick>SetProperty(PlayerTVShowID,$INFO[VideoPlayer.TvShowDBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
-			<visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.AddonIsEnabled(script.embuary.helper)</visible>
+			<visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID)</visible>
 			<visible>Skin.HasSetting(ShowEpisodeList)</visible>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -951,10 +939,10 @@
 			<font/>
 			<texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/playlist.png</texturefocus>
 			<texturenofocus>OSD/compact/playlist.png</texturenofocus>
-			<onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
+			<onclick>SetProperty(PlayerTVShowID,$INFO[VideoPlayer.TvShowDBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
-			<visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.AddonIsEnabled(script.embuary.helper)</visible>
+			<visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID)</visible>
 			<visible>Skin.HasSetting(ShowEpisodeList)</visible>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>

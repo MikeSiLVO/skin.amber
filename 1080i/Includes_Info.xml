@@ -390,8 +390,7 @@
 	<!-- Similar custom info list content -->
 	<variable name="VideoInfoSimilar">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=similar&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.DBID) + $EXP[CanUseEH]">plugin://script.embuary.helper/?info=getsimilar&amp;dbid=$INFO[ListItem.DBID]&amp;type=movie</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.DBID) + $EXP[CanUseEH]">plugin://script.embuary.helper/?info=getsimilar&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !String.IsEmpty(ListItem.DBID)">plugin://script.skin.info.service/?action=similar&amp;dbid=$INFO[ListItem.DBID]&amp;dbtype=$INFO[ListItem.DBType]</value>
 	</variable>
 	<!-- Cast also appears in custom info list content -->
 	<variable name="VideoInfoCastFeatured">
@@ -1493,8 +1492,10 @@
 			<orientation>horizontal</orientation>
 			<visible>Container(50).IsUpdating | Container(90050).IsUpdating | Integer.IsGreater(Container(90050).NumItems,0) | Integer.IsGreater(Container(50).NumItems,0)</visible>
 			<animation effect="fade" start="100" end="0" condition="!Integer.IsGreater(Container(50).NumItems,0) | Container(50).IsUpdating | !Integer.IsGreater(Container(90050).NumItems,0) | Container(90050).IsUpdating">Conditional</animation>
-			<onclick condition="!$EXP[CanUseEH]">ActivateWindow(Music,"musicdb://albums/$INFO[ListItem.DBID]/")</onclick>
-			<onclick condition="$EXP[CanUseEH]">RunScript(script.embuary.helper,action=goto,path='"musicdb://albums/$INFO[ListItem.DBID]/"',target=music)</onclick>
+			<include content="CloseAndGoTo">
+				<param name="window">Music</param>
+				<param name="path">musicdb://albums/$INFO[ListItem.DBID]/</param>
+			</include>
 			<include content="Info_Albums">
 				<param name="viewid">90050</param>
 			</include>
@@ -1861,16 +1862,16 @@
 		</definition>
 	</include>
 
-	<include name="EmbuaryHelperTVShowDetails">
-		<control type="list" id="5200">
-			<left>-100</left>
-			<top>-100</top>
-			<width>1</width>
-			<height>1</height>
-			<itemlayout height="1" width="1" />
-			<focusedlayout height="1" width="1" />
-			<content limit="1">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow&amp;idtype=episode</content>
-		</control>
+	<include name="CloseAndGoTo">
+		<param name="window" />
+		<param name="path" />
+		<param name="condition">true</param>
+		<definition>
+			<onclick condition="$PARAM[condition]">SetProperty(CloseAndGoToPath,$PARAM[path],home)</onclick>
+			<onclick condition="$PARAM[condition]">Dialog.Close(all,true)</onclick>
+			<onclick condition="$PARAM[condition]">ActivateWindow($PARAM[window],$INFO[Window(Home).Property(CloseAndGoToPath)],return)</onclick>
+			<onclick condition="$PARAM[condition]">ClearProperty(CloseAndGoToPath,home)</onclick>
+		</definition>
 	</include>
 
 	<!-- Includes for Music Info Dialog -->
@@ -2345,15 +2346,20 @@
 		<item>
 			<label>$LOCALIZE[20364]:</label>
 			<label2>$INFO[ListItem.TVShowTitle]</label2>
-			<onclick condition="!$EXP[CanUseEH]">noop</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.DBID) + $EXP[CanUseEH]">RunScript(script.embuary.helper,action=jumptoshow_by_episode,dbid=$INFO[ListItem.DBID])</onclick>
+			<include content="CloseAndGoTo">
+				<param name="window">Videos</param>
+				<param name="path">videodb://tvshows/titles/$INFO[ListItem.TvShowDBID]/</param>
+				<param name="condition">String.IsEqual(ListItem.DBType,episode)</param>
+			</include>
 			<visible>!String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.DBID)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[20373]:</label>
 			<label2>$INFO[ListItem.Season]</label2>
-			<onclick condition="!$EXP[CanUseEH]">noop</onclick>
-			<onclick condition="$EXP[CanUseEH]">RunScript(script.embuary.helper,action=goto,path='"videodb://tvshows/titles/$INFO[Container(5200).ListItem.DBID]/$INFO[ListItem.Season]/?tvshowid=$INFO[Container(5200).ListItem.DBID]"',target=videos)</onclick>
+			<include content="CloseAndGoTo">
+				<param name="window">Videos</param>
+				<param name="path">videodb://tvshows/titles/$INFO[ListItem.TvShowDBID]/$INFO[ListItem.Season]/?tvshowid=$INFO[ListItem.TvShowDBID]</param>
+			</include>
 			<visible>String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.DBID)</visible>
 		</item>
 		<item>

@@ -13,10 +13,6 @@
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</onload>
 
-	<!-- <onload condition="[String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,tvshow)] + System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.TVShowTitle]"',prop=EncodeddTitle)</onload>
-	<onload condition="String.IsEqual(ListItem.DBTYPE,movie) + System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.Title]"',prop=EncodedTitle)</onload>
-	<onload condition="System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||90050||9009||91001||910001||91002||91003||91004||91005||91006||91007||91008||91009||910010)</onload> -->
-
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(VideoOSD,true)</onload>
 
 	<!-- Close custom search dialogs if they are open so that we can perform searches from here without issue -->
@@ -26,7 +22,6 @@
 	<onunload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onunload>
 	<onunload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Skin.HasSetting(PauseOnVideoInfo) + Player.Paused">Play</onunload>
 
-	<!-- <onunload condition="System.AddonIsEnabled(script.embuary.helper)">ClearProperty(EncodedTitle,home)</onunload> -->
 	<onunload condition="!String.IsEmpty(Window(Home).Property(KodiDefaultCastSearch))">ClearProperty(KodiDefaultCastSearch,Home)</onunload>
 
 	<onunload condition="String.IsEqual(Window(Home).Property(GeneralSearchCalledInfo),yes) + String.IsEmpty(Window(Home).Property(SingleSearchCalledInfo)) + String.IsEmpty(Window(Home).Property(InfoCalledSingleSearch)) + !String.IsEmpty(Skin.String(CustomSearchTerm)) + !Player.HasVideo + String.IsEmpty(Window(Home).Property(InfoPlayingMedia))">ActivateWindow(1122)</onunload>
@@ -35,7 +30,6 @@
 	<onunload condition="String.IsEqual(Window(Home).Property(SingleSearchCalledInfo),yes)">ClearProperty(SingleSearchCalledInfo,Home)</onunload>
 	<controls>
 		<!-- Get additional TV Show details from Embuary Helper script to be able to jump to season from an episode info - Container 5200 -->
-		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.DBID)">EmbuaryHelperTVShowDetails</include>
 
 		<!-- Hide default cast list 50, using a custom cast -->
 		<include condition="!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEqual(ListItem.DBType,set)">HiddenCast</include>
@@ -896,8 +890,6 @@
 				<label>$VAR[VideoInfoButton8]</label>
 				<!-- Called from OSD -->
 				<onclick condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(all)</onclick>
-				<!-- Browse TV Show, embuary helper active -->
-				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">RunScript(script.embuary.helper,action=goto,path='"videodb://tvshows/titles/$INFO[ListItem.DBID]/"',target=videos)</onclick>
 				<!-- PKC On Deck: No FileName or FolderPath -->
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + String.IsEmpty(ListItem.FileNameAndPath) + String.IsEmpty(ListItem.FolderPath)">SendClick(8)</onclick>
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + String.IsEmpty(ListItem.FileNameAndPath) + String.IsEmpty(ListItem.FolderPath)">Dialog.Close(all)</onclick>
@@ -910,9 +902,9 @@
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(ListItem.FileNameAndPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FileNameAndPath]')</onclick>
 				<!-- tmdb helper active, path is empty -->
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !String.Contains(ListItem.FolderPath,type=person) + String.IsEmpty(ListItem.FileNameAndPath) + !String.IsEmpty(ListItem.FolderPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FolderPath]')</onclick>
-				<!-- Browse TV Show, embuary helper not active -->
-				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">SendClick(8)</onclick>
-				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">Dialog.Close(all)</onclick>
+				<!-- Browse TV Show -->
+				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">SendClick(8)</onclick>
+				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">Dialog.Close(all)</onclick>
 			</control>
 			<control type="button" id="8001" description="Set">
 				<height>90</height>
@@ -920,8 +912,11 @@
 				<align>center</align>
 				<font>Details</font>
 				<label>$LOCALIZE[31276]</label>
-				<onclick condition="Skin.HasSetting(Enable.EmbuaryHelper)">RunScript(script.embuary.helper,action=goto,path='"videodb://movies/sets/$INFO[ListItem.SetId]/?setid=$INFO[ListItem.SetId]"',target=videos)</onclick>
-				<visible>System.AddonIsEnabled(script.embuary.helper) + !String.IsEmpty(ListItem.SetId) + !String.IsEmpty(ListItem.DBID)</visible>
+				<include content="CloseAndGoTo">
+					<param name="window">Videos</param>
+					<param name="path">videodb://movies/sets/$INFO[ListItem.SetId]/?setid=$INFO[ListItem.SetId]</param>
+				</include>
+				<visible>!String.IsEmpty(ListItem.SetId) + !String.IsEmpty(ListItem.DBID)</visible>
 			</control>
 			<control type="button" id="8002" description="Search">
 				<height>90</height>

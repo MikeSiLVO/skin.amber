@@ -2938,21 +2938,6 @@
 		</control>
 	</include>
 
-	<include name="EmbuaryHelperDetailsList">
-		<control type="group">
-			<visible>!Container.Content(seasons)</visible>
-			<control type="list" id="4460">
-				<left>-100</left>
-				<top>-100</top>
-				<width>100</width>
-				<height>100</height>
-				<itemlayout height="100" width="100" />
-				<focusedlayout height="100" width="100" />
-				<content limit="1">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=$INFO[ListItem.DBType]</content>
-			</control>
-		</control>
-	</include>
-
 	<include name="SmallerFonts">
 		<font>ListDetails</font>
 	</include>

@@ -178,7 +178,6 @@
 		</control>
 
 		<include condition="Skin.HasSetting(ShowSpecialFanart)">SpecialFanartList</include>
-		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(ShowRatingMain)">EmbuaryHelperDetailsList</include>
 
 		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 
