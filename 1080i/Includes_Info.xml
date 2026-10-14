@@ -748,9 +748,15 @@
 
 		<!-- End Matrix change -->
 
+		<variable name="VideoInfoBlurSourceVar">
+			<value condition="Skin.HasSetting(Blur.UsePoster) + !String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+			<value condition="Skin.HasSetting(Blur.UsePoster) + !String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
+			<value condition="Skin.HasSetting(Blur.UsePoster) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+			<value>$INFO[ListItem.Art(fanart)]</value>
+		</variable>
+
 		<variable name="VideoInfoBackground">
-			<value condition="Skin.HasSetting(Enable.BlurredVideoInfo)">$INFO[Window(home).Property(EHBlur_blurred)]</value>
-			<!--	    <value condition="Skin.HasSetting(Enable.BlurredVideoInfo)">$INFO[Window(Home).Property(TMDbHelper.ListItem.BlurImage)]</value> -->
+			<value condition="Skin.HasSetting(SkinInfo.Blur)">$INFO[Window(Home).Property(SkinInfo.BlurredImage)]</value>
 			<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 			<value condition="!String.IsEmpty(Container(10051).ListItem.Art(fanart))">$INFO[Container(10051).ListItem.Art(fanart)]</value>
 		</variable>

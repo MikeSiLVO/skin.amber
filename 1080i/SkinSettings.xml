@@ -1135,13 +1135,13 @@
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="5" />
 							<param name="itemlabel" value="[B]$LOCALIZE[31278][/B]" />
-							<param name="skinsetting" value="Enable.BlurredVideoInfo" />
+							<param name="skinsetting" value="SkinInfo.Blur" />
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="7" />
 							<param name="itemlabel" value="      $LOCALIZE[31279]" />
 							<param name="skinsetting" value="Blur.UsePoster" />
-							<param name="itemvisibility">Skin.HasSetting(Enable.BlurredVideoInfo)</param>
+							<param name="itemvisibility">Skin.HasSetting(SkinInfo.Blur)</param>
 						</include>
 						<!-- <item id="5" description="Blur Background - TMDbHelper present">
 							<visible>Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Enable.TMDbHelper)</visible>
