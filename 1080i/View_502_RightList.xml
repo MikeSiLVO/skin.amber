@@ -27,8 +27,8 @@
 	</variable>
 	<!-- Set's first movie studio icon -->
 	<variable name="RightListStudiosSets">
-		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Window(Home).Property(SkinInfo.Set.Movies.Single.Studio),,.png]</value>
-		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Window(Home).Property(SkinInfo.Set.Movies.Single.Studio),,.png]</value>
+		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Window(Home).Property(SkinInfo.Set.Studios.1),,.png]</value>
+		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Window(Home).Property(SkinInfo.Set.Studios.1),,.png]</value>
 		<value>DefaultStudios.png</value>
 	</variable>
 
@@ -76,7 +76,7 @@
 		<value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR $VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31824]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
 		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31824]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
 		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[31824]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
-		<value condition="String.IsEqual(ListItem.DBType,set)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years)]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),,]</value>
+		<value condition="String.IsEqual(ListItem.DBType,set)">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR $VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Years.Range)]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Runtime),,]</value>
 	</variable>
 
 	<variable name="RightListPopupDetailsEpisodes">
@@ -163,7 +163,7 @@
 				<width>150</width>
 				<height>84</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<visible>String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Single.Studio)) + $PARAM[includeSets]</visible>
+				<visible>String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Studios.1)) + $PARAM[includeSets]</visible>
 			</control>
 		</definition>
 	</include>
@@ -648,23 +648,23 @@
 								<width>889</width>
 								<height>47.5</height>
 								<font>font24_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20342]: [/COLOR]$INFO[Container(4450).NumItems]</label>
+								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20342]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Count)]</label>
 								<visible>Skin.HasSetting(ShowSetCount)</visible>
 							</control>
 							<control type="label">
 								<width>889</width>
 								<height>47.5</height>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20339]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</label>
-								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Director))</visible>
+								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20339]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Directors)]</label>
+								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Directors))</visible>
 								<scroll>true</scroll>
 							</control>
 							<control type="label">
 								<width>889</width>
 								<height>47.5</height>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]</label>
-								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Genre))</visible>
+								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Genres)]</label>
+								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Genres))</visible>
 								<scroll>true</scroll>
 							</control>
 						</control>

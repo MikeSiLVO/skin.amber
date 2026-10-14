@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol condition="!String.IsEmpty(Skin.String(StartupImage)) | !String.IsEmpty(Skin.String(StartupImagePath)) | !String.IsEmpty(Skin.String(StartupPlaylist))">11</defaultcontrol>
-	<onload condition="System.AddonIsEnabled(script.skin.info.service)">RunScript(script.skin.info.service)</onload>
+	<onload>Skin.SetBool(SkinInfo.Service.Library)</onload>
 	<onload condition="Skin.HasSetting(Enable.TMDbHelper)">Skin.SetBool(TMDbHelper.Service)</onload>
 	<onload condition="!Skin.HasSetting(Enable.TMDbHelper)">Skin.Reset(TMDbHelper.Service)</onload>
 	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Enable.TMDbHelper)">Skin.SetBool(TMDbHelper.EnableBlur)</onload>

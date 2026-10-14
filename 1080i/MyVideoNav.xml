@@ -9,7 +9,6 @@
 	<onload>Skin.Reset(SingleSearchTerm)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onload>ClearProperty(gallery)</onload>
-	<onload condition="System.AddonIsEnabled(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
 	<onload condition="System.AddonIsEnabled(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onload>
 	<onunload>ClearProperty(GeneralSearchCalledInfo)</onunload>
@@ -178,7 +177,6 @@
 			<texture>$INFO[ListItem.Path]../fanart.jpg</texture>
 		</control>
 
-		<include condition="Skin.HasSetting(ShowSetCount)">SetCountList</include>
 		<include condition="Skin.HasSetting(ShowSpecialFanart)">SpecialFanartList</include>
 		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(ShowRatingMain)">EmbuaryHelperDetailsList</include>
 

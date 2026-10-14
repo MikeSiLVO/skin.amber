@@ -282,7 +282,7 @@
 					<posy>256</posy>
 					<width>1400</width>
 					<height>165</height>
-					<visible>[ListItem.IsCollection] + [[String.IsEmpty(ListItem.Plot) + String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot))] | Skin.HasSetting(AlwaysShowSetList)]</visible>
+					<visible>[ListItem.IsCollection] + [[String.IsEmpty(ListItem.Plot) + String.IsEmpty(Window(Home).Property(SkinInfo.Set.ExtendedPlots))] | Skin.HasSetting(AlwaysShowSetList)]</visible>
 					<visible>!ListItem.IsParentFolder</visible>
 					<orientation>horizontal</orientation>
 					<focusedlayout height="40" width="700">
@@ -942,7 +942,7 @@
 						<align>justify</align>
 						<label>$VAR[Plots]</label>
 						<autoscroll delay="3000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-						<visible>![Container.Content(Artists) | Container.Content(albums) | Container.Content(sets)] | [ListItem.IsCollection + [!String.IsEmpty(ListItem.Plot) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot))] + !Skin.HasSetting(AlwaysShowSetList)]</visible>
+						<visible>![Container.Content(Artists) | Container.Content(albums) | Container.Content(sets)] | [ListItem.IsCollection + [!String.IsEmpty(ListItem.Plot) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.ExtendedPlots))] + !Skin.HasSetting(AlwaysShowSetList)]</visible>
 					</control>
 					<control type="textbox" description="Plot">
 						<posy>230</posy>
@@ -958,7 +958,7 @@
 						<posy>290</posy>
 						<width>900</width>
 						<height>164</height>
-						<visible>ListItem.IsCollection + [[String.IsEmpty(ListItem.Plot) + String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot))] | Skin.HasSetting(AlwaysShowSetList)]</visible>
+						<visible>ListItem.IsCollection + [[String.IsEmpty(ListItem.Plot) + String.IsEmpty(Window(Home).Property(SkinInfo.Set.ExtendedPlots))] | Skin.HasSetting(AlwaysShowSetList)]</visible>
 						<visible>!ListItem.IsParentFolder</visible>
 						<orientation>vertical</orientation>
 						<focusedlayout height="40" width="900" />
@@ -1268,23 +1268,23 @@
 								<height>45</height>
 								<font>font20_title</font>
 								<scroll>false</scroll>
-								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20339](s): [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</label>
-								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Director))</visible>
+								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20339](s): [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Directors)]</label>
+								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Directors))</visible>
 							</control>
 							<control type="label">
 								<width>800</width>
 								<height>45</height>
 								<font>font20_title</font>
 								<scroll>false</scroll>
-								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[515](s): [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]</label>
-								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Genre))</visible>
+								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[515](s): [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Genres)]</label>
+								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Genres))</visible>
 							</control>
 							<control type="label">
 								<width>1000</width>
 								<height>45</height>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)]</label>
-								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Years))</visible>
+								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Years.Range),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Runtime)]</label>
+								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Years.Range))</visible>
 							</control>
 						</control>
 						<control type="textbox">
@@ -1293,14 +1293,14 @@
 							<height>160</height>
 							<label>$VAR[Plots]</label>
 							<autoscroll delay="3000" time="3000" repeat="4000">true</autoscroll>
-							<visible>![[String.IsEmpty(ListItem.Plot) + String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot))] | Skin.HasSetting(AlwaysShowSetList)]</visible>
+							<visible>![[String.IsEmpty(ListItem.Plot) + String.IsEmpty(Window(Home).Property(SkinInfo.Set.ExtendedPlots))] | Skin.HasSetting(AlwaysShowSetList)]</visible>
 						</control>
 						<!-- Movies in collection when the plot is empty -->
 						<control type="panel">
 							<posy>150</posy>
 							<width>800</width>
 							<height>160</height>
-							<visible>[String.IsEmpty(ListItem.Plot) + String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot))] | Skin.HasSetting(AlwaysShowSetList)</visible>
+							<visible>[String.IsEmpty(ListItem.Plot) + String.IsEmpty(Window(Home).Property(SkinInfo.Set.ExtendedPlots))] | Skin.HasSetting(AlwaysShowSetList)</visible>
 							<visible>!ListItem.IsParentFolder</visible>
 							<orientation>vertical</orientation>
 							<focusedlayout height="40" width="800">

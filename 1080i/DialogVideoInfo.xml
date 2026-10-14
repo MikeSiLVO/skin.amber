@@ -771,7 +771,7 @@
 					<font>InfoTitle</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
-					<label>$INFO[ListItem.Title,[B],[/B]] $INFO[Window(Home).Property(SkinInfo.Set.Movies.Years),(,)]</label>
+					<label>$INFO[ListItem.Title,[B],[/B]] $INFO[Window(Home).Property(SkinInfo.Set.Years.Range),(,)]</label>
 					<visible>String.IsEqual(ListItem.DBType,set)</visible>
 				</control>
 				<control type="image" description="Studio">
@@ -792,7 +792,7 @@
 					<texture>$VAR[InfoStudiosSets]</texture>
 					<aspectratio>keep</aspectratio>
 					<aligny>center</aligny>
-					<visible>String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Single.Studio)) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
+					<visible>String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Studios.1)) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
 				</control>
 				<control type="image" description="Studio - TMDb Helper">
 					<posy>-51</posy>
@@ -852,7 +852,7 @@
 					<onclick>SetProperty(TextViewerHeader,$ESCVAR[panelheading],Home)</onclick>
 					<onclick condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)] + !String.IsEmpty(ListItem.Tagline)">SetProperty(TextViewerSubHeader,$ESCINFO[ListItem.Tagline,[I],[/I]],Home)</onclick>
 					<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + String.IsEmpty(ListItem.Tagline) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Tagline))">SetProperty(TextViewerSubHeader,$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Tagline)),[I],[/I]],Home)</onclick>
-					<onclick condition="String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Years))">SetProperty(TextViewerSubHeader,$ESCINFO[Window(Home).Property(SkinInfo.Set.Movies.Years),[I],[/I]],Home)</onclick>
+					<onclick condition="String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Years.Range))">SetProperty(TextViewerSubHeader,$ESCINFO[Window(Home).Property(SkinInfo.Set.Years.Range),[I],[/I]],Home)</onclick>
 					<onclick>SetProperty(TextViewerContent,$ESCVAR[Plots],Home)</onclick>
 					<onclick>ActivateWindow(1124)</onclick>
 				</control>
