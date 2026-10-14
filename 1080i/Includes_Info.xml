@@ -759,8 +759,6 @@
 			<value condition="String.IsEqual(ListItem.DBTYPE,set)">videodb://movies/sets/$INFO[ListItem.DBID]/?setid=$INFO[ListItem.DBID]</value>
 		</variable>
 
-		<constant name="IconCrossfadeTime">400</constant>
-
 	<!-- <variable name="WidgetItemType">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">movie</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)">tv</value>

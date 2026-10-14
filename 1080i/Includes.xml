@@ -20,6 +20,7 @@
 	<include file="Includes_Info.xml" />
 	<include file="Includes_Maps.xml" />
 	<include file="Includes_Expressions.xml" />
+	<include file="Includes_CommonValues.xml" />
 	<include file="Includes_TVGuide.xml" />
 	<include file="Includes_Backgrounds.xml" />
 	<include file="Includes_FullScreen.xml" />

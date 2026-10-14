@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<!-- Fade times -->
+	<constant name="IconCrossfadeTime">400</constant>
+	<constant name="TextureFadeTime">480</constant>
+	<!-- Details dialogs -->
+	<constant name="DetailsListLeft">484</constant>
+	<constant name="DetailsListWidth">860</constant>
+	<constant name="DetailsButtonsLeft">1348</constant>
+	<constant name="DetailsButtonWidth">288</constant>
+</includes>

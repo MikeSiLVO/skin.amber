@@ -177,8 +177,6 @@
 		<value>special://skin/backgrounds/Default.jpg</value>
 	</variable>
 
-	<constant name="TextureFadeTime">480</constant>
-
 	<include name="AnimationVisibleFade">
 		<animation effect="fade" end="100" time="480">Visible</animation>
 		<animation effect="fade" start="100" end="0" time="480">Hidden</animation>

@@ -581,11 +581,6 @@
 		</control>
 	</include>
 
-		<constant name="DetailsListLeft">484</constant>
-	<constant name="DetailsListWidth">860</constant>
-	<constant name="DetailsButtonsLeft">1348</constant>
-	<constant name="DetailsButtonWidth">288</constant>
-
 	<include name="DetailsDialogFrame">
 		<param name="image" />
 		<param name="list">6</param>
