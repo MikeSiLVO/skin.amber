@@ -506,37 +506,6 @@
 		<value>.jpg</value>
 	</variable>
 
-	<variable name="InfoLineLabel">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),movies)">$LOCALIZE[31405]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),tvshows)">$LOCALIZE[31406]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),music)">$LOCALIZE[31407]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),musicvideos)">$LOCALIZE[31408]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),videos)">$LOCALIZE[3]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),moviestvshows)">$LOCALIZE[31413]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),pvr)">$LOCALIZE[31409]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),weather)">$LOCALIZE[8]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),addons)">$LOCALIZE[24001]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),videoaddons)">$LOCALIZE[1037]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),musicaddons)">$LOCALIZE[1038]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),videomusicaddons)">$LOCALIZE[31414]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),programaddons)">$LOCALIZE[1043]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),pictureaddons)">$LOCALIZE[1039]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),favourites)">$LOCALIZE[1036]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),disc)">$LOCALIZE[427]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),systeminfo)">$LOCALIZE[130]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),movieplaylist)">$LOCALIZE[31410]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),tvshowplaylist)">$LOCALIZE[31411]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),musicvideoplaylist)">$LOCALIZE[31412]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),episodeplaylist)">$LOCALIZE[31418]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),movienode)">$LOCALIZE[31591]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),tvshownode)">$LOCALIZE[31592]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),musicvideonode)">$LOCALIZE[31593]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),artistnode)">$LOCALIZE[31594]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),albumnode)">$LOCALIZE[31595]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),songnode)">$LOCALIZE[31596]</value>
-		<value>$LOCALIZE[231]</value>
-	</variable>
-
 	<variable name="TopBarMedia">
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Artist][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[MusicPlayer.Title]</value>
 		<value condition="Player.HasVideo + !VideoPlayer.Content(livetv)">$INFO[VideoPlayer.Title]</value>
@@ -1148,18 +1117,14 @@
 		<value condition="Control.HasFocus(302)">$ADDON[script.skinshortcuts 32001]</value>
 		<value condition="Control.HasFocus(303)">$ADDON[script.skinshortcuts 32002]</value>
 		<value condition="Control.HasFocus(304)">$ADDON[script.skinshortcuts 32003]</value>
+		<value condition="Control.HasFocus(311)">$ADDON[script.skinshortcuts 32028]</value>
 	</variable>
 
 	<variable name="SkinShortcutsLeftLabelVar">
-		<value condition="!String.IsEmpty(Window(Home).Property(skinshortcuts-Background))">$LOCALIZE[33068]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(skinshortcuts-Widget))">$LOCALIZE[31166]</value>
-		<value condition="String.IsEqual(Window.Property(groupname),mainmenu)">$LOCALIZE[33061]</value>
-		<value condition="String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[31528]</value>
-		<value condition="String.EndsWith(Window.Property(groupname),.1)">$INFO[Window(Home).Property(ShortcutsCurrentItem)] - $LOCALIZE[13398]</value>
-		<value condition="String.EndsWith(Window.Property(groupname),.2)">$LOCALIZE[31605] 1</value>
-		<value condition="String.EndsWith(Window.Property(groupname),.3)">$LOCALIZE[31605] 2</value>
-		<value condition="String.EndsWith(Window.Property(groupname),.4)">$LOCALIZE[31605] 3</value>
-		<value condition="String.EndsWith(Window.Property(groupname),.5)">$LOCALIZE[31605] 4</value>
+		<value condition="String.StartsWith(Window.Property(skinshortcuts-dialog),shelf)">$LOCALIZE[31166]</value>
+		<value condition="String.EndsWith(Window.Property(skinshortcuts-dialog),bottomshortcuts)">$INFO[Window(Home).Property(ShortcutsCurrentItem)] - $LOCALIZE[13398]</value>
+		<value condition="String.IsEqual(Window.Property(menuname),mainmenu)">$LOCALIZE[33061]</value>
+		<value condition="String.IsEqual(Window.Property(menuname),powermenu)">$LOCALIZE[31528]</value>
 		<value>$LOCALIZE[1034]</value>
 	</variable>
 
@@ -1444,12 +1409,6 @@
 	<variable name="MusicLabelVar">
 		<value condition="String.IsEqual(ListItem.DBType,song)">$INFO[ListItem.Tracknumber] - $INFO[ListItem.Title]</value>
 		<value>$INFO[ListItem.Label]</value>
-	</variable>
-
-	<variable name="WidgetPosLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(horizontalWidgetPos),Standard)">$LOCALIZE[31613]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(horizontalWidgetPos),Low)">$LOCALIZE[31614]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(horizontalWidgetPos),High)">$LOCALIZE[31634]</value>
 	</variable>
 
 	<variable name="Widget1ArtLabelVar">
@@ -1753,141 +1712,141 @@
 	</variable>
 
 	<variable name="Widget1AutoScrollLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),none)">$LOCALIZE[1223]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[7000])">7 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[8000])">8 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[9000])">9 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[10000])">10 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[11000])">11 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[12000])">12 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[15000])">15 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[20000])">20 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[30000])">30 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),$NUMBER[60000])">60 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),7000)">7 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),8000)">8 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),9000)">9 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),10000)">10 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),11000)">11 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),12000)">12 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),15000)">15 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),20000)">20 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),30000)">30 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll),60000)">60 $LOCALIZE[31168]</value>
+		<value>$LOCALIZE[1223]</value>
 	</variable>
 
 	<variable name="Widget2AutoScrollLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),none)">$LOCALIZE[1223]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[7000])">7 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[8000])">8 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[9000])">9 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[10000])">10 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[11000])">11 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[12000])">12 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[15000])">15 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[20000])">20 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[30000])">30 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),$NUMBER[60000])">60 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),7000)">7 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),8000)">8 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),9000)">9 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),10000)">10 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),11000)">11 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),12000)">12 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),15000)">15 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),20000)">20 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),30000)">30 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.2),60000)">60 $LOCALIZE[31168]</value>
+		<value>$LOCALIZE[1223]</value>
 	</variable>
 
 	<variable name="Widget3AutoScrollLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),none)">$LOCALIZE[1223]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[7000])">7 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[8000])">8 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[9000])">9 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[10000])">10 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[11000])">11 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[12000])">12 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[15000])">15 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[20000])">20 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[30000])">30 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),$NUMBER[60000])">60 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),7000)">7 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),8000)">8 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),9000)">9 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),10000)">10 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),11000)">11 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),12000)">12 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),15000)">15 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),20000)">20 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),30000)">30 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.3),60000)">60 $LOCALIZE[31168]</value>
+		<value>$LOCALIZE[1223]</value>
 	</variable>
 
 	<variable name="Widget4AutoScrollLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),none)">$LOCALIZE[1223]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[7000])">7 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[8000])">8 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[9000])">9 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[10000])">10 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[11000])">11 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[12000])">12 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[15000])">15 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[20000])">20 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[30000])">30 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),$NUMBER[60000])">60 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),7000)">7 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),8000)">8 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),9000)">9 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),10000)">10 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),11000)">11 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),12000)">12 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),15000)">15 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),20000)">20 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),30000)">30 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.4),60000)">60 $LOCALIZE[31168]</value>
+		<value>$LOCALIZE[1223]</value>
 	</variable>
 
 	<variable name="Widget5AutoScrollLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),none)">$LOCALIZE[1223]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[7000])">7 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[8000])">8 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[9000])">9 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[10000])">10 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[11000])">11 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[12000])">12 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[15000])">15 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[20000])">20 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[30000])">30 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),$NUMBER[60000])">60 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),7000)">7 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),8000)">8 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),9000)">9 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),10000)">10 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),11000)">11 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),12000)">12 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),15000)">15 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),20000)">20 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),30000)">30 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.5),60000)">60 $LOCALIZE[31168]</value>
+		<value>$LOCALIZE[1223]</value>
 	</variable>
 
 	<variable name="Widget6AutoScrollLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),none)">$LOCALIZE[1223]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[7000])">7 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[8000])">8 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[9000])">9 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[10000])">10 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[11000])">11 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[12000])">12 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[15000])">15 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[20000])">20 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[30000])">30 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[60000])">60 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),7000)">7 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),8000)">8 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),9000)">9 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),10000)">10 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),11000)">11 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),12000)">12 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),15000)">15 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),20000)">20 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),30000)">30 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),60000)">60 $LOCALIZE[31168]</value>
+		<value>$LOCALIZE[1223]</value>
 	</variable>
 
 	<variable name="Widget1PopupDelayLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),$NUMBER[1])">1 $LOCALIZE[31732]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),$NUMBER[2])">2 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),$NUMBER[3])">3 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),$NUMBER[4])">4 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),$NUMBER[5])">5 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),$NUMBER[6])">6 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),1)">1 $LOCALIZE[31732]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),2)">2 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),3)">3 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),4)">4 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),5)">5 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),6)">6 $LOCALIZE[31168]</value>
 	</variable>
 
 	<variable name="Widget2PopupDelayLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),$NUMBER[1])">1 $LOCALIZE[31732]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),$NUMBER[2])">2 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),$NUMBER[3])">3 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),$NUMBER[4])">4 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),$NUMBER[5])">5 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),$NUMBER[6])">6 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),1)">1 $LOCALIZE[31732]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),2)">2 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),3)">3 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),4)">4 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),5)">5 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.2),6)">6 $LOCALIZE[31168]</value>
 	</variable>
 
 	<variable name="Widget3PopupDelayLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),$NUMBER[1])">1 $LOCALIZE[31732]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),$NUMBER[2])">2 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),$NUMBER[3])">3 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),$NUMBER[4])">4 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),$NUMBER[5])">5 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),$NUMBER[6])">6 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),1)">1 $LOCALIZE[31732]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),2)">2 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),3)">3 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),4)">4 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),5)">5 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.3),6)">6 $LOCALIZE[31168]</value>
 	</variable>
 
 	<variable name="Widget4PopupDelayLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),$NUMBER[1])">1 $LOCALIZE[31732]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),$NUMBER[2])">2 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),$NUMBER[3])">3 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),$NUMBER[4])">4 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),$NUMBER[5])">5 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),$NUMBER[6])">6 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),1)">1 $LOCALIZE[31732]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),2)">2 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),3)">3 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),4)">4 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),5)">5 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.4),6)">6 $LOCALIZE[31168]</value>
 	</variable>
 
 	<variable name="Widget5PopupDelayLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),$NUMBER[1])">1 $LOCALIZE[31732]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),$NUMBER[2])">2 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),$NUMBER[3])">3 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),$NUMBER[4])">4 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),$NUMBER[5])">5 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),$NUMBER[6])">6 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),1)">1 $LOCALIZE[31732]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),2)">2 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),3)">3 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),4)">4 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),5)">5 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.5),6)">6 $LOCALIZE[31168]</value>
 	</variable>
 
 	<variable name="Widget6PopupDelayLabelVar">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[1])">1 $LOCALIZE[31732]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[2])">2 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[3])">3 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[4])">4 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[5])">5 $LOCALIZE[31168]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[6])">6 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),1)">1 $LOCALIZE[31732]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),2)">2 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),3)">3 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),4)">4 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),5)">5 $LOCALIZE[31168]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),6)">6 $LOCALIZE[31168]</value>
 	</variable>
 
 	<variable name="InfoDiscVar">
