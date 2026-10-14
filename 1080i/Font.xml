@@ -235,6 +235,11 @@
 			<size>40</size>
 		</font>
 		<font>
+			<name>Font40_Symbol</name>
+			<filename>MaterialSymbolsOutlined_Filled-Regular.ttf</filename>
+			<size>40</size>
+		</font>
+		<font>
 			<name>Mono26</name>
 			<filename>UbuntuMono-R.ttf</filename>
 			<style>uppercase</style>
@@ -442,6 +447,11 @@
 		<font>
 			<name>Font40_Icon</name>
 			<filename>MaterialDesignIcons.ttf</filename>
+			<size>40</size>
+		</font>
+		<font>
+			<name>Font40_Symbol</name>
+			<filename>MaterialSymbolsOutlined_Filled-Regular.ttf</filename>
 			<size>40</size>
 		</font>
 		<font>
@@ -719,6 +729,11 @@
 			<size>40</size>
 		</font>
 		<font>
+			<name>Font40_Symbol</name>
+			<filename>MaterialSymbolsOutlined_Filled-Regular.ttf</filename>
+			<size>40</size>
+		</font>
+		<font>
 			<name>Mono26</name>
 			<filename>arial.ttf</filename>
 			<style>uppercase</style>
@@ -972,6 +987,11 @@
 			<size>40</size>
 		</font>
 		<font>
+			<name>Font40_Symbol</name>
+			<filename>MaterialSymbolsOutlined_Filled-Regular.ttf</filename>
+			<size>40</size>
+		</font>
+		<font>
 			<name>Mono26</name>
 			<filename>arial.ttf</filename>
 			<size>26</size>
@@ -1184,6 +1204,11 @@
 		<font>
 			<name>Font40_Icon</name>
 			<filename>MaterialDesignIcons.ttf</filename>
+			<size>40</size>
+		</font>
+		<font>
+			<name>Font40_Symbol</name>
+			<filename>MaterialSymbolsOutlined_Filled-Regular.ttf</filename>
 			<size>40</size>
 		</font>
 		<font>
