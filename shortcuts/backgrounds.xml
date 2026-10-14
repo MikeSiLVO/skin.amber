@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <backgrounds>
+	<overrides>
+		<background replace="Kodi.Movie.Fanart">Movie.Fanart</background>
+		<background replace="Kodi.TV.Fanart">TV.Fanart</background>
+		<background replace="Kodi.Video.Fanart">Video.Fanart</background>
+		<background replace="Kodi.Music.Fanart">Music.Fanart</background>
+		<background replace="Kodi.Global.Fanart">Global.Fanart</background>
+	</overrides>
 	<background name="browse" label="$ADDON[script.skinshortcuts 32051]" type="browse" />
 	<background name="browsefolder" label="$ADDON[script.skinshortcuts 32052]" type="multi" />
 	<background name="playlistBackground" label="$ADDON[script.skinshortcuts 32040]" type="playlist">
@@ -10,37 +17,22 @@
 	<background name="nodeBackground" label="$LOCALIZE[31590]" type="property">
 		<path>nodeBackground</path>
 	</background>
-	<background name="Kodi.Movie.Fanart" label="$LOCALIZE[31597]" type="property">
-		<path>Kodi.Movie.Fanart</path>
-	</background>
-	<background name="Kodi.TV.Fanart" label="$LOCALIZE[31598]" type="property">
-		<path>Kodi.TV.Fanart</path>
-	</background>
-	<background name="Kodi.Video.Fanart" label="$LOCALIZE[31599]" type="property">
-		<path>Kodi.Video.Fanart</path>
-	</background>
-	<background name="Kodi.Music.Fanart" label="$LOCALIZE[31600]" type="property">
-		<path>Kodi.Music.Fanart</path>
-	</background>
-	<background name="Kodi.Global.Fanart" label="$LOCALIZE[31601]" type="property">
-		<path>Kodi.Global.Fanart</path>
-	</background>
-	<background name="Movie.Fanart" label="$LOCALIZE[31399]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+	<background name="Movie.Fanart" label="$LOCALIZE[31399]" type="property" visible="Library.HasContent(movies)">
 		<path>Movie.Fanart</path>
 	</background>
-	<background name="TV.Fanart" label="$LOCALIZE[31400]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+	<background name="TV.Fanart" label="$LOCALIZE[31400]" type="property" visible="Library.HasContent(tvshows)">
 		<path>TV.Fanart</path>
 	</background>
-	<background name="Video.Fanart" label="$LOCALIZE[31401]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+	<background name="Video.Fanart" label="$LOCALIZE[31401]" type="property" visible="Library.HasContent(movies) | Library.HasContent(tvshows)">
 		<path>Video.Fanart</path>
 	</background>
-	<background name="MusicVideo.Fanart" label="$LOCALIZE[31589]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+	<background name="MusicVideo.Fanart" label="$LOCALIZE[31589]" type="property" visible="Library.HasContent(musicvideos)">
 		<path>MusicVideo.Fanart</path>
 	</background>
-	<background name="Music.Fanart" label="$LOCALIZE[31402]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+	<background name="Music.Fanart" label="$LOCALIZE[31402]" type="property" visible="Library.HasContent(music)">
 		<path>Music.Fanart</path>
 	</background>
-	<background name="Global.Fanart" label="$LOCALIZE[31403]" type="property" visible="System.HasAddon(script.embuary.helper) + Skin.HasSetting(UseEHBackgrounds)">
+	<background name="Global.Fanart" label="$LOCALIZE[31403]" type="property">
 		<path>Global.Fanart</path>
 	</background>
 	<background name="Weather.Fanart" label="$LOCALIZE[31404]" type="property" visible="!String.IsEmpty(Skin.String(weatherfanartResource.path))">
