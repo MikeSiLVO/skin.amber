@@ -423,32 +423,15 @@
 	<!-- Movie/TV Show Logo for Home Window -->
 	<include name="HomeClearLogo">
 		<control type="group">
-
-			<visible>!Skin.HasSetting(HomeDefaultBG) + [[!Player.HasMedia + [Control.HasFocus(300) | ControlGroup(700).HasFocus]] | [[Player.HasMedia + !Skin.HasSetting(Hide.NowPlaying) + ![Control.IsVisible(70101) | Control.IsVisible(70102)]] + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]] | [Skin.HasSetting(Hide.NowPlaying) + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]]]</visible>
-			<!-- Logo for vert. menu, no widgets -->
-			<control type="image">
-				<posy>90</posy>
-				<posx>1390</posx>
-				<width>516</width>
-				<height>200</height>
-				<texture background="true">$VAR[HomeClearLogo]</texture>
-				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
-				<visible>!$EXP[widgetsAreShowing] + Skin.HasSetting(VerticalHome)</visible>
-			</control>
-			<!-- Logo for horiz. menu, no widgets -->
-			<control type="image">
-				<posy>60</posy>
-				<posx>1390</posx>
-				<width>516</width>
-				<height>200</height>
-				<texture background="true">$VAR[HomeClearLogo]</texture>
-				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
-				<visible>!$EXP[widgetsAreShowing] + !Skin.HasSetting(VerticalHome)</visible>
-			</control>
+			<visible>!Skin.HasSetting(HomeDefaultBG) + [[!Player.HasMedia + [Control.HasFocus(300) | Control.HasFocus(9001) | ControlGroup(700).HasFocus]] | [[Player.HasMedia + !Skin.HasSetting(Hide.NowPlaying) + ![Control.IsVisible(70101) | Control.IsVisible(70102)]] + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]] | [Skin.HasSetting(Hide.NowPlaying) + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]]]</visible>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="Skin.HasSetting(VerticalHome)">conditional</animation>
+			<include content="HomeLogoImage">
+				<param name="left">1398</param>
+				<param name="top">60</param>
+				<param name="width">500</param>
+				<param name="height">200</param>
+				<param name="visible">!$EXP[widgetsAreShowing]</param>
+			</include>
 		</control>
 	</include>
 
@@ -470,179 +453,47 @@
 				<animation effect="slide" start="0,0" end="440,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 				<animation effect="slide" start="0,0" end="140,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 				<animation effect="fade" start="100" end="0" time="250" tween="sine" easing="out" condition="Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">conditional</animation>
-				<!-- Logo for vert. menu, single-row widget, text menu -->
-				<control type="image">
-					<posy>-30</posy>
-					<posx>940</posx>
-					<width>500</width>
-					<height>280</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>[$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo]] + Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !$PARAM[ShowLargeLogoUnfocused]</visible>
-				</control>
-				<!-- Logo for vert. menu, single-row widget, icon menu -->
-				<control type="image">
-					<posy>-30</posy>
-					<posx>1240</posx>
-					<width>500</width>
-					<height>280</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>[$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo]] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !$PARAM[ShowLargeLogoUnfocused]</visible>
-				</control>
-				<!-- Logo for vert. menu when info shown for shelves and shelves are unfocused, text menu -->
-				<control type="image">
-					<posy>-30</posy>
-					<posx>940</posx>
-					<width>500</width>
-					<height>280</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>Skin.HasSetting(VerticalHome) + $PARAM[ShowLargeLogoUnfocused] + !ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)</visible>
-				</control>
-				<!-- Logo for vert. menu when info shown for shelves and shelves are unfocused, icon menu -->
-				<control type="image">
-					<posy>-30</posy>
-					<posx>1240</posx>
-					<width>500</width>
-					<height>280</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>Skin.HasSetting(VerticalHome) + $PARAM[ShowLargeLogoUnfocused] + !ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)</visible>
-				</control>
-				<!-- Logo for horiz. menu, single-row widget -->
-				<control type="image">
-					<posy>60</posy>
-					<posx>1400</posx>
-					<width>500</width>
-					<height>200</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>$PARAM[ShowLargeLogo] + !Skin.HasSetting(VerticalHome)</visible>
-				</control>
-				<!-- Slightly smaller large logo when double shelf and horizontal menu -->
-				<control type="image">
-					<posy>105</posy>
-					<posx>1450</posx>
-					<width>460</width>
-					<height>178</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>$PARAM[ShowLarge2Logo] + !Skin.HasSetting(VerticalHome)</visible>
-				</control>
+				<animation effect="slide" start="0,0" end="30,34" time="0" condition="!Skin.HasSetting(VerticalHome) + $PARAM[ShowLarge2Logo] + !$PARAM[ShowLargeLogo]">conditional</animation>
+				<animation effect="slide" start="0,0" end="-460,-50" time="0" condition="Skin.HasSetting(VerticalHome) + [$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo] | $PARAM[ShowLargeLogoUnfocused]]">conditional</animation>
+				<animation effect="slide" start="0,0" end="300,0" time="0" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + [$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo] | $PARAM[ShowLargeLogoUnfocused]]">conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-18" time="0" condition="!Skin.HasSetting(VerticalHome) + $PARAM[ShowMediumLogo] + !$PARAM[ShowMedium2Logo]">conditional</animation>
+				<animation effect="slide" start="0,0" end="-390,-72" time="0" condition="Skin.HasSetting(VerticalHome) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(Enable.FanartTitle) + Skin.HasSetting(FanartTitle.InTopBar)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-411,-46" time="0" condition="Skin.HasSetting(VerticalHome) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-511,-46" time="0" condition="Skin.HasSetting(VerticalHome) + $PARAM[ShowMediumLogo] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + ![Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)]">conditional</animation>
+				<animation effect="slide" start="0,0" end="300,0" time="0" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(Enable.FanartTitle)">conditional</animation>
+				<animation effect="slide" start="0,0" end="100,0" time="0" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + $PARAM[ShowMediumLogo] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + ![Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)]">conditional</animation>
+				<include content="HomeLogoImage" condition="[!Skin.HasSetting(VerticalHome) + [$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo]]] | [Skin.HasSetting(VerticalHome) + [$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo] | $PARAM[ShowLargeLogoUnfocused]]]">
+					<param name="left">1400</param>
+					<param name="top">60</param>
+					<param name="width">500</param>
+					<param name="height">200</param>
+					<param name="visible">![Skin.HasSetting(VerticalHome) + $PARAM[ShowLargeLogoUnfocused] + ControlGroup(700).HasFocus]</param>
+				</include>
+				<include content="HomeLogoImage" condition="[!Skin.HasSetting(VerticalHome) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]]] | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.FanartTitle) + [[[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(FanartTitle.InTopBar)] | [!Skin.HasSetting(FanartTitle.InTopBar) + [[$PARAM[ShowMediumLogo] + ![Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)]] | [[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)]]]]]">
+					<param name="left">1550</param>
+					<param name="top">50</param>
+					<param name="width">300</param>
+					<param name="height">100</param>
+				</include>
+			</control>
+		</definition>
+	</include>
 
-				<!-- Logo when double shelf and fanart title in top bar, vertical menu, text menu -->
-				<control type="image">
-					<posy>-30</posy>
-					<posx>1160</posx>
-					<width>300</width>
-					<height>116</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.FanartTitle) + Skin.HasSetting(FanartTitle.InTopBar) + !Skin.HasSetting(Vertical.IconOnly)</visible>
-				</control>
-				<!-- Logo when double shelf and fanart title in top bar, vertical menu, icon menu -->
-				<control type="image">
-					<posy>-30</posy>
-					<posx>1460</posx>
-					<width>300</width>
-					<height>116</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.FanartTitle) + Skin.HasSetting(FanartTitle.InTopBar) + Skin.HasSetting(Vertical.IconOnly)</visible>
-				</control>
-
-				<!-- Logo when double shelf and fanart title below top bar, info line in shelf, text menu -->
-				<control type="image">
-					<posy>4</posy>
-					<posx>1060</posx>
-					<width>258</width>
-					<height>100</height>
-					<texture  background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>$PARAM[ShowMediumLogo] + Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + [[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)]</visible>
-				</control>
-				<!-- Logo when double shelf and fanart title below top bar, info line in shelf, icon menu -->
-				<control type="image">
-					<posy>4</posy>
-					<posx>1460</posx>
-					<width>258</width>
-					<height>100</height>
-					<texture  background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>$PARAM[ShowMediumLogo] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + [[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)]</visible>
-				</control>
-
-				<!-- Logo when double shelf and fanart title below top bar, info line below top bar -->
-				<control type="image">
-					<posy>4</posy>
-					<posx>1160</posx>
-					<width>258</width>
-					<height>100</height>
-					<texture  background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)</visible>
-				</control>
-				<!-- Logo when double shelf and fanart title below top bar, info line below top bar -->
-				<control type="image">
-					<posy>4</posy>
-					<posx>1460</posx>
-					<width>258</width>
-					<height>100</height>
-					<texture  background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)</visible>
-				</control>
-
-				<!-- Logo when double shelf and horizontal menu -->
-				<control type="image">
-					<posy>45</posy>
-					<posx>1500</posx>
-					<width>400</width>
-					<height>75</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>$PARAM[ShowMediumLogo] + !Skin.HasSetting(VerticalHome)</visible>
-				</control>
-
-				<!-- Slightly larger logo when double shelf and horizontal menu -->
-				<control type="image">
-					<posy>50</posy>
-					<posx>1500</posx>
-					<width>400</width>
-					<height>100</height>
-					<texture background="true">$VAR[HomeClearLogo]</texture>
-					<aspectratio>keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
-					<visible>$PARAM[ShowMedium2Logo] + !Skin.HasSetting(VerticalHome)</visible>
-				</control>
+	<include name="HomeLogoImage">
+		<param name="left" />
+		<param name="top" />
+		<param name="width" />
+		<param name="height" />
+		<param name="visible">true</param>
+		<definition>
+			<control type="image">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<aspectratio>keep</aspectratio>
+				<texture background="true">$VAR[HomeClearLogo]</texture>
+				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
 	</include>
