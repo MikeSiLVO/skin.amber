@@ -524,7 +524,7 @@
 					<height>90</height>
 					<top>10</top>
 					<control type="image" id="9900502" description="Studio">
-						<texture>$VAR[ShelfPopupStudios]</texture>
+						<texture background="true">$VAR[ShelfPopupStudios]</texture>
 						<width>120</width>
 						<height>74</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>

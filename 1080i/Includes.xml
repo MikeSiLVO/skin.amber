@@ -87,13 +87,13 @@
 					<left>$PARAM[shadowoffset]</left>
 					<width>$PARAM[width]</width>
 					<height>$PARAM[height]</height>
-					<texture colordiffuse="$PARAM[shadowcolor]">$PARAM[texture]</texture>
+					<texture background="true" colordiffuse="$PARAM[shadowcolor]">$PARAM[texture]</texture>
 					<aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspect]</aspectratio>
 				</control>
 				<control type="image" description="Icon">
 					<width>$PARAM[width]</width>
 					<height>$PARAM[height]</height>
-					<texture>$PARAM[texture]</texture>
+					<texture background="true">$PARAM[texture]</texture>
 					<aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspect]</aspectratio>
 				</control>
 			</control>
@@ -586,7 +586,7 @@
 						<timeperimage>70</timeperimage>
 						<fadetime>1</fadetime>
 						<randomize>false</randomize>
-						<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
+						<imagepath background="true">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
 					</control>
 					<control type="label">
 						<visible>!Skin.HasSetting(Hide.WeatherTitleBar) + !String.IsEmpty(Weather.Plugin)</visible>
@@ -867,7 +867,7 @@
 					<posy>745</posy>
 					<height>120</height>
 					<width>260</width>
-					<imagepath>$VAR[WeatherIconPath]$INFO[Window.Property(Daily.$PARAM[dayid].FanartCode)]$VAR[WeatherIconExt]</imagepath>
+					<imagepath background="true">$VAR[WeatherIconPath]$INFO[Window.Property(Daily.$PARAM[dayid].FanartCode)]$VAR[WeatherIconExt]</imagepath>
 					<aspectratio>keep</aspectratio>
 					<timeperimage>70</timeperimage>
 					<fadetime>1</fadetime>
@@ -964,7 +964,7 @@
 					<width>60</width>
 					<aspectratio>keep</aspectratio>
 					<bordersize>6</bordersize>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 			</itemlayout>
 			<focusedlayout width="$PARAM[listwidth]" height="60">
@@ -1001,7 +1001,7 @@
 					<width>60</width>
 					<bordersize>6</bordersize>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 			</focusedlayout>
 		</definition>

@@ -2277,7 +2277,7 @@
 						<height>180</height>
 						<width>180</width>
 						<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
+						<texture background="true" diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 					<control type="image">
 						<top>17</top>
@@ -2347,7 +2347,7 @@
 						<height>180</height>
 						<width>180</width>
 						<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
+						<texture background="true" diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 					<control type="image">
 						<top>17</top>
@@ -2411,7 +2411,7 @@
 						<height>215</height>
 						<width>215</width>
 						<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
+						<texture background="true" diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 					<control type="image">
 						<top>17</top>
@@ -2480,7 +2480,7 @@
 						<height>215</height>
 						<width>215</width>
 						<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
+						<texture background="true" diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 					<control type="image">
 						<top>17</top>
@@ -2544,7 +2544,7 @@
 						<height>260</height>
 						<width>260</width>
 						<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
+						<texture background="true" diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 					<control type="image">
 						<top>17</top>
@@ -2613,7 +2613,7 @@
 						<height>260</height>
 						<width>260</width>
 						<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
+						<texture background="true" diffuse="thumbs/discartbottom.png" fallback="DefaultNoPreview.png">$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 					<control type="image">
 						<top>17</top>

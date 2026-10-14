@@ -87,7 +87,7 @@
 						<posy>5</posy>
 						<width>50</width>
 						<height>50</height>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout width="382" height="60">
@@ -125,7 +125,7 @@
 						<posy>5</posy>
 						<width>50</width>
 						<height>50</height>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 				</focusedlayout>
 			</control>

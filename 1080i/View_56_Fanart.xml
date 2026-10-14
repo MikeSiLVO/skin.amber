@@ -996,7 +996,7 @@
 							<posy>105</posy>
 							<width>628</width>
 							<height>348</height>
-							<texture>$VAR[Fanart.Art]</texture>
+							<texture background="true">$VAR[Fanart.Art]</texture>
 							<aspectratio aligny="top">scale</aspectratio>
 							<visible>!$EXP[ShowExtraFanartOnInfo] | !$EXP[ExtraFanartPresent]</visible>
 						</control>

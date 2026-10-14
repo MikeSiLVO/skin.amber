@@ -710,7 +710,7 @@
 					<height>90</height>
 					<top>10</top>
 					<control type="image" id="99701" description="Studio">
-						<texture>$VAR[ShelfInfoStudios]</texture>
+						<texture background="true">$VAR[ShelfInfoStudios]</texture>
 						<width>120</width>
 						<height>74</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>

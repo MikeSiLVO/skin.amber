@@ -774,7 +774,7 @@
 					<left>1000</left>
 					<height>75</height>
 					<width>160</width>
-					<texture>$VAR[InfoStudios]</texture>
+					<texture background="true">$VAR[InfoStudios]</texture>
 					<aspectratio>keep</aspectratio>
 					<aligny>center</aligny>
 					<visible>!String.IsEmpty(ListItem.Studio) + !String.Contains(ListItem.Studio,/) + String.IsEmpty(ListItem.Property(tmdb_id)) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
@@ -784,7 +784,7 @@
 					<left>1000</left>
 					<height>75</height>
 					<width>160</width>
-					<texture>$VAR[InfoStudiosSets]</texture>
+					<texture background="true">$VAR[InfoStudiosSets]</texture>
 					<aspectratio>keep</aspectratio>
 					<aligny>center</aligny>
 					<visible>String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Studios.1)) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
@@ -1333,7 +1333,7 @@
 				<posx>10</posx>
 				<width>330</width>
 				<height>340</height>
-				<texture>$VAR[Poster]</texture>
+				<texture background="true">$VAR[Poster]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label" description="Poster Label">
@@ -1348,7 +1348,7 @@
 				<posx>360</posx>
 				<width>330</width>
 				<height>340</height>
-				<texture>$INFO[ListItem.Art(fanart)]</texture>
+				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label" description="Path Label">
@@ -1364,7 +1364,7 @@
 				<posx>710</posx>
 				<width>330</width>
 				<height>340</height>
-				<texture>$INFO[ListItem.Art(thumb)]</texture>
+				<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label" description="Path Label">

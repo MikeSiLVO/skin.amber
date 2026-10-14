@@ -145,7 +145,7 @@
 		<param name="includeSets">true</param>
 		<definition>
 			<control type="image" description="Studio">
-				<texture>$VAR[RightListStudios]</texture>
+				<texture background="true">$VAR[RightListStudios]</texture>
 				<width>150</width>
 				<height>84</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -159,7 +159,7 @@
 				<visible>[String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))</visible>
 			</control>
 			<control type="image" description="1st. Studio - Sets">
-				<texture>$VAR[RightListStudiosSets]</texture>
+				<texture background="true">$VAR[RightListStudiosSets]</texture>
 				<width>150</width>
 				<height>84</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -869,7 +869,7 @@
 						<height>90</height>
 						<top>10</top>
 						<control type="image" id="9900502" description="Studio">
-							<texture>$VAR[RightListStudios]</texture>
+							<texture background="true">$VAR[RightListStudios]</texture>
 							<width>120</width>
 							<height>74</height>
 							<aspectratio align="center" aligny="center">keep</aspectratio>

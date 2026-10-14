@@ -60,7 +60,7 @@
 				<posy>83</posy>
 				<height>130</height>
 				<width>150</width>
-				<imagepath>$VAR[WeatherIconPath]$INFO[Window.Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
+				<imagepath background="true">$VAR[WeatherIconPath]$INFO[Window.Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
 				<timeperimage>70</timeperimage>
 				<fadetime>1</fadetime>
 				<randomize>false</randomize>

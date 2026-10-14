@@ -130,7 +130,7 @@
 						<top>-406</top>
 						<width>439</width>
 						<height>636</height>
-						<texture>$VAR[VideoPlayerIcon]</texture>
+						<texture background="true">$VAR[VideoPlayerIcon]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 						<colordiffuse>HeavyShadow</colordiffuse>
 					</control>
@@ -139,7 +139,7 @@
 						<top>-422</top>
 						<width>439</width>
 						<height>636</height>
-						<texture>$VAR[VideoPlayerIcon]</texture>
+						<texture background="true">$VAR[VideoPlayerIcon]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					</control>
 				</control>
@@ -150,7 +150,7 @@
 						<posy>666r</posy>
 						<width>439</width>
 						<height>636</height>
-						<texture>$VAR[VideoPlayerIcon]</texture>
+						<texture background="true">$VAR[VideoPlayerIcon]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 						<colordiffuse>HeavyShadow</colordiffuse>
 						<visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
@@ -160,7 +160,7 @@
 						<posy>682r</posy>
 						<width>439</width>
 						<height>636</height>
-						<texture>$VAR[VideoPlayerIcon]</texture>
+						<texture background="true">$VAR[VideoPlayerIcon]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 						<visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
 					</control>
@@ -334,7 +334,7 @@
 				<posy>654r</posy>
 				<width>439</width>
 				<height>636</height>
-				<texture>$VAR[VideoPlayerIcon]</texture>
+				<texture background="true">$VAR[VideoPlayerIcon]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 				<colordiffuse>HeavyShadow</colordiffuse>
 			</control>
@@ -343,7 +343,7 @@
 				<posy>672r</posy>
 				<width>439</width>
 				<height>636</height>
-				<texture>$VAR[VideoPlayerIcon]</texture>
+				<texture background="true">$VAR[VideoPlayerIcon]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			</control>
 		</control>

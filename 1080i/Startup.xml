@@ -54,7 +54,7 @@
 			<width>1920</width>
 			<height>1080</height>
 			<aspectratio>scale</aspectratio>
-			<texture>$INFO[Skin.String(StartupImage)]</texture>
+			<texture background="true">$INFO[Skin.String(StartupImage)]</texture>
 		</control>
 		<control type="multiimage">
 			<visible>!String.IsEmpty(Skin.String(StartupImagePath))</visible>

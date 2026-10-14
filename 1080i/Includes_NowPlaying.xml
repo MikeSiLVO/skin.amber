@@ -296,7 +296,7 @@
 						<width>500</width>
 						<bottom>125</bottom>
 						<bordersize>48,0,0,0</bordersize>
-						<texture>$VAR[NowPlayingLogoVar]</texture>
+						<texture background="true">$VAR[NowPlayingLogoVar]</texture>
 						<aspectratio align="left">keep</aspectratio>
 						<visible>Player.HasAudio | [Player.HasVideo + !Skin.String(NowPlayingMovieInfo,preview)] | [Player.HasVideo + Skin.String(NowPlayingMovieInfo,preview) + [!System.IdleTime(8) | !Skin.HasSetting(Zoom.VideoPreview) | Skin.HasSetting(VerticalHome)]]</visible>
 					</control>
@@ -308,7 +308,7 @@
 						<width>380</width>
 						<bottom>147</bottom>
 						<bordersize>48,0,0,0</bordersize>
-						<texture>$VAR[NowPlayingLogoVar]</texture>
+						<texture background="true">$VAR[NowPlayingLogoVar]</texture>
 						<aspectratio align="left">keep</aspectratio>
 						<visible>[Player.HasVideo + Skin.String(NowPlayingMovieInfo,preview) + System.IdleTime(8) + Skin.HasSetting(Zoom.VideoPreview) + !Skin.HasSetting(VerticalHome)]</visible>
 					</control>
@@ -372,7 +372,7 @@
 				<height>266</height>
 				<aspectratio>keep</aspectratio>
 				<bordersize>10</bordersize>
-				<texture diffuse="img/disc.png">$VAR[NowPlayingVideoDiscArtVar]</texture>
+				<texture background="true" diffuse="img/disc.png">$VAR[NowPlayingVideoDiscArtVar]</texture>
 			</control>
 			<control type="group">
 				<width>266</width>
@@ -473,7 +473,7 @@
 					<width>500</width>
 					<bottom>125</bottom>
 					<bordersize>48,0,0,0</bordersize>
-					<texture>$VAR[NowPlayingLogoVar]</texture>
+					<texture background="true">$VAR[NowPlayingLogoVar]</texture>
 					<aspectratio align="left">keep</aspectratio>
 				</control>
 				<control type="label">
@@ -538,7 +538,7 @@
 					<height>347</height>
 					<aspectratio>keep</aspectratio>
 					<bordersize>20</bordersize>
-					<texture diffuse="diffuse/disc.png">$VAR[NowPlayingMusicDiscArtVar]</texture>
+					<texture background="true" diffuse="diffuse/disc.png">$VAR[NowPlayingMusicDiscArtVar]</texture>
 				</control>
 				<include content="ShadowedImage">
 					<param name="top">0</param>

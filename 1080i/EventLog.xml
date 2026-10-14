@@ -42,7 +42,7 @@
 							<posy>9</posy>
 							<width>80</width>
 							<height>80</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label" description="Label">
@@ -83,7 +83,7 @@
 							<posy>9</posy>
 							<width>80</width>
 							<height>80</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label" description="Label">

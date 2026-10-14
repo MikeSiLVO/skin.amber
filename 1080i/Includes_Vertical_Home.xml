@@ -114,7 +114,7 @@
 				<posx>0</posx>
 				<width>120</width>
 				<height>120</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -124,7 +124,7 @@
 				<posx>0</posx>
 				<width>120</width>
 				<height>120</height>
-				<texture colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
+				<texture background="true" colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -292,7 +292,7 @@
 					<posx>0</posx>
 					<width>120</width>
 					<height>120</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -302,7 +302,7 @@
 					<posx>0</posx>
 					<width>120</width>
 					<height>120</height>
-					<texture colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
+					<texture background="true" colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>

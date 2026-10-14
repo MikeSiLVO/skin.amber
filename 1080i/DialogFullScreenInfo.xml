@@ -22,7 +22,7 @@
 					<top>682r</top>
 					<width>525</width>
 					<height>652</height>
-					<texture fallback="DefaultVideoCover.png">$VAR[VideoPlayerIcon]</texture>
+					<texture background="true" fallback="DefaultVideoCover.png">$VAR[VideoPlayerIcon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<visible>$EXP[showPosterOSD]</visible>
 				</control>

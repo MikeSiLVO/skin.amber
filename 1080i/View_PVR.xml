@@ -341,7 +341,7 @@
 						<width>58</width>
 						<height>58</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 				</channellayout>
 				<focusedchannellayout height="70" width="420">
@@ -379,7 +379,7 @@
 						<width>58</width>
 						<height>58</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 				</focusedchannellayout>
 				<itemlayout height="72" width="60">
@@ -692,7 +692,7 @@
 							<posy>7</posy>
 							<width>88</width>
 							<height>88</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<colordiffuse>ShadowDark</colordiffuse>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -702,7 +702,7 @@
 							<posy>4</posy>
 							<width>88</width>
 							<height>88</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label" description="Main Label">
@@ -822,7 +822,7 @@
 							<posy>7</posy>
 							<width>88</width>
 							<height>88</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<colordiffuse>ShadowDark</colordiffuse>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -832,7 +832,7 @@
 							<posy>4</posy>
 							<width>88</width>
 							<height>88</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label" description="Main Label">
