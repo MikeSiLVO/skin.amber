@@ -402,6 +402,17 @@
 			</var>
 		</propertyGroup>
 	</propertyGroups>
+	<presets>
+		<preset name="InfoLineList">
+			<values condition="InfoLine=addons" listId="9985" listContent="addons://user/all" />
+			<values condition="InfoLine=videoaddons" listId="9980" listContent="addons://sources/video" />
+			<values condition="InfoLine=musicaddons" listId="9981" listContent="addons://sources/audio" />
+			<values condition="InfoLine=programaddons" listId="9982" listContent="addons://sources/executable" />
+			<values condition="InfoLine=pictureaddons" listId="9983" listContent="addons://sources/image" />
+			<values condition="InfoLine=gameaddons" listId="9984" listContent="addons://sources/game" />
+			<values condition="InfoLine IN movienode,tvshownode,musicvideonode,artistnode,albumnode,songnode" listId="9991" listContent="$INFO[Container(300).ListItem.Property(path)]" listVisible="String.EndsWith(Container(300).ListItem.Property(InfoLine),node)" />
+		</preset>
+	</presets>
 	<includes>
 		<include name="TwoShelves">
 			<control type="group">
@@ -4752,6 +4763,22 @@
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.poster))]</icon>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.20.File)])</onclick>
 			</item>
+		</controls>
+	</template>
+	<template include="InfoLineLists" build="true" menu="mainmenu">
+		<condition>InfoLine IN addons,videoaddons,musicaddons,programaddons,pictureaddons,gameaddons,movienode,tvshownode,musicvideonode,artistnode,albumnode,songnode</condition>
+		<preset content="InfoLineList" />
+		<controls>
+			<control type="list" id="$PROPERTY[listId]">
+				<posx>-20</posx>
+				<posy>-20</posy>
+				<width>1</width>
+				<height>1</height>
+				<itemlayout width="1" height="1" />
+				<focusedlayout width="1" height="1" />
+				<content>$PROPERTY[listContent]</content>
+				<visible>$PROPERTY[listVisible]</visible>
+			</control>
 		</controls>
 	</template>
 </templates>
