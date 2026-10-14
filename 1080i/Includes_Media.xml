@@ -5929,7 +5929,7 @@
 				<control type="label" description="Details2">
 					<animation effect="fade" start="100" end="0" time="480" condition="[[Control.HasFocus(6058) + Control.IsVisible(6058581)] | [Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]">Conditional</animation>
 					<visible>[[Control.IsVisible(58)] | Control.IsVisible(53) | [Control.IsVisible(56) + !$EXP[56_FanartViewInfo] + !$EXP[56_FanartViewNetflix]]]</visible>
-					<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [Container.content(tvshows) | Container.content(seasons)] + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) | !String.IsEmpty(ListItem.Status)]</visible>
+					<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [Container.content(tvshows) | Container.content(seasons)] + [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) | !String.IsEmpty(ListItem.Status)]</visible>
 					<posy>100</posy>
 					<width>$PARAM[width]</width>
 					<height>30</height>
@@ -5941,7 +5941,7 @@
 				<control type="label" description="Details2">
 					<animation effect="fade" start="100" end="0" time="480" condition="[[Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]">Conditional</animation>
 					<visible>[[Control.IsVisible(56) + !$EXP[56_FanartViewInfo] + $EXP[56_FanartViewNetflix]]]</visible>
-					<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [Container.content(tvshows) | Container.content(seasons)] + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) | !String.IsEmpty(ListItem.Status)]</visible>
+					<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [Container.content(tvshows) | Container.content(seasons)] + [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) | !String.IsEmpty(ListItem.Status)]</visible>
 					<posy>79</posy>
 					<width>$PARAM[width]</width>
 					<height>30</height>

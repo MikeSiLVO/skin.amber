@@ -4,39 +4,39 @@
 		<value>$VAR[ShelfInfoCast1]$VAR[ShelfInfoCast2]$VAR[ShelfInfoCast3]$VAR[ShelfInfoCast4]$VAR[ShelfInfoCast5]$VAR[ShelfInfoCast6]$VAR[ShelfInfoCast7]$VAR[ShelfInfoCast8]$VAR[ShelfInfoCast9]$VAR[ShelfInfoCast10]</value>
 	</variable>
 	<variable name="ShelfInfoCast1">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)][/I]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)][/I]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)][/B]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)][/B]</value>
-		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name))" />
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Role)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.1.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.1.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Role)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.1.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.1.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Role)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.1.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Role)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[206]:[/COLOR] [B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.1.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name))" />
 	</variable>
 	<variable name="ShelfInfoCast2">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.2.Role)][/I]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.2.Role)][/I]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name)][/B]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name)][/B]</value>
-		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name))" />
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Role)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.2.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.2.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Role)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.2.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.2.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Role)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.2.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Role)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.2.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.2.Name))" />
 	</variable>
 	<variable name="ShelfInfoCast3">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.3.Role)][/I]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.3.Role)][/I]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name)][/B]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name)][/B]</value>
-		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name))" />
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Role)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.3.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.3.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Role)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.3.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.3.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Role)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.3.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Role)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.3.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.3.Name))" />
 	</variable>
 	<variable name="ShelfInfoCast4">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.4.Role)][/I]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.4.Role)][/I]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name)][/B]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name)][/B]</value>
-		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name))" />
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Role)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.4.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.4.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Role)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.4.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.4.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Role)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.4.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Role)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name))">$INFO[Window(Home).Property(SkinInfo.Online.Cast.4.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.4.Name))" />
 	</variable>
 	<variable name="ShelfInfoCast5">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)][/I]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)][/I]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B]  / </value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B]</value>
-		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name))" />
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.5.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.5.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.5.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(SkinInfo.Online.Cast.5.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(SkinInfo.Online.Cast.5.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name)) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">$INFO[Window(Home).Property(SkinInfo.Online.Cast.5.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.5.Name))" />
 	</variable>
 	<variable name="ShelfInfoCast6">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.6.Role)][/I]  / </value>
@@ -111,8 +111,8 @@
 	</variable>
 
 	<variable name="ShelfInfoNextAiredDetails">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[31827]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel] - $INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name)]</value>
-		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR $VAR[HighlightColor]]$LOCALIZE[31827]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeTitle))">[COLOR $VAR[HighlightColor]]$LOCALIZE[31827]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeAired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel] - $INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeTitle)]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeTitle))">[COLOR $VAR[HighlightColor]]$LOCALIZE[31827]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeAired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel]</value>
 	</variable>
 
 	<variable name="ShelfInfoStudios">
@@ -203,10 +203,10 @@
 	</variable>
 
 	<variable name="ShelfInfoNextAiredSeasonEpisodeLabel">
-		<value condition="Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s0,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e0,]</value>
-		<value condition="Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + !Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e0,]</value>
-		<value condition="!Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s0,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e,]</value>
-		<value condition="!Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + !Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e,]</value>
+		<value condition="Integer.IsLess(Window(Home).Property(SkinInfo.Online.NextEpisode),10) + Integer.IsLess(Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),10)">$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),s0,]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisode),e0,]</value>
+		<value condition="Integer.IsLess(Window(Home).Property(SkinInfo.Online.NextEpisode),10) + !Integer.IsLess(Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),10)">$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),s,]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisode),e0,]</value>
+		<value condition="!Integer.IsLess(Window(Home).Property(SkinInfo.Online.NextEpisode),10) + Integer.IsLess(Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),10)">$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),s0,]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisode),e,]</value>
+		<value condition="!Integer.IsLess(Window(Home).Property(SkinInfo.Online.NextEpisode),10) + !Integer.IsLess(Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),10)">$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),s,]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisode),e,]</value>
 	</variable>
 
 	<variable name="ShelfInfoSeasonsLabel">
@@ -625,7 +625,7 @@
 					<height>30</height>
 					<font>font12_title</font>
 					<label>$VAR[ShelfInfoCast]</label>
-					<visible>!String.IsEmpty(Window(home).Property(TMDbHelper.ListItem.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
+					<visible>!String.IsEmpty(Window(home).Property(SkinInfo.Online.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
 					<scroll>true</scroll>
 				</control>
 				<!-- Details line -->
@@ -1075,7 +1075,7 @@
 					<height>30</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Container.ListItem.Genre]</label>
-					<visible>!String.IsEmpty(Container.ListItem.Genre) + String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</visible>
+					<visible>!String.IsEmpty(Container.ListItem.Genre) + String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</visible>
 					<scroll>true</scroll>
 				</control>
 
@@ -1148,7 +1148,7 @@
 					<height>30</height>
 					<font>font12_title</font>
 					<label>$VAR[ShelfInfoCast]</label>
-					<visible>!String.IsEmpty(Window(home).Property(TMDbHelper.ListItem.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
+					<visible>!String.IsEmpty(Window(home).Property(SkinInfo.Online.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
 					<scroll>true</scroll>
 				</control>
 
@@ -1167,7 +1167,7 @@
 					<height>40</height>
 					<font>font13_title</font>
 					<label>$VAR[ShelfInfoNextAiredDetails]</label>
-					<visible>String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</visible>
+					<visible>String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</visible>
 				</control>
 
 				<!-- Additional line for tv shows -->

@@ -51,92 +51,92 @@
 	</variable>
 	<!-- TMDB Online Rottentomatoes and Metacritic Variables -->
 	<variable name="TMDBRottenFreshLogoVar">
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),100)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),99)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),98)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),97)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),96)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),95)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),94)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),93)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),92)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),91)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),90)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),89)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),88)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),87)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),86)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),85)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),84)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),83)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),82)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),81)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),80)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),79)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),78)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),77)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),76)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),75)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),74)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),73)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),72)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),71)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),70)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),69)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),68)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),67)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),66)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),65)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),64)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),63)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),62)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),61)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_rating),60)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),100)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),99)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),98)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),97)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),96)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),95)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),94)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),93)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),92)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),91)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),90)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),89)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),88)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),87)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),86)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),85)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),84)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),83)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),82)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),81)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),80)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),79)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),78)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),77)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),76)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),75)">badges/ratings/certified2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),74)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),73)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),72)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),71)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),70)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),69)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),68)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),67)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),66)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),65)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),64)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),63)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),62)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),61)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),60)">badges/ratings/fresh2.png</value>
 		<value>badges/ratings/rotten2.png</value>
 	</variable>
 
 	<variable name="TMDBRottenFreshAudienceLogoVar">
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),100)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),99)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),98)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),97)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),96)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),95)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),94)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),93)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),92)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),91)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),90)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),89)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),88)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),87)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),86)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),85)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),84)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),83)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),82)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),81)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),80)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),79)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),78)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),77)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),76)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),75)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),74)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),73)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),72)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),71)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),70)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),69)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),68)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),67)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),66)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),65)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),64)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),63)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),62)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),61)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_usermeter),60)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),100)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),99)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),98)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),97)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),96)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),95)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),94)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),93)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),92)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),91)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),90)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),89)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),88)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),87)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),86)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),85)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),84)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),83)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),82)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),81)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),80)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),79)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),78)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),77)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),76)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),75)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),74)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),73)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),72)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),71)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),70)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),69)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),68)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),67)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),66)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),65)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),64)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),63)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),62)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),61)">badges/ratings/popcorn12.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),60)">badges/ratings/popcorn12.png</value>
 		<value>badges/ratings/popcorn22.png</value>
 	</variable>
 	<!-- Embuary Info Rottentomatoes Variable -->
@@ -239,56 +239,56 @@
 	</variable>
 	<!-- TMDb online cert. flag -->
 	<variable name="TMDBCertFlag">
-		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.MPAA)) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NR) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated ) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Not Rated) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated Not Rated)">badges/mpaa/NR.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:R) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:R) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:R) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated R) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),R)">badges/mpaa/R.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:X) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:X) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:X) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated X) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),X)">badges/mpaa/X.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:NC-17) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:NC-17) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:NC-17) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated NC-17) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),NC-17)">badges/mpaa/NC-17.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:PG-13) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:PG-13) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:PG-13) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated PG-13) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),PG-13)">badges/mpaa/PG-13.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:PG) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:PG) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:PG) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated PG) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),PG)">badges/mpaa/PG.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:G) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:G) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:G) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated G) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),G) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated Approved) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Approved) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated Passed) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Passed)">badges/mpaa/G.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:TV-Y) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:TV-Y) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:TV-Y) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated TV-Y) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),TV-Y)">badges/mpaa/TV-Y.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:TV-Y7) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:TV-Y7) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:TV-Y7) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated TV-Y7) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),TV-Y7)">badges/mpaa/TV-Y7.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:TV-G) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:TV-G) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:TV-G) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated TV-G) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),TV-G)">badges/mpaa/TV-G.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:TV-PG) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:TV-PG) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:TV-PG) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated TV-PG) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),TV-PG)">badges/mpaa/TV-PG.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:TV-14) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:TV-14) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:TV-14) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated TV-14) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),TV-14)">badges/mpaa/TV-14.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),US:TV-MA) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United States:TV-MA) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),USA:TV-MA) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Rated TV-MA) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),TV-MA)">badges/mpaa/TV-MA.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:U) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom:U) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:U)">badges/mpaa/UK_BBFC_U.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:A) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom:A) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:PG) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom:PG) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:PG)">badges/mpaa/UK_BBFC_PG.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:12A) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom:12A) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:12A)">badges/mpaa/UK_BBFC_12A.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:12) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom:12) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:12)">badges/mpaa/UK_BBFC_12.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:15) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom:15) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:15)">badges/mpaa/UK_BBFC_15.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:18) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom:18) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:18)">badges/mpaa/UK_BBFC_18.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:R18) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),United Kingdom:R18) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),UK:R18)">badges/mpaa/UK_BBFC_R18.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany:16) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),ab 16) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),FSK 16)">badges/mpaa/Germany_16.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany:0) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),ab 0) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),FSK 0)">badges/mpaa/Germany_0.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany:6) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),ab 6) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),FSK 6)">badges/mpaa/Germany_6.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany:12) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),ab 12) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),FSK 12)">badges/mpaa/Germany_12.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany:18) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),ab 18) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),FSK 18)">badges/mpaa/Germany_18.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Germany) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),FSK) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),o.A)">badges/mpaa/Germany_0.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France:U) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Tous publics)">badges/mpaa/France_-10.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France:10) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Interdit aux moins de 10 ans)">badges/mpaa/France_-10.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France:12) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Interdit aux moins de 12 ans)">badges/mpaa/France_-12.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France:16) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Interdit aux moins de 16 ans)">badges/mpaa/France_-16.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),France:18) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Interdit aux moins de 18 ans)">badges/mpaa/France_-18.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:L) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:Livre) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Livre) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:L) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:Livre) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação L) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação Livre)">badges/mpaa/Brazil_L.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:10) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),10 anos) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:10) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação 10)">badges/mpaa/Brazil_10.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:12) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),12 anos) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:12) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação 12)">badges/mpaa/Brazil_12.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:14) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),14 anos) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:14) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação 14)">badges/mpaa/Brazil_14.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:16) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),16 anos) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:16) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação 16)">badges/mpaa/Brazil_16.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:18) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),18 anos) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),Brazil:18) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.MPAA),classificação 18)">badges/mpaa/Brazil_18.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia:MA15)">badges/mpaa/australia_MA15.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia:R18)">badges/mpaa/australia_R18.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia:M)">badges/mpaa/Australia_M.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia:PG)">badges/mpaa/Australia_PG.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia:G)">badges/mpaa/Australia_G.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Australia:E)">badges/mpaa/Australia_E.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NL-AL) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands:AL)">badges/mpaa/NL_AL.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NL-6) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands:6)">badges/mpaa/NL_6.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NL-9) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands:9)">badges/mpaa/NL_9.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NL-12) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands:12)">badges/mpaa/NL_12.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NL-16) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands:16)">badges/mpaa/NL_16.png</value>
-		<value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),NL-18) | String.Contains(Window(Home).Property(TMDbHelper.ListItem.MPAA),Netherlands:18)">badges/mpaa/NL_18.png</value>
-		<value>$INFO[Window(Home).Property(TMDbHelper.ListItem.MPAA),badges/mpaa,.png]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.MPAA)) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),NR) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated ) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Not Rated) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated Not Rated)">badges/mpaa/NR.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:R) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:R) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:R) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated R) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),R)">badges/mpaa/R.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:X) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:X) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:X) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated X) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),X)">badges/mpaa/X.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:NC-17) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:NC-17) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:NC-17) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated NC-17) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),NC-17)">badges/mpaa/NC-17.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:PG-13) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:PG-13) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:PG-13) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated PG-13) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),PG-13)">badges/mpaa/PG-13.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:PG) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:PG) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:PG) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated PG) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),PG)">badges/mpaa/PG.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:G) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:G) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:G) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated G) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),G) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated Approved) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Approved) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated Passed) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Passed)">badges/mpaa/G.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:TV-Y) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:TV-Y) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:TV-Y) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated TV-Y) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),TV-Y)">badges/mpaa/TV-Y.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:TV-Y7) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:TV-Y7) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:TV-Y7) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated TV-Y7) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),TV-Y7)">badges/mpaa/TV-Y7.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:TV-G) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:TV-G) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:TV-G) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated TV-G) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),TV-G)">badges/mpaa/TV-G.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:TV-PG) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:TV-PG) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:TV-PG) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated TV-PG) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),TV-PG)">badges/mpaa/TV-PG.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:TV-14) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:TV-14) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:TV-14) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated TV-14) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),TV-14)">badges/mpaa/TV-14.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),US:TV-MA) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United States:TV-MA) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),USA:TV-MA) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Rated TV-MA) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),TV-MA)">badges/mpaa/TV-MA.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK:U) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom:U) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),UK:U)">badges/mpaa/UK_BBFC_U.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK:A) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom:A) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK:PG) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom:PG) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),UK:PG)">badges/mpaa/UK_BBFC_PG.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK:12A) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom:12A) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),UK:12A)">badges/mpaa/UK_BBFC_12A.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK:12) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom:12) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),UK:12)">badges/mpaa/UK_BBFC_12.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK:15) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom:15) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),UK:15)">badges/mpaa/UK_BBFC_15.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK:18) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom:18) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),UK:18)">badges/mpaa/UK_BBFC_18.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK:R18) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom:R18) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),UK:R18)">badges/mpaa/UK_BBFC_R18.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Germany:16) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),ab 16) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),FSK 16)">badges/mpaa/Germany_16.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Germany:0) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),ab 0) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),FSK 0)">badges/mpaa/Germany_0.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Germany:6) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),ab 6) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),FSK 6)">badges/mpaa/Germany_6.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Germany:12) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),ab 12) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),FSK 12)">badges/mpaa/Germany_12.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Germany:18) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),ab 18) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),FSK 18)">badges/mpaa/Germany_18.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Germany) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),FSK) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),o.A)">badges/mpaa/Germany_0.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),France:U) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Tous publics)">badges/mpaa/France_-10.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),France:10) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Interdit aux moins de 10 ans)">badges/mpaa/France_-10.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),France:12) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Interdit aux moins de 12 ans)">badges/mpaa/France_-12.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),France:16) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Interdit aux moins de 16 ans)">badges/mpaa/France_-16.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),France:18) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Interdit aux moins de 18 ans)">badges/mpaa/France_-18.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:L) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:Livre) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Livre) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:L) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:Livre) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),classificação L) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),classificação Livre)">badges/mpaa/Brazil_L.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:10) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),10 anos) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:10) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),classificação 10)">badges/mpaa/Brazil_10.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:12) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),12 anos) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:12) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),classificação 12)">badges/mpaa/Brazil_12.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:14) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),14 anos) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:14) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),classificação 14)">badges/mpaa/Brazil_14.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:16) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),16 anos) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:16) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),classificação 16)">badges/mpaa/Brazil_16.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:18) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),18 anos) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),Brazil:18) | String.IsEqual(Window(Home).Property(SkinInfo.Online.MPAA),classificação 18)">badges/mpaa/Brazil_18.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Australia:MA15)">badges/mpaa/australia_MA15.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Australia:R18)">badges/mpaa/australia_R18.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Australia:M)">badges/mpaa/Australia_M.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Australia:PG)">badges/mpaa/Australia_PG.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Australia:G)">badges/mpaa/Australia_G.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Australia:E)">badges/mpaa/Australia_E.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),NL-AL) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Netherlands:AL)">badges/mpaa/NL_AL.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),NL-6) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Netherlands:6)">badges/mpaa/NL_6.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),NL-9) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Netherlands:9)">badges/mpaa/NL_9.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),NL-12) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Netherlands:12)">badges/mpaa/NL_12.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),NL-16) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Netherlands:16)">badges/mpaa/NL_16.png</value>
+		<value condition="String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),NL-18) | String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Netherlands:18)">badges/mpaa/NL_18.png</value>
+		<value>$INFO[Window(Home).Property(SkinInfo.Online.MPAA),badges/mpaa,.png]</value>
 	</variable>
 	<!-- Embuary info video window cert flag. Based on addon setting for cert. country -->
 	<variable name="EmbuaryInfoCertFlag">
@@ -409,8 +409,8 @@
 	</variable>
 	<!-- Online studio icon -->
 	<!-- <variable name="InfoStudiosTMDB">
-		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio),,.png]</value>
-		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio),,.png]</value>
+		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),coloured)">resource://resource.images.studios.coloured/$INFO[Window(Home).Property(SkinInfo.Online.Studio),,.png]</value>
+		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Window(Home).Property(SkinInfo.Online.Studio),,.png]</value>
 		<value>DefaultStudios.png</value>
 	</variable> -->
 	<!-- Embuary info video window studio icon -->
@@ -434,7 +434,7 @@
 	<!-- Movies in Set custom info list label -->
 	<variable name="SetNameLabel">
 		<value condition="!String.IsEmpty(ListItem.Set)">$INFO[ListItem.Set]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Set))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Set)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Set))">$INFO[Window(Home).Property(SkinInfo.Online.Set)]</value>
 		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
 	</variable>
 	<!-- Parameter to pass to themoviedb.helper depending on available infolabels -->
@@ -470,7 +470,7 @@
 	<!-- List content for Sets custom info list -->
 	<variable name="VideoInfoSets">
 		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Set)">plugin://plugin.video.themoviedb.helper/?info=collection&amp;type=movie&amp;query=$INFO[ListItem.Set]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Set) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Set))">plugin://plugin.video.themoviedb.helper/?info=collection&amp;type=movie&amp;query=$INFO[Window(Home).Property(TMDbHelper.ListItem.Set)]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Set))">plugin://plugin.video.themoviedb.helper/?info=collection&amp;type=movie&amp;query=$INFO[Window(Home).Property(SkinInfo.Online.Set)]&amp;nextpage=false</value>
 		<value condition="ListItem.IsCollection + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper/?info=collection&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;nextpage=false</value>
 		<value condition="String.IsEqual(ListItem.DBType,set) + [Skin.HasSetting(Disable.OnlineTMDbInfo) | !$EXP[CanUseTMDbHelper]] + !String.IsEmpty(ListItem.DBID)">$INFO[ListItem.DBID,videodb://movies/sets/,/]</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.SetID)">$INFO[ListItem.SetID,videodb://movies/sets/,/]</value>
@@ -484,7 +484,7 @@
 	<!-- Cast also appears in custom info list content -->
 	<variable name="VideoInfoCastFeatured">
 		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(Container(50).ListItemAbsolute(0).Label)">plugin://plugin.video.themoviedb.helper/?info=discover&amp;type=movie&amp;with_cast=$INFO[Container(50).ListItemAbsolute(0).Label]$INFO[Container(50).ListItemAbsolute(1).Label, / ,]$INFO[Container(50).ListItemAbsolute(2).Label, / ,]&amp;with_separator=OR&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(Container(50).ListItemAbsolute(0).Label) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name))">plugin://plugin.video.themoviedb.helper/?info=discover&amp;type=movie&amp;with_cast=$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.1.Name)]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.2.Name), / ,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.3.Name), / ,]&amp;with_separator=OR&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(Container(50).ListItemAbsolute(0).Label) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name))">plugin://plugin.video.themoviedb.helper/?info=discover&amp;type=movie&amp;with_cast=$INFO[Window(Home).Property(SkinInfo.Online.Cast.1.Name)]$INFO[Window(Home).Property(SkinInfo.Online.Cast.2.Name), / ,]$INFO[Window(Home).Property(SkinInfo.Online.Cast.3.Name), / ,]&amp;with_separator=OR&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22or%22%3A%5B%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(0).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(1).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(2).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(3).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(4).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(5).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(6).Label]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</value>
 	</variable>
 	<!-- Crew custom info list content.  Online only -->
@@ -501,7 +501,7 @@
 	<!-- Also directed by custom info list content -->
 	<variable name="VideoInfoFromDirector">
 		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Director)">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[ListItem.Director]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + String.IsEmpty(ListItem.Director) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Director))">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + String.IsEmpty(ListItem.Director) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Director))">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[Window(Home).Property(SkinInfo.Online.Director)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22director%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Director]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
 	</variable>
 	<!-- More from studio custom info list content -->
@@ -514,16 +514,16 @@
 	<!-- More from year custom info list content -->
 	<variable name="VideoInfoFromYear">
 		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=movie&amp;primary_release_year=$INFO[ListItem.Year]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Year) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Year))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=movie&amp;primary_release_year=$INFO[Window(Home).Property(TMDbHelper.ListItem.Year)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Year) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Year))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=movie&amp;primary_release_year=$INFO[Window(Home).Property(SkinInfo.Online.Year)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=tv&amp;first_air_date_year=$INFO[ListItem.Year]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Year) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Year))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=tv&amp;first_air_date_year=$INFO[Window(Home).Property(TMDbHelper.ListItem.Year)]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Year) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Year))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=tv&amp;first_air_date_year=$INFO[Window(Home).Property(SkinInfo.Online.Year)]&amp;nextpage=false</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22year%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Year]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow)">videodb://tvshows/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22year%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Year]%22%5d%7d%5d%7d%2c%22type%22%3a%22tvshows%22%7d</value>
 	</variable>
 	<!-- More in genre custom info list content -->
 	<variable name="VideoInfoFromGenre">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Genre)">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=$VAR[TMDbMediaType]&amp;with_genres=$INFO[ListItem.Genre]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Genre) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=$VAR[TMDbMediaType]&amp;with_genres=$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Genre) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Genre))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=$VAR[TMDbMediaType]&amp;with_genres=$INFO[Window(Home).Property(SkinInfo.Online.Genre)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22genre%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Genre]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow)">videodb://tvshows/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22genre%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Genre]%22%5d%7d%5d%7d%2c%22type%22%3a%22tvshows%22%7d</value>
 	</variable>
@@ -534,22 +534,22 @@
 	<!-- Studio header, either local or online -->
 	<variable name="InfoListStudioHeader">
 		<value condition="!String.IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio]</value>
-		<value condition="String.IsEmpty(ListItem.Studio) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]</value>
+		<value condition="String.IsEmpty(ListItem.Studio) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))">$INFO[Window(Home).Property(SkinInfo.Online.Studio)]</value>
 	</variable>
 	<!-- Genre header, either local or online -->
 	<variable name="InfoListGenreHeader">
 		<value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
-		<value condition="String.IsEmpty(ListItem.Genre) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]</value>
+		<value condition="String.IsEmpty(ListItem.Genre) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Genre))">$INFO[Window(Home).Property(SkinInfo.Online.Genre)]</value>
 	</variable>
 	<!-- Year header, either local or online -->
 	<variable name="InfoListYearHeader">
 		<value condition="!String.IsEmpty(ListItem.Year)">$INFO[ListItem.Year]</value>
-		<value condition="String.IsEmpty(ListItem.Year) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Year))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Year)]</value>
+		<value condition="String.IsEmpty(ListItem.Year) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Year))">$INFO[Window(Home).Property(SkinInfo.Online.Year)]</value>
 	</variable>
 	<!-- Director header, either local or online -->
 	<variable name="InfoListDirectorHeader">
 		<value condition="!String.IsEmpty(ListItem.Director)">$INFO[ListItem.Director]</value>
-		<value condition="String.IsEmpty(ListItem.Director) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Director))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)]</value>
+		<value condition="String.IsEmpty(ListItem.Director) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Director))">$INFO[Window(Home).Property(SkinInfo.Online.Director)]</value>
 	</variable>
 	<!-- Cast in Movies info list -->
 	<variable name="InfoCastList01">
@@ -2475,24 +2475,24 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[20339]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Director)]</label2>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)],type=person,call_auto=1134))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Window(Home).Property(SkinInfo.Online.Director)],type=person,call_auto=1134))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Director)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)])||ActivateWindow(1122))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Director)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Director)])||ActivateWindow(1122))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">noop</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Director)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">noop</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31232]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Director)]',seperator='" / "',splitby='"++"')</onclick>
 
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)])</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">Dialog.Close(movieinformation,force)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">SetProperty(InfoCalledGeneralSearch,true,home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">ClearProperty(InfoCalledSingleSearch,home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Director), / )">ActivateWindow(1122)</onclick>
-			<visible>String.IsEmpty(ListItem.Director) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Director)) + !Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Director)])</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">Dialog.Close(movieinformation,force)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">SetProperty(InfoCalledGeneralSearch,true,home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">ClearProperty(InfoCalledSingleSearch,home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Director), / )">ActivateWindow(1122)</onclick>
+			<visible>String.IsEmpty(ListItem.Director) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Director)) + !Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[20339](s):</label>
@@ -2538,24 +2538,24 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[20417]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Writer)]</label2>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer)],type=person,call_auto=1134))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Window(Home).Property(SkinInfo.Online.Writer)],type=person,call_auto=1134))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Writer)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer)])||ActivateWindow(1122))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Writer)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Writer)])||ActivateWindow(1122))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">noop</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Writer)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">noop</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">SetProperty(Dialog.Builtin,Skin.SetString(CustomSearchTerm,???)++ActivateWindow(1122))</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31235]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Writer)]',seperator='" / "',splitby='"++"')</onclick>
 
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer)])</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">Dialog.Close(movieinformation,force)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">SetProperty(InfoCalledGeneralSearch,true,home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">ClearProperty(InfoCalledSingleSearch,home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Writer), / )">ActivateWindow(1122)</onclick>
-			<visible>String.IsEmpty(ListItem.Writer) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer)) + !Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">Skin.SetString(CustomSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Writer)])</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">Dialog.Close(movieinformation,force)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">SetProperty(InfoCalledGeneralSearch,true,home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">ClearProperty(InfoCalledSingleSearch,home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Writer), / )">ActivateWindow(1122)</onclick>
+			<visible>String.IsEmpty(ListItem.Writer) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Writer)) + !Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[20417](s):</label>
@@ -2608,35 +2608,35 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[515]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Genre)]</label2>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,with_genres)++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])||Skin.SetString(OnlineCallType,with_genres)||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,with_genres)++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Genre)])||Skin.SetString(OnlineCallType,with_genres)||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalMovieGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalTVShowGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Genre)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalMovieGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalTVShowGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Genre)])||Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">noop</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">noop</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeGenre,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])++ActivateWindow(1131))</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31230]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Genre)]',seperator='" / "',splitby='"++"')</onclick>
 
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(SingleSearchType,LocalMovieGenre,Home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(SingleSearchType,LocalTVShowGenre,Home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(SingleSearchType,LocalEpisodeGenre,Home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)])</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">Dialog.Close(movieinformation,force)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">ClearProperty(InfoCalledGeneralSearch,home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Genre), / )">ActivateWindow(1131)</onclick>
-			<visible>String.IsEmpty(ListItem.Genre) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre)) + !String.IsEqual(ListItem.DBType,set) + !Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(SingleSearchType,LocalMovieGenre,Home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(SingleSearchType,LocalTVShowGenre,Home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(SingleSearchType,LocalEpisodeGenre,Home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Genre)])</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">Skin.SetString(SingleSearchHeader,$VAR[GenreOnlineHeaderVar])</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">Dialog.Close(movieinformation,force)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">ClearProperty(InfoCalledGeneralSearch,home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Genre), / )">ActivateWindow(1131)</onclick>
+			<visible>String.IsEmpty(ListItem.Genre) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Genre)) + !String.IsEqual(ListItem.DBType,set) + !Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[515](s):</label>
@@ -2676,15 +2676,15 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[2050]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Runtime)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Duration)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),0)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Runtime)) + !String.IsEqual(Window(Home).Property(SkinInfo.Online.Runtime),0)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[2050]:</label>
 			<label2>$VAR[OnlineItemDurationHrMins]</label2>
 			<onclick>noop</onclick>
-			<visible>String.IsEmpty(ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Duration)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),0)</visible>
+			<visible>String.IsEmpty(ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Runtime)) + !String.IsEqual(Window(Home).Property(SkinInfo.Online.Runtime),0)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[20161] $LOCALIZE[2050]:</label>
@@ -2700,9 +2700,9 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[126]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Status)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Status)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Status)) + String.IsEqual(ListItem.DBType,tvshow)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Status)) + String.IsEqual(ListItem.DBType,tvshow)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[21875]:</label>
@@ -2721,18 +2721,18 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[21875]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Country)]</label2>
-			<onclick condition="!$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">noop</onclick>
-			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieCountry,Home)++Skin.SetString(SingleSearchHeader,$LOCALIZE[31147])++Skin.SetString(SingleSearchTerm,???)++ActivateWindow(1131))</onclick>
-			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31237]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Country)]',seperator='" / "',splitby='"++"')</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">SetProperty(SingleSearchType,LocalMovieCountry,Home)</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Country)])</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">Skin.SetString(SingleSearchHeader,$LOCALIZE[31147])</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">Dialog.Close(movieinformation,force)</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">ClearProperty(InfoCalledGeneralSearch,home)</onclick>
-			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Country), / )">ActivateWindow(1131)</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Country) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Country))</visible>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Country)]</label2>
+			<onclick condition="!$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">noop</onclick>
+			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieCountry,Home)++Skin.SetString(SingleSearchHeader,$LOCALIZE[31147])++Skin.SetString(SingleSearchTerm,???)++ActivateWindow(1131))</onclick>
+			<onclick condition="$EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31237]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Country)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">SetProperty(SingleSearchType,LocalMovieCountry,Home)</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Country)])</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">Skin.SetString(SingleSearchHeader,$LOCALIZE[31147])</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">Dialog.Close(movieinformation,force)</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">ClearProperty(InfoCalledGeneralSearch,home)</onclick>
+			<onclick condition="String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Country), / )">ActivateWindow(1131)</onclick>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Country) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Country))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[572]:</label>
@@ -2765,35 +2765,35 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[572]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Studio)]</label2>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])||Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,Online,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])++Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.1.BuiltIn,SetProperty(SingleSearchType,Online,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Studio)])||Skin.SetString(OnlineCallType,$VAR[TMDbStudioCall])||Skin.SetString(OnlineMediaType,$VAR[TMDbMediaType])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalMovieStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalTVShowStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
-			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))||RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Studio)]',seperator='" / "',splitby='"++"'))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalMovieStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalTVShowStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
+			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.2.BuiltIn,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)||Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Studio)])||Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])||ActivateWindow(1131))</onclick>
 			<onclick condition="!Skin.HasSetting(OnlyLocalSearches) + $EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">noop</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))noop</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))noop</onclick>
-			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.Studio)]',seperator='" / "',splitby='"++"')</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + !$EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">noop</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,movie) + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalMovieStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,tvshow) + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalTVShowStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))noop</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.IsEqual(ListItem.DBType,episode) + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(Dialog.Builtin,SetProperty(SingleSearchType,LocalEpisodeStudio,Home)++Skin.SetString(SingleSearchTerm,???)++Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])++ActivateWindow(1131))noop</onclick>
+			<onclick condition="Skin.HasSetting(OnlyLocalSearches) + $EXP[CanUseEH] + String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">RunScript(script.embuary.helper,action=splitandcreateselect,header='"$LOCALIZE[31231]"',items='$ESCINFO[Window(Home).Property(SkinInfo.Online.Studio)]',seperator='" / "',splitby='"++"')</onclick>
 
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(SingleSearchType,LocalMovieStudio,Home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(SingleSearchType,LocalTVShowStudio,Home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(SingleSearchType,LocalEpisodeStudio,Home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio)])</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">Dialog.Close(movieinformation,force)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">ClearProperty(InfoCalledGeneralSearch,home)</onclick>
-			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(TMDbHelper.ListItem.Studio), / )">ActivateWindow(1131)</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Studio) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio))</visible>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,movie) + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(SingleSearchType,LocalMovieStudio,Home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,tvshow) + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(SingleSearchType,LocalTVShowStudio,Home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + String.IsEqual(ListItem.DBType,episode) + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(SingleSearchType,LocalEpisodeStudio,Home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">Skin.SetString(SingleSearchTerm,$INFO[Window(Home).Property(SkinInfo.Online.Studio)])</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">Skin.SetString(SingleSearchHeader,$VAR[StudioOnlineHeaderVar])</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">Dialog.Close(movieinformation,force)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">SetProperty(InfoCalledSingleSearch,true,home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">ClearProperty(InfoCalledGeneralSearch,home)</onclick>
+			<onclick condition="[Skin.HasSetting(OnlyLocalSearches) | !$EXP[CanDoOnlineSearches]] + !String.Contains(Window(Home).Property(SkinInfo.Online.Studio), / )">ActivateWindow(1131)</onclick>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Studio) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[29909](s):</label>
@@ -2845,9 +2845,9 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[33054]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.season)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Seasons)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEqual(ListItem.DBType,tvshow) + String.IsEmpty(ListItem.Property(TotalSeasons)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.season))</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEqual(ListItem.DBType,tvshow) + String.IsEmpty(ListItem.Property(TotalSeasons)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Seasons))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[20360]:</label>
@@ -2857,9 +2857,9 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[20360]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.episode)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Episodes)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEqual(ListItem.DBType,tvshow) + String.IsEmpty(ListItem.Property(TotalEpisodes)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.episode))</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEqual(ListItem.DBType,tvshow) + String.IsEmpty(ListItem.Property(TotalEpisodes)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Episodes))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31037]:</label>
@@ -2870,9 +2870,9 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[31037]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.MPAA)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.MPAA)]</label2>
 			<onclick>noop</onclick>
-			<visible>String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.MPAA))</visible>
+			<visible>String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.MPAA))</visible>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowMPAA)</visible>
 		</item>
 		<item>
@@ -2894,9 +2894,9 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[20457]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.set.name)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Set)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Set) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.set.name))</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Set))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[20459]:</label>
@@ -2921,21 +2921,21 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[126]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Status)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Status)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Status)) + !String.IsEqual(ListItem.DBType,tvshow)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Status)) + !String.IsEqual(ListItem.DBType,tvshow)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31193]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.budget)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Budget),$,]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.budget)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.budget),N/A)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Budget)) + !String.IsEqual(Window(Home).Property(SkinInfo.Online.Budget),N/A)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31194]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.revenue)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Revenue),$,]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.revenue)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.revenue),N/A)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Revenue)) + !String.IsEqual(Window(Home).Property(SkinInfo.Online.Revenue),N/A)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31676]:</label>
@@ -2963,18 +2963,18 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[31195]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.awards)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Awards)]</label2>
 			<onclick>SetProperty(TextViewerHeader,$ESCINFO[ListItem.Title],Home)</onclick>
 			<onclick>SetProperty(TextViewerSubHeader,$VAR[AwardsLabel],Home)</onclick>
-			<onclick>SetProperty(TextViewerContent,$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.awards)],Home)</onclick>
+			<onclick>SetProperty(TextViewerContent,$ESCINFO[Window(Home).Property(SkinInfo.Online.Awards)],Home)</onclick>
 			<onclick>ActivateWindow(1124)</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.awards)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.awards),N/A)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards)) + !String.IsEqual(Window(Home).Property(SkinInfo.Online.Awards),N/A)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31197]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewtotal)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Votes)]</label2>
 			<onclick>noop</onclick>
-			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewtotal)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewtotal),N/A)</visible>
+			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Votes)) + !String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Votes),N/A)</visible>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
 		</item>
 		<item>
@@ -3003,9 +3003,9 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[31201]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_userreviews)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Rating.popcorn.Votes)]</label2>
 			<onclick>noop</onclick>
-			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_userreviews)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_userreviews),N/A)</visible>
+			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Votes)) + !String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Votes),N/A)</visible>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
 		</item>
 		<item>

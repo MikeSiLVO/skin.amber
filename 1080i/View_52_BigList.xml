@@ -524,7 +524,7 @@
 					<param name="labelwidth">790</param>
 					<param name="visibility">$EXP[BigListPanelIsSwapped] + [Container.Content(tvshows) | Container.Content(seasons)]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</param>
+					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</param>
 				</include>
 
 				<include content="PanelTemplate52">
@@ -536,7 +536,7 @@
 				<include content="PanelTemplate52">
 					<param name="visibility">![$EXP[BigListPanelIsSwapped]] + [Container.Content(tvshows) | Container.Content(seasons)]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</param>
+					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</param>
 				</include>
 
 				<include content="PanelTemplate52">

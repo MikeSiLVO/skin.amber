@@ -1336,7 +1336,7 @@
 						<!-- Plot when there is no next episode info or audio/sub info being displayed -->
 						<control type="textbox">
 							<top>5</top>
-							<visible>[!Skin.HasSetting(ShowAudioSub) + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] | [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
+							<visible>[!Skin.HasSetting(ShowAudioSub) + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] | [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
 							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
 							<font>InfoPlot</font>
@@ -1354,7 +1354,7 @@
 						<!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
 						<control type="textbox">
 							<top>40</top>
-							<visible>!$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
+							<visible>!$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 							<height>$PARAM[plotheight]</height>
 							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
@@ -1364,7 +1364,7 @@
 						<!-- Plot for episodes/tv shows/seasons in low panel when audio/sub info or next aired episode info is shown -->
 						<control type="textbox">
 							<top>40</top>
-							<visible>$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + Container.Content(episodes) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
+							<visible>$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + Container.Content(episodes) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 							<height>160</height>
 							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
@@ -1648,7 +1648,7 @@
 						<!-- Plot when there is no next episode info or audio/sub info being displayed -->
 						<control type="textbox" id="4001">
 							<top>5</top>
-							<visible>[!Skin.HasSetting(ShowAudioSub) + [Container.Content(movies) | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] | [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
+							<visible>[!Skin.HasSetting(ShowAudioSub) + [Container.Content(movies) | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] | [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
 							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
 							<font>InfoPlot</font>
@@ -1657,7 +1657,7 @@
 						<!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
 						<control type="textbox" id="4001">
 							<top>50</top>
-							<visible>[[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
+							<visible>[[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 							<height>$PARAM[plotheight]</height>
 							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>

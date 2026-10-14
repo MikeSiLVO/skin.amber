@@ -33,22 +33,22 @@
 	</variable>
 
 	<variable name="RightListNextAiredStatus">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Status))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Status)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Status))">$INFO[Window(Home).Property(SkinInfo.Online.Status)]</value>
 		<value condition="Window(Home).Property(NextAired.Status)">$INFO[Window(Home).Property(NextAired.Status)]</value>
 	</variable>
 
 	<variable name="RightListNextAiredStatusImage">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Status))">$VAR[MediaFlagsPathVar]/nextaired/$INFO[Window(Home).Property(TMDbHelper.ListItem.Status),,.png]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Status))">$VAR[MediaFlagsPathVar]/nextaired/$INFO[Window(Home).Property(SkinInfo.Online.Status),,.png]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Status))">$VAR[MediaFlagsPathVar]/nextaired/$INFO[Window(Home).Property(NextAired.Status),,.png]</value>
 	</variable>
 
 	<variable name="RightListNextEpisode">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Long)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))">$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeAiredLong)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Label)) + !String.IsEmpty(Window(Home).Property(NextAired.NextDay))">$INFO[Window(Home).Property(NextAired.NextDay)]</value>
 		<value>$LOCALIZE[31794]</value>
 	</variable>
 	<variable name="RightListLastEpisode">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Last_Aired))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.LastEpisodeAired))">$INFO[Window(Home).Property(SkinInfo.Online.LastEpisodeAired)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Label))">$INFO[Window(Home).Property(NextAired.LatestDate)]</value>
 		<value>$LOCALIZE[31794]</value>
 	</variable>
@@ -156,7 +156,7 @@
 				<width>150</width>
 				<height>84</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<visible>[String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio))</visible>
+				<visible>[String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))</visible>
 			</control>
 			<control type="image" description="1st. Studio - Sets">
 				<texture>$VAR[RightListStudiosSets]</texture>
@@ -720,15 +720,15 @@
 						<scroll>false</scroll>
 						<width>auto</width>
 						<font>font24_title</font>
-						<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[209]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),S]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),E]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name), - ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired), (,)]</label>
-						<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))]</visible>
+						<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[209]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeSeason),S]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisode),E]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeTitle), - ]$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeAired), (,)]</label>
+						<visible>[!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeTitle))]</visible>
 					</control>
 					<control type="label">
 						<scroll>false</scroll>
 						<width>auto</width>
 						<font>font24_title</font>
-						<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[210]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Season),S]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Episode),E]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Name), - ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired), (,)]</label>
-						<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Last_Aired))</visible>
+						<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[210]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Online.LastEpisodeSeason),S]$INFO[Window(Home).Property(SkinInfo.Online.LastEpisode),E]$INFO[Window(Home).Property(SkinInfo.Online.LastEpisodeTitle), - ]$INFO[Window(Home).Property(SkinInfo.Online.LastEpisodeAired), (,)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.LastEpisodeAired))</visible>
 					</control>
 				</control>
 				<!-- Plot -->
@@ -880,7 +880,7 @@
 							<width>120</width>
 							<height>74</height>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<visible>[String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio))</visible>
+							<visible>[String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))</visible>
 						</control>
 						<control type="label">
 							<width>120</width>

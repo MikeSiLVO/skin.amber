@@ -352,7 +352,7 @@
 					<param name="subheading2">$VAR[panelsubheading2]</param>
 					<param name="plotgrouptop">150</param>
 					<param name="footer2top">815</param>
-					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</param>
+					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="visibility">!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
@@ -498,7 +498,7 @@
 					<param name="subheading2">$VAR[panelsubheading2]</param>
 					<param name="plotgrouptop">150</param>
 					<param name="footertop">815</param>
-					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</param>
+					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="visibility">!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
