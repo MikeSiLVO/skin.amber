@@ -31,112 +31,24 @@
 	<!-- Thanks to MikeSiLVO for these vars for ratings and certifications -->
 
 	<variable name="RottenFreshLogoVar">
-		<value condition="[Window.IsVisible(movieinformation) + Integer.IsGreaterOrEqual(ListItem.Rating(tomatometerallcritics),8.0)] | [!Window.IsVisible(movieinformation) + Integer.IsGreaterOrEqual(VideoPlayer.Rating(tomatometerallcritics),8.0)]">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.9) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.9)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.8) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.8)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.7) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.7)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.6) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.6)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.5) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.5)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.4) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.4)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.3) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.3)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.2) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.2)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(ListItem.Rating(tomatometerallcritics),7.1) | String.IsEqual(VideoPlayer.Rating(tomatometerallcritics),7.1)">badges/ratings/fresh2.png</value>
-		<value condition="[Window.IsVisible(movieinformation) + Integer.IsLess(ListItem.Rating(tomatometerallcritics),6.0)] | [!Window.IsVisible(movieinformation) + Integer.IsLess(VideoPlayer.Rating(tomatometerallcritics),6.0)]">badges/ratings/rotten2.png</value>
-		<value>badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Tomatometer),Certified)">badges/ratings/certified2.png</value>
+		<value condition="Integer.IsGreaterOrEqual(ListItem.Rating(tomatometerallcritics),6)">badges/ratings/fresh2.png</value>
+		<value>badges/ratings/rotten2.png</value>
 	</variable>
 
 	<variable name="RottenFreshAudienceLogoVar">
-		<value condition="[Window.IsVisible(movieinformation) + Integer.IsGreaterOrEqual(ListItem.Rating(tomatometerallaudience),6.0)] | [!Window.IsVisible(movieinformation) + Integer.IsGreaterOrEqual(VideoPlayer.Rating(tomatometerallaudience),6.0)]">badges/ratings/popcorn12.png</value>
+		<value condition="Integer.IsGreaterOrEqual(ListItem.Rating(tomatometerallaudience),6)">badges/ratings/popcorn12.png</value>
 		<value>badges/ratings/popcorn22.png</value>
 	</variable>
 	<!-- TMDB Online Rottentomatoes and Metacritic Variables -->
 	<variable name="TMDBRottenFreshLogoVar">
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),100)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),99)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),98)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),97)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),96)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),95)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),94)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),93)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),92)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),91)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),90)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),89)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),88)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),87)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),86)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),85)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),84)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),83)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),82)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),81)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),80)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),79)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),78)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),77)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),76)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),75)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),74)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),73)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),72)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),71)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),70)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),69)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),68)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),67)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),66)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),65)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),64)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),63)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),62)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),61)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),60)">badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Tomatometer),Certified)">badges/ratings/certified2.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent),60)">badges/ratings/fresh2.png</value>
 		<value>badges/ratings/rotten2.png</value>
 	</variable>
 
 	<variable name="TMDBRottenFreshAudienceLogoVar">
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),100)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),99)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),98)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),97)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),96)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),95)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),94)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),93)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),92)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),91)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),90)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),89)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),88)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),87)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),86)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),85)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),84)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),83)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),82)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),81)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),80)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),79)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),78)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),77)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),76)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),75)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),74)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),73)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),72)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),71)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),70)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),69)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),68)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),67)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),66)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),65)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),64)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),63)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),62)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),61)">badges/ratings/popcorn12.png</value>
-		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),60)">badges/ratings/popcorn12.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent),60)">badges/ratings/popcorn12.png</value>
 		<value>badges/ratings/popcorn22.png</value>
 	</variable>
 	<!-- Embuary Info Rottentomatoes Variable -->

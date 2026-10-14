@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<variable name="RightListRottenFreshLogoVar">
-		<value condition="Integer.IsGreaterOrEqual(Container(4460).ListItem.Rating(tomatometerallcritics),8.0)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.9)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.8)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.7)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.6)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.5)">badges/ratings/certified2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.4)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.3)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.2)">badges/ratings/fresh2.png</value>
-		<value condition="String.IsEqual(Container(4460).ListItem.Rating(tomatometerallcritics),7.1)">badges/ratings/fresh2.png</value>
-		<value condition="Integer.IsLess(Container(4460).ListItem.Rating(tomatometerallcritics),6.0)">badges/ratings/rotten2.png</value>
-		<value>badges/ratings/fresh2.png</value>
+		<value condition="String.IsEqual(Window(Home).Property(SkinInfo.Online.Tomatometer),Certified)">badges/ratings/certified2.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(4460).ListItem.Rating(tomatometerallcritics),6)">badges/ratings/fresh2.png</value>
+		<value>badges/ratings/rotten2.png</value>
 	</variable>
 
 	<variable name="RightListRottenFreshAudienceLogoVar">
