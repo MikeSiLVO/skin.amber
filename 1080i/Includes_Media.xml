@@ -4562,7 +4562,9 @@
 				</control>
 				<control type="group">
 					<visible>[Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)]</visible>
-					<include>EmbuaryInfoListsOverlays</include>
+					<include content="EmbuaryInfoListsOverlays">
+						<param name="isFocused">$PARAM[isFocused]</param>
+					</include>
 				</control>
 			</control>
 		</definition>
