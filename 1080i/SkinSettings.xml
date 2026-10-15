@@ -11,9 +11,9 @@
 			<animation effect="fade" time="250" condition="!Window.Previous(SettingsCategory.xml)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="!Window.Next(SettingsCategory.xml)">WindowClose</animation>
 			<control type="image" description="Left Menu background">
-				<left>60</left>
+				<left>20</left>
 				<top>60</top>
-				<width>412</width>
+				<width>462</width>
 				<height>980</height>
 				<texture border="45">dialogs/TinyDialog.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
@@ -29,9 +29,9 @@
 			</control>
 			<!-- 9000 Left panel -->
 			<control type="list" id="9000">
-				<posx>105</posx>
-				<posy>120</posy>
-				<width>322</width>
+				<posx>65</posx>
+				<posy>135</posy>
+				<width>382</width>
 				<height>780</height>
 				<onleft>noop</onleft>
 				<onright>9100</onright>
@@ -39,29 +39,29 @@
 				<ondown>9000</ondown>
 				<pagecontrol />
 				<scrolltime>280</scrolltime>
-				<itemlayout width="322" height="60">
+				<itemlayout width="382" height="60">
 					<control type="image">
-						<width>322</width>
+						<width>382</width>
 						<height>60</height>
 						<texture border="3">buttons/ButtonNF.png</texture>
 					</control>
 					<control type="label" description="Main Label">
 						<posx>10</posx>
-						<width>301</width>
+						<width>361</width>
 						<height>60</height>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout width="322" height="60">
+				<focusedlayout width="382" height="60">
 					<control type="image" description="fa overlay">
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(9000)">Conditional</animation>
-						<width>322</width>
+						<width>382</width>
 						<height>60</height>
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
 					<control type="label" description="Main Label">
 						<posx>10</posx>
-						<width>301</width>
+						<width>361</width>
 						<height>60</height>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
@@ -124,18 +124,18 @@
 				</content>
 			</control>
 			<control type="label" id="7001">
-				<top>920</top>
-				<width>412</width>
-				<left>60</left>
+				<top>935</top>
+				<width>462</width>
+				<left>20</left>
 				<height>30</height>
 				<align>center</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>[B]Amber[/B]</label>
 			</control>
 			<control type="label" id="7002">
-				<top>960</top>
-				<width>412</width>
-				<left>60</left>
+				<top>975</top>
+				<width>462</width>
+				<left>20</left>
 				<height>30</height>
 				<align>center</align>
 				<font>ListDetails</font>
