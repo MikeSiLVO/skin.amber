@@ -1023,7 +1023,6 @@
 	<!-- Below Top Bar Label for menu items in vertical icon-only -->
 	<include name="ShowIconMenuLabel">
 		<control type="group" description="Icon Menu Item Label">
-			<animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240">Conditional</animation>
 			<visible>!$EXP[InfoLineOnMenu]</visible>
 			<visible>$EXP[BelowIconLabelShouldShow]</visible>
 			<control type="image">
@@ -1046,7 +1045,6 @@
 			</control>
 		</control>
 		<control type="group" description="Icon Menu Item Label">
-			<animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240">Conditional</animation>
 			<visible>$EXP[InfoLineOnMenu]</visible>
 			<visible>$EXP[BelowIconLabelShouldShow]</visible>
 			<control type="image">
