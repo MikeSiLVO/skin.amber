@@ -4,12 +4,13 @@
 	<contextmenu>false</contextmenu>
 
 	<dialogs>
-		<subdialog buttonID="1013" mode="shelf1" setfocus="3001" />
-		<subdialog buttonID="1014" mode="shelf2" suffix=".2" setfocus="3101" />
-		<subdialog buttonID="1015" mode="shelf3" suffix=".3" setfocus="3201" />
-		<subdialog buttonID="1016" mode="shelf4" suffix=".4" setfocus="3301" />
-		<subdialog buttonID="1017" mode="shelf5" suffix=".5" setfocus="3401" />
-		<subdialog buttonID="1018" mode="shelf6" suffix=".6" setfocus="3501" />
+		<subdialog buttonID="1010" mode="shelves" setfocus="2101" />
+		<subdialog buttonID="2102" mode="shelf1" setfocus="3001" />
+		<subdialog buttonID="2103" mode="shelf2" suffix=".2" setfocus="3101" />
+		<subdialog buttonID="2104" mode="shelf3" suffix=".3" setfocus="3201" />
+		<subdialog buttonID="2105" mode="shelf4" suffix=".4" setfocus="3301" />
+		<subdialog buttonID="2106" mode="shelf5" suffix=".5" setfocus="3401" />
+		<subdialog buttonID="2107" mode="shelf6" suffix=".6" setfocus="3501" />
 		<subdialog buttonID="1002" mode="bottomshortcuts" setfocus="2001">
 			<onclose condition="UseBottomShortcuts=true" action="menu" menu="{customWidget.10}" />
 		</subdialog>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <templates>
 	<expressions>
-		<expression name="SingleShelf" nosuffix="true">!widgetTwoShelves=true + !widgetThreeShelves=true</expression>
+		<expression name="SingleShelf" nosuffix="true">!shelfLayout=two + !shelfLayout=three</expression>
 		<expression name="ThreeShelvesLarge" nosuffix="true">widgetThreeShelvesLarge=true</expression>
 		<expression name="ShelvesInfo" nosuffix="true">showShelvesInfo=true</expression>
 		<expression name="PositionStandard" nosuffix="true">!horizontalWidgetPos | horizontalWidgetPos=Standard</expression>
@@ -222,11 +222,11 @@
 				<value>true</value>
 			</var>
 			<var name="containertype">
-				<value condition="!widgetDouble=true + !widgetTriple=true + widgetAutoScroll">wraplist</value>
+				<value condition="!widgetRows=2 + !widgetRows=3 + widgetAutoScroll">wraplist</value>
 				<value>panel</value>
 			</var>
 			<var name="bottombackgroundheight">
-				<value condition="!widgetDouble=true + !widgetTriple=true + $EXP[ScrollingLogo]">220</value>
+				<value condition="!widgetRows=2 + !widgetRows=3 + $EXP[ScrollingLogo]">220</value>
 				<value>375</value>
 			</var>
 			<var name="autoscroll">
@@ -245,21 +245,21 @@
 		</propertyGroup>
 		<propertyGroup name="SingleShelfLayout">
 			<var name="ShowMedium2Logo">
-				<value condition="widgetDouble=true + $EXP[PositionLow]">true</value>
+				<value condition="widgetRows=2 + $EXP[PositionLow]">true</value>
 				<value>false</value>
 			</var>
 			<var name="ShowMediumLogo">
-				<value condition="widgetDouble=true + $EXP[PositionStandard]">true</value>
+				<value condition="widgetRows=2 + $EXP[PositionStandard]">true</value>
 				<value>false</value>
 			</var>
 			<var name="height">
-				<value condition="$EXP[ThreeShelvesLarge] + widgetTriple=true">945</value>
-				<value condition="!$EXP[ThreeShelvesLarge] + widgetTriple=true">756</value>
-				<value condition="widgetDouble=true">630</value>
+				<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">945</value>
+				<value condition="!$EXP[ThreeShelvesLarge] + widgetRows=3">756</value>
+				<value condition="widgetRows=2">630</value>
 				<value>315</value>
 			</var>
 			<var name="textboxwidth">
-				<value condition="widgetTriple=true + !$EXP[ThreeShelvesLarge]">158</value>
+				<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">158</value>
 				<value>204</value>
 			</var>
 		</propertyGroup>
@@ -1448,7 +1448,8 @@
 		<condition>widgetPath</condition>
 		<condition>$EXP[SingleShelf]</condition>
 		<condition>!$EXP[StaticShelf]</condition>
-		<property name="triple" from="widgetTriple" />
+		<property name="triple" condition="widgetRows=3">true</property>
+		<property name="triple">false</property>
 		<property name="target" from="widgetTarget" />
 		<property name="sortorder" from="widgetSortOrder" />
 		<property name="sortby" from="widgetSortBy" />
@@ -1463,101 +1464,101 @@
 		<propertyGroup content="ShelfOverlayLabel" />
 		<propertyGroup content="ShelfArtwork" />
 		<var name="top">
-			<value condition="!$EXP[PositionHigh] + !$EXP[ThreeShelvesLarge] + widgetTriple">110</value>
-			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + widgetDouble + !widgetTriple">220</value>
-			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + widgetDouble + !widgetTriple">170</value>
-			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + !widgetDouble + !widgetTriple + $EXP[ScrollingLogo]">688</value>
-			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + !widgetDouble + !widgetTriple + !$EXP[ScrollingLogo]">534</value>
-			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + $EXP[ShelvesInfo] + !widgetDouble + !widgetTriple">594</value>
-			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + !$EXP[ShelvesInfo] + !widgetDouble + !widgetTriple">327</value>
+			<value condition="!$EXP[PositionHigh] + !$EXP[ThreeShelvesLarge] + widgetRows=3">110</value>
+			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + widgetRows=2 + !widgetRows=3">220</value>
+			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + widgetRows=2 + !widgetRows=3">170</value>
+			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + !widgetRows=2 + !widgetRows=3 + $EXP[ScrollingLogo]">688</value>
+			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + !widgetRows=2 + !widgetRows=3 + !$EXP[ScrollingLogo]">534</value>
+			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + $EXP[ShelvesInfo] + !widgetRows=2 + !widgetRows=3">594</value>
+			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + !$EXP[ShelvesInfo] + !widgetRows=2 + !widgetRows=3">327</value>
 			<value>10</value>
 		</var>
 		<var name="backgroundheight">
-			<value condition="$EXP[ThreeShelvesLarge] + widgetTriple">1005</value>
-			<value condition="widgetDouble + !widgetTriple">690</value>
-			<value condition="!widgetDouble + !widgetTriple + $EXP[ScrollingLogo]">220</value>
-			<value condition="!widgetDouble + !widgetTriple + !$EXP[ScrollingLogo]">375</value>
+			<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">1005</value>
+			<value condition="widgetRows=2 + !widgetRows=3">690</value>
+			<value condition="!widgetRows=2 + !widgetRows=3 + $EXP[ScrollingLogo]">220</value>
+			<value condition="!widgetRows=2 + !widgetRows=3 + !$EXP[ScrollingLogo]">375</value>
 			<value>817</value>
 		</var>
 		<var name="ShowLargeLogo">
-			<value condition="!widgetDouble + !widgetTriple">true</value>
+			<value condition="!widgetRows=2 + !widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<var name="paneltop">
-			<value condition="!widgetDouble=true + !widgetTriple=true + widgetAutoScroll + [widgetArtwork IN Banner,ClearLogo] + $EXP[PositionStandard]">328</value>
-			<value condition="!widgetDouble=true + !widgetTriple=true + widgetAutoScroll + [widgetArtwork IN Banner,ClearLogo] + $EXP[PositionLow]">688</value>
+			<value condition="!widgetRows=2 + !widgetRows=3 + widgetAutoScroll + [widgetArtwork IN Banner,ClearLogo] + $EXP[PositionStandard]">328</value>
+			<value condition="!widgetRows=2 + !widgetRows=3 + widgetAutoScroll + [widgetArtwork IN Banner,ClearLogo] + $EXP[PositionLow]">688</value>
 			<value>$PROPERTY[top]</value>
 		</var>
 		<var name="center228double">
-			<value condition="widgetArtwork=Square + !widgetShowTextbox=false + widgetDouble=true">true</value>
-			<value condition="[!widgetArtwork | widgetArtwork=Poster] + widgetDouble=true">true</value>
+			<value condition="widgetArtwork=Square + !widgetShowTextbox=false + widgetRows=2">true</value>
+			<value condition="[!widgetArtwork | widgetArtwork=Poster] + widgetRows=2">true</value>
 			<value>false</value>
 		</var>
 		<var name="center228triplemed">
-			<value condition="[!widgetArtwork | widgetArtwork=Poster] + widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
-			<value condition="widgetArtwork=Square + !widgetShowTextbox=false + widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="[!widgetArtwork | widgetArtwork=Poster] + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetArtwork=Square + !widgetShowTextbox=false + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
 			<value>false</value>
 		</var>
 		<var name="center295double">
-			<value condition="[widgetArtwork IN DiscArt,CharacterArt] + widgetDouble=true">true</value>
+			<value condition="[widgetArtwork IN DiscArt,CharacterArt] + widgetRows=2">true</value>
 			<value>false</value>
 		</var>
 		<var name="center295triplemed">
-			<value condition="[widgetArtwork IN DiscArt,CharacterArt] + widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="[widgetArtwork IN DiscArt,CharacterArt] + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
 			<value>false</value>
 		</var>
 		<var name="center315double">
-			<value condition="widgetArtwork=Square + widgetShowTextbox=false + widgetDouble=true">true</value>
+			<value condition="widgetArtwork=Square + widgetShowTextbox=false + widgetRows=2">true</value>
 			<value>false</value>
 		</var>
 		<var name="center315triplemed">
-			<value condition="widgetArtwork=Square + widgetShowTextbox=false + widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetArtwork=Square + widgetShowTextbox=false + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
 			<value>false</value>
 		</var>
 		<var name="center376double">
-			<value condition="widgetArtwork=ClearLogo + widgetDouble=true">true</value>
+			<value condition="widgetArtwork=ClearLogo + widgetRows=2">true</value>
 			<value>false</value>
 		</var>
 		<var name="center376triplemed">
-			<value condition="widgetArtwork=ClearLogo + widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetArtwork=ClearLogo + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
 			<value>false</value>
 		</var>
 		<var name="center385double">
-			<value condition="widgetArtwork=ClearArt + widgetDouble=true">true</value>
+			<value condition="widgetArtwork=ClearArt + widgetRows=2">true</value>
 			<value>false</value>
 		</var>
 		<var name="center500double">
-			<value condition="[widgetArtwork IN FanArt,Landscape,Thumb] + widgetDouble=true">true</value>
+			<value condition="[widgetArtwork IN FanArt,Landscape,Thumb] + widgetRows=2">true</value>
 			<value>false</value>
 		</var>
 		<var name="center500triplemed">
-			<value condition="[widgetArtwork IN FanArt,Landscape,Thumb,ClearArt] + widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="[widgetArtwork IN FanArt,Landscape,Thumb,ClearArt] + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
 			<value>false</value>
 		</var>
 		<var name="center668double">
-			<value condition="widgetArtwork=Banner + widgetDouble=true">true</value>
+			<value condition="widgetArtwork=Banner + widgetRows=2">true</value>
 			<value>false</value>
 		</var>
 		<var name="center668triplemed">
-			<value condition="widgetArtwork=Banner + widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetArtwork=Banner + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
 			<value>false</value>
 		</var>
 		<var name="textboxheight">
 			<value condition="widgetType IN movies,tvshows,tv,episodes + [widgetPath~tags | widgetPath~genres | widgetPath~studios | widgetPath~actors | widgetPath~directors | widgetPath~country | widgetPath~years]">44</value>
 			<value condition="widgetType IN movies,tvshows,tv,episodes,musicvideos,videos,music,albums,songs + widgetArtwork=Square">47</value>
-			<value condition="widgetTriple=true + !$EXP[ThreeShelvesLarge]">35</value>
-			<value condition="widgetTriple=true + $EXP[ThreeShelvesLarge]">55</value>
+			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">35</value>
+			<value condition="widgetRows=3 + $EXP[ThreeShelvesLarge]">55</value>
 			<value>64</value>
 		</var>
 		<var name="textbackheight">
 			<value condition="widgetType IN movies,tvshows,tv,episodes + [widgetPath~tags | widgetPath~genres | widgetPath~studios | widgetPath~actors | widgetPath~directors | widgetPath~country | widgetPath~years]">54</value>
 			<value condition="widgetType IN movies,tvshows,tv,episodes,musicvideos,videos,music,albums,songs + widgetArtwork=Square">56</value>
-			<value condition="widgetTriple=true + !$EXP[ThreeShelvesLarge]">45</value>
-			<value condition="widgetTriple=true + $EXP[ThreeShelvesLarge]">65</value>
+			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">45</value>
+			<value condition="widgetRows=3 + $EXP[ThreeShelvesLarge]">65</value>
 			<value>74</value>
 		</var>
 		<var name="isTripleMedium">
-			<value condition="widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
 			<value>false</value>
 		</var>
 		<controls>
@@ -1868,32 +1869,34 @@
 		<condition>widgetPath</condition>
 		<condition>$EXP[SingleShelf]</condition>
 		<condition>$EXP[StaticShelf]</condition>
-		<property name="triple" from="widgetTriple" />
+		<property name="triple" condition="widgetRows=3">true</property>
+		<property name="triple">false</property>
 		<property name="popupdelay" from="widgetPopupDelay" />
 		<property name="path" from="widgetPath" />
 		<property name="label" from="widgetLabel" />
-		<property name="double" from="widgetDouble" />
+		<property name="double" condition="widgetRows=2">true</property>
+		<property name="double">false</property>
 		<propertyGroup content="ShelfSlot" />
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="SingleShelfLayout" />
 		<propertyGroup content="StaticShelfArtwork" />
 		<propertyGroup content="StaticEpisodeShelf" />
 		<var name="top">
-			<value condition="!$EXP[PositionHigh] + !$EXP[ThreeShelvesLarge] + widgetTriple">110</value>
-			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + widgetDouble + !widgetTriple">220</value>
-			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + widgetDouble + !widgetTriple">170</value>
-			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + !widgetDouble + !widgetTriple">534</value>
-			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + !widgetDouble + !widgetTriple">327</value>
+			<value condition="!$EXP[PositionHigh] + !$EXP[ThreeShelvesLarge] + widgetRows=3">110</value>
+			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + widgetRows=2 + !widgetRows=3">220</value>
+			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + widgetRows=2 + !widgetRows=3">170</value>
+			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + !widgetRows=2 + !widgetRows=3">534</value>
+			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + !widgetRows=2 + !widgetRows=3">327</value>
 			<value>10</value>
 		</var>
 		<var name="backgroundheight">
-			<value condition="$EXP[ThreeShelvesLarge] + widgetTriple=true">1005</value>
-			<value condition="!$EXP[ThreeShelvesLarge] + widgetTriple=true">817</value>
-			<value condition="widgetDouble=true">690</value>
+			<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">1005</value>
+			<value condition="!$EXP[ThreeShelvesLarge] + widgetRows=3">817</value>
+			<value condition="widgetRows=2">690</value>
 			<value>375</value>
 		</var>
 		<var name="ShowLargeLogo">
-			<value condition="!widgetDouble=true + !widgetTriple=true + [![widgetArtwork IN Banner,ClearLogo]]">true</value>
+			<value condition="!widgetRows=2 + !widgetRows=3 + [![widgetArtwork IN Banner,ClearLogo]]">true</value>
 			<value>false</value>
 		</var>
 		<var name="textboxvisibility">
@@ -1901,31 +1904,31 @@
 			<value>true</value>
 		</var>
 		<var name="textboxfont">
-			<value condition="widgetTriple=true">ListDetailsSmall</value>
+			<value condition="widgetRows=3">ListDetailsSmall</value>
 			<value>Shelf_Label</value>
 		</var>
 		<var name="labelfont">
-			<value condition="widgetTriple=true">ListDetailsSmall</value>
+			<value condition="widgetRows=3">ListDetailsSmall</value>
 			<value>Shelf_Label</value>
 		</var>
 		<var name="center228triplemed">
-			<value condition="widgetTriple=true + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
 			<value>false</value>
 		</var>
 		<var name="textboxheight">
-			<value condition="widgetTriple=true + !$EXP[ThreeShelvesLarge]">48</value>
-			<value condition="$EXP[ThreeShelvesLarge] + widgetTriple=true">54</value>
+			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">48</value>
+			<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">54</value>
 			<value>64</value>
 		</var>
 		<var name="textbackheight">
-			<value condition="widgetTriple=true + !$EXP[ThreeShelvesLarge]">56</value>
-			<value condition="$EXP[ThreeShelvesLarge] + widgetTriple=true">64</value>
+			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">56</value>
+			<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">64</value>
 			<value>74</value>
 		</var>
 		<var name="iconheight">
-			<value condition="widgetType=swrecommendedeps + [$EXP[ThreeShelvesLarge] | !widgetTriple=true]">315</value>
-			<value condition="widgetType=swrecommendedeps + [!$EXP[ThreeShelvesLarge] + widgetTriple=true]">252</value>
-			<value condition="widgetType IN system,favouriteaddons,addons,weatherdaily,weatherhourly,weatherdaily,shortweatherdaily,weatherhourly,shortweatherhourly + [$EXP[ThreeShelvesLarge] | !widgetTriple=true]">228</value>
+			<value condition="widgetType=swrecommendedeps + [$EXP[ThreeShelvesLarge] | !widgetRows=3]">315</value>
+			<value condition="widgetType=swrecommendedeps + [!$EXP[ThreeShelvesLarge] + widgetRows=3]">252</value>
+			<value condition="widgetType IN system,favouriteaddons,addons,weatherdaily,weatherhourly,weatherdaily,shortweatherdaily,weatherhourly,shortweatherhourly + [$EXP[ThreeShelvesLarge] | !widgetRows=3]">228</value>
 			<value>182</value>
 		</var>
 		<var name="check">
@@ -2192,49 +2195,49 @@
 			<value>true</value>
 		</var>
 		<var name="top">
-			<value condition="$EXP[PositionLow] + !showShelvesInfo + !widgetThreeShelves + !widgetTwoShelves">595</value>
-			<value condition="$EXP[PositionLow] + !showShelvesInfo + !widgetThreeShelves + !widgetType.2">595</value>
-			<value condition="$EXP[PositionLow] + !showShelvesInfo + !widgetTwoShelves + !widgetType.2 + !widgetType.3">595</value>
-			<value condition="$EXP[PositionStandard] + !showShelvesInfo + !widgetThreeShelves + !widgetTwoShelves">235</value>
-			<value condition="$EXP[PositionStandard] + !showShelvesInfo + !widgetThreeShelves + !widgetType.2">235</value>
-			<value condition="$EXP[PositionStandard] + !showShelvesInfo + !widgetTwoShelves + !widgetType.2 + !widgetType.3">235</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !widgetThreeShelves + !widgetTwoShelves">-80</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + widgetType.2 + widgetType.3">-80</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !widgetTwoShelves + !widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo]">-80</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !widgetThreeShelves + widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">-80</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetTwoShelves + !widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo]">-20</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">10</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">10</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">10</value>
-			<value condition="$EXP[PositionStandard] + !showShelvesInfo + widgetThreeShelves + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">295</value>
-			<value condition="$EXP[PositionStandard] + !showShelvesInfo + widgetThreeShelves + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">295</value>
-			<value condition="$EXP[PositionStandard] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + !widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">295</value>
-			<value condition="$EXP[PositionStandard] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">295</value>
-			<value condition="$EXP[PositionLow] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">465</value>
-			<value condition="$EXP[PositionLow] + !showShelvesInfo + widgetTwoShelves + widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">465</value>
-			<value condition="$EXP[PositionLow] + !showShelvesInfo + widgetThreeShelves + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">465</value>
-			<value condition="$EXP[PositionLow] + !showShelvesInfo + widgetThreeShelves + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">465</value>
-			<value condition="$EXP[PositionLow] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + !widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">465</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">160</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + !widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">160</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetTwoShelves + widgetType.2 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">160</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetTwoShelves + widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo3]">160</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetTwoShelves + widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo2]">160</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetTwoShelves + widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo]">160</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + !widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">100</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">100</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">100</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + widgetTwoShelves + !widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">100</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">100</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">100</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + widgetThreeShelves + !widgetTwoShelves + widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">50</value>
-			<value condition="showShelvesInfo + !widgetThreeShelves + !widgetTwoShelves">515</value>
-			<value condition="showShelvesInfo + !widgetThreeShelves + !widgetType.2">515</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !widgetThreeShelves + widgetTwoShelves + !widgetType.2 + $EXP[ScrollingLogo]">-85</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !widgetThreeShelves + widgetTwoShelves + !widgetType.2 + !$EXP[ScrollingLogo]">-15</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !widgetThreeShelves + widgetTwoShelves + widgetType.2 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">155</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !widgetThreeShelves + widgetTwoShelves + widgetType.2 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">85</value>
-			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !widgetThreeShelves + widgetTwoShelves + widgetType.2 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">85</value>
+			<value condition="$EXP[PositionLow] + !showShelvesInfo + !shelfLayout=three + !shelfLayout=two">595</value>
+			<value condition="$EXP[PositionLow] + !showShelvesInfo + !shelfLayout=three + !widgetType.2">595</value>
+			<value condition="$EXP[PositionLow] + !showShelvesInfo + !shelfLayout=two + !widgetType.2 + !widgetType.3">595</value>
+			<value condition="$EXP[PositionStandard] + !showShelvesInfo + !shelfLayout=three + !shelfLayout=two">235</value>
+			<value condition="$EXP[PositionStandard] + !showShelvesInfo + !shelfLayout=three + !widgetType.2">235</value>
+			<value condition="$EXP[PositionStandard] + !showShelvesInfo + !shelfLayout=two + !widgetType.2 + !widgetType.3">235</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !shelfLayout=three + !shelfLayout=two">-80</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + widgetType.2 + widgetType.3">-80</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !shelfLayout=two + !widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo]">-80</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !shelfLayout=three + widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">-80</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !shelfLayout=two + !widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo]">-20</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">10</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">10</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">10</value>
+			<value condition="$EXP[PositionStandard] + !showShelvesInfo + shelfLayout=three + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">295</value>
+			<value condition="$EXP[PositionStandard] + !showShelvesInfo + shelfLayout=three + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">295</value>
+			<value condition="$EXP[PositionStandard] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + !widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">295</value>
+			<value condition="$EXP[PositionStandard] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">295</value>
+			<value condition="$EXP[PositionLow] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">465</value>
+			<value condition="$EXP[PositionLow] + !showShelvesInfo + shelfLayout=two + widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">465</value>
+			<value condition="$EXP[PositionLow] + !showShelvesInfo + shelfLayout=three + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">465</value>
+			<value condition="$EXP[PositionLow] + !showShelvesInfo + shelfLayout=three + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">465</value>
+			<value condition="$EXP[PositionLow] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + !widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">465</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">160</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + !widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">160</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !shelfLayout=two + widgetType.2 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">160</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !shelfLayout=two + widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo3]">160</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !shelfLayout=two + widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo2]">160</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !shelfLayout=two + widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo]">160</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + !widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">100</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">100</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">100</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + shelfLayout=two + !widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">100</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">100</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">100</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + shelfLayout=three + !shelfLayout=two + widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">50</value>
+			<value condition="showShelvesInfo + !shelfLayout=three + !shelfLayout=two">515</value>
+			<value condition="showShelvesInfo + !shelfLayout=three + !widgetType.2">515</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !shelfLayout=three + shelfLayout=two + !widgetType.2 + $EXP[ScrollingLogo]">-85</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !shelfLayout=three + shelfLayout=two + !widgetType.2 + !$EXP[ScrollingLogo]">-15</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !shelfLayout=three + shelfLayout=two + widgetType.2 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">155</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !shelfLayout=three + shelfLayout=two + widgetType.2 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">85</value>
+			<value condition="$EXP[PositionHigh] + !showShelvesInfo + !shelfLayout=three + shelfLayout=two + widgetType.2 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">85</value>
 			<value>315</value>
 		</var>
 		<controls>
@@ -2266,8 +2269,8 @@
 		</controls>
 	</template>
 	<template include="shelfgroup2shelvesbackground" menu="mainmenu">
-		<condition>widgetTwoShelves=true</condition>
-		<condition>!widgetThreeShelves=true</condition>
+		<condition>shelfLayout=two</condition>
+		<condition>!shelfLayout=three</condition>
 		<var name="labelscroll2">
 			<value condition="widgetLabelScroll.2">$PROPERTY[widgetLabelScroll.2]</value>
 			<value>false</value>
@@ -2343,8 +2346,8 @@
 	</template>
 	<template include="shelfgroup1" menu="mainmenu">
 		<condition>widgetPath</condition>
-		<condition>widgetTwoShelves=true</condition>
-		<condition>!widgetThreeShelves=true</condition>
+		<condition>shelfLayout=two</condition>
+		<condition>!shelfLayout=three</condition>
 		<condition>![widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="ShelfOverlayLabel" />
@@ -2395,8 +2398,8 @@
 	</template>
 	<template include="shelfgroup2" menu="mainmenu">
 		<condition>widgetPath.2</condition>
-		<condition>widgetTwoShelves=true</condition>
-		<condition>!widgetThreeShelves=true</condition>
+		<condition>shelfLayout=two</condition>
+		<condition>!shelfLayout=three</condition>
 		<condition>![widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="ShelfOverlayLabel" suffix=".2" />
@@ -2431,8 +2434,8 @@
 	</template>
 	<template include="shelfgroup1" menu="mainmenu">
 		<condition>widgetPath</condition>
-		<condition>widgetTwoShelves=true</condition>
-		<condition>!widgetThreeShelves=true</condition>
+		<condition>shelfLayout=two</condition>
+		<condition>!shelfLayout=three</condition>
 		<condition>widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="StaticShelfArtwork" />
@@ -2463,8 +2466,8 @@
 	</template>
 	<template include="shelfgroup2" menu="mainmenu">
 		<condition>widgetPath.2</condition>
-		<condition>widgetTwoShelves=true</condition>
-		<condition>!widgetThreeShelves=true</condition>
+		<condition>shelfLayout=two</condition>
+		<condition>!shelfLayout=three</condition>
 		<condition>widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="StaticShelfArtwork" suffix=".2" />
@@ -2488,9 +2491,9 @@
 		</controls>
 	</template>
 	<template include="shelfgroup3shelvesbackground" menu="mainmenu">
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>!widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<var name="labelscroll2">
 			<value condition="widgetLabelScroll.2">$PROPERTY[widgetLabelScroll.2]</value>
 			<value>false</value>
@@ -2681,9 +2684,9 @@
 	</template>
 	<template include="shelfgroup1" menu="mainmenu">
 		<condition>widgetPath</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>!widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="ThreeShelvesFirst" />
@@ -2815,9 +2818,9 @@
 	</template>
 	<template include="shelfgroup2" menu="mainmenu">
 		<condition>widgetPath.2</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>!widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="ThreeShelvesSecond" suffix=".2" />
@@ -2916,9 +2919,9 @@
 	</template>
 	<template include="shelfgroup3" menu="mainmenu">
 		<condition>widgetPath.3</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>!widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".3" />
 		<propertyGroup content="ThreeShelvesThird" suffix=".3" />
@@ -3004,9 +3007,9 @@
 	</template>
 	<template include="shelfgroup1" menu="mainmenu">
 		<condition>widgetPath</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>!widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="StaticShelfArtwork" />
@@ -3072,9 +3075,9 @@
 	</template>
 	<template include="shelfgroup2" menu="mainmenu">
 		<condition>widgetPath.2</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>!widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="ThreeShelvesSecond" suffix=".2" />
@@ -3123,9 +3126,9 @@
 	</template>
 	<template include="shelfgroup3" menu="mainmenu">
 		<condition>widgetPath.3</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>!widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" suffix=".3" />
 		<propertyGroup content="ThreeShelvesThird" suffix=".3" />
@@ -3171,8 +3174,8 @@
 		</controls>
 	</template>
 	<template include="shelfgroup3shelvesbackgroundlarge" menu="mainmenu">
-		<condition>widgetThreeShelves=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>shelfLayout=three</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>widgetThreeShelvesLarge=true</condition>
 		<var name="labelscroll2">
 			<value condition="widgetLabelScroll.2">$PROPERTY[widgetLabelScroll.2]</value>
@@ -3293,9 +3296,9 @@
 	</template>
 	<template include="shelfgroup1" menu="mainmenu">
 		<condition>widgetPath</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="LargeShelvesTextbox" />
@@ -3336,9 +3339,9 @@
 	</template>
 	<template include="shelfgroup2" menu="mainmenu">
 		<condition>widgetPath.2</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="LargeShelvesTextbox" suffix=".2" />
@@ -3375,9 +3378,9 @@
 	</template>
 	<template include="shelfgroup3" menu="mainmenu">
 		<condition>widgetPath.3</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".3" />
 		<propertyGroup content="LargeShelvesTextbox" suffix=".3" />
@@ -3411,9 +3414,9 @@
 	</template>
 	<template include="shelfgroup1" menu="mainmenu">
 		<condition>widgetPath</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="LargeShelvesStaticLayout" />
 		<propertyGroup content="ShelfCommon" />
@@ -3440,9 +3443,9 @@
 	</template>
 	<template include="shelfgroup2" menu="mainmenu">
 		<condition>widgetPath.2</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="LargeShelvesStaticLayout" suffix=".2" />
 		<propertyGroup content="ShelfCommon" suffix=".2" />
@@ -3465,9 +3468,9 @@
 	</template>
 	<template include="shelfgroup3" menu="mainmenu">
 		<condition>widgetPath.3</condition>
-		<condition>widgetThreeShelves=true</condition>
+		<condition>shelfLayout=three</condition>
 		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!widgetTwoShelves=true</condition>
+		<condition>!shelfLayout=two</condition>
 		<condition>widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="LargeShelvesStaticLayout" suffix=".3" />
 		<propertyGroup content="ShelfCommon" suffix=".3" />

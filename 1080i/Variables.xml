@@ -1121,11 +1121,23 @@
 	</variable>
 
 	<variable name="SkinShortcutsLeftLabelVar">
-		<value condition="String.StartsWith(Window.Property(skinshortcuts-dialog),shelf)">$LOCALIZE[31166]</value>
-		<value condition="String.EndsWith(Window.Property(skinshortcuts-dialog),bottomshortcuts)">$INFO[Window(Home).Property(ShortcutsCurrentItem)] - $LOCALIZE[13398]</value>
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),custom-bottomshortcuts)">$INFO[Window(Home).Property(ShortcutsCurrentItem)] - $LOCALIZE[13398]</value>
+		<value condition="$EXP[ShortcutsSubpage]">$INFO[Control.GetLabel(211)]</value>
 		<value condition="String.IsEqual(Window.Property(menuname),mainmenu)">$LOCALIZE[33061]</value>
 		<value condition="String.IsEqual(Window.Property(menuname),powermenu)">$LOCALIZE[31528]</value>
 		<value>$LOCALIZE[1034]</value>
+	</variable>
+
+	<variable name="SkinShortcutsPageLabelVar">
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),shelves)">$LOCALIZE[31166]</value>
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),shelf1)">$LOCALIZE[31491] 1</value>
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),shelf2)">$LOCALIZE[31491] 2</value>
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),shelf3)">$LOCALIZE[31491] 3</value>
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),shelf4)">$LOCALIZE[31491] 4</value>
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),shelf5)">$LOCALIZE[31491] 5</value>
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),shelf6)">$LOCALIZE[31491] 6</value>
+		<value condition="String.IsEqual(Window.Property(skinshortcuts-dialog),bottomshortcuts)">$LOCALIZE[31635]</value>
+		<value>$INFO[Control.GetLabel(211)]</value>
 	</variable>
 
 	<variable name="RecentlyPlayedTVShowsVar">

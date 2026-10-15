@@ -106,8 +106,13 @@
 		</options>
 	</property>
 
-	<property name="widgetDouble" type="toggle" value="true" requires="widget" />
-	<property name="widgetTriple" type="toggle" value="true" requires="widget" />
+	<property name="widgetRows" requires="widget">
+		<options>
+			<option value="1" label="One" />
+			<option value="2" label="Two" />
+			<option value="3" label="Three" />
+		</options>
+	</property>
 	<property name="widgetPosterLabel" type="toggle" value="true" requires="widget" />
 	<property name="widgetLabelScroll" type="toggle" value="true" requires="widget" />
 	<property name="widgetShowTextbox" type="toggle" value="false" requires="widget" />
@@ -165,10 +170,15 @@
 		</options>
 	</property>
 
-	<property name="widgetTwoShelves" type="toggle" value="true" />
-	<property name="widgetThreeShelves" type="toggle" value="true" />
-	<property name="InfoLineShelf" type="toggle" value="true" />
+	<property name="shelfLayout">
+		<options>
+			<option value="one" label="$NUMBER[1]" />
+			<option value="two" label="$NUMBER[2]" />
+			<option value="three" label="$NUMBER[3]" />
+		</options>
+	</property>
 	<property name="widgetThreeShelvesLarge" type="toggle" value="true" />
+	<property name="InfoLineShelf" type="toggle" value="true" />
 	<property name="centerShelves" type="toggle" value="true" />
 	<property name="showShelvesInfo" type="toggle" value="true" />
 	<property name="widgetsHide" type="toggle" value="true" />
@@ -185,14 +195,13 @@
 			<button id="3003" property="widgetPosterLabel" />
 			<button id="3004" property="widgetLabelScroll" />
 			<button id="3005" property="widgetShowTextbox" />
-			<button id="3006" property="widgetDouble" />
-			<button id="3007" property="widgetTriple" />
-			<button id="3008" property="doInfoPopup" />
-			<button id="3009" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
-			<button id="3010" property="widgetSortBy" title="$LOCALIZE[31616]" />
-			<button id="3011" property="widgetSortOrder" title="$LOCALIZE[31617]" />
-			<button id="3012" property="widgetLimit" title="$LOCALIZE[31618]" />
-			<button id="3013" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
+			<button id="3006" property="widgetRows" title="Rows" showNone="false" />
+			<button id="3007" property="doInfoPopup" />
+			<button id="3008" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
+			<button id="3009" property="widgetSortBy" title="$LOCALIZE[31616]" />
+			<button id="3010" property="widgetSortOrder" title="$LOCALIZE[31617]" />
+			<button id="3011" property="widgetLimit" title="$LOCALIZE[31618]" />
+			<button id="3012" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
 		</group>
 		<group suffix="true">
 			<button id="3101" property="widget" rename="true" />
@@ -200,14 +209,13 @@
 			<button id="3103" property="widgetPosterLabel" />
 			<button id="3104" property="widgetLabelScroll" />
 			<button id="3105" property="widgetShowTextbox" />
-			<button id="3106" property="widgetDouble" />
-			<button id="3107" property="widgetTriple" />
-			<button id="3108" property="doInfoPopup" />
-			<button id="3109" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
-			<button id="3110" property="widgetSortBy" title="$LOCALIZE[31616]" />
-			<button id="3111" property="widgetSortOrder" title="$LOCALIZE[31617]" />
-			<button id="3112" property="widgetLimit" title="$LOCALIZE[31618]" />
-			<button id="3113" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
+			<button id="3106" property="widgetRows" title="Rows" showNone="false" />
+			<button id="3107" property="doInfoPopup" />
+			<button id="3108" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
+			<button id="3109" property="widgetSortBy" title="$LOCALIZE[31616]" />
+			<button id="3110" property="widgetSortOrder" title="$LOCALIZE[31617]" />
+			<button id="3111" property="widgetLimit" title="$LOCALIZE[31618]" />
+			<button id="3112" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
 		</group>
 		<group suffix="true">
 			<button id="3201" property="widget" rename="true" />
@@ -215,14 +223,13 @@
 			<button id="3203" property="widgetPosterLabel" />
 			<button id="3204" property="widgetLabelScroll" />
 			<button id="3205" property="widgetShowTextbox" />
-			<button id="3206" property="widgetDouble" />
-			<button id="3207" property="widgetTriple" />
-			<button id="3208" property="doInfoPopup" />
-			<button id="3209" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
-			<button id="3210" property="widgetSortBy" title="$LOCALIZE[31616]" />
-			<button id="3211" property="widgetSortOrder" title="$LOCALIZE[31617]" />
-			<button id="3212" property="widgetLimit" title="$LOCALIZE[31618]" />
-			<button id="3213" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
+			<button id="3206" property="widgetRows" title="Rows" showNone="false" />
+			<button id="3207" property="doInfoPopup" />
+			<button id="3208" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
+			<button id="3209" property="widgetSortBy" title="$LOCALIZE[31616]" />
+			<button id="3210" property="widgetSortOrder" title="$LOCALIZE[31617]" />
+			<button id="3211" property="widgetLimit" title="$LOCALIZE[31618]" />
+			<button id="3212" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
 		</group>
 		<group suffix="true">
 			<button id="3301" property="widget" rename="true" />
@@ -230,14 +237,13 @@
 			<button id="3303" property="widgetPosterLabel" />
 			<button id="3304" property="widgetLabelScroll" />
 			<button id="3305" property="widgetShowTextbox" />
-			<button id="3306" property="widgetDouble" />
-			<button id="3307" property="widgetTriple" />
-			<button id="3308" property="doInfoPopup" />
-			<button id="3309" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
-			<button id="3310" property="widgetSortBy" title="$LOCALIZE[31616]" />
-			<button id="3311" property="widgetSortOrder" title="$LOCALIZE[31617]" />
-			<button id="3312" property="widgetLimit" title="$LOCALIZE[31618]" />
-			<button id="3313" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
+			<button id="3306" property="widgetRows" title="Rows" showNone="false" />
+			<button id="3307" property="doInfoPopup" />
+			<button id="3308" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
+			<button id="3309" property="widgetSortBy" title="$LOCALIZE[31616]" />
+			<button id="3310" property="widgetSortOrder" title="$LOCALIZE[31617]" />
+			<button id="3311" property="widgetLimit" title="$LOCALIZE[31618]" />
+			<button id="3312" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
 		</group>
 		<group suffix="true">
 			<button id="3401" property="widget" rename="true" />
@@ -245,14 +251,13 @@
 			<button id="3403" property="widgetPosterLabel" />
 			<button id="3404" property="widgetLabelScroll" />
 			<button id="3405" property="widgetShowTextbox" />
-			<button id="3406" property="widgetDouble" />
-			<button id="3407" property="widgetTriple" />
-			<button id="3408" property="doInfoPopup" />
-			<button id="3409" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
-			<button id="3410" property="widgetSortBy" title="$LOCALIZE[31616]" />
-			<button id="3411" property="widgetSortOrder" title="$LOCALIZE[31617]" />
-			<button id="3412" property="widgetLimit" title="$LOCALIZE[31618]" />
-			<button id="3413" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
+			<button id="3406" property="widgetRows" title="Rows" showNone="false" />
+			<button id="3407" property="doInfoPopup" />
+			<button id="3408" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
+			<button id="3409" property="widgetSortBy" title="$LOCALIZE[31616]" />
+			<button id="3410" property="widgetSortOrder" title="$LOCALIZE[31617]" />
+			<button id="3411" property="widgetLimit" title="$LOCALIZE[31618]" />
+			<button id="3412" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
 		</group>
 		<group suffix="true">
 			<button id="3501" property="widget" rename="true" />
@@ -260,31 +265,28 @@
 			<button id="3503" property="widgetPosterLabel" />
 			<button id="3504" property="widgetLabelScroll" />
 			<button id="3505" property="widgetShowTextbox" />
-			<button id="3506" property="widgetDouble" />
-			<button id="3507" property="widgetTriple" />
-			<button id="3508" property="doInfoPopup" />
-			<button id="3509" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
-			<button id="3510" property="widgetSortBy" title="$LOCALIZE[31616]" />
-			<button id="3511" property="widgetSortOrder" title="$LOCALIZE[31617]" />
-			<button id="3512" property="widgetLimit" title="$LOCALIZE[31618]" />
-			<button id="3513" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
+			<button id="3506" property="widgetRows" title="Rows" showNone="false" />
+			<button id="3507" property="doInfoPopup" />
+			<button id="3508" property="widgetPopupDelay" title="$LOCALIZE[31652]" showNone="false" />
+			<button id="3509" property="widgetSortBy" title="$LOCALIZE[31616]" />
+			<button id="3510" property="widgetSortOrder" title="$LOCALIZE[31617]" />
+			<button id="3511" property="widgetLimit" title="$LOCALIZE[31618]" />
+			<button id="3512" property="widgetAutoScroll" title="$LOCALIZE[31630]" />
 		</group>
 		<button id="1003" property="background" />
 		<button id="1004" property="InfoLine" title="$LOCALIZE[31417]" />
-		<button id="1006" property="playlistFanartLimit" title="$LOCALIZE[31604]" />
-		<button id="1010" property="horizontalWidgetPos" title="$LOCALIZE[31609]" showNone="false" />
-		<button id="1007" property="widgetTwoShelves" />
-		<button id="1008" property="widgetThreeShelves" />
-		<button id="1009" property="widgetThreeShelvesLarge" />
-		<button id="1011" property="centerShelves" />
-		<button id="1012" property="showShelvesInfo" />
-		<button id="1019" property="widgetsHide" />
-		<button id="1020" property="widgetDisableFanart" />
-		<button id="1021" property="widgetRecordingTV" />
-		<button id="1022" property="widgetRecordingRadio" />
-		<button id="1005" property="EHPlaylistFanart" />
-		<button id="1023" property="InfoLineShelf" />
+		<button id="1005" property="InfoLineShelf" />
+		<button id="1006" property="EHPlaylistFanart" />
+		<button id="1007" property="playlistFanartLimit" title="$LOCALIZE[31604]" />
+		<button id="1008" property="widgetRecordingTV" />
+		<button id="1009" property="widgetRecordingRadio" />
 		<button id="2001" property="UseBottomShortcuts" />
+		<button id="2101" property="shelfLayout" title="Shelves Together" showNone="false" />
+		<button id="2108" property="horizontalWidgetPos" title="$LOCALIZE[31609]" showNone="false" />
+		<button id="2109" property="centerShelves" />
+		<button id="2110" property="showShelvesInfo" />
+		<button id="2111" property="widgetsHide" />
+		<button id="2112" property="widgetDisableFanart" />
 	</buttons>
 
 	<fallbacks>
@@ -297,17 +299,14 @@
 		<fallback property="horizontalWidgetPos">
 			<default>Standard</default>
 		</fallback>
-		<fallback property="widgetDouble">
-			<default>false</default>
-		</fallback>
-		<fallback property="widgetTriple">
-			<default>false</default>
+		<fallback property="widgetRows">
+			<default>1</default>
 		</fallback>
 		<fallback property="widgetLabelScroll">
 			<default>false</default>
 		</fallback>
-		<fallback property="widgetTwoShelves">
-			<default>false</default>
+		<fallback property="shelfLayout">
+			<default>one</default>
 		</fallback>
 		<fallback property="widgetThreeShelvesLarge">
 			<default>false</default>

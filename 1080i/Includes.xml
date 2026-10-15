@@ -3098,25 +3098,16 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
-					<control type="radiobutton" id="$PARAM[idprefix]06">
-						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.IsEqual(Container(212).ListItem.Property(showShelvesInfo),true) + !String.IsEqual(Container(212).ListItem.Property(widgetTriple$PARAM[suffix]),true) + [[!String.IsEqual(Container(212).ListItem.Property(widgetTwoShelves),true) + !String.IsEqual(Container(212).ListItem.Property(widgetThreeShelves),true)] | String.IsEqual(Container(212).ListItem.Property(widgetDouble$PARAM[suffix]),true)]</visible>
-						<label>$LOCALIZE[31046]</label>
-						<selected>String.IsEqual(Container(212).ListItem.Property(widgetDouble$PARAM[suffix]),true)</selected>
+					<control type="button" id="$PARAM[idprefix]06">
+						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.IsEqual(Container(212).ListItem.Property(showShelvesInfo),true) + [[!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEqual(Container(212).ListItem.Property(shelfLayout),three)] | String.IsEqual(Container(212).ListItem.Property(widgetRows$PARAM[suffix]),2) | String.IsEqual(Container(212).ListItem.Property(widgetRows$PARAM[suffix]),3)]</visible>
+						<label>Rows</label>
+						<label2>$INFO[Container(212).ListItem.Property(widgetRows$PARAM[suffix]Label)]</label2>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
 					<control type="radiobutton" id="$PARAM[idprefix]07">
-						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.IsEqual(Container(212).ListItem.Property(showShelvesInfo),true) + !String.IsEqual(Container(212).ListItem.Property(widgetDouble$PARAM[suffix]),true) + [[!String.IsEqual(Container(212).ListItem.Property(widgetTwoShelves),true) + !String.IsEqual(Container(212).ListItem.Property(widgetThreeShelves),true)] | String.IsEqual(Container(212).ListItem.Property(widgetTriple$PARAM[suffix]),true)]</visible>
-						<label>$LOCALIZE[31045]</label>
-						<selected>String.IsEqual(Container(212).ListItem.Property(widgetTriple$PARAM[suffix]),true)</selected>
-						<height>60</height>
-						<width>1340</width>
-						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-						<font>ListDetails</font>
-					</control>
-					<control type="radiobutton" id="$PARAM[idprefix]08">
 						<visible>[!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.Contains(Container(212).ListItem.Property(widgetPath$PARAM[suffix]),skinshortcuts-template) + !String.IsEqual(Container(212).ListItem.Property(showShelvesInfo),true)] | String.IsEqual(Container(212).ListItem.Property(doInfoPopup$PARAM[suffix]),true)</visible>
 						<label>$LOCALIZE[31650]</label>
 						<selected>String.IsEqual(Container(212).ListItem.Property(doInfoPopup$PARAM[suffix]),true)</selected>
@@ -3125,7 +3116,7 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
-					<control type="button" id="$PARAM[idprefix]09">
+					<control type="button" id="$PARAM[idprefix]08">
 						<visible>String.IsEqual(Container(212).ListItem.Property(doInfoPopup$PARAM[suffix]),true)</visible>
 						<label>   - $LOCALIZE[31653]</label>
 						<label2>$VAR[Widget$PARAM[slot]PopupDelayLabelVar]</label2>
@@ -3134,7 +3125,7 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
-					<control type="button" id="$PARAM[idprefix]10">
+					<control type="button" id="$PARAM[idprefix]09">
 						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.Contains(Container(212).ListItem.Property(widgetPath$PARAM[suffix]),skinshortcuts-template)</visible>
 						<label>$LOCALIZE[31480]</label>
 						<label2>$VAR[Widget$PARAM[slot]SortMethodLabelVar]</label2>
@@ -3143,7 +3134,7 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
-					<control type="button" id="$PARAM[idprefix]11">
+					<control type="button" id="$PARAM[idprefix]10">
 						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.Contains(Container(212).ListItem.Property(widgetPath$PARAM[suffix]),skinshortcuts-template) + !String.IsEmpty(Container(212).ListItem.Property(widgetSortBy$PARAM[suffix])) + !String.IsEqual(Container(212).ListItem.Property(widgetSortBy$PARAM[suffix]),random) + !String.IsEqual(Container(212).ListItem.Property(widgetSortBy$PARAM[suffix]),playlistorder)</visible>
 						<label>$LOCALIZE[31481]</label>
 						<label2>$VAR[Widget$PARAM[slot]SortOrderLabelVar]</label2>
@@ -3152,7 +3143,7 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
-					<control type="button" id="$PARAM[idprefix]12">
+					<control type="button" id="$PARAM[idprefix]11">
 						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.Contains(Container(212).ListItem.Property(widgetPath$PARAM[suffix]),skinshortcuts-template)</visible>
 						<label>$LOCALIZE[31482]</label>
 						<label2>$INFO[Container(212).ListItem.Property(widgetLimit$PARAM[suffix])]</label2>
@@ -3161,8 +3152,8 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
-					<control type="button" id="$PARAM[idprefix]13">
-						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + [[!String.IsEqual(Container(212).ListItem.Property(widgetDouble$PARAM[suffix]),true) + !String.IsEqual(Container(212).ListItem.Property(widgetTriple$PARAM[suffix]),true)] | !String.IsEmpty(Container(212).ListItem.Property(widgetAutoScroll$PARAM[suffix]))]</visible>
+					<control type="button" id="$PARAM[idprefix]12">
+						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + [[!String.IsEqual(Container(212).ListItem.Property(widgetRows$PARAM[suffix]),2) + !String.IsEqual(Container(212).ListItem.Property(widgetRows$PARAM[suffix]),3)] | !String.IsEmpty(Container(212).ListItem.Property(widgetAutoScroll$PARAM[suffix]))]</visible>
 						<label>$LOCALIZE[31631]</label>
 						<label2>$VAR[Widget$PARAM[slot]AutoScrollLabelVar]</label2>
 						<height>60</height>
