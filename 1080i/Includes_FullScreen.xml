@@ -223,7 +223,7 @@
 			<height>1</height>
 			<itemlayout/>
 			<focusedlayout/>
-			<content>plugin://service.library.data.provider?type=$VAR[VideoOSDInfoButtonListType]&amp;dbid=$INFO[VideoPlayer.DBID]&amp;dbtype=$VAR[VideoOSDInfoButtonListType]</content>
+			<content>plugin://script.skin.info.service/?dbid=$INFO[VideoPlayer.DBID]&amp;dbtype=$VAR[VideoOSDInfoButtonListType]</content>
 		</control>
 	</include>
 

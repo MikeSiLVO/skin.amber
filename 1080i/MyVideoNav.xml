@@ -309,8 +309,7 @@
 					<description>Play Random</description>
 					<include>9000SysButtons</include>
 					<label>$LOCALIZE[31783]</label>
-					<onclick>RunScript(script.playrandomvideos, "$INFO[Container.FolderPath]", "label=$INFO[Container.FolderName]")</onclick>
-					<visible>System.AddonIsEnabled(script.playrandomvideos)</visible>
+					<onclick>RunScript(script.skin.info.service,action=playrandom,path=$ESCINFO[Container.FolderPath])</onclick>
 					<visible>!String.Contains(Container.FolderPath,plugin) + !String.Contains(Container.FolderPath,addons) + !String.Contains(Container.FolderPath,sources)</visible>
 				</control>
 				<control type="radiobutton" id="16">

@@ -19,9 +19,9 @@
 		<item>
 			<label>$LOCALIZE[31281]</label>
 			<onclick>Dialog.Close(1121)</onclick>
-			<onclick>RunScript(script.metadata.editor,dbid=$INFO[Window(Home).Property(InfoExtrasDBID)],type=$INFO[Window(Home).Property(InfoExtrasDBType)])</onclick>
+			<onclick>RunScript(script.skin.info.service,action=edit,dbid=$INFO[Window(Home).Property(InfoExtrasDBID)],dbtype=$INFO[Window(Home).Property(InfoExtrasDBType)])</onclick>
 			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-			<visible>System.AddonIsEnabled(script.metadata.editor) + [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]
+			<visible>!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))
 			</visible>
 		</item>
 		<item>
@@ -58,9 +58,9 @@
 		<item>
 			<label>$LOCALIZE[31281]</label>
 			<onclick>Dialog.Close(1121)</onclick>
-			<onclick>RunScript(script.metadata.editor,dbid=$INFO[Window(Home).Property(InfoExtrasDBID)],type=$INFO[Window(Home).Property(InfoExtrasDBType)])</onclick>
+			<onclick>RunScript(script.skin.info.service,action=edit,dbid=$INFO[Window(Home).Property(InfoExtrasDBID)],dbtype=$INFO[Window(Home).Property(InfoExtrasDBType)])</onclick>
 			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-			<visible>System.AddonIsEnabled(script.metadata.editor) + [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]
+			<visible>!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))
 			</visible>
 		</item>
 		<item>

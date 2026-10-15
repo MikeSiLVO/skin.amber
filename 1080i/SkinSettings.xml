@@ -332,7 +332,6 @@
 							<param name="itemid" value="22" />
 							<param name="itemlabel" value="$LOCALIZE[31750]" />
 							<param name="skinsetting" value="Shelf.PlayAlbum" />
-							<param name="itemvisibility" value="System.AddonIsEnabled(script.playalbum)" />
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="23" />
@@ -978,7 +977,6 @@
 							<param name="itemid" value="3" />
 							<param name="itemlabel" value="[B]$LOCALIZE[31763][/B]" />
 							<param name="skinsetting" value="InfoOpensVideoInfo" />
-							<param name="itemvisibility" value="System.AddonIsEnabled(service.library.data.provider)" />
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="4" />
@@ -1654,14 +1652,6 @@
 						<onclick condition="!System.HasAddon(service.upnext)">InstallAddon(service.upnext)</onclick>
 						<selected>System.AddonIsEnabled(service.upnext)</selected>
 					</control>
-					<control type="radiobutton" id="911216">
-						<label>service.library.data.provider</label>
-						<label2>$INFO[System.AddonVersion(service.library.data.provider)]             </label2>
-						<onclick condition="System.AddonIsEnabled(service.library.data.provider)">Addon.OpenSettings(service.library.data.provider)</onclick>
-						<onclick condition="System.HasAddon(service.library.data.provider) + !System.AddonIsEnabled(service.library.data.provider)">EnableAddon(service.library.data.provider)</onclick>
-						<onclick condition="!System.HasAddon(service.library.data.provider)">InstallAddon(service.library.data.provider)</onclick>
-						<selected>System.AddonIsEnabled(service.library.data.provider)</selected>
-					</control>
 					<control type="radiobutton" id="911217">
 						<label>script.xbmcbackup</label>
 						<label2>$INFO[System.AddonVersion(script.xbmcbackup)]             </label2>
@@ -1686,14 +1676,6 @@
 						<onclick condition="!System.HasAddon(plugin.program.autocompletion)">InstallAddon(plugin.program.autocompletion)</onclick>
 						<selected>System.AddonIsEnabled(plugin.program.autocompletion)</selected>
 					</control>
-					<control type="radiobutton" id="911221">
-						<label>script.metadata.editor</label>
-						<label2>$INFO[System.AddonVersion(script.metadata.editor)]             </label2>
-						<onclick condition="System.AddonIsEnabled(script.metadata.editor)">Addon.OpenSettings(script.metadata.editor)</onclick>
-						<onclick condition="System.HasAddon(script.metadata.editor) + !System.AddonIsEnabled(script.metadata.editor)">EnableAddon(script.metadata.editor)</onclick>
-						<onclick condition="!System.HasAddon(script.metadata.editor)">InstallAddon(script.metadata.editor)</onclick>
-						<selected>System.AddonIsEnabled(script.metadata.editor)</selected>
-					</control>
 					<control type="radiobutton" id="911222">
 						<label>script.embuary.helper</label>
 						<label2>$INFO[System.AddonVersion(script.embuary.helper)]             </label2>
@@ -1717,14 +1699,6 @@
 						<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + !System.AddonIsEnabled(plugin.video.themoviedb.helper)">EnableAddon(plugin.video.themoviedb.helper)</onclick>
 						<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
 						<selected>System.AddonIsEnabled(plugin.video.themoviedb.helper)</selected>
-					</control>
-					<control type="radiobutton" id="911226">
-						<label>script.playrandomvideos</label>
-						<label2>$INFO[System.AddonVersion(script.playrandomvideos)]             </label2>
-						<onclick condition="System.AddonIsEnabled(script.playrandomvideos)">Addon.OpenSettings(script.playrandomvideos)</onclick>
-						<onclick condition="System.HasAddon(script.playrandomvideos) + !System.AddonIsEnabled(script.playrandomvideos)">EnableAddon(script.playrandomvideos)</onclick>
-						<onclick condition="!System.HasAddon(script.playrandomvideos)">InstallAddon(script.playrandomvideos)</onclick>
-						<selected>System.AddonIsEnabled(script.playrandomvideos)</selected>
 					</control>
 					<control type="radiobutton" id="91126">
 						<label>script.tv.show.next.aired</label>

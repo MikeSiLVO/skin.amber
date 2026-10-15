@@ -9,8 +9,7 @@
 	<include>OSDFade</include>
 	<controls>
 
-		<!-- Hidden List to Show Video Info Dialog on info button, uses service.library.data.provider -->
-		<include condition="Skin.HasSetting(InfoOpensVideoInfo) + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.IsEmpty(VideoPlayer.DBID) + System.AddonIsEnabled(service.library.data.provider)">VideoOSDInfoButtonList</include>
+		<include condition="Skin.HasSetting(InfoOpensVideoInfo) + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.IsEmpty(VideoPlayer.DBID)">VideoOSDInfoButtonList</include>
 
 
 
