@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timers>
+	<timer>
+		<name>inforesetscroll</name>
+		<start reset="true">!String.IsEmpty(Window(Home).Property(ResetScroll))</start>
+		<stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(inforesetscroll),1)</stop>
+		<onstop>ClearProperty(ResetScroll,Home)</onstop>
+	</timer>
+	<timer>
+		<name>seekbaronplayback</name>
+		<start reset="true">!String.IsEmpty(Window(Home).Property(ShowOSD))</start>
+		<stop>[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),2) + [String.IsEmpty(Skin.String(SeekBarInit)) | Skin.String(SeekBarInit,two)]] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),3) + Skin.String(SeekBarInit,three)] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),4) + Skin.String(SeekBarInit,four)] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),5) + Skin.String(SeekBarInit,five)] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),6) + Skin.String(SeekBarInit,six)] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),7) + Skin.String(SeekBarInit,seven)] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),8) + Skin.String(SeekBarInit,eight)] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),10) + Skin.String(SeekBarInit,ten)] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),15) + Skin.String(SeekBarInit,fifteen)] |
+			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),20) + Skin.String(SeekBarInit,twenty)]</stop>
+		<onstop>ClearProperty(ShowOSD,Home)</onstop>
+	</timer>
+</timers>

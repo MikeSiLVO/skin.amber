@@ -5,7 +5,6 @@
 	<animation effect="fade" time="150">WindowClose</animation>
 
 	<onload>SetProperty(ResetScroll," ",Home)</onload>
-	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,Home),00:01,silent)</onload>
 
 	<controls>
 		<control type="image">

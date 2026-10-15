@@ -5,7 +5,6 @@
 	<animation effect="fade" time="150">WindowClose</animation>
 
 	<onload>SetProperty(ResetScroll," ",Home)</onload>
-	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,Home),00:01,silent)</onload>
 
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo)">Dialog.Close(all)</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[ListItem.Title])</onload>

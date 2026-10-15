@@ -2,17 +2,6 @@
 <window>
 	<animation effect="fade" time="200">WindowClose</animation>
 	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback)">SetProperty(ShowOSD,true,Home)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + String.IsEmpty(Skin.String(SeekBarInit))">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:02,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,two)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:02,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,three)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:03,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,four)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:04,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,five)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:05,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,six)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:06,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,seven)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:07,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,eight)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:08,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,ten)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:10,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,fifteen)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:15,silent)</onload>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,twenty)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,Home),00:20,silent)</onload>
 	<onload condition="!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,Home)</onload>
 	<onunload>ClearProperty(BringDownSeekBar,Home)</onunload>
 	<controls>

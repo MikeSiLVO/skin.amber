@@ -6,7 +6,6 @@
 	<conload condition="System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||9009||10052||10053||10054||10055||10056||10057||10058||10059)</conload>
 	<onload>SetProperty(onclose,SetFocus(9000))</onload>
 	<onload>SetProperty(ResetScroll," ",Home)</onload>
-	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,Home),00:01,silent)</onload>
 	<controls>
 		<!-- Hide Details list for video -->
 		<control type="list" id="10051">

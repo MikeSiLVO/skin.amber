@@ -4,7 +4,6 @@
 	<animation effect="fade" time="200">WindowOpen</animation>
 	<animation effect="fade" time="150">WindowClose</animation>
 	<onload>SetProperty(ResetScroll," ",Home)</onload>
-	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,Home),00:01,silent)</onload>
 	<controls>
 		<include>HiddenCast</include>
 		<control type="image">
