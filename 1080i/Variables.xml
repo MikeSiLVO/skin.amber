@@ -448,7 +448,7 @@
 		<value condition="[String.IsEqual(ListItem.DBType,season) | Container.Content(seasons)] + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem(1).Art(tvshow.poster))">$INFO[ListItem(1).Art(tvshow.poster)]</value>
 		<value condition="Container.content(studios) | String.IsEqual(ListItem.DBType,studio)">$VAR[Studios]</value>
 		<value condition="Container.content(countries) | String.IsEqual(ListItem.DBType,country)">$VAR[Countries]</value>
-		<value condition="Container.content(years) | String.IsEqual(ListItem.DBType,year) | [String.IsEmpty(ListItem.DBType) + String.Contains(ListItem.FolderPath,years)]">DefaultYear.png</value>
+		<value condition="Container.content(years) | String.IsEqual(ListItem.DBType,year) | [String.IsEmpty(ListItem.DBType) + [String.Contains(ListItem.FolderPath,/years/) | String.Contains(ListItem.FolderPath,/years.xml/) | String.Contains(ListItem.FolderPath,/originalyears/)]]">DefaultYear.png</value>
 		<value condition="[Container.content(directors) | String.IsEqual(ListItem.DBType,director)] + String.IsEmpty(ListItem.Thumb) + !System.AddonIsEnabled(resource.images.moviedirectorthumbs)">DefaultDirector.png</value>
 		<value condition="[Container.content(directors) | String.IsEqual(ListItem.DBType,director)] + String.IsEmpty(ListItem.Thumb) + System.AddonIsEnabled(resource.images.moviedirectorthumbs)">$INFO[ListItem.Label,resource://resource.images.moviedirectorthumbs/,.jpg]</value>
 		<value condition="[Container.content(actors) | String.IsEqual(ListItem.DBType,actor)] + String.IsEmpty(ListItem.Thumb) + String.IsEmpty(ListItem.Icon)">DefaultActor.png</value>
