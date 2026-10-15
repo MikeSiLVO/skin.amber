@@ -624,11 +624,10 @@
 							<param name="itemlabel" value="$LOCALIZE[31952]" />
 							<param name="skinsetting" value="MusicPlayingFanart" />
 						</include>
-						<include content="YesNoSettingItemAddon">
+						<include content="YesNoSettingItem">
 							<param name="itemid" value="2" />
 							<param name="itemlabel" value="$LOCALIZE[31969]" />
 							<param name="skinsetting" value="Use_Artist_Slideshow" />
-							<param name="addonpath" value="script.artistslideshow" />
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="13" />
@@ -867,7 +866,6 @@
 							<param name="itemid" value="6" />
 							<param name="itemlabel" value="$LOCALIZE[31767]" />
 							<param name="skinsetting" value="NowPlaying.ArtistSlideshow" />
-							<param name="itemvisibility" value="System.AddonIsEnabled(script.artistslideshow)" />
 						</include>
 						<include content="CustomDialogSettingItem">
 							<param name="itemid" value="7" />
@@ -1647,14 +1645,6 @@
 						<onclick condition="System.HasAddon(script.cu.lrclyrics) + !System.AddonIsEnabled(script.cu.lrclyrics)">EnableAddon(script.cu.lrclyrics)</onclick>
 						<onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
 						<selected>System.AddonIsEnabled(script.cu.lrclyrics)</selected>
-					</control>
-					<control type="radiobutton" id="911212">
-						<label>script.artistslideshow</label>
-						<label2>$INFO[System.AddonVersion(script.artistslideshow)]             </label2>
-						<onclick condition="System.AddonIsEnabled(script.artistslideshow)">Addon.OpenSettings(script.artistslideshow)</onclick>
-						<onclick condition="System.HasAddon(script.artistslideshow) + !System.AddonIsEnabled(script.artistslideshow)">EnableAddon(script.artistslideshow)</onclick>
-						<onclick condition="!System.HasAddon(script.artistslideshow)">InstallAddon(script.artistslideshow)</onclick>
-						<selected>System.AddonIsEnabled(script.artistslideshow)</selected>
 					</control>
 					<control type="radiobutton" id="911214">
 						<label>service.upnext</label>

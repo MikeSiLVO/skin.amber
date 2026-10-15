@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<animation effect="fade" time="200">WindowClose</animation>
-	<onload condition="Skin.HasSetting(Use_Artist_Slideshow) + System.AddonIsEnabled(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<defaultcontrol />
 	<controls>
 		<!-- Fadelabel for extra fanart -->
@@ -78,9 +77,9 @@
 		</control>
 		<!-- Artist Slideshow 3.x images -->
 		<control type="image" description="Slideshow - AS 3.0">
-			<visible>Skin.HasSetting(MusicPlayingFanart) + Skin.HasSetting(Use_Artist_Slideshow) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))</visible>
+			<visible>Skin.HasSetting(MusicPlayingFanart) + Skin.HasSetting(Use_Artist_Slideshow) + !String.IsEmpty(Window(Home).Property(SkinInfo.Player.Online.Music.Artist.FanArt))</visible>
 			<include>Dimensions_Fullscreen</include>
-			<texture background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</texture>
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Player.Online.Music.Artist.FanArt)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>800</fadetime>
 			<animation effect="fade" start="0" end="80" time="300">Visible</animation>
@@ -94,7 +93,7 @@
 		</control>
 		<!-- Single Artist Fanart -->
 		<control type="image" description="Fanart only">
-			<visible>Skin.HasSetting(MusicPlayingFanart) + !Skin.HasSetting(EnableExtraFanart) + [!Skin.HasSetting(Use_Artist_Slideshow) | String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))]</visible>
+			<visible>Skin.HasSetting(MusicPlayingFanart) + !Skin.HasSetting(EnableExtraFanart) + [!Skin.HasSetting(Use_Artist_Slideshow) | String.IsEmpty(Window(Home).Property(SkinInfo.Player.Online.Music.Artist.FanArt))]</visible>
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>400</fadetime>
 			<aspectratio>scale</aspectratio>
@@ -110,7 +109,7 @@
 		</control>
 		<!-- Artist Extra Fanart -->
 		<control type="multiimage" description="Artist Extra Fanart">
-			<visible>Skin.HasSetting(MusicPlayingFanart) + Skin.HasSetting(EnableExtraFanart) + [!Skin.HasSetting(Use_Artist_Slideshow) | String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))]</visible>
+			<visible>Skin.HasSetting(MusicPlayingFanart) + Skin.HasSetting(EnableExtraFanart) + [!Skin.HasSetting(Use_Artist_Slideshow) | String.IsEmpty(Window(Home).Property(SkinInfo.Player.Online.Music.Artist.FanArt))]</visible>
 			<include>Dimensions_Fullscreen</include>
 			<aspectratio aligny="top">scale</aspectratio>
 			<timeperimage>8000</timeperimage>
