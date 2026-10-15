@@ -69,7 +69,7 @@
 					<width>401</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<label>$LOCALIZE[138]</label>
-					<onclick>activatewindow(systeminfo)</onclick>
+					<onclick>ActivateWindow(systeminfo)</onclick>
 				</control>
 				<control type="button" id="502" description="Weather">
 					<include condition="Skin.HasSetting(Smaller.Fonts)">SmallerFonts</include>
@@ -106,7 +106,7 @@
 					<label>$LOCALIZE[14111]</label>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<onclick>ActivateWindow(EventLog,events://,return)</onclick>
-					<visible>system.getbool(eventlog.enabled)</visible>
+					<visible>System.GetBool(eventlog.enabled)</visible>
 				</control>
 				<control type="button" id="506" description="Launch OSMC settings">
 					<include condition="Skin.HasSetting(Smaller.Fonts)">SmallerFonts</include>
@@ -194,7 +194,7 @@
 				<content>
 					<item id="2" description="Interface">
 						<label>$LOCALIZE[14207]</label>
-						<onclick>activatewindow(InterfaceSettings)</onclick>
+						<onclick>ActivateWindow(InterfaceSettings)</onclick>
 					</item>
 					<item>
 						<label>$LOCALIZE[20077]</label>
@@ -203,27 +203,27 @@
 					</item>
 					<item id="3" description="Player">
 						<label>$LOCALIZE[14201]</label>
-						<onclick>activatewindow(PlayerSettings)</onclick>
+						<onclick>ActivateWindow(PlayerSettings)</onclick>
 					</item>
 					<item id="4" description="Library">
 						<label>$LOCALIZE[14212]</label>
-						<onclick>activatewindow(MediaSettings)</onclick>
+						<onclick>ActivateWindow(MediaSettings)</onclick>
 					</item>
 					<item id="11" description="PVR">
 						<label>$LOCALIZE[14205]</label>
-						<onclick>activateWindow(PVRSettings)</onclick>
+						<onclick>ActivateWindow(PVRSettings)</onclick>
 					</item>
 					<item id="8" description="Service">
 						<label>$LOCALIZE[14208]</label>
-						<onclick>activatewindow(ServiceSettings)</onclick>
+						<onclick>ActivateWindow(ServiceSettings)</onclick>
 					</item>
 					<item id="9" description="System">
 						<label>$LOCALIZE[14209]</label>
-						<onclick>activatewindow(SystemSettings)</onclick>
+						<onclick>ActivateWindow(SystemSettings)</onclick>
 					</item>
 					<item id="10" description="Games">
 						<label>$LOCALIZE[31044]</label>
-						<onclick>activatewindow(GameSettings)</onclick>
+						<onclick>ActivateWindow(GameSettings)</onclick>
 					</item>
 				</content>
 			</control>

@@ -72,7 +72,7 @@
 					<param name="width">500</param>
 					<param name="height">1010</param>
 					<param name="shadowoffset">16</param>
-					<param name="texture">$INFO[ListItem.thumb]</param>
+					<param name="texture">$INFO[ListItem.Thumb]</param>
 					<param name="visibility">String.IsEmpty(ListItem.Art(poster))</param>
 				</include>
 				<!-- Poster -->

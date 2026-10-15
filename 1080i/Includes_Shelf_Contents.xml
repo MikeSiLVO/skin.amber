@@ -26,9 +26,9 @@
 			<onunfocus condition="Skin.HasSetting(Shelf.PlayTrailers) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">PlayerControl(Stop)</onunfocus>
 			<onunfocus condition="Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">CancelAlarm(PlayShelfTrailer,silent)</onunfocus>
 			<onunfocus condition="Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onunfocus>
-			<onfocus condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + !String.IsEmpty(ListItem.Trailer)">AlarmClock(PlayShelfTrailer,PlayMedia($ESCINFO[ListItem.Trailer],1),$INFO[Skin.String(ShelfTrailerDelay)],silent)</onfocus>
-			<onfocus condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Trailer))">AlarmClock(PlayTrailer,PlayMedia($ESCINFO[Window(Home).Property(SkinInfo.Online.Trailer)],1),$INFO[Skin.String(ShelfTrailerDelay)],silent)</onfocus>
-			<onfocus condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Trailer))]">SetProperty(ShelfTrailerPlaying,True,Home)</onfocus>
+			<onfocus condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + !String.IsEmpty(ListItem.Trailer)">AlarmClock(PlayShelfTrailer,PlayMedia($ESCINFO[ListItem.Trailer],1),$INFO[Skin.String(ShelfTrailerDelay)],silent)</onfocus>
+			<onfocus condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Trailer))">AlarmClock(PlayTrailer,PlayMedia($ESCINFO[Window(Home).Property(SkinInfo.Online.Trailer)],1),$INFO[Skin.String(ShelfTrailerDelay)],silent)</onfocus>
+			<onfocus condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType, tvshow)] + Skin.HasSetting(Shelf.PlayTrailers) + !Player.HasVideo + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Trailer))]">SetProperty(ShelfTrailerPlaying,True,Home)</onfocus>
 		</control>
 	</include>
 
@@ -2654,7 +2654,7 @@
 			<!-- Triple Shelves together, all have items -->
 			<itemlayout height="109" width="425" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
 				<control type="group">
-					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">false</param>
 						<param name="isSmallIcon">true</param>
@@ -2687,7 +2687,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">false</param>
 						<param name="isSmallIcon">true</param>
@@ -2734,7 +2734,7 @@
 					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
-					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
@@ -2767,7 +2767,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
@@ -2811,7 +2811,7 @@
 			<!-- Single or double row -->
 			<itemlayout height="157" width="668" condition="!$PARAM[isTripleRow]">
 				<control type="group">
-					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">false</param>
 						<param name="isSmallIcon">true</param>
@@ -2841,7 +2841,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">false</param>
 						<param name="isSmallIcon">true</param>
@@ -2886,7 +2886,7 @@
 					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
-					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
@@ -2916,7 +2916,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
@@ -2958,7 +2958,7 @@
 			<!-- Triple row, large -->
 			<itemlayout height="157" width="684" condition="$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]">
 				<control type="group">
-					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">false</param>
 						<param name="isSmallIcon">true</param>
@@ -2989,7 +2989,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">false</param>
 						<param name="isSmallIcon">true</param>
@@ -3035,7 +3035,7 @@
 					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
-					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
@@ -3066,7 +3066,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
@@ -3109,7 +3109,7 @@
 			<!-- Triple row, not large -->
 			<itemlayout height="151" width="634" condition="$PARAM[isTripleRow] + !$PARAM[isTripleRowLarge] + !$PARAM[isTripleShelvesTogether]">
 				<control type="group">
-					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">false</param>
 						<param name="isSmallIcon">true</param>
@@ -3140,7 +3140,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">false</param>
 						<param name="isSmallIcon">true</param>
@@ -3186,7 +3186,7 @@
 					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
-					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
@@ -3217,7 +3217,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
+					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
 						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
@@ -5342,19 +5342,19 @@
 				<param name="top">60</param>
 				<param name="left">0</param>
 				<param name="headerlabel">$LOCALIZE[19158]:</param>
-				<param name="timelabel">Pvr.TVNowRecordingDateTime</param>
-				<param name="channellabel">Pvr.TVNowRecordingChannel</param>
-				<param name="titlelabel">Pvr.TVNowRecordingTitle</param>
-				<param name="channelicon">Pvr.TVNowRecordingChannelIcon</param>
+				<param name="timelabel">PVR.TVNowRecordingDateTime</param>
+				<param name="channellabel">PVR.TVNowRecordingChannel</param>
+				<param name="titlelabel">PVR.TVNowRecordingTitle</param>
+				<param name="channelicon">PVR.TVNowRecordingChannelIcon</param>
 			</include>
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">-160</param>
 				<param name="headerlabel">$LOCALIZE[19158]:</param>
-				<param name="timelabel">Pvr.TVNowRecordingDateTime</param>
-				<param name="channellabel">Pvr.TVNowRecordingChannel</param>
-				<param name="titlelabel">Pvr.TVNowRecordingTitle</param>
-				<param name="channelicon">Pvr.TVNowRecordingChannelIcon</param>
+				<param name="timelabel">PVR.TVNowRecordingDateTime</param>
+				<param name="channellabel">PVR.TVNowRecordingChannel</param>
+				<param name="titlelabel">PVR.TVNowRecordingTitle</param>
+				<param name="channelicon">PVR.TVNowRecordingChannelIcon</param>
 			</include>
 		</control>
 		<control type="group">
@@ -5365,19 +5365,19 @@
 				<param name="top">47</param>
 				<param name="left">0</param>
 				<param name="headerlabel">$LOCALIZE[19158]:</param>
-				<param name="timelabel">Pvr.TVNowRecordingDateTime</param>
-				<param name="channellabel">Pvr.TVNowRecordingChannel</param>
-				<param name="titlelabel">Pvr.TVNowRecordingTitle</param>
-				<param name="channelicon">Pvr.TVNowRecordingChannelIcon</param>
+				<param name="timelabel">PVR.TVNowRecordingDateTime</param>
+				<param name="channellabel">PVR.TVNowRecordingChannel</param>
+				<param name="titlelabel">PVR.TVNowRecordingTitle</param>
+				<param name="channelicon">PVR.TVNowRecordingChannelIcon</param>
 			</include>
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">-160</param>
 				<param name="headerlabel">$LOCALIZE[19158]:</param>
-				<param name="timelabel">Pvr.TVNowRecordingDateTime</param>
-				<param name="channellabel">Pvr.TVNowRecordingChannel</param>
-				<param name="titlelabel">Pvr.TVNowRecordingTitle</param>
-				<param name="channelicon">Pvr.TVNowRecordingChannelIcon</param>
+				<param name="timelabel">PVR.TVNowRecordingDateTime</param>
+				<param name="channellabel">PVR.TVNowRecordingChannel</param>
+				<param name="titlelabel">PVR.TVNowRecordingTitle</param>
+				<param name="channelicon">PVR.TVNowRecordingChannelIcon</param>
 			</include>
 		</control>
 		<control type="group">
@@ -5387,19 +5387,19 @@
 				<param name="top">60</param>
 				<param name="left">1320</param>
 				<param name="headerlabel">$LOCALIZE[19157]:</param>
-				<param name="timelabel">Pvr.TVNextRecordingDateTime</param>
-				<param name="channellabel">Pvr.TVNextRecordingChannel</param>
-				<param name="titlelabel">Pvr.TVNextRecordingTitle</param>
-				<param name="channelicon">Pvr.TVNextRecordingChannelIcon</param>
+				<param name="timelabel">PVR.TVNextRecordingDateTime</param>
+				<param name="channellabel">PVR.TVNextRecordingChannel</param>
+				<param name="titlelabel">PVR.TVNextRecordingTitle</param>
+				<param name="channelicon">PVR.TVNextRecordingChannelIcon</param>
 			</include>
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">890</param>
 				<param name="headerlabel">$LOCALIZE[19157]:</param>
-				<param name="timelabel">Pvr.TVNextRecordingDateTime</param>
-				<param name="channellabel">Pvr.TVNextRecordingChannel</param>
-				<param name="titlelabel">Pvr.TVNextRecordingTitle</param>
-				<param name="channelicon">Pvr.TVNextRecordingChannelIcon</param>
+				<param name="timelabel">PVR.TVNextRecordingDateTime</param>
+				<param name="channellabel">PVR.TVNextRecordingChannel</param>
+				<param name="titlelabel">PVR.TVNextRecordingTitle</param>
+				<param name="channelicon">PVR.TVNextRecordingChannelIcon</param>
 			</include>
 		</control>
 		<control type="group">
@@ -5409,19 +5409,19 @@
 				<param name="top">47</param>
 				<param name="left">1320</param>
 				<param name="headerlabel">$LOCALIZE[19157]:</param>
-				<param name="timelabel">Pvr.TVNextRecordingDateTime</param>
-				<param name="channellabel">Pvr.TVNextRecordingChannel</param>
-				<param name="titlelabel">Pvr.TVNextRecordingTitle</param>
-				<param name="channelicon">Pvr.TVNextRecordingChannelIcon</param>
+				<param name="timelabel">PVR.TVNextRecordingDateTime</param>
+				<param name="channellabel">PVR.TVNextRecordingChannel</param>
+				<param name="titlelabel">PVR.TVNextRecordingTitle</param>
+				<param name="channelicon">PVR.TVNextRecordingChannelIcon</param>
 			</include>
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">890</param>
 				<param name="headerlabel">$LOCALIZE[19157]:</param>
-				<param name="timelabel">Pvr.TVNextRecordingDateTime</param>
-				<param name="channellabel">Pvr.TVNextRecordingChannel</param>
-				<param name="titlelabel">Pvr.TVNextRecordingTitle</param>
-				<param name="channelicon">Pvr.TVNextRecordingChannelIcon</param>
+				<param name="timelabel">PVR.TVNextRecordingDateTime</param>
+				<param name="channellabel">PVR.TVNextRecordingChannel</param>
+				<param name="titlelabel">PVR.TVNextRecordingTitle</param>
+				<param name="channelicon">PVR.TVNextRecordingChannelIcon</param>
 			</include>
 		</control>
 		<control type="group">
@@ -5432,19 +5432,19 @@
 				<param name="top">60</param>
 				<param name="left">0</param>
 				<param name="headerlabel">$LOCALIZE[19158]</param>
-				<param name="timelabel">Pvr.RadioNowRecordingDateTime</param>
-				<param name="channellabel">Pvr.RadioNowRecordingChannel</param>
-				<param name="titlelabel">Pvr.RadioNowRecordingTitle</param>
-				<param name="channelicon">Pvr.RadioNowRecordingChannelIcon</param>
+				<param name="timelabel">PVR.RadioNowRecordingDateTime</param>
+				<param name="channellabel">PVR.RadioNowRecordingChannel</param>
+				<param name="titlelabel">PVR.RadioNowRecordingTitle</param>
+				<param name="channelicon">PVR.RadioNowRecordingChannelIcon</param>
 			</include>
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">-160</param>
 				<param name="headerlabel">$LOCALIZE[19158]</param>
-				<param name="timelabel">Pvr.RadioNowRecordingDateTime</param>
-				<param name="channellabel">Pvr.RadioNowRecordingChannel</param>
-				<param name="titlelabel">Pvr.RadioNowRecordingTitle</param>
-				<param name="channelicon">Pvr.RadioNowRecordingChannelIcon</param>
+				<param name="timelabel">PVR.RadioNowRecordingDateTime</param>
+				<param name="channellabel">PVR.RadioNowRecordingChannel</param>
+				<param name="titlelabel">PVR.RadioNowRecordingTitle</param>
+				<param name="channelicon">PVR.RadioNowRecordingChannelIcon</param>
 			</include>
 		</control>
 		<control type="group">
@@ -5455,19 +5455,19 @@
 				<param name="top">47</param>
 				<param name="left">0</param>
 				<param name="headerlabel">$LOCALIZE[19158]</param>
-				<param name="timelabel">Pvr.RadioNowRecordingDateTime</param>
-				<param name="channellabel">Pvr.RadioNowRecordingChannel</param>
-				<param name="titlelabel">Pvr.RadioNowRecordingTitle</param>
-				<param name="channelicon">Pvr.RadioNowRecordingChannelIcon</param>
+				<param name="timelabel">PVR.RadioNowRecordingDateTime</param>
+				<param name="channellabel">PVR.RadioNowRecordingChannel</param>
+				<param name="titlelabel">PVR.RadioNowRecordingTitle</param>
+				<param name="channelicon">PVR.RadioNowRecordingChannelIcon</param>
 			</include>
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">-160</param>
 				<param name="headerlabel">$LOCALIZE[19158]</param>
-				<param name="timelabel">Pvr.RadioNowRecordingDateTime</param>
-				<param name="channellabel">Pvr.RadioNowRecordingChannel</param>
-				<param name="titlelabel">Pvr.RadioNowRecordingTitle</param>
-				<param name="channelicon">Pvr.RadioNowRecordingChannelIcon</param>
+				<param name="timelabel">PVR.RadioNowRecordingDateTime</param>
+				<param name="channellabel">PVR.RadioNowRecordingChannel</param>
+				<param name="titlelabel">PVR.RadioNowRecordingTitle</param>
+				<param name="channelicon">PVR.RadioNowRecordingChannelIcon</param>
 			</include>
 		</control>
 		<control type="group">
@@ -5477,19 +5477,19 @@
 				<param name="top">60</param>
 				<param name="left">1320</param>
 				<param name="headerlabel">$LOCALIZE[19157]</param>
-				<param name="timelabel">Pvr.RadioNextRecordingDateTime</param>
-				<param name="channellabel">Pvr.RadioNextRecordingChannel</param>
-				<param name="titlelabel">Pvr.RadioNextRecordingTitle</param>
-				<param name="channelicon">Pvr.RadioNextRecordingChannelIcon</param>
+				<param name="timelabel">PVR.RadioNextRecordingDateTime</param>
+				<param name="channellabel">PVR.RadioNextRecordingChannel</param>
+				<param name="titlelabel">PVR.RadioNextRecordingTitle</param>
+				<param name="channelicon">PVR.RadioNextRecordingChannelIcon</param>
 			</include>
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">890</param>
 				<param name="headerlabel">$LOCALIZE[19157]</param>
-				<param name="timelabel">Pvr.RadioNextRecordingDateTime</param>
-				<param name="channellabel">Pvr.RadioNextRecordingChannel</param>
-				<param name="titlelabel">Pvr.RadioNextRecordingTitle</param>
-				<param name="channelicon">Pvr.RadioNextRecordingChannelIcon</param>
+				<param name="timelabel">PVR.RadioNextRecordingDateTime</param>
+				<param name="channellabel">PVR.RadioNextRecordingChannel</param>
+				<param name="titlelabel">PVR.RadioNextRecordingTitle</param>
+				<param name="channelicon">PVR.RadioNextRecordingChannelIcon</param>
 			</include>
 		</control>
 		<control type="group">
@@ -5499,19 +5499,19 @@
 				<param name="top">47</param>
 				<param name="left">1320</param>
 				<param name="headerlabel">$LOCALIZE[19157]</param>
-				<param name="timelabel">Pvr.RadioNextRecordingDateTime</param>
-				<param name="channellabel">Pvr.RadioNextRecordingChannel</param>
-				<param name="titlelabel">Pvr.RadioNextRecordingTitle</param>
-				<param name="channelicon">Pvr.RadioNextRecordingChannelIcon</param>
+				<param name="timelabel">PVR.RadioNextRecordingDateTime</param>
+				<param name="channellabel">PVR.RadioNextRecordingChannel</param>
+				<param name="titlelabel">PVR.RadioNextRecordingTitle</param>
+				<param name="channelicon">PVR.RadioNextRecordingChannelIcon</param>
 			</include>
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">890</param>
 				<param name="headerlabel">$LOCALIZE[19157]</param>
-				<param name="timelabel">Pvr.RadioNextRecordingDateTime</param>
-				<param name="channellabel">Pvr.RadioNextRecordingChannel</param>
-				<param name="titlelabel">Pvr.RadioNextRecordingTitle</param>
-				<param name="channelicon">Pvr.RadioNextRecordingChannelIcon</param>
+				<param name="timelabel">PVR.RadioNextRecordingDateTime</param>
+				<param name="channellabel">PVR.RadioNextRecordingChannel</param>
+				<param name="titlelabel">PVR.RadioNextRecordingTitle</param>
+				<param name="channelicon">PVR.RadioNextRecordingChannelIcon</param>
 			</include>
 		</control>
 	</include>

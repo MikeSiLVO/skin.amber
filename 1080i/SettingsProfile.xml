@@ -47,7 +47,7 @@
 			<control type="radiobutton" id="5" description="Enable auto Login">
 				<posy>150</posy>
 				<width>800</width>
-				<label>$LOCALIZE[33084]$INFO[system.profileautologin,:  ]</label>
+				<label>$LOCALIZE[33084]$INFO[System.ProfileAutoLogin,:  ]</label>
 				<onright>noop</onright>
 				<onleft>noop</onleft>
 				<onup>4</onup>

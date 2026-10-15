@@ -5,8 +5,8 @@
 		<value condition="Window.IsActive(custom_1123_pausedoverlay.xml) + !String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
 		<value condition="Skin.HasSetting(DirectSeekInInfo) + !String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
 		<value condition="Skin.HasSetting(DirectSeekInInfo) + !String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
-		<value condition="Skin.HasSetting(DirectSeekInInfo) + Videoplayer.content(livetv) + !String.IsEmpty(VideoPlayer.NextPlot)">$INFO[VideoPlayer.NextPlot]</value>
-		<value condition="Skin.HasSetting(DirectSeekInInfo) + Videoplayer.content(livetv) + !String.IsEmpty(VideoPlayer.NextPlotOutline)">$INFO[VideoPlayer.NextPlotOutline]</value>
+		<value condition="Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + !String.IsEmpty(VideoPlayer.NextPlot)">$INFO[VideoPlayer.NextPlot]</value>
+		<value condition="Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + !String.IsEmpty(VideoPlayer.NextPlotOutline)">$INFO[VideoPlayer.NextPlotOutline]</value>
 		<value condition="!Skin.HasSetting(DirectSeekInInfo) + Control.HasFocus(601) + !String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
 		<value condition="!Skin.HasSetting(DirectSeekInInfo) + Control.HasFocus(601) + !String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
 		<value condition="!Skin.HasSetting(DirectSeekInInfo) + Control.HasFocus(602) + !String.IsEmpty(VideoPlayer.NextPlot)">$INFO[VideoPlayer.NextPlot]</value>
@@ -16,7 +16,7 @@
 	</variable>
 
 	<variable name="DialogFullScreenBtn601">
-		<value condition="Videoplayer.Content(livetv)">$LOCALIZE[19030]</value>
+		<value condition="VideoPlayer.Content(livetv)">$LOCALIZE[19030]</value>
 		<value>$LOCALIZE[207]</value>
 	</variable>
 
@@ -65,8 +65,8 @@
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Artist][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[MusicPlayer.Album][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[MusicPlayer.Year]</value>
 		<value condition="VideoPlayer.Content(Movies) + !String.IsEmpty(VideoPlayer.MPAA)">$INFO[VideoPlayer.Year][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[VideoPlayer.MPAA]</value>
 		<value condition="VideoPlayer.Content(Movies) + String.IsEmpty(VideoPlayer.MPAA)">$INFO[VideoPlayer.Year]</value>
-		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.Premiered)">$INFO[VideoPlayer.TVShowtitle][COLOR $VAR[HighlightColor]]  •  [/COLOR]S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[VideoPlayer.Premiered]</value>
-		<value condition="VideoPlayer.Content(episodes) + String.IsEmpty(VideoPlayer.Premiered)">$INFO[VideoPlayer.TVShowtitle][COLOR $VAR[HighlightColor]]  •  [/COLOR]S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode]</value>
+		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.Premiered)">$INFO[VideoPlayer.TVShowTitle][COLOR $VAR[HighlightColor]]  •  [/COLOR]S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[VideoPlayer.Premiered]</value>
+		<value condition="VideoPlayer.Content(episodes) + String.IsEmpty(VideoPlayer.Premiered)">$INFO[VideoPlayer.TVShowTitle][COLOR $VAR[HighlightColor]]  •  [/COLOR]S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode]</value>
 	</variable>
 
 	<include name="TopSeekBar">
@@ -141,7 +141,7 @@
 				<label>$VAR[DialogFullScreenBtn601]</label>
 			</control>
 			<control type="button" id="602">
-				<visible>Videoplayer.content(livetv)</visible>
+				<visible>VideoPlayer.Content(livetv)</visible>
 				<width>180</width>
 				<height>45</height>
 				<align>center</align>
@@ -159,7 +159,7 @@
 				<label>$LOCALIZE[206]</label>
 			</control>
 			<control type="button" id="604">
-				<visible>VideoPlayer.Content(livetv) + system.getbool(pvrplayback.signalquality)</visible>
+				<visible>VideoPlayer.Content(livetv) + System.GetBool(pvrplayback.signalquality)</visible>
 				<width>210</width>
 				<height>48</height>
 				<align>center</align>
@@ -792,7 +792,7 @@
 			<include content="OSDButtons">
 				<param name="icon">OSD/OSDTeletextNF.png</param>
 			</include>
-			<onclick>SetProperty(PlayerTVShowID,$INFO[VideoPlayer.TvShowDBID],home)</onclick>
+			<onclick>SetProperty(PlayerTVShowID,$INFO[VideoPlayer.TvShowDBID],Home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
 			<visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID)</visible>
@@ -828,7 +828,7 @@
 			</include>
 			<onclick condition="!Skin.HasSetting(InfoOpensVideoInfo) | String.IsEmpty(VideoPlayer.DBID)">Skin.ToggleSetting(OSDInfo)</onclick>
 			<!-- If setting enabled, set focus to hidden list from library data provider to be able to open video info dialog -->
-			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">SetProperty(OSDinfodialogButtonActive,True,home)</onclick>
+			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">SetProperty(OSDinfodialogButtonActive,True,Home)</onclick>
 			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(PauseOnVideoInfo) + !Player.Paused">PlayerControl(Play)</onclick>
 			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">SetFocus(43260)</onclick>
 			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">Action(Info)</onclick>
@@ -938,7 +938,7 @@
 			<font/>
 			<texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/playlist.png</texturefocus>
 			<texturenofocus>OSD/compact/playlist.png</texturenofocus>
-			<onclick>SetProperty(PlayerTVShowID,$INFO[VideoPlayer.TvShowDBID],home)</onclick>
+			<onclick>SetProperty(PlayerTVShowID,$INFO[VideoPlayer.TvShowDBID],Home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
 			<visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID)</visible>
@@ -984,7 +984,7 @@
 			<texturenofocus>OSD/compact/info.png</texturenofocus>
 			<onclick condition="!Skin.HasSetting(InfoOpensVideoInfo) | String.IsEmpty(VideoPlayer.DBID)">Skin.ToggleSetting(OSDInfo)</onclick>
 			<!-- If setting enabled, set focus to hidden list from library data provider to be able to open video info dialog -->
-			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">SetProperty(OSDinfodialogButtonActive,True,home)</onclick>
+			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">SetProperty(OSDinfodialogButtonActive,True,Home)</onclick>
 			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(PauseOnVideoInfo) + !Player.Paused">PlayerControl(Play)</onclick>
 			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">SetFocus(43260)</onclick>
 			<onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">Action(Info)</onclick>

@@ -226,8 +226,8 @@
 			<posy>210</posy>
 			<width>400</width>
 			<height>660</height>
-			<onleft condition="Control.isVisible(12001)">12001</onleft>
-			<onleft condition="!Control.isVisible(12001)">300</onleft>
+			<onleft condition="Control.IsVisible(12001)">12001</onleft>
+			<onleft condition="!Control.IsVisible(12001)">300</onleft>
 			<onright>300</onright>
 			<onup>9001</onup>
 			<ondown>9001</ondown>
@@ -280,8 +280,8 @@
 			<posy>80</posy>
 			<width>200</width>
 			<height>890</height>
-			<onleft condition="Control.isVisible(12001)">12001</onleft>
-			<onleft condition="!Control.isVisible(12001)">300</onleft>
+			<onleft condition="Control.IsVisible(12001)">12001</onleft>
+			<onleft condition="!Control.IsVisible(12001)">300</onleft>
 			<onright>300</onright>
 			<onup>9001</onup>
 			<ondown>9001</ondown>

@@ -8,7 +8,7 @@
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>SendClick(movieinformation,10)</onclick>
 			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-			<visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]</visible>
+			<visible>String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + [[!String.IsEmpty(ListItem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31189]</label>
@@ -28,9 +28,9 @@
 			<visible>System.AddonIsEnabled(script.preshowexperience) + $EXP[IsProperDBType]</visible>
 			<label>$LOCALIZE[31005]</label>
 			<onclick>Dialog.Close(1121)</onclick>
-			<onclick condition="!String.IsEmpty(ListItem.DBID)">RunScript(script.preshowexperience,dbtype=$INFO[ListItem.DBTYPE],dbid=$INFO[ListItem.DBID]))</onclick>
+			<onclick condition="!String.IsEmpty(ListItem.DBID)">RunScript(script.preshowexperience,dbtype=$INFO[ListItem.DBType],dbid=$INFO[ListItem.DBID]))</onclick>
 			<onclick condition="String.IsEmpty(ListItem.DBID) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBID))">RunScript(script.preshowexperience,dbtype=$INFO[Window(Home).Property(InfoExtrasDBType)],dbid=$INFO[Window(Home).Property(InfoExtrasDBID)]))</onclick>
-			<visible>[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
+			<visible>[!String.IsEmpty(ListItem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
 		</item>
 		<item>
 			<onclick>Dialog.Close(all,true)</onclick>
@@ -47,7 +47,7 @@
 			<onclick>Dialog.Close(1121)</onclick>
 			<onclick>SendClick(musicinformation,10)</onclick>
 			<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-			<visible>!String.IsEmpty(Listitem.DBID) | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
+			<visible>!String.IsEmpty(ListItem.DBID) | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31189]</label>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<onunload>ClearProperty(BringDownSeekBar,Home)</onunload>
-	<visible>[!Player.Paused + !String.IsEmpty(Window(home).Property(ShowOSD))] | [[!Skin.HasSetting(UseUltraCompactOSD) | [Skin.HasSetting(UseUltraCompactOSD) + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]] + [[Player.Paused + Skin.HasSetting(Hide.SeekBarWhenPaused) + !System.IdleTime(5)] | [Player.Paused + !Skin.HasSetting(Hide.SeekBarWhenPaused)]]] | Player.Seeking | [Player.HasPerformedSeek(3) + !Player.Paused + !Skin.HasSetting(Hide.SeekBarRF)] | [[Player.Forwarding | Player.Rewinding] + !Skin.HasSetting(Hide.SeekBarRF)] | Player.ShowInfo | Player.ShowTime | [[Window.IsActive(videoosd) | Window.IsActive(musicosd)] + !Skin.HasSetting(UseUltraCompactOSD)] | Window.IsActive(playerprocessinfo) | Window.IsActive(dialogfullscreeninfo.xml) | !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
+	<visible>[!Player.Paused + !String.IsEmpty(Window(Home).Property(ShowOSD))] | [[!Skin.HasSetting(UseUltraCompactOSD) | [Skin.HasSetting(UseUltraCompactOSD) + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]] + [[Player.Paused + Skin.HasSetting(Hide.SeekBarWhenPaused) + !System.IdleTime(5)] | [Player.Paused + !Skin.HasSetting(Hide.SeekBarWhenPaused)]]] | Player.Seeking | [Player.HasPerformedSeek(3) + !Player.Paused + !Skin.HasSetting(Hide.SeekBarRF)] | [[Player.Forwarding | Player.Rewinding] + !Skin.HasSetting(Hide.SeekBarRF)] | Player.ShowInfo | Player.ShowTime | [[Window.IsActive(videoosd) | Window.IsActive(musicosd)] + !Skin.HasSetting(UseUltraCompactOSD)] | Window.IsActive(playerprocessinfo) | Window.IsActive(dialogfullscreeninfo.xml) | !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
 	<visible>![Window.IsActive(sliderdialog) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrguideinfo)]</visible>
 	<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)</visible>
 	<include>OSDFade</include>
@@ -27,7 +27,7 @@
 				<height>148</height>
 				<texture flipy="true" border="0,0,0,0">OSD/FS_OSDBackground.png</texture>
 				<colordiffuse>FFE2E2E2</colordiffuse>
-				<visible>[!Skin.HasSetting(ShowInfoWithSeekBar) | [Window.isVisible(Custom_1123_PausedOverlay.xml) | Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]</visible>
+				<visible>[!Skin.HasSetting(ShowInfoWithSeekBar) | [Window.IsVisible(Custom_1123_PausedOverlay.xml) | Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]</visible>
 			</control>
 			<control type="image" description="Background">
 				<top>0</top>
@@ -35,7 +35,7 @@
 				<height>228</height>
 				<texture flipy="true" border="0,0,0,0">OSD/FS_OSDBackground.png</texture>
 				<colordiffuse>FFE2E2E2</colordiffuse>
-				<visible>Skin.HasSetting(ShowInfoWithSeekBar) + [Skin.HasSetting(UseUltraCompactOSD) | [!Skin.HasSetting(enable.bottomseekbar) + !Window.isVisible(Custom_1123_PausedOverlay.xml) + ![Window.isVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]]</visible>
+				<visible>Skin.HasSetting(ShowInfoWithSeekBar) + [Skin.HasSetting(UseUltraCompactOSD) | [!Skin.HasSetting(enable.bottomseekbar) + !Window.IsVisible(Custom_1123_PausedOverlay.xml) + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]]</visible>
 			</control>
 			<control type="image" description="Background">
 				<top>-130</top>
@@ -43,7 +43,7 @@
 				<width>1920</width>
 				<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
 				<colordiffuse>FFE2E2E2</colordiffuse>
-				<visible>Player.HasVideo + Skin.HasSetting(ShowInfoWithSeekBar) + !Skin.HasSetting(UseUltraCompactOSD) + Skin.HasSetting(enable.bottomseekbar) + !Window.isVisible(Custom_1123_PausedOverlay.xml) + !Window.isVisible(VideoOSD) + !Window.IsVisible(DialogFullScreenInfo.xml)</visible>
+				<visible>Player.HasVideo + Skin.HasSetting(ShowInfoWithSeekBar) + !Skin.HasSetting(UseUltraCompactOSD) + Skin.HasSetting(enable.bottomseekbar) + !Window.IsVisible(Custom_1123_PausedOverlay.xml) + !Window.IsVisible(VideoOSD) + !Window.IsVisible(DialogFullScreenInfo.xml)</visible>
 			</control>
 			<control type="image" description="Background">
 				<top>-25</top>
@@ -68,8 +68,8 @@
 
 			<control type="group">
 				<visible>Skin.HasSetting(ShowInfoWithSeekBar) +  [Skin.HasSetting(UseUltraCompactOSD) |
-					[!Skin.HasSetting(enable.bottomseekbar) + !Window.isVisible(Custom_1123_PausedOverlay.xml) +
-					![Window.isVisible(VideoOSD) | Window.IsVisible(MusicOSD)]] |
+					[!Skin.HasSetting(enable.bottomseekbar) + !Window.IsVisible(Custom_1123_PausedOverlay.xml) +
+					![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]] |
 					[Skin.HasSetting(enable.bottomseekbar) + Window.IsVisible(DialogFullScreenInfo.xml)]]</visible>
 					<top>130</top>
 					<control type="image">
@@ -92,7 +92,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Player.HasVideo + Skin.HasSetting(ShowInfoWithSeekBar) + [!Skin.HasSetting(UseUltraCompactOSD) + Skin.HasSetting(enable.bottomseekbar)] + !Window.isVisible(Custom_1123_Overlay.xml) + !Window.isVisible(VideoOSD)</visible>
+					<visible>Player.HasVideo + Skin.HasSetting(ShowInfoWithSeekBar) + [!Skin.HasSetting(UseUltraCompactOSD) + Skin.HasSetting(enable.bottomseekbar)] + !Window.IsVisible(Custom_1123_Overlay.xml) + !Window.IsVisible(VideoOSD)</visible>
 					<top>-90</top>
 					<control type="label">
 						<top>0</top>
@@ -212,8 +212,8 @@
 							<width>400</width>
 							<align>left</align>
 							<font>Details</font>
-							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31162]: [/COLOR] $INFO[PVR.TimeshiftCur]$INFO[PVR.TimeshiftOffset, (-,)]</label>
-							<visible>!Player.ChannelPreviewActive + Pvr.IsTimeShift</visible>
+							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31162]: [/COLOR] $INFO[PVR.TimeShiftCur]$INFO[PVR.TimeShiftOffset, (-,)]</label>
+							<visible>!Player.ChannelPreviewActive + PVR.IsTimeShift</visible>
 						</control>
 
 						<!-- right side labels -->
@@ -590,8 +590,8 @@
 							<width>400</width>
 							<align>left</align>
 							<font>Details</font>
-							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31162]: [/COLOR] $INFO[PVR.TimeshiftCur]$INFO[PVR.TimeshiftOffset, (-,)]</label>
-							<visible>!Player.ChannelPreviewActive + Pvr.IsTimeShift</visible>
+							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31162]: [/COLOR] $INFO[PVR.TimeShiftCur]$INFO[PVR.TimeShiftOffset, (-,)]</label>
+							<visible>!Player.ChannelPreviewActive + PVR.IsTimeShift</visible>
 						</control>
 
 						<!-- right side labels -->

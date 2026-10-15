@@ -176,7 +176,7 @@
 		<control type="group">
 			<width>1920</width>
 			<control type="group">
-				<visible>Window.Is(home) | [!Window.Is(home) + !Skin.HasSetting(Hide.TopBar.Sub)]</visible>
+				<visible>Window.Is(Home) | [!Window.Is(Home) + !Skin.HasSetting(Hide.TopBar.Sub)]</visible>
 				<control type="image">
 					<include>VisibleFadeEffect</include>
 					<width>1920</width>
@@ -217,7 +217,7 @@
 				</control>
 				<!-- RSS feed -->
 				<control type="rss" description="RSS Feed">
-					<visible>Window.Is(home) + system.getbool(lookandfeel.enablerssfeeds) + !Player.HasMedia + !Control.IsVisible(12002)</visible>
+					<visible>Window.Is(Home) + System.GetBool(lookandfeel.enablerssfeeds) + !Player.HasMedia + !Control.IsVisible(12002)</visible>
 					<posx>30</posx>
 					<width>1200</width>
 					<height>35</height>
@@ -266,7 +266,7 @@
 					<width>800</width>
 					<usecontrolcoords>true</usecontrolcoords>
 					<control type="image">
-						<visible>!Skin.HasSetting(Hide.RecordingTitleBar) + [Pvr.IsRecordingTV | Pvr.IsRecordingRadio]</visible>
+						<visible>!Skin.HasSetting(Hide.RecordingTitleBar) + [PVR.IsRecordingTV | PVR.IsRecordingRadio]</visible>
 						<top>6</top>
 						<width>45</width>
 						<height>32</height>
@@ -1124,7 +1124,7 @@
 			<!-- Footer and media flags -->
 			<control type="grouplist">
 				<visible>$PARAM[visibility]</visible>
-				<visible>[!String.IsEmpty(Listitem.Duration) | !String.IsEmpty(Listitem.Genre) | !String.IsEmpty(Listitem.Year) | !String.IsEmpty(ListItem.Episode)] | [!String.IsEmpty(ListItem.Property(Artist_Genre)) | !String.IsEmpty(ListItem.Property(Artist_YearsActive))] | [Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)]</visible>
+				<visible>[!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Genre) | !String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Episode)] | [!String.IsEmpty(ListItem.Property(Artist_Genre)) | !String.IsEmpty(ListItem.Property(Artist_YearsActive))] | [Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)]</visible>
 				<posx>$PARAM[left]</posx>
 				<posy>$PARAM[footertop]</posy>
 				<width>$PARAM[width]</width>
@@ -1424,7 +1424,7 @@
 				<control type="label" description="Footer">
 					<top>$PARAM[footer2top]</top>
 					<visible>$PARAM[showfooter]</visible>
-					<visible>[!String.IsEmpty(Listitem.Duration) | !String.IsEmpty(Listitem.Genre) | !String.IsEmpty(Listitem.Year) | !String.IsEmpty(ListItem.Episode)] | [Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)]</visible>
+					<visible>[!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Genre) | !String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Episode)] | [Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)]</visible>
 					<width>$PARAM[width]</width>
 					<height>75</height>
 					<font>ListDetails</font>

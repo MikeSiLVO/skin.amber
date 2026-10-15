@@ -21,7 +21,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<visible>!Container(9000).Hasfocus(5)</visible>
+				<visible>!Container(9000).HasFocus(5)</visible>
 			</control>
 			<control type="grouplist" id="9001" description="Add remove edit">
 				<posx>1533</posx>

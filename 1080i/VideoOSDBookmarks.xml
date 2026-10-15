@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">2</defaultcontrol>
 	<include>OpenClose</include>
 	<!-- Needed to auto close the video osd after any settings dialog is closed -->
-	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ActivateWindow(1196)</onunload>
-	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ClearProperty(ShowingOSDSettings,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(Home).Property(ShowingOSDSettings))">ActivateWindow(1196)</onunload>
+	<onunload condition="!String.IsEmpty(Window(Home).Property(ShowingOSDSettings))">ClearProperty(ShowingOSDSettings,Home)</onunload>
 	<controls>
 		<control type="image">
 			<left>165</left>

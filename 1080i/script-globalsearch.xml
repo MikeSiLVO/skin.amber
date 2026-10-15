@@ -109,12 +109,12 @@
 					<ondown>53</ondown>
 					<viewtype label="536">bigicon</viewtype>
 					<preloaditems>8</preloaditems>
-					<itemlayout condition="Container.Content(TvShows) | container.content(movies) | Container.Content(seasons)" height="326" width="232.5">
+					<itemlayout condition="Container.Content(TvShows) | Container.Content(movies) | Container.Content(seasons)" height="326" width="232.5">
 						<include content="GenericPosterIconSmall">
 							<param name="isFocused">false</param>
 						</include>
 					</itemlayout>
-					<focusedlayout condition="Container.Content(TvShows) | container.content(movies) | Container.Content(seasons)" height="326" width="232.5">
+					<focusedlayout condition="Container.Content(TvShows) | Container.Content(movies) | Container.Content(seasons)" height="326" width="232.5">
 						<include content="GenericPosterIconSmall">
 							<param name="isFocused">true</param>
 						</include>
@@ -142,12 +142,12 @@
 						</include>
 					</focusedlayout>
 
-					<itemlayout condition="Container.content(actors) | container.content(directors)" height="400" width="310">
+					<itemlayout condition="Container.Content(actors) | Container.Content(directors)" height="400" width="310">
 						<include content="GenericThumbIconBig">
 							<param name="isFocused">false</param>
 						</include>
 					</itemlayout>
-					<focusedlayout condition="Container.content(actors) | container.content(directors)" height="400" width="310">
+					<focusedlayout condition="Container.Content(actors) | Container.Content(directors)" height="400" width="310">
 						<include content="GenericThumbIconBig">
 							<param name="isFocused">true</param>
 						</include>

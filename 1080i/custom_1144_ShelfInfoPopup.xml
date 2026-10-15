@@ -8,7 +8,7 @@
 	<include condition="String.IsEqual(Window(1144).Property(ShelfPopupDelay),$NUMBER[5])">ShelfPopup5</include>
 	<include condition="String.IsEqual(Window(1144).Property(ShelfPopupDelay),$NUMBER[6])">ShelfPopup6</include>
 	<include condition="String.IsEmpty(Window(1144).Property(ShelfPopupDelay))">ShelfPopup3</include>
-	<visible>!System.IdleTime(30) + !Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShowWidgetPopup)) + !Window.IsVisible(movieinformation) + !Window.IsVisible(DialogMusicInfo.xml) + !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogButtonMenu.xml) + !Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + ![Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)] + ![Window.IsActive(Custom_1122_Search.xml) | Window.IsActive(Custom_1131_SingleSearch.xml)] + [String.IsEqual(Window.Property(DBType),movie) | String.IsEqual(Window.Property(DBType),tvshow) | String.IsEqual(Window.Property(DBType),episode) | String.IsEqual(Window.Property(DBType),musicvideo) | String.IsEqual(Window.Property(DBType),artist) | String.IsEqual(Window.Property(DBType),album) | String.IsEqual(Window.Property(DBType),song)]</visible>
+	<visible>!System.IdleTime(30) + !Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShowWidgetPopup)) + !Window.IsVisible(movieinformation) + !Window.IsVisible(DialogMusicInfo.xml) + !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogButtonMenu.xml) + !Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + ![Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)] + ![Window.IsActive(Custom_1122_Search.xml) | Window.IsActive(Custom_1131_SingleSearch.xml)] + [String.IsEqual(Window.Property(dbtype),movie) | String.IsEqual(Window.Property(dbtype),tvshow) | String.IsEqual(Window.Property(dbtype),episode) | String.IsEqual(Window.Property(dbtype),musicvideo) | String.IsEqual(Window.Property(dbtype),artist) | String.IsEqual(Window.Property(dbtype),album) | String.IsEqual(Window.Property(dbtype),song)]</visible>
 	<include>DialogOpenClose</include>
 	<controls>
 		<control type="button" id="64">
@@ -48,7 +48,7 @@
 				<height>80</height>
 				<aspectratio align="left" aligny="bottom">stretch</aspectratio>
 				<texture background="true">$VAR[ShelfPopupLogo]</texture>
-				<visible>![String.IsEqual(Window.Property(DBType),artist) | String.IsEqual(Window.Property(DBType),album) | String.IsEqual(Window.Property(DBType),song)]</visible>
+				<visible>![String.IsEqual(Window.Property(dbtype),artist) | String.IsEqual(Window.Property(dbtype),album) | String.IsEqual(Window.Property(dbtype),song)]</visible>
 			</control>
 			<control type="image">
 				<top>40</top>
@@ -57,7 +57,7 @@
 				<height>127</height>
 				<aspectratio align="left" aligny="bottom">stretch</aspectratio>
 				<texture background="true">$VAR[ShelfPopupLogo]</texture>
-				<visible>[String.IsEqual(Window.Property(DBType),artist) | String.IsEqual(Window.Property(DBType),album) | String.IsEqual(Window.Property(DBType),song)]</visible>
+				<visible>[String.IsEqual(Window.Property(dbtype),artist) | String.IsEqual(Window.Property(dbtype),album) | String.IsEqual(Window.Property(dbtype),song)]</visible>
 			</control>
 			<!-- Title if no logo -->
 			<control type="label">
@@ -68,7 +68,7 @@
 				<font>font30_title</font>
 				<label>$INFO[Window.Property(Title)]</label>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<visible>String.IsEmpty(Window.Property(Art.ClearLogo)) + [String.IsEqual(Window.Property(DBType),movie) | String.IsEqual(Window.Property(DBType),tvshow) | String.IsEqual(Window.Property(DBType),musicvideo)]</visible>
+				<visible>String.IsEmpty(Window.Property(Art.ClearLogo)) + [String.IsEqual(Window.Property(dbtype),movie) | String.IsEqual(Window.Property(dbtype),tvshow) | String.IsEqual(Window.Property(dbtype),musicvideo)]</visible>
 			</control>
 			<control type="label">
 				<top>40</top>
@@ -79,7 +79,7 @@
 				<label>$INFO[Window.Property(TVShowTitle)]</label>
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<visible>String.IsEmpty(Window.Property(Art.tvshow.clearlogo)) + String.IsEqual(Window.Property(DBType),episode)</visible>
+				<visible>String.IsEmpty(Window.Property(Art.tvshow.clearlogo)) + String.IsEqual(Window.Property(dbtype),episode)</visible>
 			</control>
 			<control type="label">
 				<top>40</top>
@@ -90,7 +90,7 @@
 				<label>$INFO[Window.Property(Artist)]</label>
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<visible>String.IsEqual(Window.Property(DBType),artist)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),artist)</visible>
 			</control>
 			<control type="label">
 				<top>40</top>
@@ -101,7 +101,7 @@
 				<label>$INFO[Window.Property(Album)]</label>
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<visible>String.IsEqual(Window.Property(DBType),album)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),album)</visible>
 			</control>
 			<control type="label">
 				<top>40</top>
@@ -112,10 +112,10 @@
 				<label>$INFO[Window.Property(TrackNumber)]. $INFO[Window.Property(Title)]</label>
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
-				<visible>String.IsEqual(Window.Property(DBType),song)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),song)</visible>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(Window.Property(DBType),movie) | String.IsEqual(Window.Property(DBType),episode)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),movie) | String.IsEqual(Window.Property(dbtype),episode)</visible>
 				<control type="grouplist">
 					<top>130</top>
 					<left>420</left>
@@ -127,7 +127,7 @@
 							<height>47.5</height>
 							<font>font24_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20359]: [/COLOR]$VAR[ShelfPopupSeasonEpisodeLabel] - $INFO[Window.Property(Title)]</label>
-							<visible>!String.IsEmpty(Window.Property(Title)) + String.IsEqual(Window.Property(DBType),episode)</visible>
+							<visible>!String.IsEmpty(Window.Property(Title)) + String.IsEqual(Window.Property(dbtype),episode)</visible>
 							<scroll>true</scroll>
 						</control>
 						<control type="label">
@@ -156,7 +156,7 @@
 					<height>45</height>
 					<font>font20_title</font>
 					<label>$VAR[ShelfPopupDetails]</label>
-					<visible>String.IsEqual(Window.Property(DBType),movie)</visible>
+					<visible>String.IsEqual(Window.Property(dbtype),movie)</visible>
 				</control>
 				<!-- Episode details -->
 				<control type="label">
@@ -166,7 +166,7 @@
 					<height>45</height>
 					<font>font20_title</font>
 					<label>$VAR[ShelfPopupDetailsEpisodes]</label>
-					<visible>String.IsEqual(Window.Property(DBType),episode) + ![String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
+					<visible>String.IsEqual(Window.Property(dbtype),episode) + ![String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
 				</control>
 				<control type="label">
 					<top>227</top>
@@ -175,11 +175,11 @@
 					<height>45</height>
 					<font>font20_title</font>
 					<label>$VAR[ShelfPopupDetailsEpisodes]</label>
-					<visible>String.IsEqual(Window.Property(DBType),episode) + [String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
+					<visible>String.IsEqual(Window.Property(dbtype),episode) + [String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
 				</control>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(Window.Property(DBType),tvshow)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),tvshow)</visible>
 				<control type="label">
 					<top>130</top>
 					<left>420</left>
@@ -200,7 +200,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(Window.Property(DBType),musicvideo)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),musicvideo)</visible>
 				<top>130</top>
 				<left>420</left>
 				<control type="label">
@@ -244,7 +244,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(Window.Property(DBType),artist)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),artist)</visible>
 				<top>130</top>
 				<left>420</left>
 				<control type="grouplist">
@@ -288,7 +288,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(Window.Property(DBType),album)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),album)</visible>
 				<top>130</top>
 				<left>420</left>
 				<control type="grouplist">
@@ -332,7 +332,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(Window.Property(DBType),song)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),song)</visible>
 				<top>130</top>
 				<left>420</left>
 				<control type="grouplist">
@@ -384,7 +384,7 @@
 				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Plot)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>String.IsEqual(Window.Property(DBType),movie)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),movie)</visible>
 			</control>
 			<control type="textbox">
 				<top>332</top>
@@ -394,7 +394,7 @@
 				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Plot)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>[String.IsEqual(Window.Property(DBType),episode) + ![String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]] | String.IsEqual(Window.Property(DBType),musicvideo)</visible>
+				<visible>[String.IsEqual(Window.Property(dbtype),episode) + ![String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]] | String.IsEqual(Window.Property(dbtype),musicvideo)</visible>
 			</control>
 			<control type="textbox">
 				<top>332</top>
@@ -404,7 +404,7 @@
 				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Artist_Description)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>String.IsEqual(Window.Property(DBType),artist)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),artist)</visible>
 			</control>
 			<control type="textbox">
 				<top>332</top>
@@ -414,7 +414,7 @@
 				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Album_Description)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>String.IsEqual(Window.Property(DBType),album)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),album)</visible>
 			</control>
 			<control type="textbox">
 				<top>332</top>
@@ -424,7 +424,7 @@
 				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Comment)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>String.IsEqual(Window.Property(DBType),song)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),song)</visible>
 			</control>
 			<control type="textbox">
 				<top>282</top>
@@ -434,7 +434,7 @@
 				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Plot)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>String.IsEqual(Window.Property(DBType),episode) + [String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),episode) + [String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
 			</control>
 			<control type="textbox">
 				<top>238</top>
@@ -444,13 +444,13 @@
 				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Plot)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>String.IsEqual(Window.Property(DBType),tvshow)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),tvshow)</visible>
 			</control>
 			<!-- Media flags -->
 			<control type="group">
 				<top>497</top>
 				<left>420</left>
-				<visible>String.IsEqual(Window.Property(DBType),movie) | String.IsEqual(Window.Property(DBType),episode) | String.IsEqual(Window.Property(DBType),musicvideo) | String.IsEqual(Window.Property(DBType),song)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),movie) | String.IsEqual(Window.Property(dbtype),episode) | String.IsEqual(Window.Property(dbtype),musicvideo) | String.IsEqual(Window.Property(dbtype),song)</visible>
 				<control type="group">
 					<visible>!Skin.HasSetting(coloredflags)</visible>
 					<include>ContentFade</include>
@@ -471,7 +471,7 @@
 					<visible>Skin.HasSetting(coloredflags)</visible>
 					<include>ContentFade</include>
 					<control type="grouplist">
-						<visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
+						<visible>![String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]</visible>
 						<width>930</width>
 						<height>90</height>
 						<itemgap>20</itemgap>
@@ -483,7 +483,7 @@
 						</include>
 					</control>
 					<control type="grouplist">
-						<visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
+						<visible>[String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]</visible>
 						<width>930</width>
 						<height>90</height>
 						<itemgap>10</itemgap>
@@ -505,7 +505,7 @@
 				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<visible>String.IsEqual(Window.Property(DBType),tvshow)</visible>
+				<visible>String.IsEqual(Window.Property(dbtype),tvshow)</visible>
 				<control type="group">
 					<visible>!String.IsEmpty(Window.Property(MPAA))</visible>
 					<include content="RightListCertInfo">
@@ -540,7 +540,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>String.IsEqual(Window.Property(DBType),tvshow) + !String.IsEmpty(Window.Property(TotalSeasons))</visible>
+					<visible>String.IsEqual(Window.Property(dbtype),tvshow) + !String.IsEmpty(Window.Property(TotalSeasons))</visible>
 					<width>177</width>
 					<control type="label">
 						<top>2</top>
@@ -562,7 +562,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>String.IsEqual(Window.Property(DBType),tvshow) + !String.IsEmpty(Window.Property(TotalEpisodes))</visible>
+					<visible>String.IsEqual(Window.Property(dbtype),tvshow) + !String.IsEmpty(Window.Property(TotalEpisodes))</visible>
 					<width>177</width>
 					<control type="label">
 						<top>2</top>
@@ -584,7 +584,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>String.IsEqual(Window.Property(DBType),tvshow) + !String.IsEmpty(Window.Property(UnwatchedEpisodes))</visible>
+					<visible>String.IsEqual(Window.Property(dbtype),tvshow) + !String.IsEmpty(Window.Property(UnwatchedEpisodes))</visible>
 					<width>177</width>
 					<control type="label">
 						<top>2</top>
@@ -613,7 +613,7 @@
 				<param name="height">521</param>
 				<param name="aspect">stretch</param>
 				<param name="texture">$VAR[ShelfPopupPoster]</param>
-				<param name="visibility">[String.IsEqual(Window.Property(DBType),movie) | String.IsEqual(Window.Property(DBType),tvshow) | String.IsEqual(Window.Property(DBType),episode)]</param>
+				<param name="visibility">[String.IsEqual(Window.Property(dbtype),movie) | String.IsEqual(Window.Property(dbtype),tvshow) | String.IsEqual(Window.Property(dbtype),episode)]</param>
 			</include>
 			<include content="ShadowedImage">
 				<param name="top">36</param>
@@ -622,7 +622,7 @@
 				<param name="height">521</param>
 				<param name="aspect">scale</param>
 				<param name="texture">$VAR[ShelfPopupPoster]</param>
-				<param name="visibility">String.IsEqual(Window.Property(DBType),musicvideo)</param>
+				<param name="visibility">String.IsEqual(Window.Property(dbtype),musicvideo)</param>
 			</include>
 			<include content="ShadowedImage">
 				<param name="top">190</param>
@@ -631,7 +631,7 @@
 				<param name="height">347</param>
 				<param name="aspect">scale</param>
 				<param name="texture">$VAR[ShelfPopupSquare]</param>
-				<param name="visibility">[String.IsEqual(Window.Property(DBType),artist) | String.IsEqual(Window.Property(DBType),album) | String.IsEqual(Window.Property(DBType),song)]</param>
+				<param name="visibility">[String.IsEqual(Window.Property(dbtype),artist) | String.IsEqual(Window.Property(dbtype),album) | String.IsEqual(Window.Property(dbtype),song)]</param>
 			</include>
 		</control>
 	</controls>

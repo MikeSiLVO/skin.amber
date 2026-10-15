@@ -8,8 +8,8 @@
 	</include>
 
 	<include name="VignetteFade">
-		<animation effect="fade" start="0" end="100" time="500" delay="0" condition="Window.Previous(home)">Conditional</animation>
-		<animation effect="fade" start="100" end="0" time="200" delay="0" condition="Window.Next(home)">Conditional</animation>
+		<animation effect="fade" start="0" end="100" time="500" delay="0" condition="Window.Previous(Home)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="200" delay="0" condition="Window.Next(Home)">Conditional</animation>
 	</include>
 
 	<include name="VisibleFadeEffect">

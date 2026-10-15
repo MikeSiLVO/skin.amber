@@ -154,7 +154,7 @@
 			<control type="group" description="Thumb">
 				<posx>40</posx>
 				<posy>624</posy>
-				<visible>[container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
+				<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<control type="image">
 					<include>MovieFanartThumbDimensionsGallery</include>
 					<include>MovieFanartBG</include>
@@ -180,7 +180,7 @@
 			<control type="group" description="Thumb">
 				<posx>0</posx>
 				<posy>644</posy>
-				<visible>![container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
+				<visible>![Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<control type="image">
 					<include>Icon_Fade</include>
 					<include>SquareFanartThumbDimensions</include>
@@ -353,7 +353,7 @@
 				</control>
 				<!-- Unwatched episode count for normal icons -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<!-- Poster -->
 					<control type="image">
@@ -560,7 +560,7 @@
 				</control>
 				<!-- Unwatched episode count for normal icons -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image">
 						<texture background="true">overlays/toprightempty2.png</texture>
@@ -974,7 +974,7 @@
 						<height>204</height>
 						<aspectratio align="left" aligny="bottom">keep</aspectratio>
 						<texture background="true">$VAR[ClearLogo]</texture>
-						<visible>[[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_Logo)] | [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix_Logo)]]</visible>
+						<visible>[[Container.Content(episodes) + Skin.HasSetting(56_Episodes_Netflix_Logo)] | [[Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(56_Posters_Netflix_Logo)]]</visible>
 					</control>
 					<control type="image" id="56889">
 						<left>22</left>
@@ -983,11 +983,11 @@
 						<height>160</height>
 						<aspectratio align="left" aligny="bottom">keep</aspectratio>
 						<texture background="true">$VAR[ClearLogo]</texture>
-						<visible>[container.content(artists)] + Skin.HasSetting(56_Music_Netflix_Logo)</visible>
+						<visible>[Container.Content(artists)] + Skin.HasSetting(56_Music_Netflix_Logo)</visible>
 					</control>
 					<control type="group">
 						<top>70</top>
-						<animation effect="slide" start="0" end="0,60" condition="![[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_Logo)] | [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix_Logo)] | [[container.content(artists)] + Skin.HasSetting(56_Music_Netflix_Logo)]]">Conditional</animation>
+						<animation effect="slide" start="0" end="0,60" condition="![[Container.Content(episodes) + Skin.HasSetting(56_Episodes_Netflix_Logo)] | [[Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(56_Posters_Netflix_Logo)] | [[Container.Content(artists)] + Skin.HasSetting(56_Music_Netflix_Logo)]]">Conditional</animation>
 						<control type="group">
 							<visible>[!Control.IsVisible(56888) | String.IsEmpty(Control.GetLabel(56888))] + ![Container.Content(albums) | Container.Content(artists)]</visible>
 							<left>25</left>
@@ -1570,10 +1570,10 @@
 						<onup condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
 						<onup condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">ClearProperty(MovieTrailerPlaying,Home)</onup>
 
-						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
-						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
-						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
-						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
+						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[ListItem.Title])</oninfo>
+						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[ListItem.Title])</oninfo>
+						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
+						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
 						<onup condition="!String.IsEmpty(Window.Property(gallery))">ClearProperty(gallery)</onup>
 						<ondown condition="$EXP[56_FanartViewGallery]">SetProperty(gallery,true)</ondown>
 						<ondown condition="!$EXP[56_FanartViewGallery] + [!Control.IsVisible(616) | [Control.IsVisible(616) + Control.IsVisible(66)]]">66</ondown>
@@ -1588,7 +1588,7 @@
 						<movement>0</movement>
 						<preloaditems>4</preloaditems>
 						<!-- Poster type items: movies, sets, tvshows, seasons -->
-						<itemlayout height="339" width="240" condition="[[container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | ![$EXP[56_FanartViewNetflix]]]]">
+						<itemlayout height="339" width="240" condition="[[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | ![$EXP[56_FanartViewNetflix]]]]">
 							<control type="image">
 								<include>MovieFanartThumbDimensions</include>
 								<include>MovieFanartThumb</include>
@@ -1620,7 +1620,7 @@
 								<bordersize>8</bordersize>
 							</control>
 						</itemlayout>
-						<focusedlayout height="339" width="240" condition="[[container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | ![$EXP[56_FanartViewNetflix]]]]">
+						<focusedlayout height="339" width="240" condition="[[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | ![$EXP[56_FanartViewNetflix]]]]">
 							<control type="group">
 								<animation effect="zoom" easing="out" start="100" end="118" time="350" delay="0" center="120,243">Focus</animation>
 								<animation effect="zoom" easing="in" start="118" end="100" time="250" delay="0" center="120,243">UnFocus</animation>
@@ -1649,7 +1649,7 @@
 							</control>
 						</focusedlayout>
 						<!-- Poster type items: musicvideos -->
-						<itemlayout height="339" width="240" condition="container.content(musicvideos) + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | !$EXP[56_FanartViewNetflix]]">
+						<itemlayout height="339" width="240" condition="Container.Content(musicvideos) + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | !$EXP[56_FanartViewNetflix]]">
 							<control type="image">
 								<include>MovieFanartThumbDimensions</include>
 								<include content="MovieFanartThumb">
@@ -1685,7 +1685,7 @@
 								<bordersize>8</bordersize>
 							</control>
 						</itemlayout>
-						<focusedlayout height="339" width="240" condition="container.content(musicvideos) + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | !$EXP[56_FanartViewNetflix]]">
+						<focusedlayout height="339" width="240" condition="Container.Content(musicvideos) + [[$EXP[56_FanartViewNetflix] + !Skin.HasSetting(56_Posters_Netflix_Landscape)] | !$EXP[56_FanartViewNetflix]]">
 							<control type="group">
 								<animation effect="zoom" easing="out" start="100" end="118" time="350" delay="0" center="120,243">Focus</animation>
 								<animation effect="zoom" easing="in" start="118" end="100" time="250" delay="0" center="120,243">UnFocus</animation>
@@ -1719,7 +1719,7 @@
 						</focusedlayout>
 
 						<!-- Landscape type items in Netflix style: movies, sets, tvshows, seasons -->
-						<itemlayout height="291" width="464" condition="[[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows)] + $EXP[56_FanartViewNetflix] + Skin.HasSetting(56_Posters_Netflix_Landscape)]">
+						<itemlayout height="291" width="464" condition="[[Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)] + $EXP[56_FanartViewNetflix] + Skin.HasSetting(56_Posters_Netflix_Landscape)]">
 							<control type="image">
 								<include>MovieLandscapeDimensions</include>
 								<include>MovieLandscapeThumb</include>
@@ -1755,7 +1755,7 @@
 								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 						</itemlayout>
-						<focusedlayout height="291" width="464" condition="[[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows)] + $EXP[56_FanartViewNetflix] + Skin.HasSetting(56_Posters_Netflix_Landscape)]">
+						<focusedlayout height="291" width="464" condition="[[Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)] + $EXP[56_FanartViewNetflix] + Skin.HasSetting(56_Posters_Netflix_Landscape)]">
 							<control type="group">
 								<animation effect="zoom" easing="out" start="100" end="130" time="350" delay="0" center="207,144">Focus</animation>
 								<animation effect="zoom" easing="in" start="130" end="100" time="250" delay="0" center="207,124">UnFocus</animation>
@@ -1788,7 +1788,7 @@
 						</focusedlayout>
 
 						<!-- Episodes -->
-						<itemlayout height="291" width="464" condition="container.content(episodes)">
+						<itemlayout height="291" width="464" condition="Container.Content(episodes)">
 							<control type="image">
 								<include>EpisodeFanartThumb</include>
 							</control>
@@ -1857,7 +1857,7 @@
 								<bordersize>8</bordersize>
 							</control>
 						</itemlayout>
-						<focusedlayout height="291" width="464" condition="container.content(episodes)">
+						<focusedlayout height="291" width="464" condition="Container.Content(episodes)">
 							<control type="group">
 								<animation effect="zoom" easing="out" start="100" end="120" time="350" delay="0" center="207,144">Focus</animation>
 								<animation effect="zoom" easing="in" start="120" end="100" time="250" delay="0" center="207,144">UnFocus</animation>
@@ -1926,7 +1926,7 @@
 						</focusedlayout>
 
 						<!-- Square type items: Music -->
-						<itemlayout height="344" width="344" condition="[container.content(artists) | [[Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(56_Use_Disc)]]">
+						<itemlayout height="344" width="344" condition="[Container.Content(artists) | [[Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(56_Use_Disc)]]">
 							<control type="image">
 								<include>SquareFanartThumbDimensions</include>
 								<include>SquareFanartThumb</include>
@@ -1948,7 +1948,7 @@
 								<bordersize>8</bordersize>
 							</control>
 						</itemlayout>
-						<focusedlayout height="344" width="344" condition="[container.content(artists) | [[Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(56_Use_Disc)]]">
+						<focusedlayout height="344" width="344" condition="[Container.Content(artists) | [[Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(56_Use_Disc)]]">
 							<control type="group">
 								<animation effect="zoom" easing="out" start="100" end="110" time="350" delay="0" center="162,345">Focus</animation>
 								<animation effect="zoom" easing="in" start="110" end="100" time="250" delay="0" center="162,345">UnFocus</animation>
@@ -1991,7 +1991,7 @@
 						</focusedlayout>
 
 						<!-- Square type items: everything else -->
-						<itemlayout height="344" width="344" condition="![container.content(artists) | container.content(albums) | container.content(songs) | container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]">
+						<itemlayout height="344" width="344" condition="![Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">
 							<control type="image">
 								<include>SquareFanartThumbDimensions</include>
 								<include>SquareFanartThumb</include>
@@ -2025,7 +2025,7 @@
 								<bordersize>8</bordersize>
 							</control>
 						</itemlayout>
-						<focusedlayout height="344" width="344" condition="![container.content(artists) | container.content(albums) | container.content(songs) | container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]">
+						<focusedlayout height="344" width="344" condition="![Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">
 							<control type="group">
 								<animation effect="zoom" easing="out" start="100" end="110" time="350" delay="0" center="162,345">Focus</animation>
 								<animation effect="zoom" easing="in" start="110" end="100" time="250" delay="0" center="162,345">UnFocus</animation>

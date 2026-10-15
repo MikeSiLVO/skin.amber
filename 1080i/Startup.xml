@@ -6,7 +6,7 @@
 	<onload condition="Skin.HasSetting(NowPlaying.ArtistSlideshow)">Skin.Reset(NowPlaying.ArtistSlideshow)</onload>
 	<onload condition="Skin.HasSetting(Use_Artist_Slideshow)">Skin.SetBool(Use_Artist_Fanart)</onload>
 	<onload condition="Skin.HasSetting(Use_Artist_Slideshow)">Skin.Reset(Use_Artist_Slideshow)</onload>
-	<onload>SetProperty(SkinInfo.BlurSourceVar,VideoInfoBlurSourceVar,home)</onload>
+	<onload>SetProperty(SkinInfo.BlurSourceVar,VideoInfoBlurSourceVar,Home)</onload>
 	<onload condition="!Skin.HasSetting(SkinInfo.EnableSlideshow)">Skin.SetBool(SkinInfo.EnableSlideshow)</onload>
 	<onload condition="String.IsEmpty(Skin.String(SkinInfo.SlideshowRefreshInterval)) + !String.IsEmpty(Skin.String(FanartTimePerImage))">Skin.SetString(SkinInfo.SlideshowRefreshInterval,$INFO[Skin.String(FanartTimePerImage)])</onload>
 	<onload condition="String.IsEmpty(Skin.String(SkinInfo.SlideshowRefreshInterval)) + String.IsEmpty(Skin.String(FanartTimePerImage))">Skin.SetString(SkinInfo.SlideshowRefreshInterval,7)</onload>

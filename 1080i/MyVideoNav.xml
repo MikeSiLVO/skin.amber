@@ -10,7 +10,7 @@
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onload>ClearProperty(gallery)</onload>
 	<onload condition="System.AddonIsEnabled(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
-	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,Home)</onload>
 	<onunload>ClearProperty(GeneralSearchCalledInfo)</onunload>
 	<onunload>ClearProperty(SingleSearchCalledInfo)</onunload>
 	<onunload>ClearProperty(InfoCalledGeneralSearch)</onunload>
@@ -288,7 +288,7 @@
 					<include>9000SysButtons</include>
 					<label>$LOCALIZE[20367]</label>
 					<label2>$INFO[Container.NumItems]</label2>
-					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes)</visible>
+					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 				</control>
 				<control type="label" id="9180" description="Spacer">
 					<height>36</height>
@@ -323,8 +323,8 @@
 					<include>9000SysButtons</include>
 					<label>$LOCALIZE[20336]</label>
 					<onclick>xbmc.mastermode</onclick>
-					<selected>system.ismaster</selected>
-					<visible>system.haslocks</visible>
+					<selected>System.IsMaster</selected>
+					<visible>System.HasLocks</visible>
 				</control>
 				<control type="togglebutton" id="620">
 					<description>Update library</description>
@@ -332,7 +332,7 @@
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
 					<altlabel>$LOCALIZE[13353]</altlabel>
-					<usealttexture>library.isscanningvideo</usealttexture>
+					<usealttexture>Library.IsScanningVideo</usealttexture>
 				</control>
 				<control type="button" id="612">
 					<description>Go to playlist</description>

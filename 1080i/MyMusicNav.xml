@@ -227,7 +227,7 @@
 					<onclick>UpdateLibrary(music)</onclick>
 					<visible>!Container.Content(addons)</visible>
 					<altlabel>$LOCALIZE[13353]</altlabel>
-					<usealttexture>library.isscanningmusic</usealttexture>
+					<usealttexture>Library.IsScanningMusic</usealttexture>
 				</control>
 				<control type="radiobutton" id="16">
 					<label>$LOCALIZE[589]</label>

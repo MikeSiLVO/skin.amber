@@ -57,9 +57,9 @@
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideos)">$LOCALIZE[20389]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(MusicVideos.Count)][/COLOR]  •  $LOCALIZE[16102]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(MusicVideos.Watched)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(MusicVideos.UnWatched)][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),videos)">$LOCALIZE[20342]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(Movies.Count)][/COLOR]  •  $LOCALIZE[20343]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(TVShows.Count)][/COLOR]  •  $LOCALIZE[20389]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(MusicVideos.Count)][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),moviestvshows)">$LOCALIZE[20342]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(Movies.Count)][/COLOR]  •  $LOCALIZE[20343]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(TVShows.Count)][/COLOR]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),pvr) + PVR.IsRecording">$LOCALIZE[19043]: [COLOR $VAR[HighlightColor]]$INFO[Pvr.NowRecordingTitle][/COLOR]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),pvr) + PVR.HasNonRecordingTimer">$LOCALIZE[209]: [COLOR $VAR[HighlightColor]]$INFO[Pvr.NextRecordingTitle][/COLOR]  •  [COLOR $VAR[HighlightColor]]$INFO[Pvr.NextRecordingDateTime][/COLOR]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),pvr)">$LOCALIZE[31409]: [COLOR $VAR[HighlightColor]]$INFO[Pvr.BackendChannels] $LOCALIZE[14301][/COLOR] $LOCALIZE[19017]: [COLOR $VAR[HighlightColor]]$INFO[PVR.BackendRecordings][/COLOR]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),pvr) + PVR.IsRecording">$LOCALIZE[19043]: [COLOR $VAR[HighlightColor]]$INFO[PVR.NowRecordingTitle][/COLOR]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),pvr) + PVR.HasNonRecordingTimer">$LOCALIZE[209]: [COLOR $VAR[HighlightColor]]$INFO[PVR.NextRecordingTitle][/COLOR]  •  [COLOR $VAR[HighlightColor]]$INFO[PVR.NextRecordingDateTime][/COLOR]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),pvr)">$LOCALIZE[31409]: [COLOR $VAR[HighlightColor]]$INFO[PVR.BackendChannels] $LOCALIZE[14301][/COLOR] $LOCALIZE[19017]: [COLOR $VAR[HighlightColor]]$INFO[PVR.BackendRecordings][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),weather)">$INFO[Weather.Location]  [COLOR $VAR[HighlightColor]]$INFO[Weather.Conditions][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),addons)">$LOCALIZE[24001]: [COLOR $VAR[HighlightColor]]$INFO[Container(9985).NumItems][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),videoaddons)">$LOCALIZE[1037]: [COLOR $VAR[HighlightColor]]$INFO[Container(9980).NumItems][/COLOR]</value>
@@ -70,7 +70,7 @@
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),favourites)">$LOCALIZE[1036]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(favourite.count)][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),disc) + System.HasMediadvd">$LOCALIZE[427]: [COLOR $VAR[HighlightColor]]$INFO[System.DVDLabel][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),disc) + !System.HasMediadvd">$LOCALIZE[427]: [COLOR $VAR[HighlightColor]]$LOCALIZE[504][/COLOR]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),systeminfo)">$LOCALIZE[31415]: [COLOR $VAR[HighlightColor]]$INFO[System.memory(used.percent)][/COLOR]  •  $LOCALIZE[31416]: [COLOR $VAR[HighlightColor]]$INFO[System.CPUUsage][/COLOR]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),systeminfo)">$LOCALIZE[31415]: [COLOR $VAR[HighlightColor]]$INFO[System.Memory(used.percent)][/COLOR]  •  $LOCALIZE[31416]: [COLOR $VAR[HighlightColor]]$INFO[System.CPUUsage][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist)">$LOCALIZE[20342]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Count)][/COLOR]  •  $LOCALIZE[16102]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Watched)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Unwatched)][/COLOR]  •  $LOCALIZE[575]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_InProgress)][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),tvshowplaylist)">$LOCALIZE[20343]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_TVShowCount)][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)">$LOCALIZE[20389]: $INFO[Window(Home).Property(PlaylistStats_Count)][COLOR $VAR[HighlightColor]]  •  [/COLOR]$LOCALIZE[16102]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Watched)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Unwatched)][/COLOR]  •  $LOCALIZE[575]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_InProgress)][/COLOR]</value>
@@ -689,7 +689,7 @@
 			<include>AutoscrollTime</include>
 			<itemlayout />
 			<focusedlayout />
-			<content sortby="random" limit="$INFO[Container(300).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(300).ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</content>
+			<content sortby="random" limit="$INFO[Container(300).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(300).ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
 			<visible>String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist)</visible>
 		</control>
 		<control type="list" id="99891">
@@ -701,7 +701,7 @@
 			<include>AutoscrollTime</include>
 			<itemlayout />
 			<focusedlayout />
-			<content sortby="random" limit="$INFO[Container(9001).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(9001).ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</content>
+			<content sortby="random" limit="$INFO[Container(9001).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(9001).ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
 			<visible>String.IsEqual(Container(9001).ListItem.Property(backgroundType),playlist)</visible>
 		</control>
 		<control type="list" id="9994">
@@ -713,7 +713,7 @@
 			<include>AutoscrollTime</include>
 			<itemlayout />
 			<focusedlayout />
-			<content sortby="random" limit="$INFO[Container.ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container.ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</content>
+			<content sortby="random" limit="$INFO[Container.ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container.ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
 			<visible>String.IsEqual(Container.ListItem.Property(backgroundType),playlist)</visible>
 		</control>
 		<control type="list" id="9992">
@@ -726,7 +726,7 @@
 			<itemlayout />
 			<focusedlayout />
 			<visible>String.IsEqual(Container(300).ListItem.Property(background),nodeBackground)</visible>
-			<content sortby="random" limit="$INFO[Container(300).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(300).ListItem.Property(path)]"'&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</content>
+			<content sortby="random" limit="$INFO[Container(300).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(300).ListItem.Property(path)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
 		</control>
 		<control type="list" id="99921">
 			<description>hidden container for node background using embuary helper</description>
@@ -738,7 +738,7 @@
 			<itemlayout />
 			<focusedlayout />
 			<visible>String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground)</visible>
-			<content sortby="random" limit="$INFO[Container(9001).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(9001).ListItem.Property(path)]"'&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</content>
+			<content sortby="random" limit="$INFO[Container(9001).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(9001).ListItem.Property(path)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
 		</control>
 		<control type="list" id="9996">
 			<description>hidden container for widget node background using embuary helper</description>
@@ -750,7 +750,7 @@
 			<itemlayout />
 			<focusedlayout />
 			<visible>String.IsEqual(Container.ListItem.Property(background),nodeBackground)</visible>
-			<content sortby="random" limit="$INFO[Container.ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container.ListItem.Property(path)]"'&amp;reload=$INFO[Window(home).Property(EmbuaryWidgetUpdate)]</content>
+			<content sortby="random" limit="$INFO[Container.ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container.ListItem.Property(path)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
 		</control>
 	</include>
 
@@ -1010,7 +1010,7 @@
 				<onleft>9001</onleft>
 				<onright>9001</onright>
 				<onback>9001</onback>
-				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo) + !System.AddonIsEnabled(plugin.video.youtube)">SetProperty(CustomSearch,2,home)</onclick>
+				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo) + !System.AddonIsEnabled(plugin.video.youtube)">SetProperty(CustomSearch,2,Home)</onclick>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">Skin.Reset(CustomSearchTerm)</onclick>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">Skin.SetString(CustomSearchTerm,$ESCVAR[FanartTitleVar])</onclick>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">ActivateWindow(1122)</onclick>

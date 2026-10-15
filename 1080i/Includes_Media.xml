@@ -27,7 +27,7 @@
 		<value condition="[String.Contains(Container.ListItem.FileNameAndPath,hddvd) | String.Contains(Container.ListItem.FileNameAndPath,hd-dvd)]">$VAR[MediaFlagsPathVar]/videocodec/hddvd.png</value>
 		<value condition="[String.Contains(Container.ListItem.FileNameAndPath,blu-ray) | String.Contains(Container.ListItem.FileNameAndPath,bluray) | String.Contains(Container.ListItem.FileNameAndPath,bdrip) | String.Contains(Container.ListItem.FileNameAndPath,brrip) | String.Contains(Container.ListItem.FileNameAndPath,bd25) | String.Contains(Container.ListItem.FileNameAndPath,bd50) | String.IsEqual(Container.ListItem.FileExtension,bdmv)]">$VAR[MediaFlagsPathVar]/videocodec/bluray.png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,web-dl) | String.Contains(Container.ListItem.FileNameAndPath,webdl) | String.Contains(Container.ListItem.FileNameAndPath,webrip) | String.EndsWith(Container.ListItem.FileNameAndPath,.strm) | [String.IsEmpty(Container.ListItem.VideoCodec) + String.IsEmpty(Container.ListItem.AudioCodec)]">$VAR[MediaFlagsPathVar]/videocodec/webdl.png</value>
-		<value condition="String.Contains(Container.ListItem.FilenameAndPath,dvd) | String.IsEqual(Container.ListItem.FileExtension,iso) | String.IsEqual(Container.ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
+		<value condition="String.Contains(Container.ListItem.FileNameAndPath,dvd) | String.IsEqual(Container.ListItem.FileExtension,iso) | String.IsEqual(Container.ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
 		<value>$VAR[MediaFlagsPathVar]/videocodec/$INFO[Container.ListItem.VideoCodec,,.png]</value>
 	</variable>
 
@@ -37,7 +37,7 @@
 		<value condition="[String.Contains(ListItem.FileNameAndPath,hddvd) | String.Contains(ListItem.FileNameAndPath,hd-dvd)]">$VAR[MediaFlagsPathVar]/videocodec/hddvd.png</value>
 		<value condition="[String.Contains(ListItem.FileNameAndPath,blu-ray) | String.Contains(ListItem.FileNameAndPath,bluray) | String.Contains(ListItem.FileNameAndPath,bdrip) | String.Contains(ListItem.FileNameAndPath,brrip) | String.Contains(ListItem.FileNameAndPath,bd25) | String.Contains(ListItem.FileNameAndPath,bd50) | String.IsEqual(ListItem.FileExtension,bdmv)]">$VAR[MediaFlagsPathVar]/videocodec/bluray.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,web-dl) | String.Contains(ListItem.FileNameAndPath,webdl) | String.Contains(ListItem.FileNameAndPath,webrip) | String.EndsWith(ListItem.FileNameAndPath,.strm) | [String.IsEmpty(ListItem.VideoCodec) + String.IsEmpty(ListItem.AudioCodec)]">$VAR[MediaFlagsPathVar]/videocodec/webdl.png</value>
-		<value condition="String.Contains(ListItem.FilenameAndPath,dvd) | String.IsEqual(ListItem.FileExtension,iso) | String.IsEqual(ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
+		<value condition="String.Contains(ListItem.FileNameAndPath,dvd) | String.IsEqual(ListItem.FileExtension,iso) | String.IsEqual(ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
 		<value>$VAR[MediaFlagsPathVar]/videocodec/$INFO[ListItem.VideoCodec,,.png]</value>
 	</variable>
 
@@ -57,7 +57,7 @@
 		<value condition="[String.Contains(Container(6).ListItem.FileNameAndPath,hddvd) | String.Contains(Container(6).ListItem.FileNameAndPath,hd-dvd)]">$VAR[MediaFlagsPathVar]/videocodec/hddvd.png</value>
 		<value condition="[String.Contains(Container(6).ListItem.FileNameAndPath,blu-ray) | String.Contains(Container(6).ListItem.FileNameAndPath,bluray) | String.Contains(Container(6).ListItem.FileNameAndPath,bdrip) | String.Contains(Container(6).ListItem.FileNameAndPath,brrip) | String.Contains(Container(6).ListItem.FileNameAndPath,bd25) | String.Contains(Container(6).ListItem.FileNameAndPath,bd50) | String.IsEqual(Container(6).ListItem.FileExtension,bdmv)]">$VAR[MediaFlagsPathVar]/videocodec/bluray.png</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,web-dl) | String.Contains(Container(6).ListItem.FileNameAndPath,webdl) | String.Contains(Container(6).ListItem.FileNameAndPath,webrip) | String.EndsWith(Container(6).ListItem.FileNameAndPath,.strm)">$VAR[MediaFlagsPathVar]/videocodec/webdl.png</value>
-		<value condition="String.Contains(Container(6).ListItem.FilenameAndPath,dvd) | String.IsEqual(Container(6).ListItem.FileExtension,iso) | String.IsEqual(Container(6).ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
+		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,dvd) | String.IsEqual(Container(6).ListItem.FileExtension,iso) | String.IsEqual(Container(6).ListItem.FileExtension,ifo)">$VAR[MediaFlagsPathVar]/videocodec/dvd.png</value>
 		<value>$VAR[MediaFlagsPathVar]/videocodec/$INFO[Container(6).ListItem.VideoCodec,,.png]</value>
 	</variable>
 
@@ -71,7 +71,7 @@
 
 	<variable name="MediaInfoAudioCodecFlagVar">
 		<value condition="Skin.HasSetting(coloredflags) + [String.IsEqual(ListItem.AudioCodec,truehd_atmos) | String.IsEqual(ListItem.AudioCodec,truehd/atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, ListItem.AudioCodec,,.png]</value>
-		<value condition="String.Contains(ListItem.FileNameAndPath,atmos) | String.Contains(ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
+		<value condition="String.Contains(ListItem.FileNameAndPath,atmos) | String.Contains(ListItem.AudioCodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,dtsx) | String.Contains(ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.IsEqual(ListItem.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, ListItem.AudioCodec,,.png]</value>
@@ -79,7 +79,7 @@
 
 	<variable name="PlayerAudioCodecFlagVar">
 		<value condition="Skin.HasSetting(coloredflags) + [String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos) | String.IsEqual(VideoPlayer.AudioCodec,truehd/atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, VideoPlayer.AudioCodec,,.png]</value>
-		<value condition="String.Contains(Player.FileNameAndPath,atmos) | String.Contains(VideoPlayer.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Player.FileNameAndPath,atmos) | String.Contains(VideoPlayer.AudioCodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Player.FileNameAndPath,dtsx) | String.Contains(Player.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, VideoPlayer.AudioCodec,,.png]</value>
@@ -87,7 +87,7 @@
 
 	<variable name="SearchAudioCodecFlagVar">
 		<value condition="Skin.HasSetting(coloredflags) + [String.IsEqual(Container(6).ListItem.AudioCodec,truehd_atmos) | String.IsEqual(Container(6).ListItem.AudioCodec,truehd/atmos)]">$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, Container(6).ListItem.AudioCodec,,.png]</value>
-		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,atmos) | String.Contains(Container(6).ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,atmos) | String.Contains(Container(6).ListItem.AudioCodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,dtsx) | String.Contains(Container(6).ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.IsEqual(Container(6).ListItem.AudioCodec,dts_es) + !Skin.HasSetting(coloredflags)">$VAR[MediaFlagsPathVar]/audiocodec/dts.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$MAP[AudioCodecFlagMap, Container(6).ListItem.AudioCodec,,.png]</value>
@@ -154,7 +154,7 @@
 				<visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 				<!-- Overlay image when panel is in original position -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
 					<posx>1295</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -163,7 +163,7 @@
 				</control>
 				<!-- Overlay image when panel is swapped -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
 					<posx>596r</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -172,7 +172,7 @@
 				</control>
 				<!-- Overlay image when panel is disabled -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + $EXP[ListPanelIsDisabled]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + $EXP[ListPanelIsDisabled]</visible>
 					<posx>46r</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -208,7 +208,7 @@
 				</control>
 				<!-- Number of unwatched episodes for tv shows when panel is in oiginal position -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -251,7 +251,7 @@
 				</control>
 				<!-- Number of unwatched episodes when panel is swapped -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -294,7 +294,7 @@
 				</control>
 				<!-- Number of unwatched episodes when panel is disabled -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + $EXP[ListPanelIsDisabled]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + $EXP[ListPanelIsDisabled]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -348,7 +348,7 @@
 				<visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 				<!-- Overlay image when panel is in original position -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped]</visible>
 					<posx>1495</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -357,7 +357,7 @@
 				</control>
 				<!-- Overlay image when panel is swapped -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped]</visible>
 					<posx>586r</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -366,7 +366,7 @@
 				</control>
 				<!-- Overlay image when panel is disabled -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + $EXP[LowListPanelIsDisabled]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + $EXP[LowListPanelIsDisabled]</visible>
 					<posx>46r</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -402,7 +402,7 @@
 				</control>
 				<!-- Number of unwatched episodes for tv shows when panel is in oiginal position -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -445,7 +445,7 @@
 				</control>
 				<!-- Number of unwatched episodes when panel is swapped -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -488,7 +488,7 @@
 				</control>
 				<!-- Number of unwatched episodes when panel is disabled -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + $EXP[LowListPanelIsDisabled]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + $EXP[LowListPanelIsDisabled]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -542,7 +542,7 @@
 				<visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 				<!-- Overlay image when panel is in original position -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped]</visible>
 					<posx>1295</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -551,7 +551,7 @@
 				</control>
 				<!-- Overlay image when panel is swapped -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped]</visible>
 					<posx>536r</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -560,7 +560,7 @@
 				</control>
 				<!-- Overlay image when panel is disabled -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + $EXP[TallListPanelIsDisabled]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + $EXP[TallListPanelIsDisabled]</visible>
 					<posx>46r</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -596,7 +596,7 @@
 				</control>
 				<!-- Number of unwatched episodes for tv shows when panel is in oiginal position -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -639,7 +639,7 @@
 				</control>
 				<!-- Number of unwatched episodes when panel is swapped -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -682,7 +682,7 @@
 				</control>
 				<!-- Number of unwatched episodes when panel is disabled -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)] + $EXP[TallListPanelIsDisabled]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + $EXP[TallListPanelIsDisabled]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -739,7 +739,7 @@
 				<visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 				<!-- Overlay image when panel is in original position -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]]</visible>
 					<posx>$PARAM[overlaypos]</posx>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -757,7 +757,7 @@
 				</control>
 				<!-- Number of unwatched episodes for tv shows when panel is in oiginal position -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.content(tvshows) | container.content(seasons)]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
 						<visible>$PARAM[isFocused]</visible>
@@ -959,7 +959,7 @@
 				<texture>badges/3D.png</texture>
 			</control>
 			<control type="image" id="89005">
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + !Skin.HasSetting(coloredflags) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + !Skin.HasSetting(coloredflags) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -969,7 +969,7 @@
 				<texture>$VAR[HDRFlagVar]</texture>
 			</control>
 			<control type="image" id="89005">
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(coloredflags) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(coloredflags) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1257,7 +1257,7 @@
 			</control>
 			<control type="image" id="89005">
 				<visible>!String.IsEmpty(ListItem.VideoResolution) + !Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,hdr10) | String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,hdr10) | String.Contains(ListItem.FileName,hdr) | String.Contains(ListItem.FileName,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1268,7 +1268,7 @@
 			</control>
 			<control type="image" id="89005">
 				<visible>!String.IsEmpty(ListItem.VideoResolution) + Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,hdr10) | String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,hdr10) | String.Contains(ListItem.FileName,hdr) | String.Contains(ListItem.FileName,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -5031,7 +5031,7 @@
 				<param name="shadowoffset">8</param>
 				<param name="bordersizeLT">16</param>
 				<param name="bordersizeRB">24</param>
-				<param name="overlaylabelvisibility">!ListItem.IsParentFolder + [String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode) | String.IsEmpty(listitem.DBType)]</param>
+				<param name="overlaylabelvisibility">!ListItem.IsParentFolder + [String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode) | String.IsEmpty(ListItem.DBType)]</param>
 				<param name="overlaylabel">$VAR[PosterLabel]</param>
 				<param name="overlaylabelalign">center</param>
 				<param name="overlaylabelyoffset">90r</param>
@@ -5101,7 +5101,7 @@
 				<param name="shadowoffset">8</param>
 				<param name="bordersizeLT">12</param>
 				<param name="bordersizeRB">20</param>
-				<param name="overlaylabelvisibility">!ListItem.IsParentFolder + [String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode) | String.IsEmpty(listitem.DBType)]</param>
+				<param name="overlaylabelvisibility">!ListItem.IsParentFolder + [String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode) | String.IsEmpty(ListItem.DBType)]</param>
 				<param name="overlaylabel">$VAR[PosterLabel]</param>
 				<param name="overlaylabelalign">center</param>
 				<param name="overlaylabelyoffset">80r</param>
@@ -5125,7 +5125,7 @@
 				<param name="shadowoffset">8</param>
 				<param name="bordersizeLT">16</param>
 				<param name="bordersizeRB">24</param>
-				<param name="overlaylabelvisibility">!ListItem.IsParentFolder + [[String.IsEqual(ListItem.DBType,episode) + [!String.IsEmpty(ListItem.Season) | !String.IsEmpty(ListItem.Episode)]] | String.IsEmpty(listitem.DBType)]</param>
+				<param name="overlaylabelvisibility">!ListItem.IsParentFolder + [[String.IsEqual(ListItem.DBType,episode) + [!String.IsEmpty(ListItem.Season) | !String.IsEmpty(ListItem.Episode)]] | String.IsEmpty(ListItem.DBType)]</param>
 				<param name="overlaylabel">$VAR[EpisodeLabel]</param>
 			</include>
 		</definition>
@@ -5146,7 +5146,7 @@
 				<param name="shadowoffset">8</param>
 				<param name="bordersizeLT">12</param>
 				<param name="bordersizeRB">20</param>
-				<param name="overlaylabelvisibility">!ListItem.IsParentFolder + [[String.IsEqual(ListItem.DBType,episode) + [!String.IsEmpty(ListItem.Season) | !String.IsEmpty(ListItem.Episode)]] | String.IsEmpty(listitem.DBType)]</param>
+				<param name="overlaylabelvisibility">!ListItem.IsParentFolder + [[String.IsEqual(ListItem.DBType,episode) + [!String.IsEmpty(ListItem.Season) | !String.IsEmpty(ListItem.Episode)]] | String.IsEmpty(ListItem.DBType)]</param>
 				<param name="overlaylabel">$VAR[EpisodeLabel]</param>
 			</include>
 		</definition>
@@ -5254,25 +5254,25 @@
 					<param name="isSmallIcon">true</param>
 				</include>
 			</focusedlayout>
-			<itemlayout condition="[!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + [container.content(movies) | container.content(sets)] + Skin.HasSetting($PARAM[viewid]_Movies_UseBanners)]" height="204" width="930">
+			<itemlayout condition="[!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + [Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting($PARAM[viewid]_Movies_UseBanners)]" height="204" width="930">
 				<include content="GenericBannerIconBig">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">false</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="[!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + [container.content(movies) | container.content(sets)] + Skin.HasSetting($PARAM[viewid]_Movies_UseBanners)]" height="204" width="930">
+			<focusedlayout condition="[!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + [Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting($PARAM[viewid]_Movies_UseBanners)]" height="204" width="930">
 				<include content="GenericBannerIconBig">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">false</param>
 				</include>
 			</focusedlayout>
-			<itemlayout condition="[Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + [container.content(movies) | container.content(sets)] + Skin.HasSetting($PARAM[viewid]_Movies_UseBanners)]" height="112" width="465">
+			<itemlayout condition="[Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + [Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting($PARAM[viewid]_Movies_UseBanners)]" height="112" width="465">
 				<include content="GenericBannerIconSmall">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">true</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="[Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + [container.content(movies) | container.content(sets)] + Skin.HasSetting($PARAM[viewid]_Movies_UseBanners)]" height="112" width="465">
+			<focusedlayout condition="[Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + [Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting($PARAM[viewid]_Movies_UseBanners)]" height="112" width="465">
 				<include content="GenericBannerIconSmall">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">true</param>
@@ -5493,25 +5493,25 @@
 	<include name="PosterLayout">
 		<param name="viewid" />
 		<definition>
-			<itemlayout condition="[!Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [container.content(movies) | container.content(sets)]] | [!Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + container.content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)]" height="437" width="310">
+			<itemlayout condition="[!Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [Container.Content(movies) | Container.Content(sets)]] | [!Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + Container.Content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + Container.Content(episodes)]" height="437" width="310">
 				<include content="GenericPosterIconBig">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">false</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="[!Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [container.content(movies) | container.content(sets)]] | [!Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + container.content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)]" height="437" width="310">
+			<focusedlayout condition="[!Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [!Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [Container.Content(movies) | Container.Content(sets)]] | [!Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + Container.Content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + Container.Content(episodes)]" height="437" width="310">
 				<include content="GenericPosterIconBig">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">false</param>
 				</include>
 			</focusedlayout>
-			<itemlayout condition="[Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [container.content(movies) | container.content(sets)]] | [Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + container.content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)]" height="326" width="232.5">
+			<itemlayout condition="[Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [Container.Content(movies) | Container.Content(sets)]] | [Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + Container.Content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + Container.Content(episodes)]" height="326" width="232.5">
 				<include content="GenericPosterIconSmall">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">true</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="[Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [container.content(movies) | container.content(sets)]] | [Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + container.content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)]" height="326" width="232.5">
+			<focusedlayout condition="[Skin.HasSetting($PARAM[viewid]_TVShows_SmallIcons) + Container.Content(tvshows) + !Skin.HasSetting($PARAM[viewid]_TVShows_UseBanners)] | [Skin.HasSetting($PARAM[viewid]_Movies_SmallIcons) + !Skin.HasSetting($PARAM[viewid]_Movies_UseBanners) + [Container.Content(movies) | Container.Content(sets)]] | [Skin.HasSetting($PARAM[viewid]_Seasons_SmallIcons) + Container.Content(seasons)] | [Skin.HasSetting(EpisodesUsePoster) + Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + Container.Content(episodes)]" height="326" width="232.5">
 				<include content="GenericPosterIconSmall">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">true</param>
@@ -5523,25 +5523,25 @@
 	<include name="EpisodeLayout">
 		<param name="viewid" />
 		<definition>
-			<itemlayout condition="!Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)" height="226" width="310">
+			<itemlayout condition="!Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + Container.Content(episodes)" height="226" width="310">
 				<include content="GenericEpisodeIconBig">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">false</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="!Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)" height="226" width="310">
+			<focusedlayout condition="!Skin.HasSetting(EpisodesUsePoster) + !Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + Container.Content(episodes)" height="226" width="310">
 				<include content="GenericEpisodeIconBig">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">false</param>
 				</include>
 			</focusedlayout>
-			<itemlayout condition="!Skin.HasSetting(EpisodesUsePoster) + Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)" height="170" width="232.5">
+			<itemlayout condition="!Skin.HasSetting(EpisodesUsePoster) + Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + Container.Content(episodes)" height="170" width="232.5">
 				<include content="GenericEpisodeIconSmall">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">true</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="!Skin.HasSetting(EpisodesUsePoster) + Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + container.content(episodes)" height="170" width="232.5">
+			<focusedlayout condition="!Skin.HasSetting(EpisodesUsePoster) + Skin.HasSetting($PARAM[viewid]_Episodes_SmallIcons) + Container.Content(episodes)" height="170" width="232.5">
 				<include content="GenericEpisodeIconSmall">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">true</param>
@@ -5661,7 +5661,7 @@
 	<include name="VideoLayout">
 		<param name="viewid" />
 		<definition>
-			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + container.content(videos)" height="400" width="420">
+			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + Container.Content(videos)" height="400" width="420">
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">false</param>
@@ -5672,7 +5672,7 @@
 					<param name="belowtextboxbackwidth">420</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + container.content(videos)" height="400" width="420">
+			<focusedlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + Container.Content(videos)" height="400" width="420">
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">false</param>
@@ -5683,7 +5683,7 @@
 					<param name="belowtextboxbackwidth">420</param>
 				</include>
 			</focusedlayout>
-			<itemlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + container.content(videos)" height="320" width="300">
+			<itemlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + Container.Content(videos)" height="320" width="300">
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">true</param>
@@ -5696,7 +5696,7 @@
 					<param name="belowtextboxbackwidth">300</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + container.content(videos)" height="320" width="300">
+			<focusedlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + Container.Content(videos)" height="320" width="300">
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">true</param>
@@ -5746,26 +5746,26 @@
 				</include>
 			</focusedlayout>
 
-			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml) | container.content(videos) | container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | container.content(songs) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)]" height="400" width="310">
+			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml) | Container.Content(videos) | Container.Content(episodes) | Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(images) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]" height="400" width="310">
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">false</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml) | container.content(videos) | container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | container.content(songs) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)]" height="400" width="310">
+			<focusedlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml) | Container.Content(videos) | Container.Content(episodes) | Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(images) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]" height="400" width="310">
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">false</param>
 				</include>
 			</focusedlayout>
 
-			<itemlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml) | container.content(videos) | container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | container.content(songs) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)]" height="320" width="232.5">
+			<itemlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml) | Container.Content(videos) | Container.Content(episodes) | Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(images) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]" height="320" width="232.5">
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">true</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml) | container.content(videos) | container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | container.content(songs) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(sets) | container.content(TVshows) | container.content(seasons)]" height="320" width="232.5">
+			<focusedlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml) | Container.Content(videos) | Container.Content(episodes) | Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(images) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(TVshows) | Container.Content(seasons)]" height="320" width="232.5">
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">true</param>
@@ -5836,7 +5836,7 @@
 				<control type="label" description="Details2">
 					<animation effect="fade" start="100" end="0" time="480" condition="[[Control.HasFocus(6058) + Control.IsVisible(6058581)] | [Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]">Conditional</animation>
 					<visible>[[Control.IsVisible(58)] | Control.IsVisible(53) | [Control.IsVisible(56) + !$EXP[56_FanartViewInfo] + !$EXP[56_FanartViewNetflix]]]</visible>
-					<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [Container.content(tvshows) | Container.content(seasons)] + [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) | !String.IsEmpty(ListItem.Status)]</visible>
+					<visible>[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [Container.Content(tvshows) | Container.Content(seasons)] + [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) | !String.IsEmpty(ListItem.Status)]</visible>
 					<posy>100</posy>
 					<width>$PARAM[width]</width>
 					<height>30</height>
@@ -5848,7 +5848,7 @@
 				<control type="label" description="Details2">
 					<animation effect="fade" start="100" end="0" time="480" condition="[[Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]">Conditional</animation>
 					<visible>[[Control.IsVisible(56) + !$EXP[56_FanartViewInfo] + $EXP[56_FanartViewNetflix]]]</visible>
-					<visible>[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [Container.content(tvshows) | Container.content(seasons)] + [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) | !String.IsEmpty(ListItem.Status)]</visible>
+					<visible>[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [Container.Content(tvshows) | Container.Content(seasons)] + [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) | !String.IsEmpty(ListItem.Status)]</visible>
 					<posy>79</posy>
 					<width>$PARAM[width]</width>
 					<height>30</height>

@@ -13,7 +13,7 @@
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$VAR[ContainerItemDurationHrMins, • ,]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]$INFO[ListItem.Label2, • ]</value>
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + !Skin.HasSetting(Enable.HourMinutes) + String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$INFO[Container(6).ListItem.Duration, • ]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]</value>
 		<value condition="String.IsEqual(Container(6).ListItem.DBType,episode) + Skin.HasSetting(Enable.HourMinutes) + String.IsEmpty(ListItem.Label2)">$LOCALIZE[75]$INFO[Container(6).ListItem.Season].$INFO[Container(6).ListItem.Episode]$VAR[ContainerItemDurationHrMins, • ,]$INFO[Container(6).ListItem.Premiered, • ]$INFO[Container(6).ListItem.Rating, • ]$INFO[Container(6).ListItem.MPAA, • ]</value>
-		<value>$INFO[Listitem.Label2]</value>
+		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 
 	<variable name="DialogSelectSearchImage">
@@ -156,7 +156,7 @@
 			</control>
 			<control type="image" id="89007">
 				<visible>!String.IsEmpty(Container(6).ListItem.VideoResolution) + !Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container(6).ListItem.Filename,hdr) | String.Contains(Container(6).ListItem.Filename,sdr)]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container(6).ListItem.FileName,hdr) | String.Contains(Container(6).ListItem.FileName,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -167,7 +167,7 @@
 			</control>
 			<control type="image" id="89007">
 				<visible>!String.IsEmpty(Container(6).ListItem.VideoResolution) + Skin.HasSetting(coloredflags)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container(6).ListItem.Filename,hdr) | String.Contains(Container(6).ListItem.Filename,sdr)]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container(6).ListItem.FileName,hdr) | String.Contains(Container(6).ListItem.FileName,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>

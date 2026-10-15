@@ -5,8 +5,8 @@
 	<animation effect="fade" time="150">WindowClose</animation>
 	<conload condition="System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||9009||10052||10053||10054||10055||10056||10057||10058||10059)</conload>
 	<onload>SetProperty(onclose,SetFocus(9000))</onload>
-	<onload>SetProperty(ResetScroll," ",home)</onload>
-	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
+	<onload>SetProperty(ResetScroll," ",Home)</onload>
+	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,Home),00:01,silent)</onload>
 	<controls>
 		<!-- Hide Details list for video -->
 		<control type="list" id="10051">
@@ -54,7 +54,7 @@
 				<height>50</height>
 				<texture>OverlayWatched.png</texture>
 				<aspectratio>keep</aspectratio>
-				<visible>Integer.IsGreater(Container(10051).ListItem.Playcount,0)</visible>
+				<visible>Integer.IsGreater(Container(10051).ListItem.PlayCount,0)</visible>
 			</control>
 			<control type="image" description="Library Overlay">
 				<left>570</left>
@@ -63,7 +63,7 @@
 				<height>50</height>
 				<texture>library.png</texture>
 				<aspectratio>keep</aspectratio>
-				<visible>!Integer.IsGreater(Container(10051).ListItem.Playcount,0) + !String.IsEmpty(Container(10051).ListItem.DBID)</visible>
+				<visible>!Integer.IsGreater(Container(10051).ListItem.PlayCount,0) + !String.IsEmpty(Container(10051).ListItem.DBID)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -77,7 +77,7 @@
 					<height>122</height>
 					<width>122</width>
 					<aspectratio>keep</aspectratio>
-					<visible>Integer.IsGreater(Container(10051).ListItem.Playcount,0)</visible>
+					<visible>Integer.IsGreater(Container(10051).ListItem.PlayCount,0)</visible>
 				</control>
 				<control type="image">
 					<texture background="true">overlays/toprightlibrary.png</texture>
@@ -86,7 +86,7 @@
 					<height>122</height>
 					<width>122</width>
 					<aspectratio>keep</aspectratio>
-					<visible>!Integer.IsGreater(Container(10051).ListItem.Playcount,0) + !String.IsEmpty(Container(10051).ListItem.DBID)</visible>
+					<visible>!Integer.IsGreater(Container(10051).ListItem.PlayCount,0) + !String.IsEmpty(Container(10051).ListItem.DBID)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -305,7 +305,7 @@
 					<font>InfoPlot</font>
 					<textcolor>$VAR[InfoPlotTextColor]</textcolor>
 					<shadowcolor>LiteShadow</shadowcolor>
-					<label fallback="19055">$VAR[Plots]$INFO[Window(home).Property(ResetScroll)]</label>
+					<label fallback="19055">$VAR[Plots]$INFO[Window(Home).Property(ResetScroll)]</label>
 				</control>
 				<control type="radiobutton" id="90003">
 					<posy>447</posy>
@@ -327,7 +327,7 @@
 					<font />
 					<selected>true</selected>
 					<onclick>SetProperty(TextViewerHeader,$ESCVAR[panelheading],Home)</onclick>
-					<onclick condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)] + !String.IsEmpty(Container(10051).ListItem.Tagline)">SetProperty(TextViewerSubHeader,$ESCINFO[Container(10051).ListItem.Tagline,[I],[/I]],Home)</onclick>
+					<onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !String.IsEmpty(Container(10051).ListItem.Tagline)">SetProperty(TextViewerSubHeader,$ESCINFO[Container(10051).ListItem.Tagline,[I],[/I]],Home)</onclick>
 					<onclick>SetProperty(TextViewerContent,$ESCVAR[Plots],Home)</onclick>
 					<onclick>ActivateWindow(1124)</onclick>
 				</control>
@@ -350,7 +350,7 @@
 							<label>$LOCALIZE[20376]:</label>
 							<label2>$INFO[Container(10051).ListItem.OriginalTitle]</label2>
 							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(Container(10051).ListItem.OriginalTitle) + !String.IsEqual(Container(10051).ListItem.OriginalTitle,Container(10051).Listitem.Title)</visible>
+							<visible>!String.IsEmpty(Container(10051).ListItem.OriginalTitle) + !String.IsEqual(Container(10051).ListItem.OriginalTitle,Container(10051).ListItem.Title)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[20339]:</label>
@@ -427,7 +427,7 @@
 						</item>
 						<item>
 							<label>$LOCALIZE[31260]:</label>
-							<label2>$INFO[Window(home).Property(script.embuary.info-country_code)] - $INFO[Container(10051).ListItem.Property(region_release)]</label2>
+							<label2>$INFO[Window(Home).Property(script.embuary.info-country_code)] - $INFO[Container(10051).ListItem.Property(region_release)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(region_release))</visible>
 						</item>
@@ -439,7 +439,7 @@
 						</item>
 						<item>
 							<label>$LOCALIZE[20360]:</label>
-							<label2>$INFO[Container(10051).Listitem.Property(TotalEpisodes)] ($INFO[Container(10051).ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[Container(10051).ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[31659]])</label2>
+							<label2>$INFO[Container(10051).ListItem.Property(TotalEpisodes)] ($INFO[Container(10051).ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[Container(10051).ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[31659]])</label2>
 							<onclick>noop</onclick>
 							<visible>String.IsEqual(Container(10051).ListItem.DBType,tvshow) + !String.IsEmpty(Container(10051).ListItem.Property(TotalEpisodes)) + !String.IsEmpty(Container(10051).ListItem.Property(WatchedEpisodes)) + !String.IsEmpty(Container(10051).ListItem.Property(UnWatchedEpisodes))</visible>
 						</item>
@@ -541,7 +541,7 @@
 				<align>center</align>
 				<font>Details</font>
 				<label>$LOCALIZE[31189]</label>
-				<onclick>SetProperty(fanart,$ESCINFO[Container(10051).ListItem.Art(fanart)],home)</onclick>
+				<onclick>SetProperty(fanart,$ESCINFO[Container(10051).ListItem.Art(fanart)],Home)</onclick>
 				<onclick>ActivateWindow(1126)</onclick>
 				<visible>!String.IsEmpty(Container(10051).ListItem.Art(fanart))</visible>
 			</control>

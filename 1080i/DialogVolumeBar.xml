@@ -6,9 +6,9 @@
 		<control type="group">
 			<visible>!Player.Muted</visible>
 			<control type="group">
-				<visible>!player.passthrough</visible>
+				<visible>!Player.Passthrough</visible>
 				<control type="image" description="Speaker">
-					<visible>!player.passthrough</visible>
+					<visible>!Player.Passthrough</visible>
 					<posx>60</posx>
 					<posy>72</posy>
 					<width>129</width>
@@ -39,9 +39,9 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>player.passthrough</visible>
+				<visible>Player.Passthrough</visible>
 				<control type="image" description="Speaker passthrough">
-					<visible>player.passthrough</visible>
+					<visible>Player.Passthrough</visible>
 					<posx>60</posx>
 					<posy>72</posy>
 					<width>129</width>

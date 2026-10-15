@@ -62,8 +62,8 @@
 				<posy>100</posy>
 				<width>1860</width>
 				<height>600</height>
-				<onleft>dialog.close(all,true)</onleft>
-				<onright>dialog.close(all,true)</onright>
+				<onleft>Dialog.Close(all,true)</onleft>
+				<onright>Dialog.Close(all,true)</onright>
 				<onup>110</onup>
 				<ondown>110</ondown>
 				<scrolltime>200</scrolltime>

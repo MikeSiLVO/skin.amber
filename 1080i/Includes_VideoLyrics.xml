@@ -1410,7 +1410,7 @@
 		<param name="col13" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,1) | String.EndsWith(Container(110).Currentitem,21) | String.EndsWith(Container(110).Currentitem,41) | String.EndsWith(Container(110).Currentitem,61) | String.EndsWith(Container(110).Currentitem,81) | String.EndsWith(Container(110).Currentitem,01)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,1) | String.EndsWith(Container(110).CurrentItem,21) | String.EndsWith(Container(110).CurrentItem,41) | String.EndsWith(Container(110).CurrentItem,61) | String.EndsWith(Container(110).CurrentItem,81) | String.EndsWith(Container(110).CurrentItem,01)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" start="-200,0" end="0,0" tween="back" easing="out" time="360" />
 					<effect type="zoom" start="25" end="100" tween="back" easing="out" time="600" />
@@ -1428,7 +1428,7 @@
 					<effect type="slide" start="-200,0" end="0,0" tween="back" easing="out" time="720" />
 					<effect type="zoom" start="25" end="100" tween="back" easing="out" time="960" />
 				</animation>
-				<visible>String.IsEqual(Container(110).Currentitem,1) | String.EndsWith(Container(110).Currentitem,21) | String.EndsWith(Container(110).Currentitem,41) | String.EndsWith(Container(110).Currentitem,61) | String.EndsWith(Container(110).Currentitem,81) | String.EndsWith(Container(110).Currentitem,01)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,1) | String.EndsWith(Container(110).CurrentItem,21) | String.EndsWith(Container(110).CurrentItem,41) | String.EndsWith(Container(110).CurrentItem,61) | String.EndsWith(Container(110).CurrentItem,81) | String.EndsWith(Container(110).CurrentItem,01)</visible>
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
@@ -1438,7 +1438,7 @@
 				<textcolor>$PARAM[col12]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,1) | String.EndsWith(Container(110).Currentitem,21) | String.EndsWith(Container(110).Currentitem,41) | String.EndsWith(Container(110).Currentitem,61) | String.EndsWith(Container(110).Currentitem,81) | String.EndsWith(Container(110).Currentitem,01)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,1) | String.EndsWith(Container(110).CurrentItem,21) | String.EndsWith(Container(110).CurrentItem,41) | String.EndsWith(Container(110).CurrentItem,61) | String.EndsWith(Container(110).CurrentItem,81) | String.EndsWith(Container(110).CurrentItem,01)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" start="-200,0" end="0,0" tween="back" easing="out" time="1080" />
 					<effect type="zoom" start="25" end="100" tween="back" easing="out" time="1320" />
@@ -1461,7 +1461,7 @@
 			<control type="group">
 				<left>$PARAM[1b_left]</left>
 				<top>$PARAM[1b_top]</top>
-				<visible>String.IsEqual(Container(110).Currentitem,1) | String.EndsWith(Container(110).Currentitem,21) | String.EndsWith(Container(110).Currentitem,41) | String.EndsWith(Container(110).Currentitem,61) | String.EndsWith(Container(110).Currentitem,81) | String.EndsWith(Container(110).Currentitem,01)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,1) | String.EndsWith(Container(110).CurrentItem,21) | String.EndsWith(Container(110).CurrentItem,41) | String.EndsWith(Container(110).CurrentItem,61) | String.EndsWith(Container(110).CurrentItem,81) | String.EndsWith(Container(110).CurrentItem,01)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" delay="360" start="-200,0" end="0,0" tween="back" easing="out" time="1080" />
 					<effect type="zoom" center="450,370" delay="360" start="25" end="100" tween="sine" easing="out" time="1080" />
@@ -1501,7 +1501,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.IsEqual(Container(110).Currentitem,2) | String.EndsWith(Container(110).Currentitem,22) | String.EndsWith(Container(110).Currentitem,42) | String.EndsWith(Container(110).Currentitem,62) | String.EndsWith(Container(110).Currentitem,82) | String.EndsWith(Container(110).Currentitem,02)</visible>
+						<visible>String.IsEqual(Container(110).CurrentItem,2) | String.EndsWith(Container(110).CurrentItem,22) | String.EndsWith(Container(110).CurrentItem,42) | String.EndsWith(Container(110).CurrentItem,62) | String.EndsWith(Container(110).CurrentItem,82) | String.EndsWith(Container(110).CurrentItem,02)</visible>
 						<animation effect="slide" end="0,4" condition="true">Conditional</animation>
 						<animation type="Visible" reversible="false">
 							<effect type="zoom" center="auto" start="0" end="100" tween="sine" easing="out" time="840" />
@@ -1515,7 +1515,7 @@
 						<textcolor>$PARAM[col21]</textcolor>
 					</control>
 					<control type="label">
-						<visible>String.IsEqual(Container(110).Currentitem,2) | String.EndsWith(Container(110).Currentitem,22) | String.EndsWith(Container(110).Currentitem,42) | String.EndsWith(Container(110).Currentitem,62) | String.EndsWith(Container(110).Currentitem,82) | String.EndsWith(Container(110).Currentitem,02)</visible>
+						<visible>String.IsEqual(Container(110).CurrentItem,2) | String.EndsWith(Container(110).CurrentItem,22) | String.EndsWith(Container(110).CurrentItem,42) | String.EndsWith(Container(110).CurrentItem,62) | String.EndsWith(Container(110).CurrentItem,82) | String.EndsWith(Container(110).CurrentItem,02)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="zoom" center="auto" start="200" end="100" tween="sine" easing="out" time="840" />
 						</animation>
@@ -1537,7 +1537,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.IsEqual(Container(110).Currentitem,2) | String.EndsWith(Container(110).Currentitem,22) | String.EndsWith(Container(110).Currentitem,42) | String.EndsWith(Container(110).Currentitem,62) | String.EndsWith(Container(110).Currentitem,82) | String.EndsWith(Container(110).Currentitem,02)</visible>
+						<visible>String.IsEqual(Container(110).CurrentItem,2) | String.EndsWith(Container(110).CurrentItem,22) | String.EndsWith(Container(110).CurrentItem,42) | String.EndsWith(Container(110).CurrentItem,62) | String.EndsWith(Container(110).CurrentItem,82) | String.EndsWith(Container(110).CurrentItem,02)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="zoom" center="auto" start="200" end="100" tween="sine" easing="out" time="840" />
 						</animation>
@@ -1554,7 +1554,7 @@
 						<width max="700">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.IsEqual(Container(110).Currentitem,2) | String.EndsWith(Container(110).Currentitem,22) | String.EndsWith(Container(110).Currentitem,42) | String.EndsWith(Container(110).Currentitem,62) | String.EndsWith(Container(110).Currentitem,82) | String.EndsWith(Container(110).Currentitem,02)</visible>
+						<visible>String.IsEqual(Container(110).CurrentItem,2) | String.EndsWith(Container(110).CurrentItem,22) | String.EndsWith(Container(110).CurrentItem,42) | String.EndsWith(Container(110).CurrentItem,62) | String.EndsWith(Container(110).CurrentItem,82) | String.EndsWith(Container(110).CurrentItem,02)</visible>
 						<animation effect="slide" end="0,28" condition="true">Conditional</animation>
 						<animation type="Visible" reversible="false">
 							<effect type="zoom" center="240,50" start="0" end="100" tween="sine" easing="out" time="840" />
@@ -1575,7 +1575,7 @@
 		<param name="col33" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,3) | String.EndsWith(Container(110).Currentitem,23) | String.EndsWith(Container(110).Currentitem,43) | String.EndsWith(Container(110).Currentitem,63) | String.EndsWith(Container(110).Currentitem,83) | String.EndsWith(Container(110).Currentitem,03)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,3) | String.EndsWith(Container(110).CurrentItem,23) | String.EndsWith(Container(110).CurrentItem,43) | String.EndsWith(Container(110).CurrentItem,63) | String.EndsWith(Container(110).CurrentItem,83) | String.EndsWith(Container(110).CurrentItem,03)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" start="100,-300" end="50,0" time="300" tween="back" easing="out" />
 					<effect type="rotate" delay="1080" center="auto" start="15" end="-10" time="200" tween="sine" easing="out" />
@@ -1591,7 +1591,7 @@
 				<textcolor>$PARAM[col31]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,3) | String.EndsWith(Container(110).Currentitem,23) | String.EndsWith(Container(110).Currentitem,43) | String.EndsWith(Container(110).Currentitem,63) | String.EndsWith(Container(110).Currentitem,83) | String.EndsWith(Container(110).Currentitem,03)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,3) | String.EndsWith(Container(110).CurrentItem,23) | String.EndsWith(Container(110).CurrentItem,43) | String.EndsWith(Container(110).CurrentItem,63) | String.EndsWith(Container(110).CurrentItem,83) | String.EndsWith(Container(110).CurrentItem,03)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" start="0,-300" end="0,0" time="600" tween="back" easing="out" />
 					<effect type="rotate" delay="1080" center="auto" start="-8" end="11" time="200" tween="sine" easing="out" />
@@ -1606,7 +1606,7 @@
 				<textcolor>$PARAM[col32]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,3) | String.EndsWith(Container(110).Currentitem,23) | String.EndsWith(Container(110).Currentitem,43) | String.EndsWith(Container(110).Currentitem,63) | String.EndsWith(Container(110).Currentitem,83) | String.EndsWith(Container(110).Currentitem,03)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,3) | String.EndsWith(Container(110).CurrentItem,23) | String.EndsWith(Container(110).CurrentItem,43) | String.EndsWith(Container(110).CurrentItem,63) | String.EndsWith(Container(110).CurrentItem,83) | String.EndsWith(Container(110).CurrentItem,03)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" start="-100,-300" end="-50,0" time="780" tween="back" easing="out" />
 					<effect type="rotate" delay="1080" center="auto" start="22" end="-12" time="200" tween="sine" easing="out" />
@@ -1631,7 +1631,7 @@
 			<control type="group">
 				<left>$PARAM[3b_left]</left>
 				<top>$PARAM[3b_top]</top>
-				<visible>String.IsEqual(Container(110).Currentitem,3) | String.EndsWith(Container(110).Currentitem,23) | String.EndsWith(Container(110).Currentitem,43) | String.EndsWith(Container(110).Currentitem,63) | String.EndsWith(Container(110).Currentitem,83) | String.EndsWith(Container(110).Currentitem,03)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,3) | String.EndsWith(Container(110).CurrentItem,23) | String.EndsWith(Container(110).CurrentItem,43) | String.EndsWith(Container(110).CurrentItem,63) | String.EndsWith(Container(110).CurrentItem,83) | String.EndsWith(Container(110).CurrentItem,03)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" delay="840" start="0,250" end="0,0" time="420" tween="back" />
 					<effect type="rotate" delay="840" center="auto" start="4" end="0" time="720" tween="bounce" easing="out" />
@@ -1663,7 +1663,7 @@
 				<top>$PARAM[4_top]</top>
 				<left>$PARAM[4_left]</left>
 				<control type="label">
-					<visible>String.IsEqual(Container(110).Currentitem,4) | String.EndsWith(Container(110).Currentitem,24) | String.EndsWith(Container(110).Currentitem,44) | String.EndsWith(Container(110).Currentitem,64) | String.EndsWith(Container(110).Currentitem,84) | String.EndsWith(Container(110).Currentitem,04)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,4) | String.EndsWith(Container(110).CurrentItem,24) | String.EndsWith(Container(110).CurrentItem,44) | String.EndsWith(Container(110).CurrentItem,64) | String.EndsWith(Container(110).CurrentItem,84) | String.EndsWith(Container(110).CurrentItem,04)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" end="0,-115" time="300" tween="sine" easing="out" />
 						<effect type="slide" delay="360" end="0,-160" time="300" tween="sine" easing="out" />
@@ -1682,7 +1682,7 @@
 				</control>
 				<control type="label">
 					<left>-30</left>
-					<visible>String.IsEqual(Container(110).Currentitem,4) | String.EndsWith(Container(110).Currentitem,24) | String.EndsWith(Container(110).Currentitem,44) | String.EndsWith(Container(110).Currentitem,64) | String.EndsWith(Container(110).Currentitem,84) | String.EndsWith(Container(110).Currentitem,04)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,4) | String.EndsWith(Container(110).CurrentItem,24) | String.EndsWith(Container(110).CurrentItem,44) | String.EndsWith(Container(110).CurrentItem,64) | String.EndsWith(Container(110).CurrentItem,84) | String.EndsWith(Container(110).CurrentItem,04)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="360" end="0,-160" time="300" tween="sine" easing="out" />
 						<effect type="slide" delay="780" end="-280,0" time="300" tween="sine" easing="out" />
@@ -1698,7 +1698,7 @@
 					<textcolor>$PARAM[col42]</textcolor>
 				</control>
 				<control type="label">
-					<visible>String.IsEqual(Container(110).Currentitem,4) | String.EndsWith(Container(110).Currentitem,24) | String.EndsWith(Container(110).Currentitem,44) | String.EndsWith(Container(110).Currentitem,64) | String.EndsWith(Container(110).Currentitem,84) | String.EndsWith(Container(110).Currentitem,04)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,4) | String.EndsWith(Container(110).CurrentItem,24) | String.EndsWith(Container(110).CurrentItem,44) | String.EndsWith(Container(110).CurrentItem,64) | String.EndsWith(Container(110).CurrentItem,84) | String.EndsWith(Container(110).CurrentItem,04)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="780" end="0,-160" time="300" tween="sine" easing="out" />
 						<effect type="slide" delay="1380" end="0,-160" time="420" tween="back" easing="out" />
@@ -1717,7 +1717,7 @@
 					<top>454</top>
 					<width>600</width>
 					<height>600</height>
-					<visible>String.IsEqual(Container(110).Currentitem,4) | String.EndsWith(Container(110).Currentitem,24) | String.EndsWith(Container(110).Currentitem,44) | String.EndsWith(Container(110).Currentitem,64) | String.EndsWith(Container(110).Currentitem,84) | String.EndsWith(Container(110).Currentitem,04)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,4) | String.EndsWith(Container(110).CurrentItem,24) | String.EndsWith(Container(110).CurrentItem,44) | String.EndsWith(Container(110).CurrentItem,64) | String.EndsWith(Container(110).CurrentItem,84) | String.EndsWith(Container(110).CurrentItem,04)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="1350" end="0,-160" time="420" tween="back" easing="out" />
 					</animation>
@@ -1737,7 +1737,7 @@
 		<param name="col54" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,5) | String.EndsWith(Container(110).Currentitem,25) | String.EndsWith(Container(110).Currentitem,45) | String.EndsWith(Container(110).Currentitem,65) | String.EndsWith(Container(110).Currentitem,85) | String.EndsWith(Container(110).Currentitem,05)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,5) | String.EndsWith(Container(110).CurrentItem,25) | String.EndsWith(Container(110).CurrentItem,45) | String.EndsWith(Container(110).CurrentItem,65) | String.EndsWith(Container(110).CurrentItem,85) | String.EndsWith(Container(110).CurrentItem,05)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="-1950,0" time="360" tween="sine" easing="out" />
 					<effect type="rotate" center="auto" start="6" end="0" time="1080" tween="bounce" easing="out" />
@@ -1752,7 +1752,7 @@
 				<textcolor>$PARAM[col51]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,5) | String.EndsWith(Container(110).Currentitem,25) | String.EndsWith(Container(110).Currentitem,45) | String.EndsWith(Container(110).Currentitem,65) | String.EndsWith(Container(110).Currentitem,85) | String.EndsWith(Container(110).Currentitem,05)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,5) | String.EndsWith(Container(110).CurrentItem,25) | String.EndsWith(Container(110).CurrentItem,45) | String.EndsWith(Container(110).CurrentItem,65) | String.EndsWith(Container(110).CurrentItem,85) | String.EndsWith(Container(110).CurrentItem,05)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="10,70" />
 					<effect type="slide" delay="300" end="-1960,0" time="360" tween="sine" easing="out" />
@@ -1768,7 +1768,7 @@
 				<textcolor>$PARAM[col52]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,5) | String.EndsWith(Container(110).Currentitem,25) | String.EndsWith(Container(110).Currentitem,45) | String.EndsWith(Container(110).Currentitem,65) | String.EndsWith(Container(110).Currentitem,85) | String.EndsWith(Container(110).Currentitem,05)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,5) | String.EndsWith(Container(110).CurrentItem,25) | String.EndsWith(Container(110).CurrentItem,45) | String.EndsWith(Container(110).CurrentItem,65) | String.EndsWith(Container(110).CurrentItem,85) | String.EndsWith(Container(110).CurrentItem,05)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="10,140" />
 					<effect type="slide" delay="600" end="-1960,0" time="360" tween="sine" easing="out" />
@@ -1785,7 +1785,7 @@
 			</control>
 			<control type="label">
 				<wrapmultiline>true</wrapmultiline>
-				<visible>String.IsEqual(Container(110).Currentitem,5) | String.EndsWith(Container(110).Currentitem,25) | String.EndsWith(Container(110).Currentitem,45) | String.EndsWith(Container(110).Currentitem,65) | String.EndsWith(Container(110).Currentitem,85) | String.EndsWith(Container(110).Currentitem,05)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,5) | String.EndsWith(Container(110).CurrentItem,25) | String.EndsWith(Container(110).CurrentItem,45) | String.EndsWith(Container(110).CurrentItem,65) | String.EndsWith(Container(110).CurrentItem,85) | String.EndsWith(Container(110).CurrentItem,05)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="10,210" />
 					<effect type="slide" delay="900" end="-1960,0" time="360" tween="sine" easing="out" />
@@ -1813,7 +1813,7 @@
 				<top>$PARAM[6_top]</top>
 				<left>$PARAM[6_left]</left>
 				<control type="label">
-					<visible>String.IsEqual(Container(110).Currentitem,6) | String.EndsWith(Container(110).Currentitem,26) | String.EndsWith(Container(110).Currentitem,46) | String.EndsWith(Container(110).Currentitem,66) | String.EndsWith(Container(110).Currentitem,86) | String.EndsWith(Container(110).Currentitem,06)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,6) | String.EndsWith(Container(110).CurrentItem,26) | String.EndsWith(Container(110).CurrentItem,46) | String.EndsWith(Container(110).CurrentItem,66) | String.EndsWith(Container(110).CurrentItem,86) | String.EndsWith(Container(110).CurrentItem,06)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" end="0,-130" time="300" tween="sine" easing="out" />
 						<effect type="slide" delay="360" end="0,-160" time="300" tween="sine" easing="out" />
@@ -1832,7 +1832,7 @@
 				</control>
 				<control type="label">
 					<left>250</left>
-					<visible>String.IsEqual(Container(110).Currentitem,6) | String.EndsWith(Container(110).Currentitem,26) | String.EndsWith(Container(110).Currentitem,46) | String.EndsWith(Container(110).Currentitem,66) | String.EndsWith(Container(110).Currentitem,86) | String.EndsWith(Container(110).Currentitem,06)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,6) | String.EndsWith(Container(110).CurrentItem,26) | String.EndsWith(Container(110).CurrentItem,46) | String.EndsWith(Container(110).CurrentItem,66) | String.EndsWith(Container(110).CurrentItem,86) | String.EndsWith(Container(110).CurrentItem,06)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="360" end="0,-160" time="300" tween="sine" easing="out" />
 						<effect type="slide" delay="720" end="0,-160" time="300" tween="sine" easing="out" />
@@ -1858,7 +1858,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.IsEqual(Container(110).Currentitem,6) | String.EndsWith(Container(110).Currentitem,26) | String.EndsWith(Container(110).Currentitem,46) | String.EndsWith(Container(110).Currentitem,66) | String.EndsWith(Container(110).Currentitem,86) | String.EndsWith(Container(110).Currentitem,06)</visible>
+						<visible>String.IsEqual(Container(110).CurrentItem,6) | String.EndsWith(Container(110).CurrentItem,26) | String.EndsWith(Container(110).CurrentItem,46) | String.EndsWith(Container(110).CurrentItem,66) | String.EndsWith(Container(110).CurrentItem,86) | String.EndsWith(Container(110).CurrentItem,06)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="slide" end="200,0" />
 							<effect type="zoom" delay="720" center="auto" start="0" end="100" time="300" tween="sine" easing="out" />
@@ -1877,7 +1877,7 @@
 						<width max="625">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.IsEqual(Container(110).Currentitem,6) | String.EndsWith(Container(110).Currentitem,26) | String.EndsWith(Container(110).Currentitem,46) | String.EndsWith(Container(110).Currentitem,66) | String.EndsWith(Container(110).Currentitem,86) | String.EndsWith(Container(110).Currentitem,06)</visible>
+						<visible>String.IsEqual(Container(110).CurrentItem,6) | String.EndsWith(Container(110).CurrentItem,26) | String.EndsWith(Container(110).CurrentItem,46) | String.EndsWith(Container(110).CurrentItem,66) | String.EndsWith(Container(110).CurrentItem,86) | String.EndsWith(Container(110).CurrentItem,06)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="slide" end="0,74" />
 							<effect type="zoom" delay="1320" center="auto" start="0" end="100" time="420" tween="back" easing="out" />
@@ -1899,7 +1899,7 @@
 		<param name="col73" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,7) | String.EndsWith(Container(110).Currentitem,27) | String.EndsWith(Container(110).Currentitem,47) | String.EndsWith(Container(110).Currentitem,67) | String.EndsWith(Container(110).Currentitem,87) | String.EndsWith(Container(110).Currentitem,07)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,7) | String.EndsWith(Container(110).CurrentItem,27) | String.EndsWith(Container(110).CurrentItem,47) | String.EndsWith(Container(110).CurrentItem,67) | String.EndsWith(Container(110).CurrentItem,87) | String.EndsWith(Container(110).CurrentItem,07)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-300" />
 					<effect type="slide" end="0,700" time="1000" tween="bounce" easing="out" />
@@ -1919,7 +1919,7 @@
 					<effect type="slide" end="0,700" time="1200" tween="bounce" easing="out" />
 					<effect type="rotate" start="440" center="auto" end="360" time="1200" tween="cubic" easing="out" />
 				</animation>
-				<visible>String.IsEqual(Container(110).Currentitem,7) | String.EndsWith(Container(110).Currentitem,27) | String.EndsWith(Container(110).Currentitem,47) | String.EndsWith(Container(110).Currentitem,67) | String.EndsWith(Container(110).Currentitem,87) | String.EndsWith(Container(110).Currentitem,07)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,7) | String.EndsWith(Container(110).CurrentItem,27) | String.EndsWith(Container(110).CurrentItem,47) | String.EndsWith(Container(110).CurrentItem,67) | String.EndsWith(Container(110).CurrentItem,87) | String.EndsWith(Container(110).CurrentItem,07)</visible>
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
@@ -1929,7 +1929,7 @@
 				<textcolor>$PARAM[col72]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,7) | String.EndsWith(Container(110).Currentitem,27) | String.EndsWith(Container(110).Currentitem,47) | String.EndsWith(Container(110).Currentitem,67) | String.EndsWith(Container(110).Currentitem,87) | String.EndsWith(Container(110).Currentitem,07)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,7) | String.EndsWith(Container(110).CurrentItem,27) | String.EndsWith(Container(110).CurrentItem,47) | String.EndsWith(Container(110).CurrentItem,67) | String.EndsWith(Container(110).CurrentItem,87) | String.EndsWith(Container(110).CurrentItem,07)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-300" />
 					<effect type="slide" end="0,700" time="1400" tween="bounce" easing="out" />
@@ -1953,7 +1953,7 @@
 			<control type="group">
 				<left>$PARAM[7b_left]</left>
 				<top>$PARAM[7b_top]</top>
-				<visible>String.IsEqual(Container(110).Currentitem,7) | String.EndsWith(Container(110).Currentitem,27) | String.EndsWith(Container(110).Currentitem,47) | String.EndsWith(Container(110).Currentitem,67) | String.EndsWith(Container(110).Currentitem,87) | String.EndsWith(Container(110).Currentitem,07)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,7) | String.EndsWith(Container(110).CurrentItem,27) | String.EndsWith(Container(110).CurrentItem,47) | String.EndsWith(Container(110).CurrentItem,67) | String.EndsWith(Container(110).CurrentItem,87) | String.EndsWith(Container(110).CurrentItem,07)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" delay="270" start="0,200" end="0,0" time="420" tween="back" />
 				</animation>
@@ -1977,7 +1977,7 @@
 		<param name="col83" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,8) | String.EndsWith(Container(110).Currentitem,28) | String.EndsWith(Container(110).Currentitem,48) | String.EndsWith(Container(110).Currentitem,68) | String.EndsWith(Container(110).Currentitem,88) | String.EndsWith(Container(110).Currentitem,08)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,8) | String.EndsWith(Container(110).CurrentItem,28) | String.EndsWith(Container(110).CurrentItem,48) | String.EndsWith(Container(110).CurrentItem,68) | String.EndsWith(Container(110).CurrentItem,88) | String.EndsWith(Container(110).CurrentItem,08)</visible>
 				<animation effect="slide" end="-15,0" condition="true">Conditional</animation>
 				<animation type="Visible" reversible="false">
 					<effect type="fade" delay="50" start="0" end="100" time="1" />
@@ -1993,7 +1993,7 @@
 				<textcolor>$PARAM[col81]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,8) | String.EndsWith(Container(110).Currentitem,28) | String.EndsWith(Container(110).Currentitem,48) | String.EndsWith(Container(110).Currentitem,68) | String.EndsWith(Container(110).Currentitem,88) | String.EndsWith(Container(110).Currentitem,08)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,8) | String.EndsWith(Container(110).CurrentItem,28) | String.EndsWith(Container(110).CurrentItem,48) | String.EndsWith(Container(110).CurrentItem,68) | String.EndsWith(Container(110).CurrentItem,88) | String.EndsWith(Container(110).CurrentItem,08)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="fade" delay="50" start="0" end="100" time="1" />
 					<effect type="rotatex" center="0,0" start="90" end="0" time="900" tween="sine" easing="out" />
@@ -2008,7 +2008,7 @@
 				<textcolor>$PARAM[col82]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.IsEqual(Container(110).Currentitem,8) | String.EndsWith(Container(110).Currentitem,28) | String.EndsWith(Container(110).Currentitem,48) | String.EndsWith(Container(110).Currentitem,68) | String.EndsWith(Container(110).Currentitem,88) | String.EndsWith(Container(110).Currentitem,08)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,8) | String.EndsWith(Container(110).CurrentItem,28) | String.EndsWith(Container(110).CurrentItem,48) | String.EndsWith(Container(110).CurrentItem,68) | String.EndsWith(Container(110).CurrentItem,88) | String.EndsWith(Container(110).CurrentItem,08)</visible>
 				<animation effect="slide" end="15,0" condition="true">Conditional</animation>
 				<animation type="Visible" reversible="false">
 					<effect type="fade" delay="50" start="0" end="100" time="1" />
@@ -2033,7 +2033,7 @@
 			<control type="group">
 				<left>$PARAM[8b_left]</left>
 				<top>$PARAM[8b_top]</top>
-				<visible>String.IsEqual(Container(110).Currentitem,8) | String.EndsWith(Container(110).Currentitem,28) | String.EndsWith(Container(110).Currentitem,48) | String.EndsWith(Container(110).Currentitem,68) | String.EndsWith(Container(110).Currentitem,88) | String.EndsWith(Container(110).Currentitem,08)</visible>
+				<visible>String.IsEqual(Container(110).CurrentItem,8) | String.EndsWith(Container(110).CurrentItem,28) | String.EndsWith(Container(110).CurrentItem,48) | String.EndsWith(Container(110).CurrentItem,68) | String.EndsWith(Container(110).CurrentItem,88) | String.EndsWith(Container(110).CurrentItem,08)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" delay="900" start="-800,0" end="0,0" time="600" tween="back" easing="out" />
 					<effect type="rotate" delay="900" center="auto" start="3" end="0" time="800" tween="bounce" easing="out" />
@@ -2065,7 +2065,7 @@
 				<top>$PARAM[9_top]</top>
 				<left>$PARAM[9_left]</left>
 				<control type="label">
-					<visible>String.IsEqual(Container(110).Currentitem,9) | String.EndsWith(Container(110).Currentitem,29) | String.EndsWith(Container(110).Currentitem,49) | String.EndsWith(Container(110).Currentitem,69) | String.EndsWith(Container(110).Currentitem,89) | String.EndsWith(Container(110).Currentitem,09)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,9) | String.EndsWith(Container(110).CurrentItem,29) | String.EndsWith(Container(110).CurrentItem,49) | String.EndsWith(Container(110).CurrentItem,69) | String.EndsWith(Container(110).CurrentItem,89) | String.EndsWith(Container(110).CurrentItem,09)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="480" start="0,-400" end="0,0" time="300" tween="back" easing="out" />
 						<effect type="rotate" center="720,270" delay="1080" start="35" end="0" time="300" tween="back" easing="out" />
@@ -2080,7 +2080,7 @@
 					<textcolor>$PARAM[col93]</textcolor>
 				</control>
 				<control type="label">
-					<visible>String.IsEqual(Container(110).Currentitem,9) | String.EndsWith(Container(110).Currentitem,29) | String.EndsWith(Container(110).Currentitem,49) | String.EndsWith(Container(110).Currentitem,69) | String.EndsWith(Container(110).Currentitem,89) | String.EndsWith(Container(110).Currentitem,09)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,9) | String.EndsWith(Container(110).CurrentItem,29) | String.EndsWith(Container(110).CurrentItem,49) | String.EndsWith(Container(110).CurrentItem,69) | String.EndsWith(Container(110).CurrentItem,89) | String.EndsWith(Container(110).CurrentItem,09)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="180" start="0,-400" end="0,0" time="420" tween="back" easing="out" />
 						<effect type="rotate" center="720,270" delay="1080" start="35" end="0" time="360" tween="back" easing="out" />
@@ -2095,7 +2095,7 @@
 					<textcolor>$PARAM[col92]</textcolor>
 				</control>
 				<control type="label">
-					<visible>String.IsEqual(Container(110).Currentitem,9) | String.EndsWith(Container(110).Currentitem,29) | String.EndsWith(Container(110).Currentitem,49) | String.EndsWith(Container(110).Currentitem,69) | String.EndsWith(Container(110).Currentitem,89) | String.EndsWith(Container(110).Currentitem,09)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,9) | String.EndsWith(Container(110).CurrentItem,29) | String.EndsWith(Container(110).CurrentItem,49) | String.EndsWith(Container(110).CurrentItem,69) | String.EndsWith(Container(110).CurrentItem,89) | String.EndsWith(Container(110).CurrentItem,09)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" start="0,-400" end="0,0" time="300" tween="back" easing="out" />
 						<effect type="rotate" center="720,270" delay="1080" start="35" end="0" time="420" tween="back" easing="out" />
@@ -2114,7 +2114,7 @@
 					<top>30</top>
 					<width>600</width>
 					<height>600</height>
-					<visible>String.IsEqual(Container(110).Currentitem,9) | String.EndsWith(Container(110).Currentitem,29) | String.EndsWith(Container(110).Currentitem,49) | String.EndsWith(Container(110).Currentitem,69) | String.EndsWith(Container(110).Currentitem,89) | String.EndsWith(Container(110).Currentitem,09)</visible>
+					<visible>String.IsEqual(Container(110).CurrentItem,9) | String.EndsWith(Container(110).CurrentItem,29) | String.EndsWith(Container(110).CurrentItem,49) | String.EndsWith(Container(110).CurrentItem,69) | String.EndsWith(Container(110).CurrentItem,89) | String.EndsWith(Container(110).CurrentItem,09)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="840" start="600,0" end="0,0" time="420" tween="back" easing="out" />
 						<effect type="rotate" delay="840" center="auto" start="4" end="0" time="720" tween="bounce" easing="out" />
@@ -2135,7 +2135,7 @@
 		<definition>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="0" end="0" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,10) | String.EndsWith(Container(110).Currentitem,30) | String.EndsWith(Container(110).Currentitem,50) | String.EndsWith(Container(110).Currentitem,70) | String.EndsWith(Container(110).Currentitem,90)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,10) | String.EndsWith(Container(110).CurrentItem,30) | String.EndsWith(Container(110).CurrentItem,50) | String.EndsWith(Container(110).CurrentItem,70) | String.EndsWith(Container(110).CurrentItem,90)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-700" />
 					<effect type="slide" delay="10" end="0,700" time="1" />
@@ -2151,7 +2151,7 @@
 			</control>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="0" end="0" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,10) | String.EndsWith(Container(110).Currentitem,30) | String.EndsWith(Container(110).Currentitem,50) | String.EndsWith(Container(110).Currentitem,70) | String.EndsWith(Container(110).Currentitem,90)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,10) | String.EndsWith(Container(110).CurrentItem,30) | String.EndsWith(Container(110).CurrentItem,50) | String.EndsWith(Container(110).CurrentItem,70) | String.EndsWith(Container(110).CurrentItem,90)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-700" />
 					<effect type="slide" delay="410" end="0,710" time="1" />
@@ -2167,7 +2167,7 @@
 			</control>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="0" end="0" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,10) | String.EndsWith(Container(110).Currentitem,30) | String.EndsWith(Container(110).Currentitem,50) | String.EndsWith(Container(110).Currentitem,70) | String.EndsWith(Container(110).Currentitem,90)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,10) | String.EndsWith(Container(110).CurrentItem,30) | String.EndsWith(Container(110).CurrentItem,50) | String.EndsWith(Container(110).CurrentItem,70) | String.EndsWith(Container(110).CurrentItem,90)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-700" />
 					<effect type="slide" delay="830" end="0,720" time="1" />
@@ -2191,7 +2191,7 @@
 			<control type="textbox">
 				<left>$PARAM[10b_left]</left>
 				<top>$PARAM[10b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,10) | String.EndsWith(Container(110).Currentitem,30) | String.EndsWith(Container(110).Currentitem,50) | String.EndsWith(Container(110).Currentitem,70) | String.EndsWith(Container(110).Currentitem,90)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,10) | String.EndsWith(Container(110).CurrentItem,30) | String.EndsWith(Container(110).CurrentItem,50) | String.EndsWith(Container(110).CurrentItem,70) | String.EndsWith(Container(110).CurrentItem,90)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="rotatex" delay="1260" center="400,0" start="-85" end="0" time="360" />
 				</animation>
@@ -2220,7 +2220,7 @@
 					<animation type="Visible" reversible="false">
 						<effect type="slide" start="0,-300" end="0,0" time="500" tween="sine" easing="out" />
 					</animation>
-					<visible>String.EndsWith(Container(110).Currentitem,11) | String.EndsWith(Container(110).Currentitem,31) | String.EndsWith(Container(110).Currentitem,51) | String.EndsWith(Container(110).Currentitem,71) | String.EndsWith(Container(110).Currentitem,91)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,11) | String.EndsWith(Container(110).CurrentItem,31) | String.EndsWith(Container(110).CurrentItem,51) | String.EndsWith(Container(110).CurrentItem,71) | String.EndsWith(Container(110).CurrentItem,91)</visible>
 					<top>-95</top>
 					<width>1920</width>
 					<height>125</height>
@@ -2249,7 +2249,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<visible>String.EndsWith(Container(110).Currentitem,11) | String.EndsWith(Container(110).Currentitem,31) | String.EndsWith(Container(110).Currentitem,51) | String.EndsWith(Container(110).Currentitem,71) | String.EndsWith(Container(110).Currentitem,91)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,11) | String.EndsWith(Container(110).CurrentItem,31) | String.EndsWith(Container(110).CurrentItem,51) | String.EndsWith(Container(110).CurrentItem,71) | String.EndsWith(Container(110).CurrentItem,91)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="0" start="500,0" end="0,0" time="500" tween="sine" easing="out" />
 					</animation>
@@ -2280,7 +2280,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<visible>String.EndsWith(Container(110).Currentitem,11) | String.EndsWith(Container(110).Currentitem,31) | String.EndsWith(Container(110).Currentitem,51) | String.EndsWith(Container(110).Currentitem,71) | String.EndsWith(Container(110).Currentitem,91)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,11) | String.EndsWith(Container(110).CurrentItem,31) | String.EndsWith(Container(110).CurrentItem,51) | String.EndsWith(Container(110).CurrentItem,71) | String.EndsWith(Container(110).CurrentItem,91)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="0" start="-500,0" end="0,0" time="500" tween="sine" easing="out" />
 					</animation>
@@ -2314,7 +2314,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<visible>String.EndsWith(Container(110).Currentitem,11) | String.EndsWith(Container(110).Currentitem,31) | String.EndsWith(Container(110).Currentitem,51) | String.EndsWith(Container(110).Currentitem,71) | String.EndsWith(Container(110).Currentitem,91)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,11) | String.EndsWith(Container(110).CurrentItem,31) | String.EndsWith(Container(110).CurrentItem,51) | String.EndsWith(Container(110).CurrentItem,71) | String.EndsWith(Container(110).CurrentItem,91)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="0" start="0,300" end="0,0" time="500" tween="sine" easing="out" />
 					</animation>
@@ -2359,7 +2359,7 @@
 				<top>$PARAM[12_top]</top>
 				<left>$PARAM[12_left]</left>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,12) | String.EndsWith(Container(110).Currentitem,32) | String.EndsWith(Container(110).Currentitem,52) | String.EndsWith(Container(110).Currentitem,72) | String.EndsWith(Container(110).Currentitem,92)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,12) | String.EndsWith(Container(110).CurrentItem,32) | String.EndsWith(Container(110).CurrentItem,52) | String.EndsWith(Container(110).CurrentItem,72) | String.EndsWith(Container(110).CurrentItem,92)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="zoom" center="auto" start="0" end="100" time="240" />
 					</animation>
@@ -2397,7 +2397,7 @@
 				<visible>true</visible>
 				<align>center</align>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,12) | String.EndsWith(Container(110).Currentitem,32) | String.EndsWith(Container(110).Currentitem,52) | String.EndsWith(Container(110).Currentitem,72) | String.EndsWith(Container(110).Currentitem,92)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,12) | String.EndsWith(Container(110).CurrentItem,32) | String.EndsWith(Container(110).CurrentItem,52) | String.EndsWith(Container(110).CurrentItem,72) | String.EndsWith(Container(110).CurrentItem,92)</visible>
 					<width>auto</width>
 					<height>350</height>
 					<label>$INFO[Container(110).ListItem.Property(part2)]</label>
@@ -2407,7 +2407,7 @@
 					<textcolor>00fFFFFF</textcolor>
 				</control>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,12) | String.EndsWith(Container(110).Currentitem,32) | String.EndsWith(Container(110).Currentitem,52) | String.EndsWith(Container(110).Currentitem,72) | String.EndsWith(Container(110).Currentitem,92)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,12) | String.EndsWith(Container(110).CurrentItem,32) | String.EndsWith(Container(110).CurrentItem,52) | String.EndsWith(Container(110).CurrentItem,72) | String.EndsWith(Container(110).CurrentItem,92)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" end="0,-700" />
 						<effect type="slide" end="0,700" time="1" />
@@ -2433,7 +2433,7 @@
 				<visible>true</visible>
 				<align>center</align>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,12) | String.EndsWith(Container(110).Currentitem,32) | String.EndsWith(Container(110).Currentitem,52) | String.EndsWith(Container(110).Currentitem,72) | String.EndsWith(Container(110).Currentitem,92)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,12) | String.EndsWith(Container(110).CurrentItem,32) | String.EndsWith(Container(110).CurrentItem,52) | String.EndsWith(Container(110).CurrentItem,72) | String.EndsWith(Container(110).CurrentItem,92)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" end="0,-700" />
 						<effect type="slide" end="0,700" time="1" />
@@ -2449,7 +2449,7 @@
 					<textcolor>$PARAM[col122]</textcolor>
 				</control>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,12) | String.EndsWith(Container(110).Currentitem,32) | String.EndsWith(Container(110).Currentitem,52) | String.EndsWith(Container(110).Currentitem,72) | String.EndsWith(Container(110).Currentitem,92)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,12) | String.EndsWith(Container(110).CurrentItem,32) | String.EndsWith(Container(110).CurrentItem,52) | String.EndsWith(Container(110).CurrentItem,72) | String.EndsWith(Container(110).CurrentItem,92)</visible>
 					<width>auto</width>
 					<height>350</height>
 					<label>$INFO[Container(110).ListItem.Property(part3)]</label>
@@ -2473,7 +2473,7 @@
 					<top>390</top>
 					<width>700</width>
 					<height>600</height>
-					<visible>String.EndsWith(Container(110).Currentitem,12) | String.EndsWith(Container(110).Currentitem,32) | String.EndsWith(Container(110).Currentitem,52) | String.EndsWith(Container(110).Currentitem,72) | String.EndsWith(Container(110).Currentitem,92)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,12) | String.EndsWith(Container(110).CurrentItem,32) | String.EndsWith(Container(110).CurrentItem,52) | String.EndsWith(Container(110).CurrentItem,72) | String.EndsWith(Container(110).CurrentItem,92)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="zoom" delay="960" center="960,400" start="0" end="100" time="240" />
 					</animation>
@@ -2493,7 +2493,7 @@
 		<param name="col133" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,33) | String.EndsWith(Container(110).Currentitem,53) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,93)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,13) | String.EndsWith(Container(110).CurrentItem,33) | String.EndsWith(Container(110).CurrentItem,53) | String.EndsWith(Container(110).CurrentItem,73) | String.EndsWith(Container(110).CurrentItem,93)</visible>
 				<animation effect="slide" end="-15,0" condition="true">Conditional</animation>
 				<animation type="Visible" reversible="false">
 					<effect type="zoom" center="auto" start="25" end="100" time="360" />
@@ -2509,7 +2509,7 @@
 				<textcolor>$PARAM[col131]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,33) | String.EndsWith(Container(110).Currentitem,53) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,93)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,13) | String.EndsWith(Container(110).CurrentItem,33) | String.EndsWith(Container(110).CurrentItem,53) | String.EndsWith(Container(110).CurrentItem,73) | String.EndsWith(Container(110).CurrentItem,93)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="zoom" center="auto" start="25" end="100" time="600" />
 					<effect type="rotate" center="auto" start="450" end="0" time="600" tween="sine" easing="out" />
@@ -2524,7 +2524,7 @@
 				<textcolor>$PARAM[col132]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,33) | String.EndsWith(Container(110).Currentitem,53) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,93)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,13) | String.EndsWith(Container(110).CurrentItem,33) | String.EndsWith(Container(110).CurrentItem,53) | String.EndsWith(Container(110).CurrentItem,73) | String.EndsWith(Container(110).CurrentItem,93)</visible>
 				<animation effect="slide" end="15,0" condition="true">Conditional</animation>
 				<animation type="Visible" reversible="false">
 					<effect type="zoom" center="auto" start="25" end="100" time="720" />
@@ -2549,7 +2549,7 @@
 			<control type="group">
 				<left>$PARAM[13b_left]</left>
 				<top>$PARAM[13b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,33) | String.EndsWith(Container(110).Currentitem,53) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,93)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,13) | String.EndsWith(Container(110).CurrentItem,33) | String.EndsWith(Container(110).CurrentItem,53) | String.EndsWith(Container(110).CurrentItem,73) | String.EndsWith(Container(110).CurrentItem,93)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="zoom" center="450,370" delay="840" start="25" end="100" tween="sine" easing="out" time="360" />
 				</animation>
@@ -2575,7 +2575,7 @@
 		<definition>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="4" end="4" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,14) | String.EndsWith(Container(110).Currentitem,34) | String.EndsWith(Container(110).Currentitem,54) | String.EndsWith(Container(110).Currentitem,74) | String.EndsWith(Container(110).Currentitem,94)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,14) | String.EndsWith(Container(110).CurrentItem,34) | String.EndsWith(Container(110).CurrentItem,54) | String.EndsWith(Container(110).CurrentItem,74) | String.EndsWith(Container(110).CurrentItem,94)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="-10,-400" />
 					<effect type="slide" delay="10" end="0,440" time="1" />
@@ -2592,7 +2592,7 @@
 			</control>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="4" end="4" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,14) | String.EndsWith(Container(110).Currentitem,34) | String.EndsWith(Container(110).Currentitem,54) | String.EndsWith(Container(110).Currentitem,74) | String.EndsWith(Container(110).Currentitem,94)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,14) | String.EndsWith(Container(110).CurrentItem,34) | String.EndsWith(Container(110).CurrentItem,54) | String.EndsWith(Container(110).CurrentItem,74) | String.EndsWith(Container(110).CurrentItem,94)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-400" />
 					<effect type="slide" delay="360" end="0,420" time="1" />
@@ -2609,7 +2609,7 @@
 			</control>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="4" end="4" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,14) | String.EndsWith(Container(110).Currentitem,34) | String.EndsWith(Container(110).Currentitem,54) | String.EndsWith(Container(110).Currentitem,74) | String.EndsWith(Container(110).Currentitem,94)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,14) | String.EndsWith(Container(110).CurrentItem,34) | String.EndsWith(Container(110).CurrentItem,54) | String.EndsWith(Container(110).CurrentItem,74) | String.EndsWith(Container(110).CurrentItem,94)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="10,-400" />
 					<effect type="slide" delay="710" end="0,400" time="1" />
@@ -2634,7 +2634,7 @@
 			<control type="textbox">
 				<left>$PARAM[14b_left]</left>
 				<top>$PARAM[14b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,14) | String.EndsWith(Container(110).Currentitem,34) | String.EndsWith(Container(110).Currentitem,54) | String.EndsWith(Container(110).Currentitem,74) | String.EndsWith(Container(110).Currentitem,94)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,14) | String.EndsWith(Container(110).CurrentItem,34) | String.EndsWith(Container(110).CurrentItem,54) | String.EndsWith(Container(110).CurrentItem,74) | String.EndsWith(Container(110).CurrentItem,94)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="fade" delay="1200" start="0" end="100" time="250" />
 					<effect type="zoom" center="960,500" delay="1200" start="0" end="105" time="250" tween="back" easing="out" />
@@ -2661,7 +2661,7 @@
 				<top>$PARAM[15_top]</top>
 				<left>$PARAM[15_left]</left>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,15) | String.EndsWith(Container(110).Currentitem,35) | String.EndsWith(Container(110).Currentitem,55) | String.EndsWith(Container(110).Currentitem,75) | String.EndsWith(Container(110).Currentitem,95)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,15) | String.EndsWith(Container(110).CurrentItem,35) | String.EndsWith(Container(110).CurrentItem,55) | String.EndsWith(Container(110).CurrentItem,75) | String.EndsWith(Container(110).CurrentItem,95)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" start="1000,0" end="100,0" time="420" tween="back" easing="out" />
 						<effect type="slide" delay="960" start="0,0" end="-200,0" time="420" tween="back" easing="out" />
@@ -2678,7 +2678,7 @@
 				</control>
 				<control type="label">
 					<left>50</left>
-					<visible>String.EndsWith(Container(110).Currentitem,15) | String.EndsWith(Container(110).Currentitem,35) | String.EndsWith(Container(110).Currentitem,55) | String.EndsWith(Container(110).Currentitem,75) | String.EndsWith(Container(110).Currentitem,95)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,15) | String.EndsWith(Container(110).CurrentItem,35) | String.EndsWith(Container(110).CurrentItem,55) | String.EndsWith(Container(110).CurrentItem,75) | String.EndsWith(Container(110).CurrentItem,95)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="180" start="1000,0" end="100,0" time="420" tween="back" easing="out" />
 						<effect type="slide" delay="960" start="0,0" end="-200,0" time="420" tween="back" easing="out" />
@@ -2693,7 +2693,7 @@
 					<textcolor>$PARAM[col152]</textcolor>
 				</control>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,15) | String.EndsWith(Container(110).Currentitem,35) | String.EndsWith(Container(110).Currentitem,55) | String.EndsWith(Container(110).Currentitem,75) | String.EndsWith(Container(110).Currentitem,95)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,15) | String.EndsWith(Container(110).CurrentItem,35) | String.EndsWith(Container(110).CurrentItem,55) | String.EndsWith(Container(110).CurrentItem,75) | String.EndsWith(Container(110).CurrentItem,95)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="360" start="1000,0" end="100,0" time="420" tween="back" easing="out" />
 						<effect type="slide" delay="960" start="0,0" end="-200,0" time="420" tween="back" easing="out" />
@@ -2713,7 +2713,7 @@
 					<top>10</top>
 					<width>550</width>
 					<height>600</height>
-					<visible>String.EndsWith(Container(110).Currentitem,15) | String.EndsWith(Container(110).Currentitem,35) | String.EndsWith(Container(110).Currentitem,55) | String.EndsWith(Container(110).Currentitem,75) | String.EndsWith(Container(110).Currentitem,95)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,15) | String.EndsWith(Container(110).CurrentItem,35) | String.EndsWith(Container(110).CurrentItem,55) | String.EndsWith(Container(110).CurrentItem,75) | String.EndsWith(Container(110).CurrentItem,95)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="780" start="100,-400" end="100,0" time="1440" tween="bounce" easing="out" />
 					</animation>
@@ -2732,7 +2732,7 @@
 		<param name="col163" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,16) | String.EndsWith(Container(110).Currentitem,36) | String.EndsWith(Container(110).Currentitem,56) | String.EndsWith(Container(110).Currentitem,76) | String.EndsWith(Container(110).Currentitem,96)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,16) | String.EndsWith(Container(110).CurrentItem,36) | String.EndsWith(Container(110).CurrentItem,56) | String.EndsWith(Container(110).CurrentItem,76) | String.EndsWith(Container(110).CurrentItem,96)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="-1500,0" />
 					<effect type="slide" end="1500,0" tween="sine" easing="out" time="500" />
@@ -2753,7 +2753,7 @@
 					<effect type="slide" delay="360" end="300,800" time="300" tween="sine" easing="out" />
 					<effect type="rotate" delay="1140" center="auto" end="393" time="720" tween="back" easing="out" />
 				</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,16) | String.EndsWith(Container(110).Currentitem,36) | String.EndsWith(Container(110).Currentitem,56) | String.EndsWith(Container(110).Currentitem,76) | String.EndsWith(Container(110).Currentitem,96)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,16) | String.EndsWith(Container(110).CurrentItem,36) | String.EndsWith(Container(110).CurrentItem,56) | String.EndsWith(Container(110).CurrentItem,76) | String.EndsWith(Container(110).CurrentItem,96)</visible>
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
@@ -2763,7 +2763,7 @@
 				<textcolor>$PARAM[col162]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,16) | String.EndsWith(Container(110).Currentitem,36) | String.EndsWith(Container(110).Currentitem,56) | String.EndsWith(Container(110).Currentitem,76) | String.EndsWith(Container(110).Currentitem,96)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,16) | String.EndsWith(Container(110).CurrentItem,36) | String.EndsWith(Container(110).CurrentItem,56) | String.EndsWith(Container(110).CurrentItem,76) | String.EndsWith(Container(110).CurrentItem,96)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="1000,0" />
 					<effect type="slide" delay="520" end="-1000,0" tween="sine" easing="out" time="500" />
@@ -2787,7 +2787,7 @@
 			<control type="group">
 				<left>$PARAM[16b_left]</left>
 				<top>$PARAM[16b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,16) | String.EndsWith(Container(110).Currentitem,36) | String.EndsWith(Container(110).Currentitem,56) | String.EndsWith(Container(110).Currentitem,76) | String.EndsWith(Container(110).Currentitem,96)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,16) | String.EndsWith(Container(110).CurrentItem,36) | String.EndsWith(Container(110).CurrentItem,56) | String.EndsWith(Container(110).CurrentItem,76) | String.EndsWith(Container(110).CurrentItem,96)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" delay="960" start="-800,0" end="0,0" tween="sine" easing="out" time="420" />
 					<effect type="rotate" delay="1080" center="auto" start="-4" end="0" time="720" tween="bounce" easing="out" />
@@ -2818,7 +2818,7 @@
 				<top>$PARAM[17_top]</top>
 				<left>$PARAM[17_left]</left>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,17) | String.EndsWith(Container(110).Currentitem,37) | String.EndsWith(Container(110).Currentitem,57) | String.EndsWith(Container(110).Currentitem,77) | String.EndsWith(Container(110).Currentitem,97)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,17) | String.EndsWith(Container(110).CurrentItem,37) | String.EndsWith(Container(110).CurrentItem,57) | String.EndsWith(Container(110).CurrentItem,77) | String.EndsWith(Container(110).CurrentItem,97)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="rotatex" center="62,0" start="275" end="360" time="1080" tween="bounce" easing="out" />
 						<effect type="rotate" center="auto" start="6" end="0" time="1080" tween="bounce" easing="out" />
@@ -2835,7 +2835,7 @@
 				</control>
 				<control type="label">
 					<left>50</left>
-					<visible>String.EndsWith(Container(110).Currentitem,17) | String.EndsWith(Container(110).Currentitem,37) | String.EndsWith(Container(110).Currentitem,57) | String.EndsWith(Container(110).Currentitem,77) | String.EndsWith(Container(110).Currentitem,97)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,17) | String.EndsWith(Container(110).CurrentItem,37) | String.EndsWith(Container(110).CurrentItem,57) | String.EndsWith(Container(110).CurrentItem,77) | String.EndsWith(Container(110).CurrentItem,97)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="rotatex" delay="360" center="175,0" start="275" end="360" time="1080" tween="bounce" easing="out" />
 					</animation>
@@ -2859,7 +2859,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,17) | String.EndsWith(Container(110).Currentitem,37) | String.EndsWith(Container(110).Currentitem,57) | String.EndsWith(Container(110).Currentitem,77) | String.EndsWith(Container(110).Currentitem,97)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,17) | String.EndsWith(Container(110).CurrentItem,37) | String.EndsWith(Container(110).CurrentItem,57) | String.EndsWith(Container(110).CurrentItem,77) | String.EndsWith(Container(110).CurrentItem,97)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="fade" delay="730" start="0" end="100" time="1" />
 							<effect type="rotatex" delay="720" center="30,0" start="275" end="360" time="1080" tween="bounce" easing="out" />
@@ -2877,7 +2877,7 @@
 						<width max="625">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.EndsWith(Container(110).Currentitem,17) | String.EndsWith(Container(110).Currentitem,37) | String.EndsWith(Container(110).Currentitem,57) | String.EndsWith(Container(110).Currentitem,77) | String.EndsWith(Container(110).Currentitem,97)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,17) | String.EndsWith(Container(110).CurrentItem,37) | String.EndsWith(Container(110).CurrentItem,57) | String.EndsWith(Container(110).CurrentItem,77) | String.EndsWith(Container(110).CurrentItem,97)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="slide" end="0,80" />
 							<effect type="fade" delay="730" start="0" end="100" time="1" />
@@ -2915,7 +2915,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="zoom" center="0,0" start="0" end="100" time="300" tween="sine" easing="out" />
 							<effect type="slide" delay="1250" end="50,0" time="180" tween="back" easing="out" />
@@ -2930,7 +2930,7 @@
 						<textcolor>$PARAM[col181]</textcolor>
 					</control>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<width>auto</width>
 						<height>125</height>
 						<label>$INFO[Container(110).ListItem.Property(part2)]</label>
@@ -2951,7 +2951,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part1)]</label>
@@ -2961,7 +2961,7 @@
 						<textcolor>00ffffff</textcolor>
 					</control>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="slide" end="0,30" />
 							<effect type="zoom" center="0,0" delay="300" start="0" end="50" time="300" tween="sine" easing="out" />
@@ -2990,7 +2990,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="zoom" center="0,0" delay="600" start="0" end="100" time="300" tween="sine" easing="out" />
 						</animation>
@@ -3007,7 +3007,7 @@
 						<width max="625">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<label> $INFO[Container(110).ListItem.Property(part4)]</label>
 						<font>lyr18b</font>
 						<shadowcolor>black</shadowcolor>
@@ -3026,7 +3026,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<width>auto</width>
 						<height>600</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
@@ -3040,7 +3040,7 @@
 						<width max="625">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="slide" delay="900" end="0,47" time="300" tween="sine" easing="out" />
 							<effect type="zoom" center="0,0" delay="900" start="0" end="100" time="300" tween="sine" easing="out" />
@@ -3062,7 +3062,7 @@
 		<definition>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="0" end="0" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,19) | String.EndsWith(Container(110).Currentitem,39) | String.EndsWith(Container(110).Currentitem,59) | String.EndsWith(Container(110).Currentitem,79) | String.EndsWith(Container(110).Currentitem,99)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,19) | String.EndsWith(Container(110).CurrentItem,39) | String.EndsWith(Container(110).CurrentItem,59) | String.EndsWith(Container(110).CurrentItem,79) | String.EndsWith(Container(110).CurrentItem,99)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-550" />
 					<effect type="slide" delay="12" end="0,605" time="300" />
@@ -3077,7 +3077,7 @@
 			</control>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="0" end="0" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,19) | String.EndsWith(Container(110).Currentitem,39) | String.EndsWith(Container(110).Currentitem,59) | String.EndsWith(Container(110).Currentitem,79) | String.EndsWith(Container(110).Currentitem,99)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,19) | String.EndsWith(Container(110).CurrentItem,39) | String.EndsWith(Container(110).CurrentItem,59) | String.EndsWith(Container(110).CurrentItem,79) | String.EndsWith(Container(110).CurrentItem,99)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-550" />
 					<effect type="slide" delay="360" end="0,615" time="300" />
@@ -3092,7 +3092,7 @@
 			</control>
 			<control type="label">
 				<animation effect="rotate" center="auto" start="0" end="0" condition="true">Conditional</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,19) | String.EndsWith(Container(110).Currentitem,39) | String.EndsWith(Container(110).Currentitem,59) | String.EndsWith(Container(110).Currentitem,79) | String.EndsWith(Container(110).Currentitem,99)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,19) | String.EndsWith(Container(110).CurrentItem,39) | String.EndsWith(Container(110).CurrentItem,59) | String.EndsWith(Container(110).CurrentItem,79) | String.EndsWith(Container(110).CurrentItem,99)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" end="0,-550" />
 					<effect type="slide" delay="720" end="0,625" time="300" />
@@ -3115,7 +3115,7 @@
 			<control type="textbox">
 				<left>$PARAM[19b_left]</left>
 				<top>$PARAM[19b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,19) | String.EndsWith(Container(110).Currentitem,39) | String.EndsWith(Container(110).Currentitem,59) | String.EndsWith(Container(110).Currentitem,79) | String.EndsWith(Container(110).Currentitem,99)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,19) | String.EndsWith(Container(110).CurrentItem,39) | String.EndsWith(Container(110).CurrentItem,59) | String.EndsWith(Container(110).CurrentItem,79) | String.EndsWith(Container(110).CurrentItem,99)</visible>
 				<animation type="Visible" reversible="false">
 					<effect type="slide" delay="1260" start="1200,115" end="100,115" time="360" tween="back" easing="out" />
 				</animation>
@@ -3141,7 +3141,7 @@
 				<top>$PARAM[20_top]</top>
 				<left>$PARAM[20_left]</left>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,20) | String.EndsWith(Container(110).Currentitem,40) | String.EndsWith(Container(110).Currentitem,60) | String.EndsWith(Container(110).Currentitem,80) | String.EndsWith(Container(110).Currentitem,00)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,20) | String.EndsWith(Container(110).CurrentItem,40) | String.EndsWith(Container(110).CurrentItem,60) | String.EndsWith(Container(110).CurrentItem,80) | String.EndsWith(Container(110).CurrentItem,00)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="zoom" center="auto" start="400" end="100" tween="back" easing="out" time="600" />
 						<effect type="slide" delay="1000" start="0,0" end="0,-200" time="420" tween="back" easing="out" />
@@ -3165,7 +3165,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,20) | String.EndsWith(Container(110).Currentitem,40) | String.EndsWith(Container(110).Currentitem,60) | String.EndsWith(Container(110).Currentitem,80) | String.EndsWith(Container(110).Currentitem,00)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,20) | String.EndsWith(Container(110).CurrentItem,40) | String.EndsWith(Container(110).CurrentItem,60) | String.EndsWith(Container(110).CurrentItem,80) | String.EndsWith(Container(110).CurrentItem,00)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="zoom" center="auto" start="400" end="100" tween="back" easing="out" time="800" />
 							<effect type="slide" delay="1000" start="0,0" end="0,-200" time="480" tween="back" easing="out" />
@@ -3179,7 +3179,7 @@
 						<textcolor>$PARAM[col202]</textcolor>
 					</control>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,20) | String.EndsWith(Container(110).Currentitem,40) | String.EndsWith(Container(110).Currentitem,60) | String.EndsWith(Container(110).Currentitem,80) | String.EndsWith(Container(110).Currentitem,00)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,20) | String.EndsWith(Container(110).CurrentItem,40) | String.EndsWith(Container(110).CurrentItem,60) | String.EndsWith(Container(110).CurrentItem,80) | String.EndsWith(Container(110).CurrentItem,00)</visible>
 						<animation type="Visible" reversible="false">
 							<effect type="zoom" center="auto" start="400" end="100" tween="back" easing="out" time="1000" />
 							<effect type="slide" delay="1000" start="0,0" end="0,-200" time="540" tween="back" easing="out" />
@@ -3198,7 +3198,7 @@
 					<top>178</top>
 					<width>700</width>
 					<height>600</height>
-					<visible>String.EndsWith(Container(110).Currentitem,20) | String.EndsWith(Container(110).Currentitem,40) | String.EndsWith(Container(110).Currentitem,60) | String.EndsWith(Container(110).Currentitem,80) | String.EndsWith(Container(110).Currentitem,00)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,20) | String.EndsWith(Container(110).CurrentItem,40) | String.EndsWith(Container(110).CurrentItem,60) | String.EndsWith(Container(110).CurrentItem,80) | String.EndsWith(Container(110).CurrentItem,00)</visible>
 					<animation type="Visible" reversible="false">
 						<effect type="slide" delay="1200" start="400,0" end="0,0" time="300" tween="sine" easing="out" />
 						<effect type="rotate" delay="1200" center="auto" start="4" end="0" time="720" tween="bounce" easing="out" />
@@ -3219,7 +3219,7 @@
 		<param name="col13" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,1)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,1)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3233,7 +3233,7 @@
 			<control type="label">
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,1)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,1)</visible>
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
@@ -3243,7 +3243,7 @@
 				<textcolor>$PARAM[col12]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,1)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,1)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3264,7 +3264,7 @@
 			<control type="group">
 				<left>$PARAM[1b_left]</left>
 				<top>$PARAM[1b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,1)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,1)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<control type="textbox">
@@ -3293,7 +3293,7 @@
 				<top>$PARAM[2_top]</top>
 				<left>$PARAM[2_left]</left>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,2)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,2)</visible>
 					<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 					<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 					<left>50</left>
@@ -3308,7 +3308,7 @@
 				</control>
 				<control type="label">
 					<left>50</left>
-					<visible>String.EndsWith(Container(110).Currentitem,2)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,2)</visible>
 					<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 					<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 					<top>193</top>
@@ -3331,7 +3331,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,2)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,2)</visible>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<width>auto</width>
@@ -3347,7 +3347,7 @@
 						<width max="625">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.EndsWith(Container(110).Currentitem,2)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,2)</visible>
 						<animation effect="slide" end="0,80" condition="true">Conditional</animation>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3367,7 +3367,7 @@
 		<param name="col33" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,3)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,3)</visible>
 				<animation effect="slide" start="0,-400" end="-15,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3379,7 +3379,7 @@
 				<textcolor>$PARAM[col31]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,3)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,3)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3391,7 +3391,7 @@
 				<textcolor>$PARAM[col32]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,3)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,3)</visible>
 				<animation effect="slide" start="0,-400" end="15,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3412,7 +3412,7 @@
 			<control type="group">
 				<left>$PARAM[3b_left]</left>
 				<top>$PARAM[3b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,3)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,3)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<control type="textbox">
@@ -3451,7 +3451,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,4)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,4)</visible>
 						<animation effect="slide" end="0,4" condition="true">Conditional</animation>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3464,7 +3464,7 @@
 						<textcolor>$PARAM[col41]</textcolor>
 					</control>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,4)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,4)</visible>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<width>auto</width>
@@ -3485,7 +3485,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,4)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,4)</visible>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<width>auto</width>
@@ -3501,7 +3501,7 @@
 						<width max="700">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.EndsWith(Container(110).Currentitem,4)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,4)</visible>
 						<animation effect="slide" end="0,28" condition="true">Conditional</animation>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3522,7 +3522,7 @@
 		<param name="col54" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,5)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,5)</visible>
 				<animation effect="slide" start="400,0" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3535,7 +3535,7 @@
 				<textcolor>$PARAM[col51]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,5)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,5)</visible>
 				<animation effect="slide" end="10,60" condition="true">Conditional</animation>
 				<animation effect="slide" start="400,0" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3549,7 +3549,7 @@
 				<textcolor>$PARAM[col52]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,5)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,5)</visible>
 				<animation effect="slide" end="20,120" condition="true">Conditional</animation>
 				<animation effect="slide" start="400,0" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3564,7 +3564,7 @@
 			</control>
 			<control type="label">
 				<wrapmultiline>true</wrapmultiline>
-				<visible>String.EndsWith(Container(110).Currentitem,5)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,5)</visible>
 				<animation effect="slide" end="30,200" condition="true">Conditional</animation>
 				<animation effect="slide" start="400,0" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3584,7 +3584,7 @@
 		<param name="col63" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,6)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,6)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3598,7 +3598,7 @@
 			<control type="label">
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
-				<visible>String.EndsWith(Container(110).Currentitem,6)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,6)</visible>
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
@@ -3608,7 +3608,7 @@
 				<textcolor>$PARAM[col62]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,6)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,6)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3629,7 +3629,7 @@
 			<control type="group">
 				<left>$PARAM[6b_left]</left>
 				<top>$PARAM[6b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,6)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,6)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<control type="textbox">
@@ -3658,7 +3658,7 @@
 				<top>$PARAM[7_top]</top>
 				<left>$PARAM[7_left]</left>
 				<control type="label">
-					<visible>String.EndsWith(Container(110).Currentitem,7)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,7)</visible>
 					<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 					<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 					<left>50</left>
@@ -3673,7 +3673,7 @@
 				</control>
 				<control type="label">
 					<left>50</left>
-					<visible>String.EndsWith(Container(110).Currentitem,7)</visible>
+					<visible>String.EndsWith(Container(110).CurrentItem,7)</visible>
 					<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 					<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 					<top>193</top>
@@ -3696,7 +3696,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,7)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,7)</visible>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<width>auto</width>
@@ -3712,7 +3712,7 @@
 						<width max="625">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.EndsWith(Container(110).Currentitem,7)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,7)</visible>
 						<animation effect="slide" end="0,80" condition="true">Conditional</animation>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3732,7 +3732,7 @@
 		<param name="col83" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,8)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,8)</visible>
 				<animation effect="slide" start="0,-400" end="-15,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3744,7 +3744,7 @@
 				<textcolor>$PARAM[col81]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,8)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,8)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3756,7 +3756,7 @@
 				<textcolor>$PARAM[col82]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,8)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,8)</visible>
 				<animation effect="slide" start="0,-400" end="15,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3777,7 +3777,7 @@
 			<control type="group">
 				<left>$PARAM[8b_left]</left>
 				<top>$PARAM[8b_top]</top>
-				<visible>String.EndsWith(Container(110).Currentitem,8)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,8)</visible>
 				<animation effect="slide" start="0,-400" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<control type="textbox">
@@ -3816,7 +3816,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,9)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,9)</visible>
 						<animation effect="slide" end="0,4" condition="true">Conditional</animation>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3829,7 +3829,7 @@
 						<textcolor>$PARAM[col91]</textcolor>
 					</control>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,9)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,9)</visible>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<width>auto</width>
@@ -3850,7 +3850,7 @@
 					<visible>true</visible>
 					<align>center</align>
 					<control type="label">
-						<visible>String.EndsWith(Container(110).Currentitem,9)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,9)</visible>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<width>auto</width>
@@ -3866,7 +3866,7 @@
 						<width max="700">auto</width>
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
-						<visible>String.EndsWith(Container(110).Currentitem,9)</visible>
+						<visible>String.EndsWith(Container(110).CurrentItem,9)</visible>
 						<animation effect="slide" end="0,28" condition="true">Conditional</animation>
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3887,7 +3887,7 @@
 		<param name="col04" default="black" />
 		<definition>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,0)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,0)</visible>
 				<animation effect="slide" start="400,0" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 				<width>auto</width>
@@ -3900,7 +3900,7 @@
 				<textcolor>$PARAM[col01]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,0)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,0)</visible>
 				<animation effect="slide" end="10,60" condition="true">Conditional</animation>
 				<animation effect="slide" start="400,0" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3914,7 +3914,7 @@
 				<textcolor>$PARAM[col02]</textcolor>
 			</control>
 			<control type="label">
-				<visible>String.EndsWith(Container(110).Currentitem,0)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,0)</visible>
 				<animation effect="slide" end="20,120" condition="true">Conditional</animation>
 				<animation effect="slide" start="400,0" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3929,7 +3929,7 @@
 			</control>
 			<control type="label">
 				<wrapmultiline>true</wrapmultiline>
-				<visible>String.EndsWith(Container(110).Currentitem,0)</visible>
+				<visible>String.EndsWith(Container(110).CurrentItem,0)</visible>
 				<animation effect="slide" end="30,200" condition="true">Conditional</animation>
 				<animation effect="slide" start="400,0" end="0,0" time="250" tween="sine" easing="out" reversible="false">Visible</animation>
 				<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
@@ -3945,39 +3945,39 @@
 	</include>
 	<!-- VARs -->
 	<variable name="Col_lyr1">
-		<value condition="String.EndsWith(Container(110).Currentitem,1)">ffffea4f</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,2)">ffff4d99</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,3)">ffff8554</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,4)">ff4a7eb8</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,5)">ffFF5354</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,6)">ff46e046</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,7)">ffFFEA4F</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,8)">ffFF4D99</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,9)">ffFF8655</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,1)">ffffea4f</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,2)">ffff4d99</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,3)">ffff8554</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,4)">ff4a7eb8</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,5)">ffFF5354</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,6)">ff46e046</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,7)">ffFFEA4F</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,8)">ffFF4D99</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,9)">ffFF8655</value>
 		<value>ff4A7EB8</value>
 	</variable>
 	<variable name="Col_lyr2">
-		<value condition="String.EndsWith(Container(110).Currentitem,1)">ff46e046</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,2)">ffffea4f</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,3)">ff46e046</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,4)">ffFF8655</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,5)">ff46E046</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,6)">ffffea4f</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,7)">ffFF8655</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,8)">ff46E046</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,9)">ffFFEA4F</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,1)">ff46e046</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,2)">ffffea4f</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,3)">ff46e046</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,4)">ffFF8655</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,5)">ff46E046</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,6)">ffffea4f</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,7)">ffFF8655</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,8)">ff46E046</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,9)">ffFFEA4F</value>
 		<value>ffFF5354</value>
 	</variable>
 	<variable name="Col_lyr3">
-		<value condition="String.EndsWith(Container(110).Currentitem,1)">ff4a7eb8</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,2)">ff4a80b9</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,3)">ffff4d99</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,4)">ffFF4D99</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,5)">ffFF8655</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,6)">ffff4d99</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,7)">ffFF5354</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,8)">ff4A7EB8</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,9)">ff46E046</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,1)">ff4a7eb8</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,2)">ff4a80b9</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,3)">ffff4d99</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,4)">ffFF4D99</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,5)">ffFF8655</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,6)">ffff4d99</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,7)">ffFF5354</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,8)">ff4A7EB8</value>
+		<value condition="String.EndsWith(Container(110).CurrentItem,9)">ff46E046</value>
 		<value>ffFFEA4F</value>
 	</variable>
 	<variable name="Col_lyr4">

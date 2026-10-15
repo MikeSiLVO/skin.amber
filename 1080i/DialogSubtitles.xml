@@ -113,7 +113,7 @@
 							<height>42</height>
 							<aspectratio>keep</aspectratio>
 							<texture>badges/icon_sync.png</texture>
-							<visible>ListItem.property(sync)</visible>
+							<visible>ListItem.Property(sync)</visible>
 						</control>
 						<control type="label" description="Language">
 							<left>76</left>
@@ -124,7 +124,7 @@
 							<scroll>false</scroll>
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!ListItem.property(sync)</visible>
+							<visible>!ListItem.Property(sync)</visible>
 						</control>
 						<control type="image">
 							<left>214</left>
@@ -133,7 +133,7 @@
 							<height>42</height>
 							<aspectratio>keep</aspectratio>
 							<texture>badges/icon_cc.png</texture>
-							<visible>ListItem.property(hearing_imp)</visible>
+							<visible>ListItem.Property(hearing_imp)</visible>
 						</control>
 						<control type="label" description="Title">
 							<left>274</left>
@@ -188,7 +188,7 @@
 							<height>42</height>
 							<aspectratio>keep</aspectratio>
 							<texture>badges/icon_sync.png</texture>
-							<visible>ListItem.property(sync)</visible>
+							<visible>ListItem.Property(sync)</visible>
 						</control>
 						<control type="label" description="Language">
 							<left>76</left>
@@ -201,7 +201,7 @@
 							<label>$INFO[ListItem.Label]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
-							<visible>!ListItem.property(sync)</visible>
+							<visible>!ListItem.Property(sync)</visible>
 						</control>
 						<control type="image">
 							<left>214</left>
@@ -210,7 +210,7 @@
 							<height>42</height>
 							<aspectratio>keep</aspectratio>
 							<texture>badges/icon_cc.png</texture>
-							<visible>ListItem.property(hearing_imp)</visible>
+							<visible>ListItem.Property(hearing_imp)</visible>
 						</control>
 						<control type="label" description="Title">
 							<left>274</left>
@@ -322,7 +322,7 @@
 						<width>348</width>
 						<height>54</height>
 						<font>ListDetails</font>
-						<onclick>dialog.close(all,true)</onclick>
+						<onclick>Dialog.Close(all,true)</onclick>
 						<onleft>120</onleft>
 						<onright>120</onright>
 						<onup>150</onup>

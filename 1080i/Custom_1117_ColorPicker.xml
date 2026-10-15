@@ -92,7 +92,7 @@
 						<top>-40</top>
 						<width>160</width>
 						<height>160</height>
-						<visible>Control.Hasfocus(3110)</visible>
+						<visible>Control.HasFocus(3110)</visible>
 						<animation effect="slide" end="0,80" condition="Container(3110).Row(1)">Conditional</animation>
 						<animation effect="slide" end="0,160" condition="Container(3110).Row(2)">Conditional</animation>
 						<animation effect="slide" end="0,240" condition="Container(3110).Row(3)">Conditional</animation>

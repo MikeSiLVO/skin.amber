@@ -77,7 +77,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
-						<visible>String.IsEmpty(Listitem.Icon)</visible>
+						<visible>String.IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="label">
 						<posx>160</posx>
@@ -87,7 +87,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
-						<visible>!String.IsEmpty(Listitem.Icon)</visible>
+						<visible>!String.IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="progress">
 						<posx>160</posx>
@@ -159,7 +159,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
-						<visible>String.IsEmpty(Listitem.Icon)</visible>
+						<visible>String.IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="label">
 						<posx>160</posx>
@@ -172,7 +172,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
-						<visible>!String.IsEmpty(Listitem.Icon)</visible>
+						<visible>!String.IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="progress">
 						<posx>160</posx>

@@ -6,7 +6,7 @@
 		<value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
 		<value condition="!String.IsEmpty(MusicPlayer.AlbumArtist)">$INFO[MusicPlayer.AlbumArtist]</value>
 		<value condition="!String.IsEmpty(VideoPlayer.Artist)">$INFO[VideoPlayer.Artist]</value>
-		<value condition="Pvr.IsPlayingRadio | VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelName]</value>
+		<value condition="PVR.IsPlayingRadio | VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelName]</value>
 		<value condition="Player.IsInternetStream">$LOCALIZE[31720]</value>
 		<value>$INFO[Player.Title]</value>
 	</variable>
@@ -17,7 +17,7 @@
 		<value condition="!String.IsEmpty(VideoPlayer.Album)">$INFO[VideoPlayer.Album]</value>
 		<value condition="Player.IsInternetStream + Player.HasAudio + !String.IsEmpty(MusicPlayer.BitRate)">$INFO[MusicPlayer.BitRate,,[LOWERCASE]kbps[/LOWERCASE]]</value>
 		<value condition="Player.IsInternetStream + Player.HasVideo + !String.IsEmpty(Player.Process(VideoHeight))">$INFO[Player.Process(VideoHeight),,[LOWERCASE]p[/LOWERCASE]]</value>
-		<value condition="Pvr.IsPlayingRadio">$LOCALIZE[19021]</value>
+		<value condition="PVR.IsPlayingRadio">$LOCALIZE[19021]</value>
 		<value condition="VideoPlayer.Content(livetv)">$LOCALIZE[19020]</value>
 	</variable>
 	<variable name="NowPlayingStatusVar">
@@ -41,7 +41,7 @@
 		<value condition="Player.HasVideo">DefaultVideo.png</value>
 	</variable>
 	<variable name="NowPlayingPlotLabelVar">
-		<value condition="Pvr.IsPlayingTv">$INFO[Player.Title,[B],[/B]] $INFO[VideoPlayer.StartTime,(, - ]$INFO[VideoPlayer.EndTime,,)]</value>
+		<value condition="PVR.IsPlayingTV">$INFO[Player.Title,[B],[/B]] $INFO[VideoPlayer.StartTime,(, - ]$INFO[VideoPlayer.EndTime,,)]</value>
 		<value condition="VideoPlayer.Content(episodes)">$INFO[Player.Title,[B],[/B]]</value>
 		<value condition="!String.IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Tagline,[B],[/B]]</value>
 		<value condition="!String.IsEmpty(VideoPlayer.Genre)">$INFO[VideoPlayer.Genre,[B],[/B]]</value>
@@ -914,7 +914,7 @@
 				<height>40</height>
 				<align>$PARAM[align]</align>
 				<font>Shelf_Title</font>
-				<label>$INFO[MusicPlayer.offset(1).Artist]</label>
+				<label>$INFO[MusicPlayer.Offset(1).Artist]</label>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="label">
@@ -922,7 +922,7 @@
 				<bottom>-10</bottom>
 				<align>$PARAM[align]</align>
 				<font>ListDetails</font>
-				<label>[COLOR $VAR[HighlightColor]]$INFO[MusicPlayer.offset(1).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset(1).Title]</label>
+				<label>[COLOR $VAR[HighlightColor]]$INFO[MusicPlayer.Offset(1).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.Offset(1).Title]</label>
 			</control>
 		</definition>
 	</include>
@@ -981,14 +981,14 @@
 				<height>38</height>
 				<align>$PARAM[align]</align>
 				<font>Shelf_Title</font>
-				<label>$INFO[MusicPlayer.offset($PARAM[offset]).Artist]</label>
+				<label>$INFO[MusicPlayer.Offset($PARAM[offset]).Artist]</label>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="label">
 				<height>30</height>
 				<align>$PARAM[align]</align>
 				<font>ListDetails</font>
-				<label>[COLOR $VAR[HighlightColor]]$INFO[MusicPlayer.offset($PARAM[offset]).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset($PARAM[offset]).Title]</label>
+				<label>[COLOR $VAR[HighlightColor]]$INFO[MusicPlayer.Offset($PARAM[offset]).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.Offset($PARAM[offset]).Title]</label>
 			</control>
 			<control type="label">
 				<height>18</height>
@@ -1463,7 +1463,7 @@
 			<control type="group" id="70102">
 				<visible>Player.HasAudio</visible>
 				<control type="group">
-					<visible>![Pvr.IsPlayingTv | Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
+					<visible>![PVR.IsPlayingTV | PVR.IsPlayingRadio | Player.IsInternetStream]</visible>
 					<control type="group">
 						<visible>Skin.String(NowPlayingMusicInfo,none)</visible>
 						<include>AnimationVisibleFade</include>
@@ -1483,7 +1483,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Pvr.IsPlayingTv | Pvr.IsPlayingRadio | Player.IsInternetStream</visible>
+					<visible>PVR.IsPlayingTV | PVR.IsPlayingRadio | Player.IsInternetStream</visible>
 					<control type="group">
 						<visible>Skin.String(NowPlayingMusicInfo,none)</visible>
 						<include>AnimationVisibleFade</include>

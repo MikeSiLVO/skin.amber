@@ -29,10 +29,10 @@
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 					<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
 
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[ListItem.Title])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[ListItem.Title])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
 					<onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(62)]">62</onright>
 					<onright condition="Control.IsVisible(615)">615</onright>
 					<onup>52</onup>
@@ -513,7 +513,7 @@
 					<param name="labelwidth">790</param>
 					<param name="visibility">$EXP[BigListPanelIsSwapped] + [Container.Content(movies) | Container.Content(episodes)]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 				</include>
 
 				<include content="PanelTemplate52">
@@ -530,7 +530,7 @@
 				<include content="PanelTemplate52">
 					<param name="visibility">![$EXP[BigListPanelIsSwapped]] + [Container.Content(movies) | Container.Content(episodes)]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 				</include>
 
 				<include content="PanelTemplate52">
@@ -541,11 +541,11 @@
 
 				<include content="PanelTemplate52">
 					<param name="plotheight">360</param>
-					<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + ![$EXP[BigListPanelIsSwapped]] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + ![$EXP[BigListPanelIsSwapped]] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 				<include content="PanelTemplate52">
 					<param name="plotheight">355</param>
-					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + ![$EXP[BigListPanelIsSwapped]] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + ![$EXP[BigListPanelIsSwapped]] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 				<include content="PanelTemplate52">
 					<param name="viewid">152</param>
@@ -554,7 +554,7 @@
 					<param name="plotwidth">810</param>
 					<param name="labelwidth">790</param>
 					<param name="plotheight">360</param>
-					<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + $EXP[BigListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + $EXP[BigListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 				<include content="PanelTemplate52">
 					<param name="viewid">152</param>
@@ -563,7 +563,7 @@
 					<param name="plotwidth">810</param>
 					<param name="labelwidth">790</param>
 					<param name="plotheight">355</param>
-					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + $EXP[BigListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + $EXP[BigListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 
 				<include condition="!$EXP[BigListPanelIsSwapped]" content="PVRRecordingSpaceUsage">

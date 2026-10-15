@@ -4,8 +4,8 @@
 	<animation effect="fade" time="200">WindowOpen</animation>
 	<animation effect="fade" time="150">WindowClose</animation>
 
-	<onload>SetProperty(ResetScroll," ",home)</onload>
-	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
+	<onload>SetProperty(ResetScroll," ",Home)</onload>
+	<onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,Home),00:01,silent)</onload>
 
 	<controls>
 		<control type="image">
@@ -60,7 +60,7 @@
 					<height>400</height>
 					<align>justify</align>
 					<font>InfoPlot</font>
-					<label>$INFO[ListItem.Season, S]$INFO[ListItem.Episode, E,: ]$VAR[Plots]$INFO[Window(home).Property(ResetScroll)]</label>
+					<label>$INFO[ListItem.Season, S]$INFO[ListItem.Episode, E,: ]$VAR[Plots]$INFO[Window(Home).Property(ResetScroll)]</label>
 				</control>
 				<control type="radiobutton" id="90003">
 					<posy>438</posy>

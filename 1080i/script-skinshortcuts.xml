@@ -269,10 +269,10 @@
 							<onclick>Skin.Reset(InitPos)</onclick>
 							<onclick>Skin.Reset(InitPosPlusOne)</onclick>
 							<onclick>Skin.Reset(InitPosName)</onclick>
-							<onclick>ClearProperty(InitPlusOne,home)</onclick>
-							<onclick>ClearProperty(SkinInfo.Math.DefaultMenuPosition.Result,home)</onclick>
+							<onclick>ClearProperty(InitPlusOne,Home)</onclick>
+							<onclick>ClearProperty(SkinInfo.Math.DefaultMenuPosition.Result,Home)</onclick>
 							<onclick>RunScript(script.skin.info.service,action=math,expression=$INFO[Container(211).CurrentItem] - 1,prefix=DefaultMenuPosition)</onclick>
-							<onclick>SetProperty(InitPlusOne,$INFO[Container(211).CurrentItem],home)</onclick>
+							<onclick>SetProperty(InitPlusOne,$INFO[Container(211).CurrentItem],Home)</onclick>
 							<onclick>Skin.SetString(InitPos,$INFO[Window(Home).Property(SkinInfo.Math.DefaultMenuPosition.Result)])</onclick>
 							<onclick>Skin.SetString(InitPosName,$INFO[Container(211).ListItem.Label])</onclick>
 							<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>

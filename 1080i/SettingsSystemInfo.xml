@@ -96,7 +96,7 @@
 							<height>45</height>
 							<width>680</width>
 							<font>ListDetails</font>
-							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31309][/COLOR] $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
+							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31309][/COLOR] $INFO[System.Memory(used)] [B]/[/B] $INFO[System.Memory(total)] [B]-[/B] $INFO[System.Memory(used.percent)]</label>
 						</control>
 					</control>
 					<control type="grouplist">
@@ -119,7 +119,7 @@
 							<texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
 							<midtexture border="0,0,0,0">img/AmberDot.png</midtexture>
 							<colordiffuse>$VAR[HighlightColor]</colordiffuse>
-							<info>system.memory(used)</info>
+							<info>System.Memory(used)</info>
 						</control>
 					</control>
 					<control type="grouplist">

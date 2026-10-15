@@ -589,7 +589,7 @@
 					<height>30</height>
 					<font>font12_title</font>
 					<label>$VAR[ShelfInfoCast]</label>
-					<visible>!String.IsEmpty(Window(home).Property(SkinInfo.Online.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
 					<scroll>true</scroll>
 				</control>
 				<!-- Details line -->
@@ -652,7 +652,7 @@
 					<visible>Skin.HasSetting(coloredflags)</visible>
 					<include>ContentFade</include>
 					<control type="grouplist">
-						<visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
+						<visible>![String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]</visible>
 						<width>930</width>
 						<height>85</height>
 						<itemgap>20</itemgap>
@@ -666,7 +666,7 @@
 						</include>
 					</control>
 					<control type="grouplist">
-						<visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
+						<visible>[String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]</visible>
 						<width>930</width>
 						<height>85</height>
 						<itemgap>10</itemgap>
@@ -1112,7 +1112,7 @@
 					<height>30</height>
 					<font>font12_title</font>
 					<label>$VAR[ShelfInfoCast]</label>
-					<visible>!String.IsEmpty(Window(home).Property(SkinInfo.Online.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
 					<scroll>true</scroll>
 				</control>
 

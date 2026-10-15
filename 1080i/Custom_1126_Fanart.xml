@@ -55,87 +55,87 @@
 				<height>1</height>
 				<content>
 					<item>
-						<label>$INFO[Window(home).Property(fanart)]</label>
+						<label>$INFO[Window(Home).Property(fanart)]</label>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart1)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart1))</visible>
+						<label>$INFO[Window(Home).Property(fanart1)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart1))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart2)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart2))</visible>
+						<label>$INFO[Window(Home).Property(fanart2)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart2))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart3)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart3))</visible>
+						<label>$INFO[Window(Home).Property(fanart3)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart3))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart4)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart4))</visible>
+						<label>$INFO[Window(Home).Property(fanart4)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart4))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart5)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart5))</visible>
+						<label>$INFO[Window(Home).Property(fanart5)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart5))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart6)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart6))</visible>
+						<label>$INFO[Window(Home).Property(fanart6)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart6))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart7)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart7))</visible>
+						<label>$INFO[Window(Home).Property(fanart7)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart7))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart8)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart8))</visible>
+						<label>$INFO[Window(Home).Property(fanart8)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart8))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart9)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart9))</visible>
+						<label>$INFO[Window(Home).Property(fanart9)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart9))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart10)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart10))</visible>
+						<label>$INFO[Window(Home).Property(fanart10)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart10))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart11)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart11))</visible>
+						<label>$INFO[Window(Home).Property(fanart11)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart11))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart12)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart12))</visible>
+						<label>$INFO[Window(Home).Property(fanart12)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart12))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart13)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart13))</visible>
+						<label>$INFO[Window(Home).Property(fanart13)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart13))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart14)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart14))</visible>
+						<label>$INFO[Window(Home).Property(fanart14)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart14))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart15)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart15))</visible>
+						<label>$INFO[Window(Home).Property(fanart15)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart15))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart16)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart16))</visible>
+						<label>$INFO[Window(Home).Property(fanart16)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart16))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart17)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart17))</visible>
+						<label>$INFO[Window(Home).Property(fanart17)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart17))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart18)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart18))</visible>
+						<label>$INFO[Window(Home).Property(fanart18)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart18))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart19)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart19))</visible>
+						<label>$INFO[Window(Home).Property(fanart19)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart19))</visible>
 					</item>
 					<item>
-						<label>$INFO[Window(home).Property(fanart20)]</label>
-						<visible>!String.IsEmpty(Window(home).Property(fanart20))</visible>
+						<label>$INFO[Window(Home).Property(fanart20)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(fanart20))</visible>
 					</item>
 				</content>
 			</control>

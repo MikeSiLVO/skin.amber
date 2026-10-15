@@ -131,7 +131,7 @@
                     <height>85</height>
                     <texturefocus colordiffuse="$VAR[HighlightColor]">icons/home.png</texturefocus>
                     <texturenofocus colordiffuse="$VAR[LabelTextColor]">icons/home.png</texturenofocus>
-                    <onclick>ActivateWindow(home)</onclick>
+                    <onclick>ActivateWindow(Home)</onclick>
 				    <visible>!Window.IsActive(Home)</visible>
                 </control>
                 <control type="button" id="10001">

@@ -48,10 +48,10 @@
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 					<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
 
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[ListItem.Title])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[ListItem.Title])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
 					<onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(64)]">64</onright>
 					<onright condition="Control.IsVisible(615)">615</onright>
 					<onup>54</onup>
@@ -290,12 +290,12 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="plotheight">200</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">910</param>
-					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [Container.Content(videos) | Container.Content(files) | Container.Content() | Container.content(movies) | Container.Content(musicvideos) | Container.Content(episodes)]</param>
+					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [Container.Content(videos) | Container.Content(files) | Container.Content() | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)]</param>
 				</include>
 
 				<include content="PanelTemplate">
@@ -315,7 +315,7 @@
 					<param name="showflags">false</param>
 					<param name="footertop">990</param>
 					<param name="footerheight">90</param>
-					<param name="visibility">!$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [Container.content(seasons) | Container.Content(tvshows)] + $EXP[PanelShouldShow]</param>
+					<param name="visibility">!$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [Container.Content(seasons) | Container.Content(tvshows)] + $EXP[PanelShouldShow]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="viewid">54</param>
@@ -330,7 +330,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">1035</param>
 					<param name="showfooter">false</param>
-					<param name="visibility">!$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [Container.content(addons) | Container.content(images) | Container.content(games)]</param>
+					<param name="visibility">!$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [Container.Content(addons) | Container.Content(images) | Container.Content(games)]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="viewid">54</param>
@@ -347,7 +347,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">990</param>
 					<param name="showfooter">false</param>
-					<param name="visibility">!$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + Container.content(sets)</param>
+					<param name="visibility">!$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + Container.Content(sets)</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="viewid">54</param>
@@ -450,12 +450,12 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="plotheight">200</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">910</param>
-					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.Content(videos) | Container.Content(files) | Container.Content() | Container.content(movies) | Container.Content(musicvideos) | Container.Content(episodes)]</param>
+					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.Content(videos) | Container.Content(files) | Container.Content() | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)]</param>
 				</include>
 
 				<include content="PanelTemplate">
@@ -475,7 +475,7 @@
 					<param name="showflags">false</param>
 					<param name="footertop">990</param>
 					<param name="footerheight">90</param>
-					<param name="visibility">!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.content(seasons) | Container.Content(tvshows)] + $EXP[PanelShouldShow]</param>
+					<param name="visibility">!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.Content(seasons) | Container.Content(tvshows)] + $EXP[PanelShouldShow]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="viewid">154</param>
@@ -490,7 +490,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">1035</param>
 					<param name="showfooter">false</param>
-					<param name="visibility">!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.content(addons) | Container.content(images) | Container.content(games)]</param>
+					<param name="visibility">!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.Content(addons) | Container.Content(images) | Container.Content(games)]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="viewid">154</param>
@@ -507,7 +507,7 @@
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">990</param>
 					<param name="showfooter">false</param>
-					<param name="visibility">!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + Container.content(sets)</param>
+					<param name="visibility">!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + Container.Content(sets)</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="viewid">154</param>

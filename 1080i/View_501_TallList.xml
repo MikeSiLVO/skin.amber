@@ -32,10 +32,10 @@
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 					<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
 
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[ListItem.Title])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[ListItem.Title])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
 					<onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(6501)]">6501</onright>
 					<onright condition="Control.IsVisible(615)">615</onright>
 					<onup>501</onup>
@@ -287,7 +287,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + Container.content(addons)</param>
+					<param name="visibility">!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + Container.Content(addons)</param>
 				</include>
 
 				<include content="PanelTemplateTall">
@@ -320,11 +320,11 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footer2">$VAR[panelfooter2]</param>
-					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + Control.IsVisible(501) + [[[Container.Content(files) | Container.Content()] + !String.IsEmpty(ListItem.Plot)] | [Container.Content(videos) | Container.Content(games) | Container.content(movies) | Container.Content(musicvideos)]]</param>
+					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + Control.IsVisible(501) + [[[Container.Content(files) | Container.Content()] + !String.IsEmpty(ListItem.Plot)] | [Container.Content(videos) | Container.Content(games) | Container.Content(movies) | Container.Content(musicvideos)]]</param>
 				</include>
 
 				<include content="PanelTemplateTall">
@@ -355,7 +355,7 @@
 					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
+					<param name="visibility">!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.Content(tvshows) | Container.Content(seasons)]</param>
 				</include>
 				<include content="PanelTemplateTall">
 					<param name="top">118</param>
@@ -368,7 +368,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footer2">$VAR[panelfooter2]</param>
-					<param name="visibility">!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + Container.content(sets)</param>
+					<param name="visibility">!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + Container.Content(sets)</param>
 				</include>
 				<include content="PanelTemplateTall">
 					<param name="top">118</param>
@@ -383,7 +383,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 				<include content="PanelTemplateTall">
 					<param name="top">118</param>
@@ -398,7 +398,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 
 				<include content="PanelTemplateTall">
@@ -429,7 +429,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + Container.content(addons)</param>
+					<param name="visibility">!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + Container.Content(addons)</param>
 				</include>
 
 				<include content="PanelTemplateTall">
@@ -464,11 +464,11 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footer2">$VAR[panelfooter2]</param>
-					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + Control.IsVisible(501) + [[[Container.Content(files) | Container.Content()] + !String.IsEmpty(ListItem.Plot)] | [Container.Content(videos) | Container.Content(games) | Container.content(movies) | Container.Content(musicvideos)]]</param>
+					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + Control.IsVisible(501) + [[[Container.Content(files) | Container.Content()] + !String.IsEmpty(ListItem.Plot)] | [Container.Content(videos) | Container.Content(games) | Container.Content(movies) | Container.Content(musicvideos)]]</param>
 				</include>
 
 				<include content="PanelTemplateTall">
@@ -501,7 +501,7 @@
 					<param name="subheading2_visible">!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
+					<param name="visibility">!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.Content(tvshows) | Container.Content(seasons)]</param>
 				</include>
 				<include content="PanelTemplateTall">
 					<param name="viewid">1501</param>
@@ -515,7 +515,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footer2">$VAR[panelfooter2]</param>
-					<param name="visibility">!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + Container.content(sets)</param>
+					<param name="visibility">!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + Container.Content(sets)</param>
 				</include>
 				<include content="PanelTemplateTall">
 					<param name="viewid">1501</param>
@@ -531,7 +531,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 				<include content="PanelTemplateTall">
 					<param name="viewid">1501</param>
@@ -547,7 +547,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 
 				<control type="group" description="501 MediaInfo">
@@ -716,20 +716,20 @@
 					<param name="top">995</param>
 					<param name="left">20</param>
 					<param name="width">560</param>
-					<param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]] + [!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]] + !Skin.HasSetting(coloredflags)</param>
+					<param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]] + [!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]] + !Skin.HasSetting(coloredflags)</param>
 				</include>
 				<include content="MediaFlags">
 					<param name="top">995</param>
 					<param name="left">20</param>
 					<param name="width">560</param>
 					<param name="usecontrolcoords">true</param>
-					<param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]] + [!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]] + Skin.HasSetting(coloredflags)</param>
+					<param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]] + [!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]] + Skin.HasSetting(coloredflags)</param>
 				</include>
 				<include content="MediaFlags">
 					<param name="top">995</param>
 					<param name="left">20</param>
 					<param name="width">560</param>
-					<param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]] + [Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]] + !Skin.HasSetting(coloredflags)</param>
+					<param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]] + [Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]] + !Skin.HasSetting(coloredflags)</param>
 					<param name="itemwidth">66</param>
 					<param name="itemheight">60</param>
 					<param name="itemgap">10</param>
@@ -738,7 +738,7 @@
 					<param name="top">995</param>
 					<param name="left">20</param>
 					<param name="width">560</param>
-					<param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]] + [Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]] + Skin.HasSetting(coloredflags)</param>
+					<param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EpisodesUsePoster)]] + [Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]] + Skin.HasSetting(coloredflags)</param>
 					<param name="itemwidth">66</param>
 					<param name="itemheight">60</param>
 					<param name="usecontrolcoords">true</param>
@@ -748,13 +748,13 @@
 					<param name="top">750</param>
 					<param name="left">20</param>
 					<param name="width">560</param>
-					<param name="visibility">String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EpisodesUsePoster) + [!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]]</param>
+					<param name="visibility">String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EpisodesUsePoster) + [!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]]</param>
 				</include>
 				<include content="MediaFlags">
 					<param name="top">750</param>
 					<param name="left">20</param>
 					<param name="width">560</param>
-					<param name="visibility">String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EpisodesUsePoster) + [Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]]</param>
+					<param name="visibility">String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EpisodesUsePoster) + [Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.FileName,hdr) | String.Contains(Container.ListItem.FileName,sdr)]]</param>
 					<param name="usecontrolcoords">true</param>
 					<param name="itemwidth">70</param>
 					<param name="itemheight">65</param>

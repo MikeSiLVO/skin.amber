@@ -5,7 +5,7 @@
 	<!-- Build menu/submenus/custom shelves -->
 	<onload>RunScript(script.skinshortcuts,type=buildxml)</onload>
 	<!-- Reset flag that the info button from the video OSD is active -->
-	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,Home)</onload>
 	<!-- Reset what the focused menu item playlist is -->
 	<onload condition="!String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist))">Skin.Reset(FocusedMenu.BackgroundPlaylist)</onload>
 
@@ -33,7 +33,7 @@
 	<onunload condition="String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist)">Skin.SetString(FocusedMenu.BackgroundPlaylist,$INFO[Container(300).ListItem.Property(backgroundPath)])</onunload>
 
 	<!-- Clear TMDbHelper widgetcontainer id -->
-	<onunload condition="Skin.HasSetting(Enable.TMDbHelper)">ClearProperty(TMDbHelper.WidgetContainer,home)</onunload>
+	<onunload condition="Skin.HasSetting(Enable.TMDbHelper)">ClearProperty(TMDbHelper.WidgetContainer,Home)</onunload>
 
 	<!-- Remember what the focused control is -->
 	<onunload condition="Skin.HasSetting(RememberHomeControl)">Skin.SetString(FocusedHomeControl,$INFO[System.CurrentControlID])</onunload>

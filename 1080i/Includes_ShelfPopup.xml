@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="ShelfPopupPoster">
-		<value condition="String.IsEqual(Window(1144).Property(DBType),episode) + !String.IsEmpty(Window(1144).Property(Art.season.poster))">$INFO[Window(1144).Property(Art.season.poster)]</value>
-		<value condition="String.IsEqual(Window(1144).Property(DBType),episode) + String.IsEmpty(Window(1144).Property(Art.season.poster)) + !String.IsEmpty(Window(1144).Property(Art.tvshow.poster))">$INFO[Window(1144).Property(Art.tvshow.poster)]</value>
-		<value condition="String.IsEqual(Window(1144).Property(DBType),movie) | String.IsEqual(Window(1144).Property(DBType),tvshow)">$INFO[Window(1144).Property(Art.Poster)]</value>
-		<value condition="String.IsEqual(Window(1144).Property(DBType),musicvideo) + !String.IsEmpty(Window(1144).Property(Art.Poster))">$INFO[Window(1144).Property(Art.Poster)]</value>
-		<value condition="String.IsEqual(Window(1144).Property(DBType),musicvideo) + String.IsEmpty(Window(1144).Property(Art.Poster))">$INFO[Window(1144).Property(Art.Thumb)]</value>
+		<value condition="String.IsEqual(Window(1144).Property(dbtype),episode) + !String.IsEmpty(Window(1144).Property(Art.season.poster))">$INFO[Window(1144).Property(Art.season.poster)]</value>
+		<value condition="String.IsEqual(Window(1144).Property(dbtype),episode) + String.IsEmpty(Window(1144).Property(Art.season.poster)) + !String.IsEmpty(Window(1144).Property(Art.tvshow.poster))">$INFO[Window(1144).Property(Art.tvshow.poster)]</value>
+		<value condition="String.IsEqual(Window(1144).Property(dbtype),movie) | String.IsEqual(Window(1144).Property(dbtype),tvshow)">$INFO[Window(1144).Property(Art.Poster)]</value>
+		<value condition="String.IsEqual(Window(1144).Property(dbtype),musicvideo) + !String.IsEmpty(Window(1144).Property(Art.Poster))">$INFO[Window(1144).Property(Art.Poster)]</value>
+		<value condition="String.IsEqual(Window(1144).Property(dbtype),musicvideo) + String.IsEmpty(Window(1144).Property(Art.Poster))">$INFO[Window(1144).Property(Art.Thumb)]</value>
 	</variable>
 
 	<variable name="ShelfPopupSquare">
@@ -14,10 +14,10 @@
 	</variable>
 
 	<variable name="ShelfPopupLogo">
-		<value condition="String.IsEqual(Window(1144).Property(DBType),movie) | String.IsEqual(Window(1144).Property(DBType),tvshow) | String.IsEqual(Window(1144).Property(DBType),musicvideo) | String.IsEqual(Window(1144).Property(DBType),artist)">$INFO[Window(1144).Property(Art.ClearLogo)]</value>
-		<value condition="String.IsEqual(Window(1144).Property(DBType),episode)">$INFO[Window(1144).Property(Art.tvshow.clearlogo)]</value>
-		<value condition="[String.IsEqual(Window(1144).Property(DBType),album) | String.IsEqual(Window(1144).Property(DBType),song)] + !String.IsEmpty(Window(1144).Property(Art.artist.clearlogo))">$INFO[Window(1144).Property(Art.artist.clearlogo)]</value>
-		<value condition="[String.IsEqual(Window(1144).Property(DBType),album) | String.IsEqual(Window(1144).Property(DBType),song)] + String.IsEmpty(Window(1144).Property(Art.artist.clearlogo))">$INFO[Window(1144).Property(Art.albumartist.clearlogo)]</value>
+		<value condition="String.IsEqual(Window(1144).Property(dbtype),movie) | String.IsEqual(Window(1144).Property(dbtype),tvshow) | String.IsEqual(Window(1144).Property(dbtype),musicvideo) | String.IsEqual(Window(1144).Property(dbtype),artist)">$INFO[Window(1144).Property(Art.ClearLogo)]</value>
+		<value condition="String.IsEqual(Window(1144).Property(dbtype),episode)">$INFO[Window(1144).Property(Art.tvshow.clearlogo)]</value>
+		<value condition="[String.IsEqual(Window(1144).Property(dbtype),album) | String.IsEqual(Window(1144).Property(dbtype),song)] + !String.IsEmpty(Window(1144).Property(Art.artist.clearlogo))">$INFO[Window(1144).Property(Art.artist.clearlogo)]</value>
+		<value condition="[String.IsEqual(Window(1144).Property(dbtype),album) | String.IsEqual(Window(1144).Property(dbtype),song)] + String.IsEmpty(Window(1144).Property(Art.artist.clearlogo))">$INFO[Window(1144).Property(Art.albumartist.clearlogo)]</value>
 	</variable>
 
 	<variable name="ShelfPopupCertFlag">
@@ -260,7 +260,7 @@
 				<texture>$VAR[PopupAudioCodecFlagVar]</texture>
 			</control>
 			<control type="image">
-				<visible>!String.IsEmpty(Window(1144).Property(FileExtension)) + String.IsEqual(Window(1144).Property(DBType),song)</visible>
+				<visible>!String.IsEmpty(Window(1144).Property(FileExtension)) + String.IsEqual(Window(1144).Property(dbtype),song)</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
@@ -269,7 +269,7 @@
 				<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[Window(1144).Property(FileExtension),,.png]</texture>
 			</control>
 			<control type="image">
-				<visible>!String.IsEmpty(Window(1144).Property(AudioChannels)) + !String.IsEqual(Window(1144).Property(DBType),song)</visible>
+				<visible>!String.IsEmpty(Window(1144).Property(AudioChannels)) + !String.IsEqual(Window(1144).Property(dbtype),song)</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
@@ -278,7 +278,7 @@
 				<texture>$VAR[MediaFlagsPathVar]/audiochannels/channels$INFO[Window(1144).Property(AudioChannels),,.png]</texture>
 			</control>
 			<control type="image">
-				<visible>!String.IsEmpty(Window(1144).Property(MusicChannels)) + String.IsEqual(Window(1144).Property(DBType),song)</visible>
+				<visible>!String.IsEmpty(Window(1144).Property(MusicChannels)) + String.IsEqual(Window(1144).Property(dbtype),song)</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
@@ -301,7 +301,7 @@
 	</include>
 
 	<include name="ClearPopupProps">
-		<onfocus>ClearProperty(DBType,1144)</onfocus>
+		<onfocus>ClearProperty(dbtype,1144)</onfocus>
 		<onfocus>ClearProperty(Title,1144)</onfocus>
 		<onfocus>ClearProperty(Label,1144)</onfocus>
 		<onfocus>ClearProperty(TVShowTitle,1144)</onfocus>
@@ -361,7 +361,7 @@
 			<control type="button">
 				<include>HiddenButton</include>
 				<include>ClearPopupProps</include>
-				<onfocus>SetProperty(DBType,"$INFO[ListItem.DBType]",1144)</onfocus>
+				<onfocus>SetProperty(dbtype,"$INFO[ListItem.DBType]",1144)</onfocus>
 				<onfocus>SetProperty(Title,"$INFO[ListItem.Title]",1144)</onfocus>
 				<onfocus>SetProperty(Label,"$INFO[ListItem.Label]",1144)</onfocus>
 				<onfocus>SetProperty(TVShowTitle,"$INFO[ListItem.TVShowTitle]",1144)</onfocus>

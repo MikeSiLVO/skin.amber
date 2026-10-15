@@ -36,10 +36,10 @@
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 					<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
-					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[ListItem.Title])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[ListItem.Title])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
+					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
 					<onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(60)]">60</onright>
 					<onright condition="Control.IsVisible(615)">615</onright>
 					<onup>50</onup>
@@ -248,10 +248,10 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [[[Container.Content(files) | Container.Content()] + !String.IsEmpty(ListItem.Plot)] | [Container.Content(videos) | Container.content(addons) | Container.Content(images) | Container.Content(games) | Container.content(movies) | Container.Content(episodes)]]</param>
+					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [[[Container.Content(files) | Container.Content()] + !String.IsEmpty(ListItem.Plot)] | [Container.Content(videos) | Container.Content(addons) | Container.Content(images) | Container.Content(games) | Container.Content(movies) | Container.Content(episodes)]]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -261,7 +261,7 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">915</param>
@@ -280,7 +280,7 @@
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">955</param>
-					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
+					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [Container.Content(tvshows) | Container.Content(seasons)]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -290,7 +290,7 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + Container.content(sets)</param>
+					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + Container.Content(sets)</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -302,7 +302,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + !String.IsEqual(Skin.Font,Default no caps) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">Control.IsVisible(50) + !String.IsEqual(Skin.Font,Default no caps) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -314,7 +314,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + String.IsEqual(Skin.Font,Default no caps) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">Control.IsVisible(50) + String.IsEqual(Skin.Font,Default no caps) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 
 				<!-- Panels in swapped position -->
@@ -340,10 +340,10 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [[[Container.Content(files) | Container.Content()] + !String.IsEmpty(ListItem.Plot)] | [Container.Content(videos) | Container.content(addons) | Container.Content(images) | Container.Content(games) | Container.content(movies) | Container.Content(episodes)]]</param>
+					<param name="visibility">![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [[[Container.Content(files) | Container.Content()] + !String.IsEmpty(ListItem.Plot)] | [Container.Content(videos) | Container.Content(addons) | Container.Content(images) | Container.Content(games) | Container.Content(movies) | Container.Content(episodes)]]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -353,7 +353,7 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="subheading2">$VAR[panelsubheading2]</param>
-					<param name="subheading2_visible">[Container.content(movies) | Container.content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
+					<param name="subheading2_visible">[Container.Content(movies) | Container.Content(episodes)] + [Skin.HasSetting(ShowAudioSub) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">915</param>
@@ -371,7 +371,7 @@
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">965</param>
-					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [Container.content(tvshows) | Container.Content(seasons)]</param>
+					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [Container.Content(tvshows) | Container.Content(seasons)]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -381,7 +381,7 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + Container.content(sets)</param>
+					<param name="visibility">Control.IsVisible(50) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + Container.Content(sets)</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -393,7 +393,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + !String.IsEqual(Skin.Font,Default no caps) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">Control.IsVisible(50) + !String.IsEqual(Skin.Font,Default no caps) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 				<include content="PanelTemplate">
 					<param name="top">355</param>
@@ -405,7 +405,7 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + String.IsEqual(Skin.Font,Default no caps) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">Control.IsVisible(50) + String.IsEqual(Skin.Font,Default no caps) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [Container.Content(artists) | Container.Content(albums)]</param>
 				</include>
 
 				<control type="group" description="50 MediaInfo">

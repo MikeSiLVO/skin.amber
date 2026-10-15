@@ -295,20 +295,20 @@
 				<height>760</height>
 				<onleft>9000</onleft>
 				<onright>ClearProperty(MediaMenu,Home)</onright>
-				<onright condition="control.isvisible(52)">52</onright>
-				<onright condition="control.isvisible(50)">50</onright>
-				<onright condition="control.isvisible(54)">54</onright>
-				<onright condition="control.isvisible(51)">51</onright>
-				<onright condition="control.isvisible(511)">511</onright>
-				<onright condition="control.isvisible(55)">55</onright>
-				<onright condition="control.isvisible(551)">551</onright>
-				<onright condition="control.isvisible(501)">501</onright>
-				<onright condition="control.isvisible(53)">53</onright>
-				<onright condition="control.isvisible(56)">56</onright>
-				<onright condition="control.isvisible(57)">57</onright>
-				<onright condition="control.isvisible(600)">600</onright>
-				<onright condition="control.isvisible(58)">58</onright>
-				<onright condition="control.isvisible(502)">502</onright>
+				<onright condition="Control.IsVisible(52)">52</onright>
+				<onright condition="Control.IsVisible(50)">50</onright>
+				<onright condition="Control.IsVisible(54)">54</onright>
+				<onright condition="Control.IsVisible(51)">51</onright>
+				<onright condition="Control.IsVisible(511)">511</onright>
+				<onright condition="Control.IsVisible(55)">55</onright>
+				<onright condition="Control.IsVisible(551)">551</onright>
+				<onright condition="Control.IsVisible(501)">501</onright>
+				<onright condition="Control.IsVisible(53)">53</onright>
+				<onright condition="Control.IsVisible(56)">56</onright>
+				<onright condition="Control.IsVisible(57)">57</onright>
+				<onright condition="Control.IsVisible(600)">600</onright>
+				<onright condition="Control.IsVisible(58)">58</onright>
+				<onright condition="Control.IsVisible(502)">502</onright>
 				<onup condition="Skin.HasSetting(Enable.TouchSupport)">909091</onup>
 				<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9600</onup>
 				<ondown>9600</ondown>
@@ -502,7 +502,7 @@
 				<label>- $LOCALIZE[31374]</label>
 			</control>
 			<control type="radiobutton" id="9$PARAM[viewid]18">
-				<visible>Control.IsVisible($PARAM[viewid]) + $EXP[PanelShouldShow] + ![container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
+				<visible>Control.IsVisible($PARAM[viewid]) + $EXP[PanelShouldShow] + ![Container.Content(episodes) | Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(images) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				<font>ListDetails</font>
 				<include>9000SysButtons</include>
 				<onclick condition="Skin.HasSetting($PARAM[viewid]_Others_DisablePanel) + Skin.HasSetting(DisableListPanel)">Skin.Reset(DisableListPanel)</onclick>
@@ -599,7 +599,7 @@
 				<label>- $LOCALIZE[31375]</label>
 			</control>
 			<control type="radiobutton" id="9$PARAM[viewid]27">
-				<visible>Control.IsVisible($PARAM[viewid]) + $EXP[PanelShouldShow] + !Skin.HasSetting($PARAM[viewid]_Others_DisablePanel) + ![container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
+				<visible>Control.IsVisible($PARAM[viewid]) + $EXP[PanelShouldShow] + !Skin.HasSetting($PARAM[viewid]_Others_DisablePanel) + ![Container.Content(episodes) | Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(images) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				<font>ListDetails</font>
 				<include>9000SysButtons</include>
 				<onclick condition="Skin.HasSetting($PARAM[viewid]_Others_SwapPanel) + Skin.HasSetting(SwapListPanel)">Skin.Reset(SwapListPanel)</onclick>
@@ -747,7 +747,7 @@
 				<label>- $LOCALIZE[1438]</label>
 			</control>
 			<control type="radiobutton" id="9$PARAM[viewid]9" description="View other content Small icons">
-				<visible>Control.IsVisible($PARAM[viewid]) + ![container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | container.content(songs) | Container.Content(images) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(musicvideos)]</visible>
+				<visible>Control.IsVisible($PARAM[viewid]) + ![Container.Content(episodes) | Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(images) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos)]</visible>
 				<font>ListDetails</font>
 				<include>9000SysButtons</include>
 				<onclick>Skin.ToggleSetting($PARAM[viewid]_SmallIcons)</onclick>
@@ -770,7 +770,7 @@
 				<label>- $LOCALIZE[31992]</label>
 			</control>
 			<control type="radiobutton" id="9$PARAM[viewid]111" description="View Movie Banners">
-				<visible>Control.IsVisible($PARAM[viewid]) + [container.content(movies) | container.content(sets)]</visible>
+				<visible>Control.IsVisible($PARAM[viewid]) + [Container.Content(movies) | Container.Content(sets)]</visible>
 				<font>ListDetails</font>
 				<include>9000SysButtons</include>
 				<onclick>Skin.ToggleSetting($PARAM[viewid]_Movies_UseBanners)</onclick>
@@ -785,7 +785,7 @@
 
 	<include name="FanartViewSwitches">
 		<control type="radiobutton" id="91560" description="Fanart View: Netflix for Posters">
-			<visible>Control.IsVisible(56) + [container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + !Skin.HasSetting(56_Posters_Info)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(56_Posters_Info)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Posters_Netflix)</onclick>
@@ -793,7 +793,7 @@
 			<label>- $LOCALIZE[31693]</label>
 		</control>
 		<control type="radiobutton" id="915601" description="Fanart View: Netflix Show Logo for Posters">
-			<visible>Control.IsVisible(56) + [container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Netflix)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(56_Posters_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Posters_Netflix_Logo)</onclick>
@@ -801,7 +801,7 @@
 			<label>   -- $LOCALIZE[31694]</label>
 		</control>
 		<control type="radiobutton" id="915602" description="Fanart View: Netflix Show Landscape for Posters">
-			<visible>Control.IsVisible(56) + [container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)] + Skin.HasSetting(56_Posters_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Posters_Netflix_Landscape)</onclick>
@@ -809,7 +809,7 @@
 			<label>   -- $LOCALIZE[31695]</label>
 		</control>
 		<control type="radiobutton" id="915603" description="Fanart View: Netflix Show Title in Footer for Posters">
-			<visible>Control.IsVisible(56) + [container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)] + Skin.HasSetting(56_Posters_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Posters_Netflix_TitleInFooter)</onclick>
@@ -817,7 +817,7 @@
 			<label>   -- $LOCALIZE[31776]</label>
 		</control>
 		<control type="radiobutton" id="915604" description="Fanart View: Netflix Show Trailer in window for Posters">
-			<visible>Control.IsVisible(56) + [container.content(movies) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(movies) | Container.Content(tvshows)] + Skin.HasSetting(56_Posters_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Posters_Netflix_TrailerWindow)</onclick>
@@ -825,7 +825,7 @@
 			<label>   -- $LOCALIZE[31855]</label>
 		</control>
 		<control type="radiobutton" id="91561" description="Fanart View: Netflix for Episodes">
-			<visible>Control.IsVisible(56) + container.content(episodes) + !Skin.HasSetting(56_Episodes_Info)</visible>
+			<visible>Control.IsVisible(56) + Container.Content(episodes) + !Skin.HasSetting(56_Episodes_Info)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Episodes_Netflix)</onclick>
@@ -833,7 +833,7 @@
 			<label>- $LOCALIZE[31693]</label>
 		</control>
 		<control type="radiobutton" id="915611" description="Fanart View: Netflix Show Logo for Episodes">
-			<visible>Control.IsVisible(56) + container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix)</visible>
+			<visible>Control.IsVisible(56) + Container.Content(episodes) + Skin.HasSetting(56_Episodes_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Episodes_Netflix_Logo)</onclick>
@@ -841,7 +841,7 @@
 			<label>   -- $LOCALIZE[31694]</label>
 		</control>
 		<control type="radiobutton" id="915612" description="Fanart View: Netflix Show Title in Footer for Episodes">
-			<visible>Control.IsVisible(56) + container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix)</visible>
+			<visible>Control.IsVisible(56) + Container.Content(episodes) + Skin.HasSetting(56_Episodes_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Episodes_Netflix_TitleInFooter)</onclick>
@@ -849,7 +849,7 @@
 			<label>   -- $LOCALIZE[31776]</label>
 		</control>
 		<control type="radiobutton" id="915613" description="Fanart View: Netflix Play Trailer Windowed for Episodes">
-			<visible>Control.IsVisible(56) + container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix)</visible>
+			<visible>Control.IsVisible(56) + Container.Content(episodes) + Skin.HasSetting(56_Episodes_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Episodes_Netflix_TrailerWindow)</onclick>
@@ -857,7 +857,7 @@
 			<label>   -- $LOCALIZE[31855]</label>
 		</control>
 		<control type="radiobutton" id="91562" description="Fanart View: Netflix for Music">
-			<visible>Control.IsVisible(56) + [container.content(albums) | Container.Content(artists)] + !Skin.HasSetting(56_Music_Info)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(albums) | Container.Content(artists)] + !Skin.HasSetting(56_Music_Info)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Music_Netflix)</onclick>
@@ -865,7 +865,7 @@
 			<label>- $LOCALIZE[31693]</label>
 		</control>
 		<control type="radiobutton" id="915621" description="Fanart View: Netflix Show Logo for Music">
-			<visible>Control.IsVisible(56) + [container.content(albums) | Container.Content(artists)] + Skin.HasSetting(56_Music_Netflix)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(albums) | Container.Content(artists)] + Skin.HasSetting(56_Music_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Music_Netflix_Logo)</onclick>
@@ -873,7 +873,7 @@
 			<label>   -- $LOCALIZE[31694]</label>
 		</control>
 		<control type="radiobutton" id="915622" description="Fanart View: Netflix Show Title in Footer for Music">
-			<visible>Control.IsVisible(56) + [container.content(albums) | Container.Content(artists)] + Skin.HasSetting(56_Music_Netflix)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(albums) | Container.Content(artists)] + Skin.HasSetting(56_Music_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Music_Netflix_TitleInFooter)</onclick>
@@ -881,7 +881,7 @@
 			<label>   -- $LOCALIZE[31776]</label>
 		</control>
 		<control type="radiobutton" id="91563" description="Fanart View: Show Info for Episodes">
-			<visible>Control.IsVisible(56)+ container.content(episodes) + !Skin.HasSetting(56_Episodes_Netflix)</visible>
+			<visible>Control.IsVisible(56)+ Container.Content(episodes) + !Skin.HasSetting(56_Episodes_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Episodes_Info)</onclick>
@@ -889,7 +889,7 @@
 			<label>- $LOCALIZE[31968]</label>
 		</control>
 		<control type="radiobutton" id="915631" description="Fanart view: Show Extra Fanart on Info">
-			<visible>Control.IsVisible(56) + [container.content(episodes) + Skin.HasSetting(56_Episodes_Info)]</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(episodes) + Skin.HasSetting(56_Episodes_Info)]</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Episodes_Info_ExtraFanart)</onclick>
@@ -897,7 +897,7 @@
 			<label>   -- $LOCALIZE[31691]</label>
 		</control>
 		<control type="radiobutton" id="91564" description="Fanart view: Enable gallery for EPISODES">
-			<visible>Control.IsVisible(56) + container.content(episodes)</visible>
+			<visible>Control.IsVisible(56) + Container.Content(episodes)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Episodes_Gallery)</onclick>
@@ -906,7 +906,7 @@
 		</control>
 
 		<control type="radiobutton" id="91565" description="Fanart view: Enable Info for MUSIC">
-			<visible>Control.IsVisible(56) + [container.content(albums) | container.content(artists)] + !Skin.HasSetting(56_Music_Netflix)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(albums) | Container.Content(artists)] + !Skin.HasSetting(56_Music_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Music_Info)</onclick>
@@ -914,7 +914,7 @@
 			<label>- $LOCALIZE[31968]</label>
 		</control>
 		<control type="radiobutton" id="915651" description="Fanart view: Show Extra Fanart on Info">
-			<visible>Control.IsVisible(56) + [[container.content(artists) | container.content(albums)] + Skin.HasSetting(56_Music_Info)]</visible>
+			<visible>Control.IsVisible(56) + [[Container.Content(artists) | Container.Content(albums)] + Skin.HasSetting(56_Music_Info)]</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Music_Info_ExtraFanart)</onclick>
@@ -922,7 +922,7 @@
 			<label>   -- $LOCALIZE[31691]</label>
 		</control>
 		<control type="radiobutton" id="91566" description="Fanart view: Enable gallery for MUSIC">
-			<visible>Control.IsVisible(56) + [container.content(albums) | container.content(artists)]</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(albums) | Container.Content(artists)]</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Music_Gallery)</onclick>
@@ -931,7 +931,7 @@
 		</control>
 
 		<control type="radiobutton" id="91567" description="Fanart view: Enable Info for POSTERS">
-			<visible>Control.IsVisible(56) + [container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + !Skin.HasSetting(56_Posters_Netflix)</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(56_Posters_Netflix)</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Posters_Info)</onclick>
@@ -939,7 +939,7 @@
 			<label>- $LOCALIZE[31968]</label>
 		</control>
 		<control type="radiobutton" id="915671" description="Fanart view: Show Extra Fanart on Info">
-			<visible>Control.IsVisible(56) + [[container.content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)] + Skin.HasSetting(56_Posters_Info)]</visible>
+			<visible>Control.IsVisible(56) + [[Container.Content(musicvideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(56_Posters_Info)]</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Posters_Info_ExtraFanart)</onclick>
@@ -947,7 +947,7 @@
 			<label>   -- $LOCALIZE[31691]</label>
 		</control>
 		<control type="radiobutton" id="91568" description="Fanart view: Enable gallery for POSTERS">
-			<visible>Control.IsVisible(56) + [container.content(MusicVideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)]</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(MusicVideos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<onclick>Skin.ToggleSetting(56_Posters_Gallery)</onclick>
@@ -956,7 +956,7 @@
 		</control>
 
 		<control type="radiobutton" id="91569" description="Use Disc Art instead of thumb">
-			<visible>Control.IsVisible(56) + [container.content(albums) | Container.Content(songs)]</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(albums) | Container.Content(songs)]</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<label>- $LOCALIZE[31811]</label>
@@ -965,7 +965,7 @@
 		</control>
 
 		<control type="button" id="915610" description="Fanart view: Dim Level">
-			<visible>Control.IsVisible(56) + [container.content(artists) | container.content(albums) | container.content(musicvideos) | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes) | container.content(sets)]</visible>
+			<visible>Control.IsVisible(56) + [Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)]</visible>
 			<font>ListDetails</font>
 			<include>9000SysButtons</include>
 			<label>- $LOCALIZE[31696]</label>
@@ -1040,8 +1040,8 @@
 				<font>ListDetails</font>
 				<include>9000SysButtons</include>
 				<onclick>Skin.ToggleSetting(502_FixedList)</onclick>
-				<onclick>SetProperty(ActiveWindow,videos,home)</onclick>
-				<onclick>SetProperty(ContainerPath,$ESCINFO[Container.FolderPath],home)</onclick>
+				<onclick>SetProperty(ActiveWindow,videos,Home)</onclick>
+				<onclick>SetProperty(ContainerPath,$ESCINFO[Container.FolderPath],Home)</onclick>
 				<onclick>ReplaceWindow(1140)</onclick>
 				<selected>Skin.HasSetting(502_FixedList)</selected>
 				<label>- $LOCALIZE[31798]</label>
