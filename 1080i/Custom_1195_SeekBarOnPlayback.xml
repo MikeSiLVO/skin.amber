@@ -1,5 +1,0 @@
-<window type="dialog" id="1195">
-	<visible>Player.HasVideo + Skin.HasSetting(ShowSeekBarOnPlayback) + String.IsEmpty(Window(Home).Property(ShowOSD)) + [String.IsEqual(Player.TimeRemaining(hh:mm:ss),00:00:01) | String.IsEqual(Player.Time(hh:mm:ss),00:00:01)]</visible>
-	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback)">SetProperty(ShowOSD,true,Home)</onload>
-	<controls />
-</window>

@@ -8,7 +8,8 @@
 	</timer>
 	<timer>
 		<name>seekbaronplayback</name>
-		<start reset="true">!String.IsEmpty(Window(Home).Property(ShowOSD))</start>
+		<start reset="true">!String.IsEmpty(Window(Home).Property(ShowOSD)) | [Player.HasVideo + Skin.HasSetting(ShowSeekBarOnPlayback) + [String.IsEqual(Player.TimeRemaining(hh:mm:ss),00:00:01) | String.IsEqual(Player.Time(hh:mm:ss),00:00:01)]]</start>
+		<onstart>SetProperty(ShowOSD,true,Home)</onstart>
 		<stop>[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),2) + [String.IsEmpty(Skin.String(SeekBarInit)) | Skin.String(SeekBarInit,two)]] |
 			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),3) + Skin.String(SeekBarInit,three)] |
 			[Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(seekbaronplayback),4) + Skin.String(SeekBarInit,four)] |
