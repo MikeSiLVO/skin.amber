@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onunload>RunScript(script.skinshortcuts,type=buildxml)</onunload>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<controls>
@@ -50,7 +49,6 @@
 						<control type="label" description="Main Label">
 							<posx>10</posx>
 							<width>361</width>
-							<height>60</height>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -64,7 +62,6 @@
 						<control type="label" description="Main Label">
 							<posx>10</posx>
 							<width>361</width>
-							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
 							<label>$INFO[ListItem.Label]</label>
@@ -1133,37 +1130,6 @@
 								<param name="skinsetting" value="Blur.UsePoster" />
 								<param name="itemvisibility">Skin.HasSetting(SkinInfo.Blur)</param>
 							</include>
-							<!-- <item id="5" description="Blur Background - TMDbHelper present">
-								<visible>Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Enable.TMDbHelper)</visible>
-								<label>[B]$LOCALIZE[31278][/B]</label>
-								<label2>$LOCALIZE[107]</label2>
-								<onclick condition="Skin.HasSetting(Enable.TMDbHelper) + Skin.HasSetting(Enable.BlurredVideoInfo)">Skin.Reset(TMDbHelper.EnableBlur)</onclick>
-								<onclick condition="Skin.HasSetting(Enable.TMDbHelper) + Skin.HasSetting(Enable.BlurredVideoInfo)">ClearProperty(TMDbHelper.Blur.SourceImage,Home)</onclick>
-								<onclick>Skin.Reset(Enable.BlurredVideoInfo)</onclick>
-							</item>
-							<item id="6" description="Blur Background - TMDbHelper not installed">
-								<visible>!Skin.HasSetting(Enable.BlurredVideoInfo) | !Skin.HasSetting(Enable.TMDbHelper)</visible>
-								<label>[B]$LOCALIZE[31278][/B]</label>
-								<label2>$LOCALIZE[106]</label2>
-								<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
-								<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !Skin.HasSetting(Enable.BlurredVideoInfo)">Skin.SetBool(TMDbHelper.EnableBlur)</onclick>
-								<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !Skin.HasSetting(Enable.BlurredVideoInfo)">SetProperty(TMDbHelper.Blur.SourceImage,fanart,Home)</onclick>
-								<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !Skin.HasSetting(Enable.BlurredVideoInfo)">Skin.SetBool(Enable.BlurredVideoInfo)</onclick>
-							</item> -->
-							<!-- <item id="7" description="Blur Poster">
-								<visible>Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster)</visible>
-								<label>      $LOCALIZE[31279]</label>
-								<label2>$LOCALIZE[107]</label2>
-								<onclick condition="Skin.HasSetting(Blur.UsePoster)">SetProperty(TMDbHelper.Blur.SourceImage,fanart,Home)</onclick>
-								<onclick>Skin.Reset(Blur.UsePoster)</onclick>
-							</item>
-							<item id="7" description="Blur Poster">
-								<visible>Skin.HasSetting(Enable.BlurredVideoInfo) + !Skin.HasSetting(Blur.UsePoster)</visible>
-								<label>      $LOCALIZE[31279]</label>
-								<label2>$LOCALIZE[106]</label2>
-								<onclick condition="!Skin.HasSetting(Blur.UsePoster)">SetProperty(TMDbHelper.Blur.SourceImage,poster,Home)</onclick>
-								<onclick condition="!Skin.HasSetting(Blur.UsePoster)">Skin.SetBool(Blur.UsePoster)</onclick>
-							</item> -->
 							<include content="CustomDialogSettingItem">
 								<param name="itemid">9</param>
 								<param name="itemlabel">$LOCALIZE[31226]</param>
@@ -1247,7 +1213,6 @@
 						<control type="button" id="9109101">
 							<width>1350</width>
 							<height>60</height>
-							<font>ListDetails</font>
 							<texturenofocus />
 							<textoffsetx>30</textoffsetx>
 							<onclick>Skin.ToggleSetting(MatchPosterColors)</onclick>
@@ -1262,7 +1227,6 @@
 						<control type="button" id="9109102">
 							<width>1350</width>
 							<height>60</height>
-							<font>ListDetails</font>
 							<texturenofocus />
 							<textoffsetx>30</textoffsetx>
 							<onclick>Skin.ToggleSetting(MatchPosterColors)</onclick>
@@ -1728,7 +1692,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<orientation>vertical</orientation>
 				<onleft>9100</onleft>
 			</control>
 		</control>
