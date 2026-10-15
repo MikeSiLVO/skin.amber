@@ -458,10 +458,10 @@
 				<animation effect="slide" start="0,0" end="300,0" time="0" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + [$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo] | $PARAM[ShowLargeLogoUnfocused]]">conditional</animation>
 				<animation effect="slide" start="0,0" end="0,-18" time="0" condition="!Skin.HasSetting(VerticalHome) + $PARAM[ShowMediumLogo] + !$PARAM[ShowMedium2Logo]">conditional</animation>
 				<animation effect="slide" start="0,0" end="-390,-72" time="0" condition="Skin.HasSetting(VerticalHome) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(Enable.FanartTitle) + Skin.HasSetting(FanartTitle.InTopBar)">conditional</animation>
-				<animation effect="slide" start="0,0" end="-411,-46" time="0" condition="Skin.HasSetting(VerticalHome) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)">conditional</animation>
-				<animation effect="slide" start="0,0" end="-511,-46" time="0" condition="Skin.HasSetting(VerticalHome) + $PARAM[ShowMediumLogo] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + ![Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)]">conditional</animation>
+				<animation effect="slide" start="0,0" end="-411,-46" time="0" condition="Skin.HasSetting(VerticalHome) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + $EXP[InfoLineOnMenu]">conditional</animation>
+				<animation effect="slide" start="0,0" end="-511,-46" time="0" condition="Skin.HasSetting(VerticalHome) + $PARAM[ShowMediumLogo] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + !$EXP[InfoLineOnMenu]">conditional</animation>
 				<animation effect="slide" start="0,0" end="300,0" time="0" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(Enable.FanartTitle)">conditional</animation>
-				<animation effect="slide" start="0,0" end="100,0" time="0" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + $PARAM[ShowMediumLogo] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + ![Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)]">conditional</animation>
+				<animation effect="slide" start="0,0" end="100,0" time="0" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + $PARAM[ShowMediumLogo] + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + !$EXP[InfoLineOnMenu]">conditional</animation>
 				<include content="HomeLogoImage" condition="[!Skin.HasSetting(VerticalHome) + [$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo]]] | [Skin.HasSetting(VerticalHome) + [$PARAM[ShowLargeLogo] | $PARAM[ShowLarge2Logo] | $PARAM[ShowLargeLogoUnfocused]]]">
 					<param name="left">1400</param>
 					<param name="top">60</param>
@@ -469,11 +469,12 @@
 					<param name="height">200</param>
 					<param name="visible">![Skin.HasSetting(VerticalHome) + $PARAM[ShowLargeLogoUnfocused] + ControlGroup(700).HasFocus]</param>
 				</include>
-				<include content="HomeLogoImage" condition="[!Skin.HasSetting(VerticalHome) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]]] | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.FanartTitle) + [[[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(FanartTitle.InTopBar)] | [!Skin.HasSetting(FanartTitle.InTopBar) + [[$PARAM[ShowMediumLogo] + ![Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)]] | [[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)]]]]]">
+				<include content="HomeLogoImage" condition="[!Skin.HasSetting(VerticalHome) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]]] | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.FanartTitle) + [[[$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]] + Skin.HasSetting(FanartTitle.InTopBar)] | [!Skin.HasSetting(FanartTitle.InTopBar) + [$PARAM[ShowMediumLogo] | $PARAM[ShowMedium2Logo]]]]]">
 					<param name="left">1550</param>
 					<param name="top">50</param>
 					<param name="width">300</param>
 					<param name="height">100</param>
+					<param name="visible">![Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.FanartTitle) + !Skin.HasSetting(FanartTitle.InTopBar) + !$PARAM[ShowMediumLogo] + !$EXP[InfoLineOnMenu]]</param>
 				</include>
 			</control>
 		</definition>
@@ -1023,7 +1024,7 @@
 	<include name="ShowIconMenuLabel">
 		<control type="group" description="Icon Menu Item Label">
 			<animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240">Conditional</animation>
-			<visible>!Skin.HasSetting(ShowInfoLine) | [Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | [Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf) + String.IsEmpty(Container(300).ListItem.Property(InfoLine))]</visible>
+			<visible>!$EXP[InfoLineOnMenu]</visible>
 			<visible>$EXP[BelowIconLabelShouldShow]</visible>
 			<control type="image">
 				<posx>134</posx>
@@ -1046,7 +1047,7 @@
 		</control>
 		<control type="group" description="Icon Menu Item Label">
 			<animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240">Conditional</animation>
-			<visible>Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf) + !String.IsEmpty(Container(300).ListItem.Property(InfoLine))</visible>
+			<visible>$EXP[InfoLineOnMenu]</visible>
 			<visible>$EXP[BelowIconLabelShouldShow]</visible>
 			<control type="image">
 				<posx>134</posx>

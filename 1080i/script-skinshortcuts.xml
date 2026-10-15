@@ -323,7 +323,7 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
-						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + Skin.HasSetting(ShowInfoLine)</visible>
+						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
 					<control type="radiobutton" id="1005">
 						<label>$LOCALIZE[31658]</label>
@@ -378,7 +378,7 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + [[Skin.HasSetting(VerticalHome) + [[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)]] | String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)]</visible>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + [[Skin.HasSetting(VerticalHome) + [String.IsEmpty(Container(211).ListItem.Property(InfoLine)) | !String.IsEmpty(Container(211).ListItem.Property(InfoLineShelf))]] | String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)]</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
 					<control type="button" id="1010">
@@ -521,6 +521,18 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
+						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					</control>
+					<control type="radiobutton" id="1023">
+						<description>Statistics line on the shelf header</description>
+						<label>$LOCALIZE[31384]</label>
+						<selected>!String.IsEmpty(Container(211).ListItem.Property(InfoLineShelf))</selected>
+						<height>60</height>
+						<width>1340</width>
+						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
+						<visible>!String.IsEmpty(Container(211).ListItem.Property(InfoLine)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath))</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
 				</control>

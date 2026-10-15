@@ -657,7 +657,7 @@
 	<include name="Library_Count">
 		<control type="group" description="Library stats">
 			<animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240">Conditional</animation>
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(InfoLine)) + Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)</visible>
+			<visible>$EXP[InfoLineOnMenu]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>623</posy>

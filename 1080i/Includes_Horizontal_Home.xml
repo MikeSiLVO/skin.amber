@@ -189,7 +189,7 @@
 			</include>
 
 			<!-- Info Line -->
-			<include condition="Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)">Library_Count</include>
+			<include>skinshortcuts-template-InfoLine</include>
 
 			<!-- Submenu content -->
 			<control type="fixedlist" id="9001" description="Submenu Bar">

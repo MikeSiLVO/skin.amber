@@ -392,7 +392,7 @@
 		<include condition="Skin.HasSetting(Vertical.IconOnly)">submenuContentIcon</include>
 		<include condition="!Skin.HasSetting(Vertical.IconOnly)">submenuContentText</include>
 
-		<include condition="Skin.HasSetting(ShowInfoLine) + !Skin.HasSetting(ShowInfoLineShelf)">Library_Count</include>
+		<include>skinshortcuts-template-InfoLine</include>
 		<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + Skin.HasSetting(Vertical.IconShowLabel) + !Skin.HasSetting(IconShowLabel.InTopBar)">ShowIconMenuLabel</include>
 	</include>
 </includes>

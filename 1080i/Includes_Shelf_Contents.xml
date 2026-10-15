@@ -149,7 +149,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id]) + $EXP[InfoLineOnShelf]</visible>
 					<top>-54</top>
 					<left>12</left>
 					<width>900</width>
@@ -316,7 +316,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + $EXP[InfoLineOnShelf]</visible>
 					<visible>[$PARAM[showShelvesInfo] + ![Control.HasFocus($PARAM[id1]) | Control.HasFocus($PARAM[id2])]] | !$PARAM[showShelvesInfo]</visible>
 					<top>-54</top>
 					<left>12</left>
@@ -327,7 +327,7 @@
 					<label>$VAR[LibraryStats]</label>
 				</control>
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + $EXP[InfoLineOnShelf]</visible>
 					<visible>$PARAM[showShelvesInfo] + [Control.HasFocus($PARAM[id1]) | Control.HasFocus($PARAM[id2])]</visible>
 					<top>-114</top>
 					<left>12</left>
@@ -399,7 +399,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + $EXP[InfoLineOnShelf]</visible>
 					<top>-54</top>
 					<left>12</left>
 					<width>1170</width>
@@ -608,7 +608,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + !Control.HasFocus($PARAM[id3]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + !Control.HasFocus($PARAM[id3]) + $EXP[InfoLineOnShelf]</visible>
 					<top>$PARAM[toplabel3triple]</top>
 					<left>32</left>
 					<width>900</width>
@@ -724,7 +724,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id3]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id3]) + $EXP[InfoLineOnShelf]</visible>
 					<top>-54</top>
 					<left>32</left>
 					<width>900</width>
@@ -840,7 +840,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + $EXP[InfoLineOnShelf]</visible>
 					<top>-54</top>
 					<left>32</left>
 					<width>900</width>
@@ -912,7 +912,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + $EXP[InfoLineOnShelf]</visible>
 					<top>-54</top>
 					<left>32</left>
 					<width>900</width>
@@ -1332,7 +1332,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id3]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id3]) + $EXP[InfoLineOnShelf]</visible>
 					<top>$PARAM[label3topdouble]</top>
 					<left>32</left>
 					<width>900</width>
@@ -1448,7 +1448,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + $EXP[InfoLineOnShelf]</visible>
 					<top>$PARAM[label2topdouble]</top>
 					<left>32</left>
 					<width>900</width>
@@ -1520,7 +1520,7 @@
 				</control>
 				<!-- Info Line -->
 				<control type="label">
-					<visible>!Control.HasFocus($PARAM[id1]) + Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)</visible>
+					<visible>!Control.HasFocus($PARAM[id1]) + $EXP[InfoLineOnShelf]</visible>
 					<top>$PARAM[label1topsingle]</top>
 					<left>32</left>
 					<width>900</width>

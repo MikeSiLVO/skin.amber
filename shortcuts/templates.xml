@@ -4765,6 +4765,13 @@
 			</item>
 		</controls>
 	</template>
+	<template include="InfoLine" build="true" menu="mainmenu">
+		<condition>InfoLine</condition>
+		<property name="InfoLine" from="InfoLine" />
+		<controls>
+			<include>Library_Count</include>
+		</controls>
+	</template>
 	<template include="InfoLineLists" build="true" menu="mainmenu">
 		<condition>InfoLine IN addons,videoaddons,musicaddons,programaddons,pictureaddons,gameaddons,movienode,tvshownode,musicvideonode,artistnode,albumnode,songnode</condition>
 		<preset content="InfoLineList" />

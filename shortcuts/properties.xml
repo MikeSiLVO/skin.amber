@@ -167,6 +167,7 @@
 
 	<property name="widgetTwoShelves" type="toggle" value="true" />
 	<property name="widgetThreeShelves" type="toggle" value="true" />
+	<property name="InfoLineShelf" type="toggle" value="true" />
 	<property name="widgetThreeShelvesLarge" type="toggle" value="true" />
 	<property name="centerShelves" type="toggle" value="true" />
 	<property name="showShelvesInfo" type="toggle" value="true" />
@@ -282,6 +283,7 @@
 		<button id="1021" property="widgetRecordingTV" />
 		<button id="1022" property="widgetRecordingRadio" />
 		<button id="1005" property="EHPlaylistFanart" />
+		<button id="1023" property="InfoLineShelf" />
 		<button id="2001" property="UseBottomShortcuts" />
 	</buttons>
 

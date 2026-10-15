@@ -312,21 +312,10 @@
 							<onclick>Skin.SetBool(Enable.EmbuaryHelper)</onclick>
 						</item>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="19" />
-							<param name="itemlabel" value="[B]$LOCALIZE[31383][/B]" />
-							<param name="skinsetting" value="ShowInfoLine" />
-						</include>
-						<include content="YesNoSettingItem">
-							<param name="itemid" value="20" />
-							<param name="itemlabel" value="      $LOCALIZE[31384]" />
-							<param name="skinsetting" value="ShowInfoLineShelf" />
-							<param name="itemvisibility" value="Skin.HasSetting(ShowInfoLine)" />
-						</include>
-						<include content="YesNoSettingItem">
 							<param name="itemid" value="21" />
-							<param name="itemlabel" value="      $LOCALIZE[31660]" />
+							<param name="itemlabel" value="$LOCALIZE[31660]" />
 							<param name="skinsetting" value="UseEHInfoLine" />
-							<param name="itemvisibility" value="Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(Enable.EmbuaryHelper)" />
+							<param name="itemvisibility" value="Skin.HasSetting(Enable.EmbuaryHelper)" />
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="22" />
