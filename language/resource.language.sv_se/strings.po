@@ -3035,8 +3035,8 @@ msgid "Show Dark Background Behind Shortcuts"
 msgstr "Visa mörk bakgrund bakom genvägar"
 
 msgctxt "#31767"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "Använd artistbildspel för ljud-fanart"
+msgid "Use online artist fanart for audio"
+msgstr "Använd artistens fanart från nätet för ljud"
 
 msgctxt "#31768"
 msgid "Disable Lyrics"
@@ -3560,8 +3560,8 @@ msgid "Show info"
 msgstr "Visa information"
 
 msgctxt "#31969"
-msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
-msgstr "Använd fanart-tillägg för artistbildspel med musikvisualisering"
+msgid "Use online artist fanart with music visualisation"
+msgstr "Använd artistens fanart från nätet med musikvisualisering"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"

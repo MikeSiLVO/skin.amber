@@ -3035,8 +3035,8 @@ msgid "Show Dark Background Behind Shortcuts"
 msgstr "Birta dökkan bakgrunn aftan við flýtilykla"
 
 msgctxt "#31767"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr ""
+msgid "Use online artist fanart for audio"
+msgstr "Nota fanart flytjanda af netinu fyrir hljóð"
 
 msgctxt "#31768"
 msgid "Disable Lyrics"
@@ -3560,8 +3560,8 @@ msgid "Show info"
 msgstr "Birta upplýsingar"
 
 msgctxt "#31969"
-msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
-msgstr ""
+msgid "Use online artist fanart with music visualisation"
+msgstr "Nota fanart flytjanda af netinu með myndrænni framsetningu tónlistar"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"

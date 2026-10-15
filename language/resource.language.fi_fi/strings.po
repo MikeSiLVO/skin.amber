@@ -3034,8 +3034,8 @@ msgid "Show Dark Background Behind Shortcuts"
 msgstr "Näytä Tumma Tausta Pikakuvakkeiden Takana"
 
 msgctxt "#31767"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "Käytä Artist Slideshow lisäosaa äänen fanart-kuville"
+msgid "Use online artist fanart for audio"
+msgstr "Käytä esittäjän verkosta haettuja fanart-kuvia äänelle"
 
 msgctxt "#31768"
 msgid "Disable Lyrics"
@@ -3559,8 +3559,8 @@ msgid "Show info"
 msgstr "Näytä tiedot"
 
 msgctxt "#31969"
-msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
-msgstr "Käytä Artist Slideshow -lisäosan fanart-kuvia visualisoinnin kanssa"
+msgid "Use online artist fanart with music visualisation"
+msgstr "Käytä esittäjän verkosta haettuja fanart-kuvia musiikin visualisoinnin kanssa"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"

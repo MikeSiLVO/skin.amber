@@ -171,7 +171,7 @@
 	</variable>
 
 	<variable name="NowPlayingAudioFanartVar">
-		<value condition="Skin.HasSetting(NowPlaying.ArtistSlideshow) + !String.IsEmpty(Window(Home).Property(SkinInfo.Player.Online.Music.Artist.FanArt))">$INFO[Window(Home).Property(SkinInfo.Player.Online.Music.Artist.FanArt)]</value>
+		<value condition="Skin.HasSetting(NowPlaying.ArtistFanart) + !String.IsEmpty(Window(Home).Property(SkinInfo.Player.Online.Music.Artist.FanArt))">$INFO[Window(Home).Property(SkinInfo.Player.Online.Music.Artist.FanArt)]</value>
 		<value condition="!String.IsEmpty(Control.GetLabel(4443))">$INFO[Control.GetLabel(4443)]</value>
 		<value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
 		<value>special://skin/backgrounds/Default.jpg</value>

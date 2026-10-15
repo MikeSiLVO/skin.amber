@@ -626,7 +626,7 @@
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="2" />
 							<param name="itemlabel" value="$LOCALIZE[31969]" />
-							<param name="skinsetting" value="Use_Artist_Slideshow" />
+							<param name="skinsetting" value="Use_Artist_Fanart" />
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="13" />
@@ -864,7 +864,7 @@
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="6" />
 							<param name="itemlabel" value="$LOCALIZE[31767]" />
-							<param name="skinsetting" value="NowPlaying.ArtistSlideshow" />
+							<param name="skinsetting" value="NowPlaying.ArtistFanart" />
 						</include>
 						<include content="CustomDialogSettingItem">
 							<param name="itemid" value="7" />

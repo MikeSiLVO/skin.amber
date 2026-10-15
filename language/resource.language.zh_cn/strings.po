@@ -3035,8 +3035,8 @@ msgid "Show Dark Background Behind Shortcuts"
 msgstr "快捷方式后显示深色背景"
 
 msgctxt "#31767"
-msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "音乐背景使用歌手幻灯片"
+msgid "Use online artist fanart for audio"
+msgstr "音频使用在线歌手背景图"
 
 msgctxt "#31768"
 msgid "Disable Lyrics"
@@ -3560,8 +3560,8 @@ msgid "Show info"
 msgstr "显示信息"
 
 msgctxt "#31969"
-msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
-msgstr "音乐可视化时使用歌手幻灯片插件的背景图"
+msgid "Use online artist fanart with music visualisation"
+msgstr "音乐可视化时使用在线歌手背景图"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"
