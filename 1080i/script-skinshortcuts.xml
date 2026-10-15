@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol always="true">90001</defaultcontrol>
+	<defaultcontrol always="true">313</defaultcontrol>
 	<onload>ClearProperty(SkinInfo.Math.DefaultMenuPosition.Result,Home)</onload>
 	<onunload condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Math.DefaultMenuPosition.Result)) + Skin.HasSetting(Enable.DefaultMenu)">Skin.SetString(InitPos,$INFO[Window(Home).Property(SkinInfo.Math.DefaultMenuPosition.Result)])</onunload>
 	<onunload condition="!String.IsEmpty(Window(Home).Property(InitPlusOne)) + Skin.HasSetting(Enable.DefaultMenu)">Skin.SetString(InitPosPlusOne,$INFO[Window(Home).Property(InitPlusOne)])</onunload>
@@ -56,7 +56,7 @@
 				<posy>180</posy>
 				<width>382</width>
 				<height>780</height>
-				<onright>90001</onright>
+				<onright>1000</onright>
 				<itemlayout width="382" height="60">
 					<control type="image">
 						<width>382</width>
@@ -116,7 +116,7 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="image">
-				<visible>ControlGroup(90000).HasFocus</visible>
+				<visible>ControlGroup(1100).HasFocus</visible>
 				<top>180</top>
 				<left>500</left>
 				<height>60</height>
@@ -124,7 +124,7 @@
 				<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 			</control>
 			<control type="image">
-				<visible>!ControlGroup(90000).HasFocus</visible>
+				<visible>!ControlGroup(1100).HasFocus</visible>
 				<top>180</top>
 				<left>500</left>
 				<height>60</height>
@@ -135,12 +135,13 @@
 			<control type="group">
 				<visible>!String.StartsWith(Window.Property(skinshortcuts-dialog),shelf) + !String.IsEqual(Window.Property(skinshortcuts-dialog),bottomshortcuts)</visible>
 				<!-- Buttons to add, delete and move menu/submenu items -->
-				<control type="grouplist" id="90000">
+				<control type="grouplist" id="1100">
 					<top>180</top>
 					<left>500</left>
 					<width>1340</width>
 					<height>60</height>
-					<ondown>401</ondown>
+					<onup>1022</onup>
+					<ondown>313</ondown>
 					<orientation>horizontal</orientation>
 					<onleft>211</onleft>
 					<control type="button" id="303">
@@ -204,14 +205,14 @@
 				</control>
 
 				<!-- Buttons to configure each menu/submenu item -->
-				<control type="grouplist" id="90001">
+				<control type="grouplist" id="1000">
 					<top>240</top>
 					<left>500</left>
 					<width>1340</width>
-					<height>670</height>
+					<height>720</height>
 					<onleft>211</onleft>
-					<onup>90000</onup>
-					<ondown>90000</ondown>
+					<onup>1100</onup>
+					<ondown>1100</ondown>
 					<control type="togglebutton" id="313" description="Enable/Disable">
 						<label>$LOCALIZE[24022]</label>
 						<altlabel>$LOCALIZE[24021]</altlabel>
@@ -264,17 +265,16 @@
 					<control type="button" id="405">
 						<description>Edit submenu</description>
 						<label>$ADDON[script.skinshortcuts 32072]</label>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="8405">
+					<control type="button" id="1001">
 						<description>Make Default Menu Item</description>
 						<label>$LOCALIZE[31645]</label>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
@@ -289,21 +289,22 @@
 						<onclick>SetProperty(InitPlusOne,$INFO[Container(211).CurrentItem],home)</onclick>
 						<onclick>Skin.SetString(InitPos,$INFO[Window(Home).Property(SkinInfo.Math.DefaultMenuPosition.Result)])</onclick>
 						<onclick>Skin.SetString(InitPosName,$INFO[Container(211).ListItem.Label])</onclick>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + Skin.HasSetting(Enable.DefaultMenu)</visible>
 					</control>
-					<control type="button" id="406">
+					<control type="button" id="1002">
 						<description>Bottom Shortcuts</description>
 						<label>$LOCALIZE[31635]</label>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 						<onfocus>SetProperty(ShortcutsCurrentItem,$INFO[Container(211).ListItem.Label],Home)</onfocus>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 						<visible>!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)</visible>
 					</control>
-					<control type="button" id="310">
+					<control type="button" id="1003">
 						<description>Background</description>
 						<label>$ADDON[script.skinshortcuts 32045]</label>
 						<label2>$INFO[Container(211).ListItem.Property(backgroundLabel)]</label2>
@@ -313,8 +314,7 @@
 						<font>ListDetails</font>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="500">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
+					<control type="button" id="1004">
 						<description>Choose infoline</description>
 						<label>$LOCALIZE[31417]</label>
 						<label2>$INFO[Container(211).ListItem.Property(InfoLineLabel)]</label2>
@@ -322,9 +322,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + Skin.HasSetting(ShowInfoLine)</visible>
 					</control>
-					<control type="radiobutton" id="807">
+					<control type="radiobutton" id="1005">
 						<label>$LOCALIZE[31658]</label>
 						<description>Use Embuary Helper for Playlist/Node Fanart</description>
 						<selected>String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)</selected>
@@ -336,83 +337,83 @@
 						<visible>Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHBackgrounds)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="808">
+					<control type="button" id="1006">
 						<description>Quantity of Playlist/Node Fanarts to use</description>
-						<visible>String.Contains(Container(211).ListItem.Property(path),xsp) | String.Contains(Container(211).ListItem.Property(path),playlists) | String.Contains(Container(211).ListItem.Property(path),xml)</visible>
-						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 						<label>$LOCALIZE[31603]</label>
 						<label2>$INFO[Container(211).ListItem.Property(playlistFanartLimitLabel)]</label2>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.Contains(Container(211).ListItem.Property(path),xsp) | String.Contains(Container(211).ListItem.Property(path),playlists) | String.Contains(Container(211).ListItem.Property(path),xml)</visible>
+						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="radiobutton" id="806">
+					<control type="radiobutton" id="1007">
 						<description>Show Two Shelves Together</description>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true)</visible>
 						<label>$LOCALIZE[31174]</label>
 						<selected>String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true)</selected>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="radiobutton" id="809">
+					<control type="radiobutton" id="1008">
 						<description>Show Three Shelves Together</description>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true)</visible>
 						<label>$LOCALIZE[31667]</label>
 						<selected>String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true)</selected>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="radiobutton" id="810">
+					<control type="radiobutton" id="1009">
 						<description>Show Three Shelves with Larger Art</description>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + [[Skin.HasSetting(VerticalHome) + [[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)]] | String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)]</visible>
 						<label>$LOCALIZE[31675]</label>
 						<selected>String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)</selected>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + [[Skin.HasSetting(VerticalHome) + [[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)]] | String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)]</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="811">
+					<control type="button" id="1010">
 						<description>Shelves position: Standard/Low/High</description>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
 						<label>$LOCALIZE[31609]</label>
 						<label2>$INFO[Container(211).ListItem.Property(horizontalWidgetPosLabel)]</label2>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="radiobutton" id="812">
+					<control type="radiobutton" id="1011">
 						<description>Center shelf items on screen</description>
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
 						<label>$LOCALIZE[31651]</label>
 						<selected>String.IsEqual(Container(211).ListItem.Property(centerShelves),true)</selected>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="radiobutton" id="813">
-						<visible>!Skin.HasSetting(Hide.AllShelves) + String.IsEqual(Window.Property(menuname),mainmenu)</visible>
+					<control type="radiobutton" id="1012">
 						<label>$LOCALIZE[31654]</label>
 						<selected>String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)</selected>
 						<height>60</height>
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>!Skin.HasSetting(Hide.AllShelves) + String.IsEqual(Window.Property(menuname),mainmenu)</visible>
+						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="800">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
+					<control type="button" id="1013">
 						<description>Widget</description>
 						<label>$LOCALIZE[31491] 1</label>
 						<label2>$INFO[Container(211).ListItem.Property(widgetLabel)]</label2>
@@ -420,10 +421,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="801">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath))</visible>
+					<control type="button" id="1014">
 						<description>Widget 2</description>
 						<label>$LOCALIZE[31491] 2</label>
 						<label2>$INFO[Container(211).ListItem.Property(widgetLabel.2)]</label2>
@@ -431,10 +432,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath))</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="802">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2))</visible>
+					<control type="button" id="1015">
 						<description>Widget 3</description>
 						<label>$LOCALIZE[31491] 3</label>
 						<label2>$INFO[Container(211).ListItem.Property(widgetLabel.3)]</label2>
@@ -442,10 +443,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2))</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="803">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true) + !String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.3))</visible>
+					<control type="button" id="1016">
 						<description>Widget 4</description>
 						<label>$LOCALIZE[31491] 4</label>
 						<label2>$INFO[Container(211).ListItem.Property(widgetLabel.4)]</label2>
@@ -453,10 +454,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true) + !String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.3))</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="804">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true) + !String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.3)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.4))</visible>
+					<control type="button" id="1017">
 						<description>Widget 5</description>
 						<label>$LOCALIZE[31491] 5</label>
 						<label2>$INFO[Container(211).ListItem.Property(widgetLabel.5)]</label2>
@@ -464,10 +465,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true) + !String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.3)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.4))</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="button" id="805">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true) + !String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.3)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.4)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.5))</visible>
+					<control type="button" id="1018">
 						<description>Widget 6</description>
 						<label>$LOCALIZE[31491] 6</label>
 						<label2>$INFO[Container(211).ListItem.Property(widgetLabel.6)]</label2>
@@ -475,11 +476,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + !String.IsEqual(Container(211).ListItem.Property(widgetTwoShelves),true) + !String.IsEqual(Container(211).ListItem.Property(widgetThreeShelves),true) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.3)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.4)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.5))</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="radiobutton" id="904">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
-						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<control type="radiobutton" id="1019">
 						<description>Hide widgets when not focused</description>
 						<label>$LOCALIZE[31483]</label>
 						<selected>!String.IsEmpty(Container(211).ListItem.Property(widgetsHide))</selected>
@@ -487,10 +487,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
-					</control>
-					<control type="radiobutton" id="903">
 						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					</control>
+					<control type="radiobutton" id="1020">
 						<description>Disable widgets fanart</description>
 						<label>$LOCALIZE[31484]</label>
 						<selected>!String.IsEmpty(Container(211).ListItem.Property(widgetDisableFanart))</selected>
@@ -498,10 +498,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
+						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
-					<control type="radiobutton" id="900">
-						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
-						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEmpty(Container(211).ListItem.Property(widgetRecordingRadio))</visible>
+					<control type="radiobutton" id="1021">
 						<description>Enable PVR TV Recording widget</description>
 						<label>$LOCALIZE[31485]</label>
 						<selected>!String.IsEmpty(Container(211).ListItem.Property(widgetRecordingTV))</selected>
@@ -509,10 +509,10 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
-					</control>
-					<control type="radiobutton" id="901">
 						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
-						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEmpty(Container(211).ListItem.Property(widgetRecordingTV))</visible>
+						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					</control>
+					<control type="radiobutton" id="1022">
 						<description>Enable PVR Radio Recording widget</description>
 						<label>$LOCALIZE[31486]</label>
 						<selected>!String.IsEmpty(Container(211).ListItem.Property(widgetRecordingRadio))</selected>
@@ -520,6 +520,8 @@
 						<width>1340</width>
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
+						<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
+						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
 				</control>
 			</control>
@@ -527,25 +529,31 @@
 			<!-- Shelf settings -->
 			<include content="ShortcutsShelfSettings">
 				<param name="slot" value="1" />
+				<param name="idprefix" value="30" />
 			</include>
 			<include content="ShortcutsShelfSettings">
 				<param name="slot" value="2" />
+				<param name="idprefix" value="31" />
 				<param name="suffix" value=".2" />
 			</include>
 			<include content="ShortcutsShelfSettings">
 				<param name="slot" value="3" />
+				<param name="idprefix" value="32" />
 				<param name="suffix" value=".3" />
 			</include>
 			<include content="ShortcutsShelfSettings">
 				<param name="slot" value="4" />
+				<param name="idprefix" value="33" />
 				<param name="suffix" value=".4" />
 			</include>
 			<include content="ShortcutsShelfSettings">
 				<param name="slot" value="5" />
+				<param name="idprefix" value="34" />
 				<param name="suffix" value=".5" />
 			</include>
 			<include content="ShortcutsShelfSettings">
 				<param name="slot" value="6" />
+				<param name="idprefix" value="35" />
 				<param name="suffix" value=".6" />
 			</include>
 
@@ -556,10 +564,10 @@
 					<top>240</top>
 					<left>500</left>
 					<width>1340</width>
-					<height>670</height>
+					<height>720</height>
 					<onup>2000</onup>
 					<ondown>2000</ondown>
-					<control type="radiobutton" id="8406">
+					<control type="radiobutton" id="2001">
 						<label>$LOCALIZE[31638]</label>
 						<selected>String.IsEqual(Container(212).ListItem.Property(UseBottomShortcuts),true)</selected>
 						<height>60</height>
@@ -567,7 +575,7 @@
 						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
-					<control type="button" id="2001">
+					<control type="button" id="2002">
 						<label>$LOCALIZE[31635]</label>
 						<onclick>back</onclick>
 						<height>60</height>
