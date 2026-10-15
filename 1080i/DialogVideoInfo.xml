@@ -434,7 +434,7 @@
 				<orientation>horizontal</orientation>
 				<itemgap>1</itemgap>
 				<align>left</align>
-				<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] | [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
+				<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				<visible>Skin.HasSetting(ShowRatingAwards)</visible>
 				<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
 				<control type="image" description="Oscars logo">
@@ -444,7 +444,7 @@
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/oscars.png</texture>
-					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)]</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
 				</control>
 				<control type="label" description="Oscar wins">
 					<width>30</width>
@@ -453,8 +453,8 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)]</label>
-					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)]</visible>
+					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
 				</control>
 				<control type="image" description="Golden Globes logo">
 					<height>40</height>
@@ -463,7 +463,7 @@
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/goldenglobes.png</texture>
-					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				</control>
 				<control type="label" description="Golden Globe wins">
 					<width>20</width>
@@ -472,8 +472,8 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)]</label>
-					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
+					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				</control>
 			</control>
 		</control>
@@ -620,7 +620,7 @@
 				<orientation>horizontal</orientation>
 				<itemgap>1</itemgap>
 				<align>left</align>
-				<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)] | [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
+				<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				<visible>Skin.HasSetting(ShowRatingAwards)</visible>
 				<control type="image" description="Oscars logo">
 					<height>40</height>
@@ -629,7 +629,7 @@
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/oscars.png</texture>
-					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)]</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
 				</control>
 				<control type="label" description="Oscar wins">
 					<width>30</width>
@@ -638,8 +638,8 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)]</label>
-					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)]</visible>
+					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
 				</control>
 				<control type="image" description="Golden Globes logo">
 					<height>40</height>
@@ -648,7 +648,7 @@
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/goldenglobes.png</texture>
-					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				</control>
 				<control type="label" description="Golden Globe wins">
 					<width>20</width>
@@ -657,8 +657,8 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)]</label>
-					<visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)]</visible>
+					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				</control>
 			</control>
 		</control>

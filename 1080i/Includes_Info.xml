@@ -2861,27 +2861,27 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[31676]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Wins),N/A)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31677]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Oscar_Nominations)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Nominations)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Oscar_Nominations)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Oscar_Nominations),N/A)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Nominated))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31678]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Wins),N/A)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31679]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Nominations)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Nominations)]</label2>
 			<onclick>noop</onclick>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobe_Nominations)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.GoldenGlobes_Nominations),N/A)</visible>
+			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Nominated))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31195]:</label>
