@@ -909,17 +909,6 @@
 					<ondown>95</ondown>
 					<visible>Control.IsEnabled(8) + !String.IsEmpty(Control.GetLabel(8))</visible>
 				</control>
-				<!-- <control type="button" id="981">
-					<description>Get More button</description>
-					<width>DetailsButtonWidth</width>
-					<label>$LOCALIZE[21452]</label>
-					<align>right</align>
-					<height>60</height>
-					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-					<onclick>SendClick(8)</onclick>
-					<ondown>95</ondown>
-					<visible>Control.IsEnabled(8) + String.IsEmpty(Control.GetLabel(8))</visible>
-				</control> -->
 				<control type="button" id="95">
 					<description>Manual button</description>
 					<width>DetailsButtonWidth</width>
@@ -974,17 +963,6 @@
 					<ondown>95</ondown>
 					<visible>Control.IsEnabled(8) + !String.IsEmpty(Control.GetLabel(8))</visible>
 				</control>
-				<!-- <control type="button" id="981">
-					<description>Get More button</description>
-					<width>254</width>
-					<label>$LOCALIZE[21452]</label>
-					<align>right</align>
-					<height>60</height>
-					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-					<onclick>SendClick(8)</onclick>
-					<ondown>95</ondown>
-					<visible>Control.IsEnabled(8) + String.IsEmpty(Control.GetLabel(8))</visible>
-				</control> -->
 				<control type="button" id="95">
 					<description>Manual button</description>
 					<width>254</width>

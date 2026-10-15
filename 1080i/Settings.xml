@@ -228,21 +228,6 @@
 				</content>
 			</control>
 		</control>
-		<!-- <control type="scrollbar" id="63">
-			<posx>1518</posx>
-			<posy>210</posy>
-			<width>36</width>
-			<height>780</height>
-			<texturesliderbackground />
-			<texturesliderbar />
-			<texturesliderbarfocus />
-			<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
-			<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<onleft>9003</onleft>
-			<onright>500</onright>
-		</control> -->
 		<control type="group" description="Holiday theme">
 			<visible>Skin.HasSetting(holiday)</visible>
 			<include>Holiday</include>

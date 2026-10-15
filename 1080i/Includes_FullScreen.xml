@@ -207,7 +207,6 @@
 		<visible>System.IdleTime(60)</visible>
 	</include>
 
-
 	<!-- Includes for opening Video Info Dialog from OSD -->
 	<variable name="VideoOSDInfoButtonListType">
 		<value condition="VideoPlayer.Content(movies)">movie</value>
@@ -1117,15 +1116,6 @@
 						<visible>!Skin.HasSetting(Disable.Lyrics)</visible>
 						<visible>Window.IsVisible(MusicOSD)</visible>
 					</control>
-					<!-- <control type="button" id="10107">
-						<width>470</width>
-						<font>Details</font>
-						<label>$LOCALIZE[559]</label>
-						<onclick>Close</onclick>
-						<onclick>ActivateWindow(MusicPlaylist)</onclick>
-						<texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
-						<visible>Window.IsVisible(MusicOSD)</visible>
-					</control> -->
 					<control type="button" id="10108">
 						<width>470</width>
 						<font>Details</font>

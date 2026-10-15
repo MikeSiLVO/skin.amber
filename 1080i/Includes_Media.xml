@@ -4946,82 +4946,6 @@
 		</definition>
 	</include>
 
-	<!-- <include name="GenericFavouriteIconBig">
-		<param name="isFocused">false</param>
-		<definition>
-			<include content="GenericThumbIconTemplate">
-				<param name="isFocused">$PARAM[isFocused]</param>
-				<param name="iconwidth">267</param>
-				<param name="iconheight">400</param>
-				<param name="iconoffset">0</param>
-				<param name="aspect">keep</param>
-				<param name="aligny">bottom</param>
-				<param name="shadowoffset">8</param>
-				<param name="bordersizeLT">16</param>
-				<param name="bordersizeRB">24</param>
-				<param name="belowtextboxvisibility">true</param>
-				<param name="belowtextbox">$INFO[ListItem.Label]</param>
-				<param name="belowtextboxwidth">234</param>
-				<param name="belowtextboxfont">Shelf_Label</param>
-				<param name="belowtextboxheight">64</param>
-				<param name="belowtextboxbackheight">74</param>
-				<param name="belowtextboxbackwidth">267</param>
-			</include>
-		</definition>
-	</include> -->
-
-	<!-- <include name="GenericFavouriteIconMed">
-		<param name="isFocused">false</param>
-		<definition>
-			<include content="GenericThumbIconTemplate">
-				<param name="isFocused">$PARAM[isFocused]</param>
-				<param name="iconwidth">167</param>
-				<param name="iconheight">250</param>
-				<param name="iconoffset">5</param>
-				<param name="aspect">keep</param>
-				<param name="aligny">bottom</param>
-				<param name="shadowoffset">8</param>
-				<param name="bordersizeLT">12</param>
-				<param name="bordersizeRB">20</param>
-				<param name="belowtextboxvisibility">true</param>
-				<param name="belowtextbox">$INFO[ListItem.Label]</param>
-				<param name="belowtextboxleft">-5</param>
-				<param name="belowtextboxwidth">155</param>
-				<param name="belowtextboxfont">FanartTitleFont</param>
-				<param name="belowtextboxalign">center</param>
-				<param name="belowtextboxheight">54</param>
-				<param name="belowtextboxbackheight">64</param>
-				<param name="belowtextboxbackwidth">180</param>
-			</include>
-		</definition>
-	</include> -->
-
-	<!-- <include name="GenericFavouriteIconSmall">
-		<param name="isFocused">false</param>
-		<definition>
-			<include content="GenericThumbIconTemplate">
-				<param name="isFocused">$PARAM[isFocused]</param>
-				<param name="iconwidth">107</param>
-				<param name="iconheight">160</param>
-				<param name="iconoffset">20</param>
-				<param name="aspect">keep</param>
-				<param name="aligny">bottom</param>
-				<param name="shadowoffset">28</param>
-				<param name="bordersizeLT">12</param>
-				<param name="bordersizeRB">20</param>
-				<param name="belowtextboxvisibility">true</param>
-				<param name="belowtextbox">$INFO[ListItem.Label]</param>
-				<param name="belowtextboxleft">-20</param>
-				<param name="belowtextboxwidth">135</param>
-				<param name="belowtextboxfont">FanartTitleFont</param>
-				<param name="belowtextboxalign">center</param>
-				<param name="belowtextboxheight">47</param>
-				<param name="belowtextboxbackheight">56</param>
-				<param name="belowtextboxbackwidth">160</param>
-			</include>
-		</definition>
-	</include> -->
-
 	<include name="GenericMusicIconBig">
 		<param name="isFocused">false</param>
 		<param name="isSmallIcon">false</param>
@@ -5354,25 +5278,6 @@
 			</focusedlayout>
 		</definition>
 	</include>
-
-	<!-- <include name="ActorLayout">
-		<param name="viewid" />
-		<param name="belowlabel2" />
-		<definition>
-			<itemlayout height="410" width="232.5">
-				<include content="GenericActorIconBig">
-					<param name="isFocused">false</param>
-					<param name="belowlabel2">$PARAM[belowlabel2]</param>
-				</include>
-			</itemlayout>
-			<focusedlayout height="410" width="232.5">
-				<include content="GenericActorIconBig">
-					<param name="isFocused">Control.HasFocus($PARAM[viewid])</param>
-					<param name="belowlabel2">$PARAM[belowlabel2]</param>
-				</include>
-			</focusedlayout>
-		</definition>
-	</include> -->
 
 	<include name="SetLayout">
 		<param name="viewid" />

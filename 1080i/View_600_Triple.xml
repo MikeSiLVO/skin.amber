@@ -20,11 +20,6 @@
 		<value condition="Integer.IsGreaterOrEqual(Container(6002).ListItem.PercentPlayed,90) + Integer.IsLess(Container(6002).ListItem.PercentPlayed,100)">OverlayInProgress90.png</value>
 	</variable>
 
-	<!-- <variable name="TripleSeasonUnwatchedEpisodes">
-		<value condition="!Integer.IsGreater(Container(6001).ListItem.Property(UnWatchedEpisodes),99)">$INFO[Container(6001).ListItem.Property(UnWatchedEpisodes)]</value>
-		<value>99+</value>
-	</variable> -->
-
 	<variable name="TripleMiddlePath">
 		<value condition="String.IsEmpty(Container.PluginName)">$INFO[Container(600).ListItem.FolderPath]</value>
 		<value />
@@ -730,7 +725,6 @@
 							<width>1030</width>
 							<height>67.5</height>
 							<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
-							<!-- <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(6002)">Conditional</animation> -->
 						</control>
 						<control type="label">
 							<top>1</top>

@@ -14,7 +14,6 @@
 				<height>1010</height>
 				<texture flipx="true">dialogs/SettingsBG.png</texture>
 				<colordiffuse>dfcebe9e</colordiffuse>
-				<!-- <colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
 			<control type="label">
 				<posx>711</posx>
