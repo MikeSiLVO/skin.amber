@@ -40,9 +40,7 @@
 					<height>60</height>
 					<textoffsetx>10</textoffsetx>
 					<align>center</align>
-					<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-					<focusedcolor>$VAR[FocusedTextColor]</focusedcolor>
 					<shadowcolor />
 				</control>
 			</control>

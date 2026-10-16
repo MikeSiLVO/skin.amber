@@ -126,7 +126,6 @@
 			<width>174</width>
 			<texture>badges/ratings/powered-by-tmdb.png</texture>
 			<aspectratio>keep</aspectratio>
-			<aligny>center</aligny>
 			<visible>String.Contains(ListItem.FolderPath,type=person)</visible>
 		</control>
 		<!-- Poster -->
@@ -245,7 +244,6 @@
 			<height>40</height>
 			<itemgap>8</itemgap>
 			<orientation>horizontal</orientation>
-			<align>left</align>
 			<visible>String.IsEmpty(ListItem.Property(tmdb_id))</visible>
 			<control type="grouplist" description="IMDb Rating or Main Rating">
 				<width>320</width>
@@ -255,8 +253,6 @@
 				<control type="image" description="IMDb logo">
 					<height>40</height>
 					<width>83</width>
-					<aligny>center</aligny>
-					<align>center</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/imdb2.png</texture>
 				</control>
@@ -265,7 +261,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[ListItem.Rating(imdb)]$INFO[ListItem.Votes(imdb), (, $LOCALIZE[205])]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.Rating(imdb)) + Skin.HasSetting(ShowRatingIMDb)</visible>
@@ -280,7 +275,6 @@
 					<width>auto</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>[B]$INFO[ListItem.Top250,#][/B]</label>
 					<scroll>true</scroll>
@@ -290,7 +284,6 @@
 				<visible>!String.IsEmpty(ListItem.Rating(tomatometerallcritics)) + Skin.HasSetting(ShowRatingRT)</visible>
 				<width>130</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>3</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -311,7 +304,6 @@
 				<visible>!String.IsEmpty(ListItem.Rating(tomatometerallaudience)) + Skin.HasSetting(ShowRatingRT)</visible>
 				<width>130</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>3</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -332,7 +324,6 @@
 				<visible>!String.IsEmpty(ListItem.Rating(metacritic)) + Skin.HasSetting(ShowRatingMC)</visible>
 				<width>90</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>5</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -354,7 +345,6 @@
 				<width>115</width>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<align>left</align>
 				<control type="image" description="TMDB logo">
 					<height>40</height>
 					<width>45</width>
@@ -375,11 +365,9 @@
 				<width>300</width>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<align>left</align>
 				<control type="image" description="TVDB logo">
 					<height>40</height>
 					<width>71</width>
-					<aligny>center</aligny>
 					<texture>badges/ratings/tvdb2.png</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -387,7 +375,6 @@
 					<width>auto</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.Rating(tvdb)]$INFO[ListItem.Votes(tvdb), (, $LOCALIZE[205])]</label>
 					<scroll>true</scroll>
@@ -398,11 +385,9 @@
 				<width>90</width>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<align>left</align>
 				<control type="image" description="Trakt logo">
 					<height>40</height>
 					<width>40</width>
-					<aligny>center</aligny>
 					<texture>badges/ratings/trakt.png</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -410,7 +395,6 @@
 					<width>auto</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.Rating(trakt)]</label>
 					<scroll>true</scroll>
@@ -420,8 +404,6 @@
 				<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(ShowRatingUserVideoInfo)</visible>
 				<width>80</width>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
-				<align>left</align>
 				<control type="image" description="User Rating logo">
 					<height>40</height>
 					<width>40</width>
@@ -431,7 +413,6 @@
 					<width>40</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.UserRating]</label>
 					<scroll>true</scroll>
@@ -441,14 +422,12 @@
 				<width>115</width>
 				<orientation>horizontal</orientation>
 				<itemgap>1</itemgap>
-				<align>left</align>
 				<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				<visible>Skin.HasSetting(ShowRatingAwards)</visible>
 				<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
 				<control type="image" description="Oscars logo">
 					<height>40</height>
 					<width>30</width>
-					<aligny>center</aligny>
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/oscars.png</texture>
@@ -459,8 +438,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
@@ -468,7 +445,6 @@
 				<control type="image" description="Golden Globes logo">
 					<height>40</height>
 					<width>30</width>
-					<aligny>center</aligny>
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/goldenglobes.png</texture>
@@ -479,8 +455,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
@@ -496,7 +470,6 @@
 			<height>40</height>
 			<itemgap>8</itemgap>
 			<orientation>horizontal</orientation>
-			<align>left</align>
 			<visible>!String.IsEmpty(ListItem.Property(tmdb_id)) + !Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
 			<control type="grouplist" description="Main Rating, TMDB">
 				<width>320</width>
@@ -506,8 +479,6 @@
 				<control type="image" description="TMDB logo">
 					<height>40</height>
 					<width>45</width>
-					<aligny>center</aligny>
-					<align>center</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/themoviedb3.png</texture>
 				</control>
@@ -516,7 +487,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[ListItem.Rating]$INFO[ListItem.Votes, (, $LOCALIZE[205])]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.Rating) + !String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0)</visible>
@@ -526,7 +496,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[ListItem.Rating]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.Rating) + [String.IsEmpty(ListItem.Votes) | String.IsEqual(ListItem.Votes,0)]</visible>
@@ -537,7 +506,6 @@
 				<visible>Skin.HasSetting(ShowRatingRT)</visible>
 				<width>130</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>3</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -559,7 +527,6 @@
 				<visible>Skin.HasSetting(ShowRatingRT)</visible>
 				<width>130</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>3</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -581,7 +548,6 @@
 				<visible>Skin.HasSetting(ShowRatingMC)</visible>
 				<width>90</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>5</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -607,8 +573,6 @@
 				<control type="image" description="IMDb logo">
 					<height>40</height>
 					<width>83</width>
-					<aligny>center</aligny>
-					<align>center</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/imdb2.png</texture>
 				</control>
@@ -617,7 +581,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Rating.imdb)]$INFO[Window(Home).Property(SkinInfo.Online.Rating.imdb.Votes), (, $LOCALIZE[205])]</label>
 					<scroll>true</scroll>
 				</control>
@@ -626,7 +589,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Rating.imdb)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Rating.imdb)) + [String.IsEmpty(Window(Home).Property(SkinInfo.Online.Rating.imdb.Votes)) | String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.imdb.Votes),0)]</visible>
@@ -636,13 +598,11 @@
 				<width>115</width>
 				<orientation>horizontal</orientation>
 				<itemgap>1</itemgap>
-				<align>left</align>
 				<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				<visible>Skin.HasSetting(ShowRatingAwards)</visible>
 				<control type="image" description="Oscars logo">
 					<height>40</height>
 					<width>30</width>
-					<aligny>center</aligny>
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/oscars.png</texture>
@@ -653,8 +613,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
@@ -662,7 +620,6 @@
 				<control type="image" description="Golden Globes logo">
 					<height>40</height>
 					<width>30</width>
-					<aligny>center</aligny>
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/goldenglobes.png</texture>
@@ -673,8 +630,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
@@ -691,7 +646,6 @@
 				<height>65</height>
 				<width>85</width>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<texture fallback="badges/mpaa/NR.png">$VAR[CertFlag]</texture>
 				<visible>!String.Contains(ListItem.MPAA,Brazil) + !String.Contains(ListItem.MPAA,UK) + !String.Contains(ListItem.MPAA,United Kingdom) + !String.Contains(ListItem.MPAA,classificação) + !String.Contains(ListItem.MPAA,France) + !String.Contains(ListItem.MPAA,Germany) + !String.Contains(ListItem.MPAA,Australia) + !String.Contains(ListItem.MPAA,Netherlands) + !String.Contains(ListItem.MPAA,NL) + !String.IsEmpty(ListItem.MPAA)</visible>
 			</control>
@@ -717,7 +671,6 @@
 				<height>65</height>
 				<width>85</width>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<texture fallback="badges/mpaa/NR.png">$VAR[TMDBCertFlag]</texture>
 				<visible>!String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Brazil) + !String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),UK) + !String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),United Kingdom) + !String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),classificação) + !String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),France) + !String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Germany) + !String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),Australia) +  !String.Contains(Window(Home).Property(SkinInfo.Online.MPAA),NL) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.MPAA))</visible>
 			</control>
@@ -742,7 +695,6 @@
 				<height>65</height>
 				<width>85</width>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<texture fallback="badges/mpaa/NR.png">$VAR[SetsCertFlag]</texture>
 				<visible>!String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Brazil) + !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),UK) + !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),United Kingdom) + !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),classificação) + !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),France) + !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Germany) + !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Australia) + !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),Netherlands) + !String.Contains(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),NL) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.MPAA))</visible>
 			</control>
@@ -767,8 +719,6 @@
 					<height>75</height>
 					<font>InfoTitle</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$VAR[panelheading]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEqual(ListItem.DBType,set)</visible>
@@ -776,10 +726,8 @@
 				<control type="label" description="Main Label - Sets">
 					<top>-45</top>
 					<width>950</width>
-					<height>60</height>
 					<font>InfoTitle</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[ListItem.Title,[B],[/B]] $INFO[Window(Home).Property(SkinInfo.Set.Years.Range),(,)]</label>
 					<scroll>true</scroll>
 					<visible>String.IsEqual(ListItem.DBType,set)</visible>
@@ -791,7 +739,6 @@
 					<width>160</width>
 					<texture background="true">$VAR[InfoStudios]</texture>
 					<aspectratio>keep</aspectratio>
-					<aligny>center</aligny>
 					<visible>!String.IsEmpty(ListItem.Studio) + !String.Contains(ListItem.Studio,/) + String.IsEmpty(ListItem.Property(tmdb_id)) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
 				</control>
 				<control type="image" description="1st. Studio - Sets">
@@ -801,7 +748,6 @@
 					<width>160</width>
 					<texture background="true">$VAR[InfoStudiosSets]</texture>
 					<aspectratio>keep</aspectratio>
-					<aligny>center</aligny>
 					<visible>String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Studios.1)) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
 				</control>
 				<control type="image" description="Studio - TMDb Helper">
@@ -811,7 +757,6 @@
 					<width>160</width>
 					<texture>$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio.1.Icon)]</texture>
 					<aspectratio>keep</aspectratio>
-					<aligny>center</aligny>
 					<visible>[!String.IsEmpty(ListItem.Property(tmdb_id)) | String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))</visible>
 				</control>
 				<control type="image" description="Line Split">
@@ -819,14 +764,12 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image" description="Line Split">
 					<top>83</top>
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="textbox" id="900031" description="Plot">
 					<include>VisibleFadeEffectDelay</include>
@@ -846,10 +789,8 @@
 					<ondown>9000</ondown>
 					<onright>9009</onright>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">icons/dots7.png</textureradioonfocus>
 					<textureradioonnofocus>icons/dots7.png</textureradioonnofocus>
-					<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 					<texturenofocus border="4">img/WhiteRoundedT.png</texturenofocus>
 					<width>37</width>
 					<height>17</height>
@@ -872,7 +813,6 @@
 					<width>1</width>
 					<height>375</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="panel" id="9009">
 					<include>VisibleFadeEffectDelay</include>
@@ -1423,7 +1363,6 @@
 				<height>392</height>
 				<texture border="8">img/WhiteRoundedST2.png</texture>
 				<colordiffuse>Black</colordiffuse>
-				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="videowindow">
 				<top>14</top>

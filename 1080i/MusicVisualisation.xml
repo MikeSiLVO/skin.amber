@@ -229,7 +229,6 @@
 				<top>50</top>
 				<width>800</width>
 				<height>40</height>
-				<align>left</align>
 				<label>$INFO[MusicPlayer.Artist]</label>
 				<scroll>true</scroll>
 				<font>InfoTitle</font>
@@ -268,12 +267,10 @@
 				</control>
 				<control type="label">
 					<width>1140</width>
-					<height>60</height>
 					<font>MainLabelBigTitle</font>
 					<label>$INFO[MusicPlayer.TrackNumber,,: ]$INFO[Player.Title]</label>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<scroll>true</scroll>
-					<scrollspeed>25</scrollspeed>
 				</control>
 			</control>
 
@@ -283,7 +280,6 @@
 				<top>176</top>
 				<width>740</width>
 				<height>40</height>
-				<align>left</align>
 				<label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, (,) ]</label>
 				<font>InfoTitle</font>
 				<scroll>true</scroll>
@@ -295,7 +291,6 @@
 				<top>176</top>
 				<width>1205</width>
 				<height>40</height>
-				<align>left</align>
 				<label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, (,) ]</label>
 				<font>InfoTitle</font>
 				<scroll>true</scroll>

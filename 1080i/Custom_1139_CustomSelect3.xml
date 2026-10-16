@@ -34,7 +34,6 @@
 					<label>$VAR[CustomInfoSelectHeader]</label>
 					<scroll>true</scroll>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 			</control>
@@ -63,7 +62,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<orientation>vertical</orientation>
 				<onleft>90101</onleft>
 			</control>
 		</control>

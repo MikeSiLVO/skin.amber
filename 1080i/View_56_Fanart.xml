@@ -197,8 +197,6 @@
 				<control type="label" description="Title Label">
 					<top>72</top>
 					<width>1360</width>
-					<height>60</height>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<shadowcolor>Black</shadowcolor>
 					<font>InfoTitle</font>
 					<scroll>false</scroll>
@@ -261,10 +259,8 @@
 							<left>40</left>
 							<height>40</height>
 							<width>620</width>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</label>
 							<font>ListDetails</font>
-							<scrollspeed>25</scrollspeed>
 						</control>
 					</itemlayout>
 					<content sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/?setid=$INFO[ListItem.DBID]</content>
@@ -846,7 +842,6 @@
 					<control type="label" description="Title Label">
 						<top>87</top>
 						<width>900</width>
-						<height>60</height>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<font>InfoTitle</font>
 						<scroll>false</scroll>
@@ -867,7 +862,6 @@
 						<width>900</width>
 						<font>Details</font>
 						<scroll>false</scroll>
-						<aligny>center</aligny>
 						<label>$VAR[panelsubheading]</label>
 						<visible>Container.Content(Artists)</visible>
 					</control>
@@ -902,7 +896,6 @@
 						<top>260</top>
 						<width>900</width>
 						<height>194</height>
-						<align>justify</align>
 						<label>$VAR[Plots]</label>
 						<autoscroll delay="3000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>![Container.Content(Artists) | Container.Content(albums) | Container.Content(sets)] | [ListItem.IsCollection + [!String.IsEmpty(ListItem.Plot) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.ExtendedPlots))] + !Skin.HasSetting(AlwaysShowSetList)]</visible>
@@ -911,7 +904,6 @@
 						<top>230</top>
 						<width>900</width>
 						<height>240</height>
-						<align>justify</align>
 						<label>$VAR[Plots]</label>
 						<autoscroll delay="3000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>[Container.Content(Artists) | Container.Content(albums)]</visible>
@@ -936,10 +928,8 @@
 								<left>40</left>
 								<height>40</height>
 								<width>900</width>
-								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</label>
 								<font>ListDetails</font>
-								<scrollspeed>25</scrollspeed>
 							</control>
 						</itemlayout>
 						<content sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/?setid=$INFO[ListItem.DBID]</content>
@@ -952,7 +942,6 @@
 							<width>640</width>
 							<height>360</height>
 							<texture border="8">img/WhiteRoundedST2.png</texture>
-							<aspectratio>stretch</aspectratio>
 						</control>
 						<control type="image" description="Single Fanart">
 							<left>1023</left>
@@ -1283,10 +1272,8 @@
 									<left>40</left>
 									<height>40</height>
 									<width>800</width>
-									<aligny>center</aligny>
 									<label>$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</label>
 									<font>ListDetails</font>
-									<scrollspeed>25</scrollspeed>
 								</control>
 							</itemlayout>
 							<content sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/?setid=$INFO[ListItem.DBID]</content>
@@ -1506,7 +1493,6 @@
 									<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[180]: [/COLOR]$INFO[ListItem.Duration]</label>
 									<scroll>true</scroll>
 									<visible>!String.IsEmpty(ListItem.Duration)</visible>
-									<align>left</align>
 								</control>
 								<control type="label">
 									<width>360</width>
@@ -1574,7 +1560,6 @@
 						<top>1088</top>
 						<width>1920</width>
 						<height>534</height>
-						<aspectratio>stretch</aspectratio>
 						<texture border="0,30,0,30">OSD/OSDBackground.png</texture>
 					</control>
 					<control type="image">
@@ -1920,7 +1905,6 @@
 										<width>300</width>
 										<height>70</height>
 										<font>font24_title</font>
-										<textcolor>$VAR[LabelTextColor]</textcolor>
 										<label>$LOCALIZE[31973] $INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label>
 									</control>
 									<control type="image" description="Watched Overlay">

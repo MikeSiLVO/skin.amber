@@ -27,8 +27,6 @@
 				<top>150</top>
 				<width>1070</width>
 				<height>840</height>
-				<font>InfoPlot</font>
-				<align>justify</align>
                 <pagecontrol>61</pagecontrol>
 			</control>
 			<control type="scrollbar" id="61">
@@ -41,10 +39,8 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<orientation>vertical</orientation>
 				<ondown>61</ondown>
 				<onup>61</onup>
-				<showonepage>false</showonepage>
 			</control>
 		</control>
 	</controls>

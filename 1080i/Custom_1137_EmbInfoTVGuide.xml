@@ -88,14 +88,12 @@
 						<control type="label" description="Main Label">
 							<left>10</left>
 							<width>220</width>
-							<height>60</height>
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 							<font>InfoPlot</font>
 						</control>
 						<control type="label">
 							<left>230</left>
 							<width>157</width>
-							<height>60</height>
 							<align>right</align>
 							<label>$INFO[ListItem.Label2]</label>
 							<font>InfoPlot</font>
@@ -113,7 +111,6 @@
 						<control type="label" description="Main Label">
 							<left>10</left>
 							<width>220</width>
-							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
 							<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -122,7 +119,6 @@
 						<control type="label">
 							<left>230</left>
 							<width>157</width>
-							<height>60</height>
 							<align>right</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
@@ -179,7 +175,6 @@
 					<ondown condition="Container(4000).HasFocus(6)">5006</ondown>
 					<ondown condition="Container(4000).HasFocus(7)">5007</ondown>
 					<onleft>4000</onleft>
-					<showonepage>false</showonepage>
 					<orientation>horizontal</orientation>
 					<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				</control>

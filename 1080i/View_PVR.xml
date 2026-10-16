@@ -307,9 +307,6 @@
 					<control type="label" id="2">
 						<left>10</left>
 						<width>1400</width>
-						<height>60</height>
-						<aligny>center</aligny>
-						<align>left</align>
 						<font>Details</font>
 						<label>$INFO[ListItem.Label]</label>
 						<scroll>true</scroll>
@@ -356,7 +353,6 @@
 						<width>75</width>
 						<height>70</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						<scroll>true</scroll>
@@ -367,8 +363,6 @@
 						<width>258</width>
 						<height>70</height>
 						<textcolor>$VAR[HighlightColor]</textcolor>
-						<aligny>center</aligny>
-						<align>left</align>
 						<font>ListDetails</font>
 						<label>$INFO[ListItem.ChannelName]</label>
 						<scroll>true</scroll>
@@ -415,7 +409,6 @@
 						<font>ListDetails</font>
 						<label>$INFO[ListItem.Label]</label>
 						<scroll>false</scroll>
-						<textcolor>$VAR[LabelTextColor]</textcolor>
 						<visible>$EXP[ShowPVROverlay]</visible>
 					</control>
 					<control type="label" id="1">
@@ -424,7 +417,6 @@
 						<width>45</width>
 						<height>36</height>
 						<scroll>false</scroll>
-						<textcolor>$VAR[LabelTextColor]</textcolor>
 						<font>ListDetails</font>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!$EXP[ShowPVROverlay]</visible>
@@ -514,7 +506,6 @@
 					<top>290</top>
 					<width>306</width>
 					<height>80</height>
-					<aligny>center</aligny>
 					<texture colordiffuse="$VAR[HighlightColor]" border="20">button-foguide.png</texture>
 					<visible>Control.HasFocus(11)</visible>
 				</control>
@@ -553,7 +544,6 @@
 							<top>0</top>
 							<width>306</width>
 							<height>80</height>
-							<aligny>center</aligny>
 							<texture colordiffuse="FF666666" border="20">button-nofoguide.png</texture>
 						</control>
 						<control type="label">
@@ -561,7 +551,6 @@
 							<width>300</width>
 							<height>42</height>
 							<align>center</align>
-							<aligny>center</aligny>
 							<font>ListDetails</font>
 							<label>$INFO[ListItem.Label]</label>
 							<textcolor>lightgrey</textcolor>
@@ -573,7 +562,6 @@
 							<top>0</top>
 							<width>306</width>
 							<height>80</height>
-							<aligny>center</aligny>
 							<texture colordiffuse="$VAR[HighlightColor]" border="20">button-foguide.png</texture>
 							<animation effect="fade" end="30" condition="true">Conditional</animation>
 							<visible>!Control.HasFocus(11)</visible>
@@ -583,7 +571,6 @@
 							<width>300</width>
 							<height>42</height>
 							<align>center</align>
-							<aligny>center</aligny>
 							<scroll>true</scroll>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<font>ListDetails</font>
@@ -695,7 +682,6 @@
 							<height>99</height>
 							<width>80</width>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						</control>
 						<control type="image" description="TV Logo Shadow">
@@ -822,7 +808,6 @@
 							<height>99</height>
 							<width>80</width>
 							<align>center</align>
-							<aligny>center</aligny>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
 							<shadowcolor />
@@ -964,8 +949,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>50</onleft>
 				<onright condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onright>
 				<onright condition="Skin.HasSetting(KioskMode.Enabled)">50</onright>

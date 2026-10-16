@@ -58,7 +58,6 @@
 						<width>120</width>
 						<height>75</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime,[B],[/B]]</label>
 					</control>
 					<control type="image">
@@ -66,8 +65,6 @@
 						<top>17.5</top>
 						<width>40</width>
 						<height>40</height>
-						<align>center</align>
-						<aligny>center</aligny>
 						<texture>$VAR[PVRStatusImageVar]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
@@ -99,7 +96,6 @@
 						<width>120</width>
 						<height>75</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.StartTime,[B],[/B]]</label>
@@ -109,8 +105,6 @@
 						<top>17.5</top>
 						<width>40</width>
 						<height>40</height>
-						<align>center</align>
-						<aligny>center</aligny>
 						<texture>$VAR[PVRStatusImageVar]</texture>
 						<aspectratio>keep</aspectratio>
 						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
@@ -154,8 +148,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 			</control>
 		</control>
 	</controls>

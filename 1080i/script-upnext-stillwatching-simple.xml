@@ -25,14 +25,12 @@
 						<orientation>horizontal</orientation>
 						<height>56</height>
 						<itemgap>10</itemgap>
-						<align>left</align>
 						<control type="button" id="3012">
 							<label>      $LOCALIZE[31372] [B][COLOR $VAR[LabelTextColor]]$INFO[Player.TimeRemaining(ss),,][/COLOR][/B] $LOCALIZE[31168]</label>
 							<height>56</height>
 							<width min="50">auto</width>
 							<font>font20_title</font>
 							<textoffsetx>55</textoffsetx>
-							<aligny>center</aligny>
 							<align>center</align>
 						</control>
 						<control type="button" id="3013">
@@ -41,14 +39,12 @@
 							<width min="50">auto</width>
 							<font>font20_title</font>
 							<textoffsetx>15</textoffsetx>
-							<aligny>center</aligny>
 							<align>center</align>
 						</control>
 						<!-- Label -->
 						<control type="label">
 							<width>auto</width>
 							<height>56</height>
-							<aligny>center</aligny>
 							<font>font30_title</font>
 							<textcolor>eeffffff</textcolor>
 							<shadowcolor>00000000</shadowcolor>

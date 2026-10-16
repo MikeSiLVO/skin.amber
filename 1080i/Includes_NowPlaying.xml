@@ -831,7 +831,6 @@
 					<width>$PARAM[borderwidth]</width>
 					<height>$PARAM[borderheight]</height>
 					<texture border="8">img/WhiteRoundedST2.png</texture>
-					<aspectratio>stretch</aspectratio>
 					<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				</control>
 				<control type="image">
@@ -1245,7 +1244,6 @@
 								<width>1105</width>
 								<height>706</height>
 								<texture border="8">img/WhiteRoundedST2.png</texture>
-								<aspectratio>stretch</aspectratio>
 								<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 							</control>
 							<control type="image">
@@ -1282,8 +1280,6 @@
 									<top>30</top>
 									<left>6</left>
 									<height>30</height>
-									<align>left</align>
-									<aligny>center</aligny>
 									<font>InfoTitle</font>
 									<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</label>
 									<scroll>true</scroll>
@@ -1293,8 +1289,6 @@
 									<top>30</top>
 									<left>6</left>
 									<height>30</height>
-									<align>left</align>
-									<aligny>center</aligny>
 									<font>InfoTitle</font>
 									<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 									<scroll>true</scroll>
@@ -1305,7 +1299,6 @@
 									<height>30</height>
 									<right>6</right>
 									<align>right</align>
-									<aligny>center</aligny>
 									<font>ListDetails</font>
 									<label>$INFO[Player.FinishTime,$LOCALIZE[19127] ]</label>
 									<scroll>true</scroll>
@@ -1316,7 +1309,6 @@
 									<height>30</height>
 									<right>6</right>
 									<align>right</align>
-									<aligny>center</aligny>
 									<font>ListDetails</font>
 									<label>$INFO[PVR.EpgEventFinishTime,$LOCALIZE[19127] ]</label>
 									<scroll>true</scroll>
@@ -1414,7 +1406,6 @@
 								<width>1105</width>
 								<height>706</height>
 								<texture border="8">img/WhiteRoundedST2.png</texture>
-								<aspectratio>stretch</aspectratio>
 								<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 							</control>
 							<control type="image">
@@ -1451,8 +1442,6 @@
 									<top>30</top>
 									<left>6</left>
 									<height>30</height>
-									<align>left</align>
-									<aligny>center</aligny>
 									<font>InfoTitle</font>
 									<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</label>
 									<scroll>true</scroll>
@@ -1462,8 +1451,6 @@
 									<top>30</top>
 									<left>6</left>
 									<height>30</height>
-									<align>left</align>
-									<aligny>center</aligny>
 									<font>InfoTitle</font>
 									<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 									<scroll>true</scroll>
@@ -1474,7 +1461,6 @@
 									<height>30</height>
 									<right>6</right>
 									<align>right</align>
-									<aligny>center</aligny>
 									<font>ListDetails</font>
 									<label>$INFO[Player.FinishTime,$LOCALIZE[19127] ]</label>
 									<scroll>true</scroll>
@@ -1485,7 +1471,6 @@
 									<height>30</height>
 									<right>6</right>
 									<align>right</align>
-									<aligny>center</aligny>
 									<font>ListDetails</font>
 									<label>$INFO[PVR.EpgEventFinishTime,$LOCALIZE[19127] ]</label>
 									<scroll>true</scroll>

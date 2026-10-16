@@ -31,7 +31,6 @@
 					<label>$LOCALIZE[31283]</label>
 					<scroll>true</scroll>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 			</control>
@@ -40,7 +39,6 @@
 				<top>366</top>
 				<width>695</width>
 				<height>610</height>
-				<itemgap>0</itemgap>
 				<onright>9010163</onright>
 				<pagecontrol>9010163</pagecontrol>
 				<orientation>vertical</orientation>
@@ -286,8 +284,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>90101</onleft>
 				<onright>90101</onright>
 			</control>

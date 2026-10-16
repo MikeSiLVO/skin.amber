@@ -115,8 +115,6 @@
 				<width>120</width>
 				<height>120</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
-				<align>center</align>
-				<aligny>center</aligny>
 			</control>
 		</itemlayout>
 		<focusedlayout height="120" width="120">
@@ -125,8 +123,6 @@
 				<width>120</width>
 				<height>120</height>
 				<texture background="true" colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
-				<align>center</align>
-				<aligny>center</aligny>
 			</control>
 		</focusedlayout>
 		<content>
@@ -242,7 +238,6 @@
 				<control type="label" description="Main Label">
 					<left>30</left>
 					<width>360</width>
-					<height>60</height>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
@@ -255,7 +250,6 @@
 				<control type="label" description="Main Label">
 					<left>30</left>
 					<width>360</width>
-					<height>60</height>
 					<textcolor>$VAR[FocusedTextColor]</textcolor>
 					<shadowcolor />
 					<label>$INFO[ListItem.Label]</label>
@@ -293,8 +287,6 @@
 					<width>120</width>
 					<height>120</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<align>center</align>
-					<aligny>center</aligny>
 				</control>
 			</itemlayout>
 			<focusedlayout height="120" width="120">
@@ -303,8 +295,6 @@
 					<width>120</width>
 					<height>120</height>
 					<texture background="true" colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
-					<align>center</align>
-					<aligny>center</aligny>
 				</control>
 			</focusedlayout>
 			<content>

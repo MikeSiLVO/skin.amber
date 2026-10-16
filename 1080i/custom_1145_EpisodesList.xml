@@ -35,7 +35,6 @@
 				<width>1040</width>
 				<height>40</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>[B]$INFO[VideoPlayer.TVShowTitle][/B] - $INFO[Container(6001).ListItem.Label]</label>
 				<scroll>true</scroll>
@@ -47,7 +46,6 @@
 				<width>1040</width>
 				<height>40</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>[B]$INFO[VideoPlayer.TVShowTitle][/B] - $LOCALIZE[20373] $INFO[VideoPlayer.Season]</label>
 				<scroll>true</scroll>
@@ -59,7 +57,6 @@
 				<width>1000</width>
 				<height>1</height>
 				<texture>img/LineL.png</texture>
-				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(SeasonsEpisodeList)</visible>
@@ -130,7 +127,6 @@
 					<width>1000</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<!-- Episodes list with seasons -->
@@ -163,7 +159,6 @@
 						<left>20</left>
 						<height>58</height>
 						<width>870</width>
-						<align>left</align>
 						<font>font14</font>
 						<shadowcolor />
 						<label>$INFO[ListItem.Label]  ($INFO[ListItem.Premiered])</label>
@@ -189,7 +184,6 @@
 						<left>20</left>
 						<height>58</height>
 						<width>890</width>
-						<align>left</align>
 						<scroll>true</scroll>
 						<label>[B]$INFO[ListItem.Label][/B]  ($INFO[ListItem.Premiered])</label>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -234,7 +228,6 @@
 							<left>-12</left>
 							<height>58</height>
 							<width>830</width>
-							<align>left</align>
 							<scroll>true</scroll>
 							<label>[B]$INFO[ListItem.Label][/B]  ($INFO[ListItem.Premiered])</label>
 							<textcolor>$VAR[HighlightColor]</textcolor>
@@ -246,7 +239,6 @@
 							<left>317</left>
 							<height>58</height>
 							<width>785</width>
-							<align>left</align>
 							<font>ListDetails</font>
 							<scroll>true</scroll>
 							<label>[B][CAPITALIZE][COLOR $VAR[HighlightColor]][LOWERCASE]$LOCALIZE[19081]:[/LOWERCASE][/CAPITALIZE][/COLOR][/B] $INFO[ListItem.EndTime]</label>
@@ -259,7 +251,6 @@
 							<top>71</top>
 							<width>578</width>
 							<height>160</height>
-							<align>justify</align>
 							<aligny>top</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>black</selectedcolor>
@@ -298,7 +289,6 @@
 						<left>20</left>
 						<height>58</height>
 						<width>870</width>
-						<align>left</align>
 						<font>font14</font>
 						<shadowcolor />
 						<label>$INFO[ListItem.Label]  ($INFO[ListItem.Premiered])</label>
@@ -339,7 +329,6 @@
 							<left>-12</left>
 							<height>58</height>
 							<width>830</width>
-							<align>left</align>
 							<scroll>true</scroll>
 							<label>[B]$INFO[ListItem.Label][/B]  ($INFO[ListItem.Premiered])</label>
 							<textcolor>$VAR[HighlightColor]</textcolor>
@@ -351,7 +340,6 @@
 							<left>317</left>
 							<height>58</height>
 							<width>785</width>
-							<align>left</align>
 							<font>ListDetails</font>
 							<scroll>true</scroll>
 							<label>[B][CAPITALIZE][COLOR $VAR[HighlightColor]][LOWERCASE]$LOCALIZE[19081]:[/LOWERCASE][/CAPITALIZE][/COLOR][/B] $INFO[ListItem.EndTime]</label>
@@ -364,7 +352,6 @@
 							<top>71</top>
 							<width>578</width>
 							<height>160</height>
-							<align>justify</align>
 							<aligny>top</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>black</selectedcolor>
@@ -464,7 +451,6 @@
 						<top>43</top>
 						<height>58</height>
 						<width>830</width>
-						<align>left</align>
 						<scroll>true</scroll>
 						<label>[B]$INFO[Container(6001).ListItem.Label][/B]  ($INFO[Container(6001).ListItem.Premiered])</label>
 						<textcolor>$VAR[HighlightColor]</textcolor>
@@ -476,7 +462,6 @@
 						<left>317</left>
 						<height>58</height>
 						<width>785</width>
-						<align>left</align>
 						<font>ListDetails</font>
 						<scroll>true</scroll>
 						<label>[B][CAPITALIZE][COLOR $VAR[HighlightColor]][LOWERCASE]$LOCALIZE[19081]:[/LOWERCASE][/CAPITALIZE][/COLOR][/B] $INFO[Container(6001).ListItem.EndTime]</label>
@@ -489,7 +474,6 @@
 						<top>171</top>
 						<width>578</width>
 						<height>360</height>
-						<align>justify</align>
 						<aligny>top</aligny>
 						<textcolor>white</textcolor>
 						<selectedcolor>black</selectedcolor>
@@ -511,8 +495,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 			</control>
 		</control>
 	</controls>

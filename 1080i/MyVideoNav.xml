@@ -244,9 +244,7 @@
 			<control type="label" description="Main label">
 				<left>30</left>
 				<width>1305</width>
-				<height>60</height>
 				<scroll>false</scroll>
-				<align>left</align>
 				<font>font38_title</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$VAR[panelheading]</label>
@@ -257,7 +255,6 @@
 				<width>1305</width>
 				<height>30</height>
 				<scroll>false</scroll>
-				<align>left</align>
 				<label>[B]$VAR[panelsubheading][/B]</label>
 			</control>
 		</control>

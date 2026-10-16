@@ -3774,7 +3774,6 @@
 				<font>font16</font>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 				<shadowcolor />
-				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName][/B]  -  $VAR[panelheading]</label>
 				<scroll>true</scroll>
 			</control>
@@ -3785,7 +3784,6 @@
 				<height>40</height>
 				<width>860</width>
 				<font>font16</font>
-				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName][/B]  -  $VAR[panelheading]</label>
 				<scroll>true</scroll>
 			</control>
@@ -3798,7 +3796,6 @@
 				<font>font16</font>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 				<shadowcolor />
-				<aligny>center</aligny>
 				<label>$VAR[panelheading]</label>
 				<scroll>true</scroll>
 			</control>
@@ -3809,7 +3806,6 @@
 				<height>40</height>
 				<width>860</width>
 				<font>font16</font>
-				<aligny>center</aligny>
 				<label>$VAR[panelheading]</label>
 				<scroll>true</scroll>
 			</control>
@@ -3822,7 +3818,6 @@
 				<font>font16</font>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 				<shadowcolor />
-				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<scroll>true</scroll>
 			</control>
@@ -3833,7 +3828,6 @@
 				<height>40</height>
 				<width>860</width>
 				<font>font16</font>
-				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<scroll>true</scroll>
 			</control>
@@ -3844,8 +3838,6 @@
 				<height>40</height>
 				<width>$PARAM[width]</width>
 				<font>ListDetails</font>
-				<aligny>center</aligny>
-				<align>left</align>
 				<label>$VAR[panelsubheading]</label>
 				<scroll>true</scroll>
 			</control>
@@ -3856,8 +3848,6 @@
 				<height>40</height>
 				<width>$PARAM[width]</width>
 				<font>ListDetails</font>
-				<aligny>center</aligny>
-				<align>left</align>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 				<shadowcolor />
 				<label>$VAR[panelsubheading]</label>

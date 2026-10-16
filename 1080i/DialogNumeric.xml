@@ -37,9 +37,7 @@
 					<left>660</left>
 					<top>318</top>
 					<width>512</width>
-					<height>60</height>
 					<align>center</align>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<font>Keyboard</font>
 					<scroll>true</scroll>
 				</control>

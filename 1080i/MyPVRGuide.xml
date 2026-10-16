@@ -30,9 +30,6 @@
 				<top>45</top>
 				<control type="label">
 					<width>1400</width>
-					<height>60</height>
-					<aligny>center</aligny>
-					<align>left</align>
 					<scroll>false</scroll>
 					<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Genre,  -  ,  -]  [COLOR Grey3]$INFO[ListItem.StartTime,(,  -  ]$INFO[ListItem.EndTime,,)][/COLOR]</label>
 					<wrapmultiline>true</wrapmultiline>
@@ -41,8 +38,6 @@
 					<top>70</top>
 					<width>1400</width>
 					<height>30</height>
-					<aligny>center</aligny>
-					<align>left</align>
 					<scroll>false</scroll>
 					<label>[COLOR $VAR[HighlightColor]]$VAR[SeasonEpisodeLabel][/COLOR] - $INFO[ListItem.EpisodeName]</label>
 					<visible>![String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Episode)] + !String.IsEmpty(ListItem.EpisodeName)</visible>
@@ -51,8 +46,6 @@
 					<top>70</top>
 					<width>1400</width>
 					<height>30</height>
-					<aligny>center</aligny>
-					<align>left</align>
 					<scroll>false</scroll>
 					<label>[COLOR $VAR[HighlightColor]]$VAR[SeasonEpisodeLabel][/COLOR]</label>
 					<visible>![String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Episode)] + String.IsEmpty(ListItem.EpisodeName)</visible>
@@ -61,7 +54,6 @@
 					<top>115</top>
 					<width>1355</width>
 					<height>120</height>
-					<align>justify</align>
 					<label>$VAR[Plots]</label>
 				</control>
 			</control>
@@ -81,8 +73,6 @@
 			<texturesliderbarfocus />
 			<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 			<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
 			<onleft>10</onleft>
 			<onright condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onright>
 			<onright condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onright>

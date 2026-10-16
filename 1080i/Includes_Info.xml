@@ -657,10 +657,6 @@
 			<control type="label">
 				<height>45</height>
 				<font>Details</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
-				<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
 				<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Label2]</label>
 				<textoffsetx>8</textoffsetx>
 				<scroll>false</scroll>
@@ -673,8 +669,6 @@
 			<control type="label">
 				<height>45</height>
 				<font>Details</font>
-				<align>left</align>
-				<aligny>center</aligny>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 				<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
 				<shadowcolor />
@@ -908,7 +902,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 		</control>
@@ -977,7 +970,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 		</control>
@@ -1031,7 +1023,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 		</control>
@@ -1095,7 +1086,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 		</control>
@@ -1353,7 +1343,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 		</control>
@@ -1372,9 +1361,6 @@
 			<itemlayout height="62" width="590">
 				<control type="label">
 					<font>Details</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[ListItem.Label2,,. ]$INFO[ListItem.Label]$INFO[ListItem.Property(trackduration), • (,)]</label>
 					<textoffsetx>8</textoffsetx>
 					<scroll>false</scroll>
@@ -1386,8 +1372,6 @@
 				</control>
 				<control type="label">
 					<font>Details</font>
-					<align>left</align>
-					<aligny>center</aligny>
 					<textcolor>$VAR[FocusedTextColor]</textcolor>
 					<shadowcolor />
 					<textoffsetx>8</textoffsetx>
@@ -1428,7 +1412,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 		</control>
@@ -1553,7 +1536,6 @@
 						<width>1180</width>
 						<height>1</height>
 						<texture>img/LineL.png</texture>
-						<aspectratio>stretch</aspectratio>
 					</control>
 				</control>
 			</control>
@@ -1638,7 +1620,6 @@
 				<bottom>0</bottom>
 				<width>720</width>
 				<height>100</height>
-				<aligny>center</aligny>
 				<align>center</align>
 				<label>$LOCALIZE[20186]...</label>
 				<scroll>true</scroll>

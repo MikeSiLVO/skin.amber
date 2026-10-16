@@ -33,7 +33,6 @@
 					<label>$LOCALIZE[35050]</label>
 					<scroll>true</scroll>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -61,7 +60,6 @@
 					<align>center</align>
 					<width>360</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-					<pulseonselect>false</pulseonselect>
 				</control>
 				<control type="scrollbar" id="60">
 					<description>scrollbar for available modes list</description>
@@ -76,8 +74,6 @@
 					<texturesliderbarfocus />
 					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
 					<onleft>3</onleft>
 					<onright>5</onright>
 				</control>
@@ -100,7 +96,6 @@
 					<label>$LOCALIZE[35059]</label>
 					<scroll>true</scroll>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -127,7 +122,6 @@
 					<description>Default controller types button</description>
 					<width>360</width>
 					<align>center</align>
-					<pulseonselect>false</pulseonselect>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="label" id="8">
@@ -155,8 +149,6 @@
 					<texturesliderbarfocus />
 					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
 					<onleft>5</onleft>
 					<onright>3</onright>
 				</control>

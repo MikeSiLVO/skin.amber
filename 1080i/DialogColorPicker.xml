@@ -18,11 +18,9 @@
 				<left>70</left>
 				<top>20</top>
 				<width>300</width>
-				<height>60</height>
 				<font>font24_title</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<scroll>true</scroll>
-				<align>left</align>
 			</control>
 			<control type="group">
 				<left>60</left>
@@ -54,7 +52,6 @@
 								<height>74</height>
 								<texture border="0">colors/white.png</texture>
 								<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
-								<aspectratio>stretch</aspectratio>
 							</control>
 						</control>
 					</itemlayout>
@@ -75,7 +72,6 @@
 								<height>74</height>
 								<texture border="0">colors/white.png</texture>
 								<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
-								<aspectratio>stretch</aspectratio>
 							</control>
 						</control>
 					</focusedlayout>
@@ -86,14 +82,12 @@
 					<height>560</height>
 					<onleft condition="Control.IsVisible(6)">6</onleft>
 					<onright>9001</onright>
-					<orientation>vertical</orientation>
 				</control>
 				<control type="label">
 					<left>8</left>
 					<top>580</top>
 					<width>880</width>
 					<height>35</height>
-					<align>left</align>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[737]: [/COLOR]$INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</label>
 					<scroll>true</scroll>
 				</control>

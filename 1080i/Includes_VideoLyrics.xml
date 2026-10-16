@@ -351,7 +351,6 @@
 				<font>lyr0</font>
 				<textcolor>$PARAM[textcolor]</textcolor>
 				<align>center</align>
-				<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
 				<label fallback="--">$INFO[ListItem.Label]</label>
 				<scroll>true</scroll>
 			</control>

@@ -32,7 +32,6 @@
 					<control type="label" description="Main label">
 						<width>1305</width>
 						<scroll>false</scroll>
-						<align>left</align>
 						<font>MainLabelBigTitle</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<animation effect="fade" time="200">VisibleChange</animation>
@@ -42,9 +41,7 @@
 						<top>65</top>
 						<width>1305</width>
 						<height>165</height>
-						<align>justify</align>
 						<label>$VAR[DialogFullScreenPlot]</label>
-						<font>InfoPlot</font>
 						<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
 						<visible>![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))]</visible>
 					</control>
@@ -52,9 +49,7 @@
 						<top>65</top>
 						<width>1845</width>
 						<height>165</height>
-						<align>justify</align>
 						<label>$VAR[DialogFullScreenPlot]</label>
-						<font>InfoPlot</font>
 						<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
 						<visible>[String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))]</visible>
 					</control>

@@ -158,7 +158,6 @@
 				<autoscroll>false</autoscroll>
 				<shadowcolor />
 				<font>InfoPlotSmall</font>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 			</control>
 			<control type="label">
 				<top>650</top>
@@ -174,7 +173,6 @@
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Status]</label>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
 			</control>
@@ -192,7 +190,6 @@
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(Air_Time)]$INFO[ListItem.Property(Studio.1.Name), @ ]</label>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
 			</control>
@@ -361,7 +358,6 @@
 				<autoscroll>false</autoscroll>
 				<shadowcolor />
 				<font>InfoPlotSmall</font>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 			</control>
 			<control type="label">
 				<top>660</top>
@@ -377,7 +373,6 @@
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Status]</label>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
 			</control>
@@ -395,7 +390,6 @@
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(AirTime)]$INFO[ListItem.Studio, @ ]</label>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
 			</control>

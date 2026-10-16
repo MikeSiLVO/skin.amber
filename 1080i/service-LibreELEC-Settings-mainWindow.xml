@@ -45,7 +45,6 @@
 					<control type="label" description="Main Label">
 						<left>10</left>
 						<width>301</width>
-						<height>60</height>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -59,7 +58,6 @@
 					<control type="label" description="Main Label">
 						<left>10</left>
 						<width>301</width>
-						<height>60</height>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Label]</label>
@@ -101,14 +99,12 @@
 							<visible>!String.IsEqual(ListItem.Property(Typ), separator)</visible>
 							<control type="label">
 								<left>30</left>
-								<height>60</height>
 								<width>1350</width>
 								<scroll>false</scroll>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<right>18</right>
-								<height>60</height>
 								<width>400</width>
 								<font>ListDetails</font>
 								<haspath>true</haspath>
@@ -124,7 +120,6 @@
 							<visible>String.IsEqual(ListItem.Property(Typ), separator)</visible>
 							<control type="label" description="Category label">
 								<width>1350</width>
-								<height>60</height>
 								<align>center</align>
 								<font>InfoTitle</font>
 								<textcolor>$VAR[HighlightColor]</textcolor>
@@ -158,14 +153,12 @@
 							<visible>!String.IsEqual(ListItem.Property(Typ), separator) + !Control.HasFocus(1100)</visible>
 							<control type="label">
 								<left>30</left>
-								<height>60</height>
 								<width>1350</width>
 								<scroll>false</scroll>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<right>18</right>
-								<height>60</height>
 								<width>400</width>
 								<font>ListDetails</font>
 								<haspath>true</haspath>
@@ -185,7 +178,6 @@
 							</control>
 							<control type="label">
 								<left>30</left>
-								<height>60</height>
 								<width>1350</width>
 								<scroll>false</scroll>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -193,7 +185,6 @@
 							</control>
 							<control type="label">
 								<right>18</right>
-								<height>60</height>
 								<width>400</width>
 								<font>ListDetails</font>
 								<haspath>true</haspath>
@@ -209,7 +200,6 @@
 							<visible>String.IsEqual(ListItem.Property(Typ), separator)</visible>
 							<control type="label" description="Category label">
 								<width>1350</width>
-								<height>60</height>
 								<align>center</align>
 								<font>InfoTitle</font>
 								<textcolor>$VAR[HighlightColor]</textcolor>
@@ -1039,8 +1029,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
 				<onright>1500</onright>
 			</control>
@@ -1050,7 +1038,6 @@
 				<top>860</top>
 				<width>1330</width>
 				<height>120</height>
-				<align>justify</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				<label>$INFO[Window.Property(InfoText)]</label>

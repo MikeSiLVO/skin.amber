@@ -34,7 +34,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[557]:</label>
 					<scroll>true</scroll>
@@ -45,11 +44,7 @@
 					<left>160</left>
 					<width>704</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.Artist]</label>
-					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 					<visible>String.IsEmpty(RDS.Band)</visible>
 				</control>
@@ -59,7 +54,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29901]:</label>
 					<scroll>true</scroll>
@@ -70,11 +64,7 @@
 					<left>160</left>
 					<width>292</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.Band]</label>
-					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 					<visible>!String.IsEmpty(RDS.Band)</visible>
 				</control>
@@ -84,7 +74,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[557]:</label>
 					<scroll>true</scroll>
@@ -95,9 +84,6 @@
 					<left>535</left>
 					<width>328</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.Artist]</label>
 					<visible>!String.IsEmpty(RDS.Artist)+!String.IsEmpty(RDS.Band)</visible>
 				</control>
@@ -108,7 +94,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[556]:</label>
 					<scroll>true</scroll>
@@ -119,11 +104,7 @@
 					<top>35</top>
 					<width>704</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.Title]</label>
-					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 				</control>
 				<control type="label">
@@ -133,7 +114,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29902]:</label>
 					<scroll>true</scroll>
@@ -145,9 +125,6 @@
 					<top>70</top>
 					<width>704</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.ProgStyle]</label>
 					<visible>!String.IsEmpty(RDS.ProgStyle)</visible>
 				</control>
@@ -162,7 +139,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29903]:</label>
 					<scroll>true</scroll>
@@ -172,11 +148,7 @@
 					<left>160</left>
 					<width>704</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.Composer]</label>
-					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 				</control>
 				<control type="label">
@@ -186,7 +158,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[556]:</label>
 					<scroll>true</scroll>
@@ -197,11 +168,7 @@
 					<top>35</top>
 					<width>704</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.Title]</label>
-					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 				</control>
 				<control type="label">
@@ -211,7 +178,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29904]:</label>
 					<scroll>true</scroll>
@@ -223,7 +189,6 @@
 					<top>66</top>
 					<width>704</width>
 					<height>29</height>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<align>left</align>
 					<pagecontrol />
 					<label>$INFO[RDS.Artist]</label>
@@ -237,7 +202,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29901]:</label>
 					<scroll>true</scroll>
@@ -249,11 +213,7 @@
 					<top>70</top>
 					<width>292</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.Band]</label>
-					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 					<visible>!String.IsEmpty(RDS.Band)</visible>
 				</control>
@@ -264,7 +224,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29904]:</label>
 					<scroll>true</scroll>
@@ -276,7 +235,6 @@
 					<top>70</top>
 					<width>328</width>
 					<height>100</height>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<align>left</align>
 					<pagecontrol />
 					<label>$INFO[RDS.Artist]</label>
@@ -290,7 +248,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29905]:</label>
 					<scroll>true</scroll>
@@ -302,11 +259,7 @@
 					<top>105</top>
 					<width>300</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.Conductor]</label>
-					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 					<visible>!String.IsEmpty(RDS.Conductor)</visible>
 				</control>
@@ -317,7 +270,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29902]:</label>
 					<scroll>true</scroll>
@@ -329,9 +281,6 @@
 					<top>105</top>
 					<width>704</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.ProgStyle]</label>
 					<visible>String.IsEmpty(RDS.Conductor)+!String.IsEmpty(RDS.ProgStyle)</visible>
 				</control>
@@ -342,7 +291,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29902]:</label>
 					<scroll>true</scroll>
@@ -354,9 +302,6 @@
 					<top>105</top>
 					<width>328</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.ProgStyle]</label>
 					<visible>!String.IsEmpty(RDS.Conductor)+!String.IsEmpty(RDS.ProgStyle)</visible>
 				</control>
@@ -368,7 +313,6 @@
 				<width>140</width>
 				<height>25</height>
 				<align>right</align>
-				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<label>$LOCALIZE[558]:</label>
 				<scroll>true</scroll>
@@ -380,11 +324,7 @@
 				<top>175</top>
 				<width>328</width>
 				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[RDS.Album]</label>
-				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 				<visible>!String.IsEmpty(RDS.Album)</visible>
 			</control>
@@ -395,7 +335,6 @@
 				<width>140</width>
 				<height>25</height>
 				<align>right</align>
-				<aligny>center</aligny>
 
 				<textcolor>blue</textcolor>
 				<label>$LOCALIZE[29906]:</label>
@@ -408,9 +347,6 @@
 				<top>210</top>
 				<width>235</width>
 				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[RDS.ProgHost]</label>
 				<visible>!String.IsEmpty(RDS.ProgHost)</visible>
 			</control>
@@ -421,7 +357,6 @@
 				<width>140</width>
 				<height>25</height>
 				<align>right</align>
-				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<label>$LOCALIZE[569]:</label>
 				<scroll>true</scroll>
@@ -433,11 +368,7 @@
 				<top>210</top>
 				<width>328</width>
 				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[RDS.Comment]</label>
-				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 				<visible>!String.IsEmpty(RDS.Comment)</visible>
 			</control>
@@ -448,7 +379,6 @@
 				<width>140</width>
 				<height>25</height>
 				<align>right</align>
-				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<label>$LOCALIZE[19148]:</label>
 				<scroll>true</scroll>
@@ -459,9 +389,6 @@
 				<top>245</top>
 				<width>235</width>
 				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[RDS.ProgStation]</label>
 			</control>
 			<control type="label">
@@ -471,7 +398,6 @@
 				<width>140</width>
 				<height>25</height>
 				<align>right</align>
-				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<label>$LOCALIZE[29907]:</label>
 				<scroll>true</scroll>
@@ -483,9 +409,6 @@
 				<top>245</top>
 				<width>328</width>
 				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[RDS.ProgEditStaff]</label>
 				<visible>!String.IsEmpty(RDS.ProgEditStaff)</visible>
 			</control>
@@ -502,7 +425,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<font>Details</font>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29908]:</label>
@@ -524,7 +446,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<font>Details</font>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29909]:</label>
@@ -542,9 +463,6 @@
 					<description>Program now Name</description>
 					<width>160</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$LOCALIZE[19030]:</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(RDS.ProgNow)</visible>
@@ -553,9 +471,6 @@
 					<description>Program next Name</description>
 					<width>160</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$LOCALIZE[19031]:</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(RDS.ProgNext)</visible>
@@ -564,9 +479,6 @@
 					<description>Studio phone Name</description>
 					<width>95</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$LOCALIZE[29910]:</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(RDS.PhoneStudio)</visible>
@@ -575,9 +487,6 @@
 					<description>Studio email Name</description>
 					<width>95</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$LOCALIZE[29911]:</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(RDS.EmailStudio)</visible>
@@ -586,9 +495,6 @@
 					<description>Studio SMS Name</description>
 					<width>95</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$LOCALIZE[29912]:</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(RDS.SMSStudio)</visible>
@@ -604,8 +510,6 @@
 					<description>Program now Value</description>
 					<width>620</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[RDS.ProgNow]</label>
 					<visible>!String.IsEmpty(RDS.ProgNow)</visible>
@@ -614,8 +518,6 @@
 					<description>Program next Value</description>
 					<width>620</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[RDS.ProgNext]</label>
 					<visible>!String.IsEmpty(RDS.ProgNext)</visible>
@@ -624,8 +526,6 @@
 					<description>Studio phone Value</description>
 					<width>215</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[RDS.PhoneStudio]</label>
 					<visible>!String.IsEmpty(RDS.PhoneStudio)</visible>
@@ -634,8 +534,6 @@
 					<description>Studio email Value</description>
 					<width>215</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[RDS.EmailStudio]</label>
 					<visible>!String.IsEmpty(RDS.EmailStudio)</visible>
@@ -644,8 +542,6 @@
 					<description>Studio SMS Value</description>
 					<width>215</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[RDS.SMSStudio]</label>
 					<visible>!String.IsEmpty(RDS.SMSStudio)</visible>
@@ -678,7 +574,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<font>Details</font>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29913]:</label>
@@ -700,7 +595,6 @@
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29914]:</label>
 					<scroll>true</scroll>
@@ -733,9 +627,6 @@
 					<description>Hotline phone Name</description>
 					<width>160</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$LOCALIZE[29910]:</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(RDS.PhoneHotline)</visible>
@@ -744,9 +635,6 @@
 					<description>Hotline email Name</description>
 					<width>160</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$LOCALIZE[29911]:</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(RDS.EmailHotline)</visible>
@@ -755,9 +643,6 @@
 					<description>Homepage Value</description>
 					<width>320</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<label>$INFO[RDS.ProgHomepage]</label>
 					<visible>!String.IsEmpty(RDS.ProgHomepage)</visible>
 				</control>
@@ -788,8 +673,6 @@
 					<description>Hotline phone Value</description>
 					<width>248</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[RDS.PhoneHotline]</label>
 					<visible>!String.IsEmpty(RDS.PhoneHotline)</visible>
@@ -798,8 +681,6 @@
 					<description>Hotline email Value</description>
 					<width>248</width>
 					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[RDS.EmailHotline]</label>
 					<visible>!String.IsEmpty(RDS.EmailHotline)</visible>
@@ -817,7 +698,6 @@
 					<width>110</width>
 					<height>25</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<font>Details</font>
 					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[29915]:</label>
@@ -827,8 +707,6 @@
 					<description>Source Type</description>
 					<left>740</left>
 					<top>5</top>
-					<textcolor>$VAR[LabelTextColor]</textcolor>
-					<aligny>center</aligny>
 					<textoffsetx>10</textoffsetx>
 					<onright>21</onright>
 					<onleft>21</onleft>
@@ -853,7 +731,6 @@
 					<width>800</width>
 					<height>120</height>
 					<font>Details</font>
-					<align>justify</align>
 					<pagecontrol>60</pagecontrol>
 					<label />
 				</control>

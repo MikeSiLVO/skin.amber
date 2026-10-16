@@ -50,8 +50,6 @@
 						<width>auto</width>
 						<height>30</height>
 						<font>font16</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$INFO[Skin.String(SingleSearchHeader)]$INFO[Skin.String(SingleSearchTerm), &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(101).NumItems, (,)]</label>
 						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
@@ -62,7 +60,6 @@
 						<width>100%</width>
 						<height>1</height>
 						<texture>img/LineL.png</texture>
-						<aspectratio>stretch</aspectratio>
 					</control>
 				</control>
 			</control>
@@ -250,8 +247,6 @@
 				<width>auto</width>
 				<height>30</height>
 				<font>font16</font>
-				<align>left</align>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[19055]</label>
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>

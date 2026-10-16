@@ -77,7 +77,6 @@
 				<top>890</top>
 				<width>1377</width>
 				<height>130</height>
-				<align>justify</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
@@ -130,7 +129,6 @@
 				<left>31</left>
 				<top>900</top>
 				<width>399</width>
-				<height>60</height>
 				<textoffsetx>10</textoffsetx>
 				<label>$LOCALIZE[31049]</label>
 				<scroll>true</scroll>
@@ -138,7 +136,6 @@
 			<control type="button" id="20" description="Settings level button">
 				<left>31</left>
 				<top>960</top>
-				<width>390</width>
 				<height>60</height>
 				<onleft>5</onleft>
 				<onright>5</onright>
@@ -157,8 +154,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>5</onleft>
 				<onright>noop</onright>
 			</control>

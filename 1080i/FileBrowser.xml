@@ -68,15 +68,11 @@
 							<control type="label">
 								<left>30</left>
 								<width>740</width>
-								<height>60</height>
-								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
 								<left>800</left>
 								<width>795</width>
-								<height>60</height>
-								<aligny>center</aligny>
 								<align>right</align>
 								<info>ListItem.Label2</info>
 							</control>
@@ -91,8 +87,6 @@
 							<control type="label">
 								<left>30</left>
 								<width>740</width>
-								<height>60</height>
-								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor />
@@ -101,8 +95,6 @@
 							<control type="label">
 								<left>800</left>
 								<width>795</width>
-								<height>60</height>
-								<aligny>center</aligny>
 								<align>right</align>
 								<info>ListItem.Label2</info>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -112,16 +104,12 @@
 							<control type="label">
 								<left>30</left>
 								<width>740</width>
-								<height>60</height>
-								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 								<visible>!Control.HasFocus(450)</visible>
 							</control>
 							<control type="label">
 								<left>800</left>
 								<width>795</width>
-								<height>60</height>
-								<aligny>center</aligny>
 								<align>right</align>
 								<info>ListItem.Label2</info>
 								<visible>!Control.HasFocus(450)</visible>
@@ -157,14 +145,12 @@
 								<left>150</left>
 								<width>550</width>
 								<height>120</height>
-								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
 								<left>800</left>
 								<width>795</width>
 								<height>120</height>
-								<aligny>center</aligny>
 								<align>right</align>
 								<info>ListItem.Label2</info>
 							</control>
@@ -187,14 +173,12 @@
 								<left>150</left>
 								<width>550</width>
 								<height>120</height>
-								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
 								<left>800</left>
 								<width>795</width>
 								<height>120</height>
-								<aligny>center</aligny>
 								<align>right</align>
 								<info>ListItem.Label2</info>
 							</control>
@@ -238,7 +222,6 @@
 							<textureradioonfocus />
 							<onleft>450</onleft>
 							<onright>60</onright>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<visible>Control.IsEnabled(416)</visible>
 						</control>
 					</control>
@@ -267,8 +250,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>413</onleft>
 				<onright>450</onright>
 			</control>

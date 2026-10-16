@@ -1041,7 +1041,6 @@
 				<height>$PARAM[itemheight]</height>
 				<width>110</width>
 				<font>ListDetails</font>
-				<align>left</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$INFO[Container.ListItem.BitRate] $LOCALIZE[31848]</label>
 				<scroll>true</scroll>
@@ -1132,19 +1131,15 @@
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<itemgap>5</itemgap>
-				<align>left</align>
 				<top>$PARAM[coloruserratingtop]</top>
 				<control type="image" description="User Rating logo">
 					<width>40</width>
 					<aspectratio>keep</aspectratio>
-					<aligny>center</aligny>
-					<align>center</align>
 					<texture>badges/ratings/userrating2.png</texture>
 				</control>
 				<control type="label" description="User Rating">
 					<width>40</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<top>6</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Container.ListItem.UserRating]</label>
@@ -1155,7 +1150,6 @@
 				<control type="label" description="User Rating">
 					<width>40</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<top>-7</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Container.ListItem.UserRating]</label>
@@ -1166,7 +1160,6 @@
 				<control type="label" description="User Rating">
 					<width>40</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<top>8</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>-</label>
@@ -1177,7 +1170,6 @@
 				<control type="label" description="User Rating">
 					<width>40</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<top>-5</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>-</label>
@@ -1602,8 +1594,6 @@
 				<width>$PARAM[itemwidth]</width>
 				<height>$PARAM[itemheight]</height>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
-				<align>left</align>
 				<control type="image" description="User Rating logo">
 					<height>40</height>
 					<width>40</width>
@@ -1614,7 +1604,6 @@
 					<width>40</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[VideoPlayer.UserRating]</label>
 					<scroll>true</scroll>
@@ -1624,7 +1613,6 @@
 					<width>40</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>-</label>
 					<scroll>true</scroll>
@@ -1643,7 +1631,6 @@
 				<height>$PARAM[itemheight]</height>
 				<width>120</width>
 				<font>ListDetails</font>
-				<align>left</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$INFO[MusicPlayer.BitRate] $LOCALIZE[31848]</label>
 				<scroll>true</scroll>
@@ -4729,7 +4716,6 @@
 				<control type="image">
 					<width>$PARAM[labelwidth]</width>
 					<height>$PARAM[labelheight]</height>
-					<aspectratio>stretch</aspectratio>
 					<texture>img/OverlayStripe.png</texture>
 					<bordersize>$PARAM[bordersize]</bordersize>
 				</control>
@@ -4781,7 +4767,6 @@
 					<height>$PARAM[labelheight]</height>
 					<texture border="4">img/WhiteRoundedT.png</texture>
 					<bordersize>$PARAM[bordersize]</bordersize>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
 					<visible>$PARAM[isFocused]</visible>
@@ -4790,7 +4775,6 @@
 					<texture border="4">img/WhiteRoundedST2.png</texture>
 					<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 					<bordersize>$PARAM[bordersize]</bordersize>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="label">
 					<visible>!$PARAM[isFocused]</visible>
@@ -4845,7 +4829,6 @@
 					<height>$PARAM[backgroundheight]</height>
 					<texture border="4">img/WhiteRoundedT.png</texture>
 					<bordersize>4,0,4,0</bordersize>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
 					<visible>$PARAM[isFocused]</visible>
@@ -4854,7 +4837,6 @@
 					<texture border="4">img/WhiteRoundedST2.png</texture>
 					<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 					<bordersize>4,0,4,0</bordersize>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="textbox">
 					<visible>!$PARAM[isFocused]</visible>
@@ -4910,7 +4892,6 @@
 					<height>74</height>
 					<texture border="4">img/WhiteRoundedT.png</texture>
 					<bordersize>$PARAM[bordersize]</bordersize>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
 					<visible>$PARAM[isFocused]</visible>
@@ -4919,7 +4900,6 @@
 					<texture border="4">img/WhiteRoundedST2.png</texture>
 					<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 					<bordersize>$PARAM[bordersize]</bordersize>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="label">
 					<visible>!$PARAM[isFocused]</visible>

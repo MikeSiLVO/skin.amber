@@ -54,7 +54,6 @@
 						<control type="label" description="Main Label">
 							<left>10</left>
 							<width>292</width>
-							<height>60</height>
 							<font>ListDetails</font>
 							<label>$VAR[ShortcutsDisabled]$INFO[ListItem.Label]</label>
 							<scroll>false</scroll>
@@ -78,7 +77,6 @@
 						<control type="label" description="Main Label">
 							<left>10</left>
 							<width>292</width>
-							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
 							<font>ListDetails</font>
@@ -208,9 +206,7 @@
 							<label>$LOCALIZE[24022]</label>
 							<altlabel>$LOCALIZE[24021]</altlabel>
 							<usealttexture>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</usealttexture>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 						</control>
 						<control type="button" id="401">
@@ -320,9 +316,7 @@
 							<description>Statistics line on the shelf header</description>
 							<label>$LOCALIZE[31384]</label>
 							<selected>!String.IsEmpty(Container(211).ListItem.Property(InfoLineShelf))</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 							<visible>String.IsEqual(Window.Property(menuname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
 							<visible>!String.IsEmpty(Container(211).ListItem.Property(InfoLine)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath))</visible>
@@ -332,9 +326,7 @@
 							<label>$LOCALIZE[31658]</label>
 							<description>Use Embuary Helper for Playlist/Node Fanart</description>
 							<selected>String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 							<visible>String.Contains(Container(211).ListItem.Property(path),xsp) | String.Contains(Container(211).ListItem.Property(path),playlists) | String.Contains(Container(211).ListItem.Property(path),xml)</visible>
 							<visible>Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHBackgrounds)</visible>
@@ -355,9 +347,7 @@
 							<description>Enable PVR TV Recording widget</description>
 							<label>$LOCALIZE[31485]</label>
 							<selected>!String.IsEmpty(Container(211).ListItem.Property(widgetRecordingTV))</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 							<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 							<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
@@ -366,9 +356,7 @@
 							<description>Enable PVR Radio Recording widget</description>
 							<label>$LOCALIZE[31486]</label>
 							<selected>!String.IsEmpty(Container(211).ListItem.Property(widgetRecordingRadio))</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 							<visible>String.IsEqual(Window.Property(menuname),mainmenu)</visible>
 							<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
@@ -430,9 +418,7 @@
 						<control type="radiobutton" id="2001">
 							<label>$LOCALIZE[31638]</label>
 							<selected>String.IsEqual(Container(212).ListItem.Property(UseBottomShortcuts),true)</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 						</control>
 						<control type="button" id="2002">
@@ -539,9 +525,7 @@
 							<description>Center shelf items on screen</description>
 							<label>$LOCALIZE[31651]</label>
 							<selected>String.IsEqual(Container(212).ListItem.Property(centerShelves),true)</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 							<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath))</visible>
 						</control>
@@ -549,9 +533,7 @@
 							<description>Show shelves info</description>
 							<label>$LOCALIZE[31654]</label>
 							<selected>String.IsEqual(Container(212).ListItem.Property(showShelvesInfo),true)</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 							<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath))</visible>
 						</control>
@@ -559,9 +541,7 @@
 							<description>Hide widgets when not focused</description>
 							<label>$LOCALIZE[31483]</label>
 							<selected>!String.IsEmpty(Container(212).ListItem.Property(widgetsHide))</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 							<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath))</visible>
 						</control>
@@ -569,9 +549,7 @@
 							<description>Disable widgets fanart</description>
 							<label>$LOCALIZE[31484]</label>
 							<selected>!String.IsEmpty(Container(212).ListItem.Property(widgetDisableFanart))</selected>
-							<height>60</height>
 							<width>1340</width>
-							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
 							<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath))</visible>
 						</control>

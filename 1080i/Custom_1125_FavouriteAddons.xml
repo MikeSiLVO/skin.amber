@@ -31,7 +31,6 @@
 					<label>$LOCALIZE[31184]</label>
 					<scroll>true</scroll>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 			</control>
@@ -53,13 +52,11 @@
 					</control>
 					<control type="label" description="Main Label">
 						<width>225</width>
-						<height>60</height>
 						<textoffsetx>15</textoffsetx>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
 						<width>400</width>
-						<height>60</height>
 						<right>15</right>
 						<font>ListDetails</font>
 						<align>right</align>
@@ -75,7 +72,6 @@
 					</control>
 					<control type="label" description="Main Label">
 						<width>225</width>
-						<height>60</height>
 						<textoffsetx>15</textoffsetx>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
@@ -83,7 +79,6 @@
 					</control>
 					<control type="label">
 						<width>400</width>
-						<height>60</height>
 						<right>15</right>
 						<font>ListDetails</font>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -107,8 +102,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>90101</onleft>
 				<onright>90101</onright>
 			</control>

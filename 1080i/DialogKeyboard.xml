@@ -51,8 +51,6 @@
 				<left>64</left>
 				<top>96</top>
 				<width>1429</width>
-				<height>60</height>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<font>Keyboard</font>
 				<texturefocus />
 				<texturenofocus />
@@ -512,10 +510,8 @@
 					<width>1429</width>
 					<height>40</height>
 					<font>Details</font>
-					<align>left</align>
 					<textoffsetx>32</textoffsetx>
 					<scroll>true</scroll>
-					<aligny>center</aligny>
 				</control>
 				<control type="label" id="314">
 					<description>HZLIST label</description>
@@ -523,8 +519,6 @@
 					<width>1429</width>
 					<height>40</height>
 					<font>Details</font>
-					<align>left</align>
-					<aligny>center</aligny>
 					<scroll>true</scroll>
 					<textoffsetx>32</textoffsetx>
 				</control>

@@ -1228,7 +1228,6 @@
 							<control type="label">
 								<left>1252</left>
 								<width>100</width>
-								<height>60</height>
 								<align>center</align>
 								<textcolor>$VAR[MatchPosterColorsValueColor]</textcolor>
 								<shadowcolor />
@@ -1252,7 +1251,6 @@
 							<control type="label">
 								<left>1252</left>
 								<width>100</width>
-								<height>60</height>
 								<align>center</align>
 								<textcolor>$VAR[MatchPosterColorsValueColor]</textcolor>
 								<shadowcolor />

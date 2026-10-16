@@ -22,7 +22,6 @@
 					<height>40</height>
 					<align>center</align>
 					<scroll>true</scroll>
-					<aligny>center</aligny>
 				</control>
 				<control type="label" description="Player Title">
 					<left>30</left>
@@ -33,7 +32,6 @@
 					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>center</align>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="image" id="110" description="Service Logo">
@@ -49,7 +47,6 @@
 					<width>1320</width>
 					<height>30</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<scroll>true</scroll>
 					<font>font12</font>
 				</control>
@@ -59,7 +56,6 @@
 					<width>1320</width>
 					<height>30</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font12</font>
 					<label>$INFO[Player.Filename]</label>
 					<scroll>true</scroll>
@@ -124,7 +120,6 @@
 							<width>135</width>
 							<height>54</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<scroll>false</scroll>
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
@@ -145,8 +140,6 @@
 							<height>54</height>
 							<font>ListDetails</font>
 							<scroll>false</scroll>
-							<align>left</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
@@ -199,7 +192,6 @@
 							<width>135</width>
 							<height>54</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<scroll>false</scroll>
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
@@ -222,8 +214,6 @@
 							<height>54</height>
 							<font>ListDetails</font>
 							<scroll>false</scroll>
-							<align>left</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
@@ -355,13 +345,11 @@
 				<control type="label" id="130" description="Notification Local subtitle available">
 					<top>660</top>
 					<width>348</width>
-					<height>60</height>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$LOCALIZE[31357]</label>
 					<scroll>true</scroll>
 					<font>ListDetails</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 			</control>
@@ -376,7 +364,6 @@
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 				<showonepage>true</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>120</onleft>
 				<onright>120</onright>
 			</control>

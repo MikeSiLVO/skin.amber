@@ -54,7 +54,6 @@
 							<texture border="3">list/ListNF.png</texture>
 						</control>
 						<control type="label">
-							<height>60</height>
 							<width>918</width>
 							<align>right</align>
 							<info>ListItem.Label2</info>
@@ -62,7 +61,6 @@
 						<control type="label">
 							<left>10</left>
 							<width>908</width>
-							<height>60</height>
 							<scroll>false</scroll>
 							<info>ListItem.Label</info>
 						</control>
@@ -74,7 +72,6 @@
 							<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 						</control>
 						<control type="label">
-							<height>60</height>
 							<width>918</width>
 							<align>right</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -84,7 +81,6 @@
 						<control type="label">
 							<left>10</left>
 							<width>908</width>
-							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
 							<info>ListItem.Label</info>
@@ -96,7 +92,6 @@
 					<top>950</top>
 					<width>928</width>
 					<scroll>true</scroll>
-					<align>left</align>
 				</control>
 				<control type="scrollbar" id="60">
 					<left>-21</left>
@@ -109,7 +104,6 @@
 					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 					<showonepage>true</showonepage>
-					<orientation>vertical</orientation>
 					<onright>20</onright>
 				</control>
 			</control>
@@ -151,7 +145,6 @@
 							<texture border="3">list/ListNF.png</texture>
 						</control>
 						<control type="label">
-							<height>60</height>
 							<width>918</width>
 							<align>right</align>
 							<info>ListItem.Label2</info>
@@ -159,7 +152,6 @@
 						<control type="label">
 							<left>10</left>
 							<width>908</width>
-							<height>60</height>
 							<scroll>false</scroll>
 							<info>ListItem.Label</info>
 						</control>
@@ -171,7 +163,6 @@
 							<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 						</control>
 						<control type="label">
-							<height>60</height>
 							<width>918</width>
 							<align>right</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -181,7 +172,6 @@
 						<control type="label">
 							<left>10</left>
 							<width>908</width>
-							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
 							<info>ListItem.Label</info>
@@ -193,7 +183,6 @@
 					<top>950</top>
 					<width>928</width>
 					<scroll>true</scroll>
-					<align>left</align>
 				</control>
 				<control type="scrollbar" id="61">
 					<left>910</left>
@@ -206,7 +195,6 @@
 					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
 					<showonepage>true</showonepage>
-					<orientation>vertical</orientation>
 					<onleft>21</onleft>
 				</control>
 			</control>

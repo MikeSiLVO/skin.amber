@@ -74,7 +74,6 @@
 						</control>
 						<control type="label" description="Label2">
 							<left>30r</left>
-							<height>60</height>
 							<width>800</width>
 							<font>ListDetails</font>
 							<scroll>false</scroll>
@@ -82,7 +81,6 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="label" description="Main Label">
-							<height>60</height>
 							<width>800</width>
 							<textoffsetx>30</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
@@ -102,7 +100,6 @@
 						</control>
 						<control type="label" description="Label2">
 							<left>30r</left>
-							<height>60</height>
 							<width>800</width>
 							<font>ListDetails</font>
 							<align>right</align>
@@ -111,7 +108,6 @@
 						</control>
 						<control type="label" description="Label2">
 							<left>30r</left>
-							<height>60</height>
 							<width>800</width>
 							<font>ListDetails</font>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -121,14 +117,12 @@
 							<visible>[Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
 						</control>
 						<control type="label" description="Main Label">
-							<height>60</height>
 							<width>800</width>
 							<textoffsetx>30</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>[Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
 						</control>
 						<control type="label" description="Main Label">
-							<height>60</height>
 							<width>800</width>
 							<textoffsetx>30</textoffsetx>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>

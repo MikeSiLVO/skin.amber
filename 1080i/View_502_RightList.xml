@@ -95,7 +95,6 @@
 				<height>90</height>
 				<width>$PARAM[widthUSA]</width>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
 				<visible>!String.Contains($PARAM[certsource],Brazil) + !String.Contains($PARAM[certsource],UK) + !String.Contains($PARAM[certsource],United Kingdom) + !String.Contains($PARAM[certsource],classificação) + !String.Contains($PARAM[certsource],France) + !String.Contains($PARAM[certsource],Germany) + !String.Contains($PARAM[certsource],Australia) + !String.Contains($PARAM[certsource],Netherlands) + !String.Contains($PARAM[certsource],NL) + !String.IsEmpty($PARAM[certsource])</visible>
 			</control>
@@ -106,7 +105,6 @@
 					<height>55</height>
 					<width>55</width>
 					<aspectratio>keep</aspectratio>
-					<align>center</align>
 					<texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
 					<visible>!String.IsEmpty($PARAM[certsource]) + [String.Contains($PARAM[certsource],Brazil) | String.Contains($PARAM[certsource],classificação) | String.Contains($PARAM[certsource],France) | String.Contains($PARAM[certsource],Germany) | String.Contains($PARAM[certsource],Australia) | String.Contains($PARAM[certsource],Netherlands) | String.Contains($PARAM[certsource],NL)]</visible>
 				</control>
@@ -114,7 +112,6 @@
 					<height>65</height>
 					<width>55</width>
 					<aspectratio>keep</aspectratio>
-					<align>center</align>
 					<texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
 					<visible>!String.IsEmpty($PARAM[certsource]) + [String.Contains($PARAM[certsource],UK) | String.Contains($PARAM[certsource],United Kingdom)]</visible>
 				</control>
@@ -214,7 +211,6 @@
 			<height>40</height>
 			<itemgap>10</itemgap>
 			<orientation>horizontal</orientation>
-			<align>left</align>
 			<visible>Skin.HasSetting(ShowRatingMain)</visible>
 			<control type="grouplist" description="IMDb Rating or Main Rating">
 				<width>130</width>
@@ -224,8 +220,6 @@
 				<control type="image" description="IMDb logo">
 					<height>40</height>
 					<width>83</width>
-					<aligny>center</aligny>
-					<align>center</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/imdb2.png</texture>
 				</control>
@@ -234,7 +228,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.imdb)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.ListItem.Rating.imdb))</visible>
@@ -248,8 +241,6 @@
 				<control type="image" description="IMDb logo">
 					<height>40</height>
 					<width>83</width>
-					<aligny>center</aligny>
-					<align>center</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/imdb2.png</texture>
 				</control>
@@ -258,7 +249,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[ListItem.Rating]$INFO[ListItem.Votes, (, $LOCALIZE[205])]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0)</visible>
@@ -268,7 +258,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[ListItem.Rating]</label>
 					<scroll>true</scroll>
 					<visible>[String.IsEmpty(ListItem.Votes) | String.IsEqual(ListItem.Votes,0)]</visible>
@@ -283,7 +272,6 @@
 					<width>auto</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>[B]$INFO[ListItem.Top250,#][/B]</label>
 					<scroll>true</scroll>
@@ -293,7 +281,6 @@
 				<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.ListItem.Rating.tomatoes))</visible>
 				<width>130</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>3</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -314,7 +301,6 @@
 				<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.ListItem.Rating.popcorn))</visible>
 				<width>130</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>3</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -335,7 +321,6 @@
 				<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.ListItem.Rating.metacritic))</visible>
 				<width>90</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>5</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -357,7 +342,6 @@
 				<width>115</width>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<align>left</align>
 				<control type="image" description="TMDB logo">
 					<height>40</height>
 					<width>45</width>
@@ -378,11 +362,9 @@
 				<width>100</width>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<align>left</align>
 				<control type="image" description="TVDB logo">
 					<height>40</height>
 					<width>71</width>
-					<aligny>center</aligny>
 					<texture>badges/ratings/tvdb2.png</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -390,7 +372,6 @@
 					<width>auto</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.tvdb)]</label>
 					<scroll>true</scroll>
@@ -401,11 +382,9 @@
 				<width>90</width>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<align>left</align>
 				<control type="image" description="Trakt logo">
 					<height>40</height>
 					<width>40</width>
-					<aligny>center</aligny>
 					<texture>badges/ratings/trakt.png</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -413,7 +392,6 @@
 					<width>auto</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.trakt)]</label>
 					<scroll>true</scroll>
@@ -423,8 +401,6 @@
 				<visible>Skin.HasSetting(ShowRatingUser)</visible>
 				<width>80</width>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
-				<align>left</align>
 				<control type="image" description="User Rating logo">
 					<height>40</height>
 					<width>40</width>
@@ -434,7 +410,6 @@
 					<width>40</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.UserRating]</label>
 					<scroll>true</scroll>
@@ -444,7 +419,6 @@
 					<width>40</width>
 					<height>40</height>
 					<font>ListDetails</font>
-					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>-</label>
 					<scroll>true</scroll>
@@ -455,13 +429,11 @@
 				<width>115</width>
 				<orientation>horizontal</orientation>
 				<itemgap>1</itemgap>
-				<align>left</align>
 				<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo)</visible>
 				<control type="image" description="Oscars logo">
 					<height>40</height>
 					<width>30</width>
-					<aligny>center</aligny>
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/oscars.png</texture>
@@ -472,8 +444,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
@@ -481,7 +451,6 @@
 				<control type="image" description="Golden Globes logo">
 					<height>40</height>
 					<width>30</width>
-					<aligny>center</aligny>
 					<align>right</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/goldenglobes.png</texture>
@@ -492,8 +461,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
@@ -737,7 +704,6 @@
 					<left>420</left>
 					<width>870</width>
 					<height>240</height>
-					<font>InfoPlot</font>
 					<label>$VAR[Plots]</label>
 					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Container.Content(movies) + !ListItem.IsCollection</visible>
@@ -747,7 +713,6 @@
 					<left>420</left>
 					<width>870</width>
 					<height>240</height>
-					<font>InfoPlot</font>
 					<label>$VAR[Plots]</label>
 					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>ListItem.IsCollection</visible>
@@ -757,7 +722,6 @@
 					<left>420</left>
 					<width>870</width>
 					<height>165</height>
-					<font>InfoPlot</font>
 					<label>$VAR[Plots]</label>
 					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Container.Content(episodes) + ![String.IsEmpty(ListItem.Genre) | String.IsEmpty(ListItem.Director)]</visible>
@@ -767,7 +731,6 @@
 					<left>420</left>
 					<width>870</width>
 					<height>205</height>
-					<font>InfoPlot</font>
 					<label>$VAR[Plots]</label>
 					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Container.Content(episodes) + [String.IsEmpty(ListItem.Genre) | String.IsEmpty(ListItem.Director)]</visible>
@@ -777,7 +740,6 @@
 					<left>420</left>
 					<width>870</width>
 					<height>240</height>
-					<font>InfoPlot</font>
 					<label>$VAR[Plots]</label>
 					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Container.Content(tvshows)</visible>
@@ -898,7 +860,6 @@
 						<control type="label">
 							<top>2</top>
 							<width>177</width>
-							<height>60</height>
 							<align>center</align>
 							<label>[B]$INFO[ListItem.Property(TotalSeasons)][/B]</label>
 							<scroll>true</scroll>
@@ -922,7 +883,6 @@
 						<control type="label">
 							<top>2</top>
 							<width>177</width>
-							<height>60</height>
 							<align>center</align>
 							<label>[B]$INFO[ListItem.Property(TotalEpisodes)][/B]</label>
 							<scroll>true</scroll>
@@ -946,7 +906,6 @@
 						<control type="label">
 							<top>2</top>
 							<width>177</width>
-							<height>60</height>
 							<align>center</align>
 							<label>[B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
 							<scroll>true</scroll>
@@ -1204,7 +1163,6 @@
 						<control type="label">
 							<width>330</width>
 							<height>90</height>
-							<align>left</align>
 							<font>ListDetailsSmall</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[209]: [/COLOR][B]$VAR[RightListNextEpisode][/B]</label>
 							<scroll>true</scroll>
@@ -1213,7 +1171,6 @@
 							<top>30</top>
 							<width>330</width>
 							<height>90</height>
-							<align>left</align>
 							<font>ListDetailsSmall</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[210]: [/COLOR][B]$VAR[RightListLastEpisode][/B]</label>
 							<scroll>true</scroll>
@@ -1233,7 +1190,6 @@
 							<control type="label">
 								<top>2</top>
 								<width>177</width>
-								<height>60</height>
 								<align>center</align>
 								<label>[B]$INFO[ListItem.Property(TotalSeasons)][/B]</label>
 								<scroll>true</scroll>
@@ -1257,7 +1213,6 @@
 							<control type="label">
 								<top>2</top>
 								<width>177</width>
-								<height>60</height>
 								<align>center</align>
 								<label>[B]$INFO[ListItem.Property(TotalEpisodes)][/B]</label>
 								<scroll>true</scroll>
@@ -1281,7 +1236,6 @@
 							<control type="label">
 								<top>2</top>
 								<width>177</width>
-								<height>60</height>
 								<align>center</align>
 								<label>[B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
 								<scroll>true</scroll>
@@ -1308,7 +1262,6 @@
 								<control type="label">
 									<top>2</top>
 									<width>177</width>
-									<height>60</height>
 									<align>center</align>
 									<label>[B]$INFO[ListItem.Property(TotalEpisodes)][/B]</label>
 									<scroll>true</scroll>
@@ -1333,7 +1286,6 @@
 								<control type="label">
 									<top>2</top>
 									<width>177</width>
-									<height>60</height>
 									<align>center</align>
 									<label>[B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
 									<scroll>true</scroll>
@@ -1393,7 +1345,6 @@
 						<width>1</width>
 						<height>95</height>
 						<texture>img/LineL.png</texture>
-						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image" description="Line Split">
 						<top>985</top>
@@ -1401,7 +1352,6 @@
 						<width>1</width>
 						<height>95</height>
 						<texture>img/LineL.png</texture>
-						<aspectratio>stretch</aspectratio>
 						<visible>!Container.Content(tvshows) + !Container.Content(seasons)</visible>
 					</control>
 					<control type="image" description="Line Split">
@@ -1410,7 +1360,6 @@
 						<width>1</width>
 						<height>95</height>
 						<texture>img/LineL.png</texture>
-						<aspectratio>stretch</aspectratio>
 					</control>
 				</control>
 			</control>
@@ -1460,8 +1409,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>502</onleft>
 				<onright>502</onright>
 				<visible>!Skin.HasSetting(Show.JumpToLetter) | ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
@@ -1950,7 +1897,6 @@
 					<height>118</height>
 					<align>right</align>
 					<label>$VAR[Plots]</label>
-					<font>InfoPlot</font>
 					<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
 				</control>
@@ -1961,7 +1907,6 @@
 					<height>102</height>
 					<align>right</align>
 					<label>$VAR[Plots]</label>
-					<font>InfoPlot</font>
 					<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>String.IsEqual(Skin.Font,Default no caps)</visible>
 				</control>
@@ -2074,7 +2019,6 @@
 						<width>640</width>
 						<height>122</height>
 						<align>right</align>
-						<font>InfoPlot</font>
 						<label>$VAR[Plots]</label>
 						<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
@@ -2085,7 +2029,6 @@
 						<width>640</width>
 						<height>100</height>
 						<align>right</align>
-						<font>InfoPlot</font>
 						<label>$VAR[Plots]</label>
 						<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>String.IsEqual(Skin.Font,Default no caps)</visible>
@@ -2122,7 +2065,6 @@
 						<width>640</width>
 						<height>122</height>
 						<align>right</align>
-						<font>InfoPlot</font>
 						<label>$VAR[Plots]</label>
 						<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
@@ -2133,7 +2075,6 @@
 						<width>640</width>
 						<height>100</height>
 						<align>right</align>
-						<font>InfoPlot</font>
 						<label>$VAR[Plots]</label>
 						<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>String.IsEqual(Skin.Font,Default no caps)</visible>

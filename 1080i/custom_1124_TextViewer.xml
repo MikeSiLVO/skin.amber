@@ -33,7 +33,6 @@
 				<width>1256</width>
 				<height>40</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$INFO[Window(Home).Property(TextViewerHeader)]</label>
 				<scroll>true</scroll>
@@ -44,7 +43,6 @@
 				<width>1280</width>
 				<height>1</height>
 				<texture>img/LineL.png</texture>
-				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="label">
 				<left>62</left>
@@ -52,7 +50,6 @@
 				<width>1256</width>
 				<height>80</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<font>InfoPlot</font>
 				<label>[B]$INFO[Window(Home).Property(TextViewerSubHeader)][/B]</label>
 				<scroll>true</scroll>
@@ -63,7 +60,6 @@
 				<top>195</top>
 				<width>1256</width>
 				<height>625</height>
-				<font>InfoPlot</font>
 				<pagecontrol>61</pagecontrol>
 				<label fallback="19055">$INFO[Window(Home).Property(TextViewerContent)]</label>
 				<visible>!String.IsEmpty(Window(Home).Property(TextViewerSubHeader))</visible>
@@ -74,7 +70,6 @@
 				<top>145</top>
 				<width>1256</width>
 				<height>715</height>
-				<font>InfoPlot</font>
 				<pagecontrol>61</pagecontrol>
 				<label fallback="19055">$INFO[Window(Home).Property(TextViewerContent)]</label>
 				<visible>String.IsEmpty(Window(Home).Property(TextViewerSubHeader))</visible>
@@ -92,8 +87,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 			</control>
 		</control>
 	</controls>

@@ -117,7 +117,6 @@
 			<width>177</width>
 			<texture>badges/ratings/powered-by-tmdb.png</texture>
 			<aspectratio>keep</aspectratio>
-			<aligny>center</aligny>
 		</control>
 		<!-- Rating bar for TMDB Online info -->
 		<control type="grouplist" description="Ratings for embuary info items">
@@ -127,7 +126,6 @@
 			<height>40</height>
 			<itemgap>8</itemgap>
 			<orientation>horizontal</orientation>
-			<align>left</align>
 			<control type="grouplist" description="Main Rating, TMDB">
 				<width>320</width>
 				<orientation>horizontal</orientation>
@@ -136,8 +134,6 @@
 				<control type="image" description="TMDB logo">
 					<height>40</height>
 					<width>45</width>
-					<aligny>center</aligny>
-					<align>center</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/themoviedb3.png</texture>
 				</control>
@@ -146,7 +142,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[Container(10051).ListItem.Rating]$INFO[Container(10051).ListItem.Votes, (, $LOCALIZE[205])]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container(10051).ListItem.Rating) + !String.IsEmpty(Container(10051).ListItem.Votes) + !String.IsEqual(Container(10051).ListItem.Votes,0)</visible>
@@ -156,7 +151,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[Container(10051).ListItem.Rating]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container(10051).ListItem.Rating) + [String.IsEmpty(Container(10051).ListItem.Votes) | String.IsEqual(Container(10051).ListItem.Votes,0)]</visible>
@@ -166,7 +160,6 @@
 				<visible>!String.IsEmpty(Container(10051).ListItem.Property(rating.rotten)) + !String.IsEqual(Container(10051).ListItem.Property(rating.rotten),N/A)</visible>
 				<width>130</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>3</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -187,7 +180,6 @@
 				<visible>!String.IsEmpty(Container(10051).ListItem.Property(rating.metacritic)) + !String.IsEqual(Container(10051).ListItem.Property(rating.metacritic),N/A)</visible>
 				<width>90</width>
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<itemgap>5</itemgap>
 				<control type="image">
 					<width>40</width>
@@ -212,8 +204,6 @@
 				<control type="image" description="IMDb logo">
 					<height>40</height>
 					<width>83</width>
-					<aligny>center</aligny>
-					<align>center</align>
 					<aspectratio>keep</aspectratio>
 					<texture>badges/ratings/imdb2.png</texture>
 				</control>
@@ -222,7 +212,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[Container(10051).ListItem.Property(rating.imdb)]$INFO[Container(10051).ListItem.Property(votes.imdb), (, $LOCALIZE[205])]</label>
 					<scroll>true</scroll>
 				</control>
@@ -231,7 +220,6 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[Container(10051).ListItem.Property(rating.imdb)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container(10051).ListItem.Property(rating.imdb)) + [String.IsEmpty(Container(10051).ListItem.Property(votes.imdb)) | String.IsEqual(Container(10051).ListItem.Property(votes.imdb),0)]</visible>
@@ -247,7 +235,6 @@
 				<height>50</height>
 				<width>75</width>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<texture fallback="badges/mpaa/NR.png">$VAR[EmbuaryInfoCertFlag]</texture>
 			</control>
 		</control>
@@ -262,8 +249,6 @@
 					<height>75</height>
 					<font>InfoTitle</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$VAR[panelheading]</label>
 					<scroll>true</scroll>
 				</control>
@@ -274,7 +259,6 @@
 					<width>160</width>
 					<texture>$INFO[Container(10051).ListItem.Property(Studio.Icon.0)]</texture>
 					<aspectratio>keep</aspectratio>
-					<aligny>center</aligny>
 					<visible>!String.IsEmpty(Container(10051).ListItem.Property(Studio.Icon.0)) + String.IsEqual(Container(10051).ListItem.DBType,movie)</visible>
 				</control>
 				<control type="image" description="Studio - Embuary Info">
@@ -284,7 +268,6 @@
 					<width>160</width>
 					<texture>$INFO[Container(10051).ListItem.Property(Network.Icon.0)]</texture>
 					<aspectratio>keep</aspectratio>
-					<aligny>center</aligny>
 					<visible>!String.IsEmpty(Container(10051).ListItem.Property(Network.Icon.0)) + String.IsEqual(Container(10051).ListItem.DBType,tvshow)</visible>
 				</control>
 				<control type="image" description="Line Split">
@@ -292,14 +275,12 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image" description="Line Split">
 					<top>83</top>
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="textbox" id="900031" description="Plot">
 					<include>VisibleFadeEffectDelay</include>
@@ -319,10 +300,8 @@
 					<ondown>9000</ondown>
 					<onright>9009</onright>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">icons/dots7.png</textureradioonfocus>
 					<textureradioonnofocus>icons/dots7.png</textureradioonnofocus>
-					<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 					<texturenofocus border="4">img/WhiteRoundedT.png</texturenofocus>
 					<width>37</width>
 					<height>17</height>
@@ -343,7 +322,6 @@
 					<width>1</width>
 					<height>375</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="panel" id="9009">
 					<include>VisibleFadeEffectDelay</include>
@@ -584,7 +562,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="panel" id="10052">
@@ -623,7 +600,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="panel" id="10056">
@@ -661,7 +637,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="panel" id="10057">
@@ -700,7 +675,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="panel" id="10058">
@@ -739,7 +713,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="panel" id="10053">
@@ -778,7 +751,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="panel" id="10054">
@@ -817,7 +789,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="panel" id="10055">
@@ -856,7 +827,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="panel" id="10059">

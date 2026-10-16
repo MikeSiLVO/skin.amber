@@ -24,7 +24,6 @@
 					<label>$LOCALIZE[19143]</label>
 					<scroll>true</scroll>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 				<control type="group">
@@ -38,7 +37,6 @@
 						<label>$LOCALIZE[31506]</label>
 						<scroll>true</scroll>
 						<align>center</align>
-						<aligny>center</aligny>
 					</control>
 					<control type="list" id="13">
 						<top>120</top>
@@ -68,9 +66,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 							</control>
 						</itemlayout>
@@ -98,10 +93,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>$VAR[LabelTextColor]</textcolor>
 								<shadowcolor />
 								<info>ListItem.Label</info>
 								<visible>!Control.HasFocus(13)</visible>
@@ -109,9 +100,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor />
 								<info>ListItem.Label</info>
@@ -133,8 +121,6 @@
 						<onright>12</onright>
 						<ondown>73</ondown>
 						<onup>73</onup>
-						<showonepage>false</showonepage>
-						<orientation>vertical</orientation>
 					</control>
 				</control>
 				<control type="group">
@@ -147,7 +133,6 @@
 						<height>105</height>
 						<align>center</align>
 						<scroll>true</scroll>
-						<aligny>center</aligny>
 					</control>
 					<control type="list" id="12">
 						<top>120</top>
@@ -177,9 +162,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
 								<label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
 							</control>
 						</itemlayout>
@@ -207,10 +189,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>$VAR[LabelTextColor]</textcolor>
 								<shadowcolor />
 								<label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
 								<visible>!Control.HasFocus(12)</visible>
@@ -218,9 +196,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor />
 								<label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
@@ -242,8 +217,6 @@
 						<onright>11</onright>
 						<ondown>72</ondown>
 						<onup>72</onup>
-						<showonepage>false</showonepage>
-						<orientation>vertical</orientation>
 					</control>
 				</control>
 				<control type="group">
@@ -255,7 +228,6 @@
 						<height>105</height>
 						<align>center</align>
 						<scroll>true</scroll>
-						<aligny>center</aligny>
 					</control>
 					<control type="list" id="11">
 						<top>120</top>
@@ -285,9 +257,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
 								<label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
 							</control>
 						</itemlayout>
@@ -315,9 +284,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor />
 								<label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
@@ -326,10 +292,6 @@
 							<control type="label">
 								<left>60</left>
 								<width>510</width>
-								<height>60</height>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>$VAR[LabelTextColor]</textcolor>
 								<shadowcolor />
 								<label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
 								<visible>!Control.HasFocus(11)</visible>
@@ -350,8 +312,6 @@
 						<onright>13</onright>
 						<ondown>71</ondown>
 						<onup>71</onup>
-						<showonepage>false</showonepage>
-						<orientation>vertical</orientation>
 					</control>
 				</control>
 				<control type="grouplist" id="9000">
@@ -385,7 +345,6 @@
 						<width>265</width>
 						<label>$LOCALIZE[19289]</label>
 						<font>ListDetails</font>
-						<align>left</align>
 						<texturenofocus border="4">img/WhiteRoundedT.png</texturenofocus>
 					</control>
 					<control type="button" id="28">

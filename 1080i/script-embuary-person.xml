@@ -54,10 +54,8 @@
 				<control type="label" description="Person name">
 					<top>10</top>
 					<width>950</width>
-					<height>60</height>
 					<font>InfoTitle</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[Container(10051).ListItem.Label]</label>
 					<scroll>true</scroll>
 				</control>
@@ -68,14 +66,12 @@
 					<width>177</width>
 					<texture>badges/ratings/powered-by-tmdb.png</texture>
 					<aspectratio>keep</aspectratio>
-					<aligny>center</aligny>
 				</control>
 				<control type="image" description="Line Split">
 					<top>83</top>
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="textbox" id="900031" description="Biography">
 					<include>VisibleFadeEffectDelay</include>
@@ -95,10 +91,8 @@
 					<ondown>9000</ondown>
 					<onright>9009</onright>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">icons/dots7.png</textureradioonfocus>
 					<textureradioonnofocus>icons/dots7.png</textureradioonnofocus>
-					<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 					<texturenofocus border="4">img/WhiteRoundedT.png</texturenofocus>
 					<width>37</width>
 					<height>17</height>
@@ -118,7 +112,6 @@
 					<width>1</width>
 					<height>375</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="panel" id="9009">
 					<include>VisibleFadeEffectDelay</include>
@@ -228,7 +221,6 @@
 						<width>1180</width>
 						<height>1</height>
 						<texture>img/LineL.png</texture>
-						<aspectratio>stretch</aspectratio>
 					</control>
 				</control>
 				<control type="panel" id="10052">
@@ -267,7 +259,6 @@
 						<width>1180</width>
 						<height>1</height>
 						<texture>img/LineL.png</texture>
-						<aspectratio>stretch</aspectratio>
 					</control>
 				</control>
 				<control type="panel" id="10053">
@@ -306,7 +297,6 @@
 						<width>1180</width>
 						<height>1</height>
 						<texture>img/LineL.png</texture>
-						<aspectratio>stretch</aspectratio>
 					</control>
 				</control>
 				<control type="panel" id="10054">

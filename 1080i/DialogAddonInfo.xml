@@ -34,10 +34,8 @@
 				<control type="label" description="Main Label">
 					<top>-45</top>
 					<width>1180</width>
-					<height>60</height>
 					<font>InfoTitle</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$INFO[ListItem.AddonName,$LOCALIZE[24003] - ]</label>
 					<scroll>true</scroll>
 				</control>
@@ -46,7 +44,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<!-- Begin Matrix change: AddonBroken will be deprecated, use addonlifecycletype -->
 				<control type="textbox" description="Plot">
@@ -76,7 +73,6 @@
 					<height>45</height>
 					<font>InfoPlot</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>[B]$VAR[AddonLifecycleType][/B]</label>
 					<scroll>true</scroll>
 				</control>
@@ -87,10 +83,8 @@
 					<ondown>9000</ondown>
 					<onright>9009</onright>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">icons/dots7.png</textureradioonfocus>
 					<textureradioonnofocus>icons/dots7.png</textureradioonnofocus>
-					<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 					<texturenofocus border="4">img/WhiteRoundedT.png</texturenofocus>
 					<width>37</width>
 					<height>17</height>
@@ -111,7 +105,6 @@
 					<width>1</width>
 					<height>426</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="panel" id="9009">
 					<include>VisibleFadeEffectDelay</include>

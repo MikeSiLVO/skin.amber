@@ -386,7 +386,6 @@
 				<left>420</left>
 				<width>870</width>
 				<height>240</height>
-				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Plot)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>String.IsEqual(Window.Property(dbtype),movie)</visible>
@@ -396,7 +395,6 @@
 				<left>420</left>
 				<width>870</width>
 				<height>165</height>
-				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Plot)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>[String.IsEqual(Window.Property(dbtype),episode) + ![String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]] | String.IsEqual(Window.Property(dbtype),musicvideo)</visible>
@@ -406,7 +404,6 @@
 				<left>420</left>
 				<width>870</width>
 				<height>200</height>
-				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Artist_Description)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>String.IsEqual(Window.Property(dbtype),artist)</visible>
@@ -416,7 +413,6 @@
 				<left>420</left>
 				<width>870</width>
 				<height>200</height>
-				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Album_Description)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>String.IsEqual(Window.Property(dbtype),album)</visible>
@@ -426,7 +422,6 @@
 				<left>420</left>
 				<width>870</width>
 				<height>200</height>
-				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Comment)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>String.IsEqual(Window.Property(dbtype),song)</visible>
@@ -436,7 +431,6 @@
 				<left>420</left>
 				<width>870</width>
 				<height>205</height>
-				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Plot)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>String.IsEqual(Window.Property(dbtype),episode) + [String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
@@ -446,7 +440,6 @@
 				<left>420</left>
 				<width>870</width>
 				<height>240</height>
-				<font>InfoPlot</font>
 				<label>$INFO[Window.Property(Plot)]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>String.IsEqual(Window.Property(dbtype),tvshow)</visible>
@@ -551,7 +544,6 @@
 					<control type="label">
 						<top>2</top>
 						<width>177</width>
-						<height>60</height>
 						<align>center</align>
 						<label>[B]$INFO[Window.Property(TotalSeasons)][/B]</label>
 						<scroll>true</scroll>
@@ -575,7 +567,6 @@
 					<control type="label">
 						<top>2</top>
 						<width>177</width>
-						<height>60</height>
 						<align>center</align>
 						<label>[B]$INFO[Window.Property(TotalEpisodes)][/B]</label>
 						<scroll>true</scroll>
@@ -599,7 +590,6 @@
 					<control type="label">
 						<top>2</top>
 						<width>177</width>
-						<height>60</height>
 						<align>center</align>
 						<label>[B]$INFO[Window.Property(UnwatchedEpisodes)][/B]</label>
 						<scroll>true</scroll>

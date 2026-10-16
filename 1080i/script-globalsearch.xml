@@ -57,13 +57,11 @@
 							<control type="label" description="Main Label">
 								<left>10</left>
 								<width>301</width>
-								<height>60</height>
 								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="label">
 								<left>10</left>
 								<width>301</width>
-								<height>60</height>
 								<align>right</align>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
@@ -80,7 +78,6 @@
 							<control type="label" description="Main Label">
 								<left>10</left>
 								<width>301</width>
-								<height>60</height>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor />
 								<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -88,7 +85,6 @@
 							<control type="label">
 								<left>10</left>
 								<width>301</width>
-								<height>60</height>
 								<align>right</align>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<label>$INFO[ListItem.Label2]</label>
@@ -290,8 +286,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>53</onleft>
 				<onright>9000</onright>
 			</control>

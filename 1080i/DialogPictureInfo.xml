@@ -30,10 +30,8 @@
 			<left>854</left>
 			<top>24</top>
 			<width>1030</width>
-			<height>60</height>
 			<font>InfoTitle</font>
 			<textcolor>$VAR[HighlightColor]</textcolor>
-			<align>left</align>
 			<label>$INFO[ListItem.Label]</label>
 			<scroll>true</scroll>
 		</control>
@@ -41,9 +39,6 @@
 			<left>854</left>
 			<top>74</top>
 			<width>1030</width>
-			<height>60</height>
-			<textcolor>$VAR[LabelTextColor]</textcolor>
-			<align>left</align>
 			<label>$INFO[ListItem.PictureDateTime]</label>
 			<scroll>true</scroll>
 		</control>
@@ -63,10 +58,7 @@
 					<control type="label">
 						<height>45</height>
 						<font>Details</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<textcolor>$VAR[HighlightColor]</textcolor>
-						<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>8</textoffsetx>
 						<scroll>false</scroll>
@@ -75,9 +67,6 @@
 						<height>45</height>
 						<font>Details</font>
 						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>$VAR[LabelTextColor]</textcolor>
-						<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<textoffsetx>8</textoffsetx>
 						<scroll>false</scroll>
@@ -87,10 +76,7 @@
 					<control type="label">
 						<height>45</height>
 						<font>Details</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<textcolor>$VAR[HighlightColor]</textcolor>
-						<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>8</textoffsetx>
 						<scroll>false</scroll>
@@ -99,9 +85,6 @@
 						<height>45</height>
 						<font>Details</font>
 						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>$VAR[LabelTextColor]</textcolor>
-						<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<textoffsetx>8</textoffsetx>
 						<scroll>false</scroll>
@@ -119,8 +102,6 @@
 			<texturesliderbarfocus />
 			<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 			<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
 		</control>
 	</controls>
 </window>

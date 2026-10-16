@@ -377,8 +377,6 @@
 				<width>auto</width>
 				<height>30</height>
 				<font>font16</font>
-				<align>left</align>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[19055]</label>
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>

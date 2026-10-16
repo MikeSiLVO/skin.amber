@@ -91,7 +91,6 @@
 					<top>1088</top>
 					<width>1920</width>
 					<height>534</height>
-					<aspectratio>stretch</aspectratio>
 					<texture border="0,30,0,30">OSD/OSDBackground.png</texture>
 				</control>
 				<control type="image">

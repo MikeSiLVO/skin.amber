@@ -42,7 +42,6 @@
 					<top>270</top>
 					<width>1400</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<onleft>9</onleft>
 					<onright>9</onright>
 					<onup>26</onup>
@@ -62,16 +61,12 @@
 						<description>Include Description</description>
 						<width>645</width>
 						<font>ListDetails</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19134]</label>
 					</control>
 					<control type="radiobutton" id="11">
 						<description>Case Sensitive</description>
 						<width>645</width>
 						<font>ListDetails</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19135]</label>
 					</control>
 					<control type="edit" id="14">
@@ -98,24 +93,18 @@
 						<description>Include unknown Genres</description>
 						<width>645</width>
 						<font>ListDetails</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19132]</label>
 					</control>
 					<control type="radiobutton" id="22">
 						<description>FTA only</description>
 						<width>645</width>
 						<font>ListDetails</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19123]</label>
 					</control>
 					<control type="radiobutton" id="24">
 						<description>Ignore Timers</description>
 						<width>645</width>
 						<font>ListDetails</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19124]</label>
 					</control>
 				</control>
@@ -155,8 +144,6 @@
 						<description>avoid repeats</description>
 						<width>645</width>
 						<font>ListDetails</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19121]</label>
 					</control>
 					<control type="spincontrolex" id="21">
@@ -175,8 +162,6 @@
 						<description>Ignore Recordings</description>
 						<width>645</width>
 						<font>ListDetails</font>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19125]</label>
 					</control>
 				</control>
@@ -201,7 +186,6 @@
 						<width>300</width>
 						<height>60</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<font>ListDetails</font>
 						<label>$LOCALIZE[10035]</label>
 					</control>
@@ -210,7 +194,6 @@
 						<width>300</width>
 						<height>60</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<font>ListDetails</font>
 						<label>$LOCALIZE[222]</label>
 					</control>
@@ -219,7 +202,6 @@
 						<width>300</width>
 						<height>60</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<font>ListDetails</font>
 						<label>$LOCALIZE[137]</label>
 					</control>

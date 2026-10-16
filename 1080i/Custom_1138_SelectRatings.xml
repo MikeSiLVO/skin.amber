@@ -31,7 +31,6 @@
 					<label>$LOCALIZE[31367]</label>
 					<scroll>true</scroll>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 			</control>
@@ -40,7 +39,6 @@
 				<top>366</top>
 				<width>695</width>
 				<height>690</height>
-				<itemgap>0</itemgap>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="radiobutton" id="901011">

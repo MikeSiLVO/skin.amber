@@ -20,7 +20,6 @@
 				<label />
 				<scroll>true</scroll>
 				<align>center</align>
-				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<visible>!Container(9000).HasFocus(5)</visible>
 			</control>
@@ -130,7 +129,6 @@
 						<control type="label">
 							<left>30</left>
 							<width>1400</width>
-							<height>60</height>
 							<textoffsetx>30</textoffsetx>
 							<info>ListItem.Label</info>
 						</control>
@@ -144,9 +142,7 @@
 						<control type="label">
 							<left>30</left>
 							<width>1400</width>
-							<height>60</height>
 							<textoffsetx>30</textoffsetx>
-							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
@@ -200,7 +196,6 @@
 				<control type="radiobutton" id="24" description="Mixed">
 					<top>840</top>
 					<width>1467</width>
-					<height>60</height>
 					<label>$LOCALIZE[20395]</label>
 					<textoffsetx>30</textoffsetx>
 					<onleft>9002</onleft>
@@ -211,7 +206,6 @@
 				<control type="togglebutton" id="19" description="Ascending descending">
 					<top>900</top>
 					<width>1467</width>
-					<height>60</height>
 					<label>$LOCALIZE[21429]:  $LOCALIZE[21431]</label>
 					<altlabel>$LOCALIZE[21429]:  $LOCALIZE[21430]</altlabel>
 					<textoffsetx>30</textoffsetx>

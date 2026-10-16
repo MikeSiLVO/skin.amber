@@ -33,7 +33,6 @@
 					<top>150</top>
 					<width>324</width>
 					<height>518</height>
-					<itemgap>0</itemgap>
 					<onleft>noop</onleft>
 					<onright>60</onright>
 					<onup>9001</onup>
@@ -158,7 +157,6 @@
 						<width>1420</width>
 						<height>2</height>
 						<texture>img/LineST.png</texture>
-						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="label" id="2">
 						<description>Label 2</description>
@@ -266,8 +264,6 @@
 					<texturesliderbarfocus />
 					<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 					<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
 					<visible>Control.IsVisible(30)</visible>
 				</control>
 			</control>

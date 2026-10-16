@@ -136,7 +136,6 @@
 				<width>180</width>
 				<height>48</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<font>InfoPlot</font>
 				<label>$VAR[DialogFullScreenBtn601]</label>
 			</control>
@@ -145,7 +144,6 @@
 				<width>180</width>
 				<height>45</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<font>InfoPlot</font>
 				<label>$LOCALIZE[19031]</label>
 			</control>
@@ -154,7 +152,6 @@
 				<width>180</width>
 				<height>48</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<font>InfoPlot</font>
 				<label>$LOCALIZE[206]</label>
 			</control>
@@ -163,7 +160,6 @@
 				<width>210</width>
 				<height>48</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<font>InfoPlot</font>
 				<label>$LOCALIZE[19008]</label>
 			</control>
@@ -266,7 +262,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(characterart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<aligny>bottom</aligny>
 				<visible>VideoPlayer.Content(movies)</visible>
 				<visible>!String.IsEmpty(Player.Art(characterart)) + String.IsEqual(Skin.String(OSDExtraArt),characterart)</visible>
@@ -278,7 +273,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(tvshow.characterart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<aligny>bottom</aligny>
 				<visible>VideoPlayer.Content(episodes)</visible>
 				<visible>!String.IsEmpty(Player.Art(tvshow.characterart)) + String.IsEqual(Skin.String(OSDExtraArt),characterart)</visible>
@@ -290,8 +284,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(clearlogo)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
 				<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)</visible>
 				<visible>!String.IsEmpty(Player.Art(clearlogo)) + [String.IsEqual(Skin.String(OSDExtraArt),logo) | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(discart))] | [String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(clearart))] | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(characterart)) + String.IsEmpty(Player.Art(clearart))]]</visible>
 			</control>
@@ -302,8 +294,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(tvshow.clearlogo)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
 				<visible>VideoPlayer.Content(episodes)</visible>
 				<visible>!String.IsEmpty(Player.Art(tvshow.clearlogo)) + [String.IsEqual(Skin.String(OSDExtraArt),logo) | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(tvshow.discart))] | [String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(tvshow.clearart))] | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(tvshow.characterart)) + String.IsEmpty(Player.Art(tvshow.clearart))]]</visible>
 			</control>
@@ -314,8 +304,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(artist.clearlogo)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
 				<visible>Player.HasAudio | VideoPlayer.Content(musicvideos)</visible>
 				<visible>!String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo)) + [String.IsEqual(Skin.String(OSDExtraArt),logo) | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(album.discart))] | [String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(artist.clearart))]]</visible>
 			</control>
@@ -326,8 +314,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(albumartist.clearlogo)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
 				<visible>Player.HasAudio</visible>
 				<visible>!String.IsEmpty(Player.Art(albumartist.clearlogo)) + String.IsEmpty(Player.Art(artist.clearlogo)) + [String.IsEqual(Skin.String(OSDExtraArt),logo) | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(album.discart))] | [String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(artist.clearart)) + String.IsEmpty(Player.Art(albumartist.clearart))]]</visible>
 			</control>
@@ -338,7 +324,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(clearart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<aligny>bottom</aligny>
 				<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)</visible>
 				<visible>!String.IsEmpty(Player.Art(clearart)) + [String.IsEqual(Skin.String(OSDExtraArt),clearart) | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(characterart))]]</visible>
@@ -350,7 +335,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(tvshow.clearart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<aligny>bottom</aligny>
 				<visible>VideoPlayer.Content(episodes)</visible>
 				<visible>!String.IsEmpty(Player.Art(tvshow.clearart)) + [String.IsEqual(Skin.String(OSDExtraArt),clearart) | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(tvshow.characterart))]]</visible>
@@ -362,7 +346,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(artist.clearart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<aligny>bottom</aligny>
 				<visible>Player.HasAudio</visible>
 				<visible>!String.IsEmpty(Player.Art(artist.clearart)) + String.IsEqual(Skin.String(OSDExtraArt),clearart)</visible>
@@ -374,7 +357,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(albumartist.clearart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<aligny>bottom</aligny>
 				<visible>Player.HasAudio</visible>
 				<visible>!String.IsEmpty(Player.Art(albumartist.clearart)) + String.IsEmpty(Player.Art(artist.clearart)) + String.IsEqual(Skin.String(OSDExtraArt),clearart)</visible>
@@ -386,8 +368,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(discart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
 				<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)</visible>
 				<visible>!String.IsEmpty(Player.Art(discart)) + String.IsEqual(Skin.String(OSDExtraArt),discart)</visible>
 			</control>
@@ -398,8 +378,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(tvshow.discart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
 				<visible>VideoPlayer.Content(episodes)</visible>
 				<visible>!String.IsEmpty(Player.Art(tvshow.discart)) + String.IsEqual(Skin.String(OSDExtraArt),discart)</visible>
 			</control>
@@ -410,8 +388,6 @@
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(album.discart)]</texture>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
 				<visible>Player.HasAudio | VideoPlayer.Content(musicvideos)</visible>
 				<visible>String.IsEmpty(Player.Art(discart)) + !String.IsEmpty(Player.Art(album.discart)) + String.IsEqual(Skin.String(OSDExtraArt),discart)</visible>
 			</control>
@@ -429,7 +405,6 @@
 				<width>64</width>
 				<height>64</height>
 				<font />
-				<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 				<texturenofocus />
 				<onright>592</onright>
 				<onclick>PlayerControl(Repeat)</onclick>
@@ -453,7 +428,6 @@
 			<textureradioonnofocus>OSD/OSDRandomOnNF.png</textureradioonnofocus>
 			<textureradioofffocus colordiffuse="$VAR[FocusedTextColor]">OSD/OSDRandomOffNF.png</textureradioofffocus>
 			<textureradiooffnofocus>OSD/OSDRandomOffNF.png</textureradiooffnofocus>
-			<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 			<width>64</width>
 			<height>64</height>
 			<radiowidth>64</radiowidth>
@@ -493,7 +467,6 @@
 			<textureradioonnofocus>OSD/OSDPlayNF.png</textureradioonnofocus>
 			<textureradioofffocus colordiffuse="$VAR[FocusedTextColor]">OSD/OSDPauseNF.png</textureradioofffocus>
 			<textureradiooffnofocus>OSD/OSDPauseNF.png</textureradiooffnofocus>
-			<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 			<width>64</width>
 			<height>64</height>
 			<radiowidth>64</radiowidth>

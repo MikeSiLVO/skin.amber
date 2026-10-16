@@ -33,10 +33,8 @@
 				<top>0</top>
 				<height>120</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[22080] $INFO[Skin.String(SelectColorLabel)]</label>
 				<scroll>true</scroll>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 			</control>
 			<control type="group">
 				<left>60</left>
@@ -142,7 +140,6 @@
 							<top>40</top>
 							<width>280</width>
 							<height>60</height>
-							<aspectratio>stretch</aspectratio>
 							<texture border="5">panel.png</texture>
 							<colordiffuse>$INFO[Window.Property(colorstring)]</colordiffuse>
 						</control>

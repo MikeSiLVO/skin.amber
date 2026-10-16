@@ -4,7 +4,6 @@
 		<control type="image">
 			<width>1920</width>
 			<height>1080</height>
-			<aspectratio>stretch</aspectratio>
 			<texture colordiffuse="ff000000">white.jpg</texture>
 		</control>
 		<control type="list" id="1">
@@ -30,7 +29,6 @@
 			<height>5</height>
 			<width>1920</width>
 			<orientation>horizontal</orientation>
-			<showonepage>false</showonepage>
 			<texturesliderbackground colordiffuse="50000000">white.jpg</texturesliderbackground>
 			<texturesliderbar colordiffuse="$VAR[HighlightColor]">white.jpg</texturesliderbar>
 			<texturesliderbarfocus colordiffuse="$VAR[HighlightColor]">white.jpg</texturesliderbarfocus>

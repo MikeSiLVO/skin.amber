@@ -32,7 +32,6 @@
 					<onright>9000</onright>
 					<onup>17</onup>
 					<ondown>16</ondown>
-					<align>left</align>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="button" id="16" description="Rule operator">

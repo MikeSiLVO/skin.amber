@@ -52,9 +52,7 @@
 				<control type="label" description="Main label">
 					<left>30</left>
 					<width>1305</width>
-					<height>60</height>
 					<scroll>false</scroll>
-					<align>left</align>
 					<font>font38_title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.Label,[B],[/B]]$INFO[ListItem.Year, (,)]</label>
@@ -65,7 +63,6 @@
 					<width>1305</width>
 					<height>30</height>
 					<scroll>false</scroll>
-					<align>left</align>
 					<label>[B][COLOR $VAR[LabelTextColor]]$VAR[WidgetItemDurationVar,, • ]$INFO[ListItem.MPAA][/COLOR][/B]</label>
 				</control>
 			</control>
@@ -1024,7 +1021,6 @@
 						<left>10</left>
 						<width>480</width>
 						<height>45</height>
-						<align>left</align>
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label3]</label>
@@ -1036,7 +1032,6 @@
 						<left>10</left>
 						<width>480</width>
 						<height>45</height>
-						<align>left</align>
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
@@ -1048,7 +1043,6 @@
 						<left>10</left>
 						<width>480</width>
 						<height>45</height>
-						<align>left</align>
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
@@ -5623,8 +5617,6 @@
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<font>ListDetailsSmall</font>
-				<align>left</align>
-				<aligny>center</aligny>
 			</control>
 			<control type="label" description="next recording time">
 				<description>NextRecordingDateTime</description>
@@ -5633,8 +5625,6 @@
 				<width>420</width>
 				<height>20</height>
 				<font>ListDetailsSmall</font>
-				<align>left</align>
-				<aligny>center</aligny>
 				<label>[B]$INFO[$PARAM[titlelabel]][/B] ($INFO[$PARAM[channellabel]])</label>
 				<scroll>true</scroll>
 			</control>
@@ -5643,10 +5633,7 @@
 				<top>44</top>
 				<width>800 </width>
 				<height>20</height>
-				<align>left</align>
-				<aligny>center</aligny>
 				<font>ListDetailsSmall</font>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[$PARAM[timelabel],$LOCALIZE[19126] - ]</label>
 				<scroll>true</scroll>
 			</control>
@@ -5687,8 +5674,6 @@
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<font>ListDetails</font>
-				<align>left</align>
-				<aligny>center</aligny>
 			</control>
 			<control type="label" description="next recording time">
 				<description>NextRecordingDateTime</description>
@@ -5697,8 +5682,6 @@
 				<width>420</width>
 				<height>30</height>
 				<font>ListDetails</font>
-				<align>left</align>
-				<aligny>center</aligny>
 				<label>[B]$INFO[$PARAM[titlelabel]][/B] ($INFO[$PARAM[channellabel]])</label>
 				<scroll>true</scroll>
 			</control>
@@ -5707,10 +5690,7 @@
 				<top>64</top>
 				<width>800 </width>
 				<height>30</height>
-				<align>left</align>
-				<aligny>center</aligny>
 				<font>ListDetails</font>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[$PARAM[timelabel],$LOCALIZE[19126] - ]</label>
 				<scroll>true</scroll>
 			</control>

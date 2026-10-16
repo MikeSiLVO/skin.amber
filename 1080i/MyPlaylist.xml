@@ -30,9 +30,7 @@
 					<top>160</top>
 					<left>150</left>
 					<width>500</width>
-					<height>60</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$VAR[listmediaheader]</label>
 					<scroll>true</scroll>
@@ -44,7 +42,6 @@
 					<width>500</width>
 					<height>30</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[listmediafooter]</label>
 					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -110,18 +107,12 @@
 							<control type="label">
 								<left>10</left>
 								<width>680</width>
-								<height>60</height>
-								<aligny>center</aligny>
-								<textcolor>$VAR[LabelTextColor]</textcolor>
 								<scroll>false</scroll>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<left>710</left>
 								<width>100</width>
-								<height>60</height>
-								<textcolor>$VAR[LabelTextColor]</textcolor>
-								<aligny>center</aligny>
 								<align>right</align>
 								<scroll>false</scroll>
 								<label>$INFO[ListItem.Label2]</label>
@@ -136,19 +127,15 @@
 							<control type="label">
 								<left>10</left>
 								<width>680</width>
-								<height>60</height>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor />
-								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<left>710</left>
 								<width>100</width>
-								<height>60</height>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor />
-								<aligny>center</aligny>
 								<align>right</align>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
@@ -230,8 +217,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
 				<onright>50</onright>
 			</control>

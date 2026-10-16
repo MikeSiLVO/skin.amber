@@ -44,10 +44,8 @@
 				<control type="label" description="Main Label">
 					<top>15</top>
 					<width>1180</width>
-					<height>60</height>
 					<font>InfoTitle</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-					<align>left</align>
 					<label>$VAR[MusicInfoHeader]</label>
 					<scroll>true</scroll>
 				</control>
@@ -56,7 +54,6 @@
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="textbox" description="Plot">
 					<include>VisibleFadeEffectDelay</include>
@@ -74,10 +71,8 @@
 					<onright>9009</onright>
 					<ondown>9000</ondown>
 					<align>center</align>
-					<aligny>center</aligny>
 					<textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">icons/dots7.png</textureradioonfocus>
 					<textureradioonnofocus>icons/dots7.png</textureradioonnofocus>
-					<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 					<texturenofocus border="4">img/WhiteRoundedT.png</texturenofocus>
 					<width>37</width>
 					<height>17</height>
@@ -97,7 +92,6 @@
 					<width>1</width>
 					<height>452</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="panel" id="9009">
 					<include>VisibleFadeEffectDelay</include>

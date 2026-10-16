@@ -69,16 +69,13 @@
 				<onright>9001</onright>
 			</control>
 			<control type="button" id="7">
-				<textoffsetx>20</textoffsetx>
 				<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				<font>ListDetails</font>
 			</control>
 			<control type="radiobutton" id="8">
-				<textoffsetx>20</textoffsetx>
 				<font>ListDetails</font>
 			</control>
 			<control type="spincontrolex" id="9">
-				<textoffsetx>20</textoffsetx>
 				<reverse>true</reverse>
 				<font>ListDetails</font>
 			</control>
@@ -94,7 +91,6 @@
 				<font>ListDetails</font>
 			</control>
 			<control type="sliderex" id="13">
-				<align>left</align>
 				<textoffsetx>30</textoffsetx>
 				<font>ListDetails</font>
 			</control>

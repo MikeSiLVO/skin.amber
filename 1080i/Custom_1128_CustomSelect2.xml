@@ -44,7 +44,6 @@
 					<width>885</width>
 					<height>30</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[CustomInfoSelectHeader]</label>
@@ -57,7 +56,6 @@
 					<width>1600</width>
 					<height>30</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[CustomInfoSelectHeader]</label>
@@ -99,7 +97,6 @@
 					<width>860</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image" description="Line Split">
 					<top>50</top>
@@ -107,7 +104,6 @@
 					<width>1</width>
 					<height>480</height>
 					<texture>img/LineL.png</texture>
-					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
 			<control type="group">
@@ -133,7 +129,6 @@
 						<control type="label">
 							<left>10</left>
 							<width>172</width>
-							<height>60</height>
 							<label>$INFO[ListItem.Label]</label>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 						</control>
@@ -155,7 +150,6 @@
 							<visible>Control.HasFocus(100)</visible>
 							<left>10</left>
 							<width>172</width>
-							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
@@ -165,7 +159,6 @@
 							<visible>!Control.HasFocus(100)</visible>
 							<left>10</left>
 							<width>172</width>
-							<height>60</height>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -197,7 +190,6 @@
 						<control type="label">
 							<left>10</left>
 							<width>200</width>
-							<height>60</height>
 							<label>$INFO[ListItem.Label]</label>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 						</control>
@@ -219,7 +211,6 @@
 							<visible>Control.HasFocus(100)</visible>
 							<left>10</left>
 							<width>200</width>
-							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<selectedcolor>SelectedFocused</selectedcolor>
 							<shadowcolor>HeavyShadow</shadowcolor>
@@ -229,7 +220,6 @@
 							<visible>!Control.HasFocus(100)</visible>
 							<left>10</left>
 							<width>200</width>
-							<height>60</height>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -252,8 +242,6 @@
 				<texturesliderbarfocus />
 				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<onright>100</onright>
 			</control>
 			<control type="grouplist" id="90">

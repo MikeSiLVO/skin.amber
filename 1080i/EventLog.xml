@@ -50,8 +50,6 @@
 							<height>40</height>
 							<top>5</top>
 							<width>1270</width>
-							<align>left</align>
-							<aligny>center</aligny>
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 						</control>
 						<control type="textbox" description="Description">
@@ -63,12 +61,10 @@
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label" description="Label2">
-							<height>60</height>
 							<font>Details</font>
 							<width>1566</width>
 							<textcolor>Grey</textcolor>
 							<align>right</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -91,8 +87,6 @@
 							<height>40</height>
 							<top>5</top>
 							<width>1270</width>
-							<align>left</align>
-							<aligny>center</aligny>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
 							<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -108,13 +102,11 @@
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label" description="Label2">
-							<height>60</height>
 							<font>Details</font>
 							<width>1566</width>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
 							<align>right</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -133,8 +125,6 @@
 			<texturesliderbarfocus />
 			<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
 			<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
 			<onleft>570</onleft>
 			<onright>9000</onright>
 		</control>

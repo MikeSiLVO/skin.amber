@@ -16,7 +16,6 @@
 			</control>
 			<control type="label" id="12">
 				<width>300</width>
-				<height>60</height>
 				<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31984]:[/COLOR] $INFO[Player.SeekNumeric]</label>
 				<scroll>true</scroll>
 				<font>Details</font>
@@ -82,8 +81,6 @@
 						<top>-110</top>
 						<width>1294</width>
 						<height>120</height>
-						<align>justify</align>
-						<font>InfoPlot</font>
 						<label>$VAR[VideoFullScreenPlot]</label>
 						<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
 					</control>
@@ -102,8 +99,6 @@
 						<top>-110</top>
 						<width>1845</width>
 						<height>120</height>
-						<align>justify</align>
-						<font>InfoPlot</font>
 						<label>$VAR[VideoFullScreenPlot]</label>
 						<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
 					</control>
@@ -165,7 +160,6 @@
 					<top>50</top>
 					<width>780</width>
 					<height>40</height>
-					<align>left</align>
 					<label>$VAR[VideoTopHeading]</label>
 					<scroll>true</scroll>
 					<font>InfoTitle</font>
@@ -189,19 +183,16 @@
 					</control>
 					<control type="label" id="43">
 						<width>850</width>
-						<height>60</height>
 						<font>MainLabelBigTitle</font>
 						<label>$VAR[VideoPlayerTitle]</label>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<scroll>true</scroll>
-						<scrollspeed>25</scrollspeed>
 					</control>
 				</control>
 				<control type="label" id="5">
 					<top>176</top>
 					<width>640</width>
 					<height>40</height>
-					<align>left</align>
 					<label>$VAR[VideoBottomHeading]</label>
 					<font>Details</font>
 					<scroll>true</scroll>
@@ -274,8 +265,6 @@
 					<top>3</top>
 					<width>1305</width>
 					<height>120</height>
-					<align>justify</align>
-					<font>InfoPlot</font>
 					<label>$VAR[VideoFullScreenPlot]</label>
 					<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
 				</control>

@@ -84,7 +84,6 @@
 				<top>20</top>
 				<height>40</height>
 				<width>260</width>
-				<align>left</align>
 				<font>ListDetails</font>
 				<label>[B]$LOCALIZE[31528][/B]</label>
 				<scroll>true</scroll>
@@ -128,7 +127,6 @@
 					</control>
 					<control type="label">
 						<width>382</width>
-						<height>60</height>
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -148,7 +146,6 @@
 					</control>
 					<control type="label">
 						<width>382</width>
-						<height>60</height>
 						<align>center</align>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />

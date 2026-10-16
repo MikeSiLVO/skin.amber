@@ -302,7 +302,6 @@
 				<height>90</height>
 				<width>$PARAM[widthUSA]</width>
 				<aspectratio>keep</aspectratio>
-				<align>center</align>
 				<texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
 				<visible>!String.Contains($PARAM[certsource],Brazil) + !String.Contains($PARAM[certsource],UK) + !String.Contains($PARAM[certsource],United Kingdom) + !String.Contains($PARAM[certsource],classificação) + !String.Contains($PARAM[certsource],France) + !String.Contains($PARAM[certsource],Germany) + !String.Contains($PARAM[certsource],Australia) + !String.Contains($PARAM[certsource],Netherlands) + !String.Contains($PARAM[certsource],NL) + !String.IsEmpty($PARAM[certsource])</visible>
 			</control>
@@ -313,7 +312,6 @@
 					<height>55</height>
 					<width>55</width>
 					<aspectratio>keep</aspectratio>
-					<align>center</align>
 					<texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
 					<visible>!String.IsEmpty($PARAM[certsource]) + [String.Contains($PARAM[certsource],Brazil) | String.Contains($PARAM[certsource],classificação) | String.Contains($PARAM[certsource],France) | String.Contains($PARAM[certsource],Germany) | String.Contains($PARAM[certsource],Australia) | String.Contains($PARAM[certsource],Netherlands) | String.Contains($PARAM[certsource],NL)]</visible>
 				</control>
@@ -321,7 +319,6 @@
 					<height>65</height>
 					<width>55</width>
 					<aspectratio>keep</aspectratio>
-					<align>center</align>
 					<texture fallback="badges/mpaa/NR.png">$PARAM[certvar]</texture>
 					<visible>!String.IsEmpty($PARAM[certsource]) + [String.Contains($PARAM[certsource],UK) | String.Contains($PARAM[certsource],United Kingdom)]</visible>
 				</control>
@@ -365,9 +362,7 @@
 				</control>
 				<control type="label">
 					<width>$PARAM[width]</width>
-					<height>60</height>
 					<font>font30_title</font>
-					<aligny>center</aligny>
 					<label>$VAR[ShelfInfoTitle]</label>
 					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -738,7 +733,6 @@
 					<control type="label">
 						<top>2</top>
 						<width>177</width>
-						<height>60</height>
 						<align>center</align>
 						<label>[B]$VAR[ShelfInfoTotalSeasons][/B]</label>
 						<scroll>true</scroll>
@@ -762,7 +756,6 @@
 					<control type="label">
 						<top>2</top>
 						<width>177</width>
-						<height>60</height>
 						<align>center</align>
 						<label>[B]$VAR[ShelfInfoTotalEpisodes][/B]</label>
 						<scroll>true</scroll>
@@ -786,7 +779,6 @@
 					<control type="label">
 						<top>2</top>
 						<width>177</width>
-						<height>60</height>
 						<align>center</align>
 						<label>[B]$INFO[Container.ListItem.Property(UnwatchedEpisodes)][/B]</label>
 						<scroll>true</scroll>
@@ -859,7 +851,6 @@
 				</control>
 				<!-- Weather item label -->
 				<control type="label">
-					<height>60</height>
 					<font>font24_title</font>
 					<label>$INFO[Container.ListItem.Label]</label>
 					<scroll>true</scroll>
@@ -867,7 +858,6 @@
 				</control>
 				<!-- System item label -->
 				<control type="label">
-					<height>60</height>
 					<font>font24_title</font>
 					<label>$INFO[Container.ListItem.Label]</label>
 					<scroll>true</scroll>
@@ -1177,8 +1167,6 @@
 				<control type="textbox">
 					<width>auto</width>
 					<height>160</height>
-					<font>InfoPlot</font>
-					<align>justify</align>
 					<label>$VAR[ShelfInfoPlot]</label>
 					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>String.IsEqual(Container.ListItem.DBType,tvshow)</visible>
@@ -1186,8 +1174,6 @@
 				<control type="textbox">
 					<width>auto</width>
 					<height>126</height>
-					<font>InfoPlot</font>
-					<align>justify</align>
 					<label>$VAR[ShelfInfoPlot]</label>
 					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!String.IsEqual(Container.ListItem.DBType,tvshow) + !String.IsEqual(Container.ListItem.DBType,musicvideo)</visible>
@@ -1195,8 +1181,6 @@
 				<control type="textbox">
 					<width>auto</width>
 					<height>126</height>
-					<font>InfoPlot</font>
-					<align>justify</align>
 					<label>$VAR[ShelfInfoPlot]</label>
 					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>String.IsEqual(Container.ListItem.DBType,musicvideo)</visible>

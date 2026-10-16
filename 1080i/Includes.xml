@@ -200,7 +200,6 @@
 					<height>35</height>
 					<width>370</width>
 					<font>Details</font>
-					<align>left</align>
 					<label>[B]$INFO[Container(300).ListItem.Label][/B]</label>
 					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -212,7 +211,6 @@
 					<height>35</height>
 					<width>430</width>
 					<font>Details</font>
-					<align>left</align>
 					<label>[B]$INFO[Container(300).ListItem.Label][/B]  •  [B]$INFO[Container(9001).ListItem.Label][/B]</label>
 					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -294,10 +292,7 @@
 						<visible>!String.IsEqual(Weather.Location,$LOCALIZE[503])</visible>
 						<width>auto</width>
 						<align>right</align>
-						<aligny>center</aligny>
 						<font>Details</font>
-						<textcolor>$VAR[LabelTextColor]</textcolor>
-						<shadowcolor>ShadowDark</shadowcolor>
 						<label>$INFO[Weather.Temperature][COLOR $VAR[HighlightColor]]  • [/COLOR]</label>
 						<scroll>true</scroll>
 						<height>40</height>
@@ -305,10 +300,7 @@
 					<control type="label">
 						<width>auto</width>
 						<align>right</align>
-						<aligny>center</aligny>
 						<font>Details</font>
-						<textcolor>$VAR[LabelTextColor]</textcolor>
-						<shadowcolor>ShadowDark</shadowcolor>
 						<label>$VAR[TimeLabel]</label>
 						<scroll>true</scroll>
 						<height>40</height>
@@ -324,7 +316,6 @@
 						<alttexturenofocus colordiffuse="$VAR[HighlightColor]">MasterNF.png</alttexturenofocus>
 						<usealttexture>System.IsMaster</usealttexture>
 						<onclick>mastermode</onclick>
-						<aligny>center</aligny>
 					</control>
 				</control>
 			</control>
@@ -364,10 +355,8 @@
 				<height>50</height>
 				<width>595</width>
 				<font>ListDetails</font>
-				<align>left</align>
 				<label>$VAR[LibraryStats]</label>
 				<scroll>true</scroll>
-				<shadowcolor>ShadowDark</shadowcolor>
 				<visible>!Skin.HasSetting(VerticalHome) + ![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 			</control>
 			<control type="image">
@@ -384,10 +373,8 @@
 				<height>50</height>
 				<width>830</width>
 				<font>ListDetails</font>
-				<align>left</align>
 				<label>$VAR[LibraryStats]</label>
 				<scroll>true</scroll>
-				<shadowcolor>ShadowDark</shadowcolor>
 				<visible>!Skin.HasSetting(VerticalHome) + [String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 			</control>
 
@@ -408,10 +395,8 @@
 					<height>50</height>
 					<width>595</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<label>$VAR[LibraryStats]</label>
 					<scroll>true</scroll>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<visible>![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 				<control type="image">
@@ -428,10 +413,8 @@
 					<height>50</height>
 					<width>830</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<label>$VAR[LibraryStats]</label>
 					<scroll>true</scroll>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<visible>[String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 			</control>
@@ -452,10 +435,8 @@
 					<height>50</height>
 					<width>595</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<label>$VAR[LibraryStats]</label>
 					<scroll>true</scroll>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<visible>![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 				<control type="image">
@@ -472,10 +453,8 @@
 					<height>50</height>
 					<width>830</width>
 					<font>ListDetails</font>
-					<align>left</align>
 					<label>$VAR[LibraryStats]</label>
 					<scroll>true</scroll>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<visible>[String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 			</control>
@@ -522,10 +501,8 @@
 				<control type="label" description="Day label">
 					<left>555</left>
 					<top>523</top>
-					<height>60</height>
 					<width>260</width>
 					<font>WeatherTitle</font>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<align>center</align>
 					<label>$INFO[Window.Property(Daily.$PARAM[dayid].LongDay)]</label>
 					<scroll>true</scroll>
@@ -538,7 +515,6 @@
 					<font>MainMenu</font>
 					<textcolor>Red</textcolor>
 					<align>center</align>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$INFO[Window.Property(Daily.$PARAM[dayid].HighTemperature)]</label>
 					<scroll>true</scroll>
 				</control>
@@ -550,7 +526,6 @@
 					<font>MainMenu</font>
 					<textcolor>Blue</textcolor>
 					<align>center</align>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$INFO[Window.Property(Daily.$PARAM[dayid].LowTemperature)]</label>
 					<scroll>true</scroll>
 				</control>
@@ -568,11 +543,8 @@
 				<control type="label" description="Conditions">
 					<left>555</left>
 					<top>855</top>
-					<height>60</height>
 					<width>260</width>
 					<align>center</align>
-					<aligny>center</aligny>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<font>font16</font>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$INFO[Window.Property(Daily.$PARAM[dayid].Outlook)]</label>
@@ -633,7 +605,6 @@
 				</control>
 				<control type="label" description="Main Label">
 					<left>30</left>
-					<height>60</height>
 					<width>$PARAM[listwidth]</width>
 					<scroll>false</scroll>
 					<label>$INFO[ListItem.Label]</label>
@@ -641,7 +612,6 @@
 				<control type="label" description="Label 2">
 					<animation effect="slide" start="0,0" end="-60,0" time="0" reversible="true" condition="!String.IsEmpty(ListItem.Icon) + $PARAM[showicon]">Conditional</animation>
 					<right>18</right>
-					<height>60</height>
 					<width>600</width>
 					<font>ListDetails</font>
 					<haspath>true</haspath>
@@ -668,7 +638,6 @@
 				</control>
 				<control type="label" description="Main Label">
 					<left>30</left>
-					<height>60</height>
 					<width>$PARAM[listwidth]</width>
 					<textcolor>$VAR[FocusedTextColor]</textcolor>
 					<shadowcolor />
@@ -677,7 +646,6 @@
 				<control type="label" description="Label 2">
 					<animation effect="slide" start="0,0" end="-60,0" time="0" reversible="true" condition="!String.IsEmpty(ListItem.Icon) + $PARAM[showicon]">Conditional</animation>
 					<right>18</right>
-					<height>60</height>
 					<width>600</width>
 					<font>ListDetails</font>
 					<haspath>true</haspath>
@@ -866,40 +834,32 @@
 						<left>40</left>
 						<height>40</height>
 						<width>$PARAM[labelwidth]</width>
-						<aligny>center</aligny>
 						<label>$PARAM[subcontent_label1]</label>
 						<font>ListDetails</font>
-						<scrollspeed>25</scrollspeed>
 						<visible>$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
 					</control>
 					<control type="label">
 						<left>40</left>
 						<height>40</height>
 						<width>$PARAM[labelwidth]</width>
-						<aligny>center</aligny>
 						<label>$PARAM[subcontent_label2]</label>
 						<font>ListDetails</font>
-						<scrollspeed>25</scrollspeed>
 						<visible>$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
 					</control>
 					<control type="label">
 						<left>0</left>
 						<height>40</height>
 						<width>$PARAM[labelwidth]</width>
-						<aligny>center</aligny>
 						<label>$PARAM[subcontent_label1]</label>
 						<font>ListDetails</font>
-						<scrollspeed>25</scrollspeed>
 						<visible>!$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
 					</control>
 					<control type="label">
 						<left>0</left>
 						<height>40</height>
 						<width>$PARAM[labelwidth]</width>
-						<aligny>center</aligny>
 						<label>$PARAM[subcontent_label2]</label>
 						<font>ListDetails</font>
-						<scrollspeed>25</scrollspeed>
 						<visible>!$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
 					</control>
 				</itemlayout>
@@ -953,8 +913,6 @@
 				<control type="label" description="Title Label">
 					<visible>!$PARAM[lowpanel]</visible>
 					<width>$PARAM[width]</width>
-					<height>60</height>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<font>font20_title</font>
 					<wrapmultiline>true</wrapmultiline>
@@ -965,7 +923,6 @@
 					<visible>$PARAM[lowpanel]</visible>
 					<width>$PARAM[width]</width>
 					<height>55</height>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<font>font20_title</font>
 					<label>$PARAM[heading]</label>
@@ -974,12 +931,10 @@
 				</control>
 				<control type="label" description="Subheading">
 					<visible>!$PARAM[lowpanel] + Skin.HasSetting(ShowAudioSub) + !Container.Content(addons) + [!Skin.HasSetting(ShowLastPlayed) | [Skin.HasSetting(ShowLastPlayed) + String.IsEmpty(ListItem.LastPlayed)]]</visible>
-					<height>60</height>
 					<width>$PARAM[width]</width>
 					<font>font20_title</font>
 					<label>[B]$PARAM[subheading][/B]</label>
 					<scroll>true</scroll>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label" description="Subheading">
@@ -989,16 +944,13 @@
 					<font>font20_title</font>
 					<label>[B]$PARAM[subheading][/B]</label>
 					<scroll>true</scroll>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label" description="Subheading">
 					<visible>$PARAM[lowpanel] + !Container.Content(addons)</visible>
-					<height>60</height>
 					<width>$PARAM[width]</width>
 					<font>ListDetails</font>
 					<label>[B]$PARAM[subheading][/B]</label>
-					<aligny>center</aligny>
 					<scroll>false</scroll>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
@@ -1023,7 +975,6 @@
 						<font>ListDetails</font>
 						<label>[B]$PARAM[subheading2][/B]</label>
 						<scroll>true</scroll>
-						<aligny>center</aligny>
 					</control>
 				</control>
 				<control type="group">
@@ -1035,18 +986,14 @@
 						<control type="textbox">
 							<top>5</top>
 							<visible>[!Skin.HasSetting(ShowAudioSub) + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] | [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
-							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
-							<font>InfoPlot</font>
 							<height>$PARAM[plotheight]</height>
 							<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 						<!-- Plot for other content types -->
 						<control type="textbox">
 							<visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !$EXP[ShowSubcontent]</visible>
-							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
-							<font>InfoPlot</font>
 							<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 						<!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
@@ -1054,9 +1001,7 @@
 							<top>40</top>
 							<visible>!$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 							<height>$PARAM[plotheight]</height>
-							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
-							<font>InfoPlot</font>
 							<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 						<!-- Plot for episodes/tv shows/seasons in low panel when audio/sub info or next aired episode info is shown -->
@@ -1064,9 +1009,7 @@
 							<top>40</top>
 							<visible>$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + Container.Content(episodes) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 							<height>160</height>
-							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
-							<font>InfoPlot</font>
 							<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 						<!-- Plot for movies in low panel when audio/sub info is shown -->
@@ -1074,9 +1017,7 @@
 							<top>40</top>
 							<visible>$PARAM[lowpanel] + [Skin.HasSetting(ShowAudioSub) + Container.Content(movies) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</visible>
 							<height>160</height>
-							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
-							<font>InfoPlot</font>
 							<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 					</control>
@@ -1084,9 +1025,7 @@
 						<visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
 						<!-- Plot for other content types -->
 						<control type="textbox">
-							<align>justify</align>
 							<label>$PARAM[plot]</label>
-							<font>InfoPlot</font>
 						</control>
 					</control>
 					<include content="SubcontentInfoList">
@@ -1165,7 +1104,6 @@
 				<control type="label" description="Footer">
 					<visible>$PARAM[showfooter]</visible>
 					<width>$PARAM[width]</width>
-					<height>60</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer]</label>
 					<scroll>true</scroll>
@@ -1176,7 +1114,6 @@
 				<control type="label" description="Footer">
 					<visible>$PARAM[showfooter]</visible>
 					<width>$PARAM[width]</width>
-					<height>60</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer]</label>
 					<scroll>true</scroll>
@@ -1186,7 +1123,6 @@
 				<control type="label" description="Footer">
 					<visible>$PARAM[showfooter]</visible>
 					<width>$PARAM[width]</width>
-					<height>60</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer]</label>
 					<scroll>true</scroll>
@@ -1316,8 +1252,6 @@
 				<control type="label" description="Title Label">
 					<top>-8</top>
 					<width>$PARAM[width]</width>
-					<height>60</height>
-					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<font>font20_title</font>
 					<wrapmultiline>true</wrapmultiline>
@@ -1332,7 +1266,6 @@
 					<font>font20_title</font>
 					<label>[B]$PARAM[subheading][/B]</label>
 					<scroll>true</scroll>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label" description="Subheading2">
@@ -1343,7 +1276,6 @@
 					<font>ListDetails</font>
 					<label>[B]$PARAM[subheading2][/B]</label>
 					<scroll>true</scroll>
-					<aligny>center</aligny>
 				</control>
 				<control type="group">
 					<width>$PARAM[width]</width>
@@ -1355,9 +1287,7 @@
 						<control type="textbox" id="4001">
 							<top>5</top>
 							<visible>[!Skin.HasSetting(ShowAudioSub) + [Container.Content(movies) | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot) + !Skin.HasSetting(AlwaysShowSetList)] | [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
-							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
-							<font>InfoPlot</font>
 							<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 						<!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
@@ -1365,17 +1295,13 @@
 							<top>50</top>
 							<visible>[[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | [!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
 							<height>$PARAM[plotheight]</height>
-							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
-							<font>InfoPlot</font>
 							<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 						<!-- Plot for other content types -->
 						<control type="textbox" id="4001">
 							<visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !$EXP[ShowSubcontent]</visible>
-							<align>justify</align>
 							<label fallback="19055">$PARAM[plot]</label>
-							<font>InfoPlot</font>
 							<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 					</control>
@@ -1383,9 +1309,7 @@
 						<visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
 						<!-- Plot for other content types -->
 						<control type="textbox" id="4001">
-							<align>justify</align>
 							<label>$PARAM[plot]</label>
-							<font>InfoPlot</font>
 						</control>
 					</control>
 					<include content="SubcontentInfoList">
@@ -1483,8 +1407,6 @@
 					<top>30</top>
 					<left>47</left>
 					<width>$PARAM[labelwidth]</width>
-					<height>60</height>
-					<aligny>center</aligny>
 					<align>center</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<font>font20_title</font>
@@ -1559,8 +1481,6 @@
 						<top>520</top>
 						<left>47</left>
 						<width>$PARAM[labelwidth]</width>
-						<height>60</height>
-						<aligny>center</aligny>
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$VAR[panelfooter]</label>
@@ -1571,7 +1491,6 @@
 						<left>47</left>
 						<width>$PARAM[labelwidth]</width>
 						<height>30</height>
-						<aligny>center</aligny>
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$VAR[panelfooter2]</label>
@@ -1586,7 +1505,6 @@
 						<left>47</left>
 						<width>$PARAM[labelwidth]</width>
 						<height>30</height>
-						<aligny>center</aligny>
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$VAR[panelfooter2]</label>
@@ -1596,8 +1514,6 @@
 						<top>550</top>
 						<left>47</left>
 						<width>$PARAM[labelwidth]</width>
-						<height>60</height>
-						<aligny>center</aligny>
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$VAR[panelfooter]</label>
@@ -1621,9 +1537,7 @@
 					<left>30</left>
 					<top>650</top>
 					<control type="textbox" id="4001">
-						<align>justify</align>
 						<label>$PARAM[plot]</label>
-						<font>InfoPlot</font>
 						<width>$PARAM[plotwidth]</width>
 						<height>$PARAM[plotheight]</height>
 						<autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -2048,7 +1962,6 @@
 				<autoscroll>false</autoscroll>
 				<shadowcolor />
 				<font>InfoPlotSmall</font>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 			</control>
 			<control type="label">
 				<top>650</top>
@@ -2064,7 +1977,6 @@
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(Status)]</label>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
 			</control>
@@ -2082,7 +1994,6 @@
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), @ ]</label>
-				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
 			</control>
@@ -2379,7 +2290,6 @@
 			<shadowcolor>black</shadowcolor>
 			<align>center</align>
 			<font>Clock</font>
-			<aligny>center</aligny>
 			<visible>!String.IsEmpty(PVR.ChannelNumberInput)</visible>
 		</control>
 	</include>
@@ -2393,8 +2303,6 @@
 			<label>$PARAM[label]</label>
 			<scroll>true</scroll>
 			<align>center</align>
-			<aligny>center</aligny>
-			<textcolor>$VAR[LabelTextColor]</textcolor>
 			<font>ListDetails</font>
 			<visible>!String.IsEqual(ListItem.SortLetter,$PARAM[label])</visible>
 		</control>
@@ -2404,7 +2312,6 @@
 			<label>[B]$PARAM[label][/B]</label>
 			<scroll>true</scroll>
 			<align>center</align>
-			<aligny>center</aligny>
 			<textcolor>$VAR[HighlightColor]</textcolor>
 			<font>ListDetails</font>
 			<visible>String.IsEqual(ListItem.SortLetter,$PARAM[label])</visible>
@@ -2417,8 +2324,6 @@
 			<label>#</label>
 			<scroll>true</scroll>
 			<align>center</align>
-			<aligny>center</aligny>
-			<textcolor>$VAR[LabelTextColor]</textcolor>
 			<font>ListDetails</font>
 			<visible>!$EXP[SortLetterIsNumber]</visible>
 		</control>
@@ -2428,7 +2333,6 @@
 			<label>[B]#[/B]</label>
 			<scroll>true</scroll>
 			<align>center</align>
-			<aligny>center</aligny>
 			<textcolor>$VAR[HighlightColor]</textcolor>
 			<font>ListDetails</font>
 			<visible>$EXP[SortLetterIsNumber]</visible>
@@ -2533,7 +2437,6 @@
 						<control type="label">
 							<height>40</height>
 							<width>40</width>
-							<aligny>center</aligny>
 							<align>center</align>
 							<font>ListDetails</font>
 							<label>$INFO[ListItem.Label]</label>
@@ -2550,7 +2453,6 @@
 							<height>40</height>
 							<width>40</width>
 							<align>center</align>
-							<aligny>center</aligny>
 							<font>ListDetails</font>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -2693,11 +2595,8 @@
 							<texture border="4">img/WhiteRoundedT.png</texture>
 						</control>
 						<control type="label">
-							<height>60</height>
 							<width>420</width>
-							<aligny>center</aligny>
 							<align>center</align>
-							<textcolor>$VAR[LabelTextColor]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</control>
@@ -2710,9 +2609,7 @@
 							<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 						</control>
 						<control type="label">
-							<height>60</height>
 							<width>420</width>
-							<aligny>center</aligny>
 							<align>center</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -2795,27 +2692,21 @@
 						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.Contains(Container(212).ListItem.Property(widgetPath$PARAM[suffix]),skinshortcuts-template) + [String.IsEqual(Container(212).ListItem.Property(widgetArtwork$PARAM[suffix]),Poster) | String.IsEqual(Container(212).ListItem.Property(widgetArtwork$PARAM[suffix]),FanArt) | String.IsEqual(Container(212).ListItem.Property(widgetArtwork$PARAM[suffix]),Thumb)]</visible>
 						<label>$LOCALIZE[31615]</label>
 						<selected>String.IsEqual(Container(212).ListItem.Property(widgetPosterLabel$PARAM[suffix]),true)</selected>
-						<height>60</height>
 						<width>1340</width>
-						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
 					<control type="radiobutton" id="$PARAM[idprefix]04">
 						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.Contains(Container(212).ListItem.Property(widgetPath$PARAM[suffix]),skinshortcuts-template)</visible>
 						<label>$LOCALIZE[31628]</label>
 						<selected>String.IsEqual(Container(212).ListItem.Property(widgetLabelScroll$PARAM[suffix]),true)</selected>
-						<height>60</height>
 						<width>1340</width>
-						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
 					<control type="radiobutton" id="$PARAM[idprefix]05">
 						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.Contains(Container(212).ListItem.Property(widgetPath$PARAM[suffix]),skinshortcuts-template) + String.IsEqual(Container(212).ListItem.Property(widgetArtwork$PARAM[suffix]),Square)</visible>
 						<label>$LOCALIZE[31629]</label>
 						<selected>!String.IsEqual(Container(212).ListItem.Property(widgetShowTextbox$PARAM[suffix]),false)</selected>
-						<height>60</height>
 						<width>1340</width>
-						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
 					<control type="button" id="$PARAM[idprefix]06">
@@ -2831,9 +2722,7 @@
 						<visible>[!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.Contains(Container(212).ListItem.Property(widgetPath$PARAM[suffix]),skinshortcuts-template) + !String.IsEqual(Container(212).ListItem.Property(showShelvesInfo),true)] | String.IsEqual(Container(212).ListItem.Property(doInfoPopup$PARAM[suffix]),true)</visible>
 						<label>$LOCALIZE[31650]</label>
 						<selected>String.IsEqual(Container(212).ListItem.Property(doInfoPopup$PARAM[suffix]),true)</selected>
-						<height>60</height>
 						<width>1340</width>
-						<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						<font>ListDetails</font>
 					</control>
 					<control type="button" id="$PARAM[idprefix]08">

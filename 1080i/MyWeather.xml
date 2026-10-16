@@ -50,9 +50,7 @@
 			<control type="label" description="Current conditions">
 				<left>5</left>
 				<width>380</width>
-				<shadowcolor>ShadowDark</shadowcolor>
 				<font>WeatherTitle</font>
-				<height>60</height>
 				<align>center</align>
 				<label>$LOCALIZE[143] $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 				<scroll>true</scroll>
@@ -73,7 +71,6 @@
 				<width>150</width>
 				<align>center</align>
 				<aligny>top</aligny>
-				<shadowcolor>ShadowDark</shadowcolor>
 				<wrapmultiline>true</wrapmultiline>
 				<label>$INFO[Window.Property(Current.Condition)]</label>
 				<scroll>true</scroll>
@@ -86,28 +83,24 @@
 				<control type="label" description="Feels like label">
 					<height>50</height>
 					<align>right</align>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[402]: $INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
 					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Current dew label">
 					<height>50</height>
 					<align>right</align>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[405]: $INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
 					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Current humidity label">
 					<height>50</height>
 					<align>right</align>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]</label>
 					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Current uv label">
 					<height>50</height>
 					<align>right</align>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</label>
 					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window.Property(Current.UVIndex))</visible>
@@ -115,7 +108,6 @@
 				<control type="label" description="Current uv label spacer">
 					<height>50</height>
 					<align>right</align>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<label />
 					<scroll>true</scroll>
 					<visible>String.IsEmpty(Window.Property(Current.UVIndex))</visible>
@@ -123,7 +115,6 @@
 				<control type="label" description="Current wind label">
 					<height>80</height>
 					<align>center</align>
-					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[404]:[CR]$INFO[Window.Property(Current.Wind)]</label>
 					<scroll>true</scroll>
 				</control>

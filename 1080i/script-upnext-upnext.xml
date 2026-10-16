@@ -71,7 +71,6 @@
 					<control type="label">
 						<width>auto</width>
 						<height>35</height>
-						<aligny>center</aligny>
 						<font>font24_title</font>
 						<textcolor>eeffffff</textcolor>
 						<shadowcolor>00000000</shadowcolor>
@@ -82,7 +81,6 @@
 					<control type="label">
 						<width>auto</width>
 						<height>35</height>
-						<aligny>center</aligny>
 						<font>font24_title</font>
 						<textcolor>eeffffff</textcolor>
 						<shadowcolor>00000000</shadowcolor>
@@ -95,11 +93,9 @@
 						<orientation>horizontal</orientation>
 						<height>35</height>
 						<top>40</top>
-						<itemgap>0</itemgap>
 						<control type="label">
 							<width>auto</width>
 							<height>35</height>
-							<aligny>center</aligny>
 							<font>font12</font>
 							<textcolor>eeffffff</textcolor>
 							<shadowcolor>00000000</shadowcolor>
@@ -110,7 +106,6 @@
 						<control type="label">
 							<width>auto</width>
 							<height>35</height>
-							<aligny>center</aligny>
 							<font>font12</font>
 							<textcolor>eeffffff</textcolor>
 							<shadowcolor>00000000</shadowcolor>
@@ -130,14 +125,12 @@
 							<height>56</height>
 							<width min="50">auto</width>
 							<textoffsetx>55</textoffsetx>
-							<aligny>center</aligny>
 							<align>center</align>
 						</control>
 						<control type="button" id="3013">
 							<label>$ADDON[service.upnext 30034]</label>
 							<height>56</height>
 							<width min="50">auto</width>
-							<aligny>center</aligny>
 							<align>center</align>
 						</control>
 					</control>

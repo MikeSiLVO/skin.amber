@@ -35,7 +35,6 @@
 						<top>42</top>
 						<height>20</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19325]</label>
 						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
@@ -110,7 +109,6 @@
 						<top>42</top>
 						<height>20</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19148]</label>
 						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
@@ -155,7 +153,6 @@
 						<top>42</top>
 						<height>20</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$LOCALIZE[19141]</label>
 						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>

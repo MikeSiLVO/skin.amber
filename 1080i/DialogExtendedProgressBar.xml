@@ -19,7 +19,6 @@
 				<height>20</height>
 				<font>ExtProgressBar2</font>
 				<scroll>true</scroll>
-				<align>left</align>
 			</control>
 			<control type="label" id="31" description="Current Directory Label">
 				<left>132</left>
@@ -27,7 +26,6 @@
 				<width>560</width>
 				<height>30</height>
 				<font>ExtProgressBar</font>
-				<align>left</align>
 				<scroll>true</scroll>
 				<haspath>true</haspath>
 			</control>
