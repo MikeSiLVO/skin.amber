@@ -1317,6 +1317,11 @@
 		<value condition="String.IsEqual(Skin.CurrentColourTheme,White)">FFF1F1F1</value>
 	</variable>
 
+	<variable name="MatchPosterColorsValueColor">
+		<value condition="Control.HasFocus(9109101) | Control.HasFocus(9109102)">$VAR[FocusedTextColor]</value>
+		<value>$VAR[LabelTextColor]</value>
+	</variable>
+
 	<variable name="MediaWidgetsHighlightColor">
 		<value condition="Skin.HasSetting(MatchPosterColors)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Colors.Main)]</value>
 		<value condition="!Skin.HasSetting(MatchPosterColors)">$VAR[HighlightColor]</value>

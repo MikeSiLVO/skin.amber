@@ -1204,7 +1204,6 @@
 						</control>
 						<control type="radiobutton" id="91091">
 							<label>$LOCALIZE[31331]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31331])</onclick>
 							<onclick>SetProperty(colorpick,HighlightColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1212,36 +1211,61 @@
 								<param name="ColorString">$VAR[HighlightColor]</param>
 							</include>
 						</control>
-						<control type="button" id="9109101">
-							<width>1350</width>
+						<control type="group" id="9109201">
 							<height>60</height>
-							<texturenofocus />
-							<textoffsetx>30</textoffsetx>
-							<onclick>Skin.ToggleSetting(MatchPosterColors)</onclick>
-							<onclick>Skin.Reset(TMDbHelper.EnableColors)</onclick>
-							<onclick>ClearProperty(TMDbHelper.Colors.SourceImage,Home)</onclick>
-							<onclick>Skin.Reset(TMDbHelper.Colors.Luminance,0.75)</onclick>
-							<onclick>Skin.Reset(TMDbHelper.Colors.Saturation,0.75)</onclick>
-							<label>    $LOCALIZE[31687]</label>
-							<label2>$LOCALIZE[107]</label2>
 							<visible>Skin.HasSetting(Enable.TMDbHelper) + Skin.HasSetting(MatchPosterColors)</visible>
+							<control type="button" id="9109101">
+								<width>1350</width>
+								<height>60</height>
+								<onup>91091</onup>
+								<ondown>91092</ondown>
+								<texturenofocus />
+								<textoffsetx>30</textoffsetx>
+								<onclick>Skin.ToggleSetting(MatchPosterColors)</onclick>
+								<onclick>Skin.Reset(TMDbHelper.EnableColors)</onclick>
+								<onclick>ClearProperty(TMDbHelper.Colors.SourceImage,Home)</onclick>
+								<onclick>Skin.Reset(TMDbHelper.Colors.Luminance,0.75)</onclick>
+								<onclick>Skin.Reset(TMDbHelper.Colors.Saturation,0.75)</onclick>
+								<label>    $LOCALIZE[31687]</label>
+							</control>
+							<control type="label">
+								<left>1252</left>
+								<width>100</width>
+								<height>60</height>
+								<align>center</align>
+								<textcolor>$VAR[MatchPosterColorsValueColor]</textcolor>
+								<shadowcolor />
+								<label>$LOCALIZE[107]</label>
+							</control>
 						</control>
-						<control type="button" id="9109102">
-							<width>1350</width>
+						<control type="group" id="9109202">
 							<height>60</height>
-							<texturenofocus />
-							<textoffsetx>30</textoffsetx>
-							<onclick>Skin.ToggleSetting(MatchPosterColors)</onclick>
-							<onclick condition="!Skin.HasSetting(TMDbHelper.EnableColors)">Skin.SetBool(TMDbHelper.EnableColors)</onclick>
-							<onclick condition="String.IsEmpty(Window(Home).Property(TMDbHelper.Colors.SourceImage))">SetProperty(TMDbHelper.Colors.SourceImage,poster,Home)</onclick>
-							<onclick condition="String.IsEmpty(Skin.String(TMDbHelper.Colors.Luminance))">Skin.SetString(TMDbHelper.Colors.Luminance,0.75)</onclick>
-							<onclick condition="String.IsEmpty(Skin.String(TMDbHelper.Colors.Saturation))">Skin.SetString(TMDbHelper.Colors.Saturation,0.75)</onclick>
-							<label>    $LOCALIZE[31687]</label>
-							<label2>$LOCALIZE[106]</label2>
 							<visible>Skin.HasSetting(Enable.TMDbHelper) + !Skin.HasSetting(MatchPosterColors)</visible>
+							<control type="button" id="9109102">
+								<width>1350</width>
+								<height>60</height>
+								<onup>91091</onup>
+								<ondown>91092</ondown>
+								<texturenofocus />
+								<textoffsetx>30</textoffsetx>
+								<onclick>Skin.ToggleSetting(MatchPosterColors)</onclick>
+								<onclick condition="!Skin.HasSetting(TMDbHelper.EnableColors)">Skin.SetBool(TMDbHelper.EnableColors)</onclick>
+								<onclick condition="String.IsEmpty(Window(Home).Property(TMDbHelper.Colors.SourceImage))">SetProperty(TMDbHelper.Colors.SourceImage,poster,Home)</onclick>
+								<onclick condition="String.IsEmpty(Skin.String(TMDbHelper.Colors.Luminance))">Skin.SetString(TMDbHelper.Colors.Luminance,0.75)</onclick>
+								<onclick condition="String.IsEmpty(Skin.String(TMDbHelper.Colors.Saturation))">Skin.SetString(TMDbHelper.Colors.Saturation,0.75)</onclick>
+								<label>    $LOCALIZE[31687]</label>
+							</control>
+							<control type="label">
+								<left>1252</left>
+								<width>100</width>
+								<height>60</height>
+								<align>center</align>
+								<textcolor>$VAR[MatchPosterColorsValueColor]</textcolor>
+								<shadowcolor />
+								<label>$LOCALIZE[106]</label>
+							</control>
 						</control>
 						<control type="radiobutton" id="91092">
-							<font>ListDetails</font>
 							<label>$LOCALIZE[31338]</label>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31338])</onclick>
 							<onclick>SetProperty(colorpick,LabelTextColor,Home)</onclick>
@@ -1252,7 +1276,6 @@
 						</control>
 						<control type="radiobutton" id="91093">
 							<label>$LOCALIZE[31339]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31339])</onclick>
 							<onclick>SetProperty(colorpick,FocusedTextColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1262,7 +1285,6 @@
 						</control>
 						<control type="radiobutton" id="91094">
 							<label>$LOCALIZE[31340]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31340])</onclick>
 							<onclick>SetProperty(colorpick,SelectedTextColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1272,7 +1294,6 @@
 						</control>
 						<control type="radiobutton" id="91095">
 							<label>$LOCALIZE[31332]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31332])</onclick>
 							<onclick>SetProperty(colorpick,GlowBarsColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1282,7 +1303,6 @@
 						</control>
 						<control type="radiobutton" id="91096">
 							<label>$LOCALIZE[31333]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31333])</onclick>
 							<onclick>SetProperty(colorpick,MenuBarColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1292,7 +1312,6 @@
 						</control>
 						<control type="radiobutton" id="91097">
 							<label>$LOCALIZE[31334]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31334])</onclick>
 							<onclick>SetProperty(colorpick,VertMenuBladeColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1302,7 +1321,6 @@
 						</control>
 						<control type="radiobutton" id="91098">
 							<label>$LOCALIZE[31335]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31335])</onclick>
 							<onclick>SetProperty(colorpick,TopBarColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1312,7 +1330,6 @@
 						</control>
 						<control type="radiobutton" id="91099">
 							<label>$LOCALIZE[31337]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31337])</onclick>
 							<onclick>SetProperty(colorpick,DialogBGColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1322,7 +1339,6 @@
 						</control>
 						<control type="radiobutton" id="910910">
 							<label>$LOCALIZE[31341]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31341])</onclick>
 							<onclick>SetProperty(colorpick,WidgetBGColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1332,7 +1348,6 @@
 						</control>
 						<control type="radiobutton" id="910911">
 							<label>$LOCALIZE[31347]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31347])</onclick>
 							<onclick>SetProperty(colorpick,ViewsBGColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>
@@ -1342,7 +1357,6 @@
 						</control>
 						<control type="radiobutton" id="910912">
 							<label>$LOCALIZE[31838]</label>
-							<font>ListDetails</font>
 							<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[31838])</onclick>
 							<onclick>SetProperty(colorpick,TimeshiftBufferColor,Home)</onclick>
 							<onclick>ActivateWindow(1117)</onclick>

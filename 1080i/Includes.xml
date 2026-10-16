@@ -2635,7 +2635,6 @@
 			<width>1385</width>
 			<height>60</height>
 			<textoffsetx>30</textoffsetx>
-			<font>font16</font>
 			<radiowidth>150</radiowidth>
 			<radioheight>50</radioheight>
 			<textureradioonfocus colordiffuse="$PARAM[ColorString]">color_swatch.png</textureradioonfocus>
