@@ -14,11 +14,6 @@
 		<value condition="!Library.IsScanningMusic">$LOCALIZE[31852]</value>
 	</variable>
 
-	<variable name="TimerDetails">
-		<value condition="String.IsEqual(ListItem.Comment,$LOCALIZE[13106])">[COLOR Red]$INFO[ListItem.Comment]$INFO[ListItem.Date,  •  ][/COLOR]</value>
-		<value>$INFO[ListItem.Comment]$INFO[ListItem.Date,  •  ]</value>
-	</variable>
-
 	<variable name="TVSearchStatus">
 		<value condition="ListItem.IsRecording">$LOCALIZE[19043]</value>
 		<value condition="ListItem.HasTimer">$LOCALIZE[31510]</value>
@@ -59,11 +54,6 @@
 	<variable name="MasterModeLabel">
 		<value condition="System.IsMaster">$LOCALIZE[12332]</value>
 		<value>$LOCALIZE[12333]</value>
-	</variable>
-
-	<variable name="PVRLargeIcon">
-		<value condition="ListItem.IsFolder">$INFO[Container(80).ListItem.Icon]</value>
-		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 
 	<variable name="MediaListLabel">
@@ -436,11 +426,6 @@
 		<value condition="!String.IsEmpty(Container.ListItem.Art(poster))">$INFO[Container.ListItem.Art(poster)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Icon)">$INFO[Container.ListItem.Icon]</value>
 		<value>DefaultPoster.png</value>
-	</variable>
-
-	<variable name="SeasonPoster" description="Season Poster">
-		<value condition="!String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
-		<value condition="String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 	</variable>
 
 	<variable name="Square" description="Square">

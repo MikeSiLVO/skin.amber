@@ -116,14 +116,6 @@
 			<effect type="fade" start="100" end="0" time="100" delay="1050" />
 		</animation>
 	</include>
-	<include name="WeatherAni9">
-		<animation type="WindowOpen">
-			<effect type="fade" start="80" end="100" time="200" delay="1200" />
-		</animation>
-		<animation type="WindowClose">
-			<effect type="fade" start="100" end="0" time="100" delay="1200" />
-		</animation>
-	</include>
 
 	<include name="Icon_Fade">
 		<fadetime>200</fadetime>

@@ -66,14 +66,6 @@
 		<bottom>25</bottom>
 	</include>
 
-	<include name="PVRTimersHeightTouch">
-	    <height>860</height>
-	</include>
-
-	<include name="PVRTimersHeightStandard">
-	    <height>960</height>
-	</include>
-
 	<include name="DialogCloseButtonCommons">
 	    <param name="Action">Action(Back)</param>
 		<param name="id">909090</param>

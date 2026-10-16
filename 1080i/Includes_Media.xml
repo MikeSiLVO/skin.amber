@@ -4974,27 +4974,6 @@
 	</include>
 
 	<!-- View media layouts -->
-	<include name="GenericActorIconBig">
-		<param name="isFocused">false</param>
-		<param name="belowlabel2">$INFO[ListItem.Label2]</param>
-		<definition>
-			<include content="GenericThumbIconTemplate">
-				<param name="isFocused">$PARAM[isFocused]</param>
-				<param name="iconwidth">232.5</param>
-				<param name="iconheight">326</param>
-				<param name="iconoffset">0</param>
-				<param name="iconimage">$INFO[ListItem.Icon]</param>
-				<param name="fallbackicon">DefaultActorPoster.png</param>
-				<param name="shadowoffset">8</param>
-				<param name="bordersizeLT">12</param>
-				<param name="bordersizeRB">20</param>
-				<param name="belowdoublelabelvisibility">true</param>
-				<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
-				<param name="belowdoublelabel2">$PARAM[belowlabel2]</param>
-				<param name="aspect">scale</param>
-			</include>
-		</definition>
-	</include>
 
 	<include name="GenericScreenshotIconBig">
 		<param name="isFocused">false</param>

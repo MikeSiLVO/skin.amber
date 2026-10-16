@@ -3,12 +3,6 @@
 	<fontset id="Default" idloc="31390">
 		<!-- Generic Normal Fonts -->
 		<font>
-			<name>font10</name>
-			<filename>UbuntuCondensed.ttf</filename>
-			<style>uppercase</style>
-			<size>24</size>
-		</font>
-		<font>
 			<name>font12</name>
 			<filename>UbuntuCondensed.ttf</filename>
 			<style>uppercase</style>
@@ -245,11 +239,6 @@
 
 		<!-- Generic Normal Fonts -->
 		<font>
-			<name>font10</name>
-			<filename>UbuntuCondensed.ttf</filename>
-			<size>28</size>
-		</font>
-		<font>
 			<name>font12</name>
 			<filename>UbuntuCondensed.ttf</filename>
 			<size>29</size>
@@ -443,13 +432,6 @@
 		<include>LyricsFonts</include>
 
 		<!-- Generic Normal Fonts -->
-		<font>
-			<name>font10</name>
-			<filename>arial.ttf</filename>
-			<size>27</size>
-			<style>uppercase</style>
-			<aspect>0.80</aspect>
-		</font>
 		<font>
 			<name>font12</name>
 			<filename>arial.ttf</filename>
@@ -711,12 +693,6 @@
 
 		<!-- Generic Normal Fonts -->
 		<font>
-			<name>font10</name>
-			<filename>arial.ttf</filename>
-			<size>27</size>
-			<aspect>0.80</aspect>
-		</font>
-		<font>
 			<name>font12</name>
 			<filename>arial.ttf</filename>
 			<size>28</size>
@@ -954,11 +930,6 @@
 		<include>LyricsFonts</include>
 
 		<!-- Generic Normal Fonts -->
-		<font>
-			<name>font10</name>
-			<filename>NotoSans-Regular.ttf</filename>
-			<size>22</size>
-		</font>
 		<font>
 			<name>font12</name>
 			<filename>NotoSans-Regular.ttf</filename>

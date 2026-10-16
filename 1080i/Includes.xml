@@ -331,16 +331,6 @@
 		</control>
 	</include>
 
-	<include name="SeekbarLabels">
-		<left>40</left>
-		<height>40</height>
-		<width>1840</width>
-		<align>center</align>
-		<font>Details</font>
-		<shadowcolor>Black</shadowcolor>
-		<animation effect="fade" time="50">VisibleChange</animation>
-	</include>
-
 	<include name="KeyboardButtons">
 		<align>center</align>
 		<aligny>center</aligny>

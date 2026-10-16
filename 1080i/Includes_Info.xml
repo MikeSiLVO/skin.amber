@@ -1144,20 +1144,6 @@
 		</control>
 	</include>
 	<!-- Sets info list for Kodi Leia -->
-	<include name="ExtendedSet">
-		<control type="panel" id="90150">
-			<width>1180</width>
-			<height>410</height>
-			<onup>9000</onup>
-			<scrolltime>200</scrolltime>
-			<orientation>horizontal</orientation>
-			<onclick>noop</onclick>
-			<include content="SetLayout">
-				<param name="viewid">90150</param>
-			</include>
-			<content sortby="year" target="videos">videodb://movies/sets/$INFO[ListItem.DBID]</content>
-		</control>
-	</include>
 
 	<!-- Default Track panel item: container 50 -->
 	<include name="DefaultTrackItem">
