@@ -690,6 +690,7 @@
 				<label>$INFO[Container(50).ListItemAbsolute($PARAM[CastListItemID]).Label]</label>
 				<label2>$INFO[Container(50).ListItemAbsolute($PARAM[CastListItemID]).Label2]</label2>
 				<icon>$INFO[Container(50).ListItemAbsolute($PARAM[CastListItemID]).Icon]</icon>
+				<onclick>RunScript(script.skin.info.service,action=dialog_actor_info,"name=$INFO[Container(50).ListItemAbsolute($PARAM[CastListItemID]).Label]","role=$INFO[Container(50).ListItemAbsolute($PARAM[CastListItemID]).Label2]",dbid=$INFO[ListItem.DBID],dbtype=$INFO[ListItem.DBType])</onclick>
 				<visible>!String.IsEmpty(Container(50).ListItemAbsolute($PARAM[CastListItemID]).Label)</visible>
 			</item>
 		</definition>
@@ -921,17 +922,6 @@
 			<orientation>horizontal</orientation>
 			<visible>Container(50).IsUpdating | Container(90050).IsUpdating | Integer.IsGreater(Container(90050).NumItems,0) | Integer.IsGreater(Container(50).NumItems,0)</visible>
 			<animation effect="fade" start="100" end="0" condition="!Integer.IsGreater(Container(50).NumItems,0) | Container(50).IsUpdating | !Integer.IsGreater(Container(90050).NumItems,0) | Container(90050).IsUpdating">Conditional</animation>
-			<!-- select online tmdb search or local search -->
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,Dialog.Close(All)||RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(90050).ListItem.Label],type=person,call_auto=1134))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All,true)||ActivateWindow(1122))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">Dialog.Close(movieinformation,force)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">SetProperty(InfoCalledGeneralSearch,true,Home)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">ClearProperty(InfoCalledSingleSearch,Home)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">ActivateWindow(1122)</onclick>
 			<include content="CastLayout">
 				<param name="viewid">90050</param>
 				<param name="belowdoublelabelvisibility">true</param>
@@ -1054,12 +1044,8 @@
 
 	<!-- Cast source for online widget items -->
 	<variable name="TMDb_Cast">
-		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.Property(imdb_id))">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;imdb_id=$INFO[ListItem.Property(imdb_id)]</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.Property(tmdb_id))">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.IMDBNumber) + String.StartsWith(ListItem.IMDBNumber,tt)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;imdb_id=$INFO[ListItem.IMDBNumber]</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie)">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]</value>
-		<value condition="[String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,tvshow)] + String.IsEmpty(ListItem.Property(tmdb_id))">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;query=$INFO[ListItem.TVShowTitle]&amp;year=$INFO[ListItem.Year]</value>
-		<value condition="[String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,tvshow)] + !String.IsEmpty(ListItem.Property(tmdb_id))">plugin://plugin.video.themoviedb.helper?info=cast&amp;type=tv&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie)">plugin://script.skin.info.service/?action=get_cast&amp;online=true&amp;dbtype=movie&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
+		<value condition="String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,tvshow)">plugin://script.skin.info.service/?action=get_cast&amp;online=true&amp;dbtype=tvshow&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
 	</variable>
 	<!-- Custom Cast Panel -->
 	<include name="CustomCast">
@@ -1104,22 +1090,12 @@
 			<orientation>horizontal</orientation>
 			<visible>Container(90050).IsUpdating | Integer.IsGreater(Container(90050).NumItems,0)</visible>
 			<animation effect="fade" start="100" end="0" condition="!Integer.IsGreater(Container(90050).NumItems,0) | Container(90050).IsUpdating">Conditional</animation>
-			<!-- select online tmdb search or local search -->
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,Dialog.Close(All)||RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(90050).ListItem.Label],type=person,call_auto=1134))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.BuiltIn,Dialog.Close(1122,force)||RunScript(plugin.video.themoviedb.helper,close_dialog=1134)||Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All)||ActivateWindow(1122))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">Dialog.Close(movieinformation,force)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">SetProperty(InfoCalledGeneralSearch,true,Home)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">ClearProperty(InfoCalledSingleSearch,Home)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">ActivateWindow(1122)</onclick>
+			<onclick>RunScript(script.skin.info.service,action=dialog_actor_info,person_id=$INFO[ListItem.Property(person_id)],"name=$INFO[ListItem.Label]")</onclick>
 			<include content="CastLayout">
 				<param name="viewid">90050</param>
 				<param name="belowdoublelabelvisibility">true</param>
 				<param name="belowdoublelabel1">$INFO[Container(90050).ListItem.Label]</param>
-				<param name="belowdoublelabel2">[I]$INFO[Container(90050).ListItem.Property(Role)][/I]</param>
+				<param name="belowdoublelabel2">[I]$INFO[Container(90050).ListItem.Label2][/I]</param>
 				<param name="belowlabelvisibility">false</param>
 			</include>
 			<content limit="25">$VAR[TMDb_Cast]</content>
@@ -1473,17 +1449,7 @@
 	<!-- Onclick for Crew info list -->
 	<include name="InfoList_OnClickCrew">
 		<definition>
-			<!-- select online tmdb search or local search -->
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.Label,$LOCALIZE[31068])</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.1.BuiltIn,RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(91003).ListItem.Label],type=person,call_auto=1134))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.Label,$LOCALIZE[31067])</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$ESCINFO[Container(91003).ListItem.Label])||Action(Close)||ActivateWindow(1122))</onclick>
-			<onclick condition="$EXP[CanDoOnlineSearches]">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(91003).ListItem.Label])</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">Action(Close)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">SetProperty(InfoCalledGeneralSearch,true,Home)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">ClearProperty(InfoCalledSingleSearch,Home)</onclick>
-			<onclick condition="!$EXP[CanDoOnlineSearches]">ActivateWindow(1122)</onclick>
+			<onclick>RunScript(script.skin.info.service,action=dialog_actor_info,person_id=$INFO[ListItem.Property(person_id)],"name=$INFO[ListItem.Label]")</onclick>
 		</definition>
 	</include>
 	<!-- Video and Person info custom info list template -->
