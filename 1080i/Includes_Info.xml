@@ -324,9 +324,6 @@
 		<value>$VAR[LabelTextColor]</value>
 	</variable>
 	<!-- Sub header for textviewer window for RT Consensus -->
-	<variable name="RTConsesusLabel">
-		<value>[I]$LOCALIZE[31200][/I]</value>
-	</variable>
 	<!-- Sub header for textviewer window for Awards -->
 	<variable name="AwardsLabel">
 		<value>[I]$LOCALIZE[31195][/I]</value>
@@ -2819,26 +2816,16 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[31198]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsfresh)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Fresh)]</label2>
 			<onclick>noop</onclick>
-			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsfresh)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsfresh),N/A)</visible>
+			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Fresh))</visible>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31199]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsrotten)]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Rotten)]</label2>
 			<onclick>noop</onclick>
-			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsrotten)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_reviewsrotten),N/A)</visible>
-			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
-		</item>
-		<item>
-			<label>$LOCALIZE[31200]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_consensus)]</label2>
-			<onclick>SetProperty(TextViewerHeader,$ESCINFO[ListItem.Title],Home)</onclick>
-			<onclick>SetProperty(TextViewerSubHeader,$VAR[RTConsesusLabel],Home)</onclick>
-			<onclick>SetProperty(TextViewerContent,$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_consensus)],Home)</onclick>
-			<onclick>ActivateWindow(1124)</onclick>
-			<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_consensus)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.rottentomatoes_consensus),N/A)</visible>
+			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Rotten))</visible>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(ShowRatingRT)</visible>
 		</item>
 		<item>
