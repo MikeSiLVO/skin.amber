@@ -1442,8 +1442,8 @@ msgid "Disable Info Panel in List Views"
 msgstr "Info Panel in der Listen-Ansicht deaktivieren"
 
 msgctxt "#31359"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb Helper - Nächste gesendete Folgen"
+msgid "Next Aired Episodes"
+msgstr "Nächste gesendete Folgen"
 
 msgctxt "#31360"
 msgid "Watch as 2D"

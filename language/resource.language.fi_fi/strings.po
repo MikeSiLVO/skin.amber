@@ -1442,8 +1442,8 @@ msgid "Disable Info Panel in List Views"
 msgstr "Älä käytä tietopaneelia listanäkymissä"
 
 msgctxt "#31359"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb Helper - Seuraavat lähetetyt jaksot"
+msgid "Next Aired Episodes"
+msgstr "Seuraavat lähetetyt jaksot"
 
 msgctxt "#31360"
 msgid "Watch as 2D"

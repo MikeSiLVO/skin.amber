@@ -1442,8 +1442,8 @@ msgid "Disable Info Panel in List Views"
 msgstr "Onemogući info panel u prikazima liste"
 
 msgctxt "#31359"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb Helper - Sljedeće emitirane epizode"
+msgid "Next Aired Episodes"
+msgstr "Sljedeće emitirane epizode"
 
 # Stereoscopic labels
 msgctxt "#31360"

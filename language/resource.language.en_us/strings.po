@@ -1442,7 +1442,7 @@ msgid "Disable Info Panel in List Views"
 msgstr ""
 
 msgctxt "#31359"
-msgid "TMDb Helper - Next Aired Episodes"
+msgid "Next Aired Episodes"
 msgstr ""
 
 # Stereoscopic labels

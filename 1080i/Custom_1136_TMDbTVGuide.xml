@@ -123,7 +123,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<!-- Using 14 days of TMDb Helper Next Aired info -->
+				<!-- Using 14 days of Next Aired info -->
 				<content>
 					<include content="TMDbTVGuideItem">
 						<param name="TMDbTVGuideItemID">1</param>
@@ -210,104 +210,104 @@
 					<orientation>horizontal</orientation>
 					<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				</control>
-				<!-- Panels of episodes, one for each day.  Using just 14 days of TMDb Helper Next Aired info -->
+				<!-- Panels of episodes, one for each day.  Using just 14 days of Next Aired info -->
 				<control type="panel" id="5001">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(1)] | Control.HasFocus(5001) |  [Container(4000).HasFocus(1) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5001</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=0&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=0</content>
 				</control>
 				<control type="panel" id="5002">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(2)] | Control.HasFocus(5002) |  [Container(4000).HasFocus(2) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5002</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=1&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=1</content>
 				</control>
 				<control type="panel" id="5003">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(3)] | Control.HasFocus(5003) |  [Container(4000).HasFocus(3) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5003</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=2&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=2</content>
 				</control>
 				<control type="panel" id="5004">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(4)] | Control.HasFocus(5004) |  [Container(4000).HasFocus(4) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5004</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=3&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=3</content>
 				</control>
 				<control type="panel" id="5005">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(5)] | Control.HasFocus(5005) |  [Container(4000).HasFocus(5) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5005</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=4&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=4</content>
 				</control>
 				<control type="panel" id="5006">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(6)] | Control.HasFocus(5006) |  [Container(4000).HasFocus(6) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5006</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=5&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=5</content>
 				</control>
 				<control type="panel" id="5007">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(7)] | Control.HasFocus(5007) |  [Container(4000).HasFocus(7) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5007</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=6&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=6</content>
 				</control>
 				<control type="panel" id="5008">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(8)] | Control.HasFocus(5008) |  [Container(4000).HasFocus(8) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5008</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=7&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=7</content>
 				</control>
 				<control type="panel" id="5009">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(9)] | Control.HasFocus(5009) |  [Container(4000).HasFocus(9) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5009</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=8&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=8</content>
 				</control>
 				<control type="panel" id="5010">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(10)] | Control.HasFocus(5010) |  [Container(4000).HasFocus(10) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5010</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=9&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=9</content>
 				</control>
 				<control type="panel" id="5011">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(11)] | Control.HasFocus(5011) |  [Container(4000).HasFocus(11) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5011</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=10&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=10</content>
 				</control>
 				<control type="panel" id="5012">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(12)] | Control.HasFocus(5012) |  [Container(4000).HasFocus(12) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5012</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=11&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=11</content>
 				</control>
 				<control type="panel" id="5013">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(13)] | Control.HasFocus(5013) |  [Container(4000).HasFocus(13) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5013</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=12&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=12</content>
 				</control>
 				<control type="panel" id="5014">
 					<visible allowhiddenfocus="true">[Control.HasFocus(4000) + Container(4000).HasFocus(14)] | Control.HasFocus(5014) |  [Container(4000).HasFocus(14) + Control.HasFocus(60)]</visible>
 					<include>VisibleFadeEffectDelay</include>
 					<onright>5014</onright>
 					<include>TMDbTVGuidePanelLayout</include>
-					<content target="videos">plugin://plugin.video.themoviedb.helper/?info=library_nextaired&amp;startdate=13&amp;days=1&amp;widget=True&amp;fanarttv=True&amp;type=episode</content>
+					<content target="videos">plugin://script.skin.info.service/?action=next_aired&amp;day=13</content>
 				</control>
 			</control>
 			<!-- Top Bar -->

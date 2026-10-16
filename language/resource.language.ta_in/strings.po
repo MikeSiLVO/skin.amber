@@ -1442,8 +1442,8 @@ msgid "Disable Info Panel in List Views"
 msgstr ""
 
 msgctxt "#31359"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr ""
+msgid "Next Aired Episodes"
+msgstr "அடுத்து ஒளிபரப்பாகும் அத்தியாயங்கள்"
 
 # Stereoscopic labels
 msgctxt "#31360"

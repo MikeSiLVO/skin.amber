@@ -1442,8 +1442,8 @@ msgid "Disable Info Panel in List Views"
 msgstr "Disabilita pannello info nelle visualizzazioni elenco"
 
 msgctxt "#31359"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "Assistente TMDb - Prossimi episodi in onda"
+msgid "Next Aired Episodes"
+msgstr "Prossimi episodi in onda"
 
 msgctxt "#31360"
 msgid "Watch as 2D"

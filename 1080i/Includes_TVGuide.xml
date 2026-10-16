@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<!-- Custom TV Guide Includes - Uses TMDb Helper Script or Embuary Info Script -->
+	<!-- Custom TV Guide Includes - Uses Skin Info Service or Embuary Info Script -->
 	<!-- Use landscape if available for thumb, if not, use fanart -->
 	<variable name="NextAiredTVGuideArt">
 		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
@@ -70,14 +70,14 @@
 		<value condition="String.IsEqual(Control.GetLabel(11),$LOCALIZE[16])">plugin://script.embuary.info/nextaired/4</value>
 		<value condition="String.IsEqual(Control.GetLabel(11),$LOCALIZE[17])">plugin://script.embuary.info/nextaired/5</value>
 	</variable>
-	<!-- Left List item for TMDb Helper Next Aired -->
+	<!-- Left List item for Next Aired -->
 	<include name="TMDbTVGuideItem">
 		<param name="TMDbTVGuideItemID" />
 		<param name="TMDbTVGuideDayID" />
 		<definition>
 			<item id="$PARAM[TMDbTVGuideItemID]">
-				<label>$INFO[Container($PARAM[TMDbTVGuideDayID]).ListItemAbsolute(0).Property(air_day_short)]$INFO[Container($PARAM[TMDbTVGuideDayID]).NumItems, (,)]</label>
-				<label2>$INFO[Container($PARAM[TMDbTVGuideDayID]).ListItemAbsolute(0).Property(air_date_short)]</label2>
+				<label>$INFO[Container($PARAM[TMDbTVGuideDayID]).ListItemAbsolute(0).Property(AirDay)]$INFO[Container($PARAM[TMDbTVGuideDayID]).NumItems, (,)]</label>
+				<label2>$INFO[Container($PARAM[TMDbTVGuideDayID]).ListItemAbsolute(0).Property(AirDate)]</label2>
 				<visible>Integer.IsGreater(Container($PARAM[TMDbTVGuideDayID]).NumItems,0) | Container($PARAM[TMDbTVGuideDayID]).IsUpdating | Container(4000).IsUpdating</visible>
 			</item>
 		</definition>
@@ -94,7 +94,7 @@
 			</item>
 		</definition>
 	</include>
-	<!-- Episode Panel layout for TMDb Helper Next Aired -->
+	<!-- Episode Panel layout for Next Aired -->
 	<include name="TMDbTVGuidePanelLayout">
 		<left>500</left>
 		<top>120</top>
@@ -189,7 +189,7 @@
 				<top>790</top>
 				<width>445</width>
 				<height>45</height>
-				<label>$INFO[ListItem.Property(Air_Time)]$INFO[ListItem.Property(Studio.1.Name), @ ]</label>
+				<label>$INFO[ListItem.Property(AirTime)]$INFO[ListItem.Studio, @ ]</label>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>
 			</control>
@@ -287,7 +287,7 @@
 				<top>790</top>
 				<width>445</width>
 				<height>45</height>
-				<label>$INFO[ListItem.Property(Air_Time)]$INFO[ListItem.Property(Studio.1.Name), @ ]</label>
+				<label>$INFO[ListItem.Property(AirTime)]$INFO[ListItem.Studio, @ ]</label>
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 				<textoffsetx>15</textoffsetx>
 				<font>InfoPlot</font>

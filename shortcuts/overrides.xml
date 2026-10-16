@@ -81,12 +81,8 @@
 		<action>ActivateWindow(1137)</action>
 	</override>
 	<override action="tv_guide">
-		<condition>!System.HasAddon(script.embuary.info) + System.HasAddon(plugin.video.themoviedb.helper)</condition>
+		<condition>!System.HasAddon(script.embuary.info)</condition>
 		<action>ActivateWindow(1136)</action>
-	</override>
-	<override action="tv_guide">
-		<condition>!System.HasAddon(plugin.video.themoviedb.helper) + !System.HasAddon(script.embuary.info) + System.HasAddon(script.tv.show.next.aired)</condition>
-		<action>RunScript(script.tv.show.next.aired)</action>
 	</override>
 	<override action="reboot_to_android">
 		<action>System.ExecWait("/usr/sbin/rebootfromnand")</action>

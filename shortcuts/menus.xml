@@ -420,10 +420,9 @@
 		<item name="tvguide">
 			<label>$LOCALIZE[4]</label>
 			<action condition="System.HasAddon(script.embuary.info)">ActivateWindow(1137)</action>
-			<action condition="!System.HasAddon(script.embuary.info) + System.HasAddon(plugin.video.themoviedb.helper)">ActivateWindow(1136)</action>
-			<action condition="!System.HasAddon(plugin.video.themoviedb.helper) + !System.HasAddon(script.embuary.info) + System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired)</action>
+			<action condition="!System.HasAddon(script.embuary.info)">ActivateWindow(1136)</action>
 			<icon>DefaultTVShows.png</icon>
-			<visible>System.HasAddon(plugin.video.themoviedb.helper) | System.HasAddon(script.embuary.info) | System.HasAddon(script.tv.show.next.aired)</visible>
+			<visible>Library.HasContent(TVShows)</visible>
 		</item>
 		<item name="tvshowsplaylists">
 			<label>$LOCALIZE[136]</label>

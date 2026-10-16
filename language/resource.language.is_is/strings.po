@@ -1442,8 +1442,8 @@ msgid "Disable Info Panel in List Views"
 msgstr "Gera upplýsingaspjald óvirkt í listasýnum"
 
 msgctxt "#31359"
-msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb-hjálpari - Næstu útsendu þættir"
+msgid "Next Aired Episodes"
+msgstr "Næstu útsendu þættir"
 
 # Stereoscopic labels
 msgctxt "#31360"
