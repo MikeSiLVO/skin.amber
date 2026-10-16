@@ -35,16 +35,16 @@
 			</animation>
 			<control type="group">
 				<control type="image" description="Menu BG">
-					<posx>681</posx>
-					<posy>240</posy>
+					<left>681</left>
+					<top>240</top>
 					<height>418</height>
 					<width>558</width>
 					<texture border="0,40,0,40">dialogs/ContextMenu.png</texture>
 					<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 				</control>
 				<control type="label" description="Dialog heading">
-					<posx>711</posx>
-					<posy>281</posy>
+					<left>711</left>
+					<top>281</top>
 					<width>500</width>
 					<height>52</height>
 					<label>$VAR[CustomInfoSelectHeader]</label>
@@ -55,8 +55,8 @@
 				</control>
 			</control>
 			<control type="list" id="90010" description="Info Select Options">
-				<posx>697</posx>
-				<posy>366</posy>
+				<left>697</left>
+				<top>366</top>
 				<width>525</width>
 				<height>256</height>
 				<onup>90010</onup>

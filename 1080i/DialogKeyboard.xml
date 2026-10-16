@@ -445,7 +445,7 @@
 					<description>5th Row</description>
 					<itemgap>14</itemgap>
 					<orientation>horizontal</orientation>
-					<posy>376</posy>
+					<top>376</top>
 					<control type="button" id="300" description="DONE button">
 						<width>300</width>
 						<label>[UPPERCASE]$LOCALIZE[20177][/UPPERCASE]</label>

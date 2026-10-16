@@ -70,10 +70,10 @@
 	</variable>
 
 	<include name="TopSeekBar">
-		<posy>0</posy>
+		<top>0</top>
 	</include>
 	<include name="BottomSeekBar">
-		<posy>952</posy>
+		<top>952</top>
 	</include>
 
 	<include name="LowerOSDSlider">
@@ -260,8 +260,8 @@
 		<param name="clearartwidth">480</param>
 		<definition>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[characterleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[characterleft]</left>
 				<width>$PARAM[artheight]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(characterart)]</texture>
@@ -272,8 +272,8 @@
 				<visible>!String.IsEmpty(Player.Art(characterart)) + String.IsEqual(Skin.String(OSDExtraArt),characterart)</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[characterleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[characterleft]</left>
 				<width>$PARAM[artheight]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(tvshow.characterart)]</texture>
@@ -284,8 +284,8 @@
 				<visible>!String.IsEmpty(Player.Art(tvshow.characterart)) + String.IsEqual(Skin.String(OSDExtraArt),characterart)</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[logoleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[logoleft]</left>
 				<width>$PARAM[logowidth]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(clearlogo)]</texture>
@@ -296,8 +296,8 @@
 				<visible>!String.IsEmpty(Player.Art(clearlogo)) + [String.IsEqual(Skin.String(OSDExtraArt),logo) | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(discart))] | [String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(clearart))] | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(characterart)) + String.IsEmpty(Player.Art(clearart))]]</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[logoleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[logoleft]</left>
 				<width>$PARAM[logowidth]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(tvshow.clearlogo)]</texture>
@@ -308,8 +308,8 @@
 				<visible>!String.IsEmpty(Player.Art(tvshow.clearlogo)) + [String.IsEqual(Skin.String(OSDExtraArt),logo) | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(tvshow.discart))] | [String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(tvshow.clearart))] | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(tvshow.characterart)) + String.IsEmpty(Player.Art(tvshow.clearart))]]</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[logoleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[logoleft]</left>
 				<width>$PARAM[logowidth]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(artist.clearlogo)]</texture>
@@ -320,8 +320,8 @@
 				<visible>!String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo)) + [String.IsEqual(Skin.String(OSDExtraArt),logo) | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(album.discart))] | [String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(artist.clearart))]]</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[logoleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[logoleft]</left>
 				<width>$PARAM[logowidth]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(albumartist.clearlogo)]</texture>
@@ -332,8 +332,8 @@
 				<visible>!String.IsEmpty(Player.Art(albumartist.clearlogo)) + String.IsEmpty(Player.Art(artist.clearlogo)) + [String.IsEqual(Skin.String(OSDExtraArt),logo) | [String.IsEqual(Skin.String(OSDExtraArt),discart) + String.IsEmpty(Player.Art(album.discart))] | [String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(artist.clearart)) + String.IsEmpty(Player.Art(albumartist.clearart))]]</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[clearartleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[clearartleft]</left>
 				<width>$PARAM[clearartwidth]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(clearart)]</texture>
@@ -344,8 +344,8 @@
 				<visible>!String.IsEmpty(Player.Art(clearart)) + [String.IsEqual(Skin.String(OSDExtraArt),clearart) | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(characterart))]]</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[clearartleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[clearartleft]</left>
 				<width>$PARAM[clearartwidth]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(tvshow.clearart)]</texture>
@@ -356,8 +356,8 @@
 				<visible>!String.IsEmpty(Player.Art(tvshow.clearart)) + [String.IsEqual(Skin.String(OSDExtraArt),clearart) | [String.IsEqual(Skin.String(OSDExtraArt),characterart) + String.IsEmpty(Player.Art(tvshow.characterart))]]</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[clearartleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[clearartleft]</left>
 				<width>$PARAM[clearartwidth]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(artist.clearart)]</texture>
@@ -368,8 +368,8 @@
 				<visible>!String.IsEmpty(Player.Art(artist.clearart)) + String.IsEqual(Skin.String(OSDExtraArt),clearart)</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[arttop]</posy>
-				<posx>$PARAM[clearartleft]</posx>
+				<top>$PARAM[arttop]</top>
+				<left>$PARAM[clearartleft]</left>
 				<width>$PARAM[clearartwidth]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(albumartist.clearart)]</texture>
@@ -380,8 +380,8 @@
 				<visible>!String.IsEmpty(Player.Art(albumartist.clearart)) + String.IsEmpty(Player.Art(artist.clearart)) + String.IsEqual(Skin.String(OSDExtraArt),clearart)</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[disctop]</posy>
-				<posx>$PARAM[discleft]</posx>
+				<top>$PARAM[disctop]</top>
+				<left>$PARAM[discleft]</left>
 				<width>$PARAM[discheight]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(discart)]</texture>
@@ -392,8 +392,8 @@
 				<visible>!String.IsEmpty(Player.Art(discart)) + String.IsEqual(Skin.String(OSDExtraArt),discart)</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[disctop]</posy>
-				<posx>$PARAM[discleft]</posx>
+				<top>$PARAM[disctop]</top>
+				<left>$PARAM[discleft]</left>
 				<width>$PARAM[artheight]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(tvshow.discart)]</texture>
@@ -404,8 +404,8 @@
 				<visible>!String.IsEmpty(Player.Art(tvshow.discart)) + String.IsEqual(Skin.String(OSDExtraArt),discart)</visible>
 			</control>
 			<control type="image" id="1">
-				<posy>$PARAM[disctop]</posy>
-				<posx>$PARAM[discleft]</posx>
+				<top>$PARAM[disctop]</top>
+				<left>$PARAM[discleft]</left>
 				<width>$PARAM[artheight]</width>
 				<height>$PARAM[artheight]</height>
 				<texture background="true">$INFO[Player.Art(album.discart)]</texture>
@@ -1026,8 +1026,8 @@
 				<visible>!String.IsEmpty(Window(Home).Property(PopupMenu2Active))</visible>
 				<control type="button">
 					<description>Hidden button to close the popup when you click outside it</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>960</height>
 					<texturenofocus />
@@ -1160,8 +1160,8 @@
 				<visible>!String.IsEmpty(Window(Home).Property(PopupMenuActive))</visible>
 				<control type="button">
 					<description>Hidden button to close the popup when you click outside it</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1920</width>
 					<height>960</height>
 					<texturenofocus />

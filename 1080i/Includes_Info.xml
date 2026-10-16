@@ -648,7 +648,7 @@
 
 	<!-- List layout for video info media details -->
 	<include name="List_9009_Commons" description="Video Info metadata container">
-		<posy>95</posy>
+		<top>95</top>
 		<left>640</left>
 		<width>540</width>
 		<height>370</height>
@@ -1669,8 +1669,8 @@
 				<autoscroll time="8000">true</autoscroll>
 				<itemlayout />
 				<focusedlayout />
-				<posx>-20</posx>
-				<posy>-20</posy>
+				<left>-20</left>
+				<top>-20</top>
 				<width>1</width>
 				<height>1</height>
 				<content>

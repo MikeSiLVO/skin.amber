@@ -4,8 +4,8 @@
 	<controls>
 		<include>Time</include>
 		<control type="image">
-			<posx>36</posx>
-			<posy>60</posy>
+			<left>36</left>
+			<top>60</top>
 			<width>1848</width>
 			<height>1020</height>
 			<texture>dialogs/FileManagerPanel.png</texture>
@@ -17,8 +17,8 @@
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<control type="label">
 					<description>header label</description>
-					<posx>36</posx>
-					<posy>100</posy>
+					<left>36</left>
+					<top>100</top>
 					<width>1848</width>
 					<height>35</height>
 					<label>$LOCALIZE[19143]</label>
@@ -29,8 +29,8 @@
 				</control>
 				<control type="group">
 					<description>Group list</description>
-					<posx>65</posx>
-					<posy>150</posy>
+					<left>65</left>
+					<top>150</top>
 					<control type="label">
 						<description>name label</description>
 						<width>570</width>
@@ -41,7 +41,7 @@
 						<aligny>center</aligny>
 					</control>
 					<control type="list" id="13">
-						<posy>120</posy>
+						<top>120</top>
 						<width>570</width>
 						<height>617</height>
 						<onup>9000</onup>
@@ -60,13 +60,13 @@
 							<control type="image">
 								<width>48</width>
 								<height>48</height>
-								<posx>8</posx>
-								<posy>6</posy>
+								<left>8</left>
+								<top>6</top>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -90,13 +90,13 @@
 							<control type="image">
 								<width>48</width>
 								<height>48</height>
-								<posx>8</posx>
-								<posy>6</posy>
+								<left>8</left>
+								<top>6</top>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -107,7 +107,7 @@
 								<visible>!Control.HasFocus(13)</visible>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -120,8 +120,8 @@
 						</focusedlayout>
 					</control>
 					<control type="scrollbar" id="73">
-						<posx>560</posx>
-						<posy>120</posy>
+						<left>560</left>
+						<top>120</top>
 						<width>38</width>
 						<height>625</height>
 						<texturesliderbackground />
@@ -139,8 +139,8 @@
 				</control>
 				<control type="group">
 					<description>Grouped Channels list</description>
-					<posx>675</posx>
-					<posy>150</posy>
+					<left>675</left>
+					<top>150</top>
 					<control type="label" id="22">
 						<description>name label</description>
 						<width>570</width>
@@ -150,7 +150,7 @@
 						<aligny>center</aligny>
 					</control>
 					<control type="list" id="12">
-						<posy>120</posy>
+						<top>120</top>
 						<width>570</width>
 						<height>617</height>
 						<onup>9000</onup>
@@ -169,13 +169,13 @@
 							<control type="image">
 								<width>48</width>
 								<height>48</height>
-								<posx>8</posx>
-								<posy>6</posy>
+								<left>8</left>
+								<top>6</top>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -199,13 +199,13 @@
 							<control type="image">
 								<width>48</width>
 								<height>48</height>
-								<posx>8</posx>
-								<posy>6</posy>
+								<left>8</left>
+								<top>6</top>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -216,7 +216,7 @@
 								<visible>!Control.HasFocus(12)</visible>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -229,8 +229,8 @@
 						</focusedlayout>
 					</control>
 					<control type="scrollbar" id="72">
-						<posx>560</posx>
-						<posy>120</posy>
+						<left>560</left>
+						<top>120</top>
 						<width>38</width>
 						<height>625</height>
 						<texturesliderbackground />
@@ -248,8 +248,8 @@
 				</control>
 				<control type="group">
 					<description>Channels list</description>
-					<posx>1285</posx>
-					<posy>150</posy>
+					<left>1285</left>
+					<top>150</top>
 					<control type="label" id="21">
 						<width>570</width>
 						<height>105</height>
@@ -258,7 +258,7 @@
 						<aligny>center</aligny>
 					</control>
 					<control type="list" id="11">
-						<posy>120</posy>
+						<top>120</top>
 						<width>570</width>
 						<height>617</height>
 						<onup>9000</onup>
@@ -277,13 +277,13 @@
 							<control type="image">
 								<width>48</width>
 								<height>48</height>
-								<posx>8</posx>
-								<posy>6</posy>
+								<left>8</left>
+								<top>6</top>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -307,13 +307,13 @@
 							<control type="image">
 								<width>48</width>
 								<height>48</height>
-								<posx>8</posx>
-								<posy>6</posy>
+								<left>8</left>
+								<top>6</top>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -324,7 +324,7 @@
 								<visible>Control.HasFocus(11)</visible>
 							</control>
 							<control type="label">
-								<posx>60</posx>
+								<left>60</left>
 								<width>510</width>
 								<height>60</height>
 								<align>left</align>
@@ -337,8 +337,8 @@
 						</focusedlayout>
 					</control>
 					<control type="scrollbar" id="71">
-						<posx>560</posx>
-						<posy>120</posy>
+						<left>560</left>
+						<top>120</top>
 						<width>38</width>
 						<height>625</height>
 						<texturesliderbackground />
@@ -355,8 +355,8 @@
 					</control>
 				</control>
 				<control type="grouplist" id="9000">
-					<posx>65</posx>
-					<posy>920</posy>
+					<left>65</left>
+					<top>920</top>
 					<width>1790</width>
 					<height>60</height>
 					<itemgap>6</itemgap>

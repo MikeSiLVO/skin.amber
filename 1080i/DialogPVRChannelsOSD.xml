@@ -2,24 +2,24 @@
 <window>
 	<defaultcontrol always="true">11</defaultcontrol>
 	<coordinates>
-		<posx>810</posx>
-		<posy>-30</posy>
+		<left>810</left>
+		<top>-30</top>
 	</coordinates>
 	<controls>
 		<include>PVRChannelNumberInput</include>
 		<control type="group" description="Content">
 			<include>DialogOpenClose</include>
 			<control type="image">
-				<posx>290</posx>
-				<posy>120</posy>
+				<left>290</left>
+				<top>120</top>
 				<width>750</width>
 				<height>980</height>
 				<texture border="90,0,90,0">dialogs/DialogBG.png</texture>
 				<colordiffuse>eeaaaaaa</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>340</posx>
-				<posy>155</posy>
+				<left>340</left>
+				<top>155</top>
 				<width>630</width>
 				<height>36</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -29,8 +29,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="label">
-				<posx>340</posx>
-				<posy>195</posy>
+				<left>340</left>
+				<top>195</top>
 				<width>630</width>
 				<height>36</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -39,8 +39,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="list" id="11" description="CHANNELS">
-				<posx>320</posx>
-				<posy>240</posy>
+				<left>320</left>
+				<top>240</top>
 				<width>680</width>
 				<height>794</height>
 				<onleft>NextChannelGroup</onleft>
@@ -64,7 +64,7 @@
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="label" description="Main Label">
-						<posx>160</posx>
+						<left>160</left>
 						<top>-10</top>
 						<height>73</height>
 						<width>500</width>
@@ -72,8 +72,8 @@
 						<label>$INFO[ListItem.Label,[B],[/B]]</label>
 					</control>
 					<control type="label">
-						<posx>160</posx>
-						<posy>53</posy>
+						<left>160</left>
+						<top>53</top>
 						<width>500</width>
 						<height>30</height>
 						<align>left</align>
@@ -82,8 +82,8 @@
 						<visible>String.IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="label">
-						<posx>160</posx>
-						<posy>53</posy>
+						<left>160</left>
+						<top>53</top>
 						<width>500</width>
 						<height>30</height>
 						<align>left</align>
@@ -92,8 +92,8 @@
 						<visible>!String.IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="progress">
-						<posx>160</posx>
-						<posy>90</posy>
+						<left>160</left>
+						<top>90</top>
 						<width>500</width>
 						<height>5</height>
 						<texturebg border="0,0,0,0" colordiffuse="$VAR[LabelTextColor]">img/AmberDotBG.png</texturebg>
@@ -103,8 +103,8 @@
 						<visible>ListItem.IsRecording</visible>
 					</control>
 					<control type="progress">
-						<posx>160</posx>
-						<posy>90</posy>
+						<left>160</left>
+						<top>90</top>
 						<width>500</width>
 						<height>5</height>
 						<texturebg border="0,0,0,0" colordiffuse="$VAR[LabelTextColor]">img/AmberDotBG.png</texturebg>
@@ -124,7 +124,7 @@
 				</itemlayout>
 				<focusedlayout height="99">
 					<control type="image">
-						<posy>3</posy>
+						<top>3</top>
 						<width>680</width>
 						<height>96</height>
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
@@ -141,7 +141,7 @@
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="label" description="Main Label">
-						<posx>160</posx>
+						<left>160</left>
 						<top>-10</top>
 						<height>73</height>
 						<width>500</width>
@@ -151,8 +151,8 @@
 						<label>$INFO[ListItem.Label,[B],[/B]]</label>
 					</control>
 					<control type="label">
-						<posx>160</posx>
-						<posy>53</posy>
+						<left>160</left>
+						<top>53</top>
 						<width>500</width>
 						<height>30</height>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -164,8 +164,8 @@
 						<visible>String.IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="label">
-						<posx>160</posx>
-						<posy>53</posy>
+						<left>160</left>
+						<top>53</top>
 						<width>500</width>
 						<height>30</height>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -177,8 +177,8 @@
 						<visible>!String.IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="progress">
-						<posx>160</posx>
-						<posy>90</posy>
+						<left>160</left>
+						<top>90</top>
 						<width>500</width>
 						<height>5</height>
 						<texturebg colordiffuse="$VAR[LabelTextColor]" border="0,0,0,0">img/AmberDot.png</texturebg>
@@ -188,8 +188,8 @@
 						<visible>ListItem.IsRecording</visible>
 					</control>
 					<control type="progress">
-						<posx>160</posx>
-						<posy>90</posy>
+						<left>160</left>
+						<top>90</top>
 						<width>500</width>
 						<height>5</height>
 						<texturebg colordiffuse="$VAR[LabelTextColor]" border="0,0,0,0">img/AmberDot.png</texturebg>
@@ -211,8 +211,8 @@
 			<control type="scrollbar" id="61">
 				<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 				<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-				<posx>1003</posx>
-				<posy>240</posy>
+				<left>1003</left>
+				<top>240</top>
 				<width>36</width>
 				<height>750</height>
 				<onleft>11</onleft>

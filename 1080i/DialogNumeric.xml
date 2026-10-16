@@ -6,36 +6,36 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<posx>50</posx>
-			<posy>-30</posy>
+			<left>50</left>
+			<top>-30</top>
 			<control type="image">
-				<posx>600</posx>
-				<posy>360</posy>
+				<left>600</left>
+				<top>360</top>
 				<width>632</width>
 				<height>596</height>
 				<texture border="45">dialogs/TinyDialog.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>660</posx>
-				<posy>471</posy>
+				<left>660</left>
+				<top>471</top>
 				<width>512</width>
 				<height>60</height>
 				<texture border="8">img/WhiteRoundedT.png</texture>
 			</control>
 			<control type="label" id="1" description="Heading">
-				<posx>620</posx>
-				<posy>405</posy>
+				<left>620</left>
+				<top>405</top>
 				<width>592</width>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 			</control>
 			<control type="group">
-				<posy>150</posy>
+				<top>150</top>
 				<control type="label" id="4" description="Edit Text">
-					<posx>660</posx>
-					<posy>318</posy>
+					<left>660</left>
+					<top>318</top>
 					<width>512</width>
 					<height>60</height>
 					<align>center</align>

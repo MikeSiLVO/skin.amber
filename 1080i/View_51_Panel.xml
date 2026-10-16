@@ -17,8 +17,8 @@
 
 			<control type="panel" id="51" description="Grid">
 				<viewtype label="$LOCALIZE[31963]">list</viewtype>
-				<posx>950</posx>
-				<posy>351</posy>
+				<left>950</left>
+				<top>351</top>
 				<width>930</width>
 				<include condition="!Skin.HasSetting(Enable.TouchSupport)">PanelHeightStandard</include>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)">PanelHeightTouch</include>
@@ -168,8 +168,8 @@
 			<control type="scrollbar" id="61">
 				<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 				<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-				<posx>20r</posx>
-				<posy>351</posy>
+				<left>20r</left>
+				<top>351</top>
 				<width>36</width>
 				<height>700</height>
 				<texturesliderbackground />
@@ -192,8 +192,8 @@
 				<texturenofocus />
 				<width>40</width>
 				<onleft>51</onleft>
-				<posx>50r</posx>
-				<posy>368</posy>
+				<left>50r</left>
+				<top>368</top>
 				<height>690</height>
 				<ondown>SetFocus(51)</ondown>
 				<ondown>Action(nextletter)</ondown>
@@ -212,8 +212,8 @@
 			</control>
 
 			<control type="grouplist" id="61511">
-				<posx>36r</posx>
-				<posy>368</posy>
+				<left>36r</left>
+				<top>368</top>
 				<height>690</height>
 				<width>42</width>
 				<itemgap>0</itemgap>
@@ -271,8 +271,8 @@
 			</control>
 
 			<control type="grouplist" id="61512">
-				<posx>36r</posx>
-				<posy>368</posy>
+				<left>36r</left>
+				<top>368</top>
 				<height>690</height>
 				<width>42</width>
 				<itemgap>0</itemgap>

@@ -41,23 +41,23 @@
 		<control type="group">
 			<visible>Player.HasVideo</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture>colors/black.png</texture>
 			</control>
 			<control type="videowindow">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 			</control>
 		</control>
 		<control type="image">
 			<visible>!String.IsEmpty(Skin.String(StartupImage))</visible>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<aspectratio>scale</aspectratio>
@@ -65,8 +65,8 @@
 		</control>
 		<control type="multiimage">
 			<visible>!String.IsEmpty(Skin.String(StartupImagePath))</visible>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<timeperimage>2000</timeperimage>

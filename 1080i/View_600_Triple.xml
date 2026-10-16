@@ -40,16 +40,16 @@
 				<control type="image">
 					<visible>!Control.HasFocus(600)</visible>
 					<texture background="true">$VAR[TopRightOverlay]</texture>
-					<posx>96r</posx>
-					<posy>12</posy>
+					<left>96r</left>
+					<top>12</top>
 					<height>72</height>
 					<width>72</width>
 				</control>
 				<control type="image">
 					<visible>Control.HasFocus(600)</visible>
 					<texture background="true">$VAR[TopRightOverlay]</texture>
-					<posx>96r</posx>
-					<posy>12</posy>
+					<left>96r</left>
+					<top>12</top>
 					<height>72</height>
 					<width>72</width>
 					<colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
@@ -62,8 +62,8 @@
 				<control type="image">
 					<visible>!Control.HasFocus(600)</visible>
 					<texture background="true">overlays/toprightempty2.png</texture>
-					<posx>96r</posx>
-					<posy>12</posy>
+					<left>96r</left>
+					<top>12</top>
 					<height>82</height>
 					<width>82</width>
 					<aspectratio>keep</aspectratio>
@@ -71,8 +71,8 @@
 				<control type="image">
 					<visible>Control.HasFocus(600)</visible>
 					<texture background="true">overlays/toprightempty2.png</texture>
-					<posx>96r</posx>
-					<posy>12</posy>
+					<left>96r</left>
+					<top>12</top>
 					<height>82</height>
 					<width>82</width>
 					<aspectratio>keep</aspectratio>
@@ -80,8 +80,8 @@
 				</control>
 				<control type="label" description="l2">
 					<visible>Control.HasFocus(600)</visible>
-					<posx>89r</posx>
-					<posy>-183</posy>
+					<left>89r</left>
+					<top>-183</top>
 					<height>$PARAM[itemheight]</height>
 					<width>100</width>
 					<font>ListDetailsSmall</font>
@@ -93,8 +93,8 @@
 				</control>
 				<control type="label" description="l2">
 					<visible>!Control.HasFocus(600)</visible>
-					<posx>89r</posx>
-					<posy>-183</posy>
+					<left>89r</left>
+					<top>-183</top>
 					<height>$PARAM[itemheight]</height>
 					<width>100</width>
 					<font>ListDetailsSmall</font>
@@ -115,23 +115,23 @@
 				<control type="image">
 					<visible>!$PARAM[isFocused]</visible>
 					<texture background="true" flipx="true">overlays/toprightempty2.png</texture>
-					<posx>422r</posx>
-					<posy>0</posy>
+					<left>422r</left>
+					<top>0</top>
 					<height>82</height>
 					<width>82</width>
 				</control>
 				<control type="image">
 					<visible>$PARAM[isFocused]</visible>
 					<texture background="true" flipx="true" colordiffuse="$VAR[HighlightColor]">overlays/toprightempty2.png</texture>
-					<posx>422r</posx>
-					<posy>12</posy>
+					<left>422r</left>
+					<top>12</top>
 					<height>82</height>
 					<width>82</width>
 				</control>
 				<control type="label" description="l2">
 					<visible>$PARAM[isFocused]</visible>
-					<posx>447r</posx>
-					<posy>-185</posy>
+					<left>447r</left>
+					<top>-185</top>
 					<height>$PARAM[itemheight]</height>
 					<width>100</width>
 					<font>ListDetailsSmall</font>
@@ -143,8 +143,8 @@
 				</control>
 				<control type="label" description="l2">
 					<visible>!$PARAM[isFocused]</visible>
-					<posx>447r</posx>
-					<posy>-195</posy>
+					<left>447r</left>
+					<top>-195</top>
 					<height>$PARAM[itemheight]</height>
 					<width>100</width>
 					<font>ListDetailsSmall</font>
@@ -166,7 +166,7 @@
 			<visible>Control.IsVisible(600)</visible>
 			<include>ContentFade</include>
 			<control type="image" description="Line Split">
-				<posy>60</posy>
+				<top>60</top>
 				<left>492</left>
 				<width>1</width>
 				<height>1000</height>
@@ -174,7 +174,7 @@
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image" description="Line Split">
-				<posy>60</posy>
+				<top>60</top>
 				<left>930</left>
 				<width>1</width>
 				<height>1000</height>
@@ -183,7 +183,7 @@
 				<visible>Container.Content(tvshows)</visible>
 			</control>
 			<control type="image" description="Line Split">
-				<posy>60</posy>
+				<top>60</top>
 				<left>1130</left>
 				<width>1</width>
 				<height>1000</height>
@@ -195,8 +195,8 @@
 			<control type="group">
 				<control type="wraplist" id="600">
 					<viewtype label="$LOCALIZE[31157]">list</viewtype>
-					<posx>40</posx>
-					<posy>60</posy>
+					<left>40</left>
+					<top>60</top>
 					<width>434</width>
 					<height>1020</height>
 					<orientation>vertical</orientation>
@@ -884,8 +884,8 @@
 			<control type="scrollbar" id="6000">
 				<animation effect="slide" start="-6,0" end="0,0" time="150">Focus</animation>
 				<animation effect="slide" start="0,0" end="-6,0" time="300">UnFocus</animation>
-				<posx>0</posx>
-				<posy>60</posy>
+				<left>0</left>
+				<top>60</top>
 				<width>36</width>
 				<height>1020</height>
 				<texturesliderbackground />

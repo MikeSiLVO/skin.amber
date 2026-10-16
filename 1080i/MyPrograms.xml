@@ -50,8 +50,8 @@
 			<include>9000Commons</include>
 			<include>9000NavCommons</include>
 			<control type="group">
-				<posx>-60</posx>
-				<posy>-13</posy>
+				<left>-60</left>
+				<top>-13</top>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
 					<param name="Action">SetFocus(50)</param>
 					<param name="ondown">9000</param>

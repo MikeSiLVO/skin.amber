@@ -19,9 +19,9 @@
 				<include>ContentFade</include>
 				<control type="$PARAM[ListType]" id="52">
 					<viewtype label="$LOCALIZE[31999]">list</viewtype>
-					<posx>30</posx>
+					<left>30</left>
 					<width>1860</width>
-					<posy>40</posy>
+					<top>40</top>
 					<include condition="!Skin.HasSetting(Enable.TouchSupport)">BigListHeightStandard</include>
 					<include condition="Skin.HasSetting(Enable.TouchSupport)">BigListHeightTouch</include>
 					<pagecontrol>62</pagecontrol>
@@ -270,8 +270,8 @@
 				<control type="scrollbar" id="62">
 					<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 					<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-					<posx>21r</posx>
-					<posy>60</posy>
+					<left>21r</left>
+					<top>60</top>
 					<width>36</width>
 					<height>1120</height>
 					<texturesliderbackground />
@@ -294,8 +294,8 @@
 					<texturenofocus />
 					<width>40</width>
 					<onleft>52</onleft>
-					<posx>50r</posx>
-					<posy>55</posy>
+					<left>50r</left>
+					<top>55</top>
 					<height>1040</height>
 					<ondown>SetFocus(52)</ondown>
 					<ondown>Action(nextletter)</ondown>
@@ -314,8 +314,8 @@
 				</control>
 
 				<control type="grouplist" id="62521">
-					<posx>36r</posx>
-					<posy>55</posy>
+					<left>36r</left>
+					<top>55</top>
 					<height>1040</height>
 					<width>42</width>
 					<itemgap>0</itemgap>
@@ -397,8 +397,8 @@
 				</control>
 
 				<control type="grouplist" id="62522">
-					<posx>36r</posx>
-					<posy>55</posy>
+					<left>36r</left>
+					<top>55</top>
 					<height>1040</height>
 					<width>42</width>
 					<itemgap>0</itemgap>

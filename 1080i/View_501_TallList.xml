@@ -22,8 +22,8 @@
 
 				<control type="$PARAM[ListType]" id="501">
 					<viewtype label="$LOCALIZE[31181]">list</viewtype>
-					<posx>540</posx>
-					<posy>105</posy>
+					<left>540</left>
+					<top>105</top>
 					<include condition="!Skin.HasSetting(Enable.TouchSupport)">TallListHeightStandard</include>
 					<include condition="Skin.HasSetting(Enable.TouchSupport)">TallListHeightTouch</include>
 					<width>1340</width>
@@ -62,8 +62,8 @@
 				<control type="scrollbar" id="6501">
 					<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 					<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-					<posx>20r</posx>
-					<posy>105</posy>
+					<left>20r</left>
+					<top>105</top>
 					<width>36</width>
 					<height>949</height>
 					<texturesliderbackground />
@@ -86,8 +86,8 @@
 					<texturenofocus />
 					<width>40</width>
 					<onleft>501</onleft>
-					<posx>50r</posx>
-					<posy>105</posy>
+					<left>50r</left>
+					<top>105</top>
 					<height>949</height>
 					<ondown>SetFocus(501)</ondown>
 					<ondown>Action(nextletter)</ondown>
@@ -106,8 +106,8 @@
 				</control>
 
 				<control type="grouplist" id="65011">
-					<posx>36r</posx>
-					<posy>105</posy>
+					<left>36r</left>
+					<top>105</top>
 					<height>949</height>
 					<width>42</width>
 					<itemgap>0</itemgap>
@@ -183,8 +183,8 @@
 				</control>
 
 				<control type="grouplist" id="65012">
-					<posx>36r</posx>
-					<posy>105</posy>
+					<left>36r</left>
+					<top>105</top>
 					<height>949</height>
 					<width>42</width>
 					<itemgap>0</itemgap>
@@ -551,8 +551,8 @@
 				</include>
 
 				<control type="group" description="501 MediaInfo">
-					<posx>20</posx>
-					<posy>100</posy>
+					<left>20</left>
+					<top>100</top>
 					<width>560</width>
 					<control type="label">
 						<top>60</top>

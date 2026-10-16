@@ -7,15 +7,15 @@
 		<control type="group" description="Content">
 			<include>DialogOpenClose</include>
 			<control type="image">
-				<posx>360</posx>
-				<posy>20</posy>
+				<left>360</left>
+				<top>20</top>
 				<width>1200</width>
 				<height>1040</height>
 				<texture>dialogs/DialogBG.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" id="1" description="Header">
-				<posy>60</posy>
+				<top>60</top>
 				<width>1920</width>
 				<height>45</height>
 				<align>center</align>
@@ -23,8 +23,8 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="textbox" id="5" description="Textarea">
-				<posx>424</posx>
-				<posy>150</posy>
+				<left>424</left>
+				<top>150</top>
 				<width>1070</width>
 				<height>840</height>
 				<font>InfoPlot</font>
@@ -32,8 +32,8 @@
                 <pagecontrol>61</pagecontrol>
 			</control>
 			<control type="scrollbar" id="61">
-				<posx>1523</posx>
-				<posy>150</posy>
+				<left>1523</left>
+				<top>150</top>
 				<width>36</width>
 				<height>840</height>
 				<texturesliderbackground />

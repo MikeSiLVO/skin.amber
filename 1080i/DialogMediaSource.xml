@@ -5,21 +5,21 @@
 	<controls>
 		<include>DimBG</include>
 		<control type="group">
-			<posx>326</posx>
-			<posy>294</posy>
+			<left>326</left>
+			<top>294</top>
 			<width>1270</width>
 			<height>492</height>
 			<control type="image">
 				<description>background image</description>
-				<posy>-30</posy>
+				<top>-30</top>
 				<width>1270</width>
 				<height>522</height>
 				<texture border="0,0,0,442">dialogs/AddSourceBG.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" description="Upper Path Name Label">
-				<posx>30</posx>
-				<posy>3</posy>
+				<left>30</left>
+				<top>3</top>
 				<width>1010</width>
 				<height>40</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -27,8 +27,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="list" id="10" description="Path list">
-				<posx>60</posx>
-				<posy>84</posy>
+				<left>60</left>
+				<top>84</top>
 				<width>908</width>
 				<height>246</height>
 				<onup>12</onup>
@@ -43,7 +43,7 @@
 						<texture border="3">buttons/ButtonNF.png</texture>
 					</control>
 					<control type="label">
-						<posx>8</posx>
+						<left>8</left>
 						<width>908</width>
 						<height>48</height>
 						<font>font12</font>
@@ -60,7 +60,7 @@
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
 					<control type="label">
-						<posx>8</posx>
+						<left>8</left>
 						<width>908</width>
 						<height>48</height>
 						<font>font12</font>
@@ -73,24 +73,24 @@
 			<control type="image" description="Upper frame">
 				<visible>Control.HasFocus(10)</visible>
 				<include>VisibleFadeEffect</include>
-				<posx>27</posx>
-				<posy>69</posy>
+				<left>27</left>
+				<top>69</top>
 				<width>980</width>
 				<height>261</height>
 				<texture border="50">dialogs/AddSourceTopFrame.png</texture>
 				<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 			</control>
 			<control type="label" description="Enter Name Label">
-				<posx>30</posx>
-				<posy>333</posy>
+				<left>30</left>
+				<top>333</top>
 				<width>1010</width>
 				<height>40</height>
 				<label>$LOCALIZE[1022]</label>
 				<scroll>true</scroll>
 			</control>
 			<control type="edit" id="12" description="Path Buttons">
-				<posx>27</posx>
-				<posy>386</posy>
+				<left>27</left>
+				<top>386</top>
 				<width>980</width>
 				<height>66</height>
 				<align>center</align>
@@ -102,8 +102,8 @@
 				<ondown>10</ondown>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>1024</posx>
-				<posy>75</posy>
+				<left>1024</left>
+				<top>75</top>
 				<onleft>10</onleft>
 				<onright>10</onright>
 				<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
@@ -145,8 +145,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>1190</posx>
-				<posy>-20</posy>
+				<left>1190</left>
+				<top>-20</top>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
 					<param name="Action">Action(Back)</param>
 					<param name="ondown">9000</param>

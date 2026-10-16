@@ -6,16 +6,16 @@
 		<control type="group" description="All dialog content">
 			<visible>!Window.IsActive(DialogSettings.xml) + !Window.IsActive(DialogSlider.xml) + !Window.IsActive(GameVideoFilter) + !Window.IsActive(GameStretchMode) + !Window.IsActive(GameControllers) + !Window.IsActive(GameVideoRotation)</visible>
 			<control type="image" description="Menu BG">
-				<posx>681</posx>
-				<posy>240</posy>
+				<left>681</left>
+				<top>240</top>
 				<height>572</height>
 				<width>558</width>
 				<texture border="0,40,0,40">dialogs/ContextMenu.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" description="Dialog heading">
-				<posx>615</posx>
-				<posy>281</posy>
+				<left>615</left>
+				<top>281</top>
 				<width>690</width>
 				<height>52</height>
 				<label>$LOCALIZE[31044]</label>
@@ -25,11 +25,11 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="group">
-				<posx>442</posx>
-				<posy>216</posy>
+				<left>442</left>
+				<top>216</top>
 				<control type="grouplist" id="9000" description="Game Settings Options">
-					<posx>255</posx>
-					<posy>150</posy>
+					<left>255</left>
+					<top>150</top>
 					<width>525</width>
 					<height>450</height>
 					<onleft>noop</onleft>

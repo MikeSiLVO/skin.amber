@@ -29,10 +29,10 @@
 		</include>
 		<control type="group" description="Media Info">
 			<control type="group" description="top">
-				<posx>700</posx>
-				<posy>60</posy>
+				<left>700</left>
+				<top>60</top>
 				<control type="label" description="Main Label">
-					<posy>-45</posy>
+					<top>-45</top>
 					<width>1180</width>
 					<height>60</height>
 					<font>InfoTitle</font>
@@ -42,7 +42,7 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="image" description="Line Split">
-					<posy>23</posy>
+					<top>23</top>
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
@@ -52,7 +52,7 @@
 				<control type="textbox" description="Plot">
 					<visible>![String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 					<include>VisibleFadeEffectDelay</include>
-					<posy>35</posy>
+					<top>35</top>
 					<width>625</width>
 					<height>400</height>
 					<align>justify</align>
@@ -62,7 +62,7 @@
 				<control type="textbox" description="Plot">
 					<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 					<include>VisibleFadeEffectDelay</include>
-					<posy>35</posy>
+					<top>35</top>
 					<width>610</width>
 					<height>365</height>
 					<align>justify</align>
@@ -71,7 +71,7 @@
 				</control>
 				<control type="label" description="Main Label">
 					<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
-					<posy>410</posy>
+					<top>410</top>
 					<width>1180</width>
 					<height>45</height>
 					<font>InfoPlot</font>
@@ -82,7 +82,7 @@
 				</control>
 				<!-- End Matrix change -->
 				<control type="radiobutton" id="90003">
-					<posy>438</posy>
+					<top>438</top>
 					<left>590</left>
 					<ondown>9000</ondown>
 					<onright>9009</onright>
@@ -106,7 +106,7 @@
 					<onclick>ActivateWindow(1124)</onclick>
 				</control>
 				<control type="image" description="Line Split">
-					<posy>30</posy>
+					<top>30</top>
 					<left>637</left>
 					<width>1</width>
 					<height>426</height>
@@ -181,7 +181,7 @@
 		</control>
 		<control type="grouplist" id="9000">
 			<left>700</left>
-			<posy>530</posy>
+			<top>530</top>
 			<width>1180</width>
 			<height>90</height>
 			<align>center</align>
@@ -274,8 +274,8 @@
 		<control type="panel" id="50">
 			<visible>!Control(9000).HasFocus(600)</visible>
 			<include>VisibleFadeEffectDelay</include>
-			<posx>700</posx>
-			<posy>670</posy>
+			<left>700</left>
+			<top>670</top>
 			<width>1180</width>
 			<height>410</height>
 			<onleft>50</onleft>
@@ -291,8 +291,8 @@
 		<control type="textbox" description="News">
 			<visible>Control(9000).HasFocus(600)</visible>
 			<include>VisibleFadeEffectDelay</include>
-			<posx>700</posx>
-			<posy>670</posy>
+			<left>700</left>
+			<top>670</top>
 			<width>1180</width>
 			<height>410</height>
 			<align>left</align>

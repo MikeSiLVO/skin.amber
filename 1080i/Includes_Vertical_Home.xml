@@ -111,7 +111,7 @@
 		<itemlayout height="120" width="120">
 			<control type="image">
 				<animation effect="fade" time="0" start="100" end="20" condition="Skin.HasSetting(FadeUnfocusedMenu)">Conditional</animation>
-				<posx>0</posx>
+				<left>0</left>
 				<width>120</width>
 				<height>120</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -121,7 +121,7 @@
 		</itemlayout>
 		<focusedlayout height="120" width="120">
 			<control type="image">
-				<posx>0</posx>
+				<left>0</left>
 				<width>120</width>
 				<height>120</height>
 				<texture background="true" colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
@@ -222,8 +222,8 @@
 			<animation effect="slide" start="0,0" end="0,60" time="0" delay="0" condition="Integer.IsLess(Container(9001).NumItems,10)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,60" time="0" delay="0" condition="Integer.IsLess(Container(9001).NumItems,8)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,60" time="0" delay="0" condition="Integer.IsLess(Container(9001).NumItems,6)">conditional</animation>
-			<posx>-450</posx>
-			<posy>210</posy>
+			<left>-450</left>
+			<top>210</top>
 			<width>400</width>
 			<height>660</height>
 			<onleft condition="Control.IsVisible(12001)">12001</onleft>
@@ -240,7 +240,7 @@
 					<texture border="3">buttons/ButtonNF.png</texture>
 				</control>
 				<control type="label" description="Main Label">
-					<posx>30</posx>
+					<left>30</left>
 					<width>360</width>
 					<height>60</height>
 					<label>$INFO[ListItem.Label]</label>
@@ -253,7 +253,7 @@
 					<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 				</control>
 				<control type="label" description="Main Label">
-					<posx>30</posx>
+					<left>30</left>
 					<width>360</width>
 					<height>60</height>
 					<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -276,8 +276,8 @@
 			<animation effect="slide" start="0,0" end="0,60" time="0" delay="0" condition="Integer.IsLess(Container(9001).NumItems,10)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,60" time="0" delay="0" condition="Integer.IsLess(Container(9001).NumItems,8)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,60" time="0" delay="0" condition="Integer.IsLess(Container(9001).NumItems,6)">conditional</animation>
-			<posx>-250</posx>
-			<posy>80</posy>
+			<left>-250</left>
+			<top>80</top>
 			<width>200</width>
 			<height>890</height>
 			<onleft condition="Control.IsVisible(12001)">12001</onleft>
@@ -289,7 +289,7 @@
 			<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 			<itemlayout height="120" width="120">
 				<control type="image">
-					<posx>0</posx>
+					<left>0</left>
 					<width>120</width>
 					<height>120</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -299,7 +299,7 @@
 			</itemlayout>
 			<focusedlayout height="120" width="120">
 				<control type="image">
-					<posx>0</posx>
+					<left>0</left>
 					<width>120</width>
 					<height>120</height>
 					<texture background="true" colordiffuse="$VAR[HighlightColor]">$INFO[ListItem.Icon]</texture>
@@ -382,7 +382,7 @@
 		<control type="image" description="Sub Left Blade">
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="0,0" end="389,0" time="250" delay="0" reversible="true" condition="Control.HasFocus(9001)">conditional</animation>
-			<posx>-518</posx>
+			<left>-518</left>
 			<include condition="Skin.HasSetting(Vertical.IconOnly)">submenuWidthVerticalIcon</include>
 			<include condition="!Skin.HasSetting(Vertical.IconOnly)">submenuWidthVerticalText</include>
 			<height>1080</height>

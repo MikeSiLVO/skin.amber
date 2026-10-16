@@ -75,14 +75,14 @@
 					<top>130</top>
 					<control type="image">
 						<top>0</top>
-						<posx>10</posx>
+						<left>10</left>
 						<width>1900</width>
 						<height>1</height>
 						<texture>img/LineST.png</texture>
 					</control>
 					<control type="label">
 						<top>5</top>
-						<posx>10</posx>
+						<left>10</left>
 						<height>60</height>
 						<width>1900</width>
 						<align>center</align>
@@ -98,7 +98,7 @@
 					<top>-90</top>
 					<control type="label">
 						<top>0</top>
-						<posx>10</posx>
+						<left>10</left>
 						<height>60</height>
 						<width>1900</width>
 						<align>center</align>
@@ -110,7 +110,7 @@
 					</control>
 					<control type="image">
 						<top>65</top>
-						<posx>10</posx>
+						<left>10</left>
 						<width>1900</width>
 						<height>1</height>
 						<texture>img/LineST.png</texture>

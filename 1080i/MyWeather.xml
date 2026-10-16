@@ -45,10 +45,10 @@
 		</control>
 		<control type="group" description="Current">
 			<include>WeatherAni1</include>
-			<posx>75</posx>
-			<posy>572</posy>
+			<left>75</left>
+			<top>572</top>
 			<control type="label" description="Current conditions">
-				<posx>5</posx>
+				<left>5</left>
 				<width>380</width>
 				<shadowcolor>ShadowDark</shadowcolor>
 				<font>WeatherTitle</font>
@@ -58,7 +58,7 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="multiimage" id="305" description="Current weather icon">
-				<posy>83</posy>
+				<top>83</top>
 				<height>130</height>
 				<width>150</width>
 				<imagepath background="true">$VAR[WeatherIconPath]$INFO[Window.Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
@@ -68,7 +68,7 @@
 				<aspectratio aligny="top">keep</aspectratio>
 			</control>
 			<control type="label" id="304" description="Current weather outlook">
-				<posy>208</posy>
+				<top>208</top>
 				<height>70</height>
 				<width>150</width>
 				<align>center</align>
@@ -79,8 +79,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="grouplist">
-				<posx>15</posx>
-				<posy>93</posy>
+				<left>15</left>
+				<top>93</top>
 				<width>375</width>
 				<height>300</height>
 				<control type="label" description="Feels like label">
@@ -194,16 +194,16 @@
 		<control type="group"  id="8999" description="Side menu 9000 group">
 			<include>9000Commons</include>
 			<control type="group">
-				<posx>-60</posx>
-				<posy>-13</posy>
+				<left>-60</left>
+				<top>-13</top>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
 					<param name="Action">SetFocus(50)</param>
 					<param name="ondown">9000</param>
 				</include>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>-499</posx>
-				<posy>60</posy>
+				<left>-499</left>
+				<top>60</top>
 				<width>500</width>
 				<height>1120</height>
 				<onleft>50</onleft>

@@ -26,8 +26,8 @@
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" description="Kodi settings">
-				<posx>60</posx>
-				<posy>90</posy>
+				<left>60</left>
+				<top>90</top>
 				<width>1380</width>
 				<height>72</height>
 				<align>center</align>
@@ -37,8 +37,8 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="group">
-				<posx>1816</posx>
-				<posy>61</posy>
+				<left>1816</left>
+				<top>61</top>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
 					<param name="Action">Action(Back)</param>
 					<param name="ondown">500</param>
@@ -46,8 +46,8 @@
 			</control>
 			<control type="grouplist" id="500">
 				<visible>!Container(9000).HasFocus(4)</visible>
-				<posx>1479</posx>
-				<posy>210</posy>
+				<left>1479</left>
+				<top>210</top>
 				<width>401</width>
 				<height>600</height>
 				<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
@@ -157,8 +157,8 @@
 				<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9001</onup>
 				<ondown>9001</ondown>
 				<pagecontrol />
-				<posx>60</posx>
-				<posy>210</posy>
+				<left>60</left>
+				<top>210</top>
 				<width>1380</width>
 				<height>780</height>
 				<onleft>9000</onleft>

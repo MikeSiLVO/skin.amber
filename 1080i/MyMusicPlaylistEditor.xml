@@ -8,8 +8,8 @@
 		<include>Time</include>
 		<control type="group" description="Content Upper">
 			<include>DialogOpenClose</include>
-			<posx>30</posx>
-			<posy>40</posy>
+			<left>30</left>
+			<top>40</top>
 			<control type="image">
 				<description>background image</description>
 				<width>900</width>
@@ -18,8 +18,8 @@
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" description="Browse files">
-				<posx>20</posx>
-				<posy>84</posy>
+				<left>20</left>
+				<top>84</top>
 				<width>837</width>
 				<height>60</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -28,8 +28,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="list" id="50">
-				<posx>20</posx>
-				<posy>160</posy>
+				<left>20</left>
+				<top>160</top>
 				<width>600</width>
 				<height>780</height>
 				<onleft>60</onleft>
@@ -72,7 +72,7 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posy>120</posy>
+				<top>120</top>
 				<width>36</width>
 				<height>780</height>
 				<texturesliderbackground />
@@ -86,8 +86,8 @@
 				<onright>50</onright>
 			</control>
 			<control type="grouplist" id="9000" description="Right side">
-				<posx>630</posx>
-				<posy>140</posy>
+				<left>630</left>
+				<top>140</top>
 				<onleft>50</onleft>
 				<onright>100</onright>
 				<onup>9000</onup>
@@ -112,19 +112,19 @@
 		</control>
 		<control type="group" description="Content Playlist">
 			<include>DialogOpenClose</include>
-			<posx>950</posx>
-			<posy>40</posy>
+			<left>950</left>
+			<top>40</top>
 			<control type="image">
 				<description>background image</description>
-				<posy>40</posy>
+				<top>40</top>
 				<width>900</width>
 				<height>970</height>
 				<texture border="20,20,300,20">dialogs/FileManagerPanel.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" description="Playlist">
-				<posx>20</posx>
-				<posy>84</posy>
+				<left>20</left>
+				<top>84</top>
 				<width>837</width>
 				<height>60</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -134,15 +134,15 @@
 			</control>
 			<control type="label" id="101" description="item count">
 				<left>20</left>
-				<posy>85</posy>
+				<top>85</top>
 				<width>837</width>
 				<align>right</align>
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="list" id="100">
-				<posx>20</posx>
-				<posy>160</posy>
+				<left>20</left>
+				<top>160</top>
 				<width>855</width>
 				<height>780</height>
 				<onleft>50</onleft>
@@ -185,8 +185,8 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="61">
-				<posx>870</posx>
-				<posy>120</posy>
+				<left>870</left>
+				<top>120</top>
 				<width>36</width>
 				<height>780</height>
 				<texturesliderbackground />

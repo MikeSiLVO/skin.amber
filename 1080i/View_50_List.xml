@@ -27,8 +27,8 @@
 				<control type="$PARAM[ListType]" id="50">
 					<visible>[$EXP[ShortcutView_50] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.listview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
 					<viewtype label="$LOCALIZE[535]">list</viewtype>
-					<posx>540</posx>
-					<posy>406</posy>
+					<left>540</left>
+					<top>406</top>
 					<width>1340</width>
 					<include condition="!Skin.HasSetting(Enable.TouchSupport)">ListHeightStandard</include>
 					<include condition="Skin.HasSetting(Enable.TouchSupport)">ListHeightTouch</include>
@@ -63,8 +63,8 @@
 				<control type="scrollbar" id="60">
 					<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 					<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-					<posx>20r</posx>
-					<posy>351</posy>
+					<left>20r</left>
+					<top>351</top>
 					<width>36</width>
 					<height>700</height>
 					<texturesliderbackground />
@@ -87,8 +87,8 @@
 					<texturenofocus />
 					<width>40</width>
 					<onleft>50</onleft>
-					<posx>50r</posx>
-					<posy>368</posy>
+					<left>50r</left>
+					<top>368</top>
 					<height>690</height>
 					<ondown>SetFocus(50)</ondown>
 					<ondown>Action(nextletter)</ondown>
@@ -107,8 +107,8 @@
 				</control>
 
 				<control type="grouplist" id="60501">
-					<posx>36r</posx>
-					<posy>368</posy>
+					<left>36r</left>
+					<top>368</top>
 					<height>690</height>
 					<width>42</width>
 					<itemgap>0</itemgap>
@@ -166,8 +166,8 @@
 				</control>
 
 				<control type="grouplist" id="60502">
-					<posx>36r</posx>
-					<posy>368</posy>
+					<left>36r</left>
+					<top>368</top>
 					<height>690</height>
 					<width>42</width>
 					<itemgap>0</itemgap>
@@ -410,8 +410,8 @@
 
 				<control type="group" description="50 MediaInfo">
 					<visible>Control.IsVisible(50)</visible>
-					<posx>30</posx>
-					<posy>351</posy>
+					<left>30</left>
+					<top>351</top>
 					<width>490</width>
 					<control type="label">
 						<height>45</height>

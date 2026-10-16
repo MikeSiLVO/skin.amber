@@ -7,21 +7,21 @@
 		<include>Time</include>
 		<control type="group" description="Content">
 			<include>OpenClose</include>
-			<posx>315</posx>
-			<posy>120</posy>
+			<left>315</left>
+			<top>120</top>
 			<width>1300</width>
 			<height>480</height>
 			<control type="image" description="Background">
-				<posx>-21</posx>
-				<posy>-20</posy>
+				<left>-21</left>
+				<top>-20</top>
 				<width>1271</width>
 				<height>832</height>
 				<texture border="45">dialogs/DialogBG.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" description="Title">
-				<posx>252</posx>
-				<posy>15</posy>
+				<left>252</left>
+				<top>15</top>
 				<width>950</width>
 				<height>40</height>
 				<align>center</align>
@@ -30,8 +30,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="panel" id="52">
-				<posx>252</posx>
-				<posy>80</posy>
+				<left>252</left>
+				<top>80</top>
 				<width>950</width>
 				<height>300</height>
 				<onleft>11</onleft>
@@ -124,8 +124,8 @@
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="radiobutton" id="11" description="Quit xbmc">
-				<posx>62</posx>
-				<posy>488</posy>
+				<left>62</left>
+				<top>488</top>
 				<height>64</height>
 				<width>128</width>
 				<onright>52</onright>

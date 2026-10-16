@@ -7,8 +7,8 @@
 	<include>ClearWidgetNavProperties1</include>
 	<controls>
 		<control type="list" id="212">
-			<posx>-20</posx>
-			<posy>-20</posy>
+			<left>-20</left>
+			<top>-20</top>
 			<width>1</width>
 			<height>1</height>
 			<itemlayout width="1" height="1" />
@@ -22,15 +22,15 @@
 				<animation effect="fade" time="150">Visible</animation>
 				<!-- Left Content -->
 				<control type="label">
-					<posx>65</posx>
-					<posy>80</posy>
+					<left>65</left>
+					<top>80</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>[B]$VAR[SkinShortcutsLeftLabelVar][/B]</label>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
-					<posx>1055</posx>
-					<posy>80</posy>
+					<left>1055</left>
+					<top>80</top>
 					<width>780</width>
 					<label>$LOCALIZE[31646]: [B][COLOR $VAR[HighlightColor]]$INFO[Skin.String(InitPosName)][/COLOR][/B]</label>
 					<scroll>true</scroll>
@@ -40,8 +40,8 @@
 				<!-- List of Menu/Submenu items -->
 				<control type="list" id="211">
 					<visible>!$EXP[ShortcutsSubpage]</visible>
-					<posx>65</posx>
-					<posy>180</posy>
+					<left>65</left>
+					<top>180</top>
 					<width>382</width>
 					<height>780</height>
 					<onright>1000</onright>
@@ -52,7 +52,7 @@
 							<texture border="3">buttons/ButtonNF.png</texture>
 						</control>
 						<control type="label" description="Main Label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>292</width>
 							<height>60</height>
 							<font>ListDetails</font>
@@ -61,8 +61,8 @@
 						</control>
 						<control type="image">
 							<visible>!String.IsEqual(Window.Property(menuname),mainmenu) + [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)]</visible>
-							<posx>321</posx>
-							<posy>5</posy>
+							<left>321</left>
+							<top>5</top>
 							<width>50</width>
 							<height>50</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -76,7 +76,7 @@
 							<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 						</control>
 						<control type="label" description="Main Label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>292</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -87,8 +87,8 @@
 						</control>
 						<control type="image">
 							<visible>!String.IsEqual(Window.Property(menuname),mainmenu) + [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)]</visible>
-							<posx>321</posx>
-							<posy>5</posy>
+							<left>321</left>
+							<top>5</top>
 							<width>50</width>
 							<height>50</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -100,8 +100,8 @@
 				<control type="label">
 					<label>[B]$VAR[SkinShortcutsPageLabelVar][/B]</label>
 					<scroll>true</scroll>
-					<posx>500</posx>
-					<posy>80</posy>
+					<left>500</left>
+					<top>80</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 				<control type="image">

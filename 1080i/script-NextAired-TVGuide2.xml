@@ -76,8 +76,8 @@
 			</control>
 
 			<control type="list" id="9000">
-				<posx>105</posx>
-				<posy>120</posy>
+				<left>105</left>
+				<top>120</top>
 				<width>322</width>
 				<height>780</height>
 				<onup>9000</onup>
@@ -111,13 +111,13 @@
 					</control>
 					<control type="group">
 						<control type="label" description="Main Label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>301</width>
 							<height>60</height>
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>301</width>
 							<height>60</height>
 							<align>right</align>
@@ -134,7 +134,7 @@
 					</control>
 					<control type="group">
 						<control type="label" description="Main Label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>301</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -142,7 +142,7 @@
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>301</width>
 							<height>60</height>
 							<align>right</align>
@@ -348,8 +348,8 @@
 		</control>
 		<control type="group">
 			<control type="grouplist" id="8000">
-				<posx>105</posx>
-				<posy>930</posy>
+				<left>105</left>
+				<top>930</top>
 				<width>322</width>
 				<height>100</height>
 				<onright>9000</onright>

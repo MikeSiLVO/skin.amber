@@ -5,18 +5,18 @@
 	<controls>
 		<include>DimBG</include>
 		<control type="image">
-			<posx>295</posx>
-			<posy>240</posy>
+			<left>295</left>
+			<top>240</top>
 			<width>1292</width>
 			<height>475</height>
 			<texture>dialogs/SmartplaylistRule.png</texture>
 			<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 		</control>
 		<control type="group">
-			<posx>310</posx>
-			<posy>270</posy>
+			<left>310</left>
+			<top>270</top>
 			<control type="label" description="Rule match label">
-				<posy>40</posy>
+				<top>40</top>
 				<width>1010</width>
 				<align>center</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -24,9 +24,9 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="group" id="9001">
-				<posy>60</posy>
+				<top>60</top>
 				<control type="button" id="15" description="Rule Field">
-					<posy>90</posy>
+					<top>90</top>
 					<width>1010</width>
 					<textoffsetx>30</textoffsetx>
 					<onright>9000</onright>
@@ -36,7 +36,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="button" id="16" description="Rule operator">
-					<posy>150</posy>
+					<top>150</top>
 					<width>1010</width>
 					<textoffsetx>30</textoffsetx>
 					<onright>9000</onright>
@@ -45,7 +45,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="edit" id="17" description="Value Button">
-					<posy>210</posy>
+					<top>210</top>
 					<width>1010</width>
 					<hinttext>21420</hinttext>
 					<textoffsetx>30</textoffsetx>
@@ -55,24 +55,24 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>1010</posx>
-				<posy>200</posy>
+				<left>1010</left>
+				<top>200</top>
 				<control type="button" id="19" description="Cancel">
-					<posy>210</posy>
+					<top>210</top>
 					<width>231</width>
 					<label>$LOCALIZE[222]</label>
 					<onleft>9001</onleft>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="button" id="20" description="Browse">
-					<posy>270</posy>
+					<top>270</top>
 					<width>231</width>
 					<label>$LOCALIZE[1024]</label>
 					<onleft>9001</onleft>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="button" id="18" description="OK">
-					<posy>330</posy>
+					<top>330</top>
 					<width>231</width>
 					<label>$LOCALIZE[186]</label>
 					<onleft>9001</onleft>

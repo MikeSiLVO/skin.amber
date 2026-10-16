@@ -26,8 +26,8 @@
 				<param name="itemicon">$VAR[PVRGuideIcon]</param>
 			</include>
 			<control type="group">
-				<posx>490</posx>
-				<posy>45</posy>
+				<left>490</left>
+				<top>45</top>
 				<control type="label">
 					<width>1400</width>
 					<height>60</height>
@@ -58,7 +58,7 @@
 					<visible>![String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Episode)] + String.IsEmpty(ListItem.EpisodeName)</visible>
 				</control>
 				<control type="textbox">
-					<posy>115</posy>
+					<top>115</top>
 					<width>1355</width>
 					<height>120</height>
 					<align>justify</align>
@@ -72,8 +72,8 @@
 			<visible>Control.IsVisible(10)</visible>
 			<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 			<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-			<posx>25r</posx>
-			<posy>420</posy>
+			<left>25r</left>
+			<top>420</top>
 			<width>36</width>
 			<height>680</height>
 			<texturesliderbackground />

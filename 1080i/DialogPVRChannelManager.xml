@@ -4,16 +4,16 @@
 	<controls>
 		<include>Time</include>
 		<control type="image">
-			<posx>-10</posx>
-			<posy>60</posy>
+			<left>-10</left>
+			<top>60</top>
 			<width>1939</width>
 			<height>1010</height>
 			<texture flipx="true">dialogs/SettingsBG.png</texture>
 			<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 		</control>
 		<control type="label" description="Header">
-			<posx>240</posx>
-			<posy>110</posy>
+			<left>240</left>
+			<top>110</top>
 			<width>920</width>
 			<height>35</height>
 			<align>center</align>
@@ -24,9 +24,9 @@
 		</control>
 		<control type="group" description="All controls">
 			<include>OpenClose</include>
-			<posy>180</posy>
+			<top>180</top>
 			<control type="panel" id="20">
-				<posx>63</posx>
+				<left>63</left>
 				<width>600</width>
 				<height>790</height>
 				<onleft>60</onleft>
@@ -49,7 +49,7 @@
 						<font>Details</font>
 					</control>
 					<control type="label" description="Main Label">
-						<posx>90</posx>
+						<left>90</left>
 						<height>55</height>
 						<width>500</width>
 						<scroll>false</scroll>
@@ -57,8 +57,8 @@
 						<font>Details</font>
 					</control>
 					<control type="label" description="Label2">
-						<posx>90</posx>
-						<posy>40</posy>
+						<left>90</left>
+						<top>40</top>
 						<height>60</height>
 						<font>Details</font>
 						<width>500</width>
@@ -83,7 +83,7 @@
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="label" description="Main Label">
-						<posx>90</posx>
+						<left>90</left>
 						<height>55</height>
 						<width>500</width>
 						<scroll>false</scroll>
@@ -93,8 +93,8 @@
 						<label>$INFO[ListItem.Label,[B],[/B]]</label>
 					</control>
 					<control type="label" description="Label2">
-						<posx>90</posx>
-						<posy>40</posy>
+						<left>90</left>
+						<top>40</top>
 						<height>60</height>
 						<font>Details</font>
 						<width>500</width>
@@ -106,15 +106,15 @@
 				</focusedlayout>
 			</control>
 			<control type="image" id="10">
-				<posx>750</posx>
-				<posy>600</posy>
+				<left>750</left>
+				<top>600</top>
 				<width>600</width>
 				<height>210</height>
 				<aspectratio aligny="top" align="center">keep</aspectratio>
 				<texture background="true" fallback="DefaultSquare.png">$INFO[ListItem.Property(Icon)]</texture>
 			</control>
 			<control type="grouplist" id="9002" description="Middle">
-				<posx>750</posx>
+				<left>750</left>
 				<width>600</width>
 				<height>900</height>
 				<onleft>20</onleft>
@@ -170,7 +170,7 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9000" description="Right panel">
-				<posx>1553</posx>
+				<left>1553</left>
 				<width>354</width>
 				<height>900</height>
 				<onleft>9002</onleft>
@@ -195,8 +195,8 @@
 			</control>
 		</control>
 		<control type="scrollbar" id="60">
-			<posx>5</posx>
-			<posy>180</posy>
+			<left>5</left>
+			<top>180</top>
 			<width>36</width>
 			<height>790</height>
 			<texturesliderbackground />

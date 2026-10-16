@@ -244,11 +244,11 @@
 	<include name="DialogSelectSearch">
 		<include>DimBG</include>
 		<control type="group">
-			<posx>172</posx>
-			<posy>180</posy>
+			<left>172</left>
+			<top>180</top>
 			<control type="image">
-				<posx>6</posx>
-				<posy>-20</posy>
+				<left>6</left>
+				<top>-20</top>
 				<width>1580</width>
 				<height>780</height>
 				<texture flipx="true">dialogs/SettingsBG.png</texture>
@@ -256,8 +256,8 @@
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="image">
-				<posx>-14</posx>
-				<posy>-20</posy>
+				<left>-14</left>
+				<top>-20</top>
 				<width>1293</width>
 				<height>720</height>
 				<texture flipx="true" border="55">dialogs/DialogRightSmall.png</texture>
@@ -265,8 +265,8 @@
 				<visible>Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
-				<posx>-14</posx>
-				<posy>5</posy>
+				<left>-14</left>
+				<top>5</top>
 				<width>1600</width>
 				<height>30</height>
 				<align>center</align>
@@ -278,7 +278,7 @@
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
-				<posx>300</posx>
+				<left>300</left>
 				<width>900</width>
 				<height>30</height>
 				<align>center</align>
@@ -319,8 +319,8 @@
 			<control type="group" description="Group 6 Thumbs">
 				<visible>Control.IsVisible(6)</visible>
 				<control type="list" id="6">
-					<posx>576</posx>
-					<posy>60</posy>
+					<left>576</left>
+					<top>60</top>
 					<width>708</width>
 					<height>600</height>
 					<orientation>vertical</orientation>
@@ -345,8 +345,8 @@
 							<param name="texture">$VAR[DialogSelectSearchItemImage]</param>
 						</include>
 						<control type="label">
-							<posx>132</posx>
-							<posy>5</posy>
+							<left>132</left>
+							<top>5</top>
 							<width>590</width>
 							<height>60</height>
 							<label>$INFO[ListItem.Label]</label>
@@ -355,7 +355,7 @@
 						</control>
 						<control type="label">
 							<left>132</left>
-							<posy>55</posy>
+							<top>55</top>
 							<width>590</width>
 							<height>60</height>
 							<align>left</align>
@@ -389,8 +389,8 @@
 						</include>
 						<control type="label">
 							<visible>Control.HasFocus(6)</visible>
-							<posx>132</posx>
-							<posy>5</posy>
+							<left>132</left>
+							<top>5</top>
 							<width>590</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -401,8 +401,8 @@
 						</control>
 						<control type="label">
 							<visible>!Control.HasFocus(6)</visible>
-							<posx>132</posx>
-							<posy>5</posy>
+							<left>132</left>
+							<top>5</top>
 							<width>590</width>
 							<height>60</height>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
@@ -412,7 +412,7 @@
 						<control type="label">
 							<visible>Control.HasFocus(6)</visible>
 							<left>132</left>
-							<posy>55</posy>
+							<top>55</top>
 							<width>590</width>
 							<height>60</height>
 							<align>left</align>
@@ -425,7 +425,7 @@
 						</control>
 						<control type="label">
 							<left>132</left>
-							<posy>55</posy>
+							<top>55</top>
 							<width>590</width>
 							<height>60</height>
 							<align>left</align>
@@ -440,8 +440,8 @@
 			</control>
 			<control type="group" description="Group 3 Plain list">
 				<control type="list" id="3">
-					<posx>256</posx>
-					<posy>60</posy>
+					<left>256</left>
+					<top>60</top>
 					<width>1010</width>
 					<height>600</height>
 					<orientation>vertical</orientation>
@@ -487,8 +487,8 @@
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>13</posx>
-				<posy>60</posy>
+				<left>13</left>
+				<top>60</top>
 				<width>36</width>
 				<height>600</height>
 				<texturesliderbackground />
@@ -502,8 +502,8 @@
 				<visible>Control.IsVisible(6)</visible>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1250</posx>
-				<posy>60</posy>
+				<left>1250</left>
+				<top>60</top>
 				<width>36</width>
 				<height>600</height>
 				<texturesliderbackground />
@@ -631,15 +631,15 @@
 	<include name="DialogSelectStandard">
 		<include>DimBG</include>
 		<control type="group">
-			<posx>172</posx>
-			<posy>180</posy>
+			<left>172</left>
+			<top>180</top>
 			<include content="DetailsDialogFrame">
 				<param name="image">$VAR[DialogSelectMainImage]</param>
 				<param name="visible">Control.IsVisible(6)</param>
 			</include>
 			<control type="image">
-				<posx>-14</posx>
-				<posy>-20</posy>
+				<left>-14</left>
+				<top>-20</top>
 				<width>1293</width>
 				<height>720</height>
 				<texture flipx="true" border="55">dialogs/DialogRightSmall.png</texture>
@@ -647,8 +647,8 @@
 				<visible>Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
-				<posx>-14</posx>
-				<posy>5</posy>
+				<left>-14</left>
+				<top>5</top>
 				<width>1600</width>
 				<height>30</height>
 				<align>center</align>
@@ -660,7 +660,7 @@
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
-				<posx>300</posx>
+				<left>300</left>
 				<width>900</width>
 				<height>30</height>
 				<align>center</align>
@@ -673,8 +673,8 @@
 			<control type="group" description="Group 6 Thumbs">
 				<visible>Control.IsVisible(6)</visible>
 				<control type="list" id="6">
-					<posx>DetailsListLeft</posx>
-					<posy>60</posy>
+					<left>DetailsListLeft</left>
+					<top>60</top>
 					<width>DetailsListWidth</width>
 					<height>600</height>
 					<orientation>vertical</orientation>
@@ -699,8 +699,8 @@
 							<param name="texture">$VAR[DialogSelectImage]</param>
 						</include>
 						<control type="label">
-							<posx>132</posx>
-							<posy>5</posy>
+							<left>132</left>
+							<top>5</top>
 							<width>740</width>
 							<height>60</height>
 							<label>$INFO[ListItem.Label]$VAR[DialogSelectStreamFlags, - ]</label>
@@ -710,7 +710,7 @@
 						</control>
 						<control type="label">
 							<left>132</left>
-							<posy>55</posy>
+							<top>55</top>
 							<width>740</width>
 							<height>60</height>
 							<align>left</align>
@@ -756,8 +756,8 @@
 						</include>
 						<control type="label">
 							<visible>Control.HasFocus(6)</visible>
-							<posx>132</posx>
-							<posy>5</posy>
+							<left>132</left>
+							<top>5</top>
 							<width>740</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -769,8 +769,8 @@
 						</control>
 						<control type="label">
 							<visible>!Control.HasFocus(6)</visible>
-							<posx>132</posx>
-							<posy>5</posy>
+							<left>132</left>
+							<top>5</top>
 							<width>740</width>
 							<height>60</height>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
@@ -781,7 +781,7 @@
 						<control type="label">
 							<visible>Control.HasFocus(6)</visible>
 							<left>132</left>
-							<posy>55</posy>
+							<top>55</top>
 							<width>740</width>
 							<height>60</height>
 							<align>left</align>
@@ -795,7 +795,7 @@
 						<control type="label">
 							<visible>!Control.HasFocus(6)</visible>
 							<left>132</left>
-							<posy>55</posy>
+							<top>55</top>
 							<width>740</width>
 							<height>60</height>
 							<align>left</align>
@@ -833,8 +833,8 @@
 			</control>
 			<control type="group" description="Group 3 Plain list">
 				<control type="list" id="3">
-					<posx>256</posx>
-					<posy>60</posy>
+					<left>256</left>
+					<top>60</top>
 					<width>1010</width>
 					<height>600</height>
 					<orientation>vertical</orientation>
@@ -880,8 +880,8 @@
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1250</posx>
-				<posy>60</posy>
+				<left>1250</left>
+				<top>60</top>
 				<width>36</width>
 				<height>600</height>
 				<texturesliderbackground />
@@ -1057,7 +1057,7 @@
 							<aspectratio>stretch</aspectratio>
 						</control>
 						<control type="label">
-							<posy>260</posy>
+							<top>260</top>
 							<width>444</width>
 							<height>80</height>
 							<label>$INFO[ListItem.Label][CR][COLOR Grey]$INFO[ListItem.Label2][/COLOR]</label>
@@ -1096,7 +1096,7 @@
 							<visible>Control.HasFocus(11)</visible>
 						</control>
 						<control type="label">
-							<posy>260</posy>
+							<top>260</top>
 							<width>444</width>
 							<height>80</height>
 							<label>$INFO[ListItem.Label][CR] $INFO[ListItem.Label2]</label>
@@ -1132,11 +1132,11 @@
 	<include name="DialogSelectViewtypes">
 		<include>DimBG</include>
 		<control type="group">
-			<posx>172</posx>
-			<posy>180</posy>
+			<left>172</left>
+			<top>180</top>
 			<control type="image">
-				<posx>326</posx>
-				<posy>-20</posy>
+				<left>326</left>
+				<top>-20</top>
 				<width>1320</width>
 				<height>780</height>
 				<texture>dialogs/SettingsBG.png</texture>
@@ -1144,8 +1144,8 @@
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="image">
-				<posx>-14</posx>
-				<posy>-20</posy>
+				<left>-14</left>
+				<top>-20</top>
 				<width>1293</width>
 				<height>720</height>
 				<texture flipx="true" border="55">dialogs/DialogRightSmall.png</texture>
@@ -1153,8 +1153,8 @@
 				<visible>Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
-				<posx>306</posx>
-				<posy>5</posy>
+				<left>306</left>
+				<top>5</top>
 				<width>1600</width>
 				<height>30</height>
 				<align>center</align>
@@ -1166,7 +1166,7 @@
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
-				<posx>300</posx>
+				<left>300</left>
 				<width>900</width>
 				<height>30</height>
 				<align>center</align>
@@ -1191,8 +1191,8 @@
 			</control>
 			<control type="group" description="Group 3 Plain list">
 				<control type="list" id="3">
-					<posx>256</posx>
-					<posy>60</posy>
+					<left>256</left>
+					<top>60</top>
 					<width>1010</width>
 					<height>600</height>
 					<orientation>vertical</orientation>
@@ -1240,8 +1240,8 @@
 			<control type="group" description="Group 6 Thumbs">
 				<visible>Control.IsVisible(6)</visible>
 				<control type="list" id="6">
-					<posx>360</posx>
-					<posy>70</posy>
+					<left>360</left>
+					<top>70</top>
 					<width>208</width>
 					<height>600</height>
 					<orientation>vertical</orientation>
@@ -1258,7 +1258,7 @@
 							<texture border="3">list/ListNF.png</texture>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>200</width>
 							<height>60</height>
 							<label>$INFO[ListItem.Label]</label>
@@ -1280,7 +1280,7 @@
 						</control>
 						<control type="label">
 							<visible>Control.HasFocus(6)</visible>
-							<posx>10</posx>
+							<left>10</left>
 							<width>200</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -1290,7 +1290,7 @@
 						</control>
 						<control type="label">
 							<visible>!Control.HasFocus(6)</visible>
-							<posx>10</posx>
+							<left>10</left>
 							<width>200</width>
 							<height>60</height>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
@@ -1300,8 +1300,8 @@
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>13</posx>
-				<posy>60</posy>
+				<left>13</left>
+				<top>60</top>
 				<width>36</width>
 				<height>600</height>
 				<texturesliderbackground />
@@ -1315,8 +1315,8 @@
 				<visible>Control.IsVisible(6)</visible>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1250</posx>
-				<posy>60</posy>
+				<left>1250</left>
+				<top>60</top>
 				<width>36</width>
 				<height>600</height>
 				<texturesliderbackground />

@@ -30,7 +30,7 @@
 			<effect type="slide" start="500,0" end="0,0" time="250" />
 		</animation>
 		<control type="image">
-			<posx>-500</posx>
+			<left>-500</left>
 			<width>510</width>
 			<height>1080</height>
 			<texture border="0,0,30,0" colordiffuse="$VAR[DialogBGColor]">common/ViewMenu.png</texture>
@@ -66,7 +66,7 @@
 			<control type="group">
 				<visible>!Skin.HasSetting(Enable.TouchSupport)</visible>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>154</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -74,7 +74,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,2)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>208</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -82,7 +82,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,3)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>262</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -90,7 +90,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,4)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>316</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -98,7 +98,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,5)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>370</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -106,7 +106,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,6)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>424</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -114,7 +114,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,7)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>478</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -122,7 +122,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,8)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>532</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -130,7 +130,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,9)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>586</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -138,7 +138,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,10)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>644</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -146,7 +146,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,11)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>702</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -154,7 +154,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,12)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>760</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -162,7 +162,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,13)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>818</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -173,7 +173,7 @@
 			<control type="group">
 				<visible>Skin.HasSetting(Enable.TouchSupport)</visible>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>214</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -181,7 +181,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,2)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>268</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -189,7 +189,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,3)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>322</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -197,7 +197,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,4)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>376</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -205,7 +205,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,5)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>430</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -213,7 +213,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,6)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>484</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -221,7 +221,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,7)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>538</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -229,7 +229,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,8)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>592</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -237,7 +237,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,9)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>646</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -245,7 +245,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,10)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>704</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -253,7 +253,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,11)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>762</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -261,7 +261,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,12)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>820</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -269,7 +269,7 @@
 					<visible>Integer.IsEqual(Container(9600).NumItems,13)</visible>
 				</control>
 				<control type="image">
-					<posy>92</posy>
+					<top>92</top>
 					<width>300</width>
 					<height>878</height>
 					<texture border="45">dialogs/TinyDialog.png</texture>
@@ -278,8 +278,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>215</posx>
-				<posy>93</posy>
+				<left>215</left>
+				<top>93</top>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
 					<param name="Action">SetFocus(9000)</param>
 					<param name="id">909091</param>
@@ -288,7 +288,7 @@
 				<visible>Skin.HasSetting(Enable.TouchSupport)</visible>
 			</control>
 			<control type="grouplist" id="9600">
-				<posx>26</posx>
+				<left>26</left>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)">PopoutTopTouch</include>
 				<include condition="!Skin.HasSetting(Enable.TouchSupport)">PopoutTopStandard</include>
 				<width>248</width>
@@ -1127,8 +1127,8 @@
 	</variable>
 
 	<include name="9000GrouplistParameters">
-		<posx>-491</posx>
-		<posy>60</posy>
+		<left>-491</left>
+		<top>60</top>
 		<width>500</width>
 		<height>1120</height>
 		<onleft>9001</onleft>
@@ -1282,8 +1282,8 @@
 	</include>
 
 	<include name="9000PVRGrouplistParameters">
-		<posx>-491</posx>
-		<posy>60</posy>
+		<left>-491</left>
+		<top>60</top>
 		<width>500</width>
 		<height>1120</height>
 		<onleft>9001</onleft>

@@ -40,7 +40,7 @@
 			</control>
 			<control type="image" description="Line Split">
 				<left>42</left>
-				<posy>90</posy>
+				<top>90</top>
 				<width>1280</width>
 				<height>1</height>
 				<texture>img/LineL.png</texture>

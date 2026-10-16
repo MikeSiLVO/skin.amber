@@ -240,8 +240,8 @@
 				</control>
 			</control>
 			<control type="group" id="250" description="Right side options group">
-				<posx>1410</posx>
-				<posy>120</posy>
+				<left>1410</left>
+				<top>120</top>
 				<control type="image">
 					<top>60</top>
 					<width>348</width>
@@ -275,7 +275,7 @@
 							<texture border="3">buttons/ButtonNF.png</texture>
 						</control>
 						<control type="label">
-							<posx>18</posx>
+							<left>18</left>
 							<width>348</width>
 							<height>54</height>
 							<font>ListDetails</font>
@@ -296,7 +296,7 @@
 							<visible>Control.HasFocus(150)</visible>
 						</control>
 						<control type="label">
-							<posx>18</posx>
+							<left>18</left>
 							<height>54</height>
 							<width>348</width>
 							<font>ListDetails</font>
@@ -304,7 +304,7 @@
 							<visible>!Control.HasFocus(150)</visible>
 						</control>
 						<control type="label">
-							<posx>18</posx>
+							<left>18</left>
 							<height>54</height>
 							<width>348</width>
 							<font>ListDetails</font>

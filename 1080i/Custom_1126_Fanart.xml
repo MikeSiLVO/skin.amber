@@ -49,8 +49,8 @@
 			<control type="list" id="9105">
 				<itemlayout />
 				<focusedlayout />
-				<posx>-20</posx>
-				<posy>-20</posy>
+				<left>-20</left>
+				<top>-20</top>
 				<width>1</width>
 				<height>1</height>
 				<content>

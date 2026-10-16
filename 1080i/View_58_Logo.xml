@@ -62,16 +62,16 @@
 			<control type="group">
 				<visible>Skin.HasSetting(58_Logo_Overlay)</visible>
 				<control type="image">
-					<posx>420</posx>
-					<posy>320</posy>
+					<left>420</left>
+					<top>320</top>
 					<width>18</width>
 					<height>18</height>
 					<texture>$VAR[Overlay]</texture>
 					<visible>!$PARAM[FocusedLogo]</visible>
 				</control>
 				<control type="image">
-					<posx>420</posx>
-					<posy>320</posy>
+					<left>420</left>
+					<top>320</top>
 					<width>18</width>
 					<height>18</height>
 					<texture>$VAR[Overlay]</texture>
@@ -88,7 +88,7 @@
 			<control type="group" description="background">
 				<include>VignetteFade</include>
 				<control type="image">
-					<posy>1088</posy>
+					<top>1088</top>
 					<width>1920</width>
 					<height>534</height>
 					<aspectratio>stretch</aspectratio>
@@ -144,8 +144,8 @@
 			</control>
 			<control type="scrollbar" id="6058">
 				<animation effect="slide" start="0,0" end="0,-3" time="150">Focus</animation>
-				<posx>90</posx>
-				<posy>1056</posy>
+				<left>90</left>
+				<top>1056</top>
 				<width>1750</width>
 				<height>36</height>
 				<texturesliderbackground />

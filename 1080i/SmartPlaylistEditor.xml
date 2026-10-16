@@ -6,16 +6,16 @@
 		<include>DimBG</include>
 		<control type="group">
 			<control type="image">
-				<posx>36</posx>
-				<posy>35</posy>
+				<left>36</left>
+				<top>35</top>
 				<width>1849</width>
 				<height>1010</height>
 				<texture flipx="true">dialogs/SettingsBG.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" id="2" description="Header label">
-				<posx>65</posx>
-				<posy>90</posy>
+				<left>65</left>
+				<top>90</top>
 				<width>1402</width>
 				<label />
 				<scroll>true</scroll>
@@ -25,8 +25,8 @@
 				<visible>!Container(9000).HasFocus(5)</visible>
 			</control>
 			<control type="grouplist" id="9001" description="Add remove edit">
-				<posx>1533</posx>
-				<posy>400</posy>
+				<left>1533</left>
+				<top>400</top>
 				<width>324</width>
 				<height>240</height>
 				<onleft>9000</onleft>
@@ -54,8 +54,8 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9002" description="Ok cancel">
-				<posx>1533</posx>
-				<posy>840</posy>
+				<left>1533</left>
+				<top>840</top>
 				<width>324</width>
 				<height>240</height>
 				<onleft>9000</onleft>
@@ -77,9 +77,9 @@
 				</control>
 			</control>
 			<control type="group" id="9000">
-				<posx>65</posx>
+				<left>65</left>
 				<control type="button" id="22" description="Set Playlist type">
-					<posy>180</posy>
+					<top>180</top>
 					<width>1467</width>
 					<label>$LOCALIZE[467]</label>
 					<textoffsetx>30</textoffsetx>
@@ -89,7 +89,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="button" id="12" description="Name Button">
-					<posy>240</posy>
+					<top>240</top>
 					<width>1467</width>
 					<textoffsetx>30</textoffsetx>
 					<onleft>9002</onleft>
@@ -100,7 +100,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="label">
-					<posy>306</posy>
+					<top>306</top>
 					<width>1467</width>
 					<label>$LOCALIZE[21434]</label>
 					<scroll>true</scroll>
@@ -108,15 +108,15 @@
 					<align>center</align>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>380</posy>
+					<left>19</left>
+					<top>380</top>
 					<width>1422</width>
 					<height>200</height>
 					<texture border="15">dialogs/AddSourceTopFrame.png</texture>
 				</control>
 				<control type="panel" id="10" description="Rules List">
-					<posx>30</posx>
-					<posy>390</posy>
+					<left>30</left>
+					<top>390</top>
 					<width>1400</width>
 					<height>179</height>
 					<onup>12</onup>
@@ -130,7 +130,7 @@
 							<texture border="3">list/ListNF.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
+							<left>30</left>
 							<width>1400</width>
 							<height>60</height>
 							<textoffsetx>30</textoffsetx>
@@ -144,7 +144,7 @@
 							<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
+							<left>30</left>
 							<width>1400</width>
 							<height>60</height>
 							<textoffsetx>30</textoffsetx>
@@ -156,7 +156,7 @@
 					</focusedlayout>
 				</control>
 				<control type="button" id="16" description="Items must match">
-					<posy>600</posy>
+					<top>600</top>
 					<width>1467</width>
 					<label>$LOCALIZE[21424]</label>
 					<textoffsetx>30</textoffsetx>
@@ -167,7 +167,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="button" id="17" description="Limit to">
-					<posy>660</posy>
+					<top>660</top>
 					<width>1467</width>
 					<label>$LOCALIZE[21427]</label>
 					<textoffsetx>30</textoffsetx>
@@ -178,7 +178,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="button" id="18" description="Order by">
-					<posy>720</posy>
+					<top>720</top>
 					<width>1467</width>
 					<label>$LOCALIZE[21429]</label>
 					<textoffsetx>30</textoffsetx>
@@ -189,7 +189,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="button" id="23" description="Group by">
-					<posy>780</posy>
+					<top>780</top>
 					<width>1467</width>
 					<label>$LOCALIZE[21458]</label>
 					<textoffsetx>30</textoffsetx>
@@ -200,7 +200,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 				</control>
 				<control type="radiobutton" id="24" description="Mixed">
-					<posy>840</posy>
+					<top>840</top>
 					<width>1467</width>
 					<height>60</height>
 					<label>$LOCALIZE[20395]</label>
@@ -211,7 +211,7 @@
 					<ondown>19</ondown>
 				</control>
 				<control type="togglebutton" id="19" description="Ascending descending">
-					<posy>900</posy>
+					<top>900</top>
 					<width>1467</width>
 					<height>60</height>
 					<label>$LOCALIZE[21429]:  $LOCALIZE[21431]</label>

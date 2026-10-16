@@ -12,8 +12,8 @@
 		<include>DefaultBackground</include>
 		<include>OpenClose</include>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<include>Dimensions_Fullscreen</include>
 			<aspectratio>scale</aspectratio>
 			<texture background="true">$INFO[Container.ListItem.Art(fanart)]</texture>
@@ -119,16 +119,16 @@
 		<!-- header bar -->
 		<include>Time</include>
 		<control type="image" description="Footer Dim BG">
-			<posx>0</posx>
-			<posy>873</posy>
+			<left>0</left>
+			<top>873</top>
 			<width>1920</width>
 			<height>207</height>
 			<texture>img/GradientNew.png</texture>
 			<colordiffuse>dfcebe9e</colordiffuse>
 		</control>
 		<control type="image" description="Footer">
-			<posx>0</posx>
-			<posy>873</posy>
+			<left>0</left>
+			<top>873</top>
 			<width>1920</width>
 			<height>207</height>
 			<texture>OSD/FS_OSDBackground.png</texture>
@@ -136,8 +136,8 @@
 		</control>
 		<control type="group" description="Media Info Lite">
 			<include>ContentFade</include>
-			<posy>937</posy>
-			<posx>390</posx>
+			<top>937</top>
+			<left>390</left>
 			<width>1140</width>
 			<control type="label" description="Title shadow">
 				<left>4</left>
@@ -162,7 +162,7 @@
 				<label>$VAR[panelheading]</label>
 			</control>
 			<control type="label" description="Details">
-				<posy>59</posy>
+				<top>59</top>
 				<width>1140</width>
 				<height>50</height>
 				<align>center</align>

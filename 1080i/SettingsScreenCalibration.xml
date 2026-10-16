@@ -19,8 +19,8 @@
 		</control>
 		<control type="mover" id="9">
 			<description>right bottom mover</description>
-			<posx>1644</posx>
-			<posy>824</posy>
+			<left>1644</left>
+			<top>824</top>
 			<width>256</width>
 			<height>256</height>
 			<texturefocus>calibrate/CalibrateBottomRight2.png</texturefocus>
@@ -34,8 +34,8 @@
 		</control>
 		<control type="mover" id="10">
 			<description>subtitle position mover</description>
-			<posx>832</posx>
-			<posy>592</posy>
+			<left>832</left>
+			<top>592</top>
 			<width>256</width>
 			<height>128</height>
 			<texturefocus border="0,3,0,3">calibrate/CalibrateSubtitles2.png</texturefocus>
@@ -49,7 +49,7 @@
 		</control>
 		<control type="resize" id="11">
 			<description>pixel aspect ratio box</description>
-			<posy>348</posy>
+			<top>348</top>
 			<width>384</width>
 			<height>384</height>
 			<texturefocus>calibrate/CalibratePixelRatio.png</texturefocus>
@@ -70,8 +70,8 @@
 		</control>
 		<control type="label" id="2">
 			<description>resolution label</description>
-			<posx>30</posx>
-			<posy>60</posy>
+			<left>30</left>
+			<top>60</top>
 			<width>1860</width>
 			<height>30</height>
 			<scroll>true</scroll>
@@ -79,8 +79,8 @@
 		</control>
 		<control type="label" id="3">
 			<description>help information</description>
-			<posx>30</posx>
-			<posy>120</posy>
+			<left>30</left>
+			<top>120</top>
 			<width>1860</width>
 			<height>30</height>
 			<scroll>true</scroll>
@@ -88,8 +88,8 @@
 		</control>
 		<control type="label" id="4">
 			<description>calibration value</description>
-			<posx>30</posx>
-			<posy>180</posy>
+			<left>30</left>
+			<top>180</top>
 			<width>1860</width>
 			<height>30</height>
 			<scroll>true</scroll>

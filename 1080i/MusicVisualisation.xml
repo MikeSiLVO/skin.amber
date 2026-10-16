@@ -129,8 +129,8 @@
 
 		<!-- Artist Logo -->
 		<control type="image">
-			<posy>15</posy>
-			<posx>1500</posx>
+			<top>15</top>
+			<left>1500</left>
 			<width>400</width>
 			<height>155</height>
 			<texture  background="true">$INFO[Player.Art(artist.clearlogo)]</texture>
@@ -142,7 +142,7 @@
 
 		<!-- Background image to dim lyrics -->
 		<control type="image">
-			<posy>-110</posy>
+			<top>-110</top>
 			<width>1920</width>
 			<height>1200</height>
 			<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
@@ -225,8 +225,8 @@
 
 			<!-- Artist -->
 			<control type="label">
-				<posx>30</posx>
-				<posy>50</posy>
+				<left>30</left>
+				<top>50</top>
 				<width>800</width>
 				<height>40</height>
 				<align>left</align>
@@ -239,7 +239,7 @@
 			<!-- Media flags -->
 			<control type="grouplist">
 				<top>40</top>
-				<posx>708</posx>
+				<left>708</left>
 				<height>80</height>
 				<width>605</width>
 				<orientation>horizontal</orientation>
@@ -279,8 +279,8 @@
 
 			<!-- Album and Year -->
 			<control type="label">
-				<posx>30</posx>
-				<posy>176</posy>
+				<left>30</left>
+				<top>176</top>
 				<width>740</width>
 				<height>40</height>
 				<align>left</align>
@@ -291,8 +291,8 @@
 				<visible>Window.IsVisible(MusicOSD)</visible>
 			</control>
 			<control type="label">
-				<posx>30</posx>
-				<posy>176</posy>
+				<left>30</left>
+				<top>176</top>
 				<width>1205</width>
 				<height>40</height>
 				<align>left</align>

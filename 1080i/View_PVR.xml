@@ -7,8 +7,8 @@
 		<param name="width">760</param>
 		<definition>
 			<control type="group">
-				<posx>$PARAM[posx]</posx>
-				<posy>$PARAM[posy]</posy>
+				<left>$PARAM[posx]</left>
+				<top>$PARAM[posy]</top>
 				<height>$PARAM[height]</height>
 				<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 				<control type="label">
@@ -43,8 +43,8 @@
 			<control type="group">
 				<visible>Window.IsActive(MyPVRChannels.xml)</visible>
 				<visible>ListItem.HasEPG</visible>
-				<posx>$PARAM[posx]</posx>
-				<posy>$PARAM[posy]</posy>
+				<left>$PARAM[posx]</left>
+				<top>$PARAM[posy]</top>
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
 				<control type="label">
@@ -85,7 +85,7 @@
 		<definition>
 			<control type="image">
 				<visible>!$PARAM[isFocused]</visible>
-				<posx>$PARAM[posx]</posx>
+				<left>$PARAM[posx]</left>
 				<width>30</width>
 				<height>$PARAM[itemheight]</height>
 				<texture>$VAR[PVROverlay]</texture>
@@ -93,7 +93,7 @@
 			</control>
 			<control type="image">
 				<visible>$PARAM[isFocused]</visible>
-				<posx>$PARAM[posx]</posx>
+				<left>$PARAM[posx]</left>
 				<width>30</width>
 				<height>$PARAM[itemheight]</height>
 				<texture>$VAR[PVROverlay]</texture>
@@ -113,8 +113,8 @@
 				<height>1</height>
 			</control>
 			<control type="group">
-				<posx>-60</posx>
-				<posy>-13</posy>
+				<left>-60</left>
+				<top>-13</top>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
 					<param name="Action">SetFocus(50)</param>
 					<param name="ondown">9000</param>
@@ -283,7 +283,7 @@
 			<control type="epggrid" id="10">
 				<viewtype label="$LOCALIZE[19032]">list</viewtype>
 				<description>EPG Grid</description>
-				<posx>30</posx>
+				<left>30</left>
 				<width>1850</width>
 				<include condition="!Skin.HasSetting(Enable.TouchSupport)">EPGHeightStandard</include>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)">EPGHeightTouch</include>
@@ -305,7 +305,7 @@
 						<texture />
 					</control>
 					<control type="label" id="2">
-						<posx>10</posx>
+						<left>10</left>
 						<width>1400</width>
 						<height>60</height>
 						<aligny>center</aligny>
@@ -325,7 +325,7 @@
 					</control>
 					<control type="label" id="1" description="Column 1 selected">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-						<posx>80</posx>
+						<left>80</left>
 						<width>258</width>
 						<height>70</height>
 						<scroll>false</scroll>
@@ -334,7 +334,7 @@
 					</control>
 					<control type="label" id="1" description="Column 1 selected">
 						<visible>Skin.HasSetting(HideEPGLogos)</visible>
-						<posx>80</posx>
+						<left>80</left>
 						<width>335</width>
 						<height>70</height>
 						<scroll>false</scroll>
@@ -343,8 +343,8 @@
 					</control>
 					<control type="image" description="Channel Logo">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-						<posx>345</posx>
-						<posy>4</posy>
+						<left>345</left>
+						<top>4</top>
 						<width>58</width>
 						<height>58</height>
 						<aspectratio>keep</aspectratio>
@@ -363,7 +363,7 @@
 					</control>
 					<control type="label" id="1" description="Column 1 Focused">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-						<posx>80</posx>
+						<left>80</left>
 						<width>258</width>
 						<height>70</height>
 						<textcolor>$VAR[HighlightColor]</textcolor>
@@ -375,7 +375,7 @@
 					</control>
 					<control type="label" id="1" description="Column 1 selected">
 						<visible>Skin.HasSetting(HideEPGLogos)</visible>
-						<posx>80</posx>
+						<left>80</left>
 						<width>335</width>
 						<height>70</height>
 						<font>ListDetails</font>
@@ -384,8 +384,8 @@
 					</control>
 					<control type="image" description="Channel Logo">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-						<posx>345</posx>
-						<posy>4</posy>
+						<left>345</left>
+						<top>4</top>
 						<width>58</width>
 						<height>58</height>
 						<aspectratio>keep</aspectratio>
@@ -400,16 +400,16 @@
 						<texture fallback="pvr_genres/0.png">pvr_genres/$INFO[ListItem.Property(GenreType)].png</texture>
 					</control>
 					<control type="image">
-						<posx>7</posx>
-						<posy>-12</posy>
+						<left>7</left>
+						<top>-12</top>
 						<width>20</width>
 						<height>71</height>
 						<texture>$VAR[PVROverlay]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label" id="1">
-						<posx>33</posx>
-						<posy>6</posy>
+						<left>33</left>
+						<top>6</top>
 						<width>23</width>
 						<height>36</height>
 						<font>ListDetails</font>
@@ -419,8 +419,8 @@
 						<visible>$EXP[ShowPVROverlay]</visible>
 					</control>
 					<control type="label" id="1">
-						<posx>7</posx>
-						<posy>6</posy>
+						<left>7</left>
+						<top>6</top>
 						<width>45</width>
 						<height>36</height>
 						<scroll>false</scroll>
@@ -438,16 +438,16 @@
 						<bordersize>1</bordersize>
 					</control>
 					<control type="image">
-						<posx>7</posx>
-						<posy>-16</posy>
+						<left>7</left>
+						<top>-16</top>
 						<width>20</width>
 						<height>71</height>
 						<texture colordiffuse="$VAR[FocusedTextColor]">$VAR[PVROverlay]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label" id="1">
-						<posx>33</posx>
-						<posy>2</posy>
+						<left>33</left>
+						<top>2</top>
 						<width>23</width>
 						<height>36</height>
 						<font>ListDetails</font>
@@ -459,8 +459,8 @@
 						<visible>$EXP[ShowPVROverlay]</visible>
 					</control>
 					<control type="label" id="1">
-						<posx>7</posx>
-						<posy>2</posy>
+						<left>7</left>
+						<top>2</top>
 						<width>45</width>
 						<height>36</height>
 						<scroll>false</scroll>
@@ -472,8 +472,8 @@
 						<visible>!$EXP[ShowPVROverlay]</visible>
 					</control>
 					<control type="label" id="1">
-						<posx>7</posx>
-						<posy>30</posy>
+						<left>7</left>
+						<top>30</top>
 						<height>36</height>
 						<font>ListDetails</font>
 						<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime,,]</label>
@@ -485,23 +485,23 @@
 				</focusedlayout>
 			</control>
 			<control type="image" description="Top split">
-				<posx>30</posx>
-				<posy>297</posy>
+				<left>30</left>
+				<top>297</top>
 				<width>1850</width>
 				<height>3</height>
 				<texture>img/LineST.png</texture>
 			</control>
 			<control type="image" description="Channel Group Panel">
-				<posx>30</posx>
-				<posy>300</posy>
+				<left>30</left>
+				<top>300</top>
 				<width>1850</width>
 				<height>122</height>
 				<texture>img/LineST.png</texture>
 				<visible>!Skin.HasSetting(HideGuideChannelGroups)</visible>
 			</control>
 			<control type="image" description="Middle split">
-				<posx>30</posx>
-				<posy>422</posy>
+				<left>30</left>
+				<top>422</top>
 				<width>1800</width>
 				<height>3</height>
 				<texture>img/LineST.png</texture>
@@ -510,8 +510,8 @@
 				<visible>Control.IsVisible(10)</visible>
 				<visible>!Skin.HasSetting(HideGuideChannelGroups)</visible>
 				<control type="image">
-					<posx>40</posx>
-					<posy>290</posy>
+					<left>40</left>
+					<top>290</top>
 					<width>306</width>
 					<height>80</height>
 					<aligny>center</aligny>
@@ -519,15 +519,15 @@
 					<visible>Control.HasFocus(11)</visible>
 				</control>
 				<control type="image">
-					<posx>15</posx>
-					<posy>315</posy>
+					<left>15</left>
+					<top>315</top>
 					<width>20</width>
 					<height>30</height>
 					<texture colordiffuse="$VAR[HighlightColor]">arrowleft.png</texture>
 				</control>
 				<control type="image">
-					<posx>30r</posx>
-					<posy>315</posy>
+					<left>30r</left>
+					<top>315</top>
 					<width>20</width>
 					<height>30</height>
 					<texture colordiffuse="$VAR[HighlightColor]">arrowright.png</texture>
@@ -538,8 +538,8 @@
 				<visible>Control.IsVisible(10) + !Skin.HasSetting(HideGuideChannelGroups)</visible>
 				<width>1880</width>
 				<control type="fixedlist" id="11">
-					<posx>42</posx>
-					<posy>290</posy>
+					<left>42</left>
+					<top>290</top>
 					<onleft>PreviousChannelGroup</onleft>
 					<onright>NextChannelGroup</onright>
 					<onup condition="Control.IsVisible(10)">101</onup>
@@ -665,8 +665,8 @@
 				<include>OpenClose</include>
 				<include>MiniVideoWindow</include>
 				<control type="list" id="50" description="CHANNELS">
-					<posx>960</posx>
-					<posy>60</posy>
+					<left>960</left>
+					<top>60</top>
 					<width>930</width>
 					<height>990</height>
 					<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">100</onleft>
@@ -684,7 +684,7 @@
 							<texture flipy="true" border="3">list/ListNF.png</texture>
 						</control>
 						<control type="image">
-							<posx>880</posx>
+							<left>880</left>
 							<width>24</width>
 							<height>99</height>
 							<texture>$VAR[PVRStatusImageVar]</texture>
@@ -700,8 +700,8 @@
 						</control>
 						<control type="image" description="TV Logo Shadow">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>83</posx>
-							<posy>7</posy>
+							<left>83</left>
+							<top>7</top>
 							<width>88</width>
 							<height>88</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -710,8 +710,8 @@
 						</control>
 						<control type="image" description="TV Logo">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>80</posx>
-							<posy>4</posy>
+							<left>80</left>
+							<top>4</top>
 							<width>88</width>
 							<height>88</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -719,7 +719,7 @@
 						</control>
 						<control type="label" description="Main Label">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>98</posx>
+							<left>98</left>
 							<height>45</height>
 							<width>800</width>
 							<font>Details</font>
@@ -728,7 +728,7 @@
 						</control>
 						<control type="label" description="Main Label">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>186</posx>
+							<left>186</left>
 							<height>45</height>
 							<width>800</width>
 							<font>Details</font>
@@ -737,8 +737,8 @@
 						</control>
 						<control type="label" description="Label2">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>98</posx>
-							<posy>34</posy>
+							<left>98</left>
+							<top>34</top>
 							<height>55</height>
 							<width>700</width>
 							<scroll>false</scroll>
@@ -746,8 +746,8 @@
 						</control>
 						<control type="label" description="Label2">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>186</posx>
-							<posy>34</posy>
+							<left>186</left>
+							<top>34</top>
 							<height>55</height>
 							<width>700</width>
 							<scroll>false</scroll>
@@ -755,8 +755,8 @@
 						</control>
 						<control type="progress">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>184</posx>
-							<posy>87</posy>
+							<left>184</left>
+							<top>87</top>
 							<width>700</width>
 							<height>5</height>
 							<texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
@@ -767,8 +767,8 @@
 						</control>
 						<control type="progress">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>184</posx>
-							<posy>87</posy>
+							<left>184</left>
+							<top>87</top>
 							<width>700</width>
 							<height>5</height>
 							<texturebg border="0,0,0,0" colordiffuse="$VAR[LabelTextColor]">img/AmberDotBG.png</texturebg>
@@ -779,8 +779,8 @@
 						</control>
 						<control type="progress">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>98</posx>
-							<posy>87</posy>
+							<left>98</left>
+							<top>87</top>
 							<width>786</width>
 							<height>5</height>
 							<texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
@@ -791,8 +791,8 @@
 						</control>
 						<control type="progress">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>98</posx>
-							<posy>87</posy>
+							<left>98</left>
+							<top>87</top>
 							<width>786</width>
 							<height>5</height>
 							<texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
@@ -810,7 +810,7 @@
 							<animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(50)">Conditional</animation>
 						</control>
 						<control type="image">
-							<posx>880</posx>
+							<left>880</left>
 							<width>24</width>
 							<height>99</height>
 							<texture>$VAR[PVRStatusImageVar]</texture>
@@ -830,8 +830,8 @@
 						</control>
 						<control type="image" description="TV Logo Shadow">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>83</posx>
-							<posy>7</posy>
+							<left>83</left>
+							<top>7</top>
 							<width>88</width>
 							<height>88</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -840,8 +840,8 @@
 						</control>
 						<control type="image" description="TV Logo">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>80</posx>
-							<posy>4</posy>
+							<left>80</left>
+							<top>4</top>
 							<width>88</width>
 							<height>88</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -849,7 +849,7 @@
 						</control>
 						<control type="label" description="Main Label">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>98</posx>
+							<left>98</left>
 							<height>45</height>
 							<width>700</width>
 							<font>Details</font>
@@ -860,7 +860,7 @@
 						</control>
 						<control type="label" description="Main Label">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>186</posx>
+							<left>186</left>
 							<height>45</height>
 							<width>700</width>
 							<font>Details</font>
@@ -871,8 +871,8 @@
 						</control>
 						<control type="label" description="Label2">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>98</posx>
-							<posy>34</posy>
+							<left>98</left>
+							<top>34</top>
 							<height>55</height>
 							<width>700</width>
 							<label>$INFO[ListItem.Title]</label>
@@ -882,8 +882,8 @@
 						</control>
 						<control type="label" description="Label2">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>186</posx>
-							<posy>34</posy>
+							<left>186</left>
+							<top>34</top>
 							<height>55</height>
 							<width>700</width>
 							<label>$INFO[ListItem.Title]</label>
@@ -893,8 +893,8 @@
 						</control>
 						<control type="progress">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>184</posx>
-							<posy>87</posy>
+							<left>184</left>
+							<top>87</top>
 							<width>700</width>
 							<height>5</height>
 							<texturebg colordiffuse="$VAR[LabelTextColor]" border="0,0,0,0">img/AmberDot.png</texturebg>
@@ -905,8 +905,8 @@
 						</control>
 						<control type="progress">
 							<visible>!Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>184</posx>
-							<posy>87</posy>
+							<left>184</left>
+							<top>87</top>
 							<width>700</width>
 							<height>5</height>
 							<texturebg colordiffuse="$VAR[LabelTextColor]" border="0,0,0,0">img/AmberDot.png</texturebg>
@@ -917,8 +917,8 @@
 						</control>
 						<control type="progress">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>98</posx>
-							<posy>87</posy>
+							<left>98</left>
+							<top>87</top>
 							<width>786</width>
 							<height>5</height>
 							<texturebg colordiffuse="$VAR[LabelTextColor]" border="0,0,0,0">img/AmberDot.png</texturebg>
@@ -929,8 +929,8 @@
 						</control>
 						<control type="progress">
 							<visible>Skin.HasSetting(HideEPGLogos)</visible>
-							<posx>98</posx>
-							<posy>87</posy>
+							<left>98</left>
+							<top>87</top>
 							<width>786</width>
 							<height>5</height>
 							<texturebg colordiffuse="$VAR[LabelTextColor]" border="0,0,0,0">img/AmberDot.png</texturebg>
@@ -955,8 +955,8 @@
 			<control type="scrollbar" id="60">
 				<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 				<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-				<posx>21r</posx>
-				<posy>60</posy>
+				<left>21r</left>
+				<top>60</top>
 				<width>36</width>
 				<height>990</height>
 				<texturesliderbackground />

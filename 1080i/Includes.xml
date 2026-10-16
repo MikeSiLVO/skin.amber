@@ -166,8 +166,8 @@
 	</include>
 
 	<include name="Panel_Size">
-		<posx>36</posx>
-		<posy>54</posy>
+		<left>36</left>
+		<top>54</top>
 		<width>1849</width>
 		<height>1010</height>
 	</include>
@@ -187,7 +187,7 @@
 				<control type="label">
 					<visible>!Player.HasMedia</visible>
 					<include>VisibleFadeEffect</include>
-					<posx>30</posx>
+					<left>30</left>
 					<width>1200</width>
 					<height>35</height>
 					<font>Details</font>
@@ -196,7 +196,7 @@
 				</control>
 				<!-- Icon menu label -->
 				<control type="label" id="12002">
-					<posx>20</posx>
+					<left>20</left>
 					<height>35</height>
 					<width>370</width>
 					<font>Details</font>
@@ -208,7 +208,7 @@
 				</control>
 				<!-- Icon menu and submenu label -->
 				<control type="label" id="12003">
-					<posx>20</posx>
+					<left>20</left>
 					<height>35</height>
 					<width>430</width>
 					<font>Details</font>
@@ -221,7 +221,7 @@
 				<!-- RSS feed -->
 				<control type="rss" description="RSS Feed">
 					<visible>Window.Is(Home) + System.GetBool(lookandfeel.enablerssfeeds) + !Player.HasMedia + !Control.IsVisible(12002)</visible>
-					<posx>30</posx>
+					<left>30</left>
 					<width>1200</width>
 					<height>35</height>
 					<font>Details</font>
@@ -237,7 +237,7 @@
 					<include>VisibleFadeEffect</include>
 					<orientation>horizontal</orientation>
 					<itemgap>10</itemgap>
-					<posx>12</posx>
+					<left>12</left>
 					<control type="image" description="Speaker">
 						<width>40</width>
 						<height>35</height>
@@ -332,7 +332,7 @@
 	</include>
 
 	<include name="SeekbarLabels">
-		<posx>40</posx>
+		<left>40</left>
 		<height>40</height>
 		<width>1840</width>
 		<align>center</align>
@@ -361,16 +361,16 @@
 		<control type="group" description="Library stats">
 			<visible>$EXP[InfoLineOnMenu]</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>623</posy>
+				<left>0</left>
+				<top>623</top>
 				<width>670</width>
 				<height>70</height>
 				<texture flipx="true" colordiffuse="$VAR[GlowBarsColor]" border="100,0,0,0">common/TimePanel.png</texture>
 				<visible>!Skin.HasSetting(VerticalHome) + ![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 			</control>
 			<control type="label">
-				<posx>10</posx>
-				<posy>651</posy>
+				<left>10</left>
+				<top>651</top>
 				<height>50</height>
 				<width>595</width>
 				<font>ListDetails</font>
@@ -381,16 +381,16 @@
 				<visible>!Skin.HasSetting(VerticalHome) + ![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>623</posy>
+				<left>0</left>
+				<top>623</top>
 				<width>910</width>
 				<height>70</height>
 				<texture flipx="true" colordiffuse="$VAR[GlowBarsColor]" border="100,0,0,0">common/TimePanel.png</texture>
 				<visible>!Skin.HasSetting(VerticalHome) + [String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 			</control>
 			<control type="label">
-				<posx>10</posx>
-				<posy>651</posy>
+				<left>10</left>
+				<top>651</top>
 				<height>50</height>
 				<width>830</width>
 				<font>ListDetails</font>
@@ -405,16 +405,16 @@
 				<visible>Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)</visible>
 				<visible>[String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [[Control.HasFocus(300) | Control.HasFocus(9001) | Control.HasFocus(12001)] + [Container(300).ListItem.Property(widgetsHide) | String.IsEmpty(Container(300).ListItem.Property(widgetPath))]]] | [!String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) | [Container(300).ListItem.Property(widgetThreeShelvesLarge) + Control.HasFocus(300) + Container(300).ListItem.Property(widgetsHide)]]]</visible>
 				<control type="image">
-					<posx>436</posx>
-					<posy>40</posy>
+					<left>436</left>
+					<top>40</top>
 					<width>670</width>
 					<height>90</height>
 					<texture flipx="true" flipy="true" colordiffuse="$VAR[GlowBarsColor]" border="100,0,0,0">common/TimePanel.png</texture>
 					<visible>![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 				<control type="label">
-					<posx>446</posx>
-					<posy>34</posy>
+					<left>446</left>
+					<top>34</top>
 					<height>50</height>
 					<width>595</width>
 					<font>ListDetails</font>
@@ -425,16 +425,16 @@
 					<visible>![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 				<control type="image">
-					<posx>436</posx>
-					<posy>40</posy>
+					<left>436</left>
+					<top>40</top>
 					<width>910</width>
 					<height>90</height>
 					<texture flipx="true" flipy="true" colordiffuse="$VAR[GlowBarsColor]" border="100,0,0,0">common/TimePanel.png</texture>
 					<visible>[String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 				<control type="label">
-					<posx>446</posx>
-					<posy>34</posy>
+					<left>446</left>
+					<top>34</top>
 					<height>50</height>
 					<width>830</width>
 					<font>ListDetails</font>
@@ -449,16 +449,16 @@
 				<visible>Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)</visible>
 				<visible>[String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [[Control.HasFocus(300) | Control.HasFocus(9001) | Control.HasFocus(12001)] + [Container(300).ListItem.Property(widgetsHide) | String.IsEmpty(Container(300).ListItem.Property(widgetPath))]]] | [!String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) | [Container(300).ListItem.Property(widgetThreeShelvesLarge) + Control.HasFocus(300) + Container(300).ListItem.Property(widgetsHide)]]]</visible>
 				<control type="image">
-					<posx>134</posx>
-					<posy>40</posy>
+					<left>134</left>
+					<top>40</top>
 					<width>670</width>
 					<height>90</height>
 					<texture flipx="true" flipy="true" colordiffuse="$VAR[GlowBarsColor]" border="100,0,0,0">common/TimePanel.png</texture>
 					<visible>![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 				<control type="label">
-					<posx>144</posx>
-					<posy>34</posy>
+					<left>144</left>
+					<top>34</top>
 					<height>50</height>
 					<width>595</width>
 					<font>ListDetails</font>
@@ -469,16 +469,16 @@
 					<visible>![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 				<control type="image">
-					<posx>134</posx>
-					<posy>40</posy>
+					<left>134</left>
+					<top>40</top>
 					<width>910</width>
 					<height>90</height>
 					<texture flipx="true" flipy="true" colordiffuse="$VAR[GlowBarsColor]" border="100,0,0,0">common/TimePanel.png</texture>
 					<visible>[String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
 				<control type="label">
-					<posx>144</posx>
-					<posy>34</posy>
+					<left>144</left>
+					<top>34</top>
 					<height>50</height>
 					<width>830</width>
 					<font>ListDetails</font>
@@ -510,8 +510,8 @@
 					<effect type="fade" start="100" end="0" time="100" delay="$PARAM[delayms]" />
 				</animation>
 				<animation effect="slide" start="0,0" end="0,-450" time="200" condition="Skin.HasSetting(Weather8DayForecast) + !$PARAM[8day]">Conditional</animation>
-				<posx>$PARAM[xoffset]</posx>
-				<posy>$PARAM[yoffset]</posy>
+				<left>$PARAM[xoffset]</left>
+				<top>$PARAM[yoffset]</top>
 				<width>$PARAM[imgwidth]</width>
 				<height>431</height>
 				<texture>weather/$PARAM[bgimage]</texture>
@@ -527,11 +527,11 @@
 		<definition>
 			<control type="group" description="Day">
 				<include>WeatherAni$PARAM[dayid]</include>
-				<posx>$PARAM[xoffset]</posx>
-				<posy>$PARAM[yoffset]</posy>
+				<left>$PARAM[xoffset]</left>
+				<top>$PARAM[yoffset]</top>
 				<control type="label" description="Day label">
-					<posx>555</posx>
-					<posy>523</posy>
+					<left>555</left>
+					<top>523</top>
 					<height>60</height>
 					<width>260</width>
 					<font>WeatherTitle</font>
@@ -541,8 +541,8 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="label" description="High Temp">
-					<posx>540</posx>
-					<posy>600</posy>
+					<left>540</left>
+					<top>600</top>
 					<height>150</height>
 					<width>140</width>
 					<font>MainMenu</font>
@@ -553,8 +553,8 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Low temp">
-					<posx>690</posx>
-					<posy>600</posy>
+					<left>690</left>
+					<top>600</top>
 					<height>150</height>
 					<width>140</width>
 					<font>MainMenu</font>
@@ -565,8 +565,8 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="multiimage" description="Icon">
-					<posx>555</posx>
-					<posy>745</posy>
+					<left>555</left>
+					<top>745</top>
 					<height>120</height>
 					<width>260</width>
 					<imagepath background="true">$VAR[WeatherIconPath]$INFO[Window.Property(Daily.$PARAM[dayid].FanartCode)]$VAR[WeatherIconExt]</imagepath>
@@ -576,8 +576,8 @@
 					<randomize>false</randomize>
 				</control>
 				<control type="label" description="Conditions">
-					<posx>555</posx>
-					<posy>855</posy>
+					<left>555</left>
+					<top>855</top>
 					<height>60</height>
 					<width>260</width>
 					<align>center</align>
@@ -629,8 +629,8 @@
 		<param name="listwidth">1350</param>
 		<param name="listheight">840</param>
 		<definition>
-			<posx>495</posx>
-			<posy>135</posy>
+			<left>495</left>
+			<top>135</top>
 			<width>$PARAM[listwidth]</width>
 			<height>$PARAM[listheight]</height>
 			<onleft>9000</onleft>
@@ -642,7 +642,7 @@
 					<texture border="3">buttons/ButtonNF.png</texture>
 				</control>
 				<control type="label" description="Main Label">
-					<posx>30</posx>
+					<left>30</left>
 					<height>60</height>
 					<width>$PARAM[listwidth]</width>
 					<scroll>false</scroll>
@@ -677,7 +677,7 @@
 					<texture border="3" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 				</control>
 				<control type="label" description="Main Label">
-					<posx>30</posx>
+					<left>30</left>
 					<height>60</height>
 					<width>$PARAM[listwidth]</width>
 					<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -953,8 +953,8 @@
 				<include>OpenClose</include>
 				<visible>$PARAM[visibility]</visible>
 				<visible>[[$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules]] + [Container.Content(files) | Container.Content(videos) | Container.Content() | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]] | [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games) | Container.Content(songs)]</visible>
-				<posx>$PARAM[left]</posx>
-				<posy>$PARAM[top]</posy>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
 				<width>$PARAM[width]</width>
 				<height>$PARAM[groupheight]</height>
 				<orientation>vertical</orientation>
@@ -1147,8 +1147,8 @@
 			<control type="grouplist">
 				<visible>$PARAM[visibility]</visible>
 				<visible>[!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Genre) | !String.IsEmpty(ListItem.Year) | !String.IsEmpty(ListItem.Episode)] | [!String.IsEmpty(ListItem.Property(Artist_Genre)) | !String.IsEmpty(ListItem.Property(Artist_YearsActive))] | [Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)]</visible>
-				<posx>$PARAM[left]</posx>
-				<posy>$PARAM[footertop]</posy>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[footertop]</top>
 				<width>$PARAM[width]</width>
 				<height>$PARAM[footerheight]</height>
 				<itemgap>7</itemgap>
@@ -1319,8 +1319,8 @@
 				<include>OpenClose</include>
 				<visible>$PARAM[visibility]</visible>
 				<visible>[$EXP[PanelShouldShow] + [Container.Content(files) | Container.Content(videos) | Container.Content() | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]] | [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]</visible>
-				<posx>$PARAM[left]</posx>
-				<posy>$PARAM[top]</posy>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
 				<width>$PARAM[width]</width>
 				<height>$PARAM[groupheight]</height>
 				<control type="label" description="Title Label">
@@ -1486,8 +1486,8 @@
 			<control type="group" id="4000" description="Media Info Panel">
 				<include>OpenClose</include>
 				<visible>$PARAM[visibility]</visible>
-				<posx>$PARAM[left]</posx>
-				<posy>$PARAM[top]</posy>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
 				<width>$PARAM[width]</width>
 				<control type="label" description="Heading Label">
 					<top>30</top>
@@ -1543,14 +1543,14 @@
 						<visible>Skin.HasSetting(ShowRatingOverlays) + $EXP[canShowRatingOverlay]</visible>
 						<control type="image">
 							<texture background="true" colordiffuse="$VAR[HighlightColor]">common/box.png</texture>
-							<posx>127</posx>
-							<posy>80</posy>
+							<left>127</left>
+							<top>80</top>
 							<height>52</height>
 							<width>52</width>
 						</control>
 						<control type="label" description="l2">
-							<posx>103</posx>
-							<posy>90</posy>
+							<left>103</left>
+							<top>90</top>
 							<height>30</height>
 							<width>100</width>
 							<font>font20_title</font>
@@ -1711,8 +1711,8 @@
 		<param name="usecontrolcoords">false</param>
 		<definition>
 			<control type="grouplist" description="Flags">
-				<posy>$PARAM[top]</posy>
-				<posx>$PARAM[left]</posx>
+				<top>$PARAM[top]</top>
+				<left>$PARAM[left]</left>
 				<visible>$PARAM[visibility]</visible>
 				<include>ContentFade</include>
 				<width>$PARAM[width]</width>
@@ -1741,11 +1741,11 @@
 		<param name="rotate">20</param>
 		<definition>
 			<control type="group">
-				<posx>-100</posx>
+				<left>-100</left>
 				<animation effect="rotate" end="$PARAM[rotate]" time="9000" delay="300" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>40</posx>
-					<posy>-180</posy>
+					<left>40</left>
+					<top>-180</top>
 					<width>12</width>
 					<height>12</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture1].png</texture>
@@ -1755,8 +1755,8 @@
 					<colordiffuse>C2FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>100</posx>
-					<posy>-100</posy>
+					<left>100</left>
+					<top>-100</top>
 					<width>18</width>
 					<height>18</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture2].png</texture>
@@ -1765,8 +1765,8 @@
 					<animation effect="slide" start="40,0" end="-20,0" time="3200" delay="300" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>200</posx>
-					<posy>-40</posy>
+					<left>200</left>
+					<top>-40</top>
 					<width>12</width>
 					<height>12</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture3].png</texture>
@@ -1775,8 +1775,8 @@
 					<animation effect="slide" start="50,0" end="-10,0" time="4300" delay="220" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>260</posx>
-					<posy>-80</posy>
+					<left>260</left>
+					<top>-80</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture4].png</texture>
@@ -1785,8 +1785,8 @@
 					<animation effect="slide" start="40,0" end="-30,0" time="4000" delay="200" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>390</posx>
-					<posy>-210</posy>
+					<left>390</left>
+					<top>-210</top>
 					<width>12</width>
 					<height>12</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture5].png</texture>
@@ -1797,11 +1797,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>100</posx>
+				<left>100</left>
 				<animation effect="rotate" start="20" end="40" time="9000" delay="800" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>80</posx>
-					<posy>-100</posy>
+					<left>80</left>
+					<top>-100</top>
 					<width>20</width>
 					<height>20</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture6].png</texture>
@@ -1810,8 +1810,8 @@
 					<animation effect="slide" start="40,0" end="-20,0" time="3200" delay="300" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>240</posx>
-					<posy>-40</posy>
+					<left>240</left>
+					<top>-40</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture1].png</texture>
@@ -1820,8 +1820,8 @@
 					<animation effect="slide" start="40,0" end="-30,0" time="4000" delay="200" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>390</posx>
-					<posy>-210</posy>
+					<left>390</left>
+					<top>-210</top>
 					<width>10</width>
 					<height>10</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture2].png</texture>
@@ -1832,12 +1832,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>600</posx>
-				<posy>-200</posy>
+				<left>600</left>
+				<top>-200</top>
 				<animation effect="rotate" end="15" time="7000" delay="500" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>-60</posy>
+					<left>20</left>
+					<top>-60</top>
 					<width>12</width>
 					<height>12</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture3].png</texture>
@@ -1846,8 +1846,8 @@
 					<animation effect="slide" start="50,0" end="-10,0" time="4300" delay="220" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>100</posx>
-					<posy>-190</posy>
+					<left>100</left>
+					<top>-190</top>
 					<width>18</width>
 					<height>18</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture4].png</texture>
@@ -1856,8 +1856,8 @@
 					<animation effect="slide" start="40,0" end="-50,0" time="3200" delay="300" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>260</posx>
-					<posy>-80</posy>
+					<left>260</left>
+					<top>-80</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>holiday/$PARAM[type]PARAM[texture5].png</texture>
@@ -1866,8 +1866,8 @@
 					<animation effect="slide" start="40,0" end="-30,0" time="4000" delay="200" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>330</posx>
-					<posy>-110</posy>
+					<left>330</left>
+					<top>-110</top>
 					<width>12</width>
 					<height>12</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture6].png</texture>
@@ -1877,8 +1877,8 @@
 					<colordiffuse>C2FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>390</posx>
-					<posy>-110</posy>
+					<left>390</left>
+					<top>-110</top>
 					<width>10</width>
 					<height>10</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture1].png</texture>
@@ -1889,11 +1889,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>900</posx>
+				<left>900</left>
 				<animation effect="rotate" start="15" end="30" time="12000" delay="300" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>100</posx>
-					<posy>-200</posy>
+					<left>100</left>
+					<top>-200</top>
 					<width>20</width>
 					<height>20</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture2].png</texture>
@@ -1902,8 +1902,8 @@
 					<animation effect="slide" start="40,0" end="-20,0" time="3200" delay="300" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>200</posx>
-					<posy>-40</posy>
+					<left>200</left>
+					<top>-40</top>
 					<width>12</width>
 					<height>12</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture3].png</texture>
@@ -1912,8 +1912,8 @@
 					<animation effect="slide" start="50,0" end="-10,0" time="4300" delay="220" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>260</posx>
-					<posy>-80</posy>
+					<left>260</left>
+					<top>-80</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture4].png</texture>
@@ -1922,8 +1922,8 @@
 					<animation effect="slide" start="40,0" end="-30,0" time="4000" delay="200" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>390</posx>
-					<posy>-110</posy>
+					<left>390</left>
+					<top>-110</top>
 					<width>10</width>
 					<height>10</height>
 					<texture>holiday/$PARAM[type]$PARAM[texture5].png</texture>
@@ -1950,8 +1950,8 @@
 			</include>
 		</control>
 		<control type="group">
-			<posx>900</posx>
-			<posy>40</posy>
+			<left>900</left>
+			<top>40</top>
 			<visible>Skin.HasSetting(holiday)</visible>
 			<include content="HolidaySub">
 				<param name="type">snow</param>
@@ -1983,8 +1983,8 @@
 		<param name="TVGuideDayID" />
 		<definition>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[Container($PARAM[TVGuideDayID]).ListItem.Property(Fanart)]</texture>
@@ -2686,8 +2686,8 @@
 		<control type="group">
 			<width>1440</width>
 			<height>240</height>
-			<posy>663</posy>
-			<posx>94</posx>
+			<top>663</top>
+			<left>94</left>
 			<visible>![Control.IsVisible(313) + System.HasHiddenInput] + Skin.HasSetting(Enable.Autocompletion)</visible>
 			<control type="panel" id="8000">
 				<height>230</height>

@@ -80,8 +80,8 @@
 				<visible>Integer.IsGreater(Container(9009).NumItems,8)</visible>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>20</posy>
+				<left>40</left>
+				<top>20</top>
 				<height>40</height>
 				<width>260</width>
 				<align>left</align>
@@ -91,7 +91,7 @@
 			</control>
 			<control type="button" id="90099">
 				<description>Close Button</description>
-				<posy>20</posy>
+				<top>20</top>
 				<right>30</right>
 				<width>40</width>
 				<height>40</height>
@@ -103,7 +103,7 @@
 				<visible>Skin.HasSetting(Enable.TouchSupport)</visible>
 			</control>
 			<control type="image" description="Power icon">
-				<posy>20</posy>
+				<top>20</top>
 				<right>30</right>
 				<width>40</width>
 				<height>40</height>
@@ -111,8 +111,8 @@
 				<visible>!Skin.HasSetting(Enable.TouchSupport)</visible>
 			</control>
 			<control type="panel" id="9009" description="PW Options">
-				<posx>0</posx>
-				<posy>80</posy>
+				<left>0</left>
+				<top>80</top>
 				<width>382</width>
 				<onleft>close</onleft>
 				<onright>close</onright>
@@ -141,7 +141,7 @@
 						<texture border="3">buttons/ButtonNF.png</texture>
 					</control>
 					<control type="image">
-						<posx>16</posx>
+						<left>16</left>
 						<width>350</width>
 						<height>60</height>
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>

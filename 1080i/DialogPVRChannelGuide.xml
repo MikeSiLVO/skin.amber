@@ -2,23 +2,23 @@
 <window>
 	<defaultcontrol always="true">11</defaultcontrol>
 	<coordinates>
-		<posx>810</posx>
-		<posy>-30</posy>
+		<left>810</left>
+		<top>-30</top>
 	</coordinates>
 	<controls>
 		<control type="group" description="Content">
 			<include>DialogOpenClose</include>
 			<control type="image">
-				<posx>290</posx>
-				<posy>120</posy>
+				<left>290</left>
+				<top>120</top>
 				<width>750</width>
 				<height>980</height>
 				<texture border="90,0,90,0">dialogs/DialogBG.png</texture>
 				<colordiffuse>eeaaaaaa</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>340</posx>
-				<posy>155</posy>
+				<left>340</left>
+				<top>155</top>
 				<width>630</width>
 				<height>36</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -28,8 +28,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="label">
-				<posx>340</posx>
-				<posy>195</posy>
+				<left>340</left>
+				<top>195</top>
 				<width>630</width>
 				<height>36</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -38,8 +38,8 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="list" id="11">
-				<posx>320</posx>
-				<posy>240</posy>
+				<left>320</left>
+				<top>240</top>
 				<width>680</width>
 				<height>799</height>
 				<onleft>close</onleft>
@@ -62,8 +62,8 @@
 						<label>$INFO[ListItem.StartTime,[B],[/B]]</label>
 					</control>
 					<control type="image">
-						<posx>144</posx>
-						<posy>17.5</posy>
+						<left>144</left>
+						<top>17.5</top>
 						<width>40</width>
 						<height>40</height>
 						<align>center</align>
@@ -73,7 +73,7 @@
 						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
-						<posx>195</posx>
+						<left>195</left>
 						<width>515</width>
 						<height>75</height>
 						<scroll>false</scroll>
@@ -81,7 +81,7 @@
 						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
-						<posx>144</posx>
+						<left>144</left>
 						<width>570</width>
 						<height>75</height>
 						<scroll>false</scroll>
@@ -105,8 +105,8 @@
 						<label>$INFO[ListItem.StartTime,[B],[/B]]</label>
 					</control>
 					<control type="image">
-						<posx>144</posx>
-						<posy>17.5</posy>
+						<left>144</left>
+						<top>17.5</top>
 						<width>40</width>
 						<height>40</height>
 						<align>center</align>
@@ -117,7 +117,7 @@
 						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
-						<posx>195</posx>
+						<left>195</left>
 						<width>515</width>
 						<height>75</height>
 						<scroll>false</scroll>
@@ -127,7 +127,7 @@
 						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
-						<posx>144</posx>
+						<left>144</left>
 						<width>570</width>
 						<height>75</height>
 						<scroll>false</scroll>
@@ -141,8 +141,8 @@
 			<control type="scrollbar" id="60">
 				<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 				<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-				<posx>1003</posx>
-				<posy>240</posy>
+				<left>1003</left>
+				<top>240</top>
 				<width>36</width>
 				<height>800</height>
 				<onleft>11</onleft>

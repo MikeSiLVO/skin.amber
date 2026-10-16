@@ -15,20 +15,20 @@
 				<effect type="fade" start="100" end="0" time="100" />
 			</animation>
 			<control type="image" id="999" description="Menu BG">
-				<posy>-24</posy>
+				<top>-24</top>
 				<height>1020</height>
 				<width>525</width>
 				<texture border="0,40,0,40">dialogs/ContextMenu.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="group">
-				<posx>430</posx>
-				<posy>-23.5</posy>
+				<left>430</left>
+				<top>-23.5</top>
 				<include>DialogCloseButtonCommons</include>
 				<visible>Skin.HasSetting(Enable.TouchSupport)</visible>
 			</control>
 			<control type="grouplist" id="996" description="Context menu container">
-				<posx>16</posx>
+				<left>16</left>
 				<include condition="Skin.HasSetting(Enable.TouchSupport)">ContextTopTouch</include>
 				<include condition="!Skin.HasSetting(Enable.TouchSupport)">ContextTopStandard</include>
 				<width>530</width>

@@ -191,7 +191,7 @@
 			<control type="scrollbar" id="65">
 				<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 				<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-				<posx>20r</posx>
+				<left>20r</left>
 				<top>60</top>
 				<width>36</width>
 				<height>990</height>
@@ -215,8 +215,8 @@
 				<texturenofocus />
 				<width>40</width>
 				<onleft>55</onleft>
-				<posx>50r</posx>
-				<posy>75</posy>
+				<left>50r</left>
+				<top>75</top>
 				<height>990</height>
 				<ondown>SetFocus(55)</ondown>
 				<ondown>Action(nextletter)</ondown>
@@ -235,8 +235,8 @@
 			</control>
 
 			<control type="grouplist" id="65551">
-				<posx>36r</posx>
-				<posy>75</posy>
+				<left>36r</left>
+				<top>75</top>
 				<height>990</height>
 				<width>42</width>
 				<itemgap>0</itemgap>
@@ -315,8 +315,8 @@
 			</control>
 
 			<control type="grouplist" id="65552">
-				<posx>36r</posx>
-				<posy>75</posy>
+				<left>36r</left>
+				<top>75</top>
 				<height>990</height>
 				<width>42</width>
 				<itemgap>0</itemgap>

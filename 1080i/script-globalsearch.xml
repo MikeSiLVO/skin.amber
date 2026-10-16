@@ -7,8 +7,8 @@
 		<control type="group">
 			<control type="group">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<include>Dimensions_Fullscreen</include>
 					<aspectratio>scale</aspectratio>
 					<texture background="true">$INFO[Container.ListItem.Art(fanart)]</texture>
@@ -36,8 +36,8 @@
 				</control>
 
 				<control type="list" id="9000">
-					<posx>65</posx>
-					<posy>120</posy>
+					<left>65</left>
+					<top>120</top>
 					<width>322</width>
 					<height>780</height>
 					<onup>9000</onup>
@@ -55,13 +55,13 @@
 						</control>
 						<control type="group">
 							<control type="label" description="Main Label">
-								<posx>10</posx>
+								<left>10</left>
 								<width>301</width>
 								<height>60</height>
 								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="label">
-								<posx>10</posx>
+								<left>10</left>
 								<width>301</width>
 								<height>60</height>
 								<align>right</align>
@@ -78,7 +78,7 @@
 						</control>
 						<control type="group">
 							<control type="label" description="Main Label">
-								<posx>10</posx>
+								<left>10</left>
 								<width>301</width>
 								<height>60</height>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -86,7 +86,7 @@
 								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="label">
-								<posx>10</posx>
+								<left>10</left>
 								<width>301</width>
 								<height>60</height>
 								<align>right</align>
@@ -155,16 +155,16 @@
 				</control>
 
 				<control type="image" description="Footer Dim BG">
-					<posx>454</posx>
-					<posy>818</posy>
+					<left>454</left>
+					<top>818</top>
 					<width>1421</width>
 					<height>207</height>
 					<texture>img/GradientNew.png</texture>
 					<colordiffuse>dfcebe9e</colordiffuse>
 				</control>
 				<control type="image" description="Footer">
-					<posx>454</posx>
-					<posy>818</posy>
+					<left>454</left>
+					<top>818</top>
 					<width>1421</width>
 					<height>207</height>
 					<texture>OSD/FS_OSDBackground.png</texture>
@@ -173,8 +173,8 @@
 
 				<control type="group" description="Media Info Lite">
 					<include>ContentFade</include>
-					<posy>855</posy>
-					<posx>580</posx>
+					<top>855</top>
+					<left>580</left>
 					<width>1140</width>
 					<control type="label" description="Title shadow">
 						<left>4</left>
@@ -199,7 +199,7 @@
 						<label>$VAR[panelheading]</label>
 					</control>
 					<control type="label" description="Details">
-						<posy>59</posy>
+						<top>59</top>
 						<width>1140</width>
 						<height>50</height>
 						<align>center</align>
@@ -300,8 +300,8 @@
 
 			<control type="group">
 				<control type="grouplist" id="8000">
-					<posx>65</posx>
-					<posy>830</posy>
+					<left>65</left>
+					<top>830</top>
 					<width>322</width>
 					<height>100</height>
 					<onright>9000</onright>

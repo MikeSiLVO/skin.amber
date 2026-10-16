@@ -9,8 +9,8 @@
 		<control type="list" id="10051">
 			<itemlayout />
 			<focusedlayout />
-			<posx>-20</posx>
-			<posy>-20</posy>
+			<left>-20</left>
+			<top>-20</top>
 			<width>1</width>
 			<height>1</height>
 		</control>
@@ -49,10 +49,10 @@
 			</include>
 			<!-- Person info details -->
 			<control type="group" id="300">
-				<posx>700</posx>
-				<posy>0</posy>
+				<left>700</left>
+				<top>0</top>
 				<control type="label" description="Person name">
-					<posy>10</posy>
+					<top>10</top>
 					<width>950</width>
 					<height>60</height>
 					<font>InfoTitle</font>
@@ -62,7 +62,7 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="image" description="Powered by TMDb">
-					<posy>8</posy>
+					<top>8</top>
 					<left>995</left>
 					<height>70</height>
 					<width>177</width>
@@ -71,7 +71,7 @@
 					<aligny>center</aligny>
 				</control>
 				<control type="image" description="Line Split">
-					<posy>83</posy>
+					<top>83</top>
 					<width>1180</width>
 					<height>1</height>
 					<texture>img/LineL.png</texture>
@@ -79,7 +79,7 @@
 				</control>
 				<control type="textbox" id="900031" description="Biography">
 					<include>VisibleFadeEffectDelay</include>
-					<posy>90</posy>
+					<top>90</top>
 					<left>5</left>
 					<width>620</width>
 					<height>355</height>
@@ -90,7 +90,7 @@
 					<label fallback="19055">$INFO[Container(10051).ListItem.Property(Biography)]</label>
 				</control>
 				<control type="radiobutton" id="90003">
-					<posy>447</posy>
+					<top>447</top>
 					<left>588.3</left>
 					<ondown>9000</ondown>
 					<onright>9009</onright>
@@ -113,7 +113,7 @@
 					<onclick>ActivateWindow(1124)</onclick>
 				</control>
 				<control type="image" description="Line Split">
-					<posy>90</posy>
+					<top>90</top>
 					<left>637</left>
 					<width>1</width>
 					<height>375</height>
@@ -178,7 +178,7 @@
 			<!-- Buttons -->
 			<control type="grouplist" id="9000">
 				<left>700</left>
-				<posy>527</posy>
+				<top>527</top>
 				<width>1180</width>
 				<height>90</height>
 				<align>center</align>
@@ -198,8 +198,8 @@
 			</control>
 			<!-- Info Lists for person -->
 			<control type="grouplist" id="91001">
-				<posx>700</posx>
-				<posy>622</posy>
+				<left>700</left>
+				<top>622</top>
 				<width>1180</width>
 				<height>450</height>
 				<scrolltime tween="quadratic">400</scrolltime>

@@ -46,8 +46,8 @@
 				<orientation>horizontal</orientation>
 				<itemlayout height="270" width="360">
 					<control type="image">
-						<posx>15</posx>
-						<posy>8</posy>
+						<left>15</left>
+						<top>8</top>
 						<width>320</width>
 						<height>200</height>
 						<aspectratio>scale</aspectratio>
@@ -55,15 +55,15 @@
 						<bordersize>16</bordersize>
 					</control>
 					<control type="image">
-						<posx>159</posx>
-						<posy>24</posy>
+						<left>159</left>
+						<top>24</top>
 						<width>160</width>
 						<height>36</height>
 						<texture>img/OverlayStripe.png</texture>
 					</control>
 					<control type="label">
-						<posx>159</posx>
-						<posy>24</posy>
+						<left>159</left>
+						<top>24</top>
 						<width>160</width>
 						<height>36</height>
 						<align>center</align>
@@ -81,8 +81,8 @@
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>220</posy>
+						<left>10</left>
+						<top>220</top>
 						<width>338</width>
 						<height>36</height>
 						<align>center</align>
@@ -93,8 +93,8 @@
 				</itemlayout>
 				<focusedlayout height="270" width="360">
 					<control type="image">
-						<posx>15</posx>
-						<posy>8</posy>
+						<left>15</left>
+						<top>8</top>
 						<width>320</width>
 						<height>200</height>
 						<aspectratio>scale</aspectratio>
@@ -103,15 +103,15 @@
 						<bordersize>16</bordersize>
 					</control>
 					<control type="image">
-						<posx>159</posx>
-						<posy>24</posy>
+						<left>159</left>
+						<top>24</top>
 						<width>160</width>
 						<height>36</height>
 						<texture>img/OverlayStripe.png</texture>
 					</control>
 					<control type="label">
-						<posx>159</posx>
-						<posy>24</posy>
+						<left>159</left>
+						<top>24</top>
 						<width>160</width>
 						<height>36</height>
 						<align>center</align>
@@ -131,8 +131,8 @@
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>220</posy>
+						<left>10</left>
+						<top>220</top>
 						<width>338</width>
 						<height>36</height>
 						<align>center</align>

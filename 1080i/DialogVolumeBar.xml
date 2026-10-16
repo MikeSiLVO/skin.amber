@@ -8,16 +8,16 @@
 				<visible>!Player.Passthrough</visible>
 				<control type="image" description="Speaker">
 					<visible>!Player.Passthrough</visible>
-					<posx>60</posx>
-					<posy>72</posy>
+					<left>60</left>
+					<top>72</top>
 					<width>129</width>
 					<height>129</height>
 					<texture>OSD/Volume.png</texture>
 					<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 				</control>
 				<control type="progress" id="20">
-					<posx>-300</posx>
-					<posy>-300</posy>
+					<left>-300</left>
+					<top>-300</top>
 					<width>324</width>
 					<height>81</height>
 					<texturebg />
@@ -27,8 +27,8 @@
 					<info>Player.Volume</info>
 				</control>
 				<control type="label">
-					<posx>180</posx>
-					<posy>91</posy>
+					<left>180</left>
+					<top>91</top>
 					<width>353</width>
 					<height>82</height>
 					<font>MainLabelBigTitle</font>
@@ -42,8 +42,8 @@
 				<visible>Player.Passthrough</visible>
 				<control type="image" description="Speaker passthrough">
 					<visible>Player.Passthrough</visible>
-					<posx>60</posx>
-					<posy>72</posy>
+					<left>60</left>
+					<top>72</top>
 					<width>129</width>
 					<height>129</height>
 					<texture>OSD/VolumeMuted.png</texture>
@@ -52,8 +52,8 @@
 			</control>
 		</control>
 		<control type="image" description="Player Muted">
-			<posx>60</posx>
-			<posy>72</posy>
+			<left>60</left>
+			<top>72</top>
 			<width>129</width>
 			<height>129</height>
 			<texture>OSD/VolumeMuted.png</texture>

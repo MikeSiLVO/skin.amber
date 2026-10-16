@@ -826,8 +826,8 @@
 				<width>$PARAM[width]</width>
 				<left>$PARAM[left]</left>
 				<control type="image" description="BG">
-					<posx>-6</posx>
-					<posy>-6</posy>
+					<left>-6</left>
+					<top>-6</top>
 					<width>$PARAM[borderwidth]</width>
 					<height>$PARAM[borderheight]</height>
 					<texture border="8">img/WhiteRoundedST2.png</texture>
@@ -1240,8 +1240,8 @@
 								<height>40</height>
 							</control>
 							<control type="image" description="BG">
-								<posx>-6</posx>
-								<posy>40</posy>
+								<left>-6</left>
+								<top>40</top>
 								<width>1105</width>
 								<height>706</height>
 								<texture border="8">img/WhiteRoundedST2.png</texture>
@@ -1249,12 +1249,12 @@
 								<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 							</control>
 							<control type="image">
-								<posy>46</posy>
+								<top>46</top>
 								<height>694</height>
 								<texture>colors/black.png</texture>
 							</control>
 							<control type="videowindow">
-								<posy>46</posy>
+								<top>46</top>
 								<height>694</height>
 								<animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
 							</control>
@@ -1409,8 +1409,8 @@
 								<height>40</height>
 							</control>
 							<control type="image" description="BG">
-								<posx>-6</posx>
-								<posy>40</posy>
+								<left>-6</left>
+								<top>40</top>
 								<width>1105</width>
 								<height>706</height>
 								<texture border="8">img/WhiteRoundedST2.png</texture>
@@ -1418,12 +1418,12 @@
 								<colordiffuse>$VAR[HighlightColor]</colordiffuse>
 							</control>
 							<control type="image">
-								<posy>46</posy>
+								<top>46</top>
 								<height>694</height>
 								<texture>colors/black.png</texture>
 							</control>
 							<control type="videowindow">
-								<posy>46</posy>
+								<top>46</top>
 								<height>694</height>
 								<animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
 							</control>

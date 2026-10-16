@@ -12,8 +12,8 @@
 			<include>ContentFade</include>
 			<control type="list" id="50">
 				<viewtype label="535">list</viewtype>
-				<posx>680</posx>
-				<posy>480</posy>
+				<left>680</left>
+				<top>480</top>
 				<width>1210</width>
 				<height>576</height>
 				<pagecontrol>60</pagecontrol>
@@ -29,7 +29,7 @@
 						<texture flipy="true" border="3">list/ListNF.png</texture>
 					</control>
 					<control type="label">
-						<posx>25</posx>
+						<left>25</left>
 						<width>570</width>
 						<height>72</height>
 						<scroll>false</scroll>
@@ -50,13 +50,13 @@
 				</itemlayout>
 				<focusedlayout height="72" width="1210">
 					<control type="image">
-						<posy>1</posy>
+						<top>1</top>
 						<width>1210</width>
 						<height>69</height>
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
 					<control type="label">
-						<posx>25</posx>
+						<left>25</left>
 						<width>1210</width>
 						<height>72</height>
 						<scroll>false</scroll>

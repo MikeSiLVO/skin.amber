@@ -1374,13 +1374,13 @@
 			<control type="group">
 				<visible>Skin.HasSetting(502_ShowFloor)</visible>
 				<control type="image" description="Footer Dim BG">
-					<posy>960</posy>
+					<top>960</top>
 					<width>1920</width>
 					<height>207</height>
 					<texture>img/GradientNew.png</texture>
 				</control>
 				<control type="image" description="Footer">
-					<posy>960</posy>
+					<top>960</top>
 					<width>1920</width>
 					<height>207</height>
 					<texture>OSD/FS_OSDBackground.png</texture>
@@ -1388,16 +1388,16 @@
 				<control type="group">
 					<visible>Skin.HasSetting(ShowMPAA) | Skin.HasSetting(ShowStudio) | Skin.HasSetting(ShowAudioSub) | Skin.HasSetting(ShowRatingMain) | !Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
 					<control type="image" description="Line Split">
-						<posy>985</posy>
-						<posx>755</posx>
+						<top>985</top>
+						<left>755</left>
 						<width>1</width>
 						<height>95</height>
 						<texture>img/LineL.png</texture>
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image" description="Line Split">
-						<posy>985</posy>
-						<posx>1070</posx>
+						<top>985</top>
+						<left>1070</left>
 						<width>1</width>
 						<height>95</height>
 						<texture>img/LineL.png</texture>
@@ -1405,8 +1405,8 @@
 						<visible>!Container.Content(tvshows) + !Container.Content(seasons)</visible>
 					</control>
 					<control type="image" description="Line Split">
-						<posy>985</posy>
-						<posx>1162</posx>
+						<top>985</top>
+						<left>1162</left>
 						<width>1</width>
 						<height>95</height>
 						<texture>img/LineL.png</texture>
@@ -1451,8 +1451,8 @@
 			<control type="scrollbar" id="6502">
 				<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 				<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-				<posx>21r</posx>
-				<posy>80</posy>
+				<left>21r</left>
+				<top>80</top>
 				<width>36</width>
 				<height>895</height>
 				<texturesliderbackground />
@@ -1475,8 +1475,8 @@
 				<texturenofocus />
 				<width>40</width>
 				<onleft>502</onleft>
-				<posx>50r</posx>
-				<posy>55</posy>
+				<left>50r</left>
+				<top>55</top>
 				<height>920</height>
 				<ondown>SetFocus(502)</ondown>
 				<ondown>Action(nextletter)</ondown>
@@ -1495,8 +1495,8 @@
 			</control>
 
 			<control type="grouplist" id="65021">
-				<posx>36r</posx>
-				<posy>55</posy>
+				<left>36r</left>
+				<top>55</top>
 				<height>920</height>
 				<width>42</width>
 				<itemgap>0</itemgap>
@@ -1572,8 +1572,8 @@
 			</control>
 
 			<control type="grouplist" id="65022">
-				<posx>36r</posx>
-				<posy>55</posy>
+				<left>36r</left>
+				<top>55</top>
 				<height>920</height>
 				<width>42</width>
 				<itemgap>0</itemgap>

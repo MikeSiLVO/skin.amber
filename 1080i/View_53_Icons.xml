@@ -13,8 +13,8 @@
 			<include>ContentFade</include>
 			<control type="panel" id="53" description="Grid">
 				<viewtype label="$LOCALIZE[536]">list</viewtype>
-				<posx>20</posx>
-				<posy>60</posy>
+				<left>20</left>
+				<top>60</top>
 				<width>1860</width>
 				<height>903</height>
 				<orientation>vertical</orientation>
@@ -71,13 +71,13 @@
 				</include>
 			</control>
 			<control type="image" description="Footer Dim BG">
-				<posy>911</posy>
+				<top>911</top>
 				<width>1920</width>
 				<height>207</height>
 				<texture>img/GradientNew.png</texture>
 			</control>
 			<control type="image" description="Footer">
-				<posy>911</posy>
+				<top>911</top>
 				<width>1920</width>
 				<height>207</height>
 				<texture>OSD/FS_OSDBackground.png</texture>
@@ -93,8 +93,8 @@
 			<control type="scrollbar" id="63">
 				<animation effect="slide" start="0,0" end="-6,0" time="150">Focus</animation>
 				<animation effect="slide" start="-6,0" end="0,0" time="300">UnFocus</animation>
-				<posx>20r</posx>
-				<posy>60</posy>
+				<left>20r</left>
+				<top>60</top>
 				<width>36</width>
 				<height>903</height>
 				<texturesliderbackground />
@@ -117,8 +117,8 @@
 				<texturenofocus />
 				<width>40</width>
 				<onleft>55</onleft>
-				<posx>50r</posx>
-				<posy>65</posy>
+				<left>50r</left>
+				<top>65</top>
 				<height>903</height>
 				<ondown>SetFocus(53)</ondown>
 				<ondown>Action(nextletter)</ondown>
@@ -137,8 +137,8 @@
 			</control>
 
 			<control type="grouplist" id="63531">
-				<posx>36r</posx>
-				<posy>65</posy>
+				<left>36r</left>
+				<top>65</top>
 				<height>903</height>
 				<width>42</width>
 				<itemgap>0</itemgap>
@@ -208,8 +208,8 @@
 			</control>
 
 			<control type="grouplist" id="63532">
-				<posx>36r</posx>
-				<posy>65</posy>
+				<left>36r</left>
+				<top>65</top>
 				<height>903</height>
 				<width>42</width>
 				<itemgap>0</itemgap>

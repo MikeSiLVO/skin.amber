@@ -17,12 +17,12 @@
 				<effect type="zoom" start="100" end="95" center="960,540" time="100" />
 				<effect type="fade" start="100" end="0" time="100" />
 			</animation>
-			<posx>172</posx>
-			<posy>180</posy>
+			<left>172</left>
+			<top>180</top>
 			<control type="group">
 				<control type="image">
-					<posx>326</posx>
-					<posy>-20</posy>
+					<left>326</left>
+					<top>-20</top>
 					<width>1120</width>
 					<height>580</height>
 					<texture>dialogs/SettingsBG.png</texture>
@@ -30,8 +30,8 @@
 					<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				</control>
 				<control type="image">
-					<posx>326</posx>
-					<posy>-20</posy>
+					<left>326</left>
+					<top>-20</top>
 					<width>1320</width>
 					<height>780</height>
 					<texture>dialogs/SettingsBG.png</texture>
@@ -39,8 +39,8 @@
 					<visible>[String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				</control>
 				<control type="label">
-					<posx>545</posx>
-					<posy>5</posy>
+					<left>545</left>
+					<top>5</top>
 					<width>885</width>
 					<height>30</height>
 					<align>center</align>
@@ -52,8 +52,8 @@
 					<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				</control>
 				<control type="label">
-					<posx>306</posx>
-					<posy>5</posy>
+					<left>306</left>
+					<top>5</top>
 					<width>1600</width>
 					<height>30</height>
 					<align>center</align>
@@ -94,7 +94,7 @@
 			<control type="group">
 				<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				<control type="image" description="Line Split">
-					<posy>40</posy>
+					<top>40</top>
 					<left>550</left>
 					<width>860</width>
 					<height>1</height>
@@ -102,7 +102,7 @@
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image" description="Line Split">
-					<posy>50</posy>
+					<top>50</top>
 					<left>1145</left>
 					<width>1</width>
 					<height>480</height>
@@ -113,8 +113,8 @@
 			<control type="group">
 				<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				<control type="list" id="100">
-					<posx>350</posx>
-					<posy>40</posy>
+					<left>350</left>
+					<top>40</top>
 					<width>184</width>
 					<height>480</height>
 					<orientation>vertical</orientation>
@@ -131,7 +131,7 @@
 							<texture border="3">list/ListNF.png</texture>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>172</width>
 							<height>60</height>
 							<label>$INFO[ListItem.Label]</label>
@@ -153,7 +153,7 @@
 						</control>
 						<control type="label">
 							<visible>Control.HasFocus(100)</visible>
-							<posx>10</posx>
+							<left>10</left>
 							<width>172</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -163,7 +163,7 @@
 						</control>
 						<control type="label">
 							<visible>!Control.HasFocus(100)</visible>
-							<posx>10</posx>
+							<left>10</left>
 							<width>172</width>
 							<height>60</height>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
@@ -179,8 +179,8 @@
 			<control type="group">
 				<visible>[String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				<control type="list" id="100">
-					<posx>360</posx>
-					<posy>70</posy>
+					<left>360</left>
+					<top>70</top>
 					<width>208</width>
 					<height>600</height>
 					<orientation>vertical</orientation>
@@ -197,7 +197,7 @@
 							<texture border="3">list/ListNF.png</texture>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>200</width>
 							<height>60</height>
 							<label>$INFO[ListItem.Label]</label>
@@ -219,7 +219,7 @@
 						</control>
 						<control type="label">
 							<visible>Control.HasFocus(100)</visible>
-							<posx>10</posx>
+							<left>10</left>
 							<width>200</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -229,7 +229,7 @@
 						</control>
 						<control type="label">
 							<visible>!Control.HasFocus(100)</visible>
-							<posx>10</posx>
+							<left>10</left>
 							<width>200</width>
 							<height>60</height>
 							<selectedcolor>$VAR[HighlightColor]</selectedcolor>
@@ -245,8 +245,8 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
-				<posx>325</posx>
-				<posy>-150</posy>
+				<left>325</left>
+				<top>-150</top>
 				<width>36</width>
 				<height>600</height>
 				<texturesliderbackground />

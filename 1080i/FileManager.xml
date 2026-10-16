@@ -6,8 +6,8 @@
 		<include condition="!Skin.HasSetting(Hide.TopBar.Sub)">Time</include>
 		<control type="image" description="Left panel">
 			<include>OpenClose</include>
-			<posx>0</posx>
-			<posy>48</posy>
+			<left>0</left>
+			<top>48</top>
 			<width>968</width>
 			<height>1024</height>
 			<texture border="30">dialogs/TinyDialog.png</texture>
@@ -15,8 +15,8 @@
 		</control>
 		<control type="image" description="Right panel">
 			<include>OpenClose</include>
-			<posx>970r</posx>
-			<posy>48</posy>
+			<left>970r</left>
+			<top>48</top>
 			<width>968</width>
 			<height>1024</height>
 			<texture border="30">dialogs/TinyDialog.png</texture>
@@ -25,11 +25,11 @@
 		<control type="group" description="Content">
 			<include>OpenClose</include>
 			<control type="group" description="Left panel">
-				<posx>20</posx>
-				<posy>48</posy>
+				<left>20</left>
+				<top>48</top>
 				<control type="label" id="101" description="Header Label">
-					<posx>0</posx>
-					<posy>24</posy>
+					<left>0</left>
+					<top>24</top>
 					<width>918</width>
 					<align>center</align>
 					<haspath>true</haspath>
@@ -38,7 +38,7 @@
 					<shadowcolor />
 				</control>
 				<control type="panel" id="20" description="Left File List">
-					<posy>100</posy>
+					<top>100</top>
 					<width>928</width>
 					<height>840</height>
 					<onleft>60</onleft>
@@ -60,7 +60,7 @@
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>908</width>
 							<height>60</height>
 							<scroll>false</scroll>
@@ -82,7 +82,7 @@
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>908</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -92,15 +92,15 @@
 					</focusedlayout>
 				</control>
 				<control type="label" id="12" description="Footer Label">
-					<posx>6</posx>
-					<posy>950</posy>
+					<left>6</left>
+					<top>950</top>
 					<width>928</width>
 					<scroll>true</scroll>
 					<align>left</align>
 				</control>
 				<control type="scrollbar" id="60">
-					<posx>-21</posx>
-					<posy>60</posy>
+					<left>-21</left>
+					<top>60</top>
 					<width>36</width>
 					<height>918</height>
 					<texturesliderbackground />
@@ -114,11 +114,11 @@
 				</control>
 			</control>
 			<control type="group" description="Right panel">
-				<posx>950r</posx>
-				<posy>48</posy>
+				<left>950r</left>
+				<top>48</top>
 				<control type="label" id="102" description="Header Label">
-					<posx>0</posx>
-					<posy>24</posy>
+					<left>0</left>
+					<top>24</top>
 					<width>838</width>
 					<align>center</align>
 					<haspath>true</haspath>
@@ -127,15 +127,15 @@
 					<shadowcolor />
 				</control>
 				<control type="group">
-					<posx>865</posx>
-					<posy>1</posy>
+					<left>865</left>
+					<top>1</top>
 					<include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
 						<param name="Action">Action(Back)</param>
 						<param name="ondown">21</param>
 					</include>
 				</control>
 				<control type="panel" id="21" description="Right File List">
-					<posy>100</posy>
+					<top>100</top>
 					<width>928</width>
 					<height>840</height>
 					<onleft>20</onleft>
@@ -157,7 +157,7 @@
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>908</width>
 							<height>60</height>
 							<scroll>false</scroll>
@@ -179,7 +179,7 @@
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>908</width>
 							<height>60</height>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -189,15 +189,15 @@
 					</focusedlayout>
 				</control>
 				<control type="label" id="13" description="Footer Label">
-					<posx>6</posx>
-					<posy>950</posy>
+					<left>6</left>
+					<top>950</top>
 					<width>928</width>
 					<scroll>true</scroll>
 					<align>left</align>
 				</control>
 				<control type="scrollbar" id="61">
-					<posx>910</posx>
-					<posy>60</posy>
+					<left>910</left>
+					<top>60</top>
 					<width>36</width>
 					<height>918</height>
 					<texturesliderbackground />

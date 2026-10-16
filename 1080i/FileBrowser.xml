@@ -5,18 +5,18 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
-			<posy>25</posy>
+			<top>25</top>
 			<control type="image">
-				<posx>36</posx>
-				<posy>35</posy>
+				<left>36</left>
+				<top>35</top>
 				<width>1849</width>
 				<height>1010</height>
 				<texture flipx="true">dialogs/SettingsBG.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" id="411">
-				<posx>120</posx>
-				<posy>90</posy>
+				<left>120</left>
+				<top>90</top>
 				<width>1200</width>
 				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -27,8 +27,8 @@
 					<height>834</height>
 					<control type="image" description="Item Thumb NOT FLIPPED">
 						<visible>!String.Contains(Control.GetLabel(416),*)</visible>
-						<posx>150</posx>
-						<posy>222</posy>
+						<left>150</left>
+						<top>222</top>
 						<width>522</width>
 						<height>480</height>
 						<include>Icon_Fade</include>
@@ -37,8 +37,8 @@
 					</control>
 					<control type="image" description="Item Thumb FLIPPED">
 						<visible>String.Contains(Control.GetLabel(416),*)</visible>
-						<posx>150</posx>
-						<posy>222</posy>
+						<left>150</left>
+						<top>222</top>
 						<width>522</width>
 						<height>480</height>
 						<include>Icon_Fade</include>
@@ -49,8 +49,8 @@
 				<control type="group" description="List">
 					<control type="list" id="450" description="No Thumbs">
 						<viewtype label="$LOCALIZE[535]">list</viewtype>
-						<posx>711</posx>
-						<posy>156</posy>
+						<left>711</left>
+						<top>156</top>
 						<width>820</width>
 						<height>839</height>
 						<pagecontrol>60</pagecontrol>
@@ -66,14 +66,14 @@
 								<texture border="3">list/ListNF.png</texture>
 							</control>
 							<control type="label">
-								<posx>30</posx>
+								<left>30</left>
 								<width>740</width>
 								<height>60</height>
 								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
-								<posx>800</posx>
+								<left>800</left>
 								<width>795</width>
 								<height>60</height>
 								<aligny>center</aligny>
@@ -89,7 +89,7 @@
 								<animation effect="fade" start="100" end="0" time="100" condition="!Control.HasFocus(450)">Conditional</animation>
 							</control>
 							<control type="label">
-								<posx>30</posx>
+								<left>30</left>
 								<width>740</width>
 								<height>60</height>
 								<aligny>center</aligny>
@@ -99,7 +99,7 @@
 								<visible>Control.HasFocus(450)</visible>
 							</control>
 							<control type="label">
-								<posx>800</posx>
+								<left>800</left>
 								<width>795</width>
 								<height>60</height>
 								<aligny>center</aligny>
@@ -110,7 +110,7 @@
 								<visible>Control.HasFocus(450)</visible>
 							</control>
 							<control type="label">
-								<posx>30</posx>
+								<left>30</left>
 								<width>740</width>
 								<height>60</height>
 								<aligny>center</aligny>
@@ -118,7 +118,7 @@
 								<visible>!Control.HasFocus(450)</visible>
 							</control>
 							<control type="label">
-								<posx>800</posx>
+								<left>800</left>
 								<width>795</width>
 								<height>60</height>
 								<aligny>center</aligny>
@@ -129,8 +129,8 @@
 						</focusedlayout>
 					</control>
 					<control type="panel" id="451" description="Thumbs">
-						<posx>711</posx>
-						<posy>156</posy>
+						<left>711</left>
+						<top>156</top>
 						<width>820</width>
 						<height>839</height>
 						<pagecontrol>60</pagecontrol>
@@ -146,22 +146,22 @@
 								<texture border="3">list/ListNF.png</texture>
 							</control>
 							<control type="image" description="Thumb">
-								<posx>10</posx>
-								<posy>10</posy>
+								<left>10</left>
+								<top>10</top>
 								<width>120</width>
 								<height>100</height>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="label">
-								<posx>150</posx>
+								<left>150</left>
 								<width>550</width>
 								<height>120</height>
 								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
-								<posx>800</posx>
+								<left>800</left>
 								<width>795</width>
 								<height>120</height>
 								<aligny>center</aligny>
@@ -176,22 +176,22 @@
 								<texture border="2">buttons/ButtonFO.png</texture>
 							</control>
 							<control type="image" description="Thumb">
-								<posx>10</posx>
-								<posy>10</posy>
+								<left>10</left>
+								<top>10</top>
 								<width>120</width>
 								<height>100</height>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="label">
-								<posx>150</posx>
+								<left>150</left>
 								<width>550</width>
 								<height>120</height>
 								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
-								<posx>800</posx>
+								<left>800</left>
 								<width>795</width>
 								<height>120</height>
 								<aligny>center</aligny>
@@ -201,8 +201,8 @@
 						</focusedlayout>
 					</control>
 					<control type="grouplist" id="9000">
-						<posx>1533</posx>
-						<posy>156</posy>
+						<left>1533</left>
+						<top>156</top>
 						<width>324</width>
 						<height>240</height>
 						<onleft>450</onleft>
@@ -245,21 +245,21 @@
 				</control>
 			</control>
 			<control type="label" id="412">
-				<posx>126</posx>
-				<posy>900</posy>
+				<left>126</left>
+				<top>900</top>
 				<width>579</width>
 				<scroll>true</scroll>
 				<font>font22</font>
 			</control>
 			<control type="image" description="Top line">
-				<posx>66</posx>
-				<posy>96</posy>
+				<left>66</left>
+				<top>96</top>
 				<width>1494</width>
 				<height>60</height>
 				<texture border="3">list/ListNF.png</texture>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1836</posx>
+				<left>1836</left>
 				<width>36</width>
 				<height>1020</height>
 				<texturesliderbackground />

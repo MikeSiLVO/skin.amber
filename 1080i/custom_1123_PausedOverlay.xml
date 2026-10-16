@@ -33,15 +33,15 @@
 				<control type="group" id="20">
 					<visible>![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))]</visible>
 					<control type="image" id="23">
-						<posx>30</posx>
-						<posy>25</posy>
+						<left>30</left>
+						<top>25</top>
 						<width>1305</width>
 						<height>1</height>
 						<texture>img/LineST.png</texture>
 					</control>
 					<control type="textbox" description="Plot" id="1">
-						<posx>30</posx>
-						<posy>-110</posy>
+						<left>30</left>
+						<top>-110</top>
 						<width>1305</width>
 						<height>120</height>
 						<align>justify</align>
@@ -53,15 +53,15 @@
 				<control type="group" id="20">
 					<visible>[String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))]</visible>
 					<control type="image" id="23">
-						<posx>30</posx>
-						<posy>25</posy>
+						<left>30</left>
+						<top>25</top>
 						<width>1845</width>
 						<height>1</height>
 						<texture>img/LineST.png</texture>
 					</control>
 					<control type="textbox" description="Plot" id="1">
-						<posx>30</posx>
-						<posy>-110</posy>
+						<left>30</left>
+						<top>-110</top>
 						<width>1845</width>
 						<height>120</height>
 						<align>justify</align>
@@ -97,8 +97,8 @@
 				<control type="group" id="1">
 					<visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
 					<control type="image" id="24">
-						<posx>459r</posx>
-						<posy>666r</posy>
+						<left>459r</left>
+						<top>666r</top>
 						<width>439</width>
 						<height>636</height>
 						<texture background="true">$VAR[VideoPlayerIcon]</texture>
@@ -107,8 +107,8 @@
 						<visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
 					</control>
 					<control type="image" id="25">
-						<posx>465r</posx>
-						<posy>682r</posy>
+						<left>465r</left>
+						<top>682r</top>
 						<width>439</width>
 						<height>636</height>
 						<texture background="true">$VAR[VideoPlayerIcon]</texture>
@@ -122,7 +122,7 @@
 				<left>30</left>
 				<control type="label" id="26">
 					<description>Movie Info Studio</description>
-					<posy>50</posy>
+					<top>50</top>
 					<width>780</width>
 					<height>40</height>
 					<align>left</align>
@@ -158,7 +158,7 @@
 					</control>
 				</control>
 				<control type="label" id="5">
-					<posy>176</posy>
+					<top>176</top>
 					<width>640</width>
 					<height>40</height>
 					<align>left</align>
@@ -170,7 +170,7 @@
 			</control>
 			<!-- Media Flags -->
 			<control type="group" id="1">
-				<posx>855</posx>
+				<left>855</left>
 				<width>480</width>
 				<control type="grouplist" id="3">
 					<visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>

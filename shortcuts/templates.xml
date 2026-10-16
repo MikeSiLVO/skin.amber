@@ -4780,8 +4780,8 @@
 		<preset content="InfoLineList" />
 		<controls>
 			<control type="list" id="$PROPERTY[listId]">
-				<posx>-20</posx>
-				<posy>-20</posy>
+				<left>-20</left>
+				<top>-20</top>
 				<width>1</width>
 				<height>1</height>
 				<itemlayout width="1" height="1" />

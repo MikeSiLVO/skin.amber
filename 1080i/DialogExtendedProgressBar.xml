@@ -5,7 +5,7 @@
 	<controls>
 		<control type="group">
 			<animation effect="slide" start="0,0" end="0,-200" time="200" delay="200" reversible="true" condition="Window.IsVisible(FullScreenVideo)">Conditional</animation>
-			<posx>595</posx>
+			<left>595</left>
 			<control type="image" description="background">
 				<width>750</width>
 				<height>60</height>
@@ -13,8 +13,8 @@
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="label" id="30" description="Header Label">
-				<posx>132</posx>
-				<posy>2</posy>
+				<left>132</left>
+				<top>2</top>
 				<width>560</width>
 				<height>20</height>
 				<font>ExtProgressBar2</font>
@@ -22,8 +22,8 @@
 				<align>left</align>
 			</control>
 			<control type="label" id="31" description="Current Directory Label">
-				<posx>132</posx>
-				<posy>20</posy>
+				<left>132</left>
+				<top>20</top>
 				<width>560</width>
 				<height>30</height>
 				<font>ExtProgressBar</font>
@@ -32,8 +32,8 @@
 				<haspath>true</haspath>
 			</control>
 			<control type="label" id="1" description="Progress label">
-				<posx>36</posx>
-				<posy>2</posy>
+				<left>36</left>
+				<top>2</top>
 				<width>92</width>
 				<height>50</height>
 				<align>center</align>
@@ -42,7 +42,7 @@
 				<scroll>true</scroll>
 			</control>
 			<control type="progress" id="32" description="Progress bar">
-				<posx>48</posx>
+				<left>48</left>
 				<width>555</width>
 				<height>8</height>
 				<texturebg />

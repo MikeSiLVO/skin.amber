@@ -39,8 +39,8 @@
 				<control type="$PARAM[ListType]" id="54">
 					<viewtype label="$LOCALIZE[31962]">list</viewtype>
 					<visible>[$EXP[ShortcutView_54] + Skin.HasSetting(Enable.NewViewSelector)] | [!Skin.HasSetting(hide.lowlistview) + !Skin.HasSetting(Enable.NewViewSelector)]</visible>
-					<posx>340</posx>
-					<posy>633</posy>
+					<left>340</left>
+					<top>633</top>
 					<width>1540</width>
 					<height>441</height>
 					<pagecontrol>64</pagecontrol>
@@ -77,8 +77,8 @@
 				<control type="scrollbar" id="64">
 					<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 					<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-					<posx>20r</posx>
-					<posy>600</posy>
+					<left>20r</left>
+					<top>600</top>
 					<height>460</height>
 					<width>36</width>
 					<texturesliderbackground />
@@ -101,8 +101,8 @@
 					<texturenofocus />
 					<width>40</width>
 					<onleft>54</onleft>
-					<posx>50r</posx>
-					<posy>600</posy>
+					<left>50r</left>
+					<top>600</top>
 					<height>460</height>
 					<ondown>SetFocus(54)</ondown>
 					<ondown>Action(nextletter)</ondown>
@@ -121,8 +121,8 @@
 				</control>
 
 				<control type="grouplist" id="64541">
-					<posx>36r</posx>
-					<posy>600</posy>
+					<left>36r</left>
+					<top>600</top>
 					<height>460</height>
 					<width>42</width>
 					<itemgap>0</itemgap>
@@ -165,8 +165,8 @@
 				</control>
 
 				<control type="grouplist" id="64542">
-					<posx>36r</posx>
-					<posy>600</posy>
+					<left>36r</left>
+					<top>600</top>
 					<height>460</height>
 					<width>42</width>
 					<itemgap>0</itemgap>
@@ -211,8 +211,8 @@
 				</control>
 
 				<control type="grouplist" id="64543">
-					<posx>36r</posx>
-					<posy>600</posy>
+					<left>36r</left>
+					<top>600</top>
 					<height>460</height>
 					<width>42</width>
 					<itemgap>0</itemgap>
@@ -579,8 +579,8 @@
 				</include>
 
 				<control type="group" description="50 MediaInfo">
-					<posx>30</posx>
-					<posy>620</posy>
+					<left>30</left>
+					<top>620</top>
 					<width>600</width>
 					<control type="label">
 						<left>0</left>

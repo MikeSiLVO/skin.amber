@@ -11,8 +11,8 @@
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="grouplist" id="3" description="Left side">
-				<posx>64</posx>
-				<posy>180</posy>
+				<left>64</left>
+				<top>180</top>
 				<width>387</width>
 				<height>720</height>
 				<onleft>9001</onleft>
@@ -21,8 +21,8 @@
 				<ondown>20</ondown>
 			</control>
 			<control type="button" description="Settings level label">
-				<posx>64</posx>
-				<posy>915</posy>
+				<left>64</left>
+				<top>915</top>
 				<width>324</width>
 				<height>60</height>
 				<align>right</align>
@@ -32,8 +32,8 @@
 				<texturenofocus />
 			</control>
 			<control type="button" id="20" description="Settings level button">
-				<posx>64</posx>
-				<posy>975</posy>
+				<left>64</left>
+				<top>975</top>
 				<width>324</width>
 				<height>60</height>
 				<onleft>5</onleft>
@@ -51,15 +51,15 @@
 				<textoffsetx>10</textoffsetx>
 			</control>
 			<control type="label" id="2" description="Header">
-				<posy>90</posy>
+				<top>90</top>
 				<width>1920</width>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 			</control>
 			<control type="grouplist" id="5" description="Controls for settings">
-				<posx>389</posx>
-				<posy>180</posy>
+				<left>389</left>
+				<top>180</top>
 				<width>1144</width>
 				<height>780</height>
 				<pagecontrol>60</pagecontrol>
@@ -99,8 +99,8 @@
 				<font>ListDetails</font>
 			</control>
 			<control type="grouplist" id="9001" description="Right side">
-				<posx>1533</posx>
-				<posy>180</posy>
+				<left>1533</left>
+				<top>180</top>
 				<width>387</width>
 				<height>780</height>
 				<onup>9001</onup>

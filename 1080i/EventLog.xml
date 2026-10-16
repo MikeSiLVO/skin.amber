@@ -20,8 +20,8 @@
 				<include>VisibleFadeEffect</include>
 				<visible>Control.IsVisible(570)</visible>
 				<control type="list" id="570">
-					<posx>144</posx>
-					<posy>120</posy>
+					<left>144</left>
+					<top>120</top>
 					<width>1776</width>
 					<height>892</height>
 					<onleft>9000</onleft>
@@ -38,8 +38,8 @@
 							<texture flipy="true" border="3">list/ListNF.png</texture>
 						</control>
 						<control type="image" description="Logo">
-							<posx>9</posx>
-							<posy>9</posy>
+							<left>9</left>
+							<top>9</top>
 							<width>80</width>
 							<height>80</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -79,8 +79,8 @@
 							<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 						</control>
 						<control type="image" description="Logo">
-							<posx>9</posx>
-							<posy>9</posy>
+							<left>9</left>
+							<top>9</top>
 							<width>80</width>
 							<height>80</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -124,8 +124,8 @@
 		<control type="scrollbar" id="60">
 			<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 			<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-			<posx>21r</posx>
-			<posy>99</posy>
+			<left>21r</left>
+			<top>99</top>
 			<width>36</width>
 			<height>900</height>
 			<texturesliderbackground />
@@ -152,14 +152,14 @@
 				<visible>true</visible>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
+				<left>-1</left>
 				<width>512</width>
 				<height>1080</height>
 				<texture border="0,0,30,0">common/ViewMenu.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>1</posx>
-				<posy>60</posy>
+				<left>1</left>
+				<top>60</top>
 				<width>500</width>
 				<height>1120</height>
 				<onleft>9000</onleft>

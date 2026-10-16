@@ -26,8 +26,8 @@
 			</control>
 			<!-- 1000 Left panel -->
 			<control type="list" id="1000">
-				<posx>105</posx>
-				<posy>120</posy>
+				<left>105</left>
+				<top>120</top>
 				<width>322</width>
 				<height>780</height>
 				<onleft>9000</onleft>
@@ -43,7 +43,7 @@
 						<texture border="3">buttons/ButtonNF.png</texture>
 					</control>
 					<control type="label" description="Main Label">
-						<posx>10</posx>
+						<left>10</left>
 						<width>301</width>
 						<height>60</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -57,7 +57,7 @@
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
 					<control type="label" description="Main Label">
-						<posx>10</posx>
+						<left>10</left>
 						<width>301</width>
 						<height>60</height>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
@@ -81,8 +81,8 @@
 				<control type="list" id="1100">
 					<onup>1100</onup>
 					<ondown>1100</ondown>
-					<posx>495</posx>
-					<posy>120</posy>
+					<left>495</left>
+					<top>120</top>
 					<width>1350</width>
 					<height>720</height>
 					<onleft>1000</onleft>
@@ -100,7 +100,7 @@
 						<control type="group">
 							<visible>!String.IsEqual(ListItem.Property(Typ), separator)</visible>
 							<control type="label">
-								<posx>30</posx>
+								<left>30</left>
 								<height>60</height>
 								<width>1350</width>
 								<scroll>false</scroll>
@@ -157,7 +157,7 @@
 						<control type="group">
 							<visible>!String.IsEqual(ListItem.Property(Typ), separator) + !Control.HasFocus(1100)</visible>
 							<control type="label">
-								<posx>30</posx>
+								<left>30</left>
 								<height>60</height>
 								<width>1350</width>
 								<scroll>false</scroll>
@@ -184,7 +184,7 @@
 								<texture border="3" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 							</control>
 							<control type="label">
-								<posx>30</posx>
+								<left>30</left>
 								<height>60</height>
 								<width>1350</width>
 								<scroll>false</scroll>
@@ -243,8 +243,8 @@
 				<control type="list" id="1200">
 					<onup>1200</onup>
 					<ondown>1200</ondown>
-					<posx>495</posx>
-					<posy>120</posy>
+					<left>495</left>
+					<top>120</top>
 					<width>1350</width>
 					<height>720</height>
 					<onleft>1000</onleft>
@@ -549,8 +549,8 @@
 					</focusedlayout>
 				</control>
 				<control type="label" id="1301">
-					<posx>495</posx>
-					<posy>120</posy>
+					<left>495</left>
+					<top>120</top>
 					<width>1350</width>
 					<height>740</height>
 					<align>center</align>
@@ -562,8 +562,8 @@
 				<control type="list" id="1300">
 					<onup>1300</onup>
 					<ondown>1300</ondown>
-					<posx>495</posx>
-					<posy>120</posy>
+					<left>495</left>
+					<top>120</top>
 					<width>1350</width>
 					<height>720</height>
 					<onright>60</onright>
@@ -959,8 +959,8 @@
 					<control type="grouplist">
 						<onup>1900</onup>
 						<ondown>1900</ondown>
-						<posx>495</posx>
-						<posy>120</posy>
+						<left>495</left>
+						<top>120</top>
 						<width>1350</width>
 						<height>800</height>
 						<onright>60</onright>
@@ -1030,8 +1030,8 @@
 			<control type="scrollbar" id="60">
 				<animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
 				<animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-				<posx>1845</posx>
-				<posy>0</posy>
+				<left>1845</left>
+				<top>0</top>
 				<width>36</width>
 				<height>720</height>
 				<texturesliderbackground />
@@ -1046,8 +1046,8 @@
 			</control>
 			<!-- Settings description box -->
 			<control type="textbox" id="1400">
-				<posx>510</posx>
-				<posy>860</posy>
+				<left>510</left>
+				<top>860</top>
 				<width>1330</width>
 				<height>120</height>
 				<align>justify</align>
