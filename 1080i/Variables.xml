@@ -1179,13 +1179,13 @@
 	</variable>
 
 	<variable name="OnlineHourLabel">
-		<value condition="Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration_H),1)">$LOCALIZE[31247]</value>
-		<value condition="Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.Duration_H),1)">$LOCALIZE[12392]</value>
+		<value condition="Integer.IsEqual(Window(Home).Property(SkinInfo.Online.Runtime.Hours),1)">$LOCALIZE[31247]</value>
+		<value condition="Integer.IsGreater(Window(Home).Property(SkinInfo.Online.Runtime.Hours),1)">$LOCALIZE[12392]</value>
 	</variable>
 
 	<variable name="OnlineMinuteLabel">
-		<value condition="Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration_M),1)">$LOCALIZE[31248]</value>
-		<value condition="Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.Duration_M),1)">$LOCALIZE[12391]</value>
+		<value condition="Integer.IsEqual(Window(Home).Property(SkinInfo.Online.Runtime.Minutes),1)">$LOCALIZE[31248]</value>
+		<value condition="Integer.IsGreater(Window(Home).Property(SkinInfo.Online.Runtime.Minutes),1)">$LOCALIZE[12391]</value>
 	</variable>
 
 	<variable name="NextAiredMinuteLabel">
@@ -1239,10 +1239,9 @@
 
 	<variable name="OnlineItemDurationHrMins">
 		<value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(Window(Home).Property(NextAired.Runtime))">$INFO[Window(Home).Property(NextAired.Runtime)] $VAR[NextAiredMinuteLabel]</value>
-		<value condition="Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),60) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),120) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),180) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),240) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),300) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),360) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),420) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),480) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),540) | Integer.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),600)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration_H)] $VAR[OnlineHourLabel]</value>
-		<value condition="Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Duration),60)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration_M)] $VAR[OnlineMinuteLabel]</value>
-		<value condition="!String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration_H),0) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration_M),0)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration_H)] $VAR[OnlineHourLabel]</value>
-		<value>$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration_H)] $VAR[OnlineHourLabel], $INFO[Window(Home).Property(TMDbHelper.ListItem.Duration_M)] $VAR[OnlineMinuteLabel]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Runtime.Hours))">$INFO[Window(Home).Property(SkinInfo.Online.Runtime.Minutes)] $VAR[OnlineMinuteLabel]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Runtime.Minutes))">$INFO[Window(Home).Property(SkinInfo.Online.Runtime.Hours)] $VAR[OnlineHourLabel]</value>
+		<value>$INFO[Window(Home).Property(SkinInfo.Online.Runtime.Hours)] $VAR[OnlineHourLabel], $INFO[Window(Home).Property(SkinInfo.Online.Runtime.Minutes)] $VAR[OnlineMinuteLabel]</value>
 	</variable>
 
 	<variable name="WidgetItemDurationVar">
