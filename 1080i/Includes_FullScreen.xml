@@ -49,8 +49,8 @@
 
 	<variable name="VideoBottomHeading">
 		<value condition="VideoPlayer.Content(Movies)">[COLOR $VAR[HighlightColor]]$LOCALIZE[20339]:[/COLOR] $INFO[VideoPlayer.Director]</value>
-		<value condition="VideoPlayer.Content(Episodes) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Season.Episode))">[COLOR $VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season] • [COLOR $VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode]</value>
-		<value condition="VideoPlayer.Content(Episodes) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Season.Episode))">[COLOR $VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season] • [COLOR $VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode] ($LOCALIZE[1443] $INFO[Window(Home).Property(TMDbHelper.ListItem.Season.Episode)])</value>
+		<value condition="VideoPlayer.Content(Episodes) + String.IsEmpty(Window(Home).Property(SkinInfo.Player.Season.Episode))">[COLOR $VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season] • [COLOR $VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode]</value>
+		<value condition="VideoPlayer.Content(Episodes) + !String.IsEmpty(Window(Home).Property(SkinInfo.Player.Season.Episode))">[COLOR $VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season] • [COLOR $VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode] ($LOCALIZE[1443] $INFO[Window(Home).Property(SkinInfo.Player.Season.Episode)])</value>
 		<value condition="VideoPlayer.Content(livetv) + PVR.IsTimeShift">[COLOR $VAR[HighlightColor]]$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime][/COLOR]</value>
 		<value condition="VideoPlayer.Content(livetv) + !PVR.IsTimeShift">[COLOR $VAR[HighlightColor]]$LOCALIZE[19031]:[/COLOR] $INFO[VideoPlayer.NextTitle]</value>
 	</variable>
