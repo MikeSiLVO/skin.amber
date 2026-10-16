@@ -319,6 +319,12 @@
 		<value condition="!String.IsEmpty(Skin.String(studiosResource.path)) + String.Contains(Skin.String(studiosResource.path),white)">resource://resource.images.studios.white/$INFO[Window(Home).Property(SkinInfo.Set.Studios.1),,.png]</value>
 		<value>DefaultStudios.png</value>
 	</variable>
+	<!-- First studio icon for multi-studio items -->
+	<variable name="StudioPrimaryIcon">
+		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(Window(Home).Property(SkinInfo.Movie.StudioPrimary))">$INFO[Skin.String(studiosResource.path)]$INFO[Window(Home).Property(SkinInfo.Movie.StudioPrimary),,.png]</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(Window(Home).Property(SkinInfo.TVShow.StudioPrimary))">$INFO[Skin.String(studiosResource.path)]$INFO[Window(Home).Property(SkinInfo.TVShow.StudioPrimary),,.png]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.StudioPrimary))">$INFO[Skin.String(studiosResource.path)]$INFO[Window(Home).Property(SkinInfo.Online.StudioPrimary),,.png]</value>
+	</variable>
 	<!-- Text color for plot -->
 	<variable name="InfoPlotTextColor">
 		<value>$VAR[LabelTextColor]</value>

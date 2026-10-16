@@ -129,12 +129,12 @@
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<visible>!String.IsEmpty(ListItem.Studio) + !String.Contains(ListItem.Studio,/) + !String.IsEqual(ListItem.DBType,set)</visible>
 			</control>
-			<control type="image" description="Studio - TMDb Helper">
-				<texture>$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio.1.Icon)]</texture>
+			<control type="image" description="Studio - Primary">
+				<texture background="true">$VAR[StudioPrimaryIcon]</texture>
 				<width>150</width>
 				<height>84</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<visible>[String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))</visible>
+				<visible>String.Contains(ListItem.Studio,/) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
 			</control>
 			<control type="image" description="1st. Studio - Sets">
 				<texture background="true">$VAR[RightListStudiosSets]</texture>
@@ -837,12 +837,12 @@
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>!String.IsEmpty(ListItem.Studio) + !String.Contains(ListItem.Studio,/) + !String.IsEqual(ListItem.DBType,set)</visible>
 						</control>
-						<control type="image" id="9900502" description="Studio - TMDb Helper">
-							<texture>$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio.1.Icon)]</texture>
+						<control type="image" id="9900502" description="Studio - Primary">
+							<texture background="true">$VAR[StudioPrimaryIcon]</texture>
 							<width>120</width>
 							<height>74</height>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<visible>[String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))</visible>
+							<visible>String.Contains(ListItem.Studio,/) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
 						</control>
 						<control type="label">
 							<width>120</width>

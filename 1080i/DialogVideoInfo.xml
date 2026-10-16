@@ -739,7 +739,7 @@
 					<width>160</width>
 					<texture background="true">$VAR[InfoStudios]</texture>
 					<aspectratio>keep</aspectratio>
-					<visible>!String.IsEmpty(ListItem.Studio) + !String.Contains(ListItem.Studio,/) + String.IsEmpty(ListItem.Property(tmdb_id)) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
+					<visible>!String.IsEmpty(ListItem.Studio) + !String.Contains(ListItem.Studio,/) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
 				</control>
 				<control type="image" description="1st. Studio - Sets">
 					<top>-51</top>
@@ -750,14 +750,14 @@
 					<aspectratio>keep</aspectratio>
 					<visible>String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Studios.1)) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
 				</control>
-				<control type="image" description="Studio - TMDb Helper">
+				<control type="image" description="Studio - Primary">
 					<top>-51</top>
 					<left>1000</left>
 					<height>70</height>
 					<width>160</width>
-					<texture>$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio.1.Icon)]</texture>
+					<texture background="true">$VAR[StudioPrimaryIcon]</texture>
 					<aspectratio>keep</aspectratio>
-					<visible>[!String.IsEmpty(ListItem.Property(tmdb_id)) | String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))</visible>
+					<visible>String.Contains(ListItem.Studio,/) + !String.IsEmpty(Skin.String(studiosResource.path))</visible>
 				</control>
 				<control type="image" description="Line Split">
 					<top>23</top>
