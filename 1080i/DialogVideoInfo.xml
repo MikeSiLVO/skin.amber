@@ -1083,7 +1083,7 @@
 				<param name="visibility1">!Skin.HasSetting(DisableInfoListSeasons)</param>
 			</include>
 			<!-- Crew -->
-			<include content="VideoInfoPosterWidget" condition="Skin.HasSetting(Enable.TMDbHelper)">
+			<include content="VideoInfoPosterWidget">
 				<param name="id">91003</param>
 				<param name="labelid">910031</param>
 				<param name="headinglabel">$LOCALIZE[31221]</param>
@@ -1107,7 +1107,7 @@
 				<param name="sortorder">descending</param>
 			</include>
 			<!-- Similar -->
-			<include content="VideoInfoPosterWidget" condition="Skin.HasSetting(Enable.TMDbHelper) | Skin.HasSetting(Enable.EmbuaryHelper)">
+			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.DBID)">
 				<param name="id">91005</param>
 				<param name="labelid">910051</param>
 				<param name="headinglabel">$LOCALIZE[31227]</param>
@@ -1117,7 +1117,7 @@
 				<param name="visibility1">!Skin.HasSetting(DisableInfoListSimilar)</param>
 			</include>
 			<!-- Recommended -->
-			<include content="VideoInfoPosterWidget" condition="Skin.HasSetting(Enable.TMDbHelper)">
+			<include content="VideoInfoPosterWidget">
 				<param name="id">91006</param>
 				<param name="labelid">910061</param>
 				<param name="headinglabel">$LOCALIZE[31966]</param>
@@ -1137,7 +1137,7 @@
 				<param name="visibility1">!Skin.HasSetting(DisableInfoListGenre)</param>
 			</include>
 			<!-- From Studio/Network -->
-			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.Studio) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Studio.1.TMDb_ID))">
+			<include content="VideoInfoPosterWidget" condition="!String.IsEmpty(ListItem.Studio) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))">
 				<param name="id">91008</param>
 				<param name="labelid">910081</param>
 				<param name="headinglabel">$VAR[InfoListStudioHeader,$LOCALIZE[31222] ,]</param>

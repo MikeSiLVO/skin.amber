@@ -363,73 +363,74 @@
 		<value condition="Window.IsActive(script-embuary-video.xml) + String.IsEqual(Container(10051).ListItem.DBType,movie)">with_companies</value>
 	</variable>
 
+	<!-- Seed item for SIS online lists -->
+	<variable name="SISSeedParams">
+		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.DBID)">dbtype=movie&amp;dbid=$INFO[ListItem.DBID]</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.DBID)">dbtype=tvshow&amp;dbid=$INFO[ListItem.DBID]</value>
+		<value condition="!String.IsEmpty(ListItem.TvShowDBID)">dbtype=tvshow&amp;dbid=$INFO[ListItem.TvShowDBID]</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie)">dbtype=movie&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
+		<value>dbtype=tvshow&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
+	</variable>
 	<variable name="TMDbPosters">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !Skin.HasSetting(Disable.OnlineTMDbInfo) + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=posters&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
 	</variable>
 	<!-- List content for Sets custom info list -->
 	<variable name="VideoInfoSets">
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Set)">plugin://plugin.video.themoviedb.helper/?info=collection&amp;type=movie&amp;query=$INFO[ListItem.Set]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Set))">plugin://plugin.video.themoviedb.helper/?info=collection&amp;type=movie&amp;query=$INFO[Window(Home).Property(SkinInfo.Online.Set)]&amp;nextpage=false</value>
-		<value condition="ListItem.IsCollection + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Title)">plugin://plugin.video.themoviedb.helper/?info=collection&amp;type=movie&amp;query=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,set) + [Skin.HasSetting(Disable.OnlineTMDbInfo) | !$EXP[CanUseTMDbHelper]] + !String.IsEmpty(ListItem.DBID)">$INFO[ListItem.DBID,videodb://movies/sets/,/]</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + [!String.IsEmpty(ListItem.Set) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Set))]">plugin://script.skin.info.service/?action=tmdb_discover&amp;$VAR[SISSeedParams]&amp;by=collection</value>
+		<value condition="String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.DBID)">$INFO[ListItem.DBID,videodb://movies/sets/,/]</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.SetID)">$INFO[ListItem.SetID,videodb://movies/sets/,/]</value>
 	</variable>
 	<!-- Similar custom info list content -->
 	<variable name="VideoInfoSimilar">
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=similar&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !String.IsEmpty(ListItem.DBID)">plugin://script.skin.info.service/?action=similar&amp;dbid=$INFO[ListItem.DBID]&amp;dbtype=$INFO[ListItem.DBType]</value>
 	</variable>
 	<!-- Cast also appears in custom info list content -->
 	<variable name="VideoInfoCastFeatured">
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(Container(50).ListItemAbsolute(0).Label)">plugin://plugin.video.themoviedb.helper/?info=discover&amp;type=movie&amp;with_cast=$INFO[Container(50).ListItemAbsolute(0).Label]$INFO[Container(50).ListItemAbsolute(1).Label, / ,]$INFO[Container(50).ListItemAbsolute(2).Label, / ,]&amp;with_separator=OR&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(Container(50).ListItemAbsolute(0).Label) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Cast.1.Name))">plugin://plugin.video.themoviedb.helper/?info=discover&amp;type=movie&amp;with_cast=$INFO[Window(Home).Property(SkinInfo.Online.Cast.1.Name)]$INFO[Window(Home).Property(SkinInfo.Online.Cast.2.Name), / ,]$INFO[Window(Home).Property(SkinInfo.Online.Cast.3.Name), / ,]&amp;with_separator=OR&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))]">plugin://script.skin.info.service/?action=tmdb_discover&amp;$VAR[SISSeedParams]&amp;by=cast</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22or%22%3A%5B%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(0).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(1).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(2).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(3).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(4).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(5).Label]%22%5D%7D%2C%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22$INFO[Container(50).ListItemAbsolute(6).Label]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</value>
 	</variable>
 	<!-- Crew custom info list content.  Online only -->
 	<variable name="TMDbCrewMembers">
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=crew&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))]">plugin://script.skin.info.service/?action=crew&amp;$VAR[SISSeedParams]</value>
 	</variable>
 
 	<!-- Also directed by custom info list content -->
 	<variable name="VideoInfoFromDirector">
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Director)">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[ListItem.Director]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + String.IsEmpty(ListItem.Director) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Director))">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[Window(Home).Property(SkinInfo.Online.Director)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + [!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Director))]">plugin://script.skin.info.service/?action=tmdb_discover&amp;$VAR[SISSeedParams]&amp;by=director</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22director%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Director]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
 	</variable>
 	<!-- More from studio custom info list content -->
 	<variable name="VideoInfoFromStudio">
-		<value condition="String.IsEqual(ListItem.DBType,movie) + !Skin.HasSetting(Disable.OnlineTMDbInfo) + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=movie&amp;with_companies=$INFO[Window(Home).Property(TMDBHelper.ListItem.Studio.1.TMDB_ID)]&amp;with_id=True&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !Skin.HasSetting(Disable.OnlineTMDbInfo) + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=tv&amp;with_networks=$INFO[Window(Home).Property(TMDBHelper.ListItem.Studio.1.TMDB_ID)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;with_id=True&amp;nextpage=false</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie) + !Skin.HasSetting(Disable.OnlineTMDbInfo)">plugin://script.skin.info.service/?action=tmdb_discover&amp;$VAR[SISSeedParams]&amp;by=studio</value>
+		<value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !Skin.HasSetting(Disable.OnlineTMDbInfo)">plugin://script.skin.info.service/?action=tmdb_discover&amp;$VAR[SISSeedParams]&amp;by=network</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22studio%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Studio]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow)">videodb://tvshows/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22studio%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Studio]%22%5d%7d%5d%7d%2c%22type%22%3a%22tvshows%22%7d</value>
 	</variable>
 	<!-- More from year custom info list content -->
 	<variable name="VideoInfoFromYear">
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=movie&amp;primary_release_year=$INFO[ListItem.Year]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Year) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Year))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=movie&amp;primary_release_year=$INFO[Window(Home).Property(SkinInfo.Online.Year)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Year)">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=tv&amp;first_air_date_year=$INFO[ListItem.Year]&amp;nextpage=false</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow) + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Year) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Year))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=tv&amp;first_air_date_year=$INFO[Window(Home).Property(SkinInfo.Online.Year)]&amp;nextpage=false</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + [!String.IsEmpty(ListItem.Year) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Year))]">plugin://script.skin.info.service/?action=tmdb_discover&amp;$VAR[SISSeedParams]&amp;by=year</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22year%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Year]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow)">videodb://tvshows/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22year%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Year]%22%5d%7d%5d%7d%2c%22type%22%3a%22tvshows%22%7d</value>
 	</variable>
 	<!-- More in genre custom info list content -->
 	<variable name="VideoInfoFromGenre">
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + !String.IsEmpty(ListItem.Genre)">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=$VAR[TMDbMediaType]&amp;with_genres=$INFO[ListItem.Genre]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper] + String.IsEmpty(ListItem.Genre) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Genre))">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=$VAR[TMDbMediaType]&amp;with_genres=$INFO[Window(Home).Property(SkinInfo.Online.Genre)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]&amp;nextpage=false</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + [!String.IsEmpty(ListItem.Genre) | !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Genre))]">plugin://script.skin.info.service/?action=tmdb_discover&amp;$VAR[SISSeedParams]&amp;by=genre</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22genre%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Genre]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow)">videodb://tvshows/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22genre%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Genre]%22%5d%7d%5d%7d%2c%22type%22%3a%22tvshows%22%7d</value>
 	</variable>
 	<!-- Recommended custom info list content.  Online only -->
 	<variable name="TMDbRecommended">
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=recommendations&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))]">plugin://script.skin.info.service/?action=tmdb_recommendations&amp;$VAR[SISSeedParams]</value>
 	</variable>
 	<!-- Studio header, either local or online -->
 	<variable name="InfoListStudioHeader">
+		<value condition="!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.StudioPrimary))">$INFO[Window(Home).Property(SkinInfo.Online.StudioPrimary)]</value>
 		<value condition="!String.IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio]</value>
 		<value condition="String.IsEmpty(ListItem.Studio) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Studio))">$INFO[Window(Home).Property(SkinInfo.Online.Studio)]</value>
 	</variable>
 	<!-- Genre header, either local or online -->
 	<variable name="InfoListGenreHeader">
+		<value condition="[!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))] + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.GenrePrimary))">$INFO[Window(Home).Property(SkinInfo.Online.GenrePrimary)]</value>
 		<value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
 		<value condition="String.IsEmpty(ListItem.Genre) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Genre))">$INFO[Window(Home).Property(SkinInfo.Online.Genre)]</value>
 	</variable>
