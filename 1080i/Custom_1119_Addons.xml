@@ -16,9 +16,6 @@
 				<top>480</top>
 				<width>1210</width>
 				<height>576</height>
-				<pagecontrol>60</pagecontrol>
-				<onleft>9000</onleft>
-				<onright>60</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<preloaditems>4</preloaditems>

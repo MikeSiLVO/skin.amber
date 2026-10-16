@@ -45,7 +45,6 @@
 				</include>
 			</control>
 			<control type="grouplist" id="500">
-				<visible>!Container(9000).HasFocus(4)</visible>
 				<left>1479</left>
 				<top>210</top>
 				<width>401</width>
@@ -161,7 +160,6 @@
 				<top>210</top>
 				<width>1380</width>
 				<height>780</height>
-				<onleft>9000</onleft>
 				<scrolltime>280</scrolltime>
 				<itemlayout width="1380" height="60">
 					<control type="image">

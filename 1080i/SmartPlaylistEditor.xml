@@ -30,7 +30,6 @@
 				<width>324</width>
 				<height>240</height>
 				<onleft>9000</onleft>
-				<onright>60</onright>
 				<onup>noop</onup>
 				<ondown>9002</ondown>
 				<scrolltime>200</scrolltime>
@@ -59,7 +58,6 @@
 				<width>324</width>
 				<height>240</height>
 				<onleft>9000</onleft>
-				<onright>60</onright>
 				<onup>9001</onup>
 				<ondown>noop</ondown>
 				<scrolltime>200</scrolltime>

@@ -154,7 +154,6 @@
 			<height>90</height>
 			<align>center</align>
 			<onup>90003</onup>
-			<ondown>50</ondown>
 			<orientation>horizontal</orientation>
 			<itemgap>30</itemgap>
 			<control type="button" id="800" description="IPTV Recorder">
@@ -188,7 +187,6 @@
 			<control type="button" id="4" description="find similar">
 				<height>90</height>
 				<width min="230">auto</width>
-				<ondown>50</ondown>
 				<align>center</align>
 				<font>Details</font>
 				<label>$LOCALIZE[19003]</label>
@@ -199,7 +197,6 @@
 			<control type="button" id="10" description="Play programme">
 				<height>90</height>
 				<width min="230">auto</width>
-				<ondown>50</ondown>
 				<align>center</align>
 				<font>Details</font>
 				<label>$LOCALIZE[19190]</label>
@@ -210,7 +207,6 @@
 			<control type="button" id="8" description="Play recording">
 				<height>90</height>
 				<width min="230">auto</width>
-				<ondown>50</ondown>
 				<align>center</align>
 				<font>Details</font>
 				<label>$LOCALIZE[19687]</label>
@@ -219,7 +215,6 @@
 			<control type="button" id="6" description="Record">
 				<height>90</height>
 				<width min="230">auto</width>
-				<ondown>50</ondown>
 				<align>center</align>
 				<font>Details</font>
 				<visible>Window.IsActive(PVRGuideInfo)</visible>
@@ -228,7 +223,6 @@
 			<control type="button" id="9" description="Add Timer">
 				<height>90</height>
 				<width min="230">auto</width>
-				<ondown>50</ondown>
 				<align>center</align>
 				<font>Details</font>
 				<label>$LOCALIZE[19061]</label>
@@ -237,7 +231,6 @@
 			<control type="button" id="11" description="Add Reminder">
 				<height>90</height>
 				<width min="230">auto</width>
-				<ondown>50</ondown>
 				<align>center</align>
 				<font>Details</font>
 				<label>$LOCALIZE[826]</label>

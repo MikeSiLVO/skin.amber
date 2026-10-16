@@ -186,8 +186,6 @@
 					<orientation>vertical</orientation>
 					<onleft>60</onleft>
 					<onright>90</onright>
-					<onup>6</onup>
-					<ondown>6</ondown>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>0</scrolltime>
 					<itemlayout width="208" height="60">
