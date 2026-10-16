@@ -839,7 +839,7 @@
 					<selected>true</selected>
 					<onclick>SetProperty(TextViewerHeader,$ESCVAR[panelheading],Home)</onclick>
 					<onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !String.IsEmpty(ListItem.Tagline)">SetProperty(TextViewerSubHeader,$ESCINFO[ListItem.Tagline,[I],[/I]],Home)</onclick>
-					<onclick condition="String.IsEqual(ListItem.DBType,movie) + String.IsEmpty(ListItem.Tagline) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Tagline))">SetProperty(TextViewerSubHeader,$ESCINFO[Window(Home).Property(SkinInfo.Online.Tagline)),[I],[/I]],Home)</onclick>
+					<onclick condition="String.IsEqual(ListItem.DBType,movie) + String.IsEmpty(ListItem.Tagline) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Tagline))">SetProperty(TextViewerSubHeader,$ESCINFO[Window(Home).Property(SkinInfo.Online.Tagline),[I],[/I]],Home)</onclick>
 					<onclick condition="String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Years.Range))">SetProperty(TextViewerSubHeader,$ESCINFO[Window(Home).Property(SkinInfo.Set.Years.Range),[I],[/I]],Home)</onclick>
 					<onclick>SetProperty(TextViewerContent,$ESCVAR[Plots],Home)</onclick>
 					<onclick>ActivateWindow(1124)</onclick>
@@ -968,8 +968,8 @@
 				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube)">Dialog.Close(movieinformation)</onclick>
 				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube) + ![String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.TVShowTitle,ListItem.Label)]]">ActivateWindow(videos,"plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.Label] trailer/",return)</onclick>
 				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.TVShowTitle,ListItem.Label)]]">ActivateWindow(videos,"plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.TVShowTitle] $INFO[ListItem.Label] trailer/",return)</onclick>
-				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + !System.AddonIsEnabled(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
-				<onclick condition="1Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">EnableAddon(plugin.video.youtube)</onclick>
+				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + !System.HasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
+				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.HasAddon(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">EnableAddon(plugin.video.youtube)</onclick>
 				<visible>!String.Contains(ListItem.FolderPath,type=person) + String.IsEmpty(ListItem.Trailer) + String.IsEmpty(Window(Home).Property(SkinInfo.Online.Trailer)) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
 				<visible>String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
 			</control>

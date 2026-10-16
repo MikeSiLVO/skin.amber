@@ -44,7 +44,7 @@
 
 	<!-- Landscape -->
 	<include name="SearchWideList">
-		<param name="headline">$LOCALIZE[416]</param>
+		<param name="headline" />
 		<param name="height">350</param>
 		<param name="contenttype">videos</param>
 		<param name="id" />
@@ -114,7 +114,7 @@
 
 	<!-- Poster -->
 	<include name="SearchPosterList">
-		<param name="headline">$LOCALIZE[416]</param>
+		<param name="headline" />
 		<param name="height">350</param>
 		<param name="contenttype">videos</param>
 		<param name="id" />
@@ -187,7 +187,7 @@
 
 	<!-- Square -->
 	<include name="SearchSquareList">
-		<param name="headline">$LOCALIZE[416]</param>
+		<param name="headline" />
 		<param name="height">350</param>
 		<param name="contenttype">music</param>
 		<param name="id" />

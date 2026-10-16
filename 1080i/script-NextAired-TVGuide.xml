@@ -6,7 +6,7 @@
 		<include>Time</include>
 		<include>OpenClose</include>
 		<control type="group">
-			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+			<visible>!String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
 			<include content="TVGuideFanart">
 				<param name="TVGuideDayID">200</param>
 			</include>

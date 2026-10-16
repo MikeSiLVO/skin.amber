@@ -173,7 +173,7 @@
 				<align>center</align>
 				<label>$LOCALIZE[31172]</label>
 				<onclick>Action(close)</onclick>
-				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.iptv.recorder/recordings&quot;,return)</onclick>
+				<onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.iptv.recorder/recordings&quot;,return)</onclick>
 				<visible>System.AddonIsEnabled(plugin.video.iptv.recorder) + Window.IsActive(PVRGuideInfo)</visible>
 			</control>
 			<control type="button" id="5" description="switch">
