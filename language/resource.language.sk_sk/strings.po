@@ -541,6 +541,10 @@ msgctxt "#31129"
 msgid "Same director"
 msgstr "Rovnaký režisér"
 
+msgctxt "#31130"
+msgid "Show Live TV Artwork"
+msgstr "Zobraziť obrázky živej televízie"
+
 msgctxt "#31131"
 msgid "Forecast"
 msgstr "Predpoveď"

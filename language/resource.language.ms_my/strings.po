@@ -541,6 +541,10 @@ msgctxt "#31129"
 msgid "Same director"
 msgstr "Pengarah yang sama"
 
+msgctxt "#31130"
+msgid "Show Live TV Artwork"
+msgstr "Tunjukkan karya seni TV langsung"
+
 msgctxt "#31131"
 msgid "Forecast"
 msgstr "Ramalan"

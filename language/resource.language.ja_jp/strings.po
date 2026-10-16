@@ -541,6 +541,10 @@ msgctxt "#31129"
 msgid "Same director"
 msgstr "同じ監督"
 
+msgctxt "#31130"
+msgid "Show Live TV Artwork"
+msgstr "ライブTVのアートワークを表示"
+
 msgctxt "#31131"
 msgid "Forecast"
 msgstr "予報"

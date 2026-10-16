@@ -541,6 +541,10 @@ msgctxt "#31129"
 msgid "Same director"
 msgstr "Mesmo diretor"
 
+msgctxt "#31130"
+msgid "Show Live TV Artwork"
+msgstr "Mostrar artes da TV ao vivo"
+
 msgctxt "#31131"
 msgid "Forecast"
 msgstr "Previsão"

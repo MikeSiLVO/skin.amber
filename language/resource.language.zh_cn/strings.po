@@ -541,6 +541,10 @@ msgctxt "#31129"
 msgid "Same director"
 msgstr "同一导演"
 
+msgctxt "#31130"
+msgid "Show Live TV Artwork"
+msgstr "显示直播电视图片"
+
 msgctxt "#31131"
 msgid "Forecast"
 msgstr "天气预报"

@@ -511,6 +511,11 @@
 								<param name="skinsetting" value="HidePVRPreview" />
 							</include>
 							<include content="YesNoSettingItem">
+								<param name="itemid" value="31" />
+								<param name="itemlabel" value="$LOCALIZE[31130]" />
+								<param name="skinsetting" value="SkinInfo.PVR" />
+							</include>
+							<include content="YesNoSettingItem">
 								<param name="itemid" value="27" />
 								<param name="itemlabel" value="$LOCALIZE[31822]" />
 								<param name="skinsetting" value="UseTVShowPoster" />

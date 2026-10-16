@@ -541,6 +541,10 @@ msgctxt "#31129"
 msgid "Same director"
 msgstr "Egyazon rendező"
 
+msgctxt "#31130"
+msgid "Show Live TV Artwork"
+msgstr "Élő TV-képek megjelenítése"
+
 msgctxt "#31131"
 msgid "Forecast"
 msgstr "Előrejelzés"

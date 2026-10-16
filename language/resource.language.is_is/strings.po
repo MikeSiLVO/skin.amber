@@ -541,6 +541,10 @@ msgctxt "#31129"
 msgid "Same director"
 msgstr "Sami leikstjóri"
 
+msgctxt "#31130"
+msgid "Show Live TV Artwork"
+msgstr "Sýna myndir fyrir beint sjónvarp"
+
 msgctxt "#31131"
 msgid "Forecast"
 msgstr "Veðurspá"
