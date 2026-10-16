@@ -199,7 +199,7 @@
 					<item>
 						<label>$LOCALIZE[20077]</label>
 						<onclick>ActivateWindow(SkinSettings)</onclick>
-						<icon>icons/settings/skin.png</icon>
+						<icon>icons/mainmenu/settings/skin.png</icon>
 					</item>
 					<item id="3" description="Player">
 						<label>$LOCALIZE[14201]</label>

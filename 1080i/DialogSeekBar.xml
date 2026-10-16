@@ -278,7 +278,7 @@
 								<left>720</left>
 								<width>50</width>
 								<height>50</height>
-								<texture>osd/OSDRecordNF.png</texture>
+								<texture>OSD/OSDRecordNF.png</texture>
 							</control>
 							<control type="label">
 								<left>780</left>
@@ -657,7 +657,7 @@
 								<top>5</top>
 								<width>40</width>
 								<height>40</height>
-								<texture>osd/OSDRecordNF.png</texture>
+								<texture>OSD/OSDRecordNF.png</texture>
 								<aspectratio aligny="bottom">keep</aspectratio>
 							</control>
 							<control type="label">

@@ -516,7 +516,7 @@
 					<height>347</height>
 					<aspectratio>keep</aspectratio>
 					<bordersize>20</bordersize>
-					<texture background="true" diffuse="diffuse/disc.png">$VAR[NowPlayingMusicDiscArtVar]</texture>
+					<texture background="true" diffuse="img/disc.png">$VAR[NowPlayingMusicDiscArtVar]</texture>
 				</control>
 				<include content="ShadowedImage">
 					<param name="top">0</param>

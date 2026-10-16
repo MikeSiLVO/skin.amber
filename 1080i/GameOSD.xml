@@ -218,26 +218,26 @@
 								<description>Pause / Resume button</description>
 								<label>$LOCALIZE[35224]</label>
 								<label2>Select + X</label2>
-								<icon>osd/osdplaynf.png</icon>
+								<icon>OSD/OSDPlayNF.png</icon>
 								<onclick>Play</onclick>
 							</item>
 							<item id="2102">
 								<description>Reset button</description>
 								<label>$LOCALIZE[13007]</label>
-								<icon>osd/osdrepeatnf.png</icon>
+								<icon>OSD/OSDRepeatNF.png</icon>
 								<onclick>PlayerControl(Reset)</onclick>
 							</item>
 							<item id="2103">
 								<description>Stop button</description>
 								<label>$LOCALIZE[35222]</label>
 								<label2>Select + Start</label2>
-								<icon>osd/osdstopnf.png</icon>
+								<icon>OSD/OSDStopNF.png</icon>
 								<onclick>Stop</onclick>
 							</item>
 							<item id="2108">
 								<description>Settings button</description>
 								<label>$LOCALIZE[5]</label>
-								<icon>osd/osdoptionsnf.png</icon>
+								<icon>OSD/OSDOptionsNF.png</icon>
 								<onclick>ActivateWindow(1120)</onclick>
 							</item>
 						</content>
