@@ -1323,8 +1323,8 @@
 	</variable>
 
 	<variable name="MediaWidgetsHighlightColor">
-		<value condition="Skin.HasSetting(MatchPosterColors)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Colors.Main)]</value>
-		<value condition="!Skin.HasSetting(MatchPosterColors)">$VAR[HighlightColor]</value>
+		<value condition="Skin.HasSetting(MatchPosterColors) + !String.IsEmpty(Window(Home).Property(SkinInfo.ImageColor.Main))">$INFO[Window(Home).Property(SkinInfo.ImageColor.Main)]</value>
+		<value>$VAR[HighlightColor]</value>
 	</variable>
 
 	<variable name="GlowBarsColor">

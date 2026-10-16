@@ -15,6 +15,9 @@
 	<onload condition="Skin.HasSetting(TMDbHelper.Service)">Skin.Reset(TMDbHelper.Service)</onload>
 	<onload condition="Skin.HasSetting(TMDbHelper.EnableBlur)">Skin.Reset(TMDbHelper.EnableBlur)</onload>
 	<onload condition="Skin.HasSetting(TMDbHelper.EnableColors)">Skin.Reset(TMDbHelper.EnableColors)</onload>
+	<onload condition="Skin.HasSetting(MatchPosterColors) + !Skin.HasSetting(SkinInfo.ImageColor)">Skin.SetBool(SkinInfo.ImageColor)</onload>
+	<onload condition="!String.IsEmpty(Skin.String(TMDbHelper.Colors.Luminance))">Skin.Reset(TMDbHelper.Colors.Luminance)</onload>
+	<onload condition="!String.IsEmpty(Skin.String(TMDbHelper.Colors.Saturation))">Skin.Reset(TMDbHelper.Colors.Saturation)</onload>
 
 	<onload condition="String.IsEmpty(Skin.String(OSDExtraArt))">Skin.SetString(OSDExtraArt,none)</onload>
 
