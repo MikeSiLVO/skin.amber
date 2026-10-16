@@ -1448,13 +1448,7 @@
 	<!-- Onclick actions for most custom info lists -->
 	<include name="InfoList_OnClick">
 		<definition>
-			<onclick condition="$EXP[CanUseTMDbHelper] + [String.IsEmpty(Container.ListItem.DBID) | [!String.IsEqual(Container.ListItem.DBType,movie) + !String.IsEqual(Container.ListItem.DBType,tvshow)]]">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container.ListItem.FolderPath],call_auto=1134)</onclick>
-			<onclick condition="$EXP[CanUseTMDbHelper] + !String.IsEmpty(Container.ListItem.DBID) + String.IsEqual(Container.ListItem.DBType,movie)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container.ListItem.Label,videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D],call_auto=1134)</onclick>
-			<onclick condition="$EXP[CanUseTMDbHelper] + !String.IsEmpty(Container.ListItem.DBID) + String.IsEqual(Container.ListItem.DBType,tvshow)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Container.ListItem.Label,videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D],call_auto=1134)</onclick>
-			<onclick condition="!$EXP[CanUseTMDbHelper] + !String.IsEmpty(Container.ListItem.DBID)">Dialog.Close(All)</onclick>
-			<onclick condition="!$EXP[CanUseTMDbHelper] + !String.IsEqual(Container.ListItem.DBType,tvshow) + !String.IsEmpty(Container.ListItem.DBID)">PlayMedia($INFO[Container.ListItem.FileNameAndPath])</onclick>
-			<onclick condition="!$EXP[CanUseTMDbHelper] + String.IsEqual(Container.ListItem.DBType,tvshow) + !String.IsEmpty(Container.ListItem.DBID)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[Container.ListItem.DBID])</onclick>
-			<onclick condition="!$EXP[CanUseTMDbHelper] + String.IsEmpty(Container.ListItem.DBID)">noop</onclick>
+			<onclick>RunScript(script.skin.info.service,action=dialog_video_info,dbid=$INFO[ListItem.DBID],tmdb_id=$INFO[ListItem.Property(tmdb_id)],dbtype=$INFO[ListItem.DBType])</onclick>
 		</definition>
 	</include>
 	<!-- Onclick action for person images info list -->
