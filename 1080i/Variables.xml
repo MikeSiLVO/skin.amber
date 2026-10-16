@@ -1403,11 +1403,6 @@
 		<value>special://skin/backgrounds/Default.jpg</value>
 	</variable>
 
-	<variable name="LongLabelScroll">
-		<value condition="Skin.HasSetting(ScrollLongLabels)">true</value>
-		<value>false</value>
-	</variable>
-
 	<variable name="UnwatchedEpisodes">
 		<value condition="!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)">$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
 		<value>99+</value>
