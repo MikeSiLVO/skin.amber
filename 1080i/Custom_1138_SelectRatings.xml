@@ -72,7 +72,7 @@
 					<selected>Skin.HasSetting(ShowRatingMC)</selected>
 				</control>
 				<control type="radiobutton" id="901016">
-					<label>IMDb Top 250</label>
+					<label>$LOCALIZE[31388]</label>
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(ShowRatingTop250)</onclick>
 					<selected>Skin.HasSetting(ShowRatingTop250)</selected>

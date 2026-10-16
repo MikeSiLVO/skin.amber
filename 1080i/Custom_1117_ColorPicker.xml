@@ -178,7 +178,7 @@
 					<control type="button" id="3011">
 						<width>280</width>
 						<height>60</height>
-						<label>None</label>
+						<label>$LOCALIZE[231]</label>
 						<font>ListDetails</font>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),HighlightColor)">Skin.SetString(HighlightColorStr,None)</onclick>
 						<onclick condition="String.IsEqual(Window(Home).Property(colorpick),HighlightColor)">SetProperty(colorstring,$VAR[HighlightColor])</onclick>

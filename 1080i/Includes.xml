@@ -2711,7 +2711,7 @@
 					</control>
 					<control type="button" id="$PARAM[idprefix]06">
 						<visible>!String.IsEmpty(Container(212).ListItem.Property(widgetPath$PARAM[suffix])) + !String.IsEqual(Container(212).ListItem.Property(showShelvesInfo),true) + [[!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEqual(Container(212).ListItem.Property(shelfLayout),three)] | String.IsEqual(Container(212).ListItem.Property(widgetRows$PARAM[suffix]),2) | String.IsEqual(Container(212).ListItem.Property(widgetRows$PARAM[suffix]),3)]</visible>
-						<label>Rows</label>
+						<label>$LOCALIZE[455]</label>
 						<label2>$INFO[Container(212).ListItem.Property(widgetRows$PARAM[suffix]Label)]</label2>
 						<height>60</height>
 						<width>1340</width>

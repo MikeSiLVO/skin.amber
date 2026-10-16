@@ -434,7 +434,7 @@
 					<onup>6001</onup>
 					<ondown>6001</ondown>
 					<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Container(6001).ListItem.TVShowTitle],season=$INFO[Container(6001).ListItem.Season])</oninfo>
-					<viewtype label="Triple">list</viewtype>
+					<viewtype label="$LOCALIZE[31157]">list</viewtype>
 					<visible>Container.Content(tvshows)</visible>
 					<itemlayout height="255">
 						<control type="image">
@@ -553,7 +553,7 @@
 					<onright>6004</onright>
 					<onup>6003</onup>
 					<ondown>6003</ondown>
-					<viewtype label="Triple">list</viewtype>
+					<viewtype label="$LOCALIZE[31157]">list</viewtype>
 					<visible>Container.Content(artists)</visible>
 					<itemlayout height="255">
 						<control type="image">
@@ -690,7 +690,7 @@
 					<orientation>vertical</orientation>
 					<movement>10</movement>
 					<focusposition>0</focusposition>
-					<viewtype label="Triple">list</viewtype>
+					<viewtype label="$LOCALIZE[31157]">list</viewtype>
 					<itemlayout height="67.5" condition="Container.Content(tvshows)">
 						<control type="image">
 							<left>-80</left>
@@ -824,7 +824,7 @@
 					<orientation>vertical</orientation>
 					<movement>10</movement>
 					<focusposition>0</focusposition>
-					<viewtype label="Triple">list</viewtype>
+					<viewtype label="$LOCALIZE[31157]">list</viewtype>
 					<itemlayout height="67.5" condition="Container.Content(artists)">
 						<control type="image">
 							<left>-80</left>
