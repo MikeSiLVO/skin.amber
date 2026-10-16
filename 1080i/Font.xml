@@ -249,6 +249,11 @@
 			<size>34</size>
 		</font>
 		<font>
+			<name>font18</name>
+			<filename>UbuntuCondensed.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
 			<name>font14</name>
 			<filename>UbuntuCondensed.ttf</filename>
 			<size>33</size>
@@ -306,6 +311,12 @@
 			<size>46</size>
 		</font>
 		<font>
+			<name>font38_title</name>
+			<filename>UbuntuCondensed.ttf</filename>
+			<size>49</size>
+			<style>bold</style>
+		</font>
+		<font>
 			<name>Clock</name>
 			<filename>UbuntuCondensed.ttf</filename>
 			<size>130</size>
@@ -346,6 +357,12 @@
 			<filename>UbuntuCondensed.ttf</filename>
 			<style>lighten</style>
 			<size>28</size>
+		</font>
+		<font>
+			<name>InfoPlotSmall</name>
+			<filename>UbuntuCondensed.ttf</filename>
+			<style>lighten</style>
+			<size>24</size>
 		</font>
 		<font>
 			<name>ListDetails</name>
@@ -523,6 +540,13 @@
 			<size>46</size>
 			<aspect>0.80</aspect>
 			<style>uppercase</style>
+		</font>
+		<font>
+			<name>font38_title</name>
+			<filename>arial.ttf</filename>
+			<size>49</size>
+			<aspect>0.80</aspect>
+			<style>bold uppercase</style>
 		</font>
 		<font>
 			<name>Clock</name>
@@ -778,6 +802,13 @@
 			<aspect>0.80</aspect>
 		</font>
 		<font>
+			<name>font38_title</name>
+			<filename>arial.ttf</filename>
+			<size>49</size>
+			<style>bold</style>
+			<aspect>0.80</aspect>
+		</font>
+		<font>
 			<name>Clock</name>
 			<filename>arial.ttf</filename>
 			<aspect>1.0</aspect>
@@ -1001,6 +1032,12 @@
 			<name>font35_title</name>
 			<filename>NotoSans-Regular.ttf</filename>
 			<size>46</size>
+		</font>
+		<font>
+			<name>font38_title</name>
+			<filename>NotoSans-Regular.ttf</filename>
+			<size>49</size>
+			<style>bold</style>
 		</font>
 		<font>
 			<name>Clock</name>
