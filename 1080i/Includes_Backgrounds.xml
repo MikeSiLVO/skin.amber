@@ -590,26 +590,26 @@
 			<top>-1000</top>
 			<width>1</width>
 			<height>1</height>
-			<label>Player.Art(fanart1)</label>
-			<label>Player.Art(fanart2)</label>
-			<label>Player.Art(fanart3)</label>
-			<label>Player.Art(fanart4)</label>
-			<label>Player.Art(fanart5)</label>
-			<label>Player.Art(fanart6)</label>
-			<label>Player.Art(fanart7)</label>
-			<label>Player.Art(fanart8)</label>
-			<label>Player.Art(fanart9)</label>
-			<label>Player.Art(fanart10)</label>
-			<label>Player.Art(fanart11)</label>
-			<label>Player.Art(fanart12)</label>
-			<label>Player.Art(fanart13)</label>
-			<label>Player.Art(fanart14)</label>
-			<label>Player.Art(fanart15)</label>
-			<label>Player.Art(fanart16)</label>
-			<label>Player.Art(fanart17)</label>
-			<label>Player.Art(fanart18)</label>
-			<label>Player.Art(fanart19)</label>
-			<label>Player.Art(fanart20)</label>
+			<label>$INFO[Player.Art(fanart1)]</label>
+			<label>$INFO[Player.Art(fanart2)]</label>
+			<label>$INFO[Player.Art(fanart3)]</label>
+			<label>$INFO[Player.Art(fanart4)]</label>
+			<label>$INFO[Player.Art(fanart5)]</label>
+			<label>$INFO[Player.Art(fanart6)]</label>
+			<label>$INFO[Player.Art(fanart7)]</label>
+			<label>$INFO[Player.Art(fanart8)]</label>
+			<label>$INFO[Player.Art(fanart9)]</label>
+			<label>$INFO[Player.Art(fanart10)]</label>
+			<label>$INFO[Player.Art(fanart11)]</label>
+			<label>$INFO[Player.Art(fanart12)]</label>
+			<label>$INFO[Player.Art(fanart13)]</label>
+			<label>$INFO[Player.Art(fanart14)]</label>
+			<label>$INFO[Player.Art(fanart15)]</label>
+			<label>$INFO[Player.Art(fanart16)]</label>
+			<label>$INFO[Player.Art(fanart17)]</label>
+			<label>$INFO[Player.Art(fanart18)]</label>
+			<label>$INFO[Player.Art(fanart19)]</label>
+			<label>$INFO[Player.Art(fanart20)]</label>
 		</control>
 		<!-- Extra fanart for Now Playing: Episode, not in extrafanart folder -->
 		<control type="fadelabel" id="4442">
@@ -623,26 +623,26 @@
 			<top>-1000</top>
 			<width>1</width>
 			<height>1</height>
-			<label>Player.Art(tvshow.fanart1)</label>
-			<label>Player.Art(tvshow.fanart2)</label>
-			<label>Player.Art(tvshow.fanart3)</label>
-			<label>Player.Art(tvshow.fanart4)</label>
-			<label>Player.Art(tvshow.fanart5)</label>
-			<label>Player.Art(tvshow.fanart6)</label>
-			<label>Player.Art(tvshow.fanart7)</label>
-			<label>Player.Art(tvshow.fanart8)</label>
-			<label>Player.Art(tvshow.fanart9)</label>
-			<label>Player.Art(tvshow.fanart10)</label>
-			<label>Player.Art(tvshow.fanart11)</label>
-			<label>Player.Art(tvshow.fanart12)</label>
-			<label>Player.Art(tvshow.fanart13)</label>
-			<label>Player.Art(tvshow.fanart14)</label>
-			<label>Player.Art(tvshow.fanart15)</label>
-			<label>Player.Art(tvshow.fanart16)</label>
-			<label>Player.Art(tvshow.fanart17)</label>
-			<label>Player.Art(tvshow.fanart18)</label>
-			<label>Player.Art(tvshow.fanart19)</label>
-			<label>Player.Art(tvshow.fanart20)</label>
+			<label>$INFO[Player.Art(tvshow.fanart1)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart2)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart3)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart4)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart5)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart6)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart7)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart8)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart9)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart10)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart11)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart12)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart13)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart14)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart15)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart16)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart17)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart18)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart19)]</label>
+			<label>$INFO[Player.Art(tvshow.fanart20)]</label>
 		</control>
 		<!-- Extra fanart for Now Playing: Songs, not in extrafanart folder -->
 		<control type="fadelabel" id="4443">
@@ -656,26 +656,26 @@
 			<top>-1000</top>
 			<width>1</width>
 			<height>1</height>
-			<label>Player.Art(albumartist.fanart1)</label>
-			<label>Player.Art(albumartist.fanart2)</label>
-			<label>Player.Art(albumartist.fanart3)</label>
-			<label>Player.Art(albumartist.fanart4)</label>
-			<label>Player.Art(albumartist.fanart5)</label>
-			<label>Player.Art(albumartist.fanart6)</label>
-			<label>Player.Art(albumartist.fanart7)</label>
-			<label>Player.Art(albumartist.fanart8)</label>
-			<label>Player.Art(albumartist.fanart9)</label>
-			<label>Player.Art(albumartist.fanart10)</label>
-			<label>Player.Art(albumartist.fanart11)</label>
-			<label>Player.Art(albumartist.fanart12)</label>
-			<label>Player.Art(albumartist.fanart13)</label>
-			<label>Player.Art(albumartist.fanart14)</label>
-			<label>Player.Art(albumartist.fanart15)</label>
-			<label>Player.Art(albumartist.fanart16)</label>
-			<label>Player.Art(albumartist.fanart17)</label>
-			<label>Player.Art(albumartist.fanart18)</label>
-			<label>Player.Art(albumartist.fanart19)</label>
-			<label>Player.Art(albumartist.fanart20)</label>
+			<label>$INFO[Player.Art(albumartist.fanart1)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart2)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart3)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart4)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart5)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart6)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart7)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart8)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart9)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart10)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart11)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart12)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart13)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart14)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart15)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart16)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart17)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart18)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart19)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart20)]</label>
 		</control>
 	</include>
 
