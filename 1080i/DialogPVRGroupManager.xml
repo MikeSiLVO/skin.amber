@@ -22,6 +22,7 @@
 					<width>1848</width>
 					<height>35</height>
 					<label>$LOCALIZE[19143]</label>
+					<scroll>true</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -35,6 +36,7 @@
 						<width>570</width>
 						<height>105</height>
 						<label>$LOCALIZE[31506]</label>
+						<scroll>true</scroll>
 						<align>center</align>
 						<aligny>center</aligny>
 					</control>
@@ -144,6 +146,7 @@
 						<width>570</width>
 						<height>105</height>
 						<align>center</align>
+						<scroll>true</scroll>
 						<aligny>center</aligny>
 					</control>
 					<control type="list" id="12">
@@ -251,6 +254,7 @@
 						<width>570</width>
 						<height>105</height>
 						<align>center</align>
+						<scroll>true</scroll>
 						<aligny>center</aligny>
 					</control>
 					<control type="list" id="11">
@@ -426,6 +430,7 @@
 			</control>
 			<control type="label" id="20">
 				<description>Fake Label used to pass on name label</description>
+				<scroll>true</scroll>
 				<visible>false</visible>
 			</control>
 		</control>

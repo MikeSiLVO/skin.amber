@@ -32,6 +32,7 @@
 				<height>72</height>
 				<align>center</align>
 				<label>$LOCALIZE[5] - $LOCALIZE[31022]</label>
+				<scroll>true</scroll>
 				<font>InfoTitle</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>

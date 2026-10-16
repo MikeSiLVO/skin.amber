@@ -76,6 +76,7 @@
                         <textcolor>ffffffff</textcolor>
                         <shadowcolor>00000000</shadowcolor>
                         <label>[CAPITALIZE]$ADDON[service.upnext 30024][/CAPITALIZE]</label>
+                        <scroll>true</scroll>
                     </control>
                     <!-- Details -->
                     <control type="grouplist">
@@ -91,6 +92,7 @@
                             <textcolor>eeffffff</textcolor>
                             <shadowcolor>00000000</shadowcolor>
                             <label>[COLOR $VAR[HighlightColor]]$INFO[Window.Property(tvshowtitle)][/COLOR] - $VAR[UpNextSeasonEpisodeLabel] - $INFO[Window.Property(title)]   </label>
+                            <scroll>true</scroll>
                             <visible>!String.IsEmpty(Window.Property(title))</visible>
                         </control>
                         <control type="label">
@@ -101,6 +103,7 @@
                             <textcolor>eeffffff</textcolor>
                             <shadowcolor>00000000</shadowcolor>
                             <label>$INFO[Window.Property(year),,   ]</label>
+                            <scroll>true</scroll>
                             <visible>!String.IsEmpty(Window.Property(year))</visible>
                         </control>
                     </control>

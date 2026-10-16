@@ -18,6 +18,7 @@
 				<width>560</width>
 				<height>20</height>
 				<font>ExtProgressBar2</font>
+				<scroll>true</scroll>
 				<align>left</align>
 			</control>
 			<control type="label" id="31" description="Current Directory Label">
@@ -27,6 +28,7 @@
 				<height>30</height>
 				<font>ExtProgressBar</font>
 				<align>left</align>
+				<scroll>true</scroll>
 				<haspath>true</haspath>
 			</control>
 			<control type="label" id="1" description="Progress label">
@@ -37,6 +39,7 @@
 				<align>center</align>
 				<font>WeatherTitle</font>
 				<label>$INFO[Control.GetLabel(32),,%]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="progress" id="32" description="Progress bar">
 				<posx>48</posx>

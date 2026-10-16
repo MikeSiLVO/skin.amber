@@ -17,6 +17,7 @@
 					<width>$PARAM[width]</width>
 					<height>20</height>
 					<label>$INFO[PVR.BackendDiskSpace]</label>
+					<scroll>true</scroll>
 					<visible>!Integer.IsGreater(PVR.BackendDiskSpaceProgr,100)</visible>
 				</control>
 				<control type="progress">
@@ -51,6 +52,7 @@
 					<height>30</height>
 					<width>$PARAM[width]</width>
 					<label>$LOCALIZE[31846]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<font>ListDetailsSmall</font>
 				</control>
@@ -128,6 +130,7 @@
 					<align>left</align>
 					<include>9000ViewButtons</include>
 					<label>$LOCALIZE[14018]</label>
+					<scroll>true</scroll>
 					<visible>Control.IsVisible(6060) | Control.IsVisible(6054) | Control.IsVisible(60551)</visible>
 				</control>
 				<control type="button" id="6060">
@@ -154,6 +157,7 @@
 				<!-- PVR Misc. options -->
 				<control type="label" id="300">
 					<label>$LOCALIZE[31026]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<textoffsetx>10</textoffsetx>
 					<align>left</align>
@@ -218,6 +222,7 @@
 					<align>left</align>
 					<include>9000ViewButtons</include>
 					<label>$LOCALIZE[31052]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="button" id="100">
 					<description>Channels</description>
@@ -307,6 +312,7 @@
 						<align>left</align>
 						<font>Details</font>
 						<label>$INFO[ListItem.Label]</label>
+						<scroll>true</scroll>
 					</control>
 				</rulerlayout>
 				<channellayout height="70" width="420">
@@ -315,6 +321,7 @@
 						<height>70</height>
 						<align>center</align>
 						<label>$INFO[ListItem.ChannelNumberLabel]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" id="1" description="Column 1 selected">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>
@@ -352,6 +359,7 @@
 						<aligny>center</aligny>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.ChannelNumberLabel]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" id="1" description="Column 1 Focused">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>
@@ -363,6 +371,7 @@
 						<align>left</align>
 						<font>ListDetails</font>
 						<label>$INFO[ListItem.ChannelName]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" id="1" description="Column 1 selected">
 						<visible>Skin.HasSetting(HideEPGLogos)</visible>
@@ -371,6 +380,7 @@
 						<height>70</height>
 						<font>ListDetails</font>
 						<label>$INFO[ListItem.ChannelName]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="image" description="Channel Logo">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>
@@ -630,9 +640,11 @@
 			<include>Time</include>
 			<include>PVRSideBlade</include>
 			<control type="label" id="29">
+				<scroll>true</scroll>
 				<include>HiddenButton</include>
 			</control>
 			<control type="label" id="30">
+				<scroll>true</scroll>
 				<include>HiddenButton</include>
 			</control>
 		</controls>
@@ -964,9 +976,11 @@
 				<param name="left">20</param>
 			</include>
 			<control type="label" id="29">
+				<scroll>true</scroll>
 				<include>HiddenButton</include>
 			</control>
 			<control type="label" id="30">
+				<scroll>true</scroll>
 				<include>HiddenButton</include>
 			</control>
 		</controls>

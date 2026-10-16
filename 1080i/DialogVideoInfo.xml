@@ -267,6 +267,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Rating(imdb)]$INFO[ListItem.Votes(imdb), (, $LOCALIZE[205])]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.Rating(imdb)) + Skin.HasSetting(ShowRatingIMDb)</visible>
 				</control>
 			</control>
@@ -282,6 +283,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>[B]$INFO[ListItem.Top250,#][/B]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="RT Critics rating">
@@ -302,6 +304,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$MAP[RatingPercentMap, ListItem.Rating(tomatometerallcritics)]%</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="RT Audience rating">
@@ -322,6 +325,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$MAP[RatingPercentMap, ListItem.Rating(tomatometerallaudience)]%</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="Metacritic rating">
@@ -342,6 +346,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$MAP[RatingPercentMap, ListItem.Rating(metacritic)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="TMDB rating">
@@ -362,6 +367,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$MAP[RatingPercentMap, ListItem.Rating(themoviedb)]%</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="TVDB rating and votes">
@@ -384,6 +390,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.Rating(tvdb)]$INFO[ListItem.Votes(tvdb), (, $LOCALIZE[205])]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="Trakt rating">
@@ -406,6 +413,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.Rating(trakt)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="User rating">
@@ -426,6 +434,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.UserRating]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="Awards">
@@ -453,6 +462,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
 				</control>
 				<control type="image" description="Golden Globes logo">
@@ -472,6 +482,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				</control>
 			</control>
@@ -507,6 +518,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Rating]$INFO[ListItem.Votes, (, $LOCALIZE[205])]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.Rating) + !String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0)</visible>
 				</control>
 				<control type="label" description="Main Rating No Votes">
@@ -516,6 +528,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Rating]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.Rating) + [String.IsEmpty(ListItem.Votes) | String.IsEqual(ListItem.Votes,0)]</visible>
 				</control>
 			</control>
@@ -538,6 +551,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Rating.tomatoes.Percent)]%</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="RT Audience rating">
@@ -559,6 +573,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Rating.popcorn.Percent)]%</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="Metacritic rating">
@@ -580,6 +595,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Rating.metacritic.Percent)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="IMDb Rating">
@@ -603,6 +619,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Rating.imdb)]$INFO[Window(Home).Property(SkinInfo.Online.Rating.imdb.Votes), (, $LOCALIZE[205])]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="IMDB Rating No Votes">
 					<width>auto</width>
@@ -611,6 +628,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Rating.imdb)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Rating.imdb)) + [String.IsEmpty(Window(Home).Property(SkinInfo.Online.Rating.imdb.Votes)) | String.IsEqual(Window(Home).Property(SkinInfo.Online.Rating.imdb.Votes),0)]</visible>
 				</control>
 			</control>
@@ -638,6 +656,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
 				</control>
 				<control type="image" description="Golden Globes logo">
@@ -657,6 +676,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				</control>
 			</control>
@@ -750,6 +770,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$VAR[panelheading]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEqual(ListItem.DBType,set)</visible>
 				</control>
 				<control type="label" description="Main Label - Sets">
@@ -760,6 +781,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Title,[B],[/B]] $INFO[Window(Home).Property(SkinInfo.Set.Years.Range),(,)]</label>
+					<scroll>true</scroll>
 					<visible>String.IsEqual(ListItem.DBType,set)</visible>
 				</control>
 				<control type="image" description="Studio">
@@ -1336,6 +1358,7 @@
 				<height>40</height>
 				<align>center</align>
 				<label>$LOCALIZE[20021]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="image" description="Current fanart">
 				<include>VisibleFadeEffectDelay</include>
@@ -1352,6 +1375,7 @@
 				<height>40</height>
 				<align>center</align>
 				<label>$LOCALIZE[20445]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="image" description="Current thumb">
 				<include>VisibleFadeEffectDelay</include>
@@ -1368,6 +1392,7 @@
 				<height>40</height>
 				<align>center</align>
 				<label>$LOCALIZE[21371]</label>
+				<scroll>true</scroll>
 			</control>
 		</control>
 

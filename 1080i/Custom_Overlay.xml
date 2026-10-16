@@ -35,6 +35,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>AddonBrowser.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(AddonBrowser.xml)</visible>
 			</control>
 
@@ -46,6 +47,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>FileManager.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(FileManager.xml)</visible>
 			</control>
 
@@ -57,6 +59,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Home.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Home.xml)</visible>
 			</control>
 
@@ -68,6 +71,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>LoginScreen.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(LoginScreen.xml)</visible>
 			</control>
 
@@ -79,6 +83,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyMusicNav.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyMusicNav.xml)</visible>
 			</control>
 
@@ -90,6 +95,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyMusicPlaylist.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyMusicPlaylist.xml)</visible>
 			</control>
 
@@ -101,6 +107,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyMusicPlaylistEditor.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyMusicPlaylistEditor.xml)</visible>
 			</control>
 
@@ -112,6 +119,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyMusicSongs.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyMusicSongs.xml)</visible>
 			</control>
 
@@ -123,6 +131,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyPics.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyPics.xml)</visible>
 			</control>
 
@@ -134,6 +143,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyGames.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyGames.xml)</visible>
 			</control>
 
@@ -145,6 +155,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyPrograms.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyPrograms.xml)</visible>
 			</control>
 
@@ -156,6 +167,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyPVR.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyPVR.xml)</visible>
 			</control>
 
@@ -167,6 +179,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyVideoNav.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 			</control>
 
@@ -178,6 +191,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyVideoPlaylist.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyVideoPlaylist.xml)</visible>
 			</control>
 
@@ -189,6 +203,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MyWeather.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MyWeather.xml)</visible>
 			</control>
 
@@ -200,6 +215,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Settings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Settings.xml)</visible>
 			</control>
 
@@ -211,6 +227,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>SettingsCategory.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(SettingsCategory.xml)</visible>
 			</control>
 
@@ -222,6 +239,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>SettingsProfile.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(SettingsProfile.xml)</visible>
 			</control>
 
@@ -233,6 +251,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>SkinSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(SkinSettings.xml)</visible>
 			</control>
 
@@ -244,6 +263,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>VideoFullScreen.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(VideoFullScreen.xml)</visible>
 			</control>
 
@@ -257,6 +277,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogAddonInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogAddonInfo.xml)</visible>
 			</control>
 
@@ -268,6 +289,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogAddonSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogAddonSettings.xml)</visible>
 			</control>
 
@@ -279,6 +301,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogAlbumInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogAlbumInfo.xml)</visible>
 			</control>
 
@@ -290,6 +313,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogBusy.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogBusy.xml)</visible>
 			</control>
 
@@ -301,6 +325,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogButtonMenu.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogButtonMenu.xml)</visible>
 			</control>
 
@@ -312,6 +337,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogContentSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogContentSettings.xml)</visible>
 			</control>
 
@@ -323,6 +349,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogContextMenu.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogContextMenu.xml)</visible>
 			</control>
 
@@ -334,6 +361,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogExtendedProgressBar.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogExtendedProgressBar.xml)</visible>
 			</control>
 
@@ -345,6 +373,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogFavourites.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogFavourites.xml)</visible>
 			</control>
 
@@ -356,6 +385,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogFileStacking.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogFileStacking.xml)</visible>
 			</control>
 
@@ -367,6 +397,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogFullScreenInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogFullScreenInfo.xml)</visible>
 			</control>
 
@@ -378,6 +409,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogKeyboard.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogKeyboard.xml)</visible>
 			</control>
 
@@ -389,6 +421,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogMediaFilter.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogMediaFilter.xml)</visible>
 			</control>
 
@@ -400,6 +433,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogMediaSource.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogMediaSource.xml)</visible>
 			</control>
 
@@ -411,6 +445,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogNetworkSetup.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogNetworkSetup.xml)</visible>
 			</control>
 
@@ -422,6 +457,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogNumeric.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogNumeric.xml)</visible>
 			</control>
 
@@ -433,6 +469,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogOK.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogOK.xml)</visible>
 			</control>
 
@@ -444,6 +481,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPeripheralManager.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPeripheralManager.xml)</visible>
 			</control>
 
@@ -455,6 +493,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPeripheralSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPeripheralSettings.xml)</visible>
 			</control>
 
@@ -466,6 +505,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPictureInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPictureInfo.xml)</visible>
 			</control>
 
@@ -477,6 +517,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogProgress.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogProgress.xml)</visible>
 			</control>
 
@@ -488,6 +529,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPVRChannelManager.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPVRChannelManager.xml)</visible>
 			</control>
 
@@ -499,6 +541,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPVRChannelsOSD.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPVRChannelsOSD.xml)</visible>
 			</control>
 
@@ -510,6 +553,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPVRGroupManager.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPVRGroupManager.xml)</visible>
 			</control>
 
@@ -521,6 +565,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPVRGuideInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
 			</control>
 
@@ -532,6 +577,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPVRChannelGuide.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPVRChannelGuide.xml)</visible>
 			</control>
 
@@ -543,6 +589,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPVRGuideSearch.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPVRGuideSearch.xml)</visible>
 			</control>
 
@@ -554,6 +601,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPVRRecordingInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPVRRecordingInfo.xml)</visible>
 			</control>
 
@@ -565,6 +613,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogPVRTimerSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogPVRTimerSettings.xml)</visible>
 			</control>
 
@@ -576,6 +625,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogSeekbar.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogSeekbar.xml)</visible>
 			</control>
 
@@ -587,6 +637,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogSelect.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogSelect.xml)</visible>
 			</control>
 
@@ -598,6 +649,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogSlider.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogSlider.xml)</visible>
 			</control>
 
@@ -609,6 +661,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogSongInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogSongInfo.xml)</visible>
 			</control>
 
@@ -620,6 +673,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogSubtitles.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogSubtitles.xml)</visible>
 			</control>
 
@@ -631,6 +685,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogTextViewer.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogTextViewer.xml)</visible>
 			</control>
 
@@ -642,6 +697,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogVideoInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
 			</control>
 
@@ -653,6 +709,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>DialogVolumeBar.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(DialogVolumeBar.xml)</visible>
 			</control>
 
@@ -664,6 +721,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>FileBrowser.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(FileBrowser.xml)</visible>
 			</control>
 
@@ -675,6 +733,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>LockSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(LockSettings.xml)</visible>
 			</control>
 
@@ -686,6 +745,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MusicOSD.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MusicOSD.xml)</visible>
 			</control>
 
@@ -697,6 +757,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MusicOverlay.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MusicOverlay.xml)</visible>
 			</control>
 
@@ -708,6 +769,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>MusicVisualisation.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
 			</control>
 
@@ -719,6 +781,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>PlayerControls.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(PlayerControls.xml)</visible>
 			</control>
 
@@ -730,6 +793,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>ProfileSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(ProfileSettings.xml)</visible>
 			</control>
 
@@ -741,6 +805,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>SettingsScreenCalibration.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(SettingsScreenCalibration.xml)</visible>
 			</control>
 
@@ -752,6 +817,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>SettingsSystemInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(SettingsSystemInfo.xml)</visible>
 			</control>
 
@@ -763,6 +829,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>SlideShow.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(SlideShow.xml)</visible>
 			</control>
 
@@ -774,6 +841,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>SmartPlaylistEditor.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(SmartPlaylistEditor.xml)</visible>
 			</control>
 
@@ -785,6 +853,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>SmartPlaylistRule.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(SmartPlaylistRule.xml)</visible>
 			</control>
 
@@ -796,6 +865,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>VideoOSD.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(VideoOSD.xml)</visible>
 			</control>
 
@@ -807,6 +877,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>VideoOSDBookmarks.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(VideoOSDBookmarks.xml)</visible>
 			</control>
 
@@ -818,6 +889,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>VideoOSDSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(VideoOSDSettings.xml)</visible>
 			</control>
 
@@ -829,6 +901,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>VideoOverlay.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(VideoOverlay.xml)</visible>
 			</control>
 
@@ -840,6 +913,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>VisualisationPresetList.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(VisualisationPresetList.xml)</visible>
 			</control>
 
@@ -851,6 +925,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1117_Addons.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1117_ColorPicker.xml)</visible>
 			</control>
 
@@ -862,6 +937,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1119_Addons.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1119_Addons.xml)</visible>
 			</control>
 
@@ -873,6 +949,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1120_GameSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1120_GameSettings.xml)</visible>
 			</control>
 
@@ -884,6 +961,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1121_InfoSelect.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1121_InfoSelect.xml)</visible>
 			</control>
 
@@ -895,6 +973,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1122_Search.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1122_Search.xml)</visible>
 			</control>
 
@@ -906,6 +985,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1123_PausedOverlay.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1123_PausedOverlay.xml)</visible>
 			</control>
 
@@ -917,6 +997,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1124_TextViewer.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1124_TextViewer.xml)</visible>
 			</control>
 
@@ -928,6 +1009,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1125_FavouriteAddons.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1125_FavouriteAddons.xml)</visible>
 			</control>
 
@@ -939,6 +1021,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1126_Fanart.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1126_Fanart.xml)</visible>
 			</control>
 
@@ -950,6 +1033,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1134_TMDBInfo.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1134_TMDB_Info.xml)</visible>
 			</control>
 
@@ -961,6 +1045,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1131_SingleSearch.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1131_SingleSearch.xml)</visible>
 			</control>
 
@@ -972,6 +1057,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1130_VideoInfoLists.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1130_VideoInfoLists.xml)</visible>
 			</control>
 
@@ -983,6 +1069,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>Custom_1132_ColorBoxSettings.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1132_ColorBoxSettings.xml)</visible>
 			</control>
 
@@ -994,6 +1081,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>GameOSD.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(GameOSD.xml)</visible>
 			</control>
 
@@ -1005,6 +1093,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>script-globalsearch.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(script-globalsearch.xml)</visible>
 			</control>
 
@@ -1016,6 +1105,7 @@
 				<font>font13</font>
 				<align>left</align>
 				<label>script-skinshortcuts.xml</label>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(script-skinshortcuts.xml)</visible>
 			</control>
 
@@ -1031,6 +1121,7 @@
 			<font>font13</font>
 			<align>right</align>
 			<label>$INFO[System.CurrentControl][CR][COLOR FF00FF00]$INFO[System.CurrentWindow][/COLOR]</label>
+			<scroll>true</scroll>
 			<visible>Skin.HasSetting(DebugInfo)</visible>
 		</control>
 
@@ -1042,6 +1133,7 @@
 			<font>font13</font>
 			<align>right</align>
 			<label>$INFO[Window(Home).Property(TMDbHelper.Path.Current)]</label>
+			<scroll>true</scroll>
 			<visible>Skin.HasSetting(DebugInfo)</visible>
 		</control>
 
@@ -1057,6 +1149,7 @@
 			<font>font13</font>
 			<align>right</align>
 			<label>[COLOR FF00FF00]$INFO[System.CurrentControlID,ID: ][/COLOR][CR]$INFO[Container.Content()][CR]$INFO[Container.ViewMode][CR]$INFO[ListItem.DBType,DBTYPE - ][CR]$INFO[Container.SortMethod][CR]$INFO[ListItem.DBID][CR]$INFO[ListItem.IMDBNumber]</label>
+			<scroll>true</scroll>
 			<visible>Skin.HasSetting(DebugInfo)</visible>
 		</control>
 

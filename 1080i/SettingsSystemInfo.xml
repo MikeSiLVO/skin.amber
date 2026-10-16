@@ -22,6 +22,7 @@
 				<width>1400</width>
 				<height>50</height>
 				<label>$LOCALIZE[130]</label>
+				<scroll>true</scroll>
 				<align>center</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
@@ -90,6 +91,7 @@
 							<width>680</width>
 							<font>ListDetails</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[13271][/COLOR] $INFO[System.CPUUsage]</label>
+							<scroll>true</scroll>
 						</control>
 						<control type="label" id="23">
 							<description>Memory Text</description>
@@ -97,6 +99,7 @@
 							<width>680</width>
 							<font>ListDetails</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31309][/COLOR] $INFO[System.Memory(used)] [B]/[/B] $INFO[System.Memory(total)] [B]-[/B] $INFO[System.Memory(used.percent)]</label>
+							<scroll>true</scroll>
 						</control>
 					</control>
 					<control type="grouplist">
@@ -132,6 +135,7 @@
 							<width>680</width>
 							<font>ListDetails</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[144] [/COLOR]$INFO[Control.GetLabel(52)]</label>
+							<scroll>true</scroll>
 						</control>
 						<control type="label" id="23">
 							<description>Memory Text</description>
@@ -139,6 +143,7 @@
 							<width>680</width>
 							<font>ListDetails</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[174] [/COLOR]$INFO[Control.GetLabel(53)]</label>
+							<scroll>true</scroll>
 						</control>
 					</control>
 					<control type="label">
@@ -147,6 +152,7 @@
 						<width>1420</width>
 						<font />
 						<label />
+						<scroll>true</scroll>
 					</control>
 					<control type="image" description="Line Split">
 						<width>1420</width>
@@ -158,18 +164,21 @@
 						<description>Label 2</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="3">
 						<description>Label 3</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="4">
 						<description>Label 4</description>
 						<height>45</height>
 						<font>Mono26</font>
+						<scroll>true</scroll>
 						<width>1420</width>
 					</control>
 					<control type="label" id="5">
@@ -177,54 +186,63 @@
 						<height>45</height>
 						<width>1420</width>
 						<font>Mono26</font>
+						<scroll>true</scroll>
 						<wrapmultiline>true</wrapmultiline>
 					</control>
 					<control type="label" id="6">
 						<description>Label 6</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="7">
 						<description>Label 7</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="8">
 						<description>Label 8</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="9">
 						<description>Label 9</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="10">
 						<description>Label 10</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="11">
 						<description>Label 11</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="12">
 						<description>Label 11</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 					<control type="label" id="13">
 						<description>Label 13</description>
 						<height>45</height>
 						<width>1420</width>
+						<scroll>true</scroll>
 						<font>Mono26</font>
 					</control>
 				</control>
@@ -255,9 +273,11 @@
 			</control>
 		</control>
 		<control type="label" id="52">
+			<scroll>true</scroll>
 			<include>HiddenButton</include>
 		</control>
 		<control type="label" id="53">
+			<scroll>true</scroll>
 			<include>HiddenButton</include>
 		</control>
 	</controls>

@@ -18,6 +18,7 @@
 				<width>704</width>
 				<height>40</height>
 				<align>center</align>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="slider" id="11" description="Slider">
@@ -36,6 +37,7 @@
 				<height>40</height>
 				<align>center</align>
 				<font>font24_title</font>
+				<scroll>true</scroll>
 				<textcolor>$VAR[LabelTextColor]</textcolor>
 			</control>
 		</control>

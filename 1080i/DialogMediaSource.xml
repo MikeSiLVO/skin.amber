@@ -24,6 +24,7 @@
 				<height>40</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$LOCALIZE[1021]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="list" id="10" description="Path list">
 				<posx>60</posx>
@@ -85,6 +86,7 @@
 				<width>1010</width>
 				<height>40</height>
 				<label>$LOCALIZE[1022]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="edit" id="12" description="Path Buttons">
 				<posx>27</posx>

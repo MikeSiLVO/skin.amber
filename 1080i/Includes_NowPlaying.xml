@@ -226,6 +226,7 @@
 						<width>800</width>
 						<font>InfoTitle</font>
 						<label>[B]$VAR[NowPlayingInfo1Var][/B]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<visible>Player.HasAudio | [Player.HasVideo + !Skin.String(NowPlayingMovieInfo,preview)] | [Player.HasVideo + Skin.String(NowPlayingMovieInfo,preview) + [!System.IdleTime(8) | !Skin.HasSetting(Zoom.VideoPreview) | Skin.HasSetting(VerticalHome)]]</visible>
 					</control>
@@ -238,6 +239,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<font>InfoTitle</font>
 						<label>[B]$VAR[NowPlayingInfo1Var][/B]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<visible>Player.HasVideo + Skin.String(NowPlayingMovieInfo,preview) + System.IdleTime(8) + Skin.HasSetting(Zoom.VideoPreview) + !Skin.HasSetting(VerticalHome)</visible>
 					</control>
@@ -297,6 +299,7 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<label>$VAR[NowPlayingStatusVar]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Player.HasAudio | [Player.HasVideo + !Skin.String(NowPlayingMovieInfo,preview)]</visible>
 				</control>
@@ -306,6 +309,7 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<label>$VAR[NowPlayingStatusVar]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Player.HasVideo + Skin.String(NowPlayingMovieInfo,preview)</visible>
 				</control>
@@ -407,6 +411,7 @@
 					<wrapmultiline>true</wrapmultiline>
 					<font>InfoTitle</font>
 					<label>[B]$VAR[NowPlayingInfo1Var][/B]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Player.HasVideo + Skin.String(NowPlayingVideoInfo,preview) + System.IdleTime(8) + Skin.HasSetting(Zoom.VideoPreview) + !Skin.HasSetting(VerticalHome)</visible>
 				</control>
@@ -460,6 +465,7 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<label>$VAR[NowPlayingStatusVar]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Player.HasAudio | [Player.HasVideo + !Skin.String(NowPlayingVideoInfo,preview)]</visible>
 				</control>
@@ -469,6 +475,7 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<label>$VAR[NowPlayingStatusVar]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Player.HasVideo + Skin.String(NowPlayingVideoInfo,preview)</visible>
 				</control>
@@ -549,6 +556,7 @@
 				<align>$PARAM[align]</align>
 				<font>InfoTitle</font>
 				<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>!VideoPlayer.HasEpg</visible>
@@ -556,6 +564,7 @@
 				<align>$PARAM[align]</align>
 				<font>InfoTitle</font>
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>!VideoPlayer.HasEpg</visible>
@@ -563,6 +572,7 @@
 				<align>$PARAM[align]</align>
 				<font>ListDetails</font>
 				<label>$INFO[Player.FinishTime,$LOCALIZE[19127] ]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>VideoPlayer.HasEpg</visible>
@@ -570,6 +580,7 @@
 				<align>$PARAM[align]</align>
 				<font>ListDetails</font>
 				<label>$INFO[PVR.EpgEventFinishTime,$LOCALIZE[19127] ]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="progress">
 				<height>20</height>
@@ -608,6 +619,7 @@
 				<align>$PARAM[align]</align>
 				<font>InfoTitle</font>
 				<label>[B]$LOCALIZE[206][/B]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="image">
@@ -655,6 +667,7 @@
 					<align>$PARAM[align]</align>
 					<font>InfoTitle</font>
 					<label>$VAR[NowPlayingPlotLabelVar]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Player.HasAudio | [Player.HasVideo + !Skin.String(NowPlayingMovieInfo,preview)]</visible>
 				</control>
@@ -667,6 +680,7 @@
 					<wrapmultiline>true</wrapmultiline>
 					<font>InfoTitle</font>
 					<label>[B]$INFO[Player.Title][/B] $INFO[VideoPlayer.Year,(,)]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Player.HasVideo + Skin.String(NowPlayingMovieInfo,preview)</visible>
 				</control>
@@ -738,6 +752,7 @@
 					<align>$PARAM[align]</align>
 					<font>InfoTitle</font>
 					<label>$VAR[NowPlayingPlotLabelVar]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Player.HasAudio | [Player.HasVideo + !Skin.String(NowPlayingVideoInfo,preview)]</visible>
 				</control>
@@ -749,6 +764,7 @@
 					<align>$PARAM[align]</align>
 					<font>InfoTitle</font>
 					<label>$VAR[NowPlayingPlotLabelVar]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>[Player.HasVideo + Skin.String(NowPlayingVideoInfo,preview)]</visible>
 				</control>
@@ -782,6 +798,7 @@
 					<wrapmultiline>true</wrapmultiline>
 					<font>InfoTitle</font>
 					<label>$INFO[Player.Title,[B],[/B]] $INFO[VideoPlayer.Year,(,)]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 				<control type="image">
@@ -854,12 +871,14 @@
 				<align>$PARAM[align]</align>
 				<font>InfoTitle</font>
 				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<height>42</height>
 				<align>$PARAM[align]</align>
 				<font>ListDetails</font>
 				<label>$INFO[MusicPlayer.BitRate,,kbps]$INFO[MusicPlayer.BitsPerSample,  ,bits]$INFO[MusicPlayer.SampleRate,  ,KHz]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="progress">
 				<height>20</height>
@@ -890,6 +909,7 @@
 				<height>40</height>
 				<align>$PARAM[align]</align>
 				<label>[B]$LOCALIZE[209][/B]</label>
+				<scroll>true</scroll>
 				<font>InfoTitle</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
@@ -915,6 +935,7 @@
 				<align>$PARAM[align]</align>
 				<font>Shelf_Title</font>
 				<label>$INFO[MusicPlayer.Offset(1).Artist]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="label">
@@ -923,6 +944,7 @@
 				<align>$PARAM[align]</align>
 				<font>ListDetails</font>
 				<label>[COLOR $VAR[HighlightColor]]$INFO[MusicPlayer.Offset(1).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.Offset(1).Title]</label>
+				<scroll>true</scroll>
 			</control>
 		</definition>
 	</include>
@@ -945,6 +967,7 @@
 				<align>$PARAM[align]</align>
 				<font>InfoTitle</font>
 				<label>[B]$LOCALIZE[31722][/B]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="image">
@@ -982,6 +1005,7 @@
 				<align>$PARAM[align]</align>
 				<font>Shelf_Title</font>
 				<label>$INFO[MusicPlayer.Offset($PARAM[offset]).Artist]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="label">
@@ -989,8 +1013,10 @@
 				<align>$PARAM[align]</align>
 				<font>ListDetails</font>
 				<label>[COLOR $VAR[HighlightColor]]$INFO[MusicPlayer.Offset($PARAM[offset]).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.Offset($PARAM[offset]).Title]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
+				<scroll>true</scroll>
 				<height>18</height>
 			</control>
 		</definition>
@@ -1209,6 +1235,7 @@
 								<left>-6</left>
 								<width>1105</width>
 								<label>[COLOR $VAR[HighlightColor]]$VAR[NowPlayingStatusVar]:[/COLOR] [B]$INFO[Player.Title][/B]</label>
+								<scroll>true</scroll>
 								<align>center</align>
 								<height>40</height>
 							</control>
@@ -1259,6 +1286,7 @@
 									<aligny>center</aligny>
 									<font>InfoTitle</font>
 									<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</label>
+									<scroll>true</scroll>
 								</control>
 								<control type="label">
 									<visible>!VideoPlayer.HasEpg</visible>
@@ -1269,6 +1297,7 @@
 									<aligny>center</aligny>
 									<font>InfoTitle</font>
 									<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+									<scroll>true</scroll>
 								</control>
 								<control type="label">
 									<visible>!VideoPlayer.HasEpg</visible>
@@ -1279,6 +1308,7 @@
 									<aligny>center</aligny>
 									<font>ListDetails</font>
 									<label>$INFO[Player.FinishTime,$LOCALIZE[19127] ]</label>
+									<scroll>true</scroll>
 								</control>
 								<control type="label">
 									<visible>VideoPlayer.HasEpg</visible>
@@ -1289,6 +1319,7 @@
 									<aligny>center</aligny>
 									<font>ListDetails</font>
 									<label>$INFO[PVR.EpgEventFinishTime,$LOCALIZE[19127] ]</label>
+									<scroll>true</scroll>
 								</control>
 							</control>
 						</control>
@@ -1373,6 +1404,7 @@
 								<left>-6</left>
 								<width>1105</width>
 								<label>[COLOR $VAR[HighlightColor]]$VAR[NowPlayingStatusVar]:[/COLOR] [B]$INFO[Player.Title][/B]</label>
+								<scroll>true</scroll>
 								<align>center</align>
 								<height>40</height>
 							</control>
@@ -1423,6 +1455,7 @@
 									<aligny>center</aligny>
 									<font>InfoTitle</font>
 									<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</label>
+									<scroll>true</scroll>
 								</control>
 								<control type="label">
 									<visible>!VideoPlayer.HasEpg</visible>
@@ -1433,6 +1466,7 @@
 									<aligny>center</aligny>
 									<font>InfoTitle</font>
 									<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+									<scroll>true</scroll>
 								</control>
 								<control type="label">
 									<visible>!VideoPlayer.HasEpg</visible>
@@ -1443,6 +1477,7 @@
 									<aligny>center</aligny>
 									<font>ListDetails</font>
 									<label>$INFO[Player.FinishTime,$LOCALIZE[19127] ]</label>
+									<scroll>true</scroll>
 								</control>
 								<control type="label">
 									<visible>VideoPlayer.HasEpg</visible>
@@ -1453,6 +1488,7 @@
 									<aligny>center</aligny>
 									<font>ListDetails</font>
 									<label>$INFO[PVR.EpgEventFinishTime,$LOCALIZE[19127] ]</label>
+									<scroll>true</scroll>
 								</control>
 							</control>
 						</control>

@@ -130,6 +130,7 @@
 					<align>center</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>[B]Amber[/B]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" id="7002">
 					<top>975</top>
@@ -139,6 +140,7 @@
 					<align>center</align>
 					<font>ListDetails</font>
 					<label>$INFO[System.AddonVersion(skin.amber)]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="group">
 					<posx>1799</posx>

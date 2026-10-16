@@ -211,6 +211,7 @@
 					<font>Details</font>
 					<shadowcolor>Black</shadowcolor>
 					<label>$VAR[panelsubheading]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Next Episode">
 					<posy>171</posy>
@@ -218,6 +219,7 @@
 					<width>1200</width>
 					<font>Details</font>
 					<label>$VAR[panelsubheading2]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired)) | [Container.Content(movies) | Container.Content(episodes)]</visible>
 				</control>
 				<control type="label" description="Genre">
@@ -227,6 +229,7 @@
 					<font>Details</font>
 					<shadowcolor>Black</shadowcolor>
 					<label>$INFO[ListItem.Genre]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="textbox" description="Plot itself">
 					<posy>256</posy>
@@ -383,6 +386,7 @@
 						<align>center</align>
 						<shadowcolor />
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -394,6 +398,7 @@
 						<font>ListDetailsSmall</font>
 						<align>center</align>
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>White2</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -405,6 +410,7 @@
 						<font>ListDetailsSmall</font>
 						<align>center</align>
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>White2</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -417,6 +423,7 @@
 						<align>center</align>
 						<shadowcolor />
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<!-- Landscape -->
@@ -447,6 +454,7 @@
 						<align>center</align>
 						<shadowcolor />
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -458,6 +466,7 @@
 						<font>ListDetailsSmall</font>
 						<align>center</align>
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>White2</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -469,6 +478,7 @@
 						<font>ListDetailsSmall</font>
 						<align>center</align>
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>White2</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -481,6 +491,7 @@
 						<align>center</align>
 						<shadowcolor />
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 				</control>
@@ -579,6 +590,7 @@
 						<font>ListDetailsSmall</font>
 						<align>center</align>
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -590,6 +602,7 @@
 						<font>ListDetailsSmall</font>
 						<align>center</align>
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 				</control>
@@ -645,6 +658,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -656,6 +670,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -690,6 +705,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -701,6 +717,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -735,6 +752,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -746,6 +764,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -779,6 +798,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
 					</control>
@@ -803,6 +823,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
 					</control>
@@ -1167,6 +1188,7 @@
 								<height>45</height>
 								<font>font20_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20339]: [/COLOR]$INFO[ListItem.Director]</label>
+								<scroll>true</scroll>
 								<visible>!String.IsEmpty(ListItem.Director)</visible>
 							</control>
 							<control type="label">
@@ -1182,6 +1204,7 @@
 								<height>45</height>
 								<font>font20_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Duration]$INFO[ListItem.EndTime, ($LOCALIZE[31692]: ,)]</label>
+								<scroll>true</scroll>
 								<visible>!Skin.HasSetting(Enable.HourMinutes)</visible>
 							</control>
 							<control type="label">
@@ -1189,6 +1212,7 @@
 								<height>45</height>
 								<font>font20_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$VAR[ItemDurationVar]$INFO[ListItem.EndTime, ($LOCALIZE[31692]: ,)]</label>
+								<scroll>true</scroll>
 								<visible>Skin.HasSetting(Enable.HourMinutes)</visible>
 							</control>
 						</control>
@@ -1226,6 +1250,7 @@
 								<height>45</height>
 								<font>font20_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Years.Range),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Runtime)]</label>
+								<scroll>true</scroll>
 								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Years.Range))</visible>
 							</control>
 						</control>
@@ -1275,6 +1300,7 @@
 							<height>45</height>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31266]: [/COLOR]$INFO[ListItem.Premiered]</label>
+							<scroll>true</scroll>
 							<visible>!String.IsEmpty(ListItem.Premiered)</visible>
 						</control>
 						<control type="label">
@@ -1282,6 +1308,7 @@
 							<height>45</height>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre]</label>
+							<scroll>true</scroll>
 							<visible>!String.IsEmpty(ListItem.Genre)</visible>
 						</control>
 						<control type="label">
@@ -1289,6 +1316,7 @@
 							<height>45</height>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Season] $VAR[AmberFlixSeasonLabelVar]</label>
+							<scroll>true</scroll>
 							<visible>Container.Content(tvshows)</visible>
 						</control>
 						<control type="label">
@@ -1296,6 +1324,7 @@
 							<height>45</height>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.Label,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Episode] $VAR[AmberFlixEpisodesLabelVar]</label>
+							<scroll>true</scroll>
 							<visible>Container.Content(seasons) + !String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !ListItem.IsParentFolder</visible>
 						</control>
 						<control type="label">
@@ -1303,6 +1332,7 @@
 							<height>45</height>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.Label,, • ][/COLOR]$INFO[ListItem(1).Year,, • ]$INFO[ListItem(1).MPAA,, • ]$INFO[ListItem.Episode] $VAR[AmberFlixEpisodesLabelVar]</label>
+							<scroll>true</scroll>
 							<visible>Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366])</visible>
 						</control>
 					</control>
@@ -1314,6 +1344,7 @@
 							<height>45</height>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20359]: [/COLOR]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</label>
+							<scroll>true</scroll>
 							<visible>!ListItem.IsParentFolder</visible>
 						</control>
 						<control type="label">
@@ -1321,6 +1352,7 @@
 							<width>650</width>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</label>
+							<scroll>true</scroll>
 							<visible>!String.IsEmpty(ListItem.Duration)</visible>
 						</control>
 						<control type="label">
@@ -1328,6 +1360,7 @@
 							<height>45</height>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Premiered]</label>
+							<scroll>true</scroll>
 							<visible>![String.IsEmpty(ListItem.RatingAndVotes) + String.IsEmpty(ListItem.MPAA)]</visible>
 						</control>
 						<control type="label">
@@ -1335,6 +1368,7 @@
 							<width>650</width>
 							<font>font20_title</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31266]: [/COLOR]$INFO[ListItem.Premiered]</label>
+							<scroll>true</scroll>
 							<visible>!String.IsEmpty(ListItem.Premiered) + [String.IsEmpty(ListItem.RatingAndVotes) + String.IsEmpty(ListItem.MPAA)]</visible>
 						</control>
 					</control>
@@ -1347,6 +1381,7 @@
 								<height>45</height>
 								<font>font20_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[557]: [/COLOR]$INFO[ListItem.Artist]</label>
+								<scroll>true</scroll>
 								<visible>!String.IsEmpty(ListItem.Artist)</visible>
 							</control>
 							<control type="label">
@@ -1354,6 +1389,7 @@
 								<width>650</width>
 								<font>font20_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]$INFO[ListItem.EndTime, ($LOCALIZE[31692]: ,)]</label>
+								<scroll>true</scroll>
 								<visible>!String.IsEmpty(ListItem.Duration)</visible>
 							</control>
 							<control type="label">
@@ -1361,6 +1397,7 @@
 								<height>45</height>
 								<font>font20_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre]</label>
+								<scroll>true</scroll>
 								<visible>!String.IsEmpty(ListItem.Genre)</visible>
 							</control>
 						</control>
@@ -1405,6 +1442,7 @@
 									<height>45</height>
 									<font>font20_title</font>
 									<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[135]: [/COLOR]$INFO[ListItem.Genre]</label>
+									<scroll>true</scroll>
 									<visible>!String.IsEmpty(ListItem.Genre)</visible>
 								</control>
 								<control type="label">
@@ -1412,6 +1450,7 @@
 									<height>45</height>
 									<font>font20_title</font>
 									<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[21898]: [/COLOR]$INFO[ListItem.Property(Artist_YearsActive)]</label>
+									<scroll>true</scroll>
 									<visible>!String.IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
 								</control>
 							</control>
@@ -1457,6 +1496,7 @@
 									<height>45</height>
 									<font>font20_title</font>
 									<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[ListItem.Year]</label>
+									<scroll>true</scroll>
 									<visible>!String.IsEmpty(ListItem.Year)</visible>
 								</control>
 								<control type="label">
@@ -1464,6 +1504,7 @@
 									<height>45</height>
 									<font>font20_title</font>
 									<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[180]: [/COLOR]$INFO[ListItem.Duration]</label>
+									<scroll>true</scroll>
 									<visible>!String.IsEmpty(ListItem.Duration)</visible>
 									<align>left</align>
 								</control>

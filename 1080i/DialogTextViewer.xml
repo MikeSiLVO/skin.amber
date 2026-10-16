@@ -19,6 +19,7 @@
 				<width>1920</width>
 				<height>45</height>
 				<align>center</align>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="textbox" id="5" description="Textarea">

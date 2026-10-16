@@ -37,6 +37,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[19325]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="grouplist" id="201">
@@ -111,6 +112,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[19148]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="grouplist" id="202">
@@ -155,6 +157,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[19141]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="grouplist" id="203">

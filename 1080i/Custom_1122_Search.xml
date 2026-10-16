@@ -296,6 +296,7 @@
 				<align>center</align>
 				<shadowcolor>Black</shadowcolor>
 				<label>$VAR[ContainerPanelSubHeading]</label>
+				<scroll>true</scroll>
 			</control>
 		</control>
 		<control type="group">
@@ -379,6 +380,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[19055]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 		</control>

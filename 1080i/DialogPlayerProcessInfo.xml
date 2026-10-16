@@ -20,6 +20,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19099]:[/COLOR] $INFO[PVR.ActStreamServiceName]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -27,6 +28,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19101]: [/COLOR]$INFO[PVR.ActStreamProviderName]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -34,6 +36,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19012]: [/COLOR]$INFO[PVR.ActStreamClient]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -41,6 +44,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19006]: [/COLOR]$INFO[PVR.ActStreamDevice]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -48,6 +52,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19007]: [/COLOR]$INFO[PVR.ActStreamStatus]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -55,6 +60,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19015]: [/COLOR]$INFO[PVR.ActStreamEncryptionName]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
@@ -68,6 +74,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19010]: [/COLOR]$INFO[PVR.ActStreamBer]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -75,6 +82,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19011]: [/COLOR]$INFO[PVR.ActStreamUnc]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -82,6 +90,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19100]: [/COLOR]$INFO[PVR.ActStreamMux]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -89,6 +98,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19008]: [/COLOR]$INFO[PVR.ActStreamSignal]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="progress">
@@ -106,6 +116,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19009]: [/COLOR]$INFO[PVR.ActStreamSNR]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="progress">
@@ -126,6 +137,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31139]:[/COLOR] $INFO[Player.Process(videodecoder)]$VAR[VideoHWDecoder, (,)]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
 				</control>
@@ -134,6 +146,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31140]:[/COLOR] $INFO[Player.Process(pixformat)]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
 				</control>
@@ -142,6 +155,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[16038]:[/COLOR] $INFO[Player.Process(deintmethod)]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
 				</control>
@@ -150,6 +164,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[38031]:[/COLOR] $INFO[Player.Process(videowidth),,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
 				</control>
@@ -158,6 +173,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[460]:[/COLOR] $INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 				</control>
 
@@ -167,6 +183,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31309]:[/COLOR] $INFO[System.Memory(used.percent),,       ][COLOR $VAR[HighlightColor]]$LOCALIZE[13271][/COLOR] $INFO[System.CPUUsage]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 					<visible>System.SupportsCPUUsage</visible>
 				</control>
@@ -175,6 +192,7 @@
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31309]:[/COLOR] $INFO[System.Memory(used.percent),,]</label>
+					<scroll>true</scroll>
 					<shadowcolor>black</shadowcolor>
 					<visible>!System.SupportsCPUUsage</visible>
 				</control>
@@ -191,6 +209,7 @@
 					<height>40</height>
 					<align>left</align>
 					<label>$VAR[VideoTopHeading]</label>
+					<scroll>true</scroll>
 					<font>InfoTitle</font>
 					<textcolor>grey</textcolor>
 					<visible>!VideoPlayer.Content(episodes)</visible>
@@ -202,6 +221,7 @@
 					<height>40</height>
 					<align>left</align>
 					<label>$VAR[VideoTopHeading]</label>
+					<scroll>true</scroll>
 					<font>MainLabelBig</font>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>

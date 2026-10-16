@@ -21,6 +21,7 @@
 				<width>1220</width>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label />
+				<scroll>true</scroll>
 				<align>center</align>
 			</control>
 			<control type="grouplist" id="5" description="Controls">
@@ -88,6 +89,7 @@
 				<description>Default Slider</description>
 			</control>
 			<control type="label" id="14">
+				<scroll>true</scroll>
 				<shadowcolor>Black</shadowcolor>
 			</control>
 		</control>

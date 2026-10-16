@@ -41,9 +41,11 @@
 		<include>Time</include>
 		<include>PVRSideBlade</include>
 		<control type="label" id="29">
+			<scroll>true</scroll>
 			<include>HiddenButton</include>
 		</control>
 		<control type="label" id="30">
+			<scroll>true</scroll>
 			<include>HiddenButton</include>
 		</control>
 	</controls>

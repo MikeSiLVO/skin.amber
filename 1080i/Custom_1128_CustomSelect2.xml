@@ -48,6 +48,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[CustomInfoSelectHeader]</label>
+					<scroll>true</scroll>
 					<visible>![String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				</control>
 				<control type="label">
@@ -60,6 +61,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[CustomInfoSelectHeader]</label>
+					<scroll>true</scroll>
 					<visible>[String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback)) + String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))]</visible>
 				</control>
 			</control>

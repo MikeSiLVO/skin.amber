@@ -36,6 +36,7 @@
 				<top>24</top>
 				<width>1429</width>
 				<textcolor>$VAR[HighlightColor]</textcolor>
+				<scroll>true</scroll>
 				<align>center</align>
 			</control>
 			<control type="image">
@@ -513,6 +514,7 @@
 					<font>Details</font>
 					<align>left</align>
 					<textoffsetx>32</textoffsetx>
+					<scroll>true</scroll>
 					<aligny>center</aligny>
 				</control>
 				<control type="label" id="314">
@@ -523,6 +525,7 @@
 					<font>Details</font>
 					<align>left</align>
 					<aligny>center</aligny>
+					<scroll>true</scroll>
 					<textoffsetx>32</textoffsetx>
 				</control>
 			</control>

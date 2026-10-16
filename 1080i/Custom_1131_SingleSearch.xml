@@ -53,6 +53,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[Skin.String(SingleSearchHeader)]$INFO[Skin.String(SingleSearchTerm), &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(101).NumItems, (,)]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="image" description="Line Split">
@@ -167,6 +168,7 @@
 				<align>center</align>
 				<shadowcolor>Black</shadowcolor>
 				<label>$VAR[ContainerPanelSubHeading]</label>
+				<scroll>true</scroll>
 			</control>
 		</control>
 		<control type="group">
@@ -251,6 +253,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[19055]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 		</control>

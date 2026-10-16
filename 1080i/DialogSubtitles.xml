@@ -21,6 +21,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<height>40</height>
 					<align>center</align>
+					<scroll>true</scroll>
 					<aligny>center</aligny>
 				</control>
 				<control type="label" description="Player Title">
@@ -29,6 +30,7 @@
 					<width>1350</width>
 					<height>40</height>
 					<label>$VAR[SubtitleDialogTitle]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -48,6 +50,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
+					<scroll>true</scroll>
 					<font>font12</font>
 				</control>
 				<control type="label"  description="Path">
@@ -59,6 +62,7 @@
 					<aligny>center</aligny>
 					<font>font12</font>
 					<label>$INFO[Player.Filename]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<!-- ** Required ** Do not change <id>or<type>-->
@@ -250,6 +254,7 @@
 					<width>348</width>
 					<height>30</height>
 					<label>$LOCALIZE[24018]</label>
+					<scroll>true</scroll>
 					<font>ListDetails</font>
 					<align>center</align>
 				</control>
@@ -353,6 +358,7 @@
 					<height>60</height>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$LOCALIZE[31357]</label>
+					<scroll>true</scroll>
 					<font>ListDetails</font>
 					<align>center</align>
 					<aligny>center</aligny>

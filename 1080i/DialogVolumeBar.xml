@@ -35,6 +35,7 @@
 					<textcolor>$VAR[LabelTextColor]</textcolor>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$INFO[Control.GetLabel(20)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="group">

@@ -22,6 +22,7 @@
 				<height>45</height>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$LOCALIZE[19142]</label>
+				<scroll>true</scroll>
 				<align>center</align>
 			</control>
 			<control type="group">
@@ -35,6 +36,7 @@
 					<textcolor>Grey</textcolor>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$LOCALIZE[19001][CR]$LOCALIZE[19002]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="edit" id="9" description="Search string">
 					<posy>270</posy>

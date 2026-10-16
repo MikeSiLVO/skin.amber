@@ -205,6 +205,7 @@
 						<align>center</align>
 						<shadowcolor>Black</shadowcolor>
 						<label>$VAR[panelsubheading]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<control type="group">
@@ -330,6 +331,7 @@
 					<width>1</width>
 					<height>1</height>
 					<label />
+					<scroll>true</scroll>
 					<font />
 				</control>
 				<control type="label" id="999">
@@ -338,6 +340,7 @@
 					<width>1</width>
 					<height>1</height>
 					<label />
+					<scroll>true</scroll>
 					<font />
 				</control>
 			</control>

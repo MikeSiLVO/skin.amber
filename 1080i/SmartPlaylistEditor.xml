@@ -18,6 +18,7 @@
 				<posy>90</posy>
 				<width>1402</width>
 				<label />
+				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -102,6 +103,7 @@
 					<posy>306</posy>
 					<width>1467</width>
 					<label>$LOCALIZE[21434]</label>
+					<scroll>true</scroll>
 					<textoffsetx>30</textoffsetx>
 					<align>center</align>
 				</control>

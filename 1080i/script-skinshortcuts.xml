@@ -26,12 +26,14 @@
 					<posy>80</posy>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>[B]$VAR[SkinShortcutsLeftLabelVar][/B]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label">
 					<posx>1055</posx>
 					<posy>80</posy>
 					<width>780</width>
 					<label>$LOCALIZE[31646]: [B][COLOR $VAR[HighlightColor]]$INFO[Skin.String(InitPosName)][/COLOR][/B]</label>
+					<scroll>true</scroll>
 					<visible>String.IsEqual(Window.Property(menuname),mainmenu) + Skin.HasSetting(Enable.DefaultMenu)</visible>
 				</control>
 
@@ -97,6 +99,7 @@
 				<!-- Right Content -->
 				<control type="label">
 					<label>[B]$VAR[SkinShortcutsPageLabelVar][/B]</label>
+					<scroll>true</scroll>
 					<posx>500</posx>
 					<posy>80</posy>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -182,10 +185,12 @@
 							<visible>String.IsEqual(Window.Property(skinshortcuts-hasdeleted),true)</visible>
 						</control>
 						<control type="label">
+							<scroll>true</scroll>
 							<width>16</width>
 						</control>
 						<control type="label">
 							<label>$VAR[SkinShortcutLabelVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 						</control>
 					</control>

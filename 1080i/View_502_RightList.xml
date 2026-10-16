@@ -236,6 +236,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.imdb)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.ListItem.Rating.imdb))</visible>
 				</control>
 			</control>
@@ -259,6 +260,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Rating]$INFO[ListItem.Votes, (, $LOCALIZE[205])]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0)</visible>
 				</control>
 				<control type="label" description="Main Rating No Votes">
@@ -268,6 +270,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Rating]</label>
+					<scroll>true</scroll>
 					<visible>[String.IsEmpty(ListItem.Votes) | String.IsEqual(ListItem.Votes,0)]</visible>
 				</control>
 			</control>
@@ -283,6 +286,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>[B]$INFO[ListItem.Top250,#][/B]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="RT Critics rating">
@@ -303,6 +307,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.tomatoes.Percent)]%</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="RT Audience rating">
@@ -323,6 +328,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.popcorn.Percent)]%</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="Metacritic rating">
@@ -343,6 +349,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.metacritic.Percent)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="TMDB rating">
@@ -363,6 +370,7 @@
 					<font>ListDetails</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.tmdb.Percent)]%</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="TVDB rating and votes">
@@ -385,6 +393,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.tvdb)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="Trakt rating">
@@ -407,6 +416,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Window(Home).Property(SkinInfo.ListItem.Rating.trakt)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="grouplist" description="User rating">
@@ -427,6 +437,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[ListItem.UserRating]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 				</control>
 				<control type="label" description="User Rating">
@@ -436,6 +447,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>-</label>
+					<scroll>true</scroll>
 					<visible>String.IsEmpty(ListItem.UserRating)</visible>
 				</control>
 			</control>
@@ -463,6 +475,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.Oscar.Wins)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.Oscar.Won))</visible>
 				</control>
 				<control type="image" description="Golden Globes logo">
@@ -482,6 +495,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Wins)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Awards.GoldenGlobe.Won))</visible>
 				</control>
 			</control>
@@ -572,6 +586,7 @@
 					<height>80</height>
 					<font>font30_title</font>
 					<label>$INFO[ListItem.Label] ($INFO[ListItem.Year])</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>[String.IsEmpty(ListItem.Art(clearlogo)) + !Container.Content(episodes)]</visible>
 				</control>
@@ -629,6 +644,7 @@
 								<height>47.5</height>
 								<font>font24_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[20342]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Count)]</label>
+								<scroll>true</scroll>
 								<visible>Skin.HasSetting(ShowSetCount)</visible>
 							</control>
 							<control type="label">
@@ -657,6 +673,7 @@
 						<height>45</height>
 						<font>font20_title</font>
 						<label>$VAR[RightListPopupDetails]</label>
+						<scroll>true</scroll>
 						<visible>!Container.Content(episodes) + !ListItem.IsCollection</visible>
 					</control>
 					<control type="label">
@@ -666,6 +683,7 @@
 						<height>45</height>
 						<font>font20_title</font>
 						<label>$VAR[RightListPopupDetails]</label>
+						<scroll>true</scroll>
 						<visible>ListItem.IsCollection</visible>
 					</control>
 					<!-- Episode details -->
@@ -676,6 +694,7 @@
 						<height>45</height>
 						<font>font20_title</font>
 						<label>$VAR[RightListPopupDetailsEpisodes]</label>
+						<scroll>true</scroll>
 						<visible>Container.Content(episodes) + ![String.IsEmpty(ListItem.Genre) | String.IsEmpty(ListItem.Director)]</visible>
 					</control>
 					<control type="label">
@@ -685,6 +704,7 @@
 						<height>45</height>
 						<font>font20_title</font>
 						<label>$VAR[RightListPopupDetailsEpisodes]</label>
+						<scroll>true</scroll>
 						<visible>Container.Content(episodes) + [String.IsEmpty(ListItem.Genre) | String.IsEmpty(ListItem.Director)]</visible>
 					</control>
 				</control>
@@ -868,6 +888,7 @@
 							<font>FanartTitleFont</font>
 							<wrapmultiline>true</wrapmultiline>
 							<label>$INFO[ListItem.Studio]</label>
+							<scroll>true</scroll>
 							<visible>String.IsEmpty(Control.GetLabel(9900502))</visible>
 						</control>
 					</control>
@@ -880,6 +901,7 @@
 							<height>60</height>
 							<align>center</align>
 							<label>[B]$INFO[ListItem.Property(TotalSeasons)][/B]</label>
+							<scroll>true</scroll>
 							<font>MainLabelBigTitle</font>
 							<wrapmultiline>true</wrapmultiline>
 						</control>
@@ -889,6 +911,7 @@
 							<height>30</height>
 							<align>center</align>
 							<label>[LOWERCASE]$VAR[RightListSeasonsLabel][/LOWERCASE]</label>
+							<scroll>true</scroll>
 							<font>font12</font>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
@@ -902,6 +925,7 @@
 							<height>60</height>
 							<align>center</align>
 							<label>[B]$INFO[ListItem.Property(TotalEpisodes)][/B]</label>
+							<scroll>true</scroll>
 							<font>MainLabelBigTitle</font>
 							<wrapmultiline>true</wrapmultiline>
 						</control>
@@ -911,6 +935,7 @@
 							<height>30</height>
 							<align>center</align>
 							<label>[LOWERCASE]$VAR[RightListEpisodesLabel][/LOWERCASE]</label>
+							<scroll>true</scroll>
 							<font>font12</font>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
@@ -924,6 +949,7 @@
 							<height>60</height>
 							<align>center</align>
 							<label>[B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
+							<scroll>true</scroll>
 							<font>MainLabelBigTitle</font>
 							<wrapmultiline>true</wrapmultiline>
 						</control>
@@ -933,6 +959,7 @@
 							<height>30</height>
 							<align>center</align>
 							<label>[LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
+							<scroll>true</scroll>
 							<font>font12</font>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
@@ -1157,6 +1184,7 @@
 							<height>40</height>
 							<align>center</align>
 							<label>$VAR[RightListNextAiredStatus]</label>
+							<scroll>true</scroll>
 							<font>ListDetailsSmall</font>
 						</control>
 						<control type="image">
@@ -1179,6 +1207,7 @@
 							<align>left</align>
 							<font>ListDetailsSmall</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[209]: [/COLOR][B]$VAR[RightListNextEpisode][/B]</label>
+							<scroll>true</scroll>
 						</control>
 						<control type="label">
 							<top>30</top>
@@ -1187,6 +1216,7 @@
 							<align>left</align>
 							<font>ListDetailsSmall</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[210]: [/COLOR][B]$VAR[RightListLastEpisode][/B]</label>
+							<scroll>true</scroll>
 						</control>
 					</control>
 					<control type="grouplist">
@@ -1206,6 +1236,7 @@
 								<height>60</height>
 								<align>center</align>
 								<label>[B]$INFO[ListItem.Property(TotalSeasons)][/B]</label>
+								<scroll>true</scroll>
 								<font>MainLabelBigTitle</font>
 								<wrapmultiline>true</wrapmultiline>
 							</control>
@@ -1215,6 +1246,7 @@
 								<height>30</height>
 								<align>center</align>
 								<label>$VAR[RightListSeasonsLabel]</label>
+								<scroll>true</scroll>
 								<font>font12</font>
 								<textcolor>$VAR[HighlightColor]</textcolor>
 							</control>
@@ -1228,6 +1260,7 @@
 								<height>60</height>
 								<align>center</align>
 								<label>[B]$INFO[ListItem.Property(TotalEpisodes)][/B]</label>
+								<scroll>true</scroll>
 								<font>MainLabelBigTitle</font>
 								<wrapmultiline>true</wrapmultiline>
 							</control>
@@ -1237,6 +1270,7 @@
 								<height>30</height>
 								<align>center</align>
 								<label>$VAR[RightListEpisodesLabel]</label>
+								<scroll>true</scroll>
 								<font>font12</font>
 								<textcolor>$VAR[HighlightColor]</textcolor>
 							</control>
@@ -1250,6 +1284,7 @@
 								<height>60</height>
 								<align>center</align>
 								<label>[B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
+								<scroll>true</scroll>
 								<font>MainLabelBigTitle</font>
 								<wrapmultiline>true</wrapmultiline>
 							</control>
@@ -1259,6 +1294,7 @@
 								<height>30</height>
 								<align>center</align>
 								<label>$LOCALIZE[16101]</label>
+								<scroll>true</scroll>
 								<font>font12</font>
 								<textcolor>$VAR[HighlightColor]</textcolor>
 							</control>
@@ -1275,6 +1311,7 @@
 									<height>60</height>
 									<align>center</align>
 									<label>[B]$INFO[ListItem.Property(TotalEpisodes)][/B]</label>
+									<scroll>true</scroll>
 									<font>MainLabelBigTitle</font>
 									<wrapmultiline>true</wrapmultiline>
 								</control>
@@ -1284,6 +1321,7 @@
 									<height>30</height>
 									<align>center</align>
 									<label>$VAR[RightListEpisodesLabel]</label>
+									<scroll>true</scroll>
 									<font>font12</font>
 									<textcolor>$VAR[HighlightColor]</textcolor>
 								</control>
@@ -1298,6 +1336,7 @@
 									<height>60</height>
 									<align>center</align>
 									<label>[B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
+									<scroll>true</scroll>
 									<font>MainLabelBigTitle</font>
 									<wrapmultiline>true</wrapmultiline>
 								</control>
@@ -1307,6 +1346,7 @@
 									<height>30</height>
 									<align>center</align>
 									<label>$LOCALIZE[16101]</label>
+									<scroll>true</scroll>
 									<font>font12</font>
 									<textcolor>$VAR[HighlightColor]</textcolor>
 								</control>

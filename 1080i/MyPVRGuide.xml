@@ -89,9 +89,11 @@
 			<onright condition="Skin.HasSetting(KioskMode.Enabled)">10</onright>
 		</control>
 		<control type="label" id="29">
+			<scroll>true</scroll>
 			<include>HiddenButton</include>
 		</control>
 		<control type="label" id="30">
+			<scroll>true</scroll>
 			<include>HiddenButton</include>
 		</control>
 	</controls>

@@ -274,6 +274,7 @@
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label />
+				<scroll>true</scroll>
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
@@ -284,6 +285,7 @@
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label />
+				<scroll>true</scroll>
 				<visible>!Control.IsVisible(6)</visible>
 			</control>
 			<control type="group">
@@ -654,6 +656,7 @@
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label />
+				<scroll>true</scroll>
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
@@ -664,6 +667,7 @@
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label />
+				<scroll>true</scroll>
 				<visible>!Control.IsVisible(6)</visible>
 			</control>
 			<control type="group" description="Group 6 Thumbs">
@@ -1158,6 +1162,7 @@
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label />
+				<scroll>true</scroll>
 				<visible>!Control.IsVisible(3)</visible>
 			</control>
 			<control type="label" id="1" description="Header">
@@ -1168,6 +1173,7 @@
 				<font>ListDetails</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label />
+				<scroll>true</scroll>
 				<visible>!Control.IsVisible(6)</visible>
 			</control>
 			<control type="group">

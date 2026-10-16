@@ -74,6 +74,7 @@
 			<posy>60</posy>
 			<width>1860</width>
 			<height>30</height>
+			<scroll>true</scroll>
 			<align>center</align>
 		</control>
 		<control type="label" id="3">
@@ -82,6 +83,7 @@
 			<posy>120</posy>
 			<width>1860</width>
 			<height>30</height>
+			<scroll>true</scroll>
 			<align>center</align>
 		</control>
 		<control type="label" id="4">
@@ -90,6 +92,7 @@
 			<posy>180</posy>
 			<width>1860</width>
 			<height>30</height>
+			<scroll>true</scroll>
 			<align>center</align>
 		</control>
 	</controls>

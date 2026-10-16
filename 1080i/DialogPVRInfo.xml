@@ -43,6 +43,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$VAR[NewLiveFinaleLabel,, - ]$INFO[ListItem.Title]</label>
+					<scroll>true</scroll>
 				</control>
 				<!-- En Matrix change -->
 				<control type="image" description="Line Split">

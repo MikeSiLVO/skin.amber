@@ -28,6 +28,7 @@
 				<posy>405</posy>
 				<width>592</width>
 				<textcolor>$VAR[HighlightColor]</textcolor>
+				<scroll>true</scroll>
 				<align>center</align>
 			</control>
 			<control type="group">

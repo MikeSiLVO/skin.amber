@@ -59,6 +59,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[Container(10051).ListItem.Label]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="image" description="Powered by TMDb">
 					<posy>8</posy>
@@ -218,6 +219,7 @@
 						<top>0</top>
 						<height>30</height>
 						<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[342] $INFO[Container(10052).NumItems,(,)][/COLOR]</label>
+						<scroll>true</scroll>
 						<font>ListDetails</font>
 					</control>
 					<control type="image" description="Line Split">
@@ -256,6 +258,7 @@
 						<top>0</top>
 						<height>30</height>
 						<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[36903] $INFO[Container(10053).NumItems,(,)][/COLOR]</label>
+						<scroll>true</scroll>
 						<font>ListDetails</font>
 					</control>
 					<control type="image" description="Line Split">
@@ -294,6 +297,7 @@
 						<top>0</top>
 						<height>30</height>
 						<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[1] $INFO[Container(10054).NumItems,(,)][/COLOR]</label>
+						<scroll>true</scroll>
 						<font>ListDetails</font>
 					</control>
 					<control type="image" description="Line Split">

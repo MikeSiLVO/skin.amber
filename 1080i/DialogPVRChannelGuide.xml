@@ -25,6 +25,7 @@
 				<font>InfoTitle</font>
 				<align>center</align>
 				<label>[B]$INFO[VideoPlayer.ChannelName][/B]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<posx>340</posx>
@@ -34,6 +35,7 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<align>center</align>
 				<label>$INFO[Container(11).ListItem.StartDate]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="list" id="11">
 				<posx>320</posx>

@@ -34,6 +34,7 @@
 					<align>center</align>
 					<haspath>true</haspath>
 					<textcolor>$VAR[HighlightColor]</textcolor>
+					<scroll>true</scroll>
 					<shadowcolor />
 				</control>
 				<control type="panel" id="20" description="Left File List">
@@ -94,6 +95,7 @@
 					<posx>6</posx>
 					<posy>950</posy>
 					<width>928</width>
+					<scroll>true</scroll>
 					<align>left</align>
 				</control>
 				<control type="scrollbar" id="60">
@@ -121,6 +123,7 @@
 					<align>center</align>
 					<haspath>true</haspath>
 					<textcolor>$VAR[HighlightColor]</textcolor>
+					<scroll>true</scroll>
 					<shadowcolor />
 				</control>
 				<control type="group">
@@ -189,6 +192,7 @@
 					<posx>6</posx>
 					<posy>950</posy>
 					<width>928</width>
+					<scroll>true</scroll>
 					<align>left</align>
 				</control>
 				<control type="scrollbar" id="61">

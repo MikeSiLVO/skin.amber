@@ -990,10 +990,12 @@
 			<control type="label" id="1200101">
 				<visible>false</visible>
 				<label>$VAR[FanartTitleVar]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label" id="1200102">
 				<visible>false</visible>
 				<label>$VAR[FanartDBTypeVar]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="button" id="12001">
 				<include condition="Skin.HasSetting(FanartTitle.InTopBar) + !Skin.HasSetting(VerticalHome)">TitleButtonTopBar</include>
@@ -1040,6 +1042,7 @@
 				<font>font16</font>
 				<align>center</align>
 				<label>$VAR[IconMenuLabelVar]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<shadowcolor>ShadowDark</shadowcolor>
 			</control>
@@ -1062,6 +1065,7 @@
 				<font>font16</font>
 				<align>center</align>
 				<label>$VAR[IconMenuLabelVar]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<shadowcolor>ShadowDark</shadowcolor>
 			</control>

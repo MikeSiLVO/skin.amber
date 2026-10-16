@@ -87,6 +87,7 @@
 				<align>left</align>
 				<font>ListDetails</font>
 				<label>[B]$LOCALIZE[31528][/B]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="button" id="90099">
 				<description>Close Button</description>

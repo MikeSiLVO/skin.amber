@@ -64,6 +64,7 @@
 				<font>MainMenu</font>
 				<shadowcolor>Black</shadowcolor>
 				<label>$INFO[System.Time]</label>
+				<scroll>true</scroll>
 			</control>
 
 			<control type="group">
@@ -87,6 +88,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$VAR[FullScreenTitle]</label>
+						<scroll>true</scroll>
 						<font>MainLabelBigTitle</font>
 						<shadowcolor>Black</shadowcolor>
 					</control>
@@ -102,6 +104,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$VAR[FullScreenTitle]</label>
+						<scroll>true</scroll>
 						<font>MainLabelBigTitle</font>
 						<shadowcolor>Black</shadowcolor>
 					</control>
@@ -190,6 +193,7 @@
 								<width>400</width>
 								<align>left</align>
 								<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 								<visible>!VideoPlayer.HasEPG</visible>
@@ -199,6 +203,7 @@
 								<width>400</width>
 								<align>left</align>
 								<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 								<visible>VideoPlayer.HasEPG</visible>
@@ -213,6 +218,7 @@
 							<align>left</align>
 							<font>Details</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31162]: [/COLOR] $INFO[PVR.TimeShiftCur]$INFO[PVR.TimeShiftOffset, (-,)]</label>
+							<scroll>true</scroll>
 							<visible>!Player.ChannelPreviewActive + PVR.IsTimeShift</visible>
 						</control>
 
@@ -225,6 +231,7 @@
 								<width>400</width>
 								<align>right</align>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31029]: [/COLOR]$INFO[Player.TimeRemaining]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 								<visible>!VideoPlayer.HasEPG</visible>
@@ -235,6 +242,7 @@
 								<width>400</width>
 								<align>right</align>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31029]: [/COLOR]$INFO[PVR.EpgEventRemainingTime]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 								<visible>VideoPlayer.HasEPG</visible>
@@ -287,6 +295,7 @@
 								<aligny>center</aligny>
 								<font>font13_title</font>
 								<label>$LOCALIZE[19158]</label>
+								<scroll>true</scroll>
 							</control>
 						</control>
 
@@ -339,6 +348,7 @@
 								<width>400</width>
 								<align>left</align>
 								<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 							</control>
@@ -350,6 +360,7 @@
 								<align>left</align>
 								<font>Details</font>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[21396]: [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</label>
+								<scroll>true</scroll>
 							</control>
 						</control>
 
@@ -362,6 +373,7 @@
 								<width>400</width>
 								<align>right</align>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31029]: [/COLOR]$INFO[Player.TimeRemaining]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 							</control>
@@ -387,6 +399,7 @@
 						<width>1570</width>
 						<align>center</align>
 						<label>$VAR[SeekLabel]</label>
+						<scroll>true</scroll>
 						<font>InfoTitle</font>
 						<shadowcolor>Black</shadowcolor>
 					</control>
@@ -474,6 +487,7 @@
 						<height>30</height>
 						<font>font13</font>
 						<label>$VAR[VideoPlayerSecondLine]</label>
+						<scroll>true</scroll>
 						<align>left</align>
 					</control>
 				</control>
@@ -488,6 +502,7 @@
 					<font>MainMenu</font>
 					<shadowcolor>Black</shadowcolor>
 					<label>$INFO[System.Time]</label>
+					<scroll>true</scroll>
 				</control>
 
 				<control type="group">
@@ -568,6 +583,7 @@
 								<width>400</width>
 								<align>left</align>
 								<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 								<visible>!VideoPlayer.HasEPG</visible>
@@ -577,6 +593,7 @@
 								<width>400</width>
 								<align>left</align>
 								<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 								<visible>VideoPlayer.HasEPG</visible>
@@ -591,6 +608,7 @@
 							<align>left</align>
 							<font>Details</font>
 							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31162]: [/COLOR] $INFO[PVR.TimeShiftCur]$INFO[PVR.TimeShiftOffset, (-,)]</label>
+							<scroll>true</scroll>
 							<visible>!Player.ChannelPreviewActive + PVR.IsTimeShift</visible>
 						</control>
 
@@ -603,6 +621,7 @@
 								<width>400</width>
 								<align>right</align>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31029]: [/COLOR]$INFO[Player.TimeRemaining]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 								<visible>!VideoPlayer.HasEPG</visible>
@@ -613,6 +632,7 @@
 								<width>400</width>
 								<align>right</align>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31029]: [/COLOR]$INFO[PVR.EpgEventRemainingTime]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 								<visible>VideoPlayer.HasEPG</visible>
@@ -667,6 +687,7 @@
 								<aligny>center</aligny>
 								<font>font10_title</font>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[19158][/COLOR]</label>
+								<scroll>true</scroll>
 							</control>
 						</control>
 
@@ -719,6 +740,7 @@
 								<width>400</width>
 								<align>left</align>
 								<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 							</control>
@@ -730,6 +752,7 @@
 								<align>left</align>
 								<font>Details</font>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[21396]: [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</label>
+								<scroll>true</scroll>
 							</control>
 						</control>
 
@@ -742,6 +765,7 @@
 								<width>400</width>
 								<align>right</align>
 								<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31029]: [/COLOR]$INFO[Player.TimeRemaining]</label>
+								<scroll>true</scroll>
 								<font>Details</font>
 								<shadowcolor>Black</shadowcolor>
 							</control>
@@ -767,6 +791,7 @@
 						<width>1570</width>
 						<align>center</align>
 						<label>$VAR[SeekLabel]</label>
+						<scroll>true</scroll>
 						<font>InfoTitle</font>
 						<shadowcolor>Black</shadowcolor>
 					</control>
@@ -809,6 +834,7 @@
 				<width>300</width>
 				<align>right</align>
 				<label>[B]$VAR[SeekLabel][/B]</label>
+				<scroll>true</scroll>
 				<font>InfoTitle</font>
 				<shadowcolor>Black</shadowcolor>
 			</control>

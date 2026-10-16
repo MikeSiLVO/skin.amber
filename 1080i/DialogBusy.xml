@@ -35,6 +35,7 @@
 					<align>center</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[DialogBusyLabel]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 		</control>

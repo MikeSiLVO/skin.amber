@@ -22,6 +22,7 @@
 			<!-- Hidden label with weekday -->
 			<control type="label" id="11">
 				<label>$INFO[System.Date(DDD)]</label>
+				<scroll>true</scroll>
 				<include>HiddenObject</include>
 			</control>
 			<!-- Background fanart -->

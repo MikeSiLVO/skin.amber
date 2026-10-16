@@ -18,6 +18,7 @@
 				<width>300</width>
 				<height>60</height>
 				<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31984]:[/COLOR] $INFO[Player.SeekNumeric]</label>
+				<scroll>true</scroll>
 				<font>Details</font>
 				<align>center</align>
 				<shadowcolor>black</shadowcolor>
@@ -166,6 +167,7 @@
 					<height>40</height>
 					<align>left</align>
 					<label>$VAR[VideoTopHeading]</label>
+					<scroll>true</scroll>
 					<font>InfoTitle</font>
 					<textcolor>grey</textcolor>
 				</control>

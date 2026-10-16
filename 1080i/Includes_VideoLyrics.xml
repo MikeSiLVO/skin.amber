@@ -353,6 +353,7 @@
 				<align>center</align>
 				<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
 				<label fallback="--">$INFO[ListItem.Label]</label>
+				<scroll>true</scroll>
 			</control>
 		</definition>
 	</include>
@@ -1418,6 +1419,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1432,6 +1434,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1446,6 +1449,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1509,6 +1513,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -1522,6 +1527,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<align>center</align>
 						<textcolor>$PARAM[col22]</textcolor>
@@ -1544,6 +1550,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<shadowcolor>black</shadowcolor>
 						<align>right</align>
@@ -1560,6 +1567,7 @@
 							<effect type="zoom" center="240,50" start="0" end="100" tween="sine" easing="out" time="840" />
 						</animation>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr2b</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -1585,6 +1593,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1600,6 +1609,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1616,6 +1626,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1675,6 +1686,7 @@
 					<width>1135</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<scroll>true</scroll>
 					<font>lyr4</font>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
@@ -1692,6 +1704,7 @@
 					<width>1135</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr4</font>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
@@ -1708,6 +1721,7 @@
 					<width>1135</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+					<scroll>true</scroll>
 					<font>lyr4</font>
 					<shadowcolor>black</shadowcolor>
 					<textcolor>$PARAM[col43]</textcolor>
@@ -1745,6 +1759,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1761,6 +1776,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1777,6 +1793,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1794,6 +1811,7 @@
 				<width max="600">auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+				<scroll>true</scroll>
 				<font>lyr5b</font>
 				<shadowcolor>black</shadowcolor>
 				<aligny>top</aligny>
@@ -1825,6 +1843,7 @@
 					<width>1820</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<scroll>true</scroll>
 					<font>lyr6</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -1842,6 +1861,7 @@
 					<width>1820</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr6a</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -1867,6 +1887,7 @@
 						<width>auto</width>
 						<height>600</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr6b</font>
 						<shadowcolor>black</shadowcolor>
 						<align>right</align>
@@ -1884,6 +1905,7 @@
 							<effect type="rotate" delay="1320" center="auto" start="4" end="0" time="720" tween="bounce" easing="out" />
 						</animation>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr6c</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -1908,6 +1930,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr7</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1923,6 +1946,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr7</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1938,6 +1962,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr7</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -1986,6 +2011,7 @@
 				<width>auto</width>
 				<height>120</height>
 				<label>$INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr8</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2001,6 +2027,7 @@
 				<width>auto</width>
 				<height>120</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr8</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2017,6 +2044,7 @@
 				<width>auto</width>
 				<height>120</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr8</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2074,6 +2102,7 @@
 					<width>940</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+					<scroll>true</scroll>
 					<font>lyr9</font>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
@@ -2089,6 +2118,7 @@
 					<width>940</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr9</font>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
@@ -2104,6 +2134,7 @@
 					<width>940</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<scroll>true</scroll>
 					<font>lyr9</font>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
@@ -2144,6 +2175,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr10</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -2160,6 +2192,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr10b</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -2176,6 +2209,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr10c</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -2234,6 +2268,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+						<scroll>true</scroll>
 						<font>lyr11</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -2243,6 +2278,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+						<scroll>true</scroll>
 						<font>lyr11</font>
 						<align>center</align>
 						<textcolor>00fFFFFF</textcolor>
@@ -2265,6 +2301,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+						<scroll>true</scroll>
 						<font>lyr11</font>
 						<align>center</align>
 						<textcolor>00fFFFFF</textcolor>
@@ -2273,6 +2310,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+						<scroll>true</scroll>
 						<font>lyr11</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -2296,6 +2334,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr11</font>
 						<shadowcolor>black</shadowcolor>
 						<align>right</align>
@@ -2308,6 +2347,7 @@
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr11b</font>
 						<aligny>top</aligny>
 						<textcolor>00ffffff</textcolor>
@@ -2330,6 +2370,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr11</font>
 						<align>right</align>
 						<aligny>top</aligny>
@@ -2341,6 +2382,7 @@
 						<height>600</height>
 						<wrapmultiline>true</wrapmultiline>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr11b</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -2401,6 +2443,7 @@
 					<width>auto</width>
 					<height>350</height>
 					<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr12b</font>
 					<align>center</align>
 					<aligny>top</aligny>
@@ -2416,6 +2459,7 @@
 					<width>auto</width>
 					<height>350</height>
 					<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+					<scroll>true</scroll>
 					<font>lyr12c</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -2442,6 +2486,7 @@
 					<width>auto</width>
 					<height>350</height>
 					<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr12b</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -2453,6 +2498,7 @@
 					<width>auto</width>
 					<height>350</height>
 					<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+					<scroll>true</scroll>
 					<font>lyr12c</font>
 					<align>center</align>
 					<textcolor>00fFFFFF</textcolor>
@@ -2502,6 +2548,7 @@
 				<width>auto</width>
 				<height>120</height>
 				<label>$INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr13</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2517,6 +2564,7 @@
 				<width>auto</width>
 				<height>120</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr13</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2533,6 +2581,7 @@
 				<width>auto</width>
 				<height>120</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr13</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2585,6 +2634,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr14</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -2602,6 +2652,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr14b</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -2619,6 +2670,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr14c</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -2671,6 +2723,7 @@
 					<width>925</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<scroll>true</scroll>
 					<font>lyr15</font>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
@@ -2687,6 +2740,7 @@
 					<width>925</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr15</font>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
@@ -2703,6 +2757,7 @@
 					<width>925</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+					<scroll>true</scroll>
 					<font>lyr15</font>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
@@ -2741,6 +2796,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr16</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2757,6 +2813,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr16</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2772,6 +2829,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr16</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -2828,6 +2886,7 @@
 					<width>1820</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<scroll>true</scroll>
 					<font>lyr17</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -2843,6 +2902,7 @@
 					<width>1820</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr17a</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -2867,6 +2927,7 @@
 						<width>auto</width>
 						<height>600</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr17b</font>
 						<shadowcolor>black</shadowcolor>
 						<align>right</align>
@@ -2884,6 +2945,7 @@
 							<effect type="rotatex" delay="720" center="0,0" start="275" end="360" time="1080" tween="bounce" easing="out" />
 						</animation>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr17c</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -2924,6 +2986,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+						<scroll>true</scroll>
 						<font>lyr18</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -2934,6 +2997,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+						<scroll>true</scroll>
 						<font>lyr18</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -2955,6 +3019,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+						<scroll>true</scroll>
 						<font>lyr18</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -2973,6 +3038,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+						<scroll>true</scroll>
 						<font>lyr18</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -2997,6 +3063,7 @@
 						<width>auto</width>
 						<height>600</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr18</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -3009,6 +3076,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<visible>String.EndsWith(Container(110).CurrentItem,18) | String.EndsWith(Container(110).CurrentItem,38) | String.EndsWith(Container(110).CurrentItem,58) | String.EndsWith(Container(110).CurrentItem,78) | String.EndsWith(Container(110).CurrentItem,98)</visible>
 						<label> $INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr18b</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -3030,6 +3098,7 @@
 						<width>auto</width>
 						<height>600</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr18</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -3046,6 +3115,7 @@
 							<effect type="zoom" center="0,0" delay="900" start="0" end="100" time="300" tween="sine" easing="out" />
 						</animation>
 						<label> $INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr18b</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -3070,6 +3140,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr19</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -3085,6 +3156,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr19b</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -3100,6 +3172,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr19c</font>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -3150,6 +3223,7 @@
 					<width>1920</width>
 					<height>115</height>
 					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<scroll>true</scroll>
 					<font>lyr20</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -3173,6 +3247,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+						<scroll>true</scroll>
 						<font>lyr20</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -3187,6 +3262,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr20</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -3225,6 +3301,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3237,6 +3314,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3249,6 +3327,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3301,6 +3380,7 @@
 					<width>1820</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<scroll>true</scroll>
 					<font>lyr17</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -3315,6 +3395,7 @@
 					<width>1820</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr17a</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -3337,6 +3418,7 @@
 						<width>auto</width>
 						<height>600</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr17b</font>
 						<shadowcolor>black</shadowcolor>
 						<align>right</align>
@@ -3352,6 +3434,7 @@
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr17c</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -3373,6 +3456,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3385,6 +3469,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3397,6 +3482,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3458,6 +3544,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -3470,6 +3557,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<align>center</align>
 						<textcolor>$PARAM[col42]</textcolor>
@@ -3491,6 +3579,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<shadowcolor>black</shadowcolor>
 						<align>right</align>
@@ -3506,6 +3595,7 @@
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr2b</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -3528,6 +3618,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3542,6 +3633,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3556,6 +3648,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3571,6 +3664,7 @@
 				<width max="600">auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+				<scroll>true</scroll>
 				<font>lyr5b</font>
 				<shadowcolor>black</shadowcolor>
 				<aligny>top</aligny>
@@ -3590,6 +3684,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3602,6 +3697,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3614,6 +3710,7 @@
 				<width>auto</width>
 				<height>100</height>
 				<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr1</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3666,6 +3763,7 @@
 					<width>1820</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<scroll>true</scroll>
 					<font>lyr17</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -3680,6 +3778,7 @@
 					<width>1820</width>
 					<height>125</height>
 					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<scroll>true</scroll>
 					<font>lyr17a</font>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
@@ -3702,6 +3801,7 @@
 						<width>auto</width>
 						<height>600</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr17b</font>
 						<shadowcolor>black</shadowcolor>
 						<align>right</align>
@@ -3717,6 +3817,7 @@
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr17c</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -3738,6 +3839,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3750,6 +3852,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3762,6 +3865,7 @@
 				<width>auto</width>
 				<height>115</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr3</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3823,6 +3927,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -3835,6 +3940,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<align>center</align>
 						<textcolor>$PARAM[col92]</textcolor>
@@ -3856,6 +3962,7 @@
 						<width>auto</width>
 						<height>125</height>
 						<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+						<scroll>true</scroll>
 						<font>lyr2</font>
 						<shadowcolor>black</shadowcolor>
 						<align>right</align>
@@ -3871,6 +3978,7 @@
 						<animation effect="zoom" center="auto" start="0" end="100" time="250" reversible="false">Visible</animation>
 						<animation effect="fade" start="0" end="0" time="10">Hidden</animation>
 						<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+						<scroll>true</scroll>
 						<font>lyr2b</font>
 						<shadowcolor>black</shadowcolor>
 						<aligny>top</aligny>
@@ -3893,6 +4001,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part1)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3907,6 +4016,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part2)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3921,6 +4031,7 @@
 				<width>auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<scroll>true</scroll>
 				<font>lyr5</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -3936,6 +4047,7 @@
 				<width max="600">auto</width>
 				<height>350</height>
 				<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+				<scroll>true</scroll>
 				<font>lyr5b</font>
 				<shadowcolor>black</shadowcolor>
 				<aligny>top</aligny>

@@ -213,6 +213,7 @@
 					<textoffsetx>10</textoffsetx>
 					<include>9000ViewButtons</include>
 					<label />
+					<scroll>true</scroll>
 				</control>
 				<control type="label" id="9181">
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -220,6 +221,7 @@
 					<textoffsetx>10</textoffsetx>
 					<include>9000ViewButtons</include>
 					<label>$LOCALIZE[31026]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="togglebutton" id="619">
 					<include>9000SysButtons</include>
@@ -258,6 +260,7 @@
 					<textoffsetx>10</textoffsetx>
 					<include>9000ViewButtons</include>
 					<label>$LOCALIZE[31698]</label>
+					<scroll>true</scroll>
 					<visible>Player.HasAudio</visible>
 				</control>
 				<include content="SidebladeNowPlaying">

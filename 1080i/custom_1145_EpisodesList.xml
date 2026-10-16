@@ -38,6 +38,7 @@
 				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>[B]$INFO[VideoPlayer.TVShowTitle][/B] - $INFO[Container(6001).ListItem.Label]</label>
+				<scroll>true</scroll>
 				<visible>Skin.HasSetting(SeasonsEpisodeList)</visible>
 			</control>
 			<control type="label">
@@ -49,6 +50,7 @@
 				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>[B]$INFO[VideoPlayer.TVShowTitle][/B] - $LOCALIZE[20373] $INFO[VideoPlayer.Season]</label>
+				<scroll>true</scroll>
 				<visible>!Skin.HasSetting(SeasonsEpisodeList)</visible>
 			</control>
 			<control type="image" description="Line Split">
@@ -453,6 +455,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[EpisodesListRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
 					</control>

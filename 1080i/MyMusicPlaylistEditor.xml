@@ -25,6 +25,7 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<textoffsetx>20</textoffsetx>
 				<label>$LOCALIZE[20094]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="list" id="50">
 				<posx>20</posx>
@@ -129,12 +130,14 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<textoffsetx>20</textoffsetx>
 				<label>$LOCALIZE[13350]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label" id="101" description="item count">
 				<left>20</left>
 				<posy>85</posy>
 				<width>837</width>
 				<align>right</align>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="list" id="100">

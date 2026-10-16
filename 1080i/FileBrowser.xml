@@ -18,6 +18,7 @@
 				<posx>120</posx>
 				<posy>90</posy>
 				<width>1200</width>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="group">
@@ -247,6 +248,7 @@
 				<posx>126</posx>
 				<posy>900</posy>
 				<width>579</width>
+				<scroll>true</scroll>
 				<font>font22</font>
 			</control>
 			<control type="image" description="Top line">

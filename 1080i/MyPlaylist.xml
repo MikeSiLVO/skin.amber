@@ -21,6 +21,7 @@
 				<width>820</width>
 				<align>center</align>
 				<label>$VAR[PlaylistHeader]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="group">
@@ -34,6 +35,7 @@
 					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$VAR[listmediaheader]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 				<control type="label">
@@ -44,6 +46,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$VAR[listmediafooter]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
 				<control type="grouplist" description="Song Media Flags">
@@ -207,6 +210,7 @@
 				<posx>1560</posx>
 				<posy>960</posy>
 				<width>300</width>
+				<scroll>true</scroll>
 				<font>font22</font>
 			</control>
 			<control type="image" description="Top line">

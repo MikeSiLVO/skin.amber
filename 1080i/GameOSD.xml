@@ -31,6 +31,7 @@
 						<height>70</height>
 						<font>ListDetails</font>
 						<label>$LOCALIZE[35221]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<align>center</align>
 					</control>
@@ -83,6 +84,7 @@
 					<align>center</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$LOCALIZE[35221]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="group" id="2000">
 					<top>80</top>

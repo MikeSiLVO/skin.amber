@@ -192,6 +192,7 @@
 					<height>35</height>
 					<font>Details</font>
 					<label>$VAR[GlobalHeadings]</label>
+					<scroll>true</scroll>
 				</control>
 				<!-- Icon menu label -->
 				<control type="label" id="12002">
@@ -201,6 +202,7 @@
 					<font>Details</font>
 					<align>left</align>
 					<label>[B]$INFO[Container(300).ListItem.Label][/B]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>[Control.HasFocus(300) | Control.HasFocus(12001) | ControlGroup(700).HasFocus] + $EXP[TopBarIconLabelShouldShow]</visible>
 				</control>
@@ -212,6 +214,7 @@
 					<font>Details</font>
 					<align>left</align>
 					<label>[B]$INFO[Container(300).ListItem.Label][/B]  •  [B]$INFO[Container(9001).ListItem.Label][/B]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>Control.HasFocus(9001) + $EXP[TopBarIconLabelShouldShow]</visible>
 				</control>
@@ -253,6 +256,7 @@
 						<height>35</height>
 						<font>Details</font>
 						<label>$VAR[TopBarMedia2]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Right side content for top bar: recording icon, weather, time and date -->
@@ -295,6 +299,7 @@
 						<textcolor>$VAR[LabelTextColor]</textcolor>
 						<shadowcolor>ShadowDark</shadowcolor>
 						<label>$INFO[Weather.Temperature][COLOR $VAR[HighlightColor]]  • [/COLOR]</label>
+						<scroll>true</scroll>
 						<height>40</height>
 					</control>
 					<control type="label">
@@ -305,6 +310,7 @@
 						<textcolor>$VAR[LabelTextColor]</textcolor>
 						<shadowcolor>ShadowDark</shadowcolor>
 						<label>$VAR[TimeLabel]</label>
+						<scroll>true</scroll>
 						<height>40</height>
 					</control>
 					<control type="togglebutton">
@@ -370,6 +376,7 @@
 				<font>ListDetails</font>
 				<align>left</align>
 				<label>$VAR[LibraryStats]</label>
+				<scroll>true</scroll>
 				<shadowcolor>ShadowDark</shadowcolor>
 				<visible>!Skin.HasSetting(VerticalHome) + ![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 			</control>
@@ -389,6 +396,7 @@
 				<font>ListDetails</font>
 				<align>left</align>
 				<label>$VAR[LibraryStats]</label>
+				<scroll>true</scroll>
 				<shadowcolor>ShadowDark</shadowcolor>
 				<visible>!Skin.HasSetting(VerticalHome) + [String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 			</control>
@@ -412,6 +420,7 @@
 					<font>ListDetails</font>
 					<align>left</align>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<visible>![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
@@ -431,6 +440,7 @@
 					<font>ListDetails</font>
 					<align>left</align>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<visible>[String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
@@ -454,6 +464,7 @@
 					<font>ListDetails</font>
 					<align>left</align>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<visible>![String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
@@ -473,6 +484,7 @@
 					<font>ListDetails</font>
 					<align>left</align>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<visible>[String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)]</visible>
 				</control>
@@ -526,6 +538,7 @@
 					<shadowcolor>ShadowDark</shadowcolor>
 					<align>center</align>
 					<label>$INFO[Window.Property(Daily.$PARAM[dayid].LongDay)]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="High Temp">
 					<posx>540</posx>
@@ -537,6 +550,7 @@
 					<align>center</align>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$INFO[Window.Property(Daily.$PARAM[dayid].HighTemperature)]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Low temp">
 					<posx>690</posx>
@@ -548,6 +562,7 @@
 					<align>center</align>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$INFO[Window.Property(Daily.$PARAM[dayid].LowTemperature)]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="multiimage" description="Icon">
 					<posx>555</posx>
@@ -571,6 +586,7 @@
 					<font>font16</font>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$INFO[Window.Property(Daily.$PARAM[dayid].Outlook)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 		</definition>
@@ -953,6 +969,7 @@
 					<font>font20_title</font>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$PARAM[heading]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Title Label">
 					<visible>$PARAM[lowpanel]</visible>
@@ -962,6 +979,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<font>font20_title</font>
 					<label>$PARAM[heading]</label>
+					<scroll>true</scroll>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label" description="Subheading">
@@ -970,6 +988,7 @@
 					<width>$PARAM[width]</width>
 					<font>font20_title</font>
 					<label>[B]$PARAM[subheading][/B]</label>
+					<scroll>true</scroll>
 					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
@@ -979,6 +998,7 @@
 					<width>$PARAM[width]</width>
 					<font>font20_title</font>
 					<label>[B]$PARAM[subheading][/B]</label>
+					<scroll>true</scroll>
 					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
@@ -1002,6 +1022,7 @@
 						<width>$PARAM[width]</width>
 						<font>ListDetails</font>
 						<label>[B]$PARAM[subheading2][/B]</label>
+						<scroll>true</scroll>
 						<aligny>top</aligny>
 					</control>
 					<control type="label" description="Subheading2">
@@ -1011,6 +1032,7 @@
 						<width>$PARAM[width]</width>
 						<font>ListDetails</font>
 						<label>[B]$PARAM[subheading2][/B]</label>
+						<scroll>true</scroll>
 						<aligny>center</aligny>
 					</control>
 				</control>
@@ -1138,6 +1160,7 @@
 					<height>25</height>
 					<font>ListDetails</font>
 					<label>$VAR[panelfooter2]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Footer">
 					<visible>$PARAM[showfooter]</visible>
@@ -1145,6 +1168,7 @@
 					<height>30</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer]</label>
+					<scroll>true</scroll>
 					<aligny>top</aligny>
 					<visible>![Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
@@ -1154,6 +1178,7 @@
 					<height>60</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer]</label>
+					<scroll>true</scroll>
 					<wrapmultiline>true</wrapmultiline>
 					<aligny>top</aligny>
 					<visible>[Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows)] + !Skin.HasSetting(coloredflags)</visible>
@@ -1164,6 +1189,7 @@
 					<height>60</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer]</label>
+					<scroll>true</scroll>
 					<aligny>top</aligny>
 					<visible>[Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]</visible>
 				</control>
@@ -1173,6 +1199,7 @@
 					<height>60</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer]</label>
+					<scroll>true</scroll>
 					<wrapmultiline>true</wrapmultiline>
 					<aligny>top</aligny>
 					<visible>[Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows)] + Skin.HasSetting(coloredflags)</visible>
@@ -1305,6 +1332,7 @@
 					<font>font20_title</font>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$PARAM[heading]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Subheading">
 					<top>70</top>
@@ -1313,6 +1341,7 @@
 					<width>$PARAM[width]</width>
 					<font>font20_title</font>
 					<label>[B]$PARAM[subheading][/B]</label>
+					<scroll>true</scroll>
 					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
@@ -1323,6 +1352,7 @@
 					<width>$PARAM[width]</width>
 					<font>ListDetails</font>
 					<label>[B]$PARAM[subheading2][/B]</label>
+					<scroll>true</scroll>
 					<aligny>center</aligny>
 				</control>
 				<control type="group">
@@ -1419,6 +1449,7 @@
 					<height>40</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer2]</label>
+					<scroll>true</scroll>
 					<aligny>top</aligny>
 				</control>
 				<control type="label" description="Footer">
@@ -1429,6 +1460,7 @@
 					<height>75</height>
 					<font>ListDetails</font>
 					<label>$PARAM[footer]</label>
+					<scroll>true</scroll>
 					<wrapmultiline>true</wrapmultiline>
 					<aligny>top</aligny>
 				</control>
@@ -1468,6 +1500,7 @@
 					<font>font20_title</font>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$PARAM[heading]</label>
+					<scroll>true</scroll>
 				</control>
 
 				<control type="group">
@@ -1524,6 +1557,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>[B]$VAR[RatingOverlayVar][/B]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 						</control>
 					</control>
@@ -1540,6 +1574,7 @@
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$VAR[panelfooter]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="Subheading Label">
 						<top>580</top>
@@ -1550,6 +1585,7 @@
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$VAR[panelfooter2]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
 					</control>
 				</control>
@@ -1564,6 +1600,7 @@
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$VAR[panelfooter2]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="Subheading Label">
 						<top>550</top>
@@ -1574,6 +1611,7 @@
 						<align>center</align>
 						<font>ListDetails</font>
 						<label>$VAR[panelfooter]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<control type="label" description="Subheading2">
@@ -1585,6 +1623,7 @@
 					<align>center</align>
 					<font>ListDetails</font>
 					<label>$PARAM[subheading2]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="group">
 					<width>$PARAM[plotwidth]</width>
@@ -2346,6 +2385,7 @@
 			<width>100%</width>
 			<height>100%</height>
 			<label>$INFO[PVR.ChannelNumberInput]</label>
+			<scroll>true</scroll>
 			<shadowcolor>black</shadowcolor>
 			<align>center</align>
 			<font>Clock</font>
@@ -2361,6 +2401,7 @@
 			<width>42</width>
 			<height>42</height>
 			<label>$PARAM[label]</label>
+			<scroll>true</scroll>
 			<align>center</align>
 			<aligny>center</aligny>
 			<textcolor>$VAR[LabelTextColor]</textcolor>
@@ -2371,6 +2412,7 @@
 			<width>42</width>
 			<height>42</height>
 			<label>[B]$PARAM[label][/B]</label>
+			<scroll>true</scroll>
 			<align>center</align>
 			<aligny>center</aligny>
 			<textcolor>$VAR[HighlightColor]</textcolor>
@@ -2383,6 +2425,7 @@
 			<width>42</width>
 			<height>42</height>
 			<label>#</label>
+			<scroll>true</scroll>
 			<align>center</align>
 			<aligny>center</aligny>
 			<textcolor>$VAR[LabelTextColor]</textcolor>
@@ -2393,6 +2436,7 @@
 			<width>42</width>
 			<height>42</height>
 			<label>[B]#[/B]</label>
+			<scroll>true</scroll>
 			<align>center</align>
 			<aligny>center</aligny>
 			<textcolor>$VAR[HighlightColor]</textcolor>

@@ -67,6 +67,7 @@
 				<height>80</height>
 				<font>font30_title</font>
 				<label>$INFO[Window.Property(Title)]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<visible>String.IsEmpty(Window.Property(Art.ClearLogo)) + [String.IsEqual(Window.Property(dbtype),movie) | String.IsEqual(Window.Property(dbtype),tvshow) | String.IsEqual(Window.Property(dbtype),musicvideo)]</visible>
 			</control>
@@ -156,6 +157,7 @@
 					<height>45</height>
 					<font>font20_title</font>
 					<label>$VAR[ShelfPopupDetails]</label>
+					<scroll>true</scroll>
 					<visible>String.IsEqual(Window.Property(dbtype),movie)</visible>
 				</control>
 				<!-- Episode details -->
@@ -166,6 +168,7 @@
 					<height>45</height>
 					<font>font20_title</font>
 					<label>$VAR[ShelfPopupDetailsEpisodes]</label>
+					<scroll>true</scroll>
 					<visible>String.IsEqual(Window.Property(dbtype),episode) + ![String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
 				</control>
 				<control type="label">
@@ -175,6 +178,7 @@
 					<height>45</height>
 					<font>font20_title</font>
 					<label>$VAR[ShelfPopupDetailsEpisodes]</label>
+					<scroll>true</scroll>
 					<visible>String.IsEqual(Window.Property(dbtype),episode) + [String.IsEmpty(Window.Property(Genre)) | String.IsEmpty(Window.Property(Director))]</visible>
 				</control>
 			</control>
@@ -197,6 +201,7 @@
 					<height>45</height>
 					<font>font20_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Window.Property(Rating)]  [COLOR $VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Window.Property(Premiered)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="group">
@@ -536,6 +541,7 @@
 						<font>FanartTitleFont</font>
 						<wrapmultiline>true</wrapmultiline>
 						<label>$INFO[Window.Property(Studio)]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Control.GetLabel(9900502))</visible>
 					</control>
 				</control>
@@ -548,6 +554,7 @@
 						<height>60</height>
 						<align>center</align>
 						<label>[B]$INFO[Window.Property(TotalSeasons)][/B]</label>
+						<scroll>true</scroll>
 						<font>MainLabelBigTitle</font>
 						<wrapmultiline>true</wrapmultiline>
 					</control>
@@ -557,6 +564,7 @@
 						<height>30</height>
 						<align>center</align>
 						<label>[LOWERCASE]$VAR[ShelfPopupSeasonsLabel][/LOWERCASE]</label>
+						<scroll>true</scroll>
 						<font>font12</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
@@ -570,6 +578,7 @@
 						<height>60</height>
 						<align>center</align>
 						<label>[B]$INFO[Window.Property(TotalEpisodes)][/B]</label>
+						<scroll>true</scroll>
 						<font>MainLabelBigTitle</font>
 						<wrapmultiline>true</wrapmultiline>
 					</control>
@@ -579,6 +588,7 @@
 						<height>30</height>
 						<align>center</align>
 						<label>[LOWERCASE]$VAR[ShelfPopupEpisodesLabel][/LOWERCASE]</label>
+						<scroll>true</scroll>
 						<font>font12</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
@@ -592,6 +602,7 @@
 						<height>60</height>
 						<align>center</align>
 						<label>[B]$INFO[Window.Property(UnwatchedEpisodes)][/B]</label>
+						<scroll>true</scroll>
 						<font>MainLabelBigTitle</font>
 						<wrapmultiline>true</wrapmultiline>
 					</control>
@@ -601,6 +612,7 @@
 						<height>30</height>
 						<align>center</align>
 						<label>[LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
+						<scroll>true</scroll>
 						<font>font12</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>

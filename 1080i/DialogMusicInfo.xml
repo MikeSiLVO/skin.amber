@@ -49,6 +49,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$VAR[MusicInfoHeader]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="image" description="Line Split">
 					<posy>83</posy>

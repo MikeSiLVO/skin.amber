@@ -25,6 +25,7 @@
 				<height>60</height>
 				<font>font24_title</font>
 				<label>CU LRC Lyrics</label>
+				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -36,6 +37,7 @@
 				<height>60</height>
 				<font>font30_title</font>
 				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Title]</label>
+				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>$VAR[HighlightColor]</textcolor>
@@ -47,6 +49,7 @@
 				<width>1260</width>
 				<height>30</height>
 				<label>$LOCALIZE[21870]: $INFO[Control.GetLabel(200)]</label>
+				<scroll>true</scroll>
 				<font>font12</font>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -77,6 +80,7 @@
 				</focusedlayout>
 			</control>
 			<control type="label" id="200">
+				<scroll>true</scroll>
 				<visible>false</visible>
 			</control>
 		</control>

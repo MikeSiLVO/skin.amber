@@ -9,7 +9,6 @@
 		<shadowcolor>ShadowDark</shadowcolor>
 		<selectedcolor>$VAR[SelectedTextColor]</selectedcolor>
 		<disabledcolor>Disabled</disabledcolor>
-		<scroll>true</scroll>
 		<scrollspeed>25</scrollspeed>
 		<scrollsuffix>  •  </scrollsuffix>
 	</default>

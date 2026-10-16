@@ -111,6 +111,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -122,6 +123,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -133,6 +135,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring))</visible>
 					</control>
 				</control>
@@ -157,6 +160,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<!-- Widget Logo -->
@@ -221,6 +225,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label2]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
 						<visible>[$PARAM[showShelvesInfo] + ![Control.HasFocus($PARAM[id1]) | Control.HasFocus($PARAM[id2])]] | !$PARAM[showShelvesInfo]</visible>
 					</control>
@@ -233,6 +238,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label2]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
 						<visible>$PARAM[showShelvesInfo] + [Control.HasFocus($PARAM[id1]) | Control.HasFocus($PARAM[id2])]</visible>
 					</control>
@@ -245,6 +251,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -256,6 +263,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -267,6 +275,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -278,6 +287,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -289,6 +299,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -325,6 +336,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label">
 					<visible>!Control.HasFocus($PARAM[id1]) + !Control.HasFocus($PARAM[id2]) + $EXP[InfoLineOnShelf]</visible>
@@ -336,6 +348,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<!-- Widget 1 has items, widget 2 does not -->
@@ -361,6 +374,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -372,6 +386,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -383,6 +398,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -407,6 +423,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<!-- Widget Logo -->
@@ -482,6 +499,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label3]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -493,6 +511,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -504,6 +523,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -515,6 +535,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label2]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -526,6 +547,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -537,6 +559,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -548,6 +571,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -559,6 +583,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -570,6 +595,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -616,6 +642,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 
@@ -642,6 +669,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label3]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -653,6 +681,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -664,6 +693,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -675,6 +705,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -686,6 +717,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -697,6 +729,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -732,6 +765,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 
@@ -758,6 +792,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label2]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -769,6 +804,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -780,6 +816,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -791,6 +828,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -802,6 +840,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -813,6 +852,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -848,6 +888,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 
@@ -874,6 +915,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -885,6 +927,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -896,6 +939,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -920,6 +964,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<!-- Widget Logo -->
@@ -983,6 +1028,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label3]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -994,6 +1040,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1005,6 +1052,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -1016,6 +1064,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label2]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1027,6 +1076,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1038,6 +1088,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="group">
@@ -1052,6 +1103,7 @@
 							<font>Shelf_Title</font>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 							<label>$PARAM[label1]</label>
+							<scroll>true</scroll>
 							<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 						</control>
 						<control type="label">
@@ -1063,6 +1115,7 @@
 							<font>Shelf_Title</font>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 							<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+							<scroll>true</scroll>
 							<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 						</control>
 						<control type="label">
@@ -1074,6 +1127,7 @@
 							<font>Shelf_Title</font>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 							<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+							<scroll>true</scroll>
 							<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 						</control>
 					</control>
@@ -1092,6 +1146,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1103,6 +1158,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1114,6 +1170,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -1141,6 +1198,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label2]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1152,6 +1210,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1163,6 +1222,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -1190,6 +1250,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label3]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1201,6 +1262,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1212,6 +1274,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -1250,6 +1313,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label3]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1261,6 +1325,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1272,6 +1337,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -1283,6 +1349,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1294,6 +1361,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1305,6 +1373,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -1340,6 +1409,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 
@@ -1366,6 +1436,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label2]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1377,6 +1448,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1388,6 +1460,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
 					</control>
 					<control type="label">
@@ -1399,6 +1472,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1410,6 +1484,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1421,6 +1496,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -1456,6 +1532,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 
@@ -1482,6 +1559,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$PARAM[label1]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 					</control>
 					<control type="label">
@@ -1493,6 +1571,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
 					</control>
 					<control type="label">
@@ -1504,6 +1583,7 @@
 						<font>Shelf_Title</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
 					</control>
 				</control>
@@ -1528,6 +1608,7 @@
 					<font>Shelf_Title</font>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$VAR[LibraryStats]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<!-- Widget Logo -->
@@ -5539,6 +5620,7 @@
 				<height>20</height>
 				<width>310</width>
 				<label>$PARAM[headerlabel]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<font>ListDetailsSmall</font>
 				<align>left</align>
@@ -5566,6 +5648,7 @@
 				<font>ListDetailsSmall</font>
 				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[$PARAM[timelabel],$LOCALIZE[19126] - ]</label>
+				<scroll>true</scroll>
 			</control>
 			<include content="ShadowedImage">
 				<param name="top">14</param>
@@ -5601,6 +5684,7 @@
 				<height>30</height>
 				<width>310</width>
 				<label>$PARAM[headerlabel]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<font>ListDetails</font>
 				<align>left</align>
@@ -5628,6 +5712,7 @@
 				<font>ListDetails</font>
 				<textcolor>$VAR[LabelTextColor]</textcolor>
 				<label>$INFO[$PARAM[timelabel],$LOCALIZE[19126] - ]</label>
+				<scroll>true</scroll>
 			</control>
 			<include content="ShadowedImage">
 				<param name="top">18</param>

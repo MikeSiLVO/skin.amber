@@ -20,6 +20,7 @@
 			<aligny>center</aligny>
 			<textcolor>$VAR[HighlightColor]</textcolor>
 			<label>$VAR[PVRChannelManagerHeader]</label>
+			<scroll>true</scroll>
 		</control>
 		<control type="group" description="All controls">
 			<include>OpenClose</include>
@@ -149,6 +150,7 @@
 				<control type="label" id="29" description="spacer">
 					<width>600</width>
 					<label />
+					<scroll>true</scroll>
 				</control>
 				<control type="button" id="30" description="Group Manager Button">
 					<width>600</width>

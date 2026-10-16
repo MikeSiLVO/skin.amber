@@ -35,6 +35,7 @@
 			<textcolor>$VAR[HighlightColor]</textcolor>
 			<align>left</align>
 			<label>$INFO[ListItem.Label]</label>
+			<scroll>true</scroll>
 		</control>
 		<control type="label" description="Main Label">
 			<posx>854</posx>
@@ -44,6 +45,7 @@
 			<textcolor>$VAR[LabelTextColor]</textcolor>
 			<align>left</align>
 			<label>$INFO[ListItem.PictureDateTime]</label>
+			<scroll>true</scroll>
 		</control>
 		<control type="group">
 			<control type="list" id="5">

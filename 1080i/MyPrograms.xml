@@ -64,6 +64,7 @@
 					<description>Actions</description>
 					<include>9000SysButtons</include>
 					<label>$LOCALIZE[31020]</label>
+					<scroll>true</scroll>
 					<visible>Control.IsVisible(621)</visible>
 				</control>
 				<control type="button" id="624">

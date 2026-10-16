@@ -3776,6 +3776,7 @@
 				<shadowcolor />
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName][/B]  -  $VAR[panelheading]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>!$PARAM[isfocused] + Window.IsActive(MyPVRChannels.xml)</visible>
@@ -3786,6 +3787,7 @@
 				<font>font16</font>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName][/B]  -  $VAR[panelheading]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>$PARAM[isfocused] + !$EXP[isPVRRecordingsGroups] + !Window.IsActive(MyPVRChannels.xml)</visible>
@@ -3798,6 +3800,7 @@
 				<shadowcolor />
 				<aligny>center</aligny>
 				<label>$VAR[panelheading]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>!$PARAM[isfocused] + !$EXP[isPVRRecordingsGroups] + !Window.IsActive(MyPVRChannels.xml)</visible>
@@ -3808,6 +3811,7 @@
 				<font>font16</font>
 				<aligny>center</aligny>
 				<label>$VAR[panelheading]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>$PARAM[isfocused] + $EXP[isPVRRecordingsGroups]</visible>
@@ -3820,6 +3824,7 @@
 				<shadowcolor />
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>!$PARAM[isfocused] + $EXP[isPVRRecordingsGroups]</visible>
@@ -3830,6 +3835,7 @@
 				<font>font16</font>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>!$PARAM[isfocused]</visible>
@@ -3841,6 +3847,7 @@
 				<aligny>center</aligny>
 				<align>left</align>
 				<label>$VAR[panelsubheading]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<visible>$PARAM[isfocused]</visible>
@@ -3854,6 +3861,7 @@
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 				<shadowcolor />
 				<label>$VAR[panelsubheading]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="group">
 				<visible>Window.IsActive(MYPVRChannels.xml)</visible>

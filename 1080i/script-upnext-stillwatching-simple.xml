@@ -53,6 +53,7 @@
 							<textcolor>eeffffff</textcolor>
 							<shadowcolor>00000000</shadowcolor>
 							<label>[CAPITALIZE]$ADDON[service.upnext 30024][/CAPITALIZE]</label>
+							<scroll>true</scroll>
 						</control>
 					</control>
 					<control type="image">

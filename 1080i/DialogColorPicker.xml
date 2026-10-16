@@ -21,6 +21,7 @@
 				<height>60</height>
 				<font>font24_title</font>
 				<textcolor>$VAR[HighlightColor]</textcolor>
+				<scroll>true</scroll>
 				<align>left</align>
 			</control>
 			<control type="group">
@@ -94,6 +95,7 @@
 					<height>35</height>
 					<align>left</align>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[737]: [/COLOR]$INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</label>
+					<scroll>true</scroll>
 				</control>
 				<!-- Buttons -->
 				<control type="grouplist" id="9001">

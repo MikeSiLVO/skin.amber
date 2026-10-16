@@ -65,6 +65,7 @@
 					<textoffsetx>10</textoffsetx>
 					<include>9000ViewButtons</include>
 					<label>$LOCALIZE[31026]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="radiobutton" id="7">
 					<label>$LOCALIZE[25001]</label>

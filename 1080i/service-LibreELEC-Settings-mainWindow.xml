@@ -556,6 +556,7 @@
 					<align>center</align>
 					<font>font30</font>
 					<info />
+					<scroll>true</scroll>
 					<visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1300) + String.IsEqual(Container(1300).NumItems, 0)</visible>
 				</control>
 				<control type="list" id="1300">

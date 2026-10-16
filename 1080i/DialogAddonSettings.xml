@@ -54,6 +54,7 @@
 				<posy>90</posy>
 				<width>1920</width>
 				<textcolor>$VAR[HighlightColor]</textcolor>
+				<scroll>true</scroll>
 				<align>center</align>
 			</control>
 			<control type="grouplist" id="5" description="Controls for settings">
@@ -89,6 +90,7 @@
 			</control>
 			<control type="label" id="14" description="Sparator label headline">
 				<textoffsetx>30</textoffsetx>
+				<scroll>true</scroll>
 				<font>ListDetails</font>
 			</control>
 			<control type="sliderex" id="13">

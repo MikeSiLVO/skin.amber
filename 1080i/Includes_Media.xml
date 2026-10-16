@@ -237,6 +237,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -247,6 +248,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Number of unwatched episodes when panel is swapped -->
@@ -280,6 +282,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -290,6 +293,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Number of unwatched episodes when panel is disabled -->
@@ -323,6 +327,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -333,6 +338,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 			</control>
@@ -431,6 +437,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -441,6 +448,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Number of unwatched episodes when panel is swapped -->
@@ -474,6 +482,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -484,6 +493,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Number of unwatched episodes when panel is disabled -->
@@ -517,6 +527,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -527,6 +538,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 			</control>
@@ -625,6 +637,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -635,6 +648,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Number of unwatched episodes when panel is swapped -->
@@ -668,6 +682,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -678,6 +693,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Number of unwatched episodes when panel is disabled -->
@@ -711,6 +727,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -721,6 +738,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 			</control>
@@ -786,6 +804,7 @@
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor />
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="label" description="l2">
 						<visible>!$PARAM[isFocused]</visible>
@@ -796,6 +815,7 @@
 						<align>center</align>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<scroll>true</scroll>
 					</control>
 				</control>
 			</control>
@@ -1024,6 +1044,7 @@
 				<align>left</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$INFO[Container.ListItem.BitRate] $LOCALIZE[31848]</label>
+				<scroll>true</scroll>
 				<visible>$PARAM[showaudiobadge]</visible>
 				<visible>String.IsEqual(Container.ListItem.DBType,song)</visible>
 				<visible>!String.IsEmpty(Container.ListItem.BitRate)</visible>
@@ -1127,6 +1148,7 @@
 					<top>6</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Container.ListItem.UserRating]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container.ListItem.UserRating)</visible>
 					<visible>!$PARAM[lowpanel]</visible>
 				</control>
@@ -1137,6 +1159,7 @@
 					<top>-7</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[Container.ListItem.UserRating]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container.ListItem.UserRating)</visible>
 					<visible>$PARAM[lowpanel]</visible>
 				</control>
@@ -1147,6 +1170,7 @@
 					<top>8</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>-</label>
+					<scroll>true</scroll>
 					<visible>String.IsEmpty(Container.ListItem.UserRating)</visible>
 					<visible>!$PARAM[lowpanel]</visible>
 				</control>
@@ -1157,6 +1181,7 @@
 					<top>-5</top>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>-</label>
+					<scroll>true</scroll>
 					<visible>String.IsEmpty(Container.ListItem.UserRating)</visible>
 					<visible>$PARAM[lowpanel]</visible>
 				</control>
@@ -1592,6 +1617,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>$INFO[VideoPlayer.UserRating]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(VideoPlayer.UserRating)</visible>
 				</control>
 				<control type="label" description="User Rating">
@@ -1601,6 +1627,7 @@
 					<align>left</align>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<label>-</label>
+					<scroll>true</scroll>
 					<visible>String.IsEmpty(VideoPlayer.UserRating)</visible>
 				</control>
 			</control>
@@ -1619,6 +1646,7 @@
 				<align>left</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$INFO[MusicPlayer.BitRate] $LOCALIZE[31848]</label>
+				<scroll>true</scroll>
 				<visible>!String.IsEmpty(MusicPlayer.BitRate)</visible>
 			</control>
 			<control type="image" id="89001">
@@ -1746,6 +1774,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[VideoInfoUnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -1757,6 +1786,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[VideoInfoUnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -2009,6 +2039,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2020,6 +2051,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2031,6 +2063,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2043,6 +2076,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 					</control>
@@ -2059,6 +2093,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2070,6 +2105,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2082,6 +2118,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2093,6 +2130,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -2135,6 +2173,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2146,6 +2185,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -2162,6 +2202,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2173,6 +2214,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -2252,6 +2294,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2263,6 +2306,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Single or double row, low widget pos -->
@@ -2276,6 +2320,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2287,6 +2332,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row small, widget in standard pos -->
@@ -2300,6 +2346,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2311,6 +2358,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row small, widget in low pos -->
@@ -2324,6 +2372,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2335,6 +2384,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row medium -->
@@ -2348,6 +2398,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2359,6 +2410,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row large -->
@@ -2372,6 +2424,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2383,6 +2436,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -2400,6 +2454,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2411,6 +2466,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row small -->
@@ -2424,6 +2480,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2435,6 +2492,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row medium -->
@@ -2448,6 +2506,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2459,6 +2518,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row large -->
@@ -2472,6 +2532,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2483,6 +2544,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -2500,6 +2562,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2511,6 +2574,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Single or double row, low widget pos -->
@@ -2524,6 +2588,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2535,6 +2600,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row small, widget in standard pos -->
@@ -2548,6 +2614,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2559,6 +2626,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row small, widget in low pos -->
@@ -2572,6 +2640,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2583,6 +2652,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row medium -->
@@ -2596,6 +2666,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2607,6 +2678,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row large -->
@@ -2620,6 +2692,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2631,6 +2704,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -2648,6 +2722,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2659,6 +2734,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Single or double row, low widget pos -->
@@ -2672,6 +2748,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2683,6 +2760,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row small, widget in standard pos -->
@@ -2696,6 +2774,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2707,6 +2786,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row small, widget in low pos -->
@@ -2720,6 +2800,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2731,6 +2812,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row medium -->
@@ -2744,6 +2826,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2755,6 +2838,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Triple row large -->
@@ -2768,6 +2852,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2779,6 +2864,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<!-- Smallest banners, triple shelves together, all shelves have items -->
@@ -2792,6 +2878,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -2803,6 +2890,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[UnwatchedEpisodes]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -2841,6 +2929,7 @@
 						<align>center</align>
 						<shadowcolor />
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -2852,6 +2941,7 @@
 						<font>ListDetailsSmall</font>
 						<align>center</align>
 						<label>$VAR[UnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>White2</textcolor>
 					</control>
 				</control>
@@ -3060,6 +3150,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -3071,6 +3162,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -3114,6 +3206,7 @@
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -3126,6 +3219,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
 					</control>
@@ -3159,6 +3253,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -3170,6 +3265,7 @@
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -3202,6 +3298,7 @@
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -3214,6 +3311,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 					</control>
@@ -3252,6 +3350,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -3263,6 +3362,7 @@
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -3295,6 +3395,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -3306,6 +3407,7 @@
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -3338,6 +3440,7 @@
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -3350,6 +3453,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 					</control>
@@ -3382,6 +3486,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -3393,6 +3498,7 @@
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<label>$VAR[RatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 					</control>
@@ -3430,6 +3536,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3441,6 +3548,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3476,6 +3584,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3487,6 +3596,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3522,6 +3632,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3533,6 +3644,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3573,6 +3685,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3584,6 +3697,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3619,6 +3733,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3630,6 +3745,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3665,6 +3781,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3676,6 +3793,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3715,6 +3833,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3726,6 +3845,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3761,6 +3881,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3772,6 +3893,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3807,6 +3929,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3818,6 +3941,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3857,6 +3981,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3868,6 +3993,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3903,6 +4029,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3914,6 +4041,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3949,6 +4077,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -3960,6 +4089,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -3999,6 +4129,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -4010,6 +4141,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -4045,6 +4177,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -4056,6 +4189,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -4091,6 +4225,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -4102,6 +4237,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -4137,6 +4273,7 @@
 									<align>center</align>
 									<shadowcolor />
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 								</control>
 								<control type="label" description="l2">
@@ -4148,6 +4285,7 @@
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
 									<label>$VAR[RatingOverlayVar]</label>
+									<scroll>true</scroll>
 									<textcolor>White2</textcolor>
 								</control>
 							</control>
@@ -4184,6 +4322,7 @@
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>White2</textcolor>
 						</control>
 						<control type="label" description="l2">
@@ -4196,6 +4335,7 @@
 							<align>center</align>
 							<shadowcolor />
 							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<scroll>true</scroll>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 						</control>
 					</control>
@@ -4355,6 +4495,7 @@
 						<align>center</align>
 						<shadowcolor />
 						<label>$VAR[VideoInfoUnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
 					</control>
 					<control type="label" description="l2">
@@ -4366,6 +4507,7 @@
 						<font>ListDetailsSmall</font>
 						<align>center</align>
 						<label>$VAR[VideoInfoUnwatchedEpisodes]</label>
+						<scroll>true</scroll>
 						<textcolor>White2</textcolor>
 					</control>
 				</control>
@@ -5818,6 +5960,7 @@
 					<font>font16</font>
 					<shadowcolor>Black</shadowcolor>
 					<label>$VAR[panelsubheading]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Details">
 					<visible>[Control.IsVisible(56) + $EXP[56_FanartViewNetflix] + ListItem.IsCollection]</visible>
@@ -5828,6 +5971,7 @@
 					<font>font16</font>
 					<shadowcolor>Black</shadowcolor>
 					<label>$VAR[panelsubheading]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Details2">
 					<animation effect="fade" start="100" end="0" time="480" condition="[[Control.HasFocus(6058) + Control.IsVisible(6058581)] | [Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]">Conditional</animation>
@@ -5840,6 +5984,7 @@
 					<shadowcolor>Black</shadowcolor>
 					<font>font16</font>
 					<label>$VAR[panelsubheading2]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Details2">
 					<animation effect="fade" start="100" end="0" time="480" condition="[[Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]">Conditional</animation>
@@ -5852,6 +5997,7 @@
 					<shadowcolor>Black</shadowcolor>
 					<font>font16</font>
 					<label>$VAR[panelsubheading2]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="group">

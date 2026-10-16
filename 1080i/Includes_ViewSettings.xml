@@ -1174,6 +1174,7 @@
 			<align>left</align>
 			<include>9000ViewButtons</include>
 			<label>$LOCALIZE[582]</label>
+			<scroll>true</scroll>
 		</control>
 		<control type="button" id="6051">
 			<include>9000SysButtons</include>
@@ -1318,6 +1319,7 @@
 			<align>left</align>
 			<include>9000ViewButtons</include>
 			<label>$LOCALIZE[582]</label>
+			<scroll>true</scroll>
 		</control>
 		<control type="button" id="6051">
 			<include>9000SysButtons</include>

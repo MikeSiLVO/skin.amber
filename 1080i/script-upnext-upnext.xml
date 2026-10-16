@@ -76,6 +76,7 @@
 						<textcolor>eeffffff</textcolor>
 						<shadowcolor>00000000</shadowcolor>
 						<label>$LOCALIZE[31371] [COLOR $VAR[HighlightColor]]$INFO[Player.TimeRemaining(ss),,][/COLOR] $LOCALIZE[31168]</label>
+						<scroll>true</scroll>
 						<visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
 					<control type="label">
@@ -86,6 +87,7 @@
 						<textcolor>eeffffff</textcolor>
 						<shadowcolor>00000000</shadowcolor>
 						<label>$LOCALIZE[31371] [COLOR $VAR[HighlightColor]]$INFO[Player.TimeRemaining,,][/COLOR]</label>
+						<scroll>true</scroll>
 						<visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
 					<!-- Details -->
@@ -102,6 +104,7 @@
 							<textcolor>eeffffff</textcolor>
 							<shadowcolor>00000000</shadowcolor>
 							<label>[COLOR $VAR[HighlightColor]]$INFO[Window.Property(tvshowtitle)][/COLOR] - $VAR[UpNextSeasonEpisodeLabel] - $INFO[Window.Property(title)]   </label>
+							<scroll>true</scroll>
 							<visible>!String.IsEmpty(Window.Property(title))</visible>
 						</control>
 						<control type="label">
@@ -112,6 +115,7 @@
 							<textcolor>eeffffff</textcolor>
 							<shadowcolor>00000000</shadowcolor>
 							<label>$INFO[Window.Property(year),,   ]</label>
+							<scroll>true</scroll>
 							<visible>!String.IsEmpty(Window.Property(year))</visible>
 						</control>
 					</control>

@@ -231,6 +231,7 @@
 				<height>40</height>
 				<align>left</align>
 				<label>$INFO[MusicPlayer.Artist]</label>
+				<scroll>true</scroll>
 				<font>InfoTitle</font>
 				<textcolor>grey</textcolor>
 			</control>

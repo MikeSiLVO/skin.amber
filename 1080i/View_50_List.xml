@@ -419,6 +419,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$VAR[listmediaheader]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<include content="ShadowedImage">
@@ -502,6 +503,7 @@
 						<height>45</height>
 						<align>center</align>
 						<label>$VAR[listmediafooter]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<!-- Rating overlay -->
@@ -525,6 +527,7 @@
 								<align>center</align>
 								<shadowcolor />
 								<label>$VAR[ContainerRatingOverlayVar]</label>
+								<scroll>true</scroll>
 								<textcolor>$VAR[HighlightColor]</textcolor>
 							</control>
 						</control>
@@ -546,6 +549,7 @@
 								<align>center</align>
 								<shadowcolor />
 								<label>$VAR[ContainerRatingOverlayVar]</label>
+								<scroll>true</scroll>
 								<textcolor>$VAR[HighlightColor]</textcolor>
 							</control>
 						</control>

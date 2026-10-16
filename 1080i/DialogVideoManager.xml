@@ -19,6 +19,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>ListDetails</font>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="list" id="50">

@@ -27,6 +27,7 @@
 				<align>center</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$LOCALIZE[13200]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="panel" id="52">
 				<posx>252</posx>
@@ -119,6 +120,7 @@
 				<aligny>center</aligny>
 				<font>font22</font>
 				<label>$LOCALIZE[31047]</label>
+				<scroll>true</scroll>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="radiobutton" id="11" description="Quit xbmc">

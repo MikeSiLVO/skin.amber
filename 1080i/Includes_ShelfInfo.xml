@@ -358,6 +358,7 @@
 					<font>font30_title</font>
 					<aligny>center</aligny>
 					<label>$VAR[ShelfInfoTitle]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>$EXP[showTextTitle]</visible>
 					<visible>![String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
@@ -368,6 +369,7 @@
 					<font>font30_title</font>
 					<aligny>center</aligny>
 					<label>$VAR[ShelfInfoTitle]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>[String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
 				</control>
@@ -384,6 +386,7 @@
 					<height>5</height>
 					<font>font12_title</font>
 					<label />
+					<scroll>true</scroll>
 				</control>
 
 				<!-- System items -->
@@ -532,6 +535,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Container.ListItem.Year]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container.ListItem.Year)</visible>
 					<visible>[String.IsEqual(Container.ListItem.DBType,musicvideo) | String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
 				</control>
@@ -598,12 +602,14 @@
 					<height>40</height>
 					<font>font13_title</font>
 					<label>$VAR[ShelfInfoDetails]</label>
+					<scroll>true</scroll>
 					<visible>![String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album)]</visible>
 				</control>
 				<control type="label">
 					<height>1</height>
 					<font>font12_title</font>
 					<label />
+					<scroll>true</scroll>
 				</control>
 				<!-- Plot -->
 				<control type="textbox">
@@ -722,6 +728,7 @@
 						<font>FanartTitleFont</font>
 						<wrapmultiline>true</wrapmultiline>
 						<label>$INFO[Container.ListItem.Studio]</label>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(Control.GetLabel(99701))</visible>
 					</control>
 				</control>
@@ -734,6 +741,7 @@
 						<height>60</height>
 						<align>center</align>
 						<label>[B]$VAR[ShelfInfoTotalSeasons][/B]</label>
+						<scroll>true</scroll>
 						<font>MainLabelBigTitle</font>
 						<wrapmultiline>true</wrapmultiline>
 					</control>
@@ -743,6 +751,7 @@
 						<height>30</height>
 						<align>center</align>
 						<label>[LOWERCASE]$VAR[ShelfInfoSeasonsLabel][/LOWERCASE]</label>
+						<scroll>true</scroll>
 						<font>font12</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
@@ -756,6 +765,7 @@
 						<height>60</height>
 						<align>center</align>
 						<label>[B]$VAR[ShelfInfoTotalEpisodes][/B]</label>
+						<scroll>true</scroll>
 						<font>MainLabelBigTitle</font>
 						<wrapmultiline>true</wrapmultiline>
 					</control>
@@ -765,6 +775,7 @@
 						<height>30</height>
 						<align>center</align>
 						<label>[LOWERCASE]$VAR[ShelfInfoEpisodesLabel][/LOWERCASE]</label>
+						<scroll>true</scroll>
 						<font>font12</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
@@ -778,6 +789,7 @@
 						<height>60</height>
 						<align>center</align>
 						<label>[B]$INFO[Container.ListItem.Property(UnwatchedEpisodes)][/B]</label>
+						<scroll>true</scroll>
 						<font>MainLabelBigTitle</font>
 						<wrapmultiline>true</wrapmultiline>
 					</control>
@@ -787,6 +799,7 @@
 						<height>30</height>
 						<align>center</align>
 						<label>[LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
+						<scroll>true</scroll>
 						<font>font12</font>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
@@ -814,6 +827,7 @@
 					<height>10</height>
 					<font>font12_title</font>
 					<label />
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container.ListItem.Title) | !String.IsEmpty(Container.ListItem.Property(recommendedtitle)) | [String.IsEmpty(Container.ListItem.Title) + !String.IsEmpty(Container.ListItem.Property(Outlook))]</visible>
 				</control>
 				<!-- Episode title and number -->
@@ -839,6 +853,7 @@
 					<height>30</height>
 					<font>font24_title</font>
 					<label>$INFO[Container.ListItem.Title]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>!String.IsEmpty(Container.ListItem.Title) + !String.IsEqual(Container.ListItem.DBType,episode)</visible>
 				</control>
@@ -847,6 +862,7 @@
 					<height>60</height>
 					<font>font24_title</font>
 					<label>$INFO[Container.ListItem.Label]</label>
+					<scroll>true</scroll>
 					<visible>String.IsEmpty(Container.ListItem.Title) + !String.IsEmpty(Container.ListItem.Property(Outlook))</visible>
 				</control>
 				<!-- System item label -->
@@ -854,6 +870,7 @@
 					<height>60</height>
 					<font>font24_title</font>
 					<label>$INFO[Container.ListItem.Label]</label>
+					<scroll>true</scroll>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<visible>String.IsEmpty(Container.ListItem.Title) + !String.IsEmpty(Container.ListItem.Property(Label3))</visible>
 				</control>
@@ -862,6 +879,7 @@
 					<height>5</height>
 					<font>font12_title</font>
 					<label />
+					<scroll>true</scroll>
 				</control>
 
 				<!-- System items -->
@@ -888,6 +906,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[33030]: [/COLOR]$INFO[Container.ListItem.Property(Outlook)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container.ListItem.Property(Outlook))</visible>
 				</control>
 				<control type="label">
@@ -1049,6 +1068,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Container.ListItem.Year]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Container.ListItem.Year)</visible>
 					<visible>[String.IsEqual(Container.ListItem.DBType,musicvideo) | String.IsEqual(Container.ListItem.DBType,album)]</visible>
 				</control>
@@ -1122,6 +1142,7 @@
 					<height>40</height>
 					<font>font12_title</font>
 					<label>$VAR[ShelfInfoDetails]</label>
+					<scroll>true</scroll>
 					<visible>![String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album) | String.Contains(Container.ListItem.FolderPath,type=person)]</visible>
 				</control>
 
@@ -1131,6 +1152,7 @@
 					<height>40</height>
 					<font>font13_title</font>
 					<label>$VAR[ShelfInfoNextAiredDetails]</label>
+					<scroll>true</scroll>
 					<visible>String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))</visible>
 				</control>
 
@@ -1140,12 +1162,14 @@
 					<height>40</height>
 					<font>font13_title</font>
 					<label>$VAR[ShelfInfoTVShowDetails]</label>
+					<scroll>true</scroll>
 					<visible>String.IsEqual(Container.ListItem.DBType,tvshow)</visible>
 				</control>
 				<control type="label">
 					<height>5</height>
 					<font>font12_title</font>
 					<label />
+					<scroll>true</scroll>
 				</control>
 
 				<!-- Plot -->

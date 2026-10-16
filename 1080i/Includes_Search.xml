@@ -71,6 +71,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$PARAM[headline]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="image" description="Line Split">
@@ -143,6 +144,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$PARAM[headline]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="image" description="Line Split">
@@ -214,6 +216,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$PARAM[headline]</label>
+						<scroll>true</scroll>
 						<textcolor>$VAR[HighlightColor]</textcolor>
 					</control>
 					<control type="image" description="Line Split">

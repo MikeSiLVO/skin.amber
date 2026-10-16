@@ -33,6 +33,7 @@
 				<font>MainMenuVertical</font>
 				<align>center</align>
 				<label>$LOCALIZE[31022]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="label" id="2" description="Category label">
 				<posx>471</posx>
@@ -41,6 +42,7 @@
 				<height>72</height>
 				<align>center</align>
 				<font>InfoTitle</font>
+				<scroll>true</scroll>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="grouplist" id="3" description="Left - Button Area">
@@ -121,6 +123,7 @@
 			<control type="label" id="14">
 				<align>center</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
+				<scroll>true</scroll>
 				<font>Details</font>
 			</control>
 			<control type="label" description="Settings level label">
@@ -130,6 +133,7 @@
 				<height>60</height>
 				<textoffsetx>10</textoffsetx>
 				<label>$LOCALIZE[31049]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="button" id="20" description="Settings level button">
 				<posx>31</posx>

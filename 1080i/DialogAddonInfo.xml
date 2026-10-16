@@ -39,6 +39,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.AddonName,$LOCALIZE[24003] - ]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="image" description="Line Split">
 					<posy>23</posy>
@@ -77,6 +78,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<align>left</align>
 					<label>[B]$VAR[AddonLifecycleType][/B]</label>
+					<scroll>true</scroll>
 				</control>
 				<!-- End Matrix change -->
 				<control type="radiobutton" id="90003">

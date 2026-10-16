@@ -21,6 +21,7 @@
 				<align>center</align>
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$LOCALIZE[21422]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="group" id="9001">
 				<posy>60</posy>

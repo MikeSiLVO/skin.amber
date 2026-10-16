@@ -35,6 +35,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[22080] $INFO[Skin.String(SelectColorLabel)]</label>
+				<scroll>true</scroll>
 				<textcolor>$VAR[LabelTextColor]</textcolor>
 			</control>
 			<control type="group">
@@ -133,6 +134,7 @@
 							<width>280</width>
 							<height>40</height>
 							<label>[B]$LOCALIZE[31730][/B]</label>
+							<scroll>true</scroll>
 							<font>ListDetailsSmall</font>
 						</control>
 						<!-- color preview-->

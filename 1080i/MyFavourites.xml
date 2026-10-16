@@ -74,6 +74,7 @@
 					<textoffsetx>10</textoffsetx>
 					<include>9000ViewButtons</include>
 					<label />
+					<scroll>true</scroll>
 				</control>
 				<control type="label" id="9181">
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -81,6 +82,7 @@
 					<textoffsetx>10</textoffsetx>
 					<include>9000ViewButtons</include>
 					<label>$LOCALIZE[31026]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="radiobutton" id="11">
 					<description>Unlock Shares</description>

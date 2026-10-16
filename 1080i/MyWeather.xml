@@ -55,6 +55,7 @@
 				<height>60</height>
 				<align>center</align>
 				<label>$LOCALIZE[143] $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="multiimage" id="305" description="Current weather icon">
 				<posy>83</posy>
@@ -75,6 +76,7 @@
 				<shadowcolor>ShadowDark</shadowcolor>
 				<wrapmultiline>true</wrapmultiline>
 				<label>$INFO[Window.Property(Current.Condition)]</label>
+				<scroll>true</scroll>
 			</control>
 			<control type="grouplist">
 				<posx>15</posx>
@@ -86,24 +88,28 @@
 					<align>right</align>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[402]: $INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Current dew label">
 					<height>50</height>
 					<align>right</align>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[405]: $INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Current humidity label">
 					<height>50</height>
 					<align>right</align>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" description="Current uv label">
 					<height>50</height>
 					<align>right</align>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</label>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(Window.Property(Current.UVIndex))</visible>
 				</control>
 				<control type="label" description="Current uv label spacer">
@@ -111,6 +117,7 @@
 					<align>right</align>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label />
+					<scroll>true</scroll>
 					<visible>String.IsEmpty(Window.Property(Current.UVIndex))</visible>
 				</control>
 				<control type="label" description="Current wind label">
@@ -118,6 +125,7 @@
 					<align>center</align>
 					<shadowcolor>ShadowDark</shadowcolor>
 					<label>$LOCALIZE[404]:[CR]$INFO[Window.Property(Current.Wind)]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 		</control>
@@ -212,6 +220,7 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<include>9000ViewButtons</include>
 					<label>$INFO[Window.Property(WeatherProvider)]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="label" id="9002" description="Refresh">
 					<height>90</height>
@@ -220,12 +229,14 @@
 					<textcolor>$VAR[HighlightColor]</textcolor>
 					<include>9000ViewButtons</include>
 					<label>$INFO[Control.GetLabel(11),$LOCALIZE[12014]:[CR]]</label>
+					<scroll>true</scroll>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label" id="9003" description="Spacer">
 					<font />
 					<include>9000ViewButtons</include>
 					<label />
+					<scroll>true</scroll>
 				</control>
 				<control type="button" id="2" description="Refresh">
 					<include>9000SysButtons</include>
@@ -258,6 +269,7 @@
 		</control>
 		<include condition="Skin.HasSetting(Enable.TouchSupport)">TouchButtons</include>
 		<control type="label" id="11" description="Refresh">
+			<scroll>true</scroll>
 			<include>HiddenButton</include>
 		</control>
 	</controls>
