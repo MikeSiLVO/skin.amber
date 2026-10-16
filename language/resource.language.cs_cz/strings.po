@@ -41,6 +41,10 @@ msgctxt "#31003"
 msgid "Channels Directory"
 msgstr "Adresář kanálů"
 
+msgctxt "#31004"
+msgid "Manage Color Themes"
+msgstr "Spravovat barevné motivy"
+
 msgctxt "#31005"
 msgid "Cinema"
 msgstr "Kino"

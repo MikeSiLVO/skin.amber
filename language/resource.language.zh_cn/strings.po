@@ -41,6 +41,10 @@ msgctxt "#31003"
 msgid "Channels Directory"
 msgstr "频道目录"
 
+msgctxt "#31004"
+msgid "Manage Color Themes"
+msgstr "管理配色主题"
+
 msgctxt "#31005"
 msgid "Cinema"
 msgstr "影院"

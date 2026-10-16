@@ -1362,7 +1362,7 @@
 							<texturenofocus />
 							<textoffsetx>30</textoffsetx>
 							<onclick condition="System.AddonIsEnabled(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=colorthemes)</onclick>
-							<label>Manage Color Themes</label>
+							<label>$LOCALIZE[31004]</label>
 							<visible>System.AddonIsEnabled(script.skin.helper.skinbackup)</visible>
 						</control>
 					</control>

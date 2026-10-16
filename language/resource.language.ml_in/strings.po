@@ -41,6 +41,10 @@ msgctxt "#31003"
 msgid "Channels Directory"
 msgstr ""
 
+msgctxt "#31004"
+msgid "Manage Color Themes"
+msgstr "നിറ തീമുകൾ കൈകാര്യം ചെയ്യുക"
+
 msgctxt "#31005"
 msgid "Cinema"
 msgstr ""
