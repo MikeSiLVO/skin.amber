@@ -372,7 +372,7 @@
 		<value>dbtype=tvshow&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
 	</variable>
 	<variable name="TMDbPosters">
-		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !Skin.HasSetting(Disable.OnlineTMDbInfo) + $EXP[CanUseTMDbHelper]">plugin://plugin.video.themoviedb.helper/?info=posters&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
+		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + [!Skin.HasSetting(Disable.OnlineTMDbInfo) | !String.IsEmpty(ListItem.Property(tmdb_id))]">plugin://script.skin.info.service/?action=tmdb_posters&amp;$VAR[SISSeedParams]</value>
 	</variable>
 	<!-- List content for Sets custom info list -->
 	<variable name="VideoInfoSets">
@@ -1466,7 +1466,7 @@
 	<!-- Onclick action for Posters info list -->
 	<include name="InfoList_OnClickPosters">
 		<definition>
-			<onclick>SetFocus(91507)</onclick>
+			<onclick>RunScript(script.skin.info.service,action=dialog_image_viewer,images_path=$INFO[ListItem.Property(images_path)],selected_index=$INFO[ListItem.CurrentItem])</onclick>
 		</definition>
 	</include>
 	<!-- Onclick action for Seasons info list -->

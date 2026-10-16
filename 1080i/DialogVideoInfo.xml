@@ -1168,7 +1168,7 @@
 				<param name="visibility1">!Skin.HasSetting(DisableInfoListCastFeature)</param>
 			</include>
 			<!-- Posters -->
-			<include content="VideoInfoPosterWidget" condition="Skin.HasSetting(Enable.TMDbHelper)">
+			<include content="VideoInfoPosterWidget">
 				<param name="id">910016</param>
 				<param name="labelid">9100161</param>
 				<param name="headinglabel">$LOCALIZE[31252]</param>
@@ -1253,29 +1253,6 @@
 			<control type="image">
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(910015).ListItem.Art(poster)]</texture>
-			</control>
-		</control>
-
-		<!-- Provide slideshow for Posters -->
-		<control type="button" id="91507">
-			<include>HiddenButton</include>
-			<onleft>Control.Move(910016,-1)</onleft>
-			<onright>Control.Move(910016,1)</onright>
-			<onback>910016</onback>
-		</control>
-		<control type="group">
-			<animation effect="fade" start="0" end="100" time="350" tween="cubic" easing="inout">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="350" tween="cubic" easing="inout">Hidden</animation>
-			<control type="image">
-				<width>1920</width>
-				<height>1080</height>
-				<texture>img/blackdot1.png</texture>
-				<aspectratio>scale</aspectratio>
-			</control>
-			<visible>Control.HasFocus(91507)</visible>
-			<control type="image">
-				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[Container(910016).ListItem.Art(poster)]</texture>
 			</control>
 		</control>
 
