@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Pregledi medija"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Polica po stranici"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Uključi/isključi titlove"

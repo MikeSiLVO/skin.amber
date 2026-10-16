@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Meediavaated"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Riiuleid lehe kohta"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Vaheta subtiitrid"

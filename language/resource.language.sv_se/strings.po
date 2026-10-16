@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Mediavyer"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Hyllor per sida"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Växla undertext"

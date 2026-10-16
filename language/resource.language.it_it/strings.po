@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Vista Media"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Scaffali per pagina"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Attiva/disattiva sottotitoli"

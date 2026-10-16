@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Medianäkymät"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Hyllyjä per sivu"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Vaihda tekstitystä"

@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Zobrazení médií"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Panelů na stránku"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Přepnout titulky"

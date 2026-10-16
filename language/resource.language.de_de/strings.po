@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Medienansichten"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Widgets pro Seite"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Untertitel umschalten"

@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Просмотры медиа"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Полок на странице"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Переключить субтитры"

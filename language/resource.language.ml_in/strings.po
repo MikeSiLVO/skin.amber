@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr ""
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "ഓരോ പേജിലെയും ഷെൽഫുകൾ"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr ""

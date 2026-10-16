@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Sýnir á margmiðlunarefni"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Rekkar á síðu"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Víxla skjátexta af/á"

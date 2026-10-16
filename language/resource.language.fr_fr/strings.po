@@ -241,6 +241,10 @@ msgctxt "#31053"
 msgid "Media Views"
 msgstr "Vues des médias"
 
+msgctxt "#31054"
+msgid "Shelves per page"
+msgstr "Etagères par page"
+
 msgctxt "#31055"
 msgid "Toggle Subtitle"
 msgstr "Changer les sous-titres"

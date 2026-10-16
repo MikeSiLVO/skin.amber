@@ -281,7 +281,7 @@
 		<button id="1008" property="widgetRecordingTV" />
 		<button id="1009" property="widgetRecordingRadio" />
 		<button id="2001" property="UseBottomShortcuts" />
-		<button id="2101" property="shelfLayout" title="Shelves Together" showNone="false" />
+		<button id="2101" property="shelfLayout" title="$LOCALIZE[31054]" showNone="false" />
 		<button id="2108" property="horizontalWidgetPos" title="$LOCALIZE[31609]" showNone="false" />
 		<button id="2109" property="centerShelves" />
 		<button id="2110" property="showShelvesInfo" />
