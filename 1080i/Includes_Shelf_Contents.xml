@@ -4769,7 +4769,7 @@
 	<!-- PVR Recording widgets -->
 	<include name="PVRRecordingWidgets">
 		<control type="group">
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + PVR.IsRecordingTV + ![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]</visible>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + PVR.IsRecordingTV + ![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2) | $EXP[PVRWidgetsStacked]]</visible>
 			<animation effect="slide" start="0,0" end="430,0" time="0" condition="Skin.HasSetting(VerticalHome)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,50" time="0" condition="![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]">conditional</animation>
 			<include condition="!Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
@@ -4792,7 +4792,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + PVR.IsRecordingTV + [String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]</visible>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + PVR.IsRecordingTV + [String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2) | $EXP[PVRWidgetsStacked]]</visible>
 			<animation effect="slide" start="0,0" end="430,0" time="0" condition="Skin.HasSetting(VerticalHome)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,50" time="0" condition="![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]">conditional</animation>
 			<include condition="!Skin.HasSetting(VerticalHome)" content="CurrentPVRStatusSmall">
@@ -4815,7 +4815,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + PVR.HasNonRecordingTVTimer + ![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]</visible>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + PVR.HasNonRecordingTVTimer + ![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2) | $EXP[PVRWidgetsStacked]]</visible>
 			<animation effect="slide" start="0,0" end="0,50" time="0" condition="![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]">conditional</animation>
 			<include condition="!Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">60</param>
@@ -4837,7 +4837,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + PVR.HasNonRecordingTVTimer + [String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]</visible>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + PVR.HasNonRecordingTVTimer + [String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2) | $EXP[PVRWidgetsStacked]]</visible>
 			<animation effect="slide" start="0,0" end="0,50" time="0" condition="![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]">conditional</animation>
 			<include condition="!Skin.HasSetting(VerticalHome)" content="CurrentPVRStatusSmall">
 				<param name="top">47</param>
@@ -4859,13 +4859,15 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + PVR.IsRecordingRadio + ![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]</visible>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + PVR.IsRecordingRadio + ![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2) | $EXP[PVRWidgetsStacked]]</visible>
+			<animation effect="slide" start="0,0" end="0,80" time="0" condition="!Skin.HasSetting(VerticalHome) + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer]">conditional</animation>
+			<animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(VerticalHome) + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer]">conditional</animation>
 			<animation effect="slide" start="0,0" end="430,0" time="0" condition="Skin.HasSetting(VerticalHome)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,50" time="0" condition="![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]">conditional</animation>
 			<include condition="!Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">60</param>
 				<param name="left">0</param>
-				<param name="headerlabel">$LOCALIZE[19158]</param>
+				<param name="headerlabel">$LOCALIZE[19158]:</param>
 				<param name="timelabel">PVR.RadioNowRecordingDateTime</param>
 				<param name="channellabel">PVR.RadioNowRecordingChannel</param>
 				<param name="titlelabel">PVR.RadioNowRecordingTitle</param>
@@ -4874,7 +4876,7 @@
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">-160</param>
-				<param name="headerlabel">$LOCALIZE[19158]</param>
+				<param name="headerlabel">$LOCALIZE[19158]:</param>
 				<param name="timelabel">PVR.RadioNowRecordingDateTime</param>
 				<param name="channellabel">PVR.RadioNowRecordingChannel</param>
 				<param name="titlelabel">PVR.RadioNowRecordingTitle</param>
@@ -4882,13 +4884,15 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + PVR.IsRecordingRadio + [String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]</visible>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + PVR.IsRecordingRadio + [String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2) | $EXP[PVRWidgetsStacked]]</visible>
+			<animation effect="slide" start="0,0" end="0,80" time="0" condition="!Skin.HasSetting(VerticalHome) + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer]">conditional</animation>
+			<animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(VerticalHome) + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer]">conditional</animation>
 			<animation effect="slide" start="0,0" end="430,0" time="0" condition="Skin.HasSetting(VerticalHome)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,50" time="0" condition="![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]">conditional</animation>
 			<include condition="!Skin.HasSetting(VerticalHome)" content="CurrentPVRStatusSmall">
 				<param name="top">47</param>
 				<param name="left">0</param>
-				<param name="headerlabel">$LOCALIZE[19158]</param>
+				<param name="headerlabel">$LOCALIZE[19158]:</param>
 				<param name="timelabel">PVR.RadioNowRecordingDateTime</param>
 				<param name="channellabel">PVR.RadioNowRecordingChannel</param>
 				<param name="titlelabel">PVR.RadioNowRecordingTitle</param>
@@ -4897,7 +4901,7 @@
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">-160</param>
-				<param name="headerlabel">$LOCALIZE[19158]</param>
+				<param name="headerlabel">$LOCALIZE[19158]:</param>
 				<param name="timelabel">PVR.RadioNowRecordingDateTime</param>
 				<param name="channellabel">PVR.RadioNowRecordingChannel</param>
 				<param name="titlelabel">PVR.RadioNowRecordingTitle</param>
@@ -4905,12 +4909,14 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + PVR.HasNonRecordingRadioTimer + ![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]</visible>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + PVR.HasNonRecordingRadioTimer + ![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2) | $EXP[PVRWidgetsStacked]]</visible>
+			<animation effect="slide" start="0,0" end="0,80" time="0" condition="!Skin.HasSetting(VerticalHome) + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer]">conditional</animation>
+			<animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(VerticalHome) + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer]">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,50" time="0" condition="![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]">conditional</animation>
 			<include condition="!Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">60</param>
 				<param name="left">1320</param>
-				<param name="headerlabel">$LOCALIZE[19157]</param>
+				<param name="headerlabel">$LOCALIZE[19157]:</param>
 				<param name="timelabel">PVR.RadioNextRecordingDateTime</param>
 				<param name="channellabel">PVR.RadioNextRecordingChannel</param>
 				<param name="titlelabel">PVR.RadioNextRecordingTitle</param>
@@ -4919,7 +4925,7 @@
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">890</param>
-				<param name="headerlabel">$LOCALIZE[19157]</param>
+				<param name="headerlabel">$LOCALIZE[19157]:</param>
 				<param name="timelabel">PVR.RadioNextRecordingDateTime</param>
 				<param name="channellabel">PVR.RadioNextRecordingChannel</param>
 				<param name="titlelabel">PVR.RadioNextRecordingTitle</param>
@@ -4927,12 +4933,14 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + PVR.HasNonRecordingRadioTimer + [String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]</visible>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + PVR.HasNonRecordingRadioTimer + [String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2) | $EXP[PVRWidgetsStacked]]</visible>
+			<animation effect="slide" start="0,0" end="0,80" time="0" condition="!Skin.HasSetting(VerticalHome) + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer]">conditional</animation>
+			<animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(VerticalHome) + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer]">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,50" time="0" condition="![String.IsEqual(Container(300).ListItem.Property(shelfLayout),two) | String.IsEqual(Container(300).ListItem.Property(widgetRows),2)]">conditional</animation>
 			<include condition="!Skin.HasSetting(VerticalHome)" content="CurrentPVRStatusSmall">
 				<param name="top">47</param>
 				<param name="left">1320</param>
-				<param name="headerlabel">$LOCALIZE[19157]</param>
+				<param name="headerlabel">$LOCALIZE[19157]:</param>
 				<param name="timelabel">PVR.RadioNextRecordingDateTime</param>
 				<param name="channellabel">PVR.RadioNextRecordingChannel</param>
 				<param name="titlelabel">PVR.RadioNextRecordingTitle</param>
@@ -4941,7 +4949,7 @@
 			<include condition="Skin.HasSetting(VerticalHome)" content="CurrentPVRStatus">
 				<param name="top">-35</param>
 				<param name="left">890</param>
-				<param name="headerlabel">$LOCALIZE[19157]</param>
+				<param name="headerlabel">$LOCALIZE[19157]:</param>
 				<param name="timelabel">PVR.RadioNextRecordingDateTime</param>
 				<param name="channellabel">PVR.RadioNextRecordingChannel</param>
 				<param name="titlelabel">PVR.RadioNextRecordingTitle</param>

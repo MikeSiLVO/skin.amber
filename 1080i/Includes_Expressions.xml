@@ -54,4 +54,5 @@
 	<expression name="CanDoOnlineSearches">System.AddonIsEnabled(script.embuary.helper) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)</expression>
 	<expression name="CanUseEH">System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)</expression>
 	<expression name="CanUseTMDbHelper">System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)</expression>
+	<expression name="PVRWidgetsStacked">!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer] + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + [PVR.IsRecordingRadio | PVR.HasNonRecordingRadioTimer]</expression>
 </includes>
