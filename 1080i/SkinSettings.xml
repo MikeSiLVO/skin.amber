@@ -1371,15 +1371,6 @@
 								<param name="ColorString">$VAR[TimeshiftBufferColor]</param>
 							</include>
 						</control>
-						<control type="button" id="910913">
-							<width>1350</width>
-							<height>60</height>
-							<texturenofocus />
-							<textoffsetx>30</textoffsetx>
-							<onclick condition="System.AddonIsEnabled(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=colorthemes)</onclick>
-							<label>$LOCALIZE[31004]</label>
-							<visible>System.AddonIsEnabled(script.skin.helper.skinbackup)</visible>
-						</control>
 					</control>
 					<!-- 9000 10 Search -->
 					<control type="panel" id="9110">
@@ -1544,31 +1535,23 @@
 						<content>
 							<item id="1" description="Backup Skin Settings">
 								<label>$LOCALIZE[31186]</label>
-								<onclick condition="System.HasAddon(script.xmbcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.xbmcbackup,mode=backup)</onclick>
-								<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
-								<onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
+								<onclick condition="System.HasAddon(script.xbmcbackup)">RunScript(script.xbmcbackup,mode=backup)</onclick>
+								<onclick condition="!System.HasAddon(script.xbmcbackup)">InstallAddon(script.xbmcbackup)</onclick>
 							</item>
 							<item id="2" description="Restore Skin Settings Backup">
 								<label>$LOCALIZE[31187]</label>
-								<onclick condition="System.HasAddon(script.xmbcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.xbmcbackup,mode=restore)</onclick>
-								<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=restore)</onclick>
-								<onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-								<onclick>ReloadSkin()</onclick>
+								<onclick condition="System.HasAddon(script.xbmcbackup)">RunScript(script.xbmcbackup,mode=restore)</onclick>
+								<onclick condition="!System.HasAddon(script.xbmcbackup)">InstallAddon(script.xbmcbackup)</onclick>
 							</item>
 							<item id="3" description="Backup/Restore Config">
 								<label>$LOCALIZE[31188]</label>
-								<onclick condition="System.HasAddon(script.xmbcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">Addon.OpenSettings(script.xbmcbackup)</onclick>
-								<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
-								<onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-
+								<onclick condition="System.HasAddon(script.xbmcbackup)">Addon.OpenSettings(script.xbmcbackup)</onclick>
+								<onclick condition="!System.HasAddon(script.xbmcbackup)">InstallAddon(script.xbmcbackup)</onclick>
 							</item>
 							<item id="4" description="Reset all settings to default">
 								<label>$LOCALIZE[31038]</label>
 								<icon>DefaultIconWarning.png</icon>
-								<onclick>Skin.ResetSettings</onclick>
-								<onclick>RunScript(script.skin.helper.skinbackup,action=reset)</onclick>
-								<onclick>ReloadSkin()</onclick>
-								<visible>System.AddonIsEnabled(script.skin.helper.skinbackup)</visible>
+								<onclick>RunScript(script.skin.info.service,dialog=yesno,"heading=$LOCALIZE[31038]","message=$LOCALIZE[750]",yesaction=Skin.ResetSettings|ReloadSkin())</onclick>
 							</item>
 						</content>
 					</control>
@@ -1693,14 +1676,6 @@
 							<onclick condition="System.HasAddon(script.skin.helper.widgets) + !System.AddonIsEnabled(script.skin.helper.widgets)">EnableAddon(script.skin.helper.widgets)</onclick>
 							<onclick condition="!System.HasAddon(service.skin.widgets)">InstallAddon(script.skin.helper.widgets)</onclick>
 							<selected>System.AddonIsEnabled(script.skin.helper.widgets)</selected>
-						</control>
-						<control type="radiobutton" id="911228">
-							<label>script.skin.helper.skinbackup</label>
-							<label2>$INFO[System.AddonVersion(script.skin.helper.skinbackup)]            </label2>
-							<onclick condition="System.AddonIsEnabled(script.skin.helper.skinbackup)">Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
-							<onclick condition="System.HasAddon(script.skin.helper.skinbackup) + !System.AddonIsEnabled(script.skin.helper.skinbackup)">EnableAddon(script.skin.helper.skinbackup)</onclick>
-							<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-							<selected>System.AddonIsEnabled(script.skin.helper.skinbackup)</selected>
 						</control>
 					</control>
 				</control>
