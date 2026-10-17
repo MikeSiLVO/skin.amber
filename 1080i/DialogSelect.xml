@@ -3,9 +3,9 @@
 	<defaultcontrol always="true">3</defaultcontrol>
 	<include>OpenClose</include>
 	<controls>
-		<include condition="![Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation) | !String.IsEmpty(Window(Home).Property(SkinShortcuts.ViewDialog)) | !String.IsEmpty(Window(Home).Property(KodiDefaultCastSearch))]">DialogSelectStandard</include>
+		<include condition="![Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation) | String.IsEqual(Window(Home).Property(skinshortcuts-picker),view) | !String.IsEmpty(Window(Home).Property(KodiDefaultCastSearch))]">DialogSelectStandard</include>
 		<include condition="Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)">DialogSelectGame</include>
-		<include condition="!String.IsEmpty(Window(Home).Property(SkinShortcuts.ViewDialog))">DialogSelectViewtypes</include>
+		<include condition="String.IsEqual(Window(Home).Property(skinshortcuts-picker),view)">DialogSelectViewtypes</include>
 		<include condition="!String.IsEmpty(Window(Home).Property(KodiDefaultCastSearch))">DialogSelectSearch</include>
 	</controls>
 </window>
