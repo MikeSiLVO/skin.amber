@@ -479,7 +479,7 @@
 							<width>1340</width>
 							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
-							<visible>!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.2))</visible>
+							<visible>[!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) | Skin.HasSetting(ShelfLayoutFlip)] + !String.IsEmpty(Container(212).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.2))</visible>
 						</control>
 						<control type="button" id="2105">
 							<description>Widget 4</description>
@@ -489,7 +489,7 @@
 							<width>1340</width>
 							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
-							<visible>!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEqual(Container(212).ListItem.Property(shelfLayout),three) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.3))</visible>
+							<visible>[!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEqual(Container(212).ListItem.Property(shelfLayout),three) | Skin.HasSetting(ShelfLayoutFlip)] + !String.IsEmpty(Container(212).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.3))</visible>
 						</control>
 						<control type="button" id="2106">
 							<description>Widget 5</description>
@@ -499,7 +499,7 @@
 							<width>1340</width>
 							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
-							<visible>!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEqual(Container(212).ListItem.Property(shelfLayout),three) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.3)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.4))</visible>
+							<visible>[!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEqual(Container(212).ListItem.Property(shelfLayout),three) | Skin.HasSetting(ShelfLayoutFlip)] + !String.IsEmpty(Container(212).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.3)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.4))</visible>
 						</control>
 						<control type="button" id="2107">
 							<description>Widget 6</description>
@@ -509,7 +509,7 @@
 							<width>1340</width>
 							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 							<font>ListDetails</font>
-							<visible>!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEqual(Container(212).ListItem.Property(shelfLayout),three) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.3)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.4)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.5))</visible>
+							<visible>[!String.IsEqual(Container(212).ListItem.Property(shelfLayout),two) + !String.IsEqual(Container(212).ListItem.Property(shelfLayout),three) | Skin.HasSetting(ShelfLayoutFlip)] + !String.IsEmpty(Container(212).ListItem.Property(widgetPath)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.2)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.3)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.4)) + !String.IsEmpty(Container(212).ListItem.Property(widgetPath.5))</visible>
 						</control>
 						<control type="button" id="2108">
 							<description>Shelves position: Standard/Low/High</description>

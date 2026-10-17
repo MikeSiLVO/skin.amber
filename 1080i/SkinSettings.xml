@@ -168,6 +168,16 @@
 								<label>$LOCALIZE[31165]</label>
 								<onclick>RunScript(script.skinshortcuts,type=manage&amp;menu=mainmenu)</onclick>
 							</item>
+							<include content="YesNoSettingItem">
+								<param name="itemid" value="991" />
+								<param name="itemlabel" value="TEST: Page flip shelves" />
+								<param name="itemvisibility" value="false" />
+								<param name="skinsetting" value="ShelfLayoutFlip" />
+								<param name="customonclickYes">true</param>
+								<param name="onclick2Yes">ReloadSkin()</param>
+								<param name="customonclickNo">true</param>
+								<param name="onclick2No">ReloadSkin()</param>
+							</include>
 							<item id="25" description="Customize Power Menu">
 								<label>$LOCALIZE[31280]</label>
 								<onclick>RunScript(script.skinshortcuts,type=manage&amp;menu=powermenu)</onclick>

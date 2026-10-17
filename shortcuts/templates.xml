@@ -10,6 +10,10 @@
 		<expression name="ScrollingLogo">widgetAutoScroll + widgetArtwork IN Banner,ClearLogo</expression>
 		<expression name="ScrollingLogo2">widgetAutoScroll.2 + widgetArtwork.2 IN Banner,ClearLogo</expression>
 		<expression name="ScrollingLogo3">widgetAutoScroll.3 + widgetArtwork.3 IN Banner,ClearLogo</expression>
+		<expression name="TwoPerPage" nosuffix="true">shelfLayout=two</expression>
+		<expression name="ThreePerPage" nosuffix="true">shelfLayout=three</expression>
+		<!-- true=true builds the page flip shelves -->
+		<expression name="BuildShelfFlip" nosuffix="true">false=true</expression>
 	</expressions>
 	<propertyGroups>
 		<propertyGroup name="ShelfSlot">
@@ -32,6 +36,33 @@
 				<value condition="suffix=.4 + widgetPath.5">true</value>
 				<value condition="suffix=.5 + widgetPath.6">true</value>
 				<value>false</value>
+			</var>
+			<var name="downtoone">
+				<value condition="suffix=.2">true</value>
+				<value>false</value>
+			</var>
+		</propertyGroup>
+		<propertyGroup name="ShelfMenuFocus">
+			<property name="focus1">String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name]) + String.IsEmpty(Window(Home).Property(WidgetFocus$PROPERTY[index]))</property>
+			<var name="focus2">
+				<value condition="!widgetType | !widgetType.2">false</value>
+				<value>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name]) + String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),2)</value>
+			</var>
+			<var name="focus3">
+				<value condition="!widgetType | !widgetType.2 | !widgetType.3">false</value>
+				<value>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name]) + String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),3)</value>
+			</var>
+			<var name="focus4">
+				<value condition="!widgetType | !widgetType.2 | !widgetType.3 | !widgetType.4">false</value>
+				<value>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name]) + String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),4)</value>
+			</var>
+			<var name="focus5">
+				<value condition="!widgetType | !widgetType.2 | !widgetType.3 | !widgetType.4 | !widgetType.5">false</value>
+				<value>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name]) + String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),5)</value>
+			</var>
+			<var name="focus6">
+				<value condition="!widgetType | !widgetType.2 | !widgetType.3 | !widgetType.4 | !widgetType.5 | !widgetType.6">false</value>
+				<value>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name]) + String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),6)</value>
 			</var>
 		</propertyGroup>
 		<propertyGroup name="ShelfArtwork">
@@ -351,6 +382,37 @@
 			<var name="focused">
 				<value condition="slot=1">String.IsEmpty(Window(home).Property(WidgetFocus$PROPERTY[index]))</value>
 				<value>String.IsEqual(Window(home).Property(WidgetFocus$PROPERTY[index]),$PROPERTY[slot])</value>
+			</var>
+		</propertyGroup>
+		<propertyGroup name="ShelfTierBig">
+			<property name="textboxwidth">204</property>
+			<property name="labelheight">45</property>
+			<property name="triplerow">false</property>
+			<var name="textboxheight">
+				<value condition="widgetType IN movies,tvshows,tv,episodes + [widgetPath~tags | widgetPath~genres | widgetPath~studios | widgetPath~actors | widgetPath~directors | widgetPath~country | widgetPath~years]">44</value>
+				<value condition="widgetType IN movies,tvshows,tv,episodes,musicvideos,videos,music,albums,songs + widgetArtwork=Square">47</value>
+				<value>64</value>
+			</var>
+			<var name="textbackheight">
+				<value condition="widgetType IN movies,tvshows,tv,episodes + [widgetPath~tags | widgetPath~genres | widgetPath~studios | widgetPath~actors | widgetPath~directors | widgetPath~country | widgetPath~years]">54</value>
+				<value condition="widgetType IN movies,tvshows,tv,episodes,musicvideos,videos,music,albums,songs + widgetArtwork=Square">56</value>
+				<value>74</value>
+			</var>
+		</propertyGroup>
+		<propertyGroup name="ShelfTierSmall">
+			<property name="textboxwidth">135</property>
+			<property name="labelheight">35</property>
+			<property name="triplerow">true</property>
+			<var name="textboxfont">
+				<value>ListDetailsSmall</value>
+			</var>
+			<var name="textboxheight">
+				<value condition="widgetArtwork=Square + [widgetType IN tvshows,movies,episodes,musicvideos,albums,songs]">47</value>
+				<value>34</value>
+			</var>
+			<var name="textbackheight">
+				<value condition="widgetArtwork=Square + [widgetType IN tvshows,movies,episodes,musicvideos,albums,songs]">56</value>
+				<value>44</value>
 			</var>
 		</propertyGroup>
 	</propertyGroups>
@@ -1072,6 +1134,104 @@
 			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
 			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 		</include>
+		<include name="ShelfRow">
+			<control type="group">
+				<visible>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name])</visible>
+				<animation effect="fade" start="100" end="0" time="200" condition="!$PROPERTY[pagevisible]">Conditional</animation>
+				<top>$PROPERTY[rowtop]</top>
+				<control type="image">
+					<top>6</top>
+					<width>1920</width>
+					<height>$PROPERTY[panelheight]</height>
+					<texture border="0,40,0,0">home/ShelfBackground.png</texture>
+					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
+				</control>
+				<control type="label">
+					<animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">Conditional</animation>
+					<right>12</right>
+					<width>700</width>
+					<height>45</height>
+					<align>right</align>
+					<font>Shelf_Title</font>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+					<label>$PROPERTY[label]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<visible>Control.HasFocus(2900$PROPERTY[index]$PROPERTY[slot])</visible>
+					<left>12</left>
+					<width>1170</width>
+					<height>45</height>
+					<font>Shelf_Title</font>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+					<label>$VAR[HomeWidgetLabel]</label>
+					<scroll>$PROPERTY[labelscroll]</scroll>
+				</control>
+				<control type="$PROPERTY[containertype]" id="2900$PROPERTY[index]$PROPERTY[slot]">
+					<top>54</top>
+					<left>32</left>
+					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
+					<height>$PROPERTY[listheight]</height>
+					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(2900$PROPERTY[index]$PROPERTY[slot])</autoscroll>
+					<onfocus>SetProperty(TMDbHelper.WidgetContainer,2900$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
+					<onclick condition="Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/,isdir)</onclick>
+					<onup condition="$PROPERTY[onup]">SetProperty(WidgetFocus$PROPERTY[index],$MATH[slot + 1],Home)</onup>
+					<onup condition="$PROPERTY[onup]">SetFocus(2900$PROPERTY[index]$MATH[slot + 1])</onup>
+					<onup condition="!$PROPERTY[onup]">ClearProperty(WidgetFocus$PROPERTY[index],Home)</onup>
+					<onup condition="!$PROPERTY[onup]">SetFocus(2900$PROPERTY[index]1)</onup>
+					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
+					<ondown condition="!$PROPERTY[downprev]">300</ondown>
+					<ondown condition="$PROPERTY[downprev] + $PROPERTY[downtoone]">ClearProperty(WidgetFocus$PROPERTY[index],Home)</ondown>
+					<ondown condition="$PROPERTY[downprev] + !$PROPERTY[downtoone]">SetProperty(WidgetFocus$PROPERTY[index],$MATH[slot - 1],Home)</ondown>
+					<ondown condition="$PROPERTY[downprev]">SetFocus(2900$PROPERTY[index]$MATH[slot - 1])</ondown>
+					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+					<onback>300</onback>
+					<preloaditems>2</preloaditems>
+					<orientation>horizontal</orientation>
+					<include content="$PROPERTY[content]">
+						<param name="id1">2900$PROPERTY[index]$PROPERTY[slot]</param>
+						<param name="iconimage">$PROPERTY[contentartwork]</param>
+						<param name="overlaylabel">$PROPERTY[labelvar]</param>
+						<param name="labelvisibility">$PROPERTY[labelvisibility]</param>
+						<param name="labelheight">$PROPERTY[labelheight]</param>
+						<param name="textboxfont">$PROPERTY[textboxfont]</param>
+						<param name="textboxwidth">$PROPERTY[textboxwidth]</param>
+						<param name="textboxheight">$PROPERTY[textboxheight]</param>
+						<param name="textbackheight">$PROPERTY[textbackheight]</param>
+						<param name="aspect">$PROPERTY[aspect]</param>
+						<param name="labelfont">$PROPERTY[labelfont]</param>
+						<param name="isTripleRowMedium">false</param>
+						<param name="isTripleRowLarge">false</param>
+						<param name="isTripleRow">$PROPERTY[triplerow]</param>
+						<param name="isTripleShelvesTogether">$PROPERTY[triplerow]</param>
+						<param name="isLowWidget">false</param>
+						<param name="showOverlay">$PROPERTY[showOverlay]</param>
+						<param name="showLabelFallback">$PROPERTY[showLabelFallback]</param>
+						<param name="artworkheightbig">$PROPERTY[artworkheightbig]</param>
+						<param name="artworkheightmed">$PROPERTY[artworkheightmed]</param>
+						<param name="artworkheightsmall">$PROPERTY[artworkheightsmall]</param>
+						<param name="artworkwidthbig">$PROPERTY[artworkwidthbig]</param>
+						<param name="artworkwidthmed">$PROPERTY[artworkwidthmed]</param>
+						<param name="artworkwidthsmall">$PROPERTY[artworkwidthsmall]</param>
+						<param name="iconheightbig">$PROPERTY[iconheightbig]</param>
+						<param name="iconheightmed">$PROPERTY[iconheightmed]</param>
+						<param name="iconheightsmall">$PROPERTY[iconheightsmall]</param>
+						<param name="align">$PROPERTY[align]</param>
+						<param name="textboxvisibility">$PROPERTY[textboxvisibility]</param>
+						<param name="isWideIcon">$PROPERTY[iswideicon]</param>
+						<param name="isSquare">$PROPERTY[issquare]</param>
+						<param name="isThumb">$PROPERTY[isthumb]</param>
+						<param name="doInfoPopup">$PROPERTY[infopopup]</param>
+						<param name="widgetPopupDelay">$PROPERTY[popupdelay]</param>
+						<param name="overlaylabelyoffset">$PROPERTY[overlaylabelyoffset]</param>
+					</include>
+					<content sortby="$PROPERTY[sortby]" sortorder="$PROPERTY[sortorder]" limit="$PROPERTY[limit]" target="$PROPERTY[target]">$PROPERTY[path]</content>
+				</control>
+			</control>
+		</include>
 	</includes>
 	<template include="ShelfOnUpMainMenu" menu="mainmenu">
 		<condition>widgetPath</condition>
@@ -1103,6 +1263,326 @@
 			<onup condition="$PROPERTY[onup5]">SetFocus(1600$PROPERTY[index]5)</onup>
 			<onup condition="$PROPERTY[onup6]">SetFocus(1600$PROPERTY[index]6)</onup>
 			<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+		</controls>
+	</template>
+	<template include="ShelfOnUpFlip" menu="mainmenu">
+		<condition>$EXP[BuildShelfFlip]</condition>
+		<condition>widgetPath</condition>
+		<propertyGroup content="ShelfMenuFocus" />
+		<controls>
+			<onup condition="$PROPERTY[focus1]">SetFocus(2900$PROPERTY[index]1)</onup>
+			<onup condition="$PROPERTY[focus2]">SetFocus(2900$PROPERTY[index]2)</onup>
+			<onup condition="$PROPERTY[focus3]">SetFocus(2900$PROPERTY[index]3)</onup>
+			<onup condition="$PROPERTY[focus4]">SetFocus(2900$PROPERTY[index]4)</onup>
+			<onup condition="$PROPERTY[focus5]">SetFocus(2900$PROPERTY[index]5)</onup>
+			<onup condition="$PROPERTY[focus6]">SetFocus(2900$PROPERTY[index]6)</onup>
+			<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+		</controls>
+	</template>
+	<template include="ShelfOnRightFlip" menu="mainmenu">
+		<condition>$EXP[BuildShelfFlip]</condition>
+		<condition>widgetPath</condition>
+		<propertyGroup content="ShelfMenuFocus" />
+		<controls>
+			<onright condition="$PROPERTY[focus1]">SetFocus(2900$PROPERTY[index]1)</onright>
+			<onright condition="$PROPERTY[focus2]">SetFocus(2900$PROPERTY[index]2)</onright>
+			<onright condition="$PROPERTY[focus3]">SetFocus(2900$PROPERTY[index]3)</onright>
+			<onright condition="$PROPERTY[focus4]">SetFocus(2900$PROPERTY[index]4)</onright>
+			<onright condition="$PROPERTY[focus5]">SetFocus(2900$PROPERTY[index]5)</onright>
+			<onright condition="$PROPERTY[focus6]">SetFocus(2900$PROPERTY[index]6)</onright>
+		</controls>
+	</template>
+	<template menu="mainmenu">
+		<output include="shelfrow1" />
+		<output include="shelfrow2" suffix=".2" />
+		<output include="shelfrow3" suffix=".3" />
+		<output include="shelfrow4" suffix=".4" />
+		<output include="shelfrow5" suffix=".5" />
+		<output include="shelfrow6" suffix=".6" />
+		<condition>$EXP[BuildShelfFlip]</condition>
+		<condition>widgetPath</condition>
+		<condition>!$EXP[StaticShelf]</condition>
+		<condition>$EXP[SingleShelf]</condition>
+		<property name="target" from="widgetTarget" />
+		<property name="sortorder" from="widgetSortOrder" />
+		<property name="sortby" from="widgetSortBy" />
+		<property name="popupdelay" from="widgetPopupDelay" />
+		<property name="path" from="widgetPath" />
+		<property name="limit" from="widgetLimit" />
+		<property name="labelscroll" from="widgetLabelScroll" />
+		<property name="label" from="widgetLabel" />
+		<property name="listheight">315</property>
+		<property name="panelheight">375</property>
+		<property name="rowtop">273</property>
+		<property name="downprev">false</property>
+		<propertyGroup content="ShelfSlot" />
+		<propertyGroup content="ShelfCommon" />
+		<propertyGroup content="ShelfOverlayLabel" />
+		<propertyGroup content="ShelfArtwork" />
+		<propertyGroup content="ShelfTierBig" />
+		<var name="pagevisible">
+			<value condition="!suffix">String.IsEmpty(Window(Home).Property(WidgetFocus$PROPERTY[index]))</value>
+			<value condition="suffix=.2">String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),2)</value>
+			<value condition="suffix=.3">String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),3)</value>
+			<value condition="suffix=.4">String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),4)</value>
+			<value condition="suffix=.5">String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),5)</value>
+			<value>String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),6)</value>
+		</var>
+		<controls>
+			<skinshortcuts include="ShelfRow" />
+		</controls>
+	</template>
+	<template menu="mainmenu">
+		<output include="shelfrow1" />
+		<output include="shelfrow2" suffix=".2" />
+		<output include="shelfrow3" suffix=".3" />
+		<output include="shelfrow4" suffix=".4" />
+		<output include="shelfrow5" suffix=".5" />
+		<output include="shelfrow6" suffix=".6" />
+		<condition>$EXP[BuildShelfFlip]</condition>
+		<condition>widgetPath</condition>
+		<condition>!$EXP[StaticShelf]</condition>
+		<condition>$EXP[TwoPerPage]</condition>
+		<property name="target" from="widgetTarget" />
+		<property name="sortorder" from="widgetSortOrder" />
+		<property name="sortby" from="widgetSortBy" />
+		<property name="popupdelay" from="widgetPopupDelay" />
+		<property name="path" from="widgetPath" />
+		<property name="limit" from="widgetLimit" />
+		<property name="labelscroll" from="widgetLabelScroll" />
+		<property name="label" from="widgetLabel" />
+		<property name="listheight">315</property>
+		<property name="panelheight">375</property>
+		<propertyGroup content="ShelfSlot" />
+		<propertyGroup content="ShelfCommon" />
+		<propertyGroup content="ShelfOverlayLabel" />
+		<propertyGroup content="ShelfArtwork" />
+		<propertyGroup content="ShelfTierBig" />
+		<var name="pagevisible">
+			<value condition="!suffix | suffix=.2">[String.IsEmpty(Window(Home).Property(WidgetFocus$PROPERTY[index])) | String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),2)]</value>
+			<value condition="suffix=.3 | suffix=.4">[String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),3) | String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),4)]</value>
+			<value>[String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),5) | String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),6)]</value>
+		</var>
+		<var name="rowtop">
+			<value condition="!suffix | suffix=.3 | suffix=.5">433</value>
+			<value>64</value>
+		</var>
+		<var name="downprev">
+			<value condition="!suffix">false</value>
+			<value>true</value>
+		</var>
+		<controls>
+			<skinshortcuts include="ShelfRow" />
+		</controls>
+	</template>
+	<template menu="mainmenu">
+		<output include="shelfrow1" />
+		<output include="shelfrow2" suffix=".2" />
+		<output include="shelfrow3" suffix=".3" />
+		<output include="shelfrow4" suffix=".4" />
+		<output include="shelfrow5" suffix=".5" />
+		<output include="shelfrow6" suffix=".6" />
+		<condition>$EXP[BuildShelfFlip]</condition>
+		<condition>widgetPath</condition>
+		<condition>!$EXP[StaticShelf]</condition>
+		<condition>$EXP[ThreePerPage]</condition>
+		<property name="target" from="widgetTarget" />
+		<property name="sortorder" from="widgetSortOrder" />
+		<property name="sortby" from="widgetSortBy" />
+		<property name="popupdelay" from="widgetPopupDelay" />
+		<property name="path" from="widgetPath" />
+		<property name="limit" from="widgetLimit" />
+		<property name="labelscroll" from="widgetLabelScroll" />
+		<property name="label" from="widgetLabel" />
+		<property name="listheight">220</property>
+		<property name="panelheight">280</property>
+		<propertyGroup content="ShelfSlot" />
+		<propertyGroup content="ShelfCommon" />
+		<propertyGroup content="ShelfOverlayLabel" />
+		<propertyGroup content="ShelfArtwork" />
+		<propertyGroup content="ShelfTierSmall" />
+		<var name="pagevisible">
+			<value condition="!suffix | suffix=.2 | suffix=.3">[String.IsEmpty(Window(Home).Property(WidgetFocus$PROPERTY[index])) | String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),2) | String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),3)]</value>
+			<value>[String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),4) | String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),5) | String.IsEqual(Window(Home).Property(WidgetFocus$PROPERTY[index]),6)]</value>
+		</var>
+		<var name="rowtop">
+			<value condition="!suffix | suffix=.4">606</value>
+			<value condition="suffix=.2 | suffix=.5">331</value>
+			<value>56</value>
+		</var>
+		<var name="downprev">
+			<value condition="!suffix">false</value>
+			<value>true</value>
+		</var>
+		<controls>
+			<skinshortcuts include="ShelfRow" />
+		</controls>
+	</template>
+	<template include="ShelfIndicatorFlip" menu="mainmenu">
+		<condition>$EXP[BuildShelfFlip]</condition>
+		<condition>widgetPath | widgetPath.2 | widgetPath.3 | widgetPath.4 | widgetPath.5 | widgetPath.6</condition>
+		<condition>$EXP[SingleShelf]</condition>
+		<controls>
+			<control type="group">
+				<visible>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name])</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<control type="grouplist">
+					<top>235</top>
+					<left>10</left>
+					<width>16</width>
+					<height>339</height>
+					<align>center</align>
+					<itemgap>10</itemgap>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]6).NumItems,0) + !Control.HasFocus(2900$PROPERTY[index]6)</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]6).NumItems,0) + Control.HasFocus(2900$PROPERTY[index]6)</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]5).NumItems,0) + !Control.HasFocus(2900$PROPERTY[index]5)</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]5).NumItems,0) + Control.HasFocus(2900$PROPERTY[index]5)</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]4).NumItems,0) + !Control.HasFocus(2900$PROPERTY[index]4)</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]4).NumItems,0) + Control.HasFocus(2900$PROPERTY[index]4)</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]3).NumItems,0) + !Control.HasFocus(2900$PROPERTY[index]3)</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]3).NumItems,0) + Control.HasFocus(2900$PROPERTY[index]3)</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]2).NumItems,0) + !Control.HasFocus(2900$PROPERTY[index]2)</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]2).NumItems,0) + Control.HasFocus(2900$PROPERTY[index]2)</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]1).NumItems,0) + !Control.HasFocus(2900$PROPERTY[index]1)</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>Integer.IsGreater(Container(2900$PROPERTY[index]1).NumItems,0) + Control.HasFocus(2900$PROPERTY[index]1)</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+				</control>
+			</control>
+		</controls>
+	</template>
+	<template include="ShelfIndicatorFlip" menu="mainmenu">
+		<condition>$EXP[BuildShelfFlip]</condition>
+		<condition>widgetPath | widgetPath.2 | widgetPath.3 | widgetPath.4 | widgetPath.5 | widgetPath.6</condition>
+		<condition>$EXP[TwoPerPage]</condition>
+		<controls>
+			<control type="group">
+				<visible>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name])</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<control type="grouplist">
+					<top>394</top>
+					<left>10</left>
+					<width>16</width>
+					<height>339</height>
+					<align>center</align>
+					<itemgap>10</itemgap>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]5).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]6).NumItems,0)] + ![Control.HasFocus(2900$PROPERTY[index]5) | Control.HasFocus(2900$PROPERTY[index]6)]</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]5).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]6).NumItems,0)] + [Control.HasFocus(2900$PROPERTY[index]5) | Control.HasFocus(2900$PROPERTY[index]6)]</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]3).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]4).NumItems,0)] + ![Control.HasFocus(2900$PROPERTY[index]3) | Control.HasFocus(2900$PROPERTY[index]4)]</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]3).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]4).NumItems,0)] + [Control.HasFocus(2900$PROPERTY[index]3) | Control.HasFocus(2900$PROPERTY[index]4)]</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]1).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]2).NumItems,0)] + ![Control.HasFocus(2900$PROPERTY[index]1) | Control.HasFocus(2900$PROPERTY[index]2)]</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]1).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]2).NumItems,0)] + [Control.HasFocus(2900$PROPERTY[index]1) | Control.HasFocus(2900$PROPERTY[index]2)]</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+				</control>
+			</control>
+		</controls>
+	</template>
+	<template include="ShelfIndicatorFlip" menu="mainmenu">
+		<condition>$EXP[BuildShelfFlip]</condition>
+		<condition>widgetPath | widgetPath.2 | widgetPath.3 | widgetPath.4 | widgetPath.5 | widgetPath.6</condition>
+		<condition>$EXP[ThreePerPage]</condition>
+		<controls>
+			<control type="group">
+				<visible>String.IsEqual(Container(300).ListItem.Property(name),$PROPERTY[name])</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<control type="grouplist">
+					<top>544</top>
+					<left>10</left>
+					<width>16</width>
+					<height>339</height>
+					<align>center</align>
+					<itemgap>10</itemgap>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]4).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]5).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]6).NumItems,0)] + ![Control.HasFocus(2900$PROPERTY[index]4) | Control.HasFocus(2900$PROPERTY[index]5) | Control.HasFocus(2900$PROPERTY[index]6)]</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]4).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]5).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]6).NumItems,0)] + [Control.HasFocus(2900$PROPERTY[index]4) | Control.HasFocus(2900$PROPERTY[index]5) | Control.HasFocus(2900$PROPERTY[index]6)]</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]1).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]2).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]3).NumItems,0)] + ![Control.HasFocus(2900$PROPERTY[index]1) | Control.HasFocus(2900$PROPERTY[index]2) | Control.HasFocus(2900$PROPERTY[index]3)]</visible>
+						<height>16</height>
+						<texture colordiffuse="Grey3">icons/circle.png</texture>
+					</control>
+					<control type="image">
+						<visible>[Integer.IsGreater(Container(2900$PROPERTY[index]1).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]2).NumItems,0) | Integer.IsGreater(Container(2900$PROPERTY[index]3).NumItems,0)] + [Control.HasFocus(2900$PROPERTY[index]1) | Control.HasFocus(2900$PROPERTY[index]2) | Control.HasFocus(2900$PROPERTY[index]3)]</visible>
+						<height>16</height>
+						<texture colordiffuse="$VAR[HighlightColor]">icons/circle.png</texture>
+					</control>
+				</control>
+			</control>
 		</controls>
 	</template>
 	<template menu="mainmenu">

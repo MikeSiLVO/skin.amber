@@ -21,7 +21,8 @@
 				<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 				<ondown condition="Integer.IsGreater(Container(9001).NumItems,0)">9001</ondown>
 				<ondown condition="!Integer.IsGreater(Container(9001).NumItems,0) + Skin.HasSetting(Enable.BottomShortcuts)">800</ondown>
-				<include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnUpMainMenu</include>
+				<include condition="!Skin.HasSetting(Hide.AllShelves) + !Skin.HasSetting(ShelfLayoutFlip)">skinshortcuts-template-ShelfOnUpMainMenu</include>
+				<include condition="!Skin.HasSetting(Hide.AllShelves) + Skin.HasSetting(ShelfLayoutFlip)">skinshortcuts-template-ShelfOnUpFlip</include>
 				<pagecontrol />
 				<focusposition>2</focusposition>
 				<orientation>horizontal</orientation>
@@ -123,15 +124,8 @@
 		<control type="group" id="700">
 			<visible>!Skin.HasSetting(Hide.AllShelves)</visible>
 			<animation effect="fade" start="100" end="0" time="480" condition="[!Skin.HasSetting(Hide.NowPlaying) + Player.HasAudio + !ControlGroup(700).HasFocus] | [!Skin.HasSetting(Hide.NowPlaying) + Player.HasVideo + !ControlGroup(700).HasFocus] | [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus] | [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + ControlGroup(700).HasFocus]">Conditional</animation>
-			<include>skinshortcuts-template-shelfgroup2shelvesbackground</include>
-			<include>skinshortcuts-template-shelfgroup3shelvesbackground</include>
-			<include>skinshortcuts-template-shelfgroup1</include>
-			<include>skinshortcuts-template-shelfgroup2</include>
-			<include>skinshortcuts-template-shelfgroup3</include>
-			<include>skinshortcuts-template-shelfgroup4</include>
-			<include>skinshortcuts-template-shelfgroup5</include>
-			<include>skinshortcuts-template-shelfgroup6</include>
-			<include>skinshortcuts-template-ShelfIndicator</include>
+			<include condition="!Skin.HasSetting(ShelfLayoutFlip)">HomeShelves</include>
+			<include condition="Skin.HasSetting(ShelfLayoutFlip)">HomeShelvesFlip</include>
 			<control type="group">
 				<include>PVRRecordingWidgets</include>
 			</control>

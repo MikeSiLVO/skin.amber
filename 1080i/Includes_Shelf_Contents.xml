@@ -9,6 +9,26 @@
 	<include name="ShelfWidthVertText">
 		<width>1460</width>
 	</include>
+	<include name="HomeShelves">
+		<include>skinshortcuts-template-shelfgroup2shelvesbackground</include>
+		<include>skinshortcuts-template-shelfgroup3shelvesbackground</include>
+		<include>skinshortcuts-template-shelfgroup1</include>
+		<include>skinshortcuts-template-shelfgroup2</include>
+		<include>skinshortcuts-template-shelfgroup3</include>
+		<include>skinshortcuts-template-shelfgroup4</include>
+		<include>skinshortcuts-template-shelfgroup5</include>
+		<include>skinshortcuts-template-shelfgroup6</include>
+		<include>skinshortcuts-template-ShelfIndicator</include>
+	</include>
+	<include name="HomeShelvesFlip">
+		<include>skinshortcuts-template-shelfrow1</include>
+		<include>skinshortcuts-template-shelfrow2</include>
+		<include>skinshortcuts-template-shelfrow3</include>
+		<include>skinshortcuts-template-shelfrow4</include>
+		<include>skinshortcuts-template-shelfrow5</include>
+		<include>skinshortcuts-template-shelfrow6</include>
+		<include>skinshortcuts-template-ShelfIndicatorFlip</include>
+	</include>
 
 	<!-- Positioning for widget container when bottom shortcuts are enabled -->
 	<include name="StaticWidgetPositioning">

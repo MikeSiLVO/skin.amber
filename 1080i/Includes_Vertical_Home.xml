@@ -96,7 +96,8 @@
 		<onup>300</onup>
 		<ondown>300</ondown>
 		<onleft>9001</onleft>
-		<include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnRightMainMenu</include>
+		<include condition="!Skin.HasSetting(Hide.AllShelves) + !Skin.HasSetting(ShelfLayoutFlip)">skinshortcuts-template-ShelfOnRightMainMenu</include>
+		<include condition="!Skin.HasSetting(Hide.AllShelves) + Skin.HasSetting(ShelfLayoutFlip)">skinshortcuts-template-ShelfOnRightFlip</include>
 		<onback>9001</onback>
 		<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 		<pagecontrol />
@@ -140,7 +141,8 @@
 		<onup>300</onup>
 		<ondown>300</ondown>
 		<onleft>9001</onleft>
-		<include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnRightMainMenu</include>
+		<include condition="!Skin.HasSetting(Hide.AllShelves) + !Skin.HasSetting(ShelfLayoutFlip)">skinshortcuts-template-ShelfOnRightMainMenu</include>
+		<include condition="!Skin.HasSetting(Hide.AllShelves) + Skin.HasSetting(ShelfLayoutFlip)">skinshortcuts-template-ShelfOnRightFlip</include>
 		<onback>9001</onback>
 		<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 		<pagecontrol />
@@ -331,15 +333,8 @@
 			<include condition="Skin.HasSetting(Vertical.IconOnly)">widgetsLeftVerticalIcon</include>
 			<include condition="!Skin.HasSetting(Vertical.IconOnly)">widgetsLeftVerticalText</include>
 
-			<include>skinshortcuts-template-shelfgroup2shelvesbackground</include>
-			<include>skinshortcuts-template-shelfgroup3shelvesbackground</include>
-			<include>skinshortcuts-template-shelfgroup1</include>
-			<include>skinshortcuts-template-shelfgroup2</include>
-			<include>skinshortcuts-template-shelfgroup3</include>
-			<include>skinshortcuts-template-shelfgroup4</include>
-			<include>skinshortcuts-template-shelfgroup5</include>
-			<include>skinshortcuts-template-shelfgroup6</include>
-			<include>skinshortcuts-template-ShelfIndicator</include>
+			<include condition="!Skin.HasSetting(ShelfLayoutFlip)">HomeShelves</include>
+			<include condition="Skin.HasSetting(ShelfLayoutFlip)">HomeShelvesFlip</include>
 			<control type="group">
 				<include>PVRRecordingWidgets</include>
 			</control>
