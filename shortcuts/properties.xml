@@ -177,7 +177,6 @@
 			<option value="three" label="$NUMBER[3]" />
 		</options>
 	</property>
-	<property name="widgetThreeShelvesLarge" type="toggle" value="true" />
 	<property name="InfoLineShelf" type="toggle" value="true" />
 	<property name="centerShelves" type="toggle" value="true" />
 	<property name="showShelvesInfo" type="toggle" value="true" />
@@ -307,9 +306,6 @@
 		</fallback>
 		<fallback property="shelfLayout">
 			<default>one</default>
-		</fallback>
-		<fallback property="widgetThreeShelvesLarge">
-			<default>false</default>
 		</fallback>
 		<fallback property="centerShelves">
 			<default>false</default>

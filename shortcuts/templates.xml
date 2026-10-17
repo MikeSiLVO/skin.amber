@@ -2,7 +2,6 @@
 <templates>
 	<expressions>
 		<expression name="SingleShelf" nosuffix="true">!shelfLayout=two + !shelfLayout=three</expression>
-		<expression name="ThreeShelvesLarge" nosuffix="true">widgetThreeShelvesLarge=true</expression>
 		<expression name="ShelvesInfo" nosuffix="true">showShelvesInfo=true</expression>
 		<expression name="PositionStandard" nosuffix="true">!horizontalWidgetPos | horizontalWidgetPos=Standard</expression>
 		<expression name="PositionHigh" nosuffix="true">horizontalWidgetPos=High</expression>
@@ -186,31 +185,6 @@
 				<value>stretch</value>
 			</var>
 		</propertyGroup>
-		<propertyGroup name="LargeShelvesStaticLayout">
-			<var name="layoutheight">
-				<value>315</value>
-			</var>
-			<var name="layoutwidth">
-				<value>228</value>
-			</var>
-			<var name="textboxheight">
-				<value>64</value>
-			</var>
-			<var name="textbackheight">
-				<value>74</value>
-			</var>
-			<var name="textboxfont">
-				<value>Shelf_Label</value>
-			</var>
-			<var name="iconheight">
-				<value condition="widgetType=swrecommendedeps">315</value>
-				<value>228</value>
-			</var>
-			<var name="labelfont">
-				<value condition="widgetType IN episodes,people">ListDetailsSmall</value>
-				<value>Shelf_Label</value>
-			</var>
-		</propertyGroup>
 		<propertyGroup name="ShelfCommon">
 			<var name="infopopup">
 				<value condition="$EXP[ShelvesInfo]">false</value>
@@ -253,13 +227,12 @@
 				<value>false</value>
 			</var>
 			<var name="height">
-				<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">945</value>
-				<value condition="!$EXP[ThreeShelvesLarge] + widgetRows=3">756</value>
+				<value condition="widgetRows=3">756</value>
 				<value condition="widgetRows=2">630</value>
 				<value>315</value>
 			</var>
 			<var name="textboxwidth">
-				<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">158</value>
+				<value condition="widgetRows=3">158</value>
 				<value>204</value>
 			</var>
 		</propertyGroup>
@@ -328,21 +301,6 @@
 				<value>false</value>
 			</var>
 		</propertyGroup>
-		<propertyGroup name="LargeShelvesTextbox">
-			<var name="textboxheight">
-				<value condition="widgetArtwork=Square + [widgetType IN tvshows,movies,episodes,musicvideos,albums,songs]">47</value>
-				<value>64</value>
-			</var>
-			<var name="textbackheight">
-				<value condition="widgetArtwork=Square + [widgetType IN tvshows,movies,episodes,musicvideos,albums,songs]">56</value>
-				<value>74</value>
-			</var>
-			<var name="textboxfont">
-				<value condition="widgetArtwork=Square + [widgetType IN tvshows,movies,episodes,musicvideos,albums,songs]">ListDetailsSmall</value>
-				<value condition="widgetType=favourites">ListDetailsSmall</value>
-				<value>Shelf_Label</value>
-			</var>
-		</propertyGroup>
 		<propertyGroup name="ShelfOverlayLabel">
 			<var name="overlaylabelyoffset">
 				<value condition="widgetArtwork=Landscape">82r</value>
@@ -382,12 +340,6 @@
 		</propertyGroup>
 		<propertyGroup name="StaticShelfTextbox">
 			<property name="textboxvisibility">true</property>
-		</propertyGroup>
-		<propertyGroup name="MiddleShelfOnUp">
-			<var name="onup">
-				<value condition="!widgetType.3">false</value>
-				<value>true</value>
-			</var>
 		</propertyGroup>
 		<propertyGroup name="ThreeShelvesStaticLabel">
 			<var name="labelfont">
@@ -1120,291 +1072,6 @@
 			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
 			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 		</include>
-		<include name="LargeShelves">
-			<control type="group">
-				<skinshortcuts>visibility</skinshortcuts>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="group">
-					<visible>Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) + $PROPERTY[showShelvesInfo]</visible>
-					<include condition="Skin.HasSetting(VerticalHome)">ShelfInfoTopVert</include>
-					<include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoTopHorz</include>
-					<left>0</left>
-					<control type="group">
-						<animation effect="fade" end="0">WindowClose</animation>
-						<control type="image">
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
-							<include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
-							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
-						</control>
-						<control type="group">
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
-								<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-								<param name="left">20</param>
-								<param name="width">1400</param>
-							</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
-								<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-								<param name="left">20</param>
-								<param name="width">1700</param>
-							</include>
-						</control>
-					</control>
-				</control>
-				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $PROPERTY[showShelvesInfo]">
-					<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-					<param name="label">$PROPERTY[label]</param>
-					<param name="labelscroll">$PROPERTY[labelscroll]</param>
-					<param name="top">594</param>
-					<param name="height">375</param>
-					<param name="visible">$PROPERTY[focused]</param>
-					<param name="ShowMediumLogo">false</param>
-					<param name="ShowMedium2Logo">false</param>
-					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLargeLogoUnfocused">true</param>
-				</include>
-				<control type="$PROPERTY[containertype]" id="1600$PROPERTY[index]$PROPERTY[slot]">
-					<include condition="Skin.HasSetting(VerticalHome) + $PROPERTY[showShelvesInfo]">ShelfInfoWidgetPositioningVert</include>
-					<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll]" content="ShelfCenterAnimationsVert">
-						<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="center228">$PROPERTY[center228]</param>
-						<param name="center295">$PROPERTY[center295]</param>
-						<param name="center315">$PROPERTY[center315]</param>
-						<param name="center376">$PROPERTY[center376]</param>
-						<param name="center385">$PROPERTY[center385]</param>
-						<param name="center500">$PROPERTY[center500]</param>
-						<param name="center668">$PROPERTY[center668]</param>
-					</include>
-					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll]" content="ShelfCenterAnimationsVertIcons">
-						<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="center228">$PROPERTY[center228]</param>
-						<param name="center295">$PROPERTY[center295]</param>
-						<param name="center315">$PROPERTY[center315]</param>
-						<param name="center376">$PROPERTY[center376]</param>
-						<param name="center385">$PROPERTY[center385]</param>
-						<param name="center500">$PROPERTY[center500]</param>
-						<param name="center668">$PROPERTY[center668]</param>
-					</include>
-					<include condition="Skin.HasSetting(VerticalHome) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll] + Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfCenterAnimationsVertHiddenMenu">
-						<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="center228">$PROPERTY[center228]</param>
-						<param name="center295">$PROPERTY[center295]</param>
-						<param name="center315">$PROPERTY[center315]</param>
-						<param name="center376">$PROPERTY[center376]</param>
-						<param name="center385">$PROPERTY[center385]</param>
-						<param name="center500">$PROPERTY[center500]</param>
-						<param name="center668">$PROPERTY[center668]</param>
-					</include>
-					<top>$PROPERTY[paneltop]</top>
-					<left>32</left>
-					<right>0</right>
-					<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertText</include>
-					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
-					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
-					<height>315</height>
-					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) | [Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) + $PROPERTY[showShelvesInfo]]</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
-					<onclick condition="Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/,isdir)</onclick>
-					<skinshortcuts include="LargeShelvesNav1" condition="slot=1" />
-					<skinshortcuts include="LargeShelvesNav2" condition="slot=2" />
-					<skinshortcuts include="LargeShelvesNav3" condition="slot=3" />
-					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-					<onback>300</onback>
-					<preloaditems>2</preloaditems>
-					<orientation>horizontal</orientation>
-					<include content="$PROPERTY[content]" condition="!$PROPERTY[showShelvesInfo]">
-						<param name="id1">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="iconimage">$PROPERTY[contentartwork]</param>
-						<param name="overlaylabel">$PROPERTY[labelvar]</param>
-						<param name="labelvisibility">$PROPERTY[labelvisibility]</param>
-						<param name="aspect">$PROPERTY[aspect]</param>
-						<param name="labelfont">$PROPERTY[labelfont]</param>
-						<param name="textboxfont">$PROPERTY[textboxfont]</param>
-						<param name="textboxwidth">204</param>
-						<param name="textboxheight">$PROPERTY[textboxheight]</param>
-						<param name="textbackheight">$PROPERTY[textbackheight]</param>
-						<param name="isTripleRow">true</param>
-						<param name="isTripleRowLarge">true</param>
-						<param name="showOverlay">$PROPERTY[showOverlay]</param>
-						<param name="showLabelFallback">$PROPERTY[showLabelFallback]</param>
-						<param name="artworkheightbig">$PROPERTY[artworkheightbig]</param>
-						<param name="artworkheightmed">$PROPERTY[artworkheightmed]</param>
-						<param name="artworkheightsmall">$PROPERTY[artworkheightsmall]</param>
-						<param name="artworkwidthbig">$PROPERTY[artworkwidthbig]</param>
-						<param name="artworkwidthmed">$PROPERTY[artworkwidthmed]</param>
-						<param name="artworkwidthsmall">$PROPERTY[artworkwidthsmall]</param>
-						<param name="iconheightbig">$PROPERTY[iconheightbig]</param>
-						<param name="iconheightmed">$PROPERTY[iconheightmed]</param>
-						<param name="iconheightsmall">$PROPERTY[iconheightsmall]</param>
-						<param name="align">$PROPERTY[align]</param>
-						<param name="textboxvisibility">$PROPERTY[textboxvisibility]</param>
-						<param name="isWideIcon">$PROPERTY[iswideicon]</param>
-						<param name="isSquare">$PROPERTY[issquare]</param>
-						<param name="isThumb">$PROPERTY[isthumb]</param>
-						<param name="doInfoPopup">$PROPERTY[infopopup]</param>
-						<param name="widgetPopupDelay">$PROPERTY[popupdelay]</param>
-					</include>
-					<include content="$PROPERTY[content]" condition="$PROPERTY[showShelvesInfo]">
-						<param name="id1">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="iconimage">$PROPERTY[contentartwork]</param>
-						<param name="overlaylabel">$PROPERTY[labelvar]</param>
-						<param name="labelvisibility">$PROPERTY[labelvisibility]</param>
-						<param name="aspect">$PROPERTY[aspect]</param>
-						<param name="labelfont">$PROPERTY[labelfont]</param>
-						<param name="textboxfont">Shelf_Label</param>
-						<param name="textboxwidth">204</param>
-						<param name="textboxheight">64</param>
-						<param name="textbackheight">74</param>
-						<param name="isTripleRow">false</param>
-						<param name="isTripleRowLarge">false</param>
-						<param name="showOverlay">$PROPERTY[showOverlay]</param>
-						<param name="showLabelFallback">$PROPERTY[showLabelFallback]</param>
-						<param name="artworkheightbig">$PROPERTY[artworkheightbig]</param>
-						<param name="artworkheightmed">$PROPERTY[artworkheightmed]</param>
-						<param name="artworkheightsmall">$PROPERTY[artworkheightsmall]</param>
-						<param name="artworkwidthbig">$PROPERTY[artworkwidthbig]</param>
-						<param name="artworkwidthmed">$PROPERTY[artworkwidthmed]</param>
-						<param name="artworkwidthsmall">$PROPERTY[artworkwidthsmall]</param>
-						<param name="iconheightbig">$PROPERTY[iconheightbig]</param>
-						<param name="iconheightmed">$PROPERTY[iconheightmed]</param>
-						<param name="iconheightsmall">$PROPERTY[iconheightsmall]</param>
-						<param name="align">$PROPERTY[align]</param>
-						<param name="textboxvisibility">$PROPERTY[textboxvisibility]</param>
-						<param name="isWideIcon">$PROPERTY[iswideicon]</param>
-						<param name="isSquare">$PROPERTY[issquare]</param>
-						<param name="isThumb">$PROPERTY[isthumb]</param>
-						<param name="doInfoPopup">$PROPERTY[infopopup]</param>
-						<param name="widgetPopupDelay">$PROPERTY[popupdelay]</param>
-					</include>
-					<content>
-						<item>
-							<icon>DefaultAddonNone.png</icon>
-							<thumb>DefaultAddonNone.png</thumb>
-							<visible>String.IsEmpty(Container(1600$PROPERTY[index]$PROPERTY[slot]).ListItem(1).Label)</visible>
-						</item>
-					</content>
-					<content sortby="$PROPERTY[sortby]" sortorder="$PROPERTY[sortorder]" limit="$PROPERTY[limit]" target="$PROPERTY[target]">$PROPERTY[path]</content>
-				</control>
-			</control>
-		</include>
-		<include name="LargeShelvesNav1">
-			<onup condition="Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0)">SetFocus(1600$PROPERTY[index]2)</onup>
-			<onup condition="Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + $PROPERTY[showShelvesInfo]">SetProperty(WidgetFocus$PROPERTY[index],2,home)</onup>
-			<onup condition="!Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + Integer.IsGreater(Container(1600$PROPERTY[index]3).NumItems,0)">SetFocus(1600$PROPERTY[index]3)</onup>
-			<onup condition="!Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + Integer.IsGreater(Container(1600$PROPERTY[index]3).NumItems,0) + $PROPERTY[showShelvesInfo]">SetProperty(WidgetFocus$PROPERTY[index],3,home)</onup>
-			<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
-			<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
-			<ondown>300</ondown>
-		</include>
-		<include name="LargeShelvesNav2">
-			<onup condition="Integer.IsGreater(Container(1600$PROPERTY[index]3).NumItems,0)">SetFocus(1600$PROPERTY[index]3)</onup>
-			<onup condition="Integer.IsGreater(Container(1600$PROPERTY[index]3).NumItems,0) + $PROPERTY[showShelvesInfo]">SetProperty(WidgetFocus$PROPERTY[index],3,home)</onup>
-			<onup condition="!$PROPERTY[onup] + $PROPERTY[showShelvesInfo]">ClearProperty(WidgetFocus$PROPERTY[index],home)</onup>
-			<onup condition="!$PROPERTY[onup] + $PROPERTY[showShelvesInfo]">SetFocus(1600$PROPERTY[index]1)</onup>
-			<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
-			<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
-			<ondown condition="Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0) + !$PROPERTY[showShelvesInfo]">ClearProperty(WidgetFocus$PROPERTY[index],home)</ondown>
-			<ondown condition="Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0) + !$PROPERTY[showShelvesInfo]">SetFocus(1600$PROPERTY[index]1)</ondown>
-			<ondown condition="!Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0) + !$PROPERTY[showShelvesInfo]">300</ondown>
-			<ondown condition="$PROPERTY[showShelvesInfo]">300</ondown>
-			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
-			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
-		</include>
-		<include name="LargeShelvesNav3">
-			<onup condition="$PROPERTY[showShelvesInfo]">ClearProperty(WidgetFocus$PROPERTY[index],home)</onup>
-			<onup condition="$PROPERTY[showShelvesInfo]">SetFocus(1600$PROPERTY[index]1)</onup>
-			<ondown condition="$PROPERTY[showShelvesInfo]">300</ondown>
-			<ondown condition="Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + !$PROPERTY[showShelvesInfo]">SetFocus(1600$PROPERTY[index]2)</ondown>
-			<ondown condition="!Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0) + !$PROPERTY[showShelvesInfo]">SetFocus(1600$PROPERTY[index]1)</ondown>
-			<ondown condition="!Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + !Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0) + !$PROPERTY[showShelvesInfo]">300</ondown>
-			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
-			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
-		</include>
-		<include name="LargeShelvesStatic">
-			<control type="group">
-				<skinshortcuts>visibility</skinshortcuts>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="$PROPERTY[containertype]" id="1600$PROPERTY[index]$PROPERTY[slot]">
-					<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll]" content="ShelfCenterAnimationsVert">
-						<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="center228">true</param>
-					</include>
-					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll]" content="ShelfCenterAnimationsVertIcons">
-						<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="center228">true</param>
-					</include>
-					<include condition="Skin.HasSetting(VerticalHome) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll] + Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfCenterAnimationsVertHiddenMenu">
-						<param name="id">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="center228">true</param>
-					</include>
-					<top>$PROPERTY[paneltop]</top>
-					<left>32</left>
-					<right>0</right>
-					<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertText</include>
-					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
-					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
-					<height>315</height>
-					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot])</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
-					<skinshortcuts include="LargeShelvesStaticNav1" condition="slot=1" />
-					<skinshortcuts include="LargeShelvesStaticNav2" condition="slot=2" />
-					<skinshortcuts include="LargeShelvesStaticNav3" condition="slot=3" />
-					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-					<onback>300</onback>
-					<preloaditems>2</preloaditems>
-					<orientation>horizontal</orientation>
-					<include content="$PROPERTY[content]">
-						<param name="id1">1600$PROPERTY[index]$PROPERTY[slot]</param>
-						<param name="iconheight">$PROPERTY[iconheight]</param>
-						<param name="aspect">$PROPERTY[aspect]</param>
-						<param name="labelvisibility">$PROPERTY[labelvisibility]</param>
-						<param name="textboxvisibility">$PROPERTY[textboxvisibility]</param>
-						<param name="labelfont">$PROPERTY[labelfont]</param>
-						<param name="textboxfont">$PROPERTY[textboxfont]</param>
-						<param name="textboxwidth">204</param>
-						<param name="textboxheight">$PROPERTY[textboxheight]</param>
-						<param name="textbackheight">$PROPERTY[textbackheight]</param>
-						<param name="layoutheight">$PROPERTY[layoutheight]</param>
-						<param name="layoutwidth">$PROPERTY[layoutwidth]</param>
-						<param name="isTripleRow">true</param>
-						<param name="isTripleRowLarge">true</param>
-						<param name="doInfoPopup">$PROPERTY[infopopup]</param>
-						<param name="widgetPopupDelay">$PROPERTY[popupdelay]</param>
-					</include>
-					<content>
-						<item>
-							<icon>DefaultAddonNone.png</icon>
-							<thumb>DefaultAddonNone.png</thumb>
-							<visible>String.IsEmpty(Container(1600$PROPERTY[index]$PROPERTY[slot]).ListItem(1).Label)</visible>
-						</item>
-					</content>
-					<content>$PROPERTY[path]</content>
-				</control>
-			</control>
-		</include>
-		<include name="LargeShelvesStaticNav1">
-			<onup condition="Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0)">SetFocus(1600$PROPERTY[index]2)</onup>
-			<onup condition="!Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + Integer.IsGreater(Container(1600$PROPERTY[index]3).NumItems,0)">SetFocus(1600$PROPERTY[index]3)</onup>
-			<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
-			<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
-			<ondown>300</ondown>
-		</include>
-		<include name="LargeShelvesStaticNav2">
-			<onup condition="Integer.IsGreater(Container(1600$PROPERTY[index]3).NumItems,0)">SetFocus(1600$PROPERTY[index]3)</onup>
-			<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
-			<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
-			<ondown condition="Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0)">SetFocus(1600$PROPERTY[index]1)</ondown>
-			<ondown condition="!Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0)">300</ondown>
-			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
-			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
-		</include>
-		<include name="LargeShelvesStaticNav3">
-			<ondown condition="Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0)">SetFocus(1600$PROPERTY[index]2)</ondown>
-			<ondown condition="!Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0)">SetFocus(1600$PROPERTY[index]1)</ondown>
-			<ondown condition="!Integer.IsGreater(Container(1600$PROPERTY[index]2).NumItems,0) + !Integer.IsGreater(Container(1600$PROPERTY[index]1).NumItems,0)">300</ondown>
-			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
-			<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
-		</include>
 	</includes>
 	<template include="ShelfOnUpMainMenu" menu="mainmenu">
 		<condition>widgetPath</condition>
@@ -1464,7 +1131,7 @@
 		<propertyGroup content="ShelfOverlayLabel" />
 		<propertyGroup content="ShelfArtwork" />
 		<var name="top">
-			<value condition="!$EXP[PositionHigh] + !$EXP[ThreeShelvesLarge] + widgetRows=3">110</value>
+			<value condition="!$EXP[PositionHigh] + widgetRows=3">110</value>
 			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + widgetRows=2 + !widgetRows=3">220</value>
 			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + widgetRows=2 + !widgetRows=3">170</value>
 			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + !widgetRows=2 + !widgetRows=3 + $EXP[ScrollingLogo]">688</value>
@@ -1474,7 +1141,6 @@
 			<value>10</value>
 		</var>
 		<var name="backgroundheight">
-			<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">1005</value>
 			<value condition="widgetRows=2 + !widgetRows=3">690</value>
 			<value condition="!widgetRows=2 + !widgetRows=3 + $EXP[ScrollingLogo]">220</value>
 			<value condition="!widgetRows=2 + !widgetRows=3 + !$EXP[ScrollingLogo]">375</value>
@@ -1495,8 +1161,8 @@
 			<value>false</value>
 		</var>
 		<var name="center228triplemed">
-			<value condition="[!widgetArtwork | widgetArtwork=Poster] + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
-			<value condition="widgetArtwork=Square + !widgetShowTextbox=false + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="[!widgetArtwork | widgetArtwork=Poster] + widgetRows=3">true</value>
+			<value condition="widgetArtwork=Square + !widgetShowTextbox=false + widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<var name="center295double">
@@ -1504,7 +1170,7 @@
 			<value>false</value>
 		</var>
 		<var name="center295triplemed">
-			<value condition="[widgetArtwork IN DiscArt,CharacterArt] + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="[widgetArtwork IN DiscArt,CharacterArt] + widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<var name="center315double">
@@ -1512,7 +1178,7 @@
 			<value>false</value>
 		</var>
 		<var name="center315triplemed">
-			<value condition="widgetArtwork=Square + widgetShowTextbox=false + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetArtwork=Square + widgetShowTextbox=false + widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<var name="center376double">
@@ -1520,7 +1186,7 @@
 			<value>false</value>
 		</var>
 		<var name="center376triplemed">
-			<value condition="widgetArtwork=ClearLogo + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetArtwork=ClearLogo + widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<var name="center385double">
@@ -1532,7 +1198,7 @@
 			<value>false</value>
 		</var>
 		<var name="center500triplemed">
-			<value condition="[widgetArtwork IN FanArt,Landscape,Thumb,ClearArt] + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="[widgetArtwork IN FanArt,Landscape,Thumb,ClearArt] + widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<var name="center668double">
@@ -1540,25 +1206,23 @@
 			<value>false</value>
 		</var>
 		<var name="center668triplemed">
-			<value condition="widgetArtwork=Banner + widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetArtwork=Banner + widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<var name="textboxheight">
 			<value condition="widgetType IN movies,tvshows,tv,episodes + [widgetPath~tags | widgetPath~genres | widgetPath~studios | widgetPath~actors | widgetPath~directors | widgetPath~country | widgetPath~years]">44</value>
 			<value condition="widgetType IN movies,tvshows,tv,episodes,musicvideos,videos,music,albums,songs + widgetArtwork=Square">47</value>
-			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">35</value>
-			<value condition="widgetRows=3 + $EXP[ThreeShelvesLarge]">55</value>
+			<value condition="widgetRows=3">35</value>
 			<value>64</value>
 		</var>
 		<var name="textbackheight">
 			<value condition="widgetType IN movies,tvshows,tv,episodes + [widgetPath~tags | widgetPath~genres | widgetPath~studios | widgetPath~actors | widgetPath~directors | widgetPath~country | widgetPath~years]">54</value>
 			<value condition="widgetType IN movies,tvshows,tv,episodes,musicvideos,videos,music,albums,songs + widgetArtwork=Square">56</value>
-			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">45</value>
-			<value condition="widgetRows=3 + $EXP[ThreeShelvesLarge]">65</value>
+			<value condition="widgetRows=3">45</value>
 			<value>74</value>
 		</var>
 		<var name="isTripleMedium">
-			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<controls>
@@ -1704,7 +1368,7 @@
 						<param name="center668">$PROPERTY[center668]</param>
 						<param name="center668double">$PROPERTY[center668double]</param>
 						<param name="center668triplemed">$PROPERTY[center668triplemed]</param>
-						<param name="isTripleRowLarge">$PROPERTY[widgetThreeShelvesLarge]</param>
+						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">$PROPERTY[triple]</param>
 					</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll]" content="ShelfCenterAnimationsVertIcons">
@@ -1729,7 +1393,7 @@
 						<param name="center668">$PROPERTY[center668]</param>
 						<param name="center668double">$PROPERTY[center668double]</param>
 						<param name="center668triplemed">$PROPERTY[center668triplemed]</param>
-						<param name="isTripleRowLarge">$PROPERTY[widgetThreeShelvesLarge]</param>
+						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">$PROPERTY[triple]</param>
 					</include>
 					<include condition="Skin.HasSetting(VerticalHome) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll] + Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfCenterAnimationsVertHiddenMenu">
@@ -1754,7 +1418,7 @@
 						<param name="center668">$PROPERTY[center668]</param>
 						<param name="center668double">$PROPERTY[center668double]</param>
 						<param name="center668triplemed">$PROPERTY[center668triplemed]</param>
-						<param name="isTripleRowLarge">$PROPERTY[widgetThreeShelvesLarge]</param>
+						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">$PROPERTY[triple]</param>
 					</include>
 					<top>$PROPERTY[paneltop]</top>
@@ -1791,7 +1455,7 @@
 						<param name="aspect">$PROPERTY[aspect]</param>
 						<param name="labelfont">$PROPERTY[labelfont]</param>
 						<param name="isTripleRowMedium">$PROPERTY[isTripleMedium]</param>
-						<param name="isTripleRowLarge">$PROPERTY[widgetThreeShelvesLarge]</param>
+						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">$PROPERTY[triple]</param>
 						<param name="showOverlay">$PROPERTY[showOverlay]</param>
 						<param name="showLabelFallback">$PROPERTY[showLabelFallback]</param>
@@ -1882,7 +1546,7 @@
 		<propertyGroup content="StaticShelfArtwork" />
 		<propertyGroup content="StaticEpisodeShelf" />
 		<var name="top">
-			<value condition="!$EXP[PositionHigh] + !$EXP[ThreeShelvesLarge] + widgetRows=3">110</value>
+			<value condition="!$EXP[PositionHigh] + widgetRows=3">110</value>
 			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + widgetRows=2 + !widgetRows=3">220</value>
 			<value condition="!$EXP[PositionHigh] + !$EXP[PositionLow] + widgetRows=2 + !widgetRows=3">170</value>
 			<value condition="!$EXP[PositionHigh] + $EXP[PositionLow] + !widgetRows=2 + !widgetRows=3">534</value>
@@ -1890,8 +1554,7 @@
 			<value>10</value>
 		</var>
 		<var name="backgroundheight">
-			<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">1005</value>
-			<value condition="!$EXP[ThreeShelvesLarge] + widgetRows=3">817</value>
+			<value condition="widgetRows=3">817</value>
 			<value condition="widgetRows=2">690</value>
 			<value>375</value>
 		</var>
@@ -1912,23 +1575,21 @@
 			<value>Shelf_Label</value>
 		</var>
 		<var name="center228triplemed">
-			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">true</value>
+			<value condition="widgetRows=3">true</value>
 			<value>false</value>
 		</var>
 		<var name="textboxheight">
-			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">48</value>
-			<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">54</value>
+			<value condition="widgetRows=3">48</value>
 			<value>64</value>
 		</var>
 		<var name="textbackheight">
-			<value condition="widgetRows=3 + !$EXP[ThreeShelvesLarge]">56</value>
-			<value condition="$EXP[ThreeShelvesLarge] + widgetRows=3">64</value>
+			<value condition="widgetRows=3">56</value>
 			<value>74</value>
 		</var>
 		<var name="iconheight">
-			<value condition="widgetType=swrecommendedeps + [$EXP[ThreeShelvesLarge] | !widgetRows=3]">315</value>
-			<value condition="widgetType=swrecommendedeps + [!$EXP[ThreeShelvesLarge] + widgetRows=3]">252</value>
-			<value condition="widgetType IN system,favouriteaddons,addons,weatherdaily,weatherhourly,weatherdaily,shortweatherdaily,weatherhourly,shortweatherhourly + [$EXP[ThreeShelvesLarge] | !widgetRows=3]">228</value>
+			<value condition="widgetType=swrecommendedeps + !widgetRows=3">315</value>
+			<value condition="widgetType=swrecommendedeps + widgetRows=3">252</value>
+			<value condition="widgetType IN system,favouriteaddons,addons,weatherdaily,weatherhourly,weatherdaily,shortweatherdaily,weatherhourly,shortweatherhourly + !widgetRows=3">228</value>
 			<value>182</value>
 		</var>
 		<var name="check">
@@ -2038,7 +1699,7 @@
 						<param name="center228">true</param>
 						<param name="center228double">$PROPERTY[double]</param>
 						<param name="center228triplemed">$PROPERTY[center228triplemed]</param>
-						<param name="isTripleRowLarge">$PROPERTY[widgetThreeShelvesLarge]</param>
+						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">$PROPERTY[triple]</param>
 					</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll]" content="ShelfCenterAnimationsVertIcons">
@@ -2046,7 +1707,7 @@
 						<param name="center228">true</param>
 						<param name="center228double">$PROPERTY[double]</param>
 						<param name="center228triplemed">$PROPERTY[center228triplemed]</param>
-						<param name="isTripleRowLarge">$PROPERTY[widgetThreeShelvesLarge]</param>
+						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">$PROPERTY[triple]</param>
 					</include>
 					<include condition="Skin.HasSetting(VerticalHome) + $PROPERTY[centerShelves] + !$PROPERTY[isAutoScroll] + Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfCenterAnimationsVertHiddenMenu">
@@ -2054,7 +1715,7 @@
 						<param name="center228">true</param>
 						<param name="center228double">$PROPERTY[double]</param>
 						<param name="center228triplemed">$PROPERTY[center228triplemed]</param>
-						<param name="isTripleRowLarge">$PROPERTY[widgetThreeShelvesLarge]</param>
+						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">$PROPERTY[triple]</param>
 					</include>
 					<top>$PROPERTY[top]</top>
@@ -2088,7 +1749,7 @@
 						<param name="textboxwidth">$PROPERTY[textboxwidth]</param>
 						<param name="textboxheight">$PROPERTY[textboxheight]</param>
 						<param name="textbackheight">$PROPERTY[textbackheight]</param>
-						<param name="isTripleRowLarge">$PROPERTY[widgetThreeShelvesLarge]</param>
+						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">$PROPERTY[triple]</param>
 						<param name="doInfoPopup">$PROPERTY[infopopup]</param>
 						<param name="widgetPopupDelay">$PROPERTY[popupdelay]</param>
@@ -2492,7 +2153,6 @@
 	</template>
 	<template include="shelfgroup3shelvesbackground" menu="mainmenu">
 		<condition>shelfLayout=three</condition>
-		<condition>!widgetThreeShelvesLarge=true</condition>
 		<condition>!shelfLayout=two</condition>
 		<var name="labelscroll2">
 			<value condition="widgetLabelScroll.2">$PROPERTY[widgetLabelScroll.2]</value>
@@ -2685,7 +2345,6 @@
 	<template include="shelfgroup1" menu="mainmenu">
 		<condition>widgetPath</condition>
 		<condition>shelfLayout=three</condition>
-		<condition>!widgetThreeShelvesLarge=true</condition>
 		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" />
@@ -2819,13 +2478,15 @@
 	<template include="shelfgroup2" menu="mainmenu">
 		<condition>widgetPath.2</condition>
 		<condition>shelfLayout=three</condition>
-		<condition>!widgetThreeShelvesLarge=true</condition>
 		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="ThreeShelvesSecond" suffix=".2" />
 		<propertyGroup content="ShelfArtwork" suffix=".2" />
-		<propertyGroup content="MiddleShelfOnUp" suffix=".2" />
+		<var name="onup">
+			<value condition="!widgetType.3">false</value>
+			<value>true</value>
+		</var>
 		<propertyGroup content="ShelfFocus" />
 		<property name="slot" value="2" />
 		<property name="label" from="widgetLabel.2" />
@@ -2920,7 +2581,6 @@
 	<template include="shelfgroup3" menu="mainmenu">
 		<condition>widgetPath.3</condition>
 		<condition>shelfLayout=three</condition>
-		<condition>!widgetThreeShelvesLarge=true</condition>
 		<condition>!shelfLayout=two</condition>
 		<condition>![widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".3" />
@@ -3008,7 +2668,6 @@
 	<template include="shelfgroup1" menu="mainmenu">
 		<condition>widgetPath</condition>
 		<condition>shelfLayout=three</condition>
-		<condition>!widgetThreeShelvesLarge=true</condition>
 		<condition>!shelfLayout=two</condition>
 		<condition>widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" />
@@ -3076,7 +2735,6 @@
 	<template include="shelfgroup2" menu="mainmenu">
 		<condition>widgetPath.2</condition>
 		<condition>shelfLayout=three</condition>
-		<condition>!widgetThreeShelvesLarge=true</condition>
 		<condition>!shelfLayout=two</condition>
 		<condition>widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
@@ -3127,7 +2785,6 @@
 	<template include="shelfgroup3" menu="mainmenu">
 		<condition>widgetPath.3</condition>
 		<condition>shelfLayout=three</condition>
-		<condition>!widgetThreeShelvesLarge=true</condition>
 		<condition>!shelfLayout=two</condition>
 		<condition>widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" suffix=".3" />
@@ -3171,323 +2828,6 @@
 		</var>
 		<controls>
 			<skinshortcuts include="ThreeShelvesStatic" />
-		</controls>
-	</template>
-	<template include="shelfgroup3shelvesbackgroundlarge" menu="mainmenu">
-		<condition>shelfLayout=three</condition>
-		<condition>!shelfLayout=two</condition>
-		<condition>widgetThreeShelvesLarge=true</condition>
-		<var name="labelscroll2">
-			<value condition="widgetLabelScroll.2">$PROPERTY[widgetLabelScroll.2]</value>
-			<value>false</value>
-		</var>
-		<var name="labelscroll3">
-			<value condition="widgetLabelScroll.3">$PROPERTY[widgetLabelScroll.3]</value>
-			<value>false</value>
-		</var>
-		<var name="heighttriple">
-			<value condition="$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">595</value>
-			<value condition="!$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">930</value>
-			<value condition="!$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">910</value>
-			<value condition="$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">920</value>
-			<value condition="!$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">1005</value>
-			<value>750</value>
-		</var>
-		<var name="grouptoptriple">
-			<value condition="$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">210</value>
-			<value condition="$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">170</value>
-			<value condition="!$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">170</value>
-			<value condition="$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">130</value>
-			<value condition="!$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">10</value>
-			<value>60</value>
-		</var>
-		<var name="heightdouble">
-			<value condition="!widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">442</value>
-			<value condition="!widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">442</value>
-			<value condition="!widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">757</value>
-			<value condition="!widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">757</value>
-			<value condition="widgetType.2 + widgetType.3">727</value>
-			<value>598</value>
-		</var>
-		<var name="grouptopdouble">
-			<value condition="!widgetType.3 + widgetAutoScroll.2 + [widgetArtwork.2 IN Banner,ClearLogo] + widgetAutoScroll + [widgetArtwork IN Banner,ClearLogo]">280</value>
-			<value condition="widgetAutoScroll.3 + [widgetArtwork.3 IN Banner,ClearLogo] + !widgetType.2 + widgetAutoScroll + [widgetArtwork IN Banner,ClearLogo]">280</value>
-			<value>170</value>
-		</var>
-		<var name="grouptopsingle">
-			<value condition="!widgetType.3 + !widgetType.2 + widgetAutoScroll + [widgetArtwork IN Banner,ClearLogo]">387</value>
-			<value>327</value>
-		</var>
-		<var name="heightsingle">
-			<value condition="!widgetType.3 + !widgetType.2 + widgetAutoScroll + [widgetArtwork IN Banner,ClearLogo]">225</value>
-			<value>375</value>
-		</var>
-		<var name="label1topdouble">
-			<value condition="!widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">352</value>
-			<value condition="!widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">352</value>
-			<value condition="!widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">667</value>
-			<value condition="!widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">667</value>
-			<value condition="widgetType.2 + widgetType.3">636</value>
-			<value>508</value>
-		</var>
-		<var name="ShowMediumLogo">
-			<value condition="!widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">true</value>
-			<value condition="widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">true</value>
-			<value condition="$EXP[PositionLow] + widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">true</value>
-			<value condition="$EXP[PositionStandard] + widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">true</value>
-			<value condition="$EXP[PositionLow] + widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">true</value>
-			<value>false</value>
-		</var>
-		<var name="ShowMedium2Logo">
-			<value condition="$EXP[PositionStandard] + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2]">true</value>
-			<value condition="$EXP[PositionStandard] + !widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">true</value>
-			<value condition="$EXP[PositionStandard] + widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">true</value>
-			<value condition="$EXP[PositionStandard] + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">true</value>
-			<value condition="$EXP[PositionStandard] + widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">true</value>
-			<value condition="$EXP[PositionStandard] + widgetType.2 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">true</value>
-			<value>false</value>
-		</var>
-		<var name="ShowLargeLogo">
-			<value condition="!widgetType.2 + !widgetType.3">true</value>
-			<value condition="$EXP[PositionLow] + !widgetType.2 + $EXP[ScrollingLogo3]">true</value>
-			<value condition="$EXP[PositionLow] + !widgetType.3 + $EXP[ScrollingLogo]">true</value>
-			<value condition="$EXP[PositionLow] + !widgetType.2 + $EXP[ScrollingLogo]">true</value>
-			<value condition="$EXP[PositionLow] + !widgetType.3 + $EXP[ScrollingLogo2]">true</value>
-			<value condition="$EXP[PositionLow] + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">true</value>
-			<value>false</value>
-		</var>
-		<var name="ShowLarge2Logo">
-			<value condition="$EXP[PositionLow] + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">true</value>
-			<value condition="$EXP[PositionStandard] + widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">true</value>
-			<value condition="$EXP[PositionStandard] + !widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">true</value>
-			<value condition="$EXP[PositionLow] + widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">true</value>
-			<value>false</value>
-		</var>
-		<controls>
-			<control type="group">
-				<skinshortcuts>visibility</skinshortcuts>
-				<include content="WidgetBackground3Large" condition="!$PROPERTY[showShelvesInfo]">
-					<param name="id1">1600$PROPERTY[index]1</param>
-					<param name="id2">1600$PROPERTY[index]2</param>
-					<param name="id3">1600$PROPERTY[index]3</param>
-					<param name="label1">$PROPERTY[widgetLabel]</param>
-					<param name="label2">$PROPERTY[widgetLabel.2]</param>
-					<param name="label3">$PROPERTY[widgetLabel.3]</param>
-					<param name="labelscroll1">$PROPERTY[widgetLabelScroll]</param>
-					<param name="labelscroll2">$PROPERTY[labelscroll2]</param>
-					<param name="labelscroll3">$PROPERTY[labelscroll3]</param>
-					<param name="grouptoptriple">$PROPERTY[grouptoptriple]</param>
-					<param name="grouptopdouble">$PROPERTY[grouptopdouble]</param>
-					<param name="grouptopsingle">$PROPERTY[grouptopsingle]</param>
-					<param name="heighttriple">$PROPERTY[heighttriple]</param>
-					<param name="heightdouble">$PROPERTY[heightdouble]</param>
-					<param name="heightsingle">$PROPERTY[heightsingle]</param>
-					<param name="label3topdouble">-54</param>
-					<param name="label2topdouble">-54</param>
-					<param name="label1topdouble">$PROPERTY[label1topdouble]</param>
-					<param name="label1topsingle">-54</param>
-					<param name="ShowMediumLogo">$PROPERTY[ShowMediumLogo]</param>
-					<param name="ShowMedium2Logo">$PROPERTY[ShowMedium2Logo]</param>
-					<param name="ShowLargeLogo">$PROPERTY[ShowLargeLogo]</param>
-					<param name="ShowLarge2Logo">$PROPERTY[ShowLarge2Logo]</param>
-				</include>
-			</control>
-		</controls>
-	</template>
-	<template include="shelfgroup1" menu="mainmenu">
-		<condition>widgetPath</condition>
-		<condition>shelfLayout=three</condition>
-		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!shelfLayout=two</condition>
-		<condition>![widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
-		<propertyGroup content="ShelfCommon" />
-		<propertyGroup content="LargeShelvesTextbox" />
-		<propertyGroup content="ShelfArtwork" />
-		<propertyGroup content="ShelfFocus" />
-		<property name="slot" value="1" />
-		<property name="label" from="widgetLabel" />
-		<property name="labelscroll" from="widgetLabelScroll" />
-		<property name="limit" from="widgetLimit" />
-		<property name="path" from="widgetPath" />
-		<property name="popupdelay" from="widgetPopupDelay" />
-		<property name="sortby" from="widgetSortBy" />
-		<property name="sortorder" from="widgetSortOrder" />
-		<var name="target">
-			<value condition="widgetPath">$PROPERTY[widgetTarget]</value>
-			<value>false</value>
-		</var>
-		<var name="paneltop">
-			<value condition="!widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo]">387</value>
-			<value condition="!widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo]">327</value>
-			<value condition="widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">465</value>
-			<value condition="!widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">465</value>
-			<value condition="widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">355</value>
-			<value condition="!widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">355</value>
-			<value condition="widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">585</value>
-			<value condition="widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">545</value>
-			<value condition="widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">760</value>
-			<value condition="widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">615</value>
-			<value condition="widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">705</value>
-			<value condition="widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">595</value>
-			<value condition="widgetType.2 + widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">655</value>
-			<value condition="widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">640</value>
-			<value>515</value>
-		</var>
-		<controls>
-			<skinshortcuts include="LargeShelves" />
-		</controls>
-	</template>
-	<template include="shelfgroup2" menu="mainmenu">
-		<condition>widgetPath.2</condition>
-		<condition>shelfLayout=three</condition>
-		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!shelfLayout=two</condition>
-		<condition>![widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
-		<propertyGroup content="ShelfCommon" suffix=".2" />
-		<propertyGroup content="LargeShelvesTextbox" suffix=".2" />
-		<propertyGroup content="ShelfArtwork" suffix=".2" />
-		<propertyGroup content="MiddleShelfOnUp" suffix=".2" />
-		<propertyGroup content="ShelfFocus" />
-		<property name="slot" value="2" />
-		<property name="label" from="widgetLabel.2" />
-		<property name="labelscroll" from="widgetLabelScroll.2" />
-		<property name="limit" from="widgetLimit.2" />
-		<property name="path" from="widgetPath.2" />
-		<property name="popupdelay" from="widgetPopupDelay.2" />
-		<property name="sortby" from="widgetSortBy.2" />
-		<property name="sortorder" from="widgetSortOrder.2" />
-		<var name="target">
-			<value condition="widgetPath.2">$PROPERTY[widgetTarget.2]</value>
-			<value>false</value>
-		</var>
-		<var name="paneltop">
-			<value condition="!widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">280</value>
-			<value condition="widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">400</value>
-			<value condition="widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">355</value>
-			<value condition="widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">355</value>
-			<value condition="widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">255</value>
-			<value condition="widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">410</value>
-			<value condition="widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">410</value>
-			<value condition="widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">325</value>
-			<value condition="widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">475</value>
-			<value>170</value>
-		</var>
-		<controls>
-			<skinshortcuts include="LargeShelves" />
-		</controls>
-	</template>
-	<template include="shelfgroup3" menu="mainmenu">
-		<condition>widgetPath.3</condition>
-		<condition>shelfLayout=three</condition>
-		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!shelfLayout=two</condition>
-		<condition>![widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
-		<propertyGroup content="ShelfCommon" suffix=".3" />
-		<propertyGroup content="LargeShelvesTextbox" suffix=".3" />
-		<propertyGroup content="ShelfArtwork" suffix=".3" />
-		<propertyGroup content="ShelfFocus" />
-		<property name="slot" value="3" />
-		<property name="label" from="widgetLabel.3" />
-		<property name="labelscroll" from="widgetLabelScroll.3" />
-		<property name="limit" from="widgetLimit.3" />
-		<property name="path" from="widgetPath.3" />
-		<property name="popupdelay" from="widgetPopupDelay.3" />
-		<property name="sortby" from="widgetSortBy.3" />
-		<property name="sortorder" from="widgetSortOrder.3" />
-		<var name="target">
-			<value condition="widgetPath.3">$PROPERTY[widgetTarget.3]</value>
-			<value>false</value>
-		</var>
-		<var name="paneltop">
-			<value condition="!widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">280</value>
-			<value condition="widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">210</value>
-			<value condition="widgetType.2 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">130</value>
-			<value condition="widgetType.2 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">60</value>
-			<value condition="widgetType.2 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">60</value>
-			<value condition="widgetType.2 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">60</value>
-			<value condition="widgetType.2 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">10</value>
-			<value>170</value>
-		</var>
-		<controls>
-			<skinshortcuts include="LargeShelves" />
-		</controls>
-	</template>
-	<template include="shelfgroup1" menu="mainmenu">
-		<condition>widgetPath</condition>
-		<condition>shelfLayout=three</condition>
-		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!shelfLayout=two</condition>
-		<condition>widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
-		<propertyGroup content="LargeShelvesStaticLayout" />
-		<propertyGroup content="ShelfCommon" />
-		<propertyGroup content="StaticShelfArtwork" />
-		<propertyGroup content="StaticShelfTextbox" />
-		<propertyGroup content="ShelfFocus" />
-		<property name="slot" value="1" />
-		<property name="path" from="widgetPath" />
-		<property name="popupdelay" from="widgetPopupDelay" />
-		<var name="paneltop">
-			<value condition="widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">640</value>
-			<value condition="widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">615</value>
-			<value condition="widgetType.2 + widgetType.3 + $EXP[ScrollingLogo2] + !$EXP[ScrollingLogo3]">595</value>
-			<value condition="widgetType.2 + widgetType.3 + $EXP[ScrollingLogo2] + $EXP[ScrollingLogo3]">545</value>
-			<value condition="widgetType.2 + !widgetType.3 + $EXP[ScrollingLogo2]">360</value>
-			<value condition="!widgetType.2 + widgetType.3 + $EXP[ScrollingLogo3]">360</value>
-			<value condition="widgetType.2 + !widgetType.3 + !$EXP[ScrollingLogo2]">520</value>
-			<value condition="!widgetType.2 + widgetType.3 + !$EXP[ScrollingLogo3]">520</value>
-			<value>327</value>
-		</var>
-		<controls>
-			<skinshortcuts include="LargeShelvesStatic" />
-		</controls>
-	</template>
-	<template include="shelfgroup2" menu="mainmenu">
-		<condition>widgetPath.2</condition>
-		<condition>shelfLayout=three</condition>
-		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!shelfLayout=two</condition>
-		<condition>widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
-		<propertyGroup content="LargeShelvesStaticLayout" suffix=".2" />
-		<propertyGroup content="ShelfCommon" suffix=".2" />
-		<propertyGroup content="StaticShelfArtwork" suffix=".2" />
-		<propertyGroup content="StaticShelfTextbox" suffix=".2" />
-		<propertyGroup content="ShelfFocus" />
-		<property name="slot" value="2" />
-		<property name="path" from="widgetPath.2" />
-		<property name="popupdelay" from="widgetPopupDelay.2" />
-		<var name="paneltop">
-			<value condition="widgetType.3 + !$EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">255</value>
-			<value condition="widgetType.3 + $EXP[ScrollingLogo] + $EXP[ScrollingLogo3]">360</value>
-			<value condition="widgetType.3 + $EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">400</value>
-			<value condition="widgetType.3 + !$EXP[ScrollingLogo] + !$EXP[ScrollingLogo3]">325</value>
-			<value>170</value>
-		</var>
-		<controls>
-			<skinshortcuts include="LargeShelvesStatic" />
-		</controls>
-	</template>
-	<template include="shelfgroup3" menu="mainmenu">
-		<condition>widgetPath.3</condition>
-		<condition>shelfLayout=three</condition>
-		<condition>widgetThreeShelvesLarge=true</condition>
-		<condition>!shelfLayout=two</condition>
-		<condition>widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
-		<propertyGroup content="LargeShelvesStaticLayout" suffix=".3" />
-		<propertyGroup content="ShelfCommon" suffix=".3" />
-		<propertyGroup content="StaticShelfArtwork" suffix=".3" />
-		<propertyGroup content="StaticShelfTextbox" suffix=".3" />
-		<propertyGroup content="ShelfFocus" />
-		<property name="slot" value="3" />
-		<property name="path" from="widgetPath.3" />
-		<property name="popupdelay" from="widgetPopupDelay.3" />
-		<var name="paneltop">
-			<value condition="!$EXP[ScrollingLogo] + $EXP[ScrollingLogo2]">60</value>
-			<value condition="widgetType.2 + !$EXP[ScrollingLogo2]">10</value>
-			<value condition="widgetType.2 + $EXP[ScrollingLogo]">10</value>
-			<value>170</value>
-		</var>
-		<controls>
-			<skinshortcuts include="LargeShelvesStatic" />
 		</controls>
 	</template>
 	<template include="BottomShortcuts" menu="mainmenu">
