@@ -527,7 +527,6 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
 					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) | [Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) + $PROPERTY[showShelvesInfo]]</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
 					<onfocus>$PROPERTY[secondfocus]</onfocus>
 					<onclick condition="Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/,isdir)</onclick>
 					<skinshortcuts include="TwoShelvesNav1" condition="slot=1" />
@@ -693,7 +692,6 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
 					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) | [Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) + $PROPERTY[showShelvesInfo]]</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
 					<onfocus>$PROPERTY[secondfocus]</onfocus>
 					<skinshortcuts include="TwoShelvesStaticOnUp1" condition="slot=1" />
 					<skinshortcuts include="TwoShelvesNav2" condition="slot=2" />
@@ -872,7 +870,6 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PROPERTY[panelheight]</height>
 					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) | [Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) + $PROPERTY[showShelvesInfo]]</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
 					<onclick condition="Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/,isdir)</onclick>
 					<skinshortcuts include="ThreeShelvesNav1" condition="slot=1" />
 					<skinshortcuts include="ThreeShelvesNav2" condition="slot=2" />
@@ -1041,7 +1038,6 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PROPERTY[panelheight]</height>
 					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot])</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
 					<skinshortcuts include="ThreeShelvesNav1" condition="slot=1" />
 					<skinshortcuts include="ThreeShelvesStaticNav2" condition="slot=2" />
 					<skinshortcuts include="ThreeShelvesStaticNav3" condition="slot=3" />
@@ -1174,7 +1170,6 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PROPERTY[listheight]</height>
 					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(2900$PROPERTY[index]$PROPERTY[slot])</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,2900$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
 					<onclick condition="Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/,isdir)</onclick>
 					<onup condition="$PROPERTY[onup]">SetProperty(WidgetFocus$PROPERTY[index],$MATH[slot + 1],Home)</onup>
 					<onup condition="$PROPERTY[onup]">SetFocus(2900$PROPERTY[index]$MATH[slot + 1])</onup>
@@ -1909,7 +1904,6 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) | [Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) + $PROPERTY[showShelvesInfo]]</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
 					<onclick condition="Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/,isdir)</onclick>
 					<onup condition="$PROPERTY[onup]">SetProperty(WidgetFocus$PROPERTY[index],$MATH[slot + 1],home)</onup>
 					<onup condition="$PROPERTY[onup]">SetFocus(1600$PROPERTY[index]$MATH[slot + 1])</onup>
@@ -2206,7 +2200,6 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PROPERTY[height]</height>
 					<autoscroll time="$PROPERTY[autoscroll]">!Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) | [Control.HasFocus(1600$PROPERTY[index]$PROPERTY[slot]) + $PROPERTY[showShelvesInfo]]</autoscroll>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$PROPERTY[index]$PROPERTY[slot],Home)</onfocus>
 					<onup condition="$PROPERTY[onup]">SetProperty(WidgetFocus$PROPERTY[index],$MATH[slot + 1],home)</onup>
 					<onup condition="$PROPERTY[onup]">SetFocus(1600$PROPERTY[index]$MATH[slot + 1])</onup>
 					<onup condition="!$PROPERTY[onup]">ClearProperty(WidgetFocus$PROPERTY[index],home)</onup>
@@ -3337,7 +3330,6 @@
 					<right>100</right>
 					<width>1720</width>
 					<height>252</height>
-					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1700$PROPERTY[index]1,Home)</onfocus>
 					<onup>300</onup>
 					<onback>300</onback>
 					<ondown condition="Control.IsVisible(12001)">12001</ondown>
