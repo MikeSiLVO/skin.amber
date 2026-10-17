@@ -25,22 +25,18 @@
 
 	<variable name="RightListNextAiredStatus">
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Status))">$INFO[Window(Home).Property(SkinInfo.Online.Status)]</value>
-		<value condition="Window(Home).Property(NextAired.Status)">$INFO[Window(Home).Property(NextAired.Status)]</value>
 	</variable>
 
 	<variable name="RightListNextAiredStatusImage">
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.Status))">$VAR[MediaFlagsPathVar]/nextaired/$INFO[Window(Home).Property(SkinInfo.Online.Status),,.png]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Status))">$VAR[MediaFlagsPathVar]/nextaired/$INFO[Window(Home).Property(NextAired.Status),,.png]</value>
 	</variable>
 
 	<variable name="RightListNextEpisode">
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.NextEpisodeAired))">$INFO[Window(Home).Property(SkinInfo.Online.NextEpisodeAiredLong)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Label)) + !String.IsEmpty(Window(Home).Property(NextAired.NextDay))">$INFO[Window(Home).Property(NextAired.NextDay)]</value>
 		<value>$LOCALIZE[31794]</value>
 	</variable>
 	<variable name="RightListLastEpisode">
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Online.LastEpisodeAired))">$INFO[Window(Home).Property(SkinInfo.Online.LastEpisodeAired)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(NextAired.Label))">$INFO[Window(Home).Property(NextAired.LatestDate)]</value>
 		<value>$LOCALIZE[31794]</value>
 	</variable>
 

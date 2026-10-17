@@ -281,7 +281,6 @@
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday)) + !Skin.HasSetting(ShowEndTime) + !Skin.HasSetting(Enable.HourMinutes)">$VAR[SingleItemLabel]$INFO[ListItem.Premiered, (,)][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Duration, • ,][/COLOR]</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday)) + Skin.HasSetting(ShowEndTime) + Skin.HasSetting(Enable.HourMinutes)">$VAR[SingleItemLabel]$INFO[ListItem.Premiered, (,)][COLOR $VAR[LabelTextColor]]$VAR[WidgetItemDurationVar, • ,] ($LOCALIZE[31692] $INFO[ListItem.EndTime])[/COLOR]</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday)) + !Skin.HasSetting(ShowEndTime) + Skin.HasSetting(Enable.HourMinutes)">$VAR[SingleItemLabel]$INFO[ListItem.Premiered, (,)][COLOR $VAR[LabelTextColor]]$VAR[WidgetItemDurationVar, • ,][/COLOR]</value>
-		<value condition="!String.IsEmpty(ListItem.Property(nextairedtvshowtitle))">$VAR[SingleItemLabel]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(recommendedtvshowtitle))">$VAR[SingleItemLabel]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Label3))">$VAR[SingleItemLabel]$INFO[ListItem.Label2, • ,][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Property(Label3), • ][/COLOR]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Outlook))">$INFO[ListItem.Property(LongDay),[B],[/B]]$INFO[ListItem.Property(Time),[B],[/B]]$INFO[ListItem.Property(ShortDate), • [B],[/B]][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Property(Outlook), • ,][/COLOR]</value>
@@ -302,7 +301,7 @@
 	</variable>
 
 	<variable name="WidgetItemLabel">
-		<value condition="!String.IsEmpty(ListItem.Property(nextairedtvshowtitle)) | !String.IsEmpty(ListItem.Property(recommendedtvshowtitle))">$INFO[ListItem.Label2]</value>
+		<value condition="!String.IsEmpty(ListItem.Property(recommendedtvshowtitle))">$INFO[ListItem.Label2]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Label3))">$INFO[ListItem.Label] - $INFO[ListItem.Label2][CR]$INFO[ListItem.Property(Label3)]</value>
 		<value condition="!String.IsEmpty(ListItem.Artist)">$INFO[ListItem.Label][CR]$INFO[ListItem.Label2]</value>
 		<value condition="String.Contains(ListItem.Path,pvr://channels) + !String.IsEmpty(ListItem.StartTime)">$INFO[ListItem.StartTime] $INFO[ListItem.Title][CR]$INFO[ListItem.NextStartTime] $INFO[ListItem.NextTitle]</value>
@@ -543,7 +542,6 @@
 
 		<value condition="!String.IsEmpty(Container.FolderName) + String.IsEmpty(Container.PluginCategory)">$INFO[Container.FolderName][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[Container.NumItems]</value>
 		<value condition="!String.IsEmpty(Container.FolderName) + !String.IsEmpty(Container.PluginCategory)">$INFO[Container.PluginCategory][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[Container.NumItems]</value>
-		<value condition="[Window.IsActive(script-NextAired-TVGuide2.xml) | Window.IsActive(script-NextAired-TVGuide.xml)]">$INFO[System.AddonTitle(script.tv.show.next.aired)]</value>
 		<value condition="Window.IsActive(script-globalsearch.xml)">$INFO[System.AddonTitle(script.globalsearch)] - $LOCALIZE[31064][COLOR $VAR[HighlightColor]]$INFO[Window.Property(GlobalSearch.SearchString)][/COLOR]</value>
 		<value condition="Window.IsActive(1136)">$LOCALIZE[31359]</value>
 		<value condition="Window.IsActive(1137)">$LOCALIZE[31364]</value>
@@ -1188,11 +1186,6 @@
 		<value condition="Integer.IsGreater(Window(Home).Property(SkinInfo.Online.Runtime.Minutes),1)">$LOCALIZE[12391]</value>
 	</variable>
 
-	<variable name="NextAiredMinuteLabel">
-		<value condition="Integer.IsEqual(Window(Home).Property(NextAired.Runtime),1)">$LOCALIZE[31248]</value>
-		<value condition="Integer.IsGreater(Window(Home).Property(NextAired.Runtime),1)">$LOCALIZE[12391]</value>
-	</variable>
-
 	<variable name="ContainerItemDurationHrMins">
 		<value condition="Integer.IsGreater(Container.ListItem.Duration(h),1) + String.IsEqual(Container.ListItem.Duration(m),0) + Integer.IsGreater(Container.ListItem.Duration(ss),1)">$INFO[Container.ListItem.Duration(h),, $LOCALIZE[12392]], $INFO[Container.ListItem.Duration(ss),, $LOCALIZE[31168]]</value>
 		<value condition="Integer.IsGreater(Container.ListItem.Duration(h),1) + String.IsEqual(Container.ListItem.Duration(m),0) + Integer.IsEqual(Container.ListItem.Duration(ss),1)">$INFO[Container.ListItem.Duration(h),, $LOCALIZE[12392]], $INFO[Container.ListItem.Duration(ss),, $LOCALIZE[31732]]</value>
@@ -1238,7 +1231,6 @@
 	</variable>
 
 	<variable name="OnlineItemDurationHrMins">
-		<value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(Window(Home).Property(NextAired.Runtime))">$INFO[Window(Home).Property(NextAired.Runtime)] $VAR[NextAiredMinuteLabel]</value>
 		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Runtime.Hours))">$INFO[Window(Home).Property(SkinInfo.Online.Runtime.Minutes)] $VAR[OnlineMinuteLabel]</value>
 		<value condition="String.IsEmpty(Window(Home).Property(SkinInfo.Online.Runtime.Minutes))">$INFO[Window(Home).Property(SkinInfo.Online.Runtime.Hours)] $VAR[OnlineHourLabel]</value>
 		<value>$INFO[Window(Home).Property(SkinInfo.Online.Runtime.Hours)] $VAR[OnlineHourLabel], $INFO[Window(Home).Property(SkinInfo.Online.Runtime.Minutes)] $VAR[OnlineMinuteLabel]</value>

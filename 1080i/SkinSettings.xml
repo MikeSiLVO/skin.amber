@@ -1661,14 +1661,6 @@
 							<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
 							<selected>System.AddonIsEnabled(plugin.video.themoviedb.helper)</selected>
 						</control>
-						<control type="radiobutton" id="91126">
-							<label>script.tv.show.next.aired</label>
-							<label2>$INFO[System.AddonVersion(script.tv.show.next.aired)]             </label2>
-							<onclick condition="System.AddonIsEnabled(script.tv.show.next.aired)">Addon.OpenSettings(script.tv.show.next.aired)</onclick>
-							<onclick condition="System.HasAddon(script.tv.show.next.aired) + !System.AddonIsEnabled(script.tv.show.next.aired)">EnableAddon(script.tv.show.next.aired)</onclick>
-							<onclick condition="!System.HasAddon(script.tv.show.next.aired)">InstallAddon(script.tv.show.next.aired)</onclick>
-							<selected>System.AddonIsEnabled(script.tv.show.next.aired)</selected>
-						</control>
 						<control type="radiobutton" id="91128">
 							<label>script.skin.helper.widgets</label>
 							<label2>$INFO[System.AddonVersion(script.skin.helper.widgets)]             </label2>

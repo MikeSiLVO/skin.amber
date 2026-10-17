@@ -9,7 +9,6 @@
 	<onload>Skin.Reset(SingleSearchTerm)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onload>ClearProperty(gallery)</onload>
-	<onload condition="System.AddonIsEnabled(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onload condition="!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,Home)</onload>
 	<onunload>ClearProperty(GeneralSearchCalledInfo)</onunload>
 	<onunload>ClearProperty(SingleSearchCalledInfo)</onunload>
