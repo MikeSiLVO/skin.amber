@@ -1462,10 +1462,6 @@ msgctxt "#31363"
 msgid "Static"
 msgstr "Statické"
 
-msgctxt "#31364"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info - epizody podle dalšího vysílání"
-
 msgctxt "#31365"
 msgid "Only Search in Local Library"
 msgstr "Hledat pouze v místní knihovně"

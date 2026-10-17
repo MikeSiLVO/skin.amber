@@ -1462,10 +1462,6 @@ msgctxt "#31363"
 msgid "Static"
 msgstr "Staatiline"
 
-msgctxt "#31364"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary info - järgmised eetris olevad episoodid"
-
 msgctxt "#31365"
 msgid "Only Search in Local Library"
 msgstr "Otsi ainult kohalikust meediakogust"

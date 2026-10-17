@@ -1462,10 +1462,6 @@ msgctxt "#31363"
 msgid "Static"
 msgstr "Föst"
 
-msgctxt "#31364"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary upplýsingar - Næstu útsendu þættir"
-
 msgctxt "#31365"
 msgid "Only Search in Local Library"
 msgstr "Einungis leita í safni á tölvu"

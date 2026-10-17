@@ -1462,10 +1462,6 @@ msgctxt "#31363"
 msgid "Static"
 msgstr "静态"
 
-msgctxt "#31364"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info - 即将播出剧集"
-
 msgctxt "#31365"
 msgid "Only Search in Local Library"
 msgstr "仅在本地媒体库搜索"

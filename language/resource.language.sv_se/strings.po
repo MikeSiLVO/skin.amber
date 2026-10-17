@@ -1462,10 +1462,6 @@ msgctxt "#31363"
 msgid "Static"
 msgstr "Statisk"
 
-msgctxt "#31364"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info - Nästa avsnitt som sänds"
-
 msgctxt "#31365"
 msgid "Only Search in Local Library"
 msgstr "Sök endast i det lokala biblioteket"

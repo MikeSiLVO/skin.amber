@@ -1461,10 +1461,6 @@ msgctxt "#31363"
 msgid "Static"
 msgstr "Statisch"
 
-msgctxt "#31364"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info - Nächste gesendete Folgen"
-
 msgctxt "#31365"
 msgid "Only Search in Local Library"
 msgstr "Nur in lokaler Datenbank suchen"

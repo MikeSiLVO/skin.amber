@@ -544,7 +544,6 @@
 		<value condition="!String.IsEmpty(Container.FolderName) + !String.IsEmpty(Container.PluginCategory)">$INFO[Container.PluginCategory][COLOR $VAR[HighlightColor]]  •  [/COLOR]$INFO[Container.NumItems]</value>
 		<value condition="Window.IsActive(script-globalsearch.xml)">$INFO[System.AddonTitle(script.globalsearch)] - $LOCALIZE[31064][COLOR $VAR[HighlightColor]]$INFO[Window.Property(GlobalSearch.SearchString)][/COLOR]</value>
 		<value condition="Window.IsActive(1136)">$LOCALIZE[31359]</value>
-		<value condition="Window.IsActive(1137)">$LOCALIZE[31364]</value>
 		<value condition="Window.IsActive(weather)">$INFO[Weather.Location]</value>
 	</variable>
 

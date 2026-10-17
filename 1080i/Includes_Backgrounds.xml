@@ -190,7 +190,7 @@
 		<value condition="Skin.HasSetting(Use.ParentFolderFanart) + !String.IsEmpty(Control.GetLabel(4444)) + !ListItem.IsParentFolder">$INFO[Control.GetLabel(4444)]</value>
 		<value condition="Skin.HasSetting(Use.ParentFolderFanart) + !String.IsEmpty(Control.GetLabel(4445)) + !ListItem.IsParentFolder">$INFO[Control.GetLabel(4445)]</value>
 		<value condition="Window.IsActive(service-LibreELEC-Settings-mainWindow.xml)">special://skin/backgrounds/LibreELEC.jpg</value>
-		<value condition="Window.IsVisible(Custom_1136_TMDbTVGuide.xml) | Window.IsVisible(Custom_1137_EmbInfoTVGuide.xml)">special://skin/backgrounds/Default.jpg</value>
+		<value condition="Window.IsVisible(Custom_1136_TMDbTVGuide.xml)">special://skin/backgrounds/Default.jpg</value>
 		<value condition="[Window.IsVisible(script-embuary-person.xml)] + !String.IsEmpty(Container(2003).ListItem.Icon) + !Container.OnNext + !Container.OnPrevious">$INFO[Container(2003).ListItem.Icon]</value>
 		<!-- Default background for sub windows -->
 		<value condition="!Skin.HasSetting(Sub_FanArtBG)">$VAR[SubDefaultBackground]</value>

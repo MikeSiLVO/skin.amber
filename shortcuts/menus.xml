@@ -419,8 +419,7 @@
 		</item>
 		<item name="tvguide">
 			<label>$LOCALIZE[4]</label>
-			<action condition="System.HasAddon(script.embuary.info)">ActivateWindow(1137)</action>
-			<action condition="!System.HasAddon(script.embuary.info)">ActivateWindow(1136)</action>
+			<action>ActivateWindow(1136)</action>
 			<icon>DefaultTVShows.png</icon>
 			<visible>Library.HasContent(TVShows)</visible>
 		</item>

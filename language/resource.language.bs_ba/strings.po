@@ -1462,10 +1462,6 @@ msgctxt "#31363"
 msgid "Static"
 msgstr "Statički"
 
-msgctxt "#31364"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Informacije o Embuaryju - Sljedeće emitirane epizode"
-
 msgctxt "#31365"
 msgid "Only Search in Local Library"
 msgstr "Pretraži samo u lokalnoj biblioteci"

@@ -1462,10 +1462,6 @@ msgctxt "#31363"
 msgid "Static"
 msgstr "Статический"
 
-msgctxt "#31364"
-msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info — следующие вышедшие серии"
-
 msgctxt "#31365"
 msgid "Only Search in Local Library"
 msgstr "Искать только в локальной медиатеке"
