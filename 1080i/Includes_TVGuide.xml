@@ -14,7 +14,7 @@
 			<item id="$PARAM[TMDbTVGuideItemID]">
 				<label>$INFO[Container($PARAM[TMDbTVGuideDayID]).ListItemAbsolute(0).Property(AirDayShort)]$INFO[Container($PARAM[TMDbTVGuideDayID]).NumItems, (,)]</label>
 				<label2>$INFO[Container($PARAM[TMDbTVGuideDayID]).ListItemAbsolute(0).Property(AirDate)]</label2>
-				<visible>Integer.IsGreater(Container($PARAM[TMDbTVGuideDayID]).NumItems,0) | Container($PARAM[TMDbTVGuideDayID]).IsUpdating | Container(4000).IsUpdating</visible>
+				<visible>Integer.IsGreater(Container($PARAM[TMDbTVGuideDayID]).NumItems,0)</visible>
 			</item>
 		</definition>
 	</include>

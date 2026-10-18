@@ -50,6 +50,8 @@
 	<expression name="showCompactSeekBar">Skin.HasSetting(UseCompactOSD) + [Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</expression>
 	<!-- Dialogs -->
 	<expression name="DialogSelectStreams">Window.IsVisible(dialogselectvideo) | Window.IsVisible(dialogselectaudio) | Window.IsVisible(dialogselectsubtitle)</expression>
+	<!-- TV guide -->
+	<expression name="TVGuideIsLoading">Container(5001).IsUpdating | Container(5002).IsUpdating | Container(5003).IsUpdating | Container(5004).IsUpdating | Container(5005).IsUpdating | Container(5006).IsUpdating | Container(5007).IsUpdating | Container(5008).IsUpdating | Container(5009).IsUpdating | Container(5010).IsUpdating | Container(5011).IsUpdating | Container(5012).IsUpdating | Container(5013).IsUpdating | Container(5014).IsUpdating</expression>
 	<!-- Add-ons -->
 	<expression name="CanDoOnlineSearches">System.AddonIsEnabled(script.embuary.helper) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)</expression>
 	<expression name="CanUseEH">System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)</expression>
