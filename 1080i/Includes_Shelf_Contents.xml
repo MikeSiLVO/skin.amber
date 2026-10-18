@@ -115,7 +115,7 @@
 					<texture border="0,40,0,0">home/ShelfBackground.png</texture>
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 				</control>
-				<!-- label for embuary helper suggestions by random genre -->
+				<!-- label for suggestions by random genre -->
 				<control type="group">
 					<animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>

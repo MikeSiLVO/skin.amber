@@ -23,7 +23,6 @@
 	<onunload condition="String.IsEqual(Window(Home).Property(SingleSearchCalledInfo),yes) + String.IsEmpty(Window(Home).Property(GeneralSearchCalledInfo)) + String.IsEmpty(Window(Home).Property(InfoCalledGeneralSearch)) + !String.IsEmpty(Skin.String(SingleSearchTerm)) + !Player.HasVideo + String.IsEmpty(Window(Home).Property(InfoPlayingMedia))">ActivateWindow(1131)</onunload>
 	<onunload condition="String.IsEqual(Window(Home).Property(SingleSearchCalledInfo),yes)">ClearProperty(SingleSearchCalledInfo,Home)</onunload>
 	<controls>
-		<!-- Get additional TV Show details from Embuary Helper script to be able to jump to season from an episode info - Container 5200 -->
 
 		<!-- Hide default cast list 50, using a custom cast -->
 		<include condition="!Skin.HasSetting(Disable.OnlineTMDbInfo) + !String.IsEqual(ListItem.DBType,set)">HiddenCast</include>

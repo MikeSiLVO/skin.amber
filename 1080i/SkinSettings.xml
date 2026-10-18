@@ -306,9 +306,7 @@
 								<visible>!Skin.HasSetting(Enable.DefaultMenu)</visible>
 								<label>$LOCALIZE[31647]</label>
 								<label2>$LOCALIZE[106]</label2>
-								<onclick condition="!System.HasAddon(script.embuary.helper)">InstallAddon(script.embuary.helper)</onclick>
-								<onclick condition="System.HasAddon(script.embuary.helper)">Skin.ToggleSetting(Enable.DefaultMenu)</onclick>
-								<onclick>Skin.SetBool(Enable.EmbuaryHelper)</onclick>
+								<onclick>Skin.ToggleSetting(Enable.DefaultMenu)</onclick>
 							</item>
 							<include content="YesNoSettingItem">
 								<param name="itemid" value="22" />
@@ -471,19 +469,6 @@
 								<label2>$LOCALIZE[106]</label2>
 								<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
 								<onclick condition="System.HasAddon(plugin.video.themoviedb.helper)">Skin.ToggleSetting(Enable.TMDbHelper)</onclick>
-							</item>
-							<item id="23">
-								<visible>Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
-								<label>$LOCALIZE[31745]</label>
-								<label2>$LOCALIZE[107]</label2>
-								<onclick>Skin.ToggleSetting(Enable.EmbuaryHelper)</onclick>
-							</item>
-							<item id="24">
-								<visible>!Skin.HasSetting(Enable.EmbuaryHelper) | !System.HasAddon(script.embuary.helper)</visible>
-								<label>$LOCALIZE[31745]</label>
-								<label2>$LOCALIZE[106]</label2>
-								<onclick condition="!System.HasAddon(script.embuary.helper)">InstallAddon(script.embuary.helper)</onclick>
-								<onclick condition="System.HasAddon(script.embuary.helper)">Skin.ToggleSetting(Enable.EmbuaryHelper)</onclick>
 							</item>
 							<include content="YesNoSettingItem">
 								<param name="itemid" value="25" />
@@ -1062,7 +1047,6 @@
 								<param name="itemid" value="23" />
 								<param name="itemlabel" value="[B]$LOCALIZE[31825][/B]" />
 								<param name="skinsetting" value="ShowEpisodeList" />
-								<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.AddonIsEnabled(script.embuary.helper)</param>
 							</include>
 							<include content="YesNoSettingItem">
 								<param name="itemid" value="24" />
@@ -1592,14 +1576,6 @@
 							<onclick condition="System.HasAddon(plugin.program.autocompletion) + !System.AddonIsEnabled(plugin.program.autocompletion)">EnableAddon(plugin.program.autocompletion)</onclick>
 							<onclick condition="!System.HasAddon(plugin.program.autocompletion)">InstallAddon(plugin.program.autocompletion)</onclick>
 							<selected>System.AddonIsEnabled(plugin.program.autocompletion)</selected>
-						</control>
-						<control type="radiobutton" id="911222">
-							<label>script.embuary.helper</label>
-							<label2>$INFO[System.AddonVersion(script.embuary.helper)]             </label2>
-							<onclick condition="System.AddonIsEnabled(script.embuary.helper)">Addon.OpenSettings(script.embuary.helper)</onclick>
-							<onclick condition="System.HasAddon(script.embuary.helper) + !System.AddonIsEnabled(script.embuary.helper)">EnableAddon(script.embuary.helper)</onclick>
-							<onclick condition="!System.HasAddon(script.embuary.helper)">InstallAddon(script.embuary.helper)</onclick>
-							<selected>System.AddonIsEnabled(script.embuary.helper)</selected>
 						</control>
 						<control type="radiobutton" id="911224">
 							<label>plugin.video.themoviedb.helper</label>

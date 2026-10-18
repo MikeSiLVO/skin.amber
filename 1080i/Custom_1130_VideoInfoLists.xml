@@ -65,7 +65,6 @@
 					<radioposx>605</radioposx>
 					<onclick>Skin.ToggleSetting(DisableInfoListSimilar)</onclick>
 					<selected>!Skin.HasSetting(DisableInfoListSimilar)</selected>
-					<visible>[Skin.HasSetting(Enable.TMDbHelper) | Skin.HasSetting(Enable.EmbuaryHelper)]</visible>
 				</control>
 				<control type="radiobutton" id="901014">
 					<label>$LOCALIZE[31966]</label>
