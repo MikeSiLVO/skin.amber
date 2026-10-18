@@ -311,12 +311,6 @@
 								<onclick>Skin.SetBool(Enable.EmbuaryHelper)</onclick>
 							</item>
 							<include content="YesNoSettingItem">
-								<param name="itemid" value="21" />
-								<param name="itemlabel" value="$LOCALIZE[31660]" />
-								<param name="skinsetting" value="UseEHInfoLine" />
-								<param name="itemvisibility" value="Skin.HasSetting(Enable.EmbuaryHelper)" />
-							</include>
-							<include content="YesNoSettingItem">
 								<param name="itemid" value="22" />
 								<param name="itemlabel" value="$LOCALIZE[31750]" />
 								<param name="skinsetting" value="Shelf.PlayAlbum" />
@@ -618,12 +612,6 @@
 								<param name="itemid" value="13" />
 								<param name="itemlabel" value="$LOCALIZE[31344]" />
 								<param name="skinsetting" value="ShowLogoMusicViz" />
-							</include>
-							<include content="YesNoSettingItem">
-								<param name="itemid" value="6" />
-								<param name="itemlabel" value="$LOCALIZE[31661]" />
-								<param name="skinsetting" value="UseEHBackgrounds" />
-								<param name="itemvisibility" value="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)" />
 							</include>
 							<include content="YesNoSettingItem">
 								<param name="itemid" value="15" />

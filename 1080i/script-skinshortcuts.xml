@@ -322,16 +322,6 @@
 							<visible>!String.IsEmpty(Container(211).ListItem.Property(InfoLine)) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath))</visible>
 							<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 						</control>
-						<control type="radiobutton" id="1006">
-							<label>$LOCALIZE[31658]</label>
-							<description>Use Embuary Helper for Playlist/Node Fanart</description>
-							<selected>String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)</selected>
-							<width>1340</width>
-							<font>ListDetails</font>
-							<visible>String.Contains(Container(211).ListItem.Property(path),xsp) | String.Contains(Container(211).ListItem.Property(path),playlists) | String.Contains(Container(211).ListItem.Property(path),xml)</visible>
-							<visible>Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHBackgrounds)</visible>
-							<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
-						</control>
 						<control type="button" id="1007">
 							<description>Quantity of Playlist/Node Fanarts to use</description>
 							<label>$LOCALIZE[31603]</label>

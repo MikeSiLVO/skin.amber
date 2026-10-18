@@ -41,9 +41,7 @@
 		<include>HomeBackgroundLists</include>
 		<!-- Hidden lists used for statistics line -->
 		<include>skinshortcuts-template-InfoLineLists</include>
-		<!-- Hidden lists if using script.embuary.helper for random fanart backgrounds and statistics lines -->
-		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHBackgrounds)">HomeEHBackgroundLists</include>
-		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHInfoLine)">HomeEHInfoLineLists</include>
+		<include>HomeInfoLineLists</include>
 		<!-- Hidden fadelabel for widget extra fanart -->
 		<include condition="Skin.HasSetting(EnableExtraFanart)">HomeWidgetExtraFanart</include>
 		<!-- Background -->

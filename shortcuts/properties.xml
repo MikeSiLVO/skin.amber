@@ -184,7 +184,6 @@
 	<property name="widgetDisableFanart" type="toggle" value="true" />
 	<property name="widgetRecordingTV" type="toggle" value="true" />
 	<property name="widgetRecordingRadio" type="toggle" value="true" />
-	<property name="EHPlaylistFanart" type="toggle" value="true" />
 	<property name="UseBottomShortcuts" type="toggle" value="true" />
 
 	<buttons>
@@ -275,7 +274,6 @@
 		<button id="1003" property="background" />
 		<button id="1004" property="InfoLine" title="$LOCALIZE[31417]" />
 		<button id="1005" property="InfoLineShelf" />
-		<button id="1006" property="EHPlaylistFanart" />
 		<button id="1007" property="playlistFanartLimit" title="$LOCALIZE[31604]" />
 		<button id="1008" property="widgetRecordingTV" />
 		<button id="1009" property="widgetRecordingRadio" />

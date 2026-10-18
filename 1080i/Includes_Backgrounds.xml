@@ -8,12 +8,10 @@
 		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + !String.IsEmpty(Container.ListItem.Art(clearlogo))">$INFO[Container.ListItem.Art(clearlogo)]</value>
 		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(ListItem.Art(artist.clearlogo))">$INFO[ListItem.Art(artist.clearlogo)]</value>
 
-		<value condition="ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(9993).ListItem.Art(tvshow.clearlogo))">$INFO[Container(9993).ListItem.Art(tvshow.clearlogo)]</value>
-		<value condition="ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(9993).ListItem.Art(clearlogo))">$INFO[Container(9993).ListItem.Art(clearlogo)]</value>
-		<value condition="ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),playlistBackground) + String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEmpty(Container(9995).ListItem.Art(clearlogo))">$INFO[Container(9995).ListItem.Art(clearlogo)]</value>
+		<value condition="ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),playlistBackground) + !String.IsEmpty(Container(9993).ListItem.Art(tvshow.clearlogo))">$INFO[Container(9993).ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),playlistBackground) + !String.IsEmpty(Container(9993).ListItem.Art(clearlogo))">$INFO[Container(9993).ListItem.Art(clearlogo)]</value>
 
-		<value condition="ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(9994).ListItem.Art(clearlogo))">$INFO[Container(9994).ListItem.Art(clearlogo)]</value>
-		<value condition="ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground) + String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEmpty(Container(9996).ListItem.Art(clearlogo))">$INFO[Container(9996).ListItem.Art(clearlogo)]</value>
+		<value condition="ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground) + !String.IsEmpty(Container(9995).ListItem.Art(clearlogo))">$INFO[Container(9995).ListItem.Art(clearlogo)]</value>
 
 		<value condition="ControlGroup(700).HasFocus" />
 		<!-- Sub Menu Background Logo -->
@@ -25,12 +23,10 @@
 		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Global.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Global.ClearLogo)]</value>
 		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Music.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Music.ClearLogo)]</value>
 
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(99881).ListItem.Art(tvshow.clearlogo))">$INFO[Container(99881).ListItem.Art(tvshow.clearlogo)]</value>
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(99881).ListItem.Art(clearlogo))">$INFO[Container(99881).ListItem.Art(clearlogo)]</value>
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEmpty(Container(99891).ListItem.Art(clearlogo))">$INFO[Container(99891).ListItem.Art(clearlogo)]</value>
+		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + !String.IsEmpty(Container(99881).ListItem.Art(tvshow.clearlogo))">$INFO[Container(99881).ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + !String.IsEmpty(Container(99881).ListItem.Art(clearlogo))">$INFO[Container(99881).ListItem.Art(clearlogo)]</value>
 
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(99901).ListItem.Art(clearlogo))">$INFO[Container(99901).ListItem.Art(clearlogo)]</value>
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEmpty(Container(99922).ListItem.Art(clearlogo))">$INFO[Container(99921).ListItem.Art(clearlogo)]</value>
+		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground) + !String.IsEmpty(Container(99901).ListItem.Art(clearlogo))">$INFO[Container(99901).ListItem.Art(clearlogo)]</value>
 		<!-- Main Menu Background Logo -->
 
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Movie.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Movie.ClearLogo)]</value>
@@ -40,12 +36,10 @@
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Global.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Global.ClearLogo)]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Music.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Music.ClearLogo)]</value>
 
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(9988).ListItem.Art(tvshow.clearlogo))">$INFO[Container(9988).ListItem.Art(tvshow.clearlogo)]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(9988).ListItem.Art(clearlogo))">$INFO[Container(9988).ListItem.Art(clearlogo)]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEmpty(Container(9989).ListItem.Art(clearlogo))">$INFO[Container(9989).ListItem.Art(clearlogo)]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + !String.IsEmpty(Container(9988).ListItem.Art(tvshow.clearlogo))">$INFO[Container(9988).ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + !String.IsEmpty(Container(9988).ListItem.Art(clearlogo))">$INFO[Container(9988).ListItem.Art(clearlogo)]</value>
 
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(9990).ListItem.Art(clearlogo))">$INFO[Container(9990).ListItem.Art(clearlogo)]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEmpty(Container(9992).ListItem.Art(clearlogo))">$INFO[Container(9992).ListItem.Art(clearlogo)]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + !String.IsEmpty(Container(9990).ListItem.Art(clearlogo))">$INFO[Container(9990).ListItem.Art(clearlogo)]</value>
 	</variable>
 
 	<variable name="LibraryStats">
@@ -69,10 +63,10 @@
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),disc) + System.HasMediadvd">$LOCALIZE[427]: [COLOR $VAR[HighlightColor]]$INFO[System.DVDLabel][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),disc) + !System.HasMediadvd">$LOCALIZE[427]: [COLOR $VAR[HighlightColor]]$LOCALIZE[504][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),systeminfo)">$LOCALIZE[31415]: [COLOR $VAR[HighlightColor]]$INFO[System.Memory(used.percent)][/COLOR]  •  $LOCALIZE[31416]: [COLOR $VAR[HighlightColor]]$INFO[System.CPUUsage][/COLOR]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist)">$LOCALIZE[20342]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Count)][/COLOR]  •  $LOCALIZE[16102]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Watched)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Unwatched)][/COLOR]  •  $LOCALIZE[575]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_InProgress)][/COLOR]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),tvshowplaylist)">$LOCALIZE[20343]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_TVShowCount)][/COLOR]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)">$LOCALIZE[20389]: $INFO[Window(Home).Property(PlaylistStats_Count)][COLOR $VAR[HighlightColor]]  •  [/COLOR]$LOCALIZE[16102]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Watched)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Unwatched)][/COLOR]  •  $LOCALIZE[575]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_InProgress)][/COLOR]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),episodeplaylist)">$LOCALIZE[20343]: $INFO[Window(Home).Property(PlaylistStats_TVShowCount)][COLOR $VAR[HighlightColor]]  •  [/COLOR]$LOCALIZE[20360]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_Episodes)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(PlaylistStats_UnwatchedEpisodes)][/COLOR]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist)">$LOCALIZE[20342]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.Count)][/COLOR]  •  $LOCALIZE[16102]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.Watched)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.Unwatched)][/COLOR]  •  $LOCALIZE[575]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.InProgress)][/COLOR]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),tvshowplaylist)">$LOCALIZE[20343]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.TVShowCount)][/COLOR]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)">$LOCALIZE[20389]: $INFO[Window(Home).Property(SkinInfo.PathStats.Count)][COLOR $VAR[HighlightColor]]  •  [/COLOR]$LOCALIZE[16102]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.Watched)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.Unwatched)][/COLOR]  •  $LOCALIZE[575]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.InProgress)][/COLOR]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),episodeplaylist)">$LOCALIZE[20343]: $INFO[Window(Home).Property(SkinInfo.PathStats.TVShowCount)][COLOR $VAR[HighlightColor]]  •  [/COLOR]$LOCALIZE[20360]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.Episodes)][/COLOR]  •  $LOCALIZE[31659]: [COLOR $VAR[HighlightColor]]$INFO[Window(Home).Property(SkinInfo.PathStats.UnWatchedEpisodes)][/COLOR]</value>
 
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),movienode)">$LOCALIZE[20342]: [COLOR $VAR[HighlightColor]]$INFO[Container(9991).NumItems][/COLOR]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(InfoLine),tvshownode)">$LOCALIZE[20343]: [COLOR $VAR[HighlightColor]]$INFO[Container(9991).NumItems][/COLOR]</value>
@@ -237,17 +231,14 @@
 
 		<!-- Widget fanart, custom/submenu/playlist widget -->
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + [String.IsEqual(Container(300).ListItem.Property(widgetType),custom) | String.IsEqual(Container(300).ListItem.Property(widget),Submenu)] + !String.IsEmpty(Container.ListItem.Property(background)) + !String.IsEqual(Container.ListItem.Property(backgroundType),playlist) + $EXP[WidgetFanartVisible]]">$INFO[Container.ListItem.Property(backgroundPath)]</value>
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + !String.IsEmpty(Container.ListItem.Property(background)) + String.IsEqual(Container.ListItem.Property(backgroundType),playlist) + [!String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + $EXP[WidgetFanartVisible]]">$INFO[Container(9993).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + !String.IsEmpty(Container.ListItem.Property(background)) + String.IsEqual(Container.ListItem.Property(backgroundType),playlist) + [String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)] + $EXP[WidgetFanartVisible]]">$INFO[Container(9994).ListItem.Art(fanart)]</value>
+		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + !String.IsEmpty(Container.ListItem.Property(background)) + String.IsEqual(Container.ListItem.Property(backgroundType),playlist) + $EXP[WidgetFanartVisible]]">$INFO[Container(9993).ListItem.Art(fanart)]</value>
 		<!-- Widget fanart, node widget -->
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + $EXP[WidgetFanartVisible]]">$INFO[Container(9995).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground) + String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper) + $EXP[WidgetFanartVisible]]">$INFO[Container(9996).ListItem.Art(fanart)]</value>
+		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground) + $EXP[WidgetFanartVisible]]">$INFO[Container(9995).ListItem.Art(fanart)]</value>
 		<!-- Submenu background: Regular -->
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + !String.IsEmpty(Container(9001).ListItem.Property(background)) + !String.IsEqual(Container(9001).ListItem.Property(backgroundType),playlist)">$INFO[Container(9001).ListItem.Property(backgroundPath)]</value>
-		<!-- Submenu background: Kodi random fanart -->
 		<!-- Submenu background: Conditional weather fanart -->
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Weather.Fanart)">$INFO[Skin.String(weatherfanartResource.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundExt]</value>
-		<!-- Submenu background: Random fanart, Embuary Helper based -->
+		<!-- Submenu background: Random fanart -->
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Movie.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Movie.FanArt)]</value>
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),TV.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.TV.FanArt)]</value>
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Video.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Video.FanArt)]</value>
@@ -255,18 +246,15 @@
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Global.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Global.FanArt)]</value>
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Music.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Music.FanArt)]</value>
 		<!-- Submenu background: Node -->
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(99901).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(99921).ListItem.Art(fanart)]</value>
+		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground)">$INFO[Container(99901).ListItem.Art(fanart)]</value>
 		<!-- Submenu background: playlist -->
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(9001).ListItem.Property(backgroundType),playlist) + [!String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(99881).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(9001).ListItem.Property(backgroundType),playlist) + [String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(99891).ListItem.Art(fanart)]</value>
+		<value condition="!Skin.HasSetting(HomeDefaultBG) + Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(9001).ListItem.Property(backgroundType),playlist)">$INFO[Container(99881).ListItem.Art(fanart)]</value>
 		<!-- Default background -->
 		<value condition="Skin.HasSetting(HomeDefaultBG) + !String.IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
 		<value condition="Skin.HasSetting(HomeDefaultBG)">special://skin/backgrounds/Default.jpg</value>
-		<!-- Main Menu background: Random fanart, Kodi-based -->
 		<!-- Main Menu background: Conditional weather fanart -->
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Weather.Fanart)">$INFO[Skin.String(weatherfanartResource.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundExt]</value>
-		<!-- Main Menu background: Random fanart, Embuary Helper based -->
+		<!-- Main Menu background: Random fanart -->
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Movie.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Movie.FanArt)]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),TV.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.TV.FanArt)]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Video.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Video.FanArt)]</value>
@@ -274,13 +262,11 @@
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Global.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Global.FanArt)]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Music.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Music.FanArt)]</value>
 		<!-- Menu item background: Node -->
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9990).ListItem.Art(fanart)]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9992).ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground)">$INFO[Container(9990).ListItem.Art(fanart)]</value>
 		<!-- Regular menu item background -->
 		<value condition="!String.IsEmpty(Container(300).ListItem.Property(background)) + !String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist)">$INFO[Container(300).ListItem.Property(backgroundPath)]</value>
 		<!-- Menu item background: playlist -->
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9988).ListItem.Art(fanart)]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist) + [String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9989).ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist)">$INFO[Container(9988).ListItem.Art(fanart)]</value>
 	</variable>
 
 	<variable name="FanartTitleVar">
@@ -289,11 +275,9 @@
 		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + !String.IsEmpty(ListItem.TVShowTitle) + $EXP[WidgetFanartVisible]">$INFO[ListItem.TVShowTitle]</value>
 		<value condition="ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + !String.IsEmpty(Container.ListItem.Art(fanart)) + $EXP[WidgetFanartVisible]">$INFO[Container.ListItem.Title]</value>
 
-		<value condition="ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9993).ListItem.Title]</value>
-		<value condition="ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),playlistBackground) + String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9995).ListItem.Label]</value>
+		<value condition="ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),playlistBackground)">$INFO[Container(9993).ListItem.Title]</value>
 
-		<value condition="ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9994).ListItem.Title]</value>
-		<value condition="ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground) + String.IsEqual(Container.ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9996).ListItem.Label]</value>
+		<value condition="ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + String.IsEqual(Container.ListItem.Property(background),nodeBackground)">$INFO[Container(9995).ListItem.Title]</value>
 		<!-- Submenu fanart title -->
 
 		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Movie.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Movie.Title)]</value>
@@ -303,11 +287,9 @@
 		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Global.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Global.Title)]</value>
 		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),Music.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Music.Artist)]</value>
 
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(99881).ListItem.Title]</value>
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(99891).ListItem.Label]</value>
+		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),playlistBackground)">$INFO[Container(99881).ListItem.Title]</value>
 
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(99901).ListItem.Title]</value>
-		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(9001).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(99921).ListItem.Label]</value>
+		<value condition="Control.HasFocus(9001) + String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground)">$INFO[Container(99901).ListItem.Title]</value>
 		<!-- Main menu fanart title -->
 
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Movie.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Movie.Title)]</value>
@@ -317,22 +299,18 @@
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Global.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Global.Title)]</value>
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Music.Fanart)">$INFO[Window(Home).Property(SkinInfo.Slideshow.Music.Artist)]</value>
 
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9988).ListItem.Title]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9989).ListItem.Label]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground)">$INFO[Container(9988).ListItem.Title]</value>
 
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9990).ListItem.Title]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9992).ListItem.Label]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground)">$INFO[Container(9990).ListItem.Title]</value>
 		<value />
 	</variable>
 
 	<variable name="FanartDBTypeVar">
 		<!-- Main menu fanart title -->
 
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9988).ListItem.DBType]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9989).ListItem.DBType]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground)">$INFO[Container(9988).ListItem.DBType]</value>
 
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9990).ListItem.DBType]</value>
-		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9992).ListItem.DBType]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground)">$INFO[Container(9990).ListItem.DBType]</value>
 		<value />
 	</variable>
 
@@ -673,89 +651,14 @@
 		</control>
 	</include>
 
-	<include name="HomeEHBackgroundLists">
-		<control type="list" id="9989">
-			<description>hidden container for playlist background using embuary helper</description>
-			<left>-20</left>
-			<top>-20</top>
-			<width>1</width>
-			<height>1</height>
-			<include>AutoscrollTime</include>
-			<itemlayout />
-			<focusedlayout />
-			<content sortby="random" limit="$INFO[Container(300).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(300).ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
-			<visible>String.IsEqual(Container(300).ListItem.Property(backgroundType),playlist)</visible>
-		</control>
-		<control type="list" id="99891">
-			<description>hidden container for playlist background using embuary helper</description>
-			<left>-20</left>
-			<top>-20</top>
-			<width>1</width>
-			<height>1</height>
-			<include>AutoscrollTime</include>
-			<itemlayout />
-			<focusedlayout />
-			<content sortby="random" limit="$INFO[Container(9001).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(9001).ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
-			<visible>String.IsEqual(Container(9001).ListItem.Property(backgroundType),playlist)</visible>
-		</control>
-		<control type="list" id="9994">
-			<description>hidden container for widget playlist background using embuary helper</description>
-			<left>-20</left>
-			<top>-20</top>
-			<width>1</width>
-			<height>1</height>
-			<include>AutoscrollTime</include>
-			<itemlayout />
-			<focusedlayout />
-			<content sortby="random" limit="$INFO[Container.ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container.ListItem.Property(backgroundPath)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
-			<visible>String.IsEqual(Container.ListItem.Property(backgroundType),playlist)</visible>
-		</control>
-		<control type="list" id="9992">
-			<description>hidden container for node background using embuary helper</description>
-			<left>-20</left>
-			<top>-20</top>
-			<width>1</width>
-			<height>1</height>
-			<include>AutoscrollTime</include>
-			<itemlayout />
-			<focusedlayout />
-			<visible>String.IsEqual(Container(300).ListItem.Property(background),nodeBackground)</visible>
-			<content sortby="random" limit="$INFO[Container(300).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(300).ListItem.Property(path)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
-		</control>
-		<control type="list" id="99921">
-			<description>hidden container for node background using embuary helper</description>
-			<left>-20</left>
-			<top>-20</top>
-			<width>1</width>
-			<height>1</height>
-			<include>AutoscrollTime</include>
-			<itemlayout />
-			<focusedlayout />
-			<visible>String.IsEqual(Container(9001).ListItem.Property(background),nodeBackground)</visible>
-			<content sortby="random" limit="$INFO[Container(9001).ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container(9001).ListItem.Property(path)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
-		</control>
-		<control type="list" id="9996">
-			<description>hidden container for widget node background using embuary helper</description>
-			<left>-20</left>
-			<top>-20</top>
-			<width>1</width>
-			<height>1</height>
-			<include>AutoscrollTime</include>
-			<itemlayout />
-			<focusedlayout />
-			<visible>String.IsEqual(Container.ListItem.Property(background),nodeBackground)</visible>
-			<content sortby="random" limit="$INFO[Container.ListItem.Property(playlistFanartLimit)]">plugin://script.embuary.helper?info=getfanartsbypath&amp;path='"$INFO[Container.ListItem.Property(path)]"'&amp;reload=$INFO[Window(Home).Property(EmbuaryWidgetUpdate)]</content>
-		</control>
-	</include>
-
-	<include name="HomeEHInfoLineLists">
+	<include name="HomeInfoLineLists">
 		<control type="list" id="43260">
 			<visible>String.IsEqual(Container(300).ListItem.Property(InfoLine),movieplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),tvshowplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),episodeplaylist) | String.IsEqual(Container(300).ListItem.Property(InfoLine),musicvideoplaylist)</visible>
 			<width>1</width>
 			<height>1</height>
 			<focusedlayout />
 			<itemlayout />
-			<content>plugin://script.embuary.helper/?info=getpathstats&amp;path=$INFO[Container(300).ListItem.Property(action)]&amp;prefix=PlaylistStats</content>
+			<content>plugin://script.skin.info.service/?action=path_stats&amp;path=$INFO[Container(300).ListItem.Property(path)]&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</content>
 		</control>
 	</include>
 
