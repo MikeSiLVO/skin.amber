@@ -144,69 +144,69 @@
 				<path>special://skin/extras/playlists/musicvideos_unwatched.xsp</path>
 			</widget>
 		</group>
-		<group name="livetv" label="$LOCALIZE[31453]" icon="DefaultAddonPVRClient.png">
-			<widget name="LastPlayedChannels" label="$LOCALIZE[31454]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+		<group name="livetv" label="$LOCALIZE[31453]" icon="DefaultLiveTV.png">
+			<widget name="LastPlayedChannels" label="$LOCALIZE[31454]" type="tv" target="pvr" icon="DefaultPVRChannels.png" visible="Pvr.HasTVChannels">
 				<path>pvr://channels/tv/*?view=lastplayed</path>
 			</widget>
-			<widget name="AllChannels" label="$LOCALIZE[19217]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+			<widget name="AllChannels" label="$LOCALIZE[19217]" type="tv" target="pvr" icon="DefaultPVRChannels.png" visible="Pvr.HasTVChannels">
 				<path>pvr://channels/tv/*</path>
 			</widget>
-			<widget name="TVChannelGroups" label="$LOCALIZE[19173]" type="tv" target="tvguide" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+			<widget name="TVChannelGroups" label="$LOCALIZE[19173]" type="tv" target="tvguide" icon="DefaultPVRChannels.png" visible="Pvr.HasTVChannels">
 				<path>pvr://channels/tv/</path>
 			</widget>
-			<widget name="ActiveRecordings" label="$LOCALIZE[31455]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+			<widget name="ActiveRecordings" label="$LOCALIZE[31455]" type="tv" target="pvr" icon="DefaultPVRRecordings.png" visible="Pvr.HasTVChannels">
 				<path>pvr://recordings/tv/active?view=flat</path>
 			</widget>
-			<widget name="GroupedActiveRecordings" label="$LOCALIZE[31456]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+			<widget name="GroupedActiveRecordings" label="$LOCALIZE[31456]" type="tv" target="pvr" icon="DefaultPVRRecordings.png" visible="Pvr.HasTVChannels">
 				<path>pvr://recordings/tv/active?view=grouped</path>
 			</widget>
-			<widget name="DeletedRecordings" label="$LOCALIZE[19184]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+			<widget name="DeletedRecordings" label="$LOCALIZE[19184]" type="tv" target="pvr" icon="DefaultPVRRecordings.png" visible="Pvr.HasTVChannels">
 				<path>pvr://recordings/tv/deleted?view=flat</path>
 			</widget>
-			<widget name="GroupedDeletedRecordings" label="$LOCALIZE[31457]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+			<widget name="GroupedDeletedRecordings" label="$LOCALIZE[31457]" type="tv" target="pvr" icon="DefaultPVRRecordings.png" visible="Pvr.HasTVChannels">
 				<path>pvr://recordings/tv/deleted?view=grouped</path>
 			</widget>
-			<widget name="TVTimers" label="$LOCALIZE[10703]" type="tv" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasTVChannels">
+			<widget name="TVTimers" label="$LOCALIZE[10703]" type="tv" target="pvr" icon="DefaultPVRTimers.png" visible="Pvr.HasTVChannels">
 				<path>pvr://timers/tv/timers</path>
 			</widget>
 		</group>
-		<group name="radio" label="$LOCALIZE[19021]" icon="DefaultAddonPVRClient.png">
-			<widget name="LastPlayedRadioChannels" label="$LOCALIZE[31461]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+		<group name="radio" label="$LOCALIZE[19021]" icon="DefaultRadio.png">
+			<widget name="LastPlayedRadioChannels" label="$LOCALIZE[31461]" type="radio" target="pvr" icon="DefaultPVRChannels.png" visible="Pvr.HasRadioChannels">
 				<path>pvr://channels/radio/*?view=lastplayed</path>
 			</widget>
-			<widget name="AllRadioChannels" label="$LOCALIZE[19216]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+			<widget name="AllRadioChannels" label="$LOCALIZE[19216]" type="radio" target="pvr" icon="DefaultPVRChannels.png" visible="Pvr.HasRadioChannels">
 				<path>pvr://channels/radio/*</path>
 			</widget>
-			<widget name="RadioChannelGroups" label="$LOCALIZE[19174]" type="radio" target="radioguide" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+			<widget name="RadioChannelGroups" label="$LOCALIZE[19174]" type="radio" target="radioguide" icon="DefaultPVRChannels.png" visible="Pvr.HasRadioChannels">
 				<path>pvr://channels/radio/</path>
 			</widget>
-			<widget name="ActiveRadioRecordings" label="$LOCALIZE[31462]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+			<widget name="ActiveRadioRecordings" label="$LOCALIZE[31462]" type="radio" target="pvr" icon="DefaultPVRRecordings.png" visible="Pvr.HasRadioChannels">
 				<path>pvr://recordings/radio/active?view=flat</path>
 			</widget>
-			<widget name="GroupedActiveRadioRecordings" label="$LOCALIZE[31463]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+			<widget name="GroupedActiveRadioRecordings" label="$LOCALIZE[31463]" type="radio" target="pvr" icon="DefaultPVRRecordings.png" visible="Pvr.HasRadioChannels">
 				<path>pvr://recordings/radio/active?view=grouped</path>
 			</widget>
-			<widget name="DeletedRadioRecordings" label="$LOCALIZE[19184]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+			<widget name="DeletedRadioRecordings" label="$LOCALIZE[19184]" type="radio" target="pvr" icon="DefaultPVRRecordings.png" visible="Pvr.HasRadioChannels">
 				<path>pvr://recordings/radio/deleted?view=flat</path>
 			</widget>
-			<widget name="GroupedDeletedRadioRecordings" label="$LOCALIZE[31464]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+			<widget name="GroupedDeletedRadioRecordings" label="$LOCALIZE[31464]" type="radio" target="pvr" icon="DefaultPVRRecordings.png" visible="Pvr.HasRadioChannels">
 				<path>pvr://recordings/radio/deleted?view=grouped</path>
 			</widget>
-			<widget name="RadioTimers" label="$LOCALIZE[10708]" type="radio" target="pvr" icon="DefaultAddonPVRClient.png" visible="Pvr.HasRadioChannels">
+			<widget name="RadioTimers" label="$LOCALIZE[10708]" type="radio" target="pvr" icon="DefaultPVRTimers.png" visible="Pvr.HasRadioChannels">
 				<path>pvr://timers/radio/timers</path>
 			</widget>
 		</group>
 		<group name="weather" label="$LOCALIZE[12600]">
-			<widget name="WeatherDaily" label="$LOCALIZE[31475]" type="weatherdaily" icon="DefaultAddonWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
+			<widget name="WeatherDaily" label="$LOCALIZE[31475]" type="weatherdaily" icon="DefaultWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
 				<path>$INCLUDE[skinshortcuts-template-WeatherContentDaily]</path>
 			</widget>
-			<widget name="WeatherHourly" label="$LOCALIZE[31476]" type="weatherhourly" icon="DefaultAddonWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
+			<widget name="WeatherHourly" label="$LOCALIZE[31476]" type="weatherhourly" icon="DefaultWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
 				<path>$INCLUDE[skinshortcuts-template-WeatherContentHourly]</path>
 			</widget>
-			<widget name="ShortWeatherDaily" label="$LOCALIZE[31639]" type="shortweatherdaily" icon="DefaultAddonWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
+			<widget name="ShortWeatherDaily" label="$LOCALIZE[31639]" type="shortweatherdaily" icon="DefaultWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
 				<path>$INCLUDE[skinshortcuts-template-ShortWeatherContentDaily]</path>
 			</widget>
-			<widget name="ShortWeatherHourly" label="$LOCALIZE[31640]" type="shortweatherhourly" icon="DefaultAddonWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
+			<widget name="ShortWeatherHourly" label="$LOCALIZE[31640]" type="shortweatherhourly" icon="DefaultWeather.png" visible="!String.IsEmpty(Weather.Plugin)">
 				<path>$INCLUDE[skinshortcuts-template-ShortWeatherContentHourly]</path>
 			</widget>
 		</group>

@@ -38,7 +38,7 @@
 		<value condition="!String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
 		<value condition="!String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
 		<value condition="Player.HasAudio">DefaultAudio.png</value>
-		<value condition="Player.HasVideo">DefaultVideo.png</value>
+		<value condition="Player.HasVideo">DefaultVideoCover.png</value>
 	</variable>
 	<variable name="NowPlayingPlotLabelVar">
 		<value condition="PVR.IsPlayingTV">$INFO[Player.Title,[B],[/B]] $INFO[VideoPlayer.StartTime,(, - ]$INFO[VideoPlayer.EndTime,,)]</value>

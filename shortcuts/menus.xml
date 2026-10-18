@@ -794,7 +794,7 @@
 				<action>ActivateWindow(Videos,videodb://tvshows/titles/,return)</action>
 				<visible>Library.HasContent(TVShows)</visible>
 			</shortcut>
-			<shortcut name="music" label="$LOCALIZE[2]" type="$LOCALIZE[2]" icon="DefaultAddonMusic.png">
+			<shortcut name="music" label="$LOCALIZE[2]" type="$LOCALIZE[2]" icon="DefaultAudio.png">
 				<action>ActivateWindow(Music,musicdb://,return)</action>
 			</shortcut>
 			<shortcut name="artists" label="$LOCALIZE[133]" type="$LOCALIZE[2]" icon="DefaultMusicArtists.png">
@@ -807,7 +807,7 @@
 				<action>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</action>
 				<visible>Library.HasContent(MusicVideos)</visible>
 			</shortcut>
-			<shortcut name="androidapps" label="$LOCALIZE[20244]" type="$LOCALIZE[10001]" icon="DefaultAddonProgram.png" visible="System.Platform.Android">
+			<shortcut name="androidapps" label="$LOCALIZE[20244]" type="$LOCALIZE[10001]" icon="DefaultProgram.png" visible="System.Platform.Android">
 				<action>ActivateWindow(Programs,androidapp://sources/apps,return)</action>
 			</shortcut>
 			<shortcut name="libreelec" label="LibreELEC" type="$LOCALIZE[10001]" icon="DefaultLibreELEC.png" visible="System.HasAddon(service.libreelec.settings)">
@@ -831,7 +831,7 @@
 			<shortcut name="games" label="$LOCALIZE[10821]" type="$LOCALIZE[10821]" icon="DefaultAddonGame.png">
 				<action>ActivateWindow(Games)</action>
 			</shortcut>
-			<shortcut name="shutdownmenu" label="$LOCALIZE[33060]" type="$LOCALIZE[33060]" icon="ShutdownNF.png">
+			<shortcut name="shutdownmenu" label="$LOCALIZE[33060]" type="$LOCALIZE[33060]" icon="DefaultPower.png">
 				<action>ActivateWindow(shutdownmenu)</action>
 			</shortcut>
 			<shortcut name="musicplaylist" label="$LOCALIZE[13350]" type="$LOCALIZE[2]" icon="DefaultMusicPlaylists.png">
@@ -843,16 +843,16 @@
 			<shortcut name="videopartymode" label="$LOCALIZE[31588]" type="$LOCALIZE[589]" icon="DefaultPartyMode.png">
 				<action>PlayerControl(PartyMode(Video))</action>
 			</shortcut>
-			<shortcut name="tvguide" label="$LOCALIZE[4]" type="$LOCALIZE[4]" icon="DefaultAddonTvInfo.png">
+			<shortcut name="tvguide" label="$LOCALIZE[4]" type="$LOCALIZE[4]" icon="DefaultPVRGuide.png">
 				<action>ActivateWindow(TVGuide)</action>
 			</shortcut>
-			<shortcut name="tvchannels" label="$LOCALIZE[19023]" type="$LOCALIZE[19023]" icon="DefaultAddonTvInfo.png">
+			<shortcut name="tvchannels" label="$LOCALIZE[19023]" type="$LOCALIZE[19023]" icon="DefaultPVRChannels.png">
 				<action>ActivateWindow(TVChannels)</action>
 			</shortcut>
 			<shortcut name="pictures" label="$LOCALIZE[1]" type="$LOCALIZE[1]" icon="DefaultPicture.png">
 				<action>ActivateWindow(Pictures)</action>
 			</shortcut>
-			<shortcut name="weather" label="$LOCALIZE[12600]" type="$LOCALIZE[12600]" icon="DefaultAddonWeather.png">
+			<shortcut name="weather" label="$LOCALIZE[12600]" type="$LOCALIZE[12600]" icon="DefaultWeather.png">
 				<action>ActivateWindow(Weather)</action>
 			</shortcut>
 			<shortcut name="playdisc" label="$LOCALIZE[341]" type="$LOCALIZE[341]" icon="DefaultVCD.png">
@@ -990,8 +990,8 @@
 			</shortcut>
 		</group>
 
-		<group name="musiclibrary" label="$LOCALIZE[14237]" icon="DefaultAddonMusic.png">
-			<group name="music" label="$LOCALIZE[2]" icon="DefaultAddonMusic.png">
+		<group name="musiclibrary" label="$LOCALIZE[14237]" icon="DefaultAudio.png">
+			<group name="music" label="$LOCALIZE[2]" icon="DefaultAudio.png">
 				<shortcut name="music-artists" label="$LOCALIZE[133]" type="$LOCALIZE[2]" icon="DefaultArtist.png" browse="music">
 					<path>musicdb://artists/</path>
 				</shortcut>
@@ -1057,7 +1057,7 @@
 				</shortcut>
 				<content source="sources" target="video" />
 			</group>
-			<group name="musicsources" label="$LOCALIZE[2]" icon="DefaultAddonMusic.png">
+			<group name="musicsources" label="$LOCALIZE[2]" icon="DefaultAudio.png">
 				<shortcut name="music-files" label="$LOCALIZE[744]" type="$LOCALIZE[39031]" icon="DefaultFile.png">
 					<action>ActivateWindow(Music,sources://music/,return)</action>
 				</shortcut>
@@ -1065,7 +1065,7 @@
 			</group>
 		</group>
 
-		<group name="livetv" label="$LOCALIZE[19020]" icon="DefaultAddonPVRClient.png" visible="PVR.HasTVChannels">
+		<group name="livetv" label="$LOCALIZE[19020]" icon="DefaultLiveTV.png" visible="PVR.HasTVChannels">
 			<shortcut name="tvchannels" label="$LOCALIZE[19023]" icon="DefaultPVRChannels.png">
 				<action>ActivateWindow(TVChannels)</action>
 			</shortcut>
@@ -1087,7 +1087,7 @@
 			<content source="pvr" target="tv" folder="$LOCALIZE[19023]" />
 		</group>
 
-		<group name="radio" label="$LOCALIZE[19021]" icon="DefaultAddonPVRClient.png" visible="PVR.HasRadioChannels">
+		<group name="radio" label="$LOCALIZE[19021]" icon="DefaultRadio.png" visible="PVR.HasRadioChannels">
 			<shortcut name="radiochannels" label="$LOCALIZE[19024]" icon="DefaultPVRChannels.png">
 				<action>ActivateWindow(RadioChannels)</action>
 			</shortcut>
@@ -1127,7 +1127,7 @@
 
 		<group name="addons" label="$LOCALIZE[24001]" icon="DefaultAddon.png">
 			<group name="programaddons" label="$LOCALIZE[1043]" icon="DefaultAddonProgram.png">
-				<shortcut name="androidapps" label="$LOCALIZE[20244]" type="$LOCALIZE[10001]" icon="DefaultAddonProgram.png" visible="System.Platform.Android">
+				<shortcut name="androidapps" label="$LOCALIZE[20244]" type="$LOCALIZE[10001]" icon="DefaultProgram.png" visible="System.Platform.Android">
 					<action>ActivateWindow(Programs,androidapp://sources/apps,return)</action>
 				</shortcut>
 				<shortcut name="programs" label="$LOCALIZE[10001]" type="$LOCALIZE[10001]" icon="DefaultAddonProgram.png">
@@ -1156,13 +1156,13 @@
 		</group>
 
 		<group name="favourites" label="$LOCALIZE[1036]" icon="DefaultFavourites.png">
-			<shortcut name="favourites" label="$LOCALIZE[1036]" type="$LOCALIZE[1036]" icon="DefaultAddonsInstalled.png">
+			<shortcut name="favourites" label="$LOCALIZE[1036]" type="$LOCALIZE[1036]" icon="DefaultFavourites.png">
 				<action>ActivateWindow(favouritesbrowser)</action>
 			</shortcut>
 			<content source="favourites" />
 		</group>
 
-		<group name="settings" label="$LOCALIZE[10004]" icon="DefaultAddonService.png">
+		<group name="settings" label="$LOCALIZE[10004]" icon="DefaultSettings.png">
 			<shortcut name="libreelec" label="LibreELEC" type="$LOCALIZE[10001]" icon="DefaultLibreELEC.png" visible="System.HasAddon(service.libreelec.settings)">
 				<action>RunAddon(service.libreelec.settings)</action>
 			</shortcut>
@@ -1172,7 +1172,7 @@
 			<content source="settings" />
 		</group>
 
-		<group name="commands" label="$ADDON[script.skinshortcuts 32057]" icon="DefaultAddonNone.png">
+		<group name="commands" label="$ADDON[script.skinshortcuts 32057]" icon="DefaultCommands.png">
 			<content source="commands" />
 		</group>
 
