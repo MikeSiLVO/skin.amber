@@ -9,6 +9,7 @@
 	<onunload>ClearProperty(CustomSelectMusicGenreIcons,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectMusicGenreFanart,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectDefaultFont,skinsettings)</onunload>
+	<onunload>ClearProperty(CustomSelectColorTheme,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectMediaViewsExtraArt,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectOSDTimeout,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectOSDTimeout2,skinsettings)</onunload>
@@ -99,6 +100,7 @@
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicGenreIcons))">SelectMusicGenreIcons</include>
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicGenreFanart))">SelectMusicGenreFanart</include>
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectDefaultFont))">SelectDefaultFont</include>
+					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectColorTheme))">SelectColorTheme</include>
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectMediaViewsExtraArt))">SelectMediaViewsExtraArt</include>
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectOSDTimeout))">SelectOSDTimeout</include>
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectOSDTimeout2))">SelectOSDTimeout2</include>

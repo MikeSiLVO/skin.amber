@@ -1190,18 +1190,10 @@
 							<height>60</height>
 							<texturenofocus />
 							<textoffsetx>30</textoffsetx>
-							<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[571])</onclick>
-							<onclick>SetProperty(Dialog.1.BuiltIn,RunScript(script.embuary.helper,action=setkodisetting,setting=lookandfeel.skincolors,value=SKINDEFAULT)||Skin.SetString(HighlightColorStr,None)||Skin.SetString(LabelTextColorStr,None)||Skin.SetString(FocusedTextColorStr,None)||Skin.SetString(SelectedTextColorStr,None))</onclick>
-							<onclick>SetProperty(Dialog.2.Label,Blue)</onclick>
-							<onclick>SetProperty(Dialog.2.BuiltIn,RunScript(script.embuary.helper,action=setkodisetting,setting=lookandfeel.skincolors,value=Blue)||Skin.SetString(HighlightColorStr,None)||Skin.SetString(LabelTextColorStr,None)||Skin.SetString(FocusedTextColorStr,None)||Skin.SetString(SelectedTextColorStr,None))</onclick>
-							<onclick>SetProperty(Dialog.3.Label,Green)</onclick>
-							<onclick>SetProperty(Dialog.3.BuiltIn,RunScript(script.embuary.helper,action=setkodisetting,setting=lookandfeel.skincolors,value=Green)||Skin.SetString(HighlightColorStr,None)||Skin.SetString(LabelTextColorStr,None)||Skin.SetString(FocusedTextColorStr,None)||Skin.SetString(SelectedTextColorStr,None))</onclick>
-							<onclick>SetProperty(Dialog.4.Label,White)</onclick>
-							<onclick>SetProperty(Dialog.4.BuiltIn,RunScript(script.embuary.helper,action=setkodisetting,setting=lookandfeel.skincolors,value=White)||Skin.SetString(HighlightColorStr,None)||Skin.SetString(LabelTextColorStr,None)||Skin.SetString(FocusedTextColorStr,None)||Skin.SetString(SelectedTextColorStr,None))</onclick>
-							<onclick>RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[15111])</onclick>
+							<onclick>SetProperty(CustomSelectColorTheme,True)</onclick>
+							<onclick>ActivateWindow(1121)</onclick>
 							<label>$LOCALIZE[31336]</label>
 							<label2>$VAR[SkinColorTheme]</label2>
-							<visible>Skin.HasSetting(Enable.EmbuaryHelper)</visible>
 						</control>
 						<control type="radiobutton" id="91091">
 							<label>$LOCALIZE[31331]</label>

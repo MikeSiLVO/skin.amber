@@ -467,6 +467,40 @@
 			<onclick>ReloadSkin()</onclick>
 		</item>
 	</include>
+	<!-- Color theme -->
+	<include name="SelectColorTheme">
+		<include content="ColorThemeItem">
+			<param name="label" value="$LOCALIZE[571]" />
+			<param name="theme" value="SKINDEFAULT" />
+		</include>
+		<include content="ColorThemeItem">
+			<param name="label" value="Blue" />
+			<param name="theme" value="Blue" />
+		</include>
+		<include content="ColorThemeItem">
+			<param name="label" value="Green" />
+			<param name="theme" value="Green" />
+		</include>
+		<include content="ColorThemeItem">
+			<param name="label" value="White" />
+			<param name="theme" value="White" />
+		</include>
+	</include>
+	<include name="ColorThemeItem">
+		<param name="label" />
+		<param name="theme" />
+		<definition>
+			<item>
+				<label>$PARAM[label]</label>
+				<onclick>Dialog.Close(1121)</onclick>
+				<onclick>Skin.SetString(HighlightColorStr,None)</onclick>
+				<onclick>Skin.SetString(LabelTextColorStr,None)</onclick>
+				<onclick>Skin.SetString(FocusedTextColorStr,None)</onclick>
+				<onclick>Skin.SetString(SelectedTextColorStr,None)</onclick>
+				<onclick>RunScript(script.skin.info.service,action=set_setting,setting=lookandfeel.skincolors,value=$PARAM[theme],noconfirm=true)</onclick>
+			</item>
+		</definition>
+	</include>
 	<!-- Disc art fallback -->
 	<include name="SelectNowPlayingMusicDiscArtFallback">
 		<item>

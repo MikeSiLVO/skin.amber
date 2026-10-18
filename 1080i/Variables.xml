@@ -1171,6 +1171,7 @@
 		<value condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoGenreIcons))">$LOCALIZE[31941]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(CustomSelectAmberFlixDimLevel))">$LOCALIZE[31697]</value>
 		<value condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectDefaultFont))">$LOCALIZE[31117]</value>
+		<value condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectColorTheme))">$LOCALIZE[15111]</value>
 		<value condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectVideoDiscArtFallback))">$LOCALIZE[31700]</value>
 		<value condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectMusicDiscArtFallback))">$LOCALIZE[31701]</value>
 		<value condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectNowPlayingMovieInfo))">$LOCALIZE[31707]</value>
