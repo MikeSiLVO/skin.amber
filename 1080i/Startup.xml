@@ -25,7 +25,7 @@
 	<onload condition="String.IsEmpty(Skin.String(StartupVideoDuration))">Skin.SetString(StartupVideoDuration,00:05)</onload>
 
 	<onload condition="Skin.HasSetting(Enable.EmbuaryHelper)">Skin.Reset(Enable.EmbuaryHelper)</onload>
-	<onload condition="!System.AddonIsEnabled(plugin.video.themoviedb.helper)">Skin.Reset(Enable.TMDbHelper)</onload>
+	<onload condition="Skin.HasSetting(Enable.TMDbHelper)">Skin.Reset(Enable.TMDbHelper)</onload>
 
 	<onload condition="String.IsEmpty(Skin.String(StartupImage)) + String.IsEmpty(Skin.String(StartupImagePath)) + String.IsEmpty(Skin.String(StartupPlaylist))">ReplaceWindow($INFO[System.StartupWindow])</onload>
 

@@ -52,7 +52,6 @@
 	<!-- TV guide -->
 	<expression name="TVGuideIsLoading">Container(5001).IsUpdating | Container(5002).IsUpdating | Container(5003).IsUpdating | Container(5004).IsUpdating | Container(5005).IsUpdating | Container(5006).IsUpdating | Container(5007).IsUpdating | Container(5008).IsUpdating | Container(5009).IsUpdating | Container(5010).IsUpdating | Container(5011).IsUpdating | Container(5012).IsUpdating | Container(5013).IsUpdating | Container(5014).IsUpdating</expression>
 	<!-- Add-ons -->
-	<expression name="CanDoOnlineSearches">System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)</expression>
-	<expression name="CanUseTMDbHelper">System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)</expression>
+	<expression name="CanUseTMDbHelper">System.AddonIsEnabled(plugin.video.themoviedb.helper)</expression>
 	<expression name="PVRWidgetsStacked">!String.IsEmpty(Container(300).ListItem.Property(widgetRecordingTV)) + [PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer] + !String.IsEmpty(Container(300).ListItem.Property(widgetRecordingRadio)) + [PVR.IsRecordingRadio | PVR.HasNonRecordingRadioTimer]</expression>
 </includes>

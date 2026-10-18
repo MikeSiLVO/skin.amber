@@ -848,14 +848,14 @@
 				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + String.IsEmpty(ListItem.FileNameAndPath) + String.IsEmpty(ListItem.FolderPath)">SendClick(8)</onclick>
 				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + String.IsEmpty(ListItem.FileNameAndPath) + String.IsEmpty(ListItem.FolderPath)">Dialog.Close(all)</onclick>
 				<!-- Online item, tmdb helper not active, or Person Info dialog -->
-				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + [!Skin.HasSetting(Enable.TMDbHelper) | String.Contains(ListItem.FolderPath,type=person)]">Action(Close)</onclick>
+				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + [!System.AddonIsEnabled(plugin.video.themoviedb.helper) | String.Contains(ListItem.FolderPath,type=person)]">Action(Close)</onclick>
 				<!-- Local item -->
 				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + !String.IsEmpty(ListItem.DBID)">Dialog.Close(all)</onclick>
 				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + !String.IsEmpty(ListItem.DBID)">SendClick(8)</onclick>
 				<!-- tmdb helper active, path is not empty -->
-				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(ListItem.FileNameAndPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FileNameAndPath]')</onclick>
+				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + !String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(ListItem.FileNameAndPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FileNameAndPath]')</onclick>
 				<!-- tmdb helper active, path is empty -->
-				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !String.Contains(ListItem.FolderPath,type=person) + String.IsEmpty(ListItem.FileNameAndPath) + !String.IsEmpty(ListItem.FolderPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FolderPath]')</onclick>
+				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + !String.Contains(ListItem.FolderPath,type=person) + String.IsEmpty(ListItem.FileNameAndPath) + !String.IsEmpty(ListItem.FolderPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FolderPath]')</onclick>
 				<!-- Browse TV Show -->
 				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">SendClick(8)</onclick>
 				<onclick condition="String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">Dialog.Close(all)</onclick>
@@ -904,7 +904,7 @@
 				<onclick condition="!Skin.HasSetting(Trailer.WindowVideoInfo)">PlayMedia($INFO[Window(Home).Property(SkinInfo.Online.Trailer)])</onclick>
 				<onclick condition="!Skin.HasSetting(Trailer.WindowVideoInfo)">Dialog.Close(all)</onclick>
 				<onclick condition="Skin.HasSetting(Trailer.WindowVideoInfo)">PlayMedia($INFO[Window(Home).Property(SkinInfo.Online.Trailer)],1)</onclick>
-				<visible>System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Trailer)) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
+				<visible>String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(SkinInfo.Online.Trailer)) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
 				<visible>String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
 			</control>
 			<control type="button" id="8005">
@@ -1176,7 +1176,7 @@
 			</include>
 			<!-- Person Info Widget Lists -->
 			<!-- Cast in Movies-->
-			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
+			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + System.AddonIsEnabled(plugin.video.themoviedb.helper)">
 				<param name="id">910011</param>
 				<param name="labelid">9100111</param>
 				<param name="headinglabel">$LOCALIZE[31209]</param>
@@ -1186,7 +1186,7 @@
 				<param name="sortorder">descending</param>
 			</include>
 			<!-- Cast in TV Shows -->
-			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
+			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + System.AddonIsEnabled(plugin.video.themoviedb.helper)">
 				<param name="id">910012</param>
 				<param name="labelid">9100121</param>
 				<param name="headinglabel">$LOCALIZE[31210]</param>
@@ -1196,7 +1196,7 @@
 				<param name="sortorder">descending</param>
 			</include>
 			<!-- Crew in Movies -->
-			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
+			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + System.AddonIsEnabled(plugin.video.themoviedb.helper)">
 				<param name="id">910013</param>
 				<param name="labelid">9100131</param>
 				<param name="headinglabel">$LOCALIZE[31211]</param>
@@ -1206,7 +1206,7 @@
 				<param name="sortorder">descending</param>
 			</include>
 			<!-- Crew in TV Shows -->
-			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
+			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + System.AddonIsEnabled(plugin.video.themoviedb.helper)">
 				<param name="id">910014</param>
 				<param name="labelid">9100141</param>
 				<param name="headinglabel">$LOCALIZE[31212]</param>
@@ -1216,7 +1216,7 @@
 				<param name="sortorder">descending</param>
 			</include>
 			<!-- Pictures -->
-			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + Skin.HasSetting(Enable.TMDbHelper)">
+			<include content="VideoInfoPosterWidget" condition="String.Contains(ListItem.FolderPath,type=person) + System.AddonIsEnabled(plugin.video.themoviedb.helper)">
 				<param name="id">910015</param>
 				<param name="labelid">9100151</param>
 				<param name="headinglabel">$LOCALIZE[1]</param>

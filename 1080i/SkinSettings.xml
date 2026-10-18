@@ -457,19 +457,6 @@
 								<param name="skinsetting" value="Favourites.Alternate.List.MoreItems" />
 								<param name="itemvisibility" value="Skin.HasSetting(Favourites.AlternateLayout) + Skin.HasSetting(Favourites.Alternate.List)" />
 							</include>
-							<item id="21">
-								<visible>Skin.HasSetting(Enable.TMDbHelper) + System.HasAddon(plugin.video.themoviedb.helper)</visible>
-								<label>$LOCALIZE[31744]</label>
-								<label2>$LOCALIZE[107]</label2>
-								<onclick>Skin.ToggleSetting(Enable.TMDbHelper)</onclick>
-							</item>
-							<item id="22">
-								<visible>!Skin.HasSetting(Enable.TMDbHelper) | !System.HasAddon(plugin.video.themoviedb.helper)</visible>
-								<label>$LOCALIZE[31744]</label>
-								<label2>$LOCALIZE[106]</label2>
-								<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
-								<onclick condition="System.HasAddon(plugin.video.themoviedb.helper)">Skin.ToggleSetting(Enable.TMDbHelper)</onclick>
-							</item>
 							<include content="YesNoSettingItem">
 								<param name="itemid" value="25" />
 								<param name="itemlabel" value="$LOCALIZE[31770]" />
@@ -535,7 +522,7 @@
 								<param name="itemid" value="3" />
 								<param name="itemlabel" value="      $LOCALIZE[31805]" />
 								<param name="skinsetting" value="FanartTitle.OpensInfo" />
-								<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)" />
+								<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.AddonIsEnabled(plugin.video.themoviedb.helper)" />
 							</include>
 							<include content="CustomDialogSettingItem">
 								<param name="itemid">4</param>
