@@ -2,7 +2,7 @@
 <window>
 	<onload condition="Skin.HasSetting(AutoPlayTrailer)">Dialog.Close(all,true)</onload>
 	<controls>
-		<include>DimBG</include>
+		<include>DimBackground</include>
 		<control type="group">
 			<visible>String.IsEmpty(Window(Home).Property(script.preshowexperience.running))</visible>
 			<visible>!Window.IsActive(startup)</visible>

@@ -85,12 +85,11 @@
 
 		<!-- Background -->
 		<control type="group">
-			<control type="image">
-				<width>1920</width>
-				<height>1080</height>
-				<texture>img/blackdot1.png</texture>
-				<aspectratio>scale</aspectratio>
-			</control>
+			<include content="DimBackground">
+				<param name="texture" value="colors/black.png" />
+				<param name="timeopen" value="0" />
+				<param name="timeclose" value="0" />
+			</include>
 			<!-- Use listitem fanart if not called from the OSD, or showing info for item different than the playing item -->
 			<control type="image">
 				<width>100%</width>
@@ -1243,12 +1242,11 @@
 		<control type="group">
 			<animation effect="fade" start="0" end="100" time="350" tween="cubic" easing="inout">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="350" tween="cubic" easing="inout">Hidden</animation>
-			<control type="image">
-				<width>1920</width>
-				<height>1080</height>
-				<texture>img/blackdot1.png</texture>
-				<aspectratio>scale</aspectratio>
-			</control>
+			<include content="DimBackground">
+				<param name="texture" value="colors/black.png" />
+				<param name="timeopen" value="0" />
+				<param name="timeclose" value="0" />
+			</include>
 			<visible>Control.HasFocus(91506)</visible>
 			<control type="image">
 				<aspectratio>keep</aspectratio>

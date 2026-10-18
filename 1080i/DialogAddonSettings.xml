@@ -4,7 +4,7 @@
 	<include>OpenClose</include>
 	<controls>
 		<control type="group">
-			<include condition="Window.IsActive(Home)">DimBG</include>
+			<include condition="Window.IsActive(Home)">DimBackground</include>
 			<control type="image" description="BG">
 				<include>Panel_Size</include>
 				<texture>dialogs/AddonSettingsBG.png</texture>

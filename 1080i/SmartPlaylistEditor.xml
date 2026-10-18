@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">9002</defaultcontrol>
 	<include>OpenClose</include>
 	<controls>
-		<include>DimBG</include>
+		<include>DimBackground</include>
 		<control type="group">
 			<control type="image">
 				<left>36</left>

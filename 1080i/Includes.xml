@@ -53,12 +53,22 @@
 	<include condition="Skin.HasSetting(Large.Fonts)" file="Includes_Defaults_Large.xml" />
 	<include condition="![Skin.HasSetting(Smaller.Fonts) | Skin.HasSetting(Regular.Fonts) | Skin.HasSetting(Large.Fonts)]" file="Includes_Defaults_Regular.xml" />
 
-	<include name="DimBG">
-		<control type="image">
-			<width>1920</width>
-			<height>1080</height>
-			<texture>img/blackdott1.png</texture>
-		</control>
+	<include name="DimBackground">
+		<param name="texture" default="colors/77000000.png" />
+		<param name="timeopen" default="250" />
+		<param name="timeclose" default="250" />
+		<param name="visible" default="true" />
+		<definition>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>$PARAM[texture]</texture>
+				<animation effect="fade" time="$PARAM[timeopen]">WindowOpen</animation>
+				<animation effect="fade" time="$PARAM[timeopen]">Visible</animation>
+				<animation effect="fade" time="$PARAM[timeclose]">WindowClose</animation>
+				<animation effect="fade" time="$PARAM[timeclose]">Hidden</animation>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
 	</include>
 	<include name="Dimensions_Fullscreen">
 		<width>1920</width>

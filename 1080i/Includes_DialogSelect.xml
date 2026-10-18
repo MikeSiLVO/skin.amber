@@ -242,7 +242,7 @@
 	</include>
 
 	<include name="DialogSelectSearch">
-		<include>DimBG</include>
+		<include>DimBackground</include>
 		<control type="group">
 			<left>172</left>
 			<top>180</top>
@@ -611,7 +611,7 @@
 	</include>
 
 	<include name="DialogSelectStandard">
-		<include>DimBG</include>
+		<include>DimBackground</include>
 		<control type="group">
 			<left>172</left>
 			<top>180</top>
@@ -1091,7 +1091,7 @@
 	</include>
 
 	<include name="DialogSelectViewtypes">
-		<include>DimBG</include>
+		<include>DimBackground</include>
 		<control type="group">
 			<left>172</left>
 			<top>180</top>

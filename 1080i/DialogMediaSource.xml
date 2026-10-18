@@ -3,7 +3,7 @@
 	<defaultcontrol>10</defaultcontrol>
 	<include>DialogOpenClose</include>
 	<controls>
-		<include>DimBG</include>
+		<include>DimBackground</include>
 		<control type="group">
 			<left>326</left>
 			<top>294</top>
