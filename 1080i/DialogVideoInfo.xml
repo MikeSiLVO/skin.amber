@@ -962,6 +962,7 @@
 				<visible>Control.IsEnabled(15) + String.IsEqual(ListItem.DBType,movie)</visible>
 				<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
 			</control>
+			<!-- Embuary Info button, off until the Embuary dialogs are rewritten on SIS
 			<control type="button" id="295" description="Embuary Info">
 				<height>90</height>
 				<width min="220">auto</width>
@@ -976,6 +977,7 @@
 				<visible>[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie)] + System.AddonIsEnabled(script.embuary.info)</visible>
 				<visible>!String.IsEmpty(ListItem.DBID)</visible>
 			</control>
+			-->
 			<control type="button" id="296" description="Special Features">
 				<height>90</height>
 				<width min="220">auto</width>
