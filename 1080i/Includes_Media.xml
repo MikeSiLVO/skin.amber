@@ -1691,7 +1691,6 @@
 	</include>
 
 	<include name="TopRightOverlayTemplate">
-		<param name="isFocused">false</param>
 		<param name="isSmallIcon">false</param>
 		<param name="isWideIcon">false</param>
 		<param name="isSearch">false</param>
@@ -1894,29 +1893,17 @@
 					<control type="group">
 						<visible>!$PARAM[isBanner]</visible>
 						<control type="label" description="l2">
-							<visible>$PARAM[isFocused] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
+							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
 							<left>94r</left>
 							<top>-360</top>
 							<height>$PARAM[itemheight]</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
-							<shadowcolor />
+							<shadowcolor>$PARAM[overlayshadow]</shadowcolor>
 							<label>$VAR[UnwatchedEpisodes]</label>
 							<scroll>true</scroll>
-							<textcolor>$VAR[HighlightColor]</textcolor>
-						</control>
-						<control type="label" description="l2">
-							<visible>!$PARAM[isFocused] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
-							<left>94r</left>
-							<top>-360</top>
-							<height>$PARAM[itemheight]</height>
-							<width>100</width>
-							<font>ListDetailsSmall</font>
-							<align>center</align>
-							<label>$VAR[UnwatchedEpisodes]</label>
-							<scroll>true</scroll>
-							<textcolor>White2</textcolor>
+							<textcolor>$PARAM[overlaycolor]</textcolor>
 						</control>
 						<control type="label" description="l2">
 							<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
@@ -2508,7 +2495,6 @@
 	</include>
 
 	<include name="RatingOverlayTemplate">
-		<param name="isFocused">false</param>
 		<param name="isSmallIcon">false</param>
 		<param name="isWideIcon">false</param>
 		<param name="isSearch">false</param>
@@ -2563,46 +2549,24 @@
 					<control type="group">
 						<visible>!$PARAM[isBanner] + !$PARAM[isThumb] + !$PARAM[isSquare]</visible>
 						<control type="image">
-							<visible>!$PARAM[isFocused]</visible>
 							<texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 							<left>294r</left>
 							<top>16</top>
 							<height>90</height>
 							<width>90</width>
-						</control>
-						<control type="image">
-							<visible>$PARAM[isFocused]</visible>
-							<texture background="true" flipx="true">overlays/toprightempty2.png</texture>
-							<left>294r</left>
-							<top>16</top>
-							<height>90</height>
-							<width>90</width>
-							<colordiffuse>$VAR[HighlightColor]</colordiffuse>
+							<colordiffuse>$PARAM[overlaycolor]</colordiffuse>
 						</control>
 						<control type="label" description="l2">
-							<visible>!$PARAM[isFocused]</visible>
 							<left>285r</left>
 							<top>24</top>
 							<height>35</height>
 							<width>35</width>
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
+							<shadowcolor>$PARAM[overlayshadow]</shadowcolor>
 							<label>$VAR[RatingOverlayVar]</label>
 							<scroll>true</scroll>
-							<textcolor>White2</textcolor>
-						</control>
-						<control type="label" description="l2">
-							<visible>$PARAM[isFocused]</visible>
-							<left>285r</left>
-							<top>24</top>
-							<height>35</height>
-							<width>35</width>
-							<font>ListDetailsExtraSmall</font>
-							<align>center</align>
-							<shadowcolor />
-							<label>$VAR[RatingOverlayVar]</label>
-							<scroll>true</scroll>
-							<textcolor>$VAR[HighlightColor]</textcolor>
+							<textcolor>$PARAM[overlaycolor]</textcolor>
 						</control>
 					</control>
 					<!-- Banner -->
@@ -3202,45 +3166,23 @@
 					<visible>$PARAM[isSearch]</visible>
 					<control type="group">
 						<control type="image">
-							<visible>!$PARAM[isFocused]</visible>
-							<texture background="true" flipx="true">overlays/toprightempty2.png</texture>
-							<left>12</left>
-							<top>12</top>
-							<height>82</height>
-							<width>82</width>
-						</control>
-						<control type="image">
-							<visible>$PARAM[isFocused]</visible>
-							<texture background="true" flipx="true" colordiffuse="$VAR[HighlightColor]">overlays/toprightempty2.png</texture>
+							<texture background="true" flipx="true" colordiffuse="$PARAM[overlaycolor]">overlays/toprightempty2.png</texture>
 							<left>12</left>
 							<top>12</top>
 							<height>82</height>
 							<width>82</width>
 						</control>
 						<control type="label" description="l2">
-							<visible>!$PARAM[isFocused]</visible>
 							<left>19.3</left>
 							<top>18</top>
 							<height>35</height>
 							<width>35</width>
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
+							<shadowcolor>$PARAM[overlayshadow]</shadowcolor>
 							<label>$VAR[ContainerRatingOverlayVar]</label>
 							<scroll>true</scroll>
-							<textcolor>White2</textcolor>
-						</control>
-						<control type="label" description="l2">
-							<visible>$PARAM[isFocused]</visible>
-							<left>19.3</left>
-							<top>18</top>
-							<height>35</height>
-							<width>35</width>
-							<font>ListDetailsExtraSmall</font>
-							<align>center</align>
-							<shadowcolor />
-							<label>$VAR[ContainerRatingOverlayVar]</label>
-							<scroll>true</scroll>
-							<textcolor>$VAR[HighlightColor]</textcolor>
+							<textcolor>$PARAM[overlaycolor]</textcolor>
 						</control>
 					</control>
 				</control>
@@ -3626,7 +3568,6 @@
 		<param name="showOverlay" default="true" />
 		<definition>
 			<include condition="Skin.HasSetting(ShowTopRightOverlays) + !ListItem.IsRecording + !String.StartsWith(ListItem.FolderPath,pvr) + $PARAM[showOverlay]" content="TopRightOverlayTemplate">
-				<param name="isFocused">$PARAM[isFocused]</param>
 				<param name="overlaycolor">$PARAM[overlaycolor]</param>
 				<param name="overlayshadow">$PARAM[overlayshadow]</param>
 				<param name="isSmallIcon">$PARAM[isSmallIcon]</param>
@@ -3641,7 +3582,6 @@
 				<param name="isLowWidget">$PARAM[isLowWidget]</param>
 			</include>
 			<include condition="Skin.HasSetting(ShowRatingOverlays) + !ListItem.IsRecording + !String.StartsWith(ListItem.FolderPath,pvr) + $PARAM[showOverlay]" content="RatingOverlayTemplate">
-				<param name="isFocused">$PARAM[isFocused]</param>
 				<param name="overlaycolor">$PARAM[overlaycolor]</param>
 				<param name="overlayshadow">$PARAM[overlayshadow]</param>
 				<param name="isSmallIcon">$PARAM[isSmallIcon]</param>
@@ -3665,7 +3605,6 @@
 			<control type="group">
 				<visible>$PARAM[hasFocus]</visible>
 				<include content="ThumbOverlays">
-					<param name="isFocused" value="true" />
 					<param name="overlaycolor" value="$VAR[MediaWidgetsHighlightColor]" />
 					<param name="overlayshadow" value="" />
 					<param name="isSmallIcon">$PARAM[isSmallIcon]</param>
