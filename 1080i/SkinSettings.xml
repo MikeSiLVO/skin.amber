@@ -1156,11 +1156,6 @@
 								<param name="skinsetting" value="Trailer.SearchIMDb" />
 								<param name="itemvisibility">System.AddonIsEnabled(plugin.video.imdb.trailers)</param>
 							</include>
-							<item id="13" description="Embuary Info Config">
-								<label>$LOCALIZE[31250]</label>
-								<onclick condition="System.HasAddon(script.embuary.info)">Addon.OpenSettings(script.embuary.info)</onclick>
-								<onclick condition="!System.HasAddon(script.embuary.info)">InstallAddon(script.embuary.info)</onclick>
-							</item>
 							<item id="14" description="TMDb Helper Config">
 								<label>$LOCALIZE[31277]</label>
 								<onclick condition="System.HasAddon(plugin.video.themoviedb.helper)">Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
@@ -1622,14 +1617,6 @@
 							<onclick condition="System.HasAddon(script.embuary.helper) + !System.AddonIsEnabled(script.embuary.helper)">EnableAddon(script.embuary.helper)</onclick>
 							<onclick condition="!System.HasAddon(script.embuary.helper)">InstallAddon(script.embuary.helper)</onclick>
 							<selected>System.AddonIsEnabled(script.embuary.helper)</selected>
-						</control>
-						<control type="radiobutton" id="911223">
-							<label>script.embuary.info</label>
-							<label2>$INFO[System.AddonVersion(script.embuary.info)]             </label2>
-							<onclick condition="System.AddonIsEnabled(script.embuary.info)">Addon.OpenSettings(script.embuary.info)</onclick>
-							<onclick condition="System.HasAddon(script.embuary.info) + !System.AddonIsEnabled(script.embuary.info)">EnableAddon(script.embuary.info)</onclick>
-							<onclick condition="!System.HasAddon(script.embuary.info)">InstallAddon(script.embuary.info)</onclick>
-							<selected>System.AddonIsEnabled(script.embuary.info)</selected>
 						</control>
 						<control type="radiobutton" id="911224">
 							<label>plugin.video.themoviedb.helper</label>
