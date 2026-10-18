@@ -530,98 +530,62 @@
 	<variable name="AgeLabel">
 		<value condition="[!String.IsEmpty(Container(10051).ListItem.Property(Age)) + String.IsEmpty(Container(10051).ListItem.Property(Deathday))]">$LOCALIZE[31206]</value>
 		<value condition="[!String.IsEmpty(ListItem.Property(Age)) + String.IsEmpty(ListItem.Property(Deathday))]">$LOCALIZE[31206]</value>
-		<value condition="[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]">$LOCALIZE[31206]</value>
 		<value condition="[!String.IsEmpty(Container(10051).ListItem.Property(Age)) + !String.IsEmpty(Container(10051).ListItem.Property(Deathday))]">$LOCALIZE[31275]</value>
 		<value condition="[!String.IsEmpty(ListItem.Property(Age)) + !String.IsEmpty(ListItem.Property(Deathday))]">$LOCALIZE[31275]</value>
-		<value condition="[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]">$LOCALIZE[31275]</value>
 	</variable>
 	<variable name="TMDbPersonBirthday">
 		<value condition="!String.IsEmpty(ListItem.Property(Birthday))">$INFO[ListItem.Property(Birthday)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Birthday)]</value>
 	</variable>
 	<variable name="TMDbPersonBorn">
 		<value condition="!String.IsEmpty(ListItem.Property(Born))">$INFO[ListItem.Property(Born)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Born))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Born)]</value>
 	</variable>
 	<variable name="TMDbPersonAge">
 		<value condition="!String.IsEmpty(ListItem.Property(Age))">$INFO[ListItem.Property(Age)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Age)]</value>
 	</variable>
 	<variable name="TMDbPersonDeathday">
 		<value condition="!String.IsEmpty(ListItem.Property(Deathday))">$INFO[ListItem.Property(Deathday)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Deathday)]</value>
 	</variable>
 	<variable name="TMDbPersonAliases">
 		<value condition="!String.IsEmpty(ListItem.Property(aliases))">$INFO[ListItem.Property(aliases)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Aliases))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Aliases)]</value>
 	</variable>
 	<variable name="TMDbPersonKnownFor">
 		<value condition="!String.IsEmpty(ListItem.Property(Known_For))">$INFO[ListItem.Property(Known_For)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Known_For))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Known_For)]</value>
 	</variable>
 	<variable name="TMDbPersonCharacter">
 		<value condition="!String.IsEmpty(ListItem.Property(Character))">$INFO[ListItem.Property(Character)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Character))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Character)]</value>
 	</variable>
 	<variable name="TMDbPersonDepartment">
 		<value condition="!String.IsEmpty(ListItem.Property(Department))">$INFO[ListItem.Property(Department)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Department))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Department)]</value>
 	</variable>
 	<variable name="TMDbPersonJob">
 		<value condition="!String.IsEmpty(ListItem.Property(Job))">$INFO[ListItem.Property(Job)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Job))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Job)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBTotal">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.Total))">$INFO[ListItem.Property(NumItems.TMDB.Total)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Total))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Total)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBMoviesTotal">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Total))">$INFO[ListItem.Property(NumItems.TMDB.Movies.Total)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Total))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Total)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBTvShowsTotal">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Total))">$INFO[ListItem.Property(NumItems.TMDB.TvShows.Total)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Total))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Total)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBMoviesCast">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Cast))">$INFO[ListItem.Property(NumItems.TMDB.Movies.Cast)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Cast))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Cast)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBTvShowsCast">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Cast))">$INFO[ListItem.Property(NumItems.TMDB.TvShows.Cast)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Cast))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Cast)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBCast">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.Cast))">$INFO[ListItem.Property(NumItems.TMDB.Cast)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Cast))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Cast)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBCrew">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.Crew))">$INFO[ListItem.Property(NumItems.TMDB.Crew)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Crew))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Crew)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBMoviesCrew">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Crew))">$INFO[ListItem.Property(NumItems.TMDB.Movies.Crew)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Crew))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Crew)]</value>
 	</variable>
 	<variable name="TMDbPersonNumItemsTMDBTvShowsCrew">
 		<value condition="!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Crew))">$INFO[ListItem.Property(NumItems.TMDB.TvShows.Crew)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Crew))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Crew)]</value>
-	</variable>
-	<variable name="TMDbPersonNumItemsDBIDTotal">
-		<value condition="!String.IsEmpty(ListItem.Property(NumItems.DBID.Total))">$INFO[ListItem.Property(NumItems.DBID.Total)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Total))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Total)]</value>
-	</variable>
-	<variable name="TMDbPersonNumItemsDBIDMovies">
-		<value condition="!String.IsEmpty(ListItem.Property(NumItems.DBID.Movies))">$INFO[ListItem.Property(NumItems.DBID.Movies)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Movies))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Movies)]</value>
-	</variable>
-	<variable name="TMDbPersonNumItemsDBIDTvShows">
-		<value condition="!String.IsEmpty(ListItem.Property(NumItems.DBID.TvShows))">$INFO[ListItem.Property(NumItems.DBID.TvShows)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.TvShows))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.TvShows)]</value>
-	</variable>
-	<variable name="TMDbPersonNumItemsDBIDEpisodes">
-		<value condition="!String.IsEmpty(ListItem.Property(NumItems.DBID.Episodes))">$INFO[ListItem.Property(NumItems.DBID.Episodes)]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Episodes))">$INFO[Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Episodes)]</value>
 	</variable>
 
 	<!-- Begin Matrix change -->
@@ -2047,25 +2011,25 @@
 			<label>$LOCALIZE[31202]:</label>
 			<label2>$VAR[TMDbPersonBirthday]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(Birthday)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(Birthday))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31204]:</label>
 			<label2>$VAR[TMDbPersonBorn]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(Born)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Born))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(Born))</visible>
 		</item>
 		<item>
 			<label>$VAR[AgeLabel]:</label>
 			<label2>$VAR[TMDbPersonAge]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(Age)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(Age))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31207]:</label>
 			<label2>$VAR[TMDbPersonDeathday]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(Deathday)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(Deathday))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31208]:</label>
@@ -2074,7 +2038,7 @@
 			<onclick>SetProperty(TextViewerSubHeader,[I]$LOCALIZE[31208][/I],Home)</onclick>
 			<onclick>SetProperty(TextViewerContent,$ESCVAR[TMDbPersonAliases],Home)</onclick>
 			<onclick>ActivateWindow(1124)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(aliases)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Aliases))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(aliases))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31258]:</label>
@@ -2083,49 +2047,49 @@
 			<onclick>SetProperty(TextViewerSubHeader,[I]$LOCALIZE[31258][/I],Home)</onclick>
 			<onclick>SetProperty(TextViewerContent,$ESCVAR[TMDbPersonKnownFor],Home)</onclick>
 			<onclick>ActivateWindow(1124)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(Known_For)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Known_For))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(Known_For))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31307]:</label>
 			<label2>$VAR[TMDbPersonCharacter]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(Character)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Character))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(Character))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31308]:</label>
 			<label2>$VAR[TMDbPersonDepartment]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(Department)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Department))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(Department))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31310]:</label>
 			<label2>$VAR[TMDbPersonJob]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(Job)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Job))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(Job))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31311]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBTotal]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Total)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Total))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.Total))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31312]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBMoviesTotal]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Total)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Total))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Total))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31313]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBTvShowsTotal]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Total)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Total))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Total))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31314]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBCast]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Cast)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Cast))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.Cast))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31315]:</label>
@@ -2137,7 +2101,7 @@
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(OnlineTotalsCall,stars_in_movies)</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[31325])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">ActivateWindow(1131)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Cast)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Cast))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Cast))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31316]:</label>
@@ -2149,13 +2113,13 @@
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(OnlineTotalsCall,stars_in_tvshows)</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[31326])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">ActivateWindow(1131)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Cast)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Cast))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Cast))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31317]:</label>
 			<label2>$VAR[TMDbPersonNumItemsTMDBCrew]</label2>
 			<onclick>noop</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Crew)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Crew))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.Crew))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31318]:</label>
@@ -2167,7 +2131,7 @@
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(OnlineTotalsCall,crew_in_movies)</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[31327])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">ActivateWindow(1131)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Crew)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.Movies.Crew))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.Movies.Crew))</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[31319]:</label>
@@ -2179,41 +2143,7 @@
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(OnlineTotalsCall,crew_in_tvshows)</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">Skin.SetString(SingleSearchHeader,$LOCALIZE[31328])</onclick>
 			<onclick condition="$EXP[CanUseTMDbHelper]">ActivateWindow(1131)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Crew)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Crew))]</visible>
-		</item>
-		<item>
-			<label>$LOCALIZE[31320]:</label>
-			<label2>$VAR[TMDbPersonNumItemsDBIDTotal]</label2>
-			<onclick>Skin.SetString(CustomSearchTerm,$INFO[ListItem.Label])</onclick>
-			<onclick>ActivateWindow(1122)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.DBID.Total)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Total))]</visible>
-		</item>
-		<item>
-			<label>$LOCALIZE[31321]:</label>
-			<label2>$VAR[TMDbPersonNumItemsDBIDMovies]</label2>
-			<onclick>SetProperty(SingleSearchType,LocalMovieActor,Home)</onclick>
-			<onclick>Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
-			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[31123])</onclick>
-			<onclick>ActivateWindow(1131)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.DBID.Movies)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Movies))]</visible>
-		</item>
-		<item>
-			<label>$LOCALIZE[31323]:</label>
-			<label2>$VAR[TMDbPersonNumItemsDBIDTvShows]</label2>
-			<onclick>SetProperty(SingleSearchType,LocalTVShowActor,Home)</onclick>
-			<onclick>Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
-			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[31125])</onclick>
-			<onclick>ActivateWindow(1131)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.DBID.TvShows)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.TvShows))]</visible>
-		</item>
-		<item>
-			<label>$LOCALIZE[31324]:</label>
-			<label2>$VAR[TMDbPersonNumItemsDBIDEpisodes]</label2>
-			<onclick>SetProperty(SingleSearchType,LocalEpisodeActor,Home)</onclick>
-			<onclick>Skin.SetString(SingleSearchTerm,$INFO[ListItem.Label])</onclick>
-			<onclick>Skin.SetString(SingleSearchHeader,$LOCALIZE[31218])</onclick>
-			<onclick>ActivateWindow(1131)</onclick>
-			<visible>[!String.IsEmpty(ListItem.Property(NumItems.DBID.Episodes)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.DBID.Episodes))]</visible>
+			<visible>!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Crew))</visible>
 		</item>
 	</include>
 

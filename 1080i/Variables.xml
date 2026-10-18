@@ -965,7 +965,6 @@
 	<variable name="Plots" description="Plots and descriptions">
 		<value condition="Window.IsActive(script-embuary-video.xml)">$INFO[Container(10051).ListItem.Plot]</value>
 		<value condition="String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(ListItem.Property(Biography))">$INFO[ListItem.Property(Biography)]</value>
-		<value condition="String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Biography))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Biography)]</value>
 		<value condition="ListItem.IsParentFolder"> </value>
 		<value condition="Container.Content(addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
 		<value condition="String.IsEqual(ListItem.DBType,season) + String.IsEmpty(ListItem.Plot) + !String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>

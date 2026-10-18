@@ -440,7 +440,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31204]: [/COLOR]$VAR[TMDbPersonBorn]</label>
-					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Born))</visible>
+					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Container.ListItem.Property(Born))</visible>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -448,7 +448,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31202]: [/COLOR]$VAR[TMDbPersonBirthday]</label>
-					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))</visible>
+					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Container.ListItem.Property(Birthday))</visible>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -456,7 +456,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$VAR[AgeLabel]: [/COLOR]$VAR[TMDbPersonAge]</label>
-					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age))</visible>
+					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Container.ListItem.Property(Age))</visible>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -464,7 +464,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31207]: [/COLOR]$VAR[TMDbPersonDeathday]</label>
-					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))</visible>
+					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Container.ListItem.Property(Deathday))</visible>
 					<scroll>true</scroll>
 				</control>
 
@@ -935,7 +935,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31204]: [/COLOR]$VAR[TMDbPersonBorn]</label>
-					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Born))</visible>
+					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Container.ListItem.Property(Born))</visible>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -943,7 +943,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31202]: [/COLOR]$VAR[TMDbPersonBirthday]</label>
-					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))</visible>
+					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Container.ListItem.Property(Birthday))</visible>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -951,7 +951,7 @@
 					<height>38</height>
 					<font>font13_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$VAR[AgeLabel]: [/COLOR]$VAR[TMDbPersonAge]</label>
-					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age))</visible>
+					<visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Container.ListItem.Property(Age))</visible>
 					<scroll>true</scroll>
 				</control>
 
