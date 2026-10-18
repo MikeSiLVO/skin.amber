@@ -81,8 +81,8 @@
 				<control type="label" description="l2">
 					<visible>Control.HasFocus(600)</visible>
 					<left>89r</left>
-					<top>-183</top>
-					<height>$PARAM[itemheight]</height>
+					<top>12</top>
+					<height>46.5</height>
 					<width>100</width>
 					<font>ListDetailsSmall</font>
 					<align>center</align>
@@ -94,8 +94,8 @@
 				<control type="label" description="l2">
 					<visible>!Control.HasFocus(600)</visible>
 					<left>89r</left>
-					<top>-183</top>
-					<height>$PARAM[itemheight]</height>
+					<top>12</top>
+					<height>46.5</height>
 					<width>100</width>
 					<font>ListDetailsSmall</font>
 					<align>center</align>
@@ -131,8 +131,8 @@
 				<control type="label" description="l2">
 					<visible>$PARAM[isFocused]</visible>
 					<left>447r</left>
-					<top>-185</top>
-					<height>$PARAM[itemheight]</height>
+					<top>0</top>
+					<height>46.5</height>
 					<width>100</width>
 					<font>ListDetailsSmall</font>
 					<align>center</align>
@@ -144,8 +144,8 @@
 				<control type="label" description="l2">
 					<visible>!$PARAM[isFocused]</visible>
 					<left>447r</left>
-					<top>-195</top>
-					<height>$PARAM[itemheight]</height>
+					<top>0</top>
+					<height>46.5</height>
 					<width>100</width>
 					<font>ListDetailsSmall</font>
 					<align>center</align>

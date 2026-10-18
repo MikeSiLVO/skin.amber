@@ -357,8 +357,8 @@
 					<control type="label" description="l2">
 						<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + !$PARAM[isLandscape]</visible>
 						<left>90r</left>
-						<top>-262</top>
-						<height>$PARAM[itemheight]</height>
+						<top>15</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
@@ -370,8 +370,8 @@
 					<control type="label" description="l2">
 						<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + !$PARAM[isLandscape]</visible>
 						<left>89r</left>
-						<top>-262</top>
-						<height>$PARAM[itemheight]</height>
+						<top>15</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
@@ -393,8 +393,8 @@
 					<control type="label" description="l2">
 						<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + $PARAM[isLandscape]</visible>
 						<left>136r</left>
-						<top>-135</top>
-						<height>$PARAM[itemheight]</height>
+						<top>15</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
@@ -406,8 +406,8 @@
 					<control type="label" description="l2">
 						<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + $PARAM[isLandscape]</visible>
 						<left>136r</left>
-						<top>-135</top>
-						<height>$PARAM[itemheight]</height>
+						<top>15</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
@@ -482,8 +482,8 @@
 					<control type="label" description="l2">
 						<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
 						<left>1684r</left>
-						<top>-378</top>
-						<height>$PARAM[itemheight]</height>
+						<top>15</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
@@ -494,8 +494,8 @@
 					<control type="label" description="l2">
 						<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
 						<left>1684r</left>
-						<top>-378</top>
-						<height>$PARAM[itemheight]</height>
+						<top>15</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
@@ -556,13 +556,13 @@
 						</control>
 						<control type="label" description="l2">
 							<left>250r</left>
-							<top>-261</top>
-							<height>$PARAM[itemheight]</height>
+							<top>15</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<shadowcolor>$PARAM[overlayshadow]</shadowcolor>
-							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<label>$VAR[RatingOverlayVar]</label>
 							<scroll>true</scroll>
 							<textcolor>$PARAM[overlaycolor]</textcolor>
 						</control>
@@ -581,13 +581,13 @@
 						</control>
 						<control type="label" description="l2">
 							<left>477r</left>
-							<top>-135</top>
-							<height>$PARAM[itemheight]</height>
+							<top>54</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<shadowcolor>$PARAM[overlayshadow]</shadowcolor>
-							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<label>$VAR[RatingOverlayVar]</label>
 							<scroll>true</scroll>
 							<textcolor>$PARAM[overlaycolor]</textcolor>
 						</control>
@@ -606,13 +606,13 @@
 						</control>
 						<control type="label" description="l2">
 							<left>355r</left>
-							<top>-295</top>
-							<height>$PARAM[itemheight]</height>
+							<top>0</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
 							<shadowcolor>$PARAM[overlayshadow]</shadowcolor>
-							<label>$VAR[ContainerRatingOverlayVar]</label>
+							<label>$VAR[RatingOverlayVar]</label>
 							<scroll>true</scroll>
 							<textcolor>$PARAM[overlaycolor]</textcolor>
 						</control>
@@ -640,8 +640,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>1916r</left>
-							<top>-379</top>
-							<height>$PARAM[itemheight]</height>
+							<top>15</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -665,8 +665,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>1931r</left>
-							<top>-386</top>
-							<height>$PARAM[itemheight]</height>
+							<top>0</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1717,8 +1717,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>489r</left>
-									<top>-245</top>
-									<height>$PARAM[itemheight]</height>
+									<top>0</top>
+									<height>46.5</height>
 									<width>100</width>
 									<font>ListDetailsSmall</font>
 									<align>center</align>
@@ -1790,8 +1790,8 @@
 									</control>
 									<control type="label" description="l2">
 										<left>489r</left>
-										<top>-245</top>
-										<height>$PARAM[itemheight]</height>
+										<top>0</top>
+										<height>46.5</height>
 										<width>100</width>
 										<font>ListDetailsSmall</font>
 										<align>center</align>

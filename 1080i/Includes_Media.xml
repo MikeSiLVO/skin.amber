@@ -1351,8 +1351,8 @@
 					<control type="group">
 						<control type="label" description="l2">
 							<left>94r</left>
-							<top>-255</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1511,8 +1511,8 @@
 						<control type="label" description="l2">
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
 							<left>94r</left>
-							<top>-360</top>
-							<height>$PARAM[itemheight]</height>
+							<top>16</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1524,8 +1524,8 @@
 						<control type="label" description="l2">
 							<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
 							<left>96r</left>
-							<top>-358</top>
-							<height>$PARAM[itemheight]</height>
+							<top>16</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1541,8 +1541,8 @@
 						<control type="label" description="l2">
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
 							<left>95r</left>
-							<top>-129</top>
-							<height>$PARAM[itemheight]</height>
+							<top>16</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1554,8 +1554,8 @@
 						<control type="label" description="l2">
 							<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99)</visible>
 							<left>96r</left>
-							<top>-126</top>
-							<height>$PARAM[itemheight]</height>
+							<top>16</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1587,8 +1587,8 @@
 						<visible>!$PARAM[isBanner] + !String.IsEmpty(Container.Viewmode)</visible>
 						<control type="label" description="l2">
 							<left>94r</left>
-							<top>-255</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1603,8 +1603,8 @@
 						<visible>$PARAM[isBanner] + !String.IsEmpty(Container.Viewmode)</visible>
 						<control type="label" description="l2">
 							<left>94r</left>
-							<top>-42</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1656,8 +1656,8 @@
 						<control type="label" description="l2">
 							<visible>!$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-244</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1670,8 +1670,8 @@
 						<control type="label" description="l2">
 							<visible>!$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-284</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1684,8 +1684,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + !$PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-150</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1698,8 +1698,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + $PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-244</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1712,8 +1712,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-180</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1726,8 +1726,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-244</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1744,8 +1744,8 @@
 						<control type="label" description="l2">
 							<visible>!$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium]</visible>
 							<left>94r</left>
-							<top>-210</top>
-							<height>$PARAM[itemheight]</height>
+							<top>30</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1758,8 +1758,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-130</top>
-							<height>$PARAM[itemheight]</height>
+							<top>22</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1772,8 +1772,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-145</top>
-							<height>$PARAM[itemheight]</height>
+							<top>30</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1786,8 +1786,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-210</top>
-							<height>$PARAM[itemheight]</height>
+							<top>30</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1804,8 +1804,8 @@
 						<control type="label" description="l2">
 							<visible>!$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-156</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1818,8 +1818,8 @@
 						<control type="label" description="l2">
 							<visible>!$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-156</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1832,8 +1832,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + !$PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-87</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1846,8 +1846,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + $PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-144</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1860,8 +1860,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-110</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1874,8 +1874,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-156</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1892,8 +1892,8 @@
 						<control type="label" description="l2">
 							<visible>!$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-87</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1906,8 +1906,8 @@
 						<control type="label" description="l2">
 							<visible>!$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isLowWidget]</visible>
 							<left>94r</left>
-							<top>-87</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1920,8 +1920,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + !$PARAM[isLowWidget] + !$PARAM[isTripleShelvesTogether]</visible>
 							<left>94r</left>
-							<top>-150</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1934,8 +1934,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + $PARAM[isLowWidget] + !$PARAM[isTripleShelvesTogether]</visible>
 							<left>94r</left>
-							<top>-244</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1948,8 +1948,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-80</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1962,8 +1962,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
 							<left>94r</left>
-							<top>-87</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -1976,8 +1976,8 @@
 						<control type="label" description="l2">
 							<visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge] + $PARAM[isTripleShelvesTogether]</visible>
 							<left>94r</left>
-							<top>-37</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -2004,8 +2004,8 @@
 					</control>
 					<control type="label" description="l2">
 						<left>92r</left>
-						<top>-255</top>
-						<height>$PARAM[itemheight]</height>
+						<top>12</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
@@ -2139,8 +2139,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>246r</left>
-							<top>-255</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -2198,8 +2198,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>937r</left>
-							<top>-121</top>
-							<height>$PARAM[itemheight]</height>
+							<top>16</top>
+							<height>53</height>
 							<width>100</width>
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
@@ -2222,8 +2222,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>317r</left>
-							<top>-142</top>
-							<height>$PARAM[itemheight]</height>
+							<top>16</top>
+							<height>53</height>
 							<width>100</width>
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
@@ -2251,8 +2251,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>244r</left>
-							<top>-251</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>53</height>
 							<width>100</width>
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
@@ -2274,8 +2274,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>477r</left>
-							<top>-39</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>50.2</height>
 							<width>100</width>
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
@@ -2298,8 +2298,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>246r</left>
-							<top>-98</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>48.5</height>
 							<width>100</width>
 							<font>ListDetailsExtraSmall</font>
 							<align>center</align>
@@ -2321,8 +2321,8 @@
 						</control>
 						<control type="label" description="l2">
 							<left>246.5r</left>
-							<top>-159</top>
-							<height>$PARAM[itemheight]</height>
+							<top>12</top>
+							<height>46.5</height>
 							<width>100</width>
 							<font>ListDetailsSmall</font>
 							<align>center</align>
@@ -2350,8 +2350,8 @@
 								<control type="label" description="l2">
 									<visible>!$PARAM[isLowWidget]</visible>
 									<left>241r</left>
-									<top>-244</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2377,8 +2377,8 @@
 								<control type="label" description="l2">
 									<visible>!$PARAM[isLowWidget]</visible>
 									<left>175r</left>
-									<top>-156</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>41.6</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2403,8 +2403,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>197r</left>
-									<top>-185</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>45.1</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2434,8 +2434,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>241r</left>
-									<top>-156</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2461,8 +2461,8 @@
 								<control type="label" description="l2">
 									<visible>!$PARAM[isLowWidget]</visible>
 									<left>175r</left>
-									<top>-96</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>41.6</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2487,8 +2487,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>195r</left>
-									<top>-111</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2517,8 +2517,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>485r</left>
-									<top>-243</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2544,8 +2544,8 @@
 								<control type="label" description="l2">
 									<visible>!$PARAM[isLowWidget]</visible>
 									<left>347r</left>
-									<top>-156</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>41.6</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2570,8 +2570,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>371r</left>
-									<top>-180</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2600,8 +2600,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>485r</left>
-									<top>-210</top>
-									<height>$PARAM[itemheight]</height>
+									<top>30</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2627,8 +2627,8 @@
 								<control type="label" description="l2">
 									<visible>!$PARAM[isLowWidget]</visible>
 									<left>347.5r</left>
-									<top>-135</top>
-									<height>$PARAM[itemheight]</height>
+									<top>22</top>
+									<height>41.6</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2653,8 +2653,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>371r</left>
-									<top>-145</top>
-									<height>$PARAM[itemheight]</height>
+									<top>30</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2683,8 +2683,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>681r</left>
-									<top>-85</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2710,8 +2710,8 @@
 								<control type="label" description="l2">
 									<visible>!$PARAM[isLowWidget]</visible>
 									<left>440r</left>
-									<top>-45</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>41.6</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2736,8 +2736,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>647r</left>
-									<top>-79</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2762,8 +2762,8 @@
 								</control>
 								<control type="label" description="l2">
 									<left>697r</left>
-									<top>-85</top>
-									<height>$PARAM[itemheight]</height>
+									<top>12</top>
+									<height>48.5</height>
 									<width>100</width>
 									<font>ListDetailsExtraSmall</font>
 									<align>center</align>
@@ -2952,8 +2952,8 @@
 					<control type="label" description="l2">
 						<visible>[$PARAM[isFocused] + $PARAM[hasFocus]]</visible>
 						<left>94r</left>
-						<top>-255</top>
-						<height>$PARAM[itemheight]</height>
+						<top>12</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
@@ -2965,8 +2965,8 @@
 					<control type="label" description="l2">
 						<visible>![$PARAM[isFocused] + $PARAM[hasFocus]]</visible>
 						<left>94r</left>
-						<top>-255</top>
-						<height>$PARAM[itemheight]</height>
+						<top>12</top>
+						<height>46.5</height>
 						<width>100</width>
 						<font>ListDetailsSmall</font>
 						<align>center</align>
