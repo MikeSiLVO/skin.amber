@@ -295,7 +295,7 @@
 			<include condition="$PARAM[isFocused]" content="TopRightOverlayFanartItems">
 				<param name="isLandscape">$PARAM[isLandscape]</param>
 				<param name="isSquare">$PARAM[isSquare]</param>
-				<param name="overlaycolor" value="$VAR[HighlightColor]" />
+				<param name="overlaycolor" value="$VAR[MediaWidgetsHighlightColor]" />
 				<param name="overlayshadow" value="" />
 			</include>
 		</definition>
