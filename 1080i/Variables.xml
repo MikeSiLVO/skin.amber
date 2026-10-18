@@ -1057,11 +1057,6 @@
 		<value>$LOCALIZE[31979]</value>
 	</variable>
 
-	<variable name="TVGuideArt">
-		<value condition="!String.IsEmpty(ListItem.Property(Art(landscape)))">$INFO[ListItem.Property(Art(landscape))]</value>
-		<value condition="String.IsEmpty(ListItem.Property(Art(landscape)))">$INFO[ListItem.Property(Art(fanart))]</value>
-	</variable>
-
 	<variable name="SeasonEpisodeLabel">
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(air_day))">$INFO[ListItem.Property(air_time)]$INFO[ListItem.Studio, @ ,]</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday))">$INFO[ListItem.Property(airtime)]$INFO[ListItem.Studio, @ ,]</value>

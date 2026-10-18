@@ -341,15 +341,6 @@
 		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
 	</variable>
 	<!-- Parameter to pass to themoviedb.helper depending on available infolabels -->
-	<variable name="TMDbParam">
-		<value condition="!String.IsEmpty(ListItem.Property(tmdb_id))">tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.Property(imdb_id))">imdb_id=$INFO[ListItem.Property(imdb_id)]</value>
-		<value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.IMDBNumber) + !String.StartsWith(ListItem.IMDBNumber,xx)">imdb_id=$INFO[ListItem.IMDBNumber]</value>
-		<value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.TVShowTitle)">query=$INFO[ListItem.TVShowTitle]</value>
-		<value condition="!String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.Year)">query=$INFO[ListItem.Title]&amp;year=$INFO[ListItem.Year]</value>
-		<value condition="!String.IsEmpty(ListItem.Title)">query=$INFO[ListItem.Title]</value>
-		<value>query=$INFO[ListItem.Label]</value>
-	</variable>
 	<!-- Media type for themoviedb.helper: movie or tvshow -->
 	<variable name="TMDbMediaType">
 		<value condition="String.IsEqual(ListItem.DBType,movie) | ListItem.IsCollection | String.IsEqual(ListItem.DBType,set)">movie</value>

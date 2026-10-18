@@ -3958,49 +3958,6 @@
 		</definition>
 	</include>
 
-	<include name="SetLayout">
-		<param name="viewid" />
-		<definition>
-			<itemlayout height="410" width="232.5">
-				<include content="GenericThumbIconTemplate">
-					<param name="isFocused">false</param>
-					<param name="iconwidth">232.5</param>
-					<param name="iconheight">326</param>
-					<param name="iconoffset">0</param>
-					<param name="iconimage">$INFO[ListItem.Icon]</param>
-					<param name="fallbackicon">DefaultActorPoster.png</param>
-					<param name="shadowoffset">8</param>
-					<param name="bordersizeLT">12</param>
-					<param name="bordersizeRB">20</param>
-					<param name="belowdoublelabelvisibility">true</param>
-					<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
-					<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
-					<param name="aspect">stretch</param>
-					<param name="isSmallIcon">true</param>
-				</include>
-			</itemlayout>
-			<focusedlayout height="410" width="232.5">
-				<include content="GenericThumbIconTemplate">
-					<param name="isFocused">true</param>
-					<param name="hasFocus">Control.HasFocus($PARAM[viewid])</param>
-					<param name="iconwidth">232.5</param>
-					<param name="iconheight">326</param>
-					<param name="iconoffset">0</param>
-					<param name="iconimage">$INFO[ListItem.Icon]</param>
-					<param name="fallbackicon">DefaultActorPoster.png</param>
-					<param name="shadowoffset">8</param>
-					<param name="bordersizeLT">12</param>
-					<param name="bordersizeRB">20</param>
-					<param name="belowdoublelabelvisibility">true</param>
-					<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
-					<param name="belowdoublelabel2">$INFO[ListItem.Year]</param>
-					<param name="aspect">stretch</param>
-					<param name="isSmallIcon">true</param>
-				</include>
-			</focusedlayout>
-		</definition>
-	</include>
-
 	<include name="CastLayout">
 		<param name="viewid" />
 		<param name="belowdoublelabel1">$INFO[ListItem.Label]</param>
