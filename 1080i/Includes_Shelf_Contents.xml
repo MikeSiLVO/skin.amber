@@ -1141,7 +1141,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">$PARAM[aspect]</param>
 						<param name="align">$PARAM[align]</param>
@@ -1181,7 +1182,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback] + String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">scale</param>
 						<param name="align">$PARAM[align]</param>
@@ -1341,7 +1343,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">$PARAM[aspect]</param>
 						<param name="align">$PARAM[align]</param>
@@ -1380,7 +1383,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback] + String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">scale</param>
 						<param name="align">$PARAM[align]</param>
@@ -1540,7 +1544,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">$PARAM[aspect]</param>
 						<param name="align">$PARAM[align]</param>
@@ -1580,7 +1585,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback] + String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">scale</param>
 						<param name="align">$PARAM[align]</param>
@@ -1752,7 +1758,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">$PARAM[aspect]</param>
 						<param name="align">$PARAM[align]</param>
@@ -1886,7 +1893,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">$PARAM[aspect]</param>
 						<param name="align">$PARAM[align]</param>
@@ -2019,7 +2027,8 @@
 				<control type="group">
 					<visible>!$PARAM[showLabelFallback]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">$PARAM[aspect]</param>
 						<param name="align">$PARAM[align]</param>
@@ -2190,7 +2199,8 @@
 				<control type="group">
 					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
 						<param name="isBanner">true</param>
 						<param name="isTripleRow">$PARAM[isTripleRow]</param>
@@ -2223,7 +2233,8 @@
 				<control type="group">
 					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
 						<param name="isBanner">true</param>
 						<param name="isTripleRow">$PARAM[isTripleRow]</param>
@@ -2342,7 +2353,8 @@
 				<control type="group">
 					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
 						<param name="isBanner">true</param>
 						<param name="isTripleRow">$PARAM[isTripleRow]</param>
@@ -2372,7 +2384,8 @@
 				<control type="group">
 					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
 						<param name="isBanner">true</param>
 						<param name="isTripleRow">$PARAM[isTripleRow]</param>
@@ -2491,7 +2504,8 @@
 				<control type="group">
 					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
 						<param name="isBanner">true</param>
 						<param name="isTripleRow">$PARAM[isTripleRow]</param>
@@ -2522,7 +2536,8 @@
 				<control type="group">
 					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
 						<param name="isBanner">true</param>
 						<param name="isTripleRow">$PARAM[isTripleRow]</param>
@@ -2642,7 +2657,8 @@
 				<control type="group">
 					<visible>![String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
 						<param name="isBanner">true</param>
 						<param name="isTripleRow">$PARAM[isTripleRow]</param>
@@ -2673,7 +2689,8 @@
 				<control type="group">
 					<visible>[String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))]</visible>
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="isSmallIcon">true</param>
 						<param name="isBanner">true</param>
 						<param name="isTripleRow">$PARAM[isTripleRow]</param>
@@ -2770,7 +2787,8 @@
 					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<include content="GenericThumbIconTemplate">
-					<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+					<param name="isFocused">true</param>
+					<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 					<param name="iconwidth">159</param>
 					<param name="iconheight">$PARAM[iconheight]</param>
 					<param name="iconoffset">0</param>
@@ -2825,7 +2843,8 @@
 					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<include content="GenericThumbIconTemplate">
-					<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+					<param name="isFocused">true</param>
+					<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 					<param name="iconwidth">182</param>
 					<param name="iconheight">$PARAM[iconheight]</param>
 					<param name="iconoffset">0</param>
@@ -2880,7 +2899,8 @@
 					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<include content="GenericThumbIconTemplate">
-					<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+					<param name="isFocused">true</param>
+					<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 					<param name="iconwidth">228</param>
 					<param name="iconheight">$PARAM[iconheight]</param>
 					<param name="iconoffset">0</param>
@@ -2945,7 +2965,8 @@
 			</itemlayout>
 			<focusedlayout height="220" width="159" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
 				<include content="GenericThumbIconTemplateWeather">
-					<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+					<param name="isFocused">true</param>
+					<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 					<param name="iconwidth">159</param>
 					<param name="iconheight">159</param>
 					<param name="iconoffset">0</param>
@@ -2985,7 +3006,8 @@
 			</itemlayout>
 			<focusedlayout height="252" width="182" condition="$PARAM[isTripleRow] + !$PARAM[isTripleRowLarge]">
 				<include content="GenericThumbIconTemplateWeather">
-					<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+					<param name="isFocused">true</param>
+					<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 					<param name="iconwidth">182</param>
 					<param name="iconheight">182</param>
 					<param name="iconoffset">0</param>
@@ -3025,7 +3047,8 @@
 			</itemlayout>
 			<focusedlayout height="315" width="228" condition="[!$PARAM[isTripleRow] | [$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]]">
 				<include content="GenericThumbIconTemplateWeather">
-					<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+					<param name="isFocused">true</param>
+					<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 					<param name="iconwidth">228</param>
 					<param name="iconheight">228</param>
 					<param name="iconoffset">0</param>
@@ -3091,7 +3114,8 @@
 			<focusedlayout height="$PARAM[artworkheightmed]" width="$PARAM[artworkwidthmed]">
 				<control type="group">
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus($PARAM[id1])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id1])</param>
 						<param name="iconimage">$PARAM[iconimage]</param>
 						<param name="aspect">$PARAM[aspect]</param>
 						<param name="align">$PARAM[align]</param>

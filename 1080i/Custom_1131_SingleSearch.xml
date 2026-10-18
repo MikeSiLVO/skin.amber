@@ -95,7 +95,8 @@
 				</itemlayout>
 				<focusedlayout height="326" width="232.5">
 					<include content="GenericThumbIconTemplate">
-						<param name="isFocused">Control.HasFocus(101)</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus(101)</param>
 						<param name="isSearch">true</param>
 						<param name="iconwidth">232.5</param>
 						<param name="iconheight">326</param>

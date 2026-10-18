@@ -30,6 +30,7 @@
 		<definition>
 			<include content="GenericThumbIconTemplate">
 				<param name="isFocused">$PARAM[isFocused]</param>
+				<param name="hasFocus">$PARAM[hasFocus]</param>
 				<param name="isSearch">true</param>
 				<param name="iconwidth">310</param>
 				<param name="iconheight">310</param>
@@ -101,7 +102,8 @@
 				</itemlayout>
 				<focusedlayout height="226" width="310">
 					<include content="GenericEpisodeIconBig">
-						<param name="isFocused">Control.HasFocus($PARAM[id])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id])</param>
 						<param name="isSearch">true</param>
 					</include>
 				</focusedlayout>
@@ -171,7 +173,8 @@
 				</itemlayout>
 				<focusedlayout height="326" width="232.5">
 					<include content="GenericPosterIconSmall">
-						<param name="isFocused">Control.HasFocus($PARAM[id])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id])</param>
 						<param name="isSearch">true</param>
 						<param name="aspect">stretch</param>
 					</include>
@@ -238,7 +241,8 @@
 				</itemlayout>
 				<focusedlayout height="310" width="310">
 					<include content="GenericMusicIconSearch">
-						<param name="isFocused">Control.HasFocus($PARAM[id])</param>
+						<param name="isFocused">true</param>
+						<param name="hasFocus">Control.HasFocus($PARAM[id])</param>
 					</include>
 				</focusedlayout>
 				<content target="$PARAM[contenttype]">$PARAM[content]</content>
