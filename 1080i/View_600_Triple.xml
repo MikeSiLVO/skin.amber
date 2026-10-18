@@ -197,7 +197,7 @@
 					<width>434</width>
 					<height>1020</height>
 					<orientation>vertical</orientation>
-					<onleft condition="[Control.IsVisible(617) + Control.IsVisible(6000)] | [!Control.IsVisible(617) | !Skin.HasSetting(Show.EHJumpToLetter) | ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]]">6000</onleft>
+					<onleft condition="[Control.IsVisible(617) + Control.IsVisible(6000)] | [!Control.IsVisible(617) | !Skin.HasSetting(Show.JumpToLetter) | ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]]">6000</onleft>
 					<onleft condition="Control.IsVisible(617)">617</onleft>
 					<onright condition="Container.Content(tvshows) + Control.IsVisible(6001)">6001</onright>
 					<onright condition="Container.Content(artists) + Control.IsVisible(6003)">6003</onright>
@@ -885,7 +885,7 @@
 				<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
 				<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
 				<onright>600</onright>
-				<visible>!Skin.HasSetting(Show.EHJumpToLetter) | ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
+				<visible>!Skin.HasSetting(Show.JumpToLetter) | ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
 			</control>
 		</control>
 	</include>

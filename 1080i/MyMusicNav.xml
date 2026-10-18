@@ -267,6 +267,6 @@
 				</include>
 			</control>
 		</control>
-		<include condition="Skin.HasSetting(Show.EHJumpToLetter)">ScriptJumpToLetter</include>
+		<include condition="Skin.HasSetting(Show.JumpToLetter)">LetterJump</include>
 	</controls>
 </window>

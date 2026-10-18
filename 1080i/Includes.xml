@@ -2092,56 +2092,10 @@
 		</control>
 	</include>
 
-	<!-- The following thanks to jurialmunkey and his arctic zephyr 2 skin -->
-	<!-- Includes for alphabet strip using prevletter and nextletter actions -->
-	<include name="AlphabetLetter">
-		<control type="label">
-			<width>42</width>
-			<height>42</height>
-			<label>$PARAM[label]</label>
-			<scroll>true</scroll>
-			<align>center</align>
-			<font>ListDetails</font>
-			<visible>!String.IsEqual(ListItem.SortLetter,$PARAM[label])</visible>
-		</control>
-		<control type="label">
-			<width>42</width>
-			<height>42</height>
-			<label>[B]$PARAM[label][/B]</label>
-			<scroll>true</scroll>
-			<align>center</align>
-			<textcolor>$VAR[HighlightColor]</textcolor>
-			<font>ListDetails</font>
-			<visible>String.IsEqual(ListItem.SortLetter,$PARAM[label])</visible>
-		</control>
-	</include>
-	<include name="AlphabetNumber">
-		<control type="label">
-			<width>42</width>
-			<height>42</height>
-			<label>#</label>
-			<scroll>true</scroll>
-			<align>center</align>
-			<font>ListDetails</font>
-			<visible>!$EXP[SortLetterIsNumber]</visible>
-		</control>
-		<control type="label">
-			<width>42</width>
-			<height>42</height>
-			<label>[B]#[/B]</label>
-			<scroll>true</scroll>
-			<align>center</align>
-			<textcolor>$VAR[HighlightColor]</textcolor>
-			<font>ListDetails</font>
-			<visible>$EXP[SortLetterIsNumber]</visible>
-		</control>
-	</include>
-
-	<!-- The following thanks to sualfred for his Embuary Helper script and to MikeSiLVO for his implementation -->
 	<!-- Jump to letter includes -->
-	<include name="ScriptJumpToLetter">
+	<include name="LetterJump">
 		<control type="group">
-			<visible>Skin.HasSetting(Enable.EmbuaryHelper) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31157]) + [Container.HasNext | Container.HasPrevious] + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
+			<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31157]) + [Container.HasNext | Container.HasPrevious] + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
 			<control type="button" id="61501">
 				<visible>![Control.IsVisible(56) | Control.IsVisible(58)]</visible>
 				<label />
@@ -2175,7 +2129,7 @@
 					<texture border="0,30,0,0">common/ViewMenu.png</texture>
 				</control>
 				<control type="list" id="615">
-					<visible>Skin.HasSetting(Show.JumpToLetter) + Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
+					<visible>[String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
 					<top>43</top>
 					<width>40</width>
 					<height>1040</height>
@@ -2214,7 +2168,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
-					<content>plugin://script.embuary.helper/?info=jumptoletter&amp;showall=true&amp;reload=$INFO[Container.NumItems]</content>
+					<content>plugin://script.skin.info.service/?action=letter_jump&amp;target=$VAR[CurrentViewID]&amp;reload=$INFO[Container.NumItems]$INFO[Container.SortMethod]$INFO[Container.SortOrder]$INFO[Container.FolderPath]</content>
 				</control>
 			</control>
 			<control type="group">
@@ -2256,13 +2210,13 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
-					<content>plugin://script.embuary.helper/?info=jumptoletter&amp;showall=true&amp;reload=$INFO[Container.NumItems]</content>
+					<content>plugin://script.skin.info.service/?action=letter_jump&amp;target=$VAR[CurrentViewID]&amp;reload=$INFO[Container.NumItems]$INFO[Container.SortMethod]$INFO[Container.SortOrder]$INFO[Container.FolderPath]</content>
 				</control>
 			</control>
 		</control>
 		<!-- Jump to letter for Triple view -->
 		<control type="group">
-			<visible>Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(Container.Viewmode,$LOCALIZE[31157]) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
+			<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31157]) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561])]</visible>
 			<control type="button" id="61701">
 				<label />
 				<left>1</left>
@@ -2317,7 +2271,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
-					<content>plugin://script.embuary.helper/?info=jumptoletter&amp;showall=true&amp;reload=$INFO[Container.NumItems]</content>
+					<content>plugin://script.skin.info.service/?action=letter_jump&amp;target=600&amp;reload=$INFO[Container.NumItems]$INFO[Container.SortMethod]$INFO[Container.SortOrder]$INFO[Container.FolderPath]</content>
 				</control>
 			</control>
 		</control>

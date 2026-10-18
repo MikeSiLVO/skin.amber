@@ -634,6 +634,7 @@
 				<scroll>true</scroll>
 				<include>HiddenButton</include>
 			</control>
+			<include condition="Skin.HasSetting(Show.JumpToLetter)">LetterJump</include>
 		</controls>
 	</include>
 

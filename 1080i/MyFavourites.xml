@@ -115,5 +115,6 @@
 				</control>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(Show.JumpToLetter)">LetterJump</include>
 	</controls>
 </window>

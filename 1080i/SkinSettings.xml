@@ -410,12 +410,6 @@
 								<param name="skinsetting" value="Show.JumpToLetter" />
 							</include>
 							<include content="YesNoSettingItem">
-								<param name="itemid" value="10" />
-								<param name="itemlabel" value="      $LOCALIZE[31670]" />
-								<param name="skinsetting" value="Show.EHJumpToLetter" />
-								<param name="itemvisibility" value="Skin.HasSetting(Show.JumpToLetter) + Skin.HasSetting(Enable.EmbuaryHelper)" />
-							</include>
-							<include content="YesNoSettingItem">
 								<param name="itemid" value="11" />
 								<param name="itemlabel" value="$LOCALIZE[31196]" />
 								<param name="skinsetting" value="Enable.WatchedInRecent" />
@@ -489,7 +483,6 @@
 								<label>$LOCALIZE[31745]</label>
 								<label2>$LOCALIZE[107]</label2>
 								<onclick>Skin.ToggleSetting(Enable.EmbuaryHelper)</onclick>
-								<onclick>Skin.Reset(Show.EHJumpToLetter)</onclick>
 							</item>
 							<item id="24">
 								<visible>!Skin.HasSetting(Enable.EmbuaryHelper) | !System.HasAddon(script.embuary.helper)</visible>

@@ -41,5 +41,6 @@
 		<include>Time</include>
 		<include>PVRSideBlade</include>
 		<include>TouchButtons</include>
+		<include condition="Skin.HasSetting(Show.JumpToLetter)">LetterJump</include>
 	</controls>
 </window>
