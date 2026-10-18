@@ -593,6 +593,10 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Скорость воспроизведения"
 
+msgctxt "#31142"
+msgid "Library nodes"
+msgstr "Узлы медиатеки"
+
 msgctxt "#31143"
 msgid "Movies from Studio"
 msgstr "Фильмы студии"

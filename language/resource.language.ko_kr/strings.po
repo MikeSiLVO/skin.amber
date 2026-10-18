@@ -593,6 +593,10 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "재생 속도"
 
+msgctxt "#31142"
+msgid "Library nodes"
+msgstr "라이브러리 노드"
+
 msgctxt "#31143"
 msgid "Movies from Studio"
 msgstr ""

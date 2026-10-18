@@ -593,6 +593,10 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Viteză de redare"
 
+msgctxt "#31142"
+msgid "Library nodes"
+msgstr "Noduri bibliotecă"
+
 msgctxt "#31143"
 msgid "Movies from Studio"
 msgstr ""

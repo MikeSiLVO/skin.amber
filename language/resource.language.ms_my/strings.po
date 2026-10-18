@@ -593,6 +593,10 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Kelajuan main"
 
+msgctxt "#31142"
+msgid "Library nodes"
+msgstr "Nod pustaka"
+
 msgctxt "#31143"
 msgid "Movies from Studio"
 msgstr ""

@@ -593,6 +593,10 @@ msgctxt "#31141"
 msgid "Play speed"
 msgstr "Atskaņošanas ātrums"
 
+msgctxt "#31142"
+msgid "Library nodes"
+msgstr "Bibliotēkas mezgli"
+
 msgctxt "#31143"
 msgid "Movies from Studio"
 msgstr ""
