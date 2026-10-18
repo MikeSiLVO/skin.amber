@@ -412,7 +412,7 @@
 						<top>3</top>
 						<width>1570</width>
 						<height>10</height>
-						<texturebg border="3" colordiffuse="00FFFFFF">colors/white25.png</texturebg>
+						<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
 						<righttexture colordiffuse="FFFF0000">colors/white.png</righttexture>
 						<info>Player.Cuts</info>
 					</control>
