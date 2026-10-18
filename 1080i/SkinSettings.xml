@@ -166,6 +166,10 @@
 								<label>$LOCALIZE[31280]</label>
 								<onclick>RunScript(script.skinshortcuts,type=manage&amp;menu=powermenu)</onclick>
 							</item>
+							<item id="27" description="Reset Menus">
+								<label>$ADDON[script.skinshortcuts 32208]</label>
+								<onclick>RunScript(script.skinshortcuts,type=resetmenus)</onclick>
+							</item>
 							<include content="YesNoSettingItem">
 								<param name="itemid" value="100" />
 								<param name="itemlabel" value="[B]$LOCALIZE[31857][/B]" />
@@ -668,6 +672,11 @@
 							<item id="2" description="Configure Media Views">
 								<label>      $LOCALIZE[31674]</label>
 								<onclick>RunScript(script.skinshortcuts,type=viewselect)</onclick>
+								<visible>Skin.HasSetting(Enable.NewViewSelector)</visible>
+							</item>
+							<item id="17" description="Reset Media Views">
+								<label>      $ADDON[script.skinshortcuts 32209]</label>
+								<onclick>RunScript(script.skinshortcuts,type=resetviews)</onclick>
 								<visible>Skin.HasSetting(Enable.NewViewSelector)</visible>
 							</item>
 							<include content="CustomDialogSettingItem">
