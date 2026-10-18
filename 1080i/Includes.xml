@@ -4,7 +4,7 @@
 	_1114 Custom_Quit * define Quit menu
 	_1119 CustomAddons * browse addons united under the same roof
 	_1120 CustomGameSettings * Game Settings from the Game OSD
-	_1121 CustomInfoSelect * Select to search library, show extendedinfo, or fanart delay time
+	_1121 CustomInfoSelect * Select to search library or fanart delay time
 	_1122 Custom_1122_Search * Search without addons, thanks to sualfred and jurialmunkey
 	_1123 Custom_1123_PausedOverlay * Overlay to show info when paused, thanks to mikeSiLVO -->
 	<include file="script-skinshortcuts-includes.xml" />
