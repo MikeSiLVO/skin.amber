@@ -1654,14 +1654,6 @@
 							<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
 							<selected>System.AddonIsEnabled(plugin.video.themoviedb.helper)</selected>
 						</control>
-						<control type="radiobutton" id="91128">
-							<label>script.skin.helper.widgets</label>
-							<label2>$INFO[System.AddonVersion(script.skin.helper.widgets)]             </label2>
-							<onclick condition="System.AddonIsEnabled(service.skin.widgets)">Addon.OpenSettings(script.skin.helper.widgets)</onclick>
-							<onclick condition="System.HasAddon(script.skin.helper.widgets) + !System.AddonIsEnabled(script.skin.helper.widgets)">EnableAddon(script.skin.helper.widgets)</onclick>
-							<onclick condition="!System.HasAddon(service.skin.widgets)">InstallAddon(script.skin.helper.widgets)</onclick>
-							<selected>System.AddonIsEnabled(script.skin.helper.widgets)</selected>
-						</control>
 					</control>
 				</control>
 			</control>
