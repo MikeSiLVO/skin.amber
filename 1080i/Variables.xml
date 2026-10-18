@@ -296,7 +296,6 @@
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday)) + !Skin.HasSetting(ShowEndTime) + !Skin.HasSetting(Enable.HourMinutes)">$VAR[SingleItemLabel]$INFO[ListItem.Premiered, (,)][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Duration, • ,][/COLOR]</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday)) + Skin.HasSetting(ShowEndTime) + Skin.HasSetting(Enable.HourMinutes)">$VAR[SingleItemLabel]$INFO[ListItem.Premiered, (,)][COLOR $VAR[LabelTextColor]]$VAR[WidgetItemDurationVar, • ,] ($LOCALIZE[31692] $INFO[ListItem.EndTime])[/COLOR]</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday)) + !Skin.HasSetting(ShowEndTime) + Skin.HasSetting(Enable.HourMinutes)">$VAR[SingleItemLabel]$INFO[ListItem.Premiered, (,)][COLOR $VAR[LabelTextColor]]$VAR[WidgetItemDurationVar, • ,][/COLOR]</value>
-		<value condition="!String.IsEmpty(ListItem.Property(recommendedtvshowtitle))">$VAR[SingleItemLabel]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Label3))">$VAR[SingleItemLabel]$INFO[ListItem.Label2, • ,][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Property(Label3), • ][/COLOR]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Outlook))">$INFO[ListItem.Property(LongDay),[B],[/B]]$INFO[ListItem.Property(Time),[B],[/B]]$INFO[ListItem.Property(ShortDate), • [B],[/B]][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Property(Outlook), • ,][/COLOR]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(TotalEpisodes)) + String.IsEmpty(ListItem.Duration)">$VAR[SingleItemLabel]$INFO[ListItem.Year, (,)][COLOR $VAR[LabelTextColor]]$INFO[ListItem.Property(TotalEpisodes), • ,]$INFO[ListItem.Property(UnWatchedEpisodes), (,)]$INFO[ListItem.Rating, • ][/COLOR]</value>
@@ -316,7 +315,6 @@
 	</variable>
 
 	<variable name="WidgetItemLabel">
-		<value condition="!String.IsEmpty(ListItem.Property(recommendedtvshowtitle))">$INFO[ListItem.Label2]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Label3))">$INFO[ListItem.Label] - $INFO[ListItem.Label2][CR]$INFO[ListItem.Property(Label3)]</value>
 		<value condition="!String.IsEmpty(ListItem.Artist)">$INFO[ListItem.Label][CR]$INFO[ListItem.Label2]</value>
 		<value condition="String.Contains(ListItem.Path,pvr://channels) + !String.IsEmpty(ListItem.StartTime)">$INFO[ListItem.StartTime] $INFO[ListItem.Title][CR]$INFO[ListItem.NextStartTime] $INFO[ListItem.NextTitle]</value>

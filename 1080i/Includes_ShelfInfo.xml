@@ -67,7 +67,6 @@
 		<value condition="String.IsEqual(Container.ListItem.DBType,musicvideo) + String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
 		<value condition="[String.IsEqual(Container.ListItem.DBType,video) + !String.Contains(Container.ListItem.FolderPath,type=person)] + !Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDuration)]</value>
 		<value condition="[String.IsEqual(Container.ListItem.DBType,video) + !String.Contains(Container.ListItem.FolderPath,type=person)] + Skin.HasSetting(Enable.HourMinutes)">[COLOR $VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]  [COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
-		<value condition="!String.IsEmpty(Container.ListItem.Property(recommendedtitle)) + !String.IsEmpty(Container.ListItem.Property(recommendedrating))">[COLOR $VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Property(recommendedrating)]</value>
 	</variable>
 
 	<variable name="ShelfInfoTVShowDetails">
@@ -196,7 +195,6 @@
 		<value condition="!String.IsEmpty(Container.ListItem.Property(Artist_Description))">$INFO[Container.ListItem.Property(Artist_Description)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.PlotOutline) + String.IsEmpty(Container.ListItem.Plot)">$INFO[Container.ListItem.PlotOutline]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Comment)">$INFO[Container.ListItem.Comment]</value>
-		<value condition="!String.IsEmpty(Container.ListItem.Property(recommendedplot))">$INFO[Container.ListItem.Property(recommendedplot)]</value>
 		<value>$INFO[Container.ListItem.Plot]</value>
 	</variable>
 
@@ -820,7 +818,7 @@
 					<font>font12_title</font>
 					<label />
 					<scroll>true</scroll>
-					<visible>!String.IsEmpty(Container.ListItem.Title) | !String.IsEmpty(Container.ListItem.Property(recommendedtitle)) | [String.IsEmpty(Container.ListItem.Title) + !String.IsEmpty(Container.ListItem.Property(Outlook))]</visible>
+					<visible>!String.IsEmpty(Container.ListItem.Title) | [String.IsEmpty(Container.ListItem.Title) + !String.IsEmpty(Container.ListItem.Property(Outlook))]</visible>
 				</control>
 				<!-- Episode title and number -->
 				<control type="label">
@@ -829,15 +827,6 @@
 					<font>font24_title</font>
 					<label>[COLOR $VAR[HighlightColor]]$INFO[Container.ListItem.TVShowTitle][/COLOR] - $VAR[ShelfInfoSeasonEpisodeLabel] - $INFO[Container.ListItem.Title]</label>
 					<visible>!String.IsEmpty(Container.ListItem.Title) + String.IsEqual(Container.ListItem.DBType,episode)</visible>
-					<scroll>true</scroll>
-				</control>
-				<!-- Recommended Episode title and number -->
-				<control type="label">
-					<width>$PARAM[width]</width>
-					<height>30</height>
-					<font>font24_title</font>
-					<label>[COLOR $VAR[HighlightColor]]$INFO[Container.ListItem.Property(recommendedtvshowtitle)][/COLOR] - $INFO[Container.ListItem.Property(recommendedepisodeno)] - $INFO[Container.ListItem.Property(recommendedtitle)]</label>
-					<visible>!String.IsEmpty(Container.ListItem.Property(recommendedtitle))</visible>
 					<scroll>true</scroll>
 				</control>
 				<!-- Song or music video title -->

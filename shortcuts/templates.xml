@@ -6,7 +6,7 @@
 		<expression name="PositionStandard" nosuffix="true">!horizontalWidgetPos | horizontalWidgetPos=Standard</expression>
 		<expression name="PositionHigh" nosuffix="true">horizontalWidgetPos=High</expression>
 		<expression name="PositionLow" nosuffix="true">horizontalWidgetPos=Low</expression>
-		<expression name="StaticShelf">widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</expression>
+		<expression name="StaticShelf">widgetType IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</expression>
 		<expression name="ScrollingLogo">widgetAutoScroll + widgetArtwork IN Banner,ClearLogo</expression>
 		<expression name="ScrollingLogo2">widgetAutoScroll.2 + widgetArtwork.2 IN Banner,ClearLogo</expression>
 		<expression name="ScrollingLogo3">widgetAutoScroll.3 + widgetArtwork.3 IN Banner,ClearLogo</expression>
@@ -309,7 +309,6 @@
 				<value>scale</value>
 			</var>
 			<var name="labelvisibility">
-				<value condition="widgetType=swrecommendedeps">true</value>
 				<value>false</value>
 			</var>
 			<var name="content">
@@ -346,7 +345,6 @@
 		</propertyGroup>
 		<propertyGroup name="StaticEpisodeShelf">
 			<var name="isEpisodeShelf">
-				<value condition="widgetType=swrecommendedeps">True</value>
 				<value>False</value>
 			</var>
 		</propertyGroup>
@@ -365,7 +363,6 @@
 		</propertyGroup>
 		<propertyGroup name="TwoShelvesStaticIcon">
 			<var name="iconheight">
-				<value condition="widgetType=swrecommendedeps">315</value>
 				<value>228</value>
 			</var>
 		</propertyGroup>
@@ -374,7 +371,6 @@
 		</propertyGroup>
 		<propertyGroup name="ThreeShelvesStaticLabel">
 			<var name="labelfont">
-				<value condition="widgetType=swrecommendedeps">ListDetailsSmall</value>
 				<value>Shelf_Label</value>
 			</var>
 		</propertyGroup>
@@ -2037,7 +2033,6 @@
 			<value>false</value>
 		</var>
 		<var name="textboxvisibility">
-			<value condition="widgetType=swrecommendedeps">false</value>
 			<value>true</value>
 		</var>
 		<var name="textboxfont">
@@ -2061,8 +2056,6 @@
 			<value>74</value>
 		</var>
 		<var name="iconheight">
-			<value condition="widgetType=swrecommendedeps + !widgetRows=3">315</value>
-			<value condition="widgetType=swrecommendedeps + widgetRows=3">252</value>
 			<value condition="widgetType IN system,favouriteaddons,addons,weatherdaily,weatherhourly,weatherdaily,shortweatherdaily,weatherhourly,shortweatherhourly + !widgetRows=3">228</value>
 			<value>182</value>
 		</var>
@@ -2482,7 +2475,7 @@
 		<condition>widgetPath</condition>
 		<condition>shelfLayout=two</condition>
 		<condition>!shelfLayout=three</condition>
-		<condition>![widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
+		<condition>![widgetType IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="ShelfOverlayLabel" />
 		<propertyGroup content="ShelfArtwork" />
@@ -2534,7 +2527,7 @@
 		<condition>widgetPath.2</condition>
 		<condition>shelfLayout=two</condition>
 		<condition>!shelfLayout=three</condition>
-		<condition>![widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
+		<condition>![widgetType.2 IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="ShelfOverlayLabel" suffix=".2" />
 		<propertyGroup content="TwoShelvesTextbox" suffix=".2" />
@@ -2570,7 +2563,7 @@
 		<condition>widgetPath</condition>
 		<condition>shelfLayout=two</condition>
 		<condition>!shelfLayout=three</condition>
-		<condition>widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
+		<condition>widgetType IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="StaticShelfArtwork" />
 		<propertyGroup content="TwoShelvesFirst" />
@@ -2602,7 +2595,7 @@
 		<condition>widgetPath.2</condition>
 		<condition>shelfLayout=two</condition>
 		<condition>!shelfLayout=three</condition>
-		<condition>widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
+		<condition>widgetType.2 IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="StaticShelfArtwork" suffix=".2" />
 		<propertyGroup content="TwoShelvesStaticIcon" suffix=".2" />
@@ -2819,7 +2812,7 @@
 		<condition>widgetPath</condition>
 		<condition>shelfLayout=three</condition>
 		<condition>!shelfLayout=two</condition>
-		<condition>![widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
+		<condition>![widgetType IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="ThreeShelvesFirst" />
 		<propertyGroup content="ShelfArtwork" />
@@ -2952,7 +2945,7 @@
 		<condition>widgetPath.2</condition>
 		<condition>shelfLayout=three</condition>
 		<condition>!shelfLayout=two</condition>
-		<condition>![widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
+		<condition>![widgetType.2 IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="ThreeShelvesSecond" suffix=".2" />
 		<propertyGroup content="ShelfArtwork" suffix=".2" />
@@ -3055,7 +3048,7 @@
 		<condition>widgetPath.3</condition>
 		<condition>shelfLayout=three</condition>
 		<condition>!shelfLayout=two</condition>
-		<condition>![widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
+		<condition>![widgetType.3 IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons]</condition>
 		<propertyGroup content="ShelfCommon" suffix=".3" />
 		<propertyGroup content="ThreeShelvesThird" suffix=".3" />
 		<propertyGroup content="ShelfArtwork" suffix=".3" />
@@ -3142,7 +3135,7 @@
 		<condition>widgetPath</condition>
 		<condition>shelfLayout=three</condition>
 		<condition>!shelfLayout=two</condition>
-		<condition>widgetType IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
+		<condition>widgetType IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" />
 		<propertyGroup content="StaticShelfArtwork" />
 		<propertyGroup content="ThreeShelvesFirst" />
@@ -3188,9 +3181,7 @@
 			<value>true</value>
 		</var>
 		<var name="iconheight">
-			<value condition="widgetType=swrecommendedeps + [!widgetType.2 | !widgetType.3]">315</value>
 			<value condition="widgetType IN system,favouriteaddons,addons,weatherdaily,weatherhourly,weatherdaily,shortweatherdaily,weatherhourly,shortweatherhourly + [!widgetType.2 | !widgetType.3]">228</value>
-			<value condition="widgetType=swrecommendedeps">220</value>
 			<value>159</value>
 		</var>
 		<var name="textboxfont">
@@ -3198,7 +3189,6 @@
 			<value>ListDetailsSmall</value>
 		</var>
 		<var name="isEpisodeShelf">
-			<value condition="widgetType=swrecommendedeps">True</value>
 			<value>False</value>
 		</var>
 		<controls>
@@ -3209,7 +3199,7 @@
 		<condition>widgetPath.2</condition>
 		<condition>shelfLayout=three</condition>
 		<condition>!shelfLayout=two</condition>
-		<condition>widgetType.2 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
+		<condition>widgetType.2 IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" suffix=".2" />
 		<propertyGroup content="ThreeShelvesSecond" suffix=".2" />
 		<propertyGroup content="StaticShelfArtwork" suffix=".2" />
@@ -3246,9 +3236,7 @@
 			<value>true</value>
 		</var>
 		<var name="iconheight">
-			<value condition="widgetType.2=swrecommendedeps + !widgetType.3">315</value>
 			<value condition="widgetType.2 IN addons,favouriteaddons,shortweatherdaily,shortweatherhourly,system,weatherdaily,weatherhourly + !widgetType.3">228</value>
-			<value condition="widgetType.2=swrecommendedeps + widgetType.3">220</value>
 			<value>159</value>
 		</var>
 		<controls>
@@ -3259,7 +3247,7 @@
 		<condition>widgetPath.3</condition>
 		<condition>shelfLayout=three</condition>
 		<condition>!shelfLayout=two</condition>
-		<condition>widgetType.3 IN swrecommendedeps,weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
+		<condition>widgetType.3 IN weatherdaily,weatherhourly,shortweatherdaily,shortweatherhourly,system,favouriteaddons</condition>
 		<propertyGroup content="ShelfCommon" suffix=".3" />
 		<propertyGroup content="ThreeShelvesThird" suffix=".3" />
 		<propertyGroup content="StaticShelfArtwork" suffix=".3" />
@@ -3294,9 +3282,7 @@
 			<value>true</value>
 		</var>
 		<var name="iconheight">
-			<value condition="!widgetType.2 + widgetType.3=swrecommendedeps">315</value>
 			<value condition="!widgetType.2 + widgetType.3 IN addons,favouriteaddons,shortweatherdaily,shortweatherhourly,system,weatherdaily,weatherhourly">228</value>
-			<value condition="widgetType.2 + widgetType.3=swrecommendedeps">220</value>
 			<value>159</value>
 		</var>
 		<controls>
@@ -4233,350 +4219,6 @@
 				<icon>thumbs/systeminfo/square/uptime.png</icon>
 				<property name="Label3">$LOCALIZE[20161]: $INFO[System.TotalUptime]</property>
 				<onclick>ActivateWindow(systeminfo)</onclick>
-			</item>
-		</controls>
-	</template>
-	<template include="RecommendedEpisodesContent" build="true" templateonly="auto">
-		<controls>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.1.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.1.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.1.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.1.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.1.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.1.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.1.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.2.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.2.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.2.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.2.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.2.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.2.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.2.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.2.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.3.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.3.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.3.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.3.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.3.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.3.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.3.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.3.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.4.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.4.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.4.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.4.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.4.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.4.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.4.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.4.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.5.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.5.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.5.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.5.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.5.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.5.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.5.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.5.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.6.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.6.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.6.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.6.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.6.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.6.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.6.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.6.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.6.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.6.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.6.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.7.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.7.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.7.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.7.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.7.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.7.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.7.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.7.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.7.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.7.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.7.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.8.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.8.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.8.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.8.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.8.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.8.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.8.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.8.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.8.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.8.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.8.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.9.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.9.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.9.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.9.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.9.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.9.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.9.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.9.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.10.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.10.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.10.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.10.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.10.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.10.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.10.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.10.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.10.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.10.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.10.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.11.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.11.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.11.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.11.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.11.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.11.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.11.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.11.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.11.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.11.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.11.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.11.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.11.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.11.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.11.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.12.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.12.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.12.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.12.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.12.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.12.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.12.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.12.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.12.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.12.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.12.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.12.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.12.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.12.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.12.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.13.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.13.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.13.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.13.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.13.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.13.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.13.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.13.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.13.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.13.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.13.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.13.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.13.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.13.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.13.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.14.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.14.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.14.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.14.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.14.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.14.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.14.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.14.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.14.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.14.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.14.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.14.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.14.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.14.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.14.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.15.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.15.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.15.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.15.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.15.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.15.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.15.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.15.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.15.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.15.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.15.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.15.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.15.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.15.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.15.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.16.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.16.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.16.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.16.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.16.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.16.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.16.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.16.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.16.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.16.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.16.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.16.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.16.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.16.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.16.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.17.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.17.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.17.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.17.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.17.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.17.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.17.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.17.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.17.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.17.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.17.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.17.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.17.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.17.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.17.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.18.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.18.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.18.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.18.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.18.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.18.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.18.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.18.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.18.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.18.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.18.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.18.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.18.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.18.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.18.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.19.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.19.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.19.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.19.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.19.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.19.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.19.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.19.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.19.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.19.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.19.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.19.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.19.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.19.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.19.File)])</onclick>
-			</item>
-			<item>
-				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.20.Title))</visible>
-				<label>[B]$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle),, • ]$INFO[Window(Home).Property(RecommendedEpisode.20.EpisodeNo)][/B][COLOR White]$INFO[Window(Home).Property(RecommendedEpisode.20.Title), • ]$INFO[Window(Home).Property(RecommendedEpisode.20.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-				<label2>[B]$INFO[Window(Home).Property(RecommendedEpisode.20.EpisodeNo)][/B]</label2>
-				<property name="recommendedfanart">$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.fanart))]</property>
-				<property name="recommendedclearlogo">$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.clearlogo))]</property>
-				<property name="recommendedtvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle)]</property>
-				<property name="recommendedtitle">$INFO[Window(Home).Property(RecommendedEpisode.20.Title)]</property>
-				<property name="recommendedepisode">$INFO[Window(Home).Property(RecommendedEpisode.20.Episode)]</property>
-				<property name="recommendedseason">$INFO[Window(Home).Property(RecommendedEpisode.20.Season)]</property>
-				<property name="recommendedepisodeno">$INFO[Window(Home).Property(RecommendedEpisode.20.EpisodeNo)]</property>
-				<property name="recommendedplot">$INFO[Window(Home).Property(RecommendedEpisode.20.Plot)]</property>
-				<property name="recommendedrating">$INFO[Window(Home).Property(RecommendedEpisode.20.Rating)]</property>
-				<property name="recommendedstudio">$INFO[Window(Home).Property(RecommendedEpisode.20.Studio)]</property>
-				<icon>$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.poster))]</icon>
-				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.20.File)])</onclick>
 			</item>
 		</controls>
 	</template>

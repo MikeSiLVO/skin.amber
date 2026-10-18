@@ -81,9 +81,6 @@
 			<widget name="UnwatchedEpisodes" label="$LOCALIZE[31445]" type="episodes" target="video" icon="DefaultUnwatchedEpisodes.png" visible="Library.HasContent(tvshows)">
 				<path>special://skin/extras/playlists/episodes_unwatched.xsp</path>
 			</widget>
-			<widget name="RecommendedEpisodes" label="$LOCALIZE[31492]" type="swrecommendedeps" target="video" icon="DefaultTVShows.png" visible="Library.HasContent(tvshows) + System.HasAddon(service.skin.widgets)">
-				<path>$INCLUDE[skinshortcuts-template-RecommendedEpisodesContent]</path>
-			</widget>
 		</group>
 		<group name="artists" label="$LOCALIZE[133]" icon="DefaultMusicArtists.png">
 			<widget name="NewArtists" label="$LOCALIZE[31466]" type="artists" target="music" icon="DefaultMusicArtists.png" visible="Library.HasContent(music)">
