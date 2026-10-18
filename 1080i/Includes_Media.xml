@@ -146,416 +146,95 @@
 	</variable>
 
 	<include name="ListWatchedOverlay">
-		<param name="isFocused">false</param>
-		<param name="itemheight">72</param>
-		<param name="BGposy">15</param>
+		<param name="isFocused" default="false" />
+		<param name="itemheight" default="72" />
+		<param name="BGposy" default="15" />
+		<param name="panel" default="List" />
+		<param name="iconleft" default="1295" />
+		<param name="badgeleft" default="1275" />
+		<param name="countleft" default="1250" />
+		<param name="swappediconleft" default="596r" />
+		<param name="swappedaddonleft" default="606r" />
+		<param name="swappedbadgeleft" default="615r" />
+		<param name="swappedcountleft" default="640r" />
 		<definition>
-			<control type="group">
-				<visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
-				<!-- Overlay image when panel is in original position -->
-				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
-					<left>1295</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[Overlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image when panel is swapped -->
-				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
-					<left>596r</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[Overlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image when panel is disabled -->
-				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + $EXP[ListPanelIsDisabled]</visible>
-					<left>46r</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[Overlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image for addons when panel is original position -->
-				<control type="image">
-					<visible>Container.Content(addons) + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
-					<left>1295</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[AddonOverlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image for addons when panel is swapped -->
-				<control type="image">
-					<visible>Container.Content(addons) + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
-					<left>606r</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[AddonOverlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image for addons when panel is disabled -->
-				<control type="image">
-					<visible>Container.Content(addons) + $EXP[ListPanelIsDisabled]</visible>
-					<left>46r</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[AddonOverlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Number of unwatched episodes for tv shows when panel is in oiginal position -->
-				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped]</visible>
-					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
-					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
-						<left>1275</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>1275</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-					</control>
-					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
-						<left>1250</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>1250</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-				</control>
-				<!-- Number of unwatched episodes when panel is swapped -->
-				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped]</visible>
-					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
-					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
-						<left>615r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>615r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-					</control>
-					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
-						<left>640r</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>640r</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-				</control>
-				<!-- Number of unwatched episodes when panel is disabled -->
-				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + $EXP[ListPanelIsDisabled]</visible>
-					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
-					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
-						<left>65r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>65r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-					</control>
-					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
-						<right>-10</right>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<right>-10</right>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-				</control>
-			</control>
+			<include condition="!$PARAM[isFocused]" content="ListWatchedOverlayItems">
+				<param name="itemheight">$PARAM[itemheight]</param>
+				<param name="BGposy">$PARAM[BGposy]</param>
+				<param name="panel">$PARAM[panel]</param>
+				<param name="iconleft">$PARAM[iconleft]</param>
+				<param name="badgeleft">$PARAM[badgeleft]</param>
+				<param name="countleft">$PARAM[countleft]</param>
+				<param name="swappediconleft">$PARAM[swappediconleft]</param>
+				<param name="swappedaddonleft">$PARAM[swappedaddonleft]</param>
+				<param name="swappedbadgeleft">$PARAM[swappedbadgeleft]</param>
+				<param name="swappedcountleft">$PARAM[swappedcountleft]</param>
+			</include>
+			<include condition="$PARAM[isFocused]" content="ListWatchedOverlayItems">
+				<param name="itemheight">$PARAM[itemheight]</param>
+				<param name="BGposy">$PARAM[BGposy]</param>
+				<param name="panel">$PARAM[panel]</param>
+				<param name="iconleft">$PARAM[iconleft]</param>
+				<param name="badgeleft">$PARAM[badgeleft]</param>
+				<param name="countleft">$PARAM[countleft]</param>
+				<param name="swappediconleft">$PARAM[swappediconleft]</param>
+				<param name="swappedaddonleft">$PARAM[swappedaddonleft]</param>
+				<param name="swappedbadgeleft">$PARAM[swappedbadgeleft]</param>
+				<param name="swappedcountleft">$PARAM[swappedcountleft]</param>
+				<param name="badgecolor" value="$VAR[FocusedTextColor]" />
+				<param name="countcolor" value="$VAR[FocusedTextColor]" />
+				<param name="countshadow" value="" />
+			</include>
 		</definition>
 	</include>
 
 	<include name="LowListWatchedOverlay">
-		<param name="isFocused">false</param>
-		<param name="itemheight">72</param>
-		<param name="BGposy">15</param>
+		<param name="isFocused" default="false" />
+		<param name="itemheight" default="72" />
+		<param name="BGposy" default="15" />
 		<definition>
-			<control type="group">
-				<visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
-				<!-- Overlay image when panel is in original position -->
-				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped]</visible>
-					<left>1495</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[Overlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image when panel is swapped -->
-				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped]</visible>
-					<left>586r</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[Overlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image when panel is disabled -->
-				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + $EXP[LowListPanelIsDisabled]</visible>
-					<left>46r</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[Overlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image for addons when panel is original position -->
-				<control type="image">
-					<visible>Container.Content(addons) + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped]</visible>
-					<left>1495</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[AddonOverlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image for addons when panel is swapped -->
-				<control type="image">
-					<visible>Container.Content(addons) + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped]</visible>
-					<left>606r</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[AddonOverlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Overlay image for addons when panel is disabled -->
-				<control type="image">
-					<visible>Container.Content(addons) + $EXP[LowListPanelIsDisabled]</visible>
-					<left>46r</left>
-					<width>30</width>
-					<height>$PARAM[itemheight]</height>
-					<texture>$VAR[AddonOverlay]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<!-- Number of unwatched episodes for tv shows when panel is in oiginal position -->
-				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped]</visible>
-					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
-					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
-						<left>1475</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>1475</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-					</control>
-					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
-						<left>1450</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>1450</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-				</control>
-				<!-- Number of unwatched episodes when panel is swapped -->
-				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped]</visible>
-					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
-					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
-						<left>615r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>615r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-					</control>
-					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
-						<left>640r</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>640r</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-				</control>
-				<!-- Number of unwatched episodes when panel is disabled -->
-				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + $EXP[LowListPanelIsDisabled]</visible>
-					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
-					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
-						<left>65r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>65r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
-					</control>
-					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
-						<right>-10</right>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<right>-10</right>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-				</control>
-			</control>
+			<include content="ListWatchedOverlay">
+				<param name="isFocused">$PARAM[isFocused]</param>
+				<param name="itemheight">$PARAM[itemheight]</param>
+				<param name="BGposy">$PARAM[BGposy]</param>
+				<param name="panel" value="LowList" />
+				<param name="iconleft" value="1495" />
+				<param name="badgeleft" value="1475" />
+				<param name="countleft" value="1450" />
+				<param name="swappediconleft" value="586r" />
+			</include>
 		</definition>
 	</include>
 
 	<include name="TallListWatchedOverlay">
-		<param name="isFocused">false</param>
-		<param name="itemheight">72</param>
-		<param name="BGposy">15</param>
+		<param name="isFocused" default="false" />
+		<param name="itemheight" default="72" />
+		<param name="BGposy" default="15" />
+		<definition>
+			<include content="ListWatchedOverlay">
+				<param name="isFocused">$PARAM[isFocused]</param>
+				<param name="itemheight">$PARAM[itemheight]</param>
+				<param name="BGposy">$PARAM[BGposy]</param>
+				<param name="panel" value="TallList" />
+				<param name="swappediconleft" value="536r" />
+				<param name="swappedaddonleft" value="536r" />
+				<param name="swappedbadgeleft" value="555r" />
+				<param name="swappedcountleft" value="580r" />
+			</include>
+		</definition>
+	</include>
+
+	<include name="ListWatchedOverlayItems">
+		<param name="badgecolor" default="White2" />
+		<param name="countcolor" default="$VAR[HighlightColor]" />
+		<param name="countshadow" default="ShadowDark" />
 		<definition>
 			<control type="group">
 				<visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 				<!-- Overlay image when panel is in original position -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped]</visible>
-					<left>1295</left>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[$PARAM[panel]PanelIsDisabled] + !$EXP[$PARAM[panel]PanelIsSwapped]</visible>
+					<left>$PARAM[iconleft]</left>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
 					<texture>$VAR[Overlay]</texture>
@@ -563,8 +242,8 @@
 				</control>
 				<!-- Overlay image when panel is swapped -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped]</visible>
-					<left>536r</left>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + !$EXP[$PARAM[panel]PanelIsDisabled] + $EXP[$PARAM[panel]PanelIsSwapped]</visible>
+					<left>$PARAM[swappediconleft]</left>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
 					<texture>$VAR[Overlay]</texture>
@@ -572,7 +251,7 @@
 				</control>
 				<!-- Overlay image when panel is disabled -->
 				<control type="image">
-					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + $EXP[TallListPanelIsDisabled]</visible>
+					<visible>[![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(addons)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)]] + $EXP[$PARAM[panel]PanelIsDisabled]</visible>
 					<left>46r</left>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
@@ -581,8 +260,8 @@
 				</control>
 				<!-- Overlay image for addons when panel is original position -->
 				<control type="image">
-					<visible>Container.Content(addons) + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped]</visible>
-					<left>1295</left>
+					<visible>Container.Content(addons) + !$EXP[$PARAM[panel]PanelIsDisabled] + !$EXP[$PARAM[panel]PanelIsSwapped]</visible>
+					<left>$PARAM[iconleft]</left>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
 					<texture>$VAR[AddonOverlay]</texture>
@@ -590,8 +269,8 @@
 				</control>
 				<!-- Overlay image for addons when panel is swapped -->
 				<control type="image">
-					<visible>Container.Content(addons) + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped]</visible>
-					<left>536r</left>
+					<visible>Container.Content(addons) + !$EXP[$PARAM[panel]PanelIsDisabled] + $EXP[$PARAM[panel]PanelIsSwapped]</visible>
+					<left>$PARAM[swappedaddonleft]</left>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
 					<texture>$VAR[AddonOverlay]</texture>
@@ -599,144 +278,81 @@
 				</control>
 				<!-- Overlay image for addons when panel is disabled -->
 				<control type="image">
-					<visible>Container.Content(addons) + $EXP[TallListPanelIsDisabled]</visible>
+					<visible>Container.Content(addons) + $EXP[$PARAM[panel]PanelIsDisabled]</visible>
 					<left>46r</left>
 					<width>30</width>
 					<height>$PARAM[itemheight]</height>
 					<texture>$VAR[AddonOverlay]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
 				</control>
-				<!-- Number of unwatched episodes for tv shows when panel is in oiginal position -->
+				<!-- Number of unwatched episodes for tv shows when panel is in original position -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[$PARAM[panel]PanelIsDisabled] + !$EXP[$PARAM[panel]PanelIsSwapped]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
-						<left>1275</left>
+						<left>$PARAM[badgeleft]</left>
 						<top>$PARAM[BGposy]</top>
 						<width>50</width>
 						<height>42</height>
 						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>1275</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
+						<colordiffuse>$PARAM[badgecolor]</colordiffuse>
 					</control>
 					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
-						<left>1250</left>
+						<left>$PARAM[countleft]</left>
 						<height>$PARAM[itemheight]</height>
 						<width>100</width>
 						<font>ListDetails</font>
 						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>1250</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
+						<textcolor>$PARAM[countcolor]</textcolor>
+						<shadowcolor>$PARAM[countshadow]</shadowcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Number of unwatched episodes when panel is swapped -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + !$EXP[$PARAM[panel]PanelIsDisabled] + $EXP[$PARAM[panel]PanelIsSwapped]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
-						<left>555r</left>
+						<left>$PARAM[swappedbadgeleft]</left>
 						<top>$PARAM[BGposy]</top>
 						<width>50</width>
 						<height>42</height>
 						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>555r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
+						<colordiffuse>$PARAM[badgecolor]</colordiffuse>
 					</control>
 					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
-						<left>580r</left>
+						<left>$PARAM[swappedcountleft]</left>
 						<height>$PARAM[itemheight]</height>
 						<width>100</width>
 						<font>ListDetails</font>
 						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>580r</left>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
+						<textcolor>$PARAM[countcolor]</textcolor>
+						<shadowcolor>$PARAM[countshadow]</shadowcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 						<scroll>true</scroll>
 					</control>
 				</control>
 				<!-- Number of unwatched episodes when panel is disabled -->
 				<control type="group">
-					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + $EXP[TallListPanelIsDisabled]</visible>
+					<visible>!ListItem.IsParentFolder + [Container.Content(tvshows) | Container.Content(seasons)] + $EXP[$PARAM[panel]PanelIsDisabled]</visible>
 					<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="image" description="Label2 BG">
-						<visible>$PARAM[isFocused]</visible>
 						<left>65r</left>
 						<top>$PARAM[BGposy]</top>
 						<width>50</width>
 						<height>42</height>
 						<texture border="3">img/WhiteRoundedT.png</texture>
-						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
-					</control>
-					<control type="image" description="Label2 BG">
-						<visible>!$PARAM[isFocused]</visible>
-						<left>65r</left>
-						<top>$PARAM[BGposy]</top>
-						<width>50</width>
-						<height>42</height>
-						<texture border="3">img/WhiteRoundedT.png</texture>
+						<colordiffuse>$PARAM[badgecolor]</colordiffuse>
 					</control>
 					<control type="label" description="l2">
-						<visible>$PARAM[isFocused]</visible>
 						<right>-10</right>
 						<height>$PARAM[itemheight]</height>
 						<width>100</width>
 						<font>ListDetails</font>
 						<align>center</align>
-						<textcolor>$VAR[FocusedTextColor]</textcolor>
-						<shadowcolor />
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label" description="l2">
-						<visible>!$PARAM[isFocused]</visible>
-						<right>-10</right>
-						<height>$PARAM[itemheight]</height>
-						<width>100</width>
-						<font>ListDetails</font>
-						<align>center</align>
-						<textcolor>$VAR[HighlightColor]</textcolor>
+						<textcolor>$PARAM[countcolor]</textcolor>
+						<shadowcolor>$PARAM[countshadow]</shadowcolor>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 						<scroll>true</scroll>
 					</control>
