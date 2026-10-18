@@ -1,0 +1,15 @@
+name: Deploy to repository.silvo
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    if: github.repository == 'MikeSiLVO/skin.amber'
+    uses: MikeSiLVO/workflows/.github/workflows/deploy-to-repo.yml@v2.2.0
+    with:
+      channel: piers
+    secrets: inherit

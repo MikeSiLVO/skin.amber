@@ -1,0 +1,14 @@
+name: Make Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    if: github.repository == 'MikeSiLVO/skin.amber'
+    permissions:
+      contents: write
+    uses: MikeSiLVO/workflows/.github/workflows/make-release.yml@v2.2.0
+    secrets: inherit
