@@ -9,23 +9,7 @@
 		<control type="group" description="Content">
 			<animation effect="fade" time="250" condition="!Window.Previous(SettingsCategory.xml)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="!Window.Next(SettingsCategory.xml)">WindowClose</animation>
-			<control type="image" description="Left Menu background">
-				<left>20</left>
-				<top>60</top>
-				<width>462</width>
-				<height>980</height>
-				<texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
-			</control>
-			<control type="image" description="2/2 Right Menu">
-				<visible>!Control.IsVisible(9001)</visible>
-				<left>462</left>
-				<top>60</top>
-				<width>1419</width>
-				<height>980</height>
-				<texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
-			</control>
+			<include>SplitPanels</include>
 			<control type="group">
 				<visible>!Window.IsVisible(script-skinshortcuts.xml)</visible>
 				<!-- 9000 Left panel -->

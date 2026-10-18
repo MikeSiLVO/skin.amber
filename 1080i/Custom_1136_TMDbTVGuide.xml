@@ -32,22 +32,7 @@
 				<animation effect="fade" time="600">Hidden</animation>
 			</control>
 			<!-- Menu backgrounds -->
-			<control type="image" description="Left Side background">
-				<colordiffuse>dfcebe9e</colordiffuse>
-				<left>60</left>
-				<top>60</top>
-				<width>412</width>
-				<height>980</height>
-				<texture border="45">dialogs/TinyDialog.png</texture>
-			</control>
-			<control type="image" description="Right Side Background">
-				<colordiffuse>dfcebe9e</colordiffuse>
-				<left>462</left>
-				<top>60</top>
-				<width>1419</width>
-				<height>980</height>
-				<texture border="45">dialogs/TinyDialog.png</texture>
-			</control>
+			<include>SplitPanels</include>
 			<!-- Busy Loader -->
 			<control type="group">
 				<top>104</top>
@@ -58,9 +43,9 @@
 			</control>
 			<!-- Static List with days/dates/number of episodes -->
 			<control type="list" id="4000">
-				<left>105</left>
+				<left>65</left>
 				<top>120</top>
-				<width>322</width>
+				<width>382</width>
 				<height>780</height>
 				<onright condition="[Container(4000).HasFocus(1) + Integer.IsGreater(Container(5001).NumItems,0)]">5001</onright>
 				<onright condition="[Container(4000).HasFocus(2) + Integer.IsGreater(Container(5002).NumItems,0)]">5002</onright>
@@ -79,44 +64,44 @@
 				<onup>4000</onup>
 				<ondown>4000</ondown>
 				<scrolltime tween="quadratic">300</scrolltime>
-				<itemlayout width="322" height="60">
+				<itemlayout width="382" height="60">
 					<control type="image">
-						<width>322</width>
+						<width>382</width>
 						<height>60</height>
 						<texture border="3">buttons/ButtonNF.png</texture>
 					</control>
 					<control type="group">
 						<control type="label" description="Main Label">
 							<left>10</left>
-							<width>301</width>
+							<width>361</width>
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 						</control>
 						<control type="label">
 							<left>10</left>
-							<width>301</width>
+							<width>361</width>
 							<align>right</align>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="322" height="60">
+				<focusedlayout width="382" height="60">
 					<control type="image" description="fa overlay">
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(4000)">Conditional</animation>
-						<width>322</width>
+						<width>382</width>
 						<height>60</height>
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
 					<control type="group">
 						<control type="label" description="Main Label">
 							<left>10</left>
-							<width>301</width>
+							<width>361</width>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor />
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 						</control>
 						<control type="label">
 							<left>10</left>
-							<width>301</width>
+							<width>361</width>
 							<align>right</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<label>$INFO[ListItem.Label2]</label>

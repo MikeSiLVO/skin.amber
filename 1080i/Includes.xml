@@ -172,6 +172,33 @@
 		<height>1010</height>
 	</include>
 
+	<include name="SplitPanels">
+		<param name="top" default="60" />
+		<param name="height" default="980" />
+		<param name="leftx" default="20" />
+		<param name="leftwidth" default="462" />
+		<param name="rightx" default="462" />
+		<param name="rightwidth" default="1419" />
+		<definition>
+			<control type="image" description="Left panel">
+				<left>$PARAM[leftx]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[leftwidth]</width>
+				<height>$PARAM[height]</height>
+				<texture border="45">dialogs/TinyDialog.png</texture>
+				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+			</control>
+			<control type="image" description="Right panel">
+				<left>$PARAM[rightx]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[rightwidth]</width>
+				<height>$PARAM[height]</height>
+				<texture border="45">dialogs/TinyDialog.png</texture>
+				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+			</control>
+		</definition>
+	</include>
+
 	<include name="Time">
 		<control type="group">
 			<width>1920</width>
