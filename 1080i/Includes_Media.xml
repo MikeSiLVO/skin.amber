@@ -1705,7 +1705,7 @@
 		<definition>
 			<!-- Overlays for small icons in custom video lists in info dialog -->
 			<control type="group">
-				<visible>Window.IsActive(DialogVideoInfo.xml) + String.IsEqual(Container.ListItem.DBType,movie) | [String.StartsWith(Container.ListItem.FolderPath,plugin://) | String.StartsWith(Container.ListItem.FolderPath,videodb)] + !String.IsEmpty(Container.ListItem.DBID)</visible>
+				<visible>Window.IsActive(DialogVideoInfo.xml) + [String.IsEqual(Container.ListItem.DBType,movie) | [String.StartsWith(Container.ListItem.FolderPath,plugin://) | String.StartsWith(Container.ListItem.FolderPath,videodb)] + !String.IsEmpty(Container.ListItem.DBID)]</visible>
 				<!-- Regular Overlay -->
 				<control type="group">
 					<visible>!Integer.IsGreater(Container.ListItem.Property(UnwatchedEpisodes),0) + !Container.ListItem.IsResumable</visible>
