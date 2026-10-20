@@ -2832,7 +2832,7 @@
 				<width>$PARAM[iconwidth]</width>
 				<height>$PARAM[iconheight]</height>
 				<aspectratio>$PARAM[aspect]</aspectratio>
-				<imagepath>$PARAM[iconimage]</imagepath>
+				<imagepath background="true">$PARAM[iconimage]</imagepath>
 				<colordiffuse>HeavyShadow</colordiffuse>
 				<timeperimage>70</timeperimage>
 				<fadetime>1</fadetime>
@@ -2845,7 +2845,7 @@
 				<height>$PARAM[iconheight]</height>
 				<control type="multiimage">
 					<visible>[$PARAM[isFocused] + $PARAM[hasFocus]]</visible>
-					<imagepath>$PARAM[iconimage]</imagepath>
+					<imagepath background="true">$PARAM[iconimage]</imagepath>
 					<timeperimage>70</timeperimage>
 					<fadetime>1</fadetime>
 					<randomize>false</randomize>
@@ -2853,7 +2853,7 @@
 				</control>
 				<control type="multiimage">
 					<visible>![$PARAM[isFocused] + $PARAM[hasFocus]]</visible>
-					<imagepath>$PARAM[iconimage]</imagepath>
+					<imagepath background="true">$PARAM[iconimage]</imagepath>
 					<timeperimage>70</timeperimage>
 					<fadetime>1</fadetime>
 					<randomize>false</randomize>

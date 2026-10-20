@@ -579,7 +579,7 @@
 								<top>175</top>
 								<aspectratio>keep</aspectratio>
 								<colordiffuse>65FFFFFF</colordiffuse>
-								<texture>$INFO[ListItem.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</texture>
+								<texture background="true">$INFO[ListItem.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</texture>
 							</control>
 							<control type="textbox">
 								<visible>Control.HasFocus(6003)</visible>
@@ -650,7 +650,7 @@
 								<top>175</top>
 								<aspectratio>keep</aspectratio>
 								<colordiffuse>$VAR[HighlightColor]</colordiffuse>
-								<texture>$INFO[ListItem.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</texture>
+								<texture background="true">$INFO[ListItem.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</texture>
 							</control>
 							<control type="textbox">
 								<left>240</left>
