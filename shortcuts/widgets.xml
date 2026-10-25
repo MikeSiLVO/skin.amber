@@ -223,38 +223,38 @@
 	<group name="skininfo" label="$INFO[System.AddonTitle(script.skin.info.service)]" icon="DefaultFolder.png">
 		<group name="skininfo-movies" label="$LOCALIZE[342]" icon="DefaultMovies.png">
 			<widget name="SkinInfoMoviesRecommended" label="$ADDON[script.skin.info.service 32623]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=movie&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=movie</path>
 			</widget>
 			<widget name="SkinInfoMoviesFavourites" label="$ADDON[script.skin.info.service 32687]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=movie&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=movie</path>
 			</widget>
 			<group name="skininfo-seasonal" label="$ADDON[script.skin.info.service 32622]" icon="DefaultMovies.png">
 				<widget name="SkinInfoSeasonalChristmas" label="$ADDON[script.skin.info.service 32642]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=christmas&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=christmas</path>
 				</widget>
 				<widget name="SkinInfoSeasonalHalloween" label="$ADDON[script.skin.info.service 32643]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=halloween&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=halloween</path>
 				</widget>
 				<widget name="SkinInfoSeasonalValentines" label="$ADDON[script.skin.info.service 32644]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=valentines&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=valentines</path>
 				</widget>
 				<widget name="SkinInfoSeasonalThanksgiving" label="$ADDON[script.skin.info.service 32645]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=thanksgiving&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=thanksgiving</path>
 				</widget>
 				<widget name="SkinInfoSeasonalNewyear" label="$ADDON[script.skin.info.service 32648]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=newyear&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=newyear</path>
 				</widget>
 				<widget name="SkinInfoSeasonalEaster" label="$ADDON[script.skin.info.service 32649]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=easter&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=easter</path>
 				</widget>
 				<widget name="SkinInfoSeasonalIndependence" label="$ADDON[script.skin.info.service 32650]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=independence&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=independence</path>
 				</widget>
 				<widget name="SkinInfoSeasonalStarwars" label="$ADDON[script.skin.info.service 32646]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=starwars&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=starwars</path>
 				</widget>
 				<widget name="SkinInfoSeasonalStartrek" label="$ADDON[script.skin.info.service 32647]" type="movies" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(movies)">
-					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=startrek&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+					<path>plugin://script.skin.info.service/?action=seasonal&amp;season=startrek</path>
 				</widget>
 			</group>
 			<group name="skininfo-movies-discover" label="$ADDON[script.skin.info.service 32619]" icon="DefaultMovies.png">
@@ -298,10 +298,10 @@
 		</group>
 		<group name="skininfo-tvshows" label="$LOCALIZE[31432]" icon="DefaultTVShows.png">
 			<widget name="SkinInfoTvShowsRecommended" label="$ADDON[script.skin.info.service 32624]" type="tvshows" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
-				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=tvshow&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=tvshow</path>
 			</widget>
 			<widget name="SkinInfoTvShowsFavourites" label="$ADDON[script.skin.info.service 32688]" type="tvshows" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
-				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=tvshow&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=tvshow</path>
 			</widget>
 			<group name="skininfo-tvshows-discover" label="$ADDON[script.skin.info.service 32619]" icon="DefaultTVShows.png">
 				<widget name="SkinInfoTvShowsTMDbTrending" label="$ADDON[script.skin.info.service 32627]" type="tvshows" target="video" icon="shelves/skin.info.service.png">
@@ -341,16 +341,16 @@
 		</group>
 		<group name="skininfo-episodes" label="$LOCALIZE[20360]" icon="DefaultTVShows.png">
 			<widget name="SkinInfoNextUp" label="$ADDON[script.skin.info.service 32620]" type="tvshows" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
-				<path>plugin://script.skin.info.service/?action=next_up&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=next_up</path>
 			</widget>
 			<widget name="SkinInfoNextUpFavourites" label="$ADDON[script.skin.info.service 32685]" type="episodes" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
-				<path>plugin://script.skin.info.service/?action=next_up_favourites&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=next_up_favourites</path>
 			</widget>
 			<widget name="SkinInfoRecentEpisodes" label="$ADDON[script.skin.info.service 32621]" type="episodes" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
-				<path>plugin://script.skin.info.service/?action=recent_episodes_grouped&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=recent_episodes_grouped</path>
 			</widget>
 			<widget name="SkinInfoEpisodesFavourites" label="$ADDON[script.skin.info.service 32689]" type="episodes" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
-				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=episode&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=episode</path>
 			</widget>
 			<widget name="SkinInfoUpcomingEpisodes" label="$ADDON[script.skin.info.service 32071]" type="episodes" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(tvshows)">
 				<path>plugin://script.skin.info.service/?action=next_aired&amp;days=7</path>
@@ -358,21 +358,21 @@
 		</group>
 		<group name="skininfo-musicvideos" label="$LOCALIZE[20389]" icon="DefaultMusicVideos.png">
 			<widget name="SkinInfoMusicVideosFavourites" label="$ADDON[script.skin.info.service 32690]" type="musicvideos" target="video" icon="shelves/skin.info.service.png" visible="Library.HasContent(musicvideos)">
-				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=musicvideo&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=favourites&amp;dbtype=musicvideo</path>
 			</widget>
 		</group>
 		<group name="skininfo-mixed" label="$LOCALIZE[3]" icon="DefaultVideo.png">
 			<widget name="SkinInfoContinueWatching" label="$ADDON[script.skin.info.service 32696]" type="mixed" target="video" icon="shelves/skin.info.service.png" visible="[Library.HasContent(movies) | Library.HasContent(tvshows)]">
-				<path>plugin://script.skin.info.service/?action=continue_watching&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=continue_watching</path>
 			</widget>
 			<widget name="SkinInfoRecentVideos" label="$ADDON[script.skin.info.service 32686]" type="mixed" target="video" icon="shelves/skin.info.service.png" visible="[Library.HasContent(movies) | Library.HasContent(tvshows)]">
-				<path>plugin://script.skin.info.service/?action=recent_videos&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=recent_videos</path>
 			</widget>
 			<widget name="SkinInfoRecommendations" label="$ADDON[script.skin.info.service 32682]" type="mixed" target="video" icon="shelves/skin.info.service.png" visible="[Library.HasContent(movies) | Library.HasContent(tvshows)]">
-				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=both&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=recommended&amp;dbtype=both</path>
 			</widget>
 			<widget name="SkinInfoFavourites" label="$LOCALIZE[1036]" type="mixed" target="video" icon="shelves/skin.info.service.png" visible="[Library.HasContent(movies) | Library.HasContent(tvshows)]">
-				<path>plugin://script.skin.info.service/?action=favourites&amp;reload=$INFO[Window(Home).Property(SkinInfo.Library.Refreshed)]</path>
+				<path>plugin://script.skin.info.service/?action=favourites</path>
 			</widget>
 		</group>
 	</group>
