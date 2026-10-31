@@ -509,6 +509,17 @@
 			<onclick>PlayerControl(Next)</onclick>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
+		<!-- Play speed (tempo) -->
+		<control type="radiobutton" id="608">
+			<include content="OSDButtons">
+				<param name="icon">OSD/OSDTempoNF.png</param>
+			</include>
+			<selected>Player.IsTempo</selected>
+			<enable>Player.TempoEnabled</enable>
+			<onclick>ActivateWindow(1150)</onclick>
+			<visible>!VideoPlayer.Content(livetv)</visible>
+			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+		</control>
 		<!-- Video Menu -->
 		<control type="radiobutton" id="661">
 			<include content="OSDButtons">
@@ -664,6 +675,19 @@
 			<texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/next.png</texturefocus>
 			<texturenofocus>OSD/compact/next.png</texturenofocus>
 			<onclick>PlayerControl(Next)</onclick>
+			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+		</control>
+		<!-- Play speed (tempo) -->
+		<control type="button" id="608">
+			<width>64</width>
+			<height>64</height>
+			<label/>
+			<font/>
+			<texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/tempo.png</texturefocus>
+			<texturenofocus>OSD/compact/tempo.png</texturenofocus>
+			<enable>Player.TempoEnabled</enable>
+			<onclick>ActivateWindow(1150)</onclick>
+			<visible>!VideoPlayer.Content(livetv)</visible>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
 		<!-- Video Menu -->

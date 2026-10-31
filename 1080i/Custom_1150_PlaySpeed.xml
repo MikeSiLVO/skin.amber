@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Playback speed (tempo) popup, styled after DialogSlider.xml. Opened from the OSD clock button (ActivateWindow(1150)).
+     Left/right step PlayerControl(TempoDown/TempoUp) (0.80x - 1.50x in 0.1 steps); select or back closes. -->
+<window type="dialog" id="1150">
+	<defaultcontrol always="true">11</defaultcontrol>
+	<include>OpenClose</include>
+	<controls>
+		<control type="group">
+			<posx>609</posx>
+			<posy>105</posy>
+			<control type="image">
+				<posx>20</posx>
+				<width>664</width>
+				<height>185</height>
+				<texture border="45">dialogs/TinyDialog.png</texture>
+				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+			</control>
+			<control type="label" id="10" description="Heading">
+				<posy>20</posy>
+				<width>704</width>
+				<height>40</height>
+				<align>center</align>
+				<textcolor>$VAR[HighlightColor]</textcolor>
+				<label>$LOCALIZE[31141]</label>
+			</control>
+			<!-- slider look-alike: bar + one nib per tempo step -->
+			<control type="group">
+				<posx>80</posx>
+				<posy>60</posy>
+				<control type="image">
+					<width>546</width>
+					<height>60</height>
+					<texture>buttons/SliderBG.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<width>29</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[HighlightColor]">buttons/SliderNibFO.png</texture>
+					<visible>String.IsEqual(Player.PlaySpeed,0.80)</visible>
+				</control>
+				<control type="image">
+					<posx>74</posx>
+					<width>29</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[HighlightColor]">buttons/SliderNibFO.png</texture>
+					<visible>String.IsEqual(Player.PlaySpeed,0.90)</visible>
+				</control>
+				<control type="image">
+					<posx>148</posx>
+					<width>29</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[HighlightColor]">buttons/SliderNibFO.png</texture>
+					<visible>String.IsEqual(Player.PlaySpeed,1.00)</visible>
+				</control>
+				<control type="image">
+					<posx>222</posx>
+					<width>29</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[HighlightColor]">buttons/SliderNibFO.png</texture>
+					<visible>String.IsEqual(Player.PlaySpeed,1.10)</visible>
+				</control>
+				<control type="image">
+					<posx>295</posx>
+					<width>29</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[HighlightColor]">buttons/SliderNibFO.png</texture>
+					<visible>String.IsEqual(Player.PlaySpeed,1.20)</visible>
+				</control>
+				<control type="image">
+					<posx>369</posx>
+					<width>29</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[HighlightColor]">buttons/SliderNibFO.png</texture>
+					<visible>String.IsEqual(Player.PlaySpeed,1.30)</visible>
+				</control>
+				<control type="image">
+					<posx>443</posx>
+					<width>29</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[HighlightColor]">buttons/SliderNibFO.png</texture>
+					<visible>String.IsEqual(Player.PlaySpeed,1.40)</visible>
+				</control>
+				<control type="image">
+					<posx>517</posx>
+					<width>29</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[HighlightColor]">buttons/SliderNibFO.png</texture>
+					<visible>String.IsEqual(Player.PlaySpeed,1.50)</visible>
+				</control>
+			</control>
+			<!-- invisible focus holder: remote left/right change tempo, select/back close -->
+			<control type="button" id="11">
+				<posx>80</posx>
+				<posy>60</posy>
+				<width>546</width>
+				<height>60</height>
+				<label></label>
+				<font></font>
+				<texturefocus></texturefocus>
+				<texturenofocus></texturenofocus>
+				<onleft>PlayerControl(TempoDown)</onleft>
+				<onright>PlayerControl(TempoUp)</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<onclick>Close</onclick>
+			</control>
+			<control type="label" id="12" description="Value">
+				<posx>30</posx>
+				<posy>120</posy>
+				<width>646</width>
+				<height>40</height>
+				<align>center</align>
+				<font>font24_title</font>
+				<textcolor>$VAR[LabelTextColor]</textcolor>
+				<label>$INFO[Player.PlaySpeed]x</label>
+			</control>
+		</control>
+	</controls>
+</window>
